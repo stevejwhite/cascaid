@@ -1,0 +1,64 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: alcohol-driving-confidentiality
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hello Gareth, I'm one of the doctors in the clinic. Come and sit down."
+    expected: []
+    rapport: false
+  - utterance: "Tell me a bit about your job. How much driving does it involve?"
+    expected: [driving]
+    rapport: false
+  - utterance: "How much are you drinking on a typical day, and for how long has it been like that?"
+    expected: [quantity]
+    rapport: false
+  - utterance: "Do you get any withdrawal symptoms, shakes in the morning, that kind of thing?"
+    expected: [withdrawal]
+    rapport: false
+  - utterance: "Have you ever driven with alcohol in your system, or the morning after a heavy night?"
+    expected: [impaired]
+    rapport: false
+  - utterance: "How did you get here today, and are you planning to drive later?"
+    expected: [today]
+    rapport: false
+  - utterance: "Have you let the driving licence people know about your drinking?"
+    expected: [notification]
+    rapport: false
+  - utterance: "What's your understanding of how confidentiality works here?"
+    expected: [privacy]
+    rapport: false
+  - utterance: "Is there any work you could do for a while that doesn't involve driving?"
+    expected: [support]
+    rapport: false
+  - utterance: "any thoughts of harming yourself or anyone else, Gareth?"
+    expected: [risk]
+    rapport: false
+  - utterance: "I can see this is a really worrying conversation for you."
+    expected: []
+    rapport: true
+  - utterance: "Facing the possibility of losing the job that pays your bills must be really frightening for you, Gareth. What's weighing on you most about all this?"
+    expected: [fear]
+    rapport: true
+  - utterance: "Have you ever been caught drink-driving or lost your licence before?"
+    expected: []
+    rapport: false
+  - utterance: "Have you had any blood tests for your liver recently?"
+    expected: []
+    rapport: false
+  - utterance: "So what I'm hearing is that you want to keep working and you're worried about what happens next."
+    expected: []
+    rapport: false
+  - utterance: "And have you ever had a fit when you've stopped?"
+    previous:
+      interviewer: "What happens if you don't drink in the morning?"
+      character: "My hands shake until I have a drink."
+    expected: [withdrawal]
+    rapport: false
+  - utterance: "Who's got them now, then?"
+    previous:
+      interviewer: "Did you drive yourself here?"
+      character: "No, my brother drove me. He's got the van keys."
+    expected: [today]
+    rapport: false

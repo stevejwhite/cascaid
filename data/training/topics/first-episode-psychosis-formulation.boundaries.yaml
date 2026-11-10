@@ -1,0 +1,227 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: first-episode-psychosis-formulation
+case_version: 0.1.0
+status: draft
+items:
+  # ---- continuity-concern / engagement ----
+  - utterance: "Who will be following him up once he leaves hospital?"
+    topics: [continuity-concern]
+    style: boundary
+    pair: [continuity-concern, engagement]
+  - utterance: "Has anyone referred him to the early intervention team yet?"
+    topics: [continuity-concern]
+    style: boundary
+    pair: [continuity-concern, engagement]
+  - utterance: "What's the plan for him once he's discharged?"
+    topics: [continuity-concern]
+    style: boundary_colloquial
+    pair: [continuity-concern, engagement]
+  - utterance: "um is there anything worrying you about what happens after he goes home"
+    topics: [continuity-concern]
+    style: boundary_spoken
+    pair: [continuity-concern, engagement]
+  - utterance: "Okay. Looking further ahead, who will be coordinating his care after discharge?"
+    topics: [continuity-concern]
+    style: boundary_follow_up
+    pair: [continuity-concern, engagement]
+    previous:
+      interviewer: "Is he willing to stay with us?"
+      character: "He says he needs protection rather than psychiatric treatment, but has agreed to stay today and discuss options with us."
+  - utterance: "Does Samir think he needs treatment?"
+    topics: [engagement]
+    style: boundary
+    pair: [continuity-concern, engagement]
+  - utterance: "What's Samir's attitude to being on the ward?"
+    topics: [engagement]
+    style: boundary
+    pair: [continuity-concern, engagement]
+  - utterance: "Is he open to help, or is he pushing it away?"
+    topics: [engagement]
+    style: boundary_colloquial
+    pair: [continuity-concern, engagement]
+  - utterance: "um does he think there's anything wrong with him at all"
+    topics: [engagement]
+    style: boundary_spoken
+    pair: [continuity-concern, engagement]
+  - utterance: "I see. And how does he feel about being here, does he accept he needs help?"
+    topics: [engagement]
+    style: boundary_follow_up
+    pair: [continuity-concern, engagement]
+    previous:
+      interviewer: "Has he been referred to early intervention?"
+      character: "I'm concerned about losing contact after discharge: no early intervention referral has been sent, and I do not know who will coordinate follow-up."
+  - utterance: "What's his legal status on the ward at the moment?"
+    topics: []
+    style: near_miss
+    pair: [continuity-concern, engagement]
+  - utterance: "How long do you expect him to need the bed?"
+    topics: []
+    style: near_miss
+    pair: [continuity-concern, engagement]
+  # ---- engagement / immediate-safety ----
+  - utterance: "Is he willing to stay with us on the ward?"
+    topics: [engagement]
+    style: boundary
+    pair: [engagement, immediate-safety]
+  - utterance: "Does he see himself as needing psychiatric treatment?"
+    topics: [engagement]
+    style: boundary
+    pair: [engagement, immediate-safety]
+  - utterance: "Is he going along with what we're offering him?"
+    topics: [engagement]
+    style: boundary_colloquial
+    pair: [engagement, immediate-safety]
+  - utterance: "um what's his view on being admitted and getting treated"
+    topics: [engagement]
+    style: boundary_spoken
+    pair: [engagement, immediate-safety]
+  - utterance: "OK. And how does he feel about the idea of treatment?"
+    topics: [engagement]
+    style: boundary_follow_up
+    pair: [engagement, immediate-safety]
+    previous:
+      interviewer: "Has he had thoughts of harming anyone?"
+      character: "He denied thoughts or plans to harm himself or anyone else, and no assault was reported; staff remain concerned that he may leave because he feels unsafe here."
+  - utterance: "Has he said anything about wanting to harm himself or anyone else?"
+    topics: [immediate-safety]
+    style: boundary
+    pair: [engagement, immediate-safety]
+  - utterance: "Are the staff worried about his safety or anyone else's on the ward?"
+    topics: [immediate-safety]
+    style: boundary
+    pair: [engagement, immediate-safety]
+  - utterance: "Has he been aggressive towards anyone since he arrived?"
+    topics: [immediate-safety]
+    style: boundary_colloquial
+    pair: [engagement, immediate-safety]
+  - utterance: "so um any suicidal thoughts that you know of"
+    topics: [immediate-safety]
+    style: boundary_spoken
+    pair: [engagement, immediate-safety]
+  - utterance: "Alright. Is there any risk to himself or other people at the moment?"
+    topics: [immediate-safety]
+    style: boundary_follow_up
+    pair: [engagement, immediate-safety]
+    previous:
+      interviewer: "Does he think he needs treatment?"
+      character: "He says he needs protection rather than psychiatric treatment, but has agreed to stay today and discuss options with us."
+  - utterance: "Is he on a section at the moment, or informal?"
+    topics: []
+    style: near_miss
+    pair: [engagement, immediate-safety]
+  - utterance: "Has he been given any medication since he was admitted?"
+    topics: []
+    style: near_miss
+    pair: [engagement, immediate-safety]
+  # ---- investigations-pending / physical-screen ----
+  - utterance: "Has he had his blood tests and heart tracing yet?"
+    topics: [investigations-pending]
+    style: boundary
+    pair: [investigations-pending, physical-screen]
+  - utterance: "Is there a baseline weight or metabolic screen on record?"
+    topics: [investigations-pending]
+    style: boundary
+    pair: [investigations-pending, physical-screen]
+  - utterance: "What tests are we still waiting on?"
+    topics: [investigations-pending]
+    style: boundary_colloquial
+    pair: [investigations-pending, physical-screen]
+  - utterance: "um do we have any blood results back yet"
+    topics: [investigations-pending]
+    style: boundary_spoken
+    pair: [investigations-pending, physical-screen]
+  - utterance: "Good. Are his blood tests and ECG sorted yet?"
+    topics: [investigations-pending]
+    style: boundary_follow_up
+    pair: [investigations-pending, physical-screen]
+    previous:
+      interviewer: "What were his observations and examination?"
+      character: "I examined him yesterday: temperature was 36.8 degrees, pulse 84 and blood pressure 122 over 76, with no focal neurological findings"
+  - utterance: "Did you manage to examine him physically?"
+    topics: [physical-screen]
+    style: boundary
+    pair: [investigations-pending, physical-screen]
+  - utterance: "What were his vital signs like on admission?"
+    topics: [physical-screen]
+    style: boundary
+    pair: [investigations-pending, physical-screen]
+  - utterance: "Has he got any medical problems or takes any tablets from the GP?"
+    topics: [physical-screen]
+    style: boundary_colloquial
+    pair: [investigations-pending, physical-screen]
+  - utterance: "so um any history of fits or a temperature"
+    topics: [physical-screen]
+    style: boundary_spoken
+    pair: [investigations-pending, physical-screen]
+  - utterance: "OK. What did you find on examining him, anything abnormal?"
+    topics: [physical-screen]
+    style: boundary_follow_up
+    pair: [investigations-pending, physical-screen]
+    previous:
+      interviewer: "Have we got blood results?"
+      character: "I have no blood results or ECG yet"
+  - utterance: "Does he smoke tobacco?"
+    topics: []
+    style: near_miss
+    pair: [investigations-pending, physical-screen]
+  - utterance: "Is he registered with a GP locally?"
+    topics: []
+    style: near_miss
+    pair: [investigations-pending, physical-screen]
+  # ---- collateral-consent / functional-course ----
+  - utterance: "Who could tell us more about how he's been, from the family side?"
+    topics: [collateral-consent]
+    style: boundary
+    pair: [collateral-consent, functional-course]
+  - utterance: "Is he happy for us to talk to his relatives?"
+    topics: [collateral-consent]
+    style: boundary
+    pair: [collateral-consent, functional-course]
+  - utterance: "Does he mind if we ring a relative to get their take?"
+    topics: [collateral-consent]
+    style: boundary_colloquial
+    pair: [collateral-consent, functional-course]
+  - utterance: "um can we get a collateral history from somebody close to him"
+    topics: [collateral-consent]
+    style: boundary_spoken
+    pair: [collateral-consent, functional-course]
+  - utterance: "I see. Is there family who could give us their view, with his permission?"
+    topics: [collateral-consent]
+    style: boundary_follow_up
+    pair: [collateral-consent, functional-course]
+    previous:
+      interviewer: "What's changed in his day-to-day life?"
+      character: "I spoke with his tutor: he stopped attending his plumbing course four months ago and stopped meeting friends around the same time."
+  - utterance: "How has he been getting on day to day over the last few months?"
+    topics: [functional-course]
+    style: boundary
+    pair: [collateral-consent, functional-course]
+  - utterance: "Has he been going to his course lately?"
+    topics: [functional-course]
+    style: boundary
+    pair: [collateral-consent, functional-course]
+  - utterance: "What has he stopped doing since he started to change?"
+    topics: [functional-course]
+    style: boundary_colloquial
+    pair: [collateral-consent, functional-course]
+  - utterance: "so um is he still seeing his mates or going out much"
+    topics: [functional-course]
+    style: boundary_spoken
+    pair: [collateral-consent, functional-course]
+  - utterance: "OK. What do we know about how his college attendance has been?"
+    topics: [functional-course]
+    style: boundary_follow_up
+    pair: [collateral-consent, functional-course]
+    previous:
+      interviewer: "Can we speak to his family?"
+      character: "He agreed that we may speak with his sister, who lives with him and is available this afternoon; I have not yet obtained her account."
+  - utterance: "Has he got any criminal record?"
+    topics: []
+    style: near_miss
+    pair: [collateral-consent, functional-course]
+  - utterance: "What was his school performance like?"
+    topics: []
+    style: near_miss
+    pair: [collateral-consent, functional-course]

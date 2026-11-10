@@ -1,0 +1,223 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: alcohol-memory-cognitive-assessment
+case_version: 0.1.0
+status: draft
+items:
+  - utterance: "A few minutes ago I gave you three words. Which ones were they?"
+    topics: [recall]
+    style: boundary
+    pair: [recall, registration]
+  - utterance: "Can you tell me those words again now, the ones I asked you to remember?"
+    topics: [recall]
+    style: boundary
+    pair: [recall, registration]
+  - utterance: "okay and those three words from before can you remember any of them now"
+    topics: [recall]
+    style: boundary_spoken
+    pair: [recall, registration]
+  - utterance: "Any of those words come back to you, Gordon?"
+    topics: [recall]
+    style: boundary_colloquial
+    pair: [recall, registration]
+  - utterance: "Good. Now what were those words from before that I wanted you to keep in mind?"
+    topics: [recall]
+    style: boundary_follow_up
+    pair: [recall, registration]
+    previous:
+      interviewer: "I can follow you when you keep it short. If several things are said together, I lose track."
+      character: "I can follow you when you keep it short. If several things are said together, I lose track."
+  - utterance: "I'm going to say three words: harbour, ribbon, candle. Please say them back to me now."
+    topics: [registration]
+    style: boundary
+    pair: [recall, registration]
+  - utterance: "Repeat after me: harbour, ribbon, candle."
+    topics: [registration]
+    style: boundary
+    pair: [recall, registration]
+  - utterance: "right so i'm going to say three words and i'd like you to say them straight back"
+    topics: [registration]
+    style: boundary_spoken
+    pair: [recall, registration]
+  - utterance: "Just say them back to me quick: harbour, ribbon, candle."
+    topics: [registration]
+    style: boundary_colloquial
+    pair: [recall, registration]
+  - utterance: "Thanks. Now I'd like you to take in three words and say them back to me."
+    topics: [registration]
+    style: boundary_follow_up
+    pair: [recall, registration]
+    previous:
+      interviewer: "I think this is a hospital, but I'm not sure which one. I can't remember why I came in."
+      character: "I think this is a hospital, but I'm not sure which one. I can't remember why I came in."
+  - utterance: "Has your memory been getting worse over the years?"
+    topics: []
+    style: near_miss
+    pair: [recall, registration]
+  - utterance: "Do you have any trouble remembering people's names?"
+    topics: []
+    style: near_miss
+    pair: [recall, registration]
+  - utterance: "What did you get up to yesterday?"
+    topics: [account]
+    style: boundary
+    pair: [account, orientation]
+  - utterance: "Tell me about your last couple of days; where have you been?"
+    topics: [account]
+    style: boundary
+    pair: [account, orientation]
+  - utterance: "and um what did you do yesterday can you tell me about it"
+    topics: [account]
+    style: boundary_spoken
+    pair: [account, orientation]
+  - utterance: "What have you been up to lately then, anything you can tell me about?"
+    topics: [account]
+    style: boundary_colloquial
+    pair: [account, orientation]
+  - utterance: "Fair enough. Tell me what you did yesterday, from when you got up."
+    topics: [account]
+    style: boundary_follow_up
+    pair: [account, orientation]
+    previous:
+      interviewer: "I think this is a hospital, but I'm not sure which one. I can't remember why I came in."
+      character: "I think this is a hospital, but I'm not sure which one. I can't remember why I came in."
+  - utterance: "Do you know where you are at the moment?"
+    topics: [orientation]
+    style: boundary
+    pair: [account, orientation]
+  - utterance: "Can you tell me which hospital this is, and what brought you in?"
+    topics: [orientation]
+    style: boundary
+    pair: [account, orientation]
+  - utterance: "so um do you know where we are right now"
+    topics: [orientation]
+    style: boundary_spoken
+    pair: [account, orientation]
+  - utterance: "Any idea what you're doing in here?"
+    topics: [orientation]
+    style: boundary_colloquial
+    pair: [account, orientation]
+  - utterance: "And do you know where you are now, and how you came to be here?"
+    topics: [orientation]
+    style: boundary_follow_up
+    pair: [account, orientation]
+    previous:
+      interviewer: "Yesterday I went to work at the garage, then came back here. I'm sure that's what happened."
+      character: "Yesterday I went to work at the garage, then came back here. I'm sure that's what happened."
+  - utterance: "Do you have any family who come to see you?"
+    topics: []
+    style: near_miss
+    pair: [account, orientation]
+  - utterance: "How are you sleeping on the ward?"
+    topics: []
+    style: near_miss
+    pair: [account, orientation]
+  - utterance: "Do you ever notice yourself forgetting things or repeating yourself?"
+    topics: [insight]
+    style: boundary
+    pair: [insight, recall]
+  - utterance: "How do you feel when people tell you that you've already asked something?"
+    topics: [insight]
+    style: boundary
+    pair: [insight, recall]
+  - utterance: "so um does it bother you when you can't remember stuff and people point it out"
+    topics: [insight]
+    style: boundary_spoken
+    pair: [insight, recall]
+  - utterance: "Do you get a bit embarrassed when your memory lets you down?"
+    topics: [insight]
+    style: boundary_colloquial
+    pair: [insight, recall]
+  - utterance: "That's okay. Do you find yourself forgetting things often, and are you aware of it?"
+    topics: [insight]
+    style: boundary_follow_up
+    pair: [insight, recall]
+    previous:
+      interviewer: "I can't bring them back now. I'm not sure what you asked me to remember."
+      character: "I can't bring them back now. I'm not sure what you asked me to remember."
+  - utterance: "Can you recall the words I told you earlier?"
+    topics: [recall]
+    style: boundary
+    pair: [insight, recall]
+  - utterance: "Earlier on I asked you to remember something. What was it?"
+    topics: [recall]
+    style: boundary
+    pair: [insight, recall]
+  - utterance: "right so what were the words i asked you to remember a minute ago"
+    topics: [recall]
+    style: boundary_spoken
+    pair: [insight, recall]
+  - utterance: "Do you remember what I asked you to keep in your head?"
+    topics: [recall]
+    style: boundary_colloquial
+    pair: [insight, recall]
+  - utterance: "OK. Let's go back to the earlier task; what were the three words I gave you?"
+    topics: [recall]
+    style: boundary_follow_up
+    pair: [insight, recall]
+    previous:
+      interviewer: "I get embarrassed when people say I've already asked. I don't always realise I'm repeating myself."
+      character: "I get embarrassed when people say I've already asked. I don't always realise I'm repeating myself."
+  - utterance: "Is there any memory loss in your family?"
+    topics: []
+    style: near_miss
+    pair: [insight, recall]
+  - utterance: "Have you had any head injuries?"
+    topics: []
+    style: near_miss
+    pair: [insight, recall]
+  - utterance: "How do you feel about the idea of needing more help?"
+    topics: [fear]
+    style: boundary
+    pair: [fear, safety]
+  - utterance: "Are you worried about what will happen when you leave hospital?"
+    topics: [fear]
+    style: boundary
+    pair: [fear, safety]
+  - utterance: "um is there anything about going home that's worrying you gordon"
+    topics: [fear]
+    style: boundary_spoken
+    pair: [fear, safety]
+  - utterance: "Do you worry that people will decide you can't cope?"
+    topics: [fear]
+    style: boundary_colloquial
+    pair: [fear, safety]
+  - utterance: "Thank you. Is there anything frightening you about where you'll end up living?"
+    topics: [fear]
+    style: boundary_follow_up
+    pair: [fear, safety]
+    previous:
+      interviewer: "No, I don't want to hurt myself or anyone else."
+      character: "No, I don't want to hurt myself or anyone else."
+  - utterance: "Have you had any thoughts of hurting yourself while you've been in here?"
+    topics: [safety]
+    style: boundary
+    pair: [fear, safety]
+  - utterance: "Do you ever feel life isn't worth living?"
+    topics: [safety]
+    style: boundary
+    pair: [fear, safety]
+  - utterance: "and um have you ever thought about hurting yourself or anyone else"
+    topics: [safety]
+    style: boundary_spoken
+    pair: [fear, safety]
+  - utterance: "Has it ever got so bad you thought about ending it all?"
+    topics: [safety]
+    style: boundary_colloquial
+    pair: [fear, safety]
+  - utterance: "Has it ever got so bad that you thought of harming yourself?"
+    topics: [safety]
+    style: boundary_follow_up
+    pair: [fear, safety]
+    previous:
+      interviewer: "I'm frightened I won't be allowed to live at home again. I don't like saying I might need help."
+      character: "I'm frightened I won't be allowed to live at home again. I don't like saying I might need help."
+  - utterance: "Are you worried about your health?"
+    topics: []
+    style: near_miss
+    pair: [fear, safety]
+  - utterance: "Do you feel the staff here are treating you well?"
+    topics: []
+    style: near_miss
+    pair: [fear, safety]

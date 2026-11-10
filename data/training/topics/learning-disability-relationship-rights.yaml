@@ -1,0 +1,811 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: learning-disability-relationship-rights
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Could you tell me a bit about her boyfriend?
+  topics:
+  - relationship
+  style: open
+- utterance: Do you know how they met?
+  topics:
+  - relationship
+  style: closed
+- utterance: So who's this young man she's seeing, Denise?
+  topics:
+  - relationship
+  style: colloquial
+- utterance: What do you know about the person she's in a relationship with?
+  topics:
+  - relationship
+  style: clinical
+- utterance: I'd like to hear how the relationship came about
+  topics:
+  - relationship
+  style: indirect
+- utterance: um so how, how did they get to know each other
+  topics:
+  - relationship
+  style: spoken
+- utterance: How long's it been going on?
+  topics:
+  - relationship
+  style: brief
+- utterance: And where do they usually spend time together?
+  topics:
+  - relationship
+  style: follow_up
+  previous:
+    interviewer: Do you know how they met?
+    character: My daughter is twenty-three and met her twenty-five-year-old boyfriend at a day service
+      six months ago. They meet there and sometimes at a cafe.
+- utterance: I take it he's someone she's met fairly recently?
+  topics:
+  - relationship
+  style: leading
+- utterance: Tell me what you know about him and how they spend their time.
+  topics:
+  - relationship
+  style: open
+- utterance: Is he around the same age as her?
+  topics:
+  - relationship
+  style: closed
+- utterance: How did the two of them end up getting together?
+  topics:
+  - relationship
+  style: colloquial
+- utterance: How old is your daughter now?
+  topics:
+  - relationship
+  style: open
+- utterance: Does she see him anywhere apart from there?
+  topics:
+  - relationship
+  style: follow_up
+  previous:
+    interviewer: Where did they meet?
+    character: My daughter is twenty-three and met her twenty-five-year-old boyfriend at a day service
+      six months ago. They meet there and sometimes at a cafe.
+- utterance: Denise, where do the two of them meet up?
+  topics:
+  - relationship
+  style: closed
+- utterance: Has she told you she wants to keep seeing him?
+  topics:
+  - wishes
+  style: closed
+- utterance: How does she feel about him, from what you can tell?
+  topics:
+  - wishes
+  style: colloquial
+- utterance: I'd be interested to know what she says about him herself
+  topics:
+  - wishes
+  style: indirect
+- utterance: It's clear you care about her a lot. What does she say she wants?
+  topics:
+  - wishes
+  style: empathy_then_question
+- utterance: and er what does she, um, what does she make of it all
+  topics:
+  - wishes
+  style: spoken
+- utterance: And what does she want?
+  topics:
+  - wishes
+  style: brief
+- utterance: How does she react when you say that?
+  topics:
+  - wishes
+  style: follow_up
+  previous:
+    interviewer: Do you know how they met?
+    character: My daughter is twenty-three and met her twenty-five-year-old boyfriend at a day service
+      six months ago. They meet there and sometimes at a cafe.
+- utterance: I'd guess she's quite keen on him?
+  topics:
+  - wishes
+  style: leading
+- utterance: How does she respond when you tell her not to see him?
+  topics:
+  - wishes
+  style: open
+- utterance: Does she seem happy in the relationship?
+  topics:
+  - wishes
+  style: closed
+- utterance: Is she smitten with him, would you say?
+  topics:
+  - wishes
+  style: colloquial
+- utterance: What do you think she'd say if I asked her about him?
+  topics:
+  - wishes
+  style: open
+- utterance: And how does she take it when you've said no?
+  topics:
+  - wishes
+  style: follow_up
+  previous:
+    interviewer: What would you like to happen?
+    character: I thought being her mother meant I could forbid it. Nobody has explained how decisions
+      are made now she's an adult.
+- utterance: Denise, has your daughter said what she'd like to happen?
+  topics:
+  - wishes
+  style: closed
+- utterance: Have you seen any signs that he's pressuring her?
+  topics:
+  - worries
+  style: closed
+- utterance: What's the worst you're afraid could happen?
+  topics:
+  - worries
+  style: colloquial
+- utterance: Have you noticed anything that suggests she's being exploited or harmed?
+  topics:
+  - worries
+  style: clinical
+- utterance: I'd like to understand what concerns you about him
+  topics:
+  - worries
+  style: indirect
+- utterance: I can hear how protective you are. What are you most concerned about?
+  topics:
+  - worries
+  style: empathy_then_question
+- utterance: so um what is it that, that bothers you about it
+  topics:
+  - worries
+  style: spoken
+- utterance: Any signs of harm?
+  topics:
+  - worries
+  style: brief
+- utterance: What do you mean by getting into something, what are you worried about?
+  topics:
+  - worries
+  style: follow_up
+  previous:
+    interviewer: What would you like to happen?
+    character: I thought being her mother meant I could forbid it. Nobody has explained how decisions
+      are made now she's an adult.
+- utterance: I suppose you're worried someone might take advantage of her?
+  topics:
+  - worries
+  style: leading
+- utterance: Has anything happened that's made you think she's in danger?
+  topics:
+  - worries
+  style: closed
+- utterance: Tell me what you think she might be getting into.
+  topics:
+  - worries
+  style: open
+- utterance: Has she come home upset, hurt, or with unexplained injuries?
+  topics:
+  - worries
+  style: closed
+- utterance: Is it pregnancy you're mainly worried about?
+  topics:
+  - worries
+  style: colloquial
+- utterance: Have you seen anything worrying, or is it more a general fear?
+  topics:
+  - worries
+  style: follow_up
+  previous:
+    interviewer: What worries you most about the relationship?
+    character: I'm worried about pregnancy and her being taken advantage of. I haven't seen threats, pressure
+      or injuries.
+- utterance: Denise, what have you actually noticed that concerns you?
+  topics:
+  - worries
+  style: open
+- utterance: How does your daughter communicate best?
+  topics:
+  - communication
+  style: open
+- utterance: Does she use pictures or symbols to help her understand?
+  topics:
+  - communication
+  style: closed
+- utterance: Could you describe her communication needs?
+  topics:
+  - communication
+  style: clinical
+- utterance: I'd find it useful to know how she understands information
+  topics:
+  - communication
+  style: indirect
+- utterance: You know her better than anyone. How does she let you know what she wants?
+  topics:
+  - communication
+  style: empathy_then_question
+- utterance: um and talking, er, how does she get on with talking things through
+  topics:
+  - communication
+  style: spoken
+- utterance: How does she communicate?
+  topics:
+  - communication
+  style: brief
+- utterance: I imagine simple explanations work better for her?
+  topics:
+  - communication
+  style: leading
+- utterance: Tell me how she lets people know when she's had enough of something.
+  topics:
+  - communication
+  style: open
+- utterance: Is she able to follow longer conversations?
+  topics:
+  - communication
+  style: closed
+- utterance: Does she get the gist better with short sentences?
+  topics:
+  - communication
+  style: colloquial
+- utterance: So would she be able to say no to something?
+  topics:
+  - communication
+  style: follow_up
+  previous:
+    interviewer: How does your daughter communicate best?
+    character: She understands short sentences and pictures better than long explanations. She can say
+      what she likes and when she wants something to stop.
+- utterance: What helps her understand new information?
+  topics:
+  - communication
+  style: open
+- utterance: Denise, can she express her likes and dislikes clearly?
+  topics:
+  - communication
+  style: closed
+- utterance: What does she understand about sex and consent?
+  topics:
+  - knowledge
+  style: open
+- utterance: Has she had any sex education?
+  topics:
+  - knowledge
+  style: closed
+- utterance: Has anyone had the birds and the bees talk with her?
+  topics:
+  - knowledge
+  style: colloquial
+- utterance: What is her current understanding of contraception?
+  topics:
+  - knowledge
+  style: clinical
+- utterance: I'm wondering what she already knows about relationships and sex
+  topics:
+  - knowledge
+  style: indirect
+- utterance: These can be awkward things to talk about. Has she learned about contraception anywhere?
+  topics:
+  - knowledge
+  style: empathy_then_question
+- utterance: so um has anyone, er, talked to her about sex
+  topics:
+  - knowledge
+  style: spoken
+- utterance: Does she know about contraception?
+  topics:
+  - knowledge
+  style: brief
+- utterance: And does she know how to avoid getting pregnant?
+  topics:
+  - knowledge
+  style: follow_up
+  previous:
+    interviewer: What worries you most about the relationship?
+    character: I'm worried about pregnancy and her being taken advantage of. I haven't seen threats, pressure
+      or injuries.
+- utterance: I expect she hasn't had much information about sex?
+  topics:
+  - knowledge
+  style: leading
+- utterance: Have you ever discussed consent with her at home?
+  topics:
+  - knowledge
+  style: closed
+- utterance: Tell me what she's been taught about keeping safe in relationships.
+  topics:
+  - knowledge
+  style: open
+- utterance: Does she get what it means to agree to sex?
+  topics:
+  - knowledge
+  style: colloquial
+- utterance: Did she have any sessions on relationships at school or college?
+  topics:
+  - knowledge
+  style: closed
+- utterance: Why do you think it's been hard to bring up?
+  topics:
+  - knowledge
+  style: follow_up
+  previous:
+    interviewer: Has she had any sex education?
+    character: I don't know what she understands about sexual consent or contraception. We've avoided
+      talking about it at home.
+- utterance: Denise, how much does she understand about saying yes or no to sex?
+  topics:
+  - knowledge
+  style: open
+- utterance: What do you see as your role in her decisions now she's an adult?
+  topics:
+  - authority
+  style: open
+- utterance: Do you feel you're able to forbid her from seeing him?
+  topics:
+  - authority
+  style: closed
+- utterance: Do you reckon it's your call whether she sees him?
+  topics:
+  - authority
+  style: colloquial
+- utterance: I'd like to hear how you see your say in this as her mum
+  topics:
+  - authority
+  style: indirect
+- utterance: Of course you want what's best for her. Has anyone explained how decisions work for adults
+    with a learning disability?
+  topics:
+  - authority
+  style: empathy_then_question
+- utterance: um and do you, er, do you think you can stop her
+  topics:
+  - authority
+  style: spoken
+- utterance: Can you stop it?
+  topics:
+  - authority
+  style: brief
+- utterance: Who do you think gets the final say on this?
+  topics:
+  - authority
+  style: follow_up
+  previous:
+    interviewer: What does your daughter want from the relationship?
+    character: She says she likes him and wants more time together. She gets upset when I say she shouldn't
+      see him.
+- utterance: I suppose as her mum you feel it's up to you?
+  topics:
+  - authority
+  style: leading
+- utterance: How have decisions been made for her since she turned eighteen?
+  topics:
+  - authority
+  style: open
+- utterance: Has anyone talked to you about parental responsibility once a child is an adult?
+  topics:
+  - authority
+  style: closed
+- utterance: Where do you think you stand legally as her mum?
+  topics:
+  - authority
+  style: colloquial
+- utterance: Has anyone ever gone through with you how that works now?
+  topics:
+  - authority
+  style: follow_up
+  previous:
+    interviewer: What do you see as your role in her decisions now she's an adult?
+    character: I thought being her mother meant I could forbid it. Nobody has explained how decisions
+      are made now she's an adult.
+- utterance: What would you like to happen, and do you feel it's yours to decide?
+  topics:
+  - authority
+  style: open
+- utterance: Denise, do you have any formal role in decisions about her life?
+  topics:
+  - authority
+  style: closed
+- utterance: Has anyone assessed whether she can make this decision herself?
+  topics:
+  - capacity
+  style: closed
+- utterance: What makes you think she can't decide about this for herself?
+  topics:
+  - capacity
+  style: open
+- utterance: Has a professional ever checked if she can make choices like this?
+  topics:
+  - capacity
+  style: colloquial
+- utterance: Has her capacity to consent to the relationship been formally assessed?
+  topics:
+  - capacity
+  style: clinical
+- utterance: I'm wondering whether anyone has looked at her ability to make this particular choice
+  topics:
+  - capacity
+  style: indirect
+- utterance: I know you want to keep her safe. Why do you feel she isn't able to choose?
+  topics:
+  - capacity
+  style: empathy_then_question
+- utterance: so has, um, has anyone done a proper assessment with her about this
+  topics:
+  - capacity
+  style: spoken
+- utterance: Any assessment of her decision-making?
+  topics:
+  - capacity
+  style: brief
+- utterance: Has that ever been looked at formally for this decision?
+  topics:
+  - capacity
+  style: follow_up
+  previous:
+    interviewer: What do you see as your role in her decisions now she's an adult?
+    character: I thought being her mother meant I could forbid it. Nobody has explained how decisions
+      are made now she's an adult.
+- utterance: I'd guess nobody has formally looked at this decision with her yet?
+  topics:
+  - capacity
+  style: leading
+- utterance: Why do you feel she isn't able to make this choice?
+  topics:
+  - capacity
+  style: open
+- utterance: Has she been assessed for other big decisions in the past?
+  topics:
+  - capacity
+  style: closed
+- utterance: Is it the learning disability that makes you think she can't choose?
+  topics:
+  - capacity
+  style: colloquial
+- utterance: What was that assumption based on?
+  topics:
+  - capacity
+  style: follow_up
+  previous:
+    interviewer: Has anyone assessed whether she can make this decision herself?
+    character: No one has assessed this particular decision with her. I assumed her learning disability
+      settled the question.
+- utterance: Tell me what you think she does and doesn't understand about choosing a partner.
+  topics:
+  - capacity
+  style: open
+- utterance: Denise, has anyone sat down with her to see whether she can decide this?
+  topics:
+  - capacity
+  style: closed
+- utterance: Who does she trust to talk to apart from you?
+  topics:
+  - support
+  style: open
+- utterance: Is there a support worker she gets on with?
+  topics:
+  - support
+  style: closed
+- utterance: Has she got someone she'd open up to?
+  topics:
+  - support
+  style: colloquial
+- utterance: Which professionals are involved in supporting her at the moment?
+  topics:
+  - support
+  style: clinical
+- utterance: I'd like to know who else is around to support her
+  topics:
+  - support
+  style: indirect
+- utterance: It can feel like you're doing this alone. Is there anyone she confides in?
+  topics:
+  - support
+  style: empathy_then_question
+- utterance: um and staff, are there any, er, staff she's close to
+  topics:
+  - support
+  style: spoken
+- utterance: Anyone she confides in?
+  topics:
+  - support
+  style: brief
+- utterance: Is there anyone at the service she's close to?
+  topics:
+  - support
+  style: follow_up
+  previous:
+    interviewer: Do you know how they met?
+    character: My daughter is twenty-three and met her twenty-five-year-old boyfriend at a day service
+      six months ago. They meet there and sometimes at a cafe.
+- utterance: I'd imagine there's a member of staff she gets on well with?
+  topics:
+  - support
+  style: leading
+- utterance: Tell me about the people who support her outside the family.
+  topics:
+  - support
+  style: open
+- utterance: Would she speak more freely if you weren't in the room?
+  topics:
+  - support
+  style: closed
+- utterance: Who's her go-to person when something's on her mind?
+  topics:
+  - support
+  style: colloquial
+- utterance: Would you be happy for us to involve her?
+  topics:
+  - support
+  style: follow_up
+  previous:
+    interviewer: Who does she trust to talk to apart from you?
+    character: She trusts a support worker at the service. She might talk more freely with her than with
+      me present.
+- utterance: How would she feel about talking to someone without you there?
+  topics:
+  - support
+  style: open
+- utterance: Denise, is there a key worker or carer she trusts?
+  topics:
+  - support
+  style: closed
+- utterance: What feels hardest for you about all of this?
+  topics:
+  - fear
+  style: open
+- utterance: Are you frightened you won't be able to protect her?
+  topics:
+  - fear
+  style: closed
+- utterance: How are you holding up with it all, as her mum?
+  topics:
+  - fear
+  style: colloquial
+- utterance: How do you feel about her becoming more independent?
+  topics:
+  - fear
+  style: clinical
+- utterance: I wondered how it feels for you, watching her make her own choices
+  topics:
+  - fear
+  style: indirect
+- utterance: You've clearly looked after her for a long time. What is it like to think about stepping
+    back?
+  topics:
+  - fear
+  style: empathy_then_question
+- utterance: so um how is it for you, er, letting her go a bit
+  topics:
+  - fear
+  style: spoken
+- utterance: And how are you feeling?
+  topics:
+  - fear
+  style: brief
+- utterance: What makes stepping back so hard for you?
+  topics:
+  - fear
+  style: follow_up
+  previous:
+    interviewer: How are you holding up?
+    character: It's difficult stepping back.
+- utterance: I suspect part of this is about being scared of getting it wrong?
+  topics:
+  - fear
+  style: leading
+- utterance: How has it been for you, being her main protector over the years?
+  topics:
+  - fear
+  style: open
+- utterance: Do you find it hard to accept you can't stop every risk?
+  topics:
+  - fear
+  style: closed
+- utterance: Is it a bit terrifying, her growing up like this?
+  topics:
+  - fear
+  style: colloquial
+- utterance: Could we talk about what it's like for you to let her take some risks?
+  topics:
+  - fear
+  style: open
+- utterance: What do you fear most if something did go wrong?
+  topics:
+  - fear
+  style: follow_up
+  previous:
+    interviewer: Are you frightened you won't be able to protect her?
+    character: I've spent years protecting her and feel terrified of getting it wrong. It's hard to admit
+      I can't prevent every risk.
+- utterance: Denise, what's it like for you emotionally, seeing her grow more independent?
+  topics:
+  - fear
+  style: open
+- utterance: Have you taken any steps to stop her seeing or messaging him?
+  topics:
+  - restriction
+  style: closed
+- utterance: Have you had to put your foot down at all?
+  topics:
+  - restriction
+  style: colloquial
+- utterance: Have you placed any restrictions on her contact with him?
+  topics:
+  - restriction
+  style: clinical
+- utterance: I'd like to understand anything you've done to keep them apart
+  topics:
+  - restriction
+  style: indirect
+- utterance: It sounds like you've been doing your best in a hard situation. Have you done anything you
+    feel unsure about?
+  topics:
+  - restriction
+  style: empathy_then_question
+- utterance: um and have you, er, tried to stop her contacting him at all
+  topics:
+  - restriction
+  style: spoken
+- utterance: Stopped her contacting him?
+  topics:
+  - restriction
+  style: brief
+- utterance: Have you done anything to try to keep them apart?
+  topics:
+  - restriction
+  style: follow_up
+  previous:
+    interviewer: Do you feel you're able to forbid her from seeing him?
+    character: I thought being her mother meant I could forbid it. Nobody has explained how decisions
+      are made now she's an adult.
+- utterance: I imagine you've tried to limit how much they're in touch?
+  topics:
+  - restriction
+  style: leading
+- utterance: How do they keep in touch, and have you ever stepped in?
+  topics:
+  - restriction
+  style: open
+- utterance: Have you ever taken anything away from her to stop contact?
+  topics:
+  - restriction
+  style: closed
+- utterance: Have things got a bit heavy-handed at home over this?
+  topics:
+  - restriction
+  style: colloquial
+- utterance: Does anyone at the service know that happened?
+  topics:
+  - restriction
+  style: follow_up
+  previous:
+    interviewer: Have you taken any steps to stop her seeing or messaging him?
+    character: I took her phone away for two evenings to stop messages. She was very upset, and I haven't
+      told the support worker.
+- utterance: Would you feel able to tell me about anything you've done that you're unsure was right?
+  topics:
+  - restriction
+  style: closed
+- utterance: Denise, is there anything you've done to keep them apart that you'd rather not mention?
+  topics:
+  - restriction
+  style: closed
+- utterance: How long have they been together, and what does she want from it?
+  topics:
+  - relationship
+  - wishes
+  style: stacked
+- utterance: What does she know about contraception, and has anyone assessed whether she can decide about
+    sex?
+  topics:
+  - knowledge
+  - capacity
+  style: stacked
+- utterance: How does she communicate best, and who does she trust to talk to?
+  topics:
+  - communication
+  - support
+  style: stacked
+- utterance: What are you worried might happen, and have you done anything to stop them seeing each other?
+  topics:
+  - worries
+  - restriction
+  style: stacked
+- utterance: Hi Denise, thanks for coming in to see me today.
+  topics: []
+  style: greeting
+- utterance: Good afternoon Denise, my name's Priya and I'm a trainee doctor.
+  topics: []
+  style: introduction
+- utterance: Is it all right if we talk about your daughter for a while?
+  topics: []
+  style: greeting
+- utterance: What would you like to start with today?
+  topics: []
+  style: greeting
+- utterance: Before we get going, are there any questions you'd like to ask?
+  topics: []
+  style: greeting
+- utterance: I'd like to move on to something a little different now.
+  topics: []
+  style: transition
+- utterance: Thank you, that helps. Can we turn to how decisions get made?
+  topics: []
+  style: transition
+- utterance: Next I'd like to explain a few things, if that's okay.
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Denise.
+  topics: []
+  style: closing
+- utterance: Thanks for talking this through with me so openly.
+  topics: []
+  style: closing
+- utterance: um right, so, there's a couple of other things I'd like to cover
+  topics: []
+  style: transition
+- utterance: It's obvious how much you love her and want to protect her.
+  topics: []
+  style: empathy
+- utterance: This must be a really worrying time for you.
+  topics: []
+  style: empathy
+- utterance: Wanting to keep your child safe is completely understandable.
+  topics: []
+  style: empathy
+- utterance: So you're worried she doesn't understand the risks and you'd like the relationship to stop.
+  topics: []
+  style: summary
+- utterance: Let me sum up what you've told me so far.
+  topics: []
+  style: summary
+- utterance: As an adult, she has the right to make her own decisions where she's able to.
+  topics: []
+  style: explanation
+- utterance: We look at whether someone can make a specific decision, rather than deciding for everything
+    at once.
+  topics: []
+  style: explanation
+- utterance: There are ways we can support her to understand and make choices, like easy-read information.
+  topics: []
+  style: explanation
+- utterance: If there's ever a concern she's being harmed, there are safeguarding procedures to look into
+    it.
+  topics: []
+  style: explanation
+- utterance: Does that make sense so far?
+  topics: []
+  style: check_understanding
+- utterance: Could you tell me in your own words what you've taken from that?
+  topics: []
+  style: check_understanding
+- utterance: Does she have epilepsy or any other conditions?
+  topics: []
+  style: off_case
+- utterance: Who else lives at home with you both?
+  topics: []
+  style: off_case
+- utterance: Does she take any regular medication?
+  topics: []
+  style: off_case
+- utterance: Has she ever had any mental health problems?
+  topics: []
+  style: off_case
+- utterance: Has she had relationships before this one?
+  topics: []
+  style: off_case
+- utterance: Have you met his parents?
+  topics: []
+  style: near_miss
+- utterance: Does he have a learning disability as well?
+  topics: []
+  style: near_miss
+- utterance: Have you spoken to his family about your worries?
+  topics: []
+  style: near_miss
+- utterance: Did she understand the forms when she started at the service?
+  topics: []
+  style: near_miss
+- utterance: How do you feel about her boyfriend personally?
+  topics: []
+  style: near_miss

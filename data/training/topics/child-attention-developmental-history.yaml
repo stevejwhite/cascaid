@@ -1,0 +1,1001 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: child-attention-developmental-history
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Were you well throughout the pregnancy?
+  topics:
+  - pregnancy
+  style: closed
+- utterance: Were there any antenatal complications?
+  topics:
+  - pregnancy
+  style: clinical
+- utterance: I wondered about the time before he was born
+  topics:
+  - pregnancy
+  style: indirect
+- utterance: I know this is a lot of questions, but did you smoke or drink at all while pregnant?
+  topics:
+  - pregnancy
+  style: empathy_then_question
+- utterance: so um when you were pregnant were you poorly at all
+  topics:
+  - pregnancy
+  style: spoken
+- utterance: And the pregnancy itself?
+  topics:
+  - pregnancy
+  style: brief
+- utterance: Did you have any illnesses during that time?
+  topics:
+  - pregnancy
+  style: follow_up
+  previous:
+    interviewer: Let's go right back to the start, to before he was born.
+    character: He was born at thirty-nine weeks by a straightforward vaginal delivery, weighing 3.3 kilograms,
+      and didn't need special care.
+- utterance: I imagine you looked after yourself carefully while you were carrying him?
+  topics:
+  - pregnancy
+  style: leading
+- utterance: Tell me what you can about your health while you were carrying Idris.
+  topics:
+  - pregnancy
+  style: open
+- utterance: Did you take any medicines or vitamins when you were expecting?
+  topics:
+  - pregnancy
+  style: closed
+- utterance: Did you have any bugs or infections while he was on the way?
+  topics:
+  - pregnancy
+  style: colloquial
+- utterance: and was it ok, the pregnancy, nothing worrying
+  topics:
+  - pregnancy
+  style: spoken
+- utterance: Alcohol or cigarettes in pregnancy?
+  topics:
+  - pregnancy
+  style: brief
+- utterance: What was the birth like?
+  topics:
+  - birth
+  style: open
+- utterance: Was he born around the right time?
+  topics:
+  - birth
+  style: closed
+- utterance: Did he come out all right, no dramas at the delivery?
+  topics:
+  - birth
+  style: colloquial
+- utterance: What was his gestation and mode of delivery?
+  topics:
+  - birth
+  style: clinical
+- utterance: I'd like to hear how he came into the world
+  topics:
+  - birth
+  style: indirect
+- utterance: That must have been a big day for you. How much did he weigh?
+  topics:
+  - birth
+  style: empathy_then_question
+- utterance: um and the delivery, was that straightforward or
+  topics:
+  - birth
+  style: spoken
+- utterance: How big was he?
+  topics:
+  - birth
+  style: brief
+- utterance: Did he need any time in special care afterwards?
+  topics:
+  - birth
+  style: follow_up
+  previous:
+    interviewer: The pregnancy sounds uneventful, thank you.
+    character: My pregnancy was straightforward; I took routine antenatal vitamins, didn't smoke or drink
+      alcohol and had no serious illness.
+- utterance: He arrived on time and without trouble, I suppose?
+  topics:
+  - birth
+  style: leading
+- utterance: Can you describe how the delivery went?
+  topics:
+  - birth
+  style: open
+- utterance: Was it a caesarean?
+  topics:
+  - birth
+  style: closed
+- utterance: Was he a decent size when he was born?
+  topics:
+  - birth
+  style: colloquial
+- utterance: so did the baby unit have to look after him at all
+  topics:
+  - birth
+  style: spoken
+- utterance: Any problems just after delivery?
+  topics:
+  - birth
+  style: brief
+- utterance: How did his early physical development go?
+  topics:
+  - motor-milestones
+  style: open
+- utterance: Did he walk at about the usual age?
+  topics:
+  - motor-milestones
+  style: closed
+- utterance: At what ages did he reach his motor milestones?
+  topics:
+  - motor-milestones
+  style: clinical
+- utterance: I'd like to hear about when he started to sit and walk
+  topics:
+  - motor-milestones
+  style: indirect
+- utterance: It's helpful that you kept his record book. When did he take his first steps?
+  topics:
+  - motor-milestones
+  style: empathy_then_question
+- utterance: um when did he sort of start moving about, crawling and that
+  topics:
+  - motor-milestones
+  style: spoken
+- utterance: And when did he first sit without help?
+  topics:
+  - motor-milestones
+  style: follow_up
+  previous:
+    interviewer: You said he was born without any problems, which is good to hear.
+    character: He was born at thirty-nine weeks by a straightforward vaginal delivery, weighing 3.3 kilograms,
+      and didn't need special care.
+- utterance: I'd guess he was a bit slow or clumsy as a little one?
+  topics:
+  - motor-milestones
+  style: leading
+- utterance: What do you remember about how he learned to move around?
+  topics:
+  - motor-milestones
+  style: open
+- utterance: Did anyone raise concerns about his movement or coordination?
+  topics:
+  - motor-milestones
+  style: closed
+- utterance: Was he late getting on his feet?
+  topics:
+  - motor-milestones
+  style: colloquial
+- utterance: and the health visitor, did she say anything about how he was moving
+  topics:
+  - motor-milestones
+  style: spoken
+- utterance: Any worries about his movement?
+  topics:
+  - motor-milestones
+  style: brief
+- utterance: How did his speech and language develop?
+  topics:
+  - language
+  style: open
+- utterance: Did he start speaking at around the usual age?
+  topics:
+  - language
+  style: closed
+- utterance: When did he reach his expressive language milestones?
+  topics:
+  - language
+  style: clinical
+- utterance: I wondered which languages are spoken at home
+  topics:
+  - language
+  style: indirect
+- utterance: You're clearly paying close attention to his progress. When did he begin to put words together?
+  topics:
+  - language
+  style: empathy_then_question
+- utterance: so um what language do you speak with him at home
+  topics:
+  - language
+  style: spoken
+- utterance: And his first words?
+  topics:
+  - language
+  style: brief
+- utterance: When did he start joining words into little sentences?
+  topics:
+  - language
+  style: follow_up
+  previous:
+    interviewer: He was walking at a normal age, then.
+    character: He sat without help at seven months and walked at fourteen months; we weren't told of any
+      problems with his movement.
+- utterance: He was slow to talk, wasn't he?
+  topics:
+  - language
+  style: leading
+- utterance: What can you tell me about how he communicates with you now?
+  topics:
+  - language
+  style: open
+- utterance: Is more than one language used in your home?
+  topics:
+  - language
+  style: closed
+- utterance: Does he chat away properly now?
+  topics:
+  - language
+  style: colloquial
+- utterance: and the talking um did that come along ok
+  topics:
+  - language
+  style: spoken
+- utterance: Speech and language, how was it?
+  topics:
+  - language
+  style: brief
+- utterance: What was he like as a toddler when it came to interacting with people?
+  topics:
+  - social-communication
+  style: open
+- utterance: Does he respond when you call his name?
+  topics:
+  - social-communication
+  style: closed
+- utterance: Did he point at things to show you what he'd noticed?
+  topics:
+  - social-communication
+  style: colloquial
+- utterance: Was there joint attention and imaginative play in early childhood?
+  topics:
+  - social-communication
+  style: clinical
+- utterance: I was thinking about how he played with other children when he was little
+  topics:
+  - social-communication
+  style: indirect
+- utterance: It's good to hear about what he enjoys. Did he do any pretend games?
+  topics:
+  - social-communication
+  style: empathy_then_question
+- utterance: um does he, like, look round when you say his name
+  topics:
+  - social-communication
+  style: spoken
+- utterance: Pretend play when he was small?
+  topics:
+  - social-communication
+  style: brief
+- utterance: Did he make a fuss of showing you things he'd seen?
+  topics:
+  - social-communication
+  style: follow_up
+  previous:
+    interviewer: You mentioned he wants friends, so I wanted to ask about his early years.
+    character: He wants friends, but interrupts games and grabs a turn before others have finished; children
+      then avoid him, and he comes home upset.
+- utterance: He was probably quite a lonely, withdrawn toddler?
+  topics:
+  - social-communication
+  style: leading
+- utterance: How does he play with other children at family gatherings?
+  topics:
+  - social-communication
+  style: open
+- utterance: Did he play make-believe games?
+  topics:
+  - social-communication
+  style: closed
+- utterance: Would he bring you things or point stuff out?
+  topics:
+  - social-communication
+  style: colloquial
+- utterance: so was he interested in other kids when he was younger
+  topics:
+  - social-communication
+  style: spoken
+- utterance: Did he answer to his name?
+  topics:
+  - social-communication
+  style: brief
+- utterance: How does he get on with ordinary tasks at home?
+  topics:
+  - home-attention
+  style: open
+- utterance: Does he need reminding about what to do when he's getting ready?
+  topics:
+  - home-attention
+  style: closed
+- utterance: Does he lose his stuff a lot?
+  topics:
+  - home-attention
+  style: colloquial
+- utterance: Is there difficulty with sustained attention and task completion at home?
+  topics:
+  - home-attention
+  style: clinical
+- utterance: I was wondering what mornings are like before school
+  topics:
+  - home-attention
+  style: indirect
+- utterance: That sounds like a lot of effort for you. How long has he needed that much prompting?
+  topics:
+  - home-attention
+  style: empathy_then_question
+- utterance: um so when he's getting dressed does he stay on it
+  topics:
+  - home-attention
+  style: spoken
+- utterance: And getting ready in the morning?
+  topics:
+  - home-attention
+  style: brief
+- utterance: Is that how he is with getting dressed as well?
+  topics:
+  - home-attention
+  style: follow_up
+  previous:
+    interviewer: You said school see him leaving his seat a lot. I wondered about home.
+    character: His teacher says he leaves his seat several times each lesson, calls out answers and finishes
+      little written work despite being able to explain it aloud.
+- utterance: He probably drifts off in the middle of whatever he's doing?
+  topics:
+  - home-attention
+  style: leading
+- utterance: Take me through a normal morning in your house.
+  topics:
+  - home-attention
+  style: open
+- utterance: Does he follow a list of instructions through to the end?
+  topics:
+  - home-attention
+  style: closed
+- utterance: Does he keep wandering off from what he should be doing?
+  topics:
+  - home-attention
+  style: colloquial
+- utterance: and does he forget things or lose them, like a coat or whatever
+  topics:
+  - home-attention
+  style: spoken
+- utterance: Following instructions at home?
+  topics:
+  - home-attention
+  style: brief
+- utterance: How active is he in general?
+  topics:
+  - activity-control
+  style: open
+- utterance: Has he always been a very active child?
+  topics:
+  - activity-control
+  style: closed
+- utterance: Is he always on the go?
+  topics:
+  - activity-control
+  style: colloquial
+- utterance: Is there impulsivity or a lack of danger awareness?
+  topics:
+  - activity-control
+  style: clinical
+- utterance: I wondered whether he ever does things without stopping to think
+  topics:
+  - activity-control
+  style: indirect
+- utterance: That sounds exhausting for you. Has he ever put himself in danger?
+  topics:
+  - activity-control
+  style: empathy_then_question
+- utterance: um is he like, does he rush into things without looking
+  topics:
+  - activity-control
+  style: spoken
+- utterance: Does he ever run off?
+  topics:
+  - activity-control
+  style: brief
+- utterance: How long has he been like that?
+  topics:
+  - activity-control
+  style: follow_up
+  previous:
+    interviewer: And does he cope with sitting still at home?
+    character: Since nursery age he has needed reminders for each step of getting dressed; most mornings
+      he wanders off halfway and mislays his shoes.
+- utterance: He's the sort of child who never stops moving, I'd imagine?
+  topics:
+  - activity-control
+  style: leading
+- utterance: Can you describe a time when his energy caused a worry about safety?
+  topics:
+  - activity-control
+  style: open
+- utterance: Is he careful near roads?
+  topics:
+  - activity-control
+  style: closed
+- utterance: Does he dash about without thinking?
+  topics:
+  - activity-control
+  style: colloquial
+- utterance: so when did you first notice he was never still
+  topics:
+  - activity-control
+  style: spoken
+- utterance: Any near misses outdoors?
+  topics:
+  - activity-control
+  style: brief
+- utterance: Does he stay in his seat during lessons?
+  topics:
+  - school-observations
+  style: closed
+- utterance: What does school say he's like in the classroom?
+  topics:
+  - school-observations
+  style: colloquial
+- utterance: What classroom behaviours have been reported by his teacher?
+  topics:
+  - school-observations
+  style: clinical
+- utterance: I'd be interested to hear what the school has been noticing
+  topics:
+  - school-observations
+  style: indirect
+- utterance: I can see you're doing your best to understand this. What has the school fed back to you?
+  topics:
+  - school-observations
+  style: empathy_then_question
+- utterance: um and the teacher what does she say about him in lessons
+  topics:
+  - school-observations
+  style: spoken
+- utterance: Written work at school?
+  topics:
+  - school-observations
+  style: brief
+- utterance: What exactly do they say he does?
+  topics:
+  - school-observations
+  style: follow_up
+  previous:
+    interviewer: It was the school who sent you to us, wasn't it?
+    character: He wants friends, but interrupts games and grabs a turn before others have finished; children
+      then avoid him, and he comes home upset.
+- utterance: His teacher probably finds him quite disruptive?
+  topics:
+  - school-observations
+  style: leading
+- utterance: How does his schoolwork compare to what he can do out loud?
+  topics:
+  - school-observations
+  style: open
+- utterance: Does he finish the work he is given?
+  topics:
+  - school-observations
+  style: closed
+- utterance: Does he call out in lessons?
+  topics:
+  - school-observations
+  style: colloquial
+- utterance: so is he getting up and um wandering round in class
+  topics:
+  - school-observations
+  style: spoken
+- utterance: Behaviour in lessons?
+  topics:
+  - school-observations
+  style: brief
+- utterance: How does he get on with other children?
+  topics:
+  - peer-relations
+  style: open
+- utterance: Does he have a close friend?
+  topics:
+  - peer-relations
+  style: closed
+- utterance: Why do you think the other kids keep drifting away from him?
+  topics:
+  - peer-relations
+  style: colloquial
+- utterance: Are there any difficulties with reciprocal peer play?
+  topics:
+  - peer-relations
+  style: clinical
+- utterance: I wanted to ask about what happens when he plays with other children
+  topics:
+  - peer-relations
+  style: indirect
+- utterance: That must be painful to watch. How does he cope when games go wrong?
+  topics:
+  - peer-relations
+  style: empathy_then_question
+- utterance: um so what happens when he plays with his friends
+  topics:
+  - peer-relations
+  style: spoken
+- utterance: And his friendships?
+  topics:
+  - peer-relations
+  style: brief
+- utterance: How does he feel afterwards?
+  topics:
+  - peer-relations
+  style: follow_up
+  previous:
+    interviewer: You said he keeps losing friends, and I wanted to understand why.
+    character: Since nursery age he has needed reminders for each step of getting dressed; most mornings
+      he wanders off halfway and mislays his shoes.
+- utterance: He's probably not interested in other children, is he?
+  topics:
+  - peer-relations
+  style: leading
+- utterance: Tell me about a recent game he joined in with.
+  topics:
+  - peer-relations
+  style: open
+- utterance: Does he wait his turn?
+  topics:
+  - peer-relations
+  style: closed
+- utterance: Is he the kid who can't wait for a go?
+  topics:
+  - peer-relations
+  style: colloquial
+- utterance: and in the playground does he er get along ok
+  topics:
+  - peer-relations
+  style: spoken
+- utterance: Taking turns with others?
+  topics:
+  - peer-relations
+  style: brief
+- utterance: Is there anything in the family that you think might be relevant?
+  topics:
+  - family-history
+  style: open
+- utterance: Does it run in the family at all?
+  topics:
+  - family-history
+  style: colloquial
+- utterance: Is there a family history of neurodevelopmental conditions?
+  topics:
+  - family-history
+  style: clinical
+- utterance: I was thinking about whether anybody else in the family has found things like this
+  topics:
+  - family-history
+  style: indirect
+- utterance: I appreciate you telling me so much. Has anyone else in the family had difficulties with
+    attention?
+  topics:
+  - family-history
+  style: empathy_then_question
+- utterance: um is there anyone else in the family who is a bit like him
+  topics:
+  - family-history
+  style: spoken
+- utterance: Any family history?
+  topics:
+  - family-history
+  style: brief
+- utterance: Was that something he was told as a child?
+  topics:
+  - family-history
+  style: follow_up
+  previous:
+    interviewer: He's very energetic, you say, so I'd like to ask about relatives.
+    character: He's been constantly on the go since about age three; last week he ran towards a road without
+      checking and I caught his hand before he reached it.
+- utterance: I suppose nobody else in the family has had anything like this?
+  topics:
+  - family-history
+  style: leading
+- utterance: What do you know about his relatives' health or learning?
+  topics:
+  - family-history
+  style: open
+- utterance: Has anyone in the family been diagnosed with autism?
+  topics:
+  - family-history
+  style: closed
+- utterance: Are any of his relatives like him?
+  topics:
+  - family-history
+  style: colloquial
+- utterance: so his dad, um, did he have problems like that
+  topics:
+  - family-history
+  style: spoken
+- utterance: Anyone else affected in the family?
+  topics:
+  - family-history
+  style: brief
+- utterance: How has his general health been?
+  topics:
+  - health-and-senses
+  style: open
+- utterance: Has his hearing been checked?
+  topics:
+  - health-and-senses
+  style: closed
+- utterance: Can he see and hear properly?
+  topics:
+  - health-and-senses
+  style: colloquial
+- utterance: Has he had audiology and optometry assessments?
+  topics:
+  - health-and-senses
+  style: clinical
+- utterance: I'd like to know if he has any medical conditions
+  topics:
+  - health-and-senses
+  style: indirect
+- utterance: You've clearly kept on top of his appointments. Does he take any regular medicine?
+  topics:
+  - health-and-senses
+  style: empathy_then_question
+- utterance: um has anyone looked at his ears and eyes
+  topics:
+  - health-and-senses
+  style: spoken
+- utterance: Any long-term illness?
+  topics:
+  - health-and-senses
+  style: brief
+- utterance: Has anyone checked his eyes too?
+  topics:
+  - health-and-senses
+  style: follow_up
+  previous:
+    interviewer: He seems not to listen to instructions at home.
+    character: Since nursery age he has needed reminders for each step of getting dressed; most mornings
+      he wanders off halfway and mislays his shoes.
+- utterance: I'd assume he's physically healthy otherwise?
+  topics:
+  - health-and-senses
+  style: leading
+- utterance: Tell me about his medical history.
+  topics:
+  - health-and-senses
+  style: open
+- utterance: Is he on any tablets or inhalers?
+  topics:
+  - health-and-senses
+  style: closed
+- utterance: Has he had any health problems we should know about?
+  topics:
+  - health-and-senses
+  style: colloquial
+- utterance: so er does he wear glasses or have hearing trouble
+  topics:
+  - health-and-senses
+  style: spoken
+- utterance: His sight and hearing?
+  topics:
+  - health-and-senses
+  style: brief
+- utterance: How does he sleep?
+  topics:
+  - sleep
+  style: open
+- utterance: Does he sleep through the night?
+  topics:
+  - sleep
+  style: closed
+- utterance: Does he have trouble dropping off?
+  topics:
+  - sleep
+  style: colloquial
+- utterance: What are his sleep duration and sleep quality like?
+  topics:
+  - sleep
+  style: clinical
+- utterance: I wondered what bedtimes are like in your house
+  topics:
+  - sleep
+  style: indirect
+- utterance: Mornings must be hard enough already. What time does he go to bed?
+  topics:
+  - sleep
+  style: empathy_then_question
+- utterance: um so what time does he go to bed and get up
+  topics:
+  - sleep
+  style: spoken
+- utterance: Does he snore?
+  topics:
+  - sleep
+  style: brief
+- utterance: And what time does he wake in the morning?
+  topics:
+  - sleep
+  style: follow_up
+  previous:
+    interviewer: You mentioned the mornings are a struggle with the shoes.
+    character: Since nursery age he has needed reminders for each step of getting dressed; most mornings
+      he wanders off halfway and mislays his shoes.
+- utterance: I imagine he's tired out because he sleeps badly?
+  topics:
+  - sleep
+  style: leading
+- utterance: Talk me through a typical night for him.
+  topics:
+  - sleep
+  style: open
+- utterance: Is he often awake in the night?
+  topics:
+  - sleep
+  style: closed
+- utterance: Is he a good sleeper?
+  topics:
+  - sleep
+  style: colloquial
+- utterance: and does he, like, snore or wake up a lot
+  topics:
+  - sleep
+  style: spoken
+- utterance: Bedtime and waking time?
+  topics:
+  - sleep
+  style: brief
+- utterance: Have there been any big changes in his life recently?
+  topics:
+  - stress-and-regression
+  style: open
+- utterance: Has he lost any skills he used to have?
+  topics:
+  - stress-and-regression
+  style: closed
+- utterance: Anything upsetting happened at home lately?
+  topics:
+  - stress-and-regression
+  style: colloquial
+- utterance: Have there been any recent psychosocial stressors or developmental regression?
+  topics:
+  - stress-and-regression
+  style: clinical
+- utterance: I wondered if anything has been frightening him
+  topics:
+  - stress-and-regression
+  style: indirect
+- utterance: I'm sorry to ask something so sensitive. Is anyone hurting or frightening him?
+  topics:
+  - stress-and-regression
+  style: empathy_then_question
+- utterance: um has anything changed lately, like a house move or someone leaving
+  topics:
+  - stress-and-regression
+  style: spoken
+- utterance: Any losses or upheaval?
+  topics:
+  - stress-and-regression
+  style: brief
+- utterance: Has he gone backwards in anything he could do before?
+  topics:
+  - stress-and-regression
+  style: follow_up
+  previous:
+    interviewer: His sleep sounds settled, thank you.
+    character: He sleeps from about eight thirty until seven most nights, without snoring or long periods
+      awake.
+- utterance: Things have been stable at home recently, haven't they?
+  topics:
+  - stress-and-regression
+  style: leading
+- utterance: What has been going on in the family in the last year?
+  topics:
+  - stress-and-regression
+  style: open
+- utterance: Is he afraid of anyone, as far as you know?
+  topics:
+  - stress-and-regression
+  style: closed
+- utterance: Has he gone backwards at all, like wetting or talking less?
+  topics:
+  - stress-and-regression
+  style: colloquial
+- utterance: so no big upsets, nobody's been unkind to him that you know of
+  topics:
+  - stress-and-regression
+  style: spoken
+- utterance: Any recent separations?
+  topics:
+  - stress-and-regression
+  style: brief
+- utterance: Are you worried about being blamed?
+  topics:
+  - parent-concern
+  style: closed
+- utterance: Do you ever feel people judge you over how he behaves?
+  topics:
+  - parent-concern
+  style: colloquial
+- utterance: What emotional impact has this had on you as a parent?
+  topics:
+  - parent-concern
+  style: clinical
+- utterance: I wondered what this has been like for you
+  topics:
+  - parent-concern
+  style: indirect
+- utterance: It sounds as though you have been carrying this alone. Is it hard to talk to others about
+    it?
+  topics:
+  - parent-concern
+  style: empathy_then_question
+- utterance: um do you feel like people think it's down to you
+  topics:
+  - parent-concern
+  style: spoken
+- utterance: And how are you coping?
+  topics:
+  - parent-concern
+  style: brief
+- utterance: Is that something you've found difficult to say to other parents?
+  topics:
+  - parent-concern
+  style: follow_up
+  previous:
+    interviewer: You said you want someone to understand him outside the classroom.
+    character: Since nursery age he has needed reminders for each step of getting dressed; most mornings
+      he wanders off halfway and mislays his shoes.
+- utterance: You're probably feeling a bit judged by other people?
+  topics:
+  - parent-concern
+  style: leading
+- utterance: What worries you most about the reactions of other people?
+  topics:
+  - parent-concern
+  style: open
+- utterance: Have you talked to other parents about his difficulties?
+  topics:
+  - parent-concern
+  style: closed
+- utterance: Do you feel on your own with this?
+  topics:
+  - parent-concern
+  style: colloquial
+- utterance: so um what's hardest about telling people about it
+  topics:
+  - parent-concern
+  style: spoken
+- utterance: How does it feel for you?
+  topics:
+  - parent-concern
+  style: brief
+- utterance: Can you tell me about the pregnancy and then the delivery?
+  topics:
+  - pregnancy
+  - birth
+  style: stacked
+- utterance: When did he first walk, and when did he start talking?
+  topics:
+  - motor-milestones
+  - language
+  style: stacked
+- utterance: How is he in the classroom, and how does he get along with the other children?
+  topics:
+  - school-observations
+  - peer-relations
+  style: stacked
+- utterance: How does he sleep, and has his hearing been checked?
+  topics:
+  - sleep
+  - health-and-senses
+  style: stacked
+- utterance: Hello Farah, thank you for coming in today.
+  topics: []
+  style: greeting
+- utterance: Good morning, Farah. Please take a seat.
+  topics: []
+  style: greeting
+- utterance: Hello Farah, I'm one of the doctors in the clinic and I'll be taking some history about Idris.
+  topics: []
+  style: introduction
+- utterance: Hi Farah, my name's Sam and I work in the child development team.
+  topics: []
+  style: introduction
+- utterance: Is it all right if we talk for a while about Idris?
+  topics: []
+  style: greeting
+- utterance: What would you like to start with, Farah?
+  topics: []
+  style: greeting
+- utterance: Before we start, do you have any questions for me?
+  topics: []
+  style: greeting
+- utterance: Is it all right if I make a few notes as we go?
+  topics: []
+  style: greeting
+- utterance: I'd like to move on to something different now.
+  topics: []
+  style: transition
+- utterance: Shall we turn to his time at school?
+  topics: []
+  style: transition
+- utterance: If it's all right, I'd like to go back to when he was a baby.
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Farah.
+  topics: []
+  style: closing
+- utterance: Thank you so much for talking to me today.
+  topics: []
+  style: closing
+- utterance: We'll need to stop in a minute, so is there anything you want to add?
+  topics: []
+  style: closing
+- utterance: It sounds like you really care about Idris and want the best for him.
+  topics: []
+  style: empathy
+- utterance: That sounds a very worrying time for you both.
+  topics: []
+  style: empathy
+- utterance: I can hear how hard you have been trying to work out what's going on.
+  topics: []
+  style: empathy
+- utterance: So he was born at full term, he's had no big health problems, and school are worried about
+    his attention.
+  topics: []
+  style: summary
+- utterance: 'Let me check I have this right: he''s been restless since a young age and it is affecting
+    him in several places.'
+  topics: []
+  style: summary
+- utterance: I'd like to build a picture of his development from the beginning, which is why I'm asking
+    so much about when he was small.
+  topics: []
+  style: explanation
+- utterance: There isn't a single test for this, so I look at how he is at home, at school and with other
+    children.
+  topics: []
+  style: explanation
+- utterance: Does that make sense so far?
+  topics: []
+  style: check_understanding
+- utterance: Is it clear why I'm asking about his early years?
+  topics: []
+  style: check_understanding
+- utterance: Has he ever been seen by an educational psychologist?
+  topics: []
+  style: off_case
+- utterance: How is his reading and writing coming along?
+  topics: []
+  style: off_case
+- utterance: What are his eating habits like?
+  topics: []
+  style: off_case
+- utterance: Does he get on well with his brothers or sisters?
+  topics: []
+  style: off_case
+- utterance: What does he do after school and at weekends?
+  topics: []
+  style: off_case
+- utterance: Are there any problems with his toilet training?
+  topics: []
+  style: off_case
+- utterance: Does he have trouble with loud noises or the feel of clothing?
+  topics: []
+  style: off_case
+- utterance: Does he have any friends coming round to play at your house?
+  topics: []
+  style: near_miss
+- utterance: Did you work right through the pregnancy?
+  topics: []
+  style: near_miss
+- utterance: Does he have trouble getting to sleep because of worries at school?
+  topics: []
+  style: near_miss
+- utterance: Has he ever hurt another child while playing?
+  topics: []
+  style: near_miss
+- utterance: Has he ever had a hospital stay or an operation?
+  topics: []
+  style: off_case

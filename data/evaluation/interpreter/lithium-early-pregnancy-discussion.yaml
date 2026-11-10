@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: lithium-early-pregnancy-discussion
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hello Aisha, I'm one of the psychiatry doctors. Thanks for coming in today."
+    expected: []
+    rapport: false
+  - utterance: "How far along are you, do you know?"
+    expected: [pregnancy]
+    rapport: false
+  - utterance: "Can you tell me exactly which medication you're on and what dose?"
+    expected: [medicine]
+    rapport: false
+  - utterance: "And have you still been taking it since you found out?"
+    expected: [medicine]
+    rapport: false
+    previous:
+      interviewer: "How many weeks are you now?"
+      character: "Eight weeks by my dates."
+  - utterance: "Tell me about times in the past when you've been unwell with your bipolar."
+    expected: [episodes]
+    rapport: false
+  - utterance: "Have you ever come off lithium before, and what happened?"
+    expected: [withdrawal-history]
+    rapport: false
+  - utterance: "Finding this out while you're on lithium must feel like a lot to take in all at once."
+    expected: []
+    rapport: true
+  - utterance: "What's worrying you most about the baby right now?"
+    expected: [baby-fear]
+    rapport: false
+  - utterance: "how's your mood been lately, any highs or lows"
+    expected: [current-state]
+    rapport: false
+  - utterance: "Have you had any thoughts of harming yourself or anyone else?"
+    expected: [risk]
+    rapport: false
+  - utterance: "Have you thought about feeding and how things might go once the baby's here?"
+    expected: [postnatal]
+    rapport: false
+  - utterance: "When did you last have your lithium level checked, and what was it?"
+    expected: [monitoring]
+    rapport: false
+  - utterance: "What matters most to you in how we approach this?"
+    expected: [preferences]
+    rapport: false
+  - utterance: "Have you been seen by the perinatal mental health service at all?"
+    expected: [referral]
+    rapport: false
+  - utterance: "And what about blood tests for your kidneys and thyroid?"
+    expected: [monitoring]
+    rapport: false
+    previous:
+      interviewer: "Have you got any recent lithium levels?"
+      character: "It was 0.7 a few weeks ago."
+  - utterance: "Does anyone in your family have bipolar disorder?"
+    expected: []
+    rapport: false
+  - utterance: "It's completely understandable to feel anxious about this, you did the right thing coming in."
+    expected: []
+    rapport: true
+  - utterance: "So we've covered your history and how you are now, and next I'd like to talk through the options."
+    expected: []
+    rapport: false

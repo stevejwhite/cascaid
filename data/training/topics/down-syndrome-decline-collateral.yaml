@@ -1,0 +1,802 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: down-syndrome-decline-collateral
+case_version: 0.1.0
+status: draft
+items:
+- utterance: What was she like a year or two ago?
+  topics:
+  - baseline
+  style: open
+- utterance: Tell me about what she used to be able to do.
+  topics:
+  - baseline
+  style: open
+- utterance: Was she independent in the past?
+  topics:
+  - baseline
+  style: closed
+- utterance: Have you known her a long time?
+  topics:
+  - baseline
+  style: closed
+- utterance: What could she do for herself before all this?
+  topics:
+  - baseline
+  style: colloquial
+- utterance: How long have you worked with her?
+  topics:
+  - baseline
+  style: colloquial
+- utterance: Could you describe her usual level of ability before the change?
+  topics:
+  - baseline
+  style: clinical
+- utterance: I wondered how she was before things started to change
+  topics:
+  - baseline
+  style: indirect
+- utterance: I'd like to hear how long you've known her
+  topics:
+  - baseline
+  style: indirect
+- utterance: Thanks for coming, Elaine. What was she managing on her own before?
+  topics:
+  - baseline
+  style: empathy_then_question
+- utterance: I know you're worried. How independent was she a year ago?
+  topics:
+  - baseline
+  style: empathy_then_question
+- utterance: um so before this, what could she do herself
+  topics:
+  - baseline
+  style: spoken
+- utterance: so how long have you, have you known her for
+  topics:
+  - baseline
+  style: spoken
+- utterance: and her usual abilities?
+  topics:
+  - baseline
+  style: brief
+- utterance: She was probably quite capable before, wasn't she?
+  topics:
+  - baseline
+  style: leading
+- utterance: How have the changes come on over time?
+  topics:
+  - course
+  style: open
+- utterance: When did you first notice a difference?
+  topics:
+  - course
+  style: open
+- utterance: Was it sudden or gradual?
+  topics:
+  - course
+  style: closed
+- utterance: Does she get more confused at some times of day than others?
+  topics:
+  - course
+  style: closed
+- utterance: Did it all come on at once or creep up?
+  topics:
+  - course
+  style: colloquial
+- utterance: Has she had any days where she's suddenly much worse?
+  topics:
+  - course
+  style: colloquial
+- utterance: Could you describe the onset and course, and any fluctuation?
+  topics:
+  - course
+  style: clinical
+- utterance: I wondered how quickly all this developed
+  topics:
+  - course
+  style: indirect
+- utterance: I'd like to understand whether it varies from hour to hour
+  topics:
+  - course
+  style: indirect
+- utterance: That's really useful. How long has this been going on?
+  topics:
+  - course
+  style: empathy_then_question
+- utterance: It must be worrying. Has there been a sudden change at any point?
+  topics:
+  - course
+  style: empathy_then_question
+- utterance: um so when did it start, was it quick or
+  topics:
+  - course
+  style: spoken
+- utterance: so does she go up and down in a day
+  topics:
+  - course
+  style: spoken
+- utterance: and how long has it been?
+  topics:
+  - course
+  style: brief
+- utterance: How long has she been like that?
+  topics:
+  - course
+  style: follow_up
+  previous:
+    interviewer: What is she like now with daily tasks?
+    character: She needs prompts to put clothes on in order and cannot make tea safely without someone
+      alongside.
+- utterance: Tell me about any forgetting you've seen.
+  topics:
+  - memory
+  style: open
+- utterance: Does she ask the same thing again and again?
+  topics:
+  - memory
+  style: closed
+- utterance: Does she forget things she's only just done?
+  topics:
+  - memory
+  style: colloquial
+- utterance: Does she know who everyone is, still?
+  topics:
+  - memory
+  style: colloquial
+- utterance: Is there any difficulty with recent memory or recognising people?
+  topics:
+  - memory
+  style: clinical
+- utterance: I wondered whether she repeats herself a lot
+  topics:
+  - memory
+  style: indirect
+- utterance: I'd like to hear if she can recall what happened earlier in the day
+  topics:
+  - memory
+  style: indirect
+- utterance: I can hear how much you care. Does she repeat questions?
+  topics:
+  - memory
+  style: empathy_then_question
+- utterance: Thanks for explaining that. Does she recognise familiar faces?
+  topics:
+  - memory
+  style: empathy_then_question
+- utterance: um is she forgetting things, like recent stuff
+  topics:
+  - memory
+  style: spoken
+- utterance: so does she still know her carers or
+  topics:
+  - memory
+  style: spoken
+- utterance: and her memory?
+  topics:
+  - memory
+  style: brief
+- utterance: And what about her memory in that time?
+  topics:
+  - memory
+  style: follow_up
+  previous:
+    interviewer: How long has this been happening?
+    character: The change has been gradual over nine months. There haven't been sudden episodes of confusion
+      or marked changes within a day.
+- utterance: What does she need help with now?
+  topics:
+  - skills
+  style: open
+- utterance: Tell me how she copes with everyday tasks these days.
+  topics:
+  - skills
+  style: open
+- utterance: Can she dress herself now?
+  topics:
+  - skills
+  style: closed
+- utterance: Is she safe to make a hot drink on her own?
+  topics:
+  - skills
+  style: closed
+- utterance: What can't she do for herself any more?
+  topics:
+  - skills
+  style: colloquial
+- utterance: Does she need someone standing over her for things she used to do?
+  topics:
+  - skills
+  style: colloquial
+- utterance: Which daily living activities now need prompting or supervision?
+  topics:
+  - skills
+  style: clinical
+- utterance: I wondered what she needs prompting with
+  topics:
+  - skills
+  style: indirect
+- utterance: I'd like to know which jobs she's lost the knack of
+  topics:
+  - skills
+  style: indirect
+- utterance: That sounds hard for you all. Which tasks does she struggle with now?
+  topics:
+  - skills
+  style: empathy_then_question
+- utterance: Thank you, Elaine. What help does she need with personal care?
+  topics:
+  - skills
+  style: empathy_then_question
+- utterance: um what is it she can't do now, like daily things
+  topics:
+  - skills
+  style: spoken
+- utterance: so does she need prompting with, with stuff
+  topics:
+  - skills
+  style: spoken
+- utterance: and what help she needs now?
+  topics:
+  - skills
+  style: brief
+- utterance: And how does that compare with now?
+  topics:
+  - skills
+  style: follow_up
+  previous:
+    interviewer: What was she like before?
+    character: Until a year ago she dressed herself, made tea and followed a familiar bus route with another
+      resident. I've known her for eight years.
+- utterance: What is she like in herself these days?
+  topics:
+  - mood
+  style: open
+- utterance: Does she still enjoy the things she used to like?
+  topics:
+  - mood
+  style: closed
+- utterance: Has she seemed tearful?
+  topics:
+  - mood
+  style: closed
+- utterance: Is she keeping herself to herself more?
+  topics:
+  - mood
+  style: colloquial
+- utterance: Does she seem down to you?
+  topics:
+  - mood
+  style: colloquial
+- utterance: Have you noticed low mood, withdrawal or loss of interest?
+  topics:
+  - mood
+  style: clinical
+- utterance: I wondered how she's been in her spirits
+  topics:
+  - mood
+  style: indirect
+- utterance: I'd like to hear if she still joins in with activities
+  topics:
+  - mood
+  style: indirect
+- utterance: I can see you're concerned. Has she seemed sad at all?
+  topics:
+  - mood
+  style: empathy_then_question
+- utterance: That's useful, thanks. Is she taking part in group activities?
+  topics:
+  - mood
+  style: empathy_then_question
+- utterance: um is she, like, low in mood, does she cry
+  topics:
+  - mood
+  style: spoken
+- utterance: so does she still do the things she liked, activities
+  topics:
+  - mood
+  style: spoken
+- utterance: and her mood?
+  topics:
+  - mood
+  style: brief
+- utterance: I imagine she's been quite low, has she?
+  topics:
+  - mood
+  style: leading
+- utterance: Tell me about any recent health checks.
+  topics:
+  - health
+  style: open
+- utterance: Has she had her thyroid checked recently?
+  topics:
+  - health
+  style: closed
+- utterance: Does she wear a hearing aid, and does it work?
+  topics:
+  - health
+  style: closed
+- utterance: When did she last have bloods done?
+  topics:
+  - health
+  style: colloquial
+- utterance: Can she hear you properly?
+  topics:
+  - health
+  style: colloquial
+- utterance: Are her thyroid function and hearing tests up to date?
+  topics:
+  - health
+  style: clinical
+- utterance: I wondered whether her hearing and blood tests have been looked at
+  topics:
+  - health
+  style: indirect
+- utterance: I'd like to know about any physical causes we might be missing
+  topics:
+  - health
+  style: indirect
+- utterance: I appreciate the records, Elaine. Has anyone checked her ears lately?
+  topics:
+  - health
+  style: empathy_then_question
+- utterance: That's good to know. Are her thyroid results available?
+  topics:
+  - health
+  style: empathy_then_question
+- utterance: um so health wise, bloods, hearing, anything
+  topics:
+  - health
+  style: spoken
+- utterance: so has she had, you know, her thyroid tested
+  topics:
+  - health
+  style: spoken
+- utterance: and any recent tests?
+  topics:
+  - health
+  style: brief
+- utterance: When was that last checked with a blood test?
+  topics:
+  - health
+  style: follow_up
+  previous:
+    interviewer: What medicines is she on?
+    character: Apart from her established thyroid medicine, there are no regular prescriptions and no
+      recent medication changes.
+- utterance: What has changed in her life recently?
+  topics:
+  - events
+  style: open
+- utterance: Tell me about any losses she's had.
+  topics:
+  - events
+  style: open
+- utterance: Has anyone close to her moved away?
+  topics:
+  - events
+  style: closed
+- utterance: Have staff changed around her?
+  topics:
+  - events
+  style: closed
+- utterance: Has anything upsetting happened to her?
+  topics:
+  - events
+  style: colloquial
+- utterance: Did she lose anyone she was close to?
+  topics:
+  - events
+  style: colloquial
+- utterance: Have there been any bereavements, separations or staffing changes?
+  topics:
+  - events
+  style: clinical
+- utterance: I wondered if there'd been any big changes around her
+  topics:
+  - events
+  style: indirect
+- utterance: I'd like to hear whether familiar people have left
+  topics:
+  - events
+  style: indirect
+- utterance: I'm sorry to ask. Has she lost anybody important to her?
+  topics:
+  - events
+  style: empathy_then_question
+- utterance: That helps. Were there changes among the people who support her?
+  topics:
+  - events
+  style: empathy_then_question
+- utterance: um did anything happen to her, like a loss
+  topics:
+  - events
+  style: spoken
+- utterance: so the staff, did any of them leave or
+  topics:
+  - events
+  style: spoken
+- utterance: and recent life events?
+  topics:
+  - events
+  style: brief
+- utterance: Did anything happen around the time that began?
+  topics:
+  - events
+  style: follow_up
+  previous:
+    interviewer: How has her mood been?
+    character: She spends more time in her room and stopped joining music sessions. She sometimes looks
+      tearful but hasn't explained why.
+- utterance: What happens when she goes out?
+  topics:
+  - safety
+  style: open
+- utterance: Tell me about any times she's got into difficulty outside.
+  topics:
+  - safety
+  style: open
+- utterance: Has she ever got lost?
+  topics:
+  - safety
+  style: closed
+- utterance: Does someone go with her when she goes out?
+  topics:
+  - safety
+  style: closed
+- utterance: Has she wandered off at all?
+  topics:
+  - safety
+  style: colloquial
+- utterance: Is she safe on her own outside?
+  topics:
+  - safety
+  style: colloquial
+- utterance: Any episodes of disorientation outdoors, and what supervision is in place?
+  topics:
+  - safety
+  style: clinical
+- utterance: I wondered whether she's ever been unable to find her way
+  topics:
+  - safety
+  style: indirect
+- utterance: I'd like to know how she's kept safe when she leaves the home
+  topics:
+  - safety
+  style: indirect
+- utterance: That sounds worrying. Has she gone missing at any point?
+  topics:
+  - safety
+  style: empathy_then_question
+- utterance: Thanks for being so open. Does she go out unaccompanied?
+  topics:
+  - safety
+  style: empathy_then_question
+- utterance: um has she ever got lost, like outside
+  topics:
+  - safety
+  style: spoken
+- utterance: so when she goes out is somebody with her
+  topics:
+  - safety
+  style: spoken
+- utterance: and her safety outdoors?
+  topics:
+  - safety
+  style: brief
+- utterance: Is she safe to go out alone?
+  topics:
+  - safety
+  style: follow_up
+  previous:
+    interviewer: What can she still do on her own?
+    character: She needs prompts to put clothes on in order and cannot make tea safely without someone
+      alongside.
+- utterance: What medicines is she on?
+  topics:
+  - medicines
+  style: open
+- utterance: Tell me about her prescriptions.
+  topics:
+  - medicines
+  style: open
+- utterance: Has anything been started recently?
+  topics:
+  - medicines
+  style: closed
+- utterance: Have any doses been changed lately?
+  topics:
+  - medicines
+  style: closed
+- utterance: What tablets does she take?
+  topics:
+  - medicines
+  style: colloquial
+- utterance: Has her medication been tweaked at all?
+  topics:
+  - medicines
+  style: colloquial
+- utterance: Could you list her current medication and any recent changes?
+  topics:
+  - medicines
+  style: clinical
+- utterance: I wondered what she takes regularly
+  topics:
+  - medicines
+  style: indirect
+- utterance: I'd like to check for any new drugs before this began
+  topics:
+  - medicines
+  style: indirect
+- utterance: Thanks for bringing the records. What is she prescribed?
+  topics:
+  - medicines
+  style: empathy_then_question
+- utterance: I know that's a lot to ask. Any new medicines this year?
+  topics:
+  - medicines
+  style: empathy_then_question
+- utterance: um what's she on, medication wise
+  topics:
+  - medicines
+  style: spoken
+- utterance: so nothing new has been started, has it, or
+  topics:
+  - medicines
+  style: spoken
+- utterance: and her medication?
+  topics:
+  - medicines
+  style: brief
+- utterance: What is she taking at the moment?
+  topics:
+  - medicines
+  style: follow_up
+  previous:
+    interviewer: Has her health been checked?
+    character: She takes thyroid replacement, but I can't find a recent blood-test result. Her hearing
+      aid is unreliable; no one has checked her ears recently.
+- utterance: What did the team think was happening at first?
+  topics:
+  - uncertainty
+  style: open
+- utterance: How did you make sense of it in the beginning?
+  topics:
+  - uncertainty
+  style: open
+- utterance: Did you wait a while before asking for help?
+  topics:
+  - uncertainty
+  style: closed
+- utterance: Do you wish you'd sought advice sooner?
+  topics:
+  - uncertainty
+  style: closed
+- utterance: Did you think it might be something else at first?
+  topics:
+  - uncertainty
+  style: colloquial
+- utterance: Are you worried you left it too long?
+  topics:
+  - uncertainty
+  style: colloquial
+- utterance: Was there any delay in seeking assessment, and what was the first explanation?
+  topics:
+  - uncertainty
+  style: clinical
+- utterance: I wondered what you first thought was going on
+  topics:
+  - uncertainty
+  style: indirect
+- utterance: I'd like to talk about whether early signs may have been missed
+  topics:
+  - uncertainty
+  style: indirect
+- utterance: You've clearly cared for her. Do you feel it took too long to ask for help?
+  topics:
+  - uncertainty
+  style: empathy_then_question
+- utterance: I'm not here to judge. What did people assume at the start?
+  topics:
+  - uncertainty
+  style: empathy_then_question
+- utterance: um at first what did you all think it was
+  topics:
+  - uncertainty
+  style: spoken
+- utterance: so did you hold off asking for help, or
+  topics:
+  - uncertainty
+  style: spoken
+- utterance: and the early days?
+  topics:
+  - uncertainty
+  style: brief
+- utterance: What did you think was happening back then?
+  topics:
+  - uncertainty
+  style: follow_up
+  previous:
+    interviewer: How long has this been going on?
+    character: The change has been gradual over nine months. There haven't been sudden episodes of confusion
+      or marked changes within a day.
+- utterance: How is the team coping with her care?
+  topics:
+  - strain
+  style: open
+- utterance: What support do your staff need?
+  topics:
+  - strain
+  style: open
+- utterance: Do the staff know how best to help her?
+  topics:
+  - strain
+  style: closed
+- utterance: Is day-to-day care getting harder?
+  topics:
+  - strain
+  style: closed
+- utterance: Are your staff stuck on how to deal with it?
+  topics:
+  - strain
+  style: colloquial
+- utterance: What's the hardest part of looking after her now?
+  topics:
+  - strain
+  style: colloquial
+- utterance: What guidance or training does the care team require?
+  topics:
+  - strain
+  style: clinical
+- utterance: I wondered how the staff are managing
+  topics:
+  - strain
+  style: indirect
+- utterance: I'd like to hear what feels difficult in day-to-day care
+  topics:
+  - strain
+  style: indirect
+- utterance: It must be a lot for the team. Do they need advice from us?
+  topics:
+  - strain
+  style: empathy_then_question
+- utterance: I appreciate your honesty. How is the team finding it?
+  topics:
+  - strain
+  style: empathy_then_question
+- utterance: um what do staff need from us, like support
+  topics:
+  - strain
+  style: spoken
+- utterance: so is it hard for them day to day
+  topics:
+  - strain
+  style: spoken
+- utterance: and support for the team?
+  topics:
+  - strain
+  style: brief
+- utterance: Do staff know how much to help?
+  topics:
+  - strain
+  style: follow_up
+  previous:
+    interviewer: What tasks does she need help with?
+    character: She needs prompts to put clothes on in order and cannot make tea safely without someone
+      alongside.
+- utterance: What could she do before, and what can't she do now?
+  topics:
+  - baseline
+  - skills
+  style: stacked
+- utterance: How is her memory, and has her mood changed?
+  topics:
+  - memory
+  - mood
+  style: stacked
+- utterance: Has she had blood tests, and what is she taking?
+  topics:
+  - health
+  - medicines
+  style: stacked
+- utterance: Has anything upsetting happened, and how has she been in herself?
+  topics:
+  - events
+  - mood
+  style: stacked
+- utterance: Good morning Elaine, thanks for coming in.
+  topics: []
+  style: greeting
+- utterance: Is it all right if we talk about her for a while?
+  topics: []
+  style: introduction
+- utterance: Where would you like to begin, Elaine?
+  topics: []
+  style: greeting
+- utterance: Before we start, is there anything you want to ask me?
+  topics: []
+  style: greeting
+- utterance: Thanks for making the time, Elaine. Shall we make a start?
+  topics: []
+  style: greeting
+- utterance: I'd like to move on to something different now.
+  topics: []
+  style: transition
+- utterance: Okay, that's helpful. Can we look at another area?
+  topics: []
+  style: transition
+- utterance: Right, let's change direction a little.
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Elaine.
+  topics: []
+  style: closing
+- utterance: Thank you for all this information, it's been really useful.
+  topics: []
+  style: closing
+- utterance: I'll be writing to you with what we decide next, Elaine.
+  topics: []
+  style: closing
+- utterance: It must be hard watching her need more help than before.
+  topics: []
+  style: empathy
+- utterance: You clearly know her very well.
+  topics: []
+  style: empathy
+- utterance: That sounds like a lot for you and the team.
+  topics: []
+  style: empathy
+- utterance: I can see how worried you are.
+  topics: []
+  style: empathy
+- utterance: So, in short, she's needing more help than she used to.
+  topics: []
+  style: summary
+- utterance: Let me pull together what you've told me so far.
+  topics: []
+  style: summary
+- utterance: So you've been looking after her for a long time and you've noticed changes.
+  topics: []
+  style: summary
+- utterance: 'I''ll explain why I''m asking about so many areas: several things can look like memory loss.'
+  topics: []
+  style: explanation
+- utterance: Down syndrome does raise the chance of dementia, but it is not the only explanation.
+  topics: []
+  style: explanation
+- utterance: After this I'll talk to her myself and see what she makes of it.
+  topics: []
+  style: explanation
+- utterance: Does that make sense?
+  topics: []
+  style: check_understanding
+- utterance: Have I got that right, Elaine?
+  topics: []
+  style: check_understanding
+- utterance: Is that a fair picture of what's happening?
+  topics: []
+  style: check_understanding
+- utterance: Has she ever had a seizure?
+  topics: []
+  style: off_case
+- utterance: How are her appetite and weight?
+  topics: []
+  style: off_case
+- utterance: Is she sleeping through the night?
+  topics: []
+  style: off_case
+- utterance: Does she get lost inside the building?
+  topics: []
+  style: near_miss
+- utterance: Which GP surgery looks after her?
+  topics: []
+  style: near_miss
+- utterance: Does she have any friends in the home now?
+  topics: []
+  style: near_miss
+- utterance: Has she ever been in hospital because of her mood?
+  topics: []
+  style: near_miss
+- utterance: Has she lived at the home since she was a young woman?
+  topics: []
+  style: near_miss

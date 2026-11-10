@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: rehabilitation-supported-housing-plan
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Kwame, what would having your own place let you do that's important to you?
+  expected:
+  - goal
+  rapport: false
+- utterance: Which household jobs can you manage independently, and where do reminders help?
+  expected:
+  - skills
+  rapport: false
+- utterance: How is your current medicine working for you, including taking it reliably and unwanted effects?
+  expected:
+  - medicine
+  rapport: false
+- utterance: What have you found out about the staffing and visiting support at the proposed housing?
+  expected:
+  - support
+  rapport: false
+- utterance: What help would make you feel ready to handle rent and a household budget?
+  expected:
+  - money
+  rapport: false
+- utterance: How would you like to spend the week once you've moved out of the ward?
+  expected:
+  - activity
+  rapport: false
+- utterance: What freedoms of living in your own place matter most to you?
+  expected:
+  - goal
+  rapport: false
+- utterance: What regular activity would you like to build into the week after moving?
+  expected:
+  - activity
+  rapport: false
+- utterance: what worries you about whether someone would pick up on those changes?
+  expected:
+  - fear
+  rapport: false
+  previous:
+    interviewer: What are your early warning signs?
+    character: Before I become unwell I stop sleeping and start thinking people are talking about me.
+- utterance: Have you ever had swallowing difficulties with your medication?
+  expected: []
+  rapport: false

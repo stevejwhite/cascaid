@@ -1,0 +1,542 @@
+# Training lines for the tone classifier. Drafted by GPT-6 (Codex) on
+# 2026-10-12. Not evaluation data.
+# Revised for Prompt D quality rules on 2026-10-13; reviewed by Steve J White on 2026-10-13.
+case_id: clozapine-explanation-relative
+case_version: 0.4.0
+status: reviewed
+items:
+- utterance: Which worries about clozapine would you like to discuss?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Does Daniel feel frightened about trying this medicine?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: um are needles something he finds difficult
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Have earlier tablets caused unpleasant side effects for him?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: What does he think about having blood tests?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Is there anything you fear might happen if he starts?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: so does he ever miss a dose of his tablets
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: How are you managing with the decisions about his treatment?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Are you worried about allowing yourself to hope it will help?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Could you describe any cannabis use you know about?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: er has the treatment he has had so far left you concerned
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: When he hears voices, are they still frequent?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Can you tell me how much he smokes, if he does?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Do you know whether he is willing to try the new option?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Would returning to usual activities be important to you for him?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: If you feel able to say, what worries you about this treatment?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Please may I ask whether he uses any recreational drugs?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: You need only tell me what you know, but does he forget doses?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Perhaps you could describe how he gets on with blood tests?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: With your permission, may I ask what you hope this could change?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: well only if youre comfortable answering what does he find frightening about it
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Hello Maria, welcome to the ward office.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: Good to meet you; thank you for coming to talk with us.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: hi there please take whichever chair suits you
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: I am the trainee asked to explain the proposed treatment.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: Today we have some time to go through clozapine together.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: Daniel has tried two other tablets and still hears voices most days.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: summary
+- utterance: The consultant has suggested clozapine, and you want to understand it.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: summary
+- utterance: We can take the discussion a section at a time.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: explanation
+- utterance: I will leave space for questions after each part.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: explanation
+- utterance: Was that account of what we are discussing clear?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: check_understanding
+- utterance: Does my recap match what you have told me about Daniel's treatment?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: check_understanding
+- utterance: Okay. Which bit first?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Mm, tell me more.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Yes, I follow you.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Right. Anything about the tablets?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: oh okay who mentioned that
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: got it and what else
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Thanks. When did he say that?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: I see. Carry on, Maria.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: This sounds like quite an ordeal.
+  empathy: 1
+  empathy_words: This sounds like quite an ordeal.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I'm sorry you've had this to face.
+  empathy: 1
+  empathy_words: I'm sorry you've had this to face.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: It sounds emotionally wearing.
+  empathy: 1
+  empathy_words: It sounds emotionally wearing.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: You're dealing with a lot.
+  empathy: 1
+  empathy_words: You're dealing with a lot.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I do feel for you here.
+  empathy: 1
+  empathy_words: I do feel for you here.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That must be upsetting to hear.
+  empathy: 1
+  empathy_words: That must be upsetting to hear.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: Your distress is understandable.
+  empathy: 1
+  empathy_words: Your distress is understandable.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: um this sounds really difficult to bear.
+  empathy: 1
+  empathy_words: um this sounds really difficult to bear.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I am sorry this feels difficult. Which part of the treatment concerns you?
+  empathy: 1
+  empathy_words: I am sorry this feels difficult.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: Those feelings are quite understandable. What do you hope will be different?
+  empathy: 1
+  empathy_words: Those feelings are quite understandable.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: It must be hard going. Does he remember his doses?
+  empathy: 1
+  empathy_words: It must be hard going.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: That sounds like a worrying experience. How does he react to having blood taken?
+  empathy: 1
+  empathy_words: That sounds like a worrying experience.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: This sounds hard on you. Are you managing all right with the decisions?
+  empathy: 1
+  empathy_words: This sounds hard on you.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: it sounds upsetting to deal with. has he had unwanted effects from other tablets
+  empathy: 1
+  empathy_words: it sounds upsetting to deal with.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: No wonder you have concerns after your friend described clozapine as dangerous.
+  empathy: 2
+  empathy_words: No wonder you have concerns after your friend described clozapine as dangerous.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: What have you heard about clozapine so far?
+    character: A friend told me clozapine is dangerous and that people on it need blood tests all the
+      time.
+- utterance: I can imagine why blood tests worry you after Daniel fainted.
+  empathy: 2
+  empathy_words: I can imagine why blood tests worry you after Daniel fainted.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: How does he react to having blood taken?
+    character: Daniel hates needles. He fainted at the GP once when they took blood.
+- utterance: Being sleepy all day as well as gaining weight must have been hard for Daniel.
+  empathy: 2
+  empathy_words: Being sleepy all day as well as gaining weight must have been hard for Daniel.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: How did he get on with the last tablet?
+    character: On his last tablet he put on a lot of weight and felt sleepy all day.
+- utterance: You remind him every morning, and it must be frustrating when doses still get missed.
+  empathy: 2
+  empathy_words: You remind him every morning, and it must be frustrating when doses still get missed.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: How does he manage his regular tablets?
+    character: I remind him to take his tablets every morning, but he does forget sometimes.
+- utterance: It makes sense to want to understand clozapine before Daniel starts taking it.
+  empathy: 2
+  empathy_words: It makes sense to want to understand clozapine before Daniel starts taking it.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: After two tablets have left him still hearing voices, I can imagine your disappointment.
+  empathy: 2
+  empathy_words: After two tablets have left him still hearing voices, I can imagine your disappointment.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: I appreciate how important it is to know what this new medicine will mean for your son.
+  empathy: 2
+  empathy_words: I appreciate how important it is to know what this new medicine will mean for your son.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: Wanting an explanation before he tries another medicine is completely understandable.
+  empathy: 2
+  empathy_words: Wanting an explanation before he tries another medicine is completely understandable.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: his fear of needles is understandable after fainting during a blood test.
+  empathy: 2
+  empathy_words: his fear of needles is understandable after fainting during a blood test.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: What has his experience of needles been?
+    character: Daniel hates needles. He fainted at the GP once when they took blood.
+- utterance: Hearing that warning from your friend must have left you uneasy about clozapine. What part
+    worries you most?
+  empathy: 2
+  empathy_words: Hearing that warning from your friend must have left you uneasy about clozapine.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: Has somebody told you anything about this treatment?
+    character: A friend told me clozapine is dangerous and that people on it need blood tests all the
+      time.
+- utterance: It is hard to see him sleepy all day on a tablet meant to help. How did that affect his day?
+  empathy: 2
+  empathy_words: It is hard to see him sleepy all day on a tablet meant to help.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: What unwanted effects did the earlier tablet cause?
+    character: On his last tablet he put on a lot of weight and felt sleepy all day.
+- utterance: Trying to help him remember every morning can be frustrating when he still forgets. What
+    is that like for you?
+  empathy: 2
+  empathy_words: Trying to help him remember every morning can be frustrating when he still forgets.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: Is he able to remember every dose himself?
+    character: I remind him to take his tablets every morning, but he does forget sometimes.
+- utterance: I hear that he wants relief from the voices but is frightened of the tests. How is he feeling
+    about that choice?
+  empathy: 2
+  empathy_words: I hear that he wants relief from the voices but is frightened of the tests.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: How does he see the proposed treatment?
+    character: Daniel says he'll try anything that stops the voices, but he's frightened of the blood
+      tests.
+- utterance: You want him back at college, yet hoping again feels risky for you. What makes it difficult
+    to let yourself hope?
+  empathy: 2
+  empathy_words: You want him back at college, yet hoping again feels risky for you.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: How do you feel about what treatment might achieve?
+    character: I just want him well enough to go back to college. I'm scared of getting my hopes up again.
+- utterance: You need to trust the consultant rather than go over every possible worry.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You need to trust the consultant rather than go over every possible worry.
+  style: confront_statement
+- utterance: The team has already thought this through, so I would not question the choice.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: The team has already thought this through, so I would not question the choice.
+  style: confront_statement
+- utterance: I think you are focusing too much on what could go wrong.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: I think you are focusing too much on what could go wrong.
+  style: confront_statement
+- utterance: We should be talking about helping Daniel, rather than dwelling on your concerns.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: We should be talking about helping Daniel, rather than dwelling on your concerns.
+  style: confront_statement
+- utterance: Why keep looking for problems when we are offering another treatment?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Why keep looking for problems when we are offering another treatment?
+  style: confront_why
+- utterance: Why not leave the decision to people who prescribe it every day?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Why not leave the decision to people who prescribe it every day?
+  style: confront_why
+- utterance: You do want him to get better, don't you?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You do want him to get better, don't you?
+  style: confront_tag
+- utterance: The consultant's recommendation should be enough reassurance, shouldn't it?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: The consultant's recommendation should be enough reassurance, shouldn't it?
+  style: confront_tag
+- utterance: Surely you would not hold up his treatment over a few worries?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Surely you would not hold up his treatment over a few worries?
+  style: confront_rhetorical
+- utterance: Clozapine is nothing to worry about once the team is keeping an eye on him.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Clozapine is nothing to worry about once the team is keeping an eye on him.
+  style: dismissive
+- utterance: well every tablet has side effects so theres no point getting stuck on them
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: well every tablet has side effects so theres no point getting stuck on them
+  style: dismissive
+- utterance: That is just anxiety about a new medicine; it will pass once he starts.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: That is just anxiety about a new medicine; it will pass once he starts.
+  style: dismissive
+- utterance: 'Hold on, let me finish before you jump in again.'
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: 'Hold on, let me finish before you jump in again.'
+  style: impatient
+- utterance: 'We''re going round in circles, so let''s move on.'
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: 'We''re going round in circles, so let''s move on.'
+  style: impatient
+- utterance: 'Just listen for a minute instead of arguing.'
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: 'Just listen for a minute instead of arguing.'
+  style: impatient

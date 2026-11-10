@@ -1,0 +1,286 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: dental-extraction-capacity
+case_version: 0.1.0
+status: draft
+items:
+  # ---- no-treatment / procedure-understanding ----
+  - utterance: "If the tooth stays where it is, what do you think happens to the pain?"
+    topics: [no-treatment]
+    style: boundary
+    pair: [no-treatment, procedure-understanding]
+  - utterance: "Do you think a bad tooth like that mends itself over time?"
+    topics: [no-treatment]
+    style: boundary
+    pair: [no-treatment, procedure-understanding]
+  - utterance: "um could it end up getting infected if nobody does anything"
+    topics: [no-treatment]
+    style: boundary_spoken
+    pair: [no-treatment, procedure-understanding]
+  - utterance: "What if you just left it alone, Ben, what then?"
+    topics: [no-treatment]
+    style: boundary_colloquial
+    pair: [no-treatment, procedure-understanding]
+  - utterance: "And what would happen to your face if it did go wrong?"
+    topics: [no-treatment]
+    style: boundary_follow_up
+    pair: [no-treatment, procedure-understanding]
+    previous:
+      interviewer: "What do you know about the operation?"
+      character: "They want to give me medicine so I am unconscious while they remove that tooth, then wake me afterwards; it means going to hospital."
+  - utterance: "Can you tell me what happens on the day when they take it out?"
+    topics: [procedure-understanding]
+    style: boundary
+    pair: [no-treatment, procedure-understanding]
+  - utterance: "Do you know what being put to sleep for an operation actually means?"
+    topics: [procedure-understanding]
+    style: boundary
+    pair: [no-treatment, procedure-understanding]
+  - utterance: "um so would you wake up after, like, when it's done"
+    topics: [procedure-understanding]
+    style: boundary_spoken
+    pair: [no-treatment, procedure-understanding]
+  - utterance: "Would you have to go into hospital for it?"
+    topics: [procedure-understanding]
+    style: boundary_colloquial
+    pair: [no-treatment, procedure-understanding]
+  - utterance: "And what happens to you while they're doing it?"
+    topics: [procedure-understanding]
+    style: boundary_follow_up
+    pair: [no-treatment, procedure-understanding]
+    previous:
+      interviewer: "What if the tooth was left in?"
+      character: "If it stays, the pain might get worse and my face could swell with an infection; I know it will not repair itself."
+  - utterance: "Have you signed any forms for the operation yet?"
+    topics: []
+    style: near_miss
+    pair: [no-treatment, procedure-understanding]
+  - utterance: "Has the dentist given you a date for it?"
+    topics: []
+    style: near_miss
+    pair: [no-treatment, procedure-understanding]
+
+  # ---- coercion / weighing-values ----
+  - utterance: "Has somebody said you must agree to it?"
+    topics: [coercion]
+    style: boundary
+    pair: [coercion, weighing-values]
+  - utterance: "Is this your own decision, or is somebody else steering it?"
+    topics: [coercion]
+    style: boundary
+    pair: [coercion, weighing-values]
+  - utterance: "um has anybody been leaning on you about it one way or the other"
+    topics: [coercion]
+    style: boundary_spoken
+    pair: [coercion, weighing-values]
+  - utterance: "Does anyone make you feel you can't say no?"
+    topics: [coercion]
+    style: boundary_colloquial
+    pair: [coercion, weighing-values]
+  - utterance: "And is anyone pushing you to say that?"
+    topics: [coercion]
+    style: boundary_follow_up
+    pair: [coercion, weighing-values]
+    previous:
+      interviewer: "Why do you feel so strongly about staying awake?"
+      character: "being awake matters enough to me that I want the other options discussed before I agree."
+  - utterance: "What matters most to you when you think about the choices?"
+    topics: [weighing-values]
+    style: boundary
+    pair: [coercion, weighing-values]
+  - utterance: "Why is being awake so important to you, Ben?"
+    topics: [weighing-values]
+    style: boundary
+    pair: [coercion, weighing-values]
+  - utterance: "um so how do you balance the pain against not wanting to be put under"
+    topics: [weighing-values]
+    style: boundary_spoken
+    pair: [coercion, weighing-values]
+  - utterance: "Knowing it could get worse, what keeps you holding out?"
+    topics: [weighing-values]
+    style: boundary_colloquial
+    pair: [coercion, weighing-values]
+  - utterance: "And what is it that makes you want to wait?"
+    topics: [weighing-values]
+    style: boundary_follow_up
+    pair: [coercion, weighing-values]
+    previous:
+      interviewer: "Has anyone been telling you what to choose?"
+      character: "Nobody has threatened me or told me what I must choose"
+  - utterance: "Have you made a big decision about your health before?"
+    topics: []
+    style: near_miss
+    pair: [coercion, weighing-values]
+  - utterance: "Do you normally like to decide things for yourself?"
+    topics: []
+    style: near_miss
+    pair: [coercion, weighing-values]
+
+  # ---- choice / coercion ----
+  - utterance: "So is it a yes or a no to the operation today?"
+    topics: [choice]
+    style: boundary
+    pair: [choice, coercion]
+  - utterance: "Where would you like things to go from here, Ben?"
+    topics: [choice]
+    style: boundary
+    pair: [choice, coercion]
+  - utterance: "um so are you saying no for now or no for good"
+    topics: [choice]
+    style: boundary_spoken
+    pair: [choice, coercion]
+  - utterance: "Is that your final answer, or could you change your mind?"
+    topics: [choice]
+    style: boundary_colloquial
+    pair: [choice, coercion]
+  - utterance: "And do you want to speak to the dentist again before you decide?"
+    topics: [choice]
+    style: boundary_follow_up
+    pair: [choice, coercion]
+    previous:
+      interviewer: "Is anyone telling you what to do?"
+      character: "Nobody has threatened me or told me what I must choose"
+  - utterance: "Has anyone threatened you with anything if you refuse?"
+    topics: [coercion]
+    style: boundary
+    pair: [choice, coercion]
+  - utterance: "Is what you're telling me what you want, or what other people want?"
+    topics: [coercion]
+    style: boundary
+    pair: [choice, coercion]
+  - utterance: "um has anyone said you've got no choice about it"
+    topics: [coercion]
+    style: boundary_spoken
+    pair: [choice, coercion]
+  - utterance: "Is somebody forcing your hand here?"
+    topics: [coercion]
+    style: boundary_colloquial
+    pair: [choice, coercion]
+  - utterance: "And did anyone tell you to say no?"
+    topics: [coercion]
+    style: boundary_follow_up
+    pair: [choice, coercion]
+    previous:
+      interviewer: "Are you agreeing to be put to sleep today?"
+      character: "No, I am not agreeing to a general anaesthetic today"
+  - utterance: "Have you signed anything yet?"
+    topics: []
+    style: near_miss
+    pair: [choice, coercion]
+  - utterance: "Would you like to see the dentist's manager as well?"
+    topics: []
+    style: near_miss
+    pair: [choice, coercion]
+
+  # ---- alternatives / procedure-understanding ----
+  - utterance: "Has anyone tried to do it while you were awake, with a numbing injection?"
+    topics: [alternatives]
+    style: boundary
+    pair: [alternatives, procedure-understanding]
+  - utterance: "Would slower appointments make it easier for you?"
+    topics: [alternatives]
+    style: boundary
+    pair: [alternatives, procedure-understanding]
+  - utterance: "um what happened when they tried it the other way"
+    topics: [alternatives]
+    style: boundary_spoken
+    pair: [alternatives, procedure-understanding]
+  - utterance: "Is there any other way you'd rather have it done than being knocked out?"
+    topics: [alternatives]
+    style: boundary_colloquial
+    pair: [alternatives, procedure-understanding]
+  - utterance: "And did they try anything before that?"
+    topics: [alternatives]
+    style: boundary_follow_up
+    pair: [alternatives, procedure-understanding]
+    previous:
+      interviewer: "What do you know about the operation?"
+      character: "They want to give me medicine so I am unconscious while they remove that tooth, then wake me afterwards; it means going to hospital."
+  - utterance: "Can you explain what happens to you once you're put to sleep?"
+    topics: [procedure-understanding]
+    style: boundary
+    pair: [alternatives, procedure-understanding]
+  - utterance: "What have they said they will do to you on the day?"
+    topics: [procedure-understanding]
+    style: boundary
+    pair: [alternatives, procedure-understanding]
+  - utterance: "um so you'd be asleep and then they take it out, is that right"
+    topics: [procedure-understanding]
+    style: boundary_spoken
+    pair: [alternatives, procedure-understanding]
+  - utterance: "Do you know what the sleeping medicine does?"
+    topics: [procedure-understanding]
+    style: boundary_colloquial
+    pair: [alternatives, procedure-understanding]
+  - utterance: "And what would happen after the sleep?"
+    topics: [procedure-understanding]
+    style: boundary_follow_up
+    pair: [alternatives, procedure-understanding]
+    previous:
+      interviewer: "Did you try anything else at the dentist?"
+      character: "They tried with a numbing injection last month, but I panicked and asked them to stop"
+  - utterance: "Have you had an operation before?"
+    topics: []
+    style: near_miss
+    pair: [alternatives, procedure-understanding]
+  - utterance: "Do you have any other health problems?"
+    topics: []
+    style: near_miss
+    pair: [alternatives, procedure-understanding]
+
+  # ---- dental-problem / procedure-understanding ----
+  - utterance: "What did the dentist say is wrong with the tooth?"
+    topics: [dental-problem]
+    style: boundary
+    pair: [dental-problem, procedure-understanding]
+  - utterance: "Why can't they just fill it?"
+    topics: [dental-problem]
+    style: boundary
+    pair: [dental-problem, procedure-understanding]
+  - utterance: "um how long has it been hurting you when you eat"
+    topics: [dental-problem]
+    style: boundary_spoken
+    pair: [dental-problem, procedure-understanding]
+  - utterance: "Which tooth is the trouble, and is it sore?"
+    topics: [dental-problem]
+    style: boundary_colloquial
+    pair: [dental-problem, procedure-understanding]
+  - utterance: "And what is the state of the tooth itself?"
+    topics: [dental-problem]
+    style: boundary_follow_up
+    pair: [dental-problem, procedure-understanding]
+    previous:
+      interviewer: "What would the operation involve?"
+      character: "They want to give me medicine so I am unconscious while they remove that tooth, then wake me afterwards; it means going to hospital."
+  - utterance: "What do you understand about how the tooth would be taken out?"
+    topics: [procedure-understanding]
+    style: boundary
+    pair: [dental-problem, procedure-understanding]
+  - utterance: "Where would the operation be, and would you be awake for it?"
+    topics: [procedure-understanding]
+    style: boundary
+    pair: [dental-problem, procedure-understanding]
+  - utterance: "um what's it mean when they say general anaesthetic to you"
+    topics: [procedure-understanding]
+    style: boundary_spoken
+    pair: [dental-problem, procedure-understanding]
+  - utterance: "When you wake up, would the tooth be gone?"
+    topics: [procedure-understanding]
+    style: boundary_colloquial
+    pair: [dental-problem, procedure-understanding]
+  - utterance: "And what would they do about it on the day?"
+    topics: [procedure-understanding]
+    style: boundary_follow_up
+    pair: [dental-problem, procedure-understanding]
+    previous:
+      interviewer: "What's the problem with the tooth?"
+      character: "The big tooth at the back has a hole too deep to mend; it has hurt when I chew for three weeks."
+  - utterance: "Is the pain keeping you awake at night?"
+    topics: []
+    style: near_miss
+    pair: [dental-problem, procedure-understanding]
+  - utterance: "Have you been given any painkillers for it?"
+    topics: []
+    style: near_miss
+    pair: [dental-problem, procedure-understanding]

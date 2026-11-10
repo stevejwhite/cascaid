@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: young-carer-social-history
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Tessa, who is living at home with you and what is the place like?
+  expected:
+  - home
+  rapport: false
+- utterance: What jobs do you do to help your parent through a day, and how long do they take?
+  expected:
+  - care
+  rapport: false
+- utterance: How is caring affecting getting to school and keeping up with homework?
+  expected:
+  - school
+  rapport: false
+- utterance: How much chance do you get to see friends or do activities for yourself?
+  expected:
+  - friends
+  rapport: false
+- utterance: Are money or having enough food things you find yourself worrying about?
+  expected:
+  - money
+  rapport: false
+- utterance: What regular help comes into the home, and have you been offered support as a young carer?
+  expected:
+  - support
+  rapport: false
+- utterance: Which caring jobs fall to you each day, and how much time do they take?
+  expected:
+  - care
+  rapport: false
+- utterance: Which of those demands are covered by outside help, and have you had an assessment as a carer?
+  expected:
+  - support
+  rapport: false
+- utterance: how do you feel about having to take on so much of it?
+  expected:
+  - resentment
+  rapport: false
+  previous:
+    interviewer: What do you do to help day to day?
+    character: I cook, shop and help her get ready in the morning; it takes about three hours each day.
+- utterance: You'd like to talk without everyone making a big fuss about your family.
+  expected: []
+  rapport: false

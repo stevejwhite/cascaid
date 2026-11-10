@@ -1,0 +1,156 @@
+# Training lines for the tone classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: probation-psychosis-collateral
+case_version: 0.1.0
+status: draft
+items:
+- utterance: When did you first notice the change in him?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Has he said anything about hurting anyone?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Has he talked about harming himself?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: so has he been in trouble with the police before
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Do you know if he has been using cannabis or alcohol?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Sorry to press, but do you have the contact details for his clinic?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Could I ask what makes you most worried about him?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Good morning, Lewis, thanks for calling.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: Hello Lewis, I'm a psychiatrist in the local mental health service.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: So he used to attend reliably and now he is missing appointments, which is out of character for him.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: summary
+- utterance: Okay, thanks, that's useful.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Right. And was that recently?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: That sounds worrying.
+  empathy: 1
+  empathy_words: That sounds worrying.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I'm sorry, that sounds difficult.
+  empathy: 1
+  empathy_words: I'm sorry, that sounds difficult.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That sounds stressful. Who else knows about this?
+  empathy: 1
+  empathy_words: That sounds stressful.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I can see why you're worried. Have you spoken to his family?
+  empathy: 1
+  empathy_words: I can see why you're worried.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: It is difficult to look back and question the first missed appointment, but you are raising it now, which matters.
+  empathy: 2
+  empathy_words: It is difficult to look back and question the first missed appointment, but you are raising it now, which matters.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: Is there anything you feel uncomfortable about in how this has been handled?
+    character: I'm worried I treated the first missed appointment as non-compliance and didn't ask whether he was becoming unwell.
+- utterance: That sounds frightening to witness through a closed door, especially when he was so different from usual.
+  empathy: 2
+  empathy_words: That sounds frightening to witness through a closed door, especially when he was so different from usual.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: Did he say anything when you visited?
+    character: At a home visit last week he spoke through the door and said people were monitoring him. He seemed much more guarded than usual.
+- utterance: You have clearly taken this seriously and gone out of your way to find out how he is.
+  empathy: 2
+  empathy_words: You have clearly taken this seriously and gone out of your way to find out how he is.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: You sound very concerned for him, and that is a lot to carry. What do you think is the most urgent thing?
+  empathy: 2
+  empathy_words: You sound very concerned for him, and that is a lot to carry.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+- utterance: He should have been referred to us weeks ago.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: He should have been referred to us weeks ago
+  style: confront_statement
+- utterance: You didn't think to ask about his mental health earlier, did you?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You didn't think to ask about his mental health earlier, did you
+  style: confront_tag
+- utterance: Missing appointments is very common, so it's probably nothing.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: it's probably nothing
+  style: dismissive
+- utterance: Just give me the facts, I don't need your opinions.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: I don't need your opinions
+  style: dismissive

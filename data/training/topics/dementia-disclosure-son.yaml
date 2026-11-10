@@ -1,0 +1,753 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: dementia-disclosure-son
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Can you tell me more about what you would like us to say to your mother?
+  topics:
+  - request
+  style: open
+- utterance: Do you want us to avoid using the word dementia?
+  topics:
+  - request
+  style: closed
+- utterance: What exactly are you asking us not to tell her?
+  topics:
+  - request
+  style: colloquial
+- utterance: Are you requesting that the diagnosis be withheld from your mother?
+  topics:
+  - request
+  style: clinical
+- utterance: I wondered what you're hoping we'll say, or not say, to her
+  topics:
+  - request
+  style: indirect
+- utterance: I can see you're only thinking of her. What would you like her to be told?
+  topics:
+  - request
+  style: empathy_then_question
+- utterance: um so what is it you want us to leave out when we talk to her
+  topics:
+  - request
+  style: spoken
+- utterance: What are you asking us?
+  topics:
+  - request
+  style: brief
+- utterance: What would you want us to call it instead?
+  topics:
+  - request
+  style: follow_up
+  previous:
+    interviewer: You said you don't think telling Mum would help her.
+    character: I'm afraid she'll give up. Her sister had dementia and Mum remembers that period as frightening.
+- utterance: You'd prefer us not to give her the bad news, wouldn't you?
+  topics:
+  - request
+  style: leading
+- utterance: Tell me what you have in mind for how we explain things to her.
+  topics:
+  - request
+  style: open
+- utterance: Is there a particular word you want us to avoid?
+  topics:
+  - request
+  style: closed
+- utterance: So what do you want us to say to her about the tests?
+  topics:
+  - request
+  style: colloquial
+- utterance: and so you'd like us to, um, keep something from her, is that it
+  topics:
+  - request
+  style: spoken
+- utterance: What are you hoping we'll do?
+  topics:
+  - request
+  style: brief
+- utterance: Are you afraid she will be upset by the news?
+  topics:
+  - fear
+  style: closed
+- utterance: What do you think she'll do if we tell her?
+  topics:
+  - fear
+  style: colloquial
+- utterance: What is your concern about her emotional response to a diagnosis?
+  topics:
+  - fear
+  style: clinical
+- utterance: I wanted to understand why you think telling her wouldn't help
+  topics:
+  - fear
+  style: indirect
+- utterance: That sounds like a heavy thing to carry. Has dementia touched your family before?
+  topics:
+  - fear
+  style: empathy_then_question
+- utterance: um what's your worry exactly, about her hearing it
+  topics:
+  - fear
+  style: spoken
+- utterance: And your worry is?
+  topics:
+  - fear
+  style: brief
+- utterance: Has anyone in the family been through something like this?
+  topics:
+  - fear
+  style: follow_up
+  previous:
+    interviewer: You'd like us to say it's ordinary forgetfulness.
+    character: I want you not to use the word dementia with her. I'd rather say it's ordinary forgetfulness.
+- utterance: You think she wouldn't cope with the news, don't you?
+  topics:
+  - fear
+  style: leading
+- utterance: Tell me how you imagine she would react.
+  topics:
+  - fear
+  style: open
+- utterance: Has she had any experience of dementia in the family?
+  topics:
+  - fear
+  style: closed
+- utterance: Why are you so worried about how she'd take it?
+  topics:
+  - fear
+  style: colloquial
+- utterance: so is it about something that happened before in the family
+  topics:
+  - fear
+  style: spoken
+- utterance: Why would it harm her?
+  topics:
+  - fear
+  style: brief
+- utterance: What has your mother said she would like to know?
+  topics:
+  - mother-wishes
+  style: open
+- utterance: Has she asked about her test results?
+  topics:
+  - mother-wishes
+  style: closed
+- utterance: Does she want to know what's going on?
+  topics:
+  - mother-wishes
+  style: colloquial
+- utterance: What are your mother's expressed preferences about information?
+  topics:
+  - mother-wishes
+  style: clinical
+- utterance: I'd be interested to hear what she has said about the tests
+  topics:
+  - mother-wishes
+  style: indirect
+- utterance: It's natural to want to shield her. Has she asked what we found?
+  topics:
+  - mother-wishes
+  style: empathy_then_question
+- utterance: um has she said anything herself about wanting to know
+  topics:
+  - mother-wishes
+  style: spoken
+- utterance: Has she asked questions?
+  topics:
+  - mother-wishes
+  style: brief
+- utterance: Has she said how much she wants to hear?
+  topics:
+  - mother-wishes
+  style: follow_up
+  previous:
+    interviewer: You're clearly worried about how this would feel for her.
+    character: I'm afraid she'll give up. Her sister had dementia and Mum remembers that period as frightening.
+- utterance: She's probably never asked about the results, has she?
+  topics:
+  - mother-wishes
+  style: leading
+- utterance: How has she been about wanting to hear things in the past?
+  topics:
+  - mother-wishes
+  style: open
+- utterance: Does she prefer doctors to be direct with her?
+  topics:
+  - mother-wishes
+  style: closed
+- utterance: Has she been asking what the doctors found?
+  topics:
+  - mother-wishes
+  style: colloquial
+- utterance: and when she's had bad news before did she want it straight
+  topics:
+  - mother-wishes
+  style: spoken
+- utterance: Her own wishes?
+  topics:
+  - mother-wishes
+  style: brief
+- utterance: Can she cook for herself?
+  topics:
+  - function
+  style: closed
+- utterance: What can she still do on her own?
+  topics:
+  - function
+  style: colloquial
+- utterance: What is her current level of independence with daily activities?
+  topics:
+  - function
+  style: clinical
+- utterance: I wanted to hear how she looks after herself at home
+  topics:
+  - function
+  style: indirect
+- utterance: You've clearly been doing a lot for her. Do you help with her money?
+  topics:
+  - function
+  style: empathy_then_question
+- utterance: um so does she manage the bills and that or do you
+  topics:
+  - function
+  style: spoken
+- utterance: Daily living, how is it?
+  topics:
+  - function
+  style: brief
+- utterance: And does she manage her own money?
+  topics:
+  - function
+  style: follow_up
+  previous:
+    interviewer: She asked about the tests, I gather.
+    character: She has asked twice what the tests showed. She's always wanted doctors to be straight with
+      her, even with difficult news.
+- utterance: She's probably not able to do much for herself now?
+  topics:
+  - function
+  style: leading
+- utterance: Tell me what a normal day is like for her.
+  topics:
+  - function
+  style: open
+- utterance: Is she still managing to dress herself?
+  topics:
+  - function
+  style: closed
+- utterance: Are there things you've had to take over?
+  topics:
+  - function
+  style: colloquial
+- utterance: and the cooking and um dressing, how is that going
+  topics:
+  - function
+  style: spoken
+- utterance: What help does she need?
+  topics:
+  - function
+  style: brief
+- utterance: How does your mother feel about you being here today?
+  topics:
+  - sharing
+  style: open
+- utterance: Has she said you can hear her results?
+  topics:
+  - sharing
+  style: closed
+- utterance: Did she say it's OK for you to come to these meetings?
+  topics:
+  - sharing
+  style: colloquial
+- utterance: Has she given consent for information to be shared with you?
+  topics:
+  - sharing
+  style: clinical
+- utterance: I wondered what arrangement you have with her about appointments
+  topics:
+  - sharing
+  style: indirect
+- utterance: I can tell how close you are. Did she ask you to come along?
+  topics:
+  - sharing
+  style: empathy_then_question
+- utterance: um did she say she wants you to be told about stuff
+  topics:
+  - sharing
+  style: spoken
+- utterance: Has she agreed to you being involved?
+  topics:
+  - sharing
+  style: brief
+- utterance: Has she asked you to decide what she's told?
+  topics:
+  - sharing
+  style: follow_up
+  previous:
+    interviewer: You said she can't manage some of her bills.
+    character: She cooks simple meals and chooses her own clothes. I help with bills because she has missed
+      payments.
+- utterance: You've probably been making the decisions for her, haven't you?
+  topics:
+  - sharing
+  style: leading
+- utterance: Tell me about the permission she has given you.
+  topics:
+  - sharing
+  style: open
+- utterance: Does she want you at her appointments?
+  topics:
+  - sharing
+  style: closed
+- utterance: Does she want you in the room when we talk?
+  topics:
+  - sharing
+  style: colloquial
+- utterance: so, um, who gets to hear what the doctor tells her
+  topics:
+  - sharing
+  style: spoken
+- utterance: Her consent for you?
+  topics:
+  - sharing
+  style: brief
+- utterance: How well does she understand things you tell her?
+  topics:
+  - understanding
+  style: open
+- utterance: Can she make decisions for herself?
+  topics:
+  - understanding
+  style: closed
+- utterance: Does she take things in all right?
+  topics:
+  - understanding
+  style: colloquial
+- utterance: What is your assessment of her decision-making capacity?
+  topics:
+  - understanding
+  style: clinical
+- utterance: I was thinking about how well she follows explanations
+  topics:
+  - understanding
+  style: indirect
+- utterance: It must be difficult to judge. Have you ever asked her what she understands?
+  topics:
+  - understanding
+  style: empathy_then_question
+- utterance: um can she follow it if you explain stuff to her
+  topics:
+  - understanding
+  style: spoken
+- utterance: Can she decide things?
+  topics:
+  - understanding
+  style: brief
+- utterance: Have you checked that with her yourself?
+  topics:
+  - understanding
+  style: follow_up
+  previous:
+    interviewer: So she wants to be told directly when she has a question.
+    character: She has asked twice what the tests showed. She's always wanted doctors to be straight with
+      her, even with difficult news.
+- utterance: Having dementia means she can't make choices any more, doesn't it?
+  topics:
+  - understanding
+  style: leading
+- utterance: What do you think having dementia means for her choices?
+  topics:
+  - understanding
+  style: open
+- utterance: Does she cope with a short explanation?
+  topics:
+  - understanding
+  style: closed
+- utterance: Is she still able to understand what's said to her?
+  topics:
+  - understanding
+  style: colloquial
+- utterance: so does she get it when someone talks to her about her health
+  topics:
+  - understanding
+  style: spoken
+- utterance: Her understanding?
+  topics:
+  - understanding
+  style: brief
+- utterance: Has she said anything that has worried you about her safety?
+  topics:
+  - safety
+  style: open
+- utterance: Has she said anything about ending her life?
+  topics:
+  - safety
+  style: colloquial
+- utterance: Is there any history of suicidal ideation or deliberate self-harm?
+  topics:
+  - safety
+  style: clinical
+- utterance: I wondered if you have had any worries about her wanting to hurt herself
+  topics:
+  - safety
+  style: indirect
+- utterance: I'm sorry to ask something so difficult. Has she ever said she wants to die?
+  topics:
+  - safety
+  style: empathy_then_question
+- utterance: um has she ever said she'd harm herself, like threatened it
+  topics:
+  - safety
+  style: spoken
+- utterance: Any talk of suicide?
+  topics:
+  - safety
+  style: brief
+- utterance: Is that something she has said, or is it your worry?
+  topics:
+  - safety
+  style: follow_up
+  previous:
+    interviewer: You said you're afraid she'll give up.
+    character: I'm afraid she'll give up. Her sister had dementia and Mum remembers that period as frightening.
+- utterance: She's never mentioned hurting herself, has she?
+  topics:
+  - safety
+  style: leading
+- utterance: What have you seen that makes you fear for her?
+  topics:
+  - safety
+  style: open
+- utterance: Has she ever harmed herself in the past?
+  topics:
+  - safety
+  style: closed
+- utterance: Has she said anything scary?
+  topics:
+  - safety
+  style: colloquial
+- utterance: so, um, has she threatened anything or is it just what you're afraid of
+  topics:
+  - safety
+  style: spoken
+- utterance: Past self-harm?
+  topics:
+  - safety
+  style: brief
+- utterance: How does she like information to be given to her?
+  topics:
+  - approach
+  style: open
+- utterance: Does she take in short explanations better?
+  topics:
+  - approach
+  style: closed
+- utterance: What's the best way to tell her something difficult?
+  topics:
+  - approach
+  style: colloquial
+- utterance: What communication strategies work best for your mother?
+  topics:
+  - approach
+  style: clinical
+- utterance: I wanted to hear what would make a hard conversation easier for her
+  topics:
+  - approach
+  style: indirect
+- utterance: You know her better than any of us. Who would she want beside her?
+  topics:
+  - approach
+  style: empathy_then_question
+- utterance: um would she like it in writing or just said out loud
+  topics:
+  - approach
+  style: spoken
+- utterance: How should we explain it?
+  topics:
+  - approach
+  style: brief
+- utterance: Would she want to have something written down too?
+  topics:
+  - approach
+  style: follow_up
+  previous:
+    interviewer: She's said she wants to be told directly.
+    character: She has asked twice what the tests showed. She's always wanted doctors to be straight with
+      her, even with difficult news.
+- utterance: You think a long, detailed explanation would be best?
+  topics:
+  - approach
+  style: leading
+- utterance: What would support her through a conversation like that?
+  topics:
+  - approach
+  style: open
+- utterance: Would she like someone she trusts there?
+  topics:
+  - approach
+  style: closed
+- utterance: How would you want us to break it to her?
+  topics:
+  - approach
+  style: colloquial
+- utterance: and when she's told something hard what helps her take it in
+  topics:
+  - approach
+  style: spoken
+- utterance: Written information for her?
+  topics:
+  - approach
+  style: brief
+- utterance: How have you been coping with all of this yourself?
+  topics:
+  - burden
+  style: open
+- utterance: Are you getting any support yourself?
+  topics:
+  - burden
+  style: closed
+- utterance: Is it hard fitting work and helping her around each other?
+  topics:
+  - burden
+  style: colloquial
+- utterance: What is the carer burden you are experiencing?
+  topics:
+  - burden
+  style: clinical
+- utterance: I wondered how you are managing as her son
+  topics:
+  - burden
+  style: indirect
+- utterance: You're doing a lot for her. How are you holding up?
+  topics:
+  - burden
+  style: empathy_then_question
+- utterance: um so how are you doing with all of it, work and her and everything
+  topics:
+  - burden
+  style: spoken
+- utterance: And you, how are you?
+  topics:
+  - burden
+  style: brief
+- utterance: Have you asked anyone for support?
+  topics:
+  - burden
+  style: follow_up
+  previous:
+    interviewer: You help with her bills and her meals, it seems.
+    character: She cooks simple meals and chooses her own clothes. I help with bills because she has missed
+      payments.
+- utterance: You're probably finding it too much, aren't you?
+  topics:
+  - burden
+  style: leading
+- utterance: What's it been like for you to be the one helping?
+  topics:
+  - burden
+  style: open
+- utterance: Do you have anyone to share the care with?
+  topics:
+  - burden
+  style: closed
+- utterance: Is it wearing you out?
+  topics:
+  - burden
+  style: colloquial
+- utterance: so is anybody helping you with, like, looking after her
+  topics:
+  - burden
+  style: spoken
+- utterance: Looking after yourself?
+  topics:
+  - burden
+  style: brief
+- utterance: What feels hardest for you about this news?
+  topics:
+  - guilt
+  style: open
+- utterance: Is part of you finding the diagnosis hard to hear too?
+  topics:
+  - guilt
+  style: closed
+- utterance: Do you find it hard to hear yourself?
+  topics:
+  - guilt
+  style: colloquial
+- utterance: What are your own emotional reactions to the diagnosis?
+  topics:
+  - guilt
+  style: clinical
+- utterance: I wondered how you feel about what this means for you both
+  topics:
+  - guilt
+  style: indirect
+- utterance: This must be a lot for you as well. What feels frightening about it?
+  topics:
+  - guilt
+  style: empathy_then_question
+- utterance: um what is it you find hardest to face
+  topics:
+  - guilt
+  style: spoken
+- utterance: And how does it feel to you?
+  topics:
+  - guilt
+  style: brief
+- utterance: Is that part of why you want it kept from her?
+  topics:
+  - guilt
+  style: follow_up
+  previous:
+    interviewer: You said it's taking something out of you.
+    character: I'm already struggling to balance work and helping her. I haven't asked for any support
+      for myself.
+- utterance: You don't really want to hear it yourself, do you?
+  topics:
+  - guilt
+  style: leading
+- utterance: Is there something about the future you are afraid of?
+  topics:
+  - guilt
+  style: open
+- utterance: Are you scared of what it means for you both?
+  topics:
+  - guilt
+  style: closed
+- utterance: Is it hard for you to face it?
+  topics:
+  - guilt
+  style: colloquial
+- utterance: so er how are you feeling about it all, in yourself
+  topics:
+  - guilt
+  style: spoken
+- utterance: Your own fears?
+  topics:
+  - guilt
+  style: brief
+- utterance: What would you like us to tell her, and what has she said she wants to know?
+  topics:
+  - request
+  - mother-wishes
+  style: stacked
+- utterance: What do you fear will happen if she is told, and has she ever talked about harming herself?
+  topics:
+  - fear
+  - safety
+  style: stacked
+- utterance: How well does she understand things, and has she agreed to you hearing her results?
+  topics:
+  - understanding
+  - sharing
+  style: stacked
+- utterance: How are you coping with caring for her, and how do you feel about the diagnosis yourself?
+  topics:
+  - burden
+  - guilt
+  style: stacked
+- utterance: Hello Arun, thank you for coming in today.
+  topics: []
+  style: greeting
+- utterance: Good afternoon, Arun. Please come and sit down.
+  topics: []
+  style: greeting
+- utterance: Hi Arun, my name's Dr Rahman, I'm one of the trainees in the team.
+  topics: []
+  style: introduction
+- utterance: Is it all right if we talk about your mother for a while?
+  topics: []
+  style: greeting
+- utterance: What would you like to start with, Arun?
+  topics: []
+  style: greeting
+- utterance: Before we start, do you have any questions for me?
+  topics: []
+  style: greeting
+- utterance: Is it all right if I make some notes while we talk?
+  topics: []
+  style: greeting
+- utterance: I'd like to move on to something different now.
+  topics: []
+  style: transition
+- utterance: Shall we talk about how your mother might be told?
+  topics: []
+  style: transition
+- utterance: If it's all right, I'd like to turn to what we can offer in the way of support.
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Arun.
+  topics: []
+  style: closing
+- utterance: Thank you so much for talking to me today.
+  topics: []
+  style: closing
+- utterance: We'll need to stop in a minute, so is there anything you'd like to add?
+  topics: []
+  style: closing
+- utterance: You obviously care about your mother very much.
+  topics: []
+  style: empathy
+- utterance: That sounds a very difficult position to be in.
+  topics: []
+  style: empathy
+- utterance: I can hear how protective you feel.
+  topics: []
+  style: empathy
+- utterance: So you're worried about how she'd take it, and you'd like us to think carefully about what
+    she is told.
+  topics: []
+  style: summary
+- utterance: 'Let me check I have this right: you''re involved in her care and you''re concerned about
+    the news upsetting her.'
+  topics: []
+  style: summary
+- utterance: Our first duty is to your mother, and she has the right to be told about her own health unless
+    she says otherwise.
+  topics: []
+  style: explanation
+- utterance: What you tell us stays within the team, but we can't promise to keep her own results from
+    her.
+  topics: []
+  style: explanation
+- utterance: Does that make sense so far?
+  topics: []
+  style: check_understanding
+- utterance: Is that how you see it as well?
+  topics: []
+  style: check_understanding
+- utterance: Has she had any falls recently?
+  topics: []
+  style: off_case
+- utterance: Is she eating and drinking well?
+  topics: []
+  style: off_case
+- utterance: What medicines is she on?
+  topics: []
+  style: off_case
+- utterance: Does she have any other relatives who help?
+  topics: []
+  style: off_case
+- utterance: Is she still living in her own home?
+  topics: []
+  style: off_case
+- utterance: Has she had a power of attorney set up?
+  topics: []
+  style: off_case
+- utterance: Has she talked about leaving anything in her will?
+  topics: []
+  style: near_miss
+- utterance: Has she had a scan or blood tests before?
+  topics: []
+  style: near_miss
+- utterance: Has she ever been told by anyone that she has a mental illness?
+  topics: []
+  style: near_miss
+- utterance: Does she like to have people around when she hears results of any kind?
+  topics: []
+  style: near_miss
+- utterance: How long have you been noticing her memory changes?
+  topics: []
+  style: off_case

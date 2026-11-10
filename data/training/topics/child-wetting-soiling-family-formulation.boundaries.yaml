@@ -1,0 +1,230 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: child-wetting-soiling-family-formulation
+case_version: 0.1.0
+status: draft
+items:
+  # ---- change / conflict ----
+  - utterance: "How long have you and his mother been living apart?"
+    topics: [change]
+    style: boundary
+    pair: [change, conflict]
+  - utterance: "Which days does he stay with you rather than with her?"
+    topics: [change]
+    style: boundary
+    pair: [change, conflict]
+  - utterance: "how does he seem just before he goes over to his mum's"
+    topics: [change]
+    style: boundary_spoken
+    pair: [change, conflict]
+  - utterance: "Is he alright when you hand him over to her midweek?"
+    topics: [change]
+    style: boundary_colloquial
+    pair: [change, conflict]
+  - utterance: "Does he get upset about the swap?"
+    topics: [change]
+    style: boundary_follow_up
+    pair: [change, conflict]
+    previous:
+      interviewer: "How are the two of you managing the arrangements for him?"
+      character: "His mother and I separated five months ago."
+  - utterance: "Has the wetting come up in any rows you and his mum have had?"
+    topics: [conflict]
+    style: boundary
+    pair: [change, conflict]
+  - utterance: "Do you and his mother ever argue about whose house he is better off in?"
+    topics: [conflict]
+    style: boundary
+    pair: [change, conflict]
+  - utterance: "um have the accidents been used as a sort of ammunition between you two"
+    topics: [conflict]
+    style: boundary_spoken
+    pair: [change, conflict]
+  - utterance: "Does he get dragged into whatever you and her disagree about?"
+    topics: [conflict]
+    style: boundary_colloquial
+    pair: [change, conflict]
+  - utterance: "And do the accidents come up when the two of you disagree?"
+    topics: [conflict]
+    style: boundary_follow_up
+    pair: [change, conflict]
+    previous:
+      interviewer: "How do you and his mother get on at the changeover?"
+      character: "He moves between our homes midweek and becomes upset before the changeover."
+  - utterance: "Has a solicitor or the court got involved in the arrangements?"
+    topics: []
+    style: near_miss
+    pair: [change, conflict]
+  - utterance: "Has his mother started seeing someone new?"
+    topics: []
+    style: near_miss
+    pair: [change, conflict]
+
+  # ---- change / routine ----
+  - utterance: "How has he been in himself since you and his mum split?"
+    topics: [change]
+    style: boundary
+    pair: [change, routine]
+  - utterance: "Does he go back and forth between the two of you in the week?"
+    topics: [change]
+    style: boundary
+    pair: [change, routine]
+  - utterance: "so um when he's about to move houses does he get a bit tearful"
+    topics: [change]
+    style: boundary_spoken
+    pair: [change, routine]
+  - utterance: "Is he unsettled around the days he swaps over?"
+    topics: [change]
+    style: boundary_colloquial
+    pair: [change, routine]
+  - utterance: "And how long has he been going between the two places?"
+    topics: [change]
+    style: boundary_follow_up
+    pair: [change, routine]
+    previous:
+      interviewer: "Do you have a set toilet routine?"
+      character: "At my house toilet times are irregular."
+  - utterance: "When he's with you, do you take him to the loo at set times?"
+    topics: [routine]
+    style: boundary
+    pair: [change, routine]
+  - utterance: "Is there a chart or diary that goes with him between the two houses?"
+    topics: [routine]
+    style: boundary
+    pair: [change, routine]
+  - utterance: "um does anyone remind him to go to the toilet when he's at yours"
+    topics: [routine]
+    style: boundary_spoken
+    pair: [change, routine]
+  - utterance: "Have you and his mum sorted out one way of doing toilet visits at both homes?"
+    topics: [routine]
+    style: boundary_colloquial
+    pair: [change, routine]
+  - utterance: "Is the toilet side of things any better organised, then?"
+    topics: [routine]
+    style: boundary_follow_up
+    pair: [change, routine]
+    previous:
+      interviewer: "How is he with the moves between your houses?"
+      character: "He moves between our homes midweek and becomes upset before the changeover."
+  - utterance: "Does he have his own bedroom at both houses?"
+    topics: []
+    style: near_miss
+    pair: [change, routine]
+  - utterance: "Is there a night light on in either home?"
+    topics: []
+    style: near_miss
+    pair: [change, routine]
+
+  # ---- soiling / wetting ----
+  - utterance: "Apart from wet pants, does he get dirty underwear?"
+    topics: [soiling]
+    style: boundary
+    pair: [soiling, wetting]
+  - utterance: "Does he pass a soft poo most days, or does it hurt?"
+    topics: [soiling]
+    style: boundary
+    pair: [soiling, wetting]
+  - utterance: "um how many times a week does he mess his pants"
+    topics: [soiling]
+    style: boundary_spoken
+    pair: [soiling, wetting]
+  - utterance: "Have you ever caught him holding on rather than going for a number two?"
+    topics: [soiling]
+    style: boundary_colloquial
+    pair: [soiling, wetting]
+  - utterance: "And the other kind of accident, how often does that happen?"
+    topics: [soiling]
+    style: boundary_follow_up
+    pair: [soiling, wetting]
+    previous:
+      interviewer: "Does he wake up in a wet bed?"
+      character: "For four months he's wet the bed three nights weekly and occasionally had a daytime accident."
+  - utterance: "Does he wake up to a wet bed, or is it mostly in the daytime?"
+    topics: [wetting]
+    style: boundary
+    pair: [soiling, wetting]
+  - utterance: "When was the last time he stayed dry all night?"
+    topics: [wetting]
+    style: boundary
+    pair: [soiling, wetting]
+  - utterance: "so um before this started was he dry at night and in the day"
+    topics: [wetting]
+    style: boundary_spoken
+    pair: [soiling, wetting]
+  - utterance: "On a typical week, how often do you strip his bed?"
+    topics: [wetting]
+    style: boundary_colloquial
+    pair: [soiling, wetting]
+  - utterance: "And what about when he needs a wee?"
+    topics: [wetting]
+    style: boundary_follow_up
+    pair: [soiling, wetting]
+    previous:
+      interviewer: "How often does he soil his pants?"
+      character: "He soils his underwear once or twice weekly."
+  - utterance: "Has he tried using a bedwetting alarm?"
+    topics: []
+    style: near_miss
+    pair: [soiling, wetting]
+  - utterance: "Does he drink a lot of fizzy drinks in the evening?"
+    topics: []
+    style: near_miss
+    pair: [soiling, wetting]
+
+  # ---- response / routine ----
+  - utterance: "What do you say to him once he has had an accident?"
+    topics: [response]
+    style: boundary
+    pair: [response, routine]
+  - utterance: "Have you ever taken something away from him because of it?"
+    topics: [response]
+    style: boundary
+    pair: [response, routine]
+  - utterance: "um do you tell him off or do you sort of reassure him"
+    topics: [response]
+    style: boundary_spoken
+    pair: [response, routine]
+  - utterance: "Do you ever lose your temper with him over it?"
+    topics: [response]
+    style: boundary_colloquial
+    pair: [response, routine]
+  - utterance: "And when he does have one, how do you handle it?"
+    topics: [response]
+    style: boundary_follow_up
+    pair: [response, routine]
+    previous:
+      interviewer: "Is there a plan you follow at home?"
+      character: "At my house toilet times are irregular."
+  - utterance: "Do you take him to the toilet at set points during the day?"
+    topics: [routine]
+    style: boundary
+    pair: [response, routine]
+  - utterance: "Is there any record of when the accidents happen?"
+    topics: [routine]
+    style: boundary
+    pair: [response, routine]
+  - utterance: "um what's the schedule at yours for going to the loo"
+    topics: [routine]
+    style: boundary_spoken
+    pair: [response, routine]
+  - utterance: "Have you and his mum agreed when he should be sent to the toilet?"
+    topics: [routine]
+    style: boundary_colloquial
+    pair: [response, routine]
+  - utterance: "Do you have set times for toilet trips, then?"
+    topics: [routine]
+    style: boundary_follow_up
+    pair: [response, routine]
+    previous:
+      interviewer: "What happens when he has an accident?"
+      character: "I initially scolded him and removed screen time."
+  - utterance: "Do you use a reward chart for dry nights?"
+    topics: []
+    style: near_miss
+    pair: [response, routine]
+  - utterance: "Has anyone suggested a particular diet or extra fibre for him?"
+    topics: []
+    style: near_miss
+    pair: [response, routine]

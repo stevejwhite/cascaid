@@ -1,0 +1,756 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: alcohol-assisted-withdrawal-options
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Talk me through a typical day's drinking for you.
+  topics:
+  - intake
+  style: open
+- utterance: Do you drink every day?
+  topics:
+  - intake
+  style: closed
+- utterance: Is it mainly spirits you drink?
+  topics:
+  - intake
+  style: closed
+- utterance: How much are you putting away on a normal day?
+  topics:
+  - intake
+  style: colloquial
+- utterance: What sort of amount are we talking about, roughly?
+  topics:
+  - intake
+  style: colloquial
+- utterance: Could you estimate your average daily alcohol intake?
+  topics:
+  - intake
+  style: clinical
+- utterance: I'd like to get a sense of how much you're drinking at the moment
+  topics:
+  - intake
+  style: indirect
+- utterance: It takes courage to come in. Roughly how much alcohol do you have each day?
+  topics:
+  - intake
+  style: empathy_then_question
+- utterance: and what, what do you usually have and how much of it
+  topics:
+  - intake
+  style: spoken
+- utterance: Daily amount, roughly?
+  topics:
+  - intake
+  style: brief
+- utterance: How long at that level?
+  topics:
+  - intake
+  style: brief
+- utterance: So how much are you drinking day to day to keep that at bay?
+  topics:
+  - intake
+  style: follow_up
+  previous:
+    interviewer: What happens to you physically if you go without a drink?
+    character: Within several hours without alcohol I shake, sweat and feel sick. Drinking relieves that
+      for a while.
+- utterance: I imagine you're drinking quite heavily most days?
+  topics:
+  - intake
+  style: leading
+- utterance: Tell me what it's like when you haven't had alcohol for a while.
+  topics:
+  - withdrawal
+  style: open
+- utterance: Do you get the shakes when you stop?
+  topics:
+  - withdrawal
+  style: closed
+- utterance: Have you noticed any sweating or feeling sick without alcohol?
+  topics:
+  - withdrawal
+  style: closed
+- utterance: Does your body kick off if you miss a drink?
+  topics:
+  - withdrawal
+  style: colloquial
+- utterance: If you skip a drink, how rough do you feel?
+  topics:
+  - withdrawal
+  style: colloquial
+- utterance: Are you aware of any withdrawal symptoms when you cut down?
+  topics:
+  - withdrawal
+  style: clinical
+- utterance: I was wondering how you feel physically when you go a few hours without alcohol
+  topics:
+  - withdrawal
+  style: indirect
+- utterance: That must be hard to manage. What symptoms do you get when the alcohol wears off?
+  topics:
+  - withdrawal
+  style: empathy_then_question
+- utterance: um when you, when you don't drink for a bit what happens
+  topics:
+  - withdrawal
+  style: spoken
+- utterance: so like do you get shaky or anything if you haven't had one
+  topics:
+  - withdrawal
+  style: spoken
+- utterance: Any shakes or sweats?
+  topics:
+  - withdrawal
+  style: brief
+- utterance: And when you stop?
+  topics:
+  - withdrawal
+  style: brief
+- utterance: And what makes you need to start that early?
+  topics:
+  - withdrawal
+  style: follow_up
+  previous:
+    interviewer: Talk me through a typical day's drinking for you.
+    character: I drink a 700-millilitre bottle of vodka daily and have done for three years. I often start
+      in the morning.
+- utterance: I expect you feel pretty unwell if you go without, don't you?
+  topics:
+  - withdrawal
+  style: leading
+- utterance: What happened the last time you tried to stop?
+  topics:
+  - severe
+  style: open
+- utterance: Tell me about any previous times you've come off alcohol.
+  topics:
+  - severe
+  style: open
+- utterance: Were you ever admitted to hospital because of withdrawal?
+  topics:
+  - severe
+  style: closed
+- utterance: Has stopping ever gone badly wrong for you?
+  topics:
+  - severe
+  style: colloquial
+- utterance: Any scary moments when you've come off the drink before?
+  topics:
+  - severe
+  style: colloquial
+- utterance: Is there any history of withdrawal seizures or delirium?
+  topics:
+  - severe
+  style: clinical
+- utterance: I need to ask whether anything dangerous has happened when you've stopped in the past
+  topics:
+  - severe
+  style: indirect
+- utterance: You said you want to do this safely, which is sensible. Has anything serious happened during
+    a previous attempt?
+  topics:
+  - severe
+  style: empathy_then_question
+- utterance: um have you, have you ever ended up in A and E from stopping
+  topics:
+  - severe
+  style: spoken
+- utterance: so when you stopped before was it okay or did things go wrong
+  topics:
+  - severe
+  style: spoken
+- utterance: Any fits in the past?
+  topics:
+  - severe
+  style: brief
+- utterance: Previous hospital treatment for withdrawal?
+  topics:
+  - severe
+  style: brief
+- utterance: Has it ever gone further than that, like a fit or confusion?
+  topics:
+  - severe
+  style: follow_up
+  previous:
+    interviewer: Do you get the shakes when you stop?
+    character: Within several hours without alcohol I shake, sweat and feel sick. Drinking relieves that
+      for a while.
+- utterance: I'm guessing it hasn't always gone smoothly when you've stopped?
+  topics:
+  - severe
+  style: leading
+- utterance: How's your eating been lately?
+  topics:
+  - physical
+  style: open
+- utterance: What do you know about your physical health at the moment?
+  topics:
+  - physical
+  style: open
+- utterance: Has your GP done any blood tests recently?
+  topics:
+  - physical
+  style: closed
+- utterance: Have you been told anything about your liver?
+  topics:
+  - physical
+  style: closed
+- utterance: Are you managing to get proper meals down you?
+  topics:
+  - physical
+  style: colloquial
+- utterance: Is your body holding up all right with all this?
+  topics:
+  - physical
+  style: colloquial
+- utterance: Could you tell me about your diet and any recent health checks?
+  topics:
+  - physical
+  style: clinical
+- utterance: I'd like to know a bit about how you're eating and your general health
+  topics:
+  - physical
+  style: indirect
+- utterance: Drinking can really take its toll. Any concerns from your doctor about your liver?
+  topics:
+  - physical
+  style: empathy_then_question
+- utterance: um what are you eating in a normal day
+  topics:
+  - physical
+  style: spoken
+- utterance: so physically, er, any problems that you know of
+  topics:
+  - physical
+  style: spoken
+- utterance: And your appetite?
+  topics:
+  - physical
+  style: brief
+- utterance: Any liver problems?
+  topics:
+  - physical
+  style: brief
+- utterance: And with that much, are you still eating properly?
+  topics:
+  - physical
+  style: follow_up
+  previous:
+    interviewer: How much do you drink in a day?
+    character: I drink a 700-millilitre bottle of vodka daily and have done for three years. I often start
+      in the morning.
+- utterance: I suspect food takes a back seat when you're drinking that much?
+  topics:
+  - physical
+  style: leading
+- utterance: What medication are you on at the moment?
+  topics:
+  - medicines
+  style: open
+- utterance: Tell me about any tablets or vitamins you take.
+  topics:
+  - medicines
+  style: open
+- utterance: Do you take anything to help you sleep?
+  topics:
+  - medicines
+  style: closed
+- utterance: Are you using any other drugs alongside the alcohol?
+  topics:
+  - medicines
+  style: closed
+- utterance: Anything else you're taking, prescribed or otherwise?
+  topics:
+  - medicines
+  style: colloquial
+- utterance: Ever use anything else to take the edge off?
+  topics:
+  - medicines
+  style: colloquial
+- utterance: Could I go through your current medicines, including anything bought over the counter?
+  topics:
+  - medicines
+  style: clinical
+- utterance: I'd also like to check whether you take any regular medicines or supplements
+  topics:
+  - medicines
+  style: indirect
+- utterance: Thanks for being so open. Which vitamins or tablets, if any, are you taking?
+  topics:
+  - medicines
+  style: empathy_then_question
+- utterance: um so any, any tablets from the doctor
+  topics:
+  - medicines
+  style: spoken
+- utterance: and drugs wise is there anything else at all
+  topics:
+  - medicines
+  style: spoken
+- utterance: Any regular medication?
+  topics:
+  - medicines
+  style: brief
+- utterance: Sleeping tablets at all?
+  topics:
+  - medicines
+  style: brief
+- utterance: Has anyone started you on vitamins or anything for that?
+  topics:
+  - medicines
+  style: follow_up
+  previous:
+    interviewer: Have you been told anything about your liver?
+    character: I eat poorly, usually one small meal daily. My GP said my liver tests were abnormal; I
+      don't know the results.
+- utterance: Presumably you're on some regular medication too?
+  topics:
+  - medicines
+  style: leading
+- utterance: Who's at home with you?
+  topics:
+  - setting
+  style: open
+- utterance: What support do you have around you?
+  topics:
+  - setting
+  style: open
+- utterance: Do you live on your own?
+  topics:
+  - setting
+  style: closed
+- utterance: Is there anyone who could stay with you while you come off alcohol?
+  topics:
+  - setting
+  style: closed
+- utterance: Have you got anyone who could keep an eye on you?
+  topics:
+  - setting
+  style: colloquial
+- utterance: Got family or friends nearby who could pop in?
+  topics:
+  - setting
+  style: colloquial
+- utterance: Could you describe your living situation and the support available at home?
+  topics:
+  - setting
+  style: clinical
+- utterance: I'm wondering who might be around to support you if you stopped
+  topics:
+  - setting
+  style: indirect
+- utterance: This is a big step to take. Who could be with you while you're withdrawing?
+  topics:
+  - setting
+  style: empathy_then_question
+- utterance: um and at home, who's, who's there with you
+  topics:
+  - setting
+  style: spoken
+- utterance: so is there family about or anyone
+  topics:
+  - setting
+  style: spoken
+- utterance: Anyone at home?
+  topics:
+  - setting
+  style: brief
+- utterance: Support at home?
+  topics:
+  - setting
+  style: brief
+- utterance: If you did it at home this time, would someone be there with you?
+  topics:
+  - setting
+  style: follow_up
+  previous:
+    interviewer: Tell me about any previous times you've come off alcohol.
+    character: I had a seizure when I stopped suddenly two years ago and was treated in hospital. I haven't
+      tried stopping on my own since.
+- utterance: I take it there isn't anyone who could be with you round the clock?
+  topics:
+  - setting
+  style: leading
+- utterance: What happened after you stopped the last time?
+  topics:
+  - relapse
+  style: open
+- utterance: How did things go in the weeks after your last attempt to stop?
+  topics:
+  - relapse
+  style: open
+- utterance: Did you have any support afterwards?
+  topics:
+  - relapse
+  style: closed
+- utterance: Were you able to stay off it for long?
+  topics:
+  - relapse
+  style: closed
+- utterance: What tipped you back into drinking?
+  topics:
+  - relapse
+  style: colloquial
+- utterance: After you stopped, how long before the drink crept back in?
+  topics:
+  - relapse
+  style: colloquial
+- utterance: Was any relapse-prevention follow-up arranged after your previous detox?
+  topics:
+  - relapse
+  style: clinical
+- utterance: I'm curious what led you to start drinking again before
+  topics:
+  - relapse
+  style: indirect
+- utterance: Going back to drinking is really common, so please don't be hard on yourself. What led to
+    you starting again?
+  topics:
+  - relapse
+  style: empathy_then_question
+- utterance: um so after that, after you'd stopped, what happened
+  topics:
+  - relapse
+  style: spoken
+- utterance: and did anyone follow you up or was that it
+  topics:
+  - relapse
+  style: spoken
+- utterance: Any follow-up last time?
+  topics:
+  - relapse
+  style: brief
+- utterance: Why did you start again?
+  topics:
+  - relapse
+  style: brief
+- utterance: And after you left hospital that time, how did things go?
+  topics:
+  - relapse
+  style: follow_up
+  previous:
+    interviewer: Have you ever had a fit when you stopped drinking?
+    character: I had a seizure when I stopped suddenly two years ago and was treated in hospital. I haven't
+      tried stopping on my own since.
+- utterance: I'd imagine it was hard to keep going without much support afterwards?
+  topics:
+  - relapse
+  style: leading
+- utterance: Can I ask about any thoughts of harming yourself?
+  topics:
+  - risk
+  style: open
+- utterance: What thoughts have you had about ending your life, if any?
+  topics:
+  - risk
+  style: open
+- utterance: Have you ever tried to kill yourself?
+  topics:
+  - risk
+  style: closed
+- utterance: Do you have any thoughts of harming anyone else?
+  topics:
+  - risk
+  style: closed
+- utterance: Has it ever got so bad you felt like ending it all?
+  topics:
+  - risk
+  style: colloquial
+- utterance: Ever had thoughts of doing something to yourself?
+  topics:
+  - risk
+  style: colloquial
+- utterance: Is there any history of suicide attempts or self-harm?
+  topics:
+  - risk
+  style: clinical
+- utterance: I ask everyone this, and I'd like to know whether you've had thoughts of suicide
+  topics:
+  - risk
+  style: indirect
+- utterance: It sounds like you've been carrying a lot. Have there been times you've wanted to die?
+  topics:
+  - risk
+  style: empathy_then_question
+- utterance: um i have to ask, any thoughts of hurting yourself
+  topics:
+  - risk
+  style: spoken
+- utterance: so with all this going on have you, um, thought about suicide
+  topics:
+  - risk
+  style: spoken
+- utterance: Any suicidal thoughts?
+  topics:
+  - risk
+  style: brief
+- utterance: Any past attempts?
+  topics:
+  - risk
+  style: brief
+- utterance: When you felt that lonely, did you ever think about harming yourself?
+  topics:
+  - risk
+  style: follow_up
+  previous:
+    interviewer: How did things go in the weeks after your last attempt to stop?
+    character: After hospital I stayed dry for a month, then restarted when lonely. I didn't have follow-up
+      support arranged.
+- utterance: You've never had thoughts of hurting anyone, I assume?
+  topics:
+  - risk
+  style: leading
+- utterance: What's making you want to stop now?
+  topics:
+  - wish
+  style: open
+- utterance: What would recovery mean for you, Karen?
+  topics:
+  - wish
+  style: open
+- utterance: Is there something in particular you're hoping to get back?
+  topics:
+  - wish
+  style: closed
+- utterance: Are there people you'd like to be closer to if you stopped?
+  topics:
+  - wish
+  style: closed
+- utterance: So what's the big reason for packing it in now?
+  topics:
+  - wish
+  style: colloquial
+- utterance: If the drink wasn't in the picture, what would life look like?
+  topics:
+  - wish
+  style: colloquial
+- utterance: Could you tell me about your motivation for stopping?
+  topics:
+  - wish
+  style: clinical
+- utterance: I'd love to hear what you're hoping for once you've stopped
+  topics:
+  - wish
+  style: indirect
+- utterance: You sound really determined. Who or what are you doing this for?
+  topics:
+  - wish
+  style: empathy_then_question
+- utterance: um can i ask what's, what's driving this for you
+  topics:
+  - wish
+  style: spoken
+- utterance: and what are you hoping'll change
+  topics:
+  - wish
+  style: spoken
+- utterance: Why stop now?
+  topics:
+  - wish
+  style: brief
+- utterance: Your reasons for stopping?
+  topics:
+  - wish
+  style: brief
+- utterance: And this time, what's making it worth another go?
+  topics:
+  - wish
+  style: follow_up
+  previous:
+    interviewer: What happened after you stopped the last time?
+    character: After hospital I stayed dry for a month, then restarted when lonely. I didn't have follow-up
+      support arranged.
+- utterance: I imagine there's someone you're hoping to reconnect with?
+  topics:
+  - wish
+  style: leading
+- utterance: What's been on your mind about coming here today?
+  topics:
+  - fear
+  style: open
+- utterance: Tell me how you feel about the possibility of being admitted for this.
+  topics:
+  - fear
+  style: open
+- utterance: Is anything making it hard to ask for help?
+  topics:
+  - fear
+  style: closed
+- utterance: Did anything put you off coming sooner?
+  topics:
+  - fear
+  style: closed
+- utterance: Has anything been holding you back from getting help?
+  topics:
+  - fear
+  style: colloquial
+- utterance: Are you worried what people might think?
+  topics:
+  - fear
+  style: colloquial
+- utterance: Could we talk about what made it hard to seek treatment before now?
+  topics:
+  - fear
+  style: clinical
+- utterance: People often feel awkward about asking for help with drinking, and I wondered how that's
+    been for you
+  topics:
+  - fear
+  style: indirect
+- utterance: Coming here can't have been easy. What worries you most about treatment?
+  topics:
+  - fear
+  style: empathy_then_question
+- utterance: um is there, is there anything that's been worrying you about all this
+  topics:
+  - fear
+  style: spoken
+- utterance: so what was it that stopped you coming earlier
+  topics:
+  - fear
+  style: spoken
+- utterance: Any worries about treatment?
+  topics:
+  - fear
+  style: brief
+- utterance: What held you back?
+  topics:
+  - fear
+  style: brief
+- utterance: How do you feel about the idea of going back in?
+  topics:
+  - fear
+  style: follow_up
+  previous:
+    interviewer: Were you ever admitted to hospital because of withdrawal?
+    character: I had a seizure when I stopped suddenly two years ago and was treated in hospital. I haven't
+      tried stopping on my own since.
+- utterance: I wonder if part of you feels embarrassed about asking for help?
+  topics:
+  - fear
+  style: leading
+- utterance: How much are you drinking, and do you get shaky if you stop?
+  topics:
+  - intake
+  - withdrawal
+  style: stacked
+- utterance: Are you on any medication, and how's your eating?
+  topics:
+  - medicines
+  - physical
+  style: stacked
+- utterance: Have you ever had a seizure coming off alcohol, and do you live with anyone?
+  topics:
+  - severe
+  - setting
+  style: stacked
+- utterance: What happened after you stopped before, and has anyone talked to you about your liver?
+  topics:
+  - relapse
+  - physical
+  style: stacked
+- utterance: Hello Karen, thanks for coming in today.
+  topics: []
+  style: greeting
+- utterance: I'm one of the doctors here in the addiction service.
+  topics: []
+  style: introduction
+- utterance: Karen, I'm a trainee psychiatrist and I'll be talking with you today.
+  topics: []
+  style: introduction
+- utterance: Is it all right if we talk about how to stop safely?
+  topics: []
+  style: introduction
+- utterance: What would you like to start with, Karen?
+  topics: []
+  style: transition
+- utterance: Before we start, do you have any questions for me?
+  topics: []
+  style: introduction
+- utterance: I'd like to move on to something a bit different now.
+  topics: []
+  style: transition
+- utterance: Let's turn to the options for treatment.
+  topics: []
+  style: transition
+- utterance: Next I want to ask a few questions about your health.
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Karen.
+  topics: []
+  style: closing
+- utterance: Thank you for talking with me today.
+  topics: []
+  style: closing
+- utterance: Before you go, is there anything we haven't covered?
+  topics: []
+  style: closing
+- utterance: It sounds like you're really determined to get this right.
+  topics: []
+  style: empathy
+- utterance: That must be frightening to think about.
+  topics: []
+  style: empathy
+- utterance: I can hear how worried you are.
+  topics: []
+  style: empathy
+- utterance: So far you've told me you want to stop and want to do it safely.
+  topics: []
+  style: summary
+- utterance: 'Let me check I''ve got this right: you''re keen to stop, but nervous about how.'
+  topics: []
+  style: summary
+- utterance: Stopping suddenly after heavy drinking can be dangerous, which is why we plan it carefully.
+  topics: []
+  style: explanation
+- utterance: Assisted withdrawal means we use medication under supervision to keep you safe while you
+    stop.
+  topics: []
+  style: explanation
+- utterance: Thiamine is a vitamin that protects the brain when people drink heavily.
+  topics: []
+  style: explanation
+- utterance: There are medicines that can help reduce cravings once you've stopped.
+  topics: []
+  style: explanation
+- utterance: Some people come off alcohol at home with daily checks, and others need to be in hospital.
+  topics: []
+  style: explanation
+- utterance: Does that make sense so far?
+  topics: []
+  style: check_understanding
+- utterance: Could you tell me in your own words what we've agreed?
+  topics: []
+  style: check_understanding
+- utterance: Is there anything I've said that wasn't clear?
+  topics: []
+  style: check_understanding
+- utterance: Have you ever been in trouble with the police because of drinking?
+  topics: []
+  style: off_case
+- utterance: Do you have any problems with your memory?
+  topics: []
+  style: off_case
+- utterance: Are you working at the moment?
+  topics: []
+  style: off_case
+- utterance: Has anyone in your family had problems with alcohol?
+  topics: []
+  style: off_case
+- utterance: How's your sleep been?
+  topics: []
+  style: off_case
+- utterance: Would you like me to explain what medication we might use?
+  topics: []
+  style: near_miss
+- utterance: Would you prefer to do this in hospital or at home?
+  topics: []
+  style: near_miss
+- utterance: Do you know what a withdrawal seizure is?
+  topics: []
+  style: near_miss
+- utterance: Do you have any questions about vitamins?
+  topics: []
+  style: near_miss

@@ -1,0 +1,165 @@
+# Training lines for the tone classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: remand-personal-social-history
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Could you tell me who brought you up?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Have you thought about ending your life since you arrived here?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: What was home like for you as a young child?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: um did anything frightening happen when you were growing up
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: How much had you drunk that evening?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Sorry if this is a bit personal, but have you got children?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Would you mind if I asked about work?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Good afternoon Leon, I'm a doctor from the mental health team.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: The report is for the court and your solicitor, so I'll explain what goes in it.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: explanation
+- utterance: Right. And when did that contract end?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: okay thanks
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: I'm sorry to hear that.
+  empathy: 1
+  empathy_words: I'm sorry to hear that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That must be hard.
+  empathy: 1
+  empathy_words: That must be hard.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That sounds difficult. How did you manage after that?
+  empathy: 1
+  empathy_words: That sounds difficult.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I can see this isn't easy. What happened next?
+  empathy: 1
+  empathy_words: I can see this isn't easy.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: It sounds like you've wanted somewhere that's properly your own for a long time, and that
+    matters.
+  empathy: 2
+  empathy_words: It sounds like you've wanted somewhere that's properly your own for a long time, and
+    that matters.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: What are you hoping for once this is over?
+    character: I'd like stable work and somewhere that is mine. I'm embarrassed that my sister keeps having
+      to rescue me.
+- utterance: Moving between three foster homes as a child would unsettle anyone, so it makes sense you'd
+    be wary of people.
+  empathy: 2
+  empathy_words: Moving between three foster homes as a child would unsettle anyone, so it makes sense
+    you'd be wary of people.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: Who brought you up, Leon?
+    character: I lived with my mum until I was nine, then had three foster placements before leaving care
+      at eighteen.
+- utterance: It's completely reasonable to want to know who reads what you say before you open up.
+  empathy: 2
+  empathy_words: It's completely reasonable to want to know who reads what you say before you open up.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: so it sounds like nobody ever helped you work out why reading was so hard for you. what was
+    that like
+  empathy: 2
+  empathy_words: so it sounds like nobody ever helped you work out why reading was so hard for you.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: How did you get on at school?
+    character: I left school at sixteen without qualifications. Reading was hard and I missed lessons;
+      I was never assessed for why.
+- utterance: Lots of lads in your position end up here, so it's no great surprise.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Lots of lads in your position end up here, so it's no great surprise.
+  style: confront_statement
+- utterance: You'd been drinking, so you knew you'd lose your temper, didn't you?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: so you knew you'd lose your temper, didn't you?
+  style: confront_tag
+- utterance: Let's not worry about who reads it, just answer the questions.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Let's not worry about who reads it, just answer the questions.
+  style: dismissive
+- utterance: It was only a bit of cannabis, that's not really important here.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: that's not really important here.
+  style: dismissive
+  previous:
+    interviewer: Do you smoke cannabis?
+    character: I smoked cannabis most evenings and drank six pints on Saturdays. I'd had six pints before
+      the alleged assault; no other drugs.

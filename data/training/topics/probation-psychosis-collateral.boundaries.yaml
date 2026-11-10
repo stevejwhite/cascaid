@@ -1,0 +1,360 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: probation-psychosis-collateral
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Do the records show any violence when he has been unwell before?
+  topics:
+  - history
+  style: boundary
+  pair:
+  - history
+  - uncertainty
+- utterance: Has he ever assaulted anyone in the past?
+  topics:
+  - history
+  style: boundary
+  pair:
+  - history
+  - uncertainty
+- utterance: What happened in earlier relapses when he stopped treatment?
+  topics:
+  - history
+  style: boundary_colloquial
+  pair:
+  - history
+  - uncertainty
+- utterance: um is there a history of him being aggressive when he's unwell
+  topics:
+  - history
+  style: boundary_spoken
+  pair:
+  - history
+  - uncertainty
+- utterance: Has he got a record of anything like this happening before?
+  topics:
+  - history
+  style: boundary_follow_up
+  pair:
+  - history
+  - uncertainty
+  previous:
+    interviewer: Do you wish you'd handled the early signs differently?
+    character: I'm worried I treated the first missed appointment as non-compliance and didn't ask whether
+      he was becoming unwell.
+- utterance: Looking back, how did you respond to the very first missed appointment?
+  topics:
+  - uncertainty
+  style: boundary
+  pair:
+  - history
+  - uncertainty
+- utterance: Is there anything you feel you might have missed at the start?
+  topics:
+  - uncertainty
+  style: boundary
+  pair:
+  - history
+  - uncertainty
+- utterance: Do you wish you'd picked up on the change earlier?
+  topics:
+  - uncertainty
+  style: boundary_colloquial
+  pair:
+  - history
+  - uncertainty
+- utterance: um do you feel you noticed the change early enough
+  topics:
+  - uncertainty
+  style: boundary_spoken
+  pair:
+  - history
+  - uncertainty
+- utterance: And looking back, do you think you could have spotted it sooner?
+  topics:
+  - uncertainty
+  style: boundary_follow_up
+  pair:
+  - history
+  - uncertainty
+  previous:
+    interviewer: Has he been violent before?
+    character: The records describe an assault during an earlier period of psychosis and missed treatment.
+      I haven't established whether the current situation is similar.
+- utterance: What was he originally convicted of?
+  topics: []
+  style: near_miss
+  pair:
+  - history
+  - uncertainty
+- utterance: Does he have any previous convictions for drug offences?
+  topics: []
+  style: near_miss
+  pair:
+  - history
+  - uncertainty
+- utterance: Have you been able to speak to his community team?
+  topics:
+  - contacts
+  style: boundary
+  pair:
+  - contacts
+  - uncertainty
+- utterance: Who else have you told about your concerns?
+  topics:
+  - contacts
+  style: boundary
+  pair:
+  - contacts
+  - uncertainty
+- utterance: Have you left any messages for his clinicians?
+  topics:
+  - contacts
+  style: boundary_colloquial
+  pair:
+  - contacts
+  - uncertainty
+- utterance: Have you been in touch with his care team about any of this?
+  topics:
+  - contacts
+  style: boundary_follow_up
+  pair:
+  - contacts
+  - uncertainty
+  previous:
+    interviewer: Do you feel you handled it the right way?
+    character: I'm worried I treated the first missed appointment as non-compliance and didn't ask whether
+      he was becoming unwell.
+- utterance: Do you feel you handled the first missed appointment the right way?
+  topics:
+  - uncertainty
+  style: boundary
+  pair:
+  - contacts
+  - uncertainty
+- utterance: Are you concerned that you misread what was happening early on?
+  topics:
+  - uncertainty
+  style: boundary
+  pair:
+  - contacts
+  - uncertainty
+- utterance: Have you got any regrets about how you responded at the beginning?
+  topics:
+  - uncertainty
+  style: boundary_colloquial
+  pair:
+  - contacts
+  - uncertainty
+- utterance: um do you think you should have picked up on it sooner
+  topics:
+  - uncertainty
+  style: boundary_spoken
+  pair:
+  - contacts
+  - uncertainty
+- utterance: And looking back at the start, do you feel you responded well?
+  topics:
+  - uncertainty
+  style: boundary_follow_up
+  pair:
+  - contacts
+  - uncertainty
+  previous:
+    interviewer: Have you contacted the team?
+    character: I have the community team's contact details and have left an urgent message. We haven't
+      yet spoken directly.
+- utterance: Do you have a written risk assessment that I could look at?
+  topics: []
+  style: near_miss
+  pair:
+  - contacts
+  - uncertainty
+- utterance: Is his probation order due to end soon?
+  topics: []
+  style: near_miss
+  pair:
+  - contacts
+  - uncertainty
+- utterance: What exactly did you see when you visited?
+  topics:
+  - observations
+  style: boundary
+  pair:
+  - observations
+  - self-risk
+- utterance: What did he say to you through the door?
+  topics:
+  - observations
+  style: boundary
+  pair:
+  - observations
+  - self-risk
+- utterance: How did he come across to you in person?
+  topics:
+  - observations
+  style: boundary_colloquial
+  pair:
+  - observations
+  - self-risk
+- utterance: um what did he actually say when you went round
+  topics:
+  - observations
+  style: boundary_spoken
+  pair:
+  - observations
+  - self-risk
+- utterance: What have you directly seen of how he is, then?
+  topics:
+  - observations
+  style: boundary_follow_up
+  pair:
+  - observations
+  - self-risk
+  previous:
+    interviewer: Have you asked about his safety?
+    character: I haven't asked him about suicide or whether he's eating. I'm uncomfortable admitting how
+      little I know about his immediate safety.
+- utterance: Have you been able to ask him whether he's had thoughts of suicide?
+  topics:
+  - self-risk
+  style: boundary
+  pair:
+  - observations
+  - self-risk
+- utterance: Do you know if he's been eating properly?
+  topics:
+  - self-risk
+  style: boundary
+  pair:
+  - observations
+  - self-risk
+- utterance: How confident are you that he's safe right now?
+  topics:
+  - self-risk
+  style: boundary_colloquial
+  pair:
+  - observations
+  - self-risk
+- utterance: um did you ask him about hurting himself
+  topics:
+  - self-risk
+  style: boundary_spoken
+  pair:
+  - observations
+  - self-risk
+- utterance: And did you get the chance to ask if he's looking after himself?
+  topics:
+  - self-risk
+  style: boundary_follow_up
+  pair:
+  - observations
+  - self-risk
+  previous:
+    interviewer: What did you see at the visit?
+    character: At a home visit last week he spoke through the door and said people were monitoring him.
+      He seemed much more guarded than usual.
+- utterance: Did anyone else go with you on the visit?
+  topics: []
+  style: near_miss
+  pair:
+  - observations
+  - self-risk
+- utterance: How long did the visit last?
+  topics: []
+  style: near_miss
+  pair:
+  - observations
+  - self-risk
+- utterance: How regularly had he been coming in before this?
+  topics:
+  - attendance
+  style: boundary
+  pair:
+  - attendance
+  - uncertainty
+- utterance: When did he stop turning up?
+  topics:
+  - attendance
+  style: boundary
+  pair:
+  - attendance
+  - uncertainty
+- utterance: How many of his appointments has he missed?
+  topics:
+  - attendance
+  style: boundary_colloquial
+  pair:
+  - attendance
+  - uncertainty
+- utterance: um is he still coming to see you every week
+  topics:
+  - attendance
+  style: boundary_spoken
+  pair:
+  - attendance
+  - uncertainty
+- utterance: And when did the missed sessions begin?
+  topics:
+  - attendance
+  style: boundary_follow_up
+  pair:
+  - attendance
+  - uncertainty
+  previous:
+    interviewer: Do you wish you'd acted sooner?
+    character: I'm worried I treated the first missed appointment as non-compliance and didn't ask whether
+      he was becoming unwell.
+- utterance: When he first didn't turn up, what did you assume at the time?
+  topics:
+  - uncertainty
+  style: boundary
+  pair:
+  - attendance
+  - uncertainty
+- utterance: Did you consider back then that he might be getting ill?
+  topics:
+  - uncertainty
+  style: boundary
+  pair:
+  - attendance
+  - uncertainty
+- utterance: Would you do anything differently now, looking at that first one he missed?
+  topics:
+  - uncertainty
+  style: boundary_colloquial
+  pair:
+  - attendance
+  - uncertainty
+- utterance: um did it cross your mind at the start that he was unwell
+  topics:
+  - uncertainty
+  style: boundary_spoken
+  pair:
+  - attendance
+  - uncertainty
+- utterance: And when he first missed one, what did you make of it?
+  topics:
+  - uncertainty
+  style: boundary_follow_up
+  pair:
+  - attendance
+  - uncertainty
+  previous:
+    interviewer: When did he start missing appointments?
+    character: He attended reliably for six months, then missed his last three weekly appointments. The
+      change began about a month ago.
+- utterance: Has he given any reason for not coming?
+  topics: []
+  style: near_miss
+  pair:
+  - attendance
+  - uncertainty
+- utterance: Do you know if he has any transport problems?
+  topics: []
+  style: near_miss
+  pair:
+  - attendance
+  - uncertainty

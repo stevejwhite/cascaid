@@ -1,0 +1,50 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: social-anxiety-therapy-choice
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Louise, which situations with colleagues do you keep away from, and how long has that been
+    happening?
+  expected:
+  - situations
+  rapport: false
+- utterance: What do you fear people will conclude about you when you're speaking?
+  expected:
+  - fear
+  rapport: false
+- utterance: What physical changes do you notice when everybody's attention is on you?
+  expected:
+  - body
+  rapport: false
+- utterance: What do you do beforehand or in the moment to try to prevent embarrassment?
+  expected:
+  - strategies
+  rapport: false
+- utterance: What small changes at work would tell you that therapy was helping?
+  expected:
+  - goals
+  rapport: false
+- utterance: What help have you already tried for this, including therapy, medication or advice?
+  expected:
+  - help
+  rapport: false
+- utterance: What time could you give to appointments and practice around work?
+  expected:
+  - commitment
+  rapport: false
+- utterance: How would you feel about starting individually compared with attending a group?
+  expected:
+  - preference
+  rapport: false
+- utterance: what do you tell them instead about keeping to yourself?
+  expected:
+  - shame
+  rapport: false
+  previous:
+    interviewer: Do you feel able to explain the anxiety to colleagues?
+    character: I think I should have grown out of this.
+- utterance: It's understandable to feel unsure what to say at a first therapy appointment.
+  expected: []
+  rapport: true

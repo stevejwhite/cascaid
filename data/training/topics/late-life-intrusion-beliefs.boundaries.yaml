@@ -1,0 +1,359 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: late-life-intrusion-beliefs
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Do you get many visitors, or is it mostly just you at home?
+  topics:
+  - isolation
+  style: boundary
+  pair:
+  - isolation
+  - mood
+- utterance: Do you ever feel lonely living here by yourself?
+  topics:
+  - isolation
+  style: boundary
+  pair:
+  - isolation
+  - mood
+- utterance: Is there anybody who pops round to see you?
+  topics:
+  - isolation
+  style: boundary_colloquial
+  pair:
+  - isolation
+  - mood
+- utterance: um and who do you have around to support you, family or friends
+  topics:
+  - isolation
+  style: boundary_spoken
+  pair:
+  - isolation
+  - mood
+- utterance: And who else is there in your life that you can lean on?
+  topics:
+  - isolation
+  style: boundary_follow_up
+  pair:
+  - isolation
+  - mood
+  previous:
+    interviewer: How have you been sleeping?
+    character: I'm anxious at home and sleep about five hours. I still enjoy seeing my niece and haven't felt unusually energetic or persistently low.
+- utterance: Have you been feeling low in yourself recently?
+  topics:
+  - mood
+  style: boundary
+  pair:
+  - isolation
+  - mood
+- utterance: How much sleep are you getting at night?
+  topics:
+  - mood
+  style: boundary
+  pair:
+  - isolation
+  - mood
+- utterance: Are you still getting a bit of enjoyment out of things?
+  topics:
+  - mood
+  style: boundary_colloquial
+  pair:
+  - isolation
+  - mood
+- utterance: and how's your mood been, um, lately, any better or worse than usual
+  topics:
+  - mood
+  style: boundary_spoken
+  pair:
+  - isolation
+  - mood
+- utterance: And apart from the worry about your flat, have you felt low or especially cheerful?
+  topics:
+  - mood
+  style: boundary_follow_up
+  pair:
+  - isolation
+  - mood
+  previous:
+    interviewer: Who comes to see you?
+    character: My niece visits weekly. I don't tell her how lonely I feel because I don't want to be a burden.
+- utterance: Do you have any worries about money at the moment?
+  topics: []
+  style: near_miss
+  pair:
+  - isolation
+  - mood
+- utterance: Have you got a pet for company?
+  topics: []
+  style: near_miss
+  pair:
+  - isolation
+  - mood
+- utterance: When did you first start to feel something wasn't right at home?
+  topics:
+  - onset
+  style: boundary
+  pair:
+  - onset
+  - other-phenomena
+- utterance: How often do you find that things have been moved?
+  topics:
+  - onset
+  style: boundary
+  pair:
+  - onset
+  - other-phenomena
+- utterance: Is this a recent worry, or has it been with you a while?
+  topics:
+  - onset
+  style: boundary_colloquial
+  pair:
+  - onset
+  - other-phenomena
+- utterance: so um when was the first time you noticed something out of place
+  topics:
+  - onset
+  style: boundary_spoken
+  pair:
+  - onset
+  - other-phenomena
+- utterance: Okay. And when did all of this first start?
+  topics:
+  - onset
+  style: boundary_follow_up
+  pair:
+  - onset
+  - other-phenomena
+  previous:
+    interviewer: Have you seen any figures or smelt anything odd?
+    character: No, I haven't seen figures or noticed strange smells. I don't think anyone controls or broadcasts my thoughts.
+- utterance: Apart from things being moved, have you seen anything others can't, like shadows or people?
+  topics:
+  - other-phenomena
+  style: boundary
+  pair:
+  - onset
+  - other-phenomena
+- utterance: Does it ever feel as though your thoughts are not entirely your own?
+  topics:
+  - other-phenomena
+  style: boundary
+  pair:
+  - onset
+  - other-phenomena
+- utterance: Seeing anything odd? Any funny smells?
+  topics:
+  - other-phenomena
+  style: boundary_colloquial
+  pair:
+  - onset
+  - other-phenomena
+- utterance: mm and have you um seen anything that other people couldn't see
+  topics:
+  - other-phenomena
+  style: boundary_spoken
+  pair:
+  - onset
+  - other-phenomena
+- utterance: Has anything else strange happened, like things you can see or smell?
+  topics:
+  - other-phenomena
+  style: boundary_follow_up
+  pair:
+  - onset
+  - other-phenomena
+  previous:
+    interviewer: How long has this been happening?
+    character: It started four months ago when I couldn't find my purse where I expected. Since then I notice something displaced most weeks.
+- utterance: Have you thought about changing your locks?
+  topics: []
+  style: near_miss
+  pair:
+  - onset
+  - other-phenomena
+- utterance: Have you reported any of this to the police?
+  topics: []
+  style: near_miss
+  pair:
+  - onset
+  - other-phenomena
+- utterance: How certain are you that it's your neighbours who are doing it?
+  topics:
+  - belief
+  style: boundary
+  pair:
+  - belief
+  - onset
+- utterance: Have you actually seen anyone inside your flat?
+  topics:
+  - belief
+  style: boundary
+  pair:
+  - belief
+  - onset
+- utterance: Could it be something else, like you've put things down and forgotten where?
+  topics:
+  - belief
+  style: boundary_colloquial
+  pair:
+  - belief
+  - onset
+- utterance: um what makes you so sure it's them
+  topics:
+  - belief
+  style: boundary_spoken
+  pair:
+  - belief
+  - onset
+- utterance: And do you have any proof that it's the neighbours doing it?
+  topics:
+  - belief
+  style: boundary_follow_up
+  pair:
+  - belief
+  - onset
+  previous:
+    interviewer: How often do you notice things moved?
+    character: It started four months ago when I couldn't find my purse where I expected. Since then I notice something displaced most weeks.
+- utterance: What was the first thing you noticed that made you uneasy?
+  topics:
+  - onset
+  style: boundary
+  pair:
+  - belief
+  - onset
+- utterance: Would you say it's been a few weeks, months or longer since you first felt uneasy?
+  topics:
+  - onset
+  style: boundary
+  pair:
+  - belief
+  - onset
+- utterance: Was there a particular day when it all began?
+  topics:
+  - onset
+  style: boundary_colloquial
+  pair:
+  - belief
+  - onset
+- utterance: right and how often does it happen is it like every day or
+  topics:
+  - onset
+  style: boundary_spoken
+  pair:
+  - belief
+  - onset
+- utterance: And how often does it happen, would you say weekly?
+  topics:
+  - onset
+  style: boundary_follow_up
+  pair:
+  - belief
+  - onset
+  previous:
+    interviewer: How sure are you it's the neighbours?
+    character: I'm sure the neighbours enter when I'm out and move my things. I haven't seen them inside, but I can't think of another explanation.
+- utterance: Have you spoken to your landlord or the council about it?
+  topics: []
+  style: near_miss
+  pair:
+  - belief
+  - onset
+- utterance: Do other people in your building ever complain of things going missing?
+  topics: []
+  style: near_miss
+  pair:
+  - belief
+  - onset
+- utterance: Do you ever hear anyone speaking when nobody is there?
+  topics:
+  - hearing-voices
+  style: boundary
+  pair:
+  - hearing-voices
+  - other-phenomena
+- utterance: Do you hear things other people wouldn't, such as someone talking?
+  topics:
+  - hearing-voices
+  style: boundary
+  pair:
+  - hearing-voices
+  - other-phenomena
+- utterance: Do you hear the neighbours, or anybody, talking when no one's there?
+  topics:
+  - hearing-voices
+  style: boundary_colloquial
+  pair:
+  - hearing-voices
+  - other-phenomena
+- utterance: mm and at night um do you hear anything like voices or whispering
+  topics:
+  - hearing-voices
+  style: boundary_spoken
+  pair:
+  - hearing-voices
+  - other-phenomena
+- utterance: What about hearing things, voices perhaps?
+  topics:
+  - hearing-voices
+  style: boundary_follow_up
+  pair:
+  - hearing-voices
+  - other-phenomena
+  previous:
+    interviewer: Have you noticed any strange smells?
+    character: No, I haven't seen figures or noticed strange smells. I don't think anyone controls or broadcasts my thoughts.
+- utterance: Have you been seeing things that others can't, shadows or people?
+  topics:
+  - other-phenomena
+  style: boundary
+  pair:
+  - hearing-voices
+  - other-phenomena
+- utterance: Do you ever feel that someone is interfering with your thoughts?
+  topics:
+  - other-phenomena
+  style: boundary
+  pair:
+  - hearing-voices
+  - other-phenomena
+- utterance: Anything else weird going on? Funny smells, visions?
+  topics:
+  - other-phenomena
+  style: boundary_colloquial
+  pair:
+  - hearing-voices
+  - other-phenomena
+- utterance: um do you ever feel like other people can hear what you're thinking
+  topics:
+  - other-phenomena
+  style: boundary_spoken
+  pair:
+  - hearing-voices
+  - other-phenomena
+- utterance: Any other unusual experiences, like seeing things or noticing smells?
+  topics:
+  - other-phenomena
+  style: boundary_follow_up
+  pair:
+  - hearing-voices
+  - other-phenomena
+  previous:
+    interviewer: Do you hear anything at night?
+    character: Sometimes at night I hear a man's voice through the wall saying my name. I can't tell where it comes from.
+- utterance: Do you ever feel dizzy or lightheaded?
+  topics: []
+  style: near_miss
+  pair:
+  - hearing-voices
+  - other-phenomena
+- utterance: Have you had any falls in the flat?
+  topics: []
+  style: near_miss
+  pair:
+  - hearing-voices
+  - other-phenomena

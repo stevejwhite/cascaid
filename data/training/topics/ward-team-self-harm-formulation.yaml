@@ -1,0 +1,775 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: ward-team-self-harm-formulation
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Tell me about the recent episodes of self-harm on the ward.
+  topics:
+  - episodes
+  style: open
+- utterance: Has she hurt herself again this week?
+  topics:
+  - episodes
+  style: closed
+- utterance: How many times has this happened lately?
+  topics:
+  - episodes
+  style: colloquial
+- utterance: What is the frequency and recency of the self-injury, and have the injuries been assessed?
+  topics:
+  - episodes
+  style: clinical
+- utterance: I wanted to understand how often she's been harming herself
+  topics:
+  - episodes
+  style: indirect
+- utterance: That sounds really stressful for the team. How many incidents have there been recently?
+  topics:
+  - episodes
+  style: empathy_then_question
+- utterance: um so how often's she been self-harming, and when was the last time
+  topics:
+  - episodes
+  style: spoken
+- utterance: And the latest incident?
+  topics:
+  - episodes
+  style: brief
+- utterance: It's been happening a lot lately, hasn't it?
+  topics:
+  - episodes
+  style: leading
+- utterance: How often has she harmed herself over that time?
+  topics:
+  - episodes
+  style: follow_up
+  previous:
+    interviewer: Do staff disagree about how to respond to her?
+    character: Yes, some colleagues offer extra time and others say we should withdraw attention. We argue
+      about it at handover.
+- utterance: When did it last happen?
+  topics:
+  - episodes
+  style: follow_up
+  previous:
+    interviewer: Did anything change on the ward just before it happened?
+    character: Yesterday she became distressed when her named nurse was moved to another ward. I don't
+      know whether that explains the other episodes.
+- utterance: Talk me through what's happened with her injuries this week.
+  topics:
+  - episodes
+  style: open
+- utterance: Was she examined by a doctor after each incident?
+  topics:
+  - episodes
+  style: closed
+- utterance: When was the last time she hurt herself?
+  topics:
+  - episodes
+  style: colloquial
+- utterance: so er how bad have the injuries been
+  topics:
+  - episodes
+  style: spoken
+- utterance: What was going on for her before the latest incident?
+  topics:
+  - context
+  style: open
+- utterance: Did anything change on the ward just before it happened?
+  topics:
+  - context
+  style: closed
+- utterance: What set her off last time?
+  topics:
+  - context
+  style: colloquial
+- utterance: Were there any identifiable precipitants or triggers?
+  topics:
+  - context
+  style: clinical
+- utterance: I wondered what had happened just beforehand
+  topics:
+  - context
+  style: indirect
+- utterance: That must have been alarming to deal with. What happened in the run-up to it?
+  topics:
+  - context
+  style: empathy_then_question
+- utterance: um what was happening before, like, was there a trigger
+  topics:
+  - context
+  style: spoken
+- utterance: Any trigger?
+  topics:
+  - context
+  style: brief
+- utterance: Something upset her beforehand, didn't it?
+  topics:
+  - context
+  style: leading
+- utterance: What led up to that one?
+  topics:
+  - context
+  style: follow_up
+  previous:
+    interviewer: How many times has this happened lately?
+    character: Yes, there have been three episodes of self-injury this week. Each was medically assessed;
+      the latest was yesterday.
+- utterance: Had anything changed on the ward around then?
+  topics:
+  - context
+  style: follow_up
+  previous:
+    interviewer: What has she said about how she's feeling?
+    character: She told me she feels forgotten when staff change. That's what she said, rather than my
+      knowing her motives.
+- utterance: Tell me about any staffing changes around the time she became upset.
+  topics:
+  - context
+  style: open
+- utterance: Was a particular member of staff involved beforehand?
+  topics:
+  - context
+  style: closed
+- utterance: Did something kick it off?
+  topics:
+  - context
+  style: colloquial
+- utterance: so er is there a pattern, like do the episodes follow something
+  topics:
+  - context
+  style: spoken
+- utterance: How is the team getting on with each other over her care?
+  topics:
+  - division
+  style: open
+- utterance: Do staff disagree about how to respond to her?
+  topics:
+  - division
+  style: closed
+- utterance: Is everyone on the same page?
+  topics:
+  - division
+  style: colloquial
+- utterance: Is there a lack of consensus within the team regarding the approach?
+  topics:
+  - division
+  style: clinical
+- utterance: I've heard there may be some tension in the team
+  topics:
+  - division
+  style: indirect
+- utterance: That sounds draining. Do people argue about how to respond?
+  topics:
+  - division
+  style: empathy_then_question
+- utterance: um do you all agree on what to do with her, or is there, like, friction
+  topics:
+  - division
+  style: spoken
+- utterance: Disagreements in the team?
+  topics:
+  - division
+  style: brief
+- utterance: The team are split, aren't they?
+  topics:
+  - division
+  style: leading
+- utterance: Is that what people disagree about?
+  topics:
+  - division
+  style: follow_up
+  previous:
+    interviewer: Is there a written plan for when she self-harms?
+    character: No, we don't have an agreed written approach to these episodes. Different shifts make different
+      promises.
+- utterance: Do staff agree on how much attention to give her?
+  topics:
+  - division
+  style: follow_up
+  previous:
+    interviewer: How many times has this happened lately?
+    character: Yes, there have been three episodes of self-injury this week. Each was medically assessed;
+      the latest was yesterday.
+- utterance: What's the atmosphere like at handover?
+  topics:
+  - division
+  style: open
+- utterance: Do you and your colleagues argue about it?
+  topics:
+  - division
+  style: closed
+- utterance: Who's saying what about how to handle her?
+  topics:
+  - division
+  style: colloquial
+- utterance: so, um, are people taking sides
+  topics:
+  - division
+  style: spoken
+- utterance: How do you feel when you're looking after her?
+  topics:
+  - feelings
+  style: open
+- utterance: Do you ever feel angry with her?
+  topics:
+  - feelings
+  style: closed
+- utterance: How's all this been sitting with you?
+  topics:
+  - feelings
+  style: colloquial
+- utterance: What emotional reactions has she evoked in you?
+  topics:
+  - feelings
+  style: clinical
+- utterance: I wondered how this has been affecting you personally
+  topics:
+  - feelings
+  style: indirect
+- utterance: I'd like you to know there's no judgement here. How do you feel towards her?
+  topics:
+  - feelings
+  style: empathy_then_question
+- utterance: um how do you, how do you feel about her, honestly
+  topics:
+  - feelings
+  style: spoken
+- utterance: And your own feelings?
+  topics:
+  - feelings
+  style: brief
+- utterance: It must make you feel quite frustrated, doesn't it?
+  topics:
+  - feelings
+  style: leading
+- utterance: Has caring for her stirred up difficult feelings?
+  topics:
+  - feelings
+  style: follow_up
+  previous:
+    interviewer: Have you had any chance to reflect with a senior colleague?
+    character: No, I haven't had a reflective meeting about this. The senior nurse could make time tomorrow.
+- utterance: Could we talk about what this brings up for you?
+  topics:
+  - feelings
+  style: open
+- utterance: Do you ever feel guilty about your reactions?
+  topics:
+  - feelings
+  style: closed
+- utterance: Are you finding her hard to be around?
+  topics:
+  - feelings
+  style: colloquial
+- utterance: so er would you say you're, like, worried about how you come across
+  topics:
+  - feelings
+  style: spoken
+- utterance: How have you responded to her in the moment recently?
+  topics:
+  - reaction
+  style: open
+- utterance: Has there been a conversation with her that you wish had gone differently?
+  topics:
+  - reaction
+  style: closed
+- utterance: Is there anything you did with her that you regret?
+  topics:
+  - reaction
+  style: colloquial
+- utterance: Can you describe any interaction where your reaction affected your relationship with her?
+  topics:
+  - reaction
+  style: clinical
+- utterance: I wondered whether there's been a moment with her that's stayed with you
+  topics:
+  - reaction
+  style: indirect
+- utterance: This isn't easy to talk about, and that's fine. Was there an exchange with her that you're
+    unhappy with?
+  topics:
+  - reaction
+  style: empathy_then_question
+- utterance: um did you, like, say or do anything with her you wish you hadn't
+  topics:
+  - reaction
+  style: spoken
+- utterance: Any regrets with her?
+  topics:
+  - reaction
+  style: brief
+- utterance: You ended up snapping at her, didn't you?
+  topics:
+  - reaction
+  style: leading
+- utterance: Did that show in how you spoke to her?
+  topics:
+  - reaction
+  style: follow_up
+  previous:
+    interviewer: How do you feel towards her?
+    character: I feel angry and then guilty for being angry. I'm frightened that my irritation will show.
+- utterance: Have you told the team about how you dealt with her?
+  topics:
+  - reaction
+  style: follow_up
+  previous:
+    interviewer: Do staff disagree about how to respond to her?
+    character: Yes, some colleagues offer extra time and others say we should withdraw attention. We argue
+      about it at handover.
+- utterance: Would you be willing to tell me about a time you felt you handled things badly?
+  topics:
+  - reaction
+  style: open
+- utterance: Did you ever leave a conversation with her unfinished?
+  topics:
+  - reaction
+  style: closed
+- utterance: Did you lose your cool with her at all?
+  topics:
+  - reaction
+  style: colloquial
+- utterance: so um have there been, like, times you pulled away from her
+  topics:
+  - reaction
+  style: spoken
+- utterance: What care plan is in place for these episodes?
+  topics:
+  - plan
+  style: open
+- utterance: Are you all following the same plan?
+  topics:
+  - plan
+  style: colloquial
+- utterance: Is there a documented, consistent management plan across shifts?
+  topics:
+  - plan
+  style: clinical
+- utterance: I wanted to understand how consistent the approach is between shifts
+  topics:
+  - plan
+  style: indirect
+- utterance: That sounds frustrating. Is there an agreed plan that everyone works to?
+  topics:
+  - plan
+  style: empathy_then_question
+- utterance: um is there a plan written down anywhere, for what to do
+  topics:
+  - plan
+  style: spoken
+- utterance: Any agreed plan?
+  topics:
+  - plan
+  style: brief
+- utterance: There's no plan in place, is there?
+  topics:
+  - plan
+  style: leading
+- utterance: Is there anything agreed in writing?
+  topics:
+  - plan
+  style: follow_up
+  previous:
+    interviewer: Do staff disagree about how to respond to her?
+    character: Yes, some colleagues offer extra time and others say we should withdraw attention. We argue
+      about it at handover.
+- utterance: What does the plan say about how staff respond?
+  topics:
+  - plan
+  style: follow_up
+  previous:
+    interviewer: How many times has this happened lately?
+    character: Yes, there have been three episodes of self-injury this week. Each was medically assessed;
+      the latest was yesterday.
+- utterance: How consistent are staff in what they tell her from shift to shift?
+  topics:
+  - plan
+  style: open
+- utterance: Do different shifts handle her differently?
+  topics:
+  - plan
+  style: closed
+- utterance: Does everybody say the same thing to her?
+  topics:
+  - plan
+  style: colloquial
+- utterance: so er what do night staff do compared to days
+  topics:
+  - plan
+  style: spoken
+- utterance: How is she doing today, in terms of safety?
+  topics:
+  - safety
+  style: open
+- utterance: Is anyone with her right now?
+  topics:
+  - safety
+  style: closed
+- utterance: Is she okay at the moment?
+  topics:
+  - safety
+  style: colloquial
+- utterance: What is her current observation level and who is allocated to her?
+  topics:
+  - safety
+  style: clinical
+- utterance: I wondered how safe she is on the ward today
+  topics:
+  - safety
+  style: indirect
+- utterance: I know you'll be worried. Who is keeping an eye on her today?
+  topics:
+  - safety
+  style: empathy_then_question
+- utterance: um is she being watched, like, who's with her today
+  topics:
+  - safety
+  style: spoken
+- utterance: Is she safe today?
+  topics:
+  - safety
+  style: brief
+- utterance: She's being closely observed today, isn't she?
+  topics:
+  - safety
+  style: leading
+- utterance: Is someone staying close to her at the moment?
+  topics:
+  - safety
+  style: follow_up
+  previous:
+    interviewer: When did it last happen?
+    character: Yes, there have been three episodes of self-injury this week. Each was medically assessed;
+      the latest was yesterday.
+- utterance: Do you think she will try to hurt herself again?
+  topics:
+  - safety
+  style: follow_up
+  previous:
+    interviewer: What led up to that one?
+    character: Yesterday she became distressed when her named nurse was moved to another ward. I don't
+      know whether that explains the other episodes.
+- utterance: Talk me through what's in place to keep her safe today.
+  topics:
+  - safety
+  style: open
+- utterance: Has she been reassessed today?
+  topics:
+  - safety
+  style: closed
+- utterance: Who's got her today?
+  topics:
+  - safety
+  style: colloquial
+- utterance: so er what's the risk like today, is she likely to do it again
+  topics:
+  - safety
+  style: spoken
+- utterance: What support do you get for dealing with all this?
+  topics:
+  - supervision
+  style: open
+- utterance: Have you had any chance to reflect with a senior colleague?
+  topics:
+  - supervision
+  style: closed
+- utterance: Has anyone checked in on you?
+  topics:
+  - supervision
+  style: colloquial
+- utterance: I was wondering what support exists for staff on the ward
+  topics:
+  - supervision
+  style: indirect
+- utterance: You've been carrying a lot. Has anyone given you time to talk it through?
+  topics:
+  - supervision
+  style: empathy_then_question
+- utterance: um have you had any, like, supervision or a debrief about it
+  topics:
+  - supervision
+  style: spoken
+- utterance: Any support for staff?
+  topics:
+  - supervision
+  style: brief
+- utterance: Nobody's offered you any support, have they?
+  topics:
+  - supervision
+  style: leading
+- utterance: Have you got anywhere to take those feelings?
+  topics:
+  - supervision
+  style: follow_up
+  previous:
+    interviewer: How do you feel towards her?
+    character: I feel angry and then guilty for being angry. I'm frightened that my irritation will show.
+- utterance: Have you been able to discuss that with a senior colleague?
+  topics:
+  - supervision
+  style: follow_up
+  previous:
+    interviewer: Is there anything you did with her that you regret?
+    character: Yes, yesterday I cut our conversation short because I felt rejected when she asked for
+      someone else. I haven't told the team.
+- utterance: Tell me how the team gets a chance to think about difficult cases.
+  topics:
+  - supervision
+  style: open
+- utterance: Is a reflective meeting something you'd want?
+  topics:
+  - supervision
+  style: closed
+- utterance: Do you get to offload to anyone?
+  topics:
+  - supervision
+  style: colloquial
+- utterance: so er is there a space, like a meeting, to talk about how it's affecting you
+  topics:
+  - supervision
+  style: spoken
+- utterance: What has she told you about how she's feeling?
+  topics:
+  - perspective
+  style: open
+- utterance: Has she said anything about why she does it?
+  topics:
+  - perspective
+  style: closed
+- utterance: What does she say is going on for her?
+  topics:
+  - perspective
+  style: colloquial
+- utterance: What is the patient's own account of her distress?
+  topics:
+  - perspective
+  style: clinical
+- utterance: I'd like to hear what she herself has said about all of this
+  topics:
+  - perspective
+  style: indirect
+- utterance: It sounds like you care about her. What has she said to you about it?
+  topics:
+  - perspective
+  style: empathy_then_question
+- utterance: um what does she say, herself, about why she's so upset
+  topics:
+  - perspective
+  style: spoken
+- utterance: In her own words?
+  topics:
+  - perspective
+  style: brief
+- utterance: She feels let down by staff, doesn't she?
+  topics:
+  - perspective
+  style: leading
+- utterance: Has she told you how she feels about that?
+  topics:
+  - perspective
+  style: follow_up
+  previous:
+    interviewer: What was going on for her before the latest incident?
+    character: Yesterday she became distressed when her named nurse was moved to another ward. I don't
+      know whether that explains the other episodes.
+- utterance: Did she explain what it was about?
+  topics:
+  - perspective
+  style: follow_up
+  previous:
+    interviewer: How many times has this happened lately?
+    character: Yes, there have been three episodes of self-injury this week. Each was medically assessed;
+      the latest was yesterday.
+- utterance: Tell me what she says about staff coming and going.
+  topics:
+  - perspective
+  style: open
+- utterance: Has she told you anything about how she's been feeling?
+  topics:
+  - perspective
+  style: closed
+- utterance: What's her take on it?
+  topics:
+  - perspective
+  style: colloquial
+- utterance: so, um, has she actually said why, or is that guesswork
+  topics:
+  - perspective
+  style: spoken
+- utterance: Would a shared plan help?
+  topics:
+  - goal
+  style: closed
+- utterance: What do you need from me?
+  topics:
+  - goal
+  style: colloquial
+- utterance: What are your objectives for the team approach going forward?
+  topics:
+  - goal
+  style: clinical
+- utterance: I was wondering what would make things better for you and your colleagues
+  topics:
+  - goal
+  style: indirect
+- utterance: I appreciate you coming to me. What would help most?
+  topics:
+  - goal
+  style: empathy_then_question
+- utterance: um so what are you hoping, like, we could sort out today
+  topics:
+  - goal
+  style: spoken
+- utterance: What would help the team?
+  topics:
+  - goal
+  style: brief
+- utterance: You want everyone working the same way, don't you?
+  topics:
+  - goal
+  style: leading
+- utterance: What would a good plan look like to you?
+  topics:
+  - goal
+  style: follow_up
+  previous:
+    interviewer: Is there a written plan for when she self-harms?
+    character: No, we don't have an agreed written approach to these episodes. Different shifts make different
+      promises.
+- utterance: Tell me what you'd like to see happen next on the ward.
+  topics:
+  - goal
+  style: open
+- utterance: Would it help to discuss reactions without blame?
+  topics:
+  - goal
+  style: closed
+- utterance: What would make life easier?
+  topics:
+  - goal
+  style: colloquial
+- utterance: so er where do you want us to get to
+  topics:
+  - goal
+  style: spoken
+- utterance: How many incidents have there been, and what was happening beforehand?
+  topics:
+  - episodes
+  - context
+  style: stacked
+- utterance: Do staff disagree about her care, and is there an agreed plan?
+  topics:
+  - division
+  - plan
+  style: stacked
+- utterance: How are you feeling about her, and have you had any support?
+  topics:
+  - feelings
+  - supervision
+  style: stacked
+- utterance: Is she safe at the moment, and what does she say about it herself?
+  topics:
+  - safety
+  - perspective
+  style: stacked
+- utterance: Hello Nadia, thanks for making the time.
+  topics: []
+  style: greeting
+- utterance: I'm the ward psychiatrist, as you know, but today I'm here to listen.
+  topics: []
+  style: introduction
+- utterance: It's Dr Hughes, we've met on the ward a few times.
+  topics: []
+  style: introduction
+- utterance: Is it all right if we talk privately for a little while?
+  topics: []
+  style: greeting
+- utterance: Where would you like to start, Nadia?
+  topics: []
+  style: greeting
+- utterance: Before we begin, do you have any questions for me?
+  topics: []
+  style: greeting
+- utterance: I'd like to move on to something different now.
+  topics: []
+  style: transition
+- utterance: Let's think about what we could do as a team.
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Nadia.
+  topics: []
+  style: closing
+- utterance: Thanks for being so honest, I'll follow this up with the senior nurse.
+  topics: []
+  style: closing
+- utterance: Nadia, is this a good moment, or shall I come back after handover?
+  topics: []
+  style: greeting
+- utterance: This sounds like a really hard situation to be working in.
+  topics: []
+  style: empathy
+- utterance: It's clear you care a great deal about getting this right.
+  topics: []
+  style: empathy
+- utterance: Thank you for telling me, I know it isn't easy.
+  topics: []
+  style: empathy
+- utterance: So the team is divided and you're worried about how you're coming across.
+  topics: []
+  style: summary
+- utterance: 'Let me check I''ve understood: you need help working together as a team.'
+  topics: []
+  style: summary
+- utterance: So the main issues are consistency, communication and support for staff.
+  topics: []
+  style: summary
+- utterance: What I'd like to do is pull together a plan that every shift can follow.
+  topics: []
+  style: explanation
+- utterance: A shared approach usually works better than everyone doing what they think is best.
+  topics: []
+  style: explanation
+- utterance: I'll explain how a team formulation meeting could work.
+  topics: []
+  style: explanation
+- utterance: Does that make sense so far?
+  topics: []
+  style: check_understanding
+- utterance: Is there anything I've said that doesn't sound right to you?
+  topics: []
+  style: check_understanding
+- utterance: Can I just check I've got that right?
+  topics: []
+  style: check_understanding
+- utterance: Which ward is she on?
+  topics: []
+  style: off_case
+- utterance: Does she have a diagnosis?
+  topics: []
+  style: off_case
+- utterance: Has she had any trauma in her past?
+  topics: []
+  style: off_case
+- utterance: How long has she been an inpatient?
+  topics: []
+  style: off_case
+- utterance: Who is her named nurse?
+  topics: []
+  style: near_miss
+- utterance: What did the senior nurse say about it?
+  topics: []
+  style: near_miss
+- utterance: How many staff are on each shift?
+  topics: []
+  style: near_miss
+- utterance: Which colleagues disagree with you?
+  topics: []
+  style: near_miss
+- utterance: What did she use to injure herself?
+  topics: []
+  style: near_miss
+- utterance: How long have you worked on the ward?
+  topics: []
+  style: near_miss

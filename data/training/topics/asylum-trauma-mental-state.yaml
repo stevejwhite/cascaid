@@ -1,0 +1,798 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: asylum-trauma-mental-state
+case_version: 0.1.0
+status: draft
+items:
+- utterance: What happens when the memories come into your mind?
+  topics:
+  - intrusions
+  style: open
+- utterance: How often do unwanted memories pop up while you're awake?
+  topics:
+  - intrusions
+  style: open
+- utterance: Is it ever as if it's all happening again?
+  topics:
+  - intrusions
+  style: closed
+- utterance: Do things from the past ever flash back at you out of nowhere?
+  topics:
+  - intrusions
+  style: colloquial
+- utterance: Are you having flashbacks or re-living experiences?
+  topics:
+  - intrusions
+  style: clinical
+- utterance: I wondered whether the memories trouble you during the daytime as well
+  topics:
+  - intrusions
+  style: indirect
+- utterance: You've been through a great deal; do the memories ever feel real, like it's now?
+  topics:
+  - intrusions
+  style: empathy_then_question
+- utterance: um so in the day do the memories sort of come back to you
+  topics:
+  - intrusions
+  style: spoken
+- utterance: And flashbacks at all?
+  topics:
+  - intrusions
+  style: brief
+- utterance: Any memories in the daytime?
+  topics:
+  - intrusions
+  style: brief
+- utterance: I imagine the memories catch you off guard sometimes?
+  topics:
+  - intrusions
+  style: leading
+- utterance: Tell me what the intrusive memories are like for you, without the details of what happened
+  topics:
+  - intrusions
+  style: indirect
+- utterance: How long do those moments last when a memory takes over?
+  topics:
+  - intrusions
+  style: open
+- utterance: And while you're awake, does anything similar happen?
+  topics:
+  - intrusions
+  style: follow_up
+  previous:
+    interviewer: Tell me about the dreams you've been having
+    character: I have frightening dreams four nights a week and wake sweating. I get about four hours
+      of broken sleep.
+- utterance: When that happens, how do you bring yourself back to the present?
+  topics:
+  - intrusions
+  style: follow_up
+  previous:
+    interviewer: Do memories come back to you during the day, when you don't want them to?
+    character: Yes, memories break in every day. For a few moments I feel as if I'm back in danger, then
+      I realise I'm here.
+- utterance: How are you sleeping at the moment?
+  topics:
+  - nightmares
+  style: open
+- utterance: Do you have nightmares?
+  topics:
+  - nightmares
+  style: closed
+- utterance: How many nights a week are you having bad dreams?
+  topics:
+  - nightmares
+  style: open
+- utterance: How many hours' kip are you getting?
+  topics:
+  - nightmares
+  style: colloquial
+- utterance: Could you describe your sleep pattern and any nightmares?
+  topics:
+  - nightmares
+  style: clinical
+- utterance: I'd like to hear more about what happens at night
+  topics:
+  - nightmares
+  style: indirect
+- utterance: That sounds exhausting; how often do the dreams wake you?
+  topics:
+  - nightmares
+  style: empathy_then_question
+- utterance: um so the sleep is it getting off to sleep or waking up or
+  topics:
+  - nightmares
+  style: spoken
+- utterance: And your sleep?
+  topics:
+  - nightmares
+  style: brief
+- utterance: Bad dreams most nights?
+  topics:
+  - nightmares
+  style: brief
+- utterance: I'd guess you wake up quite frightened sometimes?
+  topics:
+  - nightmares
+  style: leading
+- utterance: When you wake from a dream, what's that like for you?
+  topics:
+  - nightmares
+  style: open
+- utterance: Is your sleep broken through the night?
+  topics:
+  - nightmares
+  style: closed
+- utterance: And at night, do they come back as dreams?
+  topics:
+  - nightmares
+  style: follow_up
+  previous:
+    interviewer: Do memories come back to you during the day, when you don't want them to?
+    character: Yes, memories break in every day. For a few moments I feel as if I'm back in danger, then
+      I realise I'm here.
+- utterance: Are there things or places you try to stay away from because of the memories?
+  topics:
+  - avoidance
+  style: closed
+- utterance: What do you avoid because it reminds you of what happened?
+  topics:
+  - avoidance
+  style: open
+- utterance: Do you keep away from reminders, like certain places or the news?
+  topics:
+  - avoidance
+  style: closed
+- utterance: Is there stuff you steer clear of these days?
+  topics:
+  - avoidance
+  style: colloquial
+- utterance: Would you say you avoid situations linked to the trauma?
+  topics:
+  - avoidance
+  style: clinical
+- utterance: I wondered whether there are reminders you go out of your way to avoid
+  topics:
+  - avoidance
+  style: indirect
+- utterance: It makes sense to want to protect yourself; are there situations you keep clear of?
+  topics:
+  - avoidance
+  style: empathy_then_question
+- utterance: so are there um things that set the memories off that you avoid
+  topics:
+  - avoidance
+  style: spoken
+- utterance: Any reminders you avoid?
+  topics:
+  - avoidance
+  style: brief
+- utterance: You probably keep away from anything that brings it back?
+  topics:
+  - avoidance
+  style: leading
+- utterance: How do you feel about talking about what happened today?
+  topics:
+  - avoidance
+  style: open
+- utterance: Would you rather not go into the events themselves today?
+  topics:
+  - avoidance
+  style: closed
+- utterance: Has it changed where you go or how you get around?
+  topics:
+  - avoidance
+  style: open
+- utterance: Is there anything you now avoid so they don't get set off?
+  topics:
+  - avoidance
+  style: follow_up
+  previous:
+    interviewer: What happens when the memories come into your mind?
+    character: Yes, memories break in every day. For a few moments I feel as if I'm back in danger, then
+      I realise I'm here.
+- utterance: Has that list grown since the symptoms started?
+  topics:
+  - avoidance
+  style: follow_up
+  previous:
+    interviewer: What do you avoid because it reminds you of what happened?
+    character: I avoid news footage and crowded buses because they bring the memories back. I don't want
+      to describe the events today.
+- utterance: Do you feel on guard a lot of the time?
+  topics:
+  - arousal
+  style: closed
+- utterance: How jumpy are you with sudden noises?
+  topics:
+  - arousal
+  style: open
+- utterance: Are you always looking out for where the exits are?
+  topics:
+  - arousal
+  style: closed
+- utterance: Are you a bit on edge all the time?
+  topics:
+  - arousal
+  style: colloquial
+- utterance: Have you noticed you're more watchful or startle more easily than before?
+  topics:
+  - arousal
+  style: clinical
+- utterance: I wondered how easy it is for you to relax
+  topics:
+  - arousal
+  style: indirect
+- utterance: Living with that must be draining; can you ever let your guard down?
+  topics:
+  - arousal
+  style: empathy_then_question
+- utterance: um do loud noises make you jump more than they used to
+  topics:
+  - arousal
+  style: spoken
+- utterance: Feeling on edge much?
+  topics:
+  - arousal
+  style: brief
+- utterance: Startled easily these days?
+  topics:
+  - arousal
+  style: brief
+- utterance: I imagine you're always half-watching for danger?
+  topics:
+  - arousal
+  style: leading
+- utterance: What's it like when there's an unexpected loud noise?
+  topics:
+  - arousal
+  style: open
+- utterance: Tell me how alert or watchful you feel day to day
+  topics:
+  - arousal
+  style: indirect
+- utterance: What makes it so hard to settle?
+  topics:
+  - arousal
+  style: follow_up
+  previous:
+    interviewer: Do you feel on guard a lot of the time?
+    character: I'm constantly checking exits and jump at sudden bangs. It is hard to settle even in my
+      room.
+- utterance: Between those moments, do you stay keyed up and watchful?
+  topics:
+  - arousal
+  style: follow_up
+  previous:
+    interviewer: What happens when the memories come into your mind?
+    character: Yes, memories break in every day. For a few moments I feel as if I'm back in danger, then
+      I realise I'm here.
+- utterance: When did the nightmares and memories first start?
+  topics:
+  - course
+  style: open
+- utterance: How long have you been feeling like this?
+  topics:
+  - course
+  style: open
+- utterance: Has it got worse recently?
+  topics:
+  - course
+  style: closed
+- utterance: Did these problems start after something happened to you?
+  topics:
+  - course
+  style: closed
+- utterance: How long's this been going on for?
+  topics:
+  - course
+  style: colloquial
+- utterance: Could you tell me about the onset of these symptoms and how they've progressed?
+  topics:
+  - course
+  style: clinical
+- utterance: I'd like to understand how things have changed over time
+  topics:
+  - course
+  style: indirect
+- utterance: That's a lot to live with; roughly when did this all begin?
+  topics:
+  - course
+  style: empathy_then_question
+- utterance: so um when would you say it all kicked off
+  topics:
+  - course
+  style: spoken
+- utterance: When did it start?
+  topics:
+  - course
+  style: brief
+- utterance: Any worse in recent months?
+  topics:
+  - course
+  style: brief
+- utterance: It sounds like this has been going on a while?
+  topics:
+  - course
+  style: leading
+- utterance: Was there anything that made things worse at a particular point?
+  topics:
+  - course
+  style: closed
+- utterance: Since it began, has it been steady or up and down?
+  topics:
+  - course
+  style: open
+- utterance: Has it always been this bad, or has it got worse over time?
+  topics:
+  - course
+  style: follow_up
+  previous:
+    interviewer: How are you sleeping at the moment?
+    character: I have frightening dreams four nights a week and wake sweating. I get about four hours
+      of broken sleep.
+- utterance: What was it about the move that made things harder?
+  topics:
+  - course
+  style: follow_up
+  previous:
+    interviewer: When did the nightmares and memories first start?
+    character: The symptoms began after violence I experienced two years ago. They worsened six months
+      ago when I had to move again.
+- utterance: How has your mood been?
+  topics:
+  - mood
+  style: open
+- utterance: Do you still enjoy anything?
+  topics:
+  - mood
+  style: closed
+- utterance: Do you ever feel numb or cut off from your feelings?
+  topics:
+  - mood
+  style: closed
+- utterance: How are your spirits generally?
+  topics:
+  - mood
+  style: colloquial
+- utterance: Have you experienced low mood or a loss of interest in things?
+  topics:
+  - mood
+  style: clinical
+- utterance: I wondered how you've been in yourself emotionally
+  topics:
+  - mood
+  style: indirect
+- utterance: With everything going on it would be understandable to feel low; how are you feeling in yourself?
+  topics:
+  - mood
+  style: empathy_then_question
+- utterance: um what's your mood like most days
+  topics:
+  - mood
+  style: spoken
+- utterance: And your mood?
+  topics:
+  - mood
+  style: brief
+- utterance: Anything still bring pleasure?
+  topics:
+  - mood
+  style: brief
+- utterance: I imagine it's hard to feel much joy at the moment?
+  topics:
+  - mood
+  style: leading
+- utterance: Is there anything that still lifts you a little?
+  topics:
+  - mood
+  style: closed
+- utterance: What's it like emotionally, flat or low or something else?
+  topics:
+  - mood
+  style: open
+- utterance: Tell me about the things you used to enjoy and whether you still can
+  topics:
+  - mood
+  style: indirect
+- utterance: With so little sleep, how does that leave you feeling in yourself?
+  topics:
+  - mood
+  style: follow_up
+  previous:
+    interviewer: How are you sleeping at the moment?
+    character: I have frightening dreams four nights a week and wake sweating. I get about four hours
+      of broken sleep.
+- utterance: Are you safe where you are living now?
+  topics:
+  - safety
+  style: closed
+- utterance: Is anyone threatening or harming you at the moment?
+  topics:
+  - safety
+  style: closed
+- utterance: When so much is hard, people sometimes wish they weren't here; is that something you've felt?
+  topics:
+  - safety
+  style: empathy_then_question
+- utterance: Ever feel like you've had enough?
+  topics:
+  - safety
+  style: colloquial
+- utterance: Could I ask about thoughts of suicide or self-harm?
+  topics:
+  - safety
+  style: clinical
+- utterance: I'd like to gently ask whether you ever have thoughts of not wanting to live
+  topics:
+  - safety
+  style: indirect
+- utterance: um is there anyone here who's frightening you or making threats
+  topics:
+  - safety
+  style: spoken
+- utterance: Any thoughts of suicide?
+  topics:
+  - safety
+  style: brief
+- utterance: Feeling safe at the moment?
+  topics:
+  - safety
+  style: brief
+- utterance: No one's making you feel unsafe now, I hope?
+  topics:
+  - safety
+  style: leading
+- utterance: Have you ever tried to end your life?
+  topics:
+  - safety
+  style: closed
+- utterance: What goes through your mind on the very hardest days?
+  topics:
+  - safety
+  style: open
+- utterance: Would you feel able to tell me if you ever wish you weren't around?
+  topics:
+  - safety
+  style: closed
+- utterance: When you feel that numb, do thoughts of dying ever come?
+  topics:
+  - safety
+  style: follow_up
+  previous:
+    interviewer: How has your mood been?
+    character: I often feel numb and find it hard to enjoy things, although talking with my sister still
+      helps.
+- utterance: When you wish you could disappear, how strong does that feeling get?
+  topics:
+  - safety
+  style: follow_up
+  previous:
+    interviewer: Is anyone threatening or harming you at the moment?
+    character: No one is threatening me here. Sometimes I wish I could disappear, but I have no plan to
+      kill myself and have never attempted it.
+- utterance: Where are you living at the moment?
+  topics:
+  - practical
+  style: open
+- utterance: How are you managing for money?
+  topics:
+  - practical
+  style: open
+- utterance: Is your housing secure?
+  topics:
+  - practical
+  style: closed
+- utterance: How are things going with your asylum claim?
+  topics:
+  - practical
+  style: open
+- utterance: How are you fixed for cash and getting about?
+  topics:
+  - practical
+  style: colloquial
+- utterance: Could you tell me about your accommodation and financial situation?
+  topics:
+  - practical
+  style: clinical
+- utterance: I'd like to hear about the practical side of things, like housing
+  topics:
+  - practical
+  style: indirect
+- utterance: That's a lot of uncertainty to cope with; what worries you most practically?
+  topics:
+  - practical
+  style: empathy_then_question
+- utterance: so um where are you staying right now and is it okay
+  topics:
+  - practical
+  style: spoken
+- utterance: And your housing?
+  topics:
+  - practical
+  style: brief
+- utterance: Enough money to get by?
+  topics:
+  - practical
+  style: brief
+- utterance: I imagine money is pretty tight?
+  topics:
+  - practical
+  style: leading
+- utterance: Can you afford to get to appointments like this one?
+  topics:
+  - practical
+  style: closed
+- utterance: Does the uncertainty about your claim weigh on you?
+  topics:
+  - practical
+  style: closed
+- utterance: Tell me which everyday problems it would help most to sort out
+  topics:
+  - practical
+  style: indirect
+- utterance: Are you likely to have to move again?
+  topics:
+  - practical
+  style: follow_up
+  previous:
+    interviewer: When did the nightmares and memories first start?
+    character: The symptoms began after violence I experienced two years ago. They worsened six months
+      ago when I had to move again.
+- utterance: Would you like an interpreter for our conversations?
+  topics:
+  - preferences
+  style: closed
+- utterance: Which language are you most comfortable speaking?
+  topics:
+  - preferences
+  style: open
+- utterance: Would you prefer to see a woman clinician?
+  topics:
+  - preferences
+  style: closed
+- utterance: What would help you feel more comfortable talking with us?
+  topics:
+  - preferences
+  style: open
+- utterance: Are you happy chatting in English today?
+  topics:
+  - preferences
+  style: colloquial
+- utterance: Do you have any preferences about language, interpreters or the gender of your clinician?
+  topics:
+  - preferences
+  style: clinical
+- utterance: I wanted to check what would make these appointments easier for you
+  topics:
+  - preferences
+  style: indirect
+- utterance: I want this to feel as safe as possible for you; is there anything we could change about
+    how we meet?
+  topics:
+  - preferences
+  style: empathy_then_question
+- utterance: um is English okay or would another language be easier
+  topics:
+  - preferences
+  style: spoken
+- utterance: Interpreter needed at all?
+  topics:
+  - preferences
+  style: brief
+- utterance: Any preference, man or woman?
+  topics:
+  - preferences
+  style: brief
+- utterance: You'd probably prefer a female doctor for some of this?
+  topics:
+  - preferences
+  style: leading
+- utterance: If we arrange future sessions, how would you like them set up?
+  topics:
+  - preferences
+  style: open
+- utterance: If we did talk about it another time, who would you want to be in the room?
+  topics:
+  - preferences
+  style: follow_up
+  previous:
+    interviewer: How do you feel about talking about what happened today?
+    character: I avoid news footage and crowded buses because they bring the memories back. I don't want
+      to describe the events today.
+- utterance: And for later conversations, should I arrange for a female colleague?
+  topics:
+  - preferences
+  style: follow_up
+  previous:
+    interviewer: Would you like an interpreter for our conversations?
+    character: I'm comfortable speaking English today and don't want an interpreter. I would like a woman
+      clinician for any later discussion of what happened.
+- utterance: Is there anyone you can talk to?
+  topics:
+  - trust
+  style: closed
+- utterance: Who do you turn to for support?
+  topics:
+  - trust
+  style: open
+- utterance: Got anyone to lean on?
+  topics:
+  - trust
+  style: colloquial
+- utterance: Do you have concerns about confidentiality?
+  topics:
+  - trust
+  style: clinical
+- utterance: I wondered whether you're worried about where this information goes
+  topics:
+  - trust
+  style: indirect
+- utterance: It's natural to be wary of officials; are you concerned about who'll hear what we discuss?
+  topics:
+  - trust
+  style: empathy_then_question
+- utterance: um who's around for you like friends or family
+  topics:
+  - trust
+  style: spoken
+- utterance: Anyone you talk to?
+  topics:
+  - trust
+  style: brief
+- utterance: Worried about privacy at all?
+  topics:
+  - trust
+  style: brief
+- utterance: I expect you're cautious about what gets passed on?
+  topics:
+  - trust
+  style: leading
+- utterance: Is there something that makes it hard to share details with people like me?
+  topics:
+  - trust
+  style: closed
+- utterance: Tell me who you feel close to at the moment
+  topics:
+  - trust
+  style: indirect
+- utterance: How often do you get to speak to her?
+  topics:
+  - trust
+  style: follow_up
+  previous:
+    interviewer: How has your mood been?
+    character: I often feel numb and find it hard to enjoy things, although talking with my sister still
+      helps.
+- utterance: Are you worried what you tell me might affect your claim?
+  topics:
+  - trust
+  style: follow_up
+  previous:
+    interviewer: How are things going with your asylum claim?
+    character: I'm in temporary accommodation and may be moved again. I worry about my claim and have
+      little money for transport.
+- utterance: How are you sleeping, and do memories come back during the day too?
+  topics:
+  - nightmares
+  - intrusions
+  style: stacked
+- utterance: How's your mood, and have you had any thoughts of ending your life?
+  topics:
+  - mood
+  - safety
+  style: stacked
+- utterance: Where are you living, and would you like an interpreter?
+  topics:
+  - practical
+  - preferences
+  style: stacked
+- utterance: When did this begin, and are there things you avoid now?
+  topics:
+  - course
+  - avoidance
+  style: stacked
+- utterance: Hello Samira, I'm Dr Evans, a psychiatrist visiting the centre today.
+  topics: []
+  style: introduction
+- utterance: Hi Samira, thank you for coming to see me.
+  topics: []
+  style: greeting
+- utterance: Good afternoon, it's nice to meet you.
+  topics: []
+  style: greeting
+- utterance: Is it all right if we talk for a little while about how you've been?
+  topics: []
+  style: introduction
+- utterance: What would you like to start with?
+  topics: []
+  style: introduction
+- utterance: Before we begin, do you have any questions for me?
+  topics: []
+  style: introduction
+- utterance: I'd like to move on to something different now, if that's okay.
+  topics: []
+  style: transition
+- utterance: Can we turn to some everyday matters next?
+  topics: []
+  style: transition
+- utterance: Shall I ask about something else for a moment?
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, so I'll start to wrap up.
+  topics: []
+  style: closing
+- utterance: Thank you for talking with me today, Samira.
+  topics: []
+  style: closing
+- utterance: Before I go, is there anything you'd like to add?
+  topics: []
+  style: closing
+- utterance: That sounds frightening.
+  topics: []
+  style: empathy
+- utterance: You've coped with a huge amount.
+  topics: []
+  style: empathy
+- utterance: It's completely understandable to want to keep control of what you share.
+  topics: []
+  style: empathy
+- utterance: I'm sorry things have been so hard.
+  topics: []
+  style: empathy
+- utterance: So the main problem is what happens at night, and it's been affecting you a lot.
+  topics: []
+  style: summary
+- utterance: 'Let me make sure I''ve understood: the nights are the hardest part for you.'
+  topics: []
+  style: summary
+- utterance: You don't need to tell me the details of what happened today.
+  topics: []
+  style: explanation
+- utterance: You can stop me at any point, and we'll go at your pace.
+  topics: []
+  style: explanation
+- utterance: What you've described can be a common reaction to very frightening experiences, and there
+    are treatments that help.
+  topics: []
+  style: explanation
+- utterance: Before we finish I'll explain what happens with the information you give me.
+  topics: []
+  style: explanation
+- utterance: Does that make sense?
+  topics: []
+  style: check_understanding
+- utterance: Is that clear, or shall I explain it differently?
+  topics: []
+  style: check_understanding
+- utterance: Have I explained that in a way that works for you?
+  topics: []
+  style: check_understanding
+- utterance: Do you have any physical health problems?
+  topics: []
+  style: off_case
+- utterance: Are you taking any medication at the moment?
+  topics: []
+  style: off_case
+- utterance: Are you registered with a GP?
+  topics: []
+  style: off_case
+- utterance: Do you have any pain or injuries that bother you?
+  topics: []
+  style: off_case
+- utterance: Have you ever had to sleep rough since arriving?
+  topics: []
+  style: near_miss
+- utterance: Have you seen a doctor about the nightmares before?
+  topics: []
+  style: near_miss
+- utterance: Did you have nightmares as a child?
+  topics: []
+  style: near_miss
+- utterance: Has your solicitor been in touch about the claim?
+  topics: []
+  style: near_miss
+- utterance: Does your sister know you're coming here today?
+  topics: []
+  style: near_miss

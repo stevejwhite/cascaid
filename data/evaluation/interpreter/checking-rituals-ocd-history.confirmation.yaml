@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: checking-rituals-ocd-history
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: right what thoughts pop into your head that start off the need to check
+  expected:
+  - obsessions
+  rapport: false
+- utterance: Ethan, walk me through what you actually do when you start checking something.
+  expected:
+  - compulsions
+  rapport: false
+- utterance: How has the time spent checking changed since the problem first began?
+  expected:
+  - duration
+  rapport: false
+- utterance: What happens to the anxiety if you try to leave a check unfinished?
+  expected:
+  - resistance
+  rapport: false
+- utterance: When you stand back from it, how reasonable does the amount of checking seem to you?
+  expected:
+  - insight
+  rapport: false
+- utterance: What has checking stopped you doing in work or outside the house?
+  expected:
+  - function
+  rapport: false
+- utterance: What feared event comes into your mind, as distinct from the checking you do afterwards?
+  expected:
+  - obsessions
+  rapport: false
+- utterance: What actions do you repeat to get certainty, rather than the thoughts that set them off?
+  expected:
+  - compulsions
+  rapport: false
+- utterance: when things feel that low, do you ever wish you weren't here?
+  expected:
+  - risk
+  rapport: false
+  previous:
+    interviewer: How has your mood been recently?
+    character: I've felt low most days for a month and don't enjoy much.
+- utterance: You feel unable simply to leave the checking, even though it seems excessive to you.
+  expected: []
+  rapport: false

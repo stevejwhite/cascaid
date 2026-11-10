@@ -1,0 +1,758 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: alcohol-driving-confidentiality
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Tell me about your job, Gareth.
+  topics:
+  - driving
+  style: open
+- utterance: What does a normal working week look like for you?
+  topics:
+  - driving
+  style: open
+- utterance: Do you drive every day for work?
+  topics:
+  - driving
+  style: closed
+- utterance: Is driving your only source of income?
+  topics:
+  - driving
+  style: closed
+- utterance: How many hours are you behind the wheel on a shift?
+  topics:
+  - driving
+  style: colloquial
+- utterance: So what's the van work like, day in day out?
+  topics:
+  - driving
+  style: colloquial
+- utterance: Could you describe your occupation and how much driving it involves?
+  topics:
+  - driving
+  style: clinical
+- utterance: I'd like to understand how much of your work involves driving
+  topics:
+  - driving
+  style: indirect
+- utterance: I can see your job matters a lot to you. What does the work involve?
+  topics:
+  - driving
+  style: empathy_then_question
+- utterance: um so the driving, how many days a week is that
+  topics:
+  - driving
+  style: spoken
+- utterance: and is it, er, is it long days on the road
+  topics:
+  - driving
+  style: spoken
+- utterance: How many hours driving?
+  topics:
+  - driving
+  style: brief
+- utterance: And your working week?
+  topics:
+  - driving
+  style: brief
+- utterance: And the next day, are you out on the road for long?
+  topics:
+  - driving
+  style: follow_up
+  previous:
+    interviewer: How much do you drink in an evening?
+    character: I drink eight 500-millilitre cans of 5% lager each evening. That's been my pattern for
+      two years.
+- utterance: I imagine you're driving most days of the week?
+  topics:
+  - driving
+  style: leading
+- utterance: Can you tell me about your drinking?
+  topics:
+  - quantity
+  style: open
+- utterance: What does an evening's drinking look like for you?
+  topics:
+  - quantity
+  style: open
+- utterance: Do you drink every evening?
+  topics:
+  - quantity
+  style: closed
+- utterance: Is it beer you drink mostly?
+  topics:
+  - quantity
+  style: closed
+- utterance: How many cans would you get through in a night?
+  topics:
+  - quantity
+  style: colloquial
+- utterance: What's your usual tipple and how much of it?
+  topics:
+  - quantity
+  style: colloquial
+- utterance: Could you estimate how many units you drink a day?
+  topics:
+  - quantity
+  style: clinical
+- utterance: I'd like to get a picture of how much you're drinking
+  topics:
+  - quantity
+  style: indirect
+- utterance: I know this isn't easy to talk about. Roughly how much do you have on a typical night?
+  topics:
+  - quantity
+  style: empathy_then_question
+- utterance: um and the alcohol, how much are we talking
+  topics:
+  - quantity
+  style: spoken
+- utterance: so what do you, what do you drink usually
+  topics:
+  - quantity
+  style: spoken
+- utterance: How much a night?
+  topics:
+  - quantity
+  style: brief
+- utterance: And how strong?
+  topics:
+  - quantity
+  style: brief
+- utterance: And how long has your drinking been at its current level?
+  topics:
+  - quantity
+  style: follow_up
+  previous:
+    interviewer: Do your hands ever shake when you stop?
+    character: Yes, my hands shake in the morning until I have a drink. I've never had a withdrawal seizure.
+- utterance: You're drinking quite a lot most nights, I'd guess?
+  topics:
+  - quantity
+  style: leading
+- utterance: What happens to your body when you haven't had a drink for a while?
+  topics:
+  - withdrawal
+  style: open
+- utterance: How do you feel first thing, before you've had anything?
+  topics:
+  - withdrawal
+  style: open
+- utterance: Do your hands ever shake when you stop?
+  topics:
+  - withdrawal
+  style: closed
+- utterance: Have you ever had a fit from stopping drinking?
+  topics:
+  - withdrawal
+  style: closed
+- utterance: Do you get the shakes if you go without?
+  topics:
+  - withdrawal
+  style: colloquial
+- utterance: Ever feel rough until you've had a drink?
+  topics:
+  - withdrawal
+  style: colloquial
+- utterance: Are there any withdrawal symptoms when you cut down?
+  topics:
+  - withdrawal
+  style: clinical
+- utterance: I wondered whether you feel unwell when the alcohol wears off
+  topics:
+  - withdrawal
+  style: indirect
+- utterance: That's a lot to manage. Any shaking or sweating when you haven't had a drink?
+  topics:
+  - withdrawal
+  style: empathy_then_question
+- utterance: um any shakes at all
+  topics:
+  - withdrawal
+  style: spoken
+- utterance: and if you, if you stop, what happens
+  topics:
+  - withdrawal
+  style: spoken
+- utterance: Any withdrawal seizures?
+  topics:
+  - withdrawal
+  style: brief
+- utterance: Shaky when you wake up?
+  topics:
+  - withdrawal
+  style: brief
+- utterance: With that much, do you notice anything physically when you stop?
+  topics:
+  - withdrawal
+  style: follow_up
+  previous:
+    interviewer: Can you tell me about your drinking?
+    character: I drink eight 500-millilitre cans of 5% lager each evening. That's been my pattern for
+      two years.
+- utterance: I expect you're not too steady before your first drink?
+  topics:
+  - withdrawal
+  style: leading
+- utterance: Can you tell me about any times you've driven after drinking?
+  topics:
+  - impaired
+  style: open
+- utterance: What's the closest you've come to an accident recently?
+  topics:
+  - impaired
+  style: open
+- utterance: Have you ever driven with alcohol in your system?
+  topics:
+  - impaired
+  style: closed
+- utterance: Did you have anything to drink before driving this week?
+  topics:
+  - impaired
+  style: closed
+- utterance: Ever got behind the wheel after a couple?
+  topics:
+  - impaired
+  style: colloquial
+- utterance: Had any close shaves on the road lately?
+  topics:
+  - impaired
+  style: colloquial
+- utterance: Would you feel able to say whether you've driven while under the influence?
+  topics:
+  - impaired
+  style: clinical
+- utterance: I need to ask, gently, whether you've driven after having a drink
+  topics:
+  - impaired
+  style: indirect
+- utterance: I know this is hard to be honest about. Have there been times you've driven after drinking?
+  topics:
+  - impaired
+  style: empathy_then_question
+- utterance: um have you, have you driven when you've had a drink
+  topics:
+  - impaired
+  style: spoken
+- utterance: so any near misses or anything like that
+  topics:
+  - impaired
+  style: spoken
+- utterance: Driven after drinking?
+  topics:
+  - impaired
+  style: brief
+- utterance: Any near misses?
+  topics:
+  - impaired
+  style: brief
+- utterance: On those mornings, have you ever driven after drinking to settle them?
+  topics:
+  - impaired
+  style: follow_up
+  previous:
+    interviewer: Do your hands ever shake when you stop?
+    character: Yes, my hands shake in the morning until I have a drink. I've never had a withdrawal seizure.
+- utterance: There must have been times you've driven when you shouldn't have?
+  topics:
+  - impaired
+  style: leading
+- utterance: How did you get here today?
+  topics:
+  - today
+  style: open
+- utterance: When are you next planning to drive?
+  topics:
+  - today
+  style: open
+- utterance: Did you drive yourself to the clinic?
+  topics:
+  - today
+  style: closed
+- utterance: Are you working tomorrow?
+  topics:
+  - today
+  style: closed
+- utterance: Who's got your keys at the moment?
+  topics:
+  - today
+  style: colloquial
+- utterance: What's the plan for getting home later?
+  topics:
+  - today
+  style: colloquial
+- utterance: Could you tell me your travel arrangements for today and your next working day?
+  topics:
+  - today
+  style: clinical
+- utterance: I was wondering how you travelled in this morning
+  topics:
+  - today
+  style: indirect
+- utterance: I appreciate you coming in. Did somebody give you a lift?
+  topics:
+  - today
+  style: empathy_then_question
+- utterance: um so getting here, was that you driving
+  topics:
+  - today
+  style: spoken
+- utterance: and after this, are you, er, back on the road
+  topics:
+  - today
+  style: spoken
+- utterance: Who drove you here?
+  topics:
+  - today
+  style: brief
+- utterance: Next time behind the wheel?
+  topics:
+  - today
+  style: brief
+- utterance: After that, how did you get to the clinic this morning?
+  topics:
+  - today
+  style: follow_up
+  previous:
+    interviewer: Have you ever driven with alcohol in your system?
+    character: Yes, I drove yesterday morning after two cans to stop the shakes. I nearly hit a parked
+      car.
+- utterance: I assume you drove yourself in today?
+  topics:
+  - today
+  style: leading
+- utterance: What do you know about telling the licensing authority about health conditions?
+  topics:
+  - notification
+  style: open
+- utterance: How much have you heard about the rules on reporting medical conditions for drivers?
+  topics:
+  - notification
+  style: open
+- utterance: Has anyone mentioned that this could affect your licence?
+  topics:
+  - notification
+  style: closed
+- utterance: Are the licensing people aware of any of this?
+  topics:
+  - notification
+  style: colloquial
+- utterance: Done anything about letting the licence people know?
+  topics:
+  - notification
+  style: colloquial
+- utterance: Could you tell me whether you've notified the licensing authority of your condition?
+  topics:
+  - notification
+  style: clinical
+- utterance: I'm wondering whether you've had any contact with the licensing authority about this
+  topics:
+  - notification
+  style: indirect
+- utterance: I know this is worrying. Did you know you might need to report this?
+  topics:
+  - notification
+  style: empathy_then_question
+- utterance: um so the licensing authority, have they been told
+  topics:
+  - notification
+  style: spoken
+- utterance: and have you, did you report it at all
+  topics:
+  - notification
+  style: spoken
+- utterance: Told the licensing authority?
+  topics:
+  - notification
+  style: brief
+- utterance: Any notification so far?
+  topics:
+  - notification
+  style: brief
+- utterance: Given that, does the licensing authority know about your drinking?
+  topics:
+  - notification
+  style: follow_up
+  previous:
+    interviewer: Do you drive every day for work?
+    character: I drive a delivery van five days a week, usually six hours a day. It's my only paid work.
+- utterance: I'm guessing you haven't reported this anywhere yet?
+  topics:
+  - notification
+  style: leading
+- utterance: What's your understanding of how private this conversation is?
+  topics:
+  - privacy
+  style: open
+- utterance: What do you expect would happen to what you tell me today?
+  topics:
+  - privacy
+  style: open
+- utterance: Do you have any worries about confidentiality?
+  topics:
+  - privacy
+  style: closed
+- utterance: Are you concerned that I might share what you've said?
+  topics:
+  - privacy
+  style: closed
+- utterance: Worried this'll get passed on to anyone?
+  topics:
+  - privacy
+  style: colloquial
+- utterance: Did you think this would all stay between us?
+  topics:
+  - privacy
+  style: colloquial
+- utterance: Could I ask what you understand about confidentiality in this clinic?
+  topics:
+  - privacy
+  style: clinical
+- utterance: I'd like to hear what you've assumed about who sees the information you give us
+  topics:
+  - privacy
+  style: indirect
+- utterance: It's natural to be wary. Is there anything you're worried I might pass on?
+  topics:
+  - privacy
+  style: empathy_then_question
+- utterance: um so what, what did you think happens with the stuff you tell us
+  topics:
+  - privacy
+  style: spoken
+- utterance: and confidentiality wise any questions
+  topics:
+  - privacy
+  style: spoken
+- utterance: Any confidentiality worries?
+  topics:
+  - privacy
+  style: brief
+- utterance: Who'd you worry might find out?
+  topics:
+  - privacy
+  style: brief
+- utterance: And how do you feel about what stays private and what doesn't?
+  topics:
+  - privacy
+  style: follow_up
+  previous:
+    interviewer: Have you told the licensing authority about your alcohol problem?
+    character: No, I haven't told the licensing authority. I didn't know a diagnosis could affect my licence.
+- utterance: I suppose you're worried about who I might tell?
+  topics:
+  - privacy
+  style: leading
+- utterance: What other options are there at work that don't involve driving?
+  topics:
+  - support
+  style: open
+- utterance: How could you get around if you weren't driving?
+  topics:
+  - support
+  style: open
+- utterance: Is there any non-driving work your employer could offer?
+  topics:
+  - support
+  style: closed
+- utterance: Could anyone give you lifts for a while?
+  topics:
+  - support
+  style: closed
+- utterance: Any chance of a job off the road for a bit?
+  topics:
+  - support
+  style: colloquial
+- utterance: Who could ferry you about if you stopped driving?
+  topics:
+  - support
+  style: colloquial
+- utterance: Have you explored alternative duties with your employer?
+  topics:
+  - support
+  style: clinical
+- utterance: I wondered what practical help you might have if you stopped driving for now
+  topics:
+  - support
+  style: indirect
+- utterance: This is a big change to face. Would your employer have anything else for you?
+  topics:
+  - support
+  style: empathy_then_question
+- utterance: um and getting about, who could help with that
+  topics:
+  - support
+  style: spoken
+- utterance: so with work is there, er, anything else going
+  topics:
+  - support
+  style: spoken
+- utterance: Any other jobs at work?
+  topics:
+  - support
+  style: brief
+- utterance: Lifts from family or friends?
+  topics:
+  - support
+  style: brief
+- utterance: Could your brother keep helping like that for a while?
+  topics:
+  - support
+  style: follow_up
+  previous:
+    interviewer: How did you get here today?
+    character: My brother drove me here and has my van keys. I expected to collect them tonight for tomorrow's
+      shift.
+- utterance: There's probably someone who could help with transport, isn't there?
+  topics:
+  - support
+  style: leading
+- utterance: What worries you most about stopping driving?
+  topics:
+  - fear
+  style: open
+- utterance: How are things financially at home?
+  topics:
+  - fear
+  style: open
+- utterance: Are you worried about money?
+  topics:
+  - fear
+  style: closed
+- utterance: Have you been able to talk to anyone at home about your worries?
+  topics:
+  - fear
+  style: closed
+- utterance: Would losing the van work leave you short?
+  topics:
+  - fear
+  style: colloquial
+- utterance: Is the money side keeping you up at night?
+  topics:
+  - fear
+  style: colloquial
+- utterance: Could you tell me about the financial impact of stopping work?
+  topics:
+  - fear
+  style: clinical
+- utterance: I imagine there might be some worries about income, and I'd like to hear about them
+  topics:
+  - fear
+  style: indirect
+- utterance: Your job clearly matters a lot. What would losing the income mean for you?
+  topics:
+  - fear
+  style: empathy_then_question
+- utterance: um and money wise how are things
+  topics:
+  - fear
+  style: spoken
+- utterance: so if you, if you couldn't drive, what's the biggest worry
+  topics:
+  - fear
+  style: spoken
+- utterance: Worried about the bills?
+  topics:
+  - fear
+  style: brief
+- utterance: Any money worries?
+  topics:
+  - fear
+  style: brief
+- utterance: What would happen at home if that work paid less?
+  topics:
+  - fear
+  style: follow_up
+  previous:
+    interviewer: Is there any non-driving work your employer could offer?
+    character: My manager has warehouse work, but I haven't asked about it. My brother could take me there
+      for a fortnight.
+- utterance: I'd guess paying the bills is weighing on you?
+  topics:
+  - fear
+  style: leading
+- utterance: Can I ask whether you've had any thoughts of harming yourself?
+  topics:
+  - risk
+  style: open
+- utterance: What thoughts, if any, have you had of not wanting to be here?
+  topics:
+  - risk
+  style: open
+- utterance: Have you ever wanted to hurt anyone else?
+  topics:
+  - risk
+  style: closed
+- utterance: Do you feel suicidal at all?
+  topics:
+  - risk
+  style: closed
+- utterance: Ever felt like ending it all?
+  topics:
+  - risk
+  style: colloquial
+- utterance: Has it got so bad you've thought of doing yourself in?
+  topics:
+  - risk
+  style: colloquial
+- utterance: Is there any intent to harm yourself or others?
+  topics:
+  - risk
+  style: clinical
+- utterance: I ask everyone about thoughts of suicide, so I'd like to check that with you too
+  topics:
+  - risk
+  style: indirect
+- utterance: You're under a lot of pressure. Has any of it made you think about harming yourself?
+  topics:
+  - risk
+  style: empathy_then_question
+- utterance: um any thoughts of hurting yourself at all
+  topics:
+  - risk
+  style: spoken
+- utterance: and other people, would you ever, er, want to hurt anyone
+  topics:
+  - risk
+  style: spoken
+- utterance: Any suicidal thoughts?
+  topics:
+  - risk
+  style: brief
+- utterance: Thoughts of harming others?
+  topics:
+  - risk
+  style: brief
+- utterance: With that worry, have you ever thought about harming yourself?
+  topics:
+  - risk
+  style: follow_up
+  previous:
+    interviewer: What worries you most about stopping driving?
+    character: I'm frightened we won't cover the rent. I've kept that worry from my partner.
+- utterance: You're not having thoughts of hurting anyone, I take it?
+  topics:
+  - risk
+  style: leading
+- utterance: How much do you drink, and do you drive every day?
+  topics:
+  - quantity
+  - driving
+  style: stacked
+- utterance: Do you get shaky without a drink, and have you ever driven after drinking?
+  topics:
+  - withdrawal
+  - impaired
+  style: stacked
+- utterance: Could your employer offer other work, and are you worried about money?
+  topics:
+  - support
+  - fear
+  style: stacked
+- utterance: Hello Gareth, thanks for coming in.
+  topics: []
+  style: greeting
+- utterance: Good to meet you, Gareth, have a seat.
+  topics: []
+  style: greeting
+- utterance: I'm one of the doctors in the addiction clinic.
+  topics: []
+  style: introduction
+- utterance: Is it all right if we talk about your driving today?
+  topics: []
+  style: introduction
+- utterance: Before we start, any questions for me?
+  topics: []
+  style: introduction
+- utterance: What would you like to start with?
+  topics: []
+  style: transition
+- utterance: I'd like to move on to something different now.
+  topics: []
+  style: transition
+- utterance: Can we turn to the practical side of things?
+  topics: []
+  style: transition
+- utterance: Now I'd like to talk about confidentiality.
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Gareth.
+  topics: []
+  style: closing
+- utterance: Thanks for being so honest with me today.
+  topics: []
+  style: closing
+- utterance: Is there anything else before we finish?
+  topics: []
+  style: closing
+- utterance: I can see how worried you are about your job.
+  topics: []
+  style: empathy
+- utterance: That's a really difficult position to be in.
+  topics: []
+  style: empathy
+- utterance: It makes sense that you'd feel defensive about this.
+  topics: []
+  style: empathy
+- utterance: So you're worried mainly about what this means for your work.
+  topics: []
+  style: summary
+- utterance: 'Let me recap: we''ve talked about your drinking, your job and what happens next.'
+  topics: []
+  style: summary
+- utterance: Drivers have a responsibility to tell the licensing authority about some medical conditions.
+  topics: []
+  style: explanation
+- utterance: Usually what you tell us stays confidential, but there are limits when other people could
+    be at risk.
+  topics: []
+  style: explanation
+- utterance: If I were ever worried enough to share information, I'd normally talk to you about it first.
+  topics: []
+  style: explanation
+- utterance: Alcohol can still affect your driving the next day.
+  topics: []
+  style: explanation
+- utterance: Stopping drinking suddenly can be risky, so we'd plan that carefully with you.
+  topics: []
+  style: explanation
+- utterance: Does that make sense?
+  topics: []
+  style: check_understanding
+- utterance: Can you tell me what you understand about why driving is a concern?
+  topics: []
+  style: check_understanding
+- utterance: How does that sound to you?
+  topics: []
+  style: check_understanding
+- utterance: Do you smoke?
+  topics: []
+  style: off_case
+- utterance: Have you ever been in trouble with the police?
+  topics: []
+  style: off_case
+- utterance: Do you use any other drugs?
+  topics: []
+  style: off_case
+- utterance: How's your sleep?
+  topics: []
+  style: off_case
+- utterance: Does anyone in your family drink heavily?
+  topics: []
+  style: off_case
+- utterance: Would you like me to explain what confidentiality means here?
+  topics: []
+  style: near_miss
+- utterance: Do you know how to contact the licensing authority?
+  topics: []
+  style: near_miss
+- utterance: Would you like some information about local support services?
+  topics: []
+  style: near_miss
+- utterance: Do you know what the alcohol limit for driving is?
+  topics: []
+  style: near_miss
+- utterance: Shall I explain how long withdrawal usually lasts?
+  topics: []
+  style: near_miss

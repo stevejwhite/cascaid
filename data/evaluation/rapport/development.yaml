@@ -1,0 +1,23 @@
+# Development rapport labels (see README.md); may be used for prompt tuning.
+split: development
+items:
+  - {case_id: overdose-risk-assessment, utterance: "Thanks for agreeing to talk to me, Jordan.", empathy: 0, confrontational: false}
+  - {case_id: overdose-risk-assessment, utterance: "That sounds incredibly hard.", empathy: 1, confrontational: false}
+  - {case_id: overdose-risk-assessment, utterance: "It sounds like after your partner left, you felt there was nothing left for you.", empathy: 2, confrontational: false}
+  - {case_id: overdose-risk-assessment, utterance: "Surely you knew it might kill you?", empathy: 0, confrontational: true}
+  - {case_id: overdose-risk-assessment, utterance: "Have you ever hurt yourself before?", empathy: 0, confrontational: false}
+  - {case_id: alcohol-history, utterance: "I'm sorry to hear that.", empathy: 1, confrontational: false}
+  - {case_id: alcohol-history, utterance: "You're drinking far more than is safe.", empathy: 0, confrontational: true}
+  - {case_id: alcohol-history, utterance: "Missing time with your grandson sounds really painful for you.", empathy: 2, confrontational: false}
+  - {case_id: alcohol-history, utterance: "When do you have your first drink of the day?", empathy: 0, confrontational: false}
+  - {case_id: memory-collateral-history, utterance: "That must be worrying.", empathy: 1, confrontational: false}
+  - {case_id: memory-collateral-history, utterance: "Caring for him while working full time sounds like it's left you running on empty.", empathy: 2, confrontational: false}
+  - {case_id: memory-collateral-history, utterance: "You should have noticed this sooner.", empathy: 0, confrontational: true}
+  - {case_id: memory-collateral-history, utterance: "Has he got lost anywhere?", empathy: 0, confrontational: false}
+  - {case_id: clozapine-explanation-relative, utterance: "I can understand why you're worried.", empathy: 1, confrontational: false}
+  - {case_id: clozapine-explanation-relative, utterance: "You've seen him struggle for so long that it's hard to hope this one will be different.", empathy: 2, confrontational: false}
+  - {case_id: clozapine-explanation-relative, utterance: "You don't need to worry about the blood tests.", empathy: 0, confrontational: true}
+  - {case_id: clozapine-explanation-relative, utterance: "Shall I explain how the blood monitoring works?", empathy: 0, confrontational: false}
+  - {case_id: elevated-mood-history, utterance: "That sounds like a lot of energy.", empathy: 1, confrontational: false}
+  - {case_id: elevated-mood-history, utterance: "These ideas are clearly part of an illness.", empathy: 0, confrontational: true}
+  - {case_id: elevated-mood-history, utterance: "It sounds like you're feeling held back when you have so many plans.", empathy: 2, confrontational: false}

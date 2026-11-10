@@ -1,0 +1,1019 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: acute-confusion-cognitive-examination
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Evelyn, how would you feel about me asking you a few questions about your memory?
+  topics:
+  - permission
+  style: open
+- utterance: Is it all right with you if I check your memory and concentration with some questions?
+  topics:
+  - permission
+  style: closed
+- utterance: Would you mind if I put a few quick memory questions to you?
+  topics:
+  - permission
+  style: colloquial
+- utterance: Do I have your consent to carry out a brief assessment of your memory?
+  topics:
+  - permission
+  style: clinical
+- utterance: I was hoping you'd let me ask you some questions about your thinking and memory
+  topics:
+  - permission
+  style: indirect
+- utterance: I know this is all a bit confusing. May I go through some memory questions with you?
+  topics:
+  - permission
+  style: empathy_then_question
+- utterance: so um would it be okay if i, if i asked you a few things to test your memory
+  topics:
+  - permission
+  style: spoken
+- utterance: Okay to ask some questions?
+  topics:
+  - permission
+  style: brief
+- utterance: Good. And are you happy for me to ask you some questions about your memory now?
+  topics:
+  - permission
+  style: follow_up
+  previous:
+    interviewer: Can you hear me all right if I sit here, Evelyn?
+    character: I can hear you if you face me; I use glasses for reading and they're in the case beside
+      me, but I don't use a hearing aid.
+- utterance: You won't mind a few simple memory questions, will you?
+  topics:
+  - permission
+  style: leading
+- utterance: Shall I explain what the memory questions are for, and then see if you're happy to do them?
+  topics:
+  - permission
+  style: open
+- utterance: Can I go ahead with some questions to check how your memory is today?
+  topics:
+  - permission
+  style: closed
+- utterance: How about trying a few memory questions with me?
+  topics:
+  - permission
+  style: colloquial
+- utterance: I'd like your agreement before I test your memory, Evelyn
+  topics:
+  - permission
+  style: indirect
+- utterance: There's no rush at all. Are you willing to try a few questions about your memory?
+  topics:
+  - permission
+  style: empathy_then_question
+- utterance: right er before we start properly can i ask you some questions about how your memory is
+  topics:
+  - permission
+  style: spoken
+- utterance: Could you tell me your full name, please?
+  topics:
+  - personal-orientation
+  style: open
+- utterance: Are you able to tell me how old you are?
+  topics:
+  - personal-orientation
+  style: closed
+- utterance: What do people call you, and what age are you now?
+  topics:
+  - personal-orientation
+  style: colloquial
+- utterance: For the record, can you state your name and age?
+  topics:
+  - personal-orientation
+  style: clinical
+- utterance: I'd like to start by hearing your name and your age
+  topics:
+  - personal-orientation
+  style: indirect
+- utterance: Take your time. What's your name?
+  topics:
+  - personal-orientation
+  style: empathy_then_question
+- utterance: um so just to start off what's your name
+  topics:
+  - personal-orientation
+  style: spoken
+- utterance: And your age?
+  topics:
+  - personal-orientation
+  style: brief
+- utterance: 'Thank you. Let''s begin simply: who am I speaking to?'
+  topics:
+  - personal-orientation
+  style: follow_up
+  previous:
+    interviewer: Is it all right if I ask some questions about your memory?
+    character: Yes, you can ask me some questions; please tell me what they're for and go slowly.
+- utterance: You're in your late seventies, aren't you?
+  topics:
+  - personal-orientation
+  style: leading
+- utterance: Who do I have the pleasure of speaking with today?
+  topics:
+  - personal-orientation
+  style: open
+- utterance: Do you know how old you are now?
+  topics:
+  - personal-orientation
+  style: closed
+- utterance: How old are you these days?
+  topics:
+  - personal-orientation
+  style: colloquial
+- utterance: I wondered if you could tell me your age
+  topics:
+  - personal-orientation
+  style: indirect
+- utterance: er could you just say your name for me first
+  topics:
+  - personal-orientation
+  style: spoken
+- utterance: Your name, please?
+  topics:
+  - personal-orientation
+  style: brief
+- utterance: What's today's date, Evelyn?
+  topics:
+  - time-orientation
+  style: open
+- utterance: Do you know what month it is?
+  topics:
+  - time-orientation
+  style: closed
+- utterance: Could you tell me the day, date, month and year?
+  topics:
+  - time-orientation
+  style: clinical
+- utterance: I'd be interested to know what year you think it is
+  topics:
+  - time-orientation
+  style: indirect
+- utterance: These can feel like silly questions, I know. What year are we in?
+  topics:
+  - time-orientation
+  style: empathy_then_question
+- utterance: and um what what time of day would you say it is now
+  topics:
+  - time-orientation
+  style: spoken
+- utterance: And the year?
+  topics:
+  - time-orientation
+  style: brief
+- utterance: Thanks. And roughly what time of day do you think it is?
+  topics:
+  - time-orientation
+  style: follow_up
+  previous:
+    interviewer: Can you tell me where we are just now?
+    character: I thought this was a guest house, but those curtains look like a hospital; I can't make
+      it fit together.
+- utterance: You might find the date hard to pin down at the moment, would that be fair?
+  topics:
+  - time-orientation
+  style: leading
+- utterance: Which season would you say we're in now?
+  topics:
+  - time-orientation
+  style: open
+- utterance: Is it morning or afternoon at the moment?
+  topics:
+  - time-orientation
+  style: closed
+- utterance: Have a guess for me, what's the date today?
+  topics:
+  - time-orientation
+  style: colloquial
+- utterance: Tell me what month you think it is now
+  topics:
+  - time-orientation
+  style: indirect
+- utterance: so do you know roughly um which year it is
+  topics:
+  - time-orientation
+  style: spoken
+- utterance: Morning or evening, d'you think?
+  topics:
+  - time-orientation
+  style: brief
+- utterance: Where do you think we are just now?
+  topics:
+  - place-orientation
+  style: open
+- utterance: Do you know what this building is?
+  topics:
+  - place-orientation
+  style: closed
+- utterance: What sort of place have you ended up in, would you say?
+  topics:
+  - place-orientation
+  style: colloquial
+- utterance: I'd like to know where you think you are at the moment
+  topics:
+  - place-orientation
+  style: indirect
+- utterance: It's a strange place to wake up in. What kind of place is this, do you think?
+  topics:
+  - place-orientation
+  style: empathy_then_question
+- utterance: um and where are we sitting right now would you say
+  topics:
+  - place-orientation
+  style: spoken
+- utterance: And where are we?
+  topics:
+  - place-orientation
+  style: brief
+- utterance: That's fine. And what about where we are now?
+  topics:
+  - place-orientation
+  style: follow_up
+  previous:
+    interviewer: What's the date today, Evelyn?
+    character: Is it December, twenty twenty-two? I'm not sure of the day; I thought it was evening.
+- utterance: We're somewhere you don't recognise, aren't we?
+  topics:
+  - place-orientation
+  style: leading
+- utterance: What kind of building are we in right now?
+  topics:
+  - place-orientation
+  style: open
+- utterance: Are we at your home or somewhere else?
+  topics:
+  - place-orientation
+  style: closed
+- utterance: Whereabouts are we, do you reckon?
+  topics:
+  - place-orientation
+  style: colloquial
+- utterance: I wondered what you make of where we are
+  topics:
+  - place-orientation
+  style: indirect
+- utterance: No need to worry about getting it right. What town are we in?
+  topics:
+  - place-orientation
+  style: empathy_then_question
+- utterance: Can you start at December and go backwards through the months?
+  topics:
+  - attention
+  style: closed
+- utterance: 'Let''s try something a bit trickier: months backwards from December, off you go.'
+  topics:
+  - attention
+  style: colloquial
+- utterance: 'I''m going to test your concentration: please recite the months in reverse, beginning with
+    December.'
+  topics:
+  - attention
+  style: clinical
+- utterance: I'd like you to go backwards through the months, starting at December
+  topics:
+  - attention
+  style: indirect
+- utterance: This one's hard for everyone. Can you give me the months backwards from December?
+  topics:
+  - attention
+  style: empathy_then_question
+- utterance: okay so er starting from december can you go back through the months
+  topics:
+  - attention
+  style: spoken
+- utterance: Months backwards, from December?
+  topics:
+  - attention
+  style: brief
+- utterance: That's all right. Would you like to try again from October?
+  topics:
+  - attention
+  style: follow_up
+  previous:
+    interviewer: Could you say the months backwards from December?
+    character: December, November... October... I've lost where I was going.
+- utterance: You can probably manage the months backwards if we go slowly, can't you?
+  topics:
+  - attention
+  style: leading
+- utterance: What comes before December, then before that, and so on?
+  topics:
+  - attention
+  style: open
+- utterance: Would you have a go at naming the months in reverse?
+  topics:
+  - attention
+  style: closed
+- utterance: Next I'd like the months of the year in reverse order, please
+  topics:
+  - attention
+  style: indirect
+- utterance: There's no hurry. Which month comes before December, and before that?
+  topics:
+  - attention
+  style: empathy_then_question
+- utterance: um right the months backwards now starting at december
+  topics:
+  - attention
+  style: spoken
+- utterance: Can you say orange, window and coin straight back?
+  topics:
+  - registration
+  style: closed
+- utterance: Three words for you, orange, window, coin; say them back to me?
+  topics:
+  - registration
+  style: colloquial
+- utterance: I'd like you to repeat three words after me, orange, window and coin
+  topics:
+  - registration
+  style: indirect
+- utterance: Don't worry if it's tricky. Could you repeat orange, window, coin?
+  topics:
+  - registration
+  style: empathy_then_question
+- utterance: so the words are orange window coin can you say them back
+  topics:
+  - registration
+  style: spoken
+- utterance: Orange, window, coin; your turn?
+  topics:
+  - registration
+  style: brief
+- utterance: Of course. Orange, window, coin. Can you repeat all three now?
+  topics:
+  - registration
+  style: follow_up
+  previous:
+    interviewer: Can you say orange, window and coin back to me?
+    character: Orange... I'm sorry, I didn't keep the other two in my head. Could you say them again?
+- utterance: You'll be able to repeat three short words for me, won't you?
+  topics:
+  - registration
+  style: leading
+- utterance: 'Listen carefully: orange, window, coin. What were those words?'
+  topics:
+  - registration
+  style: open
+- utterance: 'Would you repeat these after me: orange, window, coin?'
+  topics:
+  - registration
+  style: closed
+- utterance: 'Just say back the three words I give you: orange, window, coin'
+  topics:
+  - registration
+  style: indirect
+- utterance: I know there's a lot going on. Will you try saying orange, window and coin after me?
+  topics:
+  - registration
+  style: empathy_then_question
+- utterance: What were the three words I asked you to remember earlier?
+  topics:
+  - delayed-recall
+  style: open
+- utterance: Can you remember any of the words from before?
+  topics:
+  - delayed-recall
+  style: closed
+- utterance: Those three words from a bit ago, any of them still there?
+  topics:
+  - delayed-recall
+  style: colloquial
+- utterance: Could you recall the three items I gave you a few minutes ago?
+  topics:
+  - delayed-recall
+  style: clinical
+- utterance: I'd like to see which of the earlier words you still have
+  topics:
+  - delayed-recall
+  style: indirect
+- utterance: Don't worry if they've gone. Which words do you remember from earlier?
+  topics:
+  - delayed-recall
+  style: empathy_then_question
+- utterance: so um the words i gave you before can you tell me them again
+  topics:
+  - delayed-recall
+  style: spoken
+- utterance: And those three words?
+  topics:
+  - delayed-recall
+  style: brief
+- utterance: Thank you. Now, which words did I ask you to hold on to?
+  topics:
+  - delayed-recall
+  style: follow_up
+  previous:
+    interviewer: Could you start at December and go backwards through the months?
+    character: December, November... October... I've lost where I was going.
+- utterance: Some of those words might have slipped away by now, mightn't they?
+  topics:
+  - delayed-recall
+  style: leading
+- utterance: Tell me the words we practised a little while ago.
+  topics:
+  - delayed-recall
+  style: open
+- utterance: Do any of the three words come back to you now?
+  topics:
+  - delayed-recall
+  style: closed
+- utterance: Got any of those three words left for me?
+  topics:
+  - delayed-recall
+  style: colloquial
+- utterance: Earlier I gave you three words, and I'd like to hear them again now
+  topics:
+  - delayed-recall
+  style: indirect
+- utterance: You've been very patient. What were the words I asked you to keep in mind?
+  topics:
+  - delayed-recall
+  style: empathy_then_question
+- utterance: er right what were them three words again
+  topics:
+  - delayed-recall
+  style: spoken
+- utterance: How has your thinking been changing over the course of the day?
+  topics:
+  - fluctuation
+  style: open
+- utterance: Does the muddled feeling come and go?
+  topics:
+  - fluctuation
+  style: closed
+- utterance: Are there good spells and bad spells with your thinking?
+  topics:
+  - fluctuation
+  style: colloquial
+- utterance: Has your confusion fluctuated over the past couple of days?
+  topics:
+  - fluctuation
+  style: clinical
+- utterance: I'm interested in whether your mind feels clearer at some times than others
+  topics:
+  - fluctuation
+  style: indirect
+- utterance: That must be unsettling. Are there times when things feel clearer?
+  topics:
+  - fluctuation
+  style: empathy_then_question
+- utterance: um does it does it vary at all how muddled you feel
+  topics:
+  - fluctuation
+  style: spoken
+- utterance: Better at some times?
+  topics:
+  - fluctuation
+  style: brief
+- utterance: And since you've been in here, does the confusion come and go?
+  topics:
+  - fluctuation
+  style: follow_up
+  previous:
+    interviewer: What brought you into hospital, Evelyn?
+    character: I've had a cough and felt hot, but I can't remember how I got here or how many nights I've
+      been here.
+- utterance: The staff say you're sharper at some moments than others; is that how it feels?
+  topics:
+  - fluctuation
+  style: leading
+- utterance: What's your thinking like at different times of day?
+  topics:
+  - fluctuation
+  style: open
+- utterance: Is your head clearer in the mornings than later on?
+  topics:
+  - fluctuation
+  style: closed
+- utterance: Some days foggier than others, would you say?
+  topics:
+  - fluctuation
+  style: colloquial
+- utterance: Tell me whether your confusion stays the same or changes from hour to hour
+  topics:
+  - fluctuation
+  style: indirect
+- utterance: so is it like um the same all the time or does it change
+  topics:
+  - fluctuation
+  style: spoken
+- utterance: I can see you're working hard at this. Does your mind ever feel sharper than it does now?
+  topics:
+  - fluctuation
+  style: empathy_then_question
+- utterance: Do you ever see things that aren't really there?
+  topics:
+  - visual-experience
+  style: closed
+- utterance: Have your eyes been playing tricks on you at all?
+  topics:
+  - visual-experience
+  style: colloquial
+- utterance: Have you noticed any unusual visual experiences while you've been on the ward?
+  topics:
+  - visual-experience
+  style: clinical
+- utterance: Sometimes when people are unwell they see things that others can't, and I wondered if that's
+    happened to you
+  topics:
+  - visual-experience
+  style: indirect
+- utterance: Lots of people feel a bit muddled in hospital. Have you seen anything that puzzled you?
+  topics:
+  - visual-experience
+  style: empathy_then_question
+- utterance: um have you noticed anything strange like seeing things around the room
+  topics:
+  - visual-experience
+  style: spoken
+- utterance: Seeing anything unusual?
+  topics:
+  - visual-experience
+  style: brief
+- utterance: When things are muddled like that, do you ever see things others can't?
+  topics:
+  - visual-experience
+  style: follow_up
+  previous:
+    interviewer: Does the confusion come and go?
+    character: It comes and goes; sometimes I can follow a whole conversation, then later I can't make
+      sense of what people are saying.
+- utterance: You might have been seeing things that weren't really there, am I right?
+  topics:
+  - visual-experience
+  style: leading
+- utterance: What have you noticed around your bed that's seemed out of place?
+  topics:
+  - visual-experience
+  style: open
+- utterance: Has anything appeared and then vanished when you looked again?
+  topics:
+  - visual-experience
+  style: closed
+- utterance: Anything popping up in the room that shouldn't be there?
+  topics:
+  - visual-experience
+  style: colloquial
+- utterance: I'd like to ask whether you've seen anything odd in the room
+  topics:
+  - visual-experience
+  style: indirect
+- utterance: Hospitals can do odd things to people. Is anything showing up that others can't see?
+  topics:
+  - visual-experience
+  style: empathy_then_question
+- utterance: Why do you think you've come into hospital?
+  topics:
+  - illness-awareness
+  style: open
+- utterance: Have you been unwell physically lately?
+  topics:
+  - illness-awareness
+  style: closed
+- utterance: Been feeling under the weather at all?
+  topics:
+  - illness-awareness
+  style: colloquial
+- utterance: Can you tell me about any recent physical symptoms, like a cough or a temperature?
+  topics:
+  - illness-awareness
+  style: clinical
+- utterance: I wondered what's brought you in here
+  topics:
+  - illness-awareness
+  style: indirect
+- utterance: You've had a lot to cope with. Have you been poorly in your body recently?
+  topics:
+  - illness-awareness
+  style: empathy_then_question
+- utterance: so um what's been going on with your health lately
+  topics:
+  - illness-awareness
+  style: spoken
+- utterance: Any fever or chest trouble?
+  topics:
+  - illness-awareness
+  style: brief
+- utterance: It is a hospital, yes. Do you know what brought you here?
+  topics:
+  - illness-awareness
+  style: follow_up
+  previous:
+    interviewer: Do you know where we are?
+    character: I thought this was a guest house, but those curtains look like a hospital; I can't make
+      it fit together.
+- utterance: You've been a bit poorly with your chest, haven't you?
+  topics:
+  - illness-awareness
+  style: leading
+- utterance: How did you come to be on this ward?
+  topics:
+  - illness-awareness
+  style: open
+- utterance: Did you have a cough or feel feverish?
+  topics:
+  - illness-awareness
+  style: closed
+- utterance: What's been up with you, health-wise?
+  topics:
+  - illness-awareness
+  style: colloquial
+- utterance: Tell me a bit about how you've been feeling in yourself physically
+  topics:
+  - illness-awareness
+  style: indirect
+- utterance: er did you have any like flu or a cough before coming in
+  topics:
+  - illness-awareness
+  style: spoken
+- utterance: How have you been sleeping since you came in?
+  topics:
+  - sleep-wake
+  style: open
+- utterance: Do you sleep through the night here?
+  topics:
+  - sleep-wake
+  style: closed
+- utterance: Getting much kip at night?
+  topics:
+  - sleep-wake
+  style: colloquial
+- utterance: Has your sleep pattern changed during this admission?
+  topics:
+  - sleep-wake
+  style: clinical
+- utterance: I'd like to hear how your nights have been on the ward
+  topics:
+  - sleep-wake
+  style: indirect
+- utterance: Wards can be noisy places. How's your sleep been?
+  topics:
+  - sleep-wake
+  style: empathy_then_question
+- utterance: um and the sleeping how's that been going
+  topics:
+  - sleep-wake
+  style: spoken
+- utterance: And sleep at night?
+  topics:
+  - sleep-wake
+  style: brief
+- utterance: Thank you. Do you find you nod off during the daytime as well?
+  topics:
+  - sleep-wake
+  style: follow_up
+  previous:
+    interviewer: Does your thinking come and go?
+    character: It comes and goes; sometimes I can follow a whole conversation, then later I can't make
+      sense of what people are saying.
+- utterance: You're probably dozing on and off through the day, aren't you?
+  topics:
+  - sleep-wake
+  style: leading
+- utterance: What are your days like in terms of dozing?
+  topics:
+  - sleep-wake
+  style: open
+- utterance: Are you nodding off much in the daytime?
+  topics:
+  - sleep-wake
+  style: closed
+- utterance: Catching any naps in the day?
+  topics:
+  - sleep-wake
+  style: colloquial
+- utterance: I wondered whether your sleep has got mixed up since being here
+  topics:
+  - sleep-wake
+  style: indirect
+- utterance: so are you er sleeping more in the day or at night
+  topics:
+  - sleep-wake
+  style: spoken
+- utterance: How well can you hear me at the moment?
+  topics:
+  - sensory-access
+  style: open
+- utterance: Do you wear glasses or a hearing aid?
+  topics:
+  - sensory-access
+  style: closed
+- utterance: Can you hear me okay, or shall I speak up?
+  topics:
+  - sensory-access
+  style: colloquial
+- utterance: Before we go further, do you need any aids for your hearing or vision?
+  topics:
+  - sensory-access
+  style: clinical
+- utterance: I want to be sure you can hear me properly
+  topics:
+  - sensory-access
+  style: indirect
+- utterance: I don't want to rush you. Is my voice clear enough where I'm sitting?
+  topics:
+  - sensory-access
+  style: empathy_then_question
+- utterance: um is it is it easy enough to hear me from here
+  topics:
+  - sensory-access
+  style: spoken
+- utterance: Glasses or hearing aid?
+  topics:
+  - sensory-access
+  style: brief
+- utterance: I'll go slowly. Do you need your glasses to read anything I show you?
+  topics:
+  - sensory-access
+  style: follow_up
+  previous:
+    interviewer: Is it all right if I ask you some questions?
+    character: Yes, you can ask me some questions; please tell me what they're for and go slowly.
+- utterance: You'll probably need your reading glasses for anything written, won't you?
+  topics:
+  - sensory-access
+  style: leading
+- utterance: What helps you hear and see best when people talk to you?
+  topics:
+  - sensory-access
+  style: open
+- utterance: Would it help if I sat where you can see my face?
+  topics:
+  - sensory-access
+  style: closed
+- utterance: Are your ears and eyes doing all right today?
+  topics:
+  - sensory-access
+  style: colloquial
+- utterance: Tell me if there's anything that'd make it easier to hear or see me
+  topics:
+  - sensory-access
+  style: indirect
+- utterance: so er are your glasses nearby if you need them
+  topics:
+  - sensory-access
+  style: spoken
+- utterance: How have you been managing getting up and about on the ward?
+  topics:
+  - immediate-safety
+  style: open
+- utterance: Have you felt unsteady when you stand up?
+  topics:
+  - immediate-safety
+  style: closed
+- utterance: Any trouble staying steady on your feet?
+  topics:
+  - immediate-safety
+  style: colloquial
+- utterance: Have you had any falls or near falls since admission?
+  topics:
+  - immediate-safety
+  style: clinical
+- utterance: I'd like to check you're safe when you get out of bed
+  topics:
+  - immediate-safety
+  style: indirect
+- utterance: Being in a strange bed is hard. Have you tried getting up on your own?
+  topics:
+  - immediate-safety
+  style: empathy_then_question
+- utterance: um have you been trying to get up by yourself at all
+  topics:
+  - immediate-safety
+  style: spoken
+- utterance: Steady on your feet?
+  topics:
+  - immediate-safety
+  style: brief
+- utterance: That must be odd. Have you felt like hurting yourself or anyone else?
+  topics:
+  - immediate-safety
+  style: follow_up
+  previous:
+    interviewer: Have you seen anything that other people can't see?
+    character: A little dog keeps appearing by the end of the bed and then disappearing; the nurse says
+      she can't see it.
+- utterance: You'd tell the nurses before you tried to stand, wouldn't you?
+  topics:
+  - immediate-safety
+  style: leading
+- utterance: What happens when you try to walk about here?
+  topics:
+  - immediate-safety
+  style: open
+- utterance: Do you ever have thoughts of harming yourself or someone else?
+  topics:
+  - immediate-safety
+  style: closed
+- utterance: Been trying to nip out of bed on your own?
+  topics:
+  - immediate-safety
+  style: colloquial
+- utterance: I wondered whether you've felt safe moving around
+  topics:
+  - immediate-safety
+  style: indirect
+- utterance: I can tell you'd like to be independent. Has anything made you feel unsafe on your feet?
+  topics:
+  - immediate-safety
+  style: empathy_then_question
+- utterance: How are you finding these questions, Evelyn?
+  topics:
+  - embarrassment
+  style: open
+- utterance: Are the questions making you feel uncomfortable?
+  topics:
+  - embarrassment
+  style: closed
+- utterance: Are these questions getting you down a bit?
+  topics:
+  - embarrassment
+  style: colloquial
+- utterance: Has the assessment caused you any distress?
+  topics:
+  - embarrassment
+  style: clinical
+- utterance: I wondered how it feels being asked all these questions
+  topics:
+  - embarrassment
+  style: indirect
+- utterance: You've done really well to stick with this. Is anything worrying you about getting things
+    wrong?
+  topics:
+  - embarrassment
+  style: empathy_then_question
+- utterance: um how's it feeling for you doing all these questions
+  topics:
+  - embarrassment
+  style: spoken
+- utterance: How do the questions feel?
+  topics:
+  - embarrassment
+  style: brief
+- utterance: That's absolutely fine. How does it feel when the words won't come?
+  topics:
+  - embarrassment
+  style: follow_up
+  previous:
+    interviewer: What were the three words from earlier?
+    character: I can't bring any of those words back now.
+- utterance: It might feel a bit embarrassing being tested like this, would that be right?
+  topics:
+  - embarrassment
+  style: leading
+- utterance: What goes through your mind when you can't find an answer?
+  topics:
+  - embarrassment
+  style: open
+- utterance: Do you feel self-conscious about being confused?
+  topics:
+  - embarrassment
+  style: closed
+- utterance: Is all this a bit mortifying for you?
+  topics:
+  - embarrassment
+  style: colloquial
+- utterance: I'd like to hear how you're feeling about the muddle you're in
+  topics:
+  - embarrassment
+  style: indirect
+- utterance: Lots of people find this hard. Is something bothering you about how you're doing?
+  topics:
+  - embarrassment
+  style: empathy_then_question
+- utterance: Can you tell me your name, and do you know what today's date is?
+  topics:
+  - personal-orientation
+  - time-orientation
+  style: stacked
+- utterance: Do you know where we are, and roughly what time of day it is?
+  topics:
+  - place-orientation
+  - time-orientation
+  style: stacked
+- utterance: How are you sleeping, and does the muddle come and go during the day?
+  topics:
+  - sleep-wake
+  - fluctuation
+  style: stacked
+- utterance: Have you been seeing anything unusual, and have you felt unsteady getting up?
+  topics:
+  - visual-experience
+  - immediate-safety
+  style: stacked
+- utterance: Good morning, Evelyn.
+  topics: []
+  style: greeting
+- utterance: Hello Evelyn, yes, I'm one of the doctors, from the psychiatry team.
+  topics: []
+  style: introduction
+- utterance: I'm Sam, one of the psychiatry doctors working with the ward team.
+  topics: []
+  style: introduction
+- utterance: Is it all right if we sit and talk for a few minutes?
+  topics: []
+  style: greeting
+- utterance: What would you like to start with, Evelyn?
+  topics: []
+  style: greeting
+- utterance: Before we start, do you have any questions for me?
+  topics: []
+  style: greeting
+- utterance: I'd like to move on to something a little different now.
+  topics: []
+  style: transition
+- utterance: Let's leave the memory questions there for a moment.
+  topics: []
+  style: transition
+- utterance: Now I'm going to ask about how you've been feeling.
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Evelyn.
+  topics: []
+  style: closing
+- utterance: Thank you for talking with me this morning.
+  topics: []
+  style: closing
+- utterance: I'll come back and see you again later today.
+  topics: []
+  style: closing
+- utterance: It sounds really frightening to feel this muddled.
+  topics: []
+  style: empathy
+- utterance: You're doing really well, there's no rush.
+  topics: []
+  style: empathy
+- utterance: It's completely understandable to feel unsettled somewhere unfamiliar.
+  topics: []
+  style: empathy
+- utterance: I can see this is hard work for you.
+  topics: []
+  style: empathy
+- utterance: So you've had a cough, you're not sure of the date, and things come and go.
+  topics: []
+  style: summary
+- utterance: So far we've talked about your memory and how you've been sleeping.
+  topics: []
+  style: summary
+- utterance: The questions I'm asking help us see whether the infection is affecting your thinking.
+  topics: []
+  style: explanation
+- utterance: Confusion like this often comes from being physically unwell, and the medical team will look
+    into that.
+  topics: []
+  style: explanation
+- utterance: None of these are trick questions; they just help us look after you.
+  topics: []
+  style: explanation
+- utterance: I'll ask you to remember three words, and later I'll ask for them again.
+  topics: []
+  style: explanation
+- utterance: I'm going to ask some questions that might seem very simple.
+  topics: []
+  style: explanation
+- utterance: Does that make sense so far?
+  topics: []
+  style: check_understanding
+- utterance: Can you tell me in your own words why I'm asking these questions?
+  topics: []
+  style: check_understanding
+- utterance: Is that clear, or shall I explain it again?
+  topics: []
+  style: check_understanding
+- utterance: Have you ever been told you have dementia?
+  topics: []
+  style: off_case
+- utterance: Do you drink any alcohol at home?
+  topics: []
+  style: off_case
+- utterance: Who does your shopping and cooking at home?
+  topics: []
+  style: off_case
+- utterance: Do you take any tablets regularly?
+  topics: []
+  style: off_case
+- utterance: Do you have any pain anywhere at the moment?
+  topics: []
+  style: off_case
+- utterance: Can you write a sentence for me on this piece of paper?
+  topics: []
+  style: off_case
+- utterance: Do you know what day your daughter is next visiting?
+  topics: []
+  style: near_miss
+- utterance: How did you sleep before you came into hospital?
+  topics: []
+  style: near_miss
+- utterance: Can you remember what you had for breakfast?
+  topics: []
+  style: near_miss
+- utterance: Where did you live before you retired?
+  topics: []
+  style: near_miss

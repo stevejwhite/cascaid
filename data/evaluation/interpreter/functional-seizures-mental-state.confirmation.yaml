@@ -1,0 +1,50 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: functional-seizures-mental-state
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Hannah, what did you take away from the neurologist's explanation yesterday?
+  expected:
+  - understanding
+  rapport: false
+- utterance: Could you describe the usual course of an attack, from its start to what others notice?
+  expected:
+  - episodes
+  rapport: false
+- utterance: Does feeling low carry on between attacks, or can you still enjoy things?
+  expected:
+  - mood
+  rapport: false
+- utterance: What worries about another attack affect whether you go out by yourself?
+  expected:
+  - anxiety
+  rapport: false
+- utterance: Before an attack, does your sense of the room around you change in any way?
+  expected:
+  - dissociation
+  rapport: false
+- utterance: What demands were you dealing with in life when the attacks first started?
+  expected:
+  - stress
+  rapport: false
+- utterance: Before an attack, does the room seem distant even though you know it hasn't changed?
+  expected:
+  - dissociation
+  rapport: false
+- utterance: Between attacks, have you heard voices or felt that someone controls you?
+  expected:
+  - perceptions
+  rapport: false
+- utterance: what worries you about other people hearing that explanation?
+  expected:
+  - stigma
+  rapport: false
+  previous:
+    interviewer: How was the diagnosis explained?
+    character: I was told these attacks aren't caused by epileptic activity and are called functional
+      seizures.
+- utterance: You're still trying to make sense of the diagnosis you were given yesterday.
+  expected: []
+  rapport: false

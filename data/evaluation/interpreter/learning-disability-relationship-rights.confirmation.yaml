@@ -1,0 +1,50 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: learning-disability-relationship-rights
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Denise, what do you know about how the relationship began and where they spend time together?
+  expected:
+  - relationship
+  rapport: false
+- utterance: What has your daughter herself said she wants from this relationship?
+  expected:
+  - wishes
+  rapport: false
+- utterance: What risks concern you, and have you actually seen signs of her being pressured?
+  expected:
+  - worries
+  rapport: false
+- utterance: What helps your daughter understand an explanation and express what she wants?
+  expected:
+  - communication
+  rapport: false
+- utterance: Do you know what she understands about consent and preventing pregnancy?
+  expected:
+  - knowledge
+  rapport: false
+- utterance: What have you understood about your role in deciding whether she can see someone?
+  expected:
+  - authority
+  rapport: false
+- utterance: Do you believe being her mother gives you the final say about the relationship?
+  expected:
+  - authority
+  rapport: false
+- utterance: Has her ability to make this specific decision actually been assessed?
+  expected:
+  - capacity
+  rapport: false
+- utterance: who could help her talk that through without feeling put on the spot?
+  expected:
+  - support
+  rapport: false
+  previous:
+    interviewer: Have you discussed sexual consent with her?
+    character: I don't know what she understands about sexual consent or contraception. We've avoided
+      talking about it at home.
+- utterance: You're concerned your daughter may not fully understand what a relationship could involve.
+  expected: []
+  rapport: false

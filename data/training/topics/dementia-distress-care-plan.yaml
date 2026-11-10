@@ -1,0 +1,880 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: dementia-distress-care-plan
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Tell me what you've seen of your dad being unsettled in the evenings.
+  topics:
+  - recent-course
+  style: open
+- utterance: Has this been going on for long?
+  topics:
+  - recent-course
+  style: closed
+- utterance: When did he start getting so worked up?
+  topics:
+  - recent-course
+  style: colloquial
+- utterance: What is the onset and time course of the agitation?
+  topics:
+  - recent-course
+  style: clinical
+- utterance: I wondered when the change in him first became noticeable
+  topics:
+  - recent-course
+  style: indirect
+- utterance: It must be upsetting to see. When did you first notice it?
+  topics:
+  - recent-course
+  style: empathy_then_question
+- utterance: um so what time of day is it worst and how long's it been happening
+  topics:
+  - recent-course
+  style: spoken
+- utterance: And how long's this been going on?
+  topics:
+  - recent-course
+  style: brief
+- utterance: Was he settled before that?
+  topics:
+  - recent-course
+  style: follow_up
+  previous:
+    interviewer: You said the home wants something to settle him.
+    character: The television is loud during the evening handover, and different temporary carers have
+      been helping him get changed this fortnight.
+- utterance: He's been like this for months, hasn't he?
+  topics:
+  - recent-course
+  style: leading
+- utterance: What does he do when he gets agitated?
+  topics:
+  - recent-course
+  style: open
+- utterance: Is it always at the same time of day?
+  topics:
+  - recent-course
+  style: closed
+- utterance: Is it every evening or just some?
+  topics:
+  - recent-course
+  style: colloquial
+- utterance: and um what's he like in the daytime compared with later on
+  topics:
+  - recent-course
+  style: spoken
+- utterance: What's he like in the evenings?
+  topics:
+  - recent-course
+  style: brief
+- utterance: What is the home like in the evenings?
+  topics:
+  - environment
+  style: open
+- utterance: Is it noisy where he sits at that time?
+  topics:
+  - environment
+  style: closed
+- utterance: Has anything changed about who looks after him?
+  topics:
+  - environment
+  style: colloquial
+- utterance: Are there any environmental or staffing factors that could be contributing?
+  topics:
+  - environment
+  style: clinical
+- utterance: I wanted to picture what's going on around him when it happens
+  topics:
+  - environment
+  style: indirect
+- utterance: That sounds hard to watch. Are there lots of different people helping him at that time?
+  topics:
+  - environment
+  style: empathy_then_question
+- utterance: um what's going on around him at that time like noise or visitors
+  topics:
+  - environment
+  style: spoken
+- utterance: Any changes in routine?
+  topics:
+  - environment
+  style: brief
+- utterance: Does it seem worse when it's busy?
+  topics:
+  - environment
+  style: follow_up
+  previous:
+    interviewer: You said it's most evenings that he paces and calls out.
+    character: It started about ten days ago; from five until seven most evenings he paces and calls out,
+      whereas he was usually settled before that.
+- utterance: It's probably very calm and quiet in his room, isn't it?
+  topics:
+  - environment
+  style: leading
+- utterance: Can you describe the room and who is around when he's getting changed?
+  topics:
+  - environment
+  style: open
+- utterance: Are there different carers helping him lately?
+  topics:
+  - environment
+  style: closed
+- utterance: Is the telly on or anything loud?
+  topics:
+  - environment
+  style: colloquial
+- utterance: and who's, um, looking after him in the evening these days
+  topics:
+  - environment
+  style: spoken
+- utterance: Noise around him?
+  topics:
+  - environment
+  style: brief
+- utterance: How do you think he's feeling in himself physically?
+  topics:
+  - pain-cues
+  style: open
+- utterance: Does he ever seem to be in pain?
+  topics:
+  - pain-cues
+  style: closed
+- utterance: Does anything seem to hurt him?
+  topics:
+  - pain-cues
+  style: colloquial
+- utterance: Are there any non-verbal indicators of pain?
+  topics:
+  - pain-cues
+  style: clinical
+- utterance: I wondered if you've noticed him wincing or guarding anywhere
+  topics:
+  - pain-cues
+  style: indirect
+- utterance: I'm sure you'd want to know if he was hurting. Have you seen any signs of that?
+  topics:
+  - pain-cues
+  style: empathy_then_question
+- utterance: um does he look like he's sore when he gets up or moves about
+  topics:
+  - pain-cues
+  style: spoken
+- utterance: Any sign of pain?
+  topics:
+  - pain-cues
+  style: brief
+- utterance: Does he do anything with his leg when he gets up?
+  topics:
+  - pain-cues
+  style: follow_up
+  previous:
+    interviewer: Staff said he's been calling out for several evenings.
+    character: It started about ten days ago; from five until seven most evenings he paces and calls out,
+      whereas he was usually settled before that.
+- utterance: He seems comfortable when he moves, doesn't he?
+  topics:
+  - pain-cues
+  style: leading
+- utterance: What have you noticed about his body when he stands or walks?
+  topics:
+  - pain-cues
+  style: open
+- utterance: Does he have any long-standing aches or a bad joint?
+  topics:
+  - pain-cues
+  style: closed
+- utterance: Is he rubbing or holding anywhere that hurts?
+  topics:
+  - pain-cues
+  style: colloquial
+- utterance: and, like, can he say if something hurts or does he show it
+  topics:
+  - pain-cues
+  style: spoken
+- utterance: Is he rubbing anywhere?
+  topics:
+  - pain-cues
+  style: brief
+- utterance: Has anyone looked into a physical cause for the change?
+  topics:
+  - infection-check
+  style: open
+- utterance: Has he had a fever or a cough?
+  topics:
+  - infection-check
+  style: closed
+- utterance: Could he be coming down with something?
+  topics:
+  - infection-check
+  style: colloquial
+- utterance: Have urinary or chest infections been excluded?
+  topics:
+  - infection-check
+  style: clinical
+- utterance: I wanted to ask whether anyone has checked him over medically
+  topics:
+  - infection-check
+  style: indirect
+- utterance: It's reassuring that you're thinking of everything. Has he complained of anything like burning
+    when he passes water?
+  topics:
+  - infection-check
+  style: empathy_then_question
+- utterance: um has the doctor been to see him about it
+  topics:
+  - infection-check
+  style: spoken
+- utterance: Has the GP seen him?
+  topics:
+  - infection-check
+  style: brief
+- utterance: Did anyone check his water or chest?
+  topics:
+  - infection-check
+  style: follow_up
+  previous:
+    interviewer: You said it changed quite suddenly.
+    character: It started about ten days ago; from five until seven most evenings he paces and calls out,
+      whereas he was usually settled before that.
+- utterance: He's definitely had a full medical check, hasn't he?
+  topics:
+  - infection-check
+  style: leading
+- utterance: What do you know about whether a doctor has examined him since this began?
+  topics:
+  - infection-check
+  style: open
+- utterance: Does he seem feverish or unwell in his chest?
+  topics:
+  - infection-check
+  style: closed
+- utterance: so, um, has he been properly looked at by a doctor
+  topics:
+  - infection-check
+  style: spoken
+- utterance: Any new illness?
+  topics:
+  - infection-check
+  style: brief
+- utterance: How have things been with his bowels?
+  topics:
+  - bowels
+  style: open
+- utterance: Has he been to the toilet regularly?
+  topics:
+  - bowels
+  style: closed
+- utterance: Has he been constipated?
+  topics:
+  - bowels
+  style: colloquial
+- utterance: What is his recent bowel habit?
+  topics:
+  - bowels
+  style: clinical
+- utterance: I wondered about his toilet habits lately
+  topics:
+  - bowels
+  style: indirect
+- utterance: I know these are awkward questions. When did he last open his bowels?
+  topics:
+  - bowels
+  style: empathy_then_question
+- utterance: um is he going to the loo ok, like regularly
+  topics:
+  - bowels
+  style: spoken
+- utterance: When did he last go?
+  topics:
+  - bowels
+  style: follow_up
+  previous:
+    interviewer: I'd like to know whether he's had any signs of an infection.
+    character: I haven't noticed a fever or cough and he hasn't told me about burning when passing urine;
+      I don't know whether staff have checked, and the GP hasn't reviewed this change yet.
+- utterance: His bowels are working normally as far as you know, aren't they?
+  topics:
+  - bowels
+  style: leading
+- utterance: Tell me what the staff have said about his toileting.
+  topics:
+  - bowels
+  style: open
+- utterance: Has anything changed in how often he goes?
+  topics:
+  - bowels
+  style: closed
+- utterance: Has he gone to the toilet recently?
+  topics:
+  - bowels
+  style: colloquial
+- utterance: and the, um, number twos, are they regular
+  topics:
+  - bowels
+  style: spoken
+- utterance: Bowel habit change?
+  topics:
+  - bowels
+  style: brief
+- utterance: What does he enjoy doing?
+  topics:
+  - comforting-activities
+  style: open
+- utterance: What calms him down when he's upset?
+  topics:
+  - comforting-activities
+  style: colloquial
+- utterance: Which non-pharmacological interventions have helped?
+  topics:
+  - comforting-activities
+  style: clinical
+- utterance: I wanted to hear about the things that bring him comfort
+  topics:
+  - comforting-activities
+  style: indirect
+- utterance: You obviously know him so well. What did he like doing before?
+  topics:
+  - comforting-activities
+  style: empathy_then_question
+- utterance: um what did he do for a hobby, like what does he like
+  topics:
+  - comforting-activities
+  style: spoken
+- utterance: What helps him settle?
+  topics:
+  - comforting-activities
+  style: brief
+- utterance: Has that settled him when you've tried it?
+  topics:
+  - comforting-activities
+  style: follow_up
+  previous:
+    interviewer: The home is quite noisy in the evenings, you said.
+    character: The television is loud during the evening handover, and different temporary carers have
+      been helping him get changed this fortnight.
+- utterance: Nothing seems to help him, does it?
+  topics:
+  - comforting-activities
+  style: leading
+- utterance: Tell me about what he used to love doing.
+  topics:
+  - comforting-activities
+  style: open
+- utterance: Does doing something with you help him?
+  topics:
+  - comforting-activities
+  style: closed
+- utterance: Is there any activity you can do with him that he likes?
+  topics:
+  - comforting-activities
+  style: colloquial
+- utterance: and when you visit is there anything you do that helps
+  topics:
+  - comforting-activities
+  style: spoken
+- utterance: His hobbies?
+  topics:
+  - comforting-activities
+  style: brief
+- utterance: How well does he manage to hear what people say?
+  topics:
+  - hearing
+  style: open
+- utterance: Does he have a hearing aid?
+  topics:
+  - hearing
+  style: closed
+- utterance: Can he hear you properly when you talk?
+  topics:
+  - hearing
+  style: colloquial
+- utterance: Is there any sensory impairment affecting communication?
+  topics:
+  - hearing
+  style: clinical
+- utterance: I wondered how easy it is for him to follow conversations
+  topics:
+  - hearing
+  style: indirect
+- utterance: That must make visits hard. Does he wear anything to help him hear?
+  topics:
+  - hearing
+  style: empathy_then_question
+- utterance: um can he hear alright, or does he use something
+  topics:
+  - hearing
+  style: spoken
+- utterance: Is his hearing OK?
+  topics:
+  - hearing
+  style: brief
+- utterance: Is it in when you visit?
+  topics:
+  - hearing
+  style: follow_up
+  previous:
+    interviewer: He seems confused by the noise around him.
+    character: The television is loud during the evening handover, and different temporary carers have
+      been helping him get changed this fortnight.
+- utterance: His hearing is fine, isn't it?
+  topics:
+  - hearing
+  style: leading
+- utterance: What do you notice about how he communicates with staff?
+  topics:
+  - hearing
+  style: open
+- utterance: Is the hearing aid working?
+  topics:
+  - hearing
+  style: closed
+- utterance: Does he struggle to hear people?
+  topics:
+  - hearing
+  style: colloquial
+- utterance: so does he have a hearing aid in or what
+  topics:
+  - hearing
+  style: spoken
+- utterance: And his hearing aid?
+  topics:
+  - hearing
+  style: brief
+- utterance: Has his behaviour put anyone at risk?
+  topics:
+  - harm-and-falls
+  style: open
+- utterance: Has he fallen?
+  topics:
+  - harm-and-falls
+  style: closed
+- utterance: Has he ever lashed out at anyone?
+  topics:
+  - harm-and-falls
+  style: colloquial
+- utterance: Have there been any incidents of aggression or falls?
+  topics:
+  - harm-and-falls
+  style: clinical
+- utterance: I wondered how safe he is when he's agitated
+  topics:
+  - harm-and-falls
+  style: indirect
+- utterance: I know it's worrying. Has he hurt himself or anyone else?
+  topics:
+  - harm-and-falls
+  style: empathy_then_question
+- utterance: um has he ever, like, hit out or nearly fallen
+  topics:
+  - harm-and-falls
+  style: spoken
+- utterance: Any accidents?
+  topics:
+  - harm-and-falls
+  style: brief
+- utterance: Has he tried to leave the building too?
+  topics:
+  - harm-and-falls
+  style: follow_up
+  previous:
+    interviewer: Tell me about the evenings.
+    character: It started about ten days ago; from five until seven most evenings he paces and calls out,
+      whereas he was usually settled before that.
+- utterance: He's been very aggressive towards the staff, hasn't he?
+  topics:
+  - harm-and-falls
+  style: leading
+- utterance: What worries you about his safety when he's like that?
+  topics:
+  - harm-and-falls
+  style: open
+- utterance: Has he hurt any member of staff?
+  topics:
+  - harm-and-falls
+  style: closed
+- utterance: Has he pushed anyone away or nearly come a cropper?
+  topics:
+  - harm-and-falls
+  style: colloquial
+- utterance: and does he, um, shove people or head for the door
+  topics:
+  - harm-and-falls
+  style: spoken
+- utterance: Falls or injuries?
+  topics:
+  - harm-and-falls
+  style: brief
+- utterance: What do you feel about the idea of a sedating medicine?
+  topics:
+  - medicine-concern
+  style: open
+- utterance: Are you worried about the side effects?
+  topics:
+  - medicine-concern
+  style: closed
+- utterance: What's worrying you about the medicine the home has suggested?
+  topics:
+  - medicine-concern
+  style: colloquial
+- utterance: What are your concerns about sedating medication?
+  topics:
+  - medicine-concern
+  style: clinical
+- utterance: I wondered how you feel about medication being used
+  topics:
+  - medicine-concern
+  style: indirect
+- utterance: It's natural to be cautious. What concerns you most about it?
+  topics:
+  - medicine-concern
+  style: empathy_then_question
+- utterance: um what have they told you about the tablet they want to start
+  topics:
+  - medicine-concern
+  style: spoken
+- utterance: Your worries about it?
+  topics:
+  - medicine-concern
+  style: brief
+- utterance: Has anyone explained the risks and benefits to you?
+  topics:
+  - medicine-concern
+  style: follow_up
+  previous:
+    interviewer: He's still taking the same tablets as before, I gather.
+    character: His current list says donepezil 10 milligrams at night and paracetamol 1 gram up to three
+      times a day if needed; I don't know how often the pain relief has been given, and no new drug has
+      started.
+- utterance: You'd be happy for him to be sedated, wouldn't you?
+  topics:
+  - medicine-concern
+  style: leading
+- utterance: Tell me what you've heard about what the home want to give him.
+  topics:
+  - medicine-concern
+  style: open
+- utterance: Has anyone told you what this medicine could do?
+  topics:
+  - medicine-concern
+  style: closed
+- utterance: Are you scared it'll knock him out?
+  topics:
+  - medicine-concern
+  style: colloquial
+- utterance: so um what's been said to you about the drug for his agitation
+  topics:
+  - medicine-concern
+  style: spoken
+- utterance: Concerns about sedation?
+  topics:
+  - medicine-concern
+  style: brief
+- utterance: What is he taking at the moment?
+  topics:
+  - current-prescriptions
+  style: open
+- utterance: What medicines is he on at the minute?
+  topics:
+  - current-prescriptions
+  style: colloquial
+- utterance: What is his current medication regimen?
+  topics:
+  - current-prescriptions
+  style: clinical
+- utterance: I'd like to know what tablets are on his chart
+  topics:
+  - current-prescriptions
+  style: indirect
+- utterance: You've clearly been keeping an eye on things. Has any new medicine been started?
+  topics:
+  - current-prescriptions
+  style: empathy_then_question
+- utterance: um what's on his list of medicines right now
+  topics:
+  - current-prescriptions
+  style: spoken
+- utterance: His current tablets?
+  topics:
+  - current-prescriptions
+  style: brief
+- utterance: Do you know how often he's actually had it?
+  topics:
+  - current-prescriptions
+  style: follow_up
+  previous:
+    interviewer: You've seen him rubbing his joint when he stands.
+    character: Yes, I've seen him wince and rub his right knee when he stands; he has had arthritis there
+      for years.
+- utterance: He's had some new drug started recently, hasn't he?
+  topics:
+  - current-prescriptions
+  style: leading
+- utterance: Can you take me through his medication list?
+  topics:
+  - current-prescriptions
+  style: open
+- utterance: Has anything been added or changed recently?
+  topics:
+  - current-prescriptions
+  style: closed
+- utterance: What painkillers does he get, and how often?
+  topics:
+  - current-prescriptions
+  style: colloquial
+- utterance: so, um, what does he take for his dementia and for sore bits
+  topics:
+  - current-prescriptions
+  style: spoken
+- utterance: Any recent changes to his medicines?
+  topics:
+  - current-prescriptions
+  style: brief
+- utterance: How will we keep track of how he's getting on?
+  topics:
+  - staff-and-review
+  style: open
+- utterance: Is there a member of staff who knows him well?
+  topics:
+  - staff-and-review
+  style: closed
+- utterance: Who's the best person at the home to speak to?
+  topics:
+  - staff-and-review
+  style: colloquial
+- utterance: What arrangements are there for monitoring and review?
+  topics:
+  - staff-and-review
+  style: clinical
+- utterance: I wondered who in the home could help us keep a record
+  topics:
+  - staff-and-review
+  style: indirect
+- utterance: I can see you want to be involved. Has a review date been set?
+  topics:
+  - staff-and-review
+  style: empathy_then_question
+- utterance: um is anyone writing down how he is each day
+  topics:
+  - staff-and-review
+  style: spoken
+- utterance: When's the next review?
+  topics:
+  - staff-and-review
+  style: brief
+- utterance: Who would that be?
+  topics:
+  - staff-and-review
+  style: follow_up
+  previous:
+    interviewer: You mentioned the home mentioned a medicine.
+    character: The manager mentioned an antipsychotic; I'm worried about sleepiness and strokes, but nobody
+      has yet explained the benefits and risks for Dad.
+- utterance: There's a review date already booked, isn't there?
+  topics:
+  - staff-and-review
+  style: leading
+- utterance: What contact do you have with the staff about his progress?
+  topics:
+  - staff-and-review
+  style: open
+- utterance: Is anyone keeping a daily record of his behaviour?
+  topics:
+  - staff-and-review
+  style: closed
+- utterance: Who knows him best on the staff team?
+  topics:
+  - staff-and-review
+  style: colloquial
+- utterance: and when would we, you know, check if the changes are working
+  topics:
+  - staff-and-review
+  style: spoken
+- utterance: Follow-up arrangements?
+  topics:
+  - staff-and-review
+  style: brief
+- utterance: Do you feel pressure from the home?
+  topics:
+  - daughter-strain
+  style: closed
+- utterance: Do you ever feel stuck between your dad and the home?
+  topics:
+  - daughter-strain
+  style: colloquial
+- utterance: What emotional impact has his placement had on you?
+  topics:
+  - daughter-strain
+  style: clinical
+- utterance: I wondered what this has been like for you as his daughter
+  topics:
+  - daughter-strain
+  style: indirect
+- utterance: It sounds like a huge amount to carry. How do you feel about the home?
+  topics:
+  - daughter-strain
+  style: empathy_then_question
+- utterance: um do you feel okay about speaking up with the staff
+  topics:
+  - daughter-strain
+  style: spoken
+- utterance: And how are you coping?
+  topics:
+  - daughter-strain
+  style: brief
+- utterance: Is that something you've felt able to say to them?
+  topics:
+  - daughter-strain
+  style: follow_up
+  previous:
+    interviewer: The home wants him sedated, you said.
+    character: The manager mentioned an antipsychotic; I'm worried about sleepiness and strokes, but nobody
+      has yet explained the benefits and risks for Dad.
+- utterance: You're probably worried that complaining might backfire, aren't you?
+  topics:
+  - daughter-strain
+  style: leading
+- utterance: What's it like to be the person who speaks for him with the home?
+  topics:
+  - daughter-strain
+  style: open
+- utterance: Do you feel uneasy about where he lives?
+  topics:
+  - daughter-strain
+  style: closed
+- utterance: Do you worry about making a fuss?
+  topics:
+  - daughter-strain
+  style: colloquial
+- utterance: How do you feel?
+  topics:
+  - daughter-strain
+  style: brief
+- utterance: Have you seen any signs he's in pain, and what is he taking for it?
+  topics:
+  - pain-cues
+  - current-prescriptions
+  style: stacked
+- utterance: Has anyone checked him for an infection, and how have his bowels been?
+  topics:
+  - infection-check
+  - bowels
+  style: stacked
+- utterance: When did the evening distress start, and what's going on around him at that time?
+  topics:
+  - recent-course
+  - environment
+  style: stacked
+- utterance: What worries you about the new medicine, and who will review how he gets on?
+  topics:
+  - medicine-concern
+  - staff-and-review
+  style: stacked
+- utterance: Hello Denise, thank you for coming to the meeting today.
+  topics: []
+  style: greeting
+- utterance: Good afternoon, Denise. Please sit down.
+  topics: []
+  style: greeting
+- utterance: Hello, I'm one of the doctors in the older adults' team.
+  topics: []
+  style: introduction
+- utterance: Hi Denise, my name is Dr Clarke and I'm a trainee in the community team.
+  topics: []
+  style: introduction
+- utterance: Is it all right if we talk about your father for a while?
+  topics: []
+  style: greeting
+- utterance: What would you like to start with, Denise?
+  topics: []
+  style: greeting
+- utterance: Before we start, do you have any questions for me?
+  topics: []
+  style: greeting
+- utterance: Is it all right if I write a few things down while we talk?
+  topics: []
+  style: greeting
+- utterance: I'd like to move on to something different now.
+  topics: []
+  style: transition
+- utterance: Shall we turn to what we might do to help him?
+  topics: []
+  style: transition
+- utterance: If it's all right, I'd like to talk about medicines now.
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Denise.
+  topics: []
+  style: closing
+- utterance: Thank you so much for talking to me today.
+  topics: []
+  style: closing
+- utterance: We'll need to stop in a minute, so is there anything you'd like to add?
+  topics: []
+  style: closing
+- utterance: It's clear you want him to be comfortable and still himself.
+  topics: []
+  style: empathy
+- utterance: That sounds like a very worrying time for you.
+  topics: []
+  style: empathy
+- utterance: I can hear how closely you've been watching over him.
+  topics: []
+  style: empathy
+- utterance: So he has become unsettled in the evenings and you want him comfortable without being sedated.
+  topics: []
+  style: summary
+- utterance: 'Let me check I have this right: you''re worried about the evenings and the home would like
+    something to help.'
+  topics: []
+  style: summary
+- utterance: Agitation can have many causes, so I'd like to look at things like pain, illness and the
+    surroundings before thinking about medicine.
+  topics: []
+  style: explanation
+- utterance: Any decision about medication would need to weigh up benefits and risks for your father,
+    and we would want to hear what he would want.
+  topics: []
+  style: explanation
+- utterance: Does that make sense so far?
+  topics: []
+  style: check_understanding
+- utterance: Would you like me to go over any of that again?
+  topics: []
+  style: check_understanding
+- utterance: Does he know where he is during the day?
+  topics: []
+  style: off_case
+- utterance: How is his eating and drinking?
+  topics: []
+  style: off_case
+- utterance: Has his sleep at night changed?
+  topics: []
+  style: off_case
+- utterance: Does he have a power of attorney set up?
+  topics: []
+  style: off_case
+- utterance: How long has he had Alzheimer's disease?
+  topics: []
+  style: off_case
+- utterance: Has he had any recent blood tests?
+  topics: []
+  style: off_case
+- utterance: Does he see his friends or other family?
+  topics: []
+  style: off_case
+- utterance: Is he calling out in the daytime as well?
+  topics: []
+  style: near_miss
+- utterance: Has he started taking a sleeping tablet?
+  topics: []
+  style: near_miss
+- utterance: Does he get a hearing test every year at the home?
+  topics: []
+  style: near_miss
+- utterance: Has he got any pain in his chest?
+  topics: []
+  style: near_miss
+- utterance: What was your father's job before he retired?
+  topics: []
+  style: off_case

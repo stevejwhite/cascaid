@@ -1,0 +1,164 @@
+# Training lines for the tone classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: opioid-treatment-physical-health
+case_version: 0.1.0
+status: draft
+items:
+- utterance: How much alcohol do you drink in a typical week?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Have you ever thought of harming yourself?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Do you ever feel that staff look down on you?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: um when did you last have a test for HIV
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Have you got any pain in your jaw or any swelling in your face?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Sorry to ask, but do you mind telling me about your periods?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: If it's okay with you, could I ask how often you use condoms?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Good afternoon Jodie, please take a seat.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: Hello, I'm Priya, a trainee psychiatrist, and I'll be asking about your physical health today.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: So far I've heard about your treatment, your tooth and a few worries about infections.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: summary
+- utterance: Right. And when was that?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Okay, thanks for telling me.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: I'm sorry to hear that. Let's move on to your general health.
+  empathy: 1
+  empathy_words: I'm sorry to hear that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That's a shame. I'll note it down.
+  empathy: 1
+  empathy_words: That's a shame.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That sounds hard. Is there anything you'd like me to cover that I haven't?
+  empathy: 1
+  empathy_words: That sounds hard.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I'm sorry you went through that. Who was with you at the time?
+  empathy: 1
+  empathy_words: I'm sorry you went through that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: It sounds as though you've been made to feel everything is your fault, and that must make
+    asking for help really difficult.
+  empathy: 2
+  empathy_words: It sounds as though you've been made to feel everything is your fault, and that must
+    make asking for help really difficult.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: Have you had trouble getting medical care?
+    character: I've been treated as if every problem is my fault. Sometimes I leave before asking about
+      what hurts.
+- utterance: You were frightened by how close that overdose came, and it makes sense that you want to
+    stay well now.
+  empathy: 2
+  empathy_words: You were frightened by how close that overdose came, and it makes sense that you want
+    to stay well now.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: Have you ever had an accidental overdose?
+    character: I had an accidental overdose a year ago. I have a naloxone kit now; I don't use alcohol
+      or sedatives.
+- utterance: Having a tooth that hurts every time you chew for three weeks must be wearing you down.
+  empathy: 2
+  empathy_words: Having a tooth that hurts every time you chew for three weeks must be wearing you down.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: You've kept coming to your reviews even though you often feel judged, which shows real commitment
+    to your health. Is there anything that would make visits easier?
+  empathy: 2
+  empathy_words: You've kept coming to your reviews even though you often feel judged, which shows real
+    commitment to your health.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+- utterance: Anyone who injects should know better than that.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Anyone who injects should know better than that.
+  style: confront_statement
+- utterance: Why on earth did you carry on injecting after all the warnings?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Why on earth did you carry on injecting
+  style: confront_why
+- utterance: I'm sure the tooth will sort itself out. We have bigger things to talk about.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: I'm sure the tooth will sort itself out.
+  style: dismissive
+- utterance: you're fine, nothing to worry about, so shall we skip the pregnancy question
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: nothing to worry about
+  style: dismissive

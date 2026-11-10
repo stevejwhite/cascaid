@@ -1,0 +1,17 @@
+CascAid
+Copyright (c) 2026 Steve J White
+
+Code: GNU Affero General Public License v3.0 only (see LICENSE).
+Cases, catalogue, evaluation and training data, and documentation: Creative Commons
+Attribution 4.0 International (see LICENSE-CONTENT). Attribute as:
+"CascAid by Steve J White, CC BY 4.0".
+
+Station cases are original fiction. They contain no real patient data and no Royal College
+of Psychiatrists (RCPsych) station scripts, question banks or eLearning content. Station
+structure follows the published MRCPsych CASC blueprint (March 2023); RCPsych retains
+copyright in its syllabus and blueprint, which are not reproduced here. CascAid is not
+affiliated with or endorsed by RCPsych.
+
+Third-party software, models, voices and avatar assets are not included in this
+repository. They are downloaded at install time under their own licences, recorded in
+config/model-register.json, config/avatar-register.json and docs/AVATAR-PLAN.md.

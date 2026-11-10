@@ -1,0 +1,447 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: social-anxiety-therapy-choice
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Which situations do you find hardest?
+  topics:
+  - situations
+  style: boundary
+  pair:
+  - situations
+  - strategies
+- utterance: How long has it been like this for you?
+  topics:
+  - situations
+  style: boundary
+  pair:
+  - situations
+  - strategies
+- utterance: Has anything made it worse recently?
+  topics:
+  - situations
+  style: boundary_colloquial
+  pair:
+  - situations
+  - strategies
+- utterance: um so where is it that you tend to steer clear of people
+  topics:
+  - situations
+  style: boundary_spoken
+  pair:
+  - situations
+  - strategies
+- utterance: And when did you first notice you were avoiding things?
+  topics:
+  - situations
+  style: boundary_follow_up
+  pair:
+  - situations
+  - strategies
+  previous:
+    interviewer: What do you do to cope when you're anxious?
+    character: I rehearse sentences and keep my eyes down. Sometimes I call in sick before a presentation.
+- utterance: What do you do to get yourself through it?
+  topics:
+  - strategies
+  style: boundary
+  pair:
+  - situations
+  - strategies
+- utterance: Are there little tricks you use so people don't see you're anxious?
+  topics:
+  - strategies
+  style: boundary
+  pair:
+  - situations
+  - strategies
+- utterance: Do you ever take time off to get out of something?
+  topics:
+  - strategies
+  style: boundary_colloquial
+  pair:
+  - situations
+  - strategies
+- utterance: and how do you like manage when you've got to speak
+  topics:
+  - strategies
+  style: boundary_spoken
+  pair:
+  - situations
+  - strategies
+- utterance: And what do you do to cope when that happens?
+  topics:
+  - strategies
+  style: boundary_follow_up
+  pair:
+  - situations
+  - strategies
+  previous:
+    interviewer: When did it start?
+    character: I avoid speaking in meetings and eat lunch alone. It's been like this since my late teens, worse since a promotion last year.
+- utterance: Do you avoid travelling on public transport?
+  topics: []
+  style: near_miss
+  pair:
+  - situations
+  - strategies
+- utterance: Do you have a hobby that helps you unwind?
+  topics: []
+  style: near_miss
+  pair:
+  - situations
+  - strategies
+- utterance: What goes through your mind in those moments?
+  topics:
+  - fear
+  style: boundary
+  pair:
+  - fear
+  - situations
+- utterance: What are you worried will happen?
+  topics:
+  - fear
+  style: boundary
+  pair:
+  - fear
+  - situations
+- utterance: What do you think other people are making of you?
+  topics:
+  - fear
+  style: boundary_colloquial
+  pair:
+  - fear
+  - situations
+- utterance: er do you go over it all in your head afterwards
+  topics:
+  - fear
+  style: boundary_spoken
+  pair:
+  - fear
+  - situations
+- utterance: And what is it you're afraid will happen there?
+  topics:
+  - fear
+  style: boundary_follow_up
+  pair:
+  - fear
+  - situations
+  previous:
+    interviewer: Where does it happen?
+    character: I avoid speaking in meetings and eat lunch alone. It's been like this since my late teens, worse since a promotion last year.
+- utterance: Where does it happen most?
+  topics:
+  - situations
+  style: boundary
+  pair:
+  - fear
+  - situations
+- utterance: Which parts of your working day are difficult?
+  topics:
+  - situations
+  style: boundary
+  pair:
+  - fear
+  - situations
+- utterance: How long have you been avoiding things?
+  topics:
+  - situations
+  style: boundary_colloquial
+  pair:
+  - fear
+  - situations
+- utterance: so um which settings are the worst for you
+  topics:
+  - situations
+  style: boundary_spoken
+  pair:
+  - fear
+  - situations
+- utterance: And in which places or settings is that worst?
+  topics:
+  - situations
+  style: boundary_follow_up
+  pair:
+  - fear
+  - situations
+  previous:
+    interviewer: What are you afraid will happen?
+    character: I expect people to notice me shaking and think I'm incompetent. Afterwards I replay everything I said.
+- utterance: Do you worry about your health a lot?
+  topics: []
+  style: near_miss
+  pair:
+  - fear
+  - situations
+- utterance: Are you frightened of being on your own?
+  topics: []
+  style: near_miss
+  pair:
+  - fear
+  - situations
+- utterance: What are you most afraid people will conclude about you?
+  topics:
+  - fear
+  style: boundary
+  pair:
+  - fear
+  - strategies
+- utterance: What's the worst thing you picture happening?
+  topics:
+  - fear
+  style: boundary
+  pair:
+  - fear
+  - strategies
+- utterance: Do you mull over conversations once they're finished?
+  topics:
+  - fear
+  style: boundary_colloquial
+  pair:
+  - fear
+  - strategies
+- utterance: so what's the thought that goes through your head then
+  topics:
+  - fear
+  style: boundary_spoken
+  pair:
+  - fear
+  - strategies
+- utterance: And what's the fear underneath that?
+  topics:
+  - fear
+  style: boundary_follow_up
+  pair:
+  - fear
+  - strategies
+  previous:
+    interviewer: How do you cope in the moment?
+    character: I rehearse sentences and keep my eyes down. Sometimes I call in sick before a presentation.
+- utterance: Do you plan what you're going to say in advance?
+  topics:
+  - strategies
+  style: boundary
+  pair:
+  - fear
+  - strategies
+- utterance: Is there anything you do to stop people noticing you're anxious?
+  topics:
+  - strategies
+  style: boundary
+  pair:
+  - fear
+  - strategies
+- utterance: Do you ever phone in sick to avoid something?
+  topics:
+  - strategies
+  style: boundary_colloquial
+  pair:
+  - fear
+  - strategies
+- utterance: um and what do you do to get by when it comes up
+  topics:
+  - strategies
+  style: boundary_spoken
+  pair:
+  - fear
+  - strategies
+- utterance: And what do you do to try to stop that happening?
+  topics:
+  - strategies
+  style: boundary_follow_up
+  pair:
+  - fear
+  - strategies
+  previous:
+    interviewer: What do you think they'd notice about you?
+    character: I expect people to notice me shaking and think I'm incompetent. Afterwards I replay everything I said.
+- utterance: Are you frightened of losing your job?
+  topics: []
+  style: near_miss
+  pair:
+  - fear
+  - strategies
+- utterance: Do you worry about what your family think of you?
+  topics: []
+  style: near_miss
+  pair:
+  - fear
+  - strategies
+- utterance: By the end of all this, what would you like to have changed?
+  topics:
+  - goals
+  style: boundary
+  pair:
+  - goals
+  - preference
+- utterance: What would you like to be able to do that you can't manage now?
+  topics:
+  - goals
+  style: boundary
+  pair:
+  - goals
+  - preference
+- utterance: If this worked, what would you notice changing?
+  topics:
+  - goals
+  style: boundary_colloquial
+  pair:
+  - goals
+  - preference
+- utterance: so er what are you hoping to get out of coming here
+  topics:
+  - goals
+  style: boundary_spoken
+  pair:
+  - goals
+  - preference
+- utterance: And what would you like the therapy to help you do?
+  topics:
+  - goals
+  style: boundary_follow_up
+  pair:
+  - goals
+  - preference
+  previous:
+    interviewer: Would you prefer one to one or a group?
+    character: I'd prefer to begin individually. I'm embarrassed that even joining a group about anxiety sounds frightening.
+- utterance: Is it just you and a therapist you'd want, or other people there too?
+  topics:
+  - preference
+  style: boundary
+  pair:
+  - goals
+  - preference
+- utterance: How would you feel about meeting other people who have anxiety?
+  topics:
+  - preference
+  style: boundary
+  pair:
+  - goals
+  - preference
+- utterance: Is a group something you could face, do you think?
+  topics:
+  - preference
+  style: boundary_colloquial
+  pair:
+  - goals
+  - preference
+- utterance: um would you want it just you and the therapist or with others
+  topics:
+  - preference
+  style: boundary_spoken
+  pair:
+  - goals
+  - preference
+- utterance: And would you want to do that one to one?
+  topics:
+  - preference
+  style: boundary_follow_up
+  pair:
+  - goals
+  - preference
+  previous:
+    interviewer: What do you want out of therapy?
+    character: I want to contribute one idea in meetings and have lunch with colleagues without planning every word.
+- utterance: Would you want medication instead of therapy?
+  topics: []
+  style: near_miss
+  pair:
+  - goals
+  - preference
+- utterance: Do you want your manager to be told about the therapy?
+  topics: []
+  style: near_miss
+  pair:
+  - goals
+  - preference
+- utterance: Could you come to appointments every week?
+  topics:
+  - commitment
+  style: boundary
+  pair:
+  - commitment
+  - situations
+- utterance: How would sessions fit around your job?
+  topics:
+  - commitment
+  style: boundary
+  pair:
+  - commitment
+  - situations
+- utterance: Would you manage some practice between sessions?
+  topics:
+  - commitment
+  style: boundary_colloquial
+  pair:
+  - commitment
+  - situations
+- utterance: so um how easy is it for you to get time away for this
+  topics:
+  - commitment
+  style: boundary_spoken
+  pair:
+  - commitment
+  - situations
+- utterance: Would you be able to get to appointments in the working week?
+  topics:
+  - commitment
+  style: boundary_follow_up
+  pair:
+  - commitment
+  - situations
+  previous:
+    interviewer: Which situations do you avoid at work?
+    character: I avoid speaking in meetings and eat lunch alone. It's been like this since my late teens, worse since a promotion last year.
+- utterance: What happens for you in meetings?
+  topics:
+  - situations
+  style: boundary
+  pair:
+  - commitment
+  - situations
+- utterance: Is there anywhere at work you steer clear of?
+  topics:
+  - situations
+  style: boundary
+  pair:
+  - commitment
+  - situations
+- utterance: How long has this been affecting your work?
+  topics:
+  - situations
+  style: boundary_colloquial
+  pair:
+  - commitment
+  - situations
+- utterance: erm so which bits of work are the hardest
+  topics:
+  - situations
+  style: boundary_spoken
+  pair:
+  - commitment
+  - situations
+- utterance: And what does the anxiety stop you doing at work?
+  topics:
+  - situations
+  style: boundary_follow_up
+  pair:
+  - commitment
+  - situations
+  previous:
+    interviewer: Could you attend weekly?
+    character: I can attend weekly if it's arranged around work. I'm worried about what I'd be expected to practise between meetings.
+- utterance: Does your partner know about your anxiety?
+  topics: []
+  style: near_miss
+  pair:
+  - commitment
+  - situations
+- utterance: How have you been sleeping?
+  topics: []
+  style: near_miss
+  pair:
+  - commitment
+  - situations

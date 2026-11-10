@@ -1,0 +1,159 @@
+# Training lines for the tone classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: amputation-refusal-capacity
+case_version: 0.1.0
+status: draft
+items:
+- utterance: What do you think could happen if the infection isn't treated?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: have you had any thoughts of hurting yourself
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: How would you feel about losing part of your leg?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Do you feel you're being pushed into this by anyone?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Is there something about the operation that scares you most?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Sorry to ask, but could you tell me what you remember from the ward round?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: If you don't mind me asking, how long have you felt low?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Hello Stephen, I'm one of the psychiatry doctors and I'm here to talk about your treatment.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: Good morning, my name is Dr Hale, from the liaison psychiatry team.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: So the surgeons want to operate and you'd rather not at present, have I got that right?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: check_understanding
+- utterance: Right. And when did the low mood start?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Okay, thanks Stephen.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: I'm sorry to hear that.
+  empathy: 1
+  empathy_words: I'm sorry to hear that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That sounds really difficult.
+  empathy: 1
+  empathy_words: That sounds really difficult.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That must be hard. How are you finding the days on the ward?
+  empathy: 1
+  empathy_words: That must be hard.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I'm sorry you're going through this. Can I ask about your mood?
+  empathy: 1
+  empathy_words: I'm sorry you're going through this.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: It makes sense that you're frightened of losing your independence when you also want to live.
+  empathy: 2
+  empathy_words: It makes sense that you're frightened of losing your independence when you also want to live.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: How are you weighing it all up?
+    character: I want to live, but I'm frightened of losing independence. I know surgery could save me and rehabilitation could help; I don't yet know what life afterwards would actually involve.
+- utterance: It sounds as though you've felt pushed, and you want a chance to speak for yourself.
+  empathy: 2
+  empathy_words: It sounds as though you've felt pushed, and you want a chance to speak for yourself.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: Does anyone's opinion weigh on you?
+    character: My brother says I'd be foolish to refuse. I feel pushed and want a chance to speak without him there.
+- utterance: I can hear that this is your body and your decision, and that you want that taken seriously.
+  empathy: 2
+  empathy_words: I can hear that this is your body and your decision, and that you want that taken seriously.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: Feeling low for three weeks while you're so unwell sounds exhausting, and I can hear how much you worry about the future. What has been hardest?
+  empathy: 2
+  empathy_words: Feeling low for three weeks while you're so unwell sounds exhausting, and I can hear how much you worry about the future.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: How have you been feeling lately?
+    character: I've felt low for three weeks since this worsened. I still look forward to seeing my daughter, but I worry about the future.
+- utterance: You know the infection could kill you, so refusing doesn't make much sense.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: refusing doesn't make much sense
+  style: confront_statement
+- utterance: Why on earth would you turn down treatment that could save your life?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Why on earth would you turn down treatment that could save your life
+  style: confront_why
+- utterance: You'll feel differently once the operation is over, so there's no need to worry.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You'll feel differently once the operation is over
+  style: dismissive
+- utterance: I haven't got long, so can we move along please.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: I haven't got long, so can we move along
+  style: dismissive

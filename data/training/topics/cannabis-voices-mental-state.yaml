@@ -1,0 +1,811 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: cannabis-voices-mental-state
+case_version: 0.1.0
+status: draft
+items:
+- utterance: What sort of things have you been hearing that other people might not?
+  topics:
+  - voices
+  style: open
+- utterance: Have you heard anyone talking when there's nobody else in the room?
+  topics:
+  - voices
+  style: closed
+- utterance: Tyler, are you getting any voices at the moment?
+  topics:
+  - voices
+  style: colloquial
+- utterance: I wondered whether you've been hearing things that others around you can't
+  topics:
+  - voices
+  style: indirect
+- utterance: That must be scary. Have you been hearing voices when you're alone?
+  topics:
+  - voices
+  style: empathy_then_question
+- utterance: so um have you been hearing any any voices at all
+  topics:
+  - voices
+  style: spoken
+- utterance: When you say outside your head, is it as clear as my voice is now?
+  topics:
+  - voices
+  style: follow_up
+  previous:
+    interviewer: Have you heard anyone talking when there's nobody else in the room?
+    character: For three days I've heard two unfamiliar men talking about me when nobody is there. It
+      happens several times an hour and sounds outside my head.
+- utterance: And those two men, do you have any idea who they are?
+  topics:
+  - voices
+  style: follow_up
+  previous:
+    interviewer: Have you heard anyone talking when there's nobody else in the room?
+    character: For three days I've heard two unfamiliar men talking about me when nobody is there. It
+      happens several times an hour and sounds outside my head.
+- utterance: It sounds like you might be hearing voices, is that right?
+  topics:
+  - voices
+  style: leading
+- utterance: How would you describe the voices, if you've been hearing any?
+  topics:
+  - voices
+  style: open
+- utterance: Do the voices sound like anyone you recognise?
+  topics:
+  - voices
+  style: closed
+- utterance: Tell me about how often the voices come, if they do
+  topics:
+  - voices
+  style: indirect
+- utterance: right and er when did the voices first start
+  topics:
+  - voices
+  style: spoken
+- utterance: Where do the voices seem to come from, in your head or out in the room?
+  topics:
+  - voices
+  style: open
+- utterance: Have the voices ever told you to do something?
+  topics:
+  - commands
+  style: closed
+- utterance: Are they ordering you about at all, Tyler?
+  topics:
+  - commands
+  style: colloquial
+- utterance: Do the voices ever give you instructions or commands?
+  topics:
+  - commands
+  style: clinical
+- utterance: I'd like to know whether the voices ever tell you to act on something
+  topics:
+  - commands
+  style: indirect
+- utterance: I can see this is unsettling. Do they ever tell you to hurt anyone?
+  topics:
+  - commands
+  style: empathy_then_question
+- utterance: um do they do they ever tell you to do stuff
+  topics:
+  - commands
+  style: spoken
+- utterance: Any instructions from them?
+  topics:
+  - commands
+  style: brief
+- utterance: Do those men ever tell you what to do?
+  topics:
+  - commands
+  style: follow_up
+  previous:
+    interviewer: How would you describe the voices, if you've been hearing any?
+    character: For three days I've heard two unfamiliar men talking about me when nobody is there. It
+      happens several times an hour and sounds outside my head.
+- utterance: And if they ever did tell you to do something, would you feel you had to?
+  topics:
+  - commands
+  style: follow_up
+  previous:
+    interviewer: Have the voices ever told you to do something?
+    character: No, they haven't told me to do anything. They comment that I'm being watched.
+- utterance: They're not telling you to harm anyone, are they?
+  topics:
+  - commands
+  style: leading
+- utterance: Would you feel you had to obey them if they gave you an order?
+  topics:
+  - commands
+  style: closed
+- utterance: Ever feel you've got to do what the voices say?
+  topics:
+  - commands
+  style: colloquial
+- utterance: and so like er have they said to hurt yourself or someone else
+  topics:
+  - commands
+  style: spoken
+- utterance: Something I always ask is whether the voices ever give orders
+  topics:
+  - commands
+  style: indirect
+- utterance: Is there anything the voices want you to do?
+  topics:
+  - commands
+  style: closed
+- utterance: What's your sense of whether people are against you right now?
+  topics:
+  - persecution
+  style: open
+- utterance: Tyler, does it feel like someone's out to get you?
+  topics:
+  - persecution
+  style: colloquial
+- utterance: Have you had any thoughts that people are plotting against you or trying to harm you?
+  topics:
+  - persecution
+  style: clinical
+- utterance: I wondered if you've been feeling watched or followed lately
+  topics:
+  - persecution
+  style: indirect
+- utterance: You look really on edge. Do you feel anyone is keeping tabs on you?
+  topics:
+  - persecution
+  style: empathy_then_question
+- utterance: um is is anyone sort of after you do you think
+  topics:
+  - persecution
+  style: spoken
+- utterance: Feeling watched at all?
+  topics:
+  - persecution
+  style: brief
+- utterance: Who do you think is watching you?
+  topics:
+  - persecution
+  style: follow_up
+  previous:
+    interviewer: Have the voices ever told you to do something?
+    character: No, they haven't told me to do anything. They comment that I'm being watched.
+- utterance: How sure are you about that, out of ten?
+  topics:
+  - persecution
+  style: follow_up
+  previous:
+    interviewer: Do you feel that anyone is following you or watching you?
+    character: I think people outside are tracking me. I haven't seen anyone doing it, but it feels very
+      convincing.
+- utterance: It feels as if people are out to harm you, doesn't it?
+  topics:
+  - persecution
+  style: leading
+- utterance: Is there any proof you've seen that people are after you?
+  topics:
+  - persecution
+  style: closed
+- utterance: Got the feeling someone's on your case, keeping an eye on you?
+  topics:
+  - persecution
+  style: colloquial
+- utterance: Tell me a bit about any sense that you're being followed
+  topics:
+  - persecution
+  style: indirect
+- utterance: and er when you say something feels wrong is that like people watching you
+  topics:
+  - persecution
+  style: spoken
+- utterance: Do you ever feel thoughts are being put into your head?
+  topics:
+  - interference
+  style: closed
+- utterance: How do your thoughts feel to you at the moment, are they your own?
+  topics:
+  - interference
+  style: open
+- utterance: Does it feel like anyone's messing with your thoughts?
+  topics:
+  - interference
+  style: colloquial
+- utterance: Have you felt that your thoughts are being removed or that others can hear them?
+  topics:
+  - interference
+  style: clinical
+- utterance: I'd like to ask whether your thoughts feel under your control at the moment
+  topics:
+  - interference
+  style: indirect
+- utterance: Some of these questions might sound odd, and that's fine. Can other people hear what you're
+    thinking?
+  topics:
+  - interference
+  style: empathy_then_question
+- utterance: um and your thoughts are they like are they your own
+  topics:
+  - interference
+  style: spoken
+- utterance: Thoughts still feel like yours?
+  topics:
+  - interference
+  style: brief
+- utterance: Do you think they can get into your thoughts as well?
+  topics:
+  - interference
+  style: follow_up
+  previous:
+    interviewer: Do you feel that anyone is following you or watching you?
+    character: I think people outside are tracking me. I haven't seen anyone doing it, but it feels very
+      convincing.
+- utterance: So nobody else seems to know what you're thinking, then?
+  topics:
+  - interference
+  style: follow_up
+  previous:
+    interviewer: Do you ever feel thoughts are being put into your head?
+    character: No, I don't think thoughts are being put in, taken out or broadcast. They still feel like
+      my own.
+- utterance: I suppose your thoughts still feel like your own?
+  topics:
+  - interference
+  style: leading
+- utterance: In what way, if any, have your thoughts felt different or not your own?
+  topics:
+  - interference
+  style: open
+- utterance: Is anyone able to take thoughts away from you?
+  topics:
+  - interference
+  style: closed
+- utterance: Ever feel your thoughts are being beamed out for others to hear?
+  topics:
+  - interference
+  style: colloquial
+- utterance: Sometimes people feel their thoughts aren't private any more, and I wondered about that for
+    you
+  topics:
+  - interference
+  style: indirect
+- utterance: Are your thoughts being interfered with by anything outside you?
+  topics:
+  - interference
+  style: closed
+- utterance: Tell me about your cannabis use.
+  topics:
+  - cannabis
+  style: open
+- utterance: Do you smoke cannabis every day?
+  topics:
+  - cannabis
+  style: closed
+- utterance: How much weed are you getting through, Tyler?
+  topics:
+  - cannabis
+  style: colloquial
+- utterance: Could you describe how much cannabis you use and how often?
+  topics:
+  - cannabis
+  style: clinical
+- utterance: I wondered when you last had a smoke
+  topics:
+  - cannabis
+  style: indirect
+- utterance: Thanks for being open with me. When did you last use cannabis?
+  topics:
+  - cannabis
+  style: empathy_then_question
+- utterance: so er how long have you been um smoking
+  topics:
+  - cannabis
+  style: spoken
+- utterance: And the cannabis, how much?
+  topics:
+  - cannabis
+  style: brief
+- utterance: Roughly what time yesterday evening was that last one?
+  topics:
+  - cannabis
+  style: follow_up
+  previous:
+    interviewer: Tell me about your cannabis use.
+    character: I've smoked strong cannabis daily for two years. Last week I increased to about four joints
+      daily; I last smoked yesterday evening.
+- utterance: And over those nights, how much were you smoking?
+  topics:
+  - cannabis
+  style: follow_up
+  previous:
+    interviewer: How have you been sleeping these last few nights?
+    character: I've slept about three hours each night for three nights because I'm frightened. I'm exhausted,
+      not full of energy.
+- utterance: You've been smoking quite a lot recently, haven't you?
+  topics:
+  - cannabis
+  style: leading
+- utterance: How has your smoking changed over the last few weeks?
+  topics:
+  - cannabis
+  style: open
+- utterance: Have you been smoking more cannabis than usual lately?
+  topics:
+  - cannabis
+  style: closed
+- utterance: It would help to know how long you've been using cannabis
+  topics:
+  - cannabis
+  style: indirect
+- utterance: and um roughly how many joints a day would you say
+  topics:
+  - cannabis
+  style: spoken
+- utterance: What other drugs have you taken apart from cannabis?
+  topics:
+  - other-drugs
+  style: open
+- utterance: Have you taken anything else, like pills or powders?
+  topics:
+  - other-drugs
+  style: closed
+- utterance: Anything else on top of the weed, Tyler?
+  topics:
+  - other-drugs
+  style: colloquial
+- utterance: Have you used any other substances, such as stimulants or hallucinogens?
+  topics:
+  - other-drugs
+  style: clinical
+- utterance: I need to ask about any alcohol you drink
+  topics:
+  - other-drugs
+  style: indirect
+- utterance: I know it's a lot of questions. Do you drink alcohol at all?
+  topics:
+  - other-drugs
+  style: empathy_then_question
+- utterance: um any any other stuff like coke or pills
+  topics:
+  - other-drugs
+  style: spoken
+- utterance: And alcohol?
+  topics:
+  - other-drugs
+  style: brief
+- utterance: Is cannabis the only thing you've used, or has there been anything else?
+  topics:
+  - other-drugs
+  style: follow_up
+  previous:
+    interviewer: Tell me about your cannabis use.
+    character: I've smoked strong cannabis daily for two years. Last week I increased to about four joints
+      daily; I last smoked yesterday evening.
+- utterance: And nothing prescribed either, like sleeping tablets?
+  topics:
+  - other-drugs
+  style: follow_up
+  previous:
+    interviewer: What other drugs have you taken apart from cannabis?
+    character: No, I haven't taken other drugs or medicines. I drink a couple of beers on some weekends,
+      none this week.
+- utterance: Cannabis isn't the only thing you take, is it?
+  topics:
+  - other-drugs
+  style: leading
+- utterance: How much do you usually drink in a week?
+  topics:
+  - other-drugs
+  style: open
+- utterance: Are you on any regular medicines from your GP?
+  topics:
+  - other-drugs
+  style: closed
+- utterance: Had a drink at all this week?
+  topics:
+  - other-drugs
+  style: colloquial
+- utterance: Tell me if there's anything you take from a doctor or chemist
+  topics:
+  - other-drugs
+  style: indirect
+- utterance: Did you take anything else alongside the cannabis, even once?
+  topics:
+  - other-drugs
+  style: closed
+- utterance: Have you been getting much sleep?
+  topics:
+  - sleep
+  style: closed
+- utterance: Managing to get your head down at night?
+  topics:
+  - sleep
+  style: colloquial
+- utterance: How many hours of sleep are you getting each night?
+  topics:
+  - sleep
+  style: clinical
+- utterance: I wondered how your sleep has been
+  topics:
+  - sleep
+  style: indirect
+- utterance: You look worn out. Are you sleeping?
+  topics:
+  - sleep
+  style: empathy_then_question
+- utterance: um so sleep wise how's that been
+  topics:
+  - sleep
+  style: spoken
+- utterance: Sleep okay lately?
+  topics:
+  - sleep
+  style: brief
+- utterance: Do they keep you awake at night?
+  topics:
+  - sleep
+  style: follow_up
+  previous:
+    interviewer: How would you describe the voices, if you've been hearing any?
+    character: For three days I've heard two unfamiliar men talking about me when nobody is there. It
+      happens several times an hour and sounds outside my head.
+- utterance: Is it getting off to sleep or staying asleep that's the problem?
+  topics:
+  - sleep
+  style: follow_up
+  previous:
+    interviewer: How have you been sleeping these last few nights?
+    character: I've slept about three hours each night for three nights because I'm frightened. I'm exhausted,
+      not full of energy.
+- utterance: I imagine you've hardly slept, is that fair?
+  topics:
+  - sleep
+  style: leading
+- utterance: What's your energy like at the moment?
+  topics:
+  - sleep
+  style: open
+- utterance: Do you feel full of energy or exhausted?
+  topics:
+  - sleep
+  style: closed
+- utterance: Wiped out, or buzzing?
+  topics:
+  - sleep
+  style: colloquial
+- utterance: Tell me a bit about your nights recently
+  topics:
+  - sleep
+  style: indirect
+- utterance: and er what time are you dropping off
+  topics:
+  - sleep
+  style: spoken
+- utterance: Have you had any thoughts of ending your life?
+  topics:
+  - safety
+  style: closed
+- utterance: What do you think you might do if you felt under threat?
+  topics:
+  - safety
+  style: open
+- utterance: Have you felt like lashing out at anyone?
+  topics:
+  - safety
+  style: colloquial
+- utterance: Feeling this scared is exhausting. Have you had thoughts of hurting anyone?
+  topics:
+  - safety
+  style: empathy_then_question
+- utterance: um can I ask have you ever thought about um not being here
+  topics:
+  - safety
+  style: spoken
+- utterance: Any thoughts of suicide?
+  topics:
+  - safety
+  style: brief
+- utterance: If you thought one of them was outside, what would you do?
+  topics:
+  - safety
+  style: follow_up
+  previous:
+    interviewer: Do you feel that anyone is following you or watching you?
+    character: I think people outside are tracking me. I haven't seen anyone doing it, but it feels very
+      convincing.
+- utterance: When you say lash out, what would that look like?
+  topics:
+  - safety
+  style: follow_up
+  previous:
+    interviewer: Have you felt like lashing out at anyone?
+    character: I haven't wanted to die or planned to attack anyone. I'm scared I might lash out if I thought
+      someone was coming for me.
+- utterance: You wouldn't act on that fear and hurt someone, would you?
+  topics:
+  - safety
+  style: leading
+- utterance: Could we talk about what you might do if you felt in danger?
+  topics:
+  - safety
+  style: open
+- utterance: Do you have any plans to harm yourself?
+  topics:
+  - safety
+  style: closed
+- utterance: Ever feel like it'd be easier not to be around?
+  topics:
+  - safety
+  style: colloquial
+- utterance: It's important I ask about any wish to die you might be having
+  topics:
+  - safety
+  style: indirect
+- utterance: I really appreciate you trusting me with this. Have you felt like hitting out at anyone?
+  topics:
+  - safety
+  style: empathy_then_question
+- utterance: Do you think the cannabis could be playing a part?
+  topics:
+  - insight
+  style: closed
+- utterance: What's your take on why this is happening, Tyler?
+  topics:
+  - insight
+  style: colloquial
+- utterance: How do you make sense of these experiences yourself?
+  topics:
+  - insight
+  style: clinical
+- utterance: I'd be interested in your own explanation for what's going on
+  topics:
+  - insight
+  style: indirect
+- utterance: It's a lot to make sense of. Would you like some help with this?
+  topics:
+  - insight
+  style: empathy_then_question
+- utterance: so um what what do you reckon's behind it
+  topics:
+  - insight
+  style: spoken
+- utterance: Any idea what's causing it?
+  topics:
+  - insight
+  style: brief
+- utterance: Could there be another explanation for that feeling?
+  topics:
+  - insight
+  style: follow_up
+  previous:
+    interviewer: Do you feel that anyone is following you or watching you?
+    character: I think people outside are tracking me. I haven't seen anyone doing it, but it feels very
+      convincing.
+- utterance: Do you think the extra smoking might be linked to how you're feeling?
+  topics:
+  - insight
+  style: follow_up
+  previous:
+    interviewer: Tell me about your cannabis use.
+    character: I've smoked strong cannabis daily for two years. Last week I increased to about four joints
+      daily; I last smoked yesterday evening.
+- utterance: Part of you probably wonders if it's the cannabis?
+  topics:
+  - insight
+  style: leading
+- utterance: How would you feel about us helping you with this?
+  topics:
+  - insight
+  style: open
+- utterance: Is it possible this is your mind playing tricks?
+  topics:
+  - insight
+  style: closed
+- utterance: Reckon the weed's got anything to do with it?
+  topics:
+  - insight
+  style: colloquial
+- utterance: Tell me what you'd want from us today
+  topics:
+  - insight
+  style: indirect
+- utterance: Are you willing to accept some help here?
+  topics:
+  - insight
+  style: closed
+- utterance: Who could you lean on for support right now?
+  topics:
+  - support
+  style: open
+- utterance: Is there anyone with you today?
+  topics:
+  - support
+  style: closed
+- utterance: Got anyone in your corner at the moment?
+  topics:
+  - support
+  style: colloquial
+- utterance: Who are the people you trust most for support?
+  topics:
+  - support
+  style: clinical
+- utterance: I wondered who knows you're here today
+  topics:
+  - support
+  style: indirect
+- utterance: It sounds lonely feeling like this. Is there someone you trust?
+  topics:
+  - support
+  style: empathy_then_question
+- utterance: um does does your family know about the smoking
+  topics:
+  - support
+  style: spoken
+- utterance: Anyone you can call?
+  topics:
+  - support
+  style: brief
+- utterance: Does anyone at home know how much you've been smoking?
+  topics:
+  - support
+  style: follow_up
+  previous:
+    interviewer: Tell me about your cannabis use.
+    character: I've smoked strong cannabis daily for two years. Last week I increased to about four joints
+      daily; I last smoked yesterday evening.
+- utterance: What do you think she'd say if she knew?
+  topics:
+  - support
+  style: follow_up
+  previous:
+    interviewer: Is there anyone with you today?
+    character: My aunt brought me and can stay. I'm embarrassed because I told her I had stopped smoking.
+- utterance: I imagine your family don't know everything about the cannabis, do they?
+  topics:
+  - support
+  style: leading
+- utterance: How do you feel about your family knowing about your cannabis use?
+  topics:
+  - support
+  style: open
+- utterance: Could anyone stay with you tonight?
+  topics:
+  - support
+  style: closed
+- utterance: Any mates or family who've got your back?
+  topics:
+  - support
+  style: colloquial
+- utterance: Perhaps we could talk about any worries you have about telling people at home
+  topics:
+  - support
+  style: indirect
+- utterance: Are your family aware of what's been happening to you?
+  topics:
+  - support
+  style: closed
+- utterance: How have you been sleeping, and when did you last smoke?
+  topics:
+  - sleep
+  - cannabis
+  style: stacked
+- utterance: Are you hearing voices, and do you feel anyone is watching you?
+  topics:
+  - voices
+  - persecution
+  style: stacked
+- utterance: Have you taken any other drugs, and who knows you're here today?
+  topics:
+  - other-drugs
+  - support
+  style: stacked
+- utterance: Do the voices tell you to do things, and do your thoughts still feel like your own?
+  topics:
+  - commands
+  - interference
+  style: stacked
+- utterance: Hello Tyler, thanks for waiting.
+  topics: []
+  style: greeting
+- utterance: Hi Tyler, I'm one of the psychiatry doctors working in the department tonight.
+  topics: []
+  style: introduction
+- utterance: Is it all right if we talk for a few minutes?
+  topics: []
+  style: introduction
+- utterance: Where would you like to start?
+  topics: []
+  style: transition
+- utterance: Before we start, have you got any questions for me?
+  topics: []
+  style: introduction
+- utterance: Come and sit down wherever feels comfortable.
+  topics: []
+  style: greeting
+- utterance: I'd like to move on to something a bit different now.
+  topics: []
+  style: transition
+- utterance: Thanks, that's helpful. I'm going to ask about a few other things.
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Tyler.
+  topics: []
+  style: closing
+- utterance: Thank you for talking to me today; I'll go and speak to my senior now.
+  topics: []
+  style: closing
+- utterance: um hi there Tyler how are you doing
+  topics: []
+  style: greeting
+- utterance: Okay, let's go back to something you said earlier.
+  topics: []
+  style: transition
+- utterance: That sounds really frightening.
+  topics: []
+  style: empathy
+- utterance: It makes sense that you'd feel scared when something feels this wrong.
+  topics: []
+  style: empathy
+- utterance: You've done the right thing coming in.
+  topics: []
+  style: empathy
+- utterance: I can see you're finding it hard to settle in here.
+  topics: []
+  style: empathy
+- utterance: So you've been feeling that something is wrong and you can't switch it off.
+  topics: []
+  style: summary
+- utterance: 'Let me check I''ve got this right: you''ve been hearing things others can''t, and you''ve
+    hardly slept.'
+  topics: []
+  style: summary
+- utterance: I'm going to ask some questions we ask everyone, so please don't read anything into them.
+  topics: []
+  style: explanation
+- utterance: Strong cannabis can sometimes affect how people see and hear things.
+  topics: []
+  style: explanation
+- utterance: You're safe in here, and staff are around all the time.
+  topics: []
+  style: explanation
+- utterance: Does that make sense so far?
+  topics: []
+  style: check_understanding
+- utterance: Is anything I've said unclear?
+  topics: []
+  style: check_understanding
+- utterance: Can you tell me in your own words what I've just explained?
+  topics: []
+  style: check_understanding
+- utterance: Have you ever had a head injury?
+  topics: []
+  style: off_case
+- utterance: Do you have any physical health problems, like epilepsy?
+  topics: []
+  style: off_case
+- utterance: Has anyone in your family had mental health problems?
+  topics: []
+  style: off_case
+- utterance: Have you ever seen a psychiatrist before?
+  topics: []
+  style: off_case
+- utterance: What do you do for work at the moment?
+  topics: []
+  style: off_case
+- utterance: Have you been in trouble with the police?
+  topics: []
+  style: off_case
+- utterance: Where do you usually buy your cannabis?
+  topics: []
+  style: near_miss
+- utterance: Have you ever tried to give up cannabis before?
+  topics: []
+  style: near_miss
+- utterance: Have you ever heard voices before, years ago?
+  topics: []
+  style: near_miss
+- utterance: Does anyone else in your family use cannabis?
+  topics: []
+  style: near_miss
+- utterance: How much money do you spend on cannabis each week?
+  topics: []
+  style: near_miss

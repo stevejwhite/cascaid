@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: postnatal-depression-safety-plan
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Zoe, how long have most days felt low, and what has happened to enjoyment?
+  expected:
+  - course
+  rapport: false
+- utterance: What thoughts have you had about ending your life, including any urge to act now?
+  expected:
+  - thoughts
+  rapport: false
+- utterance: If an urge to overdose came, what medicines could you get hold of at home?
+  expected:
+  - means
+  rapport: false
+- utterance: When you feel overwhelmed, what happens with looking after your baby safely?
+  expected:
+  - baby
+  rapport: false
+- utterance: Who could be physically with you tonight, and do they know how difficult things have become?
+  expected:
+  - support
+  rapport: false
+- utterance: What signs would tell you or someone close that an evening was becoming harder to manage?
+  expected:
+  - warning
+  rapport: false
+- utterance: Who could stay with you in person tonight if you asked?
+  expected:
+  - support
+  rapport: false
+- utterance: What has helped you get through the urge, and what keeps you wanting to carry on?
+  expected:
+  - coping
+  rapport: false
+- utterance: what makes telling them how bad it is feel difficult?
+  expected:
+  - fear
+  rapport: false
+  previous:
+    interviewer: How much does your partner know about the thoughts?
+    character: My partner works nights and doesn't know how bad the thoughts have become.
+- utterance: Have your periods returned since the birth?
+  expected: []
+  rapport: false

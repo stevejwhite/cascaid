@@ -1,0 +1,230 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: depression-app-trial-applicability
+case_version: 0.1.0
+status: draft
+items:
+  # ---- attrition / outcomes ----
+  - utterance: "How many people had no assessment at the end of the eight weeks?"
+    topics: [attrition]
+    style: boundary
+    pair: [attrition, outcomes]
+  - utterance: "Do we know why people left the study?"
+    topics: [attrition]
+    style: boundary
+    pair: [attrition, outcomes]
+  - utterance: "um were there more people missing from the app side than the other side"
+    topics: [attrition]
+    style: boundary_spoken
+    pair: [attrition, outcomes]
+  - utterance: "Out of the hundred and twenty, how many are we actually missing data for?"
+    topics: [attrition]
+    style: boundary_colloquial
+    pair: [attrition, outcomes]
+  - utterance: "And how many of those were lost in each group?"
+    topics: [attrition]
+    style: boundary_follow_up
+    pair: [attrition, outcomes]
+    previous:
+      interviewer: "What were the headline numbers?"
+      character: "Recovery meant a score below five OR at least a fifty-percent fall from baseline"
+  - utterance: "What score did each group average at the end?"
+    topics: [outcomes]
+    style: boundary
+    pair: [attrition, outcomes]
+  - utterance: "How did the trial define recovery?"
+    topics: [outcomes]
+    style: boundary
+    pair: [attrition, outcomes]
+  - utterance: "um what scale did they use and is it a proper validated one"
+    topics: [outcomes]
+    style: boundary_spoken
+    pair: [attrition, outcomes]
+  - utterance: "So how many got better with the app compared with usual care?"
+    topics: [outcomes]
+    style: boundary_colloquial
+    pair: [attrition, outcomes]
+  - utterance: "And are there confidence intervals on that?"
+    topics: [outcomes]
+    style: boundary_follow_up
+    pair: [attrition, outcomes]
+    previous:
+      interviewer: "How complete was the follow-up?"
+      character: "At eight weeks, forty-eight of sixty app participants and fifty-four of sixty controls completed assessment."
+  - utterance: "Did they look at side effects or adverse events?"
+    topics: []
+    style: near_miss
+    pair: [attrition, outcomes]
+  - utterance: "Did they follow people up beyond eight weeks?"
+    topics: []
+    style: near_miss
+    pair: [attrition, outcomes]
+
+  # ---- comparison / use ----
+  - utterance: "What did the control group receive during the eight weeks?"
+    topics: [comparison]
+    style: boundary
+    pair: [comparison, use]
+  - utterance: "How were people allocated to the app or to usual care?"
+    topics: [comparison]
+    style: boundary
+    pair: [comparison, use]
+  - utterance: "um was the waiting list group given the app afterwards"
+    topics: [comparison]
+    style: boundary_spoken
+    pair: [comparison, use]
+  - utterance: "Did everyone in the trial get normal care as well as the app?"
+    topics: [comparison]
+    style: boundary_colloquial
+    pair: [comparison, use]
+  - utterance: "And what did the other group have instead?"
+    topics: [comparison]
+    style: boundary_follow_up
+    pair: [comparison, use]
+    previous:
+      interviewer: "How would you see it fitting in?"
+      character: "I'm considering it as one option alongside usual care, with patient choice and follow-up."
+  - utterance: "Would you offer it alongside what patients already get?"
+    topics: [use]
+    style: boundary
+    pair: [comparison, use]
+  - utterance: "Would it be up to the patient whether they try it?"
+    topics: [use]
+    style: boundary
+    pair: [comparison, use]
+  - utterance: "um are you thinking of recommending it to people or just mentioning it"
+    topics: [use]
+    style: boundary_spoken
+    pair: [comparison, use]
+  - utterance: "Is it going to replace the usual treatment in your surgery?"
+    topics: [use]
+    style: boundary_colloquial
+    pair: [comparison, use]
+  - utterance: "So how would you bring it in at your end?"
+    topics: [use]
+    style: boundary_follow_up
+    pair: [comparison, use]
+    previous:
+      interviewer: "What did the control group get?"
+      character: "sixty to usual care on a waiting list"
+  - utterance: "Which company makes the app?"
+    topics: []
+    style: near_miss
+    pair: [comparison, use]
+  - utterance: "Would the practice need to pay for the app licence?"
+    topics: []
+    style: near_miss
+    pair: [comparison, use]
+
+  # ---- bias / uncertainty ----
+  - utterance: "Did the participants know which group they were in?"
+    topics: [bias]
+    style: boundary
+    pair: [bias, uncertainty]
+  - utterance: "Could the weekly coaching explain some of the improvement rather than the app?"
+    topics: [bias]
+    style: boundary
+    pair: [bias, uncertainty]
+  - utterance: "um who actually rated the symptoms, was it the patients themselves"
+    topics: [bias]
+    style: boundary_spoken
+    pair: [bias, uncertainty]
+  - utterance: "Do you reckon people just got better because they expected to?"
+    topics: [bias]
+    style: boundary_colloquial
+    pair: [bias, uncertainty]
+  - utterance: "And was there any other group getting similar attention?"
+    topics: [bias]
+    style: boundary_follow_up
+    pair: [bias, uncertainty]
+    previous:
+      interviewer: "Do you find some parts of the paper hard?"
+      character: "I'm embarrassed that I sometimes confuse a statistically significant result with a worthwhile benefit for an individual."
+  - utterance: "Do you find it hard to tell if a significant result matters to an individual patient?"
+    topics: [uncertainty]
+    style: boundary
+    pair: [bias, uncertainty]
+  - utterance: "Which parts of reading trial papers do you feel least sure of?"
+    topics: [uncertainty]
+    style: boundary
+    pair: [bias, uncertainty]
+  - utterance: "um do p values ever trip you up a bit"
+    topics: [uncertainty]
+    style: boundary_spoken
+    pair: [bias, uncertainty]
+  - utterance: "Is it tricky for you to say whether a result is actually worth having?"
+    topics: [uncertainty]
+    style: boundary_colloquial
+    pair: [bias, uncertainty]
+  - utterance: "And is that something that worries you about your own reading?"
+    topics: [uncertainty]
+    style: boundary_follow_up
+    pair: [bias, uncertainty]
+    previous:
+      interviewer: "Did participants know their group?"
+      character: "Participants knew which group they were in and rated their own symptoms."
+  - utterance: "Did you read the full paper or just the summary?"
+    topics: []
+    style: near_miss
+    pair: [bias, uncertainty]
+  - utterance: "Who sent you the paper in the first place?"
+    topics: []
+    style: near_miss
+    pair: [bias, uncertainty]
+
+  # ---- population / practice ----
+  - utterance: "Were older people eligible to take part?"
+    topics: [population]
+    style: boundary
+    pair: [population, practice]
+  - utterance: "How many people were recruited, and from where?"
+    topics: [population]
+    style: boundary
+    pair: [population, practice]
+  - utterance: "um so what ages did they let into the trial"
+    topics: [population]
+    style: boundary_spoken
+    pair: [population, practice]
+  - utterance: "Did the trial only take people with milder depression?"
+    topics: [population]
+    style: boundary_colloquial
+    pair: [population, practice]
+  - utterance: "And how old were they, on average?"
+    topics: [population]
+    style: boundary_follow_up
+    pair: [population, practice]
+    previous:
+      interviewer: "Which patients are you thinking of?"
+      character: "Many of my patients are over seventy and have several physical illnesses."
+  - utterance: "How many of your own patients are elderly?"
+    topics: [practice]
+    style: boundary
+    pair: [population, practice]
+  - utterance: "Do your patients have smartphones they can use?"
+    topics: [practice]
+    style: boundary
+    pair: [population, practice]
+  - utterance: "um are a lot of your patients living with other health problems as well"
+    topics: [practice]
+    style: boundary_spoken
+    pair: [population, practice]
+  - utterance: "Would your patients manage a small screen, do you think?"
+    topics: [practice]
+    style: boundary_colloquial
+    pair: [population, practice]
+  - utterance: "And how do the people you see differ from that?"
+    topics: [practice]
+    style: boundary_follow_up
+    pair: [population, practice]
+    previous:
+      interviewer: "Who took part in the study?"
+      character: "The fictional study recruited 120 US primary-care adults aged eighteen to fifty-five"
+  - utterance: "Is your practice in a city or a rural area?"
+    topics: []
+    style: near_miss
+    pair: [population, practice]
+  - utterance: "How many patients are on your list altogether?"
+    topics: []
+    style: near_miss
+    pair: [population, practice]

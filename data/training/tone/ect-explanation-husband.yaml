@@ -1,0 +1,162 @@
+# Training lines for the tone classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: ect-explanation-husband
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Has your wife said anything to suggest she wants to die?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Is she refusing all food at the moment?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Does she seem to blame herself for things that aren't her fault?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: What has the team told you about ECT so far?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: um who else in the family knows she's in hospital
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Sorry to ask this, but has she been drinking anything at all?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Would you mind if I asked what you've heard about ECT?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Hello Peter, I'm one of the doctors on your wife's ward.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: Thanks for waiting, Peter. Shall we sit down?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: So the main question today is whether ECT is right for her and how the decision gets made.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: summary
+- utterance: Okay. And when did that start?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: right okay thank you
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: That sounds really hard.
+  empathy: 1
+  empathy_words: That sounds really hard.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I'm sorry you're going through this.
+  empathy: 1
+  empathy_words: I'm sorry you're going through this.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That must be worrying. Has she managed any drinks today?
+  empathy: 1
+  empathy_words: That must be worrying.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I'm sorry, that's a lot. What else would you like to know?
+  empathy: 1
+  empathy_words: I'm sorry, that's a lot.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: You're frightened of losing the memories that hold your life together with her.
+  empathy: 2
+  empathy_words: You're frightened of losing the memories that hold your life together with her.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: When you think about her memory after treatment, what goes through your mind?
+    character: I'm frightened she might lose memories of our life together. I don't know how likely or lasting that could be.
+- utterance: Wishing someone else could take the decisions doesn't make you disloyal; it shows how heavily this weighs on you because you love her.
+  empathy: 2
+  empathy_words: Wishing someone else could take the decisions doesn't make you disloyal; it shows how heavily this weighs on you because you love her.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: How are you coping with all this yourself?
+    character: Sometimes I wish someone else would make every decision. I feel disloyal saying that because I love her.
+- utterance: Hearing her say she's ruined the family, when you know she hasn't, must be painful for you.
+  empathy: 2
+  empathy_words: Hearing her say she's ruined the family, when you know she hasn't, must be painful for you.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: Has she been blaming herself for anything?
+    character: Yes, she says she's ruined our family, although I can't think of anything she's done. She won't believe my reassurance.
+- utterance: It sounds frightening to picture her awake and in pain during the treatment. Would it help if I explained what actually happens?
+  empathy: 2
+  empathy_words: It sounds frightening to picture her awake and in pain during the treatment.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: What do you already know about ECT?
+    character: I picture her being awake and in pain. I don't understand what actually happens during a treatment.
+- utterance: Honestly, the memory problems are nothing compared with her not eating.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Honestly, the memory problems are nothing compared with her not eating.
+  style: confront_statement
+- utterance: Why on earth would you want to stop a treatment that could save her life?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Why on earth would you want to stop a treatment that could save her life?
+  style: confront_why
+- utterance: Let's not get bogged down in the memory side; the team has already decided.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Let's not get bogged down in the memory side; the team has already decided.
+  style: dismissive
+- utterance: you don't really need to worry about consent, that's our job
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: you don't really need to worry about consent, that's our job
+  style: dismissive

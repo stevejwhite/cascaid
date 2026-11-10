@@ -1,0 +1,73 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: restrictive-eating-physical-history
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hi Nia, I'm one of the doctors in the eating disorders team, thanks for coming in today."
+    expected: []
+    rapport: false
+  - utterance: "Can you tell me what happened when you fainted?"
+    expected: [fainting]
+    rapport: false
+  - utterance: "Do you know what you weigh at the moment, and how that compares with a few months back?"
+    expected: [weight-change]
+    rapport: false
+  - utterance: "Talk me through what you'd eat on a typical day."
+    expected: [food-intake]
+    rapport: false
+  - utterance: "How much are you drinking in a day?"
+    expected: [fluids]
+    rapport: false
+  - utterance: "Have you noticed your heart racing or skipping beats?"
+    expected: [palpitations]
+    rapport: false
+  - utterance: "When was your last period?"
+    expected: [periods]
+    rapport: false
+  - utterance: "do you do much exercise at the moment"
+    expected: [exercise]
+    rapport: false
+  - utterance: "Are you on any medication at all, or anything you've bought from the chemist or online?"
+    expected: [medicines]
+    rapport: false
+  - utterance: "How are your bowels?"
+    expected: [bowel-symptoms]
+    rapport: false
+  - utterance: "Sometimes when people are struggling with eating they feel so low they think about ending their life. Has that been the case for you?"
+    expected: [self-harm]
+    rapport: false
+  - utterance: "Do you drink alcohol or take anything recreationally?"
+    expected: [alcohol-drugs]
+    rapport: false
+  - utterance: "Have you ever made yourself sick after eating, or used laxatives?"
+    expected: [purging]
+    rapport: false
+  - utterance: "Collapsing at work and then feeling silly for coming in sounds like a really frightening week for you. How do you feel about your body and your weight?"
+    expected: [weight-fear]
+    rapport: true
+  - utterance: "That sounds really hard, and you weren't making a fuss at all by coming."
+    expected: []
+    rapport: true
+  - utterance: "Has that ever led to an injury?"
+    previous:
+      interviewer: "How much running are you doing?"
+      character: "About an hour every morning, even when I feel weak."
+    expected: [bone-history]
+    rapport: false
+  - utterance: "and any fluttering in your chest along with that?"
+    previous:
+      interviewer: "Do you get dizzy at all?"
+      character: "Most days this week when I stand up."
+    expected: [palpitations]
+    rapport: false
+  - utterance: "Is there any family history of eating problems?"
+    expected: []
+    rapport: false
+  - utterance: "Have you got any allergies?"
+    expected: []
+    rapport: false
+  - utterance: "Okay, so what I'm hearing is that you've lost quite a lot of weight recently and fainted yesterday."
+    expected: []
+    rapport: false

@@ -1,0 +1,550 @@
+# Training lines for the tone classifier. Drafted by GPT-6 (Codex) on
+# 2026-10-12. Not evaluation data.
+# Revised for Prompt D quality rules on 2026-10-13; reviewed by Steve J White on 2026-10-13.
+case_id: memory-collateral-history
+case_version: 0.4.1
+status: reviewed
+items:
+- utterance: Which things make you worry about your father being alone?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Has he ever been unable to find his way back?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: um are you finding the responsibility difficult to manage
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Does he get angry when you raise the memory problems?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: What happens to paying bills and preparing meals?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Are you feeling guilty about needing more help for him?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: so has he left anything dangerous switched on
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Have there been times you felt unable to carry on caring?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Is he more withdrawn or upset than he used to be?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: How does he respond to your concern for his safety?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: er do you worry about what will happen as things change
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: When did you first notice the memory difficulties?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: After a conversation, how well does the information stay with him?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Could you describe any illnesses for which he takes tablets?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Do you know of relatives with similar memory difficulties?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: If you do not mind saying, how are you managing with this?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Please may I ask whether you feel guilty about seeking help?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: You can leave out anything you wish, but have there been safety incidents?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Perhaps you could tell me how he reacts when you mention the problems?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Would it be all right to ask what looking after him is taking out of you?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: well if you are happy to say has it affected your own wellbeing
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Helen, it is good to meet you; come and sit down.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: Good morning, and thank you for coming to speak about your father.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: hello please make yourself comfortable before we begin
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: I am working with the team that sees older people in the community.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: Your father has agreed that we can hear your observations today.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: You are concerned that his worsening memory makes living alone unsafe.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: summary
+- utterance: The GP referred your father because of the memory difficulties.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: summary
+- utterance: I will start with changes you have noticed, then ask about his usual routine.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: explanation
+- utterance: It is fine to tell me when a detail is something you do not know.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: explanation
+- utterance: Have I set out the purpose of speaking together clearly?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: check_understanding
+- utterance: Does that reflect the concern you brought about your father's memory?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: check_understanding
+- utterance: Right, go ahead.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Mm. How often is that?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Okay. What about at home?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Yes, thanks for that.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: oh right since when
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: yeah tell me what followed
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: I see. Who noticed first?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Got it. With your dad?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: This seems very hard on you.
+  empathy: 1
+  empathy_words: This seems very hard on you.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: You have my sympathy over this.
+  empathy: 1
+  empathy_words: You have my sympathy over this.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That sounds a real struggle.
+  empathy: 1
+  empathy_words: That sounds a real struggle.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I can understand feeling troubled.
+  empathy: 1
+  empathy_words: I can understand feeling troubled.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: You've been through something difficult.
+  empathy: 1
+  empathy_words: You've been through something difficult.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: It must be quite wearing.
+  empathy: 1
+  empathy_words: It must be quite wearing.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: Your feelings make sense to me.
+  empathy: 1
+  empathy_words: Your feelings make sense to me.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: um that sounds an upsetting time.
+  empathy: 1
+  empathy_words: um that sounds an upsetting time.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I am sorry this has been hard. How are you managing yourself?
+  empathy: 1
+  empathy_words: I am sorry this has been hard.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: That sounds rather frightening. Has he been unable to find his way back?
+  empathy: 1
+  empathy_words: That sounds rather frightening.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: It is understandable to feel troubled. What concerns you about him being alone?
+  empathy: 1
+  empathy_words: It is understandable to feel troubled.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: This must feel difficult for you. Does he accept there is a problem?
+  empathy: 1
+  empathy_words: This must feel difficult for you.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I can see this is wearing. Are the responsibilities affecting your wellbeing?
+  empathy: 1
+  empathy_words: I can see this is wearing.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: it sounds like a distressing experience. have there been incidents with appliances
+  empathy: 1
+  empathy_words: it sounds like a distressing experience.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: No wonder you are exhausted when you go round every day after work.
+  empathy: 2
+  empathy_words: No wonder you are exhausted when you go round every day after work.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: What has looking after your father been like for you?
+    character: I'm going round every day after work and I'm exhausted. I feel guilty even thinking about
+      a care home.
+- utterance: I can imagine your alarm when the police brought him home from those familiar shops.
+  empathy: 2
+  empathy_words: I can imagine your alarm when the police brought him home from those familiar shops.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: Has he had difficulty finding his way while out?
+    character: Last month the police brought him home after he got lost walking back from the shops he's
+      used for years.
+- utterance: Finding the gas left on twice would understandably make you worry about his safety.
+  empathy: 2
+  empathy_words: Finding the gas left on twice would understandably make you worry about his safety.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: Have there been any incidents with appliances?
+    character: I've found the gas hob left on twice.
+- utterance: It must be worrying to hear his electricity was nearly cut off because of unpaid bills.
+  empathy: 2
+  empathy_words: It must be worrying to hear his electricity was nearly cut off because of unpaid bills.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: How is he managing household tasks and payments?
+    character: He's missed paying bills, and the electricity was nearly cut off. He's stopped cooking
+      proper meals.
+- utterance: I hear how worried you are about your dad being safe at home alone.
+  empathy: 2
+  empathy_words: I hear how worried you are about your dad being safe at home alone.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: With his memory getting worse, your concern about him living alone makes sense.
+  empathy: 2
+  empathy_words: With his memory getting worse, your concern about him living alone makes sense.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: Watching your dad forget more must be hard when you are already worried about his safety.
+  empathy: 2
+  empathy_words: Watching your dad forget more must be hard when you are already worried about his safety.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: You want to know he is safe on his own, and I understand why that matters so much.
+  empathy: 2
+  empathy_words: You want to know he is safe on his own, and I understand why that matters so much.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: watching him become quieter and get cross over lost things must be hard for you.
+  empathy: 2
+  empathy_words: watching him become quieter and get cross over lost things must be hard for you.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: Have you noticed any change in how he is in himself?
+    character: He's quieter than he used to be and gets irritable when he can't find things. He hasn't
+      mentioned seeing things that aren't there.
+- utterance: You are exhausted from visiting after work, yet even considering a care home leaves you guilty.
+    What has that been like?
+  empathy: 2
+  empathy_words: You are exhausted from visiting after work, yet even considering a care home leaves you
+    guilty.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: How much of your time is going into caring?
+    character: I'm going round every day after work and I'm exhausted. I feel guilty even thinking about
+      a care home.
+- utterance: I understand why finding the hob left on has stayed with you. What worries you most about
+    those incidents?
+  empathy: 2
+  empathy_words: I understand why finding the hob left on has stayed with you.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: What concerns you about safety in the kitchen?
+    character: I've found the gas hob left on twice.
+- utterance: It must be frightening that even the route from familiar shops was confusing for him. How
+    did you feel when he came home?
+  empathy: 2
+  empathy_words: It must be frightening that even the route from familiar shops was confusing for him.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: What happened when he went out alone?
+    character: Last month the police brought him home after he got lost walking back from the shops he's
+      used for years.
+- utterance: You have seen him struggle with both bills and meals, and that is a lot to take in. Which
+    changes concern you most?
+  empathy: 2
+  empathy_words: You have seen him struggle with both bills and meals, and that is a lot to take in.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: How well does he keep up with ordinary household responsibilities?
+    character: He's missed paying bills, and the electricity was nearly cut off. He's stopped cooking
+      proper meals.
+- utterance: Raising your worries is difficult when he gets cross and says he is fine. How does that leave
+    you feeling?
+  empathy: 2
+  empathy_words: Raising your worries is difficult when he gets cross and says he is fine.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: How does your father respond to what you have noticed?
+    character: He says he's fine and gets cross when I bring it up, though he did agree I could talk to
+      you.
+- utterance: You need to accept that some forgetfulness comes with being his age.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You need to accept that some forgetfulness comes with being his age.
+  style: confront_statement
+- utterance: I think you may be reading too much into ordinary lapses.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: I think you may be reading too much into ordinary lapses.
+  style: confront_statement
+- utterance: The family really ought to sort out more support before coming to us.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: The family really ought to sort out more support before coming to us.
+  style: confront_statement
+- utterance: We should hear from your father before giving your concerns too much weight.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: We should hear from your father before giving your concerns too much weight.
+  style: confront_statement
+- utterance: Why did you leave it until you thought he was unsafe?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Why did you leave it until you thought he was unsafe?
+  style: confront_why
+- utterance: Why not just check on him more instead of worrying about what might happen?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Why not just check on him more instead of worrying about what might happen?
+  style: confront_why
+- utterance: You cannot expect him to remember everything at his age, can you?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You cannot expect him to remember everything at his age, can you?
+  style: confront_tag
+- utterance: Having family call in should settle this worry about living alone, shouldn't it?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Having family call in should settle this worry about living alone, shouldn't it?
+  style: confront_tag
+- utterance: Surely a few memory slips do not mean he needs all this attention?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Surely a few memory slips do not mean he needs all this attention?
+  style: confront_rhetorical
+- utterance: It is probably his age catching up with him; I would not dwell on it.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: It is probably his age catching up with him; I would not dwell on it.
+  style: dismissive
+- utterance: well lots of older people live alone so lets not worry too much
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: well lots of older people live alone so lets not worry too much
+  style: dismissive
+- utterance: Families often worry more than they need to about memory, so try to put it out of your mind.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Families often worry more than they need to about memory, so try to put it out of your
+    mind.
+  style: dismissive
+- utterance: 'I need short answers, not the whole story.'
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: 'I need short answers, not the whole story.'
+  style: impatient
+- utterance: 'Let''s not wander off the point again.'
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: 'Let''s not wander off the point again.'
+  style: impatient
+- utterance: 'Just give me the facts about your dad, please.'
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: 'Just give me the facts about your dad, please.'
+  style: impatient

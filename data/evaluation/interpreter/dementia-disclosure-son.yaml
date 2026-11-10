@@ -1,0 +1,70 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: dementia-disclosure-son
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hello Arun, thanks for meeting with me, I'm one of the doctors in the memory clinic."
+    expected: []
+    rapport: false
+  - utterance: "What exactly would you like us to say, or not say, to your mum?"
+    expected: [request]
+    rapport: false
+  - utterance: "What worries you most about her being told?"
+    expected: [fear]
+    rapport: false
+  - utterance: "Has your mum asked about her results herself?"
+    expected: [mother-wishes]
+    rapport: false
+  - utterance: "How is she managing day to day at home?"
+    expected: [function]
+    rapport: false
+  - utterance: "Did your mum give permission for you to be involved in these discussions?"
+    expected: [sharing]
+    rapport: false
+  - utterance: "How well do you think she'd follow an explanation of the diagnosis?"
+    expected: [understanding]
+    rapport: false
+  - utterance: "Do you think the diagnosis means she can't make her own decisions any more?"
+    expected: [understanding]
+    rapport: false
+  - utterance: "Has she ever said anything about wanting to harm herself?"
+    expected: [safety]
+    rapport: false
+  - utterance: "What's the best way to give her information, does she like things written down?"
+    expected: [approach]
+    rapport: false
+  - utterance: "How are you coping with looking after her?"
+    expected: [burden]
+    rapport: false
+  - utterance: "How do you feel about hearing the diagnosis yourself?"
+    expected: [guilt]
+    rapport: false
+  - utterance: "It's obvious you're trying to protect your mum."
+    expected: []
+    rapport: true
+  - utterance: "That must have been a really frightening time for your family."
+    expected: []
+    rapport: true
+  - utterance: "So what are you afraid that might mean for your mum now?"
+    previous:
+      interviewer: "What happened with her sister?"
+      character: "Her sister had dementia, and Mum remembers it as frightening."
+    expected: [fear]
+    rapport: false
+  - utterance: "and money, bills, that sort of thing?"
+    previous:
+      interviewer: "Does she still cook for herself?"
+      character: "Simple meals, yes."
+    expected: [function]
+    rapport: false
+  - utterance: "Is she on any medication for her memory?"
+    expected: []
+    rapport: false
+  - utterance: "Does she still drive?"
+    expected: []
+    rapport: false
+  - utterance: "Okay, so your main concern is that the word dementia would really upset her."
+    expected: []
+    rapport: false

@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: depression-app-trial-applicability
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hi Dr Sian, nice to meet you, thanks for bringing the paper along."
+    expected: []
+    rapport: false
+  - utterance: "Who did they actually recruit for this study?"
+    expected: [population]
+    rapport: false
+  - utterance: "What was the app being compared against?"
+    expected: [comparison]
+    rapport: false
+  - utterance: "What was the main outcome measure, and what did they find?"
+    expected: [outcomes]
+    rapport: false
+  - utterance: "How many people dropped out before the eight-week point?"
+    expected: [attrition]
+    rapport: false
+  - utterance: "Was there any blinding in the trial?"
+    expected: [bias]
+    rapport: false
+  - utterance: "Tell me a bit about the patients you'd be thinking of using this with."
+    expected: [practice]
+    rapport: false
+  - utterance: "How were you imagining using it, instead of something or alongside what you already do?"
+    expected: [use]
+    rapport: false
+  - utterance: "What would happen if someone using the app became suicidal?"
+    expected: [safety]
+    rapport: false
+  - utterance: "That's a lot to weigh up, and it's clear you care about getting this right for your patients."
+    expected: []
+    rapport: true
+  - utterance: "Is there anything about interpreting the statistics that you find tricky?"
+    expected: [uncertainty]
+    rapport: false
+  - utterance: "Is anything outside the study itself pushing you towards using it?"
+    expected: [pressure]
+    rapport: false
+  - utterance: "and how does that compare with the people on your list?"
+    previous:
+      interviewer: "How old were the participants?"
+      character: "Eighteen to fifty-five, with a mean age of thirty-six."
+    expected: [practice]
+    rapport: false
+  - utterance: "So do we know why they left?"
+    previous:
+      interviewer: "How did they handle the missing data?"
+      character: "The mean follow-up scores exclude the people who were missing."
+    expected: [attrition]
+    rapport: false
+  - utterance: "Who funded the study?"
+    expected: []
+    rapport: false
+  - utterance: "How much does the app cost per patient?"
+    expected: []
+    rapport: false
+  - utterance: "Okay, let me just summarise where we've got to before we go on."
+    expected: []
+    rapport: false
+  - utterance: "What was the age range, and was there a control group?"
+    expected: [population, comparison]
+    rapport: false

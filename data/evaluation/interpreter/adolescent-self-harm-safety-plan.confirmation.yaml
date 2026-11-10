@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: adolescent-self-harm-safety-plan
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: er what had been going on shortly before you hurt yourself today
+  expected:
+  - peer-trigger
+  rapport: false
+- utterance: How could you spot that you're getting close to hurting yourself before it happens?
+  expected:
+  - warning-signs
+  rapport: false
+- utterance: Amelia, how likely does hurting yourself again tonight feel to you?
+  expected:
+  - intent
+  rapport: false
+- utterance: What have you tried before that helped you get through an urge without cutting?
+  expected:
+  - coping
+  rapport: false
+- utterance: Which grown-up could you turn to this evening if things started feeling unsafe?
+  expected:
+  - trusted-adult
+  rapport: false
+- utterance: If you felt like cutting again at home, are there things we would need to put out of reach?
+  expected:
+  - means
+  rapport: false
+- utterance: Is there a trusted adult who could stay alongside you at home this evening?
+  expected:
+  - trusted-adult
+  rapport: false
+- utterance: At school specifically, which adult would you agree to involve in helping you?
+  expected:
+  - school-help
+  rapport: false
+- utterance: how would you like us to set those out so you can find them?
+  expected:
+  - plan-format
+  rapport: false
+  previous:
+    interviewer: What information would help you and Mum this evening?
+    character: I'd want to know who Mum and I can contact tonight and when someone will see me again.
+- utterance: Have you ever had an allergic reaction to a medicine?
+  expected: []
+  rapport: false

@@ -1,0 +1,50 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: first-episode-psychosis-formulation
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Ravi, is there independent information about when his college attendance and social life
+    changed?
+  expected:
+  - functional-course
+  rapport: false
+- utterance: What has he said about how certain he is of the phone monitoring and the basis for that belief?
+  expected:
+  - persecutory-account
+  rapport: false
+- utterance: Can you clarify what the voices say, including whether they tell him to act?
+  expected:
+  - auditory-account
+  rapport: false
+- utterance: Did your assessment find a sustained mood change that could account for the presentation?
+  expected:
+  - mood-differential
+  rapport: false
+- utterance: What timing and amount of cannabis use have you established around the onset?
+  expected:
+  - cannabis-timeline
+  rapport: false
+- utterance: What did the physical and neurological examination show on admission?
+  expected:
+  - physical-screen
+  rapport: false
+- utterance: What actual findings do we have from his physical examination?
+  expected:
+  - physical-screen
+  rapport: false
+- utterance: What investigations remain undone, separate from the examination already completed?
+  expected:
+  - investigations-pending
+  rapport: false
+- utterance: is there someone close to him we have permission to speak with as well?
+  expected:
+  - collateral-consent
+  rapport: false
+  previous:
+    interviewer: What collateral have you obtained about the change in functioning?
+    character: 'I spoke with his tutor: he stopped attending his plumbing course four months ago.'
+- utterance: Has any relative of his needed treatment for a similar illness?
+  expected: []
+  rapport: false

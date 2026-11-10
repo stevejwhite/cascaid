@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: learning-disability-relationship-rights
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hello Denise, I'm one of the psychiatrists in the community learning disability team. Thank you for coming in."
+    expected: []
+    rapport: false
+  - utterance: "Can you tell me a bit about your daughter's relationship, how did they meet?"
+    expected: [relationship]
+    rapport: false
+  - utterance: "What does she say she wants from the relationship?"
+    expected: [wishes]
+    rapport: false
+  - utterance: "What is it that worries you most?"
+    expected: [worries]
+    rapport: false
+  - utterance: "How does she communicate best, what helps her understand things?"
+    expected: [communication]
+    rapport: false
+  - utterance: "Do you know how much she understands about sex and contraception?"
+    expected: [knowledge]
+    rapport: false
+  - utterance: "What's your understanding of who gets to make decisions for her now that she's an adult?"
+    expected: [authority]
+    rapport: false
+  - utterance: "Has anyone formally assessed whether she can make decisions about this relationship?"
+    expected: [capacity]
+    rapport: false
+  - utterance: "Is there anyone she trusts who she might open up to about this?"
+    expected: [support]
+    rapport: false
+  - utterance: "How are you feeling about all of this yourself?"
+    expected: [fear]
+    rapport: false
+  - utterance: "Have you done anything so far to try to stop them seeing each other?"
+    expected: [restriction]
+    rapport: false
+  - utterance: "You clearly love her very much, and it's natural to want to keep her safe."
+    expected: []
+    rapport: true
+  - previous:
+      interviewer: "Have you noticed anything worrying, like bruises or her seeming scared?"
+      character: "No, I haven't seen threats, pressure or injuries."
+    utterance: "So what is it about him that concerns you?"
+    expected: [worries]
+    rapport: false
+  - previous:
+      interviewer: "How does she react when you raise it?"
+      character: "She gets upset when I say she shouldn't see him."
+    utterance: "Is she able to tell people when she doesn't want something?"
+    expected: [communication]
+    rapport: false
+  - utterance: "Does she have any epilepsy or physical health problems?"
+    expected: []
+    rapport: false
+  - utterance: "Does she live with you, or in supported accommodation?"
+    expected: []
+    rapport: false
+  - utterance: "Worrying about your daughter's safety while she's pushing for more independence must be really hard to balance."
+    expected: []
+    rapport: true
+  - utterance: "What I'd like to do today is explain how decisions like this are usually approached, and then think about next steps together."
+    expected: []
+    rapport: false

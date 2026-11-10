@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: epilepsy-associated-psychosis
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hi Sophie, I'm one of the psychiatrists, thanks for coming in at short notice."
+    expected: []
+    rapport: false
+  - utterance: "When you say something private has stopped being private, what do you mean?"
+    expected: [broadcast]
+    rapport: false
+  - utterance: "Do you ever feel thoughts are being put into your head that aren't yours?"
+    expected: [insertion]
+    rapport: false
+  - utterance: "Does it feel like anyone's controlling your movements or actions?"
+    expected: [passivity]
+    rapport: false
+  - utterance: "Have you been hearing anything other people can't hear?"
+    expected: [voices]
+    rapport: false
+  - utterance: "When did the seizures happen in relation to all this?"
+    expected: [timing]
+    rapport: false
+  - utterance: "Can you tell me where you are right now?"
+    expected: [orientation]
+    rapport: false
+  - utterance: "What epilepsy medication are you on?"
+    expected: [treatment]
+    rapport: false
+  - utterance: "Have you had any thoughts of harming yourself or anyone else?"
+    expected: [safety]
+    rapport: false
+  - utterance: "What do you think might be causing these experiences?"
+    expected: [insight]
+    rapport: false
+  - utterance: "How are you feeling about all of this, deep down?"
+    expected: [fear]
+    rapport: false
+  - utterance: "Have you used any drugs or alcohol recently?"
+    expected: [differential]
+    rapport: false
+  - utterance: "That sounds really frightening, Sophie."
+    expected: []
+    rapport: true
+  - utterance: "how sure are you about that?"
+    previous:
+      interviewer: "Does anyone know what you're thinking?"
+      character: "People nearby can hear my thoughts without me speaking."
+    expected: [broadcast]
+    rapport: false
+  - utterance: "does it ever tell you to do things?"
+    previous:
+      interviewer: "Are you hearing voices?"
+      character: "A man's voice comments on what I'm doing."
+    expected: [voices]
+    rapport: false
+  - utterance: "Have you had a brain scan before?"
+    expected: []
+    rapport: false
+  - utterance: "Are you driving at the moment?"
+    expected: []
+    rapport: false
+  - utterance: "Okay, I'm going to ask some quite specific questions now, and some may sound a bit odd."
+    expected: []
+    rapport: false

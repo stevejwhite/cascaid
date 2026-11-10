@@ -1,0 +1,223 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: alcohol-assisted-withdrawal-options
+case_version: 0.1.0
+status: draft
+items:
+  - utterance: "Was there an earlier attempt to stop, and how did things go once it was over?"
+    topics: [relapse]
+    style: boundary
+    pair: [relapse, wish]
+  - utterance: "What made you go back to drinking the last time you cut down?"
+    topics: [relapse]
+    style: boundary
+    pair: [relapse, wish]
+  - utterance: "so um when you stopped before how long did you manage to stay off it"
+    topics: [relapse]
+    style: boundary_spoken
+    pair: [relapse, wish]
+  - utterance: "Did you slip back after the last time? What tripped you up?"
+    topics: [relapse]
+    style: boundary_colloquial
+    pair: [relapse, wish]
+  - utterance: "Okay. And the last time you tried to stop, how did it go?"
+    topics: [relapse]
+    style: boundary_follow_up
+    pair: [relapse, wish]
+    previous:
+      interviewer: "I'd like to rebuild contact with my daughter. I'm frightened of promising her something I can't sustain."
+      character: "I'd like to rebuild contact with my daughter. I'm frightened of promising her something I can't sustain."
+  - utterance: "What is it that's making you want to stop now?"
+    topics: [wish]
+    style: boundary
+    pair: [relapse, wish]
+  - utterance: "What would being sober give you that you haven't got at the moment?"
+    topics: [wish]
+    style: boundary
+    pair: [relapse, wish]
+  - utterance: "and um what are you hoping to get out of stopping, what's it for"
+    topics: [wish]
+    style: boundary_spoken
+    pair: [relapse, wish]
+  - utterance: "What's driving this, why now?"
+    topics: [wish]
+    style: boundary_colloquial
+    pair: [relapse, wish]
+  - utterance: "And this time, what's your reason for wanting to change?"
+    topics: [wish]
+    style: boundary_follow_up
+    pair: [relapse, wish]
+    previous:
+      interviewer: "After hospital I stayed dry for a month, then restarted when lonely. I didn't have follow-up support arranged."
+      character: "After hospital I stayed dry for a month, then restarted when lonely. I didn't have follow-up support arranged."
+  - utterance: "Do you drink at home, in pubs, or both?"
+    topics: []
+    style: near_miss
+    pair: [relapse, wish]
+  - utterance: "Have you got a job to go back to at the moment?"
+    topics: []
+    style: near_miss
+    pair: [relapse, wish]
+  - utterance: "What happened in the weeks after you last got treatment?"
+    topics: [relapse]
+    style: boundary
+    pair: [relapse, severe]
+  - utterance: "Was any support set up for you after that?"
+    topics: [relapse]
+    style: boundary
+    pair: [relapse, severe]
+  - utterance: "right and then what happened after that did you manage to stay off alcohol for a bit"
+    topics: [relapse]
+    style: boundary_spoken
+    pair: [relapse, severe]
+  - utterance: "When you came out, how long was it before you were back on it?"
+    topics: [relapse]
+    style: boundary_colloquial
+    pair: [relapse, severe]
+  - utterance: "OK. And after that, did you stay off the drink, or did you start again?"
+    topics: [relapse]
+    style: boundary_follow_up
+    pair: [relapse, severe]
+    previous:
+      interviewer: "I had a seizure when I stopped suddenly two years ago and was treated in hospital. I haven't tried stopping on my own since."
+      character: "I had a seizure when I stopped suddenly two years ago and was treated in hospital. I haven't tried stopping on my own since."
+  - utterance: "Has anything frightening happened to you physically when you've stopped drinking in the past?"
+    topics: [severe]
+    style: boundary
+    pair: [relapse, severe]
+  - utterance: "Have you ever had a fit or been treated in hospital because you stopped?"
+    topics: [severe]
+    style: boundary
+    pair: [relapse, severe]
+  - utterance: "have you ever had any serious problems when you stopped like blackouts fits that sort of thing"
+    topics: [severe]
+    style: boundary_spoken
+    pair: [relapse, severe]
+  - utterance: "Has stopping ever ended up with you in A&E?"
+    topics: [severe]
+    style: boundary_colloquial
+    pair: [relapse, severe]
+  - utterance: "And before that, when you stopped suddenly, did anything dangerous happen to you?"
+    topics: [severe]
+    style: boundary_follow_up
+    pair: [relapse, severe]
+    previous:
+      interviewer: "After hospital I stayed dry for a month, then restarted when lonely. I didn't have follow-up support arranged."
+      character: "After hospital I stayed dry for a month, then restarted when lonely. I didn't have follow-up support arranged."
+  - utterance: "Is there a history of alcohol problems in your family?"
+    topics: []
+    style: near_miss
+    pair: [relapse, severe]
+  - utterance: "Have you ever driven after drinking?"
+    topics: []
+    style: near_miss
+    pair: [relapse, severe]
+  - utterance: "How do you feel in the hours after your last drink?"
+    topics: [withdrawal]
+    style: boundary
+    pair: [severe, withdrawal]
+  - utterance: "Do you get shaky or sweaty if you go without?"
+    topics: [withdrawal]
+    style: boundary
+    pair: [severe, withdrawal]
+  - utterance: "so what happens to you um if you haven't had a drink for a few hours"
+    topics: [withdrawal]
+    style: boundary_spoken
+    pair: [severe, withdrawal]
+  - utterance: "Does your body protest when you miss a drink?"
+    topics: [withdrawal]
+    style: boundary_colloquial
+    pair: [severe, withdrawal]
+  - utterance: "And on an ordinary day, what does going without a drink feel like?"
+    topics: [withdrawal]
+    style: boundary_follow_up
+    pair: [severe, withdrawal]
+    previous:
+      interviewer: "I had a seizure when I stopped suddenly two years ago and was treated in hospital. I haven't tried stopping on my own since."
+      character: "I had a seizure when I stopped suddenly two years ago and was treated in hospital. I haven't tried stopping on my own since."
+  - utterance: "Have you ever had a seizure or fit when you cut down or stopped?"
+    topics: [severe]
+    style: boundary
+    pair: [severe, withdrawal]
+  - utterance: "Has withdrawal ever been so bad that you needed treatment?"
+    topics: [severe]
+    style: boundary
+    pair: [severe, withdrawal]
+  - utterance: "and has it ever got really dangerous when you stopped before like hospital"
+    topics: [severe]
+    style: boundary_spoken
+    pair: [severe, withdrawal]
+  - utterance: "Did it ever go badly wrong the last time you tried to stop?"
+    topics: [severe]
+    style: boundary_colloquial
+    pair: [severe, withdrawal]
+  - utterance: "Has it ever been worse than that, something that needed hospital?"
+    topics: [severe]
+    style: boundary_follow_up
+    pair: [severe, withdrawal]
+    previous:
+      interviewer: "Within several hours without alcohol I shake, sweat and feel sick. Drinking relieves that for a while."
+      character: "Within several hours without alcohol I shake, sweat and feel sick. Drinking relieves that for a while."
+  - utterance: "Do you get cravings when you smell alcohol?"
+    topics: []
+    style: near_miss
+    pair: [severe, withdrawal]
+  - utterance: "Do you ever drink anywhere other than at home?"
+    topics: []
+    style: near_miss
+    pair: [severe, withdrawal]
+  - utterance: "What made it hard for you to come and ask for help?"
+    topics: [fear]
+    style: boundary
+    pair: [fear, wish]
+  - utterance: "Is it worrying you that you might need to go into hospital?"
+    topics: [fear]
+    style: boundary
+    pair: [fear, wish]
+  - utterance: "um did anything put you off coming in sooner like were you embarrassed"
+    topics: [fear]
+    style: boundary_spoken
+    pair: [fear, wish]
+  - utterance: "Are you worried what people will make of you asking for help?"
+    topics: [fear]
+    style: boundary_colloquial
+    pair: [fear, wish]
+  - utterance: "What held you back from coming here earlier?"
+    topics: [fear]
+    style: boundary_follow_up
+    pair: [fear, wish]
+    previous:
+      interviewer: "I'd like to rebuild contact with my daughter. I'm frightened of promising her something I can't sustain."
+      character: "I'd like to rebuild contact with my daughter. I'm frightened of promising her something I can't sustain."
+  - utterance: "Who or what are you wanting to do this for?"
+    topics: [wish]
+    style: boundary
+    pair: [fear, wish]
+  - utterance: "If you did manage to stop, what would you most like to get back?"
+    topics: [wish]
+    style: boundary
+    pair: [fear, wish]
+  - utterance: "so um what would it mean to you if you did stop for good"
+    topics: [wish]
+    style: boundary_spoken
+    pair: [fear, wish]
+  - utterance: "What's the dream here, what are you hoping life looks like afterwards?"
+    topics: [wish]
+    style: boundary_colloquial
+    pair: [fear, wish]
+  - utterance: "And what's the thing that's motivating you to do this now?"
+    topics: [wish]
+    style: boundary_follow_up
+    pair: [fear, wish]
+    previous:
+      interviewer: "I'm ashamed of needing hospital again and worry people will think I wasted the last chance. That's why I delayed coming."
+      character: "I'm ashamed of needing hospital again and worry people will think I wasted the last chance. That's why I delayed coming."
+  - utterance: "How did you hear about this service?"
+    topics: []
+    style: near_miss
+    pair: [fear, wish]
+  - utterance: "Have you talked to your GP about stopping?"
+    topics: []
+    style: near_miss
+    pair: [fear, wish]

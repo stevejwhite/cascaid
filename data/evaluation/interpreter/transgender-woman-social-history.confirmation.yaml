@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: transgender-woman-social-history
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Maya, what was growing up like, and who was at home with you?
+  expected:
+  - upbringing
+  rapport: false
+- utterance: What would you like me to know about your identity and the pronouns you use?
+  expected:
+  - identity
+  rapport: false
+- utterance: Where are you up to with social changes and any care you've sought through gender services?
+  expected:
+  - transition
+  rapport: false
+- utterance: Who do you feel comfortable being open with in your life now?
+  expected:
+  - relationships
+  rapport: false
+- utterance: How are work and finances going for you at present?
+  expected:
+  - employment
+  rapport: false
+- utterance: Have you experienced hostility or discrimination that has affected where you feel safe?
+  expected:
+  - discrimination
+  rapport: false
+- utterance: Who supports you in your day-to-day life and lets you speak openly?
+  expected:
+  - relationships
+  rapport: false
+- utterance: How do your parents respond to your life and relationships now?
+  expected:
+  - family-now
+  rapport: false
+- utterance: when it feels like that, do thoughts of harming yourself come up?
+  expected:
+  - risk
+  rapport: false
+  previous:
+    interviewer: How has your mood been recently?
+    character: I've felt low most days for two months and sleep poorly.
+- utterance: Have you ever been treated for anaemia?
+  expected: []
+  rapport: false

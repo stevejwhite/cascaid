@@ -1,0 +1,359 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: learning-disability-relationship-rights
+case_version: 0.1.0
+status: draft
+items:
+- utterance: How do you feel yourself about her becoming more independent?
+  topics:
+  - fear
+  style: boundary
+  pair:
+  - fear
+  - wishes
+- utterance: Is it frightening for you, letting go a little?
+  topics:
+  - fear
+  style: boundary
+  pair:
+  - fear
+  - wishes
+- utterance: What's the hardest part for you about stepping back?
+  topics:
+  - fear
+  style: boundary_colloquial
+  pair:
+  - fear
+  - wishes
+- utterance: um and how are you finding it personally, like emotionally, with her growing up
+  topics:
+  - fear
+  style: boundary_spoken
+  pair:
+  - fear
+  - wishes
+- utterance: And what about you, how does it feel when she pushes for more freedom?
+  topics:
+  - fear
+  style: boundary_follow_up
+  pair:
+  - fear
+  - wishes
+  previous:
+    interviewer: How does she react when you say no?
+    character: She says she likes him and wants more time together. She gets upset when I say she shouldn't see him.
+- utterance: What does your daughter herself say she wants?
+  topics:
+  - wishes
+  style: boundary
+  pair:
+  - fear
+  - wishes
+- utterance: How does she react when you say no to the relationship?
+  topics:
+  - wishes
+  style: boundary
+  pair:
+  - fear
+  - wishes
+- utterance: What does she want, though? Has she said?
+  topics:
+  - wishes
+  style: boundary_colloquial
+  pair:
+  - fear
+  - wishes
+- utterance: and um has she told you how she feels about it herself
+  topics:
+  - wishes
+  style: boundary_spoken
+  pair:
+  - fear
+  - wishes
+- utterance: And what has your daughter said about what she'd like?
+  topics:
+  - wishes
+  style: boundary_follow_up
+  pair:
+  - fear
+  - wishes
+  previous:
+    interviewer: How are you coping with all of this?
+    character: I've spent years protecting her and feel terrified of getting it wrong. It's hard to admit I can't prevent every risk.
+- utterance: Does your husband have a view on it?
+  topics: []
+  style: near_miss
+  pair:
+  - fear
+  - wishes
+- utterance: Does she have any hobbies she's keen on?
+  topics: []
+  style: near_miss
+  pair:
+  - fear
+  - wishes
+- utterance: Do you think that as her mother you have the right to decide who she sees?
+  topics:
+  - authority
+  style: boundary
+  pair:
+  - authority
+  - capacity
+- utterance: Has anyone explained what your role is now that she is an adult?
+  topics:
+  - authority
+  style: boundary
+  pair:
+  - authority
+  - capacity
+- utterance: So do you reckon you can just say no to it?
+  topics:
+  - authority
+  style: boundary_colloquial
+  pair:
+  - authority
+  - capacity
+- utterance: um what do you see as your say in this now she's grown up
+  topics:
+  - authority
+  style: boundary_spoken
+  pair:
+  - authority
+  - capacity
+- utterance: So can you actually forbid it as her mother?
+  topics:
+  - authority
+  style: boundary_follow_up
+  pair:
+  - authority
+  - capacity
+  previous:
+    interviewer: Has anyone assessed her ability to decide?
+    character: No one has assessed this particular decision with her. I assumed her learning disability settled the question.
+- utterance: Has anybody looked at whether she can make this decision for herself?
+  topics:
+  - capacity
+  style: boundary
+  pair:
+  - authority
+  - capacity
+- utterance: What makes you think she's unable to choose?
+  topics:
+  - capacity
+  style: boundary
+  pair:
+  - authority
+  - capacity
+- utterance: Has anyone checked if she's able to make up her own mind about this?
+  topics:
+  - capacity
+  style: boundary_colloquial
+  pair:
+  - authority
+  - capacity
+- utterance: so um has she had a proper assessment of whether she can decide this
+  topics:
+  - capacity
+  style: boundary_spoken
+  pair:
+  - authority
+  - capacity
+- utterance: Has anyone checked whether she is able to decide this for herself?
+  topics:
+  - capacity
+  style: boundary_follow_up
+  pair:
+  - authority
+  - capacity
+  previous:
+    interviewer: Do you think you can forbid it?
+    character: I thought being her mother meant I could forbid it. Nobody has explained how decisions are made now she's an adult.
+- utterance: Does she manage her own money?
+  topics: []
+  style: near_miss
+  pair:
+  - authority
+  - capacity
+- utterance: Is she registered with a GP of her own?
+  topics: []
+  style: near_miss
+  pair:
+  - authority
+  - capacity
+- utterance: Do you feel you're allowed to forbid it?
+  topics:
+  - authority
+  style: boundary
+  pair:
+  - authority
+  - wishes
+- utterance: How are decisions like this meant to be made now she's grown up?
+  topics:
+  - authority
+  style: boundary
+  pair:
+  - authority
+  - wishes
+- utterance: Is it your call or hers, would you say?
+  topics:
+  - authority
+  style: boundary_colloquial
+  pair:
+  - authority
+  - wishes
+- utterance: right so um do you think you've got the final say as her mum
+  topics:
+  - authority
+  style: boundary_spoken
+  pair:
+  - authority
+  - wishes
+- utterance: And do you think it's your place to overrule her?
+  topics:
+  - authority
+  style: boundary_follow_up
+  pair:
+  - authority
+  - wishes
+  previous:
+    interviewer: What does she want?
+    character: She says she likes him and wants more time together. She gets upset when I say she shouldn't see him.
+- utterance: How does she feel about being told what to do over this?
+  topics:
+  - wishes
+  style: boundary
+  pair:
+  - authority
+  - wishes
+- utterance: What would she like to happen with the relationship?
+  topics:
+  - wishes
+  style: boundary
+  pair:
+  - authority
+  - wishes
+- utterance: How's she taking it when you say no?
+  topics:
+  - wishes
+  style: boundary_colloquial
+  pair:
+  - authority
+  - wishes
+- utterance: and um what's she saying herself about all this
+  topics:
+  - wishes
+  style: boundary_spoken
+  pair:
+  - authority
+  - wishes
+- utterance: And how does she respond when you try to?
+  topics:
+  - wishes
+  style: boundary_follow_up
+  pair:
+  - authority
+  - wishes
+  previous:
+    interviewer: Do you think you can forbid it?
+    character: I thought being her mother meant I could forbid it. Nobody has explained how decisions are made now she's an adult.
+- utterance: Have you tried talking to her partner's family?
+  topics: []
+  style: near_miss
+  pair:
+  - authority
+  - wishes
+- utterance: Has she had any previous relationships?
+  topics: []
+  style: near_miss
+  pair:
+  - authority
+  - wishes
+- utterance: How best does she understand things, would pictures help?
+  topics:
+  - communication
+  style: boundary
+  pair:
+  - communication
+  - wishes
+- utterance: Can she tell you when she doesn't like something?
+  topics:
+  - communication
+  style: boundary
+  pair:
+  - communication
+  - wishes
+- utterance: Does she follow what you say if you keep it simple?
+  topics:
+  - communication
+  style: boundary_colloquial
+  pair:
+  - communication
+  - wishes
+- utterance: um how does she usually get her point across to people
+  topics:
+  - communication
+  style: boundary_spoken
+  pair:
+  - communication
+  - wishes
+- utterance: And how does she tell you things, in words or some other way?
+  topics:
+  - communication
+  style: boundary_follow_up
+  pair:
+  - communication
+  - wishes
+  previous:
+    interviewer: What does she say she wants?
+    character: She says she likes him and wants more time together. She gets upset when I say she shouldn't see him.
+- utterance: Has she told you how she feels about being in this relationship?
+  topics:
+  - wishes
+  style: boundary
+  pair:
+  - communication
+  - wishes
+- utterance: Does she want to spend more time with this person?
+  topics:
+  - wishes
+  style: boundary
+  pair:
+  - communication
+  - wishes
+- utterance: Is she actually keen on it, or is it just you who's worried?
+  topics:
+  - wishes
+  style: boundary_colloquial
+  pair:
+  - communication
+  - wishes
+- utterance: and does she actually um want the relationship, what does she say
+  topics:
+  - wishes
+  style: boundary_spoken
+  pair:
+  - communication
+  - wishes
+- utterance: And does she tell you whether she wants to carry on with the relationship?
+  topics:
+  - wishes
+  style: boundary_follow_up
+  pair:
+  - communication
+  - wishes
+  previous:
+    interviewer: How does she communicate?
+    character: She understands short sentences and pictures better than long explanations. She can say what she likes and when she wants something to stop.
+- utterance: Does she have any problems with her hearing?
+  topics: []
+  style: near_miss
+  pair:
+  - communication
+  - wishes
+- utterance: Did she go to a special school?
+  topics: []
+  style: near_miss
+  pair:
+  - communication
+  - wishes

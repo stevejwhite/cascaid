@@ -1,0 +1,156 @@
+# Training lines for the tone classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: bereavement-grief-depression-history
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Do you ever think about taking your own life?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: How have you coped since she died?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Do you ever feel guilty about anything?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: What was she like?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: have you been able to sleep at night
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Sorry to ask, but how long have you been on your own in the house?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: If you don't mind me asking, how did she die?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Good morning Arthur, thanks for seeing me.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: Hello, I'm Dr Rees, I've come from the community mental health team.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: I'd like to ask about your mood, your sleep and your eating, and how you're managing generally.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: explanation
+- utterance: Right. And when was that?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Okay, thank you Arthur.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: I'm so sorry.
+  empathy: 1
+  empathy_words: I'm so sorry.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That sounds very hard.
+  empathy: 1
+  empathy_words: That sounds very hard.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That must be difficult. Who is around to help you?
+  empathy: 1
+  empathy_words: That must be difficult.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I'm sorry to hear that. Would you like to tell me more?
+  empathy: 1
+  empathy_words: I'm sorry to hear that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: It sounds as though the sadness comes in waves, and the reminders make it hit you harder.
+  empathy: 2
+  empathy_words: It sounds as though the sadness comes in waves, and the reminders make it hit you harder.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: Does the sadness hit you more when something reminds you of her?
+    character: The sadness comes in waves, often with reminders. Between them I can feel quieter, rather than miserable every minute.
+- utterance: Waking and reaching for her in the night must feel like losing her all over again, and I'm sorry.
+  empathy: 2
+  empathy_words: Waking and reaching for her in the night must feel like losing her all over again, and I'm sorry.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: How are your nights?
+    character: I sleep about five hours, often waking and reaching for her. I don't feel rested.
+- utterance: You said the days still revolve around her not being here, and I can hear how much you miss her.
+  empathy: 2
+  empathy_words: You said the days still revolve around her not being here, and I can hear how much you miss her.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: It sounds as though the thought of grieving her wrongly is troubling you, and I'd like you to feel free to do it your own way. What feels right to you?
+  empathy: 2
+  empathy_words: It sounds as though the thought of grieving her wrongly is troubling you, and I'd like you to feel free to do it your own way.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+- utterance: It's been a year now, so you should really be getting back to normal.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: you should really be getting back to normal
+  style: confront_statement
+- utterance: You can't change what happened, can you?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You can't change what happened, can you
+  style: confront_tag
+- utterance: At your age she wouldn't have wanted you to be moping around.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: she wouldn't have wanted you to be moping around
+  style: dismissive
+- utterance: Let's not dwell on that, we need to move along.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: we need to move along
+  style: dismissive

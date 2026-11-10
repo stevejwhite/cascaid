@@ -1,0 +1,51 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: child-ocd-family-treatment
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Imran, what does the washing and checking involve over an ordinary day?
+  expected:
+  - rituals
+  rapport: false
+- utterance: What does she believe could happen if she doesn't carry out a ritual properly?
+  expected:
+  - fears
+  rapport: false
+- utterance: Where do you find yourself taking part in the checking or giving repeated reassurance?
+  expected:
+  - accommodation
+  rapport: false
+- utterance: How much is getting ready and reaching school being disrupted?
+  expected:
+  - school
+  rapport: false
+- utterance: When people mention exposure as a treatment, what do you think they would be asking her to
+    do?
+  expected:
+  - treatment
+  rapport: false
+- utterance: What would you need to know before agreeing to psychiatric medication for her?
+  expected:
+  - medication
+  rapport: false
+- utterance: Do you worry that joining in with the rituals has made you responsible for the OCD?
+  expected:
+  - blame
+  rapport: false
+- utterance: What happens between you when you refuse to help with a ritual there and then?
+  expected:
+  - distress
+  rapport: false
+- utterance: what would she like to get back to if this took up less of her day?
+  expected:
+  - goals
+  rapport: false
+  previous:
+    interviewer: How much of the day do the rituals occupy?
+    character: She washes repeatedly and checks taps and doors for about three hours daily.
+- utterance: It's understandable to feel unsure how to help when you don't want to make things harder
+    for her.
+  expected: []
+  rapport: true

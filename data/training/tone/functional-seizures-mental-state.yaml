@@ -1,0 +1,162 @@
+# Training lines for the tone classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: functional-seizures-mental-state
+case_version: 0.1.0
+status: draft
+items:
+- utterance: How often do the attacks happen?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Have you ever thought about ending your life?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: does anything frightening from your past come to mind
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: What do you understand about the diagnosis?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Do you feel afraid to go out on your own?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Sorry to ask, but have you ever hurt yourself deliberately?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: If you don't mind, could you describe what an attack is like?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Hello Hannah, thanks for talking with me this morning.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: Hi Hannah, I'm one of the doctors from the psychiatry team.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: Does that explanation make sense so far?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: check_understanding
+- utterance: Right. And what happened after that?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Okay, thanks Hannah.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: That sounds hard.
+  empathy: 1
+  empathy_words: That sounds hard.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I'm sorry to hear that.
+  empathy: 1
+  empathy_words: I'm sorry to hear that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That must be difficult. How did the neurologist describe it?
+  empathy: 1
+  empathy_words: That must be difficult.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I can imagine that's frightening. What do you notice before an attack?
+  empathy: 1
+  empathy_words: I can imagine that's frightening.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: It makes sense that you feel confused and wary when you have been given a diagnosis nobody has fully explained.
+  empathy: 2
+  empathy_words: It makes sense that you feel confused and wary when you have been given a diagnosis nobody has fully explained.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: What did the neurologist say it was?
+    character: I was told these attacks aren't caused by epileptic activity and are called functional seizures. I don't yet understand how that can happen.
+- utterance: It sounds as though you worry people will hear that it is not epilepsy and doubt you, which must feel unfair.
+  empathy: 2
+  empathy_words: It sounds as though you worry people will hear that it is not epilepsy and doubt you, which must feel unfair.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: Are you worried people won't believe you?
+    character: I'm afraid people hear 'not epilepsy' and think I'm putting it on. I can't choose when it happens.
+- utterance: You have been looking after your mother and working, so it is no wonder this has been so exhausting for you.
+  empathy: 2
+  empathy_words: You have been looking after your mother and working, so it is no wonder this has been so exhausting for you.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: What was going on when this started?
+    character: I was juggling work and caring for my mother when this started. Not every attack happens when I feel stressed.
+- utterance: I can understand why going out alone feels frightening when you are afraid an attack might happen in public. What helps you cope at the moment?
+  empathy: 2
+  empathy_words: I can understand why going out alone feels frightening when you are afraid an attack might happen in public.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: Do you avoid going places on your own?
+    character: I'm constantly worried another attack will happen in public. I avoid going out alone and feel my heart race when I try.
+- utterance: You just need to stop worrying about it, because worrying makes it worse.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You just need to stop worrying about it, because worrying makes it worse.
+  style: confront_statement
+- utterance: Why would you let stress get to the point of making you ill?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Why would you let stress get to the point of making you ill?
+  style: confront_why
+- utterance: Well, the scans were normal, so there is nothing seriously wrong with you.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Well, the scans were normal, so there is nothing seriously wrong with you.
+  style: dismissive
+- utterance: I'm sure it will all settle down once you stop dwelling on it.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: I'm sure it will all settle down once you stop dwelling on it.
+  style: dismissive

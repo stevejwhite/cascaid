@@ -1,0 +1,1936 @@
+# Synthetic interviews for the student interpreter. Drafted by GPT-6 (Codex)
+# on 2026-10-13; NOT YET REVIEWED. Not evaluation data.
+case_id: overdose-risk-assessment
+case_version: 0.4.0
+status: draft
+interviews:
+- id: overdose-risk-assessment-01
+  trainee: Nervous FY2; hesitates, adds rambling preambles, then checks details.
+  turns:
+  - doctor: Hello Jordan, I'm the junior doctor meeting with you today; thank you for coming to talk.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'm not quite sure where to begin, so what would you like me to hear first?
+    character: I know why you're here, but I feel fine now. I want to go home.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Sorry, I am getting ahead of myself. Let me go back a little. Tell me what the medical team
+      have said about your recovery.
+    character: The doctors said my blood tests are okay now.
+    topics:
+    - medically-fit
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And when did they tell you that?
+    character: The doctors told me this morning that my blood tests are okay now.
+    topics:
+    - medically-fit
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'll take this bit by bit, and you can stop me if my question is unclear.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I understand that you feel ready for home and would rather not still be here. Tell me whether
+      you expected anyone to find you.
+    character: I waited until my flatmate was away so nobody would walk in.
+    topics:
+    - precautions
+    empathy: specific
+    empathy_words: I understand that you feel ready for home and would rather not still be here.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Who was away at that point?
+    character: I waited until my flatmate was away for the weekend so nobody would walk in.
+    topics:
+    - precautions
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: The doctors said this morning that your blood results are okay. I want to make sure I have
+      followed you properly; have I got the gist?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Sorry, I am getting ahead of myself. Let me go back a little. Tell me what you swallowed last
+      night and when.
+    character: I took paracetamol with some wine last night.
+    topics:
+    - overdose-details
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: About how many did that come to?
+    character: I took about twenty paracetamol tablets with some wine at around eleven last night.
+    topics:
+    - overdose-details
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Would it be all right to change the subject for a moment?
+    character: Yes, go on.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me whether taking the tablets was planned beforehand.
+    character: I'd been thinking about it for a while.
+    topics:
+    - planning
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Had you already obtained the tablets before that night?
+    character: Yes, I'd planned it. I bought the tablets two days ago, from two different shops.
+    topics:
+    - planning
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. I'm sorry it has been such a rough experience
+      for you.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: I'm sorry it has been such a rough experience for you.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me whether you left any written goodbye message.
+    character: I wrote a note.
+    topics:
+    - note
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Who was it addressed to?
+    character: I wrote a note to my mum. It's in my bag.
+    topics:
+    - note
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'd like to ask what you have heard about your blood results. Could we go through how you
+      got the tablets for last night?
+    character: The doctors told me this morning that my blood tests are okay now. Yes, I'd planned it.
+    topics:
+    - medically-fit
+    - planning
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, i want to make sure I have followed you properly; have I got the gist?
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Do you know when your next dentist appointment is?
+    character: I don't really want to get into that. Can I just go home?
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thank you, Jordan; that gives me a clearer picture of what you wanted me to hear.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: overdose-risk-assessment-02
+  trainee: Brisk trainee; short questions, clear signposting, little small talk.
+  turns:
+  - doctor: Jordan, I'm the trainee you've come to see; thanks for making time.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Where shall we begin today?
+    character: I know why you're here, but I feel fine now. I want to go home.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'd like to ask if there was a letter or note for anyone.
+    character: I wrote a note.
+    topics:
+    - note
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And where is it now?
+    character: I wrote a note to my mum. It's in my bag.
+    topics:
+    - note
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'll ask a few things, then draw them together.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Wanting to be at home when you say you feel fine is understandable. Tell me how it feels to
+      have survived last night.
+    character: Part of me is disappointed it didn't work. I'm not sure whether I'd do it again.
+    topics:
+    - current-intent
+    empathy: specific
+    empathy_words: Wanting to be at home when you say you feel fine is understandable.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What is the part you feel disappointed about?
+    character: Part of me is disappointed it didn't work. I don't know if I'd do it again.
+    topics:
+    - current-intent
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: There is a note for your mum in your bag. I'll pause there; does my account fit what you meant?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me how somebody realised you needed an ambulance.
+    character: My flatmate came back early and called an ambulance.
+    topics:
+    - discovery
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Who made that call?
+    character: My flatmate came back early and called an ambulance. I didn't call anyone myself.
+    topics:
+    - discovery
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What is the name of the road your GP surgery is on?
+    character: I don't really want to get into that. Can I just go home?
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me what has been happening in the lead-up to last night.
+    character: My partner left me, and I lost my job.
+    topics:
+    - trigger
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: When did those things happen?
+    character: My partner left me three weeks ago, and I lost my job last month.
+    topics:
+    - trigger
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. That is a difficult thing to have to deal with.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: That is a difficult thing to have to deal with.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me how your mood and sleep have been lately.
+    character: I've been low, not sleeping much and not enjoying things.
+    topics:
+    - mood
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: How long has that low feeling lasted?
+    character: I've felt low for about two months. I'm hardly sleeping and nothing feels enjoyable.
+    topics:
+    - mood
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could we go over any message you wrote before the overdose? Could we talk about what brought
+      things to this point?
+    character: I wrote a note to my mum. My partner left me three weeks ago, and I lost my job last month.
+    topics:
+    - note
+    - trigger
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, i'll pause there; does my account fit what you meant?
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Shall we switch to a different area now?
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thanks for those answers, Jordan. I'll draw this conversation to a close.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: overdose-risk-assessment-03
+  trainee: Warm trainee; uses the person's name, listens and validates before moving on.
+  turns:
+  - doctor: Welcome, Jordan; I'm the trainee speaking with you today. Thank you for making time.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What would you most like me to hear before I ask anything specific?
+    character: I know why you're here, but I feel fine now. I want to go home.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Take your time with this next bit. I'd like to hear about enjoyment and how you have felt
+      in yourself.
+    character: I've been low, not sleeping much and not enjoying things.
+    topics:
+    - mood
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And what has sleep been like during it?
+    character: I've felt low for about two months. I'm hardly sleeping and nothing feels enjoyable.
+    topics:
+    - mood
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: There is room to pause; you do not have to rush through this conversation.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I hear how much getting home matters to you now that you feel okay. Tell me what might hold
+      you back from trying again.
+    character: My mum and my younger brother. I don't want to hurt them.
+    topics:
+    - protective-factors
+    empathy: specific
+    empathy_words: I hear how much getting home matters to you now that you feel okay.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Who are the people you are thinking of?
+    character: My mum and my younger brother. I don't want to hurt them.
+    topics:
+    - protective-factors
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Low mood has lasted around two months, with little sleep or enjoyment. Please put me right
+      if my recap has missed what you meant.
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Take your time with this next bit. Tell me about any self-harm before last night.
+    character: I cut my arms when I was younger.
+    topics:
+    - past-self-harm
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: How old were you when that happened?
+    character: I cut my arms a few times as a teenager. Nothing since then.
+    topics:
+    - past-self-harm
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Is it all right if we turn to something different?
+    character: Yes, go on.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me what your drinking has been like recently.
+    character: I've been drinking wine most nights.
+    topics:
+    - alcohol
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: How much are you getting through on those evenings?
+    character: Since my partner left I've been drinking most nights, about a bottle of wine.
+    topics:
+    - alcohol
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. I can appreciate how difficult that has been
+      to face.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: I can appreciate how difficult that has been to face.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me whether there are medicines you could reach at home now.
+    character: There are more tablets at home.
+    topics:
+    - access-to-means
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Where are those kept?
+    character: There are more tablets in the bathroom cabinet at home.
+    topics:
+    - access-to-means
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could we go over the weeks before this in terms of mood? Could we go through alcohol use since
+      things became difficult?
+    character: I've felt low for about two months. Since my partner left I've been drinking most nights,
+      about a bottle of wine.
+    topics:
+    - mood
+    - alcohol
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, please put me right if my recap has missed what you meant.
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Have you ever needed a hearing aid?
+    character: I don't really want to get into that. Can I just go home?
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I appreciate you talking with me today, Jordan; thank you for your time.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: overdose-risk-assessment-04
+  trainee: Formal and careful trainee; complete sentences and polite requests.
+  turns:
+  - doctor: Good morning, Jordan. I am the trainee conducting this discussion. Thank you for attending.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: How would you prefer to begin our discussion?
+    character: I know why you're here, but I feel fine now. I want to go home.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: If I may, I would like to clarify the following. I'd like to ask what tablets are still available
+      in your flat.
+    character: There are more tablets at home.
+    topics:
+    - access-to-means
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And are there more still there?
+    character: There are more tablets in the bathroom cabinet at home.
+    topics:
+    - access-to-means
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I shall ask about a number of areas before bringing the account together.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: It makes sense that you want your own feeling of being fine to be heard. I'd like to ask about
+      choosing a time when you would be alone.
+    character: I waited until my flatmate was away so nobody would walk in.
+    topics:
+    - precautions
+    empathy: specific
+    empathy_words: It makes sense that you want your own feeling of being fine to be heard.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And how long were they supposed to be away?
+    character: I waited until my flatmate was away for the weekend so nobody would walk in.
+    topics:
+    - precautions
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: There are still tablets in the bathroom cabinet. Please let me know whether I have represented
+      your account accurately.
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: If I may, I would like to clarify the following. I'd like to ask what you have heard about
+      your blood results.
+    character: The doctors said my blood tests are okay now.
+    topics:
+    - medically-fit
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Was that about the blood tests?
+    character: The doctors told me this morning that my blood tests are okay now.
+    topics:
+    - medically-fit
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What is your usual shoe size?
+    character: I don't really want to get into that. Can I just go home?
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'd like to establish which tablets were involved in the overdose.
+    character: I took paracetamol with some wine last night.
+    topics:
+    - overdose-details
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And at what time was that?
+    character: I took about twenty paracetamol tablets with some wine at around eleven last night.
+    topics:
+    - overdose-details
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. I recognise that this has been a distressing
+      experience for you.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: I recognise that this has been a distressing experience for you.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'd like to ask how long you had been preparing for this.
+    character: I'd been thinking about it for a while.
+    topics:
+    - planning
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Had you gone anywhere to get them beforehand?
+    character: Yes, I'd planned it. I bought the tablets two days ago, from two different shops.
+    topics:
+    - planning
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could we go over any supply of tablets remaining at home? Describe the tablets and the timing
+      of taking them.
+    character: There are more tablets in the bathroom cabinet at home. I took about twenty paracetamol
+      tablets with some wine at around eleven last night.
+    topics:
+    - access-to-means
+    - overdose-details
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, please let me know whether I have represented your account accurately.
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: May we turn to a separate subject at this point?
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thank you for your account today, Jordan. That concludes my questions for now.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: overdose-risk-assessment-05
+  trainee: Rambling trainee; long signposts, sometimes returns to a point to get specifics.
+  turns:
+  - doctor: Hello Jordan, thanks for meeting me; I'm one of the trainees, and we'll have a bit of time
+      together.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: There are several things we could cover, but where would you like to start?
+    character: I know why you're here, but I feel fine now. I want to go home.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: There are a few details I need, though I don't want to jump too far ahead. Could we go through
+      how you got the tablets for last night?
+    character: I'd been thinking about it for a while.
+    topics:
+    - planning
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could you be more precise about the preparation?
+    character: Yes, I'd planned it. I bought the tablets two days ago, from two different shops.
+    topics:
+    - planning
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I might go back over a detail now and then to make sure I have the order clear.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You would like to leave, and I appreciate that staying for this conversation may be difficult.
+      I'd like to ask about any wish to die that is still there.
+    character: Part of me is disappointed it didn't work. I'm not sure whether I'd do it again.
+    topics:
+    - current-intent
+    empathy: specific
+    empathy_words: You would like to leave, and I appreciate that staying for this conversation may be
+      difficult.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And how certain are you about not trying again?
+    character: Part of me is disappointed it didn't work. I don't know if I'd do it again.
+    topics:
+    - current-intent
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You planned it and bought tablets two days beforehand from two shops. I've gone round that
+      a bit; is my account still a fair reflection of what you said?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: There are a few details I need, though I don't want to jump too far ahead. Could we go over
+      any message you wrote before the overdose?
+    character: I wrote a note.
+    topics:
+    - note
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What happened to that note afterwards?
+    character: I wrote a note to my mum. It's in my bag.
+    topics:
+    - note
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before I lose track, could I take us to a different bit of the story?
+    character: Yes, go on.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'd like to hear how you came to be brought here.
+    character: My flatmate came back early and called an ambulance.
+    topics:
+    - discovery
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And had you contacted anyone yourself?
+    character: My flatmate came back early and called an ambulance. I didn't call anyone myself.
+    topics:
+    - discovery
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. It seems you have had a really difficult time
+      with all this.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: It seems you have had a really difficult time with all this.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'd like to hear about recent events putting pressure on you.
+    character: My partner left me, and I lost my job.
+    topics:
+    - trigger
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And which came first, the job or the relationship ending?
+    character: My partner left me three weeks ago, and I lost my job last month.
+    topics:
+    - trigger
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Describe any preparation before taking the overdose. Describe what led to the ambulance coming.
+    character: Yes, I'd planned it. My flatmate came back early and called an ambulance.
+    topics:
+    - planning
+    - discovery
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, i've gone round that a bit; is my account still a fair reflection of what
+      you said?
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Do you know where the ward reception desk is?
+    character: I don't really want to get into that. Can I just go home?
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'll leave the questions there now, Jordan; thank you for sticking with the conversation.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: overdose-risk-assessment-06
+  trainee: Abrupt trainee; direct questions, occasional pressure, then an attempt to repair rapport.
+  turns:
+  - doctor: Hello Jordan. I'm the trainee. We'll talk now, if you're ready.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Give me your own account before I begin the questions.
+    character: I know why you're here, but I feel fine now. I want to go home.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could we talk about what brought things to this point?
+    character: My partner left me, and I lost my job.
+    topics:
+    - trigger
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: How long ago did your partner leave?
+    character: My partner left me three weeks ago, and I lost my job last month.
+    topics:
+    - trigger
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I need to cover several areas in this discussion.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I understand that going home feels more important to you than another conversation here. I'd
+      like to hear about people or reasons that help you keep going.
+    character: My mum and my younger brother. I don't want to hurt them.
+    topics:
+    - protective-factors
+    empathy: specific
+    empathy_words: I understand that going home feels more important to you than another conversation
+      here.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And what is it about them that holds you back?
+    character: My mum and my younger brother. I don't want to hurt them.
+    topics:
+    - protective-factors
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Your partner left three weeks ago, after you lost your job last month. Is that a fair account
+      of what you have said so far?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could we go over the weeks before this in terms of mood?
+    character: I've been low, not sleeping much and not enjoying things.
+    topics:
+    - mood
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Has anything felt enjoyable in that time?
+    character: I've felt low for about two months. I'm hardly sleeping and nothing feels enjoyable.
+    topics:
+    - mood
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Have you been given a leaflet about the hospital layout?
+    character: I don't really want to get into that. Can I just go home?
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'd like to ask whether you have hurt yourself at an earlier time.
+    character: I cut my arms when I was younger.
+    topics:
+    - past-self-harm
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And has there been anything between then and now?
+    character: I cut my arms a few times as a teenager. Nothing since then.
+    topics:
+    - past-self-harm
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. I am sorry; that has clearly been difficult
+      for you.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: I am sorry; that has clearly been difficult for you.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'd like to ask whether the amount of alcohol has changed.
+    character: I've been drinking wine most nights.
+    topics:
+    - alcohol
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And since when has it been like that?
+    character: Since my partner left I've been drinking most nights, about a bottle of wine.
+    topics:
+    - alcohol
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Describe any recent losses or stresses behind what happened. Was there any history of harming
+      yourself before this overdose?
+    character: My partner left me three weeks ago, and I lost my job last month. I cut my arms a few times
+      as a teenager.
+    topics:
+    - trigger
+    - past-self-harm
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You need to show that you take last night seriously before focusing on leaving.
+    character: I'd rather not talk about that.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: You need to show that you take last night seriously before focusing on leaving.
+  - doctor: Can we leave that there and take another subject?
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: That's the end of my questions for the moment, Jordan. Thank you for answering.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: overdose-risk-assessment-07
+  trainee: Speech-recognition transcript; lower case, fillers, false starts and sparse punctuation.
+  turns:
+  - doctor: hi jordan um im the trainee doctor thanks for sitting down with me
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: so um where would you like to start with all this
+    character: I know why you're here, but I feel fine now. I want to go home.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: er i was going to ask no let me come back to this could we go through alcohol use since things
+      became difficult
+    character: I've been drinking wine most nights.
+    topics:
+    - alcohol
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: what is it that you tend to drink
+    character: Since my partner left I've been drinking most nights, about a bottle of wine.
+    topics:
+    - alcohol
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: ill ask a few things and then bring it together at the end
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: um you feel fine now and i can understand why you want to get home. could we go through anything
+      you did to avoid being interrupted
+    character: I waited until my flatmate was away so nobody would walk in.
+    topics:
+    - precautions
+    empathy: specific
+    empathy_words: um you feel fine now and i can understand why you want to get home.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: was avoiding someone walking in the reason for waiting
+    character: I waited until my flatmate was away for the weekend so nobody would walk in.
+    topics:
+    - precautions
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: you have been drinking about a bottle of wine most nights since your partner left. so have
+      i picked that up the way you meant it
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: er i was going to ask no let me come back to this could we go over any supply of tablets remaining
+      at home
+    character: There are more tablets at home.
+    topics:
+    - access-to-means
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: is that in the bathroom
+    character: There are more tablets in the bathroom cabinet at home.
+    topics:
+    - access-to-means
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: um could we talk about a different bit now
+    character: Yes, go on.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: could we go over what the doctors told you this morning
+    character: The doctors said my blood tests are okay now.
+    topics:
+    - medically-fit
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: what did they say about those results
+    character: The doctors told me this morning that my blood tests are okay now.
+    topics:
+    - medically-fit
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: thinking back to what you were saying earlier. um im sorry that has been so difficult to go
+      through.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: um im sorry that has been so difficult to go through.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: could we go through what you took including any drink with it
+    character: I took paracetamol with some wine last night.
+    topics:
+    - overdose-details
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: what did you drink with those
+    character: I took about twenty paracetamol tablets with some wine at around eleven last night.
+    topics:
+    - overdose-details
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: describe how often you have been having a drink lately. tell me what the medical team have
+      said about your recovery.
+    character: Since my partner left I've been drinking most nights, about a bottle of wine. The doctors
+      told me this morning that my blood tests are okay now.
+    topics:
+    - alcohol
+    - medically-fit
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: before we finish so have i picked that up the way you meant it
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: what is the number of this room
+    character: I don't really want to get into that. Can I just go home?
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: thanks jordan um thats all i wanted to ask for now
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: overdose-risk-assessment-08
+  trainee: Trainee who summarises frequently; repeats the account back before changing topic.
+  turns:
+  - doctor: Hello Jordan, I'm the trainee here to hear your account. Thank you for speaking with me.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What would you like to put on the table first?
+    character: I know why you're here, but I feel fine now. I want to go home.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'll hold that in mind as we go on. Describe the tablets and the timing of taking them.
+    character: I took paracetamol with some wine last night.
+    topics:
+    - overdose-details
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Which sort of tablets were they?
+    character: I took about twenty paracetamol tablets with some wine at around eleven last night.
+    topics:
+    - overdose-details
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You say you feel fine now and want to go home.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Your wish to return home matters, and I appreciate you staying to talk for now. Could we talk
+      about whether you might take another overdose?
+    character: Part of me is disappointed it didn't work. I'm not sure whether I'd do it again.
+    topics:
+    - current-intent
+    empathy: specific
+    empathy_words: Your wish to return home matters, and I appreciate you staying to talk for now.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Does part of you wish it had worked?
+    character: Part of me is disappointed it didn't work. I don't know if I'd do it again.
+    topics:
+    - current-intent
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You took around twenty paracetamol tablets with wine at about eleven last night. I have tried
+      to keep to your account; have I understood it as you intended?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You took around twenty paracetamol tablets with wine at about eleven last night. I'll hold
+      that in mind as we go on. Describe any preparation before taking the overdose.
+    character: I'd been thinking about it for a while.
+    topics:
+    - planning
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Did you get the tablets from more than one place?
+    character: Yes, I'd planned it. I bought the tablets two days ago, from two different shops.
+    topics:
+    - planning
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Do you know the name of the person who brought the breakfast trolley?
+    character: I don't really want to get into that. Can I just go home?
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Was there anything written for somebody to find afterwards?
+    character: I wrote a note.
+    topics:
+    - note
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Was that meant for your mum?
+    character: I wrote a note to my mum. It's in my bag.
+    topics:
+    - note
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. That is quite a difficult situation to have
+      been in.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: That is quite a difficult situation to have been in.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could we go through who found you and got help?
+    character: My flatmate came back early and called an ambulance.
+    topics:
+    - discovery
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Was your flatmate back earlier than expected?
+    character: My flatmate came back early and called an ambulance. I didn't call anyone myself.
+    topics:
+    - discovery
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me what you swallowed last night and when. I'd like to ask if there was a letter or note
+      for anyone.
+    character: I took about twenty paracetamol tablets with some wine at around eleven last night. I wrote
+      a note to my mum.
+    topics:
+    - overdose-details
+    - note
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, i have tried to keep to your account; have I understood it as you intended?
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Shall we put that part aside and look at something else?
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thank you, Jordan. I'll finish by keeping those points together in my notes.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: overdose-risk-assessment-09
+  trainee: Sometimes confrontational trainee; slips into minimising or lecturing despite some empathy.
+  turns:
+  - doctor: Morning, Jordan. I'm the doctor doing this interview; thanks for being here.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What is the main thing you want me to hear at the start?
+    character: I know why you're here, but I feel fine now. I want to go home.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: We ought to be clear about this next part. Describe what led to the ambulance coming.
+    character: My flatmate came back early and called an ambulance.
+    topics:
+    - discovery
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: How did they happen to find you then?
+    character: My flatmate came back early and called an ambulance. I didn't call anyone myself.
+    topics:
+    - discovery
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: There are several things to cover before we finish.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I hear that you feel okay and want to leave rather than remain here. Could we talk about what
+      makes staying alive matter to you?
+    character: My mum and my younger brother. I don't want to hurt them.
+    topics:
+    - protective-factors
+    empathy: specific
+    empathy_words: I hear that you feel okay and want to leave rather than remain here.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Is not wanting to hurt them part of that?
+    character: My mum and my younger brother. I don't want to hurt them.
+    topics:
+    - protective-factors
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Your flatmate returned early and called the ambulance; you did not call yourself. Does that
+      follow what you meant to tell me?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: We ought to be clear about this next part. Describe any recent losses or stresses behind what
+      happened.
+    character: My partner left me, and I lost my job.
+    topics:
+    - trigger
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What happened with your work during that time?
+    character: My partner left me three weeks ago, and I lost my job last month.
+    topics:
+    - trigger
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Can we move the conversation to another area?
+    character: Yes, go on.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Describe whether there has been anything you can still enjoy.
+    character: I've been low, not sleeping much and not enjoying things.
+    topics:
+    - mood
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What period are you thinking of when you say that?
+    character: I've felt low for about two months. I'm hardly sleeping and nothing feels enjoyable.
+    topics:
+    - mood
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. I can see this has been a hard experience to
+      have.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: I can see this has been a hard experience to have.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could we go back over any previous deliberate injuries?
+    character: I cut my arms when I was younger.
+    topics:
+    - past-self-harm
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What form did that take back then?
+    character: I cut my arms a few times as a teenager. Nothing since then.
+    topics:
+    - past-self-harm
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me how somebody realised you needed an ambulance. I'd like to hear about enjoyment and
+      how you have felt in yourself.
+    character: My flatmate came back early and called an ambulance. I've felt low for about two months.
+    topics:
+    - discovery
+    - mood
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Other people have difficult times too; you cannot deal with things by taking tablets.
+    character: I'd rather not talk about that.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: Other people have difficult times too; you cannot deal with things by taking
+      tablets.
+  - doctor: Which entrance does your visitor usually use?
+    character: I don't really want to get into that. Can I just go home?
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'll stop my questions there, Jordan. Thank you for talking it through.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: overdose-risk-assessment-10
+  trainee: Reflective trainee; patient pauses, validates, and checks the person's perspective.
+  turns:
+  - doctor: Hello, Jordan; thank you for meeting with me. I'm a trainee with the team.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Where would it feel right to begin telling me your account?
+    character: I know why you're here, but I feel fine now. I want to go home.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I would like to understand this in your own words. Was there any history of harming yourself
+      before this overdose?
+    character: I cut my arms when I was younger.
+    topics:
+    - past-self-harm
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Was that confined to your teenage years?
+    character: I cut my arms a few times as a teenager. Nothing since then.
+    topics:
+    - past-self-harm
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: We can pause while you find the words; there is no need for a perfect account.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Being at home is what you want now, and I understand that this matters to you. Describe how
+      you chose when nobody would walk in.
+    character: I waited until my flatmate was away so nobody would walk in.
+    topics:
+    - precautions
+    empathy: specific
+    empathy_words: Being at home is what you want now, and I understand that this matters to you.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What made you choose that particular time?
+    character: I waited until my flatmate was away for the weekend so nobody would walk in.
+    topics:
+    - precautions
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: There was cutting in your teenage years and nothing further before this. Does the way I have
+      brought that together capture what you wanted to say?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I would like to understand this in your own words. Describe how often you have been having
+      a drink lately.
+    character: I've been drinking wine most nights.
+    topics:
+    - alcohol
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Would that be on most nights?
+    character: Since my partner left I've been drinking most nights, about a bottle of wine.
+    topics:
+    - alcohol
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Have you seen the sign for the hospital cafe?
+    character: I don't really want to get into that. Can I just go home?
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What medicines could you get hold of if you went home?
+    character: There are more tablets at home.
+    topics:
+    - access-to-means
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What part of the flat are those in?
+    character: There are more tablets in the bathroom cabinet at home.
+    topics:
+    - access-to-means
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. I hear that this has been difficult for you
+      to carry.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: I hear that this has been difficult for you to carry.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What have you been told about how you are physically now?
+    character: The doctors said my blood tests are okay now.
+    topics:
+    - medically-fit
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Did they say those were okay now?
+    character: The doctors told me this morning that my blood tests are okay now.
+    topics:
+    - medically-fit
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me about any self-harm before last night. I'd like to ask what tablets are still available
+      in your flat.
+    character: I cut my arms a few times as a teenager. There are more tablets in the bathroom cabinet
+      at home.
+    topics:
+    - past-self-harm
+    - access-to-means
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, does the way I have brought that together capture what you wanted to say?
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Would now be a reasonable point to change the subject?
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thank you for helping me understand, Jordan. I'll end the interview at this point.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: overdose-risk-assessment-11
+  trainee: Uncertain trainee; self-corrects wording and sometimes offers premature reassurance.
+  turns:
+  - doctor: Hi Jordan, I'm the trainee talking with you today; thanks for coming to see us.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What should we begin with, from your point of view?
+    character: I know why you're here, but I feel fine now. I want to go home.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let me put that better before I go on. Tell me what the medical team have said about your
+      recovery.
+    character: The doctors said my blood tests are okay now.
+    topics:
+    - medically-fit
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let me check I am asking this clearly. And when did they tell you that?
+    character: The doctors told me this morning that my blood tests are okay now.
+    topics:
+    - medically-fit
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: If I phrase something badly, I can ask it a different way.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: It can be difficult being asked to talk here when you feel ready to go home. What are your
+      feelings now about being alive?
+    character: Part of me is disappointed it didn't work. I'm not sure whether I'd do it again.
+    topics:
+    - current-intent
+    empathy: specific
+    empathy_words: It can be difficult being asked to talk here when you feel ready to go home.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What do you mean about not knowing whether you would repeat it?
+    character: Part of me is disappointed it didn't work. I don't know if I'd do it again.
+    topics:
+    - current-intent
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: The doctors said this morning that your blood results are okay. I think I have followed that;
+      have I understood your meaning?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let me put that better before I go on. Tell me what you swallowed last night and when.
+    character: I took paracetamol with some wine last night.
+    topics:
+    - overdose-details
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let me check I am asking this clearly. About how many did that come to?
+    character: I took about twenty paracetamol tablets with some wine at around eleven last night.
+    topics:
+    - overdose-details
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could I change tack and ask about another part?
+    character: Yes, go on.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let me check I am asking this clearly. Tell me whether taking the tablets was planned beforehand.
+    character: I'd been thinking about it for a while.
+    topics:
+    - planning
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let me check I am asking this clearly. Had you already obtained the tablets before that night?
+    character: Yes, I'd planned it. I bought the tablets two days ago, from two different shops.
+    topics:
+    - planning
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. It must have been really hard to find yourself
+      dealing with that.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: It must have been really hard to find yourself dealing with that.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let me check I am asking this clearly. Tell me whether you left any written goodbye message.
+    character: I wrote a note.
+    topics:
+    - note
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let me check I am asking this clearly. Who was it addressed to?
+    character: I wrote a note to my mum. It's in my bag.
+    topics:
+    - note
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let me check I am asking this clearly. I'd like to ask what you have heard about your blood
+      results. Could we go through how you got the tablets for last night?
+    character: The doctors told me this morning that my blood tests are okay now. Yes, I'd planned it.
+    topics:
+    - medically-fit
+    - planning
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You say you feel fine now, so there is no point making last night into a bigger issue.
+    character: I'd rather not talk about that.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: You say you feel fine now, so there is no point making last night into a bigger
+      issue.
+  - doctor: Do you know where the nearest lift is?
+    character: I don't really want to get into that. Can I just go home?
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'll leave it there, Jordan. Thank you for explaining things as we went along.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: overdose-risk-assessment-12
+  trainee: Conversational trainee; relaxed wording, short acknowledgements and practical follow-ups.
+  turns:
+  - doctor: Hello Jordan, nice to meet you. I'm one of the trainee doctors; thanks for coming along.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What would be a good place for us to start?
+    character: I know why you're here, but I feel fine now. I want to go home.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Just so I've got the picture. I'd like to ask if there was a letter or note for anyone.
+    character: I wrote a note.
+    topics:
+    - note
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Right, just picking up on that. And where is it now?
+    character: I wrote a note to my mum. It's in my bag.
+    topics:
+    - note
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'll pick up a few details and we can bring it all together afterwards.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I appreciate you wanting to get back home when you do not feel unwell now. What would make
+      you pause if you felt like taking more tablets?
+    character: My mum and my younger brother. I don't want to hurt them.
+    topics:
+    - protective-factors
+    empathy: specific
+    empathy_words: I appreciate you wanting to get back home when you do not feel unwell now.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Which members of your family matter in that way?
+    character: My mum and my younger brother. I don't want to hurt them.
+    topics:
+    - protective-factors
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: There is a note for your mum in your bag. Have I got the picture you were trying to give me?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Just so I've got the picture. Tell me how somebody realised you needed an ambulance.
+    character: My flatmate came back early and called an ambulance.
+    topics:
+    - discovery
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Right, just picking up on that. Who made that call?
+    character: My flatmate came back early and called an ambulance. I didn't call anyone myself.
+    topics:
+    - discovery
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What colour is the sign outside this ward?
+    character: I don't really want to get into that. Can I just go home?
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Right, just picking up on that. Tell me what has been happening in the lead-up to last night.
+    character: My partner left me, and I lost my job.
+    topics:
+    - trigger
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Right, just picking up on that. When did those things happen?
+    character: My partner left me three weeks ago, and I lost my job last month.
+    topics:
+    - trigger
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. That is a tough thing to be having to deal
+      with.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: That is a tough thing to be having to deal with.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Right, just picking up on that. Tell me how your mood and sleep have been lately.
+    character: I've been low, not sleeping much and not enjoying things.
+    topics:
+    - mood
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Right, just picking up on that. How long has that low feeling lasted?
+    character: I've felt low for about two months. I'm hardly sleeping and nothing feels enjoyable.
+    topics:
+    - mood
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Right, just picking up on that. Could we go over any message you wrote before the overdose?
+      Could we talk about what brought things to this point?
+    character: I wrote a note to my mum. My partner left me three weeks ago, and I lost my job last month.
+    topics:
+    - note
+    - trigger
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, have I got the picture you were trying to give me?
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Shall we take a different bit of this next?
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thanks for talking it over with me, Jordan. That's all for the moment.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''

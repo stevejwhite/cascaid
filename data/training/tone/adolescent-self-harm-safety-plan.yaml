@@ -1,0 +1,156 @@
+# Training lines for the tone classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: adolescent-self-harm-safety-plan
+case_version: 0.1.0
+status: draft
+items:
+- utterance: How are you feeling about going home tonight?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Have you had thoughts about ending your life?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: What was happening for you before you cut yourself?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: and what's sleep been like for you recently
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Does anything at home make it easier to get hurt?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Would you mind telling me a bit about what led up to today?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Sorry to ask, but could I check how long this has been going on?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Good evening, Amelia, may I sit down here?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: I'm Dr Reid from the liaison team and I'll be talking with you for a while.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: I'll ask some questions and then we'll write a plan together for tonight.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: explanation
+- utterance: Right. And how long ago was that?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Okay, thank you for telling me.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: I'm really sorry you're going through this.
+  empathy: 1
+  empathy_words: I'm really sorry you're going through this.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That sounds very difficult.
+  empathy: 1
+  empathy_words: That sounds very difficult.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That must be hard. What do you do when it gets too much?
+  empathy: 1
+  empathy_words: That must be hard.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I'm sorry you have had to deal with that. Who could be with you tonight?
+  empathy: 1
+  empathy_words: I'm sorry you have had to deal with that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: It sounds as if reading those comments again and again leaves you tense and shut away from everyone. That would be very hard to bear.
+  empathy: 2
+  empathy_words: It sounds as if reading those comments again and again leaves you tense and shut away from everyone.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: What had been upsetting you before you cut?
+    character: Two classmates posted humiliating comments about me in our group chat after lunch; that kind of message has been happening for three weeks.
+- utterance: You're afraid your mum will think it's for attention when you're really just hurting, and that makes it even harder to speak. It makes sense that you'd feel scared.
+  empathy: 2
+  empathy_words: You're afraid your mum will think it's for attention when you're really just hurting, and that makes it even harder to speak.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: What makes it hard to say?
+    character: I'm scared Mum will think I'm doing it for attention; I would like you beside me when I tell her I still feel shaky.
+- utterance: I can hear how much you want the feelings to stop without wanting to die, and how worried you are about tonight. Thank you for trusting me with that.
+  empathy: 2
+  empathy_words: I can hear how much you want the feelings to stop without wanting to die, and how worried you are about tonight.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: It sounds like school feels like it's closing in on you, and you want some control over who knows. Which adult there could we ask for help?
+  empathy: 2
+  empathy_words: It sounds like school feels like it's closing in on you, and you want some control over who knows.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+- utterance: Cutting yourself isn't a good way to deal with problems, you know.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Cutting yourself isn't a good way to deal with problems, you know.
+  style: confront_statement
+- utterance: Why would you do something so dangerous when you've got your mum?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Why would you do something so dangerous when you've got your mum?
+  style: confront_why
+- utterance: Everyone gets teased at your age, so I'd try not to take it so seriously.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: I'd try not to take it so seriously
+  style: dismissive
+- utterance: I'm sure you'll feel better in the morning, so there's no need to worry.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: there's no need to worry
+  style: dismissive

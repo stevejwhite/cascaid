@@ -1,0 +1,1012 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: panic-avoidance-mental-state
+case_version: 0.1.0
+status: draft
+items:
+- utterance: What happens in your body when one of these attacks comes on?
+  topics:
+  - attack-sensations
+  style: open
+- utterance: Does your heart race during an attack?
+  topics:
+  - attack-sensations
+  style: closed
+- utterance: What does an attack feel like physically?
+  topics:
+  - attack-sensations
+  style: colloquial
+- utterance: Which physical symptoms accompany an episode, and how long does each last?
+  topics:
+  - attack-sensations
+  style: clinical
+- utterance: I'd like to hear what you feel physically as it builds.
+  topics:
+  - attack-sensations
+  style: indirect
+- utterance: That sounds really frightening. How quickly do the sensations come on?
+  topics:
+  - attack-sensations
+  style: empathy_then_question
+- utterance: so um what are the symptoms, like physically
+  topics:
+  - attack-sensations
+  style: spoken
+- utterance: And your breathing during it?
+  topics:
+  - attack-sensations
+  style: brief
+- utterance: How long does it take to settle once it starts?
+  topics:
+  - attack-sensations
+  style: follow_up
+  previous:
+    interviewer: How long has this been going on?
+    character: They started three months ago and now happen about twice a week; the first was on a bus,
+      but I've also had one sitting quietly at home.
+- utterance: Your body goes into overdrive when it happens, I imagine?
+  topics:
+  - attack-sensations
+  style: leading
+- utterance: Talk me through the worst one from start to finish.
+  topics:
+  - attack-sensations
+  style: open
+- utterance: Do you get tingling or dizziness?
+  topics:
+  - attack-sensations
+  style: closed
+- utterance: Does it hit you all at once or build up?
+  topics:
+  - attack-sensations
+  style: colloquial
+- utterance: and how long does a bad one go on for
+  topics:
+  - attack-sensations
+  style: spoken
+- utterance: How long does it last?
+  topics:
+  - attack-sensations
+  style: brief
+- utterance: When did these attacks begin?
+  topics:
+  - course
+  style: open
+- utterance: Are the attacks happening every week now?
+  topics:
+  - course
+  style: closed
+- utterance: How long have you been getting them?
+  topics:
+  - course
+  style: colloquial
+- utterance: What is the frequency and time course of the episodes?
+  topics:
+  - course
+  style: clinical
+- utterance: I wondered how often it's been happening lately.
+  topics:
+  - course
+  style: indirect
+- utterance: It must be wearing you out. Where were you when the first one happened?
+  topics:
+  - course
+  style: empathy_then_question
+- utterance: um so when was the first one and where
+  topics:
+  - course
+  style: spoken
+- utterance: First attack?
+  topics:
+  - course
+  style: brief
+- utterance: Has it ever come on when you weren't out anywhere?
+  topics:
+  - course
+  style: follow_up
+  previous:
+    interviewer: Do you avoid anywhere because of the attacks?
+    character: I avoid buses and supermarkets because I worry I won't be able to get out or get help quickly;
+      it's worse if I would be on my own.
+- utterance: It's getting more frequent over time, isn't it?
+  topics:
+  - course
+  style: leading
+- utterance: Do the attacks only happen when you're out and about?
+  topics:
+  - course
+  style: open
+- utterance: Does it ever happen out of the blue?
+  topics:
+  - course
+  style: closed
+- utterance: Is it every day or just now and then?
+  topics:
+  - course
+  style: colloquial
+- utterance: and is it always when you're out or does it come when you're sitting about
+  topics:
+  - course
+  style: spoken
+- utterance: How often a week?
+  topics:
+  - course
+  style: brief
+- utterance: What goes through your mind at the worst moment?
+  topics:
+  - catastrophic-thought
+  style: open
+- utterance: Do you think something terrible is going to happen to you?
+  topics:
+  - catastrophic-thought
+  style: closed
+- utterance: Do you ever think you're dying when it hits?
+  topics:
+  - catastrophic-thought
+  style: colloquial
+- utterance: Do you have any catastrophic interpretations of the symptoms?
+  topics:
+  - catastrophic-thought
+  style: clinical
+- utterance: I wanted to ask what you fear the sensations mean.
+  topics:
+  - catastrophic-thought
+  style: indirect
+- utterance: It sounds overwhelming. What do you believe is happening to you then?
+  topics:
+  - catastrophic-thought
+  style: empathy_then_question
+- utterance: so um do you think it's your heart or something
+  topics:
+  - catastrophic-thought
+  style: spoken
+- utterance: Fear of dying?
+  topics:
+  - catastrophic-thought
+  style: brief
+- utterance: And once it's passed, do you still believe that?
+  topics:
+  - catastrophic-thought
+  style: follow_up
+  previous:
+    interviewer: What happens in your body in an attack?
+    character: My heart suddenly pounds, my chest feels tight, I breathe fast and my fingers tingle; it
+      builds within a couple of minutes and usually eases after ten to fifteen.
+- utterance: You must fear it's something physical, like your heart?
+  topics:
+  - catastrophic-thought
+  style: leading
+- utterance: How convinced are you at that moment that something's badly wrong?
+  topics:
+  - catastrophic-thought
+  style: open
+- utterance: Do you worry you might collapse?
+  topics:
+  - catastrophic-thought
+  style: closed
+- utterance: Do you honestly think it could be a heart attack?
+  topics:
+  - catastrophic-thought
+  style: colloquial
+- utterance: and afterwards do you still think you were in danger
+  topics:
+  - catastrophic-thought
+  style: spoken
+- utterance: Thinking you'll die?
+  topics:
+  - catastrophic-thought
+  style: brief
+- utterance: How much of your day goes on thinking about the next attack?
+  topics:
+  - anticipation
+  style: open
+- utterance: Do you worry about having another one?
+  topics:
+  - anticipation
+  style: closed
+- utterance: Are you on edge waiting for it to happen again?
+  topics:
+  - anticipation
+  style: colloquial
+- utterance: Is there any anticipatory anxiety between episodes?
+  topics:
+  - anticipation
+  style: clinical
+- utterance: I wondered how you are in between attacks.
+  topics:
+  - anticipation
+  style: indirect
+- utterance: That sounds draining. Do you keep checking how your body is feeling?
+  topics:
+  - anticipation
+  style: empathy_then_question
+- utterance: um do you like keep an eye on your heart rate
+  topics:
+  - anticipation
+  style: spoken
+- utterance: Worrying about the next one?
+  topics:
+  - anticipation
+  style: brief
+- utterance: How long has that constant waiting been going on?
+  topics:
+  - anticipation
+  style: follow_up
+  previous:
+    interviewer: Do you avoid certain places?
+    character: I avoid buses and supermarkets because I worry I won't be able to get out or get help quickly;
+      it's worse if I would be on my own.
+- utterance: You're always bracing for the next attack, aren't you?
+  topics:
+  - anticipation
+  style: leading
+- utterance: What do you do to keep an eye on yourself during the day?
+  topics:
+  - anticipation
+  style: open
+- utterance: Do you check your pulse a lot?
+  topics:
+  - anticipation
+  style: closed
+- utterance: Are you constantly scanning for signs it's starting?
+  topics:
+  - anticipation
+  style: colloquial
+- utterance: and when it's not happening are you like waiting for it
+  topics:
+  - anticipation
+  style: spoken
+- utterance: Constantly on guard?
+  topics:
+  - anticipation
+  style: brief
+- utterance: Which places have you stopped going to?
+  topics:
+  - avoidance
+  style: open
+- utterance: Do you avoid going out on your own?
+  topics:
+  - avoidance
+  style: closed
+- utterance: What's so hard about getting on a bus?
+  topics:
+  - avoidance
+  style: colloquial
+- utterance: What are you afraid would happen in those situations?
+  topics:
+  - avoidance
+  style: clinical
+- utterance: I'd like to understand what puts you off going out.
+  topics:
+  - avoidance
+  style: indirect
+- utterance: It doesn't sound ridiculous at all. What worries you about being on a bus?
+  topics:
+  - avoidance
+  style: empathy_then_question
+- utterance: um so is it worse if you're by yourself or what
+  topics:
+  - avoidance
+  style: spoken
+- utterance: Worse on your own?
+  topics:
+  - avoidance
+  style: brief
+- utterance: What is it about shops that worries you?
+  topics:
+  - avoidance
+  style: follow_up
+  previous:
+    interviewer: When did the attacks start?
+    character: They started three months ago and now happen about twice a week; the first was on a bus,
+      but I've also had one sitting quietly at home.
+- utterance: You're worried you couldn't get out if something happened, aren't you?
+  topics:
+  - avoidance
+  style: leading
+- utterance: Tell me what it's like when you have to go into a crowded place.
+  topics:
+  - avoidance
+  style: open
+- utterance: Does it help to have someone with you?
+  topics:
+  - avoidance
+  style: closed
+- utterance: Do you steer clear of anywhere you can't leave quickly?
+  topics:
+  - avoidance
+  style: colloquial
+- utterance: and the shops thing is that because you can't get out
+  topics:
+  - avoidance
+  style: spoken
+- utterance: Avoiding crowded places?
+  topics:
+  - avoidance
+  style: brief
+- utterance: Has it interfered with your job?
+  topics:
+  - function
+  style: closed
+- utterance: Is it stopping you doing normal things?
+  topics:
+  - function
+  style: colloquial
+- utterance: Is there any functional impairment at work or at home?
+  topics:
+  - function
+  style: clinical
+- utterance: I wondered what you can't manage any more.
+  topics:
+  - function
+  style: indirect
+- utterance: That must be really hard. What have you had to give up?
+  topics:
+  - function
+  style: empathy_then_question
+- utterance: um have you been off work or anything
+  topics:
+  - function
+  style: spoken
+- utterance: Time off work?
+  topics:
+  - function
+  style: brief
+- utterance: Who does the shopping now?
+  topics:
+  - function
+  style: follow_up
+  previous:
+    interviewer: What do you avoid?
+    character: I avoid buses and supermarkets because I worry I won't be able to get out or get help quickly;
+      it's worse if I would be on my own.
+- utterance: You've been struggling to do your normal routine, haven't you?
+  topics:
+  - function
+  style: leading
+- utterance: What did you used to do that you can't do now?
+  topics:
+  - function
+  style: open
+- utterance: Have you missed any work because of it?
+  topics:
+  - function
+  style: closed
+- utterance: Are you still managing at work?
+  topics:
+  - function
+  style: colloquial
+- utterance: and the everyday stuff like errands is that okay
+  topics:
+  - function
+  style: spoken
+- utterance: Managing at home?
+  topics:
+  - function
+  style: brief
+- utterance: How has your mood been?
+  topics:
+  - mood
+  style: open
+- utterance: Do you feel low or depressed?
+  topics:
+  - mood
+  style: closed
+- utterance: Are you still enjoying your usual pastimes?
+  topics:
+  - mood
+  style: colloquial
+- utterance: Is there any persistent low mood or anhedonia?
+  topics:
+  - mood
+  style: clinical
+- utterance: I wanted to ask how you feel in yourself between the attacks.
+  topics:
+  - mood
+  style: indirect
+- utterance: A lot of people feel down with something like this. What do you still enjoy?
+  topics:
+  - mood
+  style: empathy_then_question
+- utterance: um do you feel sad or is it more like worry
+  topics:
+  - mood
+  style: spoken
+- utterance: Feeling down?
+  topics:
+  - mood
+  style: brief
+- utterance: Is there anything you still like doing at home?
+  topics:
+  - mood
+  style: follow_up
+  previous:
+    interviewer: Do you avoid shops and buses?
+    character: I avoid buses and supermarkets because I worry I won't be able to get out or get help quickly;
+      it's worse if I would be on my own.
+- utterance: I imagine you've lost interest in things lately?
+  topics:
+  - mood
+  style: leading
+- utterance: How would you describe your feelings all day, apart from the fear?
+  topics:
+  - mood
+  style: open
+- utterance: Have you been crying a lot?
+  topics:
+  - mood
+  style: closed
+- utterance: Do you still get a kick out of things?
+  topics:
+  - mood
+  style: colloquial
+- utterance: and are you like low all the time or
+  topics:
+  - mood
+  style: spoken
+- utterance: Enjoying anything?
+  topics:
+  - mood
+  style: brief
+- utterance: How do you feel about your future?
+  topics:
+  - suicide-risk
+  style: open
+- utterance: Do you ever think about hurting yourself?
+  topics:
+  - suicide-risk
+  style: colloquial
+- utterance: Is there any suicidal ideation or intent?
+  topics:
+  - suicide-risk
+  style: clinical
+- utterance: I wanted to ask whether things have ever felt too much to go on.
+  topics:
+  - suicide-risk
+  style: indirect
+- utterance: It has clearly been a hard time. Have you thought about suicide?
+  topics:
+  - suicide-risk
+  style: empathy_then_question
+- utterance: um so have you thought about harming yourself or not
+  topics:
+  - suicide-risk
+  style: spoken
+- utterance: Any thoughts of self-harm?
+  topics:
+  - suicide-risk
+  style: brief
+- utterance: Do you have any plans to hurt yourself?
+  topics:
+  - suicide-risk
+  style: follow_up
+  previous:
+    interviewer: What do you think about during the worst of it?
+    character: At the worst point I think I'm having a heart attack and might die, even though afterwards
+      I'm less convinced.
+- utterance: You haven't felt like giving up on life, have you?
+  topics:
+  - suicide-risk
+  style: leading
+- utterance: Have you ever felt life wasn't worth living?
+  topics:
+  - suicide-risk
+  style: open
+- utterance: Do you want to die?
+  topics:
+  - suicide-risk
+  style: closed
+- utterance: Have you ever wished it would all end?
+  topics:
+  - suicide-risk
+  style: colloquial
+- utterance: and um any plans to end it all
+  topics:
+  - suicide-risk
+  style: spoken
+- utterance: Wanting to die?
+  topics:
+  - suicide-risk
+  style: brief
+- utterance: What is your relationship with alcohol at the moment?
+  topics:
+  - alcohol
+  style: open
+- utterance: Do you have a drink before you go out?
+  topics:
+  - alcohol
+  style: closed
+- utterance: What is your weekly alcohol consumption?
+  topics:
+  - alcohol
+  style: clinical
+- utterance: I wondered if you ever use a drink to cope.
+  topics:
+  - alcohol
+  style: indirect
+- utterance: Many people do that. Have you been having any alcohol to calm yourself?
+  topics:
+  - alcohol
+  style: empathy_then_question
+- utterance: um do you drink to settle your nerves
+  topics:
+  - alcohol
+  style: spoken
+- utterance: Drinking before going out?
+  topics:
+  - alcohol
+  style: brief
+- utterance: Is that something you've started recently?
+  topics:
+  - alcohol
+  style: follow_up
+  previous:
+    interviewer: Do you use anything to help you cope?
+    character: For the past month I've had two 330-millilitre cans of four-percent lager before going
+      out about three evenings a week because I think it will settle me; I didn't do that before.
+- utterance: A few drinks make it easier, don't they?
+  topics:
+  - alcohol
+  style: leading
+- utterance: Has your drinking changed since the attacks began?
+  topics:
+  - alcohol
+  style: open
+- utterance: Do you have a drink on the days you go out?
+  topics:
+  - alcohol
+  style: closed
+- utterance: How many pints or cans are we talking?
+  topics:
+  - alcohol
+  style: colloquial
+- utterance: and how often is it that you have a drink
+  topics:
+  - alcohol
+  style: spoken
+- utterance: How many units?
+  topics:
+  - alcohol
+  style: brief
+- utterance: What do you drink through the day?
+  topics:
+  - stimulants
+  style: open
+- utterance: Do you have a lot of coffee?
+  topics:
+  - stimulants
+  style: closed
+- utterance: Are you on the caffeine much?
+  topics:
+  - stimulants
+  style: colloquial
+- utterance: What is your caffeine intake and do you use any stimulants?
+  topics:
+  - stimulants
+  style: clinical
+- utterance: I wanted to ask about tea, coffee and energy drinks.
+  topics:
+  - stimulants
+  style: indirect
+- utterance: I'm sure that's a lot to take in. Do you smoke or take any drugs?
+  topics:
+  - stimulants
+  style: empathy_then_question
+- utterance: um do you do any drugs or smoke
+  topics:
+  - stimulants
+  style: spoken
+- utterance: Energy drinks?
+  topics:
+  - stimulants
+  style: brief
+- utterance: How many cups of that a day?
+  topics:
+  - stimulants
+  style: follow_up
+  previous:
+    interviewer: Do you drink to cope?
+    character: For the past month I've had two 330-millilitre cans of four-percent lager before going
+      out about three evenings a week because I think it will settle me; I didn't do that before.
+- utterance: You don't use anything recreational, do you?
+  topics:
+  - stimulants
+  style: leading
+- utterance: Tell me about any caffeine or nicotine you get through.
+  topics:
+  - stimulants
+  style: open
+- utterance: Do you use cannabis or anything similar?
+  topics:
+  - stimulants
+  style: closed
+- utterance: How much tea or coffee do you get through?
+  topics:
+  - stimulants
+  style: colloquial
+- utterance: and um like cigarettes or vapes or anything
+  topics:
+  - stimulants
+  style: spoken
+- utterance: Any recreational drugs?
+  topics:
+  - stimulants
+  style: brief
+- utterance: Has anyone checked you over physically for these attacks?
+  topics:
+  - physical-assessment
+  style: open
+- utterance: Have you had your heart checked?
+  topics:
+  - physical-assessment
+  style: closed
+- utterance: Did a doctor look into it when it first happened?
+  topics:
+  - physical-assessment
+  style: colloquial
+- utterance: Have you had an ECG and routine bloods?
+  topics:
+  - physical-assessment
+  style: clinical
+- utterance: I wondered whether any tests have been done.
+  topics:
+  - physical-assessment
+  style: indirect
+- utterance: I can imagine you wanted answers. Did anything show up on the tests?
+  topics:
+  - physical-assessment
+  style: empathy_then_question
+- utterance: um have you had like blood tests or a heart trace
+  topics:
+  - physical-assessment
+  style: spoken
+- utterance: Any medical conditions?
+  topics:
+  - physical-assessment
+  style: brief
+- utterance: And did they find anything?
+  topics:
+  - physical-assessment
+  style: follow_up
+  previous:
+    interviewer: When did the attacks start?
+    character: They started three months ago and now happen about twice a week; the first was on a bus,
+      but I've also had one sitting quietly at home.
+- utterance: I suppose you've been to see someone about your heart?
+  topics:
+  - physical-assessment
+  style: leading
+- utterance: What medical problems do you have, if any?
+  topics:
+  - physical-assessment
+  style: open
+- utterance: Do you take any prescribed tablets?
+  topics:
+  - physical-assessment
+  style: closed
+- utterance: Did the hospital say it was just stress?
+  topics:
+  - physical-assessment
+  style: colloquial
+- utterance: and have they checked your blood for anything else
+  topics:
+  - physical-assessment
+  style: spoken
+- utterance: Regular medication?
+  topics:
+  - physical-assessment
+  style: brief
+- utterance: Do you ever feel strange or different during an attack?
+  topics:
+  - unreality
+  style: open
+- utterance: Does the room seem unreal?
+  topics:
+  - unreality
+  style: closed
+- utterance: Do you feel like you're not really there?
+  topics:
+  - unreality
+  style: colloquial
+- utterance: Do you experience derealisation or depersonalisation?
+  topics:
+  - unreality
+  style: clinical
+- utterance: I wondered if your surroundings ever feel altered when it happens.
+  topics:
+  - unreality
+  style: indirect
+- utterance: That sounds disorienting. Do you feel cut off from what's around you?
+  topics:
+  - unreality
+  style: empathy_then_question
+- utterance: um do things look sort of distant or foggy
+  topics:
+  - unreality
+  style: spoken
+- utterance: Feeling detached?
+  topics:
+  - unreality
+  style: brief
+- utterance: Is it like you're watching from outside yourself?
+  topics:
+  - unreality
+  style: follow_up
+  previous:
+    interviewer: What do you feel in your body?
+    character: My heart suddenly pounds, my chest feels tight, I breathe fast and my fingers tingle; it
+      builds within a couple of minutes and usually eases after ten to fifteen.
+- utterance: Everything seems far away at some point, doesn't it?
+  topics:
+  - unreality
+  style: leading
+- utterance: How do the surroundings look to you in the middle of an attack?
+  topics:
+  - unreality
+  style: open
+- utterance: Do you ever feel as if you're in a dream?
+  topics:
+  - unreality
+  style: closed
+- utterance: Does everything go weird around you?
+  topics:
+  - unreality
+  style: colloquial
+- utterance: and does it like feel unreal or disconnected
+  topics:
+  - unreality
+  style: spoken
+- utterance: Things seem unreal?
+  topics:
+  - unreality
+  style: brief
+- utterance: What worries you about other people seeing you like this?
+  topics:
+  - embarrassment
+  style: open
+- utterance: Do you feel embarrassed when it happens in public?
+  topics:
+  - embarrassment
+  style: closed
+- utterance: Are you scared of what people will think?
+  topics:
+  - embarrassment
+  style: colloquial
+- utterance: Is there any social evaluative concern during the episodes?
+  topics:
+  - embarrassment
+  style: clinical
+- utterance: I wondered how it feels to be around others when it starts.
+  topics:
+  - embarrassment
+  style: indirect
+- utterance: It's understandable to feel self-conscious. Does that make it hard to ask for help?
+  topics:
+  - embarrassment
+  style: empathy_then_question
+- utterance: um are you worried people are looking at you
+  topics:
+  - embarrassment
+  style: spoken
+- utterance: Feeling ashamed?
+  topics:
+  - embarrassment
+  style: brief
+- utterance: Do you worry what other people would make of it?
+  topics:
+  - embarrassment
+  style: follow_up
+  previous:
+    interviewer: Do you avoid going out on your own?
+    character: I avoid buses and supermarkets because I worry I won't be able to get out or get help quickly;
+      it's worse if I would be on my own.
+- utterance: You hate being the centre of attention, don't you?
+  topics:
+  - embarrassment
+  style: leading
+- utterance: Can we talk about how it feels to be judged by strangers?
+  topics:
+  - embarrassment
+  style: open
+- utterance: Do you hold back from asking for help?
+  topics:
+  - embarrassment
+  style: closed
+- utterance: Do you think people will judge you for it?
+  topics:
+  - embarrassment
+  style: colloquial
+- utterance: and um do you worry people will think badly of you
+  topics:
+  - embarrassment
+  style: spoken
+- utterance: Fear of being judged?
+  topics:
+  - embarrassment
+  style: brief
+- utterance: Who have you been able to talk to about this?
+  topics:
+  - support
+  style: open
+- utterance: Who's got your back with all this?
+  topics:
+  - support
+  style: colloquial
+- utterance: What support is available to you?
+  topics:
+  - support
+  style: clinical
+- utterance: I wondered who is aware of how you've been.
+  topics:
+  - support
+  style: indirect
+- utterance: That's a lot to carry. Have you told your family or anyone at work?
+  topics:
+  - support
+  style: empathy_then_question
+- utterance: um have you told your boss or anyone
+  topics:
+  - support
+  style: spoken
+- utterance: Anyone helping you?
+  topics:
+  - support
+  style: brief
+- utterance: And do they know what's going on?
+  topics:
+  - support
+  style: follow_up
+  previous:
+    interviewer: Has this stopped you getting things done?
+    character: I've missed three shifts in the past fortnight and my partner does the food shopping; I
+      used to manage both without thinking about it.
+- utterance: Someone close to you has been understanding about it, I hope?
+  topics:
+  - support
+  style: leading
+- utterance: Does anyone at work know what's going on?
+  topics:
+  - support
+  style: open
+- utterance: Do you live with someone who supports you?
+  topics:
+  - support
+  style: closed
+- utterance: Have you got anyone you can lean on?
+  topics:
+  - support
+  style: colloquial
+- utterance: and who have you told about the panic
+  topics:
+  - support
+  style: spoken
+- utterance: Told anyone at work?
+  topics:
+  - support
+  style: brief
+- utterance: What do you feel in your body in an attack, and what do you fear it means?
+  topics:
+  - attack-sensations
+  - catastrophic-thought
+  style: stacked
+- utterance: How much alcohol do you drink, and what about coffee and cigarettes?
+  topics:
+  - alcohol
+  - stimulants
+  style: stacked
+- utterance: Have you been feeling low, and have you thought about ending your life?
+  topics:
+  - mood
+  - suicide-risk
+  style: stacked
+- utterance: Has this affected your work, and who have you told about it?
+  topics:
+  - function
+  - support
+  style: stacked
+- utterance: Hello Owen, nice to meet you.
+  topics: []
+  style: greeting
+- utterance: Hi Owen, I'm Hannah, one of the trainee doctors in the clinic.
+  topics: []
+  style: introduction
+- utterance: Good morning Owen, thanks for coming along today.
+  topics: []
+  style: greeting
+- utterance: Owen, my name's Dev and I'll be talking with you about how you've been.
+  topics: []
+  style: introduction
+- utterance: Is it all right if we talk about what's been happening, Owen?
+  topics: []
+  style: introduction
+- utterance: what would you like to start with Owen
+  topics: []
+  style: greeting
+- utterance: Before we start, have you got any questions for me?
+  topics: []
+  style: introduction
+- utterance: I'd like to move on to something different now.
+  topics: []
+  style: transition
+- utterance: Shall we talk about how you've been in other ways?
+  topics: []
+  style: transition
+- utterance: ok so let's go on to the next bit
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Owen.
+  topics: []
+  style: closing
+- utterance: We've only got a couple of minutes left.
+  topics: []
+  style: closing
+- utterance: It sounds as though this has taken over a lot of your life.
+  topics: []
+  style: empathy
+- utterance: That must feel really scary.
+  topics: []
+  style: empathy
+- utterance: Thank you for explaining that so clearly.
+  topics: []
+  style: empathy
+- utterance: There's nothing ridiculous about this.
+  topics: []
+  style: empathy
+- utterance: I can see how hard this is to talk about.
+  topics: []
+  style: empathy
+- utterance: That sounds exhausting.
+  topics: []
+  style: empathy
+- utterance: So you get sudden attacks of fear, you worry about the next one, and you've begun avoiding
+    places.
+  topics: []
+  style: summary
+- utterance: 'Let me check I have this right: the attacks have changed what you do day to day.'
+  topics: []
+  style: summary
+- utterance: To sum up, there are a few things we need to look at together.
+  topics: []
+  style: summary
+- utterance: I'm asking about all of this so I can understand what's been happening.
+  topics: []
+  style: explanation
+- utterance: What you tell me today will be kept within the clinic team.
+  topics: []
+  style: explanation
+- utterance: Lots of people have attacks like this, and they can be understood.
+  topics: []
+  style: explanation
+- utterance: Does that make sense so far?
+  topics: []
+  style: check_understanding
+- utterance: Do you have any problems with your sleep?
+  topics: []
+  style: off_case
+- utterance: Have you ever had any trouble with your memory?
+  topics: []
+  style: off_case
+- utterance: Is there a history of anxiety in your family?
+  topics: []
+  style: off_case
+- utterance: Do you hear anything that other people can't?
+  topics: []
+  style: off_case
+- utterance: Have you had any big changes in your life recently?
+  topics: []
+  style: off_case
+- utterance: Do you have a history of heart disease in the family?
+  topics: []
+  style: near_miss
+- utterance: Have you had any problems with alcohol in the past?
+  topics: []
+  style: near_miss
+- utterance: What did the doctor say the attacks were?
+  topics: []
+  style: near_miss
+- utterance: How do you feel about taking medication for anxiety?
+  topics: []
+  style: near_miss
+- utterance: What happens when you try to get on a bus?
+  topics: []
+  style: near_miss

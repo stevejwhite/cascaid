@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: young-carer-social-history
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hi Tessa, I'm one of the doctors who works with young people, thanks for meeting me."
+    expected: []
+    rapport: false
+  - utterance: "Who lives at home with you?"
+    expected: [home]
+    rapport: false
+  - utterance: "What sort of help do you give at home?"
+    expected: [care]
+    rapport: false
+  - utterance: "How's school going?"
+    expected: [school]
+    rapport: false
+  - utterance: "Do you get much time to see your mates?"
+    expected: [friends]
+    rapport: false
+  - utterance: "How are things for money at home?"
+    expected: [money]
+    rapport: false
+  - utterance: "do you have a part time job"
+    expected: [money]
+    rapport: false
+  - utterance: "Does anyone else help out with the caring?"
+    expected: [support]
+    rapport: false
+  - utterance: "How have you been feeling in yourself lately?"
+    expected: [mood]
+    rapport: false
+  - utterance: "Have you ever thought about hurting yourself?"
+    expected: [self-risk]
+    rapport: false
+  - utterance: "How do you feel about having to do all this caring?"
+    expected: [resentment]
+    rapport: false
+  - utterance: "That's a lot of responsibility for someone your age."
+    expected: []
+    rapport: true
+  - utterance: "It sounds like you're worried that talking to us could cause trouble for your family. What are you most scared might happen?"
+    expected: [fear]
+    rapport: true
+  - utterance: "and what would you do if something happened to her overnight?"
+    previous:
+      interviewer: "How much sleep do you get?"
+      character: "About six hours, I listen out for Mum."
+    expected: [physical-safety]
+    rapport: false
+  - utterance: "and how long does all that take you each day?"
+    previous:
+      interviewer: "Does anyone come in to help?"
+      character: "A care worker for half an hour on weekday mornings."
+    expected: [care]
+    rapport: false
+  - utterance: "Do you know what you'd like to do after your GCSEs?"
+    expected: []
+    rapport: false
+  - utterance: "Do you have any health problems yourself?"
+    expected: []
+    rapport: false
+  - utterance: "Before we go on, what we talk about stays between us unless I'm worried about your safety or someone else's."
+    expected: []
+    rapport: false

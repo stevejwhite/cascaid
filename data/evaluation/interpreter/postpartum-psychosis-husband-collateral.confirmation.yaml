@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: postpartum-psychosis-husband-collateral
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Could you place the start of these changes in relation to the delivery, Ben?
+  expected:
+  - onset
+  rapport: false
+- utterance: How much is she sleeping when there is an opportunity, and does she seem to need more?
+  expected:
+  - sleep
+  rapport: false
+- utterance: Has she said anything about the baby that seems unlike her usual beliefs?
+  expected:
+  - beliefs
+  rapport: false
+- utterance: Has she described hearing somebody, or have you seen her reply when nobody was speaking?
+  expected:
+  - voices
+  rapport: false
+- utterance: Does she always seem clear about where she is and able to follow a conversation?
+  expected:
+  - confusion
+  rapport: false
+- utterance: Are you aware of any previous psychiatric illness or treatment before this pregnancy?
+  expected:
+  - past
+  rapport: false
+- utterance: What does she believe about the baby, rather than what she reports hearing?
+  expected:
+  - beliefs
+  rapport: false
+- utterance: What does she say she hears, and have you seen her respond to it?
+  expected:
+  - voices
+  rapport: false
+- utterance: has she said she needs to do anything to keep them safe?
+  expected:
+  - danger
+  rapport: false
+  previous:
+    interviewer: What has she been saying about your baby?
+    character: She says the baby has been replaced and isn't ours.
+- utterance: Seeing such a rapid change in your wife must be frightening for you.
+  expected: []
+  rapport: true

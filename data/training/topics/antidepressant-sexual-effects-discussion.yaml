@@ -1,0 +1,807 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: antidepressant-sexual-effects-discussion
+case_version: 0.1.0
+status: draft
+items:
+- utterance: How long have you been on the antidepressant now?
+  topics:
+  - prescription
+  style: open
+- utterance: Do you take it every day?
+  topics:
+  - prescription
+  style: closed
+- utterance: Has the dose changed since you first started it?
+  topics:
+  - prescription
+  style: closed
+- utterance: So which one are you on, and how many milligrams?
+  topics:
+  - prescription
+  style: colloquial
+- utterance: Could you tell me the name, dose and start date of your current antidepressant?
+  topics:
+  - prescription
+  style: clinical
+- utterance: I wondered when you first started on this medication
+  topics:
+  - prescription
+  style: indirect
+- utterance: It'd help me to hear how you take your tablets day to day
+  topics:
+  - prescription
+  style: indirect
+- utterance: I know medication reviews can feel a bit routine; when did you begin the treatment?
+  topics:
+  - prescription
+  style: empathy_then_question
+- utterance: um so what are you on at the moment like what dose
+  topics:
+  - prescription
+  style: spoken
+- utterance: And the current dose?
+  topics:
+  - prescription
+  style: brief
+- utterance: When did the tablets start?
+  topics:
+  - prescription
+  style: brief
+- utterance: You're taking it most days, I'd guess?
+  topics:
+  - prescription
+  style: leading
+- utterance: Are you taking it regularly, or do doses get missed?
+  topics:
+  - prescription
+  style: closed
+- utterance: And which medicine has helped with that, at what dose?
+  topics:
+  - prescription
+  style: follow_up
+  previous:
+    interviewer: How has your mood been since starting the treatment?
+    character: For the last six weeks I've felt like myself again, enjoying work and seeing friends. Before
+      treatment I was low and withdrawn for three months.
+- utterance: And has it stayed at that dose since?
+  topics:
+  - prescription
+  style: follow_up
+  previous:
+    interviewer: What medication are you taking at the moment, and at what dose?
+    character: I take sertraline 100 milligrams each morning. I started five months ago and reached this
+      dose four months ago; I haven't missed any recently.
+- utterance: How has your mood been since starting the treatment?
+  topics:
+  - benefit
+  style: open
+- utterance: What's changed for you since the medication began working?
+  topics:
+  - benefit
+  style: open
+- utterance: Has the antidepressant helped your depression?
+  topics:
+  - benefit
+  style: closed
+- utterance: Are you enjoying things again?
+  topics:
+  - benefit
+  style: closed
+- utterance: Has it done the trick for your mood, would you say?
+  topics:
+  - benefit
+  style: colloquial
+- utterance: How would you rate the response of your depression to treatment so far?
+  topics:
+  - benefit
+  style: clinical
+- utterance: I'd like to hear how your mood is these days
+  topics:
+  - benefit
+  style: indirect
+- utterance: You said you're better in some ways, and I'm glad to hear that; in what ways?
+  topics:
+  - benefit
+  style: empathy_then_question
+- utterance: so um you said better in some ways what does better look like
+  topics:
+  - benefit
+  style: spoken
+- utterance: And your mood now?
+  topics:
+  - benefit
+  style: brief
+- utterance: Feeling more yourself lately?
+  topics:
+  - benefit
+  style: brief
+- utterance: I imagine the tablets have lifted your mood quite a bit?
+  topics:
+  - benefit
+  style: leading
+- utterance: Compared with before you started treatment, what's different now?
+  topics:
+  - benefit
+  style: open
+- utterance: Is your mood back to how it was before you got ill?
+  topics:
+  - benefit
+  style: closed
+- utterance: And over those months, how much has your mood picked up?
+  topics:
+  - benefit
+  style: follow_up
+  previous:
+    interviewer: How long have you been on the antidepressant now?
+    character: I take sertraline 100 milligrams each morning. I started five months ago and reached this
+      dose four months ago; I haven't missed any recently.
+- utterance: Tell me how things like work and your social life have been going lately
+  topics:
+  - benefit
+  style: indirect
+- utterance: You mentioned sexual difficulties; could you tell me a bit about what's been happening?
+  topics:
+  - sexual
+  style: open
+- utterance: Would you feel able to tell me about the changes in your sex life?
+  topics:
+  - sexual
+  style: open
+- utterance: Has the medication affected your interest in sex?
+  topics:
+  - sexual
+  style: closed
+- utterance: Any trouble reaching orgasm since you started?
+  topics:
+  - sexual
+  style: closed
+- utterance: Has it knocked your sex drive at all?
+  topics:
+  - sexual
+  style: colloquial
+- utterance: Could you describe the sexual side effects you've noticed?
+  topics:
+  - sexual
+  style: clinical
+- utterance: I'd like to understand the sexual side effects a little better, if that's all right
+  topics:
+  - sexual
+  style: indirect
+- utterance: These things can be hard to talk about; what have you noticed changing sexually?
+  topics:
+  - sexual
+  style: empathy_then_question
+- utterance: um it's okay to be frank here what's been going on with the sexual side
+  topics:
+  - sexual
+  style: spoken
+- utterance: And sexually, any changes?
+  topics:
+  - sexual
+  style: brief
+- utterance: Tablets like this can sometimes dull desire, is that what's happened for you?
+  topics:
+  - sexual
+  style: leading
+- utterance: Was any of this a problem before you started the tablets?
+  topics:
+  - sexual
+  style: closed
+- utterance: When did the sexual problems start, in relation to the medication?
+  topics:
+  - sexual
+  style: open
+- utterance: Thank you for trusting me with this; is it desire, or the physical side, that's changed?
+  topics:
+  - sexual
+  style: empathy_then_question
+- utterance: I wondered whether it's your desire or climax that's been affected
+  topics:
+  - sexual
+  style: indirect
+- utterance: And did the sexual difficulties start before or after that increase?
+  topics:
+  - sexual
+  style: follow_up
+  previous:
+    interviewer: Has the dose changed since you first started it?
+    character: I take sertraline 100 milligrams each morning. I started five months ago and reached this
+      dose four months ago; I haven't missed any recently.
+- utterance: How have things been with a partner, if you have one?
+  topics:
+  - relationship
+  style: open
+- utterance: How is your relationship coping with all this?
+  topics:
+  - relationship
+  style: open
+- utterance: Is it putting a strain on things at home?
+  topics:
+  - relationship
+  style: colloquial
+- utterance: What impact have these difficulties had on intimacy in your relationship?
+  topics:
+  - relationship
+  style: clinical
+- utterance: I wondered how the person you're with understands what's going on
+  topics:
+  - relationship
+  style: indirect
+- utterance: That sounds a lot to carry; has it affected how things are with your partner?
+  topics:
+  - relationship
+  style: empathy_then_question
+- utterance: so is there a partner and um how are they finding it
+  topics:
+  - relationship
+  style: spoken
+- utterance: And your relationship?
+  topics:
+  - relationship
+  style: brief
+- utterance: Does your partner know it might be the tablets?
+  topics:
+  - relationship
+  style: closed
+- utterance: I'd guess it's been tricky to talk about with your partner?
+  topics:
+  - relationship
+  style: leading
+- utterance: Have you found yourself pulling back from intimacy?
+  topics:
+  - relationship
+  style: closed
+- utterance: What's it been like talking about this with the person you're with?
+  topics:
+  - relationship
+  style: open
+- utterance: How has that gone down with your partner?
+  topics:
+  - relationship
+  style: follow_up
+  previous:
+    interviewer: Has the medication affected your interest in sex?
+    character: Since the dose increased, my desire has fallen and I often can't reach orgasm. That wasn't
+      a problem before treatment.
+- utterance: Have you been able to tell them it might be the medication?
+  topics:
+  - relationship
+  style: follow_up
+  previous:
+    interviewer: How have things been with a partner, if you have one?
+    character: My partner thinks I'm no longer attracted to them. I feel ashamed and avoid being close
+      because I don't know how to explain it.
+- utterance: Have you had depression before this time?
+  topics:
+  - history
+  style: closed
+- utterance: What's your history of mental health problems?
+  topics:
+  - history
+  style: open
+- utterance: I wondered whether this is the first time you've been depressed
+  topics:
+  - history
+  style: indirect
+- utterance: Is this the first time you've been this low?
+  topics:
+  - history
+  style: closed
+- utterance: Ever been down like this before, years back?
+  topics:
+  - history
+  style: colloquial
+- utterance: Have you ever had a spell of abnormally elevated mood?
+  topics:
+  - history
+  style: clinical
+- utterance: Were there ever times you felt unusually high, full of energy and needing little sleep?
+  topics:
+  - history
+  style: closed
+- utterance: It sounds like it's been hard work getting well; has this happened before?
+  topics:
+  - history
+  style: empathy_then_question
+- utterance: um and before this was there ever another time you got depressed
+  topics:
+  - history
+  style: spoken
+- utterance: Any previous depression?
+  topics:
+  - history
+  style: brief
+- utterance: And any highs ever?
+  topics:
+  - history
+  style: brief
+- utterance: I'm guessing this isn't your first episode?
+  topics:
+  - history
+  style: leading
+- utterance: What psychiatric history do you have, if any?
+  topics:
+  - history
+  style: open
+- utterance: Has anyone ever told you you seemed unusually wired or hyper?
+  topics:
+  - history
+  style: closed
+- utterance: How did that first episode get better?
+  topics:
+  - history
+  style: follow_up
+  previous:
+    interviewer: Have you had depression before this time?
+    character: This was my second depressive episode. The first was four years ago; I've never had an
+      unusually high or overactive spell.
+- utterance: Had you ever felt like that before those three months?
+  topics:
+  - history
+  style: follow_up
+  previous:
+    interviewer: Are you enjoying things again?
+    character: For the last six weeks I've felt like myself again, enjoying work and seeing friends. Before
+      treatment I was low and withdrawn for three months.
+- utterance: Have you ever missed doses, and what happened when you did?
+  topics:
+  - withdrawal
+  style: open
+- utterance: What happens if you forget a tablet?
+  topics:
+  - withdrawal
+  style: open
+- utterance: Did you get any symptoms when you stopped it briefly?
+  topics:
+  - withdrawal
+  style: closed
+- utterance: Any funny feelings if you skip a day?
+  topics:
+  - withdrawal
+  style: colloquial
+- utterance: Have you experienced any discontinuation symptoms?
+  topics:
+  - withdrawal
+  style: clinical
+- utterance: I wondered whether you've had any unpleasant effects from missing tablets
+  topics:
+  - withdrawal
+  style: indirect
+- utterance: I can see why you'd want to be rid of it; have you ever stopped it for a few days?
+  topics:
+  - withdrawal
+  style: empathy_then_question
+- utterance: so um have you ever like run out or skipped a few what was that like
+  topics:
+  - withdrawal
+  style: spoken
+- utterance: Any withdrawal effects?
+  topics:
+  - withdrawal
+  style: brief
+- utterance: Ever skipped it, what happened?
+  topics:
+  - withdrawal
+  style: brief
+- utterance: I imagine you might have felt rough if you've ever missed some?
+  topics:
+  - withdrawal
+  style: leading
+- utterance: Do you notice feeling light-headed or on edge when a dose is late?
+  topics:
+  - withdrawal
+  style: closed
+- utterance: Has stopping the tablets suddenly ever made you feel unwell?
+  topics:
+  - withdrawal
+  style: closed
+- utterance: Tell me what your body does if a dose gets missed
+  topics:
+  - withdrawal
+  style: indirect
+- utterance: And further back, did you ever miss some, and how did you feel?
+  topics:
+  - withdrawal
+  style: follow_up
+  previous:
+    interviewer: Do you take it every day?
+    character: I take sertraline 100 milligrams each morning. I started five months ago and reached this
+      dose four months ago; I haven't missed any recently.
+- utterance: How long did that take to wear off once you went back on it?
+  topics:
+  - withdrawal
+  style: follow_up
+  previous:
+    interviewer: Have you ever missed doses, and what happened when you did?
+    character: I missed three doses two months ago and felt dizzy and unsettled. It settled after I restarted.
+- utterance: What would you like to happen with your treatment?
+  topics:
+  - preferences
+  style: open
+- utterance: What matters most to you in deciding what to do next?
+  topics:
+  - preferences
+  style: open
+- utterance: Would you be open to changing medication?
+  topics:
+  - preferences
+  style: closed
+- utterance: Do you want to be involved in choosing any new medicine?
+  topics:
+  - preferences
+  style: closed
+- utterance: What's your gut feeling on what to do?
+  topics:
+  - preferences
+  style: colloquial
+- utterance: What are your treatment preferences, weighing your mood against the side effects?
+  topics:
+  - preferences
+  style: clinical
+- utterance: I'd like to hear what you're hoping we can do today
+  topics:
+  - preferences
+  style: indirect
+- utterance: It's clear this has been bothering you; what would a good outcome be for you?
+  topics:
+  - preferences
+  style: empathy_then_question
+- utterance: so um if you could choose what would you want us to do
+  topics:
+  - preferences
+  style: spoken
+- utterance: What are you hoping for?
+  topics:
+  - preferences
+  style: brief
+- utterance: Keeping your mood steady matters too, I'd imagine?
+  topics:
+  - preferences
+  style: leading
+- utterance: How do you feel about the idea of switching to something else?
+  topics:
+  - preferences
+  style: open
+- utterance: Is stopping completely what you have in mind, or would you consider alternatives?
+  topics:
+  - preferences
+  style: closed
+- utterance: Knowing that, how would you want to balance it against how well your mood has done?
+  topics:
+  - preferences
+  style: follow_up
+  previous:
+    interviewer: Has the medication affected your interest in sex?
+    character: Since the dose increased, my desire has fallen and I often can't reach orgasm. That wasn't
+      a problem before treatment.
+- utterance: Given how much better you are, how do you feel about making a change?
+  topics:
+  - preferences
+  style: follow_up
+  previous:
+    interviewer: How has your mood been since starting the treatment?
+    character: For the last six weeks I've felt like myself again, enjoying work and seeing friends. Before
+      treatment I was low and withdrawn for three months.
+- utterance: When you were at your lowest, did you think about suicide?
+  topics:
+  - risk
+  style: closed
+- utterance: Did you ever try to harm yourself or take your own life?
+  topics:
+  - risk
+  style: closed
+- utterance: Any dark thoughts creeping in these days?
+  topics:
+  - risk
+  style: colloquial
+- utterance: I'd like to ask about any thoughts of suicide, now and when you were unwell
+  topics:
+  - risk
+  style: indirect
+- utterance: It sounds like you went through a very low time; did you ever feel life wasn't worth living?
+  topics:
+  - risk
+  style: empathy_then_question
+- utterance: um sorry to ask but do you ever think about killing yourself
+  topics:
+  - risk
+  style: spoken
+- utterance: Any suicidal thoughts?
+  topics:
+  - risk
+  style: brief
+- utterance: Any past attempts?
+  topics:
+  - risk
+  style: brief
+- utterance: I take it there are no thoughts of harming yourself now?
+  topics:
+  - risk
+  style: leading
+- utterance: What thoughts did you have about death when the depression was bad?
+  topics:
+  - risk
+  style: open
+- utterance: What's the lowest you've ever felt, in terms of not wanting to go on?
+  topics:
+  - risk
+  style: open
+- utterance: During either of those times, did you think about ending your life?
+  topics:
+  - risk
+  style: follow_up
+  previous:
+    interviewer: Have you had depression before this time?
+    character: This was my second depressive episode. The first was four years ago; I've never had an
+      unusually high or overactive spell.
+- utterance: When you had those thoughts about not waking up, did you ever make any plans?
+  topics:
+  - risk
+  style: follow_up
+  previous:
+    interviewer: Have you had any thoughts of ending your life?
+    character: No, I don't have suicidal thoughts now and have never attempted suicide. During the depression
+      I sometimes wished I wouldn't wake up.
+- utterance: How is your physical health generally?
+  topics:
+  - physical
+  style: open
+- utterance: Are you on any other medicines?
+  topics:
+  - physical
+  style: closed
+- utterance: How much alcohol do you drink in a week?
+  topics:
+  - physical
+  style: open
+- utterance: Do you use any recreational drugs?
+  topics:
+  - physical
+  style: closed
+- utterance: Anything else going on health-wise?
+  topics:
+  - physical
+  style: colloquial
+- utterance: Do you have any medical conditions, or take anything prescribed or over the counter?
+  topics:
+  - physical
+  style: clinical
+- utterance: I'd like to check about drink and drugs, if that's okay
+  topics:
+  - physical
+  style: indirect
+- utterance: so um any physical illnesses or anything like that
+  topics:
+  - physical
+  style: spoken
+- utterance: And alcohol?
+  topics:
+  - physical
+  style: brief
+- utterance: Any other tablets?
+  topics:
+  - physical
+  style: brief
+- utterance: You're otherwise fit and well, I take it?
+  topics:
+  - physical
+  style: leading
+- utterance: I know people sometimes feel judged by this one; do you drink at all?
+  topics:
+  - physical
+  style: empathy_then_question
+- utterance: What about cannabis or anything like that?
+  topics:
+  - physical
+  style: closed
+- utterance: Tell me about any physical conditions you have
+  topics:
+  - physical
+  style: indirect
+- utterance: Has a doctor ever diagnosed you with anything physical, say diabetes or heart trouble?
+  topics:
+  - physical
+  style: closed
+- utterance: Is that the only thing you take, including anything from the chemist?
+  topics:
+  - physical
+  style: follow_up
+  previous:
+    interviewer: What medication are you taking at the moment, and at what dose?
+    character: I take sertraline 100 milligrams each morning. I started five months ago and reached this
+      dose four months ago; I haven't missed any recently.
+- utterance: When could you come back to see me?
+  topics:
+  - review
+  style: open
+- utterance: Could you come back in a couple of weeks?
+  topics:
+  - review
+  style: closed
+- utterance: Who could help keep an eye on your mood while we change things?
+  topics:
+  - review
+  style: open
+- utterance: Is there someone who'd notice if you started slipping?
+  topics:
+  - review
+  style: colloquial
+- utterance: Would you be happy with a follow-up appointment to monitor for relapse?
+  topics:
+  - review
+  style: clinical
+- utterance: I'd like to arrange to see you again soon, and wondered what would suit you
+  topics:
+  - review
+  style: indirect
+- utterance: Changes like this can feel unsettling; who would you lean on if things dipped?
+  topics:
+  - review
+  style: empathy_then_question
+- utterance: um so in terms of follow up when can you get back here
+  topics:
+  - review
+  style: spoken
+- utterance: When can we review things?
+  topics:
+  - review
+  style: brief
+- utterance: Anyone to support you meanwhile?
+  topics:
+  - review
+  style: brief
+- utterance: You'd be able to come back fairly soon, I expect?
+  topics:
+  - review
+  style: leading
+- utterance: Does anyone know you well enough to spot early signs of depression returning?
+  topics:
+  - review
+  style: closed
+- utterance: How easy would it be for you to come back to clinic?
+  topics:
+  - review
+  style: open
+- utterance: Would it help to have them involved in noticing if your mood dips?
+  topics:
+  - review
+  style: follow_up
+  previous:
+    interviewer: Has this had any effect on your relationship?
+    character: My partner thinks I'm no longer attracted to them. I feel ashamed and avoid being close
+      because I don't know how to explain it.
+- utterance: If we did change, how soon could you come back so we can check how it's going?
+  topics:
+  - review
+  style: follow_up
+  previous:
+    interviewer: Would you be open to changing medication?
+    character: I want the sexual problem taken seriously while keeping the mood improvement. I'd consider
+      a change, but I don't want another medicine chosen without discussing it.
+- utterance: How much are you taking, and have you ever had problems when you've missed doses?
+  topics:
+  - prescription
+  - withdrawal
+  style: stacked
+- utterance: What's been happening sexually, and how is your relationship coping?
+  topics:
+  - sexual
+  - relationship
+  style: stacked
+- utterance: Have you been depressed before, and have you ever had thoughts of suicide?
+  topics:
+  - history
+  - risk
+  style: stacked
+- utterance: Any physical health problems, and when could you come back to see me?
+  topics:
+  - physical
+  - review
+  style: stacked
+- utterance: Hello Daniel, I'm Dr Lewis, one of the psychiatrists in the clinic.
+  topics: []
+  style: introduction
+- utterance: Hi Daniel, thanks for coming in today.
+  topics: []
+  style: greeting
+- utterance: Good morning, come and have a seat.
+  topics: []
+  style: greeting
+- utterance: I'm a trainee psychiatrist working with your consultant.
+  topics: []
+  style: introduction
+- utterance: Is it all right if we talk about how the medication's going?
+  topics: []
+  style: introduction
+- utterance: What would you like to start with today?
+  topics: []
+  style: introduction
+- utterance: Before we start, do you have any questions for me?
+  topics: []
+  style: introduction
+- utterance: I'd like to move on to something a bit different now.
+  topics: []
+  style: transition
+- utterance: Can I switch to some other questions about your health?
+  topics: []
+  style: transition
+- utterance: Let's turn to what we might do next.
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, so let me sum up.
+  topics: []
+  style: closing
+- utterance: Thank you for being so open with me today, Daniel.
+  topics: []
+  style: closing
+- utterance: That sounds really frustrating when the tablets have helped in other ways.
+  topics: []
+  style: empathy
+- utterance: It makes complete sense that you'd want this taken seriously.
+  topics: []
+  style: empathy
+- utterance: I can see this hasn't been easy to bring up.
+  topics: []
+  style: empathy
+- utterance: Lots of people go through this, and it's a perfectly reasonable thing to raise.
+  topics: []
+  style: empathy
+- utterance: So your mood has improved, but the side effects are making you want to stop.
+  topics: []
+  style: summary
+- utterance: 'Let me check I''ve got this right: you feel better, but something about the tablets is bothering
+    you.'
+  topics: []
+  style: summary
+- utterance: Sexual side effects are common with this type of antidepressant, and there are several options.
+  topics: []
+  style: explanation
+- utterance: Stopping suddenly can cause unpleasant symptoms, so any change is usually done gradually.
+  topics: []
+  style: explanation
+- utterance: The chance of the depression coming back is something we'd weigh up together.
+  topics: []
+  style: explanation
+- utterance: Options can include waiting a while, adjusting the dose or switching, and we'd decide together.
+  topics: []
+  style: explanation
+- utterance: Does that make sense so far?
+  topics: []
+  style: check_understanding
+- utterance: How does that sound to you?
+  topics: []
+  style: check_understanding
+- utterance: Could you tell me in your own words what you understand about the options?
+  topics: []
+  style: check_understanding
+- utterance: Have you had any blood tests recently?
+  topics: []
+  style: off_case
+- utterance: Do you smoke at all?
+  topics: []
+  style: off_case
+- utterance: Does anyone in your family have mental health problems?
+  topics: []
+  style: off_case
+- utterance: How is your sleep at the moment?
+  topics: []
+  style: off_case
+- utterance: Have you had any talking therapy for your depression?
+  topics: []
+  style: off_case
+- utterance: Did your partner come with you today?
+  topics: []
+  style: near_miss
+- utterance: What dose did your GP first start you on?
+  topics: []
+  style: near_miss
+- utterance: Have you read the leaflet that came with the tablets?
+  topics: []
+  style: near_miss
+- utterance: Does anyone else in your family take antidepressants?
+  topics: []
+  style: near_miss
+- utterance: Have you had any other side effects, like feeling sick?
+  topics: []
+  style: near_miss

@@ -1,0 +1,812 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: behavioural-change-cognitive-assessment
+case_version: 0.1.0
+status: draft
+items:
+- utterance: What brought you along to the clinic today?
+  topics:
+  - insight
+  style: open
+- utterance: Do you think anything is wrong?
+  topics:
+  - insight
+  style: closed
+- utterance: What's all the fuss from your family about, then?
+  topics:
+  - insight
+  style: colloquial
+- utterance: What is your understanding of why you were referred?
+  topics:
+  - insight
+  style: clinical
+- utterance: I wondered how you see the concerns your family have raised
+  topics:
+  - insight
+  style: indirect
+- utterance: It can't be easy being sent along. What do they say has changed in you?
+  topics:
+  - insight
+  style: empathy_then_question
+- utterance: so um what is it your family are worried about exactly
+  topics:
+  - insight
+  style: spoken
+- utterance: And your family's concerns?
+  topics:
+  - insight
+  style: brief
+- utterance: Do you think that's something to be concerned about?
+  topics:
+  - insight
+  style: follow_up
+  previous:
+    interviewer: How do you go about the shopping?
+    character: I'd go to the shop and see what's there. I don't make a list or check what we've already
+      got, so I come home with the same things.
+- utterance: And your family, what have they said about the way you've been?
+  topics:
+  - insight
+  style: follow_up
+  previous:
+    interviewer: Do you ever say things to strangers that upset them?
+    character: Yes, I've made personal comments to strangers and laughed when they looked upset. I don't
+      see why everyone makes such a fuss.
+- utterance: You think the family are overreacting, don't you?
+  topics:
+  - insight
+  style: leading
+- utterance: How have other people described the way you've been lately?
+  topics:
+  - insight
+  style: open
+- utterance: Why do you reckon they wanted you to come?
+  topics:
+  - insight
+  style: colloquial
+- utterance: Do you feel you've changed in recent times?
+  topics:
+  - insight
+  style: closed
+- utterance: so do you think there's a problem or is it just them
+  topics:
+  - insight
+  style: spoken
+- utterance: How have you been getting along with other people when you're out?
+  topics:
+  - conduct
+  style: open
+- utterance: Have you said anything to people you don't know that upset them?
+  topics:
+  - conduct
+  style: closed
+- utterance: Have you been putting your foot in it with people lately?
+  topics:
+  - conduct
+  style: colloquial
+- utterance: Have you noticed any disinhibited behaviour in public?
+  topics:
+  - conduct
+  style: clinical
+- utterance: I'd like to hear how you respond when someone looks upset by something you say
+  topics:
+  - conduct
+  style: indirect
+- utterance: I'm not here to judge. Do you ever make remarks to strangers that they take badly?
+  topics:
+  - conduct
+  style: empathy_then_question
+- utterance: um do you ever say things to people, like out in public, that go down badly
+  topics:
+  - conduct
+  style: spoken
+- utterance: And with strangers?
+  topics:
+  - conduct
+  style: brief
+- utterance: Can you give me an example of something you said to someone?
+  topics:
+  - conduct
+  style: follow_up
+  previous:
+    interviewer: Do you think there is something wrong?
+    character: They say I've become rude and careless over the last year. I don't think there's much wrong
+      with me.
+- utterance: And when you're out and about, how do you act around other people?
+  topics:
+  - conduct
+  style: follow_up
+  previous:
+    interviewer: Do you remember what you had for breakfast?
+    character: I remember having toast with my wife this morning. I do miss appointments unless she reminds
+      me.
+- utterance: You've upset a few people by being blunt, haven't you?
+  topics:
+  - conduct
+  style: leading
+- utterance: What happens when somebody gets offended by what you say?
+  topics:
+  - conduct
+  style: open
+- utterance: Do you find it funny when people react badly to what you say?
+  topics:
+  - conduct
+  style: colloquial
+- utterance: Do you think you've become less tactful?
+  topics:
+  - conduct
+  style: closed
+- utterance: so how do you feel when someone's upset, like do you notice
+  topics:
+  - conduct
+  style: spoken
+- utterance: How do you go about doing the shopping?
+  topics:
+  - planning
+  style: open
+- utterance: Do you make a list before you go to the shops?
+  topics:
+  - planning
+  style: closed
+- utterance: How do you decide what to get when you're out?
+  topics:
+  - planning
+  style: colloquial
+- utterance: How do you plan and organise a routine task like shopping?
+  topics:
+  - planning
+  style: clinical
+- utterance: I wondered how you prepare for a trip to the supermarket
+  topics:
+  - planning
+  style: indirect
+- utterance: Everyone struggles with this sometimes. Do you check what's in the cupboards before you go?
+  topics:
+  - planning
+  style: empathy_then_question
+- utterance: um so when you go shopping what do you do, do you plan it
+  topics:
+  - planning
+  style: spoken
+- utterance: Planning a shopping trip?
+  topics:
+  - planning
+  style: brief
+- utterance: And when you shop, do you work out what you need first?
+  topics:
+  - planning
+  style: follow_up
+  previous:
+    interviewer: Have you bought anything big recently?
+    character: I bought three expensive tool sets without asking my wife. She says we can't afford it;
+      I find that embarrassing.
+- utterance: How do you manage organising something like the weekly shop?
+  topics:
+  - planning
+  style: follow_up
+  previous:
+    interviewer: Do you forget appointments?
+    character: I remember having toast with my wife this morning. I do miss appointments unless she reminds
+      me.
+- utterance: You probably just wander round and pick things up, don't you?
+  topics:
+  - planning
+  style: leading
+- utterance: Talk me through what happens when you go to buy food
+  topics:
+  - planning
+  style: open
+- utterance: Do you ever end up with the same things twice?
+  topics:
+  - planning
+  style: colloquial
+- utterance: Do you check what you've already got at home?
+  topics:
+  - planning
+  style: closed
+- utterance: so um when you do the groceries is it all planned or just see what's there
+  topics:
+  - planning
+  style: spoken
+- utterance: How is your concentration when you read?
+  topics:
+  - attention
+  style: open
+- utterance: Do you lose your place when reading?
+  topics:
+  - attention
+  style: closed
+- utterance: Do you find you can't keep your mind on things?
+  topics:
+  - attention
+  style: colloquial
+- utterance: Have you noticed any problem sustaining attention?
+  topics:
+  - attention
+  style: clinical
+- utterance: I wondered how you cope with sitting down to a book or paper
+  topics:
+  - attention
+  style: indirect
+- utterance: That sounds frustrating. Do you find it hard to stay with a task?
+  topics:
+  - attention
+  style: empathy_then_question
+- utterance: um do you get distracted when you're reading or doing something like, a job
+  topics:
+  - attention
+  style: spoken
+- utterance: And concentration?
+  topics:
+  - attention
+  style: brief
+- utterance: How about when you read the paper, can you stay with it?
+  topics:
+  - attention
+  style: follow_up
+  previous:
+    interviewer: How do you go about the shopping?
+    character: I'd go to the shop and see what's there. I don't make a list or check what we've already
+      got, so I come home with the same things.
+- utterance: And is it easy to keep your attention on something once you've started?
+  topics:
+  - attention
+  style: follow_up
+  previous:
+    interviewer: Do you forget appointments?
+    character: I remember having toast with my wife this morning. I do miss appointments unless she reminds
+      me.
+- utterance: You get bored and drift off to something else, don't you?
+  topics:
+  - attention
+  style: leading
+- utterance: How long have you noticed your attention drifting?
+  topics:
+  - attention
+  style: open
+- utterance: Do you start things and then wander off?
+  topics:
+  - attention
+  style: colloquial
+- utterance: Can you follow a newspaper article from start to finish?
+  topics:
+  - attention
+  style: closed
+- utterance: so can you stick with a thing or do you flit about
+  topics:
+  - attention
+  style: spoken
+- utterance: How is your memory these days?
+  topics:
+  - memory
+  style: open
+- utterance: Do you remember what you had for breakfast?
+  topics:
+  - memory
+  style: closed
+- utterance: Do you forget appointments?
+  topics:
+  - memory
+  style: colloquial
+- utterance: Have you noticed any impairment in recent memory?
+  topics:
+  - memory
+  style: clinical
+- utterance: I wanted to ask about how well you remember recent things
+  topics:
+  - memory
+  style: indirect
+- utterance: Lots of people notice this as they get older. Do you miss appointments unless someone reminds
+    you?
+  topics:
+  - memory
+  style: empathy_then_question
+- utterance: um what did you have this morning like for breakfast and so on
+  topics:
+  - memory
+  style: spoken
+- utterance: And remembering things?
+  topics:
+  - memory
+  style: brief
+- utterance: Thanks. What about remembering things that happened earlier today?
+  topics:
+  - memory
+  style: follow_up
+  previous:
+    interviewer: Do you lose your place when you read?
+    character: Yes, I lose my place reading and move to something else. It's been happening for about
+      a year.
+- utterance: What did you do this morning?
+  topics:
+  - memory
+  style: follow_up
+  previous:
+    interviewer: What do you make of people saying you've changed?
+    character: They say I've become rude and careless over the last year. I don't think there's much wrong
+      with me.
+- utterance: Your memory is perfectly fine, isn't it?
+  topics:
+  - memory
+  style: leading
+- utterance: Tell me what you did earlier today
+  topics:
+  - memory
+  style: open
+- utterance: Does anyone have to remind you about where you need to be?
+  topics:
+  - memory
+  style: colloquial
+- utterance: Have you missed any appointments lately?
+  topics:
+  - memory
+  style: closed
+- utterance: so who does the remembering, you or someone else
+  topics:
+  - memory
+  style: spoken
+- utterance: Could you tell me as many animals as you can think of?
+  topics:
+  - fluency
+  style: open
+- utterance: Can you name some animals for me?
+  topics:
+  - fluency
+  style: closed
+- utterance: Give me all the animals you can come up with
+  topics:
+  - fluency
+  style: colloquial
+- utterance: 'I''d like to test your verbal fluency: name as many animals as possible'
+  topics:
+  - fluency
+  style: clinical
+- utterance: I wondered if you could try something and think of some animals
+  topics:
+  - fluency
+  style: indirect
+- utterance: Just have a go, no pressure. Which animals can you think of?
+  topics:
+  - fluency
+  style: empathy_then_question
+- utterance: um can you name me some animals, as many as you can
+  topics:
+  - fluency
+  style: spoken
+- utterance: Name some animals?
+  topics:
+  - fluency
+  style: brief
+- utterance: Okay. Now, can you think of animals for me, as many as possible?
+  topics:
+  - fluency
+  style: follow_up
+  previous:
+    interviewer: What do a bike and a bus have in common?
+    character: A bicycle has two wheels and a bus has more. I don't see what else you're asking.
+- utterance: Thanks. I'd like you to name some animals now, as many as you can.
+  topics:
+  - fluency
+  style: follow_up
+  previous:
+    interviewer: How do you go about the shopping?
+    character: I'd go to the shop and see what's there. I don't make a list or check what we've already
+      got, so I come home with the same things.
+- utterance: You can think of loads of animals, can't you?
+  topics:
+  - fluency
+  style: leading
+- utterance: When I ask you for animals, what comes to mind?
+  topics:
+  - fluency
+  style: open
+- utterance: How many animals can you list off the top of your head?
+  topics:
+  - fluency
+  style: colloquial
+- utterance: Could you list animals starting now, for about a minute?
+  topics:
+  - fluency
+  style: closed
+- utterance: so what animals can you think of, any animals, go on
+  topics:
+  - fluency
+  style: spoken
+- utterance: How would you say a bicycle and a bus are alike?
+  topics:
+  - abstraction
+  style: open
+- utterance: Are a bus and a bicycle similar in any way?
+  topics:
+  - abstraction
+  style: closed
+- utterance: Could you identify the similarity between a bicycle and a bus?
+  topics:
+  - abstraction
+  style: clinical
+- utterance: I wondered what you thought a bus and a bike share
+  topics:
+  - abstraction
+  style: indirect
+- utterance: Don't worry about getting it right. What's similar about a bus and a bicycle?
+  topics:
+  - abstraction
+  style: empathy_then_question
+- utterance: um so a bike and a bus, how are they the same
+  topics:
+  - abstraction
+  style: spoken
+- utterance: Bus and bicycle, similarity?
+  topics:
+  - abstraction
+  style: brief
+- utterance: Good. Now what's the same about a bicycle and a bus?
+  topics:
+  - abstraction
+  style: follow_up
+  previous:
+    interviewer: Name as many animals as you can.
+    character: A dog, a cat, a horse, a dog. That's what comes to mind.
+- utterance: 'Thanks. Let me ask something different: what is similar about a bus and a bike?'
+  topics:
+  - abstraction
+  style: follow_up
+  previous:
+    interviewer: How do you go about the shopping?
+    character: I'd go to the shop and see what's there. I don't make a list or check what we've already
+      got, so I come home with the same things.
+- utterance: They're really quite similar, a bus and a bike, aren't they?
+  topics:
+  - abstraction
+  style: leading
+- utterance: In what way are a bus and a bicycle the same sort of thing?
+  topics:
+  - abstraction
+  style: open
+- utterance: How would you put a bike and a bus in the same group?
+  topics:
+  - abstraction
+  style: colloquial
+- utterance: Is there anything that links a bicycle and a bus?
+  topics:
+  - abstraction
+  style: closed
+- utterance: so what is it that's alike between a bike and a bus
+  topics:
+  - abstraction
+  style: spoken
+- utterance: How are you managing with things like cooking at home?
+  topics:
+  - risk
+  style: open
+- utterance: Have you had any accidents in the kitchen?
+  topics:
+  - risk
+  style: closed
+- utterance: Ever left something on the cooker?
+  topics:
+  - risk
+  style: colloquial
+- utterance: Have there been any safety incidents involving cooking?
+  topics:
+  - risk
+  style: clinical
+- utterance: I wondered how safe things are at home when you're on your own
+  topics:
+  - risk
+  style: indirect
+- utterance: It must be worrying to think about. Has anything gone wrong at home, like with the cooker?
+  topics:
+  - risk
+  style: empathy_then_question
+- utterance: um have you ever forgotten the hob or something being on
+  topics:
+  - risk
+  style: spoken
+- utterance: And driving?
+  topics:
+  - risk
+  style: brief
+- utterance: Has forgetting ever led to anything dangerous at home?
+  topics:
+  - risk
+  style: follow_up
+  previous:
+    interviewer: Do you forget appointments?
+    character: I remember having toast with my wife this morning. I do miss appointments unless she reminds
+      me.
+- utterance: Has anyone raised concerns about your driving?
+  topics:
+  - risk
+  style: follow_up
+  previous:
+    interviewer: What do you make of people saying you've changed?
+    character: They say I've become rude and careless over the last year. I don't think there's much wrong
+      with me.
+- utterance: You've had a few near misses at home, haven't you?
+  topics:
+  - risk
+  style: leading
+- utterance: What changes have been made at home to keep things safe?
+  topics:
+  - risk
+  style: open
+- utterance: Do you still drive?
+  topics:
+  - risk
+  style: colloquial
+- utterance: Has anyone been worried about you at the wheel?
+  topics:
+  - risk
+  style: closed
+- utterance: so does anyone worry about you with the cooker or the car
+  topics:
+  - risk
+  style: spoken
+- utterance: How do you handle money these days?
+  topics:
+  - money
+  style: open
+- utterance: Have you bought anything big recently?
+  topics:
+  - money
+  style: closed
+- utterance: Have you been splashing out on stuff?
+  topics:
+  - money
+  style: colloquial
+- utterance: Have there been any changes in your spending habits?
+  topics:
+  - money
+  style: clinical
+- utterance: I wondered whether money has caused any disagreements at home
+  topics:
+  - money
+  style: indirect
+- utterance: I'm sure it's frustrating to be questioned. Has anyone been unhappy about what you've bought?
+  topics:
+  - money
+  style: empathy_then_question
+- utterance: um so spending, have you been buying things the family doesn't like
+  topics:
+  - money
+  style: spoken
+- utterance: And spending?
+  topics:
+  - money
+  style: brief
+- utterance: What about things you buy that aren't groceries?
+  topics:
+  - money
+  style: follow_up
+  previous:
+    interviewer: How do you go about the shopping?
+    character: I'd go to the shop and see what's there. I don't make a list or check what we've already
+      got, so I come home with the same things.
+- utterance: Has the family disagreed with you about what you spend?
+  topics:
+  - money
+  style: follow_up
+  previous:
+    interviewer: How do you feel when everyone corrects you?
+    character: I get cross when everyone corrects me. Underneath that I'm worried they won't let me decide
+      anything.
+- utterance: You've been spending more than you used to, haven't you?
+  topics:
+  - money
+  style: leading
+- utterance: Tell me about the last big purchase you made
+  topics:
+  - money
+  style: open
+- utterance: Do you and the family ever argue about what you buy?
+  topics:
+  - money
+  style: colloquial
+- utterance: Do you discuss purchases with your family first?
+  topics:
+  - money
+  style: closed
+- utterance: so have you bought anything lately that caused a row
+  topics:
+  - money
+  style: spoken
+- utterance: How do you feel when your family correct you?
+  topics:
+  - feelings
+  style: open
+- utterance: Does it make you cross when people correct you?
+  topics:
+  - feelings
+  style: closed
+- utterance: Does it get your back up when they tell you you're wrong?
+  topics:
+  - feelings
+  style: colloquial
+- utterance: How do you respond emotionally to criticism from family?
+  topics:
+  - feelings
+  style: clinical
+- utterance: I wondered what goes through your mind when the family raise their concerns
+  topics:
+  - feelings
+  style: indirect
+- utterance: This must be tiring for you. Are you worried about anyone taking decisions away from you?
+  topics:
+  - feelings
+  style: empathy_then_question
+- utterance: um what's it like for you when everyone's telling you what to do
+  topics:
+  - feelings
+  style: spoken
+- utterance: How does that feel?
+  topics:
+  - feelings
+  style: brief
+- utterance: How does that make you feel underneath?
+  topics:
+  - feelings
+  style: follow_up
+  previous:
+    interviewer: Have you bought anything big recently?
+    character: I bought three expensive tool sets without asking my wife. She says we can't afford it;
+      I find that embarrassing.
+- utterance: Is it hard hearing that from them?
+  topics:
+  - feelings
+  style: follow_up
+  previous:
+    interviewer: What brought you along today?
+    character: They say I've become rude and careless over the last year. I don't think there's much wrong
+      with me.
+- utterance: It's frustrating being told what to do, isn't it?
+  topics:
+  - feelings
+  style: leading
+- utterance: What worries you most about all of this?
+  topics:
+  - feelings
+  style: open
+- utterance: Are you afraid they'll take over?
+  topics:
+  - feelings
+  style: colloquial
+- utterance: Is there anything you're anxious about regarding decisions?
+  topics:
+  - feelings
+  style: closed
+- utterance: so um underneath it all are you bothered by this
+  topics:
+  - feelings
+  style: spoken
+- utterance: Do you lose your place when reading, and do you remember what you did this morning?
+  topics:
+  - attention
+  - memory
+  style: stacked
+- utterance: How do you plan the shopping, and has anyone been unhappy with what you buy?
+  topics:
+  - planning
+  - money
+  style: stacked
+- utterance: Have you upset strangers lately, and do you think anything is wrong with you?
+  topics:
+  - conduct
+  - insight
+  style: stacked
+- utterance: Can you name some animals, and then tell me how a bike and a bus are alike?
+  topics:
+  - fluency
+  - abstraction
+  style: stacked
+- utterance: Good afternoon, Malcolm.
+  topics: []
+  style: greeting
+- utterance: Hello Malcolm, thanks for coming in today.
+  topics: []
+  style: greeting
+- utterance: Hi Malcolm, please come and sit down.
+  topics: []
+  style: greeting
+- utterance: I'm Dr Rees and I work in this clinic with older adults.
+  topics: []
+  style: introduction
+- utterance: Malcolm, my name's Dr Rees, and I'll be asking you a few things today.
+  topics: []
+  style: introduction
+- utterance: I'm one of the doctors here, and I'd like to get to know you a bit.
+  topics: []
+  style: introduction
+- utterance: Is it all right if we have a chat?
+  topics: []
+  style: introduction
+- utterance: What would you like to start with?
+  topics: []
+  style: introduction
+- utterance: Before we start, is there anything you want to ask me?
+  topics: []
+  style: introduction
+- utterance: I'd like to move on to something different now.
+  topics: []
+  style: transition
+- utterance: Shall we try a few short questions next?
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Malcolm.
+  topics: []
+  style: closing
+- utterance: Thank you for talking with me today.
+  topics: []
+  style: closing
+- utterance: It can't be pleasant to feel everyone is watching what you do.
+  topics: []
+  style: empathy
+- utterance: Coming here when you don't feel you need to must be annoying.
+  topics: []
+  style: empathy
+- utterance: That sounds like a worry to carry.
+  topics: []
+  style: empathy
+- utterance: I can see this isn't easy to talk about.
+  topics: []
+  style: empathy
+- utterance: So your family are concerned about changes but you feel you are doing fine.
+  topics: []
+  style: summary
+- utterance: Let me go over what you've said about the last few months.
+  topics: []
+  style: summary
+- utterance: To pull together what we've covered, you cope better with practical things than with planning.
+  topics: []
+  style: summary
+- utterance: I'm going to ask you some short questions, and some will seem unusual.
+  topics: []
+  style: explanation
+- utterance: This isn't a pass or fail test, I'm just getting a picture of how you think.
+  topics: []
+  style: explanation
+- utterance: What you say today helps us decide who else to talk to.
+  topics: []
+  style: explanation
+- utterance: Does that make sense so far?
+  topics: []
+  style: check_understanding
+- utterance: Have I understood you properly?
+  topics: []
+  style: check_understanding
+- utterance: Is it clear why I'm asking these questions?
+  topics: []
+  style: check_understanding
+- utterance: Do you drink alcohol?
+  topics: []
+  style: off_case
+- utterance: Have you ever had a head injury?
+  topics: []
+  style: off_case
+- utterance: How is your hearing?
+  topics: []
+  style: off_case
+- utterance: What was your work before you retired?
+  topics: []
+  style: off_case
+- utterance: Are you taking any tablets from your GP?
+  topics: []
+  style: off_case
+- utterance: What did you eat for lunch yesterday?
+  topics: []
+  style: near_miss
+- utterance: Do you have any pets at home?
+  topics: []
+  style: near_miss
+- utterance: Do you own a bike or use the bus?
+  topics: []
+  style: near_miss
+- utterance: Do you have a favourite shop?
+  topics: []
+  style: near_miss
+- utterance: What time do you usually get up in the morning?
+  topics: []
+  style: near_miss
+- utterance: Who is the prime minister?
+  topics: []
+  style: near_miss

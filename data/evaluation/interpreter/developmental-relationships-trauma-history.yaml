@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: developmental-relationships-trauma-history
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hello Leila, I'm one of the doctors here, thanks for coming in today."
+    expected: []
+    rapport: false
+  - utterance: "Who did you grow up with?"
+    expected: [caregivers]
+    rapport: false
+  - utterance: "When you were little and upset, who could you go to?"
+    expected: [attachment]
+    rapport: false
+  - utterance: "Is it okay if I ask whether there was anything difficult or frightening at home growing up?"
+    expected: [adversity]
+    rapport: false
+  - utterance: "How did you get on at school academically?"
+    expected: [school]
+    rapport: false
+  - utterance: "Did you have friends as a kid?"
+    expected: [peers]
+    rapport: false
+  - utterance: "What were your teenage years like?"
+    expected: [adolescence]
+    rapport: false
+  - utterance: "What tends to happen in your relationships when you start getting close to someone?"
+    expected: [pattern]
+    rapport: false
+  - utterance: "When things get tense with someone, what happens to your feelings?"
+    expected: [numbness]
+    rapport: false
+  - utterance: "Have you ever had thoughts of ending your life, or harmed yourself?"
+    expected: [risk]
+    rapport: false
+  - utterance: "What are you hoping to get from therapy?"
+    expected: [needs]
+    rapport: false
+  - utterance: "It sounds like you had to look after yourself from a very young age, and that must have been hard."
+    expected: []
+    rapport: true
+  - utterance: "Thank you for trusting me with this, I know it isn't easy to talk about."
+    expected: []
+    rapport: true
+  - utterance: "and what was she like with you?"
+    previous:
+      interviewer: "Who looked after you after school?"
+      character: "My grandmother, most afternoons until I was eleven."
+    expected: [attachment]
+    rapport: false
+  - utterance: "Predictable compared with home... in what way was home different?"
+    previous:
+      interviewer: "How did you find school?"
+      character: "I did well, and it felt predictable compared with home."
+    expected: [adversity]
+    rapport: false
+  - utterance: "Do you have any brothers or sisters?"
+    expected: []
+    rapport: false
+  - utterance: "What do you do for work these days?"
+    expected: []
+    rapport: false
+  - utterance: "So far you've told me about your family and school, and I'd like to move on to relationships now."
+    expected: []
+    rapport: false

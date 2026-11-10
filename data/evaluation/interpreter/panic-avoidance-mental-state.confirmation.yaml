@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: panic-avoidance-mental-state
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Owen, what happens in your body from the first sign of an attack until it eases?
+  expected:
+  - attack-sensations
+  rapport: false
+- utterance: When did the attacks first begin, and can they happen when you're at home as well?
+  expected:
+  - course
+  rapport: false
+- utterance: As the fear builds, what explanation goes through your mind for those sensations?
+  expected:
+  - catastrophic-thought
+  rapport: false
+- utterance: Between attacks, how much time goes on waiting for another or checking your body?
+  expected:
+  - anticipation
+  rapport: false
+- utterance: What is it about being on a bus or in a supermarket that makes you avoid it?
+  expected:
+  - avoidance
+  rapport: false
+- utterance: How have the attacks changed what you can manage at work and around the house?
+  expected:
+  - function
+  rapport: false
+- utterance: When panic is at its worst, are you afraid you are about to die?
+  expected:
+  - catastrophic-thought
+  rapport: false
+- utterance: Separate from panic, have you wanted your life to end or planned to harm yourself?
+  expected:
+  - suicide-risk
+  rapport: false
+- utterance: have you started using alcohol to help you face that?
+  expected:
+  - alcohol
+  rapport: false
+  previous:
+    interviewer: Which situations do you avoid?
+    character: I avoid buses and supermarkets because I worry I won't be able to get out or get help quickly.
+- utterance: Do you ever faint and completely lose consciousness during one of these attacks?
+  expected: []
+  rapport: false

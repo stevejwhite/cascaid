@@ -1,0 +1,718 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: redundancy-depression-history
+case_version: 0.1.0
+status: draft
+items:
+- utterance: When did you first notice your mood dropping?
+  topics:
+  - onset
+  style: open
+- utterance: How have you been feeling since you lost your job?
+  topics:
+  - onset
+  style: open
+- utterance: Do you feel low most of the day?
+  topics:
+  - onset
+  style: closed
+- utterance: Is the low mood there even on better days?
+  topics:
+  - onset
+  style: closed
+- utterance: How long have you had persistently low mood?
+  topics:
+  - onset
+  style: clinical
+- utterance: I'd like to hear how your mood has been over the last few months
+  topics:
+  - onset
+  style: indirect
+- utterance: Losing your job is a big thing. How has your mood been since?
+  topics:
+  - onset
+  style: empathy_then_question
+- utterance: so um when did when did things start feeling bad
+  topics:
+  - onset
+  style: spoken
+- utterance: And your mood?
+  topics:
+  - onset
+  style: brief
+- utterance: Low for how long?
+  topics:
+  - onset
+  style: brief
+- utterance: Has it been getting worse over those weeks?
+  topics:
+  - onset
+  style: follow_up
+  previous:
+    interviewer: Tell me about what's been going on, Owen.
+    character: I lost my job three months ago. For the last six weeks I've felt low nearly all day, even
+      when nothing particular has happened.
+- utterance: You've been feeling pretty down for a while now, haven't you?
+  topics:
+  - onset
+  style: leading
+- utterance: Tell me about your mood day to day.
+  topics:
+  - onset
+  style: open
+- utterance: Did it start straight after the redundancy?
+  topics:
+  - onset
+  style: closed
+- utterance: What do you still enjoy doing?
+  topics:
+  - enjoyment
+  style: open
+- utterance: How do you spend your free time at the moment?
+  topics:
+  - enjoyment
+  style: open
+- utterance: Do you get any pleasure out of things now?
+  topics:
+  - enjoyment
+  style: closed
+- utterance: Are you still seeing your friends?
+  topics:
+  - enjoyment
+  style: closed
+- utterance: What do you do for fun these days?
+  topics:
+  - enjoyment
+  style: colloquial
+- utterance: Have you lost interest in things you used to enjoy?
+  topics:
+  - enjoyment
+  style: clinical
+- utterance: I wondered whether you're still getting out to do the things you like
+  topics:
+  - enjoyment
+  style: indirect
+- utterance: It's hard when everything feels flat. Is there anything you look forward to?
+  topics:
+  - enjoyment
+  style: empathy_then_question
+- utterance: um what about hobbies and that do you still do them
+  topics:
+  - enjoyment
+  style: spoken
+- utterance: Still enjoying anything?
+  topics:
+  - enjoyment
+  style: brief
+- utterance: Interests these days?
+  topics:
+  - enjoyment
+  style: brief
+- utterance: When did you last go out with your mates?
+  topics:
+  - enjoyment
+  style: follow_up
+  previous:
+    interviewer: What do you enjoy doing these days?
+    character: No, I don't enjoy football or seeing friends now. I turn down invitations and sit indoors
+      most days.
+- utterance: I'd guess things you used to like don't appeal much now?
+  topics:
+  - enjoyment
+  style: leading
+- utterance: Tell me about the things you used to look forward to.
+  topics:
+  - enjoyment
+  style: open
+- utterance: Have you been staying in more than usual?
+  topics:
+  - enjoyment
+  style: closed
+- utterance: What's a typical night like for you?
+  topics:
+  - sleep
+  style: open
+- utterance: Are you waking up early in the morning?
+  topics:
+  - sleep
+  style: closed
+- utterance: Do you manage to get back off once you wake?
+  topics:
+  - sleep
+  style: closed
+- utterance: Getting much kip?
+  topics:
+  - sleep
+  style: colloquial
+- utterance: Have you noticed early morning wakening?
+  topics:
+  - sleep
+  style: clinical
+- utterance: I'd like to know more about the sleep problems
+  topics:
+  - sleep
+  style: indirect
+- utterance: Bad nights can make everything harder. What time do you wake up?
+  topics:
+  - sleep
+  style: empathy_then_question
+- utterance: and er your sleep like what time do you um nod off
+  topics:
+  - sleep
+  style: spoken
+- utterance: And sleep?
+  topics:
+  - sleep
+  style: brief
+- utterance: Sleeping through at all?
+  topics:
+  - sleep
+  style: brief
+- utterance: What do you do when you're lying awake then?
+  topics:
+  - sleep
+  style: follow_up
+  previous:
+    interviewer: How's your sleep been?
+    character: I fall asleep around midnight but wake at four and can't get back to sleep. That happens
+      every night.
+- utterance: I imagine you're not sleeping well at all?
+  topics:
+  - sleep
+  style: leading
+- utterance: Talk me through what happens from when you go to bed.
+  topics:
+  - sleep
+  style: open
+- utterance: Is it every night or just some nights?
+  topics:
+  - sleep
+  style: closed
+- utterance: What are you eating in a normal day?
+  topics:
+  - appetite
+  style: open
+- utterance: Have you lost any weight?
+  topics:
+  - appetite
+  style: closed
+- utterance: Do you feel hungry at mealtimes?
+  topics:
+  - appetite
+  style: closed
+- utterance: Are you eating okay?
+  topics:
+  - appetite
+  style: colloquial
+- utterance: Have you noticed any change in appetite or weight?
+  topics:
+  - appetite
+  style: clinical
+- utterance: I wondered whether your eating has changed
+  topics:
+  - appetite
+  style: indirect
+- utterance: When you're low it's easy to stop bothering with food. How many meals are you having?
+  topics:
+  - appetite
+  style: empathy_then_question
+- utterance: um food wise are you um eating much
+  topics:
+  - appetite
+  style: spoken
+- utterance: And your appetite?
+  topics:
+  - appetite
+  style: brief
+- utterance: Any weight loss?
+  topics:
+  - appetite
+  style: brief
+- utterance: Have your clothes become looser?
+  topics:
+  - appetite
+  style: follow_up
+  previous:
+    interviewer: How's your eating?
+    character: I don't feel hungry and usually eat one meal daily. I've lost four kilograms in six weeks.
+- utterance: You've probably gone off your food a bit?
+  topics:
+  - appetite
+  style: leading
+- utterance: Tell me about mealtimes at the moment.
+  topics:
+  - appetite
+  style: open
+- utterance: Has anyone commented that you've lost weight?
+  topics:
+  - appetite
+  style: closed
+- utterance: How are you managing day to day?
+  topics:
+  - function
+  style: open
+- utterance: Can you concentrate on things like reading or forms?
+  topics:
+  - function
+  style: closed
+- utterance: Are you getting on with job applications?
+  topics:
+  - function
+  style: closed
+- utterance: Getting much done around the house?
+  topics:
+  - function
+  style: colloquial
+- utterance: Have you noticed problems with energy or concentration?
+  topics:
+  - function
+  style: clinical
+- utterance: I'd like to understand how you're coping with everyday jobs
+  topics:
+  - function
+  style: indirect
+- utterance: Job hunting is exhausting at the best of times. How's your concentration?
+  topics:
+  - function
+  style: empathy_then_question
+- utterance: um and like getting stuff done are you are you managing
+  topics:
+  - function
+  style: spoken
+- utterance: And your energy?
+  topics:
+  - function
+  style: brief
+- utterance: Concentration okay?
+  topics:
+  - function
+  style: brief
+- utterance: How long can you focus before you give up?
+  topics:
+  - function
+  style: follow_up
+  previous:
+    interviewer: How's your energy?
+    character: I'm exhausted and can't concentrate long enough to finish a job application. My partner
+      has taken over most household tasks.
+- utterance: I'd imagine you feel tired a lot of the time?
+  topics:
+  - function
+  style: leading
+- utterance: Who's doing the chores at home at the moment?
+  topics:
+  - function
+  style: open
+- utterance: Do you feel worn out even after resting?
+  topics:
+  - function
+  style: closed
+- utterance: What's your history with your mental health?
+  topics:
+  - past
+  style: open
+- utterance: Have you had treatment for depression in the past?
+  topics:
+  - past
+  style: closed
+- utterance: Did you ever see a doctor about your mood before?
+  topics:
+  - past
+  style: closed
+- utterance: Ever been through a patch like this before?
+  topics:
+  - past
+  style: colloquial
+- utterance: Have you ever had a period of elevated mood or reduced need for sleep?
+  topics:
+  - past
+  style: clinical
+- utterance: I'd like to ask about earlier episodes, if there have been any
+  topics:
+  - past
+  style: indirect
+- utterance: I know this feels endless. Has there been a time before when you felt this low?
+  topics:
+  - past
+  style: empathy_then_question
+- utterance: um have you have you had times where you're really hyper and don't need sleep
+  topics:
+  - past
+  style: spoken
+- utterance: Any previous episodes?
+  topics:
+  - past
+  style: brief
+- utterance: Past mental health problems?
+  topics:
+  - past
+  style: brief
+- utterance: And no times of being much more energetic than usual?
+  topics:
+  - past
+  style: follow_up
+  previous:
+    interviewer: Have you felt like this before?
+    character: No, I've never had an episode like this, treatment for mental illness, or a spell of needing
+      little sleep while unusually energetic.
+- utterance: This is the first time it's been this bad, isn't it?
+  topics:
+  - past
+  style: leading
+- utterance: Tell me about any times you've felt unusually high or wired.
+  topics:
+  - past
+  style: open
+- utterance: Were you ever prescribed antidepressants?
+  topics:
+  - past
+  style: closed
+- utterance: What's your drinking like these days?
+  topics:
+  - alcohol
+  style: open
+- utterance: Do you drink alcohol?
+  topics:
+  - alcohol
+  style: closed
+- utterance: Have you been drinking more since losing your job?
+  topics:
+  - alcohol
+  style: closed
+- utterance: Having a few beers to get through the evenings?
+  topics:
+  - alcohol
+  style: colloquial
+- utterance: Could you tell me your weekly alcohol intake?
+  topics:
+  - alcohol
+  style: clinical
+- utterance: I wanted to ask about alcohol and drugs
+  topics:
+  - alcohol
+  style: indirect
+- utterance: A lot of people turn to drink when things are tough. How much do you have in an evening?
+  topics:
+  - alcohol
+  style: empathy_then_question
+- utterance: and um alcohol do you do you drink much
+  topics:
+  - alcohol
+  style: spoken
+- utterance: Any drugs?
+  topics:
+  - alcohol
+  style: brief
+- utterance: And alcohol?
+  topics:
+  - alcohol
+  style: brief
+- utterance: Has it crept up over the last few months?
+  topics:
+  - alcohol
+  style: follow_up
+  previous:
+    interviewer: Do you drink?
+    character: I drink two cans of lager most evenings, more than before redundancy. I don't use recreational
+      drugs.
+- utterance: I'm guessing you might be drinking a bit more than before?
+  topics:
+  - alcohol
+  style: leading
+- utterance: Tell me about any recreational drug use.
+  topics:
+  - alcohol
+  style: open
+- utterance: Is there a day of the week you don't drink?
+  topics:
+  - alcohol
+  style: closed
+- utterance: When things feel this bad, what thoughts go through your mind about dying?
+  topics:
+  - suicide
+  style: open
+- utterance: Can I ask whether you've had thoughts of ending your life?
+  topics:
+  - suicide
+  style: open
+- utterance: Have you felt life isn't worth living?
+  topics:
+  - suicide
+  style: closed
+- utterance: Have you made any plans to end your life?
+  topics:
+  - suicide
+  style: closed
+- utterance: Ever felt you'd be better off out of it?
+  topics:
+  - suicide
+  style: colloquial
+- utterance: Do you have any suicidal thoughts?
+  topics:
+  - suicide
+  style: clinical
+- utterance: I'd like to ask gently about any thoughts of harming yourself
+  topics:
+  - suicide
+  style: indirect
+- utterance: It sounds like things have been really heavy. Have you had thoughts of wanting to die?
+  topics:
+  - suicide
+  style: empathy_then_question
+- utterance: um i need to ask have you had any thoughts about um killing yourself
+  topics:
+  - suicide
+  style: spoken
+- utterance: Thoughts of ending things?
+  topics:
+  - suicide
+  style: brief
+- utterance: Any plans to act?
+  topics:
+  - suicide
+  style: brief
+- utterance: Have you done anything to prepare, like looking things up?
+  topics:
+  - suicide
+  style: follow_up
+  previous:
+    interviewer: Have you had thoughts of ending your life?
+    character: Sometimes I wish I wouldn't wake up. I haven't made a plan or preparations and don't intend
+      to act, but I haven't told my partner.
+- utterance: I wonder if it's got to the point where you've thought about dying?
+  topics:
+  - suicide
+  style: leading
+- utterance: What goes through your mind when things feel hopeless?
+  topics:
+  - suicide
+  style: open
+- utterance: Is there any intention to act on those thoughts?
+  topics:
+  - suicide
+  style: closed
+- utterance: What sort of things do you say to yourself about losing the job?
+  topics:
+  - self-worth
+  style: open
+- utterance: Do you blame yourself for the redundancy?
+  topics:
+  - self-worth
+  style: closed
+- utterance: Are you feeling guilty about anything?
+  topics:
+  - self-worth
+  style: closed
+- utterance: Being hard on yourself?
+  topics:
+  - self-worth
+  style: colloquial
+- utterance: Have you been experiencing feelings of worthlessness?
+  topics:
+  - self-worth
+  style: clinical
+- utterance: I wondered how you see yourself these days
+  topics:
+  - self-worth
+  style: indirect
+- utterance: You've been through a big loss. Do you feel you've let anyone down?
+  topics:
+  - self-worth
+  style: empathy_then_question
+- utterance: um do you feel like you're sort of a failure at the moment
+  topics:
+  - self-worth
+  style: spoken
+- utterance: And how you see yourself?
+  topics:
+  - self-worth
+  style: brief
+- utterance: Feeling worthless?
+  topics:
+  - self-worth
+  style: brief
+- utterance: How do you feel about your partner doing all that?
+  topics:
+  - self-worth
+  style: follow_up
+  previous:
+    interviewer: How are things at home?
+    character: I'm exhausted and can't concentrate long enough to finish a job application. My partner
+      has taken over most household tasks.
+- utterance: I get the sense you're quite critical of yourself?
+  topics:
+  - self-worth
+  style: leading
+- utterance: What's your opinion of yourself been like since all this?
+  topics:
+  - self-worth
+  style: open
+- utterance: Do you think you're of use to the people around you?
+  topics:
+  - self-worth
+  style: closed
+- utterance: Who's around to support you?
+  topics:
+  - support
+  style: open
+- utterance: What keeps you going at the moment?
+  topics:
+  - support
+  style: open
+- utterance: Is there someone at home you can talk to?
+  topics:
+  - support
+  style: closed
+- utterance: Would you tell someone if you felt unsafe?
+  topics:
+  - support
+  style: closed
+- utterance: Who's got your back at the moment?
+  topics:
+  - support
+  style: colloquial
+- utterance: What reasons do you have for staying alive?
+  topics:
+  - support
+  style: clinical
+- utterance: I'd like to know who you can turn to when things get bad
+  topics:
+  - support
+  style: indirect
+- utterance: It helps to know who's on your side. Who checks in on you?
+  topics:
+  - support
+  style: empathy_then_question
+- utterance: um who would you who would you talk to if it got worse
+  topics:
+  - support
+  style: spoken
+- utterance: Any support at home?
+  topics:
+  - support
+  style: brief
+- utterance: Reasons to keep going?
+  topics:
+  - support
+  style: brief
+- utterance: If those thoughts got stronger, who would you tell?
+  topics:
+  - support
+  style: follow_up
+  previous:
+    interviewer: Have you had any thoughts of not wanting to be here?
+    character: Sometimes I wish I wouldn't wake up. I haven't made a plan or preparations and don't intend
+      to act, but I haven't told my partner.
+- utterance: You've got some people around you, I hope?
+  topics:
+  - support
+  style: leading
+- utterance: Tell me about the people you live with.
+  topics:
+  - support
+  style: open
+- utterance: How are you sleeping, and how's your appetite?
+  topics:
+  - sleep
+  - appetite
+  style: stacked
+- utterance: Have you had thoughts of ending your life, and who could you turn to?
+  topics:
+  - suicide
+  - support
+  style: stacked
+- utterance: How's your energy, and do you still enjoy anything?
+  topics:
+  - function
+  - enjoyment
+  style: stacked
+- utterance: I'm one of the psychiatrists here; I'll be talking with you for a few minutes.
+  topics: []
+  style: introduction
+- utterance: Is it all right if I ask you some questions about how things have been?
+  topics: []
+  style: introduction
+- utterance: Before we start, is there anything you want to ask me?
+  topics: []
+  style: introduction
+- utterance: Where would you like to begin?
+  topics: []
+  style: transition
+- utterance: I'd like to move on to something different now.
+  topics: []
+  style: transition
+- utterance: Can we switch to some more general questions for a bit?
+  topics: []
+  style: transition
+- utterance: Next I'm going to ask about a few physical things.
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Owen.
+  topics: []
+  style: closing
+- utterance: Thank you for being so open with me today.
+  topics: []
+  style: closing
+- utterance: Let's agree what happens next before you go.
+  topics: []
+  style: closing
+- utterance: Losing a job can knock anyone's confidence.
+  topics: []
+  style: empathy
+- utterance: Take your time, there's no rush.
+  topics: []
+  style: empathy
+- utterance: I can see it's taken a lot to come in today.
+  topics: []
+  style: empathy
+- utterance: So since the redundancy you've been low, sleeping badly and staying in.
+  topics: []
+  style: summary
+- utterance: Let me make sure I've understood everything so far.
+  topics: []
+  style: summary
+- utterance: What you're describing sounds like it could be depression, and it's treatable.
+  topics: []
+  style: explanation
+- utterance: I ask everyone these questions; it helps me understand the whole picture.
+  topics: []
+  style: explanation
+- utterance: There are talking therapies and medication we can think about together.
+  topics: []
+  style: explanation
+- utterance: Does that make sense so far?
+  topics: []
+  style: check_understanding
+- utterance: Have I got that right?
+  topics: []
+  style: check_understanding
+- utterance: Do you smoke?
+  topics: []
+  style: off_case
+- utterance: Does anyone in your family have depression?
+  topics: []
+  style: off_case
+- utterance: Are you taking any medication from your GP at the moment?
+  topics: []
+  style: off_case
+- utterance: Are you in any debt since losing the job?
+  topics: []
+  style: off_case
+- utterance: Have you had any thyroid tests or bloods recently?
+  topics: []
+  style: off_case
+- utterance: How long did you work there?
+  topics: []
+  style: near_miss
+- utterance: Which football team do you support?
+  topics: []
+  style: near_miss
+- utterance: How much redundancy pay did you get?
+  topics: []
+  style: near_miss
+- utterance: Do you take anything to help you sleep?
+  topics: []
+  style: near_miss
+- utterance: How long have you been with your partner?
+  topics: []
+  style: near_miss

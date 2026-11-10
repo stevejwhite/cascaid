@@ -1,0 +1,223 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: adolescent-self-harm-safety-plan
+case_version: 0.1.0
+status: draft
+items:
+  - utterance: "Tell me about the cut itself: how deep it was, and whether you'd done anything like it before."
+    topics: [episode]
+    style: boundary
+    pair: [episode, peer-trigger]
+  - utterance: "Is this the first time you've hurt yourself in this way?"
+    topics: [episode]
+    style: boundary
+    pair: [episode, peer-trigger]
+  - utterance: "so um was today the first time or has it happened before as well"
+    topics: [episode]
+    style: boundary_spoken
+    pair: [episode, peer-trigger]
+  - utterance: "Has this been a one-off or have you been doing it for a while?"
+    topics: [episode]
+    style: boundary_colloquial
+    pair: [episode, peer-trigger]
+  - utterance: "Okay. And what did you do to yourself afterwards, and has that happened before?"
+    topics: [episode]
+    style: boundary_follow_up
+    pair: [episode, peer-trigger]
+    previous:
+      interviewer: "What was going on that made you so upset?"
+      character: "Two classmates posted humiliating comments about me in our group chat after lunch; that kind of message has been happening for three weeks."
+  - utterance: "What was going on for you today that led up to it?"
+    topics: [peer-trigger]
+    style: boundary
+    pair: [episode, peer-trigger]
+  - utterance: "Has anything been happening with other people at school that's been upsetting you?"
+    topics: [peer-trigger]
+    style: boundary
+    pair: [episode, peer-trigger]
+  - utterance: "was it something someone said to you or posted about you or whatever"
+    topics: [peer-trigger]
+    style: boundary_spoken
+    pair: [episode, peer-trigger]
+  - utterance: "Has anyone been giving you a hard time lately?"
+    topics: [peer-trigger]
+    style: boundary_colloquial
+    pair: [episode, peer-trigger]
+  - utterance: "What had happened just before that? Did something set it off?"
+    topics: [peer-trigger]
+    style: boundary_follow_up
+    pair: [episode, peer-trigger]
+    previous:
+      interviewer: "Can you tell me about the cut?"
+      character: "I cut my forearm this afternoon, more deeply than I meant to; the nurse has treated it, and I'd made smaller cuts three times in the past two months."
+  - utterance: "Does your sister know what has been going on for you?"
+    topics: []
+    style: near_miss
+    pair: [episode, peer-trigger]
+  - utterance: "Have you been seen by this team before?"
+    topics: []
+    style: near_miss
+    pair: [episode, peer-trigger]
+  - utterance: "Is anybody making you feel unsafe, at home or outside?"
+    topics: [safeguarding]
+    style: boundary
+    pair: [safeguarding, sharing-concern]
+  - utterance: "I ask everyone this: is anyone pressuring you into anything you don't want to do?"
+    topics: [safeguarding]
+    style: boundary
+    pair: [safeguarding, sharing-concern]
+  - utterance: "has anyone been threatening you or you know hurting you in any way"
+    topics: [safeguarding]
+    style: boundary_spoken
+    pair: [safeguarding, sharing-concern]
+  - utterance: "Is there anyone you're scared of at the moment?"
+    topics: [safeguarding]
+    style: boundary_colloquial
+    pair: [safeguarding, sharing-concern]
+  - utterance: "Apart from that, is anyone threatening you or making you feel unsafe?"
+    topics: [safeguarding]
+    style: boundary_follow_up
+    pair: [safeguarding, sharing-concern]
+    previous:
+      interviewer: "I'm scared Mum will think I'm doing it for attention; I would like you beside me when I tell her I still feel shaky."
+      character: "I'm scared Mum will think I'm doing it for attention; I would like you beside me when I tell her I still feel shaky."
+  - utterance: "What worries you about telling your mum how you feel?"
+    topics: [sharing-concern]
+    style: boundary
+    pair: [safeguarding, sharing-concern]
+  - utterance: "Do you think your mum would understand if you told her you were struggling?"
+    topics: [sharing-concern]
+    style: boundary
+    pair: [safeguarding, sharing-concern]
+  - utterance: "um what do you think mum would say if you told her how bad things have been"
+    topics: [sharing-concern]
+    style: boundary_spoken
+    pair: [safeguarding, sharing-concern]
+  - utterance: "Are you scared she'll go off on one when she finds out?"
+    topics: [sharing-concern]
+    style: boundary_colloquial
+    pair: [safeguarding, sharing-concern]
+  - utterance: "You said you haven't told her. What makes it hard to tell your mum things?"
+    topics: [sharing-concern]
+    style: boundary_follow_up
+    pair: [safeguarding, sharing-concern]
+    previous:
+      interviewer: "Nobody at home hurts me, and no adult is pressuring me sexually; a classmate has threatened to corner me after school, which I haven't told Mum."
+      character: "Nobody at home hurts me, and no adult is pressuring me sexually; a classmate has threatened to corner me after school, which I haven't told Mum."
+  - utterance: "Do you want me to explain what happens next in the emergency department?"
+    topics: []
+    style: near_miss
+    pair: [safeguarding, sharing-concern]
+  - utterance: "Does your sister know about the cutting?"
+    topics: []
+    style: near_miss
+    pair: [safeguarding, sharing-concern]
+  - utterance: "How do you know when things are getting too much for you?"
+    topics: [warning-signs]
+    style: boundary
+    pair: [safeguarding, warning-signs]
+  - utterance: "What do you notice in your body or your behaviour before you feel like hurting yourself?"
+    topics: [warning-signs]
+    style: boundary
+    pair: [safeguarding, warning-signs]
+  - utterance: "so what's it like just before you do it like what do you feel"
+    topics: [warning-signs]
+    style: boundary_spoken
+    pair: [safeguarding, warning-signs]
+  - utterance: "Is there a point where you can tell you're about to lose it?"
+    topics: [warning-signs]
+    style: boundary_colloquial
+    pair: [safeguarding, warning-signs]
+  - utterance: "OK. And when things get too much, what's the first sign for you?"
+    topics: [warning-signs]
+    style: boundary_follow_up
+    pair: [safeguarding, warning-signs]
+    previous:
+      interviewer: "Nobody at home hurts me, and no adult is pressuring me sexually; a classmate has threatened to corner me after school, which I haven't told Mum."
+      character: "Nobody at home hurts me, and no adult is pressuring me sexually; a classmate has threatened to corner me after school, which I haven't told Mum."
+  - utterance: "Do you ever feel unsafe, either at home or at school?"
+    topics: [safeguarding]
+    style: boundary
+    pair: [safeguarding, warning-signs]
+  - utterance: "Has anyone touched you or asked you to do something sexual that you were uncomfortable with?"
+    topics: [safeguarding]
+    style: boundary
+    pair: [safeguarding, warning-signs]
+  - utterance: "and has anyone been like threatening you or making you feel scared in person"
+    topics: [safeguarding]
+    style: boundary_spoken
+    pair: [safeguarding, warning-signs]
+  - utterance: "Is anyone being nasty to you face to face, not just online?"
+    topics: [safeguarding]
+    style: boundary_colloquial
+    pair: [safeguarding, warning-signs]
+  - utterance: "Thanks. Now is there anybody who is actually hurting or threatening you?"
+    topics: [safeguarding]
+    style: boundary_follow_up
+    pair: [safeguarding, warning-signs]
+    previous:
+      interviewer: "I get hot and tense, keep rereading messages and stop answering people around me."
+      character: "I get hot and tense, keep rereading messages and stop answering people around me."
+  - utterance: "Do you ever hear voices telling you to hurt yourself?"
+    topics: []
+    style: near_miss
+    pair: [safeguarding, warning-signs]
+  - utterance: "Do you know what a safeguarding referral is?"
+    topics: []
+    style: near_miss
+    pair: [safeguarding, warning-signs]
+  - utterance: "Lately, have you been feeling pretty low in yourself?"
+    topics: [low-mood]
+    style: boundary
+    pair: [low-mood, warning-signs]
+  - utterance: "Have you been feeling down most days, and how has your sleep been?"
+    topics: [low-mood]
+    style: boundary
+    pair: [low-mood, warning-signs]
+  - utterance: "and are there still things you enjoy doing or has everything gone a bit flat"
+    topics: [low-mood]
+    style: boundary_spoken
+    pair: [low-mood, warning-signs]
+  - utterance: "Been feeling pretty rubbish lately?"
+    topics: [low-mood]
+    style: boundary_colloquial
+    pair: [low-mood, warning-signs]
+  - utterance: "What about outside those moments, how are you generally day to day?"
+    topics: [low-mood]
+    style: boundary_follow_up
+    pair: [low-mood, warning-signs]
+    previous:
+      interviewer: "I get hot and tense, keep rereading messages and stop answering people around me."
+      character: "I get hot and tense, keep rereading messages and stop answering people around me."
+  - utterance: "Just before you feel the urge to cut, what happens to you?"
+    topics: [warning-signs]
+    style: boundary
+    pair: [low-mood, warning-signs]
+  - utterance: "How can we tell, you or me or your mum, when you're starting to struggle?"
+    topics: [warning-signs]
+    style: boundary
+    pair: [low-mood, warning-signs]
+  - utterance: "so um what are the first things you notice when it's starting to build up"
+    topics: [warning-signs]
+    style: boundary_spoken
+    pair: [low-mood, warning-signs]
+  - utterance: "Do you go quiet or get wound up when things are getting to you?"
+    topics: [warning-signs]
+    style: boundary_colloquial
+    pair: [low-mood, warning-signs]
+  - utterance: "And in the moments before you cut, what changes in how you feel or act?"
+    topics: [warning-signs]
+    style: boundary_follow_up
+    pair: [low-mood, warning-signs]
+    previous:
+      interviewer: "I've felt down most days for three weeks and take about two hours to fall asleep; I still enjoy drawing with my sister."
+      character: "I've felt down most days for three weeks and take about two hours to fall asleep; I still enjoy drawing with my sister."
+  - utterance: "Have you lost any weight or changed how much you eat?"
+    topics: []
+    style: near_miss
+    pair: [low-mood, warning-signs]
+  - utterance: "Have you ever had a panic attack?"
+    topics: []
+    style: near_miss
+    pair: [low-mood, warning-signs]

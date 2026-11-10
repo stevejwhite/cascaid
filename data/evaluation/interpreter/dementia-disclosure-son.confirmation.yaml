@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: dementia-disclosure-son
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Arun, what wording would you want us to use when talking to your mother about the result?
+  expected:
+  - request
+  rapport: false
+- utterance: What do you imagine might happen if she hears that she has dementia?
+  expected:
+  - fear
+  rapport: false
+- utterance: Has your mother said how much she wants to know about what the tests found?
+  expected:
+  - mother-wishes
+  rapport: false
+- utterance: Which everyday jobs is she still managing, and where does she need your help?
+  expected:
+  - function
+  rapport: false
+- utterance: What permission has she given for your involvement in discussing her results?
+  expected:
+  - sharing
+  rapport: false
+- utterance: How well can she follow information and take part in a decision when you give her time?
+  expected:
+  - understanding
+  rapport: false
+- utterance: Has she actually said she might harm herself, or is that something you're anticipating?
+  expected:
+  - safety
+  rapport: false
+- utterance: What do you fear hearing the diagnosis would do to her outlook?
+  expected:
+  - fear
+  rapport: false
+- utterance: how does taking that on fit around your own work?
+  expected:
+  - burden
+  rapport: false
+  previous:
+    interviewer: What help do you give her with day-to-day tasks?
+    character: I help with bills because she has missed payments.
+- utterance: I can hear that your request comes from wanting to protect your mum.
+  expected: []
+  rapport: true

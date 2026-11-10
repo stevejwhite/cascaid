@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: dementia-distress-care-plan
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Denise, how recently did these unsettled evenings start and what happens during them?
+  expected:
+  - recent-course
+  rapport: false
+- utterance: What is going on around your dad in the home at the times he gets distressed?
+  expected:
+  - environment
+  rapport: false
+- utterance: Have you seen any signs in his movements or expression that he might be in pain?
+  expected:
+  - pain-cues
+  rapport: false
+- utterance: Has anybody looked for a new infection or asked the GP to assess this change?
+  expected:
+  - infection-check
+  rapport: false
+- utterance: Have you found something you can do with him that helps him settle without medicine?
+  expected:
+  - comforting-activities
+  rapport: false
+- utterance: Has the agitation led to anyone getting hurt or your dad nearly having an accident?
+  expected:
+  - harm-and-falls
+  rapport: false
+- utterance: Which risks of the proposed medicine are you concerned about before it starts?
+  expected:
+  - medicine-concern
+  rapport: false
+- utterance: What drugs are on his current list, as opposed to the new one being discussed?
+  expected:
+  - current-prescriptions
+  rapport: false
+- utterance: who could keep track of whether doing more of that helps?
+  expected:
+  - staff-and-review
+  rapport: false
+  previous:
+    interviewer: What has helped when you've visited?
+    character: Sorting his old seed packets with me at a quiet table has settled him on two visits.
+- utterance: You want your dad to feel more comfortable while still being able to engage with people.
+  expected: []
+  rapport: false

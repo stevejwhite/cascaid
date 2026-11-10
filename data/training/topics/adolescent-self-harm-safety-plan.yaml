@@ -1,0 +1,1027 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: adolescent-self-harm-safety-plan
+case_version: 0.1.0
+status: draft
+items:
+- utterance: What led up to you hurting yourself this afternoon?
+  topics:
+  - episode
+  style: open
+- utterance: Was this the first time you've cut yourself?
+  topics:
+  - episode
+  style: closed
+- utterance: Did you mean to cut as deeply as you did?
+  topics:
+  - episode
+  style: closed
+- utterance: What went on earlier today?
+  topics:
+  - episode
+  style: colloquial
+- utterance: Has this happened before, then?
+  topics:
+  - episode
+  style: colloquial
+- utterance: How many times have you done it before?
+  topics:
+  - episode
+  style: colloquial
+- utterance: Could you describe the injury and any previous episodes of self-harm?
+  topics:
+  - episode
+  style: clinical
+- utterance: I wondered if you could take me through what you did this afternoon
+  topics:
+  - episode
+  style: indirect
+- utterance: That must have been frightening. What happened today?
+  topics:
+  - episode
+  style: empathy_then_question
+- utterance: um so can you tell me about, like, what you did earlier and if you've done it before
+  topics:
+  - episode
+  style: spoken
+- utterance: so was it, uh, was it different from other times
+  topics:
+  - episode
+  style: spoken
+- utterance: And previous times?
+  topics:
+  - episode
+  style: brief
+- utterance: Had you cut before today?
+  topics:
+  - episode
+  style: follow_up
+  previous:
+    interviewer: I wanted the feelings to stop, not to die, and I don't have a suicide plan now; I am
+      still worried I might cut again if I'm alone tonight.
+    character: I wanted the feelings to stop, not to die, and I don't have a suicide plan now; I am still
+      worried I might cut again if I'm alone tonight.
+- utterance: I take it this was only a one-off, wasn't it?
+  topics:
+  - episode
+  style: leading
+- utterance: Tell me what had been upsetting you recently.
+  topics:
+  - peer-trigger
+  style: open
+- utterance: Did something happen at school today?
+  topics:
+  - peer-trigger
+  style: closed
+- utterance: Has anyone been unkind to you online?
+  topics:
+  - peer-trigger
+  style: closed
+- utterance: What set it off, do you think?
+  topics:
+  - peer-trigger
+  style: colloquial
+- utterance: Is anyone giving you a hard time?
+  topics:
+  - peer-trigger
+  style: colloquial
+- utterance: Have people been messaging you things that upset you?
+  topics:
+  - peer-trigger
+  style: colloquial
+- utterance: Were there any precipitating events or peer difficulties?
+  topics:
+  - peer-trigger
+  style: clinical
+- utterance: I wondered what had been bothering you in the days before
+  topics:
+  - peer-trigger
+  style: indirect
+- utterance: I can imagine it's been a rough time. What was happening before you cut?
+  topics:
+  - peer-trigger
+  style: empathy_then_question
+- utterance: um was there something that, like, upset you today or was it building up
+  topics:
+  - peer-trigger
+  style: spoken
+- utterance: so is anyone, uh, picking on you or saying stuff
+  topics:
+  - peer-trigger
+  style: spoken
+- utterance: What triggered it today?
+  topics:
+  - peer-trigger
+  style: brief
+- utterance: And what had been upsetting you?
+  topics:
+  - peer-trigger
+  style: follow_up
+  previous:
+    interviewer: I cut my forearm this afternoon, more deeply than I meant to; the nurse has treated it,
+      and I'd made smaller cuts three times in the past two months.
+    character: I cut my forearm this afternoon, more deeply than I meant to; the nurse has treated it,
+      and I'd made smaller cuts three times in the past two months.
+- utterance: Something happened with other pupils, didn't it?
+  topics:
+  - peer-trigger
+  style: leading
+- utterance: How do you know when you're starting to feel overwhelmed?
+  topics:
+  - warning-signs
+  style: open
+- utterance: What do you notice in your body or thoughts before you want to hurt yourself?
+  topics:
+  - warning-signs
+  style: open
+- utterance: Can you tell when the urge is building?
+  topics:
+  - warning-signs
+  style: closed
+- utterance: Do you notice a change in how you behave when you're upset?
+  topics:
+  - warning-signs
+  style: closed
+- utterance: What's it like when things start getting too much?
+  topics:
+  - warning-signs
+  style: colloquial
+- utterance: How do you tell it's coming on?
+  topics:
+  - warning-signs
+  style: colloquial
+- utterance: What do you do when you're losing it?
+  topics:
+  - warning-signs
+  style: colloquial
+- utterance: What are your early warning signs of distress?
+  topics:
+  - warning-signs
+  style: clinical
+- utterance: I wondered what you tend to notice just before an urge comes
+  topics:
+  - warning-signs
+  style: indirect
+- utterance: That sounds scary to go through. What happens inside you before the urge?
+  topics:
+  - warning-signs
+  style: empathy_then_question
+- utterance: um what do you feel, or do, when it's like starting to build up
+  topics:
+  - warning-signs
+  style: spoken
+- utterance: so before you hurt yourself, uh, how do you notice it's happening
+  topics:
+  - warning-signs
+  style: spoken
+- utterance: Early signs you notice?
+  topics:
+  - warning-signs
+  style: brief
+- utterance: What's it like just before then?
+  topics:
+  - warning-signs
+  style: follow_up
+  previous:
+    interviewer: Two classmates posted humiliating comments about me in our group chat after lunch; that
+      kind of message has been happening for three weeks.
+    character: Two classmates posted humiliating comments about me in our group chat after lunch; that
+      kind of message has been happening for three weeks.
+- utterance: You probably get quite angry and shout before it happens, don't you?
+  topics:
+  - warning-signs
+  style: leading
+- utterance: What was in your mind when you cut today?
+  topics:
+  - intent
+  style: open
+- utterance: How are you feeling about your safety right now?
+  topics:
+  - intent
+  style: open
+- utterance: Do you have any thoughts of ending your life?
+  topics:
+  - intent
+  style: closed
+- utterance: Were you trying to kill yourself?
+  topics:
+  - intent
+  style: colloquial
+- utterance: Do you think you might do it again tonight?
+  topics:
+  - intent
+  style: colloquial
+- utterance: Have you got any plan to end your life?
+  topics:
+  - intent
+  style: colloquial
+- utterance: Was there suicidal intent, and is there a current plan?
+  topics:
+  - intent
+  style: clinical
+- utterance: I wondered whether you had thoughts of dying when it happened
+  topics:
+  - intent
+  style: indirect
+- utterance: Thank you for being so brave. Were you thinking of ending your life?
+  topics:
+  - intent
+  style: empathy_then_question
+- utterance: um when you did it was it like you wanted to die or was it more, uh, something else
+  topics:
+  - intent
+  style: spoken
+- utterance: so are you, I mean, would you cut again if you went home
+  topics:
+  - intent
+  style: spoken
+- utterance: Any thoughts of suicide?
+  topics:
+  - intent
+  style: brief
+- utterance: Do you feel safe on your own later?
+  topics:
+  - intent
+  style: follow_up
+  previous:
+    interviewer: Drawing with music on has helped me wait for the urge to pass before; I can do that in
+      the living room rather than shutting myself away.
+    character: Drawing with music on has helped me wait for the urge to pass before; I can do that in
+      the living room rather than shutting myself away.
+- utterance: You didn't really want to die, did you?
+  topics:
+  - intent
+  style: leading
+- utterance: How has your mood been recently?
+  topics:
+  - low-mood
+  style: open
+- utterance: What's life been like for you over the past few weeks?
+  topics:
+  - low-mood
+  style: open
+- utterance: Have you been feeling down?
+  topics:
+  - low-mood
+  style: closed
+- utterance: Are you sleeping okay?
+  topics:
+  - low-mood
+  style: closed
+- utterance: Have you been feeling pretty low lately?
+  topics:
+  - low-mood
+  style: colloquial
+- utterance: Do you still get a kick out of the things you like?
+  topics:
+  - low-mood
+  style: colloquial
+- utterance: Is it hard to nod off at night?
+  topics:
+  - low-mood
+  style: colloquial
+- utterance: Have you had low mood, sleep disturbance or loss of interest?
+  topics:
+  - low-mood
+  style: clinical
+- utterance: I wondered how you've been feeling in yourself lately
+  topics:
+  - low-mood
+  style: indirect
+- utterance: It's a lot for anyone your age. Have you been feeling low for a while?
+  topics:
+  - low-mood
+  style: empathy_then_question
+- utterance: um have you been sad a lot, or having trouble sleeping or whatever
+  topics:
+  - low-mood
+  style: spoken
+- utterance: so is there stuff you still enjoy doing, like, when you're feeling down
+  topics:
+  - low-mood
+  style: spoken
+- utterance: And your mood lately?
+  topics:
+  - low-mood
+  style: brief
+- utterance: How long has that been going on for?
+  topics:
+  - low-mood
+  style: follow_up
+  previous:
+    interviewer: Two classmates posted humiliating comments about me in our group chat after lunch; that
+      kind of message has been happening for three weeks.
+    character: Two classmates posted humiliating comments about me in our group chat after lunch; that
+      kind of message has been happening for three weeks.
+- utterance: I expect you haven't enjoyed anything for ages, have you?
+  topics:
+  - low-mood
+  style: leading
+- utterance: What do you do to help yourself get through a difficult moment?
+  topics:
+  - coping
+  style: open
+- utterance: Tell me about things that have helped you when the urge comes.
+  topics:
+  - coping
+  style: open
+- utterance: Is there anything you do that helps you calm down?
+  topics:
+  - coping
+  style: closed
+- utterance: Do you have ways of distracting yourself?
+  topics:
+  - coping
+  style: closed
+- utterance: What helps you ride it out?
+  topics:
+  - coping
+  style: colloquial
+- utterance: What do you usually do to take your mind off it?
+  topics:
+  - coping
+  style: colloquial
+- utterance: Is there something that works for you when it gets bad?
+  topics:
+  - coping
+  style: colloquial
+- utterance: What coping strategies have you found effective?
+  topics:
+  - coping
+  style: clinical
+- utterance: I wondered what you find useful when you feel like that
+  topics:
+  - coping
+  style: indirect
+- utterance: You're clearly trying hard. What helps when the feelings get strong?
+  topics:
+  - coping
+  style: empathy_then_question
+- utterance: um is there anything that helps, like, when you feel the urge or whatever
+  topics:
+  - coping
+  style: spoken
+- utterance: so what do you do, uh, to cope when it's bad
+  topics:
+  - coping
+  style: spoken
+- utterance: Things that help you?
+  topics:
+  - coping
+  style: brief
+- utterance: Is there anything that's helped you wait it out?
+  topics:
+  - coping
+  style: follow_up
+  previous:
+    interviewer: I get hot and tense, keep rereading messages and stop answering people around me.
+    character: I get hot and tense, keep rereading messages and stop answering people around me.
+- utterance: You probably just go off and be by yourself, don't you?
+  topics:
+  - coping
+  style: leading
+- utterance: Who in your life do you feel you can turn to?
+  topics:
+  - trusted-adult
+  style: open
+- utterance: What kind of support do you have from your family?
+  topics:
+  - trusted-adult
+  style: open
+- utterance: Is your mum the person you trust most?
+  topics:
+  - trusted-adult
+  style: closed
+- utterance: Will there be someone with you at home tonight?
+  topics:
+  - trusted-adult
+  style: closed
+- utterance: Who would you go to if things got bad?
+  topics:
+  - trusted-adult
+  style: colloquial
+- utterance: Is anyone around to keep an eye on you tonight?
+  topics:
+  - trusted-adult
+  style: colloquial
+- utterance: Is there a grown-up you can count on?
+  topics:
+  - trusted-adult
+  style: colloquial
+- utterance: Who are your main protective supports, and are they available tonight?
+  topics:
+  - trusted-adult
+  style: clinical
+- utterance: I wondered who you'd feel safe being around this evening
+  topics:
+  - trusted-adult
+  style: indirect
+- utterance: It's good your mum is here. Would she stay with you if you needed her?
+  topics:
+  - trusted-adult
+  style: empathy_then_question
+- utterance: um who would you want with you tonight, like, is your mum around
+  topics:
+  - trusted-adult
+  style: spoken
+- utterance: so is there an adult, uh, you could really talk to
+  topics:
+  - trusted-adult
+  style: spoken
+- utterance: Who could stay with you?
+  topics:
+  - trusted-adult
+  style: brief
+- utterance: Is that someone who'd be around tonight?
+  topics:
+  - trusted-adult
+  style: follow_up
+  previous:
+    interviewer: My form tutor, Ms Patel, is kind; I'd agree to her knowing I need support, but I don't
+      want the whole class told.
+    character: My form tutor, Ms Patel, is kind; I'd agree to her knowing I need support, but I don't
+      want the whole class told.
+- utterance: I suppose you don't have anybody at home who understands, do you?
+  topics:
+  - trusted-adult
+  style: leading
+- utterance: What do you have at home that you could use to hurt yourself?
+  topics:
+  - means
+  style: open
+- utterance: How easy is it to get hold of things you might use to harm yourself?
+  topics:
+  - means
+  style: open
+- utterance: Do you have blades at home?
+  topics:
+  - means
+  style: closed
+- utterance: Are there tablets in the house?
+  topics:
+  - means
+  style: closed
+- utterance: Is there anything lying around you could hurt yourself with?
+  topics:
+  - means
+  style: colloquial
+- utterance: Would you be okay with things being put away safely at home?
+  topics:
+  - means
+  style: colloquial
+- utterance: Do you keep medicines or sharp things in your room?
+  topics:
+  - means
+  style: colloquial
+- utterance: What means of self-harm are accessible at home?
+  topics:
+  - means
+  style: clinical
+- utterance: I wondered how we could make things at home safer for tonight
+  topics:
+  - means
+  style: indirect
+- utterance: I know this is hard to talk about. Could anything be kept out of reach at home?
+  topics:
+  - means
+  style: empathy_then_question
+- utterance: um is there stuff at home you could use, like, would you mind it being locked up
+  topics:
+  - means
+  style: spoken
+- utterance: so what's around in the house that, uh, that might be risky
+  topics:
+  - means
+  style: spoken
+- utterance: Things at home to put away?
+  topics:
+  - means
+  style: brief
+- utterance: Could some of it be kept away from you tonight?
+  topics:
+  - means
+  style: follow_up
+  previous:
+    interviewer: I wanted the feelings to stop, not to die, and I don't have a suicide plan now; I am
+      still worried I might cut again if I'm alone tonight.
+    character: I wanted the feelings to stop, not to die, and I don't have a suicide plan now; I am still
+      worried I might cut again if I'm alone tonight.
+- utterance: There's nothing dangerous in your house, is there?
+  topics:
+  - means
+  style: leading
+- utterance: What would help at school?
+  topics:
+  - school-help
+  style: open
+- utterance: How do you feel about people at school knowing you need support?
+  topics:
+  - school-help
+  style: open
+- utterance: Is there a teacher you get on with?
+  topics:
+  - school-help
+  style: closed
+- utterance: Would you want anyone at school told?
+  topics:
+  - school-help
+  style: closed
+- utterance: Who at school could look out for you?
+  topics:
+  - school-help
+  style: colloquial
+- utterance: Is there a teacher you'd feel okay talking to?
+  topics:
+  - school-help
+  style: colloquial
+- utterance: How much would you want the school to know?
+  topics:
+  - school-help
+  style: colloquial
+- utterance: Which school staff could be involved, and what information may they share?
+  topics:
+  - school-help
+  style: clinical
+- utterance: I wondered who at school you'd be happy to have on your side
+  topics:
+  - school-help
+  style: indirect
+- utterance: I understand you want privacy. Is there anyone at school you'd trust?
+  topics:
+  - school-help
+  style: empathy_then_question
+- utterance: um is there someone at school you could, like, go to, a teacher or whatever
+  topics:
+  - school-help
+  style: spoken
+- utterance: so what do you want, uh, school to be told about this
+  topics:
+  - school-help
+  style: spoken
+- utterance: And school support?
+  topics:
+  - school-help
+  style: brief
+- utterance: And who from school could be told, if anyone?
+  topics:
+  - school-help
+  style: follow_up
+  previous:
+    interviewer: Mum is the adult I trust most; she is waiting here, is home tonight and would sit with
+      me if I told her I was struggling.
+    character: Mum is the adult I trust most; she is waiting here, is home tonight and would sit with
+      me if I told her I was struggling.
+- utterance: You'd rather nobody at school ever knew, wouldn't you?
+  topics:
+  - school-help
+  style: leading
+- utterance: Can you tell me whether anyone is making you feel unsafe?
+  topics:
+  - safeguarding
+  style: open
+- utterance: What worries do you have about being hurt by someone else?
+  topics:
+  - safeguarding
+  style: open
+- utterance: Is anybody hurting you?
+  topics:
+  - safeguarding
+  style: closed
+- utterance: Has anyone been threatening you?
+  topics:
+  - safeguarding
+  style: closed
+- utterance: Is anyone scaring you or pushing you into things?
+  topics:
+  - safeguarding
+  style: colloquial
+- utterance: Is anyone making you feel pressured in a way you don't like?
+  topics:
+  - safeguarding
+  style: colloquial
+- utterance: Does anything make you nervous about going to or from school?
+  topics:
+  - safeguarding
+  style: colloquial
+- utterance: Are there any safeguarding concerns, including threats or coercion?
+  topics:
+  - safeguarding
+  style: clinical
+- utterance: I wondered if it would be possible to talk privately about whether you feel safe
+  topics:
+  - safeguarding
+  style: indirect
+- utterance: You've been through a lot. Is anyone making you feel unsafe?
+  topics:
+  - safeguarding
+  style: empathy_then_question
+- utterance: um is anyone at home or anywhere, like, hurting you or making you do stuff
+  topics:
+  - safeguarding
+  style: spoken
+- utterance: so is there anybody you're, uh, afraid of
+  topics:
+  - safeguarding
+  style: spoken
+- utterance: Anyone threatening you?
+  topics:
+  - safeguarding
+  style: brief
+- utterance: Is anyone else upsetting you besides that?
+  topics:
+  - safeguarding
+  style: follow_up
+  previous:
+    interviewer: Two classmates posted humiliating comments about me in our group chat after lunch; that
+      kind of message has been happening for three weeks.
+    character: Two classmates posted humiliating comments about me in our group chat after lunch; that
+      kind of message has been happening for three weeks.
+- utterance: Everyone around you has been kind, haven't they?
+  topics:
+  - safeguarding
+  style: leading
+- utterance: What makes it hard to tell your mum how you're feeling?
+  topics:
+  - sharing-concern
+  style: open
+- utterance: How do you think your mum will react?
+  topics:
+  - sharing-concern
+  style: open
+- utterance: Are you worried your mum might not understand?
+  topics:
+  - sharing-concern
+  style: closed
+- utterance: Would you like me with you when you talk to her?
+  topics:
+  - sharing-concern
+  style: closed
+- utterance: What are you scared will happen if you tell her?
+  topics:
+  - sharing-concern
+  style: colloquial
+- utterance: Would you want some help saying it to her?
+  topics:
+  - sharing-concern
+  style: colloquial
+- utterance: Do you think people will take it the wrong way?
+  topics:
+  - sharing-concern
+  style: colloquial
+- utterance: What are the barriers to disclosure to your mother?
+  topics:
+  - sharing-concern
+  style: clinical
+- utterance: I wondered what gets in the way of telling people how bad it feels
+  topics:
+  - sharing-concern
+  style: indirect
+- utterance: That sounds like a heavy thing to carry. What worries you about telling her?
+  topics:
+  - sharing-concern
+  style: empathy_then_question
+- utterance: um how do you think mum will take it, like, would you want me there
+  topics:
+  - sharing-concern
+  style: spoken
+- utterance: so what's the hard bit about, uh, saying it out loud to her
+  topics:
+  - sharing-concern
+  style: spoken
+- utterance: Worries about telling her?
+  topics:
+  - sharing-concern
+  style: brief
+- utterance: What stops you saying so?
+  topics:
+  - sharing-concern
+  style: follow_up
+  previous:
+    interviewer: Mum is the adult I trust most; she is waiting here, is home tonight and would sit with
+      me if I told her I was struggling.
+    character: Mum is the adult I trust most; she is waiting here, is home tonight and would sit with
+      me if I told her I was struggling.
+- utterance: You think she'll be angry with you, don't you?
+  topics:
+  - sharing-concern
+  style: leading
+- utterance: What support would you like from mental health services?
+  topics:
+  - professional-follow-up
+  style: open
+- utterance: How would you like us to follow this up after today?
+  topics:
+  - professional-follow-up
+  style: open
+- utterance: Have you seen anyone from mental health before?
+  topics:
+  - professional-follow-up
+  style: closed
+- utterance: Do you have a number to ring if things get worse?
+  topics:
+  - professional-follow-up
+  style: closed
+- utterance: Who can you and your mum phone tonight if you need help?
+  topics:
+  - professional-follow-up
+  style: colloquial
+- utterance: When do you want to see someone again?
+  topics:
+  - professional-follow-up
+  style: colloquial
+- utterance: Do you know who to contact if it gets bad out of hours?
+  topics:
+  - professional-follow-up
+  style: colloquial
+- utterance: Have you any existing community CAMHS involvement or crisis contact?
+  topics:
+  - professional-follow-up
+  style: clinical
+- utterance: I wondered what you'd want to happen next in terms of support
+  topics:
+  - professional-follow-up
+  style: indirect
+- utterance: I want you to feel looked after. Do you know who you can ring tonight?
+  topics:
+  - professional-follow-up
+  style: empathy_then_question
+- utterance: um have you got a contact or an appointment, like, for after today
+  topics:
+  - professional-follow-up
+  style: spoken
+- utterance: so who would you ring if, uh, if things got bad later
+  topics:
+  - professional-follow-up
+  style: spoken
+- utterance: Any follow-up appointment?
+  topics:
+  - professional-follow-up
+  style: brief
+- utterance: Do you have anyone to call if that happens?
+  topics:
+  - professional-follow-up
+  style: follow_up
+  previous:
+    interviewer: I wanted the feelings to stop, not to die, and I don't have a suicide plan now; I am
+      still worried I might cut again if I'm alone tonight.
+    character: I wanted the feelings to stop, not to die, and I don't have a suicide plan now; I am still
+      worried I might cut again if I'm alone tonight.
+- utterance: You've already got everything arranged, haven't you?
+  topics:
+  - professional-follow-up
+  style: leading
+- utterance: How would you like to keep a copy of the plan?
+  topics:
+  - plan-format
+  style: open
+- utterance: What would make the plan easy for you to use?
+  topics:
+  - plan-format
+  style: open
+- utterance: Would you like it written down?
+  topics:
+  - plan-format
+  style: closed
+- utterance: Would a copy on your phone help?
+  topics:
+  - plan-format
+  style: closed
+- utterance: Shall we put the steps on paper for you?
+  topics:
+  - plan-format
+  style: colloquial
+- utterance: Do you want to keep the plan somewhere handy?
+  topics:
+  - plan-format
+  style: colloquial
+- utterance: Would you want your mum to have a copy too?
+  topics:
+  - plan-format
+  style: colloquial
+- utterance: In what format should the written safety plan be provided?
+  topics:
+  - plan-format
+  style: clinical
+- utterance: I wondered whether you'd prefer the steps on paper or on a device
+  topics:
+  - plan-format
+  style: indirect
+- utterance: I'd like it to feel right for you. How would you like to keep the plan?
+  topics:
+  - plan-format
+  style: empathy_then_question
+- utterance: um do you want it written down, like, on your phone or a bit of paper
+  topics:
+  - plan-format
+  style: spoken
+- utterance: so how should we, uh, set out the plan so you can use it
+  topics:
+  - plan-format
+  style: spoken
+- utterance: Paper or phone?
+  topics:
+  - plan-format
+  style: brief
+- utterance: Where would you like to keep it?
+  topics:
+  - plan-format
+  style: follow_up
+  previous:
+    interviewer: Mum is the adult I trust most; she is waiting here, is home tonight and would sit with
+      me if I told her I was struggling.
+    character: Mum is the adult I trust most; she is waiting here, is home tonight and would sit with
+      me if I told her I was struggling.
+- utterance: You'd prefer to have nothing written down, wouldn't you?
+  topics:
+  - plan-format
+  style: leading
+- utterance: What can you tell me about alcohol or drugs?
+  topics:
+  - substances
+  style: open
+- utterance: Tell me about whether you've taken anything today.
+  topics:
+  - substances
+  style: open
+- utterance: Have you had any alcohol today?
+  topics:
+  - substances
+  style: closed
+- utterance: Have you taken any drugs?
+  topics:
+  - substances
+  style: closed
+- utterance: Have you been drinking or taking anything?
+  topics:
+  - substances
+  style: colloquial
+- utterance: Do you ever have a drink with friends?
+  topics:
+  - substances
+  style: colloquial
+- utterance: Anything you've smoked or popped today?
+  topics:
+  - substances
+  style: colloquial
+- utterance: Is there any substance use, including today?
+  topics:
+  - substances
+  style: clinical
+- utterance: I wondered if alcohol or drugs have played any part in this
+  topics:
+  - substances
+  style: indirect
+- utterance: I'm not here to judge you. Have you taken any alcohol or drugs?
+  topics:
+  - substances
+  style: empathy_then_question
+- utterance: um have you, like, had anything to drink or any drugs before this happened
+  topics:
+  - substances
+  style: spoken
+- utterance: so do you, uh, use anything, alcohol or whatever
+  topics:
+  - substances
+  style: spoken
+- utterance: Alcohol or drugs?
+  topics:
+  - substances
+  style: brief
+- utterance: Had you taken anything before it happened?
+  topics:
+  - substances
+  style: follow_up
+  previous:
+    interviewer: I cut my forearm this afternoon, more deeply than I meant to; the nurse has treated it,
+      and I'd made smaller cuts three times in the past two months.
+    character: I cut my forearm this afternoon, more deeply than I meant to; the nurse has treated it,
+      and I'd made smaller cuts three times in the past two months.
+- utterance: You'd had something to drink first, hadn't you?
+  topics:
+  - substances
+  style: leading
+- utterance: Can you tell me what happened today, and whether you meant to die?
+  topics:
+  - episode
+  - intent
+  style: stacked
+- utterance: Who could stay with you tonight, and is there anything at home we'd need to put away?
+  topics:
+  - trusted-adult
+  - means
+  style: stacked
+- utterance: Is there a teacher you trust, and what would you want to happen about telling your mum?
+  topics:
+  - school-help
+  - sharing-concern
+  style: stacked
+- utterance: What helps when the urge comes, and what are the first signs for you?
+  topics:
+  - coping
+  - warning-signs
+  style: stacked
+- utterance: Hello Amelia, thanks for talking with me.
+  topics: []
+  style: greeting
+- utterance: Hi Amelia, how are you doing right now?
+  topics: []
+  style: greeting
+- utterance: My name's Dr Shah, I work with the young people's mental health team.
+  topics: []
+  style: introduction
+- utterance: I'm one of the doctors from the liaison team, Amelia.
+  topics: []
+  style: introduction
+- utterance: Is it all right if we talk for a bit, Amelia?
+  topics: []
+  style: conversational
+- utterance: What would you like to start with?
+  topics: []
+  style: conversational
+- utterance: Before we start, do you have any questions for me?
+  topics: []
+  style: conversational
+- utterance: Would you like your mum to be in the room, or are you happy to talk just us?
+  topics: []
+  style: conversational
+- utterance: Is it okay if I write a few notes as we go?
+  topics: []
+  style: conversational
+- utterance: Are you comfortable on that bed, or can I get you anything?
+  topics: []
+  style: conversational
+- utterance: I'd like to move on to something different now.
+  topics: []
+  style: transition
+- utterance: Shall we start to think about what could help tonight?
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Amelia.
+  topics: []
+  style: closing
+- utterance: Thank you for being so honest with me today.
+  topics: []
+  style: closing
+- utterance: It sounds like today has been really hard.
+  topics: []
+  style: empathy
+- utterance: That must have taken courage to say.
+  topics: []
+  style: empathy
+- utterance: I can hear how embarrassed you're feeling about all this.
+  topics: []
+  style: empathy
+- utterance: Nobody should have to go through that on their own.
+  topics: []
+  style: empathy
+- utterance: So you cut more deeply today and you're worried about people finding out.
+  topics: []
+  style: summary
+- utterance: 'Let me check I''ve got this right: we''re working out a plan for tonight together.'
+  topics: []
+  style: summary
+- utterance: I can't promise you'll be going home until we've finished our assessment.
+  topics: []
+  style: explanation
+- utterance: If I'm worried you're in danger, I might need to tell other people, but I'll explain first.
+  topics: []
+  style: explanation
+- utterance: A safety plan is a list of steps we agree together for when things feel bad.
+  topics: []
+  style: explanation
+- utterance: Does that make sense so far?
+  topics: []
+  style: check_understanding
+- utterance: Can you tell me in your own words what we've agreed?
+  topics: []
+  style: check_understanding
+- utterance: Have you ever heard voices or seen things others can't?
+  topics: []
+  style: off_case
+- utterance: Do you have any problems with eating or how you see your body?
+  topics: []
+  style: off_case
+- utterance: What's your relationship like with your dad?
+  topics: []
+  style: off_case
+- utterance: Have you had any boyfriend or girlfriend problems?
+  topics: []
+  style: off_case
+- utterance: Do you have any long-term health problems?
+  topics: []
+  style: off_case
+- utterance: Do you want to go back to the same school after this?
+  topics: []
+  style: near_miss
+- utterance: Has anyone in your family harmed themselves?
+  topics: []
+  style: near_miss
+- utterance: How does your mum feel about your wound?
+  topics: []
+  style: near_miss
+- utterance: What are you doing in your free time at the moment?
+  topics: []
+  style: near_miss
+- utterance: Who looks after the wound at home?
+  topics: []
+  style: near_miss

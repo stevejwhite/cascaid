@@ -1,0 +1,150 @@
+# Original fictional case for the PsychiatryEduAI CASC proof of concept (CC-BY-4.0).
+# Author draft (LLM-drafted). Not clinically validated.
+# Author notes: Review supported disclosure and the mother's own information preferences; diagnosis alone does not remove decision-making capacity.
+# Author notes: Listening to a relative's concerns does not authorise unrestricted disclosure or transfer the patient's choices to them.
+# Research basis (public guidance; original wording, no source text retained):
+# - NICE NG97: Dementia, involving people in decisions and providing information
+# - GMC: Confidentiality
+id: dementia-disclosure-son
+version: 0.1.0
+title: A son's request to withhold a diagnosis
+blueprint:
+  skill: management
+  subdivision: legal_and_ethical_management
+  specialty: old_age
+  communication_focus:
+    - empathy
+timing:
+  reading_seconds: 240
+  interview_seconds: 420
+authorship:
+  author: LLM draft
+  status: author_draft
+  clinically_validated: false
+candidate_instructions: >-
+  You are in an older adult outpatient clinic. Arun asks you not to tell his mother she has dementia.
+  Explore his concerns and explain your duties to her, sensitive disclosure, confidentiality and
+  support, using general ethical principles rather than jurisdiction-specific law.
+persona:
+  role: relative
+  name: Arun
+  age: 48
+  description: >-
+    A son attending a family discussion at the memory clinic.
+  speech_style: Polite but firm, becomes more reflective when his motives are understood.
+  affect: Protective and anxious.
+  opening_statement: >-
+    I don't think telling Mum would help her.
+  voice:
+    sex: male
+    age: adult
+    accent: en-GB
+    speaker: am_eric
+  avatar: male-adult-02
+facts:
+  - id: request
+    content: >-
+      I want you not to use the word dementia with her. I'd rather say it's ordinary forgetfulness.
+    disclosure: on_direct_question
+    asked_about: [asking us not to say dementia, what you want your mother told, request to withhold the diagnosis]
+    domain: presenting-concern
+    key: true
+  - id: fear
+    content: >-
+      I'm afraid she'll give up. Her sister had dementia and Mum remembers that period as frightening.
+    disclosure: on_direct_question
+    asked_about: [how you think she will react, fear the news will upset her, family experience of dementia]
+    domain: presenting-concern
+    key: true
+  - id: mother-wishes
+    content: >-
+      She has asked twice what the tests showed. She's always wanted doctors to be straight with
+      her, even with difficult news.
+    disclosure: on_direct_question
+    asked_about: [what your mother wants to know, her questions about the test results, her preference for honest information]
+    domain: presenting-concern
+    key: true
+  - id: function
+    content: >-
+      She cooks simple meals and chooses her own clothes. I help with bills because she has missed
+      payments.
+    disclosure: on_direct_question
+    asked_about: [what she manages for herself, help with bills, daily independence]
+    domain: presenting-concern
+    key: true
+  - id: sharing
+    content: >-
+      She agreed I could attend discussions and hear the results with her. She hasn't asked me to
+      decide what she is told.
+    disclosure: on_direct_question
+    asked_about: [permission to share results with you, who she wants at appointments, whether she asked you to decide what she is told]
+    domain: presenting-concern
+    key: true
+  - id: understanding
+    content: >-
+      She can follow a short explanation if given time. I assumed having dementia meant she couldn't
+      make decisions, but I haven't asked her.
+    disclosure: on_direct_question
+    asked_about: [her ability to make decisions, what she can understand, your view of dementia and capacity]
+    domain: presenting-concern
+    key: true
+  - id: safety
+    content: >-
+      She hasn't talked about suicide or harmed herself. My fear is about how she might react, not
+      something she has threatened.
+    disclosure: on_direct_question
+    asked_about: [has she talked about suicide, past self harm, specific threats to harm herself]
+    domain: presenting-concern
+    key: true
+  - id: approach
+    content: >-
+      She takes things in better with short explanations and something written to read afterwards.
+      She would want someone she trusts beside her.
+    disclosure: on_direct_question
+    asked_about: [how to explain the diagnosis to her, short or written explanations, support during a difficult conversation]
+    domain: presenting-concern
+    key: true
+  - id: burden
+    content: >-
+      I'm already struggling to balance work and helping her. I haven't asked for any support for
+      myself.
+    disclosure: after_rapport
+    asked_about: [support you need as her son, balancing care and work, could we talk about how you are coping]
+    domain: presenting-concern
+    vague: It's taking more out of me than I expected.
+    key: false
+  - id: guilt
+    content: >-
+      Part of me doesn't want to hear it either. I'm scared of what it means for both of us.
+    disclosure: after_rapport
+    asked_about: [your own feelings about the diagnosis, fear of what the future holds, could we talk about what feels hardest for you to face]
+    domain: presenting-concern
+    rapport_needed: 2
+    key: false
+tasks: []
+unscripted_response: I'd rather leave that for now.
+deflections:
+  - Can we leave that for another time?
+  - I'd prefer not to go into that.
+affect_stages:
+  - id: starting
+    affect: Protective and anxious.
+    expression: anxious
+    hesitations:
+      - Mm.
+  - id: engaged
+    affect: More willing to consider his mother's wishes.
+    expression: sad
+    rapport_at_least: 1
+    hesitations:
+      - Mm.
+  - id: challenged
+    affect: Defensive if portrayed as controlling.
+    expression: tense
+    on_confrontation: true
+    hesitations:
+      - Right.
+questions:
+  - id: question-1
+    text: How could we talk with her without overwhelming her?
+    after_seconds: 300

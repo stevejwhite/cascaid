@@ -1,0 +1,230 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: dementia-distress-care-plan
+case_version: 0.1.0
+status: draft
+items:
+  # ---- environment / recent-course ----
+  - utterance: "What is the atmosphere like on the unit around teatime?"
+    topics: [environment]
+    style: boundary
+    pair: [environment, recent-course]
+  - utterance: "Has the staffing been the same lately, or are there new faces?"
+    topics: [environment]
+    style: boundary
+    pair: [environment, recent-course]
+  - utterance: "um is it loud in there when the shifts change over"
+    topics: [environment]
+    style: boundary_spoken
+    pair: [environment, recent-course]
+  - utterance: "Who's been getting him ready for bed these days?"
+    topics: [environment]
+    style: boundary_colloquial
+    pair: [environment, recent-course]
+  - utterance: "And is there anything about the surroundings at that time that you've noticed?"
+    topics: [environment]
+    style: boundary_follow_up
+    pair: [environment, recent-course]
+    previous:
+      interviewer: "Tell me about the evenings."
+      character: "It started about ten days ago; from five until seven most evenings he paces and calls out, whereas he was usually settled before that."
+  - utterance: "What does he actually do when he gets worked up?"
+    topics: [recent-course]
+    style: boundary
+    pair: [environment, recent-course]
+  - utterance: "When did the evenings first become a problem?"
+    topics: [recent-course]
+    style: boundary
+    pair: [environment, recent-course]
+  - utterance: "um so what time does it start and when does he calm down"
+    topics: [recent-course]
+    style: boundary_spoken
+    pair: [environment, recent-course]
+  - utterance: "Was he fine in the evenings up until recently?"
+    topics: [recent-course]
+    style: boundary_colloquial
+    pair: [environment, recent-course]
+  - utterance: "And how long has he been like that?"
+    topics: [recent-course]
+    style: boundary_follow_up
+    pair: [environment, recent-course]
+    previous:
+      interviewer: "What's going on around him at that time?"
+      character: "The television is loud during the evening handover, and different temporary carers have been helping him get changed this fortnight."
+  - utterance: "Is he sleeping through the night?"
+    topics: []
+    style: near_miss
+    pair: [environment, recent-course]
+  - utterance: "Does he nap much during the afternoon?"
+    topics: []
+    style: near_miss
+    pair: [environment, recent-course]
+
+  # ---- current-prescriptions / medicine-concern ----
+  - utterance: "What tablets is he on at the moment?"
+    topics: [current-prescriptions]
+    style: boundary
+    pair: [current-prescriptions, medicine-concern]
+  - utterance: "Has anything new been started since the evenings got worse?"
+    topics: [current-prescriptions]
+    style: boundary
+    pair: [current-prescriptions, medicine-concern]
+  - utterance: "um what's he on for his pain and how often does he get it"
+    topics: [current-prescriptions]
+    style: boundary_spoken
+    pair: [current-prescriptions, medicine-concern]
+  - utterance: "Can you run me through what's on his medication chart?"
+    topics: [current-prescriptions]
+    style: boundary_colloquial
+    pair: [current-prescriptions, medicine-concern]
+  - utterance: "And is he on anything already, or is it all still to come?"
+    topics: [current-prescriptions]
+    style: boundary_follow_up
+    pair: [current-prescriptions, medicine-concern]
+    previous:
+      interviewer: "How do you feel about the home asking for something to settle him?"
+      character: "The manager mentioned an antipsychotic; I'm worried about sleepiness and strokes, but nobody has yet explained the benefits and risks for Dad."
+  - utterance: "What have the home told you about the medicine they want to give him?"
+    topics: [medicine-concern]
+    style: boundary
+    pair: [current-prescriptions, medicine-concern]
+  - utterance: "Are you worried about what a sedative might do to him?"
+    topics: [medicine-concern]
+    style: boundary
+    pair: [current-prescriptions, medicine-concern]
+  - utterance: "um has anyone talked you through the good and bad bits of the calming tablet"
+    topics: [medicine-concern]
+    style: boundary_spoken
+    pair: [current-prescriptions, medicine-concern]
+  - utterance: "Does the idea of him being drugged to settle down sit badly with you?"
+    topics: [medicine-concern]
+    style: boundary_colloquial
+    pair: [current-prescriptions, medicine-concern]
+  - utterance: "And what is it about that which worries you?"
+    topics: [medicine-concern]
+    style: boundary_follow_up
+    pair: [current-prescriptions, medicine-concern]
+    previous:
+      interviewer: "What is he taking now?"
+      character: "His current list says donepezil 10 milligrams at night and paracetamol 1 gram up to three times a day if needed"
+  - utterance: "Is he allergic to any medicines?"
+    topics: []
+    style: near_miss
+    pair: [current-prescriptions, medicine-concern]
+  - utterance: "Which pharmacy supplies the home?"
+    topics: []
+    style: near_miss
+    pair: [current-prescriptions, medicine-concern]
+
+  # ---- harm-and-falls / recent-course ----
+  - utterance: "Has he hit out at anyone when they're helping him?"
+    topics: [harm-and-falls]
+    style: boundary
+    pair: [harm-and-falls, recent-course]
+  - utterance: "Has he had any falls or near misses this week?"
+    topics: [harm-and-falls]
+    style: boundary
+    pair: [harm-and-falls, recent-course]
+  - utterance: "um has he hurt anybody or tried to get out of the building"
+    topics: [harm-and-falls]
+    style: boundary_spoken
+    pair: [harm-and-falls, recent-course]
+  - utterance: "Has he ever lashed out when he's been wound up?"
+    topics: [harm-and-falls]
+    style: boundary_colloquial
+    pair: [harm-and-falls, recent-course]
+  - utterance: "Is anyone at risk of getting hurt when that happens?"
+    topics: [harm-and-falls]
+    style: boundary_follow_up
+    pair: [harm-and-falls, recent-course]
+    previous:
+      interviewer: "What happens when he's unsettled?"
+      character: "from five until seven most evenings he paces and calls out"
+  - utterance: "What does the agitation look like, is it pacing, calling out?"
+    topics: [recent-course]
+    style: boundary
+    pair: [harm-and-falls, recent-course]
+  - utterance: "How many evenings has this been going on for?"
+    topics: [recent-course]
+    style: boundary
+    pair: [harm-and-falls, recent-course]
+  - utterance: "um so was he calm before all this started"
+    topics: [recent-course]
+    style: boundary_spoken
+    pair: [harm-and-falls, recent-course]
+  - utterance: "Is it every single evening or just some?"
+    topics: [recent-course]
+    style: boundary_colloquial
+    pair: [harm-and-falls, recent-course]
+  - utterance: "And when did it begin?"
+    topics: [recent-course]
+    style: boundary_follow_up
+    pair: [harm-and-falls, recent-course]
+    previous:
+      interviewer: "Has he put anyone in danger?"
+      character: "He pushed a carer's hand away once when being changed, without injuring her"
+  - utterance: "Has he been in hospital recently?"
+    topics: []
+    style: near_miss
+    pair: [harm-and-falls, recent-course]
+  - utterance: "Have staff ever had to restrain him?"
+    topics: []
+    style: near_miss
+    pair: [harm-and-falls, recent-course]
+
+  # ---- infection-check / pain-cues ----
+  - utterance: "Has he had a temperature or a cough lately?"
+    topics: [infection-check]
+    style: boundary
+    pair: [infection-check, pain-cues]
+  - utterance: "Has anyone tested his urine since this began?"
+    topics: [infection-check]
+    style: boundary
+    pair: [infection-check, pain-cues]
+  - utterance: "um has the GP been out to see him about it yet"
+    topics: [infection-check]
+    style: boundary_spoken
+    pair: [infection-check, pain-cues]
+  - utterance: "Does he seem to be coming down with something?"
+    topics: [infection-check]
+    style: boundary_colloquial
+    pair: [infection-check, pain-cues]
+  - utterance: "And has he said anything about stinging when he goes for a wee?"
+    topics: [infection-check]
+    style: boundary_follow_up
+    pair: [infection-check, pain-cues]
+    previous:
+      interviewer: "Does he seem uncomfortable at all?"
+      character: "Yes, I've seen him wince and rub his right knee when he stands"
+  - utterance: "Does he seem uncomfortable when he gets up out of his chair?"
+    topics: [pain-cues]
+    style: boundary
+    pair: [infection-check, pain-cues]
+  - utterance: "Does he have a bad joint or arthritis anywhere?"
+    topics: [pain-cues]
+    style: boundary
+    pair: [infection-check, pain-cues]
+  - utterance: "um is he holding or rubbing anywhere that might be sore"
+    topics: [pain-cues]
+    style: boundary_spoken
+    pair: [infection-check, pain-cues]
+  - utterance: "Does it look like it hurts him to get moving?"
+    topics: [pain-cues]
+    style: boundary_colloquial
+    pair: [infection-check, pain-cues]
+  - utterance: "Is there anywhere on his body that he seems to protect?"
+    topics: [pain-cues]
+    style: boundary_follow_up
+    pair: [infection-check, pain-cues]
+    previous:
+      interviewer: "Has a doctor looked at him since this started?"
+      character: "I haven't noticed a fever or cough and he hasn't told me about burning when passing urine"
+  - utterance: "Has his appetite changed lately?"
+    topics: []
+    style: near_miss
+    pair: [infection-check, pain-cues]
+  - utterance: "Is he eating and drinking enough?"
+    topics: []
+    style: near_miss
+    pair: [infection-check, pain-cues]

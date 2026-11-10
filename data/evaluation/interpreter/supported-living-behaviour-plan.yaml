@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: supported-living-behaviour-plan
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hi Beth, thanks for coming to the review."
+    expected: []
+    rapport: false
+  - utterance: "How often has he been hitting out since the move?"
+    expected: [pattern]
+    rapport: false
+  - utterance: "What tends to be happening just before he hits someone?"
+    expected: [before]
+    rapport: false
+  - utterance: "How does he communicate what he wants?"
+    expected: [communication]
+    rapport: false
+  - utterance: "does he have his picture cards or a visual timetable with him"
+    expected: [communication]
+    rapport: false
+  - utterance: "Has he seemed unwell or in pain at all?"
+    expected: [physical]
+    rapport: false
+  - utterance: "What's the new house like compared with where he lived before?"
+    expected: [routine]
+    rapport: false
+  - utterance: "What do staff do when he gets distressed?"
+    expected: [response]
+    rapport: false
+  - utterance: "Is he on any medication?"
+    expected: [medicines]
+    rapport: false
+  - utterance: "Is everyone safe at the moment?"
+    expected: [safety]
+    rapport: false
+  - utterance: "How are you feeling about working with him?"
+    expected: [strain]
+    rapport: false
+  - utterance: "Watching someone you support get so distressed after a big move must be really hard on the whole team. Has anything held you back from asking for help sooner?"
+    expected: [guarded]
+    rapport: true
+  - utterance: "That must be really upsetting for everyone involved."
+    expected: []
+    rapport: true
+  - utterance: "and how are things being managed today?"
+    previous:
+      interviewer: "Has anyone been hurt?"
+      character: "A colleague had a bruised arm once."
+    expected: [safety]
+    rapport: false
+  - utterance: "has anyone looked at his teeth?"
+    previous:
+      interviewer: "Has he been eating okay?"
+      character: "He's been holding his jaw and avoiding crunchy food."
+    expected: [physical]
+    rapport: false
+  - utterance: "Does he have epilepsy?"
+    expected: []
+    rapport: false
+  - utterance: "How often does his family visit?"
+    expected: []
+    rapport: false
+  - utterance: "Right, so it sounds like personal care with new staff is a common thread."
+    expected: []
+    rapport: false

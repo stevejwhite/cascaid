@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-13",
+  "models": [
+    {
+      "id": "qwen3-4b-gguf-q4-k-m",
+      "kind": "generation",
+      "status": "registered_casc_role_play_unevaluated",
+      "intended_tasks": [
+        "role_play",
+        "structured_output"
+      ],
+      "publisher": "Qwen",
+      "upstream_model_id": "Qwen/Qwen3-4B-GGUF",
+      "upstream_revision": "bc640142c66e1fdd12af0bd68f40445458f3869b",
+      "source_url": "https://huggingface.co/Qwen/Qwen3-4B-GGUF",
+      "parameter_count_billions": 4,
+      "context_limit_tokens": 4096,
+      "licence": {
+        "spdx": "Apache-2.0",
+        "source_url": "https://huggingface.co/Qwen/Qwen3-4B-GGUF/blob/main/LICENSE",
+        "verified_on": "2026-09-25",
+        "commercial_use": true,
+        "redistribution_terms_recorded": true,
+        "medical_domain_restriction": false,
+        "legal_review": "pending"
+      },
+      "candidate_artifacts": [
+        {
+          "format": "GGUF",
+          "quantisation": "Q4_K_M",
+          "filename": "Qwen3-4B-Q4_K_M.gguf",
+          "source": "https://huggingface.co/Qwen/Qwen3-4B-GGUF/resolve/bc640142c66e1fdd12af0bd68f40445458f3869b/Qwen3-4B-Q4_K_M.gguf",
+          "checksum_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+          "size_bytes": 2497280256,
+          "status": "verified_local"
+        }
+      ],
+      "runtime": {
+        "name": "llama.cpp",
+        "version": "0.5.0-dev",
+        "build": "b11149",
+        "commit": "d2e54583c",
+        "api": "OpenAI-compatible HTTP"
+      },
+      "hardware_assessment": {
+        "profile_id": "developer-latitude-7490",
+        "status": "benchmarked_cpu_only",
+        "basis": "The pinned model completed the Stage 2 suite at a 4,096-token context using CPU inference. Peak llama-server working set was 3,332,509,696 bytes."
+      },
+      "evaluation_status": "casc_role_play_not_yet_evaluated",
+      "release_approved": false,
+      "notes": [
+        "Not clinically or educationally approved. CASC role-play fidelity and latency are evaluated in Phase 4 (docs/CASC-POC-PLAN.md).",
+        "The tested 4,096-token runtime context is the registered local limit, regardless of larger upstream model claims.",
+        "Earlier grounded-QA evaluations are preserved at git tag pre-casc-archive."
+      ]
+    },
+    {
+      "id": "qwen3-embedding-0.6b-gguf-q8-0",
+      "kind": "embedding",
+      "status": "registered_casc_classifier_unevaluated",
+      "intended_tasks": [
+        "interpretation_classification"
+      ],
+      "publisher": "Qwen",
+      "upstream_model_id": "Qwen/Qwen3-Embedding-0.6B-GGUF",
+      "upstream_revision": "370f27d7550e0def9b39c1f16d3fbaa13aa67728",
+      "source_url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B-GGUF",
+      "parameter_count_billions": 0.6,
+      "context_limit_tokens": 4096,
+      "embedding_dimensions": 1024,
+      "normalization_version": "l2-v1",
+      "licence": {
+        "spdx": "Apache-2.0",
+        "source_url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B-GGUF/blob/main/LICENSE",
+        "verified_on": "2026-09-26",
+        "commercial_use": true,
+        "redistribution_terms_recorded": true,
+        "medical_domain_restriction": false,
+        "legal_review": "pending"
+      },
+      "candidate_artifacts": [
+        {
+          "format": "GGUF",
+          "quantisation": "Q8_0",
+          "filename": "Qwen3-Embedding-0.6B-Q8_0.gguf",
+          "source": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B-GGUF/resolve/370f27d7550e0def9b39c1f16d3fbaa13aa67728/Qwen3-Embedding-0.6B-Q8_0.gguf",
+          "checksum_sha256": "06507c7b42688469c4e7298b0a1e16deff06caf291cf0a5b278c308249c3e439",
+          "size_bytes": 639150592,
+          "status": "verified_local"
+        }
+      ],
+      "runtime": {
+        "name": "llama.cpp",
+        "version": "0.5.0-dev",
+        "build": "b11149",
+        "commit": "d2e54583c",
+        "api": "OpenAI-compatible embeddings HTTP"
+      },
+      "evaluation_status": "casc_classifier_not_yet_evaluated",
+      "release_approved": false,
+      "notes": [
+        "Re-registered 2026-10-13 from git tag pre-casc-archive (same file, revision and checksum) for the classifier interpreter (step 2 of the interpreter work).",
+        "Embeds trainee lines and topic labels for the topic and tone classifiers; it generates no text and never sees hidden fact content.",
+        "Earlier synthetic retrieval validation (pre-CASC) does not establish classification quality."
+      ]
+    }
+  ]
+}

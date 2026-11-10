@@ -1,0 +1,73 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: dbt-referral-discussion
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hi Leah, I'm one of the doctors in the psychotherapy team, thanks for coming in."
+    expected: []
+    rapport: false
+  - utterance: "What do you know about DBT so far?"
+    expected: [therapy-understanding]
+    rapport: false
+  - utterance: "Can you tell me what tends to happen in the run-up to a crisis?"
+    expected: [crisis-pattern]
+    rapport: false
+  - utterance: "How often have you been self-harming recently, and when was the last time?"
+    expected: [self-injury-pattern]
+    rapport: false
+  - utterance: "Are you having any thoughts of ending your life at the moment?"
+    expected: [current-intent]
+    rapport: false
+  - utterance: "Have you had therapy or counselling before?"
+    expected: [previous-services]
+    rapport: false
+  - utterance: "How do you feel about the idea of a skills group?"
+    expected: [group-concern]
+    rapport: false
+  - utterance: "What days would you realistically be able to come in each week?"
+    expected: [attendance]
+    rapport: false
+  - utterance: "Would you be able to do some homework practice between sessions?"
+    expected: [skills-practice]
+    rapport: false
+  - utterance: "Who would you contact if things got bad late in the evening?"
+    expected: [crisis-contact-gap]
+    rapport: false
+  - utterance: "Do you have things at home that you could use to hurt yourself?"
+    expected: [means-access]
+    rapport: false
+  - utterance: "If therapy went well, what would be different for you?"
+    expected: [personal-goal]
+    rapport: false
+  - utterance: "So would you like me to go ahead with a referral?"
+    expected: [referral-preference]
+    rapport: false
+  - utterance: "It sounds really frightening to go from feeling fine to desperate so quickly."
+    expected: []
+    rapport: true
+  - utterance: "That makes sense, starting over with someone new can feel exhausting."
+    expected: []
+    rapport: true
+  - utterance: "What made you stop?"
+    previous:
+      interviewer: "Have you seen a counsellor before?"
+      character: "Six sessions last year, then I stopped."
+    expected: [previous-services]
+    rapport: false
+  - utterance: "and after five o'clock?"
+    previous:
+      interviewer: "Who do you ring in the daytime if you're struggling?"
+      character: "My care coordinator."
+    expected: [crisis-contact-gap]
+    rapport: false
+  - utterance: "How much are you drinking at the moment?"
+    expected: []
+    rapport: false
+  - utterance: "Are you on any medication currently?"
+    expected: []
+    rapport: false
+  - utterance: "OK, so you want a clearer idea of what's involved before you commit to anything."
+    expected: []
+    rapport: false

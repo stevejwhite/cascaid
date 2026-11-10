@@ -1,0 +1,70 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: amputation-refusal-capacity
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hello Stephen, I'm one of the psychiatrists here. The ward team asked me to come and have a chat with you, is that alright?"
+    expected: []
+    rapport: false
+  - utterance: "Can you tell me in your own words what's wrong with your foot?"
+    expected: [condition]
+    rapport: false
+  - utterance: "What have the surgeons actually suggested doing about it?"
+    expected: [operation]
+    rapport: false
+  - utterance: "Are there any other treatments going on at the moment, and what do you think could happen if you don't have the surgery?"
+    expected: [alternatives]
+    rapport: false
+  - utterance: "You saw the surgical team earlier today. What do you recall them telling you?"
+    expected: [retention]
+    rapport: false
+  - utterance: "How are you balancing the pros and cons of this in your mind?"
+    expected: [weighing]
+    rapport: false
+  - utterance: "So where have you got to with the decision right now?"
+    expected: [choice]
+    rapport: false
+  - utterance: "how's your mood been lately"
+    expected: [mood]
+    rapport: false
+  - utterance: "I have to ask this of everyone in your position. Is part of saying no about wanting your life to end?"
+    expected: [suicide]
+    rapport: false
+  - utterance: "What matters most to you about how you live your life day to day?"
+    expected: [values]
+    rapport: false
+  - utterance: "Has anyone been pushing you one way or the other about this?"
+    expected: [pressure]
+    rapport: false
+  - utterance: "Is there anything that would make it easier for you to take all of this in?"
+    expected: [support]
+    rapport: false
+  - utterance: "Facing the possibility of losing part of your leg sounds absolutely terrifying, Stephen."
+    expected: []
+    rapport: true
+  - utterance: "It's completely understandable that you want some say over what happens to your own body."
+    expected: []
+    rapport: true
+  - previous:
+      interviewer: "And how have things been with your spirits?"
+      character: "I've felt low for about three weeks, since this got worse."
+    utterance: "And over those three weeks, have you had any thoughts that you'd be better off dead?"
+    expected: [suicide]
+    rapport: false
+  - previous:
+      interviewer: "What did they say could happen if you leave it?"
+      character: "I understand refusing could mean I die."
+    utterance: "Right, and what's making you lean towards saying no despite that?"
+    expected: [weighing]
+    rapport: false
+  - utterance: "Do you smoke at all, or have you ever smoked?"
+    expected: []
+    rapport: false
+  - utterance: "Who's your GP, and have you seen them recently about your sugars?"
+    expected: []
+    rapport: false
+  - utterance: "OK, so I'm hearing that you understand the risks, you remember what was said, and you haven't changed your mind yet."
+    expected: []
+    rapport: false

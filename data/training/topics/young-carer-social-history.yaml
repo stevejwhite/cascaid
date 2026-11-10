@@ -1,0 +1,841 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: young-carer-social-history
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Do you share your home with anyone else?
+  topics:
+  - home
+  style: closed
+- utterance: Can you describe your current living arrangements?
+  topics:
+  - home
+  style: clinical
+- utterance: I wondered what your home set-up is like.
+  topics:
+  - home
+  style: indirect
+- utterance: That's a lot to take in. Who else lives with you?
+  topics:
+  - home
+  style: empathy_then_question
+- utterance: um so where do you live, like who's there with you
+  topics:
+  - home
+  style: spoken
+- utterance: and your home life?
+  topics:
+  - home
+  style: brief
+- utterance: And who else is in the house with you?
+  topics:
+  - home
+  style: follow_up
+  previous:
+    interviewer: Tell me about the person you look after.
+    character: Mum has a disabling neurological illness. I cook, shop and help her get ready in the morning;
+      it takes about three hours each day.
+- utterance: I imagine there are other people at home too?
+  topics:
+  - home
+  style: leading
+- utterance: What kind of home do you live in, and do you rent or own it?
+  topics:
+  - home
+  style: closed
+- utterance: What's your place like, is it big enough for everyone?
+  topics:
+  - home
+  style: colloquial
+- utterance: Is your other parent involved much day to day?
+  topics:
+  - home
+  style: closed
+- utterance: How much contact do you have with your other parent?
+  topics:
+  - home
+  style: open
+- utterance: er is there, like, anyone else around at home, family wise
+  topics:
+  - home
+  style: spoken
+- utterance: Do you have any brothers or sisters at home?
+  topics:
+  - home
+  style: closed
+- utterance: What does a normal day of looking after your parent involve?
+  topics:
+  - care
+  style: open
+- utterance: Do you help with meals and getting ready in the morning?
+  topics:
+  - care
+  style: closed
+- utterance: What sort of stuff do you end up doing for your parent?
+  topics:
+  - care
+  style: colloquial
+- utterance: Can you list the caring tasks you carry out each day?
+  topics:
+  - care
+  style: clinical
+- utterance: I'm trying to picture what you do for your parent from morning to night.
+  topics:
+  - care
+  style: indirect
+- utterance: It sounds like you carry a lot. What do you actually do to help?
+  topics:
+  - care
+  style: empathy_then_question
+- utterance: so um what sort of jobs do you do round the house, for your parent I mean
+  topics:
+  - care
+  style: spoken
+- utterance: and the caring tasks?
+  topics:
+  - care
+  style: brief
+- utterance: So how much of the looking after falls to you?
+  topics:
+  - care
+  style: follow_up
+  previous:
+    interviewer: Does anyone else live with you?
+    character: I live with Mum and my younger brother, who's ten, in a rented upstairs flat. Dad lives
+      elsewhere and visits occasionally.
+- utterance: I imagine it takes up a big chunk of your day?
+  topics:
+  - care
+  style: leading
+- utterance: How many hours a day would you say you spend caring?
+  topics:
+  - care
+  style: closed
+- utterance: Talk me through your mornings before school.
+  topics:
+  - care
+  style: open
+- utterance: Do you handle the cooking in your house?
+  topics:
+  - care
+  style: closed
+- utterance: um do you like do the shopping and that
+  topics:
+  - care
+  style: spoken
+- utterance: how much time daily?
+  topics:
+  - care
+  style: brief
+- utterance: How have things been going with your schoolwork lately?
+  topics:
+  - school
+  style: open
+- utterance: Are you managing to get in on time?
+  topics:
+  - school
+  style: closed
+- utterance: Are you keeping up with homework alright?
+  topics:
+  - school
+  style: colloquial
+- utterance: Has your academic performance changed this term?
+  topics:
+  - school
+  style: clinical
+- utterance: I wondered how school has been for you recently.
+  topics:
+  - school
+  style: indirect
+- utterance: That must be tiring. Have your grades suffered?
+  topics:
+  - school
+  style: empathy_then_question
+- utterance: um have you been, like, late for lessons much
+  topics:
+  - school
+  style: spoken
+- utterance: and your grades?
+  topics:
+  - school
+  style: brief
+- utterance: Does that get in the way of getting to school on time?
+  topics:
+  - school
+  style: follow_up
+  previous:
+    interviewer: How long does it take you each day?
+    character: Mum has a disabling neurological illness. I cook, shop and help her get ready in the morning;
+      it takes about three hours each day.
+- utterance: I'd guess school has been hard to keep on top of?
+  topics:
+  - school
+  style: leading
+- utterance: Have your teachers noticed any change in you?
+  topics:
+  - school
+  style: closed
+- utterance: What effect has all this had on your education?
+  topics:
+  - school
+  style: open
+- utterance: Do you ever get stuck finishing your work at home?
+  topics:
+  - school
+  style: colloquial
+- utterance: Is your attendance okay?
+  topics:
+  - school
+  style: closed
+- utterance: so is homework getting done or not really
+  topics:
+  - school
+  style: spoken
+- utterance: any change in marks?
+  topics:
+  - school
+  style: brief
+- utterance: Tell me about your friends.
+  topics:
+  - friends
+  style: open
+- utterance: Do you get to see friends outside school?
+  topics:
+  - friends
+  style: closed
+- utterance: How would you describe your social life at the moment?
+  topics:
+  - friends
+  style: clinical
+- utterance: I'd like to hear what you do for fun outside school.
+  topics:
+  - friends
+  style: indirect
+- utterance: You've got a lot on your plate. Are you able to do any clubs or sports?
+  topics:
+  - friends
+  style: empathy_then_question
+- utterance: so er do you still go to any clubs or teams or anything
+  topics:
+  - friends
+  style: spoken
+- utterance: and seeing friends?
+  topics:
+  - friends
+  style: brief
+- utterance: And what about time with friends?
+  topics:
+  - friends
+  style: follow_up
+  previous:
+    interviewer: How are you finding schoolwork?
+    character: I'm late twice most weeks and struggle to finish homework. My grades have dropped this
+      term.
+- utterance: I'd imagine it's hard to find time to see people?
+  topics:
+  - friends
+  style: leading
+- utterance: Have you given up any hobbies?
+  topics:
+  - friends
+  style: closed
+- utterance: How do you spend your free time?
+  topics:
+  - friends
+  style: open
+- utterance: Are you able to just go out and do normal teenage stuff?
+  topics:
+  - friends
+  style: colloquial
+- utterance: Do you keep in touch with friends by phone?
+  topics:
+  - friends
+  style: closed
+- utterance: um what about hanging out with people, does that happen
+  topics:
+  - friends
+  style: spoken
+- utterance: any activities or sports?
+  topics:
+  - friends
+  style: brief
+- utterance: Does your household manage to pay the bills?
+  topics:
+  - money
+  style: closed
+- utterance: Is money tight for you lot?
+  topics:
+  - money
+  style: colloquial
+- utterance: Could you tell me about the household's financial situation?
+  topics:
+  - money
+  style: clinical
+- utterance: I wondered whether you ever worry about money.
+  topics:
+  - money
+  style: indirect
+- utterance: That sounds a lot for one person. Do you ever worry about having enough food?
+  topics:
+  - money
+  style: empathy_then_question
+- utterance: um is there like enough money coming in, for food and stuff
+  topics:
+  - money
+  style: spoken
+- utterance: and finances at home?
+  topics:
+  - money
+  style: brief
+- utterance: Is there enough money coming in to cover things?
+  topics:
+  - money
+  style: follow_up
+  previous:
+    interviewer: How much of your day goes on helping?
+    character: Mum has a disabling neurological illness. I cook, shop and help her get ready in the morning;
+      it takes about three hours each day.
+- utterance: Money must be a struggle, I'd guess?
+  topics:
+  - money
+  style: leading
+- utterance: What's the situation with food and household costs?
+  topics:
+  - money
+  style: open
+- utterance: Do you ever run short before the end of the week?
+  topics:
+  - money
+  style: colloquial
+- utterance: Is there any income coming into the household?
+  topics:
+  - money
+  style: closed
+- utterance: so er do you ever go without, like, food
+  topics:
+  - money
+  style: spoken
+- utterance: money worries?
+  topics:
+  - money
+  style: brief
+- utterance: What help do you and your family get from other people?
+  topics:
+  - support
+  style: open
+- utterance: Does anyone else come in to help at home?
+  topics:
+  - support
+  style: closed
+- utterance: Do you get any backup with the caring?
+  topics:
+  - support
+  style: colloquial
+- utterance: Have you had a young carer's assessment?
+  topics:
+  - support
+  style: clinical
+- utterance: I wondered whether any services are involved with your family.
+  topics:
+  - support
+  style: indirect
+- utterance: I'm glad you told me. Have you got any professional support?
+  topics:
+  - support
+  style: empathy_then_question
+- utterance: um is there like a support group or anything you go to
+  topics:
+  - support
+  style: spoken
+- utterance: any outside help?
+  topics:
+  - support
+  style: brief
+- utterance: Is there anyone who could help so you could see them more?
+  topics:
+  - support
+  style: follow_up
+  previous:
+    interviewer: How are you with time for friends?
+    character: I text friends but rarely go out because I worry about leaving Mum. I stopped going to
+      football practice.
+- utterance: I expect you've had to manage mostly on your own?
+  topics:
+  - support
+  style: leading
+- utterance: Has anyone from social services or a charity been in touch?
+  topics:
+  - support
+  style: closed
+- utterance: Who else is there to share the load?
+  topics:
+  - support
+  style: open
+- utterance: Have you met other young people who do caring too?
+  topics:
+  - support
+  style: colloquial
+- utterance: Do carers visit your home?
+  topics:
+  - support
+  style: closed
+- utterance: so er has anyone ever offered your family help, like formally
+  topics:
+  - support
+  style: spoken
+- utterance: professional help at home?
+  topics:
+  - support
+  style: brief
+- utterance: Do you find yourself worrying a lot?
+  topics:
+  - mood
+  style: closed
+- utterance: Are you sleeping okay at night?
+  topics:
+  - mood
+  style: colloquial
+- utterance: Have you noticed any symptoms of anxiety or low mood?
+  topics:
+  - mood
+  style: clinical
+- utterance: I wondered how your sleep and mood have been.
+  topics:
+  - mood
+  style: indirect
+- utterance: Thank you for telling me this. Are you getting enough sleep?
+  topics:
+  - mood
+  style: empathy_then_question
+- utterance: um do you feel, like, anxious or low a lot
+  topics:
+  - mood
+  style: spoken
+- utterance: and your mood?
+  topics:
+  - mood
+  style: brief
+- utterance: Do you still enjoy it when you do?
+  topics:
+  - mood
+  style: follow_up
+  previous:
+    interviewer: Do you manage to see friends?
+    character: I text friends but rarely go out because I worry about leaving Mum. I stopped going to
+      football practice.
+- utterance: You've probably been feeling quite anxious lately?
+  topics:
+  - mood
+  style: leading
+- utterance: How many hours of sleep do you get?
+  topics:
+  - mood
+  style: closed
+- utterance: What's your head like at night when you try to sleep?
+  topics:
+  - mood
+  style: open
+- utterance: What do you still enjoy these days?
+  topics:
+  - mood
+  style: colloquial
+- utterance: Is your mood generally okay?
+  topics:
+  - mood
+  style: closed
+- utterance: so do you wake up in the night much or
+  topics:
+  - mood
+  style: spoken
+- utterance: any worries lately?
+  topics:
+  - mood
+  style: brief
+- utterance: What happens if your parent has a fall or needs lifting?
+  topics:
+  - physical-safety
+  style: open
+- utterance: Do you ever have to lift or support your parent physically?
+  topics:
+  - physical-safety
+  style: closed
+- utterance: Do you end up having to pick them up if they go down?
+  topics:
+  - physical-safety
+  style: colloquial
+- utterance: Do you assist with manual handling, and have you had any training?
+  topics:
+  - physical-safety
+  style: clinical
+- utterance: I wondered what you do in an emergency at home.
+  topics:
+  - physical-safety
+  style: indirect
+- utterance: That sounds worrying. What would you do if your parent got hurt?
+  topics:
+  - physical-safety
+  style: empathy_then_question
+- utterance: um if something goes wrong at home, like an accident, what do you do
+  topics:
+  - physical-safety
+  style: spoken
+- utterance: and emergencies at home?
+  topics:
+  - physical-safety
+  style: brief
+- utterance: And what about when there's an emergency?
+  topics:
+  - physical-safety
+  style: follow_up
+  previous:
+    interviewer: Does anyone come in to help?
+    character: A care worker comes for half an hour on weekday mornings. I haven't had a young carer's
+      assessment or joined a support group.
+- utterance: I imagine you might sometimes have to physically help them, is that right?
+  topics:
+  - physical-safety
+  style: leading
+- utterance: Is there a plan for who steps in if something goes wrong?
+  topics:
+  - physical-safety
+  style: closed
+- utterance: Tell me about how you keep yourself safe when you're helping with moving around.
+  topics:
+  - physical-safety
+  style: open
+- utterance: Have you ever hurt your back helping out?
+  topics:
+  - physical-safety
+  style: colloquial
+- utterance: Would you know who to ring if it was an emergency?
+  topics:
+  - physical-safety
+  style: closed
+- utterance: so er does your parent ever fall and you have to, like, sort it
+  topics:
+  - physical-safety
+  style: spoken
+- utterance: lifting and moving, safely?
+  topics:
+  - physical-safety
+  style: brief
+- utterance: Has there been any part of the caring that you find hard to say out loud?
+  topics:
+  - resentment
+  style: open
+- utterance: Do you ever get fed up with it all?
+  topics:
+  - resentment
+  style: colloquial
+- utterance: Do you experience any ambivalence about your caring role?
+  topics:
+  - resentment
+  style: clinical
+- utterance: I wondered whether you ever wish you could have a break.
+  topics:
+  - resentment
+  style: indirect
+- utterance: You obviously love your family. Is there ever a flip side, feelings that are harder?
+  topics:
+  - resentment
+  style: empathy_then_question
+- utterance: um do you ever feel, like, bad about wanting time off
+  topics:
+  - resentment
+  style: spoken
+- utterance: and any guilt?
+  topics:
+  - resentment
+  style: brief
+- utterance: Is there anything about that you find hard to feel okay about?
+  topics:
+  - resentment
+  style: follow_up
+  previous:
+    interviewer: What do you do for your parent each day?
+    character: Mum has a disabling neurological illness. I cook, shop and help her get ready in the morning;
+      it takes about three hours each day.
+- utterance: Caring for someone must sometimes make you feel resentful, mustn't it?
+  topics:
+  - resentment
+  style: leading
+- utterance: Do you feel guilty about any of your feelings?
+  topics:
+  - resentment
+  style: closed
+- utterance: What mixed feelings come up when you think about everything you do?
+  topics:
+  - resentment
+  style: open
+- utterance: Is it ever too much, and do you then feel bad for thinking that?
+  topics:
+  - resentment
+  style: colloquial
+- utterance: Would you say you sometimes want to be free of the responsibility?
+  topics:
+  - resentment
+  style: closed
+- utterance: so er do you ever feel, you know, annoyed and then guilty
+  topics:
+  - resentment
+  style: spoken
+- utterance: wanting a break?
+  topics:
+  - resentment
+  style: brief
+- utterance: What makes it hard for you to ask for help?
+  topics:
+  - fear
+  style: open
+- utterance: Are you worried about what might happen if professionals get involved?
+  topics:
+  - fear
+  style: closed
+- utterance: Is something putting you off getting help?
+  topics:
+  - fear
+  style: colloquial
+- utterance: Do you have any concerns about involving services in your family's care?
+  topics:
+  - fear
+  style: clinical
+- utterance: I wondered how you feel about outside agencies knowing about your home life.
+  topics:
+  - fear
+  style: indirect
+- utterance: I can hear how protective you are. What worries you about telling someone?
+  topics:
+  - fear
+  style: empathy_then_question
+- utterance: um what are you, like, scared would happen if you told someone
+  topics:
+  - fear
+  style: spoken
+- utterance: and fear of telling?
+  topics:
+  - fear
+  style: brief
+- utterance: What stops you asking for more?
+  topics:
+  - fear
+  style: follow_up
+  previous:
+    interviewer: Has your family had any help?
+    character: A care worker comes for half an hour on weekday mornings. I haven't had a young carer's
+      assessment or joined a support group.
+- utterance: I'd guess you might be nervous that asking for help leads to trouble?
+  topics:
+  - fear
+  style: leading
+- utterance: Do you worry that being honest with us might have consequences for your family?
+  topics:
+  - fear
+  style: closed
+- utterance: What would you most want from the people trying to help you?
+  topics:
+  - fear
+  style: open
+- utterance: Are you afraid of making a fuss and things getting out of hand?
+  topics:
+  - fear
+  style: colloquial
+- utterance: Is it hard to tell people you need support?
+  topics:
+  - fear
+  style: closed
+- utterance: so er is it a worry, like, what happens if you say how hard it is
+  topics:
+  - fear
+  style: spoken
+- utterance: afraid of asking?
+  topics:
+  - fear
+  style: brief
+- utterance: How are you coping when things get really overwhelming?
+  topics:
+  - self-risk
+  style: open
+- utterance: Have you ever had thoughts of ending your life?
+  topics:
+  - self-risk
+  style: closed
+- utterance: Have you ever hurt yourself on purpose?
+  topics:
+  - self-risk
+  style: colloquial
+- utterance: Any thoughts of self-harm or suicide?
+  topics:
+  - self-risk
+  style: clinical
+- utterance: I wondered whether things ever feel so bad that you think about not being here.
+  topics:
+  - self-risk
+  style: indirect
+- utterance: Thank you for being so open. Have you ever wanted to harm yourself?
+  topics:
+  - self-risk
+  style: empathy_then_question
+- utterance: um have you ever thought about, like, hurting yourself or not wanting to be here
+  topics:
+  - self-risk
+  style: spoken
+- utterance: any thoughts of suicide?
+  topics:
+  - self-risk
+  style: brief
+- utterance: Do things ever get so bad you've thought of harming yourself?
+  topics:
+  - self-risk
+  style: follow_up
+  previous:
+    interviewer: How is your sleep?
+    character: I worry most days and sleep about six hours because I listen out for Mum. I still enjoy
+      time with friends when I get it.
+- utterance: You haven't ever thought of hurting yourself, have you?
+  topics:
+  - self-risk
+  style: leading
+- utterance: Who could you talk to if you felt overwhelmed?
+  topics:
+  - self-risk
+  style: closed
+- utterance: Who do you turn to when it all gets too much?
+  topics:
+  - self-risk
+  style: open
+- utterance: Have you ever felt like you didn't want to carry on?
+  topics:
+  - self-risk
+  style: colloquial
+- utterance: Is there a trusted adult at school you can speak to?
+  topics:
+  - self-risk
+  style: closed
+- utterance: so er have you ever self-harmed
+  topics:
+  - self-risk
+  style: spoken
+- utterance: self-harm or suicidal thoughts?
+  topics:
+  - self-risk
+  style: brief
+- utterance: Who lives with you, and what do you do to help your parent each day?
+  topics:
+  - home
+  - care
+  style: stacked
+- utterance: Is there enough money, and does anyone come in to help?
+  topics:
+  - money
+  - support
+  style: stacked
+- utterance: How is your sleep, and have you ever thought of harming yourself?
+  topics:
+  - mood
+  - self-risk
+  style: stacked
+- utterance: Do you ever worry about asking for help, and does anyone already help?
+  topics:
+  - fear
+  - support
+  style: stacked
+- utterance: Hello Tessa, come in and have a seat.
+  topics: []
+  style: greeting
+- utterance: I'm one of the doctors the school nurse asked to meet you.
+  topics: []
+  style: introduction
+- utterance: My name is Dr Hale, and I work with young people.
+  topics: []
+  style: introduction
+- utterance: Is it all right if we have a chat for a few minutes?
+  topics: []
+  style: introduction
+- utterance: What would you like to start with?
+  topics: []
+  style: introduction
+- utterance: Before we start, do you have any questions for me?
+  topics: []
+  style: introduction
+- utterance: Would you rather I called you Tessa, or something else?
+  topics: []
+  style: introduction
+- utterance: I'd like to move on to something different now.
+  topics: []
+  style: transition
+- utterance: Let's talk about how you are looking after yourself.
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, so one last thing.
+  topics: []
+  style: closing
+- utterance: We'll need to stop in a minute.
+  topics: []
+  style: closing
+- utterance: It sounds like you carry a great deal for someone your age.
+  topics: []
+  style: empathy
+- utterance: That must be really tiring.
+  topics: []
+  style: empathy
+- utterance: You obviously care about your family very much.
+  topics: []
+  style: empathy
+- utterance: It's not easy to talk about this sort of thing.
+  topics: []
+  style: empathy
+- utterance: So you're sixteen, and the school nurse thought we should meet.
+  topics: []
+  style: summary
+- utterance: You said you don't want a big fuss made, so I'll bear that in mind.
+  topics: []
+  style: summary
+- utterance: From what you've told me, you take on a lot of responsibility.
+  topics: []
+  style: summary
+- utterance: What you tell me stays private, unless I'm worried about someone's safety.
+  topics: []
+  style: explanation
+- utterance: I'll be asking about home, school and how you're feeling.
+  topics: []
+  style: explanation
+- utterance: There are no right or wrong answers to any of my questions.
+  topics: []
+  style: explanation
+- utterance: I'm not here to judge your family.
+  topics: []
+  style: explanation
+- utterance: Does that make sense about what I can keep private?
+  topics: []
+  style: check_understanding
+- utterance: Have I got that right so far?
+  topics: []
+  style: check_understanding
+- utterance: Is it okay if I make a few notes?
+  topics: []
+  style: check_understanding
+- utterance: Do you ever drink alcohol or take drugs?
+  topics: []
+  style: off_case
+- utterance: Have you ever been bullied at school?
+  topics: []
+  style: off_case
+- utterance: What would you like to do after you leave school?
+  topics: []
+  style: off_case
+- utterance: Are you in a relationship with anyone?
+  topics: []
+  style: off_case
+- utterance: How long has your parent been unwell?
+  topics: []
+  style: near_miss
+- utterance: How long has your family lived in this area?
+  topics: []
+  style: near_miss
+- utterance: Which subjects are you taking?
+  topics: []
+  style: near_miss
+- utterance: Which doctor looks after your parent's illness?
+  topics: []
+  style: near_miss

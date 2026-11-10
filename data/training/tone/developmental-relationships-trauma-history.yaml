@@ -1,0 +1,159 @@
+# Training lines for the tone classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: developmental-relationships-trauma-history
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Have you ever thought of harming yourself?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Do you worry about people leaving you?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Who looked after you as a child?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: um how did school go for you
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Would it be all right if I asked a little about your teenage years?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Sorry, may I ask who lived with you at home?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Hello Leila, I'm Dr Rowan from the psychotherapy team.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: Afternoon Leila, come on in.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: So we have talked about where you lived and how school was.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: summary
+- utterance: Right. And how old were you then?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Mm, okay, thanks for that.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: That sounds really hard.
+  empathy: 1
+  empathy_words: That sounds really hard.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I'm sorry to hear that.
+  empathy: 1
+  empathy_words: I'm sorry to hear that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That must have been difficult. And what happened next?
+  empathy: 1
+  empathy_words: That must have been difficult.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I understand. Who else was around at the time?
+  empathy: 1
+  empathy_words: I understand.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: It sounds as though you learned to keep your feelings to yourself because you couldn't tell
+    how the adults at home would respond.
+  empathy: 2
+  empathy_words: It sounds as though you learned to keep your feelings to yourself because you couldn't
+    tell how the adults at home would respond.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: What happened when you were upset?
+    character: My grandmother would listen when I was upset. At home I usually kept quiet because I didn't
+      know how adults would react.
+- utterance: You've been brave to say that much, and we won't go into details you don't want to share.
+  empathy: 2
+  empathy_words: You've been brave to say that much, and we won't go into details you don't want to share.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: Was there anything frightening at home?
+    character: There was shouting and sometimes violence between adults at home. I don't want to describe
+      particular incidents today.
+- utterance: It must be confusing to know what happened but struggle to name what you feel.
+  empathy: 2
+  empathy_words: It must be confusing to know what happened but struggle to name what you feel.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: That makes sense, wanting to understand things while being frightened of relying on someone.
+    What would help you feel safe here?
+  empathy: 2
+  empathy_words: That makes sense, wanting to understand things while being frightened of relying on someone.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: What do you want from therapy?
+    character: I want to understand the pattern, but I'm frightened of becoming dependent on someone who
+      might leave. I'd like us to go slowly.
+- utterance: You should talk about your childhood more openly if you want therapy to work.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You should talk about your childhood more openly if you want therapy to work
+  style: confront_statement
+- utterance: Why would you not want to give me the details of what happened?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Why would you not want to give me the details of what happened
+  style: confront_why
+- utterance: Lots of people have a hard childhood, so I wouldn't dwell on it.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: so I wouldn't dwell on it
+  style: dismissive
+- utterance: I'm sure it wasn't as bad as you make it sound.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: I'm sure it wasn't as bad as you make it sound
+  style: dismissive

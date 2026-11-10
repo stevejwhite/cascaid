@@ -1,0 +1,50 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: late-life-intrusion-beliefs
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Dorothy, how do you account for the belongings being moved, and how sure are you?
+  expected:
+  - belief
+  rapport: false
+- utterance: Can you take me back to the first time you thought somebody had moved a possession?
+  expected:
+  - onset
+  rapport: false
+- utterance: Do you ever hear somebody speaking when you can't work out who is there?
+  expected:
+  - hearing-voices
+  rapport: false
+- utterance: Have there been unusual sights or smells as well as the concern about your flat?
+  expected:
+  - other-phenomena
+  rapport: false
+- utterance: How well are your hearing and eyesight working for everyday things at present?
+  expected:
+  - sensory
+  rapport: false
+- utterance: How are you managing things like paying bills and remembering when you need to be somewhere?
+  expected:
+  - cognition
+  rapport: false
+- utterance: Do you hear words or a voice when there is nobody you can see speaking?
+  expected:
+  - hearing-voices
+  rapport: false
+- utterance: How is your everyday hearing, and is any hearing aid you use working?
+  expected:
+  - sensory
+  rapport: false
+- utterance: do you feel able to tell her when you're lonely?
+  expected:
+  - isolation
+  rapport: false
+  previous:
+    interviewer: Who visits you at home?
+    character: My niece visits weekly.
+- utterance: Feeling uneasy in your own home sounds exhausting; home should feel like somewhere you can
+    relax.
+  expected: []
+  rapport: true

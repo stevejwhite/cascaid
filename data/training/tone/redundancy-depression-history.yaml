@@ -1,0 +1,157 @@
+# Training lines for the tone classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: redundancy-depression-history
+case_version: 0.1.0
+status: draft
+items:
+- utterance: How has your mood been?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Are you managing to sleep at night?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Have you had thoughts of ending your life?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Have you ever tried to harm yourself?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Sorry to ask, but how is your appetite?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Would you mind telling me a bit about when this started?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Good morning, Owen.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: Hello Owen, I'm one of the doctors here at the community clinic.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: So you've lost your job, you're not going out much and you're sleeping badly.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: summary
+- utterance: Okay, thanks Owen.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Right. And how long has that been the case?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: I'm sorry to hear that.
+  empathy: 1
+  empathy_words: I'm sorry to hear that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That sounds hard.
+  empathy: 1
+  empathy_words: That sounds hard.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That sounds exhausting. Have you been able to see friends?
+  empathy: 1
+  empathy_words: That sounds exhausting.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I'm sorry. Is anyone at home with you?
+  empathy: 1
+  empathy_words: I'm sorry.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: It sounds painful to feel you have let down the people you love, and thank you for trusting
+    me with that.
+  empathy: 2
+  empathy_words: It sounds painful to feel you have let down the people you love, and thank you for trusting
+    me with that.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: How do you feel about yourself these days?
+    character: I feel I've let my partner down and that I'm useless. It's hard admitting how much I believe
+      that.
+- utterance: Losing interest in the things you used to enjoy, like football and seeing friends, sounds
+    really lonely.
+  empathy: 2
+  empathy_words: Losing interest in the things you used to enjoy, like football and seeing friends, sounds
+    really lonely.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: What do you do with your days at the moment?
+    character: No, I don't enjoy football or seeing friends now. I turn down invitations and sit indoors
+      most days.
+- utterance: Losing your job and then feeling like this must have been a huge blow to you.
+  empathy: 2
+  empathy_words: Losing your job and then feeling like this must have been a huge blow to you.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: It sounds like the last few months have been really tough for you. What has been the hardest
+    part?
+  empathy: 2
+  empathy_words: It sounds like the last few months have been really tough for you.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+- utterance: You need to pull yourself together and get out of the house.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: pull yourself together
+  style: confront_statement
+- utterance: Why on earth haven't you been applying for jobs?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Why on earth haven't you been applying for jobs
+  style: confront_why
+- utterance: Lots of people lose their jobs, so I wouldn't read too much into it.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: I wouldn't read too much into it
+  style: dismissive
+- utterance: A few drinks to relax is fine, it's not really a problem.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: it's not really a problem
+  style: dismissive

@@ -1,0 +1,838 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: postpartum-psychosis-husband-collateral
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Can you take me through when you first noticed her changing after the birth?
+  topics:
+  - onset
+  style: open
+- utterance: Was she well in the first few days after the baby was born?
+  topics:
+  - onset
+  style: closed
+- utterance: When did she start acting differently, then?
+  topics:
+  - onset
+  style: colloquial
+- utterance: What was the timing of the start of her symptoms in relation to the delivery?
+  topics:
+  - onset
+  style: clinical
+- utterance: I'd like to understand how quickly all of this has developed
+  topics:
+  - onset
+  style: indirect
+- utterance: This must be frightening for you, so when did you first see something was wrong?
+  topics:
+  - onset
+  style: empathy_then_question
+- utterance: so um when did it all start, was it straight after she came home
+  topics:
+  - onset
+  style: spoken
+- utterance: And how fast did it progress?
+  topics:
+  - onset
+  style: brief
+- utterance: It came on suddenly, didn't it?
+  topics:
+  - onset
+  style: leading
+- utterance: Was the sleep problem there from the start, or did it come later?
+  topics:
+  - onset
+  style: follow_up
+  previous:
+    interviewer: How much has she been sleeping?
+    character: She's slept less than two hours each night for three nights, even when I've taken over
+      feeding. She says she doesn't need rest.
+- utterance: And is she getting better, worse, or staying the same since then?
+  topics:
+  - onset
+  style: follow_up
+  previous:
+    interviewer: How long ago did things change?
+    character: Our baby was born fourteen days ago. Four days ago she became restless and frightened;
+      it has worsened quickly.
+- utterance: How would you describe the pace at which she has gone downhill?
+  topics:
+  - onset
+  style: open
+- utterance: Has it been gradual or all within a short space of time?
+  topics:
+  - onset
+  style: closed
+- utterance: How long's she been like this, roughly?
+  topics:
+  - onset
+  style: colloquial
+- utterance: sorry, so what was she like when the baby was first born
+  topics:
+  - onset
+  style: spoken
+- utterance: How has she been sleeping since the baby came?
+  topics:
+  - sleep
+  style: open
+- utterance: Is she managing any sleep at night at all?
+  topics:
+  - sleep
+  style: closed
+- utterance: Is she getting any kip?
+  topics:
+  - sleep
+  style: colloquial
+- utterance: How many hours of sleep is she getting per night at present?
+  topics:
+  - sleep
+  style: clinical
+- utterance: I wondered what her nights have been like
+  topics:
+  - sleep
+  style: indirect
+- utterance: That sounds exhausting for you both. How many hours has she been getting at night?
+  topics:
+  - sleep
+  style: empathy_then_question
+- utterance: um is she sleeping, like at night, at all
+  topics:
+  - sleep
+  style: spoken
+- utterance: And her sleep?
+  topics:
+  - sleep
+  style: brief
+- utterance: She's hardly sleeping, is she?
+  topics:
+  - sleep
+  style: leading
+- utterance: Has she been able to rest at all since then?
+  topics:
+  - sleep
+  style: follow_up
+  previous:
+    interviewer: Can you tell me when this began?
+    character: Our baby was born fourteen days ago. Four days ago she became restless and frightened;
+      it has worsened quickly.
+- utterance: What about her nights, is she resting?
+  topics:
+  - sleep
+  style: follow_up
+  previous:
+    interviewer: Has she seemed confused at times?
+    character: At times she knows we're at home, but last night she thought we were in another house.
+      She loses track mid-sentence.
+- utterance: Tell me about her rest, and whether she says she feels tired.
+  topics:
+  - sleep
+  style: open
+- utterance: Does she say she feels tired, or does she seem full of energy?
+  topics:
+  - sleep
+  style: closed
+- utterance: Is she stopping up all night, then?
+  topics:
+  - sleep
+  style: colloquial
+- utterance: so when the baby wakes does she go back to sleep or what
+  topics:
+  - sleep
+  style: spoken
+- utterance: What has she been saying about the baby?
+  topics:
+  - beliefs
+  style: open
+- utterance: Does she seem to believe anything unusual about the baby?
+  topics:
+  - beliefs
+  style: closed
+- utterance: Has she said anything odd about the baby?
+  topics:
+  - beliefs
+  style: colloquial
+- utterance: Has she expressed any firm ideas about the baby that you find hard to understand?
+  topics:
+  - beliefs
+  style: clinical
+- utterance: I wondered whether she has any worries about the baby that seem out of character
+  topics:
+  - beliefs
+  style: indirect
+- utterance: I know this is hard to talk about. Is she saying anything that worries you about the baby?
+  topics:
+  - beliefs
+  style: empathy_then_question
+- utterance: um has she said anything weird about the baby, you know, strange thoughts
+  topics:
+  - beliefs
+  style: spoken
+- utterance: Any odd ideas about the baby?
+  topics:
+  - beliefs
+  style: brief
+- utterance: She's got some strange thoughts about the baby, hasn't she?
+  topics:
+  - beliefs
+  style: leading
+- utterance: Is she saying anything strange about the baby too?
+  topics:
+  - beliefs
+  style: follow_up
+  previous:
+    interviewer: Does she hear things?
+    character: She says a woman's voice is warning her not to trust us. I've seen her answer when nobody
+      else is speaking.
+- utterance: Have you tried to reassure her, and how did she react?
+  topics:
+  - beliefs
+  style: follow_up
+  previous:
+    interviewer: What has she been saying about the baby?
+    character: She says the baby has been replaced and isn't ours. Reassurance hasn't changed her mind.
+- utterance: How does she seem to feel about the baby, and about looking after them?
+  topics:
+  - beliefs
+  style: open
+- utterance: Does she think there's something wrong with the baby?
+  topics:
+  - beliefs
+  style: closed
+- utterance: Is she bonding with the baby?
+  topics:
+  - beliefs
+  style: colloquial
+- utterance: so how does she, um, talk about the baby when you're with them
+  topics:
+  - beliefs
+  style: spoken
+- utterance: What experiences has she described that you can't explain?
+  topics:
+  - voices
+  style: open
+- utterance: Does she hear voices or anything?
+  topics:
+  - voices
+  style: colloquial
+- utterance: I wondered whether she's been talking to someone who isn't there
+  topics:
+  - voices
+  style: indirect
+- utterance: I'm sorry, this is a lot to carry. Have you seen her responding to something you can't hear?
+  topics:
+  - voices
+  style: empathy_then_question
+- utterance: um does she like talk to herself or answer people who aren't, aren't there
+  topics:
+  - voices
+  style: spoken
+- utterance: Any voices?
+  topics:
+  - voices
+  style: brief
+- utterance: She's been hearing things, hasn't she?
+  topics:
+  - voices
+  style: leading
+- utterance: Is anyone or anything telling her these things?
+  topics:
+  - voices
+  style: follow_up
+  previous:
+    interviewer: What has she been saying about the baby?
+    character: She says the baby has been replaced and isn't ours. Reassurance hasn't changed her mind.
+- utterance: What does it say to her?
+  topics:
+  - voices
+  style: follow_up
+  previous:
+    interviewer: Has she seemed to hear things other people can't?
+    character: She says a woman's voice is warning her not to trust us. I've seen her answer when nobody
+      else is speaking.
+- utterance: Describe anything she says she can hear that you can't.
+  topics:
+  - voices
+  style: open
+- utterance: Does she ever seem to be having a conversation with nobody?
+  topics:
+  - voices
+  style: closed
+- utterance: What's she hearing, exactly?
+  topics:
+  - voices
+  style: colloquial
+- utterance: so is she, um, replying to anything when the room's quiet
+  topics:
+  - voices
+  style: spoken
+- utterance: How aware is she of where she is and what's going on around her?
+  topics:
+  - confusion
+  style: open
+- utterance: Does she always know where she is?
+  topics:
+  - confusion
+  style: closed
+- utterance: Does she lose the thread when you're talking to her?
+  topics:
+  - confusion
+  style: colloquial
+- utterance: Is her attention or awareness of her surroundings changing during the day?
+  topics:
+  - confusion
+  style: clinical
+- utterance: I'd like to know how clear her thinking seems from hour to hour
+  topics:
+  - confusion
+  style: indirect
+- utterance: You've been through a lot. Does she ever seem muddled or not with it?
+  topics:
+  - confusion
+  style: empathy_then_question
+- utterance: Is she muddled at all?
+  topics:
+  - confusion
+  style: brief
+- utterance: She gets confused at times, doesn't she?
+  topics:
+  - confusion
+  style: leading
+- utterance: When she's that tired, is she thinking clearly?
+  topics:
+  - confusion
+  style: follow_up
+  previous:
+    interviewer: How has she been sleeping?
+    character: She's slept less than two hours each night for three nights, even when I've taken over
+      feeding. She says she doesn't need rest.
+- utterance: Does she follow what you say to her, or drift off the point?
+  topics:
+  - confusion
+  style: follow_up
+  previous:
+    interviewer: Is she saying anything strange about the baby?
+    character: She says the baby has been replaced and isn't ours. Reassurance hasn't changed her mind.
+- utterance: Tell me whether she can follow a conversation from start to finish.
+  topics:
+  - confusion
+  style: open
+- utterance: Has she ever seemed unsure what time or day it is?
+  topics:
+  - confusion
+  style: closed
+- utterance: Is she with it, or does she go vacant sometimes?
+  topics:
+  - confusion
+  style: colloquial
+- utterance: so does she, er, make sense when she talks, or does she wander off
+  topics:
+  - confusion
+  style: spoken
+- utterance: What has her mental health been like before this?
+  topics:
+  - past
+  style: open
+- utterance: Has she ever had anything like this before?
+  topics:
+  - past
+  style: colloquial
+- utterance: Is there a history of previous psychiatric illness?
+  topics:
+  - past
+  style: clinical
+- utterance: I wanted to ask about whether she's had mental health problems in the past
+  topics:
+  - past
+  style: indirect
+- utterance: I know this is hard. Has she needed help with her nerves or mood at any time before?
+  topics:
+  - past
+  style: empathy_then_question
+- utterance: um has she ever been, like, unwell in her head before, had any treatment
+  topics:
+  - past
+  style: spoken
+- utterance: Any previous mental health problems?
+  topics:
+  - past
+  style: brief
+- utterance: She's been well mentally until now, hasn't she?
+  topics:
+  - past
+  style: leading
+- utterance: Has she ever had unusual experiences like that before?
+  topics:
+  - past
+  style: follow_up
+  previous:
+    interviewer: Has she said anything odd about the baby?
+    character: She says the baby has been replaced and isn't ours. Reassurance hasn't changed her mind.
+- utterance: Did she ever see anyone about that kind of thing in the past?
+  topics:
+  - past
+  style: follow_up
+  previous:
+    interviewer: Is she hearing anything?
+    character: She says a woman's voice is warning her not to trust us. I've seen her answer when nobody
+      else is speaking.
+- utterance: Tell me about any pregnancies or births she's had previously.
+  topics:
+  - past
+  style: open
+- utterance: Is this your first child?
+  topics:
+  - past
+  style: closed
+- utterance: Has she ever been on tablets for her moods or nerves?
+  topics:
+  - past
+  style: colloquial
+- utterance: so before the baby was she, um, ever seeing anybody for her mental health
+  topics:
+  - past
+  style: spoken
+- utterance: What do you know about mental illness in her family?
+  topics:
+  - family
+  style: open
+- utterance: Has anyone in her family had a mental illness?
+  topics:
+  - family
+  style: closed
+- utterance: Does anything like this run in her family?
+  topics:
+  - family
+  style: colloquial
+- utterance: Is there a family history of psychiatric disorder, particularly around childbirth?
+  topics:
+  - family
+  style: clinical
+- utterance: I wondered whether any of her relatives have had mental health difficulties
+  topics:
+  - family
+  style: indirect
+- utterance: I appreciate you answering all this. Has anyone else in her family been unwell mentally?
+  topics:
+  - family
+  style: empathy_then_question
+- utterance: um has anyone in her family got, like, a mental health condition, or been ill after having
+    a baby
+  topics:
+  - family
+  style: spoken
+- utterance: Family history of mental illness?
+  topics:
+  - family
+  style: brief
+- utterance: Mental illness runs in her family, doesn't it?
+  topics:
+  - family
+  style: leading
+- utterance: What about her relatives, have any of them been treated?
+  topics:
+  - family
+  style: follow_up
+  previous:
+    interviewer: Has she ever been treated before?
+    character: She's never had psychiatric treatment that I know of. This is our first baby.
+- utterance: And has her mother ever said what treatment she needed?
+  topics:
+  - family
+  style: follow_up
+  previous:
+    interviewer: Do you know anything about her family's health?
+    character: Her mother has told me she has bipolar disorder. I don't know whether she was unwell after
+      giving birth.
+- utterance: Tell me about any illnesses in her parents or siblings.
+  topics:
+  - family
+  style: open
+- utterance: Do you know of any relative who became ill after childbirth?
+  topics:
+  - family
+  style: closed
+- utterance: Is there any history of nerves or moods on her side of the family?
+  topics:
+  - family
+  style: colloquial
+- utterance: so her family, um, anyone been poorly with their mental health do you know
+  topics:
+  - family
+  style: spoken
+- utterance: Who is looking after the baby and your wife at the moment?
+  topics:
+  - safety
+  style: open
+- utterance: Is she ever left alone with the baby?
+  topics:
+  - safety
+  style: closed
+- utterance: Who's keeping an eye on her right now?
+  topics:
+  - safety
+  style: colloquial
+- utterance: What supervision arrangements are in place for her and the infant?
+  topics:
+  - safety
+  style: clinical
+- utterance: I'd like to understand what help you have in the house today
+  topics:
+  - safety
+  style: indirect
+- utterance: You're doing really well in a hard situation. Is anyone else there with you both?
+  topics:
+  - safety
+  style: empathy_then_question
+- utterance: um who's with her now, is she on her own with the baby ever
+  topics:
+  - safety
+  style: spoken
+- utterance: Who's with her today?
+  topics:
+  - safety
+  style: brief
+- utterance: You've not been leaving her on her own with the baby, have you?
+  topics:
+  - safety
+  style: leading
+- utterance: Given that, have you made sure someone is with her?
+  topics:
+  - safety
+  style: follow_up
+  previous:
+    interviewer: What has she been saying about the baby?
+    character: She says the baby has been replaced and isn't ours. Reassurance hasn't changed her mind.
+- utterance: How are you managing the care of the baby day to day?
+  topics:
+  - safety
+  style: follow_up
+  previous:
+    interviewer: Is she saying anything strange about the baby?
+    character: She says the baby has been replaced and isn't ours. Reassurance hasn't changed her mind.
+- utterance: Talk me through who has been around to help and who has had the baby.
+  topics:
+  - safety
+  style: open
+- utterance: Has she been alone with the baby at any point since this started?
+  topics:
+  - safety
+  style: closed
+- utterance: Have you got family in to help out?
+  topics:
+  - safety
+  style: colloquial
+- utterance: so is there anyone else in the house, like family, helping out with the baby
+  topics:
+  - safety
+  style: spoken
+- utterance: Has she said anything that's made you frightened?
+  topics:
+  - danger
+  style: colloquial
+- utterance: Has she expressed any thoughts of suicide or of harming the baby?
+  topics:
+  - danger
+  style: clinical
+- utterance: I wanted to ask whether she's said anything about not wanting to be here
+  topics:
+  - danger
+  style: indirect
+- utterance: I can tell how worried you are. Has she said anything about hurting herself or the baby?
+  topics:
+  - danger
+  style: empathy_then_question
+- utterance: um has she, has she ever said she wants to hurt herself or the baby
+  topics:
+  - danger
+  style: spoken
+- utterance: Any talk of harming anyone?
+  topics:
+  - danger
+  style: brief
+- utterance: She's talked about harming herself or the baby, hasn't she?
+  topics:
+  - danger
+  style: leading
+- utterance: Has she ever said she might do something to the baby because of that?
+  topics:
+  - danger
+  style: follow_up
+  previous:
+    interviewer: What has she been saying about the baby?
+    character: She says the baby has been replaced and isn't ours. Reassurance hasn't changed her mind.
+- utterance: Has she said anything about wanting to die or not wanting to live?
+  topics:
+  - danger
+  style: follow_up
+  previous:
+    interviewer: Does she hear voices or anything?
+    character: She says a woman's voice is warning her not to trust us. I've seen her answer when nobody
+      else is speaking.
+- utterance: Tell me if there's anything she's said that you've found alarming, even if it's hard.
+  topics:
+  - danger
+  style: open
+- utterance: so um has she said anything like she doesn't want to carry on or be around
+  topics:
+  - danger
+  style: spoken
+- utterance: How have you been coping with all this yourself?
+  topics:
+  - coping
+  style: open
+- utterance: Have you been getting any sleep yourself?
+  topics:
+  - coping
+  style: closed
+- utterance: And what about you, are you holding up?
+  topics:
+  - coping
+  style: colloquial
+- utterance: What impact has this had on your own sleep and health?
+  topics:
+  - coping
+  style: clinical
+- utterance: I was wondering how you are managing, as her husband
+  topics:
+  - coping
+  style: indirect
+- utterance: That's a lot to take on. What support have you had for yourself?
+  topics:
+  - coping
+  style: empathy_then_question
+- utterance: um and you, are you, like, sleeping or eating okay
+  topics:
+  - coping
+  style: spoken
+- utterance: And your own wellbeing?
+  topics:
+  - coping
+  style: brief
+- utterance: You must be exhausted yourself, aren't you?
+  topics:
+  - coping
+  style: leading
+- utterance: And you, are you getting any rest?
+  topics:
+  - coping
+  style: follow_up
+  previous:
+    interviewer: How has she been sleeping?
+    character: She's slept less than two hours each night for three nights, even when I've taken over
+      feeding. She says she doesn't need rest.
+- utterance: Have you felt able to ask for more help from services or other people?
+  topics:
+  - coping
+  style: follow_up
+  previous:
+    interviewer: Who is with her at the moment?
+    character: My sister is with my wife, and my mother is caring for the baby in another room. We haven't
+      left my wife alone with the baby since yesterday.
+- utterance: Is there anything that has made you hesitate to ask for help?
+  topics:
+  - coping
+  style: open
+- utterance: Are you worried about what might happen if you ask professionals for support?
+  topics:
+  - coping
+  style: closed
+- utterance: Is there anyone looking after you in all this?
+  topics:
+  - coping
+  style: colloquial
+- utterance: so um what's it been like for you, getting help and that
+  topics:
+  - coping
+  style: spoken
+- utterance: Can you tell me about the birth and her physical health since?
+  topics:
+  - physical
+  style: open
+- utterance: Was the delivery straightforward?
+  topics:
+  - physical
+  style: closed
+- utterance: Has she had a temperature or anything?
+  topics:
+  - physical
+  style: colloquial
+- utterance: Were there any complications with the delivery, or signs of infection since?
+  topics:
+  - physical
+  style: clinical
+- utterance: I wanted to ask about any medicines or substances she might be taking
+  topics:
+  - physical
+  style: indirect
+- utterance: Thank you for being so open. Is she taking any tablets, or any alcohol or drugs?
+  topics:
+  - physical
+  style: empathy_then_question
+- utterance: um is she on any medication at the moment or drinking or anything
+  topics:
+  - physical
+  style: spoken
+- utterance: Any fever or infection?
+  topics:
+  - physical
+  style: brief
+- utterance: She isn't taking anything, is she, no drink or drugs?
+  topics:
+  - physical
+  style: leading
+- utterance: Could she have a temperature or an infection?
+  topics:
+  - physical
+  style: follow_up
+  previous:
+    interviewer: Is she confused?
+    character: At times she knows we're at home, but last night she thought we were in another house.
+      She loses track mid-sentence.
+- utterance: Has she taken any medicine or drugs recently?
+  topics:
+  - physical
+  style: follow_up
+  previous:
+    interviewer: Is she saying anything strange about the baby?
+    character: She says the baby has been replaced and isn't ours. Reassurance hasn't changed her mind.
+- utterance: Describe how the delivery went.
+  topics:
+  - physical
+  style: open
+- utterance: Is she taking any pain relief?
+  topics:
+  - physical
+  style: closed
+- utterance: Did anything go wrong with the birth?
+  topics:
+  - physical
+  style: colloquial
+- utterance: so after the birth was she poorly, like feverish or anything
+  topics:
+  - physical
+  style: spoken
+- utterance: When did the changes begin, and how much has she been sleeping?
+  topics:
+  - onset
+  - sleep
+  style: stacked
+- utterance: Is she saying anything odd about the baby, and does she seem to hear things?
+  topics:
+  - beliefs
+  - voices
+  style: stacked
+- utterance: Who is with her at the moment, and has she said anything that scared you?
+  topics:
+  - safety
+  - danger
+  style: stacked
+- utterance: Has she been unwell before, and is there illness in her family?
+  topics:
+  - past
+  - family
+  style: stacked
+- utterance: Does she get confused, and has she had a fever or taken any drugs?
+  topics:
+  - confusion
+  - physical
+  style: stacked
+- utterance: Hello Ben, thanks for coming to see me.
+  topics: []
+  style: greeting
+- utterance: Good afternoon, Ben. Come and sit down.
+  topics: []
+  style: greeting
+- utterance: Hi Ben, I'm one of the psychiatrists from the community team.
+  topics: []
+  style: introduction
+- utterance: I'm Dr Carter, and I've come to talk with you about your wife.
+  topics: []
+  style: introduction
+- utterance: Is it all right if we talk for a few minutes?
+  topics: []
+  style: greeting
+- utterance: What would you like to start with, Ben?
+  topics: []
+  style: greeting
+- utterance: Before we start, do you have any questions for me?
+  topics: []
+  style: greeting
+- utterance: I'd like to move on to something different now.
+  topics: []
+  style: transition
+- utterance: Let's turn to her background for a moment.
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Ben.
+  topics: []
+  style: closing
+- utterance: Thank you for telling me all of this, I'll arrange what we need to do next.
+  topics: []
+  style: closing
+- utterance: Ben, is now a good moment, or would you rather I came back later?
+  topics: []
+  style: greeting
+- utterance: You've clearly been doing everything you can for her.
+  topics: []
+  style: empathy
+- utterance: It's completely understandable that you're so tired.
+  topics: []
+  style: empathy
+- utterance: So she's been getting worse over a few days and sleeping very little.
+  topics: []
+  style: summary
+- utterance: 'Let me check I''ve got this right: you''re worried about her behaviour and about the baby.'
+  topics: []
+  style: summary
+- utterance: So the main thing is that she isn't herself and you're not sure why.
+  topics: []
+  style: summary
+- utterance: What I'll do is arrange for her to be seen by a specialist team as soon as possible.
+  topics: []
+  style: explanation
+- utterance: This kind of illness can come on quickly after a birth, and it is treatable.
+  topics: []
+  style: explanation
+- utterance: I'd like to explain what will happen after today, because we will want to see your wife ourselves.
+  topics: []
+  style: explanation
+- utterance: Does that make sense so far?
+  topics: []
+  style: check_understanding
+- utterance: Is there anything I've said that is unclear?
+  topics: []
+  style: check_understanding
+- utterance: Can I just check you understand why I'm recommending this?
+  topics: []
+  style: check_understanding
+- utterance: Has she had any thyroid problems?
+  topics: []
+  style: off_case
+- utterance: What does she do for work?
+  topics: []
+  style: off_case
+- utterance: How is your relationship with her at the moment?
+  topics: []
+  style: off_case
+- utterance: Is the baby feeding well and putting on weight?
+  topics: []
+  style: off_case
+- utterance: How long does the baby usually sleep for at a time?
+  topics: []
+  style: near_miss
+- utterance: What is the baby's name and birth weight?
+  topics: []
+  style: near_miss
+- utterance: Which hospital was the baby born in?
+  topics: []
+  style: near_miss
+- utterance: What do you think is causing her to be so frightened?
+  topics: []
+  style: near_miss
+- utterance: How long have you and she been married?
+  topics: []
+  style: near_miss
+- utterance: Does your own family have any history of illness?
+  topics: []
+  style: near_miss

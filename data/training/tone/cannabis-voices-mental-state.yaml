@@ -1,0 +1,159 @@
+# Training lines for the tone classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: cannabis-voices-mental-state
+case_version: 0.1.0
+status: draft
+items:
+  - utterance: "Have you had thoughts that you'd be better off dead?"
+    empathy: 0
+    empathy_words: ""
+    confrontational: false
+    challenge_words: ""
+    style: plain_question
+  - utterance: "Do you think you might hurt someone if you felt threatened?"
+    empathy: 0
+    empathy_words: ""
+    confrontational: false
+    challenge_words: ""
+    style: plain_question
+  - utterance: "um are the voices saying anything about you"
+    empathy: 0
+    empathy_words: ""
+    confrontational: false
+    challenge_words: ""
+    style: plain_question
+  - utterance: "How long have you been using cannabis for?"
+    empathy: 0
+    empathy_words: ""
+    confrontational: false
+    challenge_words: ""
+    style: plain_question
+  - utterance: "Is anyone at home worried about your smoking?"
+    empathy: 0
+    empathy_words: ""
+    confrontational: false
+    challenge_words: ""
+    style: plain_question
+  - utterance: "Sorry to ask so many questions, but could you tell me how you've slept this week?"
+    empathy: 0
+    empathy_words: ""
+    confrontational: false
+    challenge_words: ""
+    style: polite_question
+  - utterance: "Would you mind telling me a bit about the cannabis you've had recently?"
+    empathy: 0
+    empathy_words: ""
+    confrontational: false
+    challenge_words: ""
+    style: polite_question
+  - utterance: "Good evening Tyler, my name's Sam and I'm one of the psychiatry trainees."
+    empathy: 0
+    empathy_words: ""
+    confrontational: false
+    challenge_words: ""
+    style: introduction
+  - utterance: "Hello Tyler, have a seat."
+    empathy: 0
+    empathy_words: ""
+    confrontational: false
+    challenge_words: ""
+    style: greeting
+  - utterance: "So far you've told me you've not slept and you feel something is wrong."
+    empathy: 0
+    empathy_words: ""
+    confrontational: false
+    challenge_words: ""
+    style: summary
+  - utterance: "Right. And when did you last have a smoke?"
+    empathy: 0
+    empathy_words: ""
+    confrontational: false
+    challenge_words: ""
+    style: acknowledgement
+  - utterance: "Okay, thanks for telling me."
+    empathy: 0
+    empathy_words: ""
+    confrontational: false
+    challenge_words: ""
+    style: acknowledgement
+  - utterance: "I'm sorry you're going through this."
+    empathy: 1
+    empathy_words: "I'm sorry you're going through this."
+    confrontational: false
+    challenge_words: ""
+    style: brief_empathy
+  - utterance: "mm that sounds hard."
+    empathy: 1
+    empathy_words: "that sounds hard."
+    confrontational: false
+    challenge_words: ""
+    style: brief_empathy
+  - utterance: "That must be difficult. When did it start?"
+    empathy: 1
+    empathy_words: "That must be difficult."
+    confrontational: false
+    challenge_words: ""
+    style: brief_empathy_question
+  - utterance: "I can imagine that's upsetting. Who came in with you today?"
+    empathy: 1
+    empathy_words: "I can imagine that's upsetting."
+    confrontational: false
+    challenge_words: ""
+    style: brief_empathy_question
+  - utterance: "Feeling so convinced you're being tracked, without ever seeing anyone, must be really frightening and exhausting."
+    empathy: 2
+    empathy_words: "Feeling so convinced you're being tracked, without ever seeing anyone, must be really frightening and exhausting."
+    confrontational: false
+    challenge_words: ""
+    style: specific_empathy
+    previous:
+      interviewer: "Do you feel like anyone is following you?"
+      character: "I think people outside are tracking me. I haven't seen anyone doing it, but it feels very convincing."
+  - utterance: "Being so frightened that you've only managed three hours a night sounds absolutely draining."
+    empathy: 2
+    empathy_words: "Being so frightened that you've only managed three hours a night sounds absolutely draining."
+    confrontational: false
+    challenge_words: ""
+    style: specific_empathy
+    previous:
+      interviewer: "How's your sleep been?"
+      character: "I've slept about three hours each night for three nights because I'm frightened. I'm exhausted, not full of energy."
+  - utterance: "Something feels wrong and you can't switch it off, and being stuck with that feeling sounds really scary."
+    empathy: 2
+    empathy_words: "Something feels wrong and you can't switch it off, and being stuck with that feeling sounds really scary."
+    confrontational: false
+    challenge_words: ""
+    style: specific_empathy
+  - utterance: "It sounds like you feel embarrassed about your aunt finding out after you told her you'd stopped. What might help with that?"
+    empathy: 2
+    empathy_words: "It sounds like you feel embarrassed about your aunt finding out after you told her you'd stopped."
+    confrontational: false
+    challenge_words: ""
+    style: specific_empathy_question
+    previous:
+      interviewer: "Who's here with you?"
+      character: "My aunt brought me and can stay. I'm embarrassed because I told her I had stopped smoking."
+  - utterance: "You need to stop smoking this stuff, it's obviously frying your brain."
+    empathy: 0
+    empathy_words: ""
+    confrontational: true
+    challenge_words: "You need to stop smoking this stuff, it's obviously frying your brain."
+    style: confront_statement
+  - utterance: "You knew strong cannabis could do this to you, didn't you?"
+    empathy: 0
+    empathy_words: ""
+    confrontational: true
+    challenge_words: "You knew strong cannabis could do this to you, didn't you?"
+    style: confront_tag
+  - utterance: "There's nobody out there, Tyler, so try not to worry about it."
+    empathy: 0
+    empathy_words: ""
+    confrontational: true
+    challenge_words: "There's nobody out there, Tyler, so try not to worry about it."
+    style: dismissive
+  - utterance: "It'll all calm down once it's out of your system, so let's not dwell on it."
+    empathy: 0
+    empathy_words: ""
+    confrontational: true
+    challenge_words: "It'll all calm down once it's out of your system, so let's not dwell on it."
+    style: dismissive

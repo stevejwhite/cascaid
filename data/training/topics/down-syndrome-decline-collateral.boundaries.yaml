@@ -1,0 +1,230 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: down-syndrome-decline-collateral
+case_version: 0.1.0
+status: draft
+items:
+  # ---- course / uncertainty ----
+  - utterance: "Did the change come on slowly or all at once?"
+    topics: [course]
+    style: boundary
+    pair: [course, uncertainty]
+  - utterance: "Has she had any days when she was suddenly much more confused?"
+    topics: [course]
+    style: boundary
+    pair: [course, uncertainty]
+  - utterance: "um is she worse at some times of the day than others"
+    topics: [course]
+    style: boundary_spoken
+    pair: [course, uncertainty]
+  - utterance: "How many months has this been creeping on for?"
+    topics: [course]
+    style: boundary_colloquial
+    pair: [course, uncertainty]
+  - utterance: "And has it been steady since then?"
+    topics: [course]
+    style: boundary_follow_up
+    pair: [course, uncertainty]
+    previous:
+      interviewer: "Did you think it needed looking at straight away?"
+      character: "We initially called it ageing and waited."
+  - utterance: "What did you put it down to when you first noticed?"
+    topics: [uncertainty]
+    style: boundary
+    pair: [course, uncertainty]
+  - utterance: "Did you wait a while before asking anyone for help?"
+    topics: [uncertainty]
+    style: boundary
+    pair: [course, uncertainty]
+  - utterance: "um should someone have got her seen earlier than this"
+    topics: [uncertainty]
+    style: boundary_spoken
+    pair: [course, uncertainty]
+  - utterance: "Did the team just think she was getting older?"
+    topics: [uncertainty]
+    style: boundary_colloquial
+    pair: [course, uncertainty]
+  - utterance: "And what did you all make of it back then?"
+    topics: [uncertainty]
+    style: boundary_follow_up
+    pair: [course, uncertainty]
+    previous:
+      interviewer: "How has the change progressed over time?"
+      character: "The change has been gradual over nine months."
+  - utterance: "Has she been seen by a doctor about this yet?"
+    topics: []
+    style: near_miss
+    pair: [course, uncertainty]
+  - utterance: "Has she ever had an assessment for dementia before?"
+    topics: []
+    style: near_miss
+    pair: [course, uncertainty]
+
+  # ---- skills / strain ----
+  - utterance: "How much prompting does she need to get dressed?"
+    topics: [skills]
+    style: boundary
+    pair: [skills, strain]
+  - utterance: "Can she make herself a hot drink these days?"
+    topics: [skills]
+    style: boundary
+    pair: [skills, strain]
+  - utterance: "um what is it she can't do any more without someone with her"
+    topics: [skills]
+    style: boundary_spoken
+    pair: [skills, strain]
+  - utterance: "Which of her daily jobs now need a hand?"
+    topics: [skills]
+    style: boundary_colloquial
+    pair: [skills, strain]
+  - utterance: "And is it the same with the morning routine?"
+    topics: [skills]
+    style: boundary_follow_up
+    pair: [skills, strain]
+    previous:
+      interviewer: "Is the team sure how to support her?"
+      character: "We want to help but don't know whether to prompt more or give her extra time."
+  - utterance: "Are the staff unsure how best to help her?"
+    topics: [strain]
+    style: boundary
+    pair: [skills, strain]
+  - utterance: "What guidance would your team like from us?"
+    topics: [strain]
+    style: boundary
+    pair: [skills, strain]
+  - utterance: "um do the carers know whether to do more for her or let her have a go"
+    topics: [strain]
+    style: boundary_spoken
+    pair: [skills, strain]
+  - utterance: "Is it hard for your team to know when to step in?"
+    topics: [strain]
+    style: boundary_colloquial
+    pair: [skills, strain]
+  - utterance: "And do the staff feel confident about how they help?"
+    topics: [strain]
+    style: boundary_follow_up
+    pair: [skills, strain]
+    previous:
+      interviewer: "What does she need help with now?"
+      character: "She needs prompts to put clothes on in order and cannot make tea safely without someone alongside."
+  - utterance: "Does she go to a day centre?"
+    topics: []
+    style: near_miss
+    pair: [skills, strain]
+  - utterance: "Has an occupational therapist seen her?"
+    topics: []
+    style: near_miss
+    pair: [skills, strain]
+
+  # ---- baseline / course ----
+  - utterance: "What was she able to do for herself a year or two ago?"
+    topics: [baseline]
+    style: boundary
+    pair: [baseline, course]
+  - utterance: "How long have you known her?"
+    topics: [baseline]
+    style: boundary
+    pair: [baseline, course]
+  - utterance: "um so how independent was she before all this"
+    topics: [baseline]
+    style: boundary_spoken
+    pair: [baseline, course]
+  - utterance: "Could she get about on her own in the past?"
+    topics: [baseline]
+    style: boundary_colloquial
+    pair: [baseline, course]
+  - utterance: "And what was she like before that?"
+    topics: [baseline]
+    style: boundary_follow_up
+    pair: [baseline, course]
+    previous:
+      interviewer: "How has the change come on?"
+      character: "The change has been gradual over nine months."
+  - utterance: "Was the change gradual or sudden?"
+    topics: [course]
+    style: boundary
+    pair: [baseline, course]
+  - utterance: "How many months has she been getting worse?"
+    topics: [course]
+    style: boundary
+    pair: [baseline, course]
+  - utterance: "um does she go up and down within a day or is it the same"
+    topics: [course]
+    style: boundary_spoken
+    pair: [baseline, course]
+  - utterance: "Has there ever been a day when she was suddenly much worse?"
+    topics: [course]
+    style: boundary_colloquial
+    pair: [baseline, course]
+  - utterance: "And has it been steady or has it jumped?"
+    topics: [course]
+    style: boundary_follow_up
+    pair: [baseline, course]
+    previous:
+      interviewer: "What did she used to manage?"
+      character: "Until a year ago she dressed herself, made tea and followed a familiar bus route with another resident."
+  - utterance: "Is there a named member of staff for her?"
+    topics: []
+    style: near_miss
+    pair: [baseline, course]
+  - utterance: "Has she had any falls?"
+    topics: []
+    style: near_miss
+    pair: [baseline, course]
+
+  # ---- baseline / events ----
+  - utterance: "How was she managing for herself in earlier years?"
+    topics: [baseline]
+    style: boundary
+    pair: [baseline, events]
+  - utterance: "How many years have you been her manager?"
+    topics: [baseline]
+    style: boundary
+    pair: [baseline, events]
+  - utterance: "um what did she used to be able to do on her own"
+    topics: [baseline]
+    style: boundary_spoken
+    pair: [baseline, events]
+  - utterance: "What jobs around the home were hers before she needed help?"
+    topics: [baseline]
+    style: boundary_colloquial
+    pair: [baseline, events]
+  - utterance: "And how was she before then?"
+    topics: [baseline]
+    style: boundary_follow_up
+    pair: [baseline, events]
+    previous:
+      interviewer: "Has anything changed around her?"
+      character: "Her closest friend moved to another home eleven months ago."
+  - utterance: "Has anyone close to her moved away recently?"
+    topics: [events]
+    style: boundary
+    pair: [baseline, events]
+  - utterance: "Have any of the regular staff left?"
+    topics: [events]
+    style: boundary
+    pair: [baseline, events]
+  - utterance: "um did she lose a friend or anything like that"
+    topics: [events]
+    style: boundary_spoken
+    pair: [baseline, events]
+  - utterance: "Has her circle of people changed at all?"
+    topics: [events]
+    style: boundary_colloquial
+    pair: [baseline, events]
+  - utterance: "And was that around when she started needing help?"
+    topics: [events]
+    style: boundary_follow_up
+    pair: [baseline, events]
+    previous:
+      interviewer: "What could she do before?"
+      character: "Until a year ago she dressed herself, made tea and followed a familiar bus route with another resident."
+  - utterance: "Does her family visit often?"
+    topics: []
+    style: near_miss
+    pair: [baseline, events]
+  - utterance: "Has she been on holiday lately?"
+    topics: []
+    style: near_miss
+    pair: [baseline, events]

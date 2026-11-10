@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: explosive-outbursts-mental-state
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Joel, give me an idea of how often you lose control and how long an episode lasts.
+  expected:
+  - outbursts
+  rapport: false
+- utterance: What would you notice in yourself in the moments before an outburst?
+  expected:
+  - build-up
+  rapport: false
+- utterance: Is there ever an aim you have in mind beforehand, or does it happen without planning?
+  expected:
+  - purpose
+  rapport: false
+- utterance: What is it like for you emotionally after the anger has passed?
+  expected:
+  - aftermath
+  rapport: false
+- utterance: Between these episodes, how are your mood and sleep over longer stretches of time?
+  expected:
+  - mood
+  rapport: false
+- utterance: How does the timing of outbursts relate to whether you've been drinking or using drugs?
+  expected:
+  - substances
+  rapport: false
+- utterance: What happens in your body just before you lose control?
+  expected:
+  - build-up
+  rapport: false
+- utterance: Once it is over, what feelings replace the anger?
+  expected:
+  - aftermath
+  rapport: false
+- utterance: was there an occasion when someone was close enough to be hurt by that?
+  expected:
+  - guarded
+  rapport: false
+  previous:
+    interviewer: Has losing your temper led to damage?
+    character: Three involved breaking household objects.
+- utterance: Have you ever lost consciousness during an angry outburst?
+  expected: []
+  rapport: false

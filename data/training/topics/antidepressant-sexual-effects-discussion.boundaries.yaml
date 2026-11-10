@@ -1,0 +1,227 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: antidepressant-sexual-effects-discussion
+case_version: 0.1.0
+status: draft
+items:
+  # preferences vs review
+  - utterance: If we did change your medication, how involved would you want to be in picking the new one?
+    topics: [preferences]
+    style: boundary
+    pair: [preferences, review]
+  - utterance: Would you want to be the one who decides what we try next, or leave it to me?
+    topics: [preferences]
+    style: boundary_colloquial
+    pair: [preferences, review]
+  - utterance: so um what matters most to you if we were to adjust things
+    topics: [preferences]
+    style: boundary_spoken
+    pair: [preferences, review]
+  - utterance: And when it comes to a different tablet, is there anything you'd want us to talk through first?
+    topics: [preferences]
+    style: boundary_follow_up
+    pair: [preferences, review]
+    previous:
+      interviewer: Could you cope if we arranged to see you again soon?
+      character: I can come back in two weeks. My partner knows what I was like when unwell and could help me notice changes if I agree.
+  - utterance: Is it more important to you to keep feeling well, or to get your sex life back?
+    topics: [preferences]
+    style: boundary
+    pair: [preferences, review]
+  - utterance: When shall we next meet to see how things are going?
+    topics: [review]
+    style: boundary
+    pair: [preferences, review]
+  - utterance: is there someone close to you who would spot it if your mood started to slip again
+    topics: [review]
+    style: boundary_spoken
+    pair: [preferences, review]
+  - utterance: Would it be all right if I asked your partner to keep an eye on how you're doing?
+    topics: [review]
+    style: boundary_colloquial
+    pair: [preferences, review]
+  - utterance: Could you make an appointment in a fortnight, if we made a change?
+    topics: [review]
+    style: boundary
+    pair: [preferences, review]
+  - utterance: And who would you be happy for us to involve while we try something different?
+    topics: [review]
+    style: boundary_follow_up
+    pair: [preferences, review]
+    previous:
+      interviewer: What would you want from a change in treatment?
+      character: I want the sexual problem taken seriously while keeping the mood improvement. I'd consider a change, but I don't want another medicine chosen without discussing it.
+  - utterance: Do you have a view on whether a higher or lower dose would be better?
+    topics: []
+    style: near_miss
+    pair: [preferences, review]
+  - utterance: How do you feel about coming into hospital while we sort this out?
+    topics: []
+    style: near_miss
+    pair: [preferences, review]
+  # prescription vs withdrawal
+  - utterance: What dose of the tablet are you on at the moment?
+    topics: [prescription]
+    style: boundary
+    pair: [prescription, withdrawal]
+  - utterance: how long have you actually been taking it for
+    topics: [prescription]
+    style: boundary_spoken
+    pair: [prescription, withdrawal]
+  - utterance: Have you been good at remembering to take it every day lately?
+    topics: [prescription]
+    style: boundary_colloquial
+    pair: [prescription, withdrawal]
+  - utterance: Do you take it at any particular time of day?
+    topics: [prescription]
+    style: boundary
+    pair: [prescription, withdrawal]
+  - utterance: And has it always been at that strength since you began?
+    topics: [prescription]
+    style: boundary_follow_up
+    pair: [prescription, withdrawal]
+    previous:
+      interviewer: Have you ever forgotten any doses?
+      character: I missed three doses two months ago and felt dizzy and unsettled. It settled after I restarted.
+  - utterance: Did you notice anything odd in your body when you went without it?
+    topics: [withdrawal]
+    style: boundary
+    pair: [prescription, withdrawal]
+  - utterance: so um when you ran out or skipped some did you feel funny at all
+    topics: [withdrawal]
+    style: boundary_spoken
+    pair: [prescription, withdrawal]
+  - utterance: Have you ever stopped it suddenly and been unwell afterwards?
+    topics: [withdrawal]
+    style: boundary_colloquial
+    pair: [prescription, withdrawal]
+  - utterance: Was there ever a time you went without any and felt dizzy or on edge?
+    topics: [withdrawal]
+    style: boundary
+    pair: [prescription, withdrawal]
+  - utterance: And how long did that last for once you were back on it?
+    topics: [withdrawal]
+    style: boundary_follow_up
+    pair: [prescription, withdrawal]
+    previous:
+      interviewer: Did you miss any tablets at all?
+      character: I missed three doses two months ago and felt dizzy and unsettled. It settled after I restarted.
+  - utterance: Do you get any stomach upset or headaches from the tablets?
+    topics: []
+    style: near_miss
+    pair: [prescription, withdrawal]
+  - utterance: Who prescribed it for you originally, was it your GP?
+    topics: []
+    style: near_miss
+    pair: [prescription, withdrawal]
+  # benefit vs preferences
+  - utterance: Since you've been on treatment, how has your mood been?
+    topics: [benefit]
+    style: boundary
+    pair: [benefit, preferences]
+  - utterance: are you getting back to enjoying things like work and seeing people then
+    topics: [benefit]
+    style: boundary_spoken
+    pair: [benefit, preferences]
+  - utterance: So has the tablet actually done its job for your low mood?
+    topics: [benefit]
+    style: boundary_colloquial
+    pair: [benefit, preferences]
+  - utterance: How long have you been feeling like your old self?
+    topics: [benefit]
+    style: boundary
+    pair: [benefit, preferences]
+  - utterance: And how were you before you started it?
+    topics: [benefit]
+    style: boundary_follow_up
+    pair: [benefit, preferences]
+    previous:
+      interviewer: You said you're better in some ways. Can you tell me about that?
+      character: For the last six weeks I've felt like myself again, enjoying work and seeing friends. Before treatment I was low and withdrawn for three months.
+  - utterance: What would you want us to protect, if we changed your treatment?
+    topics: [preferences]
+    style: boundary
+    pair: [benefit, preferences]
+  - utterance: so how would you want to handle it, like would you want a say in what replaces it
+    topics: [preferences]
+    style: boundary_spoken
+    pair: [benefit, preferences]
+  - utterance: Are you open to trying something different, or would you rather stay as you are?
+    topics: [preferences]
+    style: boundary_colloquial
+    pair: [benefit, preferences]
+  - utterance: What would an ideal outcome look like for you from this appointment?
+    topics: [preferences]
+    style: boundary
+    pair: [benefit, preferences]
+  - utterance: And would you want to be consulted before anything is swapped over?
+    topics: [preferences]
+    style: boundary_follow_up
+    pair: [benefit, preferences]
+    previous:
+      interviewer: Is it a worry to think of stopping the medicine?
+      character: I want the sexual problem taken seriously while keeping the mood improvement. I'd consider a change, but I don't want another medicine chosen without discussing it.
+  - utterance: Do you feel your mood is likely to stay good if you come off it?
+    topics: []
+    style: near_miss
+    pair: [benefit, preferences]
+  - utterance: Is your mood better or worse at certain times of the day?
+    topics: []
+    style: near_miss
+    pair: [benefit, preferences]
+  # benefit vs history
+  - utterance: How have you been feeling in yourself over the past few weeks?
+    topics: [benefit]
+    style: boundary
+    pair: [benefit, history]
+  - utterance: um so is your mood back to normal now would you say
+    topics: [benefit]
+    style: boundary_spoken
+    pair: [benefit, history]
+  - utterance: Do you feel the depression has lifted since the medication?
+    topics: [benefit]
+    style: boundary_colloquial
+    pair: [benefit, history]
+  - utterance: How was this low spell for you before you got any help?
+    topics: [benefit]
+    style: boundary
+    pair: [benefit, history]
+  - utterance: And is that how you've felt for a while now?
+    topics: [benefit]
+    style: boundary_follow_up
+    pair: [benefit, history]
+    previous:
+      interviewer: Are you better in your mood than you were?
+      character: For the last six weeks I've felt like myself again, enjoying work and seeing friends. Before treatment I was low and withdrawn for three months.
+  - utterance: Has there been another time in your life you were this low?
+    topics: [history]
+    style: boundary
+    pair: [benefit, history]
+  - utterance: and have you ever gone the other way, like really hyper or not needing sleep
+    topics: [history]
+    style: boundary_spoken
+    pair: [benefit, history]
+  - utterance: Is this your first bout of depression, or have you been through it before?
+    topics: [history]
+    style: boundary_colloquial
+    pair: [benefit, history]
+  - utterance: Have you ever seen a psychiatrist or been treated for your mental health in the past?
+    topics: [history]
+    style: boundary
+    pair: [benefit, history]
+  - utterance: And when was that, roughly?
+    topics: [history]
+    style: boundary_follow_up
+    pair: [benefit, history]
+    previous:
+      interviewer: Has this happened to you before?
+      character: This was my second depressive episode. The first was four years ago; I've never had an unusually high or overactive spell.
+  - utterance: Does depression run in your family?
+    topics: []
+    style: near_miss
+    pair: [benefit, history]
+  - utterance: What was going on in your life when the low mood started?
+    topics: []
+    style: near_miss
+    pair: [benefit, history]

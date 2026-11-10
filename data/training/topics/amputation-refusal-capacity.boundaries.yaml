@@ -1,0 +1,223 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: amputation-refusal-capacity
+case_version: 0.1.0
+status: draft
+items:
+  - utterance: "What other treatment is there if you don't have the operation?"
+    topics: [alternatives]
+    style: boundary
+    pair: [alternatives, weighing]
+  - utterance: "What do you understand could happen if you say no to the surgery?"
+    topics: [alternatives]
+    style: boundary
+    pair: [alternatives, weighing]
+  - utterance: "so um what happens if you don't go ahead with it are there other treatments"
+    topics: [alternatives]
+    style: boundary_spoken
+    pair: [alternatives, weighing]
+  - utterance: "Is there anything else they can do for you apart from the operation?"
+    topics: [alternatives]
+    style: boundary_colloquial
+    pair: [alternatives, weighing]
+  - utterance: "And what is your understanding of the other options and the risks of not operating?"
+    topics: [alternatives]
+    style: boundary_follow_up
+    pair: [alternatives, weighing]
+    previous:
+      interviewer: "I want to live, but I'm frightened of losing independence. I know surgery could save me and rehabilitation could help; I don't yet know what life afterwards would actually involve."
+      character: "I want to live, but I'm frightened of losing independence. I know surgery could save me and rehabilitation could help; I don't yet know what life afterwards would actually involve."
+  - utterance: "How have you gone about deciding what matters most to you here?"
+    topics: [weighing]
+    style: boundary
+    pair: [alternatives, weighing]
+  - utterance: "What are the good and bad points of having surgery, as you see them?"
+    topics: [weighing]
+    style: boundary
+    pair: [alternatives, weighing]
+  - utterance: "so um what's making you lean one way or the other on this"
+    topics: [weighing]
+    style: boundary_spoken
+    pair: [alternatives, weighing]
+  - utterance: "What's going through your head when you think about the pros and cons?"
+    topics: [weighing]
+    style: boundary_colloquial
+    pair: [alternatives, weighing]
+  - utterance: "Given all that, how do you balance one against the other?"
+    topics: [weighing]
+    style: boundary_follow_up
+    pair: [alternatives, weighing]
+    previous:
+      interviewer: "I'm receiving antibiotics, but the surgeons say they may not control it without the operation. I understand refusing could mean I die."
+      character: "I'm receiving antibiotics, but the surgeons say they may not control it without the operation. I understand refusing could mean I die."
+  - utterance: "Have you seen the surgeon today?"
+    topics: []
+    style: near_miss
+    pair: [alternatives, weighing]
+  - utterance: "Who looks after your diabetes day to day?"
+    topics: []
+    style: near_miss
+    pair: [alternatives, weighing]
+  - utterance: "Is anyone telling you what you should do about this?"
+    topics: [pressure]
+    style: boundary
+    pair: [pressure, values]
+  - utterance: "Do you feel able to disagree with your family about it?"
+    topics: [pressure]
+    style: boundary
+    pair: [pressure, values]
+  - utterance: "um is anybody putting any pressure on you about the decision"
+    topics: [pressure]
+    style: boundary_spoken
+    pair: [pressure, values]
+  - utterance: "Is anyone leaning on you to go one way or the other?"
+    topics: [pressure]
+    style: boundary_colloquial
+    pair: [pressure, values]
+  - utterance: "Do the people close to you agree, or are they trying to talk you round?"
+    topics: [pressure]
+    style: boundary_follow_up
+    pair: [pressure, values]
+    previous:
+      interviewer: "Being able to get around and contribute at home matters greatly to me. I feel ashamed imagining everyone doing things for me."
+      character: "Being able to get around and contribute at home matters greatly to me. I feel ashamed imagining everyone doing things for me."
+  - utterance: "What matters most to you in how you want to live?"
+    topics: [values]
+    style: boundary
+    pair: [pressure, values]
+  - utterance: "What does being independent mean to you?"
+    topics: [values]
+    style: boundary
+    pair: [pressure, values]
+  - utterance: "and what is it about this that you um care about most personally"
+    topics: [values]
+    style: boundary_spoken
+    pair: [pressure, values]
+  - utterance: "What's important to you in life that you're trying to protect?"
+    topics: [values]
+    style: boundary_colloquial
+    pair: [pressure, values]
+  - utterance: "Setting that aside, what matters most to you when you think about this decision?"
+    topics: [values]
+    style: boundary_follow_up
+    pair: [pressure, values]
+    previous:
+      interviewer: "My brother says I'd be foolish to refuse. I feel pushed and want a chance to speak without him there."
+      character: "My brother says I'd be foolish to refuse. I feel pushed and want a chance to speak without him there."
+  - utterance: "Would you like to speak to a solicitor?"
+    topics: []
+    style: near_miss
+    pair: [pressure, values]
+  - utterance: "Do you live alone?"
+    topics: []
+    style: near_miss
+    pair: [pressure, values]
+  - utterance: "So where do you stand on the operation right now?"
+    topics: [choice]
+    style: boundary
+    pair: [choice, weighing]
+  - utterance: "Are you consenting to the surgery?"
+    topics: [choice]
+    style: boundary
+    pair: [choice, weighing]
+  - utterance: "um have you changed your mind at all since they first suggested it"
+    topics: [choice]
+    style: boundary_spoken
+    pair: [choice, weighing]
+  - utterance: "Are you still a no, or are you wavering?"
+    topics: [choice]
+    style: boundary_colloquial
+    pair: [choice, weighing]
+  - utterance: "So to be clear, what's your decision today?"
+    topics: [choice]
+    style: boundary_follow_up
+    pair: [choice, weighing]
+    previous:
+      interviewer: "I want to live, but I'm frightened of losing independence. I know surgery could save me and rehabilitation could help; I don't yet know what life afterwards would actually involve."
+      character: "I want to live, but I'm frightened of losing independence. I know surgery could save me and rehabilitation could help; I don't yet know what life afterwards would actually involve."
+  - utterance: "What are the things you're setting against each other in coming to this?"
+    topics: [weighing]
+    style: boundary
+    pair: [choice, weighing]
+  - utterance: "What are your reasons for leaning the way you are?"
+    topics: [weighing]
+    style: boundary
+    pair: [choice, weighing]
+  - utterance: "so how did you get there like what were the main reasons behind it"
+    topics: [weighing]
+    style: boundary_spoken
+    pair: [choice, weighing]
+  - utterance: "What's tipping the balance for you?"
+    topics: [weighing]
+    style: boundary_colloquial
+    pair: [choice, weighing]
+  - utterance: "Okay. What went into that, what are you weighing up?"
+    topics: [weighing]
+    style: boundary_follow_up
+    pair: [choice, weighing]
+    previous:
+      interviewer: "I'm saying no to the operation at present. I'm willing to hear more, but I haven't changed my decision."
+      character: "I'm saying no to the operation at present. I'm willing to hear more, but I haven't changed my decision."
+  - utterance: "Would you like me to speak to your surgeon on your behalf?"
+    topics: []
+    style: near_miss
+    pair: [choice, weighing]
+  - utterance: "Is your daughter able to visit you here?"
+    topics: []
+    style: near_miss
+    pair: [choice, weighing]
+  - utterance: "Are there any other ways to treat the infection without surgery?"
+    topics: [alternatives]
+    style: boundary
+    pair: [alternatives, operation]
+  - utterance: "What have the doctors said about the risks of not having the operation?"
+    topics: [alternatives]
+    style: boundary
+    pair: [alternatives, operation]
+  - utterance: "and um what if you leave the surgery what's the plan then"
+    topics: [alternatives]
+    style: boundary_spoken
+    pair: [alternatives, operation]
+  - utterance: "What's the plan B if you don't go for it?"
+    topics: [alternatives]
+    style: boundary_colloquial
+    pair: [alternatives, operation]
+  - utterance: "Okay. And what if you don't have it, what could they do instead?"
+    topics: [alternatives]
+    style: boundary_follow_up
+    pair: [alternatives, operation]
+    previous:
+      interviewer: "They recommend removing my leg below the knee to control the infection. I know that means permanently losing that part of my leg."
+      character: "They recommend removing my leg below the knee to control the infection. I know that means permanently losing that part of my leg."
+  - utterance: "Can you tell me what the surgeons are proposing to do?"
+    topics: [operation]
+    style: boundary
+    pair: [alternatives, operation]
+  - utterance: "What would the operation involve, and what would be taken away?"
+    topics: [operation]
+    style: boundary
+    pair: [alternatives, operation]
+  - utterance: "so what exactly is the operation that they've recommended"
+    topics: [operation]
+    style: boundary_spoken
+    pair: [alternatives, operation]
+  - utterance: "What have the surgeons said they'd actually do?"
+    topics: [operation]
+    style: boundary_colloquial
+    pair: [alternatives, operation]
+  - utterance: "And the operation itself, what would that involve?"
+    topics: [operation]
+    style: boundary_follow_up
+    pair: [alternatives, operation]
+    previous:
+      interviewer: "I'm receiving antibiotics, but the surgeons say they may not control it without the operation. I understand refusing could mean I die."
+      character: "I'm receiving antibiotics, but the surgeons say they may not control it without the operation. I understand refusing could mean I die."
+  - utterance: "How long would you be in hospital after it?"
+    topics: []
+    style: near_miss
+    pair: [alternatives, operation]
+  - utterance: "Who would be carrying out the operation?"
+    topics: []
+    style: near_miss
+    pair: [alternatives, operation]

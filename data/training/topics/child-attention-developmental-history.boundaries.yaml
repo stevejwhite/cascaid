@@ -1,0 +1,227 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: child-attention-developmental-history
+case_version: 0.1.0
+status: draft
+items:
+  # peer-relations vs social-communication
+  - utterance: How does Idris get on when he's playing games with other children?
+    topics: [peer-relations]
+    style: boundary
+    pair: [peer-relations, social-communication]
+  - utterance: does he wait for his turn or does he barge in
+    topics: [peer-relations]
+    style: boundary_spoken
+    pair: [peer-relations, social-communication]
+  - utterance: What do you make of the other children staying clear of him at play time?
+    topics: [peer-relations]
+    style: boundary_colloquial
+    pair: [peer-relations, social-communication]
+  - utterance: What is he like when he comes home after being with his friends at school?
+    topics: [peer-relations]
+    style: boundary
+    pair: [peer-relations, social-communication]
+  - utterance: And does it upset him when the other children leave him out?
+    topics: [peer-relations]
+    style: boundary_follow_up
+    pair: [peer-relations, social-communication]
+    previous:
+      interviewer: You said he keeps losing friends. What happens?
+      character: He wants friends, but interrupts games and grabs a turn before others have finished; children then avoid him, and he comes home upset.
+  - utterance: When he was little, did he turn when you called his name?
+    topics: [social-communication]
+    style: boundary
+    pair: [peer-relations, social-communication]
+  - utterance: did he do pretend play, like having tea parties or being a doctor
+    topics: [social-communication]
+    style: boundary_spoken
+    pair: [peer-relations, social-communication]
+  - utterance: Would he point at things to show you what he'd seen?
+    topics: [social-communication]
+    style: boundary_colloquial
+    pair: [peer-relations, social-communication]
+  - utterance: Does he like being around relatives of his own age, and play imaginatively with them?
+    topics: [social-communication]
+    style: boundary
+    pair: [peer-relations, social-communication]
+  - utterance: And did he play pretend games like that when he was a toddler?
+    topics: [social-communication]
+    style: boundary_follow_up
+    pair: [peer-relations, social-communication]
+    previous:
+      interviewer: Does he get on with other children?
+      character: He wants friends, but interrupts games and grabs a turn before others have finished; children then avoid him, and he comes home upset.
+  - utterance: Does he have a best friend?
+    topics: []
+    style: near_miss
+    pair: [peer-relations, social-communication]
+  - utterance: Has he ever been bullied at school?
+    topics: []
+    style: near_miss
+    pair: [peer-relations, social-communication]
+  # activity-control vs home-attention
+  - utterance: Is he always on the go, from morning to night?
+    topics: [activity-control]
+    style: boundary
+    pair: [activity-control, home-attention]
+  - utterance: does he ever just dash off without looking where he's going
+    topics: [activity-control]
+    style: boundary_spoken
+    pair: [activity-control, home-attention]
+  - utterance: Has he ever put himself in danger by acting before he thinks?
+    topics: [activity-control]
+    style: boundary_colloquial
+    pair: [activity-control, home-attention]
+  - utterance: How long has he been this restless?
+    topics: [activity-control]
+    style: boundary
+    pair: [activity-control, home-attention]
+  - utterance: And have you had a scare like that more than once?
+    topics: [activity-control]
+    style: boundary_follow_up
+    pair: [activity-control, home-attention]
+    previous:
+      interviewer: Is he a very active boy?
+      character: He's been constantly on the go since about age three; last week he ran towards a road without checking and I caught his hand before he reached it.
+  - utterance: What is he like with a morning routine, like getting ready to leave the house?
+    topics: [home-attention]
+    style: boundary
+    pair: [activity-control, home-attention]
+  - utterance: so does he need to be told what to do again and again
+    topics: [home-attention]
+    style: boundary_spoken
+    pair: [activity-control, home-attention]
+  - utterance: Is he the sort of child who loses his things all the time?
+    topics: [home-attention]
+    style: boundary_colloquial
+    pair: [activity-control, home-attention]
+  - utterance: Can he follow a few steps in a row if you ask him to do something?
+    topics: [home-attention]
+    style: boundary
+    pair: [activity-control, home-attention]
+  - utterance: And does he get distracted halfway through that?
+    topics: [home-attention]
+    style: boundary_follow_up
+    pair: [activity-control, home-attention]
+    previous:
+      interviewer: Does he concentrate at home, say on getting ready?
+      character: Since nursery age he has needed reminders for each step of getting dressed; most mornings he wanders off halfway and mislays his shoes.
+  - utterance: Does he fidget when he has to sit at the table for dinner?
+    topics: []
+    style: near_miss
+    pair: [activity-control, home-attention]
+  - utterance: Does he have a tendency to hurt himself in accidents?
+    topics: []
+    style: near_miss
+    pair: [activity-control, home-attention]
+  # home-attention vs stress-and-regression
+  - utterance: How well does he manage when he's getting dressed in the morning?
+    topics: [home-attention]
+    style: boundary
+    pair: [home-attention, stress-and-regression]
+  - utterance: is he forgetful, like losing his shoes and so on
+    topics: [home-attention]
+    style: boundary_spoken
+    pair: [home-attention, stress-and-regression]
+  - utterance: Does he ever drift off in the middle of a job you've given him?
+    topics: [home-attention]
+    style: boundary_colloquial
+    pair: [home-attention, stress-and-regression]
+  - utterance: How long have you noticed him needing so many reminders?
+    topics: [home-attention]
+    style: boundary
+    pair: [home-attention, stress-and-regression]
+  - utterance: And has he been like that since he was small?
+    topics: [home-attention]
+    style: boundary_follow_up
+    pair: [home-attention, stress-and-regression]
+    previous:
+      interviewer: Has anything changed recently, or has he always struggled to follow instructions?
+      character: There has been no recent move, separation or loss, and he hasn't lost skills; I am not aware of anyone hurting or frightening him.
+  - utterance: Has anything big happened at home lately, such as a move or someone leaving?
+    topics: [stress-and-regression]
+    style: boundary
+    pair: [home-attention, stress-and-regression]
+  - utterance: has he gone backwards at all, like forgetting things he could do before
+    topics: [stress-and-regression]
+    style: boundary_spoken
+    pair: [home-attention, stress-and-regression]
+  - utterance: Is there any reason to think someone might have upset or scared him?
+    topics: [stress-and-regression]
+    style: boundary_colloquial
+    pair: [home-attention, stress-and-regression]
+  - utterance: Has he lost any skills he used to have, or become more babyish?
+    topics: [stress-and-regression]
+    style: boundary
+    pair: [home-attention, stress-and-regression]
+  - utterance: And was there any change in the family around the time it began?
+    topics: [stress-and-regression]
+    style: boundary_follow_up
+    pair: [home-attention, stress-and-regression]
+    previous:
+      interviewer: How is he with the morning routine?
+      character: Since nursery age he has needed reminders for each step of getting dressed; most mornings he wanders off halfway and mislays his shoes.
+  - utterance: Is he doing better or worse at school than last term?
+    topics: []
+    style: near_miss
+    pair: [home-attention, stress-and-regression]
+  - utterance: Does he have trouble getting to sleep when he's worried?
+    topics: []
+    style: near_miss
+    pair: [home-attention, stress-and-regression]
+  # home-attention vs social-communication
+  - utterance: Does he lose track of what he's doing in the middle of a task at home?
+    topics: [home-attention]
+    style: boundary
+    pair: [home-attention, social-communication]
+  - utterance: um does he listen when you give him an instruction
+    topics: [home-attention]
+    style: boundary_spoken
+    pair: [home-attention, social-communication]
+  - utterance: Does he constantly need nudging to get through the morning?
+    topics: [home-attention]
+    style: boundary_colloquial
+    pair: [home-attention, social-communication]
+  - utterance: Is he organised with his belongings, or does he mislay them?
+    topics: [home-attention]
+    style: boundary
+    pair: [home-attention, social-communication]
+  - utterance: And is it the same when you ask him to do chores or tidy up?
+    topics: [home-attention]
+    style: boundary_follow_up
+    pair: [home-attention, social-communication]
+    previous:
+      interviewer: Does he respond when you call him?
+      character: He pointed out things he wanted us to see, answered to his name and played pretend shops with his cousins; he still enjoys playing with other children.
+  - utterance: Did he respond when you called his name as a baby?
+    topics: [social-communication]
+    style: boundary
+    pair: [home-attention, social-communication]
+  - utterance: did he point stuff out to you when he was little
+    topics: [social-communication]
+    style: boundary_spoken
+    pair: [home-attention, social-communication]
+  - utterance: Has he always played make-believe, like shops or doctors?
+    topics: [social-communication]
+    style: boundary_colloquial
+    pair: [home-attention, social-communication]
+  - utterance: Did he try to share his interests with you by showing you things?
+    topics: [social-communication]
+    style: boundary
+    pair: [home-attention, social-communication]
+  - utterance: And does he enjoy that kind of play still?
+    topics: [social-communication]
+    style: boundary_follow_up
+    pair: [home-attention, social-communication]
+    previous:
+      interviewer: Does he pay attention to you when you talk to him?
+      character: He pointed out things he wanted us to see, answered to his name and played pretend shops with his cousins; he still enjoys playing with other children.
+  - utterance: Does he make good eye contact with you?
+    topics: []
+    style: near_miss
+    pair: [home-attention, social-communication]
+  - utterance: Does he have any unusual interests or routines he insists on?
+    topics: []
+    style: near_miss
+    pair: [home-attention, social-communication]

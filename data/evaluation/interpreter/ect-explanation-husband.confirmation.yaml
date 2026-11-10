@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: ect-explanation-husband
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Peter, has she been withdrawn, and can you trace when that started in relation to admission?
+  expected:
+  - course
+  rapport: false
+- utterance: What have you seen her manage to eat or drink over the last couple of days?
+  expected:
+  - intake
+  rapport: false
+- utterance: Has she been blaming herself for things that don't seem to fit what has actually happened?
+  expected:
+  - symptoms
+  rapport: false
+- utterance: Has your wife said anything to you about not deserving or wanting to stay alive?
+  expected:
+  - risk
+  rapport: false
+- utterance: Before I explain ECT, what picture do you have of what happens during a session?
+  expected:
+  - procedure
+  rapport: false
+- utterance: Are you worried about how the treatment might affect her memories?
+  expected:
+  - memory
+  rapport: false
+- utterance: Is your worry about what she would experience while the treatment is happening?
+  expected:
+  - procedure
+  rapport: false
+- utterance: What worries you about her memory after treatment, rather than the procedure itself?
+  expected:
+  - memory
+  rapport: false
+- utterance: could someone come along with you to help shoulder that?
+  expected:
+  - practical
+  rapport: false
+  previous:
+    interviewer: How are you finding being involved in these decisions?
+    character: Sometimes I wish someone else would make every decision.
+- utterance: Seeing your wife so unwell and facing treatment decisions sounds very hard.
+  expected: []
+  rapport: true

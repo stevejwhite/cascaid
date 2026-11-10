@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: cannabis-voices-mental-state
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hi Tyler, I'm Dr Ahmed, one of the psychiatry doctors. Is it OK if we have a chat?"
+    expected: []
+    rapport: false
+  - utterance: "Have you been hearing things that other people don't seem to hear?"
+    expected: [voices]
+    rapport: false
+  - utterance: "Do they ever tell you to do things?"
+    expected: [commands]
+    rapport: false
+  - utterance: "Do you feel like anyone is out to get you or keeping tabs on you?"
+    expected: [persecution]
+    rapport: false
+  - utterance: "Has it felt like someone can put thoughts into your head, or that people can hear what you're thinking?"
+    expected: [interference]
+    rapport: false
+  - utterance: "Tell me about your cannabis use. How much and how often?"
+    expected: [cannabis]
+    rapport: false
+  - utterance: "Anything else, like cocaine, pills, ketamine, or alcohol?"
+    expected: [other-drugs]
+    rapport: false
+  - utterance: "how've you been sleeping the last few nights"
+    expected: [sleep]
+    rapport: false
+  - utterance: "Have you had any thoughts of hurting yourself or anyone else?"
+    expected: [safety]
+    rapport: false
+  - utterance: "What do you make of what's been happening, could there be another explanation?"
+    expected: [insight]
+    rapport: false
+  - utterance: "Did anyone come to the hospital with you today?"
+    expected: [support]
+    rapport: false
+  - utterance: "That sounds really scary, Tyler."
+    expected: []
+    rapport: true
+  - utterance: "You did the right thing coming in. Feeling unsafe like that is a horrible place to be."
+    expected: []
+    rapport: true
+  - previous:
+      interviewer: "When did the voices start?"
+      character: "Three days ago. Two men talking about me when nobody's there."
+    utterance: "What sort of things are they saying, do they give you orders?"
+    expected: [commands]
+    rapport: false
+  - previous:
+      interviewer: "How much have you been smoking?"
+      character: "Strong stuff, daily, for two years. More last week."
+    utterance: "And when was your last smoke?"
+    expected: [cannabis]
+    rapport: false
+  - utterance: "Have you ever been in contact with mental health services before?"
+    expected: []
+    rapport: false
+  - utterance: "Is there any history of schizophrenia or similar in your family?"
+    expected: []
+    rapport: false
+  - utterance: "OK Tyler, so for the last three days you've been hearing voices and feeling watched, and you've been smoking more than usual."
+    expected: []
+    rapport: false

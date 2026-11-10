@@ -1,0 +1,60 @@
+# Author-labelled interpreter cases. Held-out test split: written before interpreter
+# tuning (2026-10-07) and not used to tune prompts or labels.
+case_id: memory-collateral-history
+case_version: 0.4.1
+split: test
+items:
+  - utterance: Thank you for coming in, Helen. I'm one of the doctors in the team.
+    expected: []
+    rapport: false
+  - utterance: When did you first notice problems with his memory?
+    expected: [onset]
+    rapport: false
+  - utterance: Did it come on suddenly or gradually?
+    expected: [onset]
+    rapport: false
+  - utterance: Can you give me some examples of what he forgets?
+    expected: [memory-pattern]
+    rapport: false
+  - utterance: Does he repeat himself?
+    expected: [memory-pattern]
+    rapport: false
+  - utterance: Has he ever got lost?
+    expected: [getting-lost]
+    rapport: false
+  - utterance: How is he managing at home with cooking and bills?
+    expected: [daily-function]
+    rapport: false
+  - utterance: Have there been any safety concerns at home?
+    expected: [cooker-safety]
+    rapport: false
+  - utterance: Has his personality or mood changed?
+    expected: [mood-behaviour]
+    rapport: false
+  - utterance: Has he been seeing things that aren't there?
+    expected: [mood-behaviour]
+    rapport: false
+  - utterance: What physical health problems does he have?
+    expected: [physical-health]
+    rapport: false
+  - utterance: Does he take any regular medication?
+    expected: [physical-health]
+    rapport: false
+  - utterance: How much does he drink?
+    expected: [alcohol]
+    rapport: false
+  - utterance: Is there any dementia in the family?
+    expected: [family-history]
+    rapport: false
+  - utterance: How does your dad feel about all this?
+    expected: [his-view]
+    rapport: false
+  - utterance: It sounds like you've been carrying a lot on your own.
+    expected: []
+    rapport: true
+  - utterance: How are you coping with everything?
+    expected: [carer-strain]
+    rapport: false
+  - utterance: What car does he drive?
+    expected: []
+    rapport: false

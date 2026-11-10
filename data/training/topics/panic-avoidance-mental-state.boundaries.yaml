@@ -1,0 +1,359 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: panic-avoidance-mental-state
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Between attacks, do you find yourself waiting for the next one to happen?
+  topics:
+  - anticipation
+  style: boundary
+  pair:
+  - anticipation
+  - catastrophic-thought
+- utterance: Do you keep checking your body for signs that one is starting?
+  topics:
+  - anticipation
+  style: boundary
+  pair:
+  - anticipation
+  - catastrophic-thought
+- utterance: Are you on edge all day, expecting another one?
+  topics:
+  - anticipation
+  style: boundary_colloquial
+  pair:
+  - anticipation
+  - catastrophic-thought
+- utterance: um when you're not having an attack are you still worrying about it coming back
+  topics:
+  - anticipation
+  style: boundary_spoken
+  pair:
+  - anticipation
+  - catastrophic-thought
+- utterance: And between the attacks, how much of your day do you spend dreading the next one?
+  topics:
+  - anticipation
+  style: boundary_follow_up
+  pair:
+  - anticipation
+  - catastrophic-thought
+  previous:
+    interviewer: What goes through your mind at the worst point?
+    character: At the worst point I think I'm having a heart attack and might die, even though afterwards I'm less convinced.
+- utterance: What do you fear is going to happen to you when it's at its worst?
+  topics:
+  - catastrophic-thought
+  style: boundary
+  pair:
+  - anticipation
+  - catastrophic-thought
+- utterance: Do you ever think you might die when it comes on?
+  topics:
+  - catastrophic-thought
+  style: boundary
+  pair:
+  - anticipation
+  - catastrophic-thought
+- utterance: Does it feel like something terrible is about to happen to you?
+  topics:
+  - catastrophic-thought
+  style: boundary_colloquial
+  pair:
+  - anticipation
+  - catastrophic-thought
+- utterance: mm right so when you're in the thick of it what goes through your head, what's it mean to you
+  topics:
+  - catastrophic-thought
+  style: boundary_spoken
+  pair:
+  - anticipation
+  - catastrophic-thought
+- utterance: And when one actually hits, what do you think is happening?
+  topics:
+  - catastrophic-thought
+  style: boundary_follow_up
+  pair:
+  - anticipation
+  - catastrophic-thought
+  previous:
+    interviewer: Do you spend much of the day waiting for the next one?
+    character: For about two months I've spent much of each day waiting for the next one and checking whether my pulse is speeding up.
+- utterance: Do these happen at night when you're asleep?
+  topics: []
+  style: near_miss
+  pair:
+  - anticipation
+  - catastrophic-thought
+- utterance: Did anything stressful happen just before the first one?
+  topics: []
+  style: near_miss
+  pair:
+  - anticipation
+  - catastrophic-thought
+- utterance: How much of the day do you spend thinking about the next attack?
+  topics:
+  - anticipation
+  style: boundary
+  pair:
+  - anticipation
+  - course
+- utterance: Do you find yourself monitoring your heartbeat to see if one is coming?
+  topics:
+  - anticipation
+  style: boundary
+  pair:
+  - anticipation
+  - course
+- utterance: Are you constantly waiting for the next one?
+  topics:
+  - anticipation
+  style: boundary_colloquial
+  pair:
+  - anticipation
+  - course
+- utterance: mm and in between do you um spend a lot of time worrying it'll happen again
+  topics:
+  - anticipation
+  style: boundary_spoken
+  pair:
+  - anticipation
+  - course
+- utterance: And on the days without one, are you braced for it all day?
+  topics:
+  - anticipation
+  style: boundary_follow_up
+  pair:
+  - anticipation
+  - course
+  previous:
+    interviewer: How often do they happen?
+    character: They started three months ago and now happen about twice a week; the first was on a bus, but I've also had one sitting quietly at home.
+- utterance: When did you have your first attack?
+  topics:
+  - course
+  style: boundary
+  pair:
+  - anticipation
+  - course
+- utterance: How often are you having them now?
+  topics:
+  - course
+  style: boundary
+  pair:
+  - anticipation
+  - course
+- utterance: Has this been building for a long time, and do you get one daily?
+  topics:
+  - course
+  style: boundary_colloquial
+  pair:
+  - anticipation
+  - course
+- utterance: um so when did it all start and how many are you getting a week
+  topics:
+  - course
+  style: boundary_spoken
+  pair:
+  - anticipation
+  - course
+- utterance: How long ago did the first one happen?
+  topics:
+  - course
+  style: boundary_follow_up
+  pair:
+  - anticipation
+  - course
+  previous:
+    interviewer: Do you spend much time dreading the next one?
+    character: For about two months I've spent much of each day waiting for the next one and checking whether my pulse is speeding up.
+- utterance: Does anyone in your family have anxiety problems?
+  topics: []
+  style: near_miss
+  pair:
+  - anticipation
+  - course
+- utterance: Have you ever seen anyone about anxiety before?
+  topics: []
+  style: near_miss
+  pair:
+  - anticipation
+  - course
+- utterance: Do you spend time between attacks bracing for the next one?
+  topics:
+  - anticipation
+  style: boundary
+  pair:
+  - anticipation
+  - attack-sensations
+- utterance: Do you check your pulse or your breathing during the day in case it's starting?
+  topics:
+  - anticipation
+  style: boundary
+  pair:
+  - anticipation
+  - attack-sensations
+- utterance: Are you always on guard waiting for it to hit again?
+  topics:
+  - anticipation
+  style: boundary_colloquial
+  pair:
+  - anticipation
+  - attack-sensations
+- utterance: so um when you're feeling fine does the fear of another one still hang over you
+  topics:
+  - anticipation
+  style: boundary_spoken
+  pair:
+  - anticipation
+  - attack-sensations
+- utterance: And when it's over, does the dread of another one stay with you?
+  topics:
+  - anticipation
+  style: boundary_follow_up
+  pair:
+  - anticipation
+  - attack-sensations
+  previous:
+    interviewer: What happens in your body during one?
+    character: My heart suddenly pounds, my chest feels tight, I breathe fast and my fingers tingle; it builds within a couple of minutes and usually eases after ten to fifteen.
+- utterance: Talk me through the physical side when it starts, what changes in you?
+  topics:
+  - attack-sensations
+  style: boundary
+  pair:
+  - anticipation
+  - attack-sensations
+- utterance: How long does one attack last once it starts?
+  topics:
+  - attack-sensations
+  style: boundary
+  pair:
+  - anticipation
+  - attack-sensations
+- utterance: What's it actually like physically, your heart and your breathing?
+  topics:
+  - attack-sensations
+  style: boundary_colloquial
+  pair:
+  - anticipation
+  - attack-sensations
+- utterance: um can you describe what happens to your body in an attack
+  topics:
+  - attack-sensations
+  style: boundary_spoken
+  pair:
+  - anticipation
+  - attack-sensations
+- utterance: And when one does start, what happens in your body?
+  topics:
+  - attack-sensations
+  style: boundary_follow_up
+  pair:
+  - anticipation
+  - attack-sensations
+  previous:
+    interviewer: Do you wait for the next one all day?
+    character: For about two months I've spent much of each day waiting for the next one and checking whether my pulse is speeding up.
+- utterance: Do you take anything to stop an attack once it's started?
+  topics: []
+  style: near_miss
+  pair:
+  - anticipation
+  - attack-sensations
+- utterance: Have you ever gone to hospital because of one?
+  topics: []
+  style: near_miss
+  pair:
+  - anticipation
+  - attack-sensations
+- utterance: Where have you stopped going these days?
+  topics:
+  - avoidance
+  style: boundary
+  pair:
+  - avoidance
+  - unreality
+- utterance: Is it worse when you're out on your own?
+  topics:
+  - avoidance
+  style: boundary
+  pair:
+  - avoidance
+  - unreality
+- utterance: Are you worried you couldn't get out quickly if it happened in a shop?
+  topics:
+  - avoidance
+  style: boundary_colloquial
+  pair:
+  - avoidance
+  - unreality
+- utterance: so um what is it about being on the bus that you can't face
+  topics:
+  - avoidance
+  style: boundary_spoken
+  pair:
+  - avoidance
+  - unreality
+- utterance: Why those two places in particular, what's the worry there?
+  topics:
+  - avoidance
+  style: boundary_follow_up
+  pair:
+  - avoidance
+  - unreality
+  previous:
+    interviewer: Does the room feel strange during an attack?
+    character: Yes, during an attack the room can feel distant, as if I'm watching it through glass; I know it's a feeling and it passes with the attack.
+- utterance: At its worst, does the world around you look different, a bit unreal?
+  topics:
+  - unreality
+  style: boundary
+  pair:
+  - avoidance
+  - unreality
+- utterance: Do you ever feel detached from yourself or your surroundings?
+  topics:
+  - unreality
+  style: boundary
+  pair:
+  - avoidance
+  - unreality
+- utterance: Does everything go a bit weird or dreamlike when it happens?
+  topics:
+  - unreality
+  style: boundary_colloquial
+  pair:
+  - avoidance
+  - unreality
+- utterance: um when it's happening does it feel like you're not really there
+  topics:
+  - unreality
+  style: boundary_spoken
+  pair:
+  - avoidance
+  - unreality
+- utterance: And during an attack itself, does the world feel a bit unreal?
+  topics:
+  - unreality
+  style: boundary_follow_up
+  pair:
+  - avoidance
+  - unreality
+  previous:
+    interviewer: What stops you getting on buses?
+    character: I avoid buses and supermarkets because I worry I won't be able to get out or get help quickly; it's worse if I would be on my own.
+- utterance: Do you drive?
+  topics: []
+  style: near_miss
+  pair:
+  - avoidance
+  - unreality
+- utterance: Do you ever have flashbacks of something that happened to you in the past?
+  topics: []
+  style: near_miss
+  pair:
+  - avoidance
+  - unreality

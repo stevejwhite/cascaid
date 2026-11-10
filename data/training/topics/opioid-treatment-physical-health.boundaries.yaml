@@ -1,0 +1,359 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: opioid-treatment-physical-health
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Have you ever taken too much and needed emergency help?
+  topics:
+  - overdose
+  style: boundary
+  pair:
+  - overdose
+  - treatment
+- utterance: Do you have a naloxone kit at home?
+  topics:
+  - overdose
+  style: boundary
+  pair:
+  - overdose
+  - treatment
+- utterance: Ever nearly died from using too much?
+  topics:
+  - overdose
+  style: boundary_colloquial
+  pair:
+  - overdose
+  - treatment
+- utterance: um do you drink or take any sedatives on top of your medication
+  topics:
+  - overdose
+  style: boundary_spoken
+  pair:
+  - overdose
+  - treatment
+- utterance: Has there been a time when you've taken too much by accident?
+  topics:
+  - overdose
+  style: boundary_follow_up
+  pair:
+  - overdose
+  - treatment
+  previous:
+    interviewer: What dose are you on?
+    character: I take oral methadone 60 milligrams daily and collect it under supervision. I've been on this dose for four months.
+- utterance: What dose of your substitute medication do you take?
+  topics:
+  - treatment
+  style: boundary
+  pair:
+  - overdose
+  - treatment
+- utterance: How do you collect your prescription, is it supervised?
+  topics:
+  - treatment
+  style: boundary
+  pair:
+  - overdose
+  - treatment
+- utterance: How much are you on at the moment, and how long's that been?
+  topics:
+  - treatment
+  style: boundary_colloquial
+  pair:
+  - overdose
+  - treatment
+- utterance: so um what are you on and how often do you pick it up
+  topics:
+  - treatment
+  style: boundary_spoken
+  pair:
+  - overdose
+  - treatment
+- utterance: And what's your daily dose of the substitute?
+  topics:
+  - treatment
+  style: boundary_follow_up
+  pair:
+  - overdose
+  - treatment
+  previous:
+    interviewer: Do you have a naloxone kit?
+    character: I had an accidental overdose a year ago. I have a naloxone kit now; I don't use alcohol or sedatives.
+- utterance: Who is your key worker here?
+  topics: []
+  style: near_miss
+  pair:
+  - overdose
+  - treatment
+- utterance: Have you ever been in prison?
+  topics: []
+  style: near_miss
+  pair:
+  - overdose
+  - treatment
+- utterance: Have you ever shared needles or other equipment?
+  topics:
+  - bbv
+  style: boundary
+  pair:
+  - bbv
+  - overdose
+- utterance: When were you last tested for HIV or hepatitis?
+  topics:
+  - bbv
+  style: boundary
+  pair:
+  - bbv
+  - overdose
+- utterance: Have you had the jab for hepatitis B?
+  topics:
+  - bbv
+  style: boundary_colloquial
+  pair:
+  - bbv
+  - overdose
+- utterance: mm and um have you ever had a blood test for HIV or hep
+  topics:
+  - bbv
+  style: boundary_spoken
+  pair:
+  - bbv
+  - overdose
+- utterance: Have you ever shared equipment with anyone?
+  topics:
+  - bbv
+  style: boundary_follow_up
+  pair:
+  - bbv
+  - overdose
+  previous:
+    interviewer: Have you ever overdosed?
+    character: I had an accidental overdose a year ago. I have a naloxone kit now; I don't use alcohol or sedatives.
+- utterance: Was there ever an accidental overdose, even years back?
+  topics:
+  - overdose
+  style: boundary
+  pair:
+  - bbv
+  - overdose
+- utterance: Do you carry anything to reverse an overdose?
+  topics:
+  - overdose
+  style: boundary
+  pair:
+  - bbv
+  - overdose
+- utterance: Have you ever passed out from using, or had to be revived?
+  topics:
+  - overdose
+  style: boundary_colloquial
+  pair:
+  - bbv
+  - overdose
+- utterance: um and have you ever had an overdose or a near miss
+  topics:
+  - overdose
+  style: boundary_spoken
+  pair:
+  - bbv
+  - overdose
+- utterance: And has there ever been a time you took too much?
+  topics:
+  - overdose
+  style: boundary_follow_up
+  pair:
+  - bbv
+  - overdose
+  previous:
+    interviewer: When were you last tested?
+    character: I shared equipment years ago. My last HIV and hepatitis tests were eighteen months ago and negative; I'm unsure whether I completed hepatitis B vaccination.
+- utterance: Has your partner been tested for anything?
+  topics: []
+  style: near_miss
+  pair:
+  - bbv
+  - overdose
+- utterance: Have you ever had a tattoo or piercing done?
+  topics: []
+  style: near_miss
+  pair:
+  - bbv
+  - overdose
+- utterance: How long is it since you last used a needle?
+  topics:
+  - injecting
+  style: boundary
+  pair:
+  - injecting
+  - overdose
+- utterance: Which parts of your body do you inject into?
+  topics:
+  - injecting
+  style: boundary
+  pair:
+  - injecting
+  - overdose
+- utterance: Have you seen any redness or oozing where you've been injecting?
+  topics:
+  - injecting
+  style: boundary_colloquial
+  pair:
+  - injecting
+  - overdose
+- utterance: so um when was the last time you actually injected and where
+  topics:
+  - injecting
+  style: boundary_spoken
+  pair:
+  - injecting
+  - overdose
+- utterance: Right, and how recently have you used a needle yourself?
+  topics:
+  - injecting
+  style: boundary_follow_up
+  pair:
+  - injecting
+  - overdose
+  previous:
+    interviewer: Do you have naloxone?
+    character: I had an accidental overdose a year ago. I have a naloxone kit now; I don't use alcohol or sedatives.
+- utterance: Has there ever been a time when you took too much and nearly died?
+  topics:
+  - overdose
+  style: boundary
+  pair:
+  - injecting
+  - overdose
+- utterance: Do you keep naloxone anywhere?
+  topics:
+  - overdose
+  style: boundary
+  pair:
+  - injecting
+  - overdose
+- utterance: Do you mix your tablets with drink or anything else that knocks you out?
+  topics:
+  - overdose
+  style: boundary_colloquial
+  pair:
+  - injecting
+  - overdose
+- utterance: and um do you use anything else alongside your medication like alcohol or benzos
+  topics:
+  - overdose
+  style: boundary_spoken
+  pair:
+  - injecting
+  - overdose
+- utterance: And have you ever overdosed accidentally?
+  topics:
+  - overdose
+  style: boundary_follow_up
+  pair:
+  - injecting
+  - overdose
+  previous:
+    interviewer: How long is it since you last used a needle?
+    character: I last injected heroin six weeks ago, usually in my arms. I have old scars but no current red, hot or leaking wound.
+- utterance: Do you use any other drugs, like cocaine?
+  topics: []
+  style: near_miss
+  pair:
+  - injecting
+  - overdose
+- utterance: Who do you usually use with?
+  topics: []
+  style: near_miss
+  pair:
+  - injecting
+  - overdose
+- utterance: Have you ever shared a needle, spoon or filter with someone?
+  topics:
+  - bbv
+  style: boundary
+  pair:
+  - bbv
+  - injecting
+- utterance: Do you know your hepatitis and HIV status?
+  topics:
+  - bbv
+  style: boundary
+  pair:
+  - bbv
+  - injecting
+- utterance: Had your hep B jabs?
+  topics:
+  - bbv
+  style: boundary_colloquial
+  pair:
+  - bbv
+  - injecting
+- utterance: um are you up to date with blood tests for hep and HIV
+  topics:
+  - bbv
+  style: boundary_spoken
+  pair:
+  - bbv
+  - injecting
+- utterance: Has your equipment ever been shared with anyone else?
+  topics:
+  - bbv
+  style: boundary_follow_up
+  pair:
+  - bbv
+  - injecting
+  previous:
+    interviewer: How long is it since you last used a needle?
+    character: I last injected heroin six weeks ago, usually in my arms. I have old scars but no current red, hot or leaking wound.
+- utterance: Is injecting something you're still doing now?
+  topics:
+  - injecting
+  style: boundary
+  pair:
+  - bbv
+  - injecting
+- utterance: Is there any redness or swelling at the sites where you inject?
+  topics:
+  - injecting
+  style: boundary
+  pair:
+  - bbv
+  - injecting
+- utterance: Are there any sore, red or leaky bits where you've been jabbing?
+  topics:
+  - injecting
+  style: boundary_colloquial
+  pair:
+  - bbv
+  - injecting
+- utterance: so um where abouts on your body do you inject
+  topics:
+  - injecting
+  style: boundary_spoken
+  pair:
+  - bbv
+  - injecting
+- utterance: And are you injecting now, or when did you last?
+  topics:
+  - injecting
+  style: boundary_follow_up
+  pair:
+  - bbv
+  - injecting
+  previous:
+    interviewer: Are you vaccinated against hepatitis B?
+    character: I shared equipment years ago. My last HIV and hepatitis tests were eighteen months ago and negative; I'm unsure whether I completed hepatitis B vaccination.
+- utterance: Do you get your needles from an exchange?
+  topics: []
+  style: near_miss
+  pair:
+  - bbv
+  - injecting
+- utterance: Has anyone in your household got hepatitis?
+  topics: []
+  style: near_miss
+  pair:
+  - bbv
+  - injecting

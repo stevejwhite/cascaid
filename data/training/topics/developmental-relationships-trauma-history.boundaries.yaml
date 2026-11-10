@@ -1,0 +1,230 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: developmental-relationships-trauma-history
+case_version: 0.1.0
+status: draft
+items:
+  # ---- needs / pattern ----
+  - utterance: "Does the idea of relying on a therapist who sees you regularly worry you?"
+    topics: [needs]
+    style: boundary
+    pair: [needs, pattern]
+  - utterance: "Would it suit you better if we took this at your own pace?"
+    topics: [needs]
+    style: boundary
+    pair: [needs, pattern]
+  - utterance: "um what would you like to get out of coming to see us"
+    topics: [needs]
+    style: boundary_spoken
+    pair: [needs, pattern]
+  - utterance: "Is it a bit scary to start depending on someone here?"
+    topics: [needs]
+    style: boundary_colloquial
+    pair: [needs, pattern]
+  - utterance: "And does that worry carry over to coming here?"
+    topics: [needs]
+    style: boundary_follow_up
+    pair: [needs, pattern]
+    previous:
+      interviewer: "How do you find being close to people?"
+      character: "When someone gets close I worry they'll leave."
+  - utterance: "What do you do when someone starts getting close to you?"
+    topics: [pattern]
+    style: boundary
+    pair: [needs, pattern]
+  - utterance: "Do you worry your partners will walk away from you?"
+    topics: [pattern]
+    style: boundary
+    pair: [needs, pattern]
+  - utterance: "um do you ever pull back from people and then go back to them"
+    topics: [pattern]
+    style: boundary_spoken
+    pair: [needs, pattern]
+  - utterance: "Do you end up asking people to reassure you?"
+    topics: [pattern]
+    style: boundary_colloquial
+    pair: [needs, pattern]
+  - utterance: "And is that the same in your close relationships outside here?"
+    topics: [pattern]
+    style: boundary_follow_up
+    pair: [needs, pattern]
+    previous:
+      interviewer: "What worries you about starting therapy?"
+      character: "I'm frightened of becoming dependent on someone who might leave."
+  - utterance: "Have you had any therapy before?"
+    topics: []
+    style: near_miss
+    pair: [needs, pattern]
+  - utterance: "Are you in a relationship at the moment?"
+    topics: []
+    style: near_miss
+    pair: [needs, pattern]
+
+  # ---- attachment / needs ----
+  - utterance: "Was there anyone you could trust with your feelings when you were small?"
+    topics: [attachment]
+    style: boundary
+    pair: [attachment, needs]
+  - utterance: "Who listened to you when you were upset as a child?"
+    topics: [attachment]
+    style: boundary
+    pair: [attachment, needs]
+  - utterance: "um did you feel you could rely on the grown-ups around you"
+    topics: [attachment]
+    style: boundary_spoken
+    pair: [attachment, needs]
+  - utterance: "Did you hold back from showing adults how you felt?"
+    topics: [attachment]
+    style: boundary_colloquial
+    pair: [attachment, needs]
+  - utterance: "And back then, who was it that you felt safe with?"
+    topics: [attachment]
+    style: boundary_follow_up
+    pair: [attachment, needs]
+    previous:
+      interviewer: "What would help you feel comfortable here?"
+      character: "I'd like us to go slowly."
+  - utterance: "What would help you feel comfortable about starting therapy here?"
+    topics: [needs]
+    style: boundary
+    pair: [attachment, needs]
+  - utterance: "Are you worried about leaning on a therapist?"
+    topics: [needs]
+    style: boundary
+    pair: [attachment, needs]
+  - utterance: "um what do you want from us, like what pace feels right"
+    topics: [needs]
+    style: boundary_spoken
+    pair: [attachment, needs]
+  - utterance: "Is it hard to trust someone to be there for you now?"
+    topics: [needs]
+    style: boundary_colloquial
+    pair: [attachment, needs]
+  - utterance: "And would that matter for working with me?"
+    topics: [needs]
+    style: boundary_follow_up
+    pair: [attachment, needs]
+    previous:
+      interviewer: "How did the adults at home respond to your feelings?"
+      character: "At home I usually kept quiet because I didn't know how adults would react."
+  - utterance: "Did you have a pet when you were growing up?"
+    topics: []
+    style: near_miss
+    pair: [attachment, needs]
+  - utterance: "Did anyone read to you as a child?"
+    topics: []
+    style: near_miss
+    pair: [attachment, needs]
+
+  # ---- attachment / pattern ----
+  - utterance: "Did you feel secure with the adults in your family?"
+    topics: [attachment]
+    style: boundary
+    pair: [attachment, pattern]
+  - utterance: "When you were upset as a child, did anyone comfort you?"
+    topics: [attachment]
+    style: boundary
+    pair: [attachment, pattern]
+  - utterance: "um did you worry about how the adults would react to you"
+    topics: [attachment]
+    style: boundary_spoken
+    pair: [attachment, pattern]
+  - utterance: "Was there a person who made you feel looked after?"
+    topics: [attachment]
+    style: boundary_colloquial
+    pair: [attachment, pattern]
+  - utterance: "And as a child, did you go to anyone with your worries?"
+    topics: [attachment]
+    style: boundary_follow_up
+    pair: [attachment, pattern]
+    previous:
+      interviewer: "Do you worry about people leaving?"
+      character: "When someone gets close I worry they'll leave."
+  - utterance: "Do you worry that people close to you will leave?"
+    topics: [pattern]
+    style: boundary
+    pair: [attachment, pattern]
+  - utterance: "Do you tend to pull away from people you care about?"
+    topics: [pattern]
+    style: boundary
+    pair: [attachment, pattern]
+  - utterance: "um in your relationships now do you need a lot of reassurance"
+    topics: [pattern]
+    style: boundary_spoken
+    pair: [attachment, pattern]
+  - utterance: "Do you find yourself backing off when someone gets close?"
+    topics: [pattern]
+    style: boundary_colloquial
+    pair: [attachment, pattern]
+  - utterance: "And does it happen with partners as well?"
+    topics: [pattern]
+    style: boundary_follow_up
+    pair: [attachment, pattern]
+    previous:
+      interviewer: "Who comforted you when you were upset?"
+      character: "My grandmother would listen when I was upset."
+  - utterance: "Have you ever lost someone close to you?"
+    topics: []
+    style: near_miss
+    pair: [attachment, pattern]
+  - utterance: "Did you move house or school a lot as a child?"
+    topics: []
+    style: near_miss
+    pair: [attachment, pattern]
+
+  # ---- pattern / risk ----
+  - utterance: "Do you push partners away when things start to feel close?"
+    topics: [pattern]
+    style: boundary
+    pair: [pattern, risk]
+  - utterance: "What happens in your relationships when somebody starts to matter to you?"
+    topics: [pattern]
+    style: boundary
+    pair: [pattern, risk]
+  - utterance: "um do you get afraid that the people you love will go"
+    topics: [pattern]
+    style: boundary_spoken
+    pair: [pattern, risk]
+  - utterance: "Do you find you cling on after you've backed off?"
+    topics: [pattern]
+    style: boundary_colloquial
+    pair: [pattern, risk]
+  - utterance: "And does that happen in your relationships today?"
+    topics: [pattern]
+    style: boundary_follow_up
+    pair: [pattern, risk]
+    previous:
+      interviewer: "Is anyone hurting you at the moment?"
+      character: "No, I don't have suicidal thoughts or a history of self-harm."
+  - utterance: "Are you safe in your current relationship?"
+    topics: [risk]
+    style: boundary
+    pair: [pattern, risk]
+  - utterance: "Have you ever thought about harming yourself?"
+    topics: [risk]
+    style: boundary
+    pair: [pattern, risk]
+  - utterance: "um has anyone in your life ever been violent towards you recently"
+    topics: [risk]
+    style: boundary_spoken
+    pair: [pattern, risk]
+  - utterance: "Have you ever felt you didn't want to be here?"
+    topics: [risk]
+    style: boundary_colloquial
+    pair: [pattern, risk]
+  - utterance: "And is anything in those relationships frightening you now?"
+    topics: [risk]
+    style: boundary_follow_up
+    pair: [pattern, risk]
+    previous:
+      interviewer: "What happens when someone gets close?"
+      character: "I may pull away first, then feel lonely and ask for reassurance."
+  - utterance: "Have you any children of your own?"
+    topics: []
+    style: near_miss
+    pair: [pattern, risk]
+  - utterance: "Do you drink alcohol when things get difficult?"
+    topics: []
+    style: near_miss
+    pair: [pattern, risk]

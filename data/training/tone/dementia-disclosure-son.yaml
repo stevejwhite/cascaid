@@ -1,0 +1,161 @@
+# Training lines for the tone classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: dementia-disclosure-son
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Do you think your mother would want to know the diagnosis?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Are you finding it hard yourself to hear all this?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Who normally comes with her to appointments?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: what makes you think she can't cope with the news
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Sorry to ask, but would you mind telling me what you think she understands at the moment?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: If you don't mind, could you tell me a bit about how she's been recently?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Hello Arun, thanks for coming along today.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: Hi, I'm Dr Nwosu, one of the trainees in the memory clinic.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: I'd like to understand your worries first, and then explain how we usually approach telling
+    people about a diagnosis.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: explanation
+- utterance: Right. And has she said anything about that?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Okay, thanks, I've got that.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: That sounds really difficult.
+  empathy: 1
+  empathy_words: That sounds really difficult.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I'm sorry to hear that. Thank you for telling me.
+  empathy: 1
+  empathy_words: I'm sorry to hear that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That must be hard for you. Has your mother said what she would like to know?
+  empathy: 1
+  empathy_words: That must be hard for you.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I can see this is worrying. What do you think she would do if she were told?
+  empathy: 1
+  empathy_words: I can see this is worrying.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: It sounds like her sister's illness left you both frightened, and you want to spare her that
+    again.
+  empathy: 2
+  empathy_words: It sounds like her sister's illness left you both frightened, and you want to spare her
+    that again.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: I'm afraid she'll give up. Her sister had dementia and Mum remembers that period as frightening.
+    character: I'm afraid she'll give up. Her sister had dementia and Mum remembers that period as frightening.
+- utterance: You're trying to balance work and caring for her, and it must feel like there's no time left
+    for you.
+  empathy: 2
+  empathy_words: You're trying to balance work and caring for her, and it must feel like there's no time
+    left for you.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: I'm already struggling to balance work and helping her. I haven't asked for any support
+      for myself.
+    character: I'm already struggling to balance work and helping her. I haven't asked for any support
+      for myself.
+- utterance: It makes sense that you want to protect her from distress, because you said telling her wouldn't
+    help.
+  empathy: 2
+  empathy_words: It makes sense that you want to protect her from distress, because you said telling her
+    wouldn't help.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: You obviously love her and want to protect her from anything that would frighten her, so
+    I'd like to understand more. What worries you most?
+  empathy: 2
+  empathy_words: You obviously love her and want to protect her from anything that would frighten her,
+    so I'd like to understand more.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+- utterance: You can't just decide on her behalf what she's told.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You can't just decide on her behalf what she's told.
+  style: confront_statement
+- utterance: You're only thinking about yourself here, aren't you?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You're only thinking about yourself here, aren't you?
+  style: confront_tag
+- utterance: I'm sure she'll be fine once she's been told, so there's nothing to worry about.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: I'm sure she'll be fine once she's been told, so there's nothing to worry about.
+  style: dismissive
+- utterance: It's a simple matter of the law, so I don't think we need to discuss your feelings.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: It's a simple matter of the law, so I don't think we need to discuss your feelings.
+  style: dismissive

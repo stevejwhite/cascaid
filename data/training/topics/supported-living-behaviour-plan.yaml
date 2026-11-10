@@ -1,0 +1,794 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: supported-living-behaviour-plan
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Can you tell me about the times he's hit out at staff since moving?
+  topics:
+  - pattern
+  style: open
+- utterance: Talk me through how often this has been happening.
+  topics:
+  - pattern
+  style: open
+- utterance: Has anyone been hurt when he's hit out?
+  topics:
+  - pattern
+  style: closed
+- utterance: Is it happening every day at the moment?
+  topics:
+  - pattern
+  style: closed
+- utterance: How many times has he lashed out, roughly?
+  topics:
+  - pattern
+  style: colloquial
+- utterance: Has anyone needed patching up afterwards?
+  topics:
+  - pattern
+  style: colloquial
+- utterance: What's the frequency and severity of the incidents so far?
+  topics:
+  - pattern
+  style: clinical
+- utterance: I'd like to get a picture of how often he's hit someone and whether anyone was injured
+  topics:
+  - pattern
+  style: indirect
+- utterance: That sounds a worrying few weeks for the team. How many incidents have there been?
+  topics:
+  - pattern
+  style: empathy_then_question
+- utterance: so um how often has he how often has he actually hit someone
+  topics:
+  - pattern
+  style: spoken
+- utterance: and er was anybody injured at all
+  topics:
+  - pattern
+  style: spoken
+- utterance: How many incidents so far?
+  topics:
+  - pattern
+  style: brief
+- utterance: And how many times has it ended in someone being hit overall?
+  topics:
+  - pattern
+  style: follow_up
+  previous:
+    interviewer: What's usually happening just before he hits someone?
+    character: Three incidents happened when unfamiliar staff hurried him into the shared bathroom. He
+      first covered his ears and turned away.
+- utterance: Did the colleague with the bruise need any treatment?
+  topics:
+  - pattern
+  style: follow_up
+  previous:
+    interviewer: How often has he hit someone since the move?
+    character: He's hit a staff member four times in the three weeks since moving. Once a colleague had
+      a bruised arm; there have been no other injuries.
+- utterance: I'm guessing it's been more than once or twice, has it?
+  topics:
+  - pattern
+  style: leading
+- utterance: Can you describe the lead-up to one of these incidents?
+  topics:
+  - before
+  style: open
+- utterance: Does it tend to happen during personal care, like washing?
+  topics:
+  - before
+  style: closed
+- utterance: Are there any warning signs before he hits out?
+  topics:
+  - before
+  style: closed
+- utterance: What's going on for him in the minutes before he kicks off?
+  topics:
+  - before
+  style: colloquial
+- utterance: Is there anything that sets him off, as far as you can tell?
+  topics:
+  - before
+  style: colloquial
+- utterance: What do you notice about the antecedents to each incident?
+  topics:
+  - before
+  style: clinical
+- utterance: I wondered whether there's a pattern to when it happens
+  topics:
+  - before
+  style: indirect
+- utterance: It's hard to see what's behind it when it seems to come out of the blue. What were staff
+    doing with him just beforehand?
+  topics:
+  - before
+  style: empathy_then_question
+- utterance: um so before he before he hits out does he do anything first
+  topics:
+  - before
+  style: spoken
+- utterance: so is it during certain tasks or er just random
+  topics:
+  - before
+  style: spoken
+- utterance: And any triggers?
+  topics:
+  - before
+  style: brief
+- utterance: What was happening around him each of those times?
+  topics:
+  - before
+  style: follow_up
+  previous:
+    interviewer: How often has he hit someone since the move?
+    character: He's hit a staff member four times in the three weeks since moving. Once a colleague had
+      a bruised arm; there have been no other injuries.
+- utterance: And does he show you any signs he's getting upset before it escalates?
+  topics:
+  - before
+  style: follow_up
+  previous:
+    interviewer: How does he let you know what he wants?
+    character: He uses short phrases and picture cards. The cards haven't been unpacked, and he struggles
+      with several instructions at once.
+- utterance: It sounds like it happens when he's asked to do something, would that be right?
+  topics:
+  - before
+  style: leading
+- utterance: Can you tell me how he communicates day to day?
+  topics:
+  - communication
+  style: open
+- utterance: Does he use any pictures or signs to communicate?
+  topics:
+  - communication
+  style: closed
+- utterance: Can he follow a two-step instruction?
+  topics:
+  - communication
+  style: closed
+- utterance: How much does he actually take in when you talk to him?
+  topics:
+  - communication
+  style: colloquial
+- utterance: Has he got his usual communication aids with him at the new place?
+  topics:
+  - communication
+  style: colloquial
+- utterance: What's his level of expressive and receptive language?
+  topics:
+  - communication
+  style: clinical
+- utterance: I was wondering how much speech he has and how he gets his point across
+  topics:
+  - communication
+  style: indirect
+- utterance: Communication can be so tricky in a new place. Does he have picture cards or a similar system?
+  topics:
+  - communication
+  style: empathy_then_question
+- utterance: um does he talk much or er is it more gestures
+  topics:
+  - communication
+  style: spoken
+- utterance: so if you give him an instruction does he does he get it
+  topics:
+  - communication
+  style: spoken
+- utterance: And how's his speech?
+  topics:
+  - communication
+  style: brief
+- utterance: Who would normally be in charge of getting the cards out?
+  topics:
+  - communication
+  style: follow_up
+  previous:
+    interviewer: Does he use any pictures or signs to communicate?
+    character: He uses short phrases and picture cards. The cards haven't been unpacked, and he struggles
+      with several instructions at once.
+- utterance: When he's being hurried like that, how much of what's said does he understand?
+  topics:
+  - communication
+  style: follow_up
+  previous:
+    interviewer: What's usually happening just before he hits someone?
+    character: Three incidents happened when unfamiliar staff hurried him into the shared bathroom. He
+      first covered his ears and turned away.
+- utterance: I'd imagine he understands more than he can say, is that fair?
+  topics:
+  - communication
+  style: leading
+- utterance: How has his physical health been since the move?
+  topics:
+  - physical
+  style: open
+- utterance: Tell me about any signs he might be in pain.
+  topics:
+  - physical
+  style: open
+- utterance: Has he seen a dentist recently?
+  topics:
+  - physical
+  style: closed
+- utterance: Is he eating normally?
+  topics:
+  - physical
+  style: closed
+- utterance: Any sign he's got a sore mouth or toothache?
+  topics:
+  - physical
+  style: colloquial
+- utterance: Has he been off his food at all?
+  topics:
+  - physical
+  style: colloquial
+- utterance: Have you seen any signs of dental pain?
+  topics:
+  - physical
+  style: clinical
+- utterance: I wondered whether anything physical might be bothering him
+  topics:
+  - physical
+  style: indirect
+- utterance: He can't always tell you when he hurts, which makes it hard. Have you noticed him guarding
+    any part of his body?
+  topics:
+  - physical
+  style: empathy_then_question
+- utterance: um has he been rubbing or touching anywhere like he's sore
+  topics:
+  - physical
+  style: spoken
+- utterance: so physically is he er is he okay do you think
+  topics:
+  - physical
+  style: spoken
+- utterance: Any pain when eating?
+  topics:
+  - physical
+  style: brief
+- utterance: Has anyone booked him in to get his teeth looked at?
+  topics:
+  - physical
+  style: follow_up
+  previous:
+    interviewer: Has he been off his food at all?
+    character: He's been holding his jaw at meals and avoiding crunchy food for a week. We haven't arranged
+      a dental check yet.
+- utterance: How long has he been doing that with his jaw?
+  topics:
+  - physical
+  style: follow_up
+  previous:
+    interviewer: How has his physical health been since the move?
+    character: He's been holding his jaw at meals and avoiding crunchy food for a week. We haven't arranged
+      a dental check yet.
+- utterance: I suppose he's had no physical problems lately, has he?
+  topics:
+  - physical
+  style: leading
+- utterance: How is the new house different from where he lived before?
+  topics:
+  - routine
+  style: open
+- utterance: What does his day look like now compared with before?
+  topics:
+  - routine
+  style: open
+- utterance: Is the new place noisier?
+  topics:
+  - routine
+  style: closed
+- utterance: Has he kept the same daily timetable since moving?
+  topics:
+  - routine
+  style: closed
+- utterance: Is it a busy, loud sort of house?
+  topics:
+  - routine
+  style: colloquial
+- utterance: Does he still get to do the things he likes, his usual bits and pieces?
+  topics:
+  - routine
+  style: colloquial
+- utterance: Have there been changes to his environment and structure?
+  topics:
+  - routine
+  style: clinical
+- utterance: I'm curious how his routine has changed since the move
+  topics:
+  - routine
+  style: indirect
+- utterance: Moving is a big upheaval for anyone. What's different about his day now?
+  topics:
+  - routine
+  style: empathy_then_question
+- utterance: um so what's the house like is it is it calm
+  topics:
+  - routine
+  style: spoken
+- utterance: and his usual activities has he er kept those up
+  topics:
+  - routine
+  style: spoken
+- utterance: And his routine now?
+  topics:
+  - routine
+  style: brief
+- utterance: Who decides when that happens each day?
+  topics:
+  - routine
+  style: follow_up
+  previous:
+    interviewer: How is the new house different from where he lived before?
+    character: The new house is much noisier. His familiar morning walk now happens at different times
+      because shifts vary.
+- utterance: Apart from the bathroom, what else around him has changed since the move?
+  topics:
+  - routine
+  style: follow_up
+  previous:
+    interviewer: What's usually happening just before he hits someone?
+    character: Three incidents happened when unfamiliar staff hurried him into the shared bathroom. He
+      first covered his ears and turned away.
+- utterance: I suppose the new place is a lot busier than his old home?
+  topics:
+  - routine
+  style: leading
+- utterance: What do staff do after he's hit someone?
+  topics:
+  - response
+  style: open
+- utterance: How does the team respond when it happens?
+  topics:
+  - response
+  style: open
+- utterance: Is there a behaviour support plan in place?
+  topics:
+  - response
+  style: closed
+- utterance: Do you write down what happened before each incident?
+  topics:
+  - response
+  style: closed
+- utterance: What happens next, once things have kicked off?
+  topics:
+  - response
+  style: colloquial
+- utterance: Is anybody keeping a log of these episodes?
+  topics:
+  - response
+  style: colloquial
+- utterance: Is anyone completing ABC charts or similar records?
+  topics:
+  - response
+  style: clinical
+- utterance: I'd like to hear what the staff do in the moment
+  topics:
+  - response
+  style: indirect
+- utterance: It must be hard to know what to do when it happens. What does the team usually do then?
+  topics:
+  - response
+  style: empathy_then_question
+- utterance: um so when it happens what do you all do
+  topics:
+  - response
+  style: spoken
+- utterance: and is there like a plan written down anywhere
+  topics:
+  - response
+  style: spoken
+- utterance: And what happens afterwards?
+  topics:
+  - response
+  style: brief
+- utterance: Has anyone from our team helped put a plan together yet?
+  topics:
+  - response
+  style: follow_up
+  previous:
+    interviewer: What do staff do after he's hit someone?
+    character: We usually abandon the task and move away. There isn't an agreed support plan or a record
+      of what happened beforehand.
+- utterance: When that happens, how do staff react?
+  topics:
+  - response
+  style: follow_up
+  previous:
+    interviewer: What's usually happening just before he hits someone?
+    character: Three incidents happened when unfamiliar staff hurried him into the shared bathroom. He
+      first covered his ears and turned away.
+- utterance: I'd guess everyone has their own way of handling it?
+  topics:
+  - response
+  style: leading
+- utterance: What medication is he on at the moment?
+  topics:
+  - medicines
+  style: open
+- utterance: Can you run through his current tablets for me?
+  topics:
+  - medicines
+  style: open
+- utterance: Is he taking anything for his mood or behaviour?
+  topics:
+  - medicines
+  style: closed
+- utterance: Has anyone asked for something to calm him down?
+  topics:
+  - medicines
+  style: closed
+- utterance: Is he on any tablets at all?
+  topics:
+  - medicines
+  style: colloquial
+- utterance: Has the GP or anyone suggested giving him something to settle him?
+  topics:
+  - medicines
+  style: colloquial
+- utterance: Is he prescribed any psychotropic medication?
+  topics:
+  - medicines
+  style: clinical
+- utterance: I wondered about his medication, whether anything has changed
+  topics:
+  - medicines
+  style: indirect
+- utterance: I know staff want things to settle quickly. Has anyone asked for medication?
+  topics:
+  - medicines
+  style: empathy_then_question
+- utterance: um what's he on medication-wise
+  topics:
+  - medicines
+  style: spoken
+- utterance: so has er has anyone started anything new for him
+  topics:
+  - medicines
+  style: spoken
+- utterance: Any regular medicines?
+  topics:
+  - medicines
+  style: brief
+- utterance: Who on the team has been asking for that?
+  topics:
+  - medicines
+  style: follow_up
+  previous:
+    interviewer: What medication is he on at the moment?
+    character: His chart lists no regular psychiatric medicine. Some staff have asked whether something
+      could calm him; nothing has been prescribed.
+- utterance: Have staff been asking for medication to help in those moments?
+  topics:
+  - medicines
+  style: follow_up
+  previous:
+    interviewer: What do staff do after he's hit someone?
+    character: We usually abandon the task and move away. There isn't an agreed support plan or a record
+      of what happened beforehand.
+- utterance: I'd imagine there's some pressure to get something prescribed?
+  topics:
+  - medicines
+  style: leading
+- utterance: What's being done to keep everyone safe today?
+  topics:
+  - safety
+  style: open
+- utterance: How are things being managed with him right now?
+  topics:
+  - safety
+  style: open
+- utterance: Are the other residents protected?
+  topics:
+  - safety
+  style: closed
+- utterance: Who's looking after him today?
+  topics:
+  - safety
+  style: colloquial
+- utterance: Is everyone okay in the house right now?
+  topics:
+  - safety
+  style: colloquial
+- utterance: What's the current risk management plan for today?
+  topics:
+  - safety
+  style: clinical
+- utterance: I'd like to check how things are being kept safe at the moment
+  topics:
+  - safety
+  style: indirect
+- utterance: It's a lot to hold. Who's with him today, and how are they approaching his care?
+  topics:
+  - safety
+  style: empathy_then_question
+- utterance: um right now today is is everyone safe
+  topics:
+  - safety
+  style: spoken
+- utterance: so the other people living there are they er okay
+  topics:
+  - safety
+  style: spoken
+- utterance: And safety today?
+  topics:
+  - safety
+  style: brief
+- utterance: And what's in place today so it doesn't happen again?
+  topics:
+  - safety
+  style: follow_up
+  previous:
+    interviewer: How often has he hit someone since the move?
+    character: He's hit a staff member four times in the three weeks since moving. Once a colleague had
+      a bruised arm; there have been no other injuries.
+- utterance: For now, who's supporting him and how are the others kept safe?
+  topics:
+  - safety
+  style: follow_up
+  previous:
+    interviewer: What do staff do after he's hit someone?
+    character: We usually abandon the task and move away. There isn't an agreed support plan or a record
+      of what happened beforehand.
+- utterance: Hopefully someone he knows well is with him today?
+  topics:
+  - safety
+  style: leading
+- utterance: How are you finding supporting him yourself?
+  topics:
+  - strain
+  style: open
+- utterance: Could you tell me how you feel before a shift with him?
+  topics:
+  - strain
+  style: open
+- utterance: Have you had training in supporting his communication?
+  topics:
+  - strain
+  style: closed
+- utterance: How are you holding up with all this?
+  topics:
+  - strain
+  style: colloquial
+- utterance: Does it get to you, going in to work with him?
+  topics:
+  - strain
+  style: colloquial
+- utterance: What training needs do you feel you have?
+  topics:
+  - strain
+  style: clinical
+- utterance: I wonder how this has been for you personally
+  topics:
+  - strain
+  style: indirect
+- utterance: This sounds a lot to carry. How do you feel when you're about to go in?
+  topics:
+  - strain
+  style: empathy_then_question
+- utterance: um and how about you how are you finding it
+  topics:
+  - strain
+  style: spoken
+- utterance: so do you feel you've had er enough training for this
+  topics:
+  - strain
+  style: spoken
+- utterance: And how are you doing?
+  topics:
+  - strain
+  style: brief
+- utterance: How does that leave you feeling before you start a shift?
+  topics:
+  - strain
+  style: follow_up
+  previous:
+    interviewer: What do staff do after he's hit someone?
+    character: We usually abandon the task and move away. There isn't an agreed support plan or a record
+      of what happened beforehand.
+- utterance: Do you feel equipped to help him with that?
+  topics:
+  - strain
+  style: follow_up
+  previous:
+    interviewer: How does he let you know what he wants?
+    character: He uses short phrases and picture cards. The cards haven't been unpacked, and he struggles
+      with several instructions at once.
+- utterance: I'd guess you might be feeling a bit nervous around him?
+  topics:
+  - strain
+  style: leading
+- utterance: How honest has it felt possible to be about the move?
+  topics:
+  - guarded
+  style: open
+- utterance: Is there anything you've found difficult to raise with managers?
+  topics:
+  - guarded
+  style: open
+- utterance: Has there been pressure to say things are going well?
+  topics:
+  - guarded
+  style: closed
+- utterance: Did it take a while before anyone asked for help?
+  topics:
+  - guarded
+  style: closed
+- utterance: Has everyone been putting a brave face on things?
+  topics:
+  - guarded
+  style: colloquial
+- utterance: Was it hard to admit things weren't working out?
+  topics:
+  - guarded
+  style: colloquial
+- utterance: What contributed to the delay in referring him?
+  topics:
+  - guarded
+  style: clinical
+- utterance: I wondered whether it's felt safe to say how hard the move has been
+  topics:
+  - guarded
+  style: indirect
+- utterance: Nobody wants to look like they're failing. Have people felt able to say it's not going well?
+  topics:
+  - guarded
+  style: empathy_then_question
+- utterance: um was there er was there a reason it took a while to get in touch
+  topics:
+  - guarded
+  style: spoken
+- utterance: so has the team been saying it's fine when it isn't
+  topics:
+  - guarded
+  style: spoken
+- utterance: What held off the referral?
+  topics:
+  - guarded
+  style: brief
+- utterance: Has anything made it hard to tell managers that?
+  topics:
+  - guarded
+  style: follow_up
+  previous:
+    interviewer: What do staff do after he's hit someone?
+    character: We usually abandon the task and move away. There isn't an agreed support plan or a record
+      of what happened beforehand.
+- utterance: What reports have gone up the line about how the move is going?
+  topics:
+  - guarded
+  style: follow_up
+  previous:
+    interviewer: Is there a behaviour support plan in place?
+    character: We usually abandon the task and move away. There isn't an agreed support plan or a record
+      of what happened beforehand.
+- utterance: I get the sense people may have played things down a little?
+  topics:
+  - guarded
+  style: leading
+- utterance: Has he seen a dentist, and is he on any medication?
+  topics:
+  - physical
+  - medicines
+  style: stacked
+- utterance: How often has he hit out, and what usually comes just before?
+  topics:
+  - pattern
+  - before
+  style: stacked
+- utterance: How does he communicate, and has his routine changed since moving?
+  topics:
+  - communication
+  - routine
+  style: stacked
+- utterance: What do staff do afterwards, and who's with him today?
+  topics:
+  - response
+  - safety
+  style: stacked
+- utterance: Have a seat, wherever's comfortable.
+  topics: []
+  style: greeting
+- utterance: Hi Beth, I'm one of the doctors in the learning disability team.
+  topics: []
+  style: introduction
+- utterance: Is it all right if we talk for a few minutes about him?
+  topics: []
+  style: introduction
+- utterance: Before we begin, have you any questions for me?
+  topics: []
+  style: introduction
+- utterance: Where would you like to start, Beth?
+  topics: []
+  style: transition
+- utterance: I'd like to move on to something a bit different now.
+  topics: []
+  style: transition
+- utterance: Can I switch topics for a moment?
+  topics: []
+  style: transition
+- utterance: Let's turn to what we might do next.
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Beth.
+  topics: []
+  style: closing
+- utterance: Thank you, that's been really helpful.
+  topics: []
+  style: closing
+- utterance: I'll write this up and send it round to the team.
+  topics: []
+  style: closing
+- utterance: It sounds like the team really cares about him.
+  topics: []
+  style: empathy
+- utterance: That must have been a hard few weeks for everyone.
+  topics: []
+  style: empathy
+- utterance: I can hear how much you want to get this right for him.
+  topics: []
+  style: empathy
+- utterance: Moves are unsettling, and it's understandable things have been difficult.
+  topics: []
+  style: empathy
+- utterance: You've clearly been thinking about him a lot.
+  topics: []
+  style: empathy
+- utterance: So far you've told me he's been hitting out since the move and you're not sure why.
+  topics: []
+  style: summary
+- utterance: Let me check I've got this right, things changed after he moved home.
+  topics: []
+  style: summary
+- utterance: To sum up, we need to look at his health, his communication and his surroundings.
+  topics: []
+  style: summary
+- utterance: Often when someone can't tell us something, behaviour becomes the way they communicate.
+  topics: []
+  style: explanation
+- utterance: I'd like us to build a plan together rather than me telling you what to do.
+  topics: []
+  style: explanation
+- utterance: Pain is a common reason for changes like this, so we'll want to rule it out.
+  topics: []
+  style: explanation
+- utterance: Medication isn't usually the first step; we'd look at other causes first.
+  topics: []
+  style: explanation
+- utterance: Does that make sense so far?
+  topics: []
+  style: check_understanding
+- utterance: How does that approach sound to you?
+  topics: []
+  style: check_understanding
+- utterance: Is there anything I've said that wasn't clear?
+  topics: []
+  style: check_understanding
+- utterance: Does he have epilepsy or any seizures?
+  topics: []
+  style: off_case
+- utterance: Is his family still in touch with him?
+  topics: []
+  style: off_case
+- utterance: How is he sleeping at night?
+  topics: []
+  style: off_case
+- utterance: Does he have a social worker at the moment?
+  topics: []
+  style: off_case
+- utterance: Has he had a sensory assessment from occupational therapy?
+  topics: []
+  style: off_case
+- utterance: What was the name of the house he moved from?
+  topics: []
+  style: near_miss
+- utterance: Does he enjoy looking at picture books?
+  topics: []
+  style: near_miss
+- utterance: Has the staff member who was hurt come back to work?
+  topics: []
+  style: near_miss

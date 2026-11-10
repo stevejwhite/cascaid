@@ -1,0 +1,4563 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "PsychiatryEduAI CASC",
+    "version": "0.2.0"
+  },
+  "paths": {
+    "/api/sessions": {
+      "post": {
+        "tags": [
+          "Station sessions"
+        ],
+        "summary": "Start",
+        "operationId": "start_api_sessions_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/StartRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SessionView"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/sessions/{session_id}": {
+      "get": {
+        "tags": [
+          "Station sessions"
+        ],
+        "summary": "Read",
+        "operationId": "read_api_sessions__session_id__get",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SessionView"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/sessions/{session_id}/begin": {
+      "post": {
+        "tags": [
+          "Station sessions"
+        ],
+        "summary": "Begin",
+        "operationId": "begin_api_sessions__session_id__begin_post",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SessionView"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/sessions/{session_id}/turns": {
+      "post": {
+        "tags": [
+          "Station sessions"
+        ],
+        "summary": "Turn",
+        "operationId": "turn_api_sessions__session_id__turns_post",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TurnRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SessionView"
+                }
+              }
+            }
+          },
+          "409": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Conflict"
+          },
+          "503": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Service Unavailable"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/sessions/{session_id}/turns/stream": {
+      "post": {
+        "tags": [
+          "Station sessions"
+        ],
+        "summary": "Turn Stream",
+        "description": "Like POST /turns, but releases the reply sentence by sentence as it is generated.",
+        "operationId": "turn_stream_api_sessions__session_id__turns_stream_post",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TurnRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Newline-delimited JSON events: {type: pace, slow} (whether the turn waits for the language model), {type: sentence, text} for each released sentence, then {type: done, session} or {type: error, status, detail}.",
+            "content": {
+              "application/json": {
+                "schema": {}
+              },
+              "application/x-ndjson": {}
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/sessions/{session_id}/transcriptions": {
+      "post": {
+        "tags": [
+          "Station sessions"
+        ],
+        "summary": "Transcribe",
+        "description": "Transcribe one 16 kHz mono WAV recording. The audio is not stored.",
+        "operationId": "transcribe_api_sessions__session_id__transcriptions_post",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TranscriptionView"
+                }
+              }
+            }
+          },
+          "409": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Conflict"
+          },
+          "413": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Request Entity Too Large"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Unprocessable Entity"
+          },
+          "503": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Service Unavailable"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "audio/wav": {
+              "schema": {
+                "type": "string",
+                "format": "binary"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/sessions/{session_id}/speech": {
+      "post": {
+        "tags": [
+          "Station sessions"
+        ],
+        "summary": "Speak",
+        "description": "Synthesise a sentence the character has said, or one of the case's authored\nhesitations, in the given voice. Not stored.",
+        "operationId": "speak_api_sessions__session_id__speech_post",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SpeechRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SpeechView"
+                }
+              }
+            }
+          },
+          "409": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Conflict"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Unprocessable Entity"
+          },
+          "503": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Service Unavailable"
+          }
+        }
+      }
+    },
+    "/api/sessions/{session_id}/interruptions": {
+      "post": {
+        "tags": [
+          "Station sessions"
+        ],
+        "summary": "Interrupted",
+        "description": "Record that the candidate spoke over the character (hands-free conversation).",
+        "operationId": "interrupted_api_sessions__session_id__interruptions_post",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/InterruptionRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "204": {
+            "description": "Successful Response"
+          },
+          "409": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/sessions/{session_id}/debrief": {
+      "get": {
+        "tags": [
+          "Station sessions"
+        ],
+        "summary": "Read Debrief",
+        "operationId": "read_debrief_api_sessions__session_id__debrief_get",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Debrief"
+                }
+              }
+            }
+          },
+          "409": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/sessions/{session_id}/end": {
+      "post": {
+        "tags": [
+          "Station sessions"
+        ],
+        "summary": "Finish",
+        "operationId": "finish_api_sessions__session_id__end_post",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Debrief"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/recordings/prompts": {
+      "get": {
+        "tags": [
+          "Evaluation recordings"
+        ],
+        "summary": "List Prompts",
+        "operationId": "list_prompts_api_recordings_prompts_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RecordingPrompts"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/recordings": {
+      "post": {
+        "tags": [
+          "Evaluation recordings"
+        ],
+        "summary": "Save",
+        "operationId": "save_api_recordings_post",
+        "parameters": [
+          {
+            "name": "speaker",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9-]{1,30}$",
+              "title": "Speaker"
+            }
+          },
+          {
+            "name": "item",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "title": "Item"
+            }
+          },
+          {
+            "name": "consent",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "boolean",
+              "title": "Consent"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Saved"
+                }
+              }
+            }
+          },
+          "409": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Conflict"
+          },
+          "413": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Request Entity Too Large"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Unprocessable Entity"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "audio/wav": {
+              "schema": {
+                "type": "string",
+                "format": "binary"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/authoring/options": {
+      "get": {
+        "tags": [
+          "Case authoring"
+        ],
+        "summary": "Get Options",
+        "operationId": "get_options_api_authoring_options_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AuthoringOptions"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/authoring/cases": {
+      "get": {
+        "tags": [
+          "Case authoring"
+        ],
+        "summary": "Cases",
+        "operationId": "cases_api_authoring_cases_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "$ref": "#/components/schemas/CaseChoice"
+                  },
+                  "type": "array",
+                  "title": "Response Cases Api Authoring Cases Get"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/authoring/drafts": {
+      "get": {
+        "tags": [
+          "Case authoring"
+        ],
+        "summary": "Drafts",
+        "operationId": "drafts_api_authoring_drafts_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "$ref": "#/components/schemas/DraftSummary"
+                  },
+                  "type": "array",
+                  "title": "Response Drafts Api Authoring Drafts Get"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Case authoring"
+        ],
+        "summary": "Create",
+        "operationId": "create_api_authoring_drafts_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateDraft"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Draft"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Unprocessable Entity",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/authoring/drafts/{draft_id}": {
+      "get": {
+        "tags": [
+          "Case authoring"
+        ],
+        "summary": "Read",
+        "operationId": "read_api_authoring_drafts__draft_id__get",
+        "parameters": [
+          {
+            "name": "draft_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Draft Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Draft"
+                }
+              }
+            }
+          },
+          "403": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Forbidden"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Not Found"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Case authoring"
+        ],
+        "summary": "Save",
+        "operationId": "save_api_authoring_drafts__draft_id__put",
+        "parameters": [
+          {
+            "name": "draft_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Draft Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DraftUpdate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Draft"
+                }
+              }
+            }
+          },
+          "403": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Forbidden"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Not Found"
+          },
+          "409": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Conflict"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/authoring/drafts/{draft_id}/check": {
+      "post": {
+        "tags": [
+          "Case authoring"
+        ],
+        "summary": "Check Draft",
+        "operationId": "check_draft_api_authoring_drafts__draft_id__check_post",
+        "parameters": [
+          {
+            "name": "draft_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Draft Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CaseBody"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CheckResult"
+                }
+              }
+            }
+          },
+          "403": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Forbidden"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Not Found"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/authoring/drafts/{draft_id}/preview": {
+      "post": {
+        "tags": [
+          "Case authoring"
+        ],
+        "summary": "Preview Draft",
+        "operationId": "preview_draft_api_authoring_drafts__draft_id__preview_post",
+        "parameters": [
+          {
+            "name": "draft_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Draft Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PreviewBody"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Preview"
+                }
+              }
+            }
+          },
+          "403": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Forbidden"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Not Found"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Unprocessable Entity"
+          }
+        }
+      }
+    },
+    "/api/authoring/drafts/{draft_id}/export": {
+      "post": {
+        "tags": [
+          "Case authoring"
+        ],
+        "summary": "Export Draft",
+        "operationId": "export_draft_api_authoring_drafts__draft_id__export_post",
+        "parameters": [
+          {
+            "name": "draft_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Draft Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExportBody"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Export"
+                }
+              }
+            }
+          },
+          "403": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Forbidden"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Not Found"
+          },
+          "409": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Conflict"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Unprocessable Entity"
+          }
+        }
+      }
+    },
+    "/health": {
+      "get": {
+        "summary": "Health",
+        "operationId": "health_health_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Health"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/status": {
+      "get": {
+        "summary": "Status",
+        "operationId": "status_api_status_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Readiness"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ready": {
+      "get": {
+        "summary": "Ready",
+        "operationId": "ready_ready_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Readiness"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Service Unavailable",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Readiness"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/cases": {
+      "get": {
+        "summary": "Cases",
+        "operationId": "cases_api_cases_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "$ref": "#/components/schemas/CaseSummary"
+                  },
+                  "type": "array",
+                  "title": "Response Cases Api Cases Get"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Service Unavailable",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/blueprint": {
+      "get": {
+        "summary": "Blueprint",
+        "operationId": "blueprint_api_blueprint_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BlueprintMatrix"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Service Unavailable",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/sources": {
+      "get": {
+        "summary": "Sources",
+        "operationId": "sources_api_sources_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SourceCatalogue"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Service Unavailable",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AffectChange": {
+        "properties": {
+          "question": {
+            "type": "integer",
+            "title": "Question"
+          },
+          "stage": {
+            "type": "string",
+            "title": "Stage"
+          },
+          "affect": {
+            "type": "string",
+            "title": "Affect"
+          },
+          "cause": {
+            "type": "string",
+            "enum": [
+              "start",
+              "rapport",
+              "confrontation",
+              "settled",
+              "rapport_fell"
+            ],
+            "title": "Cause"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "question",
+          "stage",
+          "affect",
+          "cause"
+        ],
+        "title": "AffectChange",
+        "description": "A change in the character's affect stage; question 0 is the start of the interview."
+      },
+      "AffectStage": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "maxLength": 60,
+            "pattern": "^[a-z0-9]+(?:[-_][a-z0-9]+)*$",
+            "title": "Id"
+          },
+          "affect": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Affect"
+          },
+          "rapport_at_least": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "enum": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Rapport At Least"
+          },
+          "on_confrontation": {
+            "type": "boolean",
+            "title": "On Confrontation",
+            "default": false
+          },
+          "expression": {
+            "type": "string",
+            "enum": [
+              "neutral",
+              "warm",
+              "cheerful",
+              "sad",
+              "tearful",
+              "anxious",
+              "tense",
+              "irritable",
+              "flat"
+            ],
+            "title": "Expression",
+            "default": "neutral"
+          },
+          "hesitations": {
+            "items": {
+              "type": "string",
+              "maxLength": 20
+            },
+            "type": "array",
+            "maxItems": 4,
+            "title": "Hesitations",
+            "default": []
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "affect"
+        ],
+        "title": "AffectStage",
+        "description": "How the character feels at one point in the interview.\n\nThe first stage applies from the start. A stage with rapport_at_least applies once the\nrunning rapport reaches that level; an on_confrontation stage applies for the turn of a\nconfrontational line and the turn after, and takes precedence.\n\nexpression and hesitations are presentation only: how the 3D character looks, and\nfillers it may voice while thinking. Neither changes what it knows or reveals."
+      },
+      "ApprovedItem": {
+        "properties": {
+          "identifier": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Identifier"
+          },
+          "version": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Version"
+          },
+          "licence": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Licence"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "identifier",
+          "version",
+          "licence"
+        ],
+        "title": "ApprovedItem"
+      },
+      "AuthoringOptions": {
+        "properties": {
+          "blueprint_version": {
+            "type": "string",
+            "title": "Blueprint Version"
+          },
+          "skills": {
+            "items": {
+              "$ref": "#/components/schemas/Choice"
+            },
+            "type": "array",
+            "title": "Skills"
+          },
+          "subdivisions": {
+            "additionalProperties": {
+              "items": {
+                "$ref": "#/components/schemas/Choice"
+              },
+              "type": "array"
+            },
+            "type": "object",
+            "title": "Subdivisions"
+          },
+          "specialties": {
+            "items": {
+              "$ref": "#/components/schemas/Choice"
+            },
+            "type": "array",
+            "title": "Specialties"
+          },
+          "communication_focus": {
+            "items": {
+              "$ref": "#/components/schemas/Choice"
+            },
+            "type": "array",
+            "title": "Communication Focus"
+          },
+          "reading_seconds": {
+            "items": {
+              "$ref": "#/components/schemas/Choice"
+            },
+            "type": "array",
+            "title": "Reading Seconds"
+          },
+          "interview_seconds": {
+            "type": "integer",
+            "title": "Interview Seconds"
+          },
+          "roles": {
+            "items": {
+              "$ref": "#/components/schemas/Choice"
+            },
+            "type": "array",
+            "title": "Roles"
+          },
+          "disclosures": {
+            "items": {
+              "$ref": "#/components/schemas/Choice"
+            },
+            "type": "array",
+            "title": "Disclosures"
+          },
+          "rapport_levels": {
+            "items": {
+              "$ref": "#/components/schemas/Choice"
+            },
+            "type": "array",
+            "title": "Rapport Levels"
+          },
+          "indicators": {
+            "items": {
+              "$ref": "#/components/schemas/Choice"
+            },
+            "type": "array",
+            "title": "Indicators"
+          },
+          "expressions": {
+            "items": {
+              "$ref": "#/components/schemas/Choice"
+            },
+            "type": "array",
+            "title": "Expressions"
+          },
+          "voice_sexes": {
+            "items": {
+              "$ref": "#/components/schemas/Choice"
+            },
+            "type": "array",
+            "title": "Voice Sexes"
+          },
+          "voice_ages": {
+            "items": {
+              "$ref": "#/components/schemas/Choice"
+            },
+            "type": "array",
+            "title": "Voice Ages"
+          },
+          "speakers": {
+            "items": {
+              "$ref": "#/components/schemas/Choice"
+            },
+            "type": "array",
+            "title": "Speakers"
+          },
+          "avatars": {
+            "items": {
+              "$ref": "#/components/schemas/Choice"
+            },
+            "type": "array",
+            "title": "Avatars"
+          },
+          "domains": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Domains"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "blueprint_version",
+          "skills",
+          "subdivisions",
+          "specialties",
+          "communication_focus",
+          "reading_seconds",
+          "interview_seconds",
+          "roles",
+          "disclosures",
+          "rapport_levels",
+          "indicators",
+          "expressions",
+          "voice_sexes",
+          "voice_ages",
+          "speakers",
+          "avatars",
+          "domains"
+        ],
+        "title": "AuthoringOptions",
+        "description": "Permitted values, published from the Python schema so the editor cannot drift."
+      },
+      "Authorship": {
+        "properties": {
+          "author": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Author"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "author_draft",
+              "author_reviewed"
+            ],
+            "title": "Status"
+          },
+          "clinically_validated": {
+            "type": "boolean",
+            "const": false,
+            "title": "Clinically Validated",
+            "default": false
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "author",
+          "status"
+        ],
+        "title": "Authorship"
+      },
+      "Blueprint": {
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "const": "mrcpsych_casc",
+            "title": "Source Id",
+            "default": "mrcpsych_casc"
+          },
+          "version": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Version",
+            "default": "March 2023 | sha256:ae1eac93e556b3701a4aae70f1f9e784ad47ecd51ff69a0ae70631a703062a99"
+          },
+          "skill": {
+            "$ref": "#/components/schemas/Skill"
+          },
+          "subdivision": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Subdivision"
+          },
+          "specialty": {
+            "type": "string",
+            "enum": [
+              "general",
+              "child_and_adolescent",
+              "old_age",
+              "intellectual_disability",
+              "forensic",
+              "medical_psychotherapy",
+              "addiction"
+            ],
+            "title": "Specialty"
+          },
+          "communication_focus": {
+            "items": {
+              "type": "string",
+              "enum": [
+                "personalisation_and_respect",
+                "recognising_and_responding_to_cues",
+                "empathy",
+                "providing_clear_and_accurate_information"
+              ]
+            },
+            "type": "array",
+            "title": "Communication Focus",
+            "default": []
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "skill",
+          "subdivision",
+          "specialty"
+        ],
+        "title": "Blueprint"
+      },
+      "BlueprintMatrix": {
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "title": "Source Id"
+          },
+          "version": {
+            "type": "string",
+            "title": "Version"
+          },
+          "stations_per_running_order": {
+            "additionalProperties": {
+              "type": "integer"
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/Skill"
+            },
+            "type": "object",
+            "title": "Stations Per Running Order"
+          },
+          "minimum_specialty": {
+            "additionalProperties": {
+              "type": "integer"
+            },
+            "propertyNames": {
+              "enum": [
+                "general",
+                "child_and_adolescent",
+                "old_age",
+                "intellectual_disability",
+                "forensic",
+                "medical_psychotherapy",
+                "addiction"
+              ]
+            },
+            "type": "object",
+            "title": "Minimum Specialty"
+          },
+          "reading_seconds": {
+            "additionalProperties": {
+              "type": "integer"
+            },
+            "type": "object",
+            "title": "Reading Seconds"
+          },
+          "subdivisions": {
+            "items": {
+              "$ref": "#/components/schemas/MatrixSubdivision"
+            },
+            "type": "array",
+            "title": "Subdivisions"
+          },
+          "stations": {
+            "items": {
+              "$ref": "#/components/schemas/MatrixStation"
+            },
+            "type": "array",
+            "title": "Stations"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "source_id",
+          "version",
+          "stations_per_running_order",
+          "minimum_specialty",
+          "reading_seconds",
+          "subdivisions",
+          "stations"
+        ],
+        "title": "BlueprintMatrix"
+      },
+      "Case": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "maxLength": 60,
+            "pattern": "^[a-z0-9]+(?:[-_][a-z0-9]+)*$",
+            "title": "Id"
+          },
+          "version": {
+            "type": "string",
+            "pattern": "^\\d+\\.\\d+\\.\\d+$",
+            "title": "Version"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Title"
+          },
+          "blueprint": {
+            "$ref": "#/components/schemas/Blueprint"
+          },
+          "timing": {
+            "$ref": "#/components/schemas/Timing"
+          },
+          "authorship": {
+            "$ref": "#/components/schemas/Authorship"
+          },
+          "candidate_instructions": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Candidate Instructions"
+          },
+          "persona": {
+            "$ref": "#/components/schemas/Persona"
+          },
+          "facts": {
+            "items": {
+              "$ref": "#/components/schemas/Fact"
+            },
+            "type": "array",
+            "minItems": 1,
+            "title": "Facts"
+          },
+          "tasks": {
+            "items": {
+              "$ref": "#/components/schemas/Task"
+            },
+            "type": "array",
+            "title": "Tasks",
+            "default": []
+          },
+          "unscripted_response": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Unscripted Response"
+          },
+          "deflections": {
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "type": "array",
+            "title": "Deflections",
+            "default": []
+          },
+          "affect_stages": {
+            "items": {
+              "$ref": "#/components/schemas/AffectStage"
+            },
+            "type": "array",
+            "title": "Affect Stages",
+            "default": []
+          },
+          "questions": {
+            "items": {
+              "$ref": "#/components/schemas/CharacterQuestion"
+            },
+            "type": "array",
+            "title": "Questions",
+            "default": []
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "version",
+          "title",
+          "blueprint",
+          "timing",
+          "authorship",
+          "candidate_instructions",
+          "persona",
+          "facts",
+          "unscripted_response"
+        ],
+        "title": "Case"
+      },
+      "CaseBody": {
+        "properties": {
+          "case": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Case"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "case"
+        ],
+        "title": "CaseBody"
+      },
+      "CaseChoice": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "version": {
+            "type": "string",
+            "title": "Version"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "version"
+        ],
+        "title": "CaseChoice"
+      },
+      "CaseSummary": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "version": {
+            "type": "string",
+            "title": "Version"
+          },
+          "title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "skill": {
+            "$ref": "#/components/schemas/Skill"
+          },
+          "subdivision": {
+            "type": "string",
+            "title": "Subdivision"
+          },
+          "specialty": {
+            "type": "string",
+            "enum": [
+              "general",
+              "child_and_adolescent",
+              "old_age",
+              "intellectual_disability",
+              "forensic",
+              "medical_psychotherapy",
+              "addiction"
+            ],
+            "title": "Specialty"
+          },
+          "reading_seconds": {
+            "type": "integer",
+            "title": "Reading Seconds"
+          },
+          "interview_seconds": {
+            "type": "integer",
+            "title": "Interview Seconds"
+          },
+          "role": {
+            "type": "string",
+            "title": "Role"
+          },
+          "candidate_instructions": {
+            "type": "string",
+            "title": "Candidate Instructions"
+          },
+          "authorship_status": {
+            "type": "string",
+            "title": "Authorship Status"
+          },
+          "clinically_validated": {
+            "type": "boolean",
+            "title": "Clinically Validated"
+          },
+          "voice": {
+            "$ref": "#/components/schemas/VoiceHint"
+          },
+          "avatar": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Avatar"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "version",
+          "title",
+          "skill",
+          "subdivision",
+          "specialty",
+          "reading_seconds",
+          "interview_seconds",
+          "role",
+          "candidate_instructions",
+          "authorship_status",
+          "clinically_validated",
+          "voice",
+          "avatar"
+        ],
+        "title": "CaseSummary",
+        "description": "What a candidate may see before and during a station; never the hidden facts."
+      },
+      "CharacterQuestion": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "maxLength": 60,
+            "pattern": "^[a-z0-9]+(?:[-_][a-z0-9]+)*$",
+            "title": "Id"
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Text"
+          },
+          "after_fact": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 60,
+                "pattern": "^[a-z0-9]+(?:[-_][a-z0-9]+)*$"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "After Fact"
+          },
+          "after_seconds": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "maximum": 420.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "After Seconds"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "text"
+        ],
+        "title": "CharacterQuestion",
+        "description": "A question the character asks, appended verbatim to its reply once due.\n\nafter_fact: on the turn that fact is first revealed (or the next free turn after).\nafter_seconds: on the first turn this far into the interview. Authors must make sure\na question reveals nothing the candidate has not yet elicited."
+      },
+      "CheckResult": {
+        "properties": {
+          "valid": {
+            "type": "boolean",
+            "title": "Valid"
+          },
+          "errors": {
+            "items": {
+              "$ref": "#/components/schemas/Problem"
+            },
+            "type": "array",
+            "title": "Errors"
+          },
+          "prompts": {
+            "items": {
+              "$ref": "#/components/schemas/psychiatry_api__authoring__checks__Prompt"
+            },
+            "type": "array",
+            "title": "Prompts"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "valid",
+          "errors",
+          "prompts"
+        ],
+        "title": "CheckResult"
+      },
+      "Choice": {
+        "properties": {
+          "value": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ],
+            "title": "Value"
+          },
+          "label": {
+            "type": "string",
+            "title": "Label"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "value",
+          "label"
+        ],
+        "title": "Choice"
+      },
+      "Communication": {
+        "properties": {
+          "utterances": {
+            "type": "integer",
+            "title": "Utterances"
+          },
+          "open_questions": {
+            "type": "integer",
+            "title": "Open Questions"
+          },
+          "closed_questions": {
+            "type": "integer",
+            "title": "Closed Questions"
+          },
+          "open_share": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Open Share"
+          },
+          "stacked": {
+            "type": "integer",
+            "title": "Stacked"
+          },
+          "empathy": {
+            "type": "integer",
+            "title": "Empathy"
+          },
+          "summaries": {
+            "type": "integer",
+            "title": "Summaries"
+          },
+          "checks_of_understanding": {
+            "type": "integer",
+            "title": "Checks Of Understanding"
+          },
+          "jargon": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Jargon"
+          },
+          "candidate_word_share": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Candidate Word Share"
+          },
+          "spoken": {
+            "type": "integer",
+            "title": "Spoken"
+          },
+          "spoken_edited": {
+            "type": "integer",
+            "title": "Spoken Edited"
+          },
+          "interruptions": {
+            "type": "integer",
+            "title": "Interruptions",
+            "default": 0
+          },
+          "rules_version": {
+            "type": "string",
+            "title": "Rules Version",
+            "default": "indicators-v1"
+          },
+          "empathy_source": {
+            "type": "string",
+            "enum": [
+              "model",
+              "keyword"
+            ],
+            "title": "Empathy Source"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "utterances",
+          "open_questions",
+          "closed_questions",
+          "open_share",
+          "stacked",
+          "empathy",
+          "summaries",
+          "checks_of_understanding",
+          "jargon",
+          "candidate_word_share",
+          "spoken",
+          "spoken_edited",
+          "empathy_source"
+        ],
+        "title": "Communication"
+      },
+      "CreateDraft": {
+        "properties": {
+          "author": {
+            "type": "string",
+            "maxLength": 80,
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Author"
+          },
+          "kind": {
+            "type": "string",
+            "pattern": "^(new|revision)$",
+            "title": "Kind",
+            "default": "new"
+          },
+          "title": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 160
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Title"
+          },
+          "source_case_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 60
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Source Case Id"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "author"
+        ],
+        "title": "CreateDraft"
+      },
+      "Debrief": {
+        "properties": {
+          "session": {
+            "$ref": "#/components/schemas/SessionView"
+          },
+          "feedback": {
+            "$ref": "#/components/schemas/Feedback"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "session",
+          "feedback"
+        ],
+        "title": "Debrief"
+      },
+      "DomainResult": {
+        "properties": {
+          "domain": {
+            "type": "string",
+            "title": "Domain"
+          },
+          "elicited": {
+            "type": "integer",
+            "title": "Elicited"
+          },
+          "total": {
+            "type": "integer",
+            "title": "Total"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "domain",
+          "elicited",
+          "total"
+        ],
+        "title": "DomainResult"
+      },
+      "Draft": {
+        "properties": {
+          "case": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Case"
+          },
+          "notes": {
+            "type": "string",
+            "maxLength": 20000,
+            "title": "Notes",
+            "default": ""
+          },
+          "objectives": {
+            "type": "string",
+            "maxLength": 5000,
+            "title": "Objectives",
+            "default": ""
+          },
+          "draft_id": {
+            "type": "string",
+            "title": "Draft Id"
+          },
+          "revision": {
+            "type": "integer",
+            "title": "Revision"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "new",
+              "revision"
+            ],
+            "title": "Kind"
+          },
+          "source": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/DraftSource"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "author": {
+            "type": "string",
+            "title": "Author"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          },
+          "updated_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Updated At"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "case",
+          "draft_id",
+          "revision",
+          "kind",
+          "source",
+          "author",
+          "created_at",
+          "updated_at"
+        ],
+        "title": "Draft"
+      },
+      "DraftSource": {
+        "properties": {
+          "case_id": {
+            "type": "string",
+            "title": "Case Id"
+          },
+          "version": {
+            "type": "string",
+            "title": "Version"
+          },
+          "sha256": {
+            "type": "string",
+            "title": "Sha256"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "case_id",
+          "version",
+          "sha256"
+        ],
+        "title": "DraftSource"
+      },
+      "DraftSummary": {
+        "properties": {
+          "draft_id": {
+            "type": "string",
+            "title": "Draft Id"
+          },
+          "revision": {
+            "type": "integer",
+            "title": "Revision"
+          },
+          "title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "case_id": {
+            "type": "string",
+            "title": "Case Id"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "new",
+              "revision"
+            ],
+            "title": "Kind"
+          },
+          "source": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/DraftSource"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "author": {
+            "type": "string",
+            "title": "Author"
+          },
+          "updated_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Updated At"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "draft_id",
+          "revision",
+          "title",
+          "case_id",
+          "kind",
+          "source",
+          "author",
+          "updated_at"
+        ],
+        "title": "DraftSummary"
+      },
+      "DraftUpdate": {
+        "properties": {
+          "case": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Case"
+          },
+          "notes": {
+            "type": "string",
+            "maxLength": 20000,
+            "title": "Notes",
+            "default": ""
+          },
+          "objectives": {
+            "type": "string",
+            "maxLength": 5000,
+            "title": "Objectives",
+            "default": ""
+          },
+          "revision": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Revision"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "case",
+          "revision"
+        ],
+        "title": "DraftUpdate"
+      },
+      "ErrorResponse": {
+        "properties": {
+          "detail": {
+            "type": "string",
+            "title": "Detail"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "detail"
+        ],
+        "title": "ErrorResponse"
+      },
+      "Export": {
+        "properties": {
+          "case": {
+            "$ref": "#/components/schemas/Case"
+          },
+          "file_name": {
+            "type": "string",
+            "title": "File Name"
+          },
+          "case_yaml": {
+            "type": "string",
+            "title": "Case Yaml"
+          },
+          "review_markdown": {
+            "type": "string",
+            "title": "Review Markdown"
+          },
+          "dropped_comments": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Dropped Comments"
+          },
+          "source_changed": {
+            "type": "boolean",
+            "title": "Source Changed"
+          },
+          "saved_to": {
+            "type": "string",
+            "title": "Saved To"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "case",
+          "file_name",
+          "case_yaml",
+          "review_markdown",
+          "dropped_comments",
+          "source_changed",
+          "saved_to"
+        ],
+        "title": "Export"
+      },
+      "ExportBody": {
+        "properties": {
+          "revision": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Revision"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "revision"
+        ],
+        "title": "ExportBody"
+      },
+      "Fact": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "maxLength": 60,
+            "pattern": "^[a-z0-9]+(?:[-_][a-z0-9]+)*$",
+            "title": "Id"
+          },
+          "content": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Content"
+          },
+          "disclosure": {
+            "type": "string",
+            "enum": [
+              "volunteered",
+              "on_direct_question",
+              "after_rapport"
+            ],
+            "title": "Disclosure"
+          },
+          "asked_about": {
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "type": "array",
+            "minItems": 1,
+            "title": "Asked About"
+          },
+          "domain": {
+            "type": "string",
+            "maxLength": 60,
+            "pattern": "^[a-z0-9]+(?:[-_][a-z0-9]+)*$",
+            "title": "Domain"
+          },
+          "key": {
+            "type": "boolean",
+            "title": "Key",
+            "default": false
+          },
+          "rapport_needed": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "enum": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Rapport Needed"
+          },
+          "vague": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Vague"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "content",
+          "disclosure",
+          "asked_about",
+          "domain"
+        ],
+        "title": "Fact",
+        "description": "Something the role-player knows, and when it may be revealed.\n\nvolunteered: may be offered unprompted. on_direct_question: only once the\ncandidate asks about one of ``asked_about``. after_rapport: as for a direct\nquestion, but only after the candidate has shown empathy or acknowledgement.\n``asked_about`` labels are what the interpreter matches questions against, so even\nvolunteered facts need them; keep labels distinctive between facts."
+      },
+      "FactResult": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "domain": {
+            "type": "string",
+            "title": "Domain"
+          },
+          "content": {
+            "type": "string",
+            "title": "Content"
+          },
+          "key": {
+            "type": "boolean",
+            "title": "Key"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "elicited",
+              "touched_on",
+              "volunteered",
+              "held_back",
+              "missed"
+            ],
+            "title": "Status"
+          },
+          "question": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Question"
+          },
+          "seconds": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Seconds"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "domain",
+          "content",
+          "key",
+          "status"
+        ],
+        "title": "FactResult"
+      },
+      "FactView": {
+        "properties": {
+          "fact_id": {
+            "type": "string",
+            "title": "Fact Id"
+          },
+          "state": {
+            "type": "string",
+            "enum": [
+              "available",
+              "held_back",
+              "partial",
+              "released"
+            ],
+            "title": "State"
+          },
+          "permitted_text": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Permitted Text"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "fact_id",
+          "state",
+          "permitted_text"
+        ],
+        "title": "FactView"
+      },
+      "Feedback": {
+        "properties": {
+          "note": {
+            "type": "string",
+            "title": "Note",
+            "default": "Automated feedback for practice. It shows which case information your questions elicited and describes how you asked; it is not a CASC mark, the case has not been clinically validated, and the indicators can be wrong."
+          },
+          "ended_reason": {
+            "type": "string",
+            "enum": [
+              "candidate_ended",
+              "time_up"
+            ],
+            "title": "Ended Reason"
+          },
+          "duration_seconds": {
+            "type": "integer",
+            "title": "Duration Seconds"
+          },
+          "information": {
+            "$ref": "#/components/schemas/Information"
+          },
+          "communication": {
+            "$ref": "#/components/schemas/Communication"
+          },
+          "tasks": {
+            "items": {
+              "$ref": "#/components/schemas/TaskResult"
+            },
+            "type": "array",
+            "title": "Tasks"
+          },
+          "utterances": {
+            "items": {
+              "$ref": "#/components/schemas/Utterance"
+            },
+            "type": "array",
+            "title": "Utterances"
+          },
+          "journey": {
+            "items": {
+              "$ref": "#/components/schemas/AffectChange"
+            },
+            "type": "array",
+            "title": "Journey",
+            "default": []
+          },
+          "questions": {
+            "items": {
+              "$ref": "#/components/schemas/QuestionResult"
+            },
+            "type": "array",
+            "title": "Questions",
+            "default": []
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "ended_reason",
+          "duration_seconds",
+          "information",
+          "communication",
+          "tasks",
+          "utterances"
+        ],
+        "title": "Feedback"
+      },
+      "Group": {
+        "properties": {
+          "title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "fact_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Fact Ids"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "title",
+          "fact_ids"
+        ],
+        "title": "Group"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "Health": {
+        "properties": {
+          "status": {
+            "type": "string",
+            "const": "ok",
+            "title": "Status",
+            "default": "ok"
+          },
+          "service": {
+            "type": "string",
+            "const": "psychiatry-edu-api",
+            "title": "Service",
+            "default": "psychiatry-edu-api"
+          },
+          "version": {
+            "type": "string",
+            "const": "0.2.0",
+            "title": "Version",
+            "default": "0.2.0"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "Health"
+      },
+      "Information": {
+        "properties": {
+          "key_elicited": {
+            "type": "integer",
+            "title": "Key Elicited"
+          },
+          "key_touched": {
+            "type": "integer",
+            "title": "Key Touched",
+            "default": 0
+          },
+          "key_total": {
+            "type": "integer",
+            "title": "Key Total"
+          },
+          "facts": {
+            "items": {
+              "$ref": "#/components/schemas/FactResult"
+            },
+            "type": "array",
+            "title": "Facts"
+          },
+          "domains": {
+            "items": {
+              "$ref": "#/components/schemas/DomainResult"
+            },
+            "type": "array",
+            "title": "Domains"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "key_elicited",
+          "key_total",
+          "facts",
+          "domains"
+        ],
+        "title": "Information"
+      },
+      "InterruptionRequest": {
+        "properties": {
+          "during": {
+            "type": "string",
+            "enum": [
+              "speaking",
+              "thinking"
+            ],
+            "title": "During"
+          },
+          "heard_ms": {
+            "type": "integer",
+            "maximum": 600000.0,
+            "minimum": 0.0,
+            "title": "Heard Ms"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "during",
+          "heard_ms"
+        ],
+        "title": "InterruptionRequest"
+      },
+      "Line": {
+        "properties": {
+          "speaker": {
+            "type": "string",
+            "enum": [
+              "candidate",
+              "character"
+            ],
+            "title": "Speaker"
+          },
+          "text": {
+            "type": "string",
+            "title": "Text"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "speaker",
+          "text"
+        ],
+        "title": "Line"
+      },
+      "MatrixStation": {
+        "properties": {
+          "code": {
+            "type": "string",
+            "title": "Code"
+          },
+          "running_order": {
+            "type": "string",
+            "title": "Running Order"
+          },
+          "session": {
+            "type": "string",
+            "enum": [
+              "morning",
+              "afternoon"
+            ],
+            "title": "Session"
+          },
+          "skill": {
+            "$ref": "#/components/schemas/Skill"
+          },
+          "subdivision": {
+            "type": "string",
+            "title": "Subdivision"
+          },
+          "specialty": {
+            "type": "string",
+            "enum": [
+              "general",
+              "child_and_adolescent",
+              "old_age",
+              "intellectual_disability",
+              "forensic",
+              "medical_psychotherapy",
+              "addiction"
+            ],
+            "title": "Specialty"
+          },
+          "title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "case_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Case Id"
+          },
+          "unavailable_reason": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Unavailable Reason"
+          },
+          "clinically_validated": {
+            "type": "boolean",
+            "title": "Clinically Validated"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "code",
+          "running_order",
+          "session",
+          "skill",
+          "subdivision",
+          "specialty",
+          "title",
+          "case_id",
+          "unavailable_reason",
+          "clinically_validated"
+        ],
+        "title": "MatrixStation"
+      },
+      "MatrixSubdivision": {
+        "properties": {
+          "skill": {
+            "$ref": "#/components/schemas/Skill"
+          },
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "label": {
+            "type": "string",
+            "title": "Label"
+          },
+          "minimum_percentage": {
+            "type": "integer",
+            "title": "Minimum Percentage"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "skill",
+          "id",
+          "label",
+          "minimum_percentage"
+        ],
+        "title": "MatrixSubdivision"
+      },
+      "Outcome": {
+        "properties": {
+          "fact_id": {
+            "type": "string",
+            "title": "Fact Id"
+          },
+          "result": {
+            "type": "string",
+            "enum": [
+              "available",
+              "released",
+              "partial",
+              "held_back",
+              "already_released"
+            ],
+            "title": "Result"
+          },
+          "reason": {
+            "type": "string",
+            "title": "Reason"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "fact_id",
+          "result",
+          "reason"
+        ],
+        "title": "Outcome"
+      },
+      "Persona": {
+        "properties": {
+          "role": {
+            "type": "string",
+            "enum": [
+              "patient",
+              "relative",
+              "carer",
+              "colleague"
+            ],
+            "title": "Role"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Name"
+          },
+          "age": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "maximum": 120.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Age"
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Description"
+          },
+          "speech_style": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Speech Style"
+          },
+          "affect": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Affect"
+          },
+          "opening_statement": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Opening Statement"
+          },
+          "voice": {
+            "$ref": "#/components/schemas/VoiceHint"
+          },
+          "avatar": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 60,
+                "pattern": "^[a-z0-9]+(?:[-_][a-z0-9]+)*$"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Avatar"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "role",
+          "name",
+          "description",
+          "speech_style",
+          "affect",
+          "opening_statement"
+        ],
+        "title": "Persona"
+      },
+      "Presentation": {
+        "properties": {
+          "expression": {
+            "type": "string",
+            "enum": [
+              "neutral",
+              "warm",
+              "cheerful",
+              "sad",
+              "tearful",
+              "anxious",
+              "tense",
+              "irritable",
+              "flat"
+            ],
+            "title": "Expression"
+          },
+          "hesitations": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Hesitations"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "expression",
+          "hesitations"
+        ],
+        "title": "Presentation",
+        "description": "How the 3D character currently looks: the affect stage's expression and the fillers it\nmay voice while thinking. Says nothing about facts or disclosure."
+      },
+      "Preview": {
+        "properties": {
+          "label": {
+            "type": "string",
+            "title": "Label",
+            "default": "Rule preview: question recognition and generated replies are not tested."
+          },
+          "groups": {
+            "items": {
+              "$ref": "#/components/schemas/Group"
+            },
+            "type": "array",
+            "title": "Groups"
+          },
+          "initial": {
+            "items": {
+              "$ref": "#/components/schemas/FactView"
+            },
+            "type": "array",
+            "title": "Initial"
+          },
+          "steps": {
+            "items": {
+              "$ref": "#/components/schemas/Step"
+            },
+            "type": "array",
+            "title": "Steps"
+          },
+          "note": {
+            "type": "string",
+            "title": "Note",
+            "default": "Time-based character questions are not simulated. Rapport decays each turn, adds the line's empathy (0\u20132) and loses 1 for a confrontational line."
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "groups",
+          "initial",
+          "steps"
+        ],
+        "title": "Preview"
+      },
+      "PreviewBody": {
+        "properties": {
+          "case": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Case"
+          },
+          "turns": {
+            "items": {
+              "$ref": "#/components/schemas/PreviewTurn"
+            },
+            "type": "array",
+            "maxItems": 40,
+            "title": "Turns",
+            "default": []
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "case"
+        ],
+        "title": "PreviewBody"
+      },
+      "PreviewTurn": {
+        "properties": {
+          "asked": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "maxItems": 4,
+            "title": "Asked",
+            "default": []
+          },
+          "empathy": {
+            "type": "integer",
+            "enum": [
+              0,
+              1,
+              2
+            ],
+            "title": "Empathy",
+            "default": 0
+          },
+          "confrontational": {
+            "type": "boolean",
+            "title": "Confrontational",
+            "default": false
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "PreviewTurn"
+      },
+      "Problem": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Loc"
+          },
+          "message": {
+            "type": "string",
+            "title": "Message"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "loc",
+          "message"
+        ],
+        "title": "Problem"
+      },
+      "QuestionResult": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "text": {
+            "type": "string",
+            "title": "Text"
+          },
+          "asked_after": {
+            "type": "integer",
+            "title": "Asked After"
+          },
+          "answered": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Answered"
+          },
+          "response": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Response"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "text",
+          "asked_after",
+          "answered",
+          "response"
+        ],
+        "title": "QuestionResult"
+      },
+      "Readiness": {
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": [
+              "ready",
+              "not_ready"
+            ],
+            "title": "Status"
+          },
+          "model_backend": {
+            "type": "string",
+            "enum": [
+              "fake",
+              "local"
+            ],
+            "title": "Model Backend"
+          },
+          "speech_backend": {
+            "type": "string",
+            "enum": [
+              "off",
+              "fake",
+              "local"
+            ],
+            "title": "Speech Backend"
+          },
+          "tts_backend": {
+            "type": "string",
+            "enum": [
+              "off",
+              "fake",
+              "local"
+            ],
+            "title": "Tts Backend"
+          },
+          "checked_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Checked At"
+          },
+          "registry": {
+            "$ref": "#/components/schemas/ServiceCheck"
+          },
+          "cases": {
+            "$ref": "#/components/schemas/ServiceCheck"
+          },
+          "generation": {
+            "$ref": "#/components/schemas/ServiceCheck"
+          },
+          "speech": {
+            "$ref": "#/components/schemas/ServiceCheck"
+          },
+          "voice": {
+            "$ref": "#/components/schemas/ServiceCheck"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "status",
+          "model_backend",
+          "speech_backend",
+          "tts_backend",
+          "checked_at",
+          "registry",
+          "cases",
+          "generation",
+          "speech",
+          "voice"
+        ],
+        "title": "Readiness",
+        "description": "Text role-play needs valid cases and registry; local mode also needs generation.\n\nSpeech is optional: typed input works whether or not speech recognition is ready, and\nreplies can be read in a browser voice when the character's voice is not."
+      },
+      "RecordingPrompts": {
+        "properties": {
+          "enabled": {
+            "type": "boolean",
+            "title": "Enabled"
+          },
+          "consent": {
+            "type": "string",
+            "title": "Consent"
+          },
+          "prompts": {
+            "items": {
+              "$ref": "#/components/schemas/psychiatry_api__recordings__Prompt"
+            },
+            "type": "array",
+            "title": "Prompts"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "enabled",
+          "consent",
+          "prompts"
+        ],
+        "title": "RecordingPrompts"
+      },
+      "ReferenceAccess": {
+        "properties": {
+          "enabled": {
+            "type": "boolean",
+            "title": "Enabled"
+          },
+          "basis": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Basis"
+          },
+          "recorded_by": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Recorded By"
+          },
+          "recorded_at": {
+            "type": "string",
+            "format": "date",
+            "title": "Recorded At"
+          },
+          "permitted_uses": {
+            "items": {
+              "type": "string",
+              "enum": [
+                "link",
+                "metadata",
+                "exam_facts"
+              ]
+            },
+            "type": "array",
+            "title": "Permitted Uses"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "enabled",
+          "basis",
+          "recorded_by",
+          "recorded_at",
+          "permitted_uses"
+        ],
+        "title": "ReferenceAccess"
+      },
+      "ReuseReview": {
+        "properties": {
+          "basis": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Basis"
+          },
+          "reviewed_by": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Reviewed By"
+          },
+          "reviewed_at": {
+            "type": "string",
+            "format": "date",
+            "title": "Reviewed At"
+          },
+          "permitted_uses": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Permitted Uses"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "basis",
+          "reviewed_by",
+          "reviewed_at",
+          "permitted_uses"
+        ],
+        "title": "ReuseReview"
+      },
+      "Saved": {
+        "properties": {
+          "item": {
+            "type": "integer",
+            "title": "Item"
+          },
+          "recorded": {
+            "type": "integer",
+            "title": "Recorded"
+          },
+          "duration_ms": {
+            "type": "integer",
+            "title": "Duration Ms"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "item",
+          "recorded",
+          "duration_ms"
+        ],
+        "title": "Saved"
+      },
+      "ServiceCheck": {
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": [
+              "ready",
+              "unavailable",
+              "empty",
+              "invalid",
+              "disabled"
+            ],
+            "title": "Status"
+          },
+          "detail": {
+            "type": "string",
+            "title": "Detail"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "status",
+          "detail"
+        ],
+        "title": "ServiceCheck"
+      },
+      "SessionView": {
+        "properties": {
+          "session_id": {
+            "type": "string",
+            "title": "Session Id"
+          },
+          "station": {
+            "$ref": "#/components/schemas/CaseSummary"
+          },
+          "character_name": {
+            "type": "string",
+            "title": "Character Name"
+          },
+          "phase": {
+            "type": "string",
+            "enum": [
+              "reading",
+              "interview",
+              "ended"
+            ],
+            "title": "Phase"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          },
+          "interview_deadline": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Interview Deadline"
+          },
+          "transcript": {
+            "items": {
+              "$ref": "#/components/schemas/Line"
+            },
+            "type": "array",
+            "title": "Transcript"
+          },
+          "presentation": {
+            "$ref": "#/components/schemas/Presentation"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "session_id",
+          "station",
+          "character_name",
+          "phase",
+          "created_at",
+          "interview_deadline",
+          "transcript",
+          "presentation"
+        ],
+        "title": "SessionView"
+      },
+      "Skill": {
+        "type": "string",
+        "enum": [
+          "history",
+          "examination",
+          "management"
+        ],
+        "title": "Skill"
+      },
+      "Source": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Id"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Name"
+          },
+          "status": {
+            "$ref": "#/components/schemas/SourceStatus"
+          },
+          "category": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Category"
+          },
+          "jurisdiction": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Jurisdiction"
+          },
+          "ingestion_enabled": {
+            "type": "boolean",
+            "title": "Ingestion Enabled"
+          },
+          "licence": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Licence"
+          },
+          "reuse_review": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ReuseReview"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "approved_items": {
+            "items": {
+              "$ref": "#/components/schemas/ApprovedItem"
+            },
+            "type": "array",
+            "title": "Approved Items",
+            "default": []
+          },
+          "reference_urls": {
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "type": "array",
+            "title": "Reference Urls",
+            "default": []
+          },
+          "review_notes": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Review Notes"
+          },
+          "reference_access": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ReferenceAccess"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "status",
+          "category",
+          "jurisdiction",
+          "ingestion_enabled",
+          "licence"
+        ],
+        "title": "Source"
+      },
+      "SourceCatalogue": {
+        "properties": {
+          "sources": {
+            "items": {
+              "$ref": "#/components/schemas/SourceSummary"
+            },
+            "type": "array",
+            "title": "Sources"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "sources"
+        ],
+        "title": "SourceCatalogue"
+      },
+      "SourceStatus": {
+        "type": "string",
+        "enum": [
+          "approved",
+          "approved_in_principle",
+          "approved_with_conditions",
+          "per_item_check",
+          "pending_permission",
+          "pending_reuse_check",
+          "blocked_until_licensed"
+        ],
+        "title": "SourceStatus"
+      },
+      "SourceSummary": {
+        "properties": {
+          "source": {
+            "$ref": "#/components/schemas/Source"
+          },
+          "access_state": {
+            "type": "string",
+            "enum": [
+              "in_use",
+              "blocked",
+              "awaiting_permission",
+              "not_used"
+            ],
+            "title": "Access State"
+          },
+          "detail": {
+            "type": "string",
+            "title": "Detail"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "source",
+          "access_state",
+          "detail"
+        ],
+        "title": "SourceSummary"
+      },
+      "SpeechRequest": {
+        "properties": {
+          "text": {
+            "type": "string",
+            "maxLength": 600,
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Text"
+          },
+          "voice": {
+            "type": "string",
+            "pattern": "^[a-z]{2}_[a-z]{2,20}$",
+            "title": "Voice"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "text",
+          "voice"
+        ],
+        "title": "SpeechRequest"
+      },
+      "SpeechView": {
+        "properties": {
+          "audio_wav_base64": {
+            "type": "string",
+            "title": "Audio Wav Base64"
+          },
+          "words": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Words"
+          },
+          "word_times_ms": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array",
+            "title": "Word Times Ms"
+          },
+          "word_durations_ms": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array",
+            "title": "Word Durations Ms"
+          },
+          "visemes": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Visemes"
+          },
+          "viseme_times_ms": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array",
+            "title": "Viseme Times Ms"
+          },
+          "viseme_durations_ms": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array",
+            "title": "Viseme Durations Ms"
+          },
+          "voice": {
+            "type": "string",
+            "title": "Voice"
+          },
+          "model": {
+            "type": "string",
+            "title": "Model"
+          },
+          "synthesis_ms": {
+            "type": "integer",
+            "title": "Synthesis Ms"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "audio_wav_base64",
+          "words",
+          "word_times_ms",
+          "word_durations_ms",
+          "visemes",
+          "viseme_times_ms",
+          "viseme_durations_ms",
+          "voice",
+          "model",
+          "synthesis_ms"
+        ],
+        "title": "SpeechView",
+        "description": "Audio (base64 WAV) with word and viseme timings in ms from the start of the audio."
+      },
+      "StartRequest": {
+        "properties": {
+          "case_id": {
+            "type": "string",
+            "maxLength": 60,
+            "minLength": 1,
+            "title": "Case Id"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "case_id"
+        ],
+        "title": "StartRequest"
+      },
+      "Step": {
+        "properties": {
+          "turn": {
+            "type": "integer",
+            "title": "Turn"
+          },
+          "rapport": {
+            "type": "number",
+            "title": "Rapport"
+          },
+          "affect_stage": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Affect Stage"
+          },
+          "affect": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Affect"
+          },
+          "outcomes": {
+            "items": {
+              "$ref": "#/components/schemas/Outcome"
+            },
+            "type": "array",
+            "title": "Outcomes"
+          },
+          "ignored": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Ignored"
+          },
+          "character_question": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Character Question"
+          },
+          "facts": {
+            "items": {
+              "$ref": "#/components/schemas/FactView"
+            },
+            "type": "array",
+            "title": "Facts"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "turn",
+          "rapport",
+          "affect_stage",
+          "affect",
+          "outcomes",
+          "ignored",
+          "character_question",
+          "facts"
+        ],
+        "title": "Step"
+      },
+      "Task": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "maxLength": 60,
+            "pattern": "^[a-z0-9]+(?:[-_][a-z0-9]+)*$",
+            "title": "Id"
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Description"
+          },
+          "domain": {
+            "type": "string",
+            "maxLength": 60,
+            "pattern": "^[a-z0-9]+(?:[-_][a-z0-9]+)*$",
+            "title": "Domain"
+          },
+          "evidence_indicator": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "summary",
+                  "check_understanding",
+                  "empathy",
+                  "open_question"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Evidence Indicator"
+          },
+          "evidence_fact": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 60,
+                "pattern": "^[a-z0-9]+(?:[-_][a-z0-9]+)*$"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Evidence Fact"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "description",
+          "domain"
+        ],
+        "title": "Task",
+        "description": "A candidate action. Feedback marks it met from a linked communication indicator or\nan elicited fact; tasks with neither are left for the candidate's self-review."
+      },
+      "TaskResult": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "description": {
+            "type": "string",
+            "title": "Description"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "met",
+              "not_detected",
+              "self_review"
+            ],
+            "title": "Status"
+          },
+          "evidence": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Evidence"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "description",
+          "status"
+        ],
+        "title": "TaskResult"
+      },
+      "Timing": {
+        "properties": {
+          "reading_seconds": {
+            "type": "integer",
+            "title": "Reading Seconds"
+          },
+          "interview_seconds": {
+            "type": "integer",
+            "title": "Interview Seconds",
+            "default": 420
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "reading_seconds"
+        ],
+        "title": "Timing"
+      },
+      "TranscriptionView": {
+        "properties": {
+          "transcription_id": {
+            "type": "string",
+            "title": "Transcription Id"
+          },
+          "text": {
+            "type": "string",
+            "title": "Text"
+          },
+          "audio_ms": {
+            "type": "integer",
+            "title": "Audio Ms"
+          },
+          "asr_ms": {
+            "type": "integer",
+            "title": "Asr Ms"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "transcription_id",
+          "text",
+          "audio_ms",
+          "asr_ms"
+        ],
+        "title": "TranscriptionView"
+      },
+      "TurnRequest": {
+        "properties": {
+          "text": {
+            "type": "string",
+            "maxLength": 600,
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Text"
+          },
+          "transcription_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 32
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Transcription Id"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "text"
+        ],
+        "title": "TurnRequest"
+      },
+      "Utterance": {
+        "properties": {
+          "question": {
+            "type": "integer",
+            "title": "Question"
+          },
+          "seconds": {
+            "type": "integer",
+            "title": "Seconds"
+          },
+          "text": {
+            "type": "string",
+            "title": "Text"
+          },
+          "input": {
+            "type": "string",
+            "enum": [
+              "typed",
+              "speech"
+            ],
+            "title": "Input"
+          },
+          "edited": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Edited"
+          },
+          "question_type": {
+            "type": "string",
+            "enum": [
+              "open",
+              "closed",
+              "none"
+            ],
+            "title": "Question Type"
+          },
+          "questions": {
+            "type": "integer",
+            "title": "Questions"
+          },
+          "summary": {
+            "type": "boolean",
+            "title": "Summary"
+          },
+          "check_understanding": {
+            "type": "boolean",
+            "title": "Check Understanding"
+          },
+          "empathy": {
+            "type": "boolean",
+            "title": "Empathy"
+          },
+          "jargon": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Jargon"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "question",
+          "seconds",
+          "text",
+          "input",
+          "edited",
+          "question_type",
+          "questions",
+          "summary",
+          "check_understanding",
+          "empathy",
+          "jargon"
+        ],
+        "title": "Utterance"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      },
+      "VoiceHint": {
+        "properties": {
+          "sex": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "female",
+                  "male"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Sex"
+          },
+          "age": {
+            "type": "string",
+            "enum": [
+              "young",
+              "adult",
+              "older"
+            ],
+            "title": "Age",
+            "default": "adult"
+          },
+          "accent": {
+            "type": "string",
+            "pattern": "^en-[A-Z]{2}$",
+            "title": "Accent",
+            "default": "en-GB"
+          },
+          "speaker": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[a-z]{2}_[a-z]{2,20}$"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Speaker"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "VoiceHint",
+        "description": "How the character should sound when replies are read aloud; not a hidden fact."
+      },
+      "psychiatry_api__authoring__checks__Prompt": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Loc"
+          },
+          "message": {
+            "type": "string",
+            "title": "Message"
+          },
+          "checked": {
+            "type": "string",
+            "title": "Checked"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "loc",
+          "message",
+          "checked"
+        ],
+        "title": "Prompt"
+      },
+      "psychiatry_api__recordings__Prompt": {
+        "properties": {
+          "item": {
+            "type": "integer",
+            "title": "Item"
+          },
+          "case_id": {
+            "type": "string",
+            "title": "Case Id"
+          },
+          "text": {
+            "type": "string",
+            "title": "Text"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "item",
+          "case_id",
+          "text"
+        ],
+        "title": "Prompt"
+      }
+    }
+  }
+}

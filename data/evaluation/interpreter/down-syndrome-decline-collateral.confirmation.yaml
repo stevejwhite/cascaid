@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: down-syndrome-decline-collateral
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Elaine, before this change, which everyday activities could she manage for herself?
+  expected:
+  - baseline
+  rapport: false
+- utterance: Has the loss of ability been gradual, or are there abrupt changes from hour to hour?
+  expected:
+  - course
+  rapport: false
+- utterance: What have you observed that suggests she is forgetting recent events?
+  expected:
+  - memory
+  rapport: false
+- utterance: What support does she now need with dressing or preparing a drink?
+  expected:
+  - skills
+  rapport: false
+- utterance: Have you noticed changes in her enjoyment of activities or how she seems emotionally?
+  expected:
+  - mood
+  rapport: false
+- utterance: Are there physical health or hearing difficulties that still need checking?
+  expected:
+  - health
+  rapport: false
+- utterance: What remains unchecked about her physical health or hearing as a possible contributor?
+  expected:
+  - health
+  rapport: false
+- utterance: Have prescriptions been added or changed, rather than routine health tests being missed?
+  expected:
+  - medicines
+  rapport: false
+- utterance: has she become lost when trying to go out since then?
+  expected:
+  - safety
+  rapport: false
+  previous:
+    interviewer: How did she manage travel before the decline?
+    character: Until a year ago she followed a familiar bus route with another resident.
+- utterance: Has she had any episodes of shaking or losing consciousness?
+  expected: []
+  rapport: false

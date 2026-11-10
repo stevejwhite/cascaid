@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: persecutory-psychosis-mental-state
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hello Sophie, I'm one of the doctors on the ward. Is it alright if we talk for a few minutes?"
+    expected: []
+    rapport: false
+  - utterance: "You said you didn't feel safe. What makes you think the neighbours are watching you?"
+    expected: [surveillance-belief]
+    rapport: false
+  - utterance: "Have you been hearing voices or noises when nobody else is around?"
+    expected: [auditory-experience]
+    rapport: false
+  - utterance: "Do they ever tell you to do anything?"
+    expected: [command-content]
+    rapport: false
+    previous:
+      interviewer: "Do you hear people talking when no one's there?"
+      character: "Two voices from the hallway, talking about where I am."
+  - utterance: "Do you ever feel thoughts are being put into your head that aren't yours?"
+    expected: [thought-insertion]
+    rapport: false
+  - utterance: "Can other people hear your thoughts, or are they being broadcast somehow?"
+    expected: [thought-broadcast]
+    rapport: false
+  - utterance: "Have you felt as though something outside you is controlling your movements?"
+    expected: [passivity]
+    rapport: false
+  - utterance: "When did all of this start?"
+    expected: [onset]
+    rapport: false
+  - utterance: "How have you been feeling in yourself, in terms of your mood?"
+    expected: [mood]
+    rapport: false
+  - utterance: "Is there any chance some of this could be explained another way?"
+    expected: [insight]
+    rapport: false
+  - utterance: "Have you had any thoughts of harming yourself or the people next door?"
+    expected: [harm-intent]
+    rapport: false
+  - utterance: "do you drink or use any drugs, sophie"
+    expected: [substance-medical-context]
+    rapport: false
+  - utterance: "How have you been sleeping and eating, and have you managed to get to work?"
+    expected: [daily-impact]
+    rapport: false
+  - utterance: "What do your family make of what's been happening?"
+    expected: [cultural-meaning]
+    rapport: false
+  - utterance: "Have you seen anything strange, or noticed odd smells or tastes?"
+    expected: [other-senses]
+    rapport: false
+  - utterance: "I am listening, and I can hear how unsafe you've been feeling."
+    expected: []
+    rapport: true
+  - utterance: "Has anything like this ever happened to you before, years ago?"
+    expected: []
+    rapport: false
+  - utterance: "Is there anyone in the family with a mental illness?"
+    expected: []
+    rapport: false
+  - utterance: "Thank you Sophie, I've got a good sense of the voices and the feeling of being watched now."
+    expected: []
+    rapport: false

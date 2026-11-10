@@ -1,0 +1,104 @@
+# Authoritative source registry for the CASC POC. The broad registry (Wikipedia, PMC,
+# GOV.UK and others) is preserved at git tag pre-casc-archive.
+sources:
+- id: synthetic_fixtures
+  name: PsychiatryEduAI original synthetic cases and fixtures
+  status: approved
+  category: fixture
+  jurisdiction: synthetic
+  ingestion_enabled: true
+  licence: CC-BY-4.0
+  reuse_review:
+    basis: Project-authored original fictional cases (data/cases); CC-BY-4.0
+    reviewed_by: project_fixture_author
+    reviewed_at: '2026-10-07'
+    permitted_uses:
+    - index
+    - retrieve
+- id: mrcpsych_casc
+  name: RCPsych MRCPsych CASC syllabus and blueprint
+  status: approved
+  category: curriculum
+  jurisdiction: UK
+  ingestion_enabled: true
+  licence: RCPsych copyright retained; owner-attested permission for local PsychiatryEduAI
+    educational indexing, retrieval, display and syllabus extraction (2026-09-29)
+  reference_urls:
+  - https://www.rcpsych.ac.uk/training/exams/preparing-for-exams/preparing-for-the-casc
+  - https://www.rcpsych.ac.uk/docs/default-source/training/examinations/casc-syllabus-march-2023.pdf?sfvrsn=1fe04f2b_4
+  - https://www.rcpsych.ac.uk/about-us/contact-us/permissions
+  review_notes: 'CASC syllabus, blueprint and curriculum-item extraction: owner-attested permission
+    recorded 2026-09-29 for the pinned March 2023 document. The CASC POC encodes only its
+    station structure (skills, subdivisions, specialties, timings) in cases.py; no full
+    text is indexed. Use original synthetic cases; station scripts and question banks
+    remain excluded. RCPsych copyright retained; no eLearning or question-bank scope is approved.'
+  reference_access:
+    enabled: true
+    basis: 'Owner-authorised reference connection recorded 2026-09-28: links, metadata and
+      independently worded exam facts. This field grants no full-text rights; any separate
+      full-text approval is recorded in reuse_review and approved_items.'
+    recorded_by: automated_reference_scope_owner_authorised
+    recorded_at: '2026-09-28'
+    permitted_uses:
+    - link
+    - metadata
+    - exam_facts
+  approved_items:
+  - identifier: https://www.rcpsych.ac.uk/docs/default-source/training/examinations/casc-syllabus-march-2023.pdf?sfvrsn=1fe04f2b_4
+    version: March 2023 | sha256:ae1eac93e556b3701a4aae70f1f9e784ad47ecd51ff69a0ae70631a703062a99
+    licence: RCPsych copyright retained; owner-attested permission for local PsychiatryEduAI
+      educational indexing, retrieval, display and syllabus extraction (2026-09-29)
+  reuse_review:
+    basis: 'docs/permissions/rcpsych-owner-confirmation-2026-09-29.md
+
+      Owner statement on 2026-09-29: "I confirm permission to use content from the rcpsych.ac.uk
+      site". Recorded as an owner attestation, not an independently verified publisher grant
+      or open licence. Scope is the exact previously identified syllabus/exam documents for
+      local educational indexing, retrieval, attributed display and curriculum extraction.
+      Excludes eLearning, question banks, station scripts, model training and source redistribution.
+      Examination applicability and version checks remain separate.'
+    reviewed_by: Project owner (via chat)
+    reviewed_at: '2026-09-29'
+    permitted_uses:
+    - index
+    - retrieve
+    - display
+- id: nice
+  name: NICE
+  status: pending_permission
+  category: guideline
+  jurisdiction: England
+  ingestion_enabled: false
+  licence: use only under approved NICE syndication/AI licence
+  review_notes: Owner confirmed reading-only access on 2026-10-05; no permission for local
+    ingestion or AI reuse has been recorded.
+- id: bnf
+  name: BNF / BNFc
+  status: blocked_until_licensed
+  category: medicine_reference
+  jurisdiction: UK
+  ingestion_enabled: false
+  licence: proprietary
+  review_notes: Owner confirmed reading-only access on 2026-10-05; no permission for local
+    ingestion or AI reuse has been recorded.
+- id: emc
+  name: emc / Datapharm
+  status: blocked_until_licensed
+  category: medicine_reference
+  jurisdiction: UK
+  ingestion_enabled: false
+  licence: proprietary/systematic reuse restricted
+- id: dsm5tr
+  name: DSM-5-TR
+  status: blocked_until_licensed
+  category: classification
+  jurisdiction: international
+  ingestion_enabled: false
+  licence: proprietary
+- id: commercial_textbooks
+  name: Commercial textbooks and question banks
+  status: blocked_until_licensed
+  category: teaching_content
+  jurisdiction: international
+  ingestion_enabled: false
+  licence: Proprietary; item-specific AI and product permission required

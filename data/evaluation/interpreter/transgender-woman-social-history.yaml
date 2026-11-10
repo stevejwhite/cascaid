@@ -1,0 +1,70 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: transgender-woman-social-history
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hi Maya, I'm one of the doctors, thanks for coming in today."
+    expected: []
+    rapport: false
+  - utterance: "Could you tell me a bit about where you grew up?"
+    expected: [upbringing]
+    rapport: false
+  - utterance: "How would you describe your gender, and what pronouns do you use?"
+    expected: [identity]
+    rapport: false
+  - utterance: "Where are you up to with the gender service?"
+    expected: [transition]
+    rapport: false
+  - utterance: "Who's important to you at the moment?"
+    expected: [relationships]
+    rapport: false
+  - utterance: "Are you working at the moment?"
+    expected: [employment]
+    rapport: false
+  - utterance: "Have you had any negative reactions from people because of who you are?"
+    expected: [discrimination]
+    rapport: false
+  - utterance: "How has your mood been lately?"
+    expected: [mood]
+    rapport: false
+  - utterance: "what's your sleep like"
+    expected: [mood]
+    rapport: false
+  - utterance: "Have you had any thoughts of ending your life?"
+    expected: [risk]
+    rapport: false
+  - utterance: "How are things with your family now?"
+    expected: [family-now]
+    rapport: false
+  - utterance: "What would you like to get out of seeing us?"
+    expected: [goals]
+    rapport: false
+  - utterance: "It sounds like waiting so long has been really draining."
+    expected: []
+    rapport: true
+  - utterance: "Waiting all that time while your mood has been low sounds really hard to cope with. Has anyone treated you badly when you're out and about?"
+    expected: [discrimination]
+    rapport: true
+  - utterance: "is that something you'd want help with?"
+    previous:
+      interviewer: "How's work going?"
+      character: "My hours were cut recently so money's tighter."
+    expected: [goals]
+    rapport: false
+  - utterance: "and what about your parents?"
+    previous:
+      interviewer: "Do you live with anyone?"
+      character: "My partner, who is supportive."
+    expected: [family-now]
+    rapport: false
+  - utterance: "Did you go on to university after school?"
+    expected: []
+    rapport: false
+  - utterance: "Do you have any physical health problems?"
+    expected: []
+    rapport: false
+  - utterance: "Thanks for telling me, I'll make sure your notes use your name and pronouns."
+    expected: []
+    rapport: false

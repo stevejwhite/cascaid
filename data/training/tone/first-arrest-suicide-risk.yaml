@@ -1,0 +1,157 @@
+# Training lines for the tone classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: first-arrest-suicide-risk
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Are you thinking about killing yourself right now?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Have you ever hurt yourself on purpose in the past?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: What would you do if the thoughts got stronger tonight?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Who is waiting for you at home?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: um how much did you have to drink yesterday
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Would you mind telling me a bit about what happened before you were brought in?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Hello Ryan, I'm a doctor from the mental health team that covers the custody suite.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: Good to meet you, Ryan, thanks for seeing me.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: So the thoughts of dying started after the arrest and they're still with you now.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: summary
+- utterance: okay um and when did that start
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Right, thanks for that.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: That sounds really hard.
+  empathy: 1
+  empathy_words: That sounds really hard.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I'm sorry you're going through this.
+  empathy: 1
+  empathy_words: I'm sorry you're going through this.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That must be difficult. How are you feeling right now?
+  empathy: 1
+  empathy_words: That must be difficult.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I'm sorry to hear that. Who knows you're here?
+  empathy: 1
+  empathy_words: I'm sorry to hear that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: Being alone with that thought, again and again, sounds frightening and exhausting.
+  empathy: 2
+  empathy_words: Being alone with that thought, again and again, sounds frightening and exhausting.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: Are the thoughts about dying still there?
+    character: I meant it when I said I wanted to die. The thought keeps coming back while I'm alone in
+      the cell.
+- utterance: It makes sense that you can't stop picturing losing your apprenticeship and your girlfriend.
+  empathy: 2
+  empathy_words: It makes sense that you can't stop picturing losing your apprenticeship and your girlfriend.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: What do you think this arrest is going to mean?
+    character: I think I'll lose my apprenticeship and my girlfriend will leave. Nobody has told me those
+      things will happen, but I can't stop imagining them.
+- utterance: Feeling ashamed and not knowing how to face anyone after your first arrest sounds overwhelming.
+  empathy: 2
+  empathy_words: Feeling ashamed and not knowing how to face anyone after your first arrest sounds overwhelming.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: It sounds like you're worried the officers will think you're making trouble if you ask. Would
+    it help if I spoke to them with you?
+  empathy: 2
+  empathy_words: It sounds like you're worried the officers will think you're making trouble if you ask.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: How would you feel about someone staying close by?
+    character: I'd accept someone staying nearby and speaking with healthcare staff. I'm ashamed to ask
+      because I worry officers will think I'm making trouble.
+- utterance: You shouldn't have been drinking that much in the first place.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You shouldn't have been drinking that much in the first place.
+  style: confront_statement
+- utterance: You only said that to the officer to get out of the cell, didn't you?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You only said that to the officer to get out of the cell, didn't you?
+  style: confront_tag
+- utterance: It's only a first arrest, so I'm sure it'll all blow over.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: It's only a first arrest, so I'm sure it'll all blow over.
+  style: dismissive
+- utterance: let's not dwell on the girlfriend stuff, we haven't got long
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: let's not dwell on the girlfriend stuff, we haven't got long
+  style: dismissive

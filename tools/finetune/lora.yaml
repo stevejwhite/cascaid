@@ -1,0 +1,19 @@
+# LoRA settings for the student interpreter (mlx_lm.lora). The model, data and adapter
+# paths are given on the command line by train.sh.
+fine_tune_type: lora
+train: true
+mask_prompt: true          # learn the answer, not the (long) topic list
+batch_size: 8
+iters: 900                 # about 2.5 epochs of ~2,900 lines (run 4: with Prompt E interviews)
+learning_rate: 1.0e-4
+num_layers: 16
+max_seq_length: 1024
+steps_per_report: 25
+steps_per_eval: 300
+save_every: 300
+grad_checkpoint: true          # needed with all servers running (run 4 ran out of GPU memory without it)
+seed: 0
+lora_parameters:
+  rank: 16
+  scale: 20.0
+  dropout: 0.0

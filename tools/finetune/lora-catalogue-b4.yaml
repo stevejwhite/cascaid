@@ -1,0 +1,20 @@
+# LoRA settings for run 7 (run 6 plus boundary lines): run 6's settings with batches of 4 and
+# gradient accumulation over 2 (run 7 ran out of GPU memory at batch 8 with every server running).
+fine_tune_type: lora
+train: true
+mask_prompt: true          # learn the answer, not the (long) topic list
+batch_size: 4
+grad_accumulation_steps: 2  # effective batch 8 at about half the peak memory
+iters: 4000                # batches of 4: the same as run 6's 2,000 batches of 8
+learning_rate: 1.0e-4
+num_layers: 16
+max_seq_length: 1024
+steps_per_report: 25
+steps_per_eval: 1000
+save_every: 1000
+grad_checkpoint: true          # needed with all servers running (run 4 ran out of GPU memory without it)
+seed: 0
+lora_parameters:
+  rank: 16
+  scale: 20.0
+  dropout: 0.0

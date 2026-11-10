@@ -1,0 +1,64 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: opioid-treatment-physical-health
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hi Jodie, I'm one of the doctors here. Nice to meet you."
+    expected: []
+    rapport: false
+  - utterance: "Can you tell me about your current treatment with us, what you're prescribed?"
+    expected: [treatment]
+    rapport: false
+  - utterance: "When did you last inject, and where on your body?"
+    expected: [injecting]
+    rapport: false
+  - utterance: "Any sores or infections where you've injected?"
+    expected: [injecting]
+    rapport: false
+    previous:
+      interviewer: "Are you still using at all?"
+      character: "I last injected heroin six weeks ago."
+  - utterance: "Have you ever shared needles, and have you been tested for HIV or hepatitis?"
+    expected: [bbv]
+    rapport: false
+  - utterance: "Have you ever overdosed?"
+    expected: [overdose]
+    rapport: false
+  - utterance: "Have you had any chest pain or trouble with your breathing?"
+    expected: [chest]
+    rapport: false
+  - utterance: "and your legs, any swelling or pain"
+    expected: [legs]
+    rapport: false
+  - utterance: "How are your teeth? Any problems there?"
+    expected: [dental]
+    rapport: false
+  - utterance: "Are you using any contraception at the moment?"
+    expected: [reproductive]
+    rapport: false
+  - utterance: "Is there anything that's made it hard for you to get help with your health before?"
+    expected: [barriers]
+    rapport: false
+  - utterance: "Since that overdose, have you had any thoughts of ending your life?"
+    expected: [risk]
+    rapport: false
+    previous:
+      interviewer: "Have you had an overdose before?"
+      character: "Yeah, an accidental one about a year ago."
+  - utterance: "It's really good that you've come in wanting to sort your health out."
+    expected: []
+    rapport: true
+  - utterance: "Are you up to date with your cervical smear tests?"
+    expected: []
+    rapport: false
+  - utterance: "Do you smoke cigarettes?"
+    expected: []
+    rapport: false
+  - utterance: "That sounds like it's been a lot to deal with on your own."
+    expected: []
+    rapport: true
+  - utterance: "Right, so far I've got a picture of your treatment and your injecting history."
+    expected: []
+    rapport: false

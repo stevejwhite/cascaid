@@ -1,0 +1,30 @@
+# Training lines for the tone classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: jealousy-partner-risk
+case_version: 0.1.0
+status: draft
+items:
+  - {utterance: "Have you ever hit or pushed your partner?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "Are you having any thoughts of killing yourself at the moment?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "What do you think you'll do if she won't speak to you?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "How long have the two of you been together?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "hm and are there knives or anything like that at home", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "Sorry to ask, but could you tell me how much you've been drinking?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: polite_question}
+  - {utterance: "If you don't mind me asking, where is your partner staying tonight?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: polite_question}
+  - {utterance: "Hello Darren, I'm a doctor from the mental health team.", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: introduction}
+  - {utterance: "Thanks for agreeing to see me tonight, Darren.", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: greeting}
+  - {utterance: "So far you've told me you feel nobody believes you.", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: summary}
+  - {utterance: "Right. And when did that happen?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: acknowledgement}
+  - {utterance: "okay, um, thank you", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: acknowledgement}
+  - {utterance: "That sounds really hard.", empathy: 1, empathy_words: "That sounds really hard.", confrontational: false, challenge_words: "", style: brief_empathy}
+  - {utterance: "I'm sorry you're going through this.", empathy: 1, empathy_words: "I'm sorry you're going through this.", confrontational: false, challenge_words: "", style: brief_empathy}
+  - {utterance: "That must be difficult. How are you sleeping?", empathy: 1, empathy_words: "That must be difficult.", confrontational: false, challenge_words: "", style: brief_empathy_question}
+  - {utterance: "I can see this is upsetting. Can you tell me a bit more?", empathy: 1, empathy_words: "I can see this is upsetting.", confrontational: false, challenge_words: "", style: brief_empathy_question}
+  - {utterance: "Feeling so sure she's hiding something while she keeps denying it must be agonising for you.", empathy: 2, empathy_words: "Feeling so sure she's hiding something while she keeps denying it must be agonising for you.", confrontational: false, challenge_words: "", style: specific_empathy, previous: {interviewer: "Do you think she's seeing someone else?", character: "I'm certain she's seeing someone else. I can't accept another explanation, even though she denies it."}}
+  - {utterance: "It sounds like the thought of being left frightens you far more than you usually let anyone see.", empathy: 2, empathy_words: "It sounds like the thought of being left frightens you far more than you usually let anyone see.", confrontational: false, challenge_words: "", style: specific_empathy, previous: {interviewer: "What's it like underneath all that anger?", character: "I'm frightened of being left alone and ashamed of how desperate I feel. I usually turn that into anger."}}
+  - {utterance: "Being treated as the problem when you feel you're the one who's been wronged must feel very unfair.", empathy: 2, empathy_words: "Being treated as the problem when you feel you're the one who's been wronged must feel very unfair.", confrontational: false, challenge_words: "", style: specific_empathy}
+  - {utterance: "I can hear how badly you need someone to take your side of this seriously. What would help you feel listened to today?", empathy: 2, empathy_words: "I can hear how badly you need someone to take your side of this seriously.", confrontational: false, challenge_words: "", style: specific_empathy_question}
+  - {utterance: "You do realise grabbing someone like that is assault, whatever you think she's done.", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "You do realise grabbing someone like that is assault, whatever you think she's done.", style: confront_statement, previous: {interviewer: "Have you ever hurt her physically?", character: "Yes, I grabbed her wrist two weeks ago and left a bruise. I hadn't hit her before that."}}
+  - {utterance: "Why on earth would you keep bombarding her with messages?", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "Why on earth would you keep bombarding her with messages?", style: confront_why, previous: {interviewer: "How have you been in touch with her?", character: "Yesterday I said she'd regret it if she left. I've sent repeated messages demanding that she answer me."}}
+  - {utterance: "Honestly, a smile at a phone doesn't prove anything.", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "a smile at a phone doesn't prove anything", style: dismissive, previous: {interviewer: "What made you suspicious?", character: "Six weeks ago she smiled at her phone and turned it over. Since then ordinary delays getting home feel like proof."}}
+  - {utterance: "let's not get into your feelings, I just need the facts about risk", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "let's not get into your feelings", style: dismissive}

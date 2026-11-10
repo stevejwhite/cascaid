@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: first-arrest-suicide-risk
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Ryan, what happened that brought you into custody this time?
+  expected:
+  - arrest
+  rapport: false
+- utterance: When you said you wanted to die, how much are those thoughts still with you now?
+  expected:
+  - thoughts
+  rapport: false
+- utterance: Right now, could you resist an urge to hurt yourself if nobody was with you?
+  expected:
+  - intent
+  rapport: false
+- utterance: Have you worked out a way to end your life or made any preparations?
+  expected:
+  - plan
+  rapport: false
+- utterance: Before today, have you done anything to end your life that needed medical attention?
+  expected:
+  - history
+  rapport: false
+- utterance: What had you had to drink before the arrest, compared with your usual drinking?
+  expected:
+  - alcohol
+  rapport: false
+- utterance: What do you expect might happen to work or relationships because of the arrest?
+  expected:
+  - loss
+  rapport: false
+- utterance: How were sleep and enjoyment of life before you were arrested?
+  expected:
+  - mood
+  rapport: false
+- utterance: what help would you accept to get you through that safely?
+  expected:
+  - help
+  rapport: false
+  previous:
+    interviewer: How safe would you feel being left alone?
+    character: I'm frightened I might act if I'm left alone tonight.
+- utterance: At the moment, facing people after the arrest feels very difficult for you.
+  expected: []
+  rapport: false

@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: school-aggression-teacher-collateral
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: 'Rachel, talk me through each exclusion: what did he do, and was anybody hurt?'
+  expected:
+  - events
+  rapport: false
+- utterance: How does his behaviour towards adults this term compare with last year?
+  expected:
+  - pattern
+  rapport: false
+- utterance: Could you give an example of what he was being asked to do when trouble started?
+  expected:
+  - triggers
+  rapport: false
+- utterance: Where is his reading compared with classmates, and has it been formally assessed?
+  expected:
+  - learning
+  rapport: false
+- utterance: How does his concentration differ between written work and activities he enjoys?
+  expected:
+  - attention
+  rapport: false
+- utterance: What are his friendships like, including any teasing by other children?
+  expected:
+  - peers
+  rapport: false
+- utterance: Which classroom demands tend to come immediately before an outburst?
+  expected:
+  - triggers
+  rapport: false
+- utterance: What is known about his reading level itself, and any specialist assessment of it?
+  expected:
+  - learning
+  rapport: false
+- utterance: has there been a response of your own in those moments that you now regret?
+  expected:
+  - regret
+  rapport: false
+  previous:
+    interviewer: When does it tend to start?
+    character: It often starts when he's asked to read aloud or correct written work in front of others.
+- utterance: Has he ever deliberately set fire to something at school?
+  expected: []
+  rapport: false

@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: dementia-distress-care-plan
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hi Denise, thanks for coming in, I'm the trainee working with the community team."
+    expected: []
+    rapport: false
+  - utterance: "When did the evening agitation start, and what does it look like?"
+    expected: [recent-course]
+    rapport: false
+  - utterance: "What's happening on the unit around that time in the evening?"
+    expected: [environment]
+    rapport: false
+  - utterance: "Have you noticed any signs he might be in pain?"
+    expected: [pain-cues]
+    rapport: false
+  - utterance: "Any sign of an infection, like a temperature or a water infection?"
+    expected: [infection-check]
+    rapport: false
+  - utterance: "How are his bowels?"
+    expected: [bowels]
+    rapport: false
+  - utterance: "Is there anything that seems to calm him down?"
+    expected: [comforting-activities]
+    rapport: false
+  - utterance: "Does he wear glasses or a hearing aid?"
+    expected: [hearing]
+    rapport: false
+  - utterance: "Has he hurt anyone or had any falls?"
+    expected: [harm-and-falls]
+    rapport: false
+  - utterance: "What do you think about the idea of medication to settle him?"
+    expected: [medicine-concern]
+    rapport: false
+  - utterance: "What's he currently prescribed?"
+    expected: [current-prescriptions]
+    rapport: false
+  - utterance: "Is there someone at the home who knows him well who could keep track of things?"
+    expected: [staff-and-review]
+    rapport: false
+  - utterance: "How are you feeling about all of this?"
+    expected: [daughter-strain]
+    rapport: false
+  - utterance: "It's clear you want what's best for your dad."
+    expected: []
+    rapport: true
+  - utterance: "That sounds really worrying to see."
+    expected: []
+    rapport: true
+  - utterance: "And is he getting anything for the pain?"
+    previous:
+      interviewer: "Does he have any long-standing conditions that could be hurting?"
+      character: "He's had arthritis in his knee for years."
+    expected: [current-prescriptions]
+    rapport: false
+  - utterance: "Has he lost any weight recently?"
+    expected: []
+    rapport: false
+  - utterance: "Is he sleeping much during the day?"
+    expected: []
+    rapport: false
+  - utterance: "So there's been a fairly sudden change over about ten days, which makes me want to look for a cause."
+    expected: []
+    rapport: false

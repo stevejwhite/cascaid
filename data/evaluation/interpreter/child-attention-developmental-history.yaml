@@ -1,0 +1,70 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: child-attention-developmental-history
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hello Farah, I'm one of the doctors in the clinic, thanks for bringing Idris's red book along."
+    expected: []
+    rapport: false
+  - utterance: "How did the pregnancy go with Idris?"
+    expected: [pregnancy]
+    rapport: false
+  - utterance: "Any problems around his birth, was he early or did he need the special care unit?"
+    expected: [birth]
+    rapport: false
+  - utterance: "When did he start sitting up and walking?"
+    expected: [motor-milestones]
+    rapport: false
+  - utterance: "Tell me about his speech when he was little, when did the first words come?"
+    expected: [language]
+    rapport: false
+  - utterance: "When he was a toddler, did he point to show you things and turn round when you called him?"
+    expected: [social-communication]
+    rapport: false
+  - utterance: "what's he like at home with um following instructions, like getting ready in the morning"
+    expected: [home-attention]
+    rapport: false
+  - utterance: "Would you say he's always on the go? Has he ever done anything risky without thinking?"
+    expected: [activity-control]
+    rapport: false
+  - utterance: "What has his teacher told you about how he is in lessons?"
+    expected: [school-observations]
+    rapport: false
+  - utterance: "How does he get on with other kids in the playground?"
+    expected: [peer-relations]
+    rapport: false
+  - utterance: "Does anyone in the family have ADHD or autism?"
+    expected: [family-history]
+    rapport: false
+  - utterance: "Has he had his hearing and eyesight checked?"
+    expected: [health-and-senses]
+    rapport: false
+  - utterance: "And sleep?"
+    expected: [sleep]
+    rapport: false
+  - utterance: "Have there been any big changes at home recently, a move or anyone leaving, and has he lost any skills he used to have?"
+    expected: [stress-and-regression]
+    rapport: false
+  - utterance: "It sounds like you've been carrying a lot of worry about Idris for a long time."
+    expected: []
+    rapport: true
+  - utterance: "How are you feeling about all of this yourself, Farah?"
+    expected: [parent-concern]
+    rapport: false
+  - utterance: "And what happens when he tries to join in?"
+    previous:
+      interviewer: "Does he like playing with other children?"
+      character: "He still enjoys playing with other children, yes."
+    expected: [peer-relations]
+    rapport: false
+  - utterance: "How much time does he spend on tablets or games?"
+    expected: []
+    rapport: false
+  - utterance: "What does Idris enjoy doing at the weekends?"
+    expected: []
+    rapport: false
+  - utterance: "So, to recap, he's been really active since he was little and school are noticing the same in class."
+    expected: []
+    rapport: false

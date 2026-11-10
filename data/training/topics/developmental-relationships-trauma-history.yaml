@@ -1,0 +1,720 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: developmental-relationships-trauma-history
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Tell me about your home when you were small.
+  topics:
+  - caregivers
+  style: open
+- utterance: Did you grow up with both parents?
+  topics:
+  - caregivers
+  style: closed
+- utterance: Did other relatives help bring you up?
+  topics:
+  - caregivers
+  style: closed
+- utterance: Who was around when you were a kid?
+  topics:
+  - caregivers
+  style: colloquial
+- utterance: So who did you live with?
+  topics:
+  - caregivers
+  style: colloquial
+- utterance: Could you outline your childhood household and who your main caregivers were?
+  topics:
+  - caregivers
+  style: clinical
+- utterance: I wondered who was in the house when you were little
+  topics:
+  - caregivers
+  style: indirect
+- utterance: I'd like to hear who took care of you day to day as a child
+  topics:
+  - caregivers
+  style: indirect
+- utterance: Thanks for letting me ask, Leila. Who did you live with growing up?
+  topics:
+  - caregivers
+  style: empathy_then_question
+- utterance: I know it's personal. Who made up your family at home?
+  topics:
+  - caregivers
+  style: empathy_then_question
+- utterance: um so who brought you up, who was there
+  topics:
+  - caregivers
+  style: spoken
+- utterance: so growing up, who, who lived at home with you
+  topics:
+  - caregivers
+  style: spoken
+- utterance: and your family set-up?
+  topics:
+  - caregivers
+  style: brief
+- utterance: And who else was in the house?
+  topics:
+  - caregivers
+  style: follow_up
+  previous:
+    interviewer: How did adults at home respond when you were upset?
+    character: My grandmother would listen when I was upset. At home I usually kept quiet because I didn't
+      know how adults would react.
+- utterance: Who did you turn to when you were upset as a child?
+  topics:
+  - attachment
+  style: open
+- utterance: How did the adults around you react to your feelings?
+  topics:
+  - attachment
+  style: open
+- utterance: Was there anyone who comforted you when you were distressed?
+  topics:
+  - attachment
+  style: closed
+- utterance: Did you feel able to talk to adults about things that bothered you?
+  topics:
+  - attachment
+  style: closed
+- utterance: Did you feel you could rely on the adults around you?
+  topics:
+  - attachment
+  style: colloquial
+- utterance: Could you describe how your early carers responded when you were distressed?
+  topics:
+  - attachment
+  style: clinical
+- utterance: I wondered who comforted you when things went wrong
+  topics:
+  - attachment
+  style: indirect
+- utterance: I'd be interested in what it was like to show upset around adults
+  topics:
+  - attachment
+  style: indirect
+- utterance: Take your time. Who listened to you when you were upset?
+  topics:
+  - attachment
+  style: empathy_then_question
+- utterance: That's helpful, thank you. What happened when you cried as a child?
+  topics:
+  - attachment
+  style: empathy_then_question
+- utterance: um when you were upset, like, who did you go to
+  topics:
+  - attachment
+  style: spoken
+- utterance: so how did the adults deal with you being upset
+  topics:
+  - attachment
+  style: spoken
+- utterance: and who comforted you?
+  topics:
+  - attachment
+  style: brief
+- utterance: You probably didn't feel able to show your feelings, did you?
+  topics:
+  - attachment
+  style: leading
+- utterance: Would you be able to tell me anything about whether home felt safe?
+  topics:
+  - adversity
+  style: open
+- utterance: Was there anything frightening in your childhood?
+  topics:
+  - adversity
+  style: open
+- utterance: Were there any arguments or violence at home?
+  topics:
+  - adversity
+  style: closed
+- utterance: Did you ever feel afraid in your own home?
+  topics:
+  - adversity
+  style: closed
+- utterance: Was home a peaceful place, or was there trouble?
+  topics:
+  - adversity
+  style: colloquial
+- utterance: Did things ever get rough at home?
+  topics:
+  - adversity
+  style: colloquial
+- utterance: Were there any difficult early experiences, such as violence between adults?
+  topics:
+  - adversity
+  style: clinical
+- utterance: I wondered whether anything difficult went on at home
+  topics:
+  - adversity
+  style: indirect
+- utterance: I'd like to ask gently about any frightening experiences when you were young
+  topics:
+  - adversity
+  style: indirect
+- utterance: You don't have to give details. Did anything distressing happen at home?
+  topics:
+  - adversity
+  style: empathy_then_question
+- utterance: I appreciate this is sensitive. Would it be all right to ask if home felt safe?
+  topics:
+  - adversity
+  style: empathy_then_question
+- utterance: um was there, was anything frightening going on at home
+  topics:
+  - adversity
+  style: spoken
+- utterance: so would you feel able to say, without details, if things were hard back then
+  topics:
+  - adversity
+  style: spoken
+- utterance: and was home safe?
+  topics:
+  - adversity
+  style: brief
+- utterance: Did it ever feel frightening in the house?
+  topics:
+  - adversity
+  style: follow_up
+  previous:
+    interviewer: What was the household like?
+    character: I lived with my mother and stepfather. My grandmother looked after me most afternoons until
+      I was eleven.
+- utterance: Were you a good student?
+  topics:
+  - school
+  style: closed
+- utterance: Did you miss much school?
+  topics:
+  - school
+  style: closed
+- utterance: Were you any good at school, then?
+  topics:
+  - school
+  style: colloquial
+- utterance: Did you actually like going in?
+  topics:
+  - school
+  style: colloquial
+- utterance: How were your academic progress and attendance?
+  topics:
+  - school
+  style: clinical
+- utterance: I wondered how your grades and attendance were
+  topics:
+  - school
+  style: indirect
+- utterance: I'd like to hear what school felt like compared with other parts of life
+  topics:
+  - school
+  style: indirect
+- utterance: Thanks for that. How were your exam results?
+  topics:
+  - school
+  style: empathy_then_question
+- utterance: I'm glad you're telling me this. Did you enjoy lessons?
+  topics:
+  - school
+  style: empathy_then_question
+- utterance: um so school, did you do well
+  topics:
+  - school
+  style: spoken
+- utterance: so were you, like, at school most days
+  topics:
+  - school
+  style: spoken
+- utterance: and your schooling?
+  topics:
+  - school
+  style: brief
+- utterance: School was probably a struggle, wasn't it?
+  topics:
+  - school
+  style: leading
+- utterance: Tell me about your friendships when you were growing up.
+  topics:
+  - peers
+  style: open
+- utterance: Who were you close to at that age?
+  topics:
+  - peers
+  style: open
+- utterance: Were you ever bullied?
+  topics:
+  - peers
+  style: closed
+- utterance: Did you have mates round to your house?
+  topics:
+  - peers
+  style: colloquial
+- utterance: Did the other kids pick on you?
+  topics:
+  - peers
+  style: colloquial
+- utterance: Could you describe your friendships as a child and any experience of bullying?
+  topics:
+  - peers
+  style: clinical
+- utterance: I wondered whether you had anyone you were close to among other children
+  topics:
+  - peers
+  style: indirect
+- utterance: I'd like to hear if friends ever came to your home
+  topics:
+  - peers
+  style: indirect
+- utterance: I appreciate your openness. Did you have a best friend?
+  topics:
+  - peers
+  style: empathy_then_question
+- utterance: That sounds like a lot. Did other children treat you well?
+  topics:
+  - peers
+  style: empathy_then_question
+- utterance: um did you have friends, like close ones
+  topics:
+  - peers
+  style: spoken
+- utterance: so were you bullied at all or
+  topics:
+  - peers
+  style: spoken
+- utterance: And what about the other children there?
+  topics:
+  - peers
+  style: follow_up
+  previous:
+    interviewer: How was school?
+    character: I did well academically and rarely missed school. It felt predictable compared with home.
+- utterance: How did you come to move out?
+  topics:
+  - adolescence
+  style: open
+- utterance: Did you leave home young?
+  topics:
+  - adolescence
+  style: closed
+- utterance: Did you rely on other people much as a teenager?
+  topics:
+  - adolescence
+  style: closed
+- utterance: When did you leave home, then?
+  topics:
+  - adolescence
+  style: colloquial
+- utterance: Were you quite independent as a teen?
+  topics:
+  - adolescence
+  style: colloquial
+- utterance: At what age did you become independent, and how did you cope in adolescence?
+  topics:
+  - adolescence
+  style: clinical
+- utterance: I wondered when you first left home
+  topics:
+  - adolescence
+  style: indirect
+- utterance: I'd like to hear about how you managed as a teenager
+  topics:
+  - adolescence
+  style: indirect
+- utterance: Thanks, Leila. What were you doing when you left home?
+  topics:
+  - adolescence
+  style: empathy_then_question
+- utterance: I know it's a long way back. How did you manage as a teenager?
+  topics:
+  - adolescence
+  style: empathy_then_question
+- utterance: um so as a teenager what happened, did you leave
+  topics:
+  - adolescence
+  style: spoken
+- utterance: so when you left, how old were you
+  topics:
+  - adolescence
+  style: spoken
+- utterance: and your teenage years?
+  topics:
+  - adolescence
+  style: brief
+- utterance: You must have had to grow up quickly, did you?
+  topics:
+  - adolescence
+  style: leading
+- utterance: What tends to happen in your close relationships now?
+  topics:
+  - pattern
+  style: open
+- utterance: How do you find getting close to people?
+  topics:
+  - pattern
+  style: open
+- utterance: Do you worry about people leaving you?
+  topics:
+  - pattern
+  style: closed
+- utterance: Do you ever withdraw from someone you're close to?
+  topics:
+  - pattern
+  style: closed
+- utterance: Do you tend to push people away?
+  topics:
+  - pattern
+  style: colloquial
+- utterance: Is it hard to trust that people will stay?
+  topics:
+  - pattern
+  style: colloquial
+- utterance: Are there any recurring patterns in how you relate to people as an adult?
+  topics:
+  - pattern
+  style: clinical
+- utterance: I wondered what usually happens as relationships get closer
+  topics:
+  - pattern
+  style: indirect
+- utterance: I'd like to understand how you act when someone gets close
+  topics:
+  - pattern
+  style: indirect
+- utterance: I appreciate you sharing. What happens in your relationships when someone gets close?
+  topics:
+  - pattern
+  style: empathy_then_question
+- utterance: It's good you can reflect on this. Is there a pattern in your adult relationships?
+  topics:
+  - pattern
+  style: empathy_then_question
+- utterance: um in relationships, do you get worried they'll go
+  topics:
+  - pattern
+  style: spoken
+- utterance: so with partners, what is it, what usually happens
+  topics:
+  - pattern
+  style: spoken
+- utterance: and your relationships now?
+  topics:
+  - pattern
+  style: brief
+- utterance: I'd guess you struggle to keep relationships going, don't you?
+  topics:
+  - pattern
+  style: leading
+- utterance: Can you tell me more about the numbness?
+  topics:
+  - numbness
+  style: open
+- utterance: What happens inside you during an argument?
+  topics:
+  - numbness
+  style: open
+- utterance: Do you feel detached when there is conflict?
+  topics:
+  - numbness
+  style: closed
+- utterance: Do you always know where you are when it happens?
+  topics:
+  - numbness
+  style: closed
+- utterance: So what does feeling numb actually feel like?
+  topics:
+  - numbness
+  style: colloquial
+- utterance: Do you ever sort of zone out?
+  topics:
+  - numbness
+  style: colloquial
+- utterance: Could you describe the detached feeling, and whether you stay aware of your surroundings?
+  topics:
+  - numbness
+  style: clinical
+- utterance: I wondered what the numb feeling is like when you're in a disagreement
+  topics:
+  - numbness
+  style: indirect
+- utterance: I'd like to hear when the numbness comes on
+  topics:
+  - numbness
+  style: indirect
+- utterance: That sounds hard. What is it like when the numbness comes?
+  topics:
+  - numbness
+  style: empathy_then_question
+- utterance: Thank you for explaining. Do you lose track of your surroundings at those times?
+  topics:
+  - numbness
+  style: empathy_then_question
+- utterance: um the numbness, when does it, when does it happen
+  topics:
+  - numbness
+  style: spoken
+- utterance: so during a row do you feel anything or
+  topics:
+  - numbness
+  style: spoken
+- utterance: and the numb feeling?
+  topics:
+  - numbness
+  style: brief
+- utterance: Do you go numb at those times?
+  topics:
+  - numbness
+  style: follow_up
+  previous:
+    interviewer: What happens when someone gets close?
+    character: When someone gets close I worry they'll leave. I may pull away first, then feel lonely
+      and ask for reassurance.
+- utterance: Can you tell me about any thoughts of harming yourself?
+  topics:
+  - risk
+  style: open
+- utterance: What is your current situation like in terms of safety?
+  topics:
+  - risk
+  style: open
+- utterance: Have you ever hurt yourself on purpose?
+  topics:
+  - risk
+  style: closed
+- utterance: Is anyone in your life frightening you at the moment?
+  topics:
+  - risk
+  style: closed
+- utterance: Has it ever got so bad you've thought about not being here?
+  topics:
+  - risk
+  style: colloquial
+- utterance: Are you safe at home these days?
+  topics:
+  - risk
+  style: colloquial
+- utterance: Is there any history of self-harm or suicidal thoughts, or of abuse in a current relationship?
+  topics:
+  - risk
+  style: clinical
+- utterance: I wondered whether you've ever had thoughts of suicide
+  topics:
+  - risk
+  style: indirect
+- utterance: I'd like to check whether anyone is putting you at risk now
+  topics:
+  - risk
+  style: indirect
+- utterance: I'm sorry to ask. Have you had thoughts of harming yourself?
+  topics:
+  - risk
+  style: empathy_then_question
+- utterance: These are routine questions, Leila. Is anyone at home ever violent towards you now?
+  topics:
+  - risk
+  style: empathy_then_question
+- utterance: um have you ever, like, thought about suicide
+  topics:
+  - risk
+  style: spoken
+- utterance: so right now is anyone hurting you or
+  topics:
+  - risk
+  style: spoken
+- utterance: and any self-harm?
+  topics:
+  - risk
+  style: brief
+- utterance: Have you ever hurt yourself because of it?
+  topics:
+  - risk
+  style: follow_up
+  previous:
+    interviewer: How do you cope with the numbness?
+    character: During conflict I feel distant from my emotions, as if I'm going through the motions. I
+      still know where I am.
+- utterance: What would you want from therapy?
+  topics:
+  - needs
+  style: open
+- utterance: How do you feel about starting work with someone here?
+  topics:
+  - needs
+  style: open
+- utterance: Would it help to take things at a pace that suits you?
+  topics:
+  - needs
+  style: closed
+- utterance: Are you worried about relying on a therapist?
+  topics:
+  - needs
+  style: closed
+- utterance: Is it scary, getting to rely on someone like this?
+  topics:
+  - needs
+  style: colloquial
+- utterance: What are your goals, and do you have concerns about the therapeutic relationship?
+  topics:
+  - needs
+  style: clinical
+- utterance: I wondered what would help you feel comfortable with treatment
+  topics:
+  - needs
+  style: indirect
+- utterance: I'd like to know what you're hoping for from coming here
+  topics:
+  - needs
+  style: indirect
+- utterance: Thank you for trusting me with this. What pace would feel right?
+  topics:
+  - needs
+  style: empathy_then_question
+- utterance: I can see this is a big step. What worries you about therapy?
+  topics:
+  - needs
+  style: empathy_then_question
+- utterance: um what would help, like how fast should we go
+  topics:
+  - needs
+  style: spoken
+- utterance: so what do you need from us, from here
+  topics:
+  - needs
+  style: spoken
+- utterance: and what you'd need from us?
+  topics:
+  - needs
+  style: brief
+- utterance: Does that make coming here feel risky?
+  topics:
+  - needs
+  style: follow_up
+  previous:
+    interviewer: Do you worry about people leaving?
+    character: When someone gets close I worry they'll leave. I may pull away first, then feel lonely
+      and ask for reassurance.
+- utterance: Who brought you up, and who comforted you when you were upset?
+  topics:
+  - caregivers
+  - attachment
+  style: stacked
+- utterance: How was school, and did you have friends there?
+  topics:
+  - school
+  - peers
+  style: stacked
+- utterance: Do you feel numb in arguments, and have you ever thought of harming yourself?
+  topics:
+  - numbness
+  - risk
+  style: stacked
+- utterance: When did you leave home, and how are your relationships now?
+  topics:
+  - adolescence
+  - pattern
+  style: stacked
+- utterance: Hello Leila, I'm Dr Rowan, one of the doctors in the psychotherapy clinic.
+  topics: []
+  style: greeting
+- utterance: Good afternoon Leila, please come in.
+  topics: []
+  style: greeting
+- utterance: Is it all right if we talk for a while today?
+  topics: []
+  style: introduction
+- utterance: What would you like to start with, Leila?
+  topics: []
+  style: greeting
+- utterance: Before we begin, do you have any questions for me?
+  topics: []
+  style: greeting
+- utterance: How are you feeling about coming today?
+  topics: []
+  style: greeting
+- utterance: I'd like to move on to something different now.
+  topics: []
+  style: transition
+- utterance: Let's turn to another part of your story, if that's okay.
+  topics: []
+  style: transition
+- utterance: Thanks, Leila, that's clear. Shall we go on?
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, so I'll start to wrap up.
+  topics: []
+  style: closing
+- utterance: Thank you for talking to me today, Leila.
+  topics: []
+  style: closing
+- utterance: Please tell me if you want to stop or skip anything.
+  topics: []
+  style: introduction
+- utterance: That sounds like it was a lot to carry on your own.
+  topics: []
+  style: empathy
+- utterance: I can hear how careful you are with your feelings.
+  topics: []
+  style: empathy
+- utterance: It takes courage to come and talk about this.
+  topics: []
+  style: empathy
+- utterance: Thank you for trusting me with that.
+  topics: []
+  style: empathy
+- utterance: So you've come because of numbness and difficulties in relationships.
+  topics: []
+  style: summary
+- utterance: So far you've told me a bit about who was around and how school was.
+  topics: []
+  style: summary
+- utterance: 'Let me check I''ve followed: we have covered your early years and are moving towards your
+    teens.'
+  topics: []
+  style: summary
+- utterance: I'm going to ask about your childhood, then your teens, then now.
+  topics: []
+  style: explanation
+- utterance: I ask these questions to understand you, not to judge.
+  topics: []
+  style: explanation
+- utterance: A developmental history helps us see how earlier experiences may shape later relationships.
+  topics: []
+  style: explanation
+- utterance: Does that make sense, Leila?
+  topics: []
+  style: check_understanding
+- utterance: Have I understood what you meant?
+  topics: []
+  style: check_understanding
+- utterance: Is that a fair way of putting it?
+  topics: []
+  style: check_understanding
+- utterance: Do you have any physical health problems?
+  topics: []
+  style: off_case
+- utterance: How is your sleep?
+  topics: []
+  style: off_case
+- utterance: Are you working at the moment?
+  topics: []
+  style: off_case
+- utterance: Do you drink alcohol or use any drugs?
+  topics: []
+  style: off_case
+- utterance: Have you seen a therapist before?
+  topics: []
+  style: off_case
+- utterance: Did you have a teacher who supported you?
+  topics: []
+  style: near_miss
+- utterance: Do you have friends now?
+  topics: []
+  style: near_miss
+- utterance: Did you have a boyfriend as a teenager?
+  topics: []
+  style: near_miss
+- utterance: Do you get physical numbness or tingling anywhere?
+  topics: []
+  style: near_miss

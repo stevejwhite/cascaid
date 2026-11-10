@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: remand-personal-social-history
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hi Leon, I'm a psychiatrist. Thanks for agreeing to meet me."
+    expected: []
+    rapport: false
+  - utterance: "Who brought you up?"
+    expected: [childhood]
+    rapport: false
+  - utterance: "How did you get on at school?"
+    expected: [school]
+    rapport: false
+  - utterance: "What kind of work have you done?"
+    expected: [employment]
+    rapport: false
+  - utterance: "Where were you living before you came in here?"
+    expected: [housing]
+    rapport: false
+  - utterance: "Are you in a relationship? Any kids?"
+    expected: [relationships]
+    rapport: false
+  - utterance: "Do you use drugs or alcohol?"
+    expected: [substances]
+    rapport: false
+  - utterance: "Have you been in trouble with the police before?"
+    expected: [offending]
+    rapport: false
+  - utterance: "Are you having any thoughts of harming yourself or anyone else in here?"
+    expected: [risk]
+    rapport: false
+  - utterance: "I can see this is a lot to take in."
+    expected: []
+    rapport: true
+  - utterance: "Was there anything difficult that happened at home when you were young?"
+    expected: [adversity]
+    rapport: false
+  - utterance: "What would you like for yourself in the future?"
+    expected: [hopes]
+    rapport: false
+  - utterance: "How many places were you in after that?"
+    previous:
+      interviewer: "Where did you grow up?"
+      character: "With my mum until I was nine, then foster care."
+    expected: [childhood]
+    rapport: false
+  - utterance: "Had you been drinking on the day of the alleged assault?"
+    previous:
+      interviewer: "Do you drink?"
+      character: "Six pints on a Saturday."
+    expected: [substances]
+    rapport: false
+  - utterance: "Have you got any physical health problems?"
+    expected: []
+    rapport: false
+  - utterance: "Do you have a solicitor?"
+    expected: []
+    rapport: false
+  - utterance: "It makes sense you'd want to know who reads this."
+    expected: []
+    rapport: true
+  - utterance: "Just so you know, what you tell me will go in a report that the court and your solicitor will read."
+    expected: []
+    rapport: false

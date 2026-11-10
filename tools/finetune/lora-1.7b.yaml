@@ -1,0 +1,21 @@
+# LoRA settings for the Qwen3-1.7B student (run 1.7b-v1): as lora.yaml, but batches of 4
+# with gradient accumulation over 2 (an effective batch of 8 at about half the peak memory,
+# with every server running on a 16 GB Mac). iters counts batches of 4.
+fine_tune_type: lora
+train: true
+mask_prompt: true
+batch_size: 4
+grad_accumulation_steps: 2
+iters: 1800                # about 1.75 epochs of 4,079 lines
+learning_rate: 1.0e-4
+num_layers: 16
+max_seq_length: 1024
+steps_per_report: 25
+steps_per_eval: 300
+save_every: 300
+grad_checkpoint: true
+seed: 0
+lora_parameters:
+  rank: 16
+  scale: 20.0
+  dropout: 0.0

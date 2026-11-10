@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: first-episode-psychosis-formulation
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Morning Ravi, thanks for making time to go through Samir with me."
+    expected: []
+    rapport: false
+  - utterance: "Do we have any collateral on how he was functioning before the psychotic symptoms started?"
+    expected: [functional-course]
+    rapport: false
+  - utterance: "When you saw him, how firmly did he hold the belief about his phone?"
+    expected: [persecutory-account]
+    rapport: false
+  - utterance: "What did he tell you about the voices, were there any command hallucinations?"
+    expected: [auditory-account]
+    rapport: false
+  - utterance: "Did you find anything to suggest a mood disorder, mania or depression?"
+    expected: [mood-differential]
+    rapport: false
+  - utterance: "Can you clarify the pattern of his cannabis use and when he last used?"
+    expected: [cannabis-timeline]
+    rapport: false
+  - utterance: "What did the physical examination show?"
+    expected: [physical-screen]
+    rapport: false
+  - utterance: "Have bloods and an ECG been done yet?"
+    expected: [investigations-pending]
+    rapport: false
+  - utterance: "Is there any current risk to himself or others that we need to manage on the ward?"
+    expected: [immediate-safety]
+    rapport: false
+  - utterance: "Has he agreed for us to speak to family?"
+    expected: [collateral-consent]
+    rapport: false
+  - utterance: "How does he feel about being in hospital, is he accepting treatment?"
+    expected: [engagement]
+    rapport: false
+  - utterance: "Did anything come up about his cultural or religious background and how he makes sense of this?"
+    expected: [cultural-context]
+    rapport: false
+  - utterance: "What are your thoughts on follow-up after discharge, has he been referred to early intervention?"
+    expected: [continuity-concern]
+    rapport: false
+  - utterance: "It's clear you've put a lot of care into getting to know him in just one day, and I can see you're worried about him slipping through the net."
+    expected: []
+    rapport: true
+  - previous:
+      interviewer: "Has anyone spoken to his family?"
+      character: "He agreed that we may speak with his sister, who lives with him."
+    utterance: "Great, when would she be available?"
+    expected: [collateral-consent]
+    rapport: false
+  - previous:
+      interviewer: "Any problems on examination?"
+      character: "No focal neurological findings, obs were normal."
+    utterance: "And what about the bloods and a baseline weight?"
+    expected: [investigations-pending]
+    rapport: false
+  - utterance: "Is there a family history of schizophrenia or bipolar disorder?"
+    expected: []
+    rapport: false
+  - utterance: "So my provisional view is a first episode of psychosis, with cannabis-induced psychosis high on the differential, and I'd want to keep that open for now."
+    expected: []
+    rapport: false

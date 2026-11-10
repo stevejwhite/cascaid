@@ -1,0 +1,719 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: remand-personal-social-history
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Tell me a bit about your childhood and who you lived with.
+  topics:
+  - childhood
+  style: open
+- utterance: Where did you grow up?
+  topics:
+  - childhood
+  style: open
+- utterance: Did you live with both your parents as a child?
+  topics:
+  - childhood
+  style: closed
+- utterance: Were you ever in care when you were younger?
+  topics:
+  - childhood
+  style: closed
+- utterance: Who were you living with when you were a kid?
+  topics:
+  - childhood
+  style: colloquial
+- utterance: Growing up, who looked after you day to day?
+  topics:
+  - childhood
+  style: colloquial
+- utterance: Could you describe your early upbringing and any changes in who cared for you?
+  topics:
+  - childhood
+  style: clinical
+- utterance: I wondered who you grew up with at home
+  topics:
+  - childhood
+  style: indirect
+- utterance: I'd like to hear a little about your early years and who was around
+  topics:
+  - childhood
+  style: indirect
+- utterance: I know some of this can be personal. Who raised you when you were small?
+  topics:
+  - childhood
+  style: empathy_then_question
+- utterance: so um when you were little who did you who were you living with
+  topics:
+  - childhood
+  style: spoken
+- utterance: And your upbringing?
+  topics:
+  - childhood
+  style: brief
+- utterance: How long were you in each placement?
+  topics:
+  - childhood
+  style: follow_up
+  previous:
+    interviewer: Who brought you up, Leon?
+    character: I lived with my mum until I was nine, then had three foster placements before leaving care
+      at eighteen.
+- utterance: I imagine you moved around a bit as a child, did you?
+  topics:
+  - childhood
+  style: leading
+- utterance: Tell me about your time in education.
+  topics:
+  - school
+  style: open
+- utterance: Do you find reading and writing difficult at all?
+  topics:
+  - school
+  style: closed
+- utterance: Bunked off much, or did you mostly go in?
+  topics:
+  - school
+  style: colloquial
+- utterance: Were you any good at school, would you say?
+  topics:
+  - school
+  style: colloquial
+- utterance: Has anyone ever assessed you for a learning difficulty such as dyslexia?
+  topics:
+  - school
+  style: clinical
+- utterance: I'd be interested to know how far you went with school
+  topics:
+  - school
+  style: indirect
+- utterance: I was wondering whether reading has ever been a struggle for you
+  topics:
+  - school
+  style: indirect
+- utterance: Lots of people didn't enjoy school. How was it for you?
+  topics:
+  - school
+  style: empathy_then_question
+- utterance: so school um what age did you what age did you finish
+  topics:
+  - school
+  style: spoken
+- utterance: Any exams or qualifications?
+  topics:
+  - school
+  style: brief
+- utterance: Did anyone ever look into why reading was hard?
+  topics:
+  - school
+  style: follow_up
+  previous:
+    interviewer: How did you get on at school?
+    character: I left school at sixteen without qualifications. Reading was hard and I missed lessons;
+      I was never assessed for why.
+- utterance: I'm guessing school wasn't really your thing?
+  topics:
+  - school
+  style: leading
+- utterance: Tell me about your jobs since leaving school.
+  topics:
+  - employment
+  style: open
+- utterance: How have you supported yourself money-wise?
+  topics:
+  - employment
+  style: open
+- utterance: Were you working before you were arrested?
+  topics:
+  - employment
+  style: closed
+- utterance: Have you had any long spells out of work?
+  topics:
+  - employment
+  style: closed
+- utterance: What've you done for a living?
+  topics:
+  - employment
+  style: colloquial
+- utterance: Did you have a job on the go before all this?
+  topics:
+  - employment
+  style: colloquial
+- utterance: Could you take me through your employment history?
+  topics:
+  - employment
+  style: clinical
+- utterance: I'd like to understand what work you've been doing
+  topics:
+  - employment
+  style: indirect
+- utterance: I wondered when your last job finished
+  topics:
+  - employment
+  style: indirect
+- utterance: It's not always easy to find steady work. What's your work history been like?
+  topics:
+  - employment
+  style: empathy_then_question
+- utterance: and um work have you have you been working
+  topics:
+  - employment
+  style: spoken
+- utterance: And your last job?
+  topics:
+  - employment
+  style: brief
+- utterance: Was that agency work or a permanent contract?
+  topics:
+  - employment
+  style: follow_up
+  previous:
+    interviewer: What kind of work have you done?
+    character: I did agency warehouse work on and off for four years. My last contract ended two months
+      before arrest.
+- utterance: You've probably done a few different jobs over the years?
+  topics:
+  - employment
+  style: leading
+- utterance: What were your living arrangements before the arrest?
+  topics:
+  - housing
+  style: open
+- utterance: Where will you go if you're released?
+  topics:
+  - housing
+  style: open
+- utterance: Did you have a place of your own?
+  topics:
+  - housing
+  style: closed
+- utterance: Is there somewhere you can stay when you get out?
+  topics:
+  - housing
+  style: closed
+- utterance: Before all this, where were you kipping?
+  topics:
+  - housing
+  style: colloquial
+- utterance: Have you got a roof over your head to go back to?
+  topics:
+  - housing
+  style: colloquial
+- utterance: Describe your accommodation before remand and whether it was stable.
+  topics:
+  - housing
+  style: clinical
+- utterance: I wanted to ask about where you were staying before
+  topics:
+  - housing
+  style: indirect
+- utterance: I'm thinking ahead to where you might live after release
+  topics:
+  - housing
+  style: indirect
+- utterance: Housing can be a real worry in here. Where were you living?
+  topics:
+  - housing
+  style: empathy_then_question
+- utterance: so um where where were you staying at the time
+  topics:
+  - housing
+  style: spoken
+- utterance: And housing?
+  topics:
+  - housing
+  style: brief
+- utterance: Could you go back there afterwards?
+  topics:
+  - housing
+  style: follow_up
+  previous:
+    interviewer: Where were you living before you came here?
+    character: I was sleeping on a friend's sofa for six weeks. I don't know whether I can return there.
+- utterance: Sounds like things were a bit unsettled with where you were living?
+  topics:
+  - housing
+  style: leading
+- utterance: Tell me about your relationships, Leon.
+  topics:
+  - relationships
+  style: open
+- utterance: Who do you keep in touch with from your family?
+  topics:
+  - relationships
+  style: open
+- utterance: Do you have any children?
+  topics:
+  - relationships
+  style: closed
+- utterance: Got a partner or anyone special?
+  topics:
+  - relationships
+  style: colloquial
+- utterance: Who's in your corner at the moment?
+  topics:
+  - relationships
+  style: colloquial
+- utterance: Could you describe your current relationships and family contact?
+  topics:
+  - relationships
+  style: clinical
+- utterance: I'm curious who you're closest to
+  topics:
+  - relationships
+  style: indirect
+- utterance: I wondered whether anyone from your family visits or calls
+  topics:
+  - relationships
+  style: indirect
+- utterance: Being on remand can feel isolating. Is there anyone you're close to?
+  topics:
+  - relationships
+  style: empathy_then_question
+- utterance: um is there is there anyone you're you know close to
+  topics:
+  - relationships
+  style: spoken
+- utterance: Partner or kids?
+  topics:
+  - relationships
+  style: brief
+- utterance: Does she know you're in here?
+  topics:
+  - relationships
+  style: follow_up
+  previous:
+    interviewer: Who are the important people in your life?
+    character: I'm single and have no children. My older sister calls weekly; she's the person I'm closest
+      to.
+- utterance: I'd guess there's at least one person you still talk to regularly?
+  topics:
+  - relationships
+  style: leading
+- utterance: How much do you drink in a typical week?
+  topics:
+  - substances
+  style: open
+- utterance: What drugs, if any, have you used?
+  topics:
+  - substances
+  style: open
+- utterance: Tell me about your use of alcohol and drugs.
+  topics:
+  - substances
+  style: open
+- utterance: Do you smoke cannabis?
+  topics:
+  - substances
+  style: closed
+- utterance: Like a drink or a smoke now and then?
+  topics:
+  - substances
+  style: colloquial
+- utterance: Any weed, or anything stronger?
+  topics:
+  - substances
+  style: colloquial
+- utterance: Could you describe your alcohol and substance use, including quantities?
+  topics:
+  - substances
+  style: clinical
+- utterance: I'd like to ask about drink and drugs, if that's okay
+  topics:
+  - substances
+  style: indirect
+- utterance: I was wondering how much you'd had to drink beforehand that day
+  topics:
+  - substances
+  style: indirect
+- utterance: I ask everyone this, it's routine. Do you use alcohol or drugs?
+  topics:
+  - substances
+  style: empathy_then_question
+- utterance: so um drink drugs anything like that
+  topics:
+  - substances
+  style: spoken
+- utterance: And alcohol?
+  topics:
+  - substances
+  style: brief
+- utterance: How many pints would that be on a night out?
+  topics:
+  - substances
+  style: follow_up
+  previous:
+    interviewer: Do you smoke cannabis?
+    character: I smoked cannabis most evenings and drank six pints on Saturdays. I'd had six pints before
+      the alleged assault; no other drugs.
+- utterance: I imagine alcohol played some part in it that night?
+  topics:
+  - substances
+  style: leading
+- utterance: What's your understanding of what you're charged with?
+  topics:
+  - offending
+  style: open
+- utterance: Can you tell me in your own words what happened on the day of the alleged assault?
+  topics:
+  - offending
+  style: open
+- utterance: Do you have any previous convictions?
+  topics:
+  - offending
+  style: closed
+- utterance: Is this your first time being charged with something?
+  topics:
+  - offending
+  style: closed
+- utterance: Any previous run-ins with the law?
+  topics:
+  - offending
+  style: colloquial
+- utterance: What went on that day, from your side?
+  topics:
+  - offending
+  style: colloquial
+- utterance: Could you describe your forensic history, including any previous convictions?
+  topics:
+  - offending
+  style: clinical
+- utterance: I'd like to hear your account of the alleged offence
+  topics:
+  - offending
+  style: indirect
+- utterance: I wondered whether you've had any convictions in the past
+  topics:
+  - offending
+  style: indirect
+- utterance: I'm not here to decide guilt. What's your account of what happened?
+  topics:
+  - offending
+  style: empathy_then_question
+- utterance: so um before this have you ever been have you been convicted of anything
+  topics:
+  - offending
+  style: spoken
+- utterance: Past convictions?
+  topics:
+  - offending
+  style: brief
+- utterance: What were you convicted of back then?
+  topics:
+  - offending
+  style: follow_up
+  previous:
+    interviewer: Have you been in trouble with the police before?
+    character: I have one previous shoplifting conviction at nineteen. This time I punched a man during
+      an argument; I'm charged with assault.
+- utterance: Bit of history with the police, would that be fair to say?
+  topics:
+  - offending
+  style: leading
+- utterance: Since coming on remand, what thoughts of harming yourself have you had, if any?
+  topics:
+  - risk
+  style: open
+- utterance: Have you had any thoughts of ending your life since you came here?
+  topics:
+  - risk
+  style: closed
+- utterance: Ever tried to kill yourself in the past?
+  topics:
+  - risk
+  style: closed
+- utterance: Are you planning to hurt anyone while you're here?
+  topics:
+  - risk
+  style: closed
+- utterance: Do you ever feel like you'd be better off dead?
+  topics:
+  - risk
+  style: colloquial
+- utterance: Any thoughts of doing yourself in?
+  topics:
+  - risk
+  style: colloquial
+- utterance: Could I ask about suicidal ideation or intent to harm others at present?
+  topics:
+  - risk
+  style: clinical
+- utterance: I need to ask about whether you've had any thoughts of harming yourself
+  topics:
+  - risk
+  style: indirect
+- utterance: I'd like to check you're safe in here and not planning to hurt yourself
+  topics:
+  - risk
+  style: indirect
+- utterance: Custody can be really hard on people. Have you had thoughts of suicide?
+  topics:
+  - risk
+  style: empathy_then_question
+- utterance: um so sorry I have to ask have you had any thoughts of um harming yourself
+  topics:
+  - risk
+  style: spoken
+- utterance: Any suicide attempts?
+  topics:
+  - risk
+  style: brief
+- utterance: And what about thoughts of hurting someone else in here?
+  topics:
+  - risk
+  style: follow_up
+  previous:
+    interviewer: Have you had any thoughts of ending your life since you came here?
+    character: No, I don't have plans to hurt myself or anyone here. I've never attempted suicide.
+- utterance: You're not thinking of hurting yourself, are you?
+  topics:
+  - risk
+  style: leading
+- utterance: When things get on top of you in here, where do your thoughts go?
+  topics:
+  - risk
+  style: open
+- utterance: Did you feel safe at home when you were a child?
+  topics:
+  - adversity
+  style: closed
+- utterance: What was it like at home when you were young?
+  topics:
+  - adversity
+  style: open
+- utterance: Were there frightening things going on at home growing up?
+  topics:
+  - adversity
+  style: closed
+- utterance: Would you feel able to tell me about any hard experiences when you were little?
+  topics:
+  - adversity
+  style: open
+- utterance: Was there much shouting or fighting in the house?
+  topics:
+  - adversity
+  style: colloquial
+- utterance: Were the grown-ups around you kind to you?
+  topics:
+  - adversity
+  style: colloquial
+- utterance: Any traumatic or adverse experiences in childhood?
+  topics:
+  - adversity
+  style: clinical
+- utterance: I'm wondering whether things at home ever felt scary
+  topics:
+  - adversity
+  style: indirect
+- utterance: I'd understand if this is hard, but I wondered what home felt like as a kid
+  topics:
+  - adversity
+  style: indirect
+- utterance: You don't have to go into detail. Did anything frightening happen growing up?
+  topics:
+  - adversity
+  style: empathy_then_question
+- utterance: um was it was home a safe place for you
+  topics:
+  - adversity
+  style: spoken
+- utterance: Safe at home?
+  topics:
+  - adversity
+  style: brief
+- utterance: Before you went into care, did you feel safe living with your mum?
+  topics:
+  - adversity
+  style: follow_up
+  previous:
+    interviewer: Who brought you up, Leon?
+    character: I lived with my mum until I was nine, then had three foster placements before leaving care
+      at eighteen.
+- utterance: I'm guessing there were some tough times at home?
+  topics:
+  - adversity
+  style: leading
+- utterance: Is there anything from when you were young that still stays with you?
+  topics:
+  - adversity
+  style: open
+- utterance: What would you like to change in your life?
+  topics:
+  - hopes
+  style: open
+- utterance: Is there anything that would help you get settled after release?
+  topics:
+  - hopes
+  style: open
+- utterance: Do you have any plans for when you get out?
+  topics:
+  - hopes
+  style: closed
+- utterance: Anything you want to be different next time round?
+  topics:
+  - hopes
+  style: closed
+- utterance: What do you want for yourself down the line?
+  topics:
+  - hopes
+  style: colloquial
+- utterance: If things went your way, what would life look like?
+  topics:
+  - hopes
+  style: colloquial
+- utterance: Could you tell me about your goals and aspirations for the future?
+  topics:
+  - hopes
+  style: clinical
+- utterance: I'd like to hear what you'd want your life to look like
+  topics:
+  - hopes
+  style: indirect
+- utterance: I wondered what getting back on your feet would mean to you
+  topics:
+  - hopes
+  style: indirect
+- utterance: It sounds like it's been a rough couple of years. What do you hope for now?
+  topics:
+  - hopes
+  style: empathy_then_question
+- utterance: so um looking ahead what what would you want
+  topics:
+  - hopes
+  style: spoken
+- utterance: And the future?
+  topics:
+  - hopes
+  style: brief
+- utterance: How do you feel about her helping you out?
+  topics:
+  - hopes
+  style: follow_up
+  previous:
+    interviewer: What are you hoping for once this is over?
+    character: I'd like stable work and somewhere that is mine. I'm embarrassed that my sister keeps having
+      to rescue me.
+- utterance: I imagine you'd like a bit more stability?
+  topics:
+  - hopes
+  style: leading
+- utterance: Where were you living, and who are you closest to?
+  topics:
+  - housing
+  - relationships
+  style: stacked
+- utterance: Have you been convicted before, and how much do you usually drink?
+  topics:
+  - offending
+  - substances
+  style: stacked
+- utterance: Who brought you up, and did you feel safe at home?
+  topics:
+  - childhood
+  - adversity
+  style: stacked
+- utterance: Hello Leon, thanks for seeing me.
+  topics: []
+  style: greeting
+- utterance: Hi Leon, I'm one of the psychiatry doctors preparing a report.
+  topics: []
+  style: introduction
+- utterance: Is it all right if we talk for a few minutes?
+  topics: []
+  style: greeting
+- utterance: Where would you like to start?
+  topics: []
+  style: greeting
+- utterance: Before we start, have you got any questions for me?
+  topics: []
+  style: greeting
+- utterance: Morning Leon, take a seat wherever's comfortable.
+  topics: []
+  style: greeting
+- utterance: My name's Dr Patel, I'm a psychiatry trainee.
+  topics: []
+  style: introduction
+- utterance: I'd like to move on to something a bit different now.
+  topics: []
+  style: transition
+- utterance: Thanks, that's helpful. Let's turn to another area.
+  topics: []
+  style: transition
+- utterance: Can I shift to asking about the present for a moment?
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Leon.
+  topics: []
+  style: closing
+- utterance: Thanks for talking to me today; I'll write this up carefully.
+  topics: []
+  style: closing
+- utterance: That's a fair question to ask.
+  topics: []
+  style: empathy
+- utterance: It makes sense to be wary when you don't know who'll read this.
+  topics: []
+  style: empathy
+- utterance: It sounds like you've had a lot to deal with on your own.
+  topics: []
+  style: empathy
+- utterance: I appreciate you being straight with me.
+  topics: []
+  style: empathy
+- utterance: So far you've told me about school, work and where you were living.
+  topics: []
+  style: summary
+- utterance: Let me just recap what we've covered so I've got it right.
+  topics: []
+  style: summary
+- utterance: The report goes to your solicitor and the court, and it's about your health and background,
+    not whether you did it.
+  topics: []
+  style: explanation
+- utterance: Most of what you say will be in the report, but if you tell me someone's at risk I can't
+    keep that private.
+  topics: []
+  style: explanation
+- utterance: I'm not deciding whether you're guilty; that's for the court.
+  topics: []
+  style: explanation
+- utterance: Does that make sense about who reads the report?
+  topics: []
+  style: check_understanding
+- utterance: Is anything I've said about confidentiality unclear?
+  topics: []
+  style: check_understanding
+- utterance: Can you tell me in your own words what the report is for?
+  topics: []
+  style: check_understanding
+- utterance: Have you ever seen a psychiatrist before?
+  topics: []
+  style: off_case
+- utterance: Are you on any medication at the moment?
+  topics: []
+  style: off_case
+- utterance: How have you been sleeping in here?
+  topics: []
+  style: off_case
+- utterance: Has your solicitor been to see you yet?
+  topics: []
+  style: off_case
+- utterance: How is your mood generally?
+  topics: []
+  style: off_case
+- utterance: Has anyone in your family had mental health problems?
+  topics: []
+  style: off_case
+- utterance: Did either of your parents have problems with drink?
+  topics: []
+  style: near_miss
+- utterance: Did your parents work when you were growing up?
+  topics: []
+  style: near_miss
+- utterance: Have the prison staff talked to you about housing support yet?
+  topics: []
+  style: near_miss
+- utterance: When is your next court date?
+  topics: []
+  style: near_miss

@@ -1,0 +1,70 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: recurrent-infections-mental-state
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hello Paula, I'm one of the psychiatrists who sees people on the medical wards. The team asked me to come and have a chat."
+    expected: []
+    rapport: false
+  - utterance: "Can you tell me what's been happening with your health?"
+    expected: [account]
+    rapport: false
+  - utterance: "What have the doctors said about why the infections keep happening?"
+    expected: [explanation]
+    rapport: false
+  - utterance: "What treatment are you getting on the ward?"
+    expected: [treatment]
+    rapport: false
+  - utterance: "How has your mood been?"
+    expected: [mood]
+    rapport: false
+  - utterance: "Do you find yourself worrying a lot?"
+    expected: [anxiety]
+    rapport: false
+  - utterance: "Has anything else been going on in your life lately, any pressures?"
+    expected: [stress]
+    rapport: false
+  - utterance: "Have you ever had help for your mental health in the past?"
+    expected: [history]
+    rapport: false
+  - utterance: "Have you ever done anything to hurt yourself?"
+    expected: [risk]
+    rapport: false
+  - utterance: "Do you ever hear voices or feel confused about where you are?"
+    expected: [experiences]
+    rapport: false
+  - utterance: "That sounds exhausting, being in and out of hospital like this."
+    expected: []
+    rapport: true
+  - utterance: "The team have wondered whether the infections might be caused some other way. How do you feel hearing that?"
+    expected: [reaction]
+    rapport: false
+  - utterance: "Is there anything about how the team see you that worries you?"
+    expected: [abandonment]
+    rapport: false
+  - utterance: "and when you're at home?"
+    previous:
+      interviewer: "How has your mood been?"
+      character: "I feel low when I'm stuck here."
+    expected: [mood]
+    rapport: false
+  - utterance: "How are you managing with money?"
+    previous:
+      interviewer: "Anything else going on in your life?"
+      character: "My relationship ended nine months ago and I've been off work."
+    expected: [stress]
+    rapport: false
+  - utterance: "Do you have any allergies?"
+    expected: []
+    rapport: false
+  - utterance: "Have you got any children?"
+    expected: []
+    rapport: false
+  - utterance: "It's completely understandable that you want answers."
+    expected: []
+    rapport: true
+  - utterance: "So you've had several admissions and nobody can tell you why yet."
+    expected: []
+    rapport: false

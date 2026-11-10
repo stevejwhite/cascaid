@@ -1,0 +1,767 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: explosive-outbursts-mental-state
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Can you tell me about the times you lose your temper?
+  topics:
+  - outbursts
+  style: open
+- utterance: How often does this happen, would you say?
+  topics:
+  - outbursts
+  style: open
+- utterance: Has it been happening every week lately?
+  topics:
+  - outbursts
+  style: closed
+- utterance: Is there a pattern to how long each episode lasts?
+  topics:
+  - outbursts
+  style: closed
+- utterance: How often do you blow up, roughly?
+  topics:
+  - outbursts
+  style: colloquial
+- utterance: When you kick off, how long does it go on for?
+  topics:
+  - outbursts
+  style: colloquial
+- utterance: Over what period have these episodes been occurring, and at what frequency?
+  topics:
+  - outbursts
+  style: clinical
+- utterance: I'd like to get an idea of how many times this has happened
+  topics:
+  - outbursts
+  style: indirect
+- utterance: It sounds like this has been hard to live with. How many times have you lost it recently?
+  topics:
+  - outbursts
+  style: empathy_then_question
+- utterance: so um how many times has it been, since it started
+  topics:
+  - outbursts
+  style: spoken
+- utterance: when you lose it, what, what do you end up doing
+  topics:
+  - outbursts
+  style: spoken
+- utterance: And how often?
+  topics:
+  - outbursts
+  style: brief
+- utterance: And roughly how often does it happen?
+  topics:
+  - outbursts
+  style: follow_up
+  previous:
+    interviewer: What sets it off, usually?
+    character: A small frustration, like being kept waiting, can set it off. I feel hot and tense, then
+      act before thinking.
+- utterance: What sort of things have you broken?
+  topics:
+  - outbursts
+  style: follow_up
+  previous:
+    interviewer: Do you plan these outbursts in advance?
+    character: No, I don't plan them or set out to get something. That doesn't stop the people around
+      me feeling frightened.
+- utterance: It's probably getting more frequent, isn't it?
+  topics:
+  - outbursts
+  style: leading
+- utterance: What sets it off, usually?
+  topics:
+  - build-up
+  style: open
+- utterance: Walk me through what happens just before you lose control.
+  topics:
+  - build-up
+  style: open
+- utterance: Do you notice any warning signs before it starts?
+  topics:
+  - build-up
+  style: closed
+- utterance: Is it always the same sort of thing that triggers it?
+  topics:
+  - build-up
+  style: closed
+- utterance: What winds you up the most?
+  topics:
+  - build-up
+  style: colloquial
+- utterance: What's it like in your body just before you go?
+  topics:
+  - build-up
+  style: colloquial
+- utterance: Can you describe any prodromal feelings preceding an episode?
+  topics:
+  - build-up
+  style: clinical
+- utterance: I wondered if you could describe the moments leading up to it
+  topics:
+  - build-up
+  style: indirect
+- utterance: That sounds really difficult. What goes through your mind just before it happens?
+  topics:
+  - build-up
+  style: empathy_then_question
+- utterance: um so what, what kind of thing starts it off
+  topics:
+  - build-up
+  style: spoken
+- utterance: is there like a feeling that comes first, before you act
+  topics:
+  - build-up
+  style: spoken
+- utterance: And the trigger?
+  topics:
+  - build-up
+  style: brief
+- utterance: And what do you feel in the moments before that?
+  topics:
+  - build-up
+  style: follow_up
+  previous:
+    interviewer: How often does this happen?
+    character: Over six months I've had angry outbursts about twice weekly. Three involved breaking household
+      objects; each lasts less than ten minutes.
+- utterance: It's usually little things that set you off, isn't it?
+  topics:
+  - build-up
+  style: leading
+- utterance: How do you make sense of why you act that way when it happens?
+  topics:
+  - purpose
+  style: open
+- utterance: What do you think you are trying to achieve when you shout or break things?
+  topics:
+  - purpose
+  style: open
+- utterance: Do you plan these outbursts in advance?
+  topics:
+  - purpose
+  style: closed
+- utterance: Do you ever do it deliberately, to get your own way?
+  topics:
+  - purpose
+  style: closed
+- utterance: Is it ever on purpose, to scare someone into backing down?
+  topics:
+  - purpose
+  style: colloquial
+- utterance: Do you think it through first or does it just happen?
+  topics:
+  - purpose
+  style: colloquial
+- utterance: Would you say the aggression is planned or goal-directed?
+  topics:
+  - purpose
+  style: clinical
+- utterance: I was wondering whether you ever mean to frighten anyone
+  topics:
+  - purpose
+  style: indirect
+- utterance: I can see this troubles you. Is any of it intended to make people do what you want?
+  topics:
+  - purpose
+  style: empathy_then_question
+- utterance: so it's not like you set out to, to get something from it, is it
+  topics:
+  - purpose
+  style: spoken
+- utterance: um do you ever, like, want people to be scared of you
+  topics:
+  - purpose
+  style: spoken
+- utterance: Planned, or sudden?
+  topics:
+  - purpose
+  style: brief
+- utterance: Do you mean to scare them, though?
+  topics:
+  - purpose
+  style: follow_up
+  previous:
+    interviewer: How often does this happen?
+    character: Over six months I've had angry outbursts about twice weekly. Three involved breaking household
+      objects; each lasts less than ten minutes.
+- utterance: You probably do it to get people to back off, don't you?
+  topics:
+  - purpose
+  style: leading
+- utterance: How do you feel once it's over?
+  topics:
+  - aftermath
+  style: open
+- utterance: What happens afterwards, for you and for the people around you?
+  topics:
+  - aftermath
+  style: open
+- utterance: Has it caused problems in your relationship?
+  topics:
+  - aftermath
+  style: closed
+- utterance: How do you feel when you've calmed down?
+  topics:
+  - aftermath
+  style: colloquial
+- utterance: Has it cost you anything, with money or the people close to you?
+  topics:
+  - aftermath
+  style: colloquial
+- utterance: What is your emotional state in the aftermath, and what have been the consequences?
+  topics:
+  - aftermath
+  style: clinical
+- utterance: I'd like to hear what it's like for you once the anger has gone
+  topics:
+  - aftermath
+  style: indirect
+- utterance: It must be hard to live with. How are things with the people close to you since?
+  topics:
+  - aftermath
+  style: empathy_then_question
+- utterance: and then afterwards um what's that like for you
+  topics:
+  - aftermath
+  style: spoken
+- utterance: has anyone like, said they've had enough
+  topics:
+  - aftermath
+  style: spoken
+- utterance: And afterwards?
+  topics:
+  - aftermath
+  style: brief
+- utterance: And what's the knock-on at home?
+  topics:
+  - aftermath
+  style: follow_up
+  previous:
+    interviewer: How often does this happen?
+    character: Over six months I've had angry outbursts about twice weekly. Three involved breaking household
+      objects; each lasts less than ten minutes.
+- utterance: You probably feel awful afterwards, don't you?
+  topics:
+  - aftermath
+  style: leading
+- utterance: Tell me about your sleep these days.
+  topics:
+  - mood
+  style: open
+- utterance: Have you ever had a spell of feeling very low for a few weeks?
+  topics:
+  - mood
+  style: closed
+- utterance: Have there been times when you felt unusually high or full of energy?
+  topics:
+  - mood
+  style: closed
+- utterance: When you're not kicking off, what's your mood like?
+  topics:
+  - mood
+  style: colloquial
+- utterance: Are you sleeping all right?
+  topics:
+  - mood
+  style: colloquial
+- utterance: Have you experienced any sustained periods of elevated or depressed mood?
+  topics:
+  - mood
+  style: clinical
+- utterance: I wondered how you generally feel when things are calm
+  topics:
+  - mood
+  style: indirect
+- utterance: That sounds exhausting. What's your mood like on an ordinary day?
+  topics:
+  - mood
+  style: empathy_then_question
+- utterance: so um apart from the anger, are you feeling down at all
+  topics:
+  - mood
+  style: spoken
+- utterance: have you had times where you need hardly any sleep
+  topics:
+  - mood
+  style: spoken
+- utterance: And your sleep?
+  topics:
+  - mood
+  style: brief
+- utterance: And in between, are you sleeping well?
+  topics:
+  - mood
+  style: follow_up
+  previous:
+    interviewer: How often does this happen?
+    character: Over six months I've had angry outbursts about twice weekly. Three involved breaking household
+      objects; each lasts less than ten minutes.
+- utterance: You must have been pretty low for a while, haven't you?
+  topics:
+  - mood
+  style: leading
+- utterance: What's your relationship with alcohol like?
+  topics:
+  - substances
+  style: open
+- utterance: Tell me about any drink or drugs you use.
+  topics:
+  - substances
+  style: open
+- utterance: Do you drink before these episodes happen?
+  topics:
+  - substances
+  style: closed
+- utterance: Do you use any recreational drugs?
+  topics:
+  - substances
+  style: closed
+- utterance: How much do you have to drink in a week?
+  topics:
+  - substances
+  style: colloquial
+- utterance: Are you usually on something when you flip?
+  topics:
+  - substances
+  style: colloquial
+- utterance: Is there any use of alcohol or illicit substances, and is it temporally related to the outbursts?
+  topics:
+  - substances
+  style: clinical
+- utterance: I wondered about alcohol or anything else you might take
+  topics:
+  - substances
+  style: indirect
+- utterance: I appreciate this is personal. Do you drink or take anything that might play a part?
+  topics:
+  - substances
+  style: empathy_then_question
+- utterance: um do you, do you drink, or smoke weed or anything
+  topics:
+  - substances
+  style: spoken
+- utterance: so has it ever happened when you've had nothing to drink
+  topics:
+  - substances
+  style: spoken
+- utterance: Any drink or drugs?
+  topics:
+  - substances
+  style: brief
+- utterance: And is it usually after you've been drinking?
+  topics:
+  - substances
+  style: follow_up
+  previous:
+    interviewer: What sets it off, usually?
+    character: A small frustration, like being kept waiting, can set it off. I feel hot and tense, then
+      act before thinking.
+- utterance: You're probably drinking heavily when it happens, aren't you?
+  topics:
+  - substances
+  style: leading
+- utterance: Have you noticed anything unusual about what you hear or see?
+  topics:
+  - psychosis
+  style: open
+- utterance: How do you feel about the people around you, day to day?
+  topics:
+  - psychosis
+  style: open
+- utterance: Do you ever hear voices that other people can't hear?
+  topics:
+  - psychosis
+  style: closed
+- utterance: Do you feel anyone is plotting against you?
+  topics:
+  - psychosis
+  style: closed
+- utterance: Do you ever get the sense people are out to get you?
+  topics:
+  - psychosis
+  style: colloquial
+- utterance: Any voices in your head telling you what to do?
+  topics:
+  - psychosis
+  style: colloquial
+- utterance: Do you experience auditory hallucinations or passivity phenomena?
+  topics:
+  - psychosis
+  style: clinical
+- utterance: I wanted to ask whether anything outside your control seems to be influencing you
+  topics:
+  - psychosis
+  style: indirect
+- utterance: That's a lot to carry. Does it ever feel as if something is making you act that way?
+  topics:
+  - psychosis
+  style: empathy_then_question
+- utterance: um do you ever hear things, like voices, that aren't there
+  topics:
+  - psychosis
+  style: spoken
+- utterance: do you feel like someone's, I don't know, controlling you
+  topics:
+  - psychosis
+  style: spoken
+- utterance: Hearing any voices?
+  topics:
+  - psychosis
+  style: brief
+- utterance: Do you ever hear voices when it starts?
+  topics:
+  - psychosis
+  style: follow_up
+  previous:
+    interviewer: What sets it off, usually?
+    character: A small frustration, like being kept waiting, can set it off. I feel hot and tense, then
+      act before thinking.
+- utterance: You'd say people are against you most of the time, wouldn't you?
+  topics:
+  - psychosis
+  style: leading
+- utterance: What are your thoughts about hurting someone or yourself at the moment?
+  topics:
+  - risk
+  style: open
+- utterance: Tell me about whether things have ever gone as far as someone getting hurt.
+  topics:
+  - risk
+  style: open
+- utterance: Have you ever hit anyone?
+  topics:
+  - risk
+  style: closed
+- utterance: Do you keep any kind of weapon?
+  topics:
+  - risk
+  style: closed
+- utterance: Have you ever lamped anyone?
+  topics:
+  - risk
+  style: colloquial
+- utterance: Do you think you might do something to yourself?
+  topics:
+  - risk
+  style: colloquial
+- utterance: Is there any current intent or plan to cause harm to self or others?
+  topics:
+  - risk
+  style: clinical
+- utterance: I wanted to check whether anyone has been physically harmed
+  topics:
+  - risk
+  style: indirect
+- utterance: This is a tough topic, I know. Have you made any plans to hurt anybody?
+  topics:
+  - risk
+  style: empathy_then_question
+- utterance: so um have you ever actually, like, hurt someone
+  topics:
+  - risk
+  style: spoken
+- utterance: do you have any thoughts of, of ending things
+  topics:
+  - risk
+  style: spoken
+- utterance: Anyone physically hurt?
+  topics:
+  - risk
+  style: brief
+- utterance: Has anyone been hurt physically?
+  topics:
+  - risk
+  style: follow_up
+  previous:
+    interviewer: How often does this happen?
+    character: Over six months I've had angry outbursts about twice weekly. Three involved breaking household
+      objects; each lasts less than ten minutes.
+- utterance: It's probably only a matter of time before someone gets hurt, isn't it?
+  topics:
+  - risk
+  style: leading
+- utterance: Is there one occasion that was worse than the others?
+  topics:
+  - guarded
+  style: open
+- utterance: Tell me about any time when someone near you was frightened.
+  topics:
+  - guarded
+  style: open
+- utterance: Did you ever throw something close to another person?
+  topics:
+  - guarded
+  style: closed
+- utterance: Is there anything you've played down when you've described this?
+  topics:
+  - guarded
+  style: closed
+- utterance: Was there ever a time you came close to hitting somebody with something?
+  topics:
+  - guarded
+  style: colloquial
+- utterance: Have you been completely straight about how bad it's been?
+  topics:
+  - guarded
+  style: colloquial
+- utterance: Has there been an incident with a near miss involving another person that you have minimised?
+  topics:
+  - guarded
+  style: clinical
+- utterance: I wondered whether anything has happened that you find hard to say
+  topics:
+  - guarded
+  style: indirect
+- utterance: I know this is uncomfortable. Is there an incident you feel you've made light of?
+  topics:
+  - guarded
+  style: empathy_then_question
+- utterance: um was there a time where, where something nearly hit someone
+  topics:
+  - guarded
+  style: spoken
+- utterance: is there something you haven't quite told me about
+  topics:
+  - guarded
+  style: spoken
+- utterance: Any close calls?
+  topics:
+  - guarded
+  style: brief
+- utterance: Was any of it worse than you've told me?
+  topics:
+  - guarded
+  style: follow_up
+  previous:
+    interviewer: How do you feel once it's over?
+    character: I feel briefly relieved, then ashamed and sorry. I've paid to replace things and my partner
+      is considering leaving.
+- utterance: There's probably one episode you'd rather not mention, isn't there?
+  topics:
+  - guarded
+  style: leading
+- utterance: What do you make of how you react in these situations?
+  topics:
+  - insight
+  style: open
+- utterance: What would you want to be different?
+  topics:
+  - insight
+  style: open
+- utterance: Do you think your reactions are bigger than the situation deserves?
+  topics:
+  - insight
+  style: closed
+- utterance: Would you like some help with this?
+  topics:
+  - insight
+  style: closed
+- utterance: Do you reckon you overreact?
+  topics:
+  - insight
+  style: colloquial
+- utterance: Do you want something done about it?
+  topics:
+  - insight
+  style: colloquial
+- utterance: How would you describe your insight into the proportionality of your reactions?
+  topics:
+  - insight
+  style: clinical
+- utterance: I'd like to understand how you see your own behaviour
+  topics:
+  - insight
+  style: indirect
+- utterance: It takes courage to come here. What would you like to change?
+  topics:
+  - insight
+  style: empathy_then_question
+- utterance: so do you think, um, that it's out of proportion, how you act
+  topics:
+  - insight
+  style: spoken
+- utterance: what do you want, you know, from coming here today
+  topics:
+  - insight
+  style: spoken
+- utterance: Want help with it?
+  topics:
+  - insight
+  style: brief
+- utterance: Do you see that as being down to you?
+  topics:
+  - insight
+  style: follow_up
+  previous:
+    interviewer: How do you feel once it's over?
+    character: I feel briefly relieved, then ashamed and sorry. I've paid to replace things and my partner
+      is considering leaving.
+- utterance: And do you think that reaction is out of proportion?
+  topics:
+  - insight
+  style: follow_up
+  previous:
+    interviewer: What sets it off, usually?
+    character: A small frustration, like being kept waiting, can set it off. I feel hot and tense, then
+      act before thinking.
+- utterance: You know deep down it's not normal to react like that, don't you?
+  topics:
+  - insight
+  style: leading
+- utterance: How often do these episodes happen, and what usually sets them off?
+  topics:
+  - outbursts
+  - build-up
+  style: stacked
+- utterance: How do you feel afterwards, and has anyone ever been hurt?
+  topics:
+  - aftermath
+  - risk
+  style: stacked
+- utterance: Tell me about your mood in between, and how much you drink.
+  topics:
+  - mood
+  - substances
+  style: stacked
+- utterance: Do you plan any of it, and do you think your reactions are out of proportion?
+  topics:
+  - purpose
+  - insight
+  style: stacked
+- utterance: Good morning Joel, thanks for coming in.
+  topics: []
+  style: greeting
+- utterance: Hello Joel, please take a seat.
+  topics: []
+  style: greeting
+- utterance: Hi Joel, how are you today?
+  topics: []
+  style: greeting
+- utterance: Joel, I'm a doctor working with the team here. Is it all right if we have a talk?
+  topics: []
+  style: introduction
+- utterance: Hi Joel, I'm Sam, a doctor on this team, and I'm going to ask some questions today.
+  topics: []
+  style: introduction
+- utterance: What would you like to start with, Joel?
+  topics: []
+  style: open
+- utterance: Where would you like to begin?
+  topics: []
+  style: open
+- utterance: Before we start, do you have any questions for me, Joel?
+  topics: []
+  style: open
+- utterance: Is it all right if we talk for a bit about what's been going on?
+  topics: []
+  style: open
+- utterance: I'd like to move on to something different now.
+  topics: []
+  style: transition
+- utterance: Can we turn to another area, Joel?
+  topics: []
+  style: transition
+- utterance: Let's shift to how things are in other parts of your life.
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Joel.
+  topics: []
+  style: closing
+- utterance: We've only got a couple of minutes left, so I'll wrap up soon.
+  topics: []
+  style: closing
+- utterance: Thank you for your time today, Joel.
+  topics: []
+  style: closing
+- utterance: That sounds really frightening for you and for the people around you.
+  topics: []
+  style: empathy
+- utterance: I can hear how much this is bothering you.
+  topics: []
+  style: empathy
+- utterance: It can't be easy to talk about this.
+  topics: []
+  style: empathy
+- utterance: You seem very upset about what has happened.
+  topics: []
+  style: empathy
+- utterance: So, to summarise, you've had a number of outbursts, you feel bad afterwards, and you want
+    help.
+  topics: []
+  style: summary
+- utterance: 'Let me check I''ve got this right: these episodes come on quickly and you regret them afterwards.'
+  topics: []
+  style: summary
+- utterance: What I'll do is ask about your mood, your health and your safety, and then we can think about
+    next steps.
+  topics: []
+  style: explanation
+- utterance: I should explain that what you tell me stays within the team unless I'm worried about someone's
+    safety.
+  topics: []
+  style: explanation
+- utterance: Does that make sense so far?
+  topics: []
+  style: check_understanding
+- utterance: Have I understood that correctly, Joel?
+  topics: []
+  style: check_understanding
+- utterance: Have you ever had a head injury or been knocked unconscious?
+  topics: []
+  style: off_case
+- utterance: Did anything difficult happen to you as a child?
+  topics: []
+  style: off_case
+- utterance: Do you have any history of seizures or blackouts?
+  topics: []
+  style: off_case
+- utterance: Have you ever been in trouble with the police?
+  topics: []
+  style: off_case
+- utterance: Have you ever taken any tablets or medication for the temper?
+  topics: []
+  style: near_miss
+- utterance: Did you have any anger problems at school?
+  topics: []
+  style: near_miss
+- utterance: Do other people in your family have a short temper?
+  topics: []
+  style: near_miss
+- utterance: Is it a spur of the moment thing, or is there thought behind it?
+  topics:
+  - purpose
+  style: closed
+- utterance: Is there anything about the worst occasion you'd like to tell me?
+  topics:
+  - guarded
+  style: open
+- utterance: Has your mood ever stayed down or up for days at a time?
+  topics:
+  - mood
+  style: closed
+- utterance: Have you got a plan to hurt anybody at the moment?
+  topics:
+  - risk
+  style: closed
+- utterance: Is it connected to how much you've had to drink?
+  topics:
+  - substances
+  style: closed
+- utterance: Does anything seem to make it more likely?
+  topics:
+  - build-up
+  style: closed
+- utterance: Do you ever feel that someone is trying to harm you?
+  topics:
+  - psychosis
+  style: closed
+- utterance: Can I ask about a few different things now, Joel?
+  topics: []
+  style: transition
+- utterance: Do you have any physical health problems?
+  topics: []
+  style: off_case

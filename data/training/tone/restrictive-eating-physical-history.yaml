@@ -1,0 +1,162 @@
+# Training lines for the tone classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: restrictive-eating-physical-history
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Do you ever make yourself sick after meals?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Have you thought about harming yourself recently?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: um what would you eat on an average day
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: How often do you feel dizzy standing up?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Sorry to be nosy, but how much are you drinking each day?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: If it's all right, could I ask about your heart?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Hi Nia, I'm a doctor working in this clinic.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: Good morning, thanks for making it in.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: I'm going to ask about your body because low weight can affect the heart.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: explanation
+- utterance: Right. And how long ago was that?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Okay, got that.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: That sounds really tough.
+  empathy: 1
+  empathy_words: That sounds really tough.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I'm sorry you've been through that.
+  empathy: 1
+  empathy_words: I'm sorry you've been through that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That must have been worrying. Who was with you at the time?
+  empathy: 1
+  empathy_words: That must have been worrying.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: i can see that's hard to say. have you told anyone else
+  empathy: 1
+  empathy_words: i can see that's hard to say.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: Feeling bigger than you are while others call you thin sounds confusing and really frightening.
+  empathy: 2
+  empathy_words: Feeling bigger than you are while others call you thin sounds confusing and really frightening.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: How do you feel about your body, Nia?
+    character: I feel too big even though people say I'm thin, and the idea of putting weight on frightens
+      me more than I like to admit.
+- utterance: Spending so much of your day planning food sounds exhausting, and it's understandable you
+    feel ashamed.
+  empathy: 2
+  empathy_words: Spending so much of your day planning food sounds exhausting, and it's understandable
+    you feel ashamed.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: Have you ever made yourself sick after eating?
+    character: No, I don't make myself sick or use laxatives or water pills; I feel ashamed about how
+      much time I spend planning what I allow myself to eat.
+- utterance: You felt silly about the fuss, but fainting at work is a real reason to be seen.
+  empathy: 2
+  empathy_words: You felt silly about the fuss, but fainting at work is a real reason to be seen.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: Going grey and collapsing at the till must have been a really scary moment for you. How have
+    you been since?
+  empathy: 2
+  empathy_words: Going grey and collapsing at the till must have been a really scary moment for you.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: Can you tell me what happened when you fainted at work?
+    character: Yesterday I stood up at the till, felt everything go grey and briefly passed out; a colleague
+      said I woke within a minute, and I've felt dizzy on standing most days this week.
+- utterance: You know you just need to eat more, it's not complicated.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You know you just need to eat more, it's not complicated.
+  style: confront_statement
+- utterance: Why on earth are you still running every morning?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Why on earth are you still running every morning?
+  style: confront_why
+  previous:
+    interviewer: How much exercise do you do?
+    character: I run for about an hour every morning and have kept doing that even when I feel weak.
+- utterance: Fainting once isn't a big deal, lots of people do.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Fainting once isn't a big deal, lots of people do.
+  style: dismissive
+- utterance: Let's skip the feelings bit and get to the facts.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Let's skip the feelings bit and get to the facts.
+  style: dismissive

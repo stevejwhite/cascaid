@@ -1,0 +1,941 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: exposure-offending-formulation
+case_version: 0.1.0
+status: draft
+items:
+- utterance: What offending history does the referral describe?
+  topics:
+  - pattern
+  style: open
+- utterance: Can you tell me what the record shows about previous offences?
+  topics:
+  - pattern
+  style: open
+- utterance: Has he been convicted of exposure before?
+  topics:
+  - pattern
+  style: closed
+- utterance: Is there any record of him touching anyone?
+  topics:
+  - pattern
+  style: closed
+- utterance: Is this his first time in trouble for this, or has it happened before?
+  topics:
+  - pattern
+  style: colloquial
+- utterance: Has he ever done anything hands-on?
+  topics:
+  - pattern
+  style: colloquial
+- utterance: Is there a documented history of contact offences, or only non-contact sexual offences?
+  topics:
+  - pattern
+  style: clinical
+- utterance: I wondered how many convictions are on his record
+  topics:
+  - pattern
+  style: indirect
+- utterance: I know the paperwork is thin, so thank you for going through it. How many convictions does
+    he have?
+  topics:
+  - pattern
+  style: empathy_then_question
+- utterance: so um what's on his record, how many times has he been done for it
+  topics:
+  - pattern
+  style: spoken
+- utterance: is there, was there ever any physical contact with anyone
+  topics:
+  - pattern
+  style: spoken
+- utterance: Any previous convictions?
+  topics:
+  - pattern
+  style: brief
+- utterance: And how long a period was that over?
+  topics:
+  - pattern
+  style: follow_up
+  previous:
+    interviewer: Has he been convicted of exposure before?
+    character: I have records of two exposure convictions involving non-consenting adults over eighteen
+      months. The man is thirty-four; there is no recorded physical contact offence.
+- utterance: And is there anything involving physical contact?
+  topics:
+  - pattern
+  style: follow_up
+  previous:
+    interviewer: Has he been convicted of exposure before?
+    character: I have records of two exposure convictions involving non-consenting adults over eighteen
+      months. The man is thirty-four; there is no recorded physical contact offence.
+- utterance: He's probably got a long record of offending, hasn't he?
+  topics:
+  - pattern
+  style: leading
+- utterance: What does he say about his sexual interest in this behaviour?
+  topics:
+  - arousal
+  style: open
+- utterance: How does he describe what he gets from exposing himself?
+  topics:
+  - arousal
+  style: open
+- utterance: Does he describe sexual excitement when he does it?
+  topics:
+  - arousal
+  style: closed
+- utterance: Has he said how long these urges have been going on?
+  topics:
+  - arousal
+  style: closed
+- utterance: Does he say he gets turned on by it?
+  topics:
+  - arousal
+  style: colloquial
+- utterance: How long has he been having these urges, according to him?
+  topics:
+  - arousal
+  style: colloquial
+- utterance: Does he report recurrent sexual arousal in relation to exposure, and over what duration?
+  topics:
+  - arousal
+  style: clinical
+- utterance: I wondered what he's told you about the sexual side of this
+  topics:
+  - arousal
+  style: indirect
+- utterance: It's a sensitive area, I appreciate. What has he said about being sexually aroused by it?
+  topics:
+  - arousal
+  style: empathy_then_question
+- utterance: um does he say he, you know, gets excited by doing it
+  topics:
+  - arousal
+  style: spoken
+- utterance: so how long has this been going on, as far as he says
+  topics:
+  - arousal
+  style: spoken
+- utterance: Does he report arousal?
+  topics:
+  - arousal
+  style: brief
+- utterance: And over how long has he described that?
+  topics:
+  - arousal
+  style: follow_up
+  previous:
+    interviewer: What has he told you about the sexual interest?
+    character: He reports recurring sexual excitement about exposing himself to unsuspecting adults for
+      two years. That is his account; we haven't completed a specialist diagnostic assessment.
+- utterance: And how often does he say it comes on?
+  topics:
+  - arousal
+  style: follow_up
+  previous:
+    interviewer: What has he told you about the sexual interest?
+    character: He reports recurring sexual excitement about exposing himself to unsuspecting adults for
+      two years. That is his account; we haven't completed a specialist diagnostic assessment.
+- utterance: He probably has a sexual interest in it, doesn't he?
+  topics:
+  - arousal
+  style: leading
+- utterance: What was going on in his life before each incident?
+  topics:
+  - context
+  style: open
+- utterance: Can you tell me about the circumstances around the offences?
+  topics:
+  - context
+  style: open
+- utterance: Was he under any particular stress beforehand?
+  topics:
+  - context
+  style: closed
+- utterance: What was happening in his life when he did it?
+  topics:
+  - context
+  style: colloquial
+- utterance: Was he drunk when it happened?
+  topics:
+  - context
+  style: colloquial
+- utterance: Were there identifiable precipitants, including intoxication or social stressors, preceding
+    each offence?
+  topics:
+  - context
+  style: clinical
+- utterance: I'd like to understand the build-up to the incidents
+  topics:
+  - context
+  style: indirect
+- utterance: He sounds a lonely man from what you say. What was happening for him beforehand?
+  topics:
+  - context
+  style: empathy_then_question
+- utterance: um was alcohol involved, or was it, was it something else
+  topics:
+  - context
+  style: spoken
+- utterance: so what had been going on for him in the weeks before
+  topics:
+  - context
+  style: spoken
+- utterance: And alcohol involved?
+  topics:
+  - context
+  style: brief
+- utterance: Was drink involved in both of them?
+  topics:
+  - context
+  style: follow_up
+  previous:
+    interviewer: What was happening before the incidents?
+    character: Both incidents followed periods of isolation. He reports drinking before one, but not the
+      other; alcohol cannot explain both.
+- utterance: What was happening in his life before the first?
+  topics:
+  - context
+  style: follow_up
+  previous:
+    interviewer: What was happening before the incidents?
+    character: Both incidents followed periods of isolation. He reports drinking before one, but not the
+      other; alcohol cannot explain both.
+- utterance: It's mainly the drink that explains these offences, isn't it?
+  topics:
+  - context
+  style: leading
+- utterance: What do we know about other psychiatric explanations for this?
+  topics:
+  - differential
+  style: open
+- utterance: What is missing from his psychiatric and medical history?
+  topics:
+  - differential
+  style: open
+- utterance: Is there any suggestion of a manic episode?
+  topics:
+  - differential
+  style: closed
+- utterance: Has anyone assessed him for psychosis?
+  topics:
+  - differential
+  style: closed
+- utterance: Could it be down to mania or some other illness?
+  topics:
+  - differential
+  style: colloquial
+- utterance: Have they ruled out anything neurological?
+  topics:
+  - differential
+  style: colloquial
+- utterance: Is there evidence of an affective or psychotic disorder, or a neurodevelopmental or neurological
+    contribution?
+  topics:
+  - differential
+  style: clinical
+- utterance: I wondered whether other conditions have been looked into
+  topics:
+  - differential
+  style: indirect
+- utterance: I know the file is incomplete. Is there anything to suggest mania or psychosis?
+  topics:
+  - differential
+  style: empathy_then_question
+- utterance: um has anyone checked for, like, a mental illness behind it
+  topics:
+  - differential
+  style: spoken
+- utterance: so is there any, any history of head injury or anything like that
+  topics:
+  - differential
+  style: spoken
+- utterance: Any signs of mania?
+  topics:
+  - differential
+  style: brief
+- utterance: And has there been any developmental assessment?
+  topics:
+  - differential
+  style: follow_up
+  previous:
+    interviewer: Is there any sign of mania or psychosis?
+    character: The referral describes no clear manic or psychotic episode. We still need a direct psychiatric,
+      developmental and neurological history.
+- utterance: Is there anything on his neurological history?
+  topics:
+  - differential
+  style: follow_up
+  previous:
+    interviewer: Is there any sign of mania or psychosis?
+    character: The referral describes no clear manic or psychotic episode. We still need a direct psychiatric,
+      developmental and neurological history.
+- utterance: There's probably an underlying psychotic illness here, isn't there?
+  topics:
+  - differential
+  style: leading
+- utterance: What has he said about the people who saw him?
+  topics:
+  - victims
+  style: open
+- utterance: Does he accept that it upset them?
+  topics:
+  - victims
+  style: closed
+- utterance: Does he recognise that they hadn't agreed to it?
+  topics:
+  - victims
+  style: closed
+- utterance: Does he get the effect he had on people?
+  topics:
+  - victims
+  style: colloquial
+- utterance: What does he say about how the victims took it?
+  topics:
+  - victims
+  style: colloquial
+- utterance: What is the extent of his victim empathy and appreciation of harm?
+  topics:
+  - victims
+  style: clinical
+- utterance: I'd like to know what he thinks about the harm to other people
+  topics:
+  - victims
+  style: indirect
+- utterance: It must be uncomfortable for you to ask him this. How does he see the effect on the people
+    involved?
+  topics:
+  - victims
+  style: empathy_then_question
+- utterance: um does he, does he understand it upset them
+  topics:
+  - victims
+  style: spoken
+- utterance: so what's his take on the, the people who saw it
+  topics:
+  - victims
+  style: spoken
+- utterance: His view of victims?
+  topics:
+  - victims
+  style: brief
+- utterance: Does he accept that it caused harm?
+  topics:
+  - victims
+  style: follow_up
+  previous:
+    interviewer: How does he see the effect on the people involved?
+    character: He acknowledged that the adults were frightened, but also said he hadn't touched anyone.
+      I want his understanding of harm explored further.
+- utterance: And how does he describe their reactions?
+  topics:
+  - victims
+  style: follow_up
+  previous:
+    interviewer: How does he see the effect on the people involved?
+    character: He acknowledged that the adults were frightened, but also said he hadn't touched anyone.
+      I want his understanding of harm explored further.
+- utterance: He probably thinks it was harmless, doesn't he?
+  topics:
+  - victims
+  style: leading
+- utterance: What is his current risk of offending again?
+  topics:
+  - dynamic
+  style: open
+- utterance: What has he said about how things are at the moment?
+  topics:
+  - dynamic
+  style: open
+- utterance: Does he say he has a plan to do it again?
+  topics:
+  - dynamic
+  style: closed
+- utterance: Does he still feel like doing it?
+  topics:
+  - dynamic
+  style: colloquial
+- utterance: Has he been out and about on his own lately?
+  topics:
+  - dynamic
+  style: colloquial
+- utterance: Are there ongoing urges, and is there evidence of current plans or access to victims?
+  topics:
+  - dynamic
+  style: clinical
+- utterance: I wondered about his present thoughts regarding reoffending
+  topics:
+  - dynamic
+  style: indirect
+- utterance: I realise it's difficult to judge from paper. Does he report any continuing urges?
+  topics:
+  - dynamic
+  style: empathy_then_question
+- utterance: um is he still having the, the urges, do we know
+  topics:
+  - dynamic
+  style: spoken
+- utterance: so has anyone checked what he's actually been up to recently
+  topics:
+  - dynamic
+  style: spoken
+- utterance: Current urges?
+  topics:
+  - dynamic
+  style: brief
+- utterance: And is there any plan to do it again?
+  topics:
+  - dynamic
+  style: follow_up
+  previous:
+    interviewer: Does he still have urges?
+    character: He reports continuing urges but denies a current plan. We haven't independently established
+      his recent behaviour or opportunities.
+- utterance: How have the last few weeks been, as far as we know?
+  topics:
+  - dynamic
+  style: follow_up
+  previous:
+    interviewer: Does he still have urges?
+    character: He reports continuing urges but denies a current plan. We haven't independently established
+      his recent behaviour or opportunities.
+- utterance: He'll almost certainly do it again, won't he?
+  topics:
+  - dynamic
+  style: leading
+- utterance: What factors might protect against further offending?
+  topics:
+  - protection
+  style: open
+- utterance: How has he been engaging with the supervision so far?
+  topics:
+  - protection
+  style: open
+- utterance: Has he turned up to his appointments?
+  topics:
+  - protection
+  style: closed
+- utterance: Does he have family who stay in touch?
+  topics:
+  - protection
+  style: closed
+- utterance: Is there anyone supporting him?
+  topics:
+  - protection
+  style: colloquial
+- utterance: Has he been making an effort with probation?
+  topics:
+  - protection
+  style: colloquial
+- utterance: Are there identifiable protective factors, including engagement and social support?
+  topics:
+  - protection
+  style: clinical
+- utterance: I wondered who he has around him and whether he's cooperating
+  topics:
+  - protection
+  style: indirect
+- utterance: It's good to hear anything positive. Has he engaged with the people supervising him?
+  topics:
+  - protection
+  style: empathy_then_question
+- utterance: um has he been going to his appointments and, and is there family
+  topics:
+  - protection
+  style: spoken
+- utterance: so who's around him, you know, support-wise
+  topics:
+  - protection
+  style: spoken
+- utterance: Any support at home?
+  topics:
+  - protection
+  style: brief
+- utterance: And do they see him regularly?
+  topics:
+  - protection
+  style: follow_up
+  previous:
+    interviewer: How has he been engaging with supervision?
+    character: He has attended three probation meetings and asked for help. His brother offers regular
+      contact, but engagement alone doesn't prove reduced risk.
+- utterance: Does he ask for help himself?
+  topics:
+  - protection
+  style: follow_up
+  previous:
+    interviewer: How has he been engaging with supervision?
+    character: He has attended three probation meetings and asked for help. His brother offers regular
+      contact, but engagement alone doesn't prove reduced risk.
+- utterance: He's cooperating, so the risk must be low, mustn't it?
+  topics:
+  - protection
+  style: leading
+- utterance: What treatment has he had for this so far?
+  topics:
+  - treatment
+  style: open
+- utterance: What help has he been offered with the sexual side of the behaviour?
+  topics:
+  - treatment
+  style: open
+- utterance: Has he had any psychological therapy?
+  topics:
+  - treatment
+  style: closed
+- utterance: Is he on any medication?
+  topics:
+  - treatment
+  style: closed
+- utterance: Has he ever seen anyone about it before?
+  topics:
+  - treatment
+  style: colloquial
+- utterance: Has anyone given him tablets for this?
+  topics:
+  - treatment
+  style: colloquial
+- utterance: Has he received specialist psychological intervention or psychotropic treatment?
+  topics:
+  - treatment
+  style: clinical
+- utterance: I wondered what's been tried by way of treatment
+  topics:
+  - treatment
+  style: indirect
+- utterance: It's a complicated picture. Has he had any treatment for the offending?
+  topics:
+  - treatment
+  style: empathy_then_question
+- utterance: um has he had any therapy or, or tablets for it
+  topics:
+  - treatment
+  style: spoken
+- utterance: so what's he actually been offered so far
+  topics:
+  - treatment
+  style: spoken
+- utterance: Any previous therapy?
+  topics:
+  - treatment
+  style: brief
+- utterance: And is he taking any medication?
+  topics:
+  - treatment
+  style: follow_up
+  previous:
+    interviewer: What treatment has he had?
+    character: He has had no specialist psychological work for this and takes no psychiatric medicine.
+      We need options matched to a fuller assessment.
+- utterance: So nothing specialist at all?
+  topics:
+  - treatment
+  style: follow_up
+  previous:
+    interviewer: What treatment has he had?
+    character: He has had no specialist psychological work for this and takes no psychiatric medicine.
+      We need options matched to a fuller assessment.
+- utterance: He's been through a lot of treatment already, hasn't he?
+  topics:
+  - treatment
+  style: leading
+- utterance: Who is coordinating his supervision at the moment?
+  topics:
+  - agencies
+  style: open
+- utterance: How should we share information with the other services?
+  topics:
+  - agencies
+  style: open
+- utterance: Is there one officer holding his plan?
+  topics:
+  - agencies
+  style: closed
+- utterance: Do we need to agree what information goes to probation?
+  topics:
+  - agencies
+  style: closed
+- utterance: Who do I speak to on the probation side?
+  topics:
+  - agencies
+  style: colloquial
+- utterance: What are we allowed to pass on to the other agencies?
+  topics:
+  - agencies
+  style: colloquial
+- utterance: Which agency holds the supervision plan, and what are the information-sharing arrangements?
+  topics:
+  - agencies
+  style: clinical
+- utterance: I wondered who we should be liaising with outside our own team
+  topics:
+  - agencies
+  style: indirect
+- utterance: I know it's a lot of people to coordinate. Who holds the supervision plan?
+  topics:
+  - agencies
+  style: empathy_then_question
+- utterance: um who's, who's the person at probation we'd be talking to
+  topics:
+  - agencies
+  style: spoken
+- utterance: so what do we tell the other services and, and who agrees that
+  topics:
+  - agencies
+  style: spoken
+- utterance: Who's his probation officer?
+  topics:
+  - agencies
+  style: brief
+- utterance: And who has the supervision plan?
+  topics:
+  - agencies
+  style: follow_up
+  previous:
+    interviewer: Who is coordinating his supervision?
+    character: A named probation officer holds the supervision plan. We need to agree proportionate information
+      sharing and responsibilities with the man and relevant agencies.
+- utterance: And what are we sharing with them?
+  topics:
+  - agencies
+  style: follow_up
+  previous:
+    interviewer: Who is coordinating his supervision?
+    character: A named probation officer holds the supervision plan. We need to agree proportionate information
+      sharing and responsibilities with the man and relevant agencies.
+- utterance: Probation probably need to be told everything, don't they?
+  topics:
+  - agencies
+  style: leading
+- utterance: How was his mood after the conviction?
+  topics:
+  - self-risk
+  style: open
+- utterance: What do we know about the risk to himself?
+  topics:
+  - self-risk
+  style: open
+- utterance: Has he said anything about suicide?
+  topics:
+  - self-risk
+  style: closed
+- utterance: Has he ever harmed himself?
+  topics:
+  - self-risk
+  style: closed
+- utterance: Has he talked about not wanting to go on?
+  topics:
+  - self-risk
+  style: colloquial
+- utterance: How's he been coping with the shame of it all?
+  topics:
+  - self-risk
+  style: colloquial
+- utterance: Has suicidal ideation been assessed since the conviction?
+  topics:
+  - self-risk
+  style: clinical
+- utterance: I wondered about how safe he is himself
+  topics:
+  - self-risk
+  style: indirect
+- utterance: He may be feeling very exposed. Has anyone asked him about thoughts of suicide?
+  topics:
+  - self-risk
+  style: empathy_then_question
+- utterance: um did anyone check he's, he's not thinking of hurting himself
+  topics:
+  - self-risk
+  style: spoken
+- utterance: so has he said he's feeling suicidal or, or low
+  topics:
+  - self-risk
+  style: spoken
+- utterance: Any suicide risk?
+  topics:
+  - self-risk
+  style: brief
+- utterance: Does he have any history of self-harm?
+  topics:
+  - self-risk
+  style: follow_up
+  previous:
+    interviewer: Has anyone asked about suicide?
+    character: He denied suicidal intent at referral but described feeling ashamed after conviction. That
+      needs direct review rather than relying on the referral.
+- utterance: And has anyone seen him since the conviction?
+  topics:
+  - self-risk
+  style: follow_up
+  previous:
+    interviewer: Has anyone asked about suicide?
+    character: He denied suicidal intent at referral but described feeling ashamed after conviction. That
+      needs direct review rather than relying on the referral.
+- utterance: He's probably at high risk of suicide, isn't he?
+  topics:
+  - self-risk
+  style: leading
+- utterance: What gaps do you see in the referral records?
+  topics:
+  - uncertainty
+  style: open
+- utterance: How confident are you in the history we've been given?
+  topics:
+  - uncertainty
+  style: open
+- utterance: Is the history complete?
+  topics:
+  - uncertainty
+  style: closed
+- utterance: Is there something you feel is missing from the paperwork?
+  topics:
+  - uncertainty
+  style: closed
+- utterance: How reliable is the information in the file, do you think?
+  topics:
+  - uncertainty
+  style: colloquial
+- utterance: Are there any holes in the story?
+  topics:
+  - uncertainty
+  style: colloquial
+- utterance: What is your view of the completeness and reliability of the documented history?
+  topics:
+  - uncertainty
+  style: clinical
+- utterance: I wondered how far we can rely on what's written down
+  topics:
+  - uncertainty
+  style: indirect
+- utterance: I can see you have some reservations. What do you feel is missing?
+  topics:
+  - uncertainty
+  style: empathy_then_question
+- utterance: um how much do we actually know versus what's been assumed
+  topics:
+  - uncertainty
+  style: spoken
+- utterance: so is there stuff we haven't verified, or
+  topics:
+  - uncertainty
+  style: spoken
+- utterance: How complete is it?
+  topics:
+  - uncertainty
+  style: brief
+- utterance: Is that something you're worried the team will miss?
+  topics:
+  - uncertainty
+  style: follow_up
+  previous:
+    interviewer: What gaps do you see in the records?
+    character: I worry the team may treat an incomplete record as a complete history. I've not yet had
+      a chance to challenge that assumption.
+- utterance: So are there parts of the account we can't verify?
+  topics:
+  - uncertainty
+  style: follow_up
+  previous:
+    interviewer: What gaps do you see in the records?
+    character: I worry the team may treat an incomplete record as a complete history. I've not yet had
+      a chance to challenge that assumption.
+- utterance: The record is probably fine as it stands, isn't it?
+  topics:
+  - uncertainty
+  style: leading
+- utterance: What are you being asked to say about his risk?
+  topics:
+  - pressure
+  style: open
+- utterance: How are you feeling about the request for an answer?
+  topics:
+  - pressure
+  style: open
+- utterance: Have you been asked whether he is safe?
+  topics:
+  - pressure
+  style: closed
+- utterance: Is there pressure for a firm prediction?
+  topics:
+  - pressure
+  style: closed
+- utterance: Are they pushing you for a yes or no?
+  topics:
+  - pressure
+  style: colloquial
+- utterance: Is somebody expecting you to say he is dangerous or not?
+  topics:
+  - pressure
+  style: colloquial
+- utterance: Are there external expectations for a dichotomous risk judgement?
+  topics:
+  - pressure
+  style: clinical
+- utterance: I wondered what the referrers want from you on risk
+  topics:
+  - pressure
+  style: indirect
+- utterance: It sounds a tricky position to be in. What are people asking you to decide?
+  topics:
+  - pressure
+  style: empathy_then_question
+- utterance: um is there someone who wants a straight answer from you
+  topics:
+  - pressure
+  style: spoken
+- utterance: so what are they, they're asking you to predict, are they
+  topics:
+  - pressure
+  style: spoken
+- utterance: Under pressure to predict?
+  topics:
+  - pressure
+  style: brief
+- utterance: Why is that difficult for you?
+  topics:
+  - pressure
+  style: follow_up
+  previous:
+    interviewer: What are you being asked to say about his risk?
+    character: I've been asked for a simple safe-or-unsafe answer. I'm uncomfortable because we cannot
+      promise an individual outcome.
+- utterance: Who is asking for that?
+  topics:
+  - pressure
+  style: follow_up
+  previous:
+    interviewer: What are you being asked to say about his risk?
+    character: I've been asked for a simple safe-or-unsafe answer. I'm uncomfortable because we cannot
+      promise an individual outcome.
+- utterance: You're probably expected to give a clear answer, aren't you?
+  topics:
+  - pressure
+  style: leading
+- utterance: How many convictions does he have, and does he describe sexual excitement from it?
+  topics:
+  - pattern
+  - arousal
+  style: stacked
+- utterance: What was happening before the incidents, and is there any sign of an underlying illness?
+  topics:
+  - context
+  - differential
+  style: stacked
+- utterance: Is anyone supporting him, and has he had any treatment so far?
+  topics:
+  - protection
+  - treatment
+  style: stacked
+- utterance: Does he still have urges, and has anyone asked about his own safety?
+  topics:
+  - dynamic
+  - self-risk
+  style: stacked
+- utterance: Good morning Dr Ravi, thanks for making time.
+  topics: []
+  style: greeting
+- utterance: Hello Dr Ravi, good to see you.
+  topics: []
+  style: greeting
+- utterance: Hi Dr Ravi, how are you today?
+  topics: []
+  style: greeting
+- utterance: Dr Ravi, I'm the doctor who's been asked to look at this referral.
+  topics: []
+  style: introduction
+- utterance: Hello, I'm one of the psychiatry trainees on the team, and I've read the referral.
+  topics: []
+  style: introduction
+- utterance: Hi Dr Ravi, I'm Sam, a core trainee. I'd like to discuss this man with you.
+  topics: []
+  style: introduction
+- utterance: Where would you like me to start, Dr Ravi?
+  topics: []
+  style: open
+- utterance: Is it all right if we go through the referral together?
+  topics: []
+  style: open
+- utterance: Before we start, is there anything you want to ask me?
+  topics: []
+  style: open
+- utterance: What do you want from me in this discussion?
+  topics: []
+  style: open
+- utterance: I'd like to move on to the management plan now.
+  topics: []
+  style: transition
+- utterance: Let's turn to the formulation, if that's all right with you.
+  topics: []
+  style: transition
+- utterance: Shall we move on to something different, Dr Ravi?
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, so I'll summarise where I've got to.
+  topics: []
+  style: closing
+- utterance: We've only a couple of minutes left, Dr Ravi.
+  topics: []
+  style: closing
+- utterance: Thank you for your time today.
+  topics: []
+  style: closing
+- utterance: It sounds like a difficult case to carry with limited information.
+  topics: []
+  style: empathy
+- utterance: I can see this is a heavy responsibility for you.
+  topics: []
+  style: empathy
+- utterance: I appreciate you being so open about the limits of the record.
+  topics: []
+  style: empathy
+- utterance: It sounds as though this has been worrying you.
+  topics: []
+  style: empathy
+- utterance: So, to pull this together, I have a man with two convictions and some uncertainty about the
+    diagnosis.
+  topics: []
+  style: summary
+- utterance: Let me recap what we know, what he reports, and what's still unknown.
+  topics: []
+  style: summary
+- utterance: I'd like to separate what is documented from what he has told people, and from what we still
+    need to find out.
+  topics: []
+  style: explanation
+- utterance: My approach will be to build a formulation first and then talk about risk and management.
+  topics: []
+  style: explanation
+- utterance: Does that fit with your understanding?
+  topics: []
+  style: check_understanding
+- utterance: Have I got that right, Dr Ravi?
+  topics: []
+  style: check_understanding
+- utterance: Does he have any children, or contact with children?
+  topics: []
+  style: off_case
+- utterance: What does his employment history look like?
+  topics: []
+  style: off_case
+- utterance: Is there any history of childhood abuse?
+  topics: []
+  style: off_case
+- utterance: Has he had any problems with sexual functioning?
+  topics: []
+  style: off_case
+- utterance: Has he had any physical health problems?
+  topics: []
+  style: near_miss
+- utterance: Does he have any outstanding court dates?
+  topics: []
+  style: near_miss
+- utterance: Which team made the referral?
+  topics: []
+  style: near_miss
+- utterance: Does he work at the moment?
+  topics: []
+  style: off_case
+- utterance: Was he the one who asked to be referred?
+  topics: []
+  style: near_miss

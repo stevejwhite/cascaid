@@ -1,0 +1,50 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: adolescent-delayed-sleep-history
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: so talk me through trying to get to sleep when you've got college the following morning,
+    evie
+  expected:
+  - pattern
+  rapport: false
+- utterance: When nobody needs you up for college, what hours does your sleep fall into?
+  expected:
+  - free-days
+  rapport: false
+- utterance: Can you place when this late sleeping first became a regular thing?
+  expected:
+  - course
+  rapport: false
+- utterance: What part do your phone or other screens play between getting into bed and falling asleep?
+  expected:
+  - screens
+  rapport: false
+- utterance: What do you drink to keep yourself going during the afternoon?
+  expected:
+  - caffeine
+  rapport: false
+- utterance: How is the tiredness showing up in your attendance or concentration at college?
+  expected:
+  - function
+  rapport: false
+- utterance: On a college night, at what point do you actually fall asleep after getting into bed?
+  expected:
+  - pattern
+  rapport: false
+- utterance: How does sleeping work out when you've got no reason to get up the next day?
+  expected:
+  - free-days
+  rapport: false
+- utterance: and how do things go between you two then?
+  expected:
+  - family
+  rapport: false
+  previous:
+    interviewer: Who gets you up when there's college?
+    character: Mum wakes me at seven and I feel awful.
+- utterance: So you're trying to get to bed earlier, but sleep isn't coming when you want it to.
+  expected: []
+  rapport: false

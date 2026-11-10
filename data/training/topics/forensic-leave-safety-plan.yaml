@@ -1,0 +1,797 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: forensic-leave-safety-plan
+case_version: 0.1.0
+status: draft
+items:
+- utterance: How are you planning to get there?
+  topics:
+  - destination
+  style: open
+- utterance: How long would you be out for?
+  topics:
+  - destination
+  style: open
+- utterance: Have you agreed the route with the team?
+  topics:
+  - destination
+  style: closed
+- utterance: So where are you off to, Callum?
+  topics:
+  - destination
+  style: colloquial
+- utterance: Can you talk me through the proposed itinerary for the leave?
+  topics:
+  - destination
+  style: clinical
+- utterance: I'd like to hear the details of where you'd be going and how
+  topics:
+  - destination
+  style: indirect
+- utterance: It sounds like this matters a lot to you. Who are you hoping to see?
+  topics:
+  - destination
+  style: empathy_then_question
+- utterance: um so the actual trip where where is it you want to go
+  topics:
+  - destination
+  style: spoken
+- utterance: And the destination?
+  topics:
+  - destination
+  style: brief
+- utterance: And how will you get there and back in that time?
+  topics:
+  - destination
+  style: follow_up
+  previous:
+    interviewer: What are the conditions of your leave?
+    character: I understand I must avoid alcohol, keep my phone on and return at the agreed time. I need
+      the final arrangements explained in writing.
+- utterance: I imagine you'll be visiting family?
+  topics:
+  - destination
+  style: leading
+- utterance: What's the reason for this particular visit?
+  topics:
+  - destination
+  style: open
+- utterance: Do you know which way you'll travel?
+  topics:
+  - destination
+  style: closed
+- utterance: Will you be going straight there or stopping anywhere?
+  topics:
+  - destination
+  style: closed
+- utterance: What would you do with your time while you're out?
+  topics:
+  - destination
+  style: open
+- utterance: What have you been told about alcohol while you're on leave?
+  topics:
+  - conditions
+  style: open
+- utterance: Do you know what time you need to be back?
+  topics:
+  - conditions
+  style: closed
+- utterance: Would it help to have the arrangements written down?
+  topics:
+  - conditions
+  style: closed
+- utterance: What are the ground rules for you being out?
+  topics:
+  - conditions
+  style: colloquial
+- utterance: Can you tell me your understanding of the agreed leave parameters?
+  topics:
+  - conditions
+  style: clinical
+- utterance: I'd like to check what you understand the rules of the leave to be
+  topics:
+  - conditions
+  style: indirect
+- utterance: I can see you want to get this right. What has the team asked you to stick to?
+  topics:
+  - conditions
+  style: empathy_then_question
+- utterance: so um what are you allowed and not allowed to do while you're out
+  topics:
+  - conditions
+  style: spoken
+- utterance: And the leave conditions?
+  topics:
+  - conditions
+  style: brief
+- utterance: And what rules would you need to stick to on that trip?
+  topics:
+  - conditions
+  style: follow_up
+  previous:
+    interviewer: Where are you hoping to go?
+    character: I want to visit my sister for two hours and travel by bus. I haven't agreed the route with
+      the team yet.
+- utterance: I'm guessing one of the conditions is no drinking?
+  topics:
+  - conditions
+  style: leading
+- utterance: Is there anything you'd need to have with you at all times?
+  topics:
+  - conditions
+  style: closed
+- utterance: How clear are you on what's expected of you?
+  topics:
+  - conditions
+  style: open
+- utterance: Do you understand you'd need to be back at a set time?
+  topics:
+  - conditions
+  style: closed
+- utterance: Which rules about drink apply on leave?
+  topics:
+  - conditions
+  style: open
+- utterance: Can you tell me about what happened when you were violent before?
+  topics:
+  - violence
+  style: open
+- utterance: What happened in the assault that led to you being here?
+  topics:
+  - violence
+  style: open
+- utterance: Were you drinking at the time of the violence?
+  topics:
+  - violence
+  style: closed
+- utterance: Was anyone badly hurt?
+  topics:
+  - violence
+  style: closed
+- utterance: What went on that time things kicked off?
+  topics:
+  - violence
+  style: colloquial
+- utterance: Could you describe the offence that brought you into hospital?
+  topics:
+  - violence
+  style: clinical
+- utterance: I'd like to understand what happened when you hurt someone in the past
+  topics:
+  - violence
+  style: indirect
+- utterance: I know this is hard to go back over. How do you see your part in what happened?
+  topics:
+  - violence
+  style: empathy_then_question
+- utterance: um can you tell me a bit about the the violence before
+  topics:
+  - violence
+  style: spoken
+- utterance: And the past violence?
+  topics:
+  - violence
+  style: brief
+- utterance: And was drink involved when you hurt someone in the past?
+  topics:
+  - violence
+  style: follow_up
+  previous:
+    interviewer: Do you still think about drinking?
+    character: I still get urges to drink when tense. The direct route passes the pub where I used to
+      meet friends.
+- utterance: I'd guess alcohol was a big part of it?
+  topics:
+  - violence
+  style: leading
+- utterance: When did the assault take place?
+  topics:
+  - violence
+  style: open
+- utterance: How do you feel now about the harm you caused?
+  topics:
+  - violence
+  style: open
+- utterance: Who was the person you hurt?
+  topics:
+  - violence
+  style: open
+- utterance: Do you see yourself as responsible for what happened?
+  topics:
+  - violence
+  style: closed
+- utterance: What are the signs that you're getting angry?
+  topics:
+  - warning
+  style: open
+- utterance: Do you notice anything in your body when you're getting wound up?
+  topics:
+  - warning
+  style: closed
+- utterance: Are there early warning signs other people might spot?
+  topics:
+  - warning
+  style: closed
+- utterance: What tells you you're about to blow?
+  topics:
+  - warning
+  style: colloquial
+- utterance: What triggers and cues tend to come before aggression for you?
+  topics:
+  - warning
+  style: clinical
+- utterance: I'd like to understand what happens in the build-up before you lose control
+  topics:
+  - warning
+  style: indirect
+- utterance: It takes insight to look at this. What goes through your mind as you get angry?
+  topics:
+  - warning
+  style: empathy_then_question
+- utterance: um when things start going wrong like what do you notice first
+  topics:
+  - warning
+  style: spoken
+- utterance: Your warning signs?
+  topics:
+  - warning
+  style: brief
+- utterance: What did you notice in yourself in the lead-up to that?
+  topics:
+  - warning
+  style: follow_up
+  previous:
+    interviewer: Can you tell me about the violence in the past?
+    character: Two years ago I seriously injured a man after drinking and an argument. I accept I caused
+      the harm.
+- utterance: I'd imagine there are some signs before you get to that point?
+  topics:
+  - warning
+  style: leading
+- utterance: How quickly does the anger build?
+  topics:
+  - warning
+  style: open
+- utterance: What sort of thoughts do you get when you're getting wound up?
+  topics:
+  - warning
+  style: open
+- utterance: Would staff be able to tell when you're getting worked up?
+  topics:
+  - warning
+  style: closed
+- utterance: What does anger look like for you?
+  topics:
+  - warning
+  style: open
+- utterance: Do you still get cravings for a drink?
+  topics:
+  - alcohol
+  style: closed
+- utterance: How tempted do you think you'll be to drink while you're out?
+  topics:
+  - alcohol
+  style: open
+- utterance: Are there any pubs on the way?
+  topics:
+  - alcohol
+  style: closed
+- utterance: When do you most feel like having a drink these days?
+  topics:
+  - alcohol
+  style: open
+- utterance: Still fancy a pint now and again?
+  topics:
+  - alcohol
+  style: colloquial
+- utterance: How would you describe your current alcohol cravings?
+  topics:
+  - alcohol
+  style: clinical
+- utterance: I wanted to think with you about the pull of alcohol while you're out
+  topics:
+  - alcohol
+  style: indirect
+- utterance: Staying off drink isn't easy. What situations make you want one?
+  topics:
+  - alcohol
+  style: empathy_then_question
+- utterance: so um is drink still something you think about
+  topics:
+  - alcohol
+  style: spoken
+- utterance: Any cravings lately?
+  topics:
+  - alcohol
+  style: brief
+- utterance: Does that route take you past anywhere you used to drink?
+  topics:
+  - alcohol
+  style: follow_up
+  previous:
+    interviewer: Where would you be going?
+    character: I want to visit my sister for two hours and travel by bus. I haven't agreed the route with
+      the team yet.
+- utterance: I'd guess the odd craving still creeps up on you?
+  topics:
+  - alcohol
+  style: leading
+- utterance: What would be the hardest moment for not drinking on leave?
+  topics:
+  - alcohol
+  style: open
+- utterance: Is there anywhere on your journey that might tempt you?
+  topics:
+  - alcohol
+  style: closed
+- utterance: How strong is the pull towards alcohol these days?
+  topics:
+  - alcohol
+  style: open
+- utterance: Do you think you could walk past a pub without going in?
+  topics:
+  - alcohol
+  style: closed
+- utterance: Who would you phone if you needed help on leave?
+  topics:
+  - contacts
+  style: open
+- utterance: Will you have your phone with you?
+  topics:
+  - contacts
+  style: closed
+- utterance: Do you have the ward number saved?
+  topics:
+  - contacts
+  style: closed
+- utterance: Who'll be around for you while you're out?
+  topics:
+  - contacts
+  style: open
+- utterance: Who've you got on speed dial if things go pear-shaped?
+  topics:
+  - contacts
+  style: colloquial
+- utterance: Who are your identified support contacts during leave?
+  topics:
+  - contacts
+  style: clinical
+- utterance: I'd like to make sure you've got people you can reach while you're out
+  topics:
+  - contacts
+  style: indirect
+- utterance: It's good you're thinking ahead. Is there family who know about the visit?
+  topics:
+  - contacts
+  style: empathy_then_question
+- utterance: um is there someone you can ring like if you need to
+  topics:
+  - contacts
+  style: spoken
+- utterance: Phone charged?
+  topics:
+  - contacts
+  style: brief
+- utterance: Would she be someone you could lean on if things got tricky?
+  topics:
+  - contacts
+  style: follow_up
+  previous:
+    interviewer: Where do you want to go on leave?
+    character: I want to visit my sister for two hours and travel by bus. I haven't agreed the route with
+      the team yet.
+- utterance: I take it you'll have a phone on you?
+  topics:
+  - contacts
+  style: leading
+- utterance: Who's your main point of contact on the ward?
+  topics:
+  - contacts
+  style: open
+- utterance: Is anyone expecting you?
+  topics:
+  - contacts
+  style: closed
+- utterance: How would you get hold of us if you needed to?
+  topics:
+  - contacts
+  style: open
+- utterance: Which numbers will you have with you?
+  topics:
+  - contacts
+  style: open
+- utterance: What would you do if things started to go wrong while you were out?
+  topics:
+  - contingency
+  style: open
+- utterance: What if you missed your bus back?
+  topics:
+  - contingency
+  style: open
+- utterance: If you felt overwhelmed, would you ask for help?
+  topics:
+  - contingency
+  style: closed
+- utterance: What's your plan B if the leave doesn't go as planned?
+  topics:
+  - contingency
+  style: colloquial
+- utterance: What contingency plans do you have if the leave breaks down?
+  topics:
+  - contingency
+  style: clinical
+- utterance: I'd like us to think through what you'd do if things went off track
+  topics:
+  - contingency
+  style: indirect
+- utterance: Nobody expects everything to go perfectly. What would you do if you were running late?
+  topics:
+  - contingency
+  style: empathy_then_question
+- utterance: um and if it all goes wrong what what would you do
+  topics:
+  - contingency
+  style: spoken
+- utterance: And if you're late?
+  topics:
+  - contingency
+  style: brief
+- utterance: So if you noticed that happening while you were out, what would you do?
+  topics:
+  - contingency
+  style: follow_up
+  previous:
+    interviewer: What are the signs that you're getting angry?
+    character: My jaw tightens, I pace and start thinking everyone is disrespecting me. That can build
+      over half an hour.
+- utterance: I suppose you'd ring us if anything went wrong?
+  topics:
+  - contingency
+  style: leading
+- utterance: Would you try to sort things out yourself or get in touch with us?
+  topics:
+  - contingency
+  style: closed
+- utterance: Is there anything you'd want to know in advance about what to do if you can't get back?
+  topics:
+  - contingency
+  style: closed
+- utterance: How would you handle it if you got stranded?
+  topics:
+  - contingency
+  style: open
+- utterance: Where would you go for help if you felt it all getting too much?
+  topics:
+  - contingency
+  style: open
+- utterance: Suppose the visit went badly, then what?
+  topics:
+  - contingency
+  style: open
+- utterance: Do you have any thoughts of hurting anyone at the moment?
+  topics:
+  - current-risk
+  style: closed
+- utterance: Are you having any thoughts of harming yourself today?
+  topics:
+  - current-risk
+  style: closed
+- utterance: Is there anyone you're planning to confront?
+  topics:
+  - current-risk
+  style: closed
+- utterance: How are you feeling in terms of anger towards anyone right now?
+  topics:
+  - current-risk
+  style: open
+- utterance: Anyone you've got a score to settle with?
+  topics:
+  - current-risk
+  style: colloquial
+- utterance: Any current thoughts of violence or self-harm?
+  topics:
+  - current-risk
+  style: clinical
+- utterance: I need to ask about any thoughts you have of harming yourself or others today
+  topics:
+  - current-risk
+  style: indirect
+- utterance: I know you want to show you're ready. Have you had any thoughts of hurting someone?
+  topics:
+  - current-risk
+  style: empathy_then_question
+- utterance: um just to check today any thoughts of hurting yourself at all
+  topics:
+  - current-risk
+  style: spoken
+- utterance: Thoughts of harm today?
+  topics:
+  - current-risk
+  style: brief
+- utterance: And do you have any thoughts like that towards anyone now?
+  topics:
+  - current-risk
+  style: follow_up
+  previous:
+    interviewer: What happened when you were violent before?
+    character: Two years ago I seriously injured a man after drinking and an argument. I accept I caused
+      the harm.
+- utterance: I'm assuming there's nobody you feel like hurting at the moment?
+  topics:
+  - current-risk
+  style: leading
+- utterance: Has anyone wound you up recently that you'd want to have it out with?
+  topics:
+  - current-risk
+  style: closed
+- utterance: Have you had any thoughts of ending your life?
+  topics:
+  - current-risk
+  style: closed
+- utterance: What would you say your risk to others is today?
+  topics:
+  - current-risk
+  style: open
+- utterance: Who, if anyone, are you angry with right now?
+  topics:
+  - current-risk
+  style: open
+- utterance: Has anyone from your past been in touch recently?
+  topics:
+  - disclosure
+  style: closed
+- utterance: Is there anyone outside the hospital you've been in contact with that we don't know about?
+  topics:
+  - disclosure
+  style: closed
+- utterance: Have any of your old drinking mates got in touch?
+  topics:
+  - disclosure
+  style: colloquial
+- utterance: How about people you used to drink with, are you still in contact?
+  topics:
+  - disclosure
+  style: open
+- utterance: Have there been any new contacts with your previous peer group?
+  topics:
+  - disclosure
+  style: clinical
+- utterance: I wondered whether anyone from your old social circle has been trying to reach you
+  topics:
+  - disclosure
+  style: indirect
+- utterance: You've been really open with me today. Is there anything about contact with people outside
+    you haven't had a chance to tell the team?
+  topics:
+  - disclosure
+  style: empathy_then_question
+- utterance: um has anyone been like messaging you that the team don't know about
+  topics:
+  - disclosure
+  style: spoken
+- utterance: Any messages from old friends?
+  topics:
+  - disclosure
+  style: brief
+- utterance: Are you still in touch with any of those friends?
+  topics:
+  - disclosure
+  style: follow_up
+  previous:
+    interviewer: Do you still get cravings?
+    character: I still get urges to drink when tense. The direct route passes the pub where I used to
+      meet friends.
+- utterance: I wonder if some of your old crowd might have been in touch?
+  topics:
+  - disclosure
+  style: leading
+- utterance: What contact have you had with people from before your admission?
+  topics:
+  - disclosure
+  style: open
+- utterance: Is there something you've been wanting to mention but haven't?
+  topics:
+  - disclosure
+  style: closed
+- utterance: Has anyone asked to meet up with you while you're on leave?
+  topics:
+  - disclosure
+  style: closed
+- utterance: Who have you heard from lately outside the ward?
+  topics:
+  - disclosure
+  style: open
+- utterance: Would you feel okay telling me if someone from your drinking days had contacted you?
+  topics:
+  - disclosure
+  style: closed
+- utterance: Why does sticking to the plan matter to you?
+  topics:
+  - motivation
+  style: open
+- utterance: Are you worried about what a setback would mean for you?
+  topics:
+  - motivation
+  style: closed
+- utterance: What's riding on this for you?
+  topics:
+  - motivation
+  style: colloquial
+- utterance: What are your personal goals for this period of leave?
+  topics:
+  - motivation
+  style: clinical
+- utterance: I'd like to understand why getting this right is important to you
+  topics:
+  - motivation
+  style: indirect
+- utterance: You've clearly worked hard to get here. What would it mean to you if it went well?
+  topics:
+  - motivation
+  style: empathy_then_question
+- utterance: so um what's what's the most important thing about this for you
+  topics:
+  - motivation
+  style: spoken
+- utterance: Why does it matter?
+  topics:
+  - motivation
+  style: brief
+- utterance: What would a good visit with her mean to you?
+  topics:
+  - motivation
+  style: follow_up
+  previous:
+    interviewer: Where are you planning to go?
+    character: I want to visit my sister for two hours and travel by bus. I haven't agreed the route with
+      the team yet.
+- utterance: I'd guess it means a lot to show people you've changed?
+  topics:
+  - motivation
+  style: leading
+- utterance: What worries you most about having a setback?
+  topics:
+  - motivation
+  style: open
+- utterance: How would you feel if this leave didn't go to plan?
+  topics:
+  - motivation
+  style: open
+- utterance: Who are you hoping to prove something to?
+  topics:
+  - motivation
+  style: open
+- utterance: Is there someone you're hoping this will make a difference with?
+  topics:
+  - motivation
+  style: closed
+- utterance: What would success look like for you?
+  topics:
+  - motivation
+  style: open
+- utterance: Where are you planning to go, and who would you ring if you needed help?
+  topics:
+  - destination
+  - contacts
+  style: stacked
+- utterance: What are the conditions of your leave, and do you still get cravings?
+  topics:
+  - conditions
+  - alcohol
+  style: stacked
+- utterance: What happened when you hurt someone before, and what signs do you notice when you're getting
+    angry?
+  topics:
+  - violence
+  - warning
+  style: stacked
+- utterance: Any thoughts of harming anyone today, and what would you do if things went wrong?
+  topics:
+  - current-risk
+  - contingency
+  style: stacked
+- utterance: Hello Callum, I'm one of the doctors on the step-down ward.
+  topics: []
+  style: introduction
+- utterance: Hi Callum, good to see you.
+  topics: []
+  style: greeting
+- utterance: Is it okay if we spend some time planning your leave?
+  topics: []
+  style: introduction
+- utterance: What would you like to start with?
+  topics: []
+  style: transition
+- utterance: Before we begin, have you got any questions for me?
+  topics: []
+  style: introduction
+- utterance: I'd like to move on to something a bit different now.
+  topics: []
+  style: transition
+- utterance: Can we turn to the practical side of things?
+  topics: []
+  style: transition
+- utterance: Let's now look at what might get in the way.
+  topics: []
+  style: transition
+- utterance: We're almost out of time, Callum.
+  topics: []
+  style: closing
+- utterance: Thanks for working through this with me.
+  topics: []
+  style: closing
+- utterance: Is there anything else you'd like to add before we finish?
+  topics: []
+  style: closing
+- utterance: Morning Callum, I'm the registrar reviewing you today.
+  topics: []
+  style: introduction
+- utterance: You've clearly put a lot of thought into this.
+  topics: []
+  style: empathy
+- utterance: I can see how much you want to show you're ready.
+  topics: []
+  style: empathy
+- utterance: It makes sense that you'd want some independence back.
+  topics: []
+  style: empathy
+- utterance: That's a really honest thing to say.
+  topics: []
+  style: empathy
+- utterance: So far we've covered where you'd go and how you'd keep in touch.
+  topics: []
+  style: summary
+- utterance: So the plan so far is no drink, phone on and back on time.
+  topics: []
+  style: summary
+- utterance: I can't make the decision about leave today, that's for the wider team.
+  topics: []
+  style: explanation
+- utterance: A safety plan is just a way of writing down what helps and who to call.
+  topics: []
+  style: explanation
+- utterance: I'll share what we agree with the rest of the team.
+  topics: []
+  style: explanation
+- utterance: The aim today is to agree a plan that's realistic for you.
+  topics: []
+  style: explanation
+- utterance: Is that clear so far?
+  topics: []
+  style: check_understanding
+- utterance: Could you tell me in your own words what we've agreed?
+  topics: []
+  style: check_understanding
+- utterance: Are you taking any medication at the moment?
+  topics: []
+  style: off_case
+- utterance: How have you been sleeping on the ward?
+  topics: []
+  style: off_case
+- utterance: Have you had any contact with probation recently?
+  topics: []
+  style: off_case
+- utterance: Do you hear voices at all?
+  topics: []
+  style: off_case
+- utterance: How do you get on with the other patients?
+  topics: []
+  style: off_case
+- utterance: Have you used any drugs while you've been in hospital?
+  topics: []
+  style: off_case
+- utterance: How much will the journey cost?
+  topics: []
+  style: near_miss
+- utterance: Which pub did you used to drink at?
+  topics: []
+  style: near_miss
+- utterance: What's the ward's phone number?
+  topics: []
+  style: near_miss
+- utterance: How long was your sentence for the assault?
+  topics: []
+  style: near_miss
+- utterance: What's the name of the person you hurt?
+  topics: []
+  style: near_miss

@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "platform": "darwin-arm64",
+  "name": "llama.cpp",
+  "build": "b11149",
+  "commit": "d2e54583c7452353eb35d40431281f6ee984332f",
+  "archive": {
+    "url": "https://github.com/ggml-org/llama.cpp/releases/download/b11149/llama-b11149-bin-macos-arm64.tar.gz",
+    "filename": "llama-b11149-bin-macos-arm64.tar.gz",
+    "size_bytes": 11189509,
+    "checksum_sha256": "791eb0200a7c846ca925b6274fc21f0f21f537fda2924cc5a47402655816f56e"
+  },
+  "generation_port": 8180,
+  "embedding_port": 8181,
+  "context_tokens": 4096,
+  "parallel_slots": 1,
+  "cache_ram_mib": 1024,
+  "context_tokens_note": "context_tokens is per slot; the server context is context_tokens x parallel_slots"
+}

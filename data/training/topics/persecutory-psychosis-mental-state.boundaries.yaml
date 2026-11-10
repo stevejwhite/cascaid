@@ -1,0 +1,359 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: persecutory-psychosis-mental-state
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Do you feel other people can hear what you're thinking?
+  topics:
+  - thought-broadcast
+  style: boundary
+  pair:
+  - thought-broadcast
+  - thought-insertion
+- utterance: Do your thoughts ever seem to leave your head so that others can pick them up?
+  topics:
+  - thought-broadcast
+  style: boundary
+  pair:
+  - thought-broadcast
+  - thought-insertion
+- utterance: Can anyone read your mind, do you think?
+  topics:
+  - thought-broadcast
+  style: boundary_colloquial
+  pair:
+  - thought-broadcast
+  - thought-insertion
+- utterance: um do you ever feel like your private thoughts are out in the open for other people
+  topics:
+  - thought-broadcast
+  style: boundary_spoken
+  pair:
+  - thought-broadcast
+  - thought-insertion
+- utterance: And the other way round, do you feel others can pick up what you're thinking?
+  topics:
+  - thought-broadcast
+  style: boundary_follow_up
+  pair:
+  - thought-broadcast
+  - thought-insertion
+  previous:
+    interviewer: Do thoughts ever feel like they're not your own?
+    character: Yes, sometimes an idea about opening the door arrives as if someone has pushed it into my head; it doesn't feel like my own thought.
+- utterance: Do any thoughts come into your head that feel as if someone else has put them there?
+  topics:
+  - thought-insertion
+  style: boundary
+  pair:
+  - thought-broadcast
+  - thought-insertion
+- utterance: Do you ever have thoughts that don't feel like yours?
+  topics:
+  - thought-insertion
+  style: boundary
+  pair:
+  - thought-broadcast
+  - thought-insertion
+- utterance: Does anyone ever slip ideas into your head?
+  topics:
+  - thought-insertion
+  style: boundary_colloquial
+  pair:
+  - thought-broadcast
+  - thought-insertion
+- utterance: so um are there thoughts in your head that you feel somebody else has put there
+  topics:
+  - thought-insertion
+  style: boundary_spoken
+  pair:
+  - thought-broadcast
+  - thought-insertion
+- utterance: What about thoughts arriving from outside, ones that don't feel like your own?
+  topics:
+  - thought-insertion
+  style: boundary_follow_up
+  pair:
+  - thought-broadcast
+  - thought-insertion
+  previous:
+    interviewer: Can other people hear your thoughts?
+    character: No, I don't think people can hear my private thoughts or that they are sent out of my head.
+- utterance: Do you ever feel your thoughts are racing?
+  topics: []
+  style: near_miss
+  pair:
+  - thought-broadcast
+  - thought-insertion
+- utterance: Do you lose your train of thought halfway through a sentence?
+  topics: []
+  style: near_miss
+  pair:
+  - thought-broadcast
+  - thought-insertion
+- utterance: Have you seen anything that other people couldn't see?
+  topics:
+  - other-senses
+  style: boundary
+  pair:
+  - other-senses
+  - surveillance-belief
+- utterance: Have you noticed any strange smells or tastes?
+  topics:
+  - other-senses
+  style: boundary
+  pair:
+  - other-senses
+  - surveillance-belief
+- utterance: Anything odd with your skin, like feeling touched when no one's there?
+  topics:
+  - other-senses
+  style: boundary_colloquial
+  pair:
+  - other-senses
+  - surveillance-belief
+- utterance: um have you been seeing things or smelling anything unusual
+  topics:
+  - other-senses
+  style: boundary_spoken
+  pair:
+  - other-senses
+  - surveillance-belief
+- utterance: Okay. Have you seen anything else out of the ordinary, or noticed odd smells?
+  topics:
+  - other-senses
+  style: boundary_follow_up
+  pair:
+  - other-senses
+  - surveillance-belief
+  previous:
+    interviewer: How sure are you that they're watching you?
+    character: I'm certain the neighbours watch me through a tiny device above my front door; a light there flickers when I leave, though my landlord says it's just the doorbell.
+- utterance: How certain are you that you're being watched?
+  topics:
+  - surveillance-belief
+  style: boundary
+  pair:
+  - other-senses
+  - surveillance-belief
+- utterance: Why are you so sure the people next door are keeping an eye on you?
+  topics:
+  - surveillance-belief
+  style: boundary
+  pair:
+  - other-senses
+  - surveillance-belief
+- utterance: Have you got any proof that they're watching you?
+  topics:
+  - surveillance-belief
+  style: boundary_colloquial
+  pair:
+  - other-senses
+  - surveillance-belief
+- utterance: right and um how do you know they're watching you
+  topics:
+  - surveillance-belief
+  style: boundary_spoken
+  pair:
+  - other-senses
+  - surveillance-belief
+- utterance: How do you know that the neighbours are watching you?
+  topics:
+  - surveillance-belief
+  style: boundary_follow_up
+  pair:
+  - other-senses
+  - surveillance-belief
+  previous:
+    interviewer: Have you seen or smelt anything unusual?
+    character: No, I haven't seen things other people can't see, or had unusual smells, tastes or touches.
+- utterance: Do you get on with your neighbours generally?
+  topics: []
+  style: near_miss
+  pair:
+  - other-senses
+  - surveillance-belief
+- utterance: Has anyone else noticed the neighbours behaving oddly?
+  topics: []
+  style: near_miss
+  pair:
+  - other-senses
+  - surveillance-belief
+- utterance: How have you been sleeping since this began?
+  topics:
+  - daily-impact
+  style: boundary
+  pair:
+  - daily-impact
+  - insight
+- utterance: Have you been eating properly?
+  topics:
+  - daily-impact
+  style: boundary
+  pair:
+  - daily-impact
+  - insight
+- utterance: Have you been getting to work, or has this kept you at home?
+  topics:
+  - daily-impact
+  style: boundary_colloquial
+  pair:
+  - daily-impact
+  - insight
+- utterance: so um how's all this affecting your sleep and your day to day
+  topics:
+  - daily-impact
+  style: boundary_spoken
+  pair:
+  - daily-impact
+  - insight
+- utterance: And in practical terms, how have you been managing to look after yourself?
+  topics:
+  - daily-impact
+  style: boundary_follow_up
+  pair:
+  - daily-impact
+  - insight
+  previous:
+    interviewer: Could being unwell explain some of it?
+    character: I believe the threat is real, but I can see that being exhausted might be making some things harder to judge; I'd listen if you explained what you think.
+- utterance: Do you think there could be another explanation for what you've been experiencing?
+  topics:
+  - insight
+  style: boundary
+  pair:
+  - daily-impact
+  - insight
+- utterance: How do you explain all of this to yourself?
+  topics:
+  - insight
+  style: boundary
+  pair:
+  - daily-impact
+  - insight
+- utterance: Do you think you might be unwell, or is it all real?
+  topics:
+  - insight
+  style: boundary_colloquial
+  pair:
+  - daily-impact
+  - insight
+- utterance: um have you thought about whether something else could be going on
+  topics:
+  - insight
+  style: boundary_spoken
+  pair:
+  - daily-impact
+  - insight
+- utterance: Do you think being run down could be affecting how things seem?
+  topics:
+  - insight
+  style: boundary_follow_up
+  pair:
+  - daily-impact
+  - insight
+  previous:
+    interviewer: How have you been sleeping and eating?
+    character: For the last week I've slept about three hours a night, eaten mainly toast and missed all five of my shifts because I was afraid to leave.
+- utterance: Do you have any family nearby?
+  topics: []
+  style: near_miss
+  pair:
+  - daily-impact
+  - insight
+- utterance: Have you ever been admitted to hospital before?
+  topics: []
+  style: near_miss
+  pair:
+  - daily-impact
+  - insight
+- utterance: Do you ever hear voices when nobody is there?
+  topics:
+  - auditory-experience
+  style: boundary
+  pair:
+  - auditory-experience
+  - onset
+- utterance: Do you hear anyone talking when you're on your own, and what do they sound like?
+  topics:
+  - auditory-experience
+  style: boundary
+  pair:
+  - auditory-experience
+  - onset
+- utterance: Do you hear talking from beyond your door when you know you're alone?
+  topics:
+  - auditory-experience
+  style: boundary_colloquial
+  pair:
+  - auditory-experience
+  - onset
+- utterance: um are you hearing anything that other people can't like voices
+  topics:
+  - auditory-experience
+  style: boundary_spoken
+  pair:
+  - auditory-experience
+  - onset
+- utterance: Do you hear voices as well? What are they like?
+  topics:
+  - auditory-experience
+  style: boundary_follow_up
+  pair:
+  - auditory-experience
+  - onset
+  previous:
+    interviewer: When did this all start?
+    character: It began about six weeks ago with the feeling of being watched; the voices started about two weeks later and have become more frequent.
+- utterance: When did you first start feeling watched?
+  topics:
+  - onset
+  style: boundary
+  pair:
+  - auditory-experience
+  - onset
+- utterance: Is this something new for you, or has it been around for ages?
+  topics:
+  - onset
+  style: boundary
+  pair:
+  - auditory-experience
+  - onset
+- utterance: So how long has it been like this for you?
+  topics:
+  - onset
+  style: boundary_colloquial
+  pair:
+  - auditory-experience
+  - onset
+- utterance: right and um when did all this begin
+  topics:
+  - onset
+  style: boundary_spoken
+  pair:
+  - auditory-experience
+  - onset
+- utterance: And at what point did it first start?
+  topics:
+  - onset
+  style: boundary_follow_up
+  pair:
+  - auditory-experience
+  - onset
+  previous:
+    interviewer: Do you hear voices?
+    character: I hear two unfamiliar voices from the hallway discussing where I am, even when it is empty; it happens several times a day and sounds as clear as you.
+- utterance: Do you live with anyone?
+  topics: []
+  style: near_miss
+  pair:
+  - auditory-experience
+  - onset
+- utterance: Have you told your landlord how you feel?
+  topics: []
+  style: near_miss
+  pair:
+  - auditory-experience
+  - onset

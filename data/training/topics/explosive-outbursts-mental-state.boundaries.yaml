@@ -1,0 +1,227 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: explosive-outbursts-mental-state
+case_version: 0.1.0
+status: draft
+items:
+  # ---- build-up / outbursts ----
+  - utterance: "What sort of thing sets you off?"
+    topics: [build-up]
+    style: boundary
+    pair: [build-up, outbursts]
+  - utterance: "How do you feel in the moments just before you lose it?"
+    topics: [build-up]
+    style: boundary
+    pair: [build-up, outbursts]
+  - utterance: "Is there anything that tells you it's coming on?"
+    topics: [build-up]
+    style: boundary_colloquial
+    pair: [build-up, outbursts]
+  - utterance: "um what's going on for you right before it kicks off"
+    topics: [build-up]
+    style: boundary_spoken
+    pair: [build-up, outbursts]
+  - utterance: "And what usually starts it off?"
+    topics: [build-up]
+    style: boundary_follow_up
+    pair: [build-up, outbursts]
+    previous:
+      interviewer: "How often do these happen?"
+      character: "Over six months I've had angry outbursts about twice weekly."
+  - utterance: "How many times a week is this happening?"
+    topics: [outbursts]
+    style: boundary
+    pair: [build-up, outbursts]
+  - utterance: "How long has this been going on, and how long does each one last?"
+    topics: [outbursts]
+    style: boundary
+    pair: [build-up, outbursts]
+  - utterance: "How much stuff have you actually broken?"
+    topics: [outbursts]
+    style: boundary_colloquial
+    pair: [build-up, outbursts]
+  - utterance: "so um roughly how many times has it happened since it started"
+    topics: [outbursts]
+    style: boundary_spoken
+    pair: [build-up, outbursts]
+  - utterance: "And how many of these episodes have you had lately?"
+    topics: [outbursts]
+    style: boundary_follow_up
+    pair: [build-up, outbursts]
+    previous:
+      interviewer: "What sets it off?"
+      character: "A small frustration, like being kept waiting, can set it off."
+  - utterance: "Did anything in your upbringing teach you to react like this?"
+    topics: []
+    style: near_miss
+    pair: [build-up, outbursts]
+  - utterance: "Have the police ever been involved when it's happened?"
+    topics: []
+    style: near_miss
+    pair: [build-up, outbursts]
+  # ---- guarded / risk ----
+  - utterance: "Is there one occasion that was worse than you've told me so far?"
+    topics: [guarded]
+    style: boundary
+    pair: [guarded, risk]
+  - utterance: "Have you ever thrown or smashed something close to another person?"
+    topics: [guarded]
+    style: boundary
+    pair: [guarded, risk]
+  - utterance: "Is there something you've held back or made light of about how bad it's got?"
+    topics: [guarded]
+    style: boundary_colloquial
+    pair: [guarded, risk]
+  - utterance: "um is there a particular time that was worse than you've been letting on"
+    topics: [guarded]
+    style: boundary_spoken
+    pair: [guarded, risk]
+  - utterance: "Is there one time you've played down, when something got thrown near someone?"
+    topics: [guarded]
+    style: boundary_follow_up
+    pair: [guarded, risk]
+    previous:
+      interviewer: "Have you ever hit anyone?"
+      character: "I've shouted close to my partner but haven't struck anyone."
+  - utterance: "Are you having any thoughts of hurting anyone at the moment?"
+    topics: [risk]
+    style: boundary
+    pair: [guarded, risk]
+  - utterance: "Do you keep anything with you that you could use to hurt someone?"
+    topics: [risk]
+    style: boundary
+    pair: [guarded, risk]
+  - utterance: "Have you ever actually lashed out and hit somebody?"
+    topics: [risk]
+    style: boundary_colloquial
+    pair: [guarded, risk]
+  - utterance: "so er have you thought about harming yourself at all"
+    topics: [risk]
+    style: boundary_spoken
+    pair: [guarded, risk]
+  - utterance: "OK. And at the moment, any plans to hurt anyone or yourself?"
+    topics: [risk]
+    style: boundary_follow_up
+    pair: [guarded, risk]
+    previous:
+      interviewer: "Is there a time you've played down?"
+      character: "Once I smashed a mug beside my partner."
+  - utterance: "Have you ever had a head injury or been knocked out?"
+    topics: []
+    style: near_miss
+    pair: [guarded, risk]
+  - utterance: "Has anyone from social services ever got in touch with you about this?"
+    topics: []
+    style: near_miss
+    pair: [guarded, risk]
+  # ---- aftermath / build-up ----
+  - utterance: "How do you feel once it's all over?"
+    topics: [aftermath]
+    style: boundary
+    pair: [aftermath, build-up]
+  - utterance: "What happens afterwards with the people around you?"
+    topics: [aftermath]
+    style: boundary
+    pair: [aftermath, build-up]
+  - utterance: "Do you feel sorry, or just relieved, when it's passed?"
+    topics: [aftermath]
+    style: boundary_colloquial
+    pair: [aftermath, build-up]
+  - utterance: "um what's it like for you once you've calmed down"
+    topics: [aftermath]
+    style: boundary_spoken
+    pair: [aftermath, build-up]
+  - utterance: "And afterwards, once it's over, how are you feeling then?"
+    topics: [aftermath]
+    style: boundary_follow_up
+    pair: [aftermath, build-up]
+    previous:
+      interviewer: "What do you feel before you act?"
+      character: "I feel hot and tense, then act before thinking."
+  - utterance: "What changes in your body just ahead of you blowing up?"
+    topics: [build-up]
+    style: boundary
+    pair: [aftermath, build-up]
+  - utterance: "What kind of thing triggers it in the first place?"
+    topics: [build-up]
+    style: boundary
+    pair: [aftermath, build-up]
+  - utterance: "Can you feel it building, or does it come out of nowhere?"
+    topics: [build-up]
+    style: boundary_colloquial
+    pair: [aftermath, build-up]
+  - utterance: "so um are there any warning signs that you're about to blow"
+    topics: [build-up]
+    style: boundary_spoken
+    pair: [aftermath, build-up]
+  - utterance: "And what about the moments before, what's going through you then?"
+    topics: [build-up]
+    style: boundary_follow_up
+    pair: [aftermath, build-up]
+    previous:
+      interviewer: "How do you feel afterwards?"
+      character: "I feel briefly relieved, then ashamed and sorry."
+  - utterance: "Do you keep going over it in nightmares or flashbacks?"
+    topics: []
+    style: near_miss
+    pair: [aftermath, build-up]
+  - utterance: "Have you spoken to anyone at work about any of this?"
+    topics: []
+    style: near_miss
+    pair: [aftermath, build-up]
+  # ---- build-up / substances ----
+  - utterance: "Are there particular situations that make you more likely to blow up?"
+    topics: [build-up]
+    style: boundary
+    pair: [build-up, substances]
+  - utterance: "How quickly does it go from nothing to full-on anger?"
+    topics: [build-up]
+    style: boundary
+    pair: [build-up, substances]
+  - utterance: "Is there something in particular that tends to bring it on?"
+    topics: [build-up]
+    style: boundary_colloquial
+    pair: [build-up, substances]
+  - utterance: "so um what's the thing that usually winds you up"
+    topics: [build-up]
+    style: boundary_spoken
+    pair: [build-up, substances]
+  - utterance: "OK. What kinds of thing set you off, then?"
+    topics: [build-up]
+    style: boundary_follow_up
+    pair: [build-up, substances]
+    previous:
+      interviewer: "Do you drink or use anything?"
+      character: "I drink two pints on Fridays and don't use drugs."
+  - utterance: "Do you drink to cope with it, or take anything else?"
+    topics: [substances]
+    style: boundary
+    pair: [build-up, substances]
+  - utterance: "Have you had a drink before any of these blow-ups?"
+    topics: [substances]
+    style: boundary
+    pair: [build-up, substances]
+  - utterance: "Would you say booze makes it worse?"
+    topics: [substances]
+    style: boundary_colloquial
+    pair: [build-up, substances]
+  - utterance: "so um do you drink much or take anything"
+    topics: [substances]
+    style: boundary_spoken
+    pair: [build-up, substances]
+  - utterance: "And has alcohol or anything else been involved when it happens?"
+    topics: [substances]
+    style: boundary_follow_up
+    pair: [build-up, substances]
+    previous:
+      interviewer: "What sets it off?"
+      character: "A small frustration, like being kept waiting, can set it off."
+  - utterance: "Do you gamble or have money worries at the moment?"
+    topics: []
+    style: near_miss
+    pair: [build-up, substances]
+  - utterance: "Do you work night shifts or irregular hours?"
+    topics: []
+    style: near_miss
+    pair: [build-up, substances]

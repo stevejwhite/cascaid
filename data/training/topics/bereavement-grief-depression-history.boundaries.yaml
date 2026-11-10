@@ -1,0 +1,227 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: bereavement-grief-depression-history
+case_version: 0.1.0
+status: draft
+items:
+  # guilt vs yearning
+  - utterance: Do you find yourself blaming yourself for anything to do with her death?
+    topics: [guilt]
+    style: boundary
+    pair: [guilt, yearning]
+  - utterance: are there things you wish you'd done differently before she went
+    topics: [guilt]
+    style: boundary_spoken
+    pair: [guilt, yearning]
+  - utterance: Do you ever go over it in your head, thinking you should have seen something coming?
+    topics: [guilt]
+    style: boundary_colloquial
+    pair: [guilt, yearning]
+  - utterance: Is there anything you regret that keeps coming back to you?
+    topics: [guilt]
+    style: boundary
+    pair: [guilt, yearning]
+  - utterance: And do the doctors say there was anything you could have done?
+    topics: [guilt]
+    style: boundary_follow_up
+    pair: [guilt, yearning]
+    previous:
+      interviewer: Is there something that you keep turning over in your mind?
+      character: I keep wondering if I should have noticed her illness sooner, even though doctors said I couldn't have prevented it.
+  - utterance: Roughly how many hours each day is she on your mind?
+    topics: [yearning]
+    style: boundary
+    pair: [guilt, yearning]
+  - utterance: do you find you miss her so much that you half expect her to walk in
+    topics: [yearning]
+    style: boundary_spoken
+    pair: [guilt, yearning]
+  - utterance: Does it still feel hard to believe she's really gone?
+    topics: [yearning]
+    style: boundary_colloquial
+    pair: [guilt, yearning]
+  - utterance: Do you long for her to be with you?
+    topics: [yearning]
+    style: boundary
+    pair: [guilt, yearning]
+  - utterance: And does that go on for hours at a time, would you say?
+    topics: [yearning]
+    style: boundary_follow_up
+    pair: [guilt, yearning]
+    previous:
+      interviewer: Is she often on your mind?
+      character: I spend hours thinking about her every day and wishing she would come through the door. Part of me still finds it hard to accept she's gone.
+  - utterance: Do you feel angry with anyone about what happened?
+    topics: []
+    style: near_miss
+    pair: [guilt, yearning]
+  - utterance: Do you ever see or hear her when she isn't there?
+    topics: []
+    style: near_miss
+    pair: [guilt, yearning]
+  # death-wish vs meaning
+  - utterance: Do you ever feel you would rather be dead and with her?
+    topics: [death-wish]
+    style: boundary
+    pair: [death-wish, meaning]
+  - utterance: have you had any thoughts of ending things for yourself
+    topics: [death-wish]
+    style: boundary_spoken
+    pair: [death-wish, meaning]
+  - utterance: Has it ever got so bad that you've thought about joining her?
+    topics: [death-wish]
+    style: boundary_colloquial
+    pair: [death-wish, meaning]
+  - utterance: Have you made any plans or got anything ready to take your own life?
+    topics: [death-wish]
+    style: boundary
+    pair: [death-wish, meaning]
+  - utterance: And has anything stopped you from acting on that?
+    topics: [death-wish]
+    style: boundary_follow_up
+    pair: [death-wish, meaning]
+    previous:
+      interviewer: Do you sometimes wish you weren't here any more?
+      character: Sometimes I wish I could be with her, but I haven't planned or prepared to end my life. I want to see my grandchildren grow up.
+  - utterance: What does it mean to you to keep her memory alive?
+    topics: [meaning]
+    style: boundary
+    pair: [death-wish, meaning]
+  - utterance: um do you think you ought to stop grieving at some point
+    topics: [meaning]
+    style: boundary_spoken
+    pair: [death-wish, meaning]
+  - utterance: Are there days or traditions that matter to you for remembering her?
+    topics: [meaning]
+    style: boundary_colloquial
+    pair: [death-wish, meaning]
+  - utterance: Looking ahead, what would you like to be able to do with your life again?
+    topics: [meaning]
+    style: boundary
+    pair: [death-wish, meaning]
+  - utterance: And do you feel you have to let go of her to move forward?
+    topics: [meaning]
+    style: boundary_follow_up
+    pair: [death-wish, meaning]
+    previous:
+      interviewer: Do you feel life has changed for you completely?
+      character: Remembering her on important dates matters to me. I don't believe I must stop grieving, but I want to find a way to take part in life again.
+  - utterance: Do you feel that life is not worth living on your bad days?
+    topics: []
+    style: near_miss
+    pair: [death-wish, meaning]
+  - utterance: Do you have any hobbies that give you a sense of purpose?
+    topics: []
+    style: near_miss
+    pair: [death-wish, meaning]
+  # loss vs yearning
+  - utterance: How long ago did your wife pass away exactly?
+    topics: [loss]
+    style: boundary
+    pair: [loss, yearning]
+  - utterance: and how long were you two together
+    topics: [loss]
+    style: boundary_spoken
+    pair: [loss, yearning]
+  - utterance: Was it sudden when she died, or had she been poorly for a while?
+    topics: [loss]
+    style: boundary_colloquial
+    pair: [loss, yearning]
+  - utterance: Can you tell me a bit about what happened to her?
+    topics: [loss]
+    style: boundary
+    pair: [loss, yearning]
+  - utterance: How long did she have that illness before she died?
+    topics: [loss]
+    style: boundary_follow_up
+    pair: [loss, yearning]
+    previous:
+      interviewer: Could you tell me about your wife?
+      character: My wife died twelve months ago after a short illness. We'd been married for forty-eight years.
+  - utterance: Do you find yourself longing for her to come home?
+    topics: [yearning]
+    style: boundary
+    pair: [loss, yearning]
+  - utterance: so are you finding it hard to take in that she's not coming back
+    topics: [yearning]
+    style: boundary_spoken
+    pair: [loss, yearning]
+  - utterance: Do you spend a lot of your time lost in thoughts of her?
+    topics: [yearning]
+    style: boundary_colloquial
+    pair: [loss, yearning]
+  - utterance: Is there a part of you that still can't accept she has died?
+    topics: [yearning]
+    style: boundary
+    pair: [loss, yearning]
+  - utterance: And is that something that eats up much of your day?
+    topics: [yearning]
+    style: boundary_follow_up
+    pair: [loss, yearning]
+    previous:
+      interviewer: Do you miss her a great deal?
+      character: I spend hours thinking about her every day and wishing she would come through the door. Part of me still finds it hard to accept she's gone.
+  - utterance: Was the funeral arranged the way she would have wanted?
+    topics: []
+    style: near_miss
+    pair: [loss, yearning]
+  - utterance: Did you get any support from the hospital when she was dying?
+    topics: []
+    style: near_miss
+    pair: [loss, yearning]
+  # death-wish vs yearning
+  - utterance: Have you ever wanted to die so that you could be reunited with her?
+    topics: [death-wish]
+    style: boundary
+    pair: [death-wish, yearning]
+  - utterance: do you think about harming yourself at all
+    topics: [death-wish]
+    style: boundary_spoken
+    pair: [death-wish, yearning]
+  - utterance: Have you ever thought of ending it all or got anything together for that?
+    topics: [death-wish]
+    style: boundary_colloquial
+    pair: [death-wish, yearning]
+  - utterance: Is there anything that would stop you from taking your own life?
+    topics: [death-wish]
+    style: boundary
+    pair: [death-wish, yearning]
+  - utterance: And have those feelings ever gone as far as making preparations?
+    topics: [death-wish]
+    style: boundary_follow_up
+    pair: [death-wish, yearning]
+    previous:
+      interviewer: Do you long to be with her again?
+      character: Sometimes I wish I could be with her, but I haven't planned or prepared to end my life. I want to see my grandchildren grow up.
+  - utterance: Do you find yourself thinking about her much of the time?
+    topics: [yearning]
+    style: boundary
+    pair: [death-wish, yearning]
+  - utterance: um do you miss her really badly, like waiting for her to come in
+    topics: [yearning]
+    style: boundary_spoken
+    pair: [death-wish, yearning]
+  - utterance: Do you still find it hard to accept that she's gone?
+    topics: [yearning]
+    style: boundary_colloquial
+    pair: [death-wish, yearning]
+  - utterance: In a normal day, how much time goes on thinking about her?
+    topics: [yearning]
+    style: boundary
+    pair: [death-wish, yearning]
+  - utterance: And is it a longing that stays with you most of the day?
+    topics: [yearning]
+    style: boundary_follow_up
+    pair: [death-wish, yearning]
+    previous:
+      interviewer: Do your thoughts turn towards death at all?
+      character: I spend hours thinking about her every day and wishing she would come through the door. Part of me still finds it hard to accept she's gone.
+  - utterance: Do you have any hope for the future?
+    topics: []
+    style: near_miss
+    pair: [death-wish, yearning]
+  - utterance: Do you feel like a burden to your family?
+    topics: []
+    style: near_miss
+    pair: [death-wish, yearning]

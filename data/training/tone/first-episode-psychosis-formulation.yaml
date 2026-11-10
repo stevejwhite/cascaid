@@ -1,0 +1,54 @@
+# Training lines for the tone classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: first-episode-psychosis-formulation
+case_version: 0.1.0
+status: draft
+items:
+  - {utterance: "Has he said anything about wanting to end his life?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "Is there any history of violence towards other people?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "Did he talk about feeling unsafe on the ward?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "Who referred him in?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "so um what did the crisis team say about him", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "Sorry, could I just check whether his bloods have been sent?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: polite_question}
+  - {utterance: "Would you mind if I went through the history first?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: polite_question}
+  - {utterance: "Hi Ravi, I'm one of the core trainees on the ward.", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: introduction}
+  - {utterance: "Good afternoon Ravi, thanks for finding the time.", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: greeting}
+  - {utterance: "To summarise, I think this is a first psychotic episode with cannabis as a possible factor.", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: summary}
+  - {utterance: "Okay, that's helpful. And the sister?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: acknowledgement}
+  - {utterance: "right got it", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: acknowledgement}
+  - {utterance: "That sounds like a tough shift.", empathy: 1, empathy_words: "That sounds like a tough shift.", confrontational: false, challenge_words: "", style: brief_empathy}
+  - {utterance: "That must have been difficult.", empathy: 1, empathy_words: "That must have been difficult.", confrontational: false, challenge_words: "", style: brief_empathy}
+  - {utterance: "That sounds hard. Did he settle at all overnight?", empathy: 1, empathy_words: "That sounds hard.", confrontational: false, challenge_words: "", style: brief_empathy_question}
+  - {utterance: "Sorry, that's a lot to juggle. Who's covering the ward this afternoon?", empathy: 1, empathy_words: "Sorry, that's a lot to juggle.", confrontational: false, challenge_words: "", style: brief_empathy_question}
+  - utterance: "It's understandable that the staff are anxious he might leave while he feels so unsafe here."
+    empathy: 2
+    empathy_words: "It's understandable that the staff are anxious he might leave while he feels so unsafe here."
+    confrontational: false
+    challenge_words: ""
+    style: specific_empathy
+    previous:
+      interviewer: "Are there any immediate risks I should know about?"
+      character: "He denied thoughts or plans to harm himself or anyone else, and no assault was reported; staff remain concerned that he may leave because he feels unsafe here."
+  - utterance: "I can see how frustrating it is to plan his care with no bloods or ECG back yet."
+    empathy: 2
+    empathy_words: "I can see how frustrating it is to plan his care with no bloods or ECG back yet."
+    confrontational: false
+    challenge_words: ""
+    style: specific_empathy
+    previous:
+      interviewer: "Where have we got to with investigations?"
+      character: "I have no blood results or ECG yet; they have not been completed, and there is no documented baseline weight or metabolic assessment."
+  - {utterance: "It sounds like you're uneasy about starting anything until we know more about his physical health.", empathy: 2, empathy_words: "It sounds like you're uneasy about starting anything until we know more about his physical health.", confrontational: false, challenge_words: "", style: specific_empathy}
+  - utterance: "I can hear you're worried about him losing touch with us after he leaves. Who do you think should take on his follow-up?"
+    empathy: 2
+    empathy_words: "I can hear you're worried about him losing touch with us after he leaves."
+    confrontational: false
+    challenge_words: ""
+    style: specific_empathy_question
+    previous:
+      interviewer: "Is there anything about discharge planning that concerns you?"
+      character: "I'm concerned about losing contact after discharge: no early intervention referral has been sent, and I do not know who will coordinate follow-up."
+  - {utterance: "With that much cannabis it's obviously drug-induced, and we're overthinking it.", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "With that much cannabis it's obviously drug-induced, and we're overthinking it.", style: confront_statement}
+  - {utterance: "Why on earth hasn't anyone done his bloods yet?", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "Why on earth hasn't anyone done his bloods yet?", style: confront_why}
+  - {utterance: "I don't think his cultural background is really relevant here.", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "I don't think his cultural background is really relevant here.", style: dismissive}
+  - {utterance: "let's not worry about follow-up, that's weeks away", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "let's not worry about follow-up, that's weeks away", style: dismissive}

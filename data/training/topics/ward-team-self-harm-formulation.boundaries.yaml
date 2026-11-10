@@ -1,0 +1,359 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: ward-team-self-harm-formulation
+case_version: 0.1.0
+status: draft
+items:
+- utterance: What are you hoping we leave this meeting with?
+  topics:
+  - goal
+  style: boundary
+  pair:
+  - goal
+  - supervision
+- utterance: What would a good outcome look like for the team?
+  topics:
+  - goal
+  style: boundary
+  pair:
+  - goal
+  - supervision
+- utterance: What do you think would help the team move forward?
+  topics:
+  - goal
+  style: boundary_colloquial
+  pair:
+  - goal
+  - supervision
+- utterance: um so what are you hoping we can sort out today
+  topics:
+  - goal
+  style: boundary_spoken
+  pair:
+  - goal
+  - supervision
+- utterance: And for the team as a whole, what would you want to change?
+  topics:
+  - goal
+  style: boundary_follow_up
+  pair:
+  - goal
+  - supervision
+  previous:
+    interviewer: Have you had a chance to reflect with a senior colleague?
+    character: No, I haven't had a reflective meeting about this. The senior nurse could make time tomorrow.
+- utterance: Have you had anywhere to offload about this?
+  topics:
+  - supervision
+  style: boundary
+  pair:
+  - goal
+  - supervision
+- utterance: Do you get regular supervision?
+  topics:
+  - supervision
+  style: boundary
+  pair:
+  - goal
+  - supervision
+- utterance: Is there any protected time for you to think about difficult cases?
+  topics:
+  - supervision
+  style: boundary_colloquial
+  pair:
+  - goal
+  - supervision
+- utterance: er who is looking after you in all of this
+  topics:
+  - supervision
+  style: boundary_spoken
+  pair:
+  - goal
+  - supervision
+- utterance: And is anyone supporting you through this, do you have time to talk it over?
+  topics:
+  - supervision
+  style: boundary_follow_up
+  pair:
+  - goal
+  - supervision
+  previous:
+    interviewer: What would you like from today?
+    character: I'd like a plan we can all follow and a way to discuss our reactions without blaming her or each other.
+- utterance: Have you thought about moving to another ward?
+  topics: []
+  style: near_miss
+  pair:
+  - goal
+  - supervision
+- utterance: Is the patient's family involved?
+  topics: []
+  style: near_miss
+  pair:
+  - goal
+  - supervision
+- utterance: What was going on around her yesterday before she hurt herself?
+  topics:
+  - context
+  style: boundary
+  pair:
+  - context
+  - perspective
+- utterance: Did anything change on the ward beforehand?
+  topics:
+  - context
+  style: boundary
+  pair:
+  - context
+  - perspective
+- utterance: Was there anything that seemed to set her off?
+  topics:
+  - context
+  style: boundary_colloquial
+  pair:
+  - context
+  - perspective
+- utterance: um so what happened leading up to it
+  topics:
+  - context
+  style: boundary_spoken
+  pair:
+  - context
+  - perspective
+- utterance: And what was happening just before the latest incident?
+  topics:
+  - context
+  style: boundary_follow_up
+  pair:
+  - context
+  - perspective
+  previous:
+    interviewer: What does she say about it herself?
+    character: She told me she feels forgotten when staff change. That's what she said, rather than my knowing her motives.
+- utterance: Has she been able to tell you how she feels?
+  topics:
+  - perspective
+  style: boundary
+  pair:
+  - context
+  - perspective
+- utterance: What has she said about why she's so distressed?
+  topics:
+  - perspective
+  style: boundary
+  pair:
+  - context
+  - perspective
+- utterance: In her own words, what does she say it's about?
+  topics:
+  - perspective
+  style: boundary_colloquial
+  pair:
+  - context
+  - perspective
+- utterance: and has she like explained it to you herself
+  topics:
+  - perspective
+  style: boundary_spoken
+  pair:
+  - context
+  - perspective
+- utterance: Has she given any explanation herself?
+  topics:
+  - perspective
+  style: boundary_follow_up
+  pair:
+  - context
+  - perspective
+  previous:
+    interviewer: What changed beforehand?
+    character: Yesterday she became distressed when her named nurse was moved to another ward. I don't know whether that explains the other episodes.
+- utterance: Does she have a diagnosis of personality disorder?
+  topics: []
+  style: near_miss
+  pair:
+  - context
+  - perspective
+- utterance: Has she been seen by the psychologist?
+  topics: []
+  style: near_miss
+  pair:
+  - context
+  - perspective
+- utterance: Was there a trigger for what happened yesterday?
+  topics:
+  - context
+  style: boundary
+  pair:
+  - context
+  - episodes
+- utterance: Did something happen on the ward before she harmed herself?
+  topics:
+  - context
+  style: boundary
+  pair:
+  - context
+  - episodes
+- utterance: Were there any staff changes around then?
+  topics:
+  - context
+  style: boundary_colloquial
+  pair:
+  - context
+  - episodes
+- utterance: er so was there something that kicked it off
+  topics:
+  - context
+  style: boundary_spoken
+  pair:
+  - context
+  - episodes
+- utterance: And what was going on for her at that point?
+  topics:
+  - context
+  style: boundary_follow_up
+  pair:
+  - context
+  - episodes
+  previous:
+    interviewer: How often has she hurt herself?
+    character: Yes, there have been three episodes of self-injury this week. Each was medically assessed; the latest was yesterday.
+- utterance: How often has she injured herself of late?
+  topics:
+  - episodes
+  style: boundary
+  pair:
+  - context
+  - episodes
+- utterance: How serious were the injuries?
+  topics:
+  - episodes
+  style: boundary
+  pair:
+  - context
+  - episodes
+- utterance: When was the most recent one?
+  topics:
+  - episodes
+  style: boundary_colloquial
+  pair:
+  - context
+  - episodes
+- utterance: um how often has this been happening this week
+  topics:
+  - episodes
+  style: boundary_spoken
+  pair:
+  - context
+  - episodes
+- utterance: And how often has she been doing it this week?
+  topics:
+  - episodes
+  style: boundary_follow_up
+  pair:
+  - context
+  - episodes
+  previous:
+    interviewer: Was there a trigger?
+    character: Yesterday she became distressed when her named nurse was moved to another ward. I don't know whether that explains the other episodes.
+- utterance: Has she had self-harm before this admission?
+  topics: []
+  style: near_miss
+  pair:
+  - context
+  - episodes
+- utterance: Is she on any medication?
+  topics: []
+  style: near_miss
+  pair:
+  - context
+  - episodes
+- utterance: How many separate incidents are we talking about?
+  topics:
+  - episodes
+  style: boundary
+  pair:
+  - episodes
+  - safety
+- utterance: Have any of the injuries needed treatment?
+  topics:
+  - episodes
+  style: boundary
+  pair:
+  - episodes
+  - safety
+- utterance: When did the last one happen?
+  topics:
+  - episodes
+  style: boundary_colloquial
+  pair:
+  - episodes
+  - safety
+- utterance: so um has she been hurting herself a lot
+  topics:
+  - episodes
+  style: boundary_spoken
+  pair:
+  - episodes
+  - safety
+- utterance: And how many times has she hurt herself in total?
+  topics:
+  - episodes
+  style: boundary_follow_up
+  pair:
+  - episodes
+  - safety
+  previous:
+    interviewer: Is she safe at the moment?
+    character: Yes, today's nurse has reassessed her and is staying nearby under the current observation plan. I can't predict whether she will hurt herself again.
+- utterance: Is she safe right now?
+  topics:
+  - safety
+  style: boundary
+  pair:
+  - episodes
+  - safety
+- utterance: Who's with her at this moment?
+  topics:
+  - safety
+  style: boundary
+  pair:
+  - episodes
+  - safety
+- utterance: What level of observation is she on at the moment?
+  topics:
+  - safety
+  style: boundary_colloquial
+  pair:
+  - episodes
+  - safety
+- utterance: erm so is somebody keeping an eye on her today
+  topics:
+  - safety
+  style: boundary_spoken
+  pair:
+  - episodes
+  - safety
+- utterance: And is she safe at the moment?
+  topics:
+  - safety
+  style: boundary_follow_up
+  pair:
+  - episodes
+  - safety
+  previous:
+    interviewer: How many episodes have there been?
+    character: Yes, there have been three episodes of self-injury this week. Each was medically assessed; the latest was yesterday.
+- utterance: Has her family been told?
+  topics: []
+  style: near_miss
+  pair:
+  - episodes
+  - safety
+- utterance: Does she have a care coordinator in the community?
+  topics: []
+  style: near_miss
+  pair:
+  - episodes
+  - safety

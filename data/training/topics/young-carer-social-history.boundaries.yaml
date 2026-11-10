@@ -1,0 +1,359 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: young-carer-social-history
+case_version: 0.1.0
+status: draft
+items:
+- utterance: How would you describe your mood these days?
+  topics:
+  - mood
+  style: boundary
+  pair:
+  - mood
+  - self-risk
+- utterance: Does your mind keep running through worries?
+  topics:
+  - mood
+  style: boundary
+  pair:
+  - mood
+  - self-risk
+- utterance: How are you sleeping at the moment?
+  topics:
+  - mood
+  style: boundary_colloquial
+  pair:
+  - mood
+  - self-risk
+- utterance: um so have you been feeling down or stressed
+  topics:
+  - mood
+  style: boundary_spoken
+  pair:
+  - mood
+  - self-risk
+- utterance: And how has your general mood been?
+  topics:
+  - mood
+  style: boundary_follow_up
+  pair:
+  - mood
+  - self-risk
+  previous:
+    interviewer: Have you ever hurt yourself?
+    character: No, I haven't harmed myself or wanted to die. When overwhelmed I can speak with the school nurse.
+- utterance: Have there been times you've wanted to harm yourself?
+  topics:
+  - self-risk
+  style: boundary
+  pair:
+  - mood
+  - self-risk
+- utterance: Do you ever feel that life isn't worth living?
+  topics:
+  - self-risk
+  style: boundary
+  pair:
+  - mood
+  - self-risk
+- utterance: When it all gets too much, who do you turn to?
+  topics:
+  - self-risk
+  style: boundary_colloquial
+  pair:
+  - mood
+  - self-risk
+- utterance: and have you had any thoughts of like ending things
+  topics:
+  - self-risk
+  style: boundary_spoken
+  pair:
+  - mood
+  - self-risk
+- utterance: And when things get on top of you, have you had thoughts of harming yourself?
+  topics:
+  - self-risk
+  style: boundary_follow_up
+  pair:
+  - mood
+  - self-risk
+  previous:
+    interviewer: How are you sleeping?
+    character: I worry most days and sleep about six hours because I listen out for Mum. I still enjoy time with friends when I get it.
+- utterance: Have you been eating properly?
+  topics: []
+  style: near_miss
+  pair:
+  - mood
+  - self-risk
+- utterance: Do you ever hear voices when you're on your own?
+  topics: []
+  style: near_miss
+  pair:
+  - mood
+  - self-risk
+- utterance: Do you get to see your friends much?
+  topics:
+  - friends
+  style: boundary
+  pair:
+  - friends
+  - home
+- utterance: Are you still doing any clubs or sports?
+  topics:
+  - friends
+  style: boundary
+  pair:
+  - friends
+  - home
+- utterance: Do you get out and about at weekends?
+  topics:
+  - friends
+  style: boundary_colloquial
+  pair:
+  - friends
+  - home
+- utterance: er so are you seeing mates and that
+  topics:
+  - friends
+  style: boundary_spoken
+  pair:
+  - friends
+  - home
+- utterance: Are you getting to see your friends at all?
+  topics:
+  - friends
+  style: boundary_follow_up
+  pair:
+  - friends
+  - home
+  previous:
+    interviewer: Who lives at home with you?
+    character: I live with Mum and my younger brother, who's ten, in a rented upstairs flat. Dad lives elsewhere and visits occasionally.
+- utterance: Who else is in the house with you?
+  topics:
+  - home
+  style: boundary
+  pair:
+  - friends
+  - home
+- utterance: What's your home like, is it a house or a flat?
+  topics:
+  - home
+  style: boundary
+  pair:
+  - friends
+  - home
+- utterance: Is your other parent around at all?
+  topics:
+  - home
+  style: boundary_colloquial
+  pair:
+  - friends
+  - home
+- utterance: um so who's at home with you day to day
+  topics:
+  - home
+  style: boundary_spoken
+  pair:
+  - friends
+  - home
+- utterance: Who's around at home when you get in?
+  topics:
+  - home
+  style: boundary_follow_up
+  pair:
+  - friends
+  - home
+  previous:
+    interviewer: Do you see your friends?
+    character: I text friends but rarely go out because I worry about leaving Mum. I stopped going to football practice.
+- utterance: Which school year are you in?
+  topics: []
+  style: near_miss
+  pair:
+  - friends
+  - home
+- utterance: Do you have any pets at home?
+  topics: []
+  style: near_miss
+  pair:
+  - friends
+  - home
+- utterance: Are you able to go out with people your age?
+  topics:
+  - friends
+  style: boundary
+  pair:
+  - friends
+  - mood
+- utterance: Have you given up any hobbies or clubs?
+  topics:
+  - friends
+  style: boundary
+  pair:
+  - friends
+  - mood
+- utterance: Is there much time for a social life?
+  topics:
+  - friends
+  style: boundary_colloquial
+  pair:
+  - friends
+  - mood
+- utterance: so um do you ever get to hang out with anyone
+  topics:
+  - friends
+  style: boundary_spoken
+  pair:
+  - friends
+  - mood
+- utterance: And are you able to get out and see friends?
+  topics:
+  - friends
+  style: boundary_follow_up
+  pair:
+  - friends
+  - mood
+  previous:
+    interviewer: Do you worry a lot?
+    character: I worry most days and sleep about six hours because I listen out for Mum. I still enjoy time with friends when I get it.
+- utterance: Have you been feeling low?
+  topics:
+  - mood
+  style: boundary
+  pair:
+  - friends
+  - mood
+- utterance: Do you get enough sleep?
+  topics:
+  - mood
+  style: boundary
+  pair:
+  - friends
+  - mood
+- utterance: Does your mind race with worries at night?
+  topics:
+  - mood
+  style: boundary_colloquial
+  pair:
+  - friends
+  - mood
+- utterance: erm how would you say your mood is
+  topics:
+  - mood
+  style: boundary_spoken
+  pair:
+  - friends
+  - mood
+- utterance: And how are you feeling in yourself these days?
+  topics:
+  - mood
+  style: boundary_follow_up
+  pair:
+  - friends
+  - mood
+  previous:
+    interviewer: Do you see friends?
+    character: I text friends but rarely go out because I worry about leaving Mum. I stopped going to football practice.
+- utterance: Do you use social media a lot?
+  topics: []
+  style: near_miss
+  pair:
+  - friends
+  - mood
+- utterance: Have you got a boyfriend or girlfriend?
+  topics: []
+  style: near_miss
+  pair:
+  - friends
+  - mood
+- utterance: What worries you about asking for help?
+  topics:
+  - fear
+  style: boundary
+  pair:
+  - fear
+  - resentment
+- utterance: Are you worried about what would happen if someone found out how things are?
+  topics:
+  - fear
+  style: boundary
+  pair:
+  - fear
+  - resentment
+- utterance: Is something stopping you telling people you need support?
+  topics:
+  - fear
+  style: boundary_colloquial
+  pair:
+  - fear
+  - resentment
+- utterance: um so what's the worry about letting people in
+  topics:
+  - fear
+  style: boundary_spoken
+  pair:
+  - fear
+  - resentment
+- utterance: And what worries you about telling someone?
+  topics:
+  - fear
+  style: boundary_follow_up
+  pair:
+  - fear
+  - resentment
+  previous:
+    interviewer: Do you ever feel angry about doing so much?
+    character: Sometimes I resent having to do so much, then feel awful because Mum didn't choose to be ill.
+- utterance: Does it ever get to you, how much you're expected to do?
+  topics:
+  - resentment
+  style: boundary
+  pair:
+  - fear
+  - resentment
+- utterance: Do you wish you could have a break sometimes?
+  topics:
+  - resentment
+  style: boundary
+  pair:
+  - fear
+  - resentment
+- utterance: Do you ever feel cross about all your responsibilities?
+  topics:
+  - resentment
+  style: boundary_colloquial
+  pair:
+  - fear
+  - resentment
+- utterance: and do you ever like get annoyed about it all
+  topics:
+  - resentment
+  style: boundary_spoken
+  pair:
+  - fear
+  - resentment
+- utterance: And do you ever feel frustrated at how much falls on you?
+  topics:
+  - resentment
+  style: boundary_follow_up
+  pair:
+  - fear
+  - resentment
+  previous:
+    interviewer: What would worry you about asking for help?
+    character: I'm scared asking for help will split our family up. I want someone to help us stay together safely.
+- utterance: Do you feel your mum understands everything you do?
+  topics: []
+  style: near_miss
+  pair:
+  - fear
+  - resentment
+- utterance: Do you feel proud of what you do for her?
+  topics: []
+  style: near_miss
+  pair:
+  - fear
+  - resentment

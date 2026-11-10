@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: behavioural-change-cognitive-assessment
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Good morning Malcolm, I'm Dr Evans. Thanks for coming along today."
+    expected: []
+    rapport: false
+  - utterance: "Why do you think your family wanted you to come and see us?"
+    expected: [insight]
+    rapport: false
+  - utterance: "Has anyone mentioned that you've said things to people that upset them?"
+    expected: [conduct]
+    rapport: false
+  - utterance: "If you needed to do the weekly food shop, how would you go about it?"
+    expected: [planning]
+    rapport: false
+  - utterance: "Do you find it harder to concentrate these days, say when you're reading?"
+    expected: [attention]
+    rapport: false
+  - utterance: "What did you have for breakfast today?"
+    expected: [memory]
+    rapport: false
+  - utterance: "I'd like you to name as many animals as you can think of in a minute. Off you go."
+    expected: [fluency]
+    rapport: false
+  - utterance: "In what way are a bicycle and a bus alike?"
+    expected: [abstraction]
+    rapport: false
+  - utterance: "Have there been any accidents or near misses at home, in the kitchen or on the road?"
+    expected: [risk]
+    rapport: false
+  - utterance: "Have there been any problems with spending or money lately?"
+    expected: [money]
+    rapport: false
+  - utterance: "How do you feel about everyone being concerned about you?"
+    expected: [feelings]
+    rapport: false
+  - utterance: "It can't be easy having people question how you're doing, Malcolm."
+    expected: []
+    rapport: true
+  - utterance: "It sounds like you'd really like to stay in charge of your own life, and that makes complete sense."
+    expected: []
+    rapport: true
+  - previous:
+      interviewer: "How's your memory for day to day things?"
+      character: "I remember having toast with my wife this morning."
+    utterance: "And what about appointments, do you keep track of those yourself?"
+    expected: [memory]
+    rapport: false
+  - previous:
+      interviewer: "Have you had any accidents at home?"
+      character: "I left a pan heating and forgot about it last month."
+    utterance: "Are you still driving at the moment?"
+    expected: [risk]
+    rapport: false
+  - utterance: "Have you noticed any trouble with your eyesight or hearing?"
+    expected: []
+    rapport: false
+  - utterance: "Do you have any trouble with walking or keeping your balance?"
+    expected: []
+    rapport: false
+  - utterance: "OK, so your family have noticed changes over the past year, though you don't feel much is wrong."
+    expected: []
+    rapport: false

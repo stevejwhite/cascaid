@@ -1,0 +1,789 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: child-wetting-soiling-family-formulation
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Tell me about the wetting he's been having.
+  topics:
+  - wetting
+  style: open
+- utterance: Does he wet the bed as well as during the day?
+  topics:
+  - wetting
+  style: closed
+- utterance: How often is he waking up soaked?
+  topics:
+  - wetting
+  style: colloquial
+- utterance: Had he been reliably continent of urine before this began?
+  topics:
+  - wetting
+  style: clinical
+- utterance: I wondered how often the bedwetting is happening at the moment
+  topics:
+  - wetting
+  style: indirect
+- utterance: That must be tiring for you both; how often is he wetting the bed?
+  topics:
+  - wetting
+  style: empathy_then_question
+- utterance: so um the wetting is it is it most days or more in bed
+  topics:
+  - wetting
+  style: spoken
+- utterance: And the bedwetting?
+  topics:
+  - wetting
+  style: brief
+- utterance: And what about wetting, is that happening too?
+  topics:
+  - wetting
+  style: follow_up
+  previous:
+    interviewer: Tell me more about the soiling.
+    character: He soils his underwear once or twice weekly. He passes a soft stool most days without pain,
+      and I haven't noticed him holding it in.
+- utterance: I imagine he was dry before all this started, was he?
+  topics:
+  - wetting
+  style: leading
+- utterance: What's been happening with his wetting since it started?
+  topics:
+  - wetting
+  style: open
+- utterance: Has he had any wet patches in the daytime?
+  topics:
+  - wetting
+  style: closed
+- utterance: Before all this, had he been properly dry for a good while?
+  topics:
+  - wetting
+  style: colloquial
+- utterance: I'd like to get a picture of when he was last reliably dry
+  topics:
+  - wetting
+  style: indirect
+- utterance: Any daytime wetting?
+  topics:
+  - wetting
+  style: brief
+- utterance: It's understandable you're worried; is it mostly in bed or in the day too?
+  topics:
+  - wetting
+  style: empathy_then_question
+- utterance: Tell me more about the soiling.
+  topics:
+  - soiling
+  style: open
+- utterance: Does he soil himself during the day?
+  topics:
+  - soiling
+  style: closed
+- utterance: How often are there poo accidents?
+  topics:
+  - soiling
+  style: colloquial
+- utterance: How regularly is he opening his bowels, and is it painful?
+  topics:
+  - soiling
+  style: clinical
+- utterance: I'd be interested to hear how his bowel habits have been
+  topics:
+  - soiling
+  style: indirect
+- utterance: I know it's not easy to talk about; how often does he soil?
+  topics:
+  - soiling
+  style: empathy_then_question
+- utterance: um and the the soiling how often's that happening
+  topics:
+  - soiling
+  style: spoken
+- utterance: What about the soiling?
+  topics:
+  - soiling
+  style: brief
+- utterance: Has anything similar happened with his bowels?
+  topics:
+  - soiling
+  style: follow_up
+  previous:
+    interviewer: Tell me about the wetting he's been having.
+    character: He was dry day and night for three years. For four months he's wet the bed three nights
+      weekly and occasionally had a daytime accident.
+- utterance: He's probably holding it in a bit, is he?
+  topics:
+  - soiling
+  style: leading
+- utterance: What have you noticed about his poos?
+  topics:
+  - soiling
+  style: open
+- utterance: Does he seem to strain or hold on when he needs to go?
+  topics:
+  - soiling
+  style: closed
+- utterance: Is he having trouble going for a number two?
+  topics:
+  - soiling
+  style: colloquial
+- utterance: I wondered whether he seems constipated at all
+  topics:
+  - soiling
+  style: indirect
+- utterance: And are his stools soft or hard at home?
+  topics:
+  - soiling
+  style: follow_up
+  previous:
+    interviewer: What have the doctors said so far?
+    character: The paediatrician examined him, reviewed a stool diary and found no evidence of constipation.
+      Urine tests found no infection or raised glucose. We were told no physical cause had been identified,
+      but to return if symptoms changed.
+- utterance: That sounds hard to manage; does it hurt him when he goes?
+  topics:
+  - soiling
+  style: empathy_then_question
+- utterance: What checks has he had with the doctors so far?
+  topics:
+  - medical
+  style: open
+- utterance: Has he seen a paediatrician about this?
+  topics:
+  - medical
+  style: closed
+- utterance: Has anyone had a proper look at him medically?
+  topics:
+  - medical
+  style: colloquial
+- utterance: Has a urine sample been tested?
+  topics:
+  - medical
+  style: clinical
+- utterance: I'd like to know what the paediatrician found
+  topics:
+  - medical
+  style: indirect
+- utterance: You've clearly been trying to get answers; what did the doctors say?
+  topics:
+  - medical
+  style: empathy_then_question
+- utterance: so has he um had any tests done or
+  topics:
+  - medical
+  style: spoken
+- utterance: Any tests so far?
+  topics:
+  - medical
+  style: brief
+- utterance: Has a doctor looked into that side of things?
+  topics:
+  - medical
+  style: follow_up
+  previous:
+    interviewer: Tell me more about the soiling.
+    character: He soils his underwear once or twice weekly. He passes a soft stool most days without pain,
+      and I haven't noticed him holding it in.
+- utterance: I'm guessing the GP or paediatrician has checked him over?
+  topics:
+  - medical
+  style: leading
+- utterance: What were you told about possible physical causes?
+  topics:
+  - medical
+  style: open
+- utterance: Did they rule out anything physical?
+  topics:
+  - medical
+  style: closed
+- utterance: I wondered what the urine results showed
+  topics:
+  - medical
+  style: indirect
+- utterance: What's the paediatrician made of it all?
+  topics:
+  - medical
+  style: colloquial
+- utterance: It's good you've had him checked; what came back from that?
+  topics:
+  - medical
+  style: empathy_then_question
+- utterance: So did they say when to go back to them?
+  topics:
+  - medical
+  style: follow_up
+  previous:
+    interviewer: Has he seen a paediatrician about this?
+    character: The paediatrician examined him, reviewed a stool diary and found no evidence of constipation.
+      Urine tests found no infection or raised glucose. We were told no physical cause had been identified,
+      but to return if symptoms changed.
+- utterance: How have things been at home since the separation?
+  topics:
+  - change
+  style: open
+- utterance: Does he split his time between both of you?
+  topics:
+  - change
+  style: closed
+- utterance: How's he coping with going back and forth?
+  topics:
+  - change
+  style: colloquial
+- utterance: When did the separation happen?
+  topics:
+  - change
+  style: clinical
+- utterance: I'd like to understand the arrangements between the two households
+  topics:
+  - change
+  style: indirect
+- utterance: Separations are hard on everyone; how has he taken it?
+  topics:
+  - change
+  style: empathy_then_question
+- utterance: um so when did the two of you separate
+  topics:
+  - change
+  style: spoken
+- utterance: And the separation?
+  topics:
+  - change
+  style: brief
+- utterance: Did anything change at home around then?
+  topics:
+  - change
+  style: follow_up
+  previous:
+    interviewer: Tell me about the wetting he's been having.
+    character: He was dry day and night for three years. For four months he's wet the bed three nights
+      weekly and occasionally had a daytime accident.
+- utterance: I suppose going between houses has been unsettling for him?
+  topics:
+  - change
+  style: leading
+- utterance: What are the living arrangements now?
+  topics:
+  - change
+  style: open
+- utterance: Is he upset when it's time to switch houses?
+  topics:
+  - change
+  style: closed
+- utterance: How does he handle swapping between homes?
+  topics:
+  - change
+  style: colloquial
+- utterance: I wondered how he reacts around the handover days
+  topics:
+  - change
+  style: indirect
+- utterance: That's a big change for a nine-year-old; how often does he go between you?
+  topics:
+  - change
+  style: empathy_then_question
+- utterance: Have you ever told him off for it?
+  topics:
+  - response
+  style: closed
+- utterance: What do you do when you find wet sheets?
+  topics:
+  - response
+  style: colloquial
+- utterance: Have there been any consequences or punishments after accidents?
+  topics:
+  - response
+  style: clinical
+- utterance: I'm curious how you handle it when it happens
+  topics:
+  - response
+  style: indirect
+- utterance: It can be really frustrating as a parent; how have you reacted?
+  topics:
+  - response
+  style: empathy_then_question
+- utterance: and um what happens when you when you find he's had one
+  topics:
+  - response
+  style: spoken
+- utterance: And how do you react?
+  topics:
+  - response
+  style: brief
+- utterance: When that happens, what do you say to him?
+  topics:
+  - response
+  style: follow_up
+  previous:
+    interviewer: Tell me more about the soiling.
+    character: He soils his underwear once or twice weekly. He passes a soft stool most days without pain,
+      and I haven't noticed him holding it in.
+- utterance: Most parents get cross sometimes, have you found that?
+  topics:
+  - response
+  style: leading
+- utterance: What's your approach after he's wet or soiled?
+  topics:
+  - response
+  style: open
+- utterance: Do you reassure him afterwards?
+  topics:
+  - response
+  style: closed
+- utterance: I wondered what goes on in your house after an accident
+  topics:
+  - response
+  style: indirect
+- utterance: Have you had to come down hard on him about it?
+  topics:
+  - response
+  style: colloquial
+- utterance: Nobody gets this perfect; what's worked or not worked when you respond?
+  topics:
+  - response
+  style: empathy_then_question
+- utterance: Has he lost privileges over it?
+  topics:
+  - response
+  style: closed
+- utterance: How are things at school with this?
+  topics:
+  - school
+  style: open
+- utterance: Does his teacher know what's been going on?
+  topics:
+  - school
+  style: closed
+- utterance: Has anything happened at school?
+  topics:
+  - school
+  style: colloquial
+- utterance: Is the school aware of the continence difficulties?
+  topics:
+  - school
+  style: clinical
+- utterance: I wondered how he manages with the toilets at school
+  topics:
+  - school
+  style: indirect
+- utterance: Kids can be very self-conscious; is he embarrassed at school?
+  topics:
+  - school
+  style: empathy_then_question
+- utterance: um has the school said anything or
+  topics:
+  - school
+  style: spoken
+- utterance: What about school?
+  topics:
+  - school
+  style: brief
+- utterance: Has any of that happened while he's at school?
+  topics:
+  - school
+  style: follow_up
+  previous:
+    interviewer: Tell me about the wetting he's been having.
+    character: He was dry day and night for three years. For four months he's wet the bed three nights
+      weekly and occasionally had a daytime accident.
+- utterance: I imagine he's worried the other kids will find out?
+  topics:
+  - school
+  style: leading
+- utterance: What does his teacher know so far?
+  topics:
+  - school
+  style: open
+- utterance: Does he use the toilets at school?
+  topics:
+  - school
+  style: closed
+- utterance: Is he getting teased by other children?
+  topics:
+  - school
+  style: colloquial
+- utterance: I'd be keen to hear whether school have been told
+  topics:
+  - school
+  style: indirect
+- utterance: It must be a worry for him; how does he feel about it in front of his friends?
+  topics:
+  - school
+  style: empathy_then_question
+- utterance: How does he cope with needing the loo in class?
+  topics:
+  - school
+  style: open
+- utterance: What's the toilet routine like at home?
+  topics:
+  - routine
+  style: open
+- utterance: Do both homes follow the same routine?
+  topics:
+  - routine
+  style: closed
+- utterance: Does he go to the loo at set points in the day?
+  topics:
+  - routine
+  style: colloquial
+- utterance: Are you keeping any record of when accidents happen?
+  topics:
+  - routine
+  style: clinical
+- utterance: I wondered whether there's a regular pattern for going to the toilet
+  topics:
+  - routine
+  style: indirect
+- utterance: Juggling two homes is a lot; is there a shared plan for toileting?
+  topics:
+  - routine
+  style: empathy_then_question
+- utterance: so um do you prompt him to go or does he just go when he wants
+  topics:
+  - routine
+  style: spoken
+- utterance: Any toilet routine?
+  topics:
+  - routine
+  style: brief
+- utterance: Is the routine the same in both places?
+  topics:
+  - routine
+  style: follow_up
+  previous:
+    interviewer: Does he split his time between both of you?
+    character: His mother and I separated five months ago. He moves between our homes midweek and becomes
+      upset before the changeover.
+- utterance: I'd guess the routine's a bit different in each home?
+  topics:
+  - routine
+  style: leading
+- utterance: How do you structure toilet visits around meals and bedtime?
+  topics:
+  - routine
+  style: open
+- utterance: Have you written down when the accidents happen?
+  topics:
+  - routine
+  style: closed
+- utterance: Is anyone jotting down when he has a wet or dirty day?
+  topics:
+  - routine
+  style: colloquial
+- utterance: I'd like to hear about any routine you've agreed between you
+  topics:
+  - routine
+  style: indirect
+- utterance: It's hard to keep track of everything; are you logging the accidents anywhere?
+  topics:
+  - routine
+  style: empathy_then_question
+- utterance: What has he told you about feeling safe?
+  topics:
+  - safety
+  style: open
+- utterance: Has anyone hurt him, as far as you know?
+  topics:
+  - safety
+  style: closed
+- utterance: Is there someone he's scared of?
+  topics:
+  - safety
+  style: colloquial
+- utterance: Do you have any safeguarding concerns?
+  topics:
+  - safety
+  style: clinical
+- utterance: I have to ask every family about safety, and I wondered if he's mentioned being hurt
+  topics:
+  - safety
+  style: indirect
+- utterance: I'm sorry to have to ask this; is there anyone frightening him?
+  topics:
+  - safety
+  style: empathy_then_question
+- utterance: um is there is there anyone who could be hurting him
+  topics:
+  - safety
+  style: spoken
+- utterance: Any worries about his safety?
+  topics:
+  - safety
+  style: brief
+- utterance: Has he mentioned feeling scared at either home?
+  topics:
+  - safety
+  style: follow_up
+  previous:
+    interviewer: How have things been at home since the separation?
+    character: His mother and I separated five months ago. He moves between our homes midweek and becomes
+      upset before the changeover.
+- utterance: He'd tell you if someone were hurting him, wouldn't he?
+  topics:
+  - safety
+  style: leading
+- utterance: How safe does he seem to feel at the moment?
+  topics:
+  - safety
+  style: open
+- utterance: Is there an adult who frightens him?
+  topics:
+  - safety
+  style: closed
+- utterance: I'm wondering about any concerns that he might be at risk
+  topics:
+  - safety
+  style: indirect
+- utterance: Could anyone be giving him a hard time or scaring him?
+  topics:
+  - safety
+  style: colloquial
+- utterance: Might someone be upsetting or frightening him that you don't know about?
+  topics:
+  - safety
+  style: open
+- utterance: How are you feeling about your part in all this?
+  topics:
+  - guilt
+  style: open
+- utterance: Do you blame yourself for what's happening?
+  topics:
+  - guilt
+  style: closed
+- utterance: Are you beating yourself up about it?
+  topics:
+  - guilt
+  style: colloquial
+- utterance: I wondered how much of this you're carrying yourself
+  topics:
+  - guilt
+  style: indirect
+- utterance: Parents often carry a lot of guilt; is that something you feel?
+  topics:
+  - guilt
+  style: empathy_then_question
+- utterance: um do you ever feel it's it's down to you somehow
+  topics:
+  - guilt
+  style: spoken
+- utterance: Any guilt about it, Mark?
+  topics:
+  - guilt
+  style: brief
+- utterance: How do you feel about that, looking back?
+  topics:
+  - guilt
+  style: follow_up
+  previous:
+    interviewer: When did the separation happen?
+    character: His mother and I separated five months ago. He moves between our homes midweek and becomes
+      upset before the changeover.
+- utterance: I imagine you might be blaming yourself a bit?
+  topics:
+  - guilt
+  style: leading
+- utterance: What do you make of your own role in this?
+  topics:
+  - guilt
+  style: open
+- utterance: Is there a part of you that feels this is your fault?
+  topics:
+  - guilt
+  style: closed
+- utterance: I'm interested in what you tell yourself about why this started
+  topics:
+  - guilt
+  style: indirect
+- utterance: Does it weigh on you, the split and what's followed?
+  topics:
+  - guilt
+  style: colloquial
+- utterance: You've obviously been carrying a lot; could we talk about what you hold yourself responsible
+    for?
+  topics:
+  - guilt
+  style: empathy_then_question
+- utterance: How are you and his mother getting on about all this?
+  topics:
+  - conflict
+  style: open
+- utterance: Do the two of you disagree about the accidents?
+  topics:
+  - conflict
+  style: closed
+- utterance: Have the accidents become a sore point between you two?
+  topics:
+  - conflict
+  style: colloquial
+- utterance: How well are you co-parenting around his symptoms?
+  topics:
+  - conflict
+  style: clinical
+- utterance: I wondered how well you're able to work together with his mother on this
+  topics:
+  - conflict
+  style: indirect
+- utterance: Separating can make cooperation really tricky; have there been disagreements over this?
+  topics:
+  - conflict
+  style: empathy_then_question
+- utterance: so um do you and his mum see eye to eye on it or
+  topics:
+  - conflict
+  style: spoken
+- utterance: Any rows about it?
+  topics:
+  - conflict
+  style: brief
+- utterance: Have you two fallen out over how to handle it?
+  topics:
+  - conflict
+  style: follow_up
+  previous:
+    interviewer: How do you respond when he has an accident?
+    character: I initially scolded him and removed screen time. I've stopped doing that since the GP explained
+      it might make things harder.
+- utterance: I suppose it's caused some friction between you?
+  topics:
+  - conflict
+  style: leading
+- utterance: What happens when you and his mother discuss the accidents?
+  topics:
+  - conflict
+  style: open
+- utterance: Have the accidents come up in disputes about where he lives?
+  topics:
+  - conflict
+  style: closed
+- utterance: I'd like to hear how the two of you communicate about him now
+  topics:
+  - conflict
+  style: indirect
+- utterance: Is it getting dragged into the wider disagreements?
+  topics:
+  - conflict
+  style: colloquial
+- utterance: It's really hard co-parenting after a split; how are you finding working with his mother?
+  topics:
+  - conflict
+  style: empathy_then_question
+- utterance: When did the wetting start, and is there any soiling too?
+  topics:
+  - wetting
+  - soiling
+  style: stacked
+- utterance: What did the paediatrician find, and does school know?
+  topics:
+  - medical
+  - school
+  style: stacked
+- utterance: When did you separate, and how do you respond when he has accidents?
+  topics:
+  - change
+  - response
+  style: stacked
+- utterance: Is there a set toilet routine, and does his teacher know what's happening?
+  topics:
+  - routine
+  - school
+  style: stacked
+- utterance: Hello Mark, thanks for coming in today.
+  topics: []
+  style: greeting
+- utterance: Nice to meet you, Mark, please take a seat.
+  topics: []
+  style: greeting
+- utterance: Hi Mark, I'm one of the doctors in the child and adolescent team.
+  topics: []
+  style: introduction
+- utterance: I'm the trainee working with the team today, and I'll be talking things through with you.
+  topics: []
+  style: introduction
+- utterance: Is it all right if we talk about how things have been for your son?
+  topics: []
+  style: introduction
+- utterance: Where would you like to start, Mark?
+  topics: []
+  style: introduction
+- utterance: Before we start, is there anything you'd like to ask me?
+  topics: []
+  style: introduction
+- utterance: I'd like to move on to something a bit different now.
+  topics: []
+  style: transition
+- utterance: Thanks, that's helpful. Can we turn to the plan now?
+  topics: []
+  style: transition
+- utterance: Let's shift to what happens next.
+  topics: []
+  style: transition
+- utterance: We're almost out of time, Mark.
+  topics: []
+  style: closing
+- utterance: Thank you for being so open with me today.
+  topics: []
+  style: closing
+- utterance: We'll need to stop there shortly, but I'll write to you with the plan.
+  topics: []
+  style: closing
+- utterance: It sounds like you've been really worried about him.
+  topics: []
+  style: empathy
+- utterance: This is clearly something you care a lot about.
+  topics: []
+  style: empathy
+- utterance: It's completely understandable to feel at a loss with this.
+  topics: []
+  style: empathy
+- utterance: You're doing the right thing by coming to get help.
+  topics: []
+  style: empathy
+- utterance: So to sum up, the wetting and soiling began after the separation and you'd like some help.
+  topics: []
+  style: summary
+- utterance: Let me just recap what we've covered so far.
+  topics: []
+  style: summary
+- utterance: Wetting and soiling are common in children and often improve with the right support.
+  topics: []
+  style: explanation
+- utterance: What I'd like to do is explain how we think about this, looking at physical and emotional
+    factors together.
+  topics: []
+  style: explanation
+- utterance: Telling children off tends to make accidents worse, so we'd suggest staying calm and matter-of-fact.
+  topics: []
+  style: explanation
+- utterance: A shared routine across both homes often helps children feel more secure.
+  topics: []
+  style: explanation
+- utterance: We'd also like to link in with school so he can go to the toilet discreetly.
+  topics: []
+  style: explanation
+- utterance: Does that make sense so far?
+  topics: []
+  style: check_understanding
+- utterance: Could you tell me in your own words what you'll take away from this?
+  topics: []
+  style: check_understanding
+- utterance: Is there anything I've said that wasn't clear?
+  topics: []
+  style: check_understanding
+- utterance: How is he getting on with his reading and schoolwork?
+  topics: []
+  style: off_case
+- utterance: Has anyone in the family had similar problems as a child?
+  topics: []
+  style: off_case
+- utterance: What time does he usually go to bed?
+  topics: []
+  style: near_miss
+- utterance: Does he still enjoy school otherwise?
+  topics: []
+  style: near_miss
+- utterance: How long has he been at his current school?
+  topics: []
+  style: near_miss
+- utterance: Is the paediatrician's clinic easy for you to get to?
+  topics: []
+  style: near_miss

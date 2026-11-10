@@ -1,0 +1,173 @@
+# Conversational lines for the topic classifier: generic openers and transitions
+# (no topic), and questions addressed by name or with a preamble. Drafted by
+# Claude (Opus 5.5) on 2026-10-13 after real sessions showed most such lines fell
+# to Qwen. NOT YET REVIEWED by a person. Not evaluation data.
+case_id: overdose-risk-assessment
+case_version: 0.4.0
+status: draft
+items:
+- utterance: Hi Jordan, I'm one of the doctors on the ward.
+  topics: &id001 []
+  style: introduction
+- utterance: Jordan, I really appreciate you sitting down with me.
+  topics: *id001
+  style: greeting
+- utterance: Is it okay if I ask you some questions?
+  topics: *id001
+  style: brief
+- utterance: Would you like a drink of water before we start?
+  topics: *id001
+  style: brief
+- utterance: Take your time, there's no rush.
+  topics: *id001
+  style: empathy
+- utterance: Shall we begin?
+  topics: *id001
+  style: brief
+- utterance: okay um I'm going to ask you some questions now if that's alright
+  topics: *id001
+  style: spoken
+- utterance: Thank you for telling me that. Can I ask about something else?
+  topics: *id001
+  style: follow_up
+- utterance: Okay Jordan, in your own time, take me back to yesterday evening.
+  topics:
+  - overdose-details
+  style: open
+- utterance: And how many tablets did you take?
+  topics:
+  - overdose-details
+  style: closed
+- utterance: Okay Jordan, how long had you been thinking about doing it?
+  topics:
+  - planning
+  style: open
+- utterance: Did you buy the tablets specially?
+  topics:
+  - planning
+  style: closed
+- utterance: Were you on your own when you took them, Jordan?
+  topics:
+  - precautions
+  style: closed
+- utterance: Did you expect anyone to find you?
+  topics:
+  - precautions
+  style: closed
+- utterance: Jordan, before you took them, did you write anything for anyone?
+  topics:
+  - note
+  style: closed
+- utterance: How did you get to hospital, Jordan?
+  topics:
+  - discovery
+  style: open
+- utterance: Who was it that found you?
+  topics:
+  - discovery
+  style: open
+- utterance: Jordan, waking up here this morning, what went through your mind?
+  topics:
+  - current-intent
+  style: open
+- utterance: Right now, Jordan, are those thoughts of not wanting to be alive still there?
+  topics:
+  - current-intent
+  style: closed
+- utterance: Okay Jordan, what was going on for you in the days before?
+  topics:
+  - trigger
+  style: open
+- utterance: Has something difficult been going on for you recently?
+  topics:
+  - trigger
+  style: closed
+- utterance: Jordan, generally, have you been feeling down?
+  topics:
+  - mood
+  style: open
+- utterance: Have you been enjoying anything at all lately?
+  topics:
+  - mood
+  style: closed
+- utterance: Jordan, have you ever done anything like this before?
+  topics:
+  - past-self-harm
+  style: closed
+- utterance: Have you ever had help for your mental health in the past?
+  topics:
+  - past-self-harm
+  style: closed
+- utterance: Do you drink much, Jordan?
+  topics:
+  - alcohol
+  style: brief
+- utterance: Do you use any drugs at all?
+  topics:
+  - alcohol
+  style: closed
+- utterance: Jordan, back at your place, is there a stash of medicines anywhere?
+  topics:
+  - access-to-means
+  style: closed
+- utterance: Is there anything else at home you could use to hurt yourself?
+  topics:
+  - access-to-means
+  style: closed
+- utterance: What keeps you going, Jordan?
+  topics:
+  - protective-factors
+  style: open
+- utterance: Who do you have around you for support?
+  topics:
+  - protective-factors
+  style: open
+- utterance: Hi Jordan, my name's Dr Shah, I'm one of the psychiatrists.
+  topics: &id002 []
+  style: introduction
+- utterance: Nice to meet you, Jordan.
+  topics: *id002
+  style: greeting
+- utterance: What would you like me to call you?
+  topics: *id002
+  style: brief
+- utterance: Is there anything you'd like to ask before we carry on?
+  topics: *id002
+  style: open
+- utterance: Okay, I'm going to move on to a different area now.
+  topics: *id002
+  style: spoken
+- utterance: Bear with me while I make a quick note.
+  topics: *id002
+  style: spoken
+- utterance: Thanks Jordan, that's really useful to know.
+  topics: *id002
+  style: follow_up
+- utterance: So Jordan, what's been going on for you lately?
+  topics:
+  - trigger
+  style: open
+- utterance: Could you bring me up to speed on the last few days?
+  topics:
+  - trigger
+  style: open
+- utterance: Hi Jordan, I'm Dr Shah, one of the psychiatrists. The medical team asked me to see you. Can
+    you tell me what you took last night?
+  topics:
+  - overdose-details
+  style: introduction
+- utterance: Nice to meet you, Jordan. I'm one of the doctors here. Could I ask whether you'd planned
+    this for a while?
+  topics:
+  - planning
+  style: introduction
+- utterance: Thanks for talking with me, Jordan. I'm going to ask some questions. First, how did you come
+    to be in hospital?
+  topics:
+  - discovery
+  style: introduction
+- utterance: Hello Jordan, I'm Dr Shah. Before anything else, I wanted to ask, have you hurt yourself
+    in the past?
+  topics:
+  - past-self-harm
+  style: introduction

@@ -1,0 +1,51 @@
+# Author-labelled interpreter cases. Held-out test split: written before interpreter
+# tuning (2026-10-07) and not used to tune prompts or labels.
+case_id: clozapine-explanation-relative
+case_version: 0.4.0
+split: test
+items:
+  - utterance: Hello Maria, I'm one of the doctors looking after Daniel.
+    expected: []
+    rapport: false
+  - utterance: What do you already know about clozapine?
+    expected: [prior-knowledge]
+    rapport: false
+  - utterance: Have you heard anything about it that worries you?
+    expected: [prior-knowledge]
+    rapport: false
+  - utterance: How does Daniel get on with blood tests?
+    expected: [needle-fear]
+    rapport: false
+  - utterance: Did he have side effects on his previous medication?
+    expected: [previous-side-effects]
+    rapport: false
+  - utterance: Does Daniel smoke?
+    expected: [smoking]
+    rapport: false
+  - utterance: Does he use any drugs or alcohol?
+    expected: [cannabis]
+    rapport: false
+  - utterance: Is he good at remembering to take his tablets?
+    expected: [adherence]
+    rapport: false
+  - utterance: What does Daniel think about trying clozapine?
+    expected: [daniel-view]
+    rapport: false
+  - utterance: Clozapine is a medicine used when other antipsychotics haven't worked well enough.
+    expected: []
+    rapport: false
+  - utterance: It's completely understandable to feel worried after everything you've been through.
+    expected: []
+    rapport: true
+  - utterance: What are you hoping clozapine will do for him?
+    expected: [hopes]
+    rapport: false
+  - utterance: Does that make sense so far? What questions do you have?
+    expected: []
+    rapport: false
+  - utterance: What other tablets has he tried before?
+    expected: [treatment-history]
+    rapport: false
+  - utterance: Where does Daniel work?
+    expected: []
+    rapport: false

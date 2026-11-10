@@ -1,0 +1,359 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: transgender-woman-social-history
+case_version: 0.1.0
+status: draft
+items:
+- utterance: How are things with your parents these days?
+  topics:
+  - family-now
+  style: boundary
+  pair:
+  - family-now
+  - relationships
+- utterance: Do you have brothers or sisters, and are they on side?
+  topics:
+  - family-now
+  style: boundary
+  pair:
+  - family-now
+  - relationships
+- utterance: Are your relatives accepting of you, would you say?
+  topics:
+  - family-now
+  style: boundary_colloquial
+  pair:
+  - family-now
+  - relationships
+- utterance: um so how does your family take all of this
+  topics:
+  - family-now
+  style: boundary_spoken
+  pair:
+  - family-now
+  - relationships
+- utterance: And what about your parents, how have they taken it?
+  topics:
+  - family-now
+  style: boundary_follow_up
+  pair:
+  - family-now
+  - relationships
+  previous:
+    interviewer: Who do you live with?
+    character: I live with my partner, who is supportive. Two close friends are people I can talk openly with.
+- utterance: Who do you live with at the moment?
+  topics:
+  - relationships
+  style: boundary
+  pair:
+  - family-now
+  - relationships
+- utterance: Is there a significant other in your life?
+  topics:
+  - relationships
+  style: boundary
+  pair:
+  - family-now
+  - relationships
+- utterance: Are there friends you can be open with?
+  topics:
+  - relationships
+  style: boundary_colloquial
+  pair:
+  - family-now
+  - relationships
+- utterance: and is there like someone at home with you
+  topics:
+  - relationships
+  style: boundary_spoken
+  pair:
+  - family-now
+  - relationships
+- utterance: And who do you have around you day to day, a partner or friends?
+  topics:
+  - relationships
+  style: boundary_follow_up
+  pair:
+  - family-now
+  - relationships
+  previous:
+    interviewer: How do your parents feel about it?
+    character: My brother is supportive. My parents avoid discussing my life, and I feel hurt when they leave my partner out of invitations.
+- utterance: Do your neighbours know you?
+  topics: []
+  style: near_miss
+  pair:
+  - family-now
+  - relationships
+- utterance: Are you a parent yourself?
+  topics: []
+  style: near_miss
+  pair:
+  - family-now
+  - relationships
+- utterance: What would you like me to help you with first?
+  topics:
+  - goals
+  style: boundary
+  pair:
+  - goals
+  - mood
+- utterance: What should we prioritise between us?
+  topics:
+  - goals
+  style: boundary
+  pair:
+  - goals
+  - mood
+- utterance: Would you like me to keep you updated about the referral?
+  topics:
+  - goals
+  style: boundary_colloquial
+  pair:
+  - goals
+  - mood
+- utterance: so um what do you want me to do for you from this meeting
+  topics:
+  - goals
+  style: boundary_spoken
+  pair:
+  - goals
+  - mood
+- utterance: And what would you most like us to help with?
+  topics:
+  - goals
+  style: boundary_follow_up
+  pair:
+  - goals
+  - mood
+  previous:
+    interviewer: How has your mood been?
+    character: I've felt low most days for two months and sleep poorly. I still enjoy some time with friends, but it's harder to get going.
+- utterance: Have you noticed your spirits dropping lately?
+  topics:
+  - mood
+  style: boundary
+  pair:
+  - goals
+  - mood
+- utterance: Have you been sleeping well?
+  topics:
+  - mood
+  style: boundary
+  pair:
+  - goals
+  - mood
+- utterance: Is there still stuff you enjoy doing?
+  topics:
+  - mood
+  style: boundary_colloquial
+  pair:
+  - goals
+  - mood
+- utterance: and have you been feeling down at all
+  topics:
+  - mood
+  style: boundary_spoken
+  pair:
+  - goals
+  - mood
+- utterance: OK, and what's your mood been like through the days?
+  topics:
+  - mood
+  style: boundary_follow_up
+  pair:
+  - goals
+  - mood
+  previous:
+    interviewer: What do you want from today?
+    character: I want help with the low mood and money worries now, as well as being kept informed about the referral.
+- utterance: What do you hope life will look like in five years?
+  topics: []
+  style: near_miss
+  pair:
+  - goals
+  - mood
+- utterance: Are you taking any medication for your mood?
+  topics: []
+  style: near_miss
+  pair:
+  - goals
+  - mood
+- utterance: Is there anything in particular you'd like us to do for you?
+  topics:
+  - goals
+  style: boundary
+  pair:
+  - goals
+  - transition
+- utterance: Do you want me to chase up the referral for you?
+  topics:
+  - goals
+  style: boundary
+  pair:
+  - goals
+  - transition
+- utterance: What matters most to you right now that we could help with?
+  topics:
+  - goals
+  style: boundary_colloquial
+  pair:
+  - goals
+  - transition
+- utterance: er so what would you want out of this appointment
+  topics:
+  - goals
+  style: boundary_spoken
+  pair:
+  - goals
+  - transition
+- utterance: And what would you like from us?
+  topics:
+  - goals
+  style: boundary_follow_up
+  pair:
+  - goals
+  - transition
+  previous:
+    interviewer: What changes have you made so far?
+    character: I've changed my name and how I present socially. I've been waiting eighteen months for specialist assessment and haven't started hormones.
+- utterance: How long have you been waiting for the assessment?
+  topics:
+  - transition
+  style: boundary
+  pair:
+  - goals
+  - transition
+- utterance: Have you made any changes to how you present day to day?
+  topics:
+  - transition
+  style: boundary
+  pair:
+  - goals
+  - transition
+- utterance: Has any medical treatment been started yet?
+  topics:
+  - transition
+  style: boundary_colloquial
+  pair:
+  - goals
+  - transition
+- utterance: um so have you changed your name and things like that
+  topics:
+  - transition
+  style: boundary_spoken
+  pair:
+  - goals
+  - transition
+- utterance: And what steps have you taken so far on the gender side of things?
+  topics:
+  - transition
+  style: boundary_follow_up
+  pair:
+  - goals
+  - transition
+  previous:
+    interviewer: What would you like help with today?
+    character: I want help with the low mood and money worries now, as well as being kept informed about the referral.
+- utterance: Have you thought of moving to another area?
+  topics: []
+  style: near_miss
+  pair:
+  - goals
+  - transition
+- utterance: Are you in touch with a support group for trans people?
+  topics: []
+  style: near_miss
+  pair:
+  - goals
+  - transition
+- utterance: Have you been feeling down lately?
+  topics:
+  - mood
+  style: boundary
+  pair:
+  - mood
+  - relationships
+- utterance: Are you finding it hard to get going in the mornings?
+  topics:
+  - mood
+  style: boundary
+  pair:
+  - mood
+  - relationships
+- utterance: Do you still manage to enjoy things?
+  topics:
+  - mood
+  style: boundary_colloquial
+  pair:
+  - mood
+  - relationships
+- utterance: um how's your energy been
+  topics:
+  - mood
+  style: boundary_spoken
+  pair:
+  - mood
+  - relationships
+- utterance: And how has your sleep been?
+  topics:
+  - mood
+  style: boundary_follow_up
+  pair:
+  - mood
+  - relationships
+  previous:
+    interviewer: Do you have people you can talk to?
+    character: I live with my partner, who is supportive. Two close friends are people I can talk openly with.
+- utterance: Is your partner supportive?
+  topics:
+  - relationships
+  style: boundary
+  pair:
+  - mood
+  - relationships
+- utterance: Do you have someone you can talk to openly about how things are?
+  topics:
+  - relationships
+  style: boundary
+  pair:
+  - mood
+  - relationships
+- utterance: Does anyone else live with you?
+  topics:
+  - relationships
+  style: boundary_colloquial
+  pair:
+  - mood
+  - relationships
+- utterance: and are you close to people at the moment
+  topics:
+  - relationships
+  style: boundary_spoken
+  pair:
+  - mood
+  - relationships
+- utterance: And do you have people around you to talk to?
+  topics:
+  - relationships
+  style: boundary_follow_up
+  pair:
+  - mood
+  - relationships
+  previous:
+    interviewer: How has your sleep been?
+    character: I've felt low most days for two months and sleep poorly. I still enjoy some time with friends, but it's harder to get going.
+- utterance: Do you drive?
+  topics: []
+  style: near_miss
+  pair:
+  - mood
+  - relationships
+- utterance: Have you had any panic attacks?
+  topics: []
+  style: near_miss
+  pair:
+  - mood
+  - relationships

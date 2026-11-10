@@ -1,0 +1,853 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: amputation-refusal-capacity
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Can you tell me what's been happening with your foot?
+  topics:
+  - condition
+  style: open
+- utterance: Has anyone explained how serious the infection is?
+  topics:
+  - condition
+  style: closed
+- utterance: What have the doctors said about your foot, then?
+  topics:
+  - condition
+  style: colloquial
+- utterance: What is your understanding of the diabetic foot infection?
+  topics:
+  - condition
+  style: clinical
+- utterance: I'd like to hear how you see the problem with your foot
+  topics:
+  - condition
+  style: indirect
+- utterance: This must be frightening. What have you been told about the infection?
+  topics:
+  - condition
+  style: empathy_then_question
+- utterance: so um what's been going on with the foot exactly
+  topics:
+  - condition
+  style: spoken
+- utterance: And the infection?
+  topics:
+  - condition
+  style: brief
+- utterance: Thank you. And the infection itself, how bad could it get?
+  topics:
+  - condition
+  style: follow_up
+  previous:
+    interviewer: Are you willing to listen to more information?
+    character: I'm saying no to the operation at present. I'm willing to hear more, but I haven't changed
+      my decision.
+- utterance: Right, and what is the infection actually doing to you?
+  topics:
+  - condition
+  style: follow_up
+  previous:
+    interviewer: How have you been feeling lately?
+    character: I've felt low for three weeks since this worsened. I still look forward to seeing my daughter,
+      but I worry about the future.
+- utterance: It sounds as if the infection could become dangerous, doesn't it?
+  topics:
+  - condition
+  style: leading
+- utterance: How would you describe what the infection might do if it isn't controlled?
+  topics:
+  - condition
+  style: open
+- utterance: What's the worst they've said could happen with the foot?
+  topics:
+  - condition
+  style: colloquial
+- utterance: Do you know whether the infection can spread?
+  topics:
+  - condition
+  style: closed
+- utterance: so what did they say about it, is it dangerous or what
+  topics:
+  - condition
+  style: spoken
+- utterance: What have the surgeons proposed for you?
+  topics:
+  - operation
+  style: open
+- utterance: Do you know what the amputation would involve?
+  topics:
+  - operation
+  style: closed
+- utterance: What exactly would they be taking off?
+  topics:
+  - operation
+  style: colloquial
+- utterance: Could you explain which level of the limb the surgery would involve?
+  topics:
+  - operation
+  style: clinical
+- utterance: I wondered what you understand the operation to be
+  topics:
+  - operation
+  style: indirect
+- utterance: I can see this is hard. Which part of your leg would the surgery affect?
+  topics:
+  - operation
+  style: empathy_then_question
+- utterance: um so what would the operation actually be, like what would they do
+  topics:
+  - operation
+  style: spoken
+- utterance: What would be removed?
+  topics:
+  - operation
+  style: brief
+- utterance: What does the surgery involve, in your own words?
+  topics:
+  - operation
+  style: follow_up
+  previous:
+    interviewer: Is there anything that would change your mind?
+    character: I'm saying no to the operation at present. I'm willing to hear more, but I haven't changed
+      my decision.
+- utterance: They want to take quite a lot of the leg, don't they?
+  topics:
+  - operation
+  style: leading
+- utterance: Talk me through what the amputation would mean for your body
+  topics:
+  - operation
+  style: open
+- utterance: What's the surgery they want to do, in plain words?
+  topics:
+  - operation
+  style: colloquial
+- utterance: Would the operation be reversible, as you understand it?
+  topics:
+  - operation
+  style: closed
+- utterance: so what are the surgeons planning to do to you
+  topics:
+  - operation
+  style: spoken
+- utterance: What other treatment options have you been given?
+  topics:
+  - alternatives
+  style: open
+- utterance: Is there anything other than surgery that's been tried?
+  topics:
+  - alternatives
+  style: closed
+- utterance: What happens if you don't have the operation?
+  topics:
+  - alternatives
+  style: colloquial
+- utterance: What do you understand the risks of declining surgery to be?
+  topics:
+  - alternatives
+  style: clinical
+- utterance: I'd like to know whether there is any treatment besides operating
+  topics:
+  - alternatives
+  style: indirect
+- utterance: It's a lot to take in. What have they said about treating this without an operation?
+  topics:
+  - alternatives
+  style: empathy_then_question
+- utterance: so um if you didn't go ahead what would happen, did they say
+  topics:
+  - alternatives
+  style: spoken
+- utterance: And without surgery?
+  topics:
+  - alternatives
+  style: brief
+- utterance: Is there any way to manage it without that?
+  topics:
+  - alternatives
+  style: follow_up
+  previous:
+    interviewer: What's your understanding of the operation?
+    character: They recommend removing my leg below the knee to control the infection. I know that means
+      permanently losing that part of my leg.
+- utterance: What could happen as a result of that?
+  topics:
+  - alternatives
+  style: follow_up
+  previous:
+    interviewer: Are you saying no to the operation?
+    character: I'm saying no to the operation at present. I'm willing to hear more, but I haven't changed
+      my decision.
+- utterance: Not operating could be very dangerous, couldn't it?
+  topics:
+  - alternatives
+  style: leading
+- utterance: Tell me about the treatment you're having at the moment
+  topics:
+  - alternatives
+  style: open
+- utterance: Is the medicine you're on enough to sort out the infection?
+  topics:
+  - alternatives
+  style: colloquial
+- utterance: Did the team say what refusing might lead to?
+  topics:
+  - alternatives
+  style: closed
+- utterance: so what's the other option then if not the operation
+  topics:
+  - alternatives
+  style: spoken
+- utterance: Can you tell me what was discussed with you this morning?
+  topics:
+  - retention
+  style: open
+- utterance: Do you remember the conversation you had with the surgical team earlier today?
+  topics:
+  - retention
+  style: closed
+- utterance: What do you remember them saying earlier?
+  topics:
+  - retention
+  style: colloquial
+- utterance: Could you repeat back the main options you were given?
+  topics:
+  - retention
+  style: clinical
+- utterance: I wondered how much of this morning's discussion has stayed with you
+  topics:
+  - retention
+  style: indirect
+- utterance: I know it's been an overwhelming day. What can you recall of what was explained?
+  topics:
+  - retention
+  style: empathy_then_question
+- utterance: so um can you just go over what they told you this morning
+  topics:
+  - retention
+  style: spoken
+- utterance: What do you recall from earlier?
+  topics:
+  - retention
+  style: brief
+- utterance: Can you tell me the choices as you remember them from that meeting?
+  topics:
+  - retention
+  style: follow_up
+  previous:
+    interviewer: What does the surgery involve, in your own words?
+    character: They recommend removing my leg below the knee to control the infection. I know that means
+      permanently losing that part of my leg.
+- utterance: If I asked you again tomorrow, would you still remember all that?
+  topics:
+  - retention
+  style: follow_up
+  previous:
+    interviewer: What could happen if you don't have it?
+    character: I'm receiving antibiotics, but the surgeons say they may not control it without the operation.
+      I understand refusing could mean I die.
+- utterance: You've probably forgotten a lot of what was said this morning, haven't you?
+  topics:
+  - retention
+  style: leading
+- utterance: How would you sum up the choices in your own words?
+  topics:
+  - retention
+  style: open
+- utterance: Can you give me the gist of what they told you?
+  topics:
+  - retention
+  style: colloquial
+- utterance: Has any of the morning's discussion slipped your mind?
+  topics:
+  - retention
+  style: closed
+- utterance: so what were the choices again, as you remember them
+  topics:
+  - retention
+  style: spoken
+- utterance: How are you weighing up the choices in front of you?
+  topics:
+  - weighing
+  style: open
+- utterance: Are there reasons on both sides for you?
+  topics:
+  - weighing
+  style: closed
+- utterance: What's going through your head when you think about it all?
+  topics:
+  - weighing
+  style: colloquial
+- utterance: What factors are you balancing in reaching your decision?
+  topics:
+  - weighing
+  style: clinical
+- utterance: I'd be interested in how you came to your view
+  topics:
+  - weighing
+  style: indirect
+- utterance: This is a hard decision to carry. What matters most to you as you think it through?
+  topics:
+  - weighing
+  style: empathy_then_question
+- utterance: um so how did you work out what you wanted to do
+  topics:
+  - weighing
+  style: spoken
+- utterance: Your reasons for deciding?
+  topics:
+  - weighing
+  style: brief
+- utterance: What's behind that for you?
+  topics:
+  - weighing
+  style: follow_up
+  previous:
+    interviewer: So you're not having it at the moment?
+    character: I'm saying no to the operation at present. I'm willing to hear more, but I haven't changed
+      my decision.
+- utterance: How do you feel about those risks when you think of the future?
+  topics:
+  - weighing
+  style: follow_up
+  previous:
+    interviewer: What could happen if you don't have it?
+    character: I'm receiving antibiotics, but the surgeons say they may not control it without the operation.
+      I understand refusing could mean I die.
+- utterance: Part of you must want to get through this, but part of you is afraid, is that right?
+  topics:
+  - weighing
+  style: leading
+- utterance: What would be the good and bad sides of having surgery, as you see it?
+  topics:
+  - weighing
+  style: open
+- utterance: What's making it so hard to decide?
+  topics:
+  - weighing
+  style: colloquial
+- utterance: Do you think the operation could help you?
+  topics:
+  - weighing
+  style: closed
+- utterance: so what are you thinking about, the pros and cons
+  topics:
+  - weighing
+  style: spoken
+- utterance: Have you decided against the operation?
+  topics:
+  - choice
+  style: closed
+- utterance: Are you still saying no to the surgery?
+  topics:
+  - choice
+  style: colloquial
+- utterance: Do you consent to the proposed procedure at this point?
+  topics:
+  - choice
+  style: clinical
+- utterance: I wanted to check where you stand on the surgery right now
+  topics:
+  - choice
+  style: indirect
+- utterance: I'm not here to push you. Have you changed your mind at all?
+  topics:
+  - choice
+  style: empathy_then_question
+- utterance: so um is it still a no then or
+  topics:
+  - choice
+  style: spoken
+- utterance: And your decision now?
+  topics:
+  - choice
+  style: brief
+- utterance: OK. So what are you thinking of doing today?
+  topics:
+  - choice
+  style: follow_up
+  previous:
+    interviewer: How are you weighing it all up?
+    character: I want to live, but I'm frightened of losing independence. I know surgery could save me
+      and rehabilitation could help; I don't yet know what life afterwards would actually involve.
+- utterance: Thank you for telling me. Where does that leave your decision about surgery?
+  topics:
+  - choice
+  style: follow_up
+  previous:
+    interviewer: Are you wanting to die in any way?
+    character: No, I don't want to die and I'm not refusing to end my life. I'm trying to decide what
+      I could live with.
+- utterance: You're not going to agree to this operation, are you?
+  topics:
+  - choice
+  style: leading
+- utterance: How firmly do you feel about refusing?
+  topics:
+  - choice
+  style: open
+- utterance: Is there any chance you'd change your mind?
+  topics:
+  - choice
+  style: colloquial
+- utterance: Would you be open to hearing more before deciding?
+  topics:
+  - choice
+  style: closed
+- utterance: so is that your final answer or
+  topics:
+  - choice
+  style: spoken
+- utterance: Have you been feeling low?
+  topics:
+  - mood
+  style: closed
+- utterance: Have you been down in yourself recently?
+  topics:
+  - mood
+  style: colloquial
+- utterance: Have you had symptoms of depression over the past few weeks?
+  topics:
+  - mood
+  style: clinical
+- utterance: I wondered how your spirits have been since the infection got worse
+  topics:
+  - mood
+  style: indirect
+- utterance: You've been through a lot. How have you been feeling in yourself?
+  topics:
+  - mood
+  style: empathy_then_question
+- utterance: And your mood?
+  topics:
+  - mood
+  style: brief
+- utterance: Thank you. Has your mood been affected by all of this?
+  topics:
+  - mood
+  style: follow_up
+  previous:
+    interviewer: What do you remember about this morning?
+    character: 'I remember the discussion this morning: remove the lower leg to control infection, or
+      continue without the operation with a serious risk it spreads. I haven''t forgotten that.'
+- utterance: Is there anything you're still looking forward to?
+  topics:
+  - mood
+  style: follow_up
+  previous:
+    interviewer: You mentioned feeling pushed.
+    character: My brother says I'd be foolish to refuse. I feel pushed and want a chance to speak without
+      him there.
+- utterance: I imagine you've been very down these past few weeks?
+  topics:
+  - mood
+  style: leading
+- utterance: What's been enjoyable for you recently, if anything?
+  topics:
+  - mood
+  style: open
+- utterance: Have you gone off things you normally like?
+  topics:
+  - mood
+  style: colloquial
+- utterance: Have you lost interest in things you usually enjoy?
+  topics:
+  - mood
+  style: closed
+- utterance: so have you been feeling depressed or anything
+  topics:
+  - mood
+  style: spoken
+- utterance: How do you feel about your own life at the moment?
+  topics:
+  - suicide
+  style: open
+- utterance: Do you ever think about ending your life?
+  topics:
+  - suicide
+  style: closed
+- utterance: Is any part of you hoping that it will all end?
+  topics:
+  - suicide
+  style: colloquial
+- utterance: Have you had any suicidal thoughts?
+  topics:
+  - suicide
+  style: clinical
+- utterance: I wanted to ask whether thoughts of dying have crossed your mind
+  topics:
+  - suicide
+  style: indirect
+- utterance: This is a difficult thing to ask. Are you refusing treatment because you want to die?
+  topics:
+  - suicide
+  style: empathy_then_question
+- utterance: um sorry I've got to ask are you wanting to die at all
+  topics:
+  - suicide
+  style: spoken
+- utterance: Any thoughts of suicide?
+  topics:
+  - suicide
+  style: brief
+- utterance: I'm sorry you've felt that way. Have things ever felt so bad that you wanted to die?
+  topics:
+  - suicide
+  style: follow_up
+  previous:
+    interviewer: How has your mood been?
+    character: I've felt low for three weeks since this worsened. I still look forward to seeing my daughter,
+      but I worry about the future.
+- utterance: Is saying no to surgery a way of ending things for you?
+  topics:
+  - suicide
+  style: follow_up
+  previous:
+    interviewer: What have you decided about the operation?
+    character: I'm saying no to the operation at present. I'm willing to hear more, but I haven't changed
+      my decision.
+- utterance: You don't want to die, do you?
+  topics:
+  - suicide
+  style: leading
+- utterance: What are your thoughts about death in all this?
+  topics:
+  - suicide
+  style: open
+- utterance: Are you saying no to the operation because you've given up?
+  topics:
+  - suicide
+  style: colloquial
+- utterance: Is it your intention to harm yourself by refusing?
+  topics:
+  - suicide
+  style: closed
+- utterance: so just to be clear are you trying to end your life or
+  topics:
+  - suicide
+  style: spoken
+- utterance: What matters most to you in life?
+  topics:
+  - values
+  style: open
+- utterance: Is being independent important to you?
+  topics:
+  - values
+  style: closed
+- utterance: How would you feel about needing other people to help you?
+  topics:
+  - values
+  style: colloquial
+- utterance: What values are influencing your decision?
+  topics:
+  - values
+  style: clinical
+- utterance: I wondered what sort of life you'd want to keep hold of
+  topics:
+  - values
+  style: indirect
+- utterance: That sounds a big thing to face. Could you tell me what needing care would mean to you?
+  topics:
+  - values
+  style: empathy_then_question
+- utterance: um so what's it like for you thinking about being looked after
+  topics:
+  - values
+  style: spoken
+- utterance: Why does independence matter?
+  topics:
+  - values
+  style: brief
+- utterance: What is it you're most afraid of losing?
+  topics:
+  - values
+  style: follow_up
+  previous:
+    interviewer: How are you weighing it all up?
+    character: I want to live, but I'm frightened of losing independence. I know surgery could save me
+      and rehabilitation could help; I don't yet know what life afterwards would actually involve.
+- utterance: Is there something beyond the operation itself that's behind that?
+  topics:
+  - values
+  style: follow_up
+  previous:
+    interviewer: What have you decided about the operation?
+    character: I'm saying no to the operation at present. I'm willing to hear more, but I haven't changed
+      my decision.
+- utterance: I'd guess being able to do things for yourself is very important to you?
+  topics:
+  - values
+  style: leading
+- utterance: How do you see your role at home?
+  topics:
+  - values
+  style: open
+- utterance: Does the idea of being a burden bother you?
+  topics:
+  - values
+  style: colloquial
+- utterance: Would you feel embarrassed about people doing things for you?
+  topics:
+  - values
+  style: closed
+- utterance: so what would you miss most, you know, doing for yourself
+  topics:
+  - values
+  style: spoken
+- utterance: Who else has had a say in your decision?
+  topics:
+  - pressure
+  style: open
+- utterance: Is anyone pressing you to decide one way or the other?
+  topics:
+  - pressure
+  style: closed
+- utterance: Is anyone trying to talk you round?
+  topics:
+  - pressure
+  style: colloquial
+- utterance: Are there any external influences on your decision?
+  topics:
+  - pressure
+  style: clinical
+- utterance: I wondered whether your family have been giving you their views
+  topics:
+  - pressure
+  style: indirect
+- utterance: You seem to be under a lot of strain. Does anyone's opinion weigh on you?
+  topics:
+  - pressure
+  style: empathy_then_question
+- utterance: um have other people been telling you what to do about it
+  topics:
+  - pressure
+  style: spoken
+- utterance: Anyone pushing you?
+  topics:
+  - pressure
+  style: brief
+- utterance: Has anyone at home been telling you what you should do?
+  topics:
+  - pressure
+  style: follow_up
+  previous:
+    interviewer: What have you decided about the operation?
+    character: I'm saying no to the operation at present. I'm willing to hear more, but I haven't changed
+      my decision.
+- utterance: Would you like a chance to talk about this without anyone else there?
+  topics:
+  - pressure
+  style: follow_up
+  previous:
+    interviewer: What matters to you most?
+    character: Being able to get around and contribute at home matters greatly to me. I feel ashamed imagining
+      everyone doing things for me.
+- utterance: Everyone around you wants you to say yes, I expect?
+  topics:
+  - pressure
+  style: leading
+- utterance: How free do you feel to make up your own mind?
+  topics:
+  - pressure
+  style: open
+- utterance: Does anyone make you feel you have to agree?
+  topics:
+  - pressure
+  style: colloquial
+- utterance: Would you prefer to talk without relatives present?
+  topics:
+  - pressure
+  style: closed
+- utterance: so is somebody leaning on you about the surgery or
+  topics:
+  - pressure
+  style: spoken
+- utterance: Can you hear and read what we've given you without difficulty?
+  topics:
+  - support
+  style: closed
+- utterance: Would it help if we wrote it down for you?
+  topics:
+  - support
+  style: colloquial
+- utterance: Do you need any adjustments to help you process the information?
+  topics:
+  - support
+  style: clinical
+- utterance: I wondered whether you'd like anything to make this easier to take in
+  topics:
+  - support
+  style: indirect
+- utterance: There's a lot of detail here. Would anything help you go over it?
+  topics:
+  - support
+  style: empathy_then_question
+- utterance: um is there anyone else you'd want to talk to about it, like other staff
+  topics:
+  - support
+  style: spoken
+- utterance: Anything that would help?
+  topics:
+  - support
+  style: brief
+- utterance: Would it help to have something to look back on?
+  topics:
+  - support
+  style: follow_up
+  previous:
+    interviewer: What do you remember about this morning?
+    character: 'I remember the discussion this morning: remove the lower leg to control infection, or
+      continue without the operation with a serious risk it spreads. I haven''t forgotten that.'
+- utterance: A written summary would probably be useful for you, wouldn't it?
+  topics:
+  - support
+  style: leading
+- utterance: Which other members of the team would you like to hear from before deciding?
+  topics:
+  - support
+  style: open
+- utterance: Is there someone on the ward you'd like to talk it through with?
+  topics:
+  - support
+  style: colloquial
+- utterance: Do you have any trouble with your hearing or eyesight?
+  topics:
+  - support
+  style: closed
+- utterance: so um what would make it easier for you to think it over
+  topics:
+  - support
+  style: spoken
+- utterance: What have they told you about the infection, and what operation are they suggesting?
+  topics:
+  - condition
+  - operation
+  style: stacked
+- utterance: What happens if you refuse, and are you refusing at the moment?
+  topics:
+  - alternatives
+  - choice
+  style: stacked
+- utterance: How low have you been feeling, and have you thought about dying?
+  topics:
+  - mood
+  - suicide
+  style: stacked
+- utterance: What do you remember from this morning, and would anything written help?
+  topics:
+  - retention
+  - support
+  style: stacked
+- utterance: Good morning, Stephen.
+  topics: []
+  style: greeting
+- utterance: Hello Stephen, nice to meet you.
+  topics: []
+  style: greeting
+- utterance: Hi Stephen, thanks for seeing me.
+  topics: []
+  style: greeting
+- utterance: I'm one of the psychiatrists and I've been asked to talk with you about your treatment.
+  topics: []
+  style: introduction
+- utterance: My name is Dr Hale and I work with the liaison team on the wards.
+  topics: []
+  style: introduction
+- utterance: Stephen, I'm a doctor from the mental health team here.
+  topics: []
+  style: introduction
+- utterance: Is it all right if we talk for a little while?
+  topics: []
+  style: introduction
+- utterance: What would you like to start with?
+  topics: []
+  style: introduction
+- utterance: Before we start, do you have any questions for me?
+  topics: []
+  style: introduction
+- utterance: I'd like to move on to something different now.
+  topics: []
+  style: transition
+- utterance: Shall we turn to how you've been in yourself?
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Stephen.
+  topics: []
+  style: closing
+- utterance: Thank you for talking with me today.
+  topics: []
+  style: closing
+- utterance: That sounds like a very frightening few weeks.
+  topics: []
+  style: empathy
+- utterance: Nobody would find this an easy position to be in.
+  topics: []
+  style: empathy
+- utterance: It's clear you want your views taken seriously.
+  topics: []
+  style: empathy
+- utterance: I can see how much you've been carrying.
+  topics: []
+  style: empathy
+- utterance: So you know the infection is serious and you've said no to the operation for now.
+  topics: []
+  style: summary
+- utterance: Let me pull together what you've said so far about the operation and your reasons.
+  topics: []
+  style: summary
+- utterance: To summarise, you want to live but you're worried about life after surgery.
+  topics: []
+  style: summary
+- utterance: I'm here to understand how you're thinking, not to tell you what to choose.
+  topics: []
+  style: explanation
+- utterance: What we talk about stays between the teams looking after you.
+  topics: []
+  style: explanation
+- utterance: My role is to look at how you are making this decision.
+  topics: []
+  style: explanation
+- utterance: Does that make sense so far?
+  topics: []
+  style: check_understanding
+- utterance: Have I understood you properly?
+  topics: []
+  style: check_understanding
+- utterance: Is it clear why I'm asking these questions?
+  topics: []
+  style: check_understanding
+- utterance: Do you have any allergies to medication?
+  topics: []
+  style: off_case
+- utterance: Do you smoke?
+  topics: []
+  style: off_case
+- utterance: Have you ever had a general anaesthetic before?
+  topics: []
+  style: off_case
+- utterance: What did you do for a living?
+  topics: []
+  style: off_case
+- utterance: Do you ever hear voices or see things others can't?
+  topics: []
+  style: off_case
+- utterance: How did you first notice the wound on your foot?
+  topics: []
+  style: near_miss
+- utterance: What has your blood sugar been like?
+  topics: []
+  style: near_miss
+- utterance: Does your foot hurt at night?
+  topics: []
+  style: near_miss
+- utterance: Will you be able to walk with an artificial limb afterwards?
+  topics: []
+  style: near_miss
+- utterance: Have you ever been depressed before this?
+  topics: []
+  style: near_miss
+- utterance: Have you ever tried to harm yourself in the past?
+  topics: []
+  style: near_miss

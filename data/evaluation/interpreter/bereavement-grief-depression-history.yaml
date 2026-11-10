@@ -1,0 +1,70 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: bereavement-grief-depression-history
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hello Arthur, I'm Dr Clarke. Thank you for letting me visit you at home."
+    expected: []
+    rapport: false
+  - utterance: "Would you be able to tell me a little about your wife and what happened?"
+    expected: [loss]
+    rapport: false
+  - utterance: "How much of the day is she on your mind?"
+    expected: [yearning]
+    rapport: false
+  - utterance: "Are there things you've stopped doing or places you keep away from since she died?"
+    expected: [avoidance]
+    rapport: false
+  - utterance: "How would you describe your mood from day to day?"
+    expected: [mood]
+    rapport: false
+  - utterance: "Is there anything you still get pleasure from?"
+    expected: [enjoyment]
+    rapport: false
+  - utterance: "and your sleep, how's that"
+    expected: [sleep]
+    rapport: false
+  - utterance: "Are you eating properly? Any change in your weight?"
+    expected: [appetite]
+    rapport: false
+  - utterance: "Who have you got around you for support?"
+    expected: [support]
+    rapport: false
+  - utterance: "Do you ever blame yourself for anything about her illness?"
+    expected: [guilt]
+    rapport: false
+  - utterance: "Have you had any thoughts that life isn't worth living, or of ending it?"
+    expected: [death-wish]
+    rapport: false
+  - utterance: "What would you like the coming months to look like for you?"
+    expected: [meaning]
+    rapport: false
+  - utterance: "I'm so sorry for your loss, Arthur."
+    expected: []
+    rapport: true
+  - utterance: "It's clear how much she meant to you, and it makes sense that you're still missing her so deeply."
+    expected: []
+    rapport: true
+  - previous:
+      interviewer: "How do you sleep at night?"
+      character: "About five hours, often waking and reaching for her."
+    utterance: "And what about your appetite?"
+    expected: [appetite]
+    rapport: false
+  - previous:
+      interviewer: "Do you have people who check in on you?"
+      character: "My daughter phones daily and visits weekly."
+    utterance: "Are there any groups or a faith you were part of?"
+    expected: [support]
+    rapport: false
+  - utterance: "Do you drink any alcohol these days?"
+    expected: []
+    rapport: false
+  - utterance: "How is your physical health, any problems with your heart or chest?"
+    expected: []
+    rapport: false
+  - utterance: "So it's been a year, and the grief still shapes most of your days, though there are moments of real joy with the grandchildren."
+    expected: []
+    rapport: false

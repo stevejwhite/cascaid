@@ -1,0 +1,759 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: probation-psychosis-collateral
+case_version: 0.1.0
+status: draft
+items:
+- utterance: How has his attendance been over the time you've supervised him?
+  topics:
+  - attendance
+  style: open
+- utterance: Tell me about the appointments he's missed.
+  topics:
+  - attendance
+  style: open
+- utterance: Was he coming in reliably before all this?
+  topics:
+  - attendance
+  style: closed
+- utterance: Has he missed more than one appointment?
+  topics:
+  - attendance
+  style: closed
+- utterance: So when did he stop turning up?
+  topics:
+  - attendance
+  style: colloquial
+- utterance: Could you describe his pattern of attendance with probation?
+  topics:
+  - attendance
+  style: clinical
+- utterance: I'd be interested to hear when his engagement with you started to change
+  topics:
+  - attendance
+  style: indirect
+- utterance: That sounds like it's been concerning. When did the missed appointments begin?
+  topics:
+  - attendance
+  style: empathy_then_question
+- utterance: um so how many has he um missed now
+  topics:
+  - attendance
+  style: spoken
+- utterance: And his attendance lately?
+  topics:
+  - attendance
+  style: brief
+- utterance: Missed sessions, how many?
+  topics:
+  - attendance
+  style: brief
+- utterance: Before that, was he ever late or absent?
+  topics:
+  - attendance
+  style: follow_up
+  previous:
+    interviewer: How has he been getting on with his probation appointments?
+    character: He attended reliably for six months, then missed his last three weekly appointments. The
+      change began about a month ago.
+- utterance: I take it he's been missing appointments for a few weeks now?
+  topics:
+  - attendance
+  style: leading
+- utterance: Talk me through how often he's been seen recently.
+  topics:
+  - attendance
+  style: open
+- utterance: Did the change in his attendance come on suddenly?
+  topics:
+  - attendance
+  style: closed
+- utterance: What did you see for yourself when you last visited him?
+  topics:
+  - observations
+  style: open
+- utterance: Can you describe how he came across at the home visit?
+  topics:
+  - observations
+  style: open
+- utterance: Did you actually see him face to face last time?
+  topics:
+  - observations
+  style: closed
+- utterance: Has he said anything that sounded unusual or strange to you?
+  topics:
+  - observations
+  style: closed
+- utterance: How did he seem in himself when you called round?
+  topics:
+  - observations
+  style: colloquial
+- utterance: What have you directly observed of his mental state?
+  topics:
+  - observations
+  style: clinical
+- utterance: I'm keen to hear what you've seen and heard from him yourself
+  topics:
+  - observations
+  style: indirect
+- utterance: It must be hard to judge from the outside. What was his behaviour like when you went to his
+    home?
+  topics:
+  - observations
+  style: empathy_then_question
+- utterance: and er when you went round there what was he what was he like
+  topics:
+  - observations
+  style: spoken
+- utterance: What did you notice directly?
+  topics:
+  - observations
+  style: brief
+- utterance: And at the visit?
+  topics:
+  - observations
+  style: brief
+- utterance: Did he say who he thinks is monitoring him?
+  topics:
+  - observations
+  style: follow_up
+  previous:
+    interviewer: Have you seen him since he stopped coming in?
+    character: At a home visit last week he spoke through the door and said people were monitoring him.
+      He seemed much more guarded than usual.
+- utterance: He seemed different from usual when you saw him, I'm guessing?
+  topics:
+  - observations
+  style: leading
+- utterance: Tell me what he said to you in his own words.
+  topics:
+  - observations
+  style: open
+- utterance: Was he more suspicious than you'd expect from him?
+  topics:
+  - observations
+  style: closed
+- utterance: What do you know about his medication?
+  topics:
+  - medication
+  style: open
+- utterance: How has he been managing his treatment?
+  topics:
+  - medication
+  style: open
+- utterance: Has he been taking his tablets, as far as you know?
+  topics:
+  - medication
+  style: closed
+- utterance: Do you know the name and dose of what he's prescribed?
+  topics:
+  - medication
+  style: closed
+- utterance: Is he still picking up his meds?
+  topics:
+  - medication
+  style: colloquial
+- utterance: Has his adherence to antipsychotic medication been confirmed?
+  topics:
+  - medication
+  style: clinical
+- utterance: I wondered whether he's been collecting his prescription
+  topics:
+  - medication
+  style: indirect
+- utterance: I know you're not his prescriber. Has he said anything about stopping his tablets?
+  topics:
+  - medication
+  style: empathy_then_question
+- utterance: um right and his tablets does he er does he take them
+  topics:
+  - medication
+  style: spoken
+- utterance: And his medication?
+  topics:
+  - medication
+  style: brief
+- utterance: Any missed doses?
+  topics:
+  - medication
+  style: brief
+- utterance: Did he say why he stopped collecting them?
+  topics:
+  - medication
+  style: follow_up
+  previous:
+    interviewer: Has he mentioned his tablets at all?
+    character: He said he hadn't collected his tablets for two weeks. I don't know their name or dose
+      and haven't confirmed it with his clinic.
+- utterance: I suppose he's not been taking his treatment regularly?
+  topics:
+  - medication
+  style: leading
+- utterance: Where does he usually get his prescription from, and is that still happening?
+  topics:
+  - medication
+  style: open
+- utterance: Is any of that confirmed with whoever prescribes for him?
+  topics:
+  - medication
+  style: closed
+- utterance: What do you know about drug or alcohol use?
+  topics:
+  - substances
+  style: open
+- utterance: Tell me about any substance use you're aware of.
+  topics:
+  - substances
+  style: open
+- utterance: Has he been using cannabis?
+  topics:
+  - substances
+  style: closed
+- utterance: Have you seen him drinking or using anything yourself?
+  topics:
+  - substances
+  style: closed
+- utterance: Is he smoking weed at all, do you know?
+  topics:
+  - substances
+  style: colloquial
+- utterance: Is there any evidence of illicit substance misuse?
+  topics:
+  - substances
+  style: clinical
+- utterance: I'm wondering whether drugs or drink might be playing a part
+  topics:
+  - substances
+  style: indirect
+- utterance: These things are often hard to know for sure. Has anyone mentioned him using drugs?
+  topics:
+  - substances
+  style: empathy_then_question
+- utterance: and um drugs any er any drugs or alcohol that you know of
+  topics:
+  - substances
+  style: spoken
+- utterance: Any drink or drugs?
+  topics:
+  - substances
+  style: brief
+- utterance: What about cannabis?
+  topics:
+  - substances
+  style: brief
+- utterance: How reliable would you say that report is?
+  topics:
+  - substances
+  style: follow_up
+  previous:
+    interviewer: Is there any suggestion he's using anything?
+    character: A neighbour reported smelling cannabis. I haven't seen him use it or confirmed any alcohol
+      use.
+- utterance: There's a chance he's been using something, isn't there?
+  topics:
+  - substances
+  style: leading
+- utterance: Where has the information about drug use come from?
+  topics:
+  - substances
+  style: open
+- utterance: Can you say for certain whether he's drinking?
+  topics:
+  - substances
+  style: closed
+- utterance: What has he said about other people that worried you?
+  topics:
+  - threats
+  style: open
+- utterance: Has he threatened anyone recently?
+  topics:
+  - threats
+  style: closed
+- utterance: Is there a particular person you're worried about for their safety?
+  topics:
+  - threats
+  style: closed
+- utterance: Has he been mouthing off about anyone in particular?
+  topics:
+  - threats
+  style: colloquial
+- utterance: Are there any identified potential victims?
+  topics:
+  - threats
+  style: clinical
+- utterance: I need to ask about any threats he's made
+  topics:
+  - threats
+  style: indirect
+- utterance: I appreciate this is sensitive. Did he say he'd harm someone?
+  topics:
+  - threats
+  style: empathy_then_question
+- utterance: so um did he did he say anything threatening
+  topics:
+  - threats
+  style: spoken
+- utterance: Any threats to others?
+  topics:
+  - threats
+  style: brief
+- utterance: Anyone he's angry with?
+  topics:
+  - threats
+  style: brief
+- utterance: Has he had any contact with her since?
+  topics:
+  - threats
+  style: follow_up
+  previous:
+    interviewer: Is there anyone he's said he's angry with?
+    character: He told me to keep his former partner away and said she'd be sorry if she came round. I
+      don't know whether he has contacted her.
+- utterance: He hasn't been threatening anyone, I hope?
+  topics:
+  - threats
+  style: leading
+- utterance: What exactly did he say, in his words, about wanting to hurt someone?
+  topics:
+  - threats
+  style: open
+- utterance: Do you know if he's tried to reach the person he was talking about?
+  topics:
+  - threats
+  style: closed
+- utterance: Tell me about where he lives.
+  topics:
+  - housing
+  style: open
+- utterance: Does he live on his own?
+  topics:
+  - housing
+  style: closed
+- utterance: Is he keeping up with his rent?
+  topics:
+  - housing
+  style: closed
+- utterance: What's his place like when you go round?
+  topics:
+  - housing
+  style: colloquial
+- utterance: What are his current accommodation arrangements?
+  topics:
+  - housing
+  style: clinical
+- utterance: I wondered how he's managing at home
+  topics:
+  - housing
+  style: indirect
+- utterance: You've clearly kept a close eye on him. Were there signs at home that he isn't keeping on
+    top of things?
+  topics:
+  - housing
+  style: empathy_then_question
+- utterance: er where's he living at the moment is it is it his own place
+  topics:
+  - housing
+  style: spoken
+- utterance: And his housing?
+  topics:
+  - housing
+  style: brief
+- utterance: Who does he live with?
+  topics:
+  - housing
+  style: brief
+- utterance: Has anyone helped him sort out the arrears?
+  topics:
+  - housing
+  style: follow_up
+  previous:
+    interviewer: Tell me about his home situation.
+    character: He lives alone in a rented flat. There are rent arrears and unopened letters; I couldn't
+      see whether he had food.
+- utterance: I'm guessing things at home have slipped a bit?
+  topics:
+  - housing
+  style: leading
+- utterance: How's he getting on with bills and post?
+  topics:
+  - housing
+  style: open
+- utterance: Did his home look cared for when you were there?
+  topics:
+  - housing
+  style: closed
+- utterance: What's his past history when he's been unwell?
+  topics:
+  - history
+  style: open
+- utterance: Tell me about previous episodes of psychosis and how he behaved.
+  topics:
+  - history
+  style: open
+- utterance: Has he ever been violent when he was unwell before?
+  topics:
+  - history
+  style: closed
+- utterance: Is there any previous offending linked to his mental illness?
+  topics:
+  - history
+  style: closed
+- utterance: Has anything like this happened with him before?
+  topics:
+  - history
+  style: colloquial
+- utterance: What does his forensic history show about risk during relapse?
+  topics:
+  - history
+  style: clinical
+- utterance: I'd like to understand what's happened in the past when he's stopped treatment
+  topics:
+  - history
+  style: indirect
+- utterance: I know you've only got the records to go on. What do they say about earlier relapses?
+  topics:
+  - history
+  style: empathy_then_question
+- utterance: um in the past when he's been poorly has he er hurt anyone
+  topics:
+  - history
+  style: spoken
+- utterance: Any past violence?
+  topics:
+  - history
+  style: brief
+- utterance: And previous relapses?
+  topics:
+  - history
+  style: brief
+- utterance: Who was hurt on that occasion?
+  topics:
+  - history
+  style: follow_up
+  previous:
+    interviewer: Has he been aggressive when he's been unwell in the past?
+    character: The records describe an assault during an earlier period of psychosis and missed treatment.
+      I haven't established whether the current situation is similar.
+- utterance: There's some history of aggression in the past, I take it?
+  topics:
+  - history
+  style: leading
+- utterance: Looking back through his records, what stands out about risk?
+  topics:
+  - history
+  style: open
+- utterance: Was missing treatment a factor last time he became unwell?
+  topics:
+  - history
+  style: closed
+- utterance: Who have you been in touch with about this?
+  topics:
+  - contacts
+  style: open
+- utterance: What contact have you had with his mental health team?
+  topics:
+  - contacts
+  style: open
+- utterance: Have you spoken to his care coordinator?
+  topics:
+  - contacts
+  style: closed
+- utterance: Does the community team know about your concerns?
+  topics:
+  - contacts
+  style: closed
+- utterance: Has information been shared with the community mental health team?
+  topics:
+  - contacts
+  style: clinical
+- utterance: I'm wondering who else knows what's been going on
+  topics:
+  - contacts
+  style: indirect
+- utterance: It sounds like you've been trying to get help for him. Have you reached anyone yet?
+  topics:
+  - contacts
+  style: empathy_then_question
+- utterance: um so has has anyone from his team got back to you
+  topics:
+  - contacts
+  style: spoken
+- utterance: Anyone else informed?
+  topics:
+  - contacts
+  style: brief
+- utterance: And his care team?
+  topics:
+  - contacts
+  style: brief
+- utterance: When did you leave that message?
+  topics:
+  - contacts
+  style: follow_up
+  previous:
+    interviewer: Is the mental health team aware?
+    character: I have the community team's contact details and have left an urgent message. We haven't
+      yet spoken directly.
+- utterance: I assume his team have been told by now?
+  topics:
+  - contacts
+  style: leading
+- utterance: Which professionals are involved with him at the moment?
+  topics:
+  - contacts
+  style: open
+- utterance: Is there a number we can use to reach his clinicians today?
+  topics:
+  - contacts
+  style: closed
+- utterance: How did you understand it when he first missed an appointment?
+  topics:
+  - uncertainty
+  style: open
+- utterance: Looking back, how do you feel about the way the first missed appointment was handled?
+  topics:
+  - uncertainty
+  style: open
+- utterance: Is there anything about your response early on that's been on your mind?
+  topics:
+  - uncertainty
+  style: closed
+- utterance: Do you have any worries about how the change was picked up at the start?
+  topics:
+  - uncertainty
+  style: closed
+- utterance: Has it been nagging at you, how things went at the beginning?
+  topics:
+  - uncertainty
+  style: colloquial
+- utterance: How was the first missed appointment interpreted at the time?
+  topics:
+  - uncertainty
+  style: clinical
+- utterance: I wondered how you're feeling about the early part of this
+  topics:
+  - uncertainty
+  style: indirect
+- utterance: Hindsight makes all of this look clearer. Do you feel anything was missed at the start?
+  topics:
+  - uncertainty
+  style: empathy_then_question
+- utterance: um when it first started did it did it seem like an illness thing or just him not bothering
+  topics:
+  - uncertainty
+  style: spoken
+- utterance: And your first response?
+  topics:
+  - uncertainty
+  style: brief
+- utterance: Any regrets about the start?
+  topics:
+  - uncertainty
+  style: brief
+- utterance: What made it look like non-compliance at the time?
+  topics:
+  - uncertainty
+  style: follow_up
+  previous:
+    interviewer: Is there anything that worries you about how this has unfolded?
+    character: I'm worried I treated the first missed appointment as non-compliance and didn't ask whether
+      he was becoming unwell.
+- utterance: I imagine you might be wondering whether early signs were missed?
+  topics:
+  - uncertainty
+  style: leading
+- utterance: What did you make of it when he didn't turn up the first time?
+  topics:
+  - uncertainty
+  style: open
+- utterance: Did you consider back then that he might be getting unwell?
+  topics:
+  - uncertainty
+  style: closed
+- utterance: What do you know about his own safety at the moment?
+  topics:
+  - self-risk
+  style: open
+- utterance: How is he looking after himself, from what you know?
+  topics:
+  - self-risk
+  style: open
+- utterance: Has he said anything about suicide or ending his life?
+  topics:
+  - self-risk
+  style: closed
+- utterance: Do you know whether he's eating properly?
+  topics:
+  - self-risk
+  style: closed
+- utterance: Any sign he might do something to himself?
+  topics:
+  - self-risk
+  style: colloquial
+- utterance: Has any assessment of his risk to himself been made?
+  topics:
+  - self-risk
+  style: clinical
+- utterance: I wanted to check what's known about any risk to himself
+  topics:
+  - self-risk
+  style: indirect
+- utterance: It's a lot to hold for someone who isn't a clinician. Did the subject of self-harm come up
+    at all?
+  topics:
+  - self-risk
+  style: empathy_then_question
+- utterance: and um has he has he mentioned killing himself or anything like that
+  topics:
+  - self-risk
+  style: spoken
+- utterance: Any risk to himself?
+  topics:
+  - self-risk
+  style: brief
+- utterance: And his self-care?
+  topics:
+  - self-risk
+  style: brief
+- utterance: So do you know if he's actually eating?
+  topics:
+  - self-risk
+  style: follow_up
+  previous:
+    interviewer: What's his place like?
+    character: He lives alone in a rented flat. There are rent arrears and unopened letters; I couldn't
+      see whether he had food.
+- utterance: We don't really know how safe he is right now, do we?
+  topics:
+  - self-risk
+  style: leading
+- utterance: What have you been able to find out about suicidal thoughts?
+  topics:
+  - self-risk
+  style: open
+- utterance: Have you had a chance to ask him about harming himself?
+  topics:
+  - self-risk
+  style: closed
+- utterance: Has he been taking his medication, and is there any drug use?
+  topics:
+  - medication
+  - substances
+  style: stacked
+- utterance: Where is he living now, and who have you contacted about him?
+  topics:
+  - housing
+  - contacts
+  style: stacked
+- utterance: Has he threatened anyone, and has he been violent in the past?
+  topics:
+  - threats
+  - history
+  style: stacked
+- utterance: When did he stop attending, and what did you see when you visited?
+  topics:
+  - attendance
+  - observations
+  style: stacked
+- utterance: Hello Lewis, thanks for coming in to talk with me.
+  topics: []
+  style: greeting
+- utterance: Good afternoon, Lewis, nice to meet you.
+  topics: []
+  style: greeting
+- utterance: I'm one of the psychiatrists; I've been asked to hear your concerns.
+  topics: []
+  style: introduction
+- utterance: Hi, my name's Dr Okafor, I'm the duty psychiatrist today.
+  topics: []
+  style: introduction
+- utterance: Is it all right if we go through things together for a few minutes?
+  topics: []
+  style: introduction
+- utterance: Before we start, is there anything you'd like to ask me?
+  topics: []
+  style: introduction
+- utterance: Where would you like to start?
+  topics: []
+  style: transition
+- utterance: I'd like to move on to something slightly different now.
+  topics: []
+  style: transition
+- utterance: Let's turn to the practical side of things.
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, so let me pull this together.
+  topics: []
+  style: closing
+- utterance: Thanks, Lewis, that's been really helpful.
+  topics: []
+  style: closing
+- utterance: I'll make sure someone from our side gets back to you today.
+  topics: []
+  style: closing
+- utterance: It sounds like you've been really worried about him.
+  topics: []
+  style: empathy
+- utterance: You've clearly gone out of your way to keep an eye on him.
+  topics: []
+  style: empathy
+- utterance: That's a difficult position to be in.
+  topics: []
+  style: empathy
+- utterance: So he's been missing appointments, he didn't seem himself, and there are some safety worries.
+  topics: []
+  style: summary
+- utterance: 'Let me check I''ve got this right: some of this you''ve seen and some has come from others.'
+  topics: []
+  style: summary
+- utterance: Missed appointments on their own don't tell us whether someone's becoming unwell.
+  topics: []
+  style: explanation
+- utterance: What we agree today will help decide whether he needs to be seen urgently.
+  topics: []
+  style: explanation
+- utterance: I may need to share some of this with his clinical team.
+  topics: []
+  style: explanation
+- utterance: Does that plan make sense from your side?
+  topics: []
+  style: check_understanding
+- utterance: Is that how you'd understood the situation too?
+  topics: []
+  style: check_understanding
+- utterance: Has he been arrested for anything recently?
+  topics: []
+  style: off_case
+- utterance: Does he have any family who are involved with him?
+  topics: []
+  style: off_case
+- utterance: Has he got any physical health problems we should know about?
+  topics: []
+  style: off_case
+- utterance: Who is his GP?
+  topics: []
+  style: off_case
+- utterance: Has he ever been detained under the Mental Health Act?
+  topics: []
+  style: off_case
+- utterance: Does he have a job or anything that structures his week?
+  topics: []
+  style: off_case
+- utterance: What time of day are his appointments usually booked?
+  topics: []
+  style: near_miss
+- utterance: Which pharmacy does he use?
+  topics: []
+  style: near_miss
+- utterance: How long is his tenancy for?
+  topics: []
+  style: near_miss
+- utterance: What was the original offence that led to his probation order?
+  topics: []
+  style: near_miss
+- utterance: Who is your manager, in case I need to follow this up?
+  topics: []
+  style: near_miss
+- utterance: How long have you been his probation officer?
+  topics: []
+  style: near_miss

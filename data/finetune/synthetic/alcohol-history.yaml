@@ -1,0 +1,1979 @@
+# Synthetic interviews for the student interpreter. Drafted by GPT-6 (Codex)
+# on 2026-10-13; NOT YET REVIEWED. Not evaluation data.
+case_id: alcohol-history
+case_version: 0.4.0
+status: draft
+interviews:
+- id: alcohol-history-01
+  trainee: Nervous FY2; hesitates, adds rambling preambles, then checks details.
+  turns:
+  - doctor: Hello Chris, I'm the junior doctor meeting with you today; thank you for coming to talk.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'm not quite sure where to begin, so what would you like me to hear first?
+    character: My GP sent me because my liver tests were a bit off. I don't think my drinking is that
+      bad.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Sorry, I am getting ahead of myself. Let me go back a little. Describe the drinking in an
+      ordinary day for you.
+    character: I drink every day. Probably more than I should, if I'm honest.
+    topics:
+    - quantity
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could you put an amount on that for me?
+    character: I get through about a litre bottle of vodka a day, sometimes more at the weekend.
+    topics:
+    - quantity
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'll take this bit by bit, and you can stop me if my question is unclear.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I appreciate that being sent to discuss drinking feels different from choosing to come yourself.
+      Tell me what would make changing your drinking worthwhile.
+    character: My daughter has stopped letting me see my grandson when I've been drinking.
+    topics:
+    - motivation
+    empathy: specific
+    empathy_words: I appreciate that being sent to discuss drinking feels different from choosing to come
+      yourself.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What is it about that which makes you want to stop?
+    character: My daughter has stopped letting me see my grandson when I've been drinking. That's what's
+      made me think I need to stop.
+    topics:
+    - motivation
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You describe about a litre of vodka a day, sometimes more at weekends. I want to make sure
+      I have followed you properly; have I got the gist?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Sorry, I am getting ahead of myself. Let me go back a little. At what point in the morning
+      does drinking begin?
+    character: I have a drink as soon as I wake up.
+    topics:
+    - morning-drinking
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What does that first one do for you?
+    character: I have my first drink as soon as I wake up, to steady myself.
+    topics:
+    - morning-drinking
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Would it be all right to change the subject for a moment?
+    character: Yes, go on.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Describe what your body does if you leave alcohol alone.
+    character: If I go without, I get the shakes and sweats.
+    topics:
+    - withdrawal
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: How far into the day does that happen?
+    character: If I go without, I get the shakes and sweats by lunchtime. I had a fit two years ago when
+      I tried to stop on my own.
+    topics:
+    - withdrawal
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. I'm sorry it has been such a rough experience
+      for you.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: I'm sorry it has been such a rough experience for you.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Compare what you drink now with what used to have an effect.
+    character: I need more before I feel anything.
+    topics:
+    - tolerance
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Is it a bigger amount to get that feeling now?
+    character: I need a lot more than I used to before I feel anything.
+    topics:
+    - tolerance
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could we pin down your usual alcohol intake? Tell me about feeling ill without alcohol.
+    character: I get through about a litre bottle of vodka a day, sometimes more at the weekend. If I
+      go without, I get the shakes and sweats by lunchtime.
+    topics:
+    - quantity
+    - withdrawal
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, i want to make sure I have followed you properly; have I got the gist?
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Have you had any ringing in your ears recently?
+    character: I'd rather not go into that right now.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thank you, Chris; that gives me a clearer picture of what you wanted me to hear.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: alcohol-history-02
+  trainee: Brisk trainee; short questions, clear signposting, little small talk.
+  turns:
+  - doctor: Chris, I'm the trainee you've come to see; thanks for making time.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Where shall we begin today?
+    character: My GP sent me because my liver tests were a bit off. I don't think my drinking is that
+      bad.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'd like to know whether alcohol affects you as easily now.
+    character: I need more before I feel anything.
+    topics:
+    - tolerance
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And would a smaller amount once have done that?
+    character: I need a lot more than I used to before I feel anything.
+    topics:
+    - tolerance
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'll ask a few things, then draw them together.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: It makes sense to want your view of the drinking taken seriously alongside your GP's. I'd
+      like to hear your own reason for wanting to stop.
+    character: My daughter has stopped letting me see my grandson when I've been drinking.
+    topics:
+    - motivation
+    empathy: specific
+    empathy_words: It makes sense to want your view of the drinking taken seriously alongside your GP's.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And when does she stop you seeing him?
+    character: My daughter has stopped letting me see my grandson when I've been drinking. That's what's
+      made me think I need to stop.
+    topics:
+    - motivation
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You need more alcohol than you used to before you feel an effect. I'll pause there; does my
+      account fit what you meant?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Take me back to when the heavy drinking began.
+    character: I've drunk heavily for about ten years, and it got worse after my divorce.
+    topics:
+    - duration
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Was there a point when it became heavier?
+    character: I've drunk heavily for about ten years. It got worse after my divorce four years ago.
+    topics:
+    - duration
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Do you know the name of your GP's receptionist?
+    character: I'd rather not go into that right now.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me about occasions you've tried drinking less.
+    character: I've tried to cut down loads of times.
+    topics:
+    - loss-of-control
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: How long did that last at most?
+    character: I've tried to cut down loads of times, but I've never lasted more than two days.
+    topics:
+    - loss-of-control
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. That is a difficult thing to have to deal with.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: That is a difficult thing to have to deal with.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me about any trouble drinking has caused at work or with the law.
+    character: I've had warnings at work and lost my driving licence.
+    topics:
+    - consequences
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What were those warnings for?
+    character: I've had two warnings at work for being late, and I lost my driving licence for drink driving
+      last year.
+    topics:
+    - consequences
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me whether it takes more alcohol to notice a change these days. Could we talk about whether
+      you have managed to cut back?
+    character: I need a lot more than I used to before I feel anything. I've tried to cut down loads of
+      times, but I've never lasted more than two days.
+    topics:
+    - tolerance
+    - loss-of-control
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, i'll pause there; does my account fit what you meant?
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Shall we switch to a different area now?
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thanks for those answers, Chris. I'll draw this conversation to a close.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: alcohol-history-03
+  trainee: Warm trainee; uses the person's name, listens and validates before moving on.
+  turns:
+  - doctor: Welcome, Chris; I'm the trainee speaking with you today. Thank you for making time.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What would you most like me to hear before I ask anything specific?
+    character: My GP sent me because my liver tests were a bit off. I don't think my drinking is that
+      bad.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Take your time with this next bit. I'd like to ask whether alcohol has affected your licence
+      or your job.
+    character: I've had warnings at work and lost my driving licence.
+    topics:
+    - consequences
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: When was the licence taken away?
+    character: I've had two warnings at work for being late, and I lost my driving licence for drink driving
+      last year.
+    topics:
+    - consequences
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: There is room to pause; you do not have to rush through this conversation.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You do not see the alcohol as that bad, and I want to understand that perspective. Could we
+      talk about what might draw you towards giving up alcohol?
+    character: My daughter has stopped letting me see my grandson when I've been drinking.
+    topics:
+    - motivation
+    empathy: specific
+    empathy_words: You do not see the alcohol as that bad, and I want to understand that perspective.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Is that the thing making you reconsider it?
+    character: My daughter has stopped letting me see my grandson when I've been drinking. That's what's
+      made me think I need to stop.
+    topics:
+    - motivation
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: There have been two work warnings for lateness and a lost driving licence. Please put me right
+      if my recap has missed what you meant.
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Take your time with this next bit. Tell me how your mood has been alongside the drinking.
+    character: I feel low a lot of the time.
+    topics:
+    - mood
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What do you make of the connection with alcohol?
+    character: I feel low a lot of the time, but I'm not sure whether that's the drink.
+    topics:
+    - mood
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Is it all right if we turn to something different?
+    character: Yes, go on.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me whether hurting yourself has ever been on your mind.
+    character: I don't have thoughts of ending my life.
+    topics:
+    - risk
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And have you ever acted on anything like that?
+    character: I've never tried to harm myself, and I don't have thoughts of ending my life.
+    topics:
+    - risk
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. I can appreciate how difficult that has been
+      to face.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: I can appreciate how difficult that has been to face.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me about smoking or using drugs other than alcohol.
+    character: I smoke cigarettes.
+    topics:
+    - other-substances
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: How many of those would you smoke in a day?
+    character: I smoke twenty a day. I don't use any other drugs.
+    topics:
+    - other-substances
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could we go over any consequences for work and driving? Could we talk about any self-harm
+      or thoughts of suicide?
+    character: I've had two warnings at work for being late, and I lost my driving licence for drink driving
+      last year. I've never tried to harm myself, and I don't have thoughts of ending my life.
+    topics:
+    - consequences
+    - risk
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, please put me right if my recap has missed what you meant.
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What is your usual shoe size?
+    character: I'd rather not go into that right now.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I appreciate you talking with me today, Chris; thank you for your time.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: alcohol-history-04
+  trainee: Formal and careful trainee; complete sentences and polite requests.
+  turns:
+  - doctor: Good morning, Chris. I am the trainee conducting this discussion. Thank you for attending.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: How would you prefer to begin our discussion?
+    character: My GP sent me because my liver tests were a bit off. I don't think my drinking is that
+      bad.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: If I may, I would like to clarify the following. I'd like to ask about cigarettes and any
+      other substances.
+    character: I smoke cigarettes.
+    topics:
+    - other-substances
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And is there anything else besides the cigarettes?
+    character: I smoke twenty a day. I don't use any other drugs.
+    topics:
+    - other-substances
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I shall ask about a number of areas before bringing the account together.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Your view of the drinking matters even though the GP has raised a concern. What matters to
+      you when you consider changing the drinking?
+    character: My daughter has stopped letting me see my grandson when I've been drinking.
+    topics:
+    - motivation
+    empathy: specific
+    empathy_words: Your view of the drinking matters even though the GP has raised a concern.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Who is it that you are missing seeing?
+    character: My daughter has stopped letting me see my grandson when I've been drinking. That's what's
+      made me think I need to stop.
+    topics:
+    - motivation
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You smoke twenty a day and do not use other drugs. Please let me know whether I have represented
+      your account accurately.
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: If I may, I would like to clarify the following. Tell me how eating and your stomach have
+      been recently.
+    character: I don't eat much, and sometimes I'm sick in the morning.
+    topics:
+    - physical-health
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What is it that comes up?
+    character: I don't eat much, and I sometimes bring up a bit of bile in the morning.
+    topics:
+    - physical-health
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Have you noticed any change in your eyesight?
+    character: I'd rather not go into that right now.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could we pin down your usual alcohol intake?
+    character: I drink every day. Probably more than I should, if I'm honest.
+    topics:
+    - quantity
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Roughly what would that add up to each day?
+    character: I get through about a litre bottle of vodka a day, sometimes more at the weekend.
+    topics:
+    - quantity
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. I recognise that this has been a distressing
+      experience for you.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: I recognise that this has been a distressing experience for you.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me about the earliest drink on a typical day.
+    character: I have a drink as soon as I wake up.
+    topics:
+    - morning-drinking
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Is that before you have been up for long?
+    character: I have my first drink as soon as I wake up, to steady myself.
+    topics:
+    - morning-drinking
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could we go over whether you smoke or take other drugs? Take me through what you drink over
+      a day.
+    character: I smoke twenty a day. I get through about a litre bottle of vodka a day, sometimes more
+      at the weekend.
+    topics:
+    - other-substances
+    - quantity
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, please let me know whether I have represented your account accurately.
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: May we turn to a separate subject at this point?
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thank you for your account today, Chris. That concludes my questions for now.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: alcohol-history-05
+  trainee: Rambling trainee; long signposts, sometimes returns to a point to get specifics.
+  turns:
+  - doctor: Hello Chris, thanks for meeting me; I'm one of the trainees, and we'll have a bit of time
+      together.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: There are several things we could cover, but where would you like to start?
+    character: My GP sent me because my liver tests were a bit off. I don't think my drinking is that
+      bad.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: There are a few details I need, though I don't want to jump too far ahead. Where does the
+      first drink fit into waking up?
+    character: I have a drink as soon as I wake up.
+    topics:
+    - morning-drinking
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And what makes you reach for it then?
+    character: I have my first drink as soon as I wake up, to steady myself.
+    topics:
+    - morning-drinking
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I might go back over a detail now and then to make sure I have the order clear.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Coming here after those liver results may feel awkward when you see the drinking differently.
+      Tell me what would make changing your drinking worthwhile.
+    character: My daughter has stopped letting me see my grandson when I've been drinking.
+    topics:
+    - motivation
+    empathy: specific
+    empathy_words: Coming here after those liver results may feel awkward when you see the drinking differently.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could you explain what makes that a reason to change things?
+    character: My daughter has stopped letting me see my grandson when I've been drinking. That's what's
+      made me think I need to stop.
+    topics:
+    - motivation
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You have a drink on waking to steady yourself. I've gone round that a bit; is my account still
+      a fair reflection of what you said?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: There are a few details I need, though I don't want to jump too far ahead. I'd like to hear
+      about any trouble when you've stopped drinking.
+    character: If I go without, I get the shakes and sweats.
+    topics:
+    - withdrawal
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And has it ever gone beyond those symptoms?
+    character: If I go without, I get the shakes and sweats by lunchtime. I had a fit two years ago when
+      I tried to stop on my own.
+    topics:
+    - withdrawal
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before I lose track, could I take us to a different bit of the story?
+    character: Yes, go on.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me whether it takes more alcohol to notice a change these days.
+    character: I need more before I feel anything.
+    topics:
+    - tolerance
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What about compared with earlier on?
+    character: I need a lot more than I used to before I feel anything.
+    topics:
+    - tolerance
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. It seems you have had a really difficult time
+      with all this.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: It seems you have had a really difficult time with all this.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'd like to place the start of this drinking pattern.
+    character: I've drunk heavily for about ten years, and it got worse after my divorce.
+    topics:
+    - duration
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And what was going on when it got worse?
+    character: I've drunk heavily for about ten years. It got worse after my divorce four years ago.
+    topics:
+    - duration
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'd like to ask when you start drinking each day. Compare what you drink now with what used
+      to have an effect.
+    character: I have my first drink as soon as I wake up, to steady myself. I need a lot more than I
+      used to before I feel anything.
+    topics:
+    - morning-drinking
+    - tolerance
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, i've gone round that a bit; is my account still a fair reflection of what
+      you said?
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Was it straightforward finding this room?
+    character: I'd rather not go into that right now.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'll leave the questions there now, Chris; thank you for sticking with the conversation.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: alcohol-history-06
+  trainee: Abrupt trainee; direct questions, occasional pressure, then an attempt to repair rapport.
+  turns:
+  - doctor: Hello Chris. I'm the trainee. We'll talk now, if you're ready.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Give me your own account before I begin the questions.
+    character: My GP sent me because my liver tests were a bit off. I don't think my drinking is that
+      bad.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me roughly how many years you've been drinking heavily.
+    character: I've drunk heavily for about ten years, and it got worse after my divorce.
+    topics:
+    - duration
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: How long ago was that change in things?
+    character: I've drunk heavily for about ten years. It got worse after my divorce four years ago.
+    topics:
+    - duration
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I need to cover several areas in this discussion.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I can understand not wanting this conversation to assume your drinking is worse than you think.
+      I'd like to hear your own reason for wanting to stop.
+    character: My daughter has stopped letting me see my grandson when I've been drinking.
+    topics:
+    - motivation
+    empathy: specific
+    empathy_words: I can understand not wanting this conversation to assume your drinking is worse than
+      you think.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Is it when you have had a drink that she says you cannot visit?
+    character: My daughter has stopped letting me see my grandson when I've been drinking. That's what's
+      made me think I need to stop.
+    topics:
+    - motivation
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: There have been about ten years of heavy drinking, worse since the divorce. Is that a fair
+      account of what you have said so far?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'd like to hear how attempts to reduce drinking have gone.
+    character: I've tried to cut down loads of times.
+    topics:
+    - loss-of-control
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And have you had more than one go at it?
+    character: I've tried to cut down loads of times, but I've never lasted more than two days.
+    topics:
+    - loss-of-control
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What number bus did you take to get here?
+    character: I'd rather not go into that right now.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could we go over any consequences for work and driving?
+    character: I've had warnings at work and lost my driving licence.
+    topics:
+    - consequences
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And how many warnings was that altogether?
+    character: I've had two warnings at work for being late, and I lost my driving licence for drink driving
+      last year.
+    topics:
+    - consequences
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. I am sorry; that has clearly been difficult
+      for you.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: I am sorry; that has clearly been difficult for you.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'd like to hear what things have felt like emotionally.
+    character: I feel low a lot of the time.
+    topics:
+    - mood
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And is that how you feel much of the time?
+    character: I feel low a lot of the time, but I'm not sure whether that's the drink.
+    topics:
+    - mood
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could we go back through the history of your alcohol use? Tell me about any trouble drinking
+      has caused at work or with the law.
+    character: I've drunk heavily for about ten years. I've had two warnings at work for being late, and
+      I lost my driving licence for drink driving last year.
+    topics:
+    - duration
+    - consequences
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: If the GP is concerned, you really ought to stop downplaying this.
+    character: Can we leave that for now?
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: If the GP is concerned, you really ought to stop downplaying this.
+  - doctor: Can we leave that there and take another subject?
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: That's the end of my questions for the moment, Chris. Thank you for answering.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: alcohol-history-07
+  trainee: Speech-recognition transcript; lower case, fillers, false starts and sparse punctuation.
+  turns:
+  - doctor: hi chris um im the trainee doctor thanks for sitting down with me
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: so um where would you like to start with all this
+    character: My GP sent me because my liver tests were a bit off. I don't think my drinking is that
+      bad.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: er i was going to ask no let me come back to this could we talk about feeling down or depressed
+      at the moment
+    character: I feel low a lot of the time.
+    topics:
+    - mood
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: are you sure what is behind that feeling
+    character: I feel low a lot of the time, but I'm not sure whether that's the drink.
+    topics:
+    - mood
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: ill ask a few things and then bring it together at the end
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: um you dont think the drinking is that bad and i appreciate that is your view. could we talk
+      about what might draw you towards giving up alcohol
+    character: My daughter has stopped letting me see my grandson when I've been drinking.
+    topics:
+    - motivation
+    empathy: specific
+    empathy_words: um you dont think the drinking is that bad and i appreciate that is your view.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: what would you hope to get back by stopping
+    character: My daughter has stopped letting me see my grandson when I've been drinking. That's what's
+      made me think I need to stop.
+    topics:
+    - motivation
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: you often feel low and are unsure whether drinking explains it. so have i picked that up the
+      way you meant it
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: er i was going to ask no let me come back to this id like to check for any wish to end your
+      life.
+    character: I don't have thoughts of ending my life.
+    topics:
+    - risk
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: what about thoughts of ending things now
+    character: I've never tried to harm myself, and I don't have thoughts of ending my life.
+    topics:
+    - risk
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: um could we talk about a different bit now
+    character: Yes, go on.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: could we go over whether you smoke or take other drugs
+    character: I smoke cigarettes.
+    topics:
+    - other-substances
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: what does that work out to daily
+    character: I smoke twenty a day. I don't use any other drugs.
+    topics:
+    - other-substances
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: thinking back to what you were saying earlier. um im sorry that has been so difficult to go
+      through.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: um im sorry that has been so difficult to go through.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: id like to hear about appetite or being sick.
+    character: I don't eat much, and sometimes I'm sick in the morning.
+    topics:
+    - physical-health
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: and when in the day does that tend to happen
+    character: I don't eat much, and I sometimes bring up a bit of bile in the morning.
+    topics:
+    - physical-health
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: describe how you feel in yourself much of the time. tell me about smoking or using drugs other
+      than alcohol.
+    character: I feel low a lot of the time, but I'm not sure whether that's the drink. I smoke twenty
+      a day.
+    topics:
+    - mood
+    - other-substances
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: before we finish so have i picked that up the way you meant it
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: do you know which floor the reception desk is on
+    character: I'd rather not go into that right now.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: thanks chris um thats all i wanted to ask for now
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: alcohol-history-08
+  trainee: Trainee who summarises frequently; repeats the account back before changing topic.
+  turns:
+  - doctor: Hello Chris, I'm the trainee here to hear your account. Thank you for speaking with me.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What would you like to put on the table first?
+    character: My GP sent me because my liver tests were a bit off. I don't think my drinking is that
+      bad.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'll hold that in mind as we go on. Could we talk about any physical effects on eating or
+      vomiting?
+    character: I don't eat much, and sometimes I'm sick in the morning.
+    topics:
+    - physical-health
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Are you managing much food at all?
+    character: I don't eat much, and I sometimes bring up a bit of bile in the morning.
+    topics:
+    - physical-health
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Your GP asked you to discuss drinking after liver tests, but you do not think it is that bad.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Your GP's concern and your own view are different, and that can be uncomfortable to discuss.
+      What matters to you when you consider changing the drinking?
+    character: My daughter has stopped letting me see my grandson when I've been drinking.
+    topics:
+    - motivation
+    empathy: specific
+    empathy_words: Your GP's concern and your own view are different, and that can be uncomfortable to
+      discuss.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Which person are you being kept from visiting?
+    character: My daughter has stopped letting me see my grandson when I've been drinking. That's what's
+      made me think I need to stop.
+    topics:
+    - motivation
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You eat little and sometimes bring up bile in the morning. I have tried to keep to your account;
+      have I understood it as you intended?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You eat little and sometimes bring up bile in the morning. I'll hold that in mind as we go
+      on. I'd like a picture of the amount you normally get through.
+    character: I drink every day. Probably more than I should, if I'm honest.
+    topics:
+    - quantity
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And is the amount different at weekends?
+    character: I get through about a litre bottle of vodka a day, sometimes more at the weekend.
+    topics:
+    - quantity
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Is there somewhere nearby you usually park?
+    character: I'd rather not go into that right now.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'd like to ask when you start drinking each day.
+    character: I have a drink as soon as I wake up.
+    topics:
+    - morning-drinking
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What are you trying to settle with that one?
+    character: I have my first drink as soon as I wake up, to steady myself.
+    topics:
+    - morning-drinking
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. That is quite a difficult situation to have
+      been in.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: That is quite a difficult situation to have been in.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me about feeling ill without alcohol.
+    character: If I go without, I get the shakes and sweats.
+    topics:
+    - withdrawal
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Has it ever become more severe than those symptoms?
+    character: If I go without, I get the shakes and sweats by lunchtime. I had a fit two years ago when
+      I tried to stop on my own.
+    topics:
+    - withdrawal
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Describe how you are managing food and any sickness. Tell me about the earliest drink on a
+      typical day.
+    character: I don't eat much, and I sometimes bring up a bit of bile in the morning. I have my first
+      drink as soon as I wake up, to steady myself.
+    topics:
+    - physical-health
+    - morning-drinking
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, i have tried to keep to your account; have I understood it as you intended?
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Shall we put that part aside and look at something else?
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thank you, Chris. I'll finish by keeping those points together in my notes.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: alcohol-history-09
+  trainee: Sometimes confrontational trainee; slips into minimising or lecturing despite some empathy.
+  turns:
+  - doctor: Morning, Chris. I'm the doctor doing this interview; thanks for being here.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What is the main thing you want me to hear at the start?
+    character: My GP sent me because my liver tests were a bit off. I don't think my drinking is that
+      bad.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: We ought to be clear about this next part. Could we go through any symptoms when you miss
+      your usual drinks?
+    character: If I go without, I get the shakes and sweats.
+    topics:
+    - withdrawal
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Did you have anything like a fit as well?
+    character: If I go without, I get the shakes and sweats by lunchtime. I had a fit two years ago when
+      I tried to stop on my own.
+    topics:
+    - withdrawal
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: There are several things to cover before we finish.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I hear that the referral does not match how you feel about your drinking. Tell me what would
+      make changing your drinking worthwhile.
+    character: My daughter has stopped letting me see my grandson when I've been drinking.
+    topics:
+    - motivation
+    empathy: specific
+    empathy_words: I hear that the referral does not match how you feel about your drinking.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What has that changed in how you think about giving up?
+    character: My daughter has stopped letting me see my grandson when I've been drinking. That's what's
+      made me think I need to stop.
+    topics:
+    - motivation
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Without alcohol you get shakes and sweats, and there was a fit when you tried stopping. Does
+      that follow what you meant to tell me?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: We ought to be clear about this next part. Could we talk about how the effect of a drink has
+      changed?
+    character: I need more before I feel anything.
+    topics:
+    - tolerance
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: So how does that compare with what you used to need?
+    character: I need a lot more than I used to before I feel anything.
+    topics:
+    - tolerance
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Can we move the conversation to another area?
+    character: Yes, go on.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could we go back through the history of your alcohol use?
+    character: I've drunk heavily for about ten years, and it got worse after my divorce.
+    topics:
+    - duration
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Has anything happened during that time to make it heavier?
+    character: I've drunk heavily for about ten years. It got worse after my divorce four years ago.
+    topics:
+    - duration
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. I can see this has been a hard experience to
+      have.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: I can see this has been a hard experience to have.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could we talk about whether you have managed to cut back?
+    character: I've tried to cut down loads of times.
+    topics:
+    - loss-of-control
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What was the longest spell you managed?
+    character: I've tried to cut down loads of times, but I've never lasted more than two days.
+    topics:
+    - loss-of-control
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Describe what your body does if you leave alcohol alone. I'd like to place the start of this
+      drinking pattern.
+    character: If I go without, I get the shakes and sweats by lunchtime. I've drunk heavily for about
+      ten years.
+    topics:
+    - withdrawal
+    - duration
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: People do manage to cut down when they decide to take it seriously.
+    character: Can we leave that for now?
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: People do manage to cut down when they decide to take it seriously.
+  - doctor: What is the name of the road outside your surgery?
+    character: I'd rather not go into that right now.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'll stop my questions there, Chris. Thank you for talking it through.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: alcohol-history-10
+  trainee: Reflective trainee; patient pauses, validates, and checks the person's perspective.
+  turns:
+  - doctor: Hello, Chris; thank you for meeting with me. I'm a trainee with the team.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Where would it feel right to begin telling me your account?
+    character: My GP sent me because my liver tests were a bit off. I don't think my drinking is that
+      bad.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I would like to understand this in your own words. Walk me through any efforts to get the
+      drinking down.
+    character: I've tried to cut down loads of times.
+    topics:
+    - loss-of-control
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: When you say you tried, how far did you get?
+    character: I've tried to cut down loads of times, but I've never lasted more than two days.
+    topics:
+    - loss-of-control
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: We can pause while you find the words; there is no need for a perfect account.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: It is understandable to want to explain your own experience of alcohol after a referral. I'd
+      like to hear your own reason for wanting to stop.
+    character: My daughter has stopped letting me see my grandson when I've been drinking.
+    topics:
+    - motivation
+    empathy: specific
+    empathy_words: It is understandable to want to explain your own experience of alcohol after a referral.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: So what is it that you most want to be different?
+    character: My daughter has stopped letting me see my grandson when I've been drinking. That's what's
+      made me think I need to stop.
+    topics:
+    - motivation
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Attempts to cut down have lasted no more than two days. Does the way I have brought that together
+      capture what you wanted to say?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I would like to understand this in your own words. Describe any problems drinking has brought
+      outside your health.
+    character: I've had warnings at work and lost my driving licence.
+    topics:
+    - consequences
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Was arriving late the issue there?
+    character: I've had two warnings at work for being late, and I lost my driving licence for drink driving
+      last year.
+    topics:
+    - consequences
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Have you got a copy of the appointment letter with you?
+    character: I'd rather not go into that right now.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Describe how you feel in yourself much of the time.
+    character: I feel low a lot of the time.
+    topics:
+    - mood
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: How clear is it to you whether the drink plays a part?
+    character: I feel low a lot of the time, but I'm not sure whether that's the drink.
+    topics:
+    - mood
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. I hear that this has been difficult for you
+      to carry.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: I hear that this has been difficult for you to carry.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could we talk about any self-harm or thoughts of suicide?
+    character: I don't have thoughts of ending my life.
+    topics:
+    - risk
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Has that ever happened in the past either?
+    character: I've never tried to harm myself, and I don't have thoughts of ending my life.
+    topics:
+    - risk
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me about occasions you've tried drinking less. I'd like to hear what things have felt
+      like emotionally.
+    character: I've tried to cut down loads of times, but I've never lasted more than two days. I feel
+      low a lot of the time, but I'm not sure whether that's the drink.
+    topics:
+    - loss-of-control
+    - mood
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, does the way I have brought that together capture what you wanted to say?
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Would now be a reasonable point to change the subject?
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thank you for helping me understand, Chris. I'll end the interview at this point.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: alcohol-history-11
+  trainee: Uncertain trainee; self-corrects wording and sometimes offers premature reassurance.
+  turns:
+  - doctor: Hi Chris, I'm the trainee talking with you today; thanks for coming to see us.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What should we begin with, from your point of view?
+    character: My GP sent me because my liver tests were a bit off. I don't think my drinking is that
+      bad.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let me put that better before I go on. Have there been moments of wanting to injure yourself
+      deliberately?
+    character: I don't have thoughts of ending my life.
+    topics:
+    - risk
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Does that include not having thoughts of suicide?
+    character: I've never tried to harm myself, and I don't have thoughts of ending my life.
+    topics:
+    - risk
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: If I phrase something badly, I can ask it a different way.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Being asked here over drinking you do not see as severe can be uncomfortable. Could we talk
+      about what might draw you towards giving up alcohol?
+    character: My daughter has stopped letting me see my grandson when I've been drinking.
+    topics:
+    - motivation
+    empathy: specific
+    empathy_words: Being asked here over drinking you do not see as severe can be uncomfortable.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me how that affects your wish to stop.
+    character: My daughter has stopped letting me see my grandson when I've been drinking. That's what's
+      made me think I need to stop.
+    topics:
+    - motivation
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You describe no self-harm attempts and no thoughts of ending your life. I think I have followed
+      that; have I understood your meaning?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let me put that better before I go on. Describe any tobacco or drug use as well as the drinking.
+    character: I smoke cigarettes.
+    topics:
+    - other-substances
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Are cigarettes the only other thing you use?
+    character: I smoke twenty a day. I don't use any other drugs.
+    topics:
+    - other-substances
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could I change tack and ask about another part?
+    character: Yes, go on.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Describe how you are managing food and any sickness.
+    character: I don't eat much, and sometimes I'm sick in the morning.
+    topics:
+    - physical-health
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Does that usually happen in the morning?
+    character: I don't eat much, and I sometimes bring up a bit of bile in the morning.
+    topics:
+    - physical-health
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. It must have been really hard to find yourself
+      dealing with that.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: It must have been really hard to find yourself dealing with that.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Take me through what you drink over a day.
+    character: I drink every day. Probably more than I should, if I'm honest.
+    topics:
+    - quantity
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: When you say that, about how much do you mean?
+    character: I get through about a litre bottle of vodka a day, sometimes more at the weekend.
+    topics:
+    - quantity
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me whether hurting yourself has ever been on your mind. I'd like to hear about appetite
+      or being sick.
+    character: I've never tried to harm myself, and I don't have thoughts of ending my life. I don't eat
+      much, and I sometimes bring up a bit of bile in the morning.
+    topics:
+    - risk
+    - physical-health
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You have heard the questions now, so there is no reason to hesitate over the answers.
+    character: Can we leave that for now?
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: You have heard the questions now, so there is no reason to hesitate over the
+      answers.
+  - doctor: Do you remember who booked this appointment?
+    character: I'd rather not go into that right now.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'll leave it there, Chris. Thank you for explaining things as we went along.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: alcohol-history-12
+  trainee: Conversational trainee; relaxed wording, short acknowledgements and practical follow-ups.
+  turns:
+  - doctor: Hello Chris, nice to meet you. I'm one of the trainee doctors; thanks for coming along.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What would be a good place for us to start?
+    character: My GP sent me because my liver tests were a bit off. I don't think my drinking is that
+      bad.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Just so I've got the picture. Describe the drinking in an ordinary day for you.
+    character: I drink every day. Probably more than I should, if I'm honest.
+    topics:
+    - quantity
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Right, just picking up on that. Could you put an amount on that for me?
+    character: I get through about a litre bottle of vodka a day, sometimes more at the weekend.
+    topics:
+    - quantity
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'll pick up a few details and we can bring it all together afterwards.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You see things differently from your GP, and I appreciate you explaining that to me. What
+      matters to you when you consider changing the drinking?
+    character: My daughter has stopped letting me see my grandson when I've been drinking.
+    topics:
+    - motivation
+    empathy: specific
+    empathy_words: You see things differently from your GP, and I appreciate you explaining that to me.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What is the link between those visits and wanting to change?
+    character: My daughter has stopped letting me see my grandson when I've been drinking. That's what's
+      made me think I need to stop.
+    topics:
+    - motivation
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You describe about a litre of vodka a day, sometimes more at weekends. Have I got the picture
+      you were trying to give me?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Just so I've got the picture. At what point in the morning does drinking begin?
+    character: I have a drink as soon as I wake up.
+    topics:
+    - morning-drinking
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Right, just picking up on that. What does that first one do for you?
+    character: I have my first drink as soon as I wake up, to steady myself.
+    topics:
+    - morning-drinking
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Which entrance did you use today?
+    character: I'd rather not go into that right now.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Right, just picking up on that. Describe what your body does if you leave alcohol alone.
+    character: If I go without, I get the shakes and sweats.
+    topics:
+    - withdrawal
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Right, just picking up on that. How far into the day does that happen?
+    character: If I go without, I get the shakes and sweats by lunchtime. I had a fit two years ago when
+      I tried to stop on my own.
+    topics:
+    - withdrawal
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. That is a tough thing to be having to deal
+      with.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: That is a tough thing to be having to deal with.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Right, just picking up on that. Compare what you drink now with what used to have an effect.
+    character: I need more before I feel anything.
+    topics:
+    - tolerance
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Right, just picking up on that. Is it a bigger amount to get that feeling now?
+    character: I need a lot more than I used to before I feel anything.
+    topics:
+    - tolerance
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Right, just picking up on that. Could we pin down your usual alcohol intake? Tell me about
+      feeling ill without alcohol.
+    character: I get through about a litre bottle of vodka a day, sometimes more at the weekend. If I
+      go without, I get the shakes and sweats by lunchtime.
+    topics:
+    - quantity
+    - withdrawal
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, have I got the picture you were trying to give me?
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Shall we take a different bit of this next?
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thanks for talking it over with me, Chris. That's all for the moment.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''

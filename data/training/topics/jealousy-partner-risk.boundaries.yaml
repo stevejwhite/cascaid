@@ -1,0 +1,282 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: jealousy-partner-risk
+case_version: 0.1.0
+status: draft
+items:
+  # belief / evidence
+  - utterance: "How sure are you that she has been unfaithful?"
+    topics: [belief]
+    style: boundary
+    pair: [belief, evidence]
+  - utterance: "Is there any chance you could have got this wrong?"
+    topics: [belief]
+    style: boundary
+    pair: [belief, evidence]
+  - utterance: "She says there's nobody else. Do you believe her?"
+    topics: [belief]
+    style: boundary_colloquial
+    pair: [belief, evidence]
+  - utterance: "um so when she tells you nothing's going on do you take that at face value"
+    topics: [belief]
+    style: boundary_spoken
+    pair: [belief, evidence]
+  - utterance: "And how convinced are you now, would you say you're completely certain?"
+    topics: [belief]
+    style: boundary_follow_up
+    pair: [belief, evidence]
+    previous:
+      interviewer: "What has made you suspicious of her?"
+      character: "Six weeks ago she smiled at her phone and turned it over. Since then ordinary delays getting home feel like proof."
+  - utterance: "Looking back, what was the first thing that made you doubt her?"
+    topics: [evidence]
+    style: boundary
+    pair: [belief, evidence]
+  - utterance: "Can you give me an example of something she did that you took as a sign?"
+    topics: [evidence]
+    style: boundary
+    pair: [belief, evidence]
+  - utterance: "Go on then, what has she actually done that makes you think she's cheating?"
+    topics: [evidence]
+    style: boundary_colloquial
+    pair: [belief, evidence]
+  - utterance: "mm so what have you really seen that points to another man or woman in her life"
+    topics: [evidence]
+    style: boundary_spoken
+    pair: [belief, evidence]
+  - utterance: "What is it that you noticed that convinced you?"
+    topics: [evidence]
+    style: boundary_follow_up
+    pair: [belief, evidence]
+    previous:
+      interviewer: "Do you believe she's seeing someone?"
+      character: "I'm certain she's seeing someone else. I can't accept another explanation, even though she denies it."
+  - utterance: "Do you know who she is supposed to be seeing?"
+    topics: []
+    style: near_miss
+    pair: [belief, evidence]
+  - utterance: "Have you ever been unfaithful to her yourself?"
+    topics: []
+    style: near_miss
+    pair: [belief, evidence]
+  # loss / suicide
+  - utterance: "If she did leave you, what would that be like for you?"
+    topics: [loss]
+    style: boundary
+    pair: [loss, suicide]
+  - utterance: "Is there a part of you that is scared of being on your own?"
+    topics: [loss]
+    style: boundary
+    pair: [loss, suicide]
+  - utterance: "Underneath all the anger, what's really going on for you? Does it hurt?"
+    topics: [loss]
+    style: boundary_colloquial
+    pair: [loss, suicide]
+  - utterance: "mm and how does it feel when you think about her going, is it frightening"
+    topics: [loss]
+    style: boundary_spoken
+    pair: [loss, suicide]
+  - utterance: "Okay, thank you. And what feelings come up for you when you picture her leaving?"
+    topics: [loss]
+    style: boundary_follow_up
+    pair: [loss, suicide]
+    previous:
+      interviewer: "Have you thought about harming yourself?"
+      character: "No, I haven't thought of killing myself or harmed myself before."
+  - utterance: "When you think of her leaving, do thoughts of ending your life ever come into your mind?"
+    topics: [suicide]
+    style: boundary
+    pair: [loss, suicide]
+  - utterance: "Have you ever hurt yourself on purpose when things have felt desperate?"
+    topics: [suicide]
+    style: boundary
+    pair: [loss, suicide]
+  - utterance: "Has it ever got so bad that you've thought about not being here?"
+    topics: [suicide]
+    style: boundary_colloquial
+    pair: [loss, suicide]
+  - utterance: "and have you ever tried to harm yourself when it all got this desperate"
+    topics: [suicide]
+    style: boundary_spoken
+    pair: [loss, suicide]
+  - utterance: "Has it ever got so desperate that you've thought of taking your own life?"
+    topics: [suicide]
+    style: boundary_follow_up
+    pair: [loss, suicide]
+    previous:
+      interviewer: "Do you feel ashamed of how desperate this has become?"
+      character: "I'm frightened of being left alone and ashamed of how desperate I feel. I usually turn that into anger."
+  - utterance: "Has anyone in your family ever taken their own life?"
+    topics: []
+    style: near_miss
+    pair: [loss, suicide]
+  - utterance: "Have you noticed any change in your sleep or appetite lately?"
+    topics: []
+    style: near_miss
+    pair: [loss, suicide]
+  # evidence / threat
+  - utterance: "Looking back, what did you first see that made you think there was somebody else?"
+    topics: [evidence]
+    style: boundary
+    pair: [evidence, threat]
+  - utterance: "Did something particular happen in the weeks before this that set it all off?"
+    topics: [evidence]
+    style: boundary
+    pair: [evidence, threat]
+  - utterance: "What's the proof you've got, then? What did you actually see?"
+    topics: [evidence]
+    style: boundary_colloquial
+    pair: [evidence, threat]
+  - utterance: "so what is it she's done that made you suspicious like what's the evidence"
+    topics: [evidence]
+    style: boundary_spoken
+    pair: [evidence, threat]
+  - utterance: "And before it all blew up, what had you seen that made you think there was someone else?"
+    topics: [evidence]
+    style: boundary_follow_up
+    pair: [evidence, threat]
+    previous:
+      interviewer: "Have you been sending her messages?"
+      character: "Yesterday I said she'd regret it if she left. I've sent repeated messages demanding that she answer me."
+  - utterance: "Tell me about the messages you've been sending her."
+    topics: [threat]
+    style: boundary
+    pair: [evidence, threat]
+  - utterance: "What exactly did you say to her when you threatened her?"
+    topics: [threat]
+    style: boundary
+    pair: [evidence, threat]
+  - utterance: "What did you actually say to her that has got everyone so worried?"
+    topics: [threat]
+    style: boundary_colloquial
+    pair: [evidence, threat]
+  - utterance: "um you have been in touch with her since the argument haven't you what have you been sending her"
+    topics: [threat]
+    style: boundary_spoken
+    pair: [evidence, threat]
+  - utterance: "I see. And what words did you use when you threatened her?"
+    topics: [threat]
+    style: boundary_follow_up
+    pair: [evidence, threat]
+    previous:
+      interviewer: "What makes you so sure she's with someone?"
+      character: "Six weeks ago she smiled at her phone and turned it over. Since then ordinary delays getting home feel like proof."
+  - utterance: "Has she ever threatened you?"
+    topics: []
+    style: near_miss
+    pair: [evidence, threat]
+  - utterance: "Have you spoken to anyone else about what you suspect?"
+    topics: []
+    style: near_miss
+    pair: [evidence, threat]
+  # past-violence / threat
+  - utterance: "Have you ever put your hands on her in anger?"
+    topics: [past-violence]
+    style: boundary
+    pair: [past-violence, threat]
+  - utterance: "Has she ever been left with any marks or injuries after an argument with you?"
+    topics: [past-violence]
+    style: boundary
+    pair: [past-violence, threat]
+  - utterance: "Have you ever lashed out at her, you know, physically?"
+    topics: [past-violence]
+    style: boundary_colloquial
+    pair: [past-violence, threat]
+  - utterance: "mm okay and has it ever gone beyond words have you ever actually hit her or grabbed her"
+    topics: [past-violence]
+    style: boundary_spoken
+    pair: [past-violence, threat]
+  - utterance: "Has it ever gone further than saying things, physically I mean?"
+    topics: [past-violence]
+    style: boundary_follow_up
+    pair: [past-violence, threat]
+    previous:
+      interviewer: "What did you say to her?"
+      character: "Yesterday I said she'd regret it if she left. I've sent repeated messages demanding that she answer me."
+  - utterance: "Did you say anything to her about what you might do?"
+    topics: [threat]
+    style: boundary
+    pair: [past-violence, threat]
+  - utterance: "Have you been messaging or ringing her since the row, and what have you put?"
+    topics: [threat]
+    style: boundary
+    pair: [past-violence, threat]
+  - utterance: "What did you say to her that made everyone so worried?"
+    topics: [threat]
+    style: boundary_colloquial
+    pair: [past-violence, threat]
+  - utterance: "right and when you threatened her what did you actually say"
+    topics: [threat]
+    style: boundary_spoken
+    pair: [past-violence, threat]
+  - utterance: "And more recently, what did you say to her when you threatened her?"
+    topics: [threat]
+    style: boundary_follow_up
+    pair: [past-violence, threat]
+    previous:
+      interviewer: "Have you been violent to her before?"
+      character: "Yes, I grabbed her wrist two weeks ago and left a bruise. I hadn't hit her before that."
+  - utterance: "Has she ever hit you or been aggressive towards you?"
+    topics: []
+    style: near_miss
+    pair: [past-violence, threat]
+  - utterance: "Have you ever been in trouble with the police?"
+    topics: []
+    style: near_miss
+    pair: [past-violence, threat]
+  # past-violence / weapons
+  - utterance: "Has she ever needed medical treatment because of something you did?"
+    topics: [past-violence]
+    style: boundary
+    pair: [past-violence, weapons]
+  - utterance: "Have you ever used force against her in the past?"
+    topics: [past-violence]
+    style: boundary
+    pair: [past-violence, weapons]
+  - utterance: "Have you ever got rough with her?"
+    topics: [past-violence]
+    style: boundary_colloquial
+    pair: [past-violence, weapons]
+  - utterance: "and in the past have you ever actually hurt her physically"
+    topics: [past-violence]
+    style: boundary_spoken
+    pair: [past-violence, weapons]
+  - utterance: "And have you ever actually hurt her before, with your hands or anything else?"
+    topics: [past-violence]
+    style: boundary_follow_up
+    pair: [past-violence, weapons]
+    previous:
+      interviewer: "Is there anything at home you could use to hurt her?"
+      character: "I'm carrying no weapon. There are kitchen knives at our home, and I still have a key."
+  - utterance: "Do you have access to anything that could be used to cause serious harm?"
+    topics: [weapons]
+    style: boundary
+    pair: [past-violence, weapons]
+  - utterance: "Is there anything with you now, in your pockets or your bag, that could hurt someone?"
+    topics: [weapons]
+    style: boundary
+    pair: [past-violence, weapons]
+  - utterance: "Have you got a knife or anything like that on you?"
+    topics: [weapons]
+    style: boundary_colloquial
+    pair: [past-violence, weapons]
+  - utterance: "um is there anything at home like a gun or a knife that you could get hold of"
+    topics: [weapons]
+    style: boundary_spoken
+    pair: [past-violence, weapons]
+  - utterance: "Thank you for telling me. Is there anything you could use to hurt her if you wanted to?"
+    topics: [weapons]
+    style: boundary_follow_up
+    pair: [past-violence, weapons]
+    previous:
+      interviewer: "Have you hurt her before?"
+      character: "Yes, I grabbed her wrist two weeks ago and left a bruise. I hadn't hit her before that."
+  - utterance: "Have you ever hurt anyone else, like a stranger or a colleague?"
+    topics: []
+    style: near_miss
+    pair: [past-violence, weapons]
+  - utterance: "Do you have any previous convictions for violence?"
+    topics: []
+    style: near_miss
+    pair: [past-violence, weapons]

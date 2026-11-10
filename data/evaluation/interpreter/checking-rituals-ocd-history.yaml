@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: checking-rituals-ocd-history
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hi Ethan, I'm Dr Morgan. Thanks for coming in today."
+    expected: []
+    rapport: false
+  - utterance: "What sort of thoughts go through your mind before you start checking?"
+    expected: [obsessions]
+    rapport: false
+  - utterance: "Can you describe what the checking actually involves?"
+    expected: [compulsions]
+    rapport: false
+  - utterance: "How long has this been going on, and how much of your day does it take up?"
+    expected: [duration]
+    rapport: false
+  - utterance: "What happens if you try not to check?"
+    expected: [resistance]
+    rapport: false
+  - utterance: "Do you think the checking is reasonable, or more than it needs to be?"
+    expected: [insight]
+    rapport: false
+  - utterance: "How has this affected work and your social life?"
+    expected: [function]
+    rapport: false
+  - utterance: "Does anyone at home get involved with the checking?"
+    expected: [family]
+    rapport: false
+  - utterance: "how's your mood been recently"
+    expected: [mood]
+    rapport: false
+  - utterance: "Do your friends know what's been going on?"
+    expected: [shame]
+    rapport: false
+  - utterance: "Have you ever felt so low that you've thought about ending your life?"
+    expected: [risk]
+    rapport: false
+  - utterance: "That sounds exhausting, Ethan."
+    expected: []
+    rapport: true
+  - utterance: "It takes real courage to come and talk about something that feels this hard to control."
+    expected: []
+    rapport: true
+  - previous:
+      interviewer: "What goes through your mind when you leave the house?"
+      character: "That I've left something unsafe and someone will get hurt."
+    utterance: "Where do you think those thoughts come from?"
+    expected: [obsessions]
+    rapport: false
+  - previous:
+      interviewer: "How has your mood been?"
+      character: "Low most days for a month."
+    utterance: "And sleep?"
+    expected: [mood]
+    rapport: false
+  - utterance: "Do you have any worries about germs or contamination?"
+    expected: []
+    rapport: false
+  - utterance: "Have you had any treatment for this before, like therapy or medication?"
+    expected: []
+    rapport: false
+  - utterance: "So the checking has gradually taken over, and now it's stopping you working."
+    expected: []
+    rapport: false

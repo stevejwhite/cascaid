@@ -1,0 +1,359 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: restrictive-eating-physical-history
+case_version: 0.1.0
+status: draft
+items:
+- utterance: What are you weighing at the moment, and how tall are you?
+  topics:
+  - weight-change
+  style: boundary
+  pair:
+  - weight-change
+  - weight-fear
+- utterance: How much weight would you say you've lost lately?
+  topics:
+  - weight-change
+  style: boundary
+  pair:
+  - weight-change
+  - weight-fear
+- utterance: When did your weight start to go down?
+  topics:
+  - weight-change
+  style: boundary_colloquial
+  pair:
+  - weight-change
+  - weight-fear
+- utterance: um so roughly what do you weigh now
+  topics:
+  - weight-change
+  style: boundary_spoken
+  pair:
+  - weight-change
+  - weight-fear
+- utterance: And what did the GP find when they weighed you?
+  topics:
+  - weight-change
+  style: boundary_follow_up
+  pair:
+  - weight-change
+  - weight-fear
+  previous:
+    interviewer: How do you feel about your size?
+    character: I feel too big even though people say I'm thin, and the idea of putting weight on frightens me more than I like to admit.
+- utterance: Does the thought of putting weight on frighten you?
+  topics:
+  - weight-fear
+  style: boundary
+  pair:
+  - weight-change
+  - weight-fear
+- utterance: When you look in the mirror, how do you see yourself?
+  topics:
+  - weight-fear
+  style: boundary
+  pair:
+  - weight-change
+  - weight-fear
+- utterance: Do you feel that you're overweight?
+  topics:
+  - weight-fear
+  style: boundary_colloquial
+  pair:
+  - weight-change
+  - weight-fear
+- utterance: and do you sort of feel big at the moment or not
+  topics:
+  - weight-fear
+  style: boundary_spoken
+  pair:
+  - weight-change
+  - weight-fear
+- utterance: And how do you feel about the idea of gaining some of it back?
+  topics:
+  - weight-fear
+  style: boundary_follow_up
+  pair:
+  - weight-change
+  - weight-fear
+  previous:
+    interviewer: How much have you lost?
+    character: I weighed 43 kilograms at the GP yesterday and I'm 165 centimetres tall; I was 52 kilograms three months ago.
+- utterance: What weight would you like to be?
+  topics: []
+  style: near_miss
+  pair:
+  - weight-change
+  - weight-fear
+- utterance: Did anyone at home comment on your weight when you were growing up?
+  topics: []
+  style: near_miss
+  pair:
+  - weight-change
+  - weight-fear
+- utterance: Do you drink alcohol at all?
+  topics:
+  - alcohol-drugs
+  style: boundary
+  pair:
+  - alcohol-drugs
+  - medicines
+- utterance: Do you use anything like cannabis or ecstasy?
+  topics:
+  - alcohol-drugs
+  style: boundary
+  pair:
+  - alcohol-drugs
+  - medicines
+- utterance: Do you have a few drinks to take the edge off?
+  topics:
+  - alcohol-drugs
+  style: boundary_colloquial
+  pair:
+  - alcohol-drugs
+  - medicines
+- utterance: and do you have any alcohol or anything like that
+  topics:
+  - alcohol-drugs
+  style: boundary_spoken
+  pair:
+  - alcohol-drugs
+  - medicines
+- utterance: What about alcohol, do you drink at all?
+  topics:
+  - alcohol-drugs
+  style: boundary_follow_up
+  pair:
+  - alcohol-drugs
+  - medicines
+  previous:
+    interviewer: Are you on any tablets?
+    character: I take no prescribed medicine, supplements or slimming products, and I don't have diabetes or another long-term illness that needs treatment.
+- utterance: Are you on any prescribed tablets?
+  topics:
+  - medicines
+  style: boundary
+  pair:
+  - alcohol-drugs
+  - medicines
+- utterance: Do you take vitamins or any kind of diet pills?
+  topics:
+  - medicines
+  style: boundary
+  pair:
+  - alcohol-drugs
+  - medicines
+- utterance: Anything you buy over the counter to help with your weight?
+  topics:
+  - medicines
+  style: boundary_colloquial
+  pair:
+  - alcohol-drugs
+  - medicines
+- utterance: er are you taking any sort of medication from the doctor
+  topics:
+  - medicines
+  style: boundary_spoken
+  pair:
+  - alcohol-drugs
+  - medicines
+- utterance: Right, and what about medication from the doctor?
+  topics:
+  - medicines
+  style: boundary_follow_up
+  pair:
+  - alcohol-drugs
+  - medicines
+  previous:
+    interviewer: Do you drink or take any drugs?
+    character: I don't drink alcohol or use recreational drugs, and I don't take stimulants.
+- utterance: Do you smoke or vape?
+  topics: []
+  style: near_miss
+  pair:
+  - alcohol-drugs
+  - medicines
+- utterance: Are you allergic to any medicines?
+  topics: []
+  style: near_miss
+  pair:
+  - alcohol-drugs
+  - medicines
+- utterance: Do you ever bring food back up after eating?
+  topics:
+  - purging
+  style: boundary
+  pair:
+  - purging
+  - self-harm
+- utterance: Do you take anything to flush food through you?
+  topics:
+  - purging
+  style: boundary
+  pair:
+  - purging
+  - self-harm
+- utterance: Have you tried getting rid of what you've eaten in any way?
+  topics:
+  - purging
+  style: boundary_colloquial
+  pair:
+  - purging
+  - self-harm
+- utterance: um do you ever make yourself throw up after you eat
+  topics:
+  - purging
+  style: boundary_spoken
+  pair:
+  - purging
+  - self-harm
+- utterance: And after meals, do you ever try to get rid of what you've eaten?
+  topics:
+  - purging
+  style: boundary_follow_up
+  pair:
+  - purging
+  - self-harm
+  previous:
+    interviewer: Have you ever hurt yourself on purpose?
+    character: No, I don't want to die, have no suicide plan and haven't deliberately injured myself in another way.
+- utterance: Have you wanted to end your life at any point?
+  topics:
+  - self-harm
+  style: boundary
+  pair:
+  - purging
+  - self-harm
+- utterance: Have things ever felt so bad that you wanted to die?
+  topics:
+  - self-harm
+  style: boundary
+  pair:
+  - purging
+  - self-harm
+- utterance: Other than the food, have you ever done anything to hurt yourself on purpose?
+  topics:
+  - self-harm
+  style: boundary_colloquial
+  pair:
+  - purging
+  - self-harm
+- utterance: and have you like ever thought about hurting yourself or anything
+  topics:
+  - self-harm
+  style: boundary_spoken
+  pair:
+  - purging
+  - self-harm
+- utterance: Okay, and have you ever hurt yourself deliberately in any other way?
+  topics:
+  - self-harm
+  style: boundary_follow_up
+  pair:
+  - purging
+  - self-harm
+  previous:
+    interviewer: Do you make yourself sick?
+    character: No, I don't make myself sick or use laxatives or water pills; I feel ashamed about how much time I spend planning what I allow myself to eat.
+- utterance: Do you ever binge on food?
+  topics: []
+  style: near_miss
+  pair:
+  - purging
+  - self-harm
+- utterance: Do you hide food or throw it away?
+  topics: []
+  style: near_miss
+  pair:
+  - purging
+  - self-harm
+- utterance: How often do you go to the toilet for a poo?
+  topics:
+  - bowel-symptoms
+  style: boundary
+  pair:
+  - bowel-symptoms
+  - purging
+- utterance: Do you get constipated?
+  topics:
+  - bowel-symptoms
+  style: boundary
+  pair:
+  - bowel-symptoms
+  - purging
+- utterance: Does your tummy feel swollen or full after you've eaten?
+  topics:
+  - bowel-symptoms
+  style: boundary_colloquial
+  pair:
+  - bowel-symptoms
+  - purging
+- utterance: um how are your bowels these days
+  topics:
+  - bowel-symptoms
+  style: boundary_spoken
+  pair:
+  - bowel-symptoms
+  - purging
+- utterance: And how are your bowels generally, when did you last go?
+  topics:
+  - bowel-symptoms
+  style: boundary_follow_up
+  pair:
+  - bowel-symptoms
+  - purging
+  previous:
+    interviewer: Do you use laxatives?
+    character: No, I don't make myself sick or use laxatives or water pills; I feel ashamed about how much time I spend planning what I allow myself to eat.
+- utterance: Do you ever take anything to speed food through you?
+  topics:
+  - purging
+  style: boundary
+  pair:
+  - bowel-symptoms
+  - purging
+- utterance: Have you taken water tablets to lose weight?
+  topics:
+  - purging
+  style: boundary
+  pair:
+  - bowel-symptoms
+  - purging
+- utterance: Do you make yourself vomit after meals?
+  topics:
+  - purging
+  style: boundary_colloquial
+  pair:
+  - bowel-symptoms
+  - purging
+- utterance: so do you ever like take stuff to get rid of food
+  topics:
+  - purging
+  style: boundary_spoken
+  pair:
+  - bowel-symptoms
+  - purging
+- utterance: Do you ever take anything to make yourself go?
+  topics:
+  - purging
+  style: boundary_follow_up
+  pair:
+  - bowel-symptoms
+  - purging
+  previous:
+    interviewer: Do you get constipated?
+    character: I open my bowels about once a week and feel bloated after eating; I haven't noticed blood.
+- utterance: Do you get heartburn?
+  topics: []
+  style: near_miss
+  pair:
+  - bowel-symptoms
+  - purging
+- utterance: Have you ever been tested for coeliac disease?
+  topics: []
+  style: near_miss
+  pair:
+  - bowel-symptoms
+  - purging

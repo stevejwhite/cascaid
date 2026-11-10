@@ -1,0 +1,159 @@
+# Training lines for the tone classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: child-attention-developmental-history
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Does Idris ever run into the road without looking?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Have other people made comments about how he behaves?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Do you ever feel that people blame you for how he is?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: How long has the restlessness been going on?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: what is he like at bedtime
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Sorry to ask, but would you mind telling me a little about his first few years?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: If you don't mind me asking, how did the delivery go?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Good afternoon, Farah. Thank you for bringing Idris's record along.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: Hello, I'm Dr Okoye, one of the trainees in the clinic.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: So school are worried about his concentration and his friendships, and you've seen some of this at home.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: summary
+- utterance: Right. And when did that start?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Okay, thanks. Let me just note that down.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: That sounds hard.
+  empathy: 1
+  empathy_words: That sounds hard.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I'm sorry to hear that. Thank you for telling me.
+  empathy: 1
+  empathy_words: I'm sorry to hear that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That must be difficult. What does he do when other children refuse to play?
+  empathy: 1
+  empathy_words: That must be difficult.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I can see this is worrying for you. Did anyone say what might be going on?
+  empathy: 1
+  empathy_words: I can see this is worrying for you.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: It sounds like you are working so hard to stay on top of all of this for him.
+  empathy: 2
+  empathy_words: It sounds like you are working so hard to stay on top of all of this for him.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: You said he wanders off halfway and mislays his shoes most mornings.
+    character: Since nursery age he has needed reminders for each step of getting dressed; most mornings he wanders off halfway and mislays his shoes.
+- utterance: Seeing him come home upset after being left out must be heartbreaking for you.
+  empathy: 2
+  empathy_words: Seeing him come home upset after being left out must be heartbreaking for you.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: He wants friends, but children then avoid him, and he comes home upset.
+    character: He wants friends, but interrupts games and grabs a turn before others have finished; children then avoid him, and he comes home upset.
+- utterance: It makes complete sense that you want someone to see him outside the classroom, not just the problems reported by school.
+  empathy: 2
+  empathy_words: It makes complete sense that you want someone to see him outside the classroom, not just the problems reported by school.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: It must have been frightening when you caught his hand by the road, so thank you for sharing that. Has anything like it happened before?
+  empathy: 2
+  empathy_words: It must have been frightening when you caught his hand by the road, so thank you for sharing that.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: He's been constantly on the go since about age three; last week he ran towards a road without checking and I caught his hand before he reached it.
+    character: He's been constantly on the go since about age three; last week he ran towards a road without checking and I caught his hand before he reached it.
+- utterance: You really should have brought him in earlier.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You really should have brought him in earlier.
+  style: confront_statement
+- utterance: Why on earth didn't you ask the school for help sooner?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Why on earth didn't you ask the school for help sooner?
+  style: confront_why
+- utterance: All little boys are like that at his age, so I wouldn't worry.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: All little boys are like that at his age, so I wouldn't worry.
+  style: dismissive
+- utterance: I'm sure it's nothing, we'll just carry on with the questions.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: I'm sure it's nothing, we'll just carry on with the questions.
+  style: dismissive

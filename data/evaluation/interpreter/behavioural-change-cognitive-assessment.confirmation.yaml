@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: behavioural-change-cognitive-assessment
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: okay malcolm, what changes do your family describe, and do you see them in the same way
+  expected:
+  - insight
+  rapport: false
+- utterance: Have other people reacted badly to anything you've said to them in public?
+  expected:
+  - conduct
+  rapport: false
+- utterance: If you needed groceries, how would you work out what to buy before leaving home?
+  expected:
+  - planning
+  rapport: false
+- utterance: When you're reading, can you stick with it or does your attention drift off?
+  expected:
+  - attention
+  rapport: false
+- utterance: Can you bring to mind what you had for breakfast earlier today?
+  expected:
+  - memory
+  rapport: false
+- utterance: Tell me as many different animals as come into your head.
+  expected:
+  - fluency
+  rapport: false
+- utterance: If you lose your place while reading, is keeping focused on the page difficult?
+  expected:
+  - attention
+  rapport: false
+- utterance: Can you recall this morning's breakfast, rather than what you would normally eat?
+  expected:
+  - memory
+  rapport: false
+- utterance: has anything similar happened with decisions about spending?
+  expected:
+  - money
+  rapport: false
+  previous:
+    interviewer: How do you go about getting groceries?
+    character: I don't make a list or check what we've already got, so I come home with the same things.
+- utterance: As you see it, the concern is mainly coming from your family.
+  expected: []
+  rapport: false

@@ -1,0 +1,223 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: adolescent-delayed-sleep-history
+case_version: 0.1.0
+status: draft
+items:
+  - utterance: "Can you remember when your sleep started to go wrong?"
+    topics: [course]
+    style: boundary
+    pair: [course, free-days]
+  - utterance: "Was there a point when you first noticed it change?"
+    topics: [course]
+    style: boundary
+    pair: [course, free-days]
+  - utterance: "so how long has this been going on for now"
+    topics: [course]
+    style: boundary_spoken
+    pair: [course, free-days]
+  - utterance: "Has it always been like this, or did it kick off at some point?"
+    topics: [course]
+    style: boundary_colloquial
+    pair: [course, free-days]
+  - utterance: "Okay. And has that been the case for long, or is it new?"
+    topics: [course]
+    style: boundary_follow_up
+    pair: [course, free-days]
+    previous:
+      interviewer: "What are your weekends like for you?"
+      character: "At weekends I sleep from about three until midday and usually feel refreshed."
+  - utterance: "What happens with your sleep when you've got nothing on in the morning?"
+    topics: [free-days]
+    style: boundary
+    pair: [course, free-days]
+  - utterance: "If nobody wakes you, what time do you get up and how do you feel?"
+    topics: [free-days]
+    style: boundary
+    pair: [course, free-days]
+  - utterance: "and um when you get a lie in do you feel any better after it"
+    topics: [free-days]
+    style: boundary_spoken
+    pair: [course, free-days]
+  - utterance: "Do you catch up on sleep when there's no college?"
+    topics: [free-days]
+    style: boundary_colloquial
+    pair: [course, free-days]
+  - utterance: "And on days off, what time do you get up?"
+    topics: [free-days]
+    style: boundary_follow_up
+    pair: [course, free-days]
+    previous:
+      interviewer: "How long has this been going on?"
+      character: "It began during the summer holidays four months ago and hasn't shifted since term started."
+  - utterance: "Have you tried melatonin or any other sleep medication?"
+    topics: []
+    style: near_miss
+    pair: [course, free-days]
+  - utterance: "Have you ever had a sleep study?"
+    topics: []
+    style: near_miss
+    pair: [course, free-days]
+  - utterance: "What time do you wake on Saturdays and Sundays if you're left alone?"
+    topics: [free-days]
+    style: boundary
+    pair: [free-days, pattern]
+  - utterance: "When there's no alarm, how many hours do you sleep and do you feel rested?"
+    topics: [free-days]
+    style: boundary
+    pair: [free-days, pattern]
+  - utterance: "yeah and what about at the weekend do you sleep better then or"
+    topics: [free-days]
+    style: boundary_spoken
+    pair: [free-days, pattern]
+  - utterance: "Do you manage a decent lie-in on days when you don't have college?"
+    topics: [free-days]
+    style: boundary_colloquial
+    pair: [free-days, pattern]
+  - utterance: "And is it the same at the weekend, or do you feel different after a lie-in?"
+    topics: [free-days]
+    style: boundary_follow_up
+    pair: [free-days, pattern]
+    previous:
+      interviewer: "What time do you get to sleep on a college night?"
+      character: "I aim to settle by eleven but usually get into bed around midnight and don't fall asleep until about three. On college days Mum wakes me at seven and I feel awful."
+  - utterance: "On a college night, what time do you get into bed and when do you actually fall asleep?"
+    topics: [pattern]
+    style: boundary
+    pair: [free-days, pattern]
+  - utterance: "Walk me through a typical weekday evening, from getting into bed to sleep."
+    topics: [pattern]
+    style: boundary
+    pair: [free-days, pattern]
+  - utterance: "so what time are you getting to sleep on a school night and when do you have to get up"
+    topics: [pattern]
+    style: boundary_spoken
+    pair: [free-days, pattern]
+  - utterance: "What's it like getting up for college in the mornings?"
+    topics: [pattern]
+    style: boundary_colloquial
+    pair: [free-days, pattern]
+  - utterance: "I see. And during the week, what time are you actually dropping off?"
+    topics: [pattern]
+    style: boundary_follow_up
+    pair: [free-days, pattern]
+    previous:
+      interviewer: "What are your weekends like?"
+      character: "At weekends I sleep from about three until midday and usually feel refreshed."
+  - utterance: "How many hours of sleep do you think you need?"
+    topics: []
+    style: near_miss
+    pair: [free-days, pattern]
+  - utterance: "What's your bedroom like, is it noisy or too hot?"
+    topics: []
+    style: near_miss
+    pair: [free-days, pattern]
+  - utterance: "Once you're off, do you sleep through or wake up in the night?"
+    topics: [other-sleep]
+    style: boundary
+    pair: [other-sleep, pattern]
+  - utterance: "Does anybody at home mention noisy breathing or gasping when you're asleep?"
+    topics: [other-sleep]
+    style: boundary
+    pair: [other-sleep, pattern]
+  - utterance: "and do your legs ever feel funny or restless when you're trying to drop off"
+    topics: [other-sleep]
+    style: boundary_spoken
+    pair: [other-sleep, pattern]
+  - utterance: "Do you toss and turn or get woken up through the night?"
+    topics: [other-sleep]
+    style: boundary_colloquial
+    pair: [other-sleep, pattern]
+  - utterance: "And after that, do you stay asleep till the alarm or do you wake up?"
+    topics: [other-sleep]
+    style: boundary_follow_up
+    pair: [other-sleep, pattern]
+    previous:
+      interviewer: "What time do you fall asleep on college days?"
+      character: "I aim to settle by eleven but usually get into bed around midnight and don't fall asleep until about three. On college days Mum wakes me at seven and I feel awful."
+  - utterance: "What time do you try to settle, and what time does sleep actually come?"
+    topics: [pattern]
+    style: boundary
+    pair: [other-sleep, pattern]
+  - utterance: "How long does it take you to fall asleep after you get into bed?"
+    topics: [pattern]
+    style: boundary
+    pair: [other-sleep, pattern]
+  - utterance: "right so when you go to bed how long are you lying there before you drop off"
+    topics: [pattern]
+    style: boundary_spoken
+    pair: [other-sleep, pattern]
+  - utterance: "What time does your head finally hit the pillow and when do you conk out?"
+    topics: [pattern]
+    style: boundary_colloquial
+    pair: [other-sleep, pattern]
+  - utterance: "Okay. Going back to the start of the night, how long are you awake before you fall asleep?"
+    topics: [pattern]
+    style: boundary_follow_up
+    pair: [other-sleep, pattern]
+    previous:
+      interviewer: "Do you stay asleep once you're off?"
+      character: "No, I don't know of snoring or breathing pauses, and my legs don't bother me. Once asleep I usually stay asleep."
+  - utterance: "Do you sleep with the light or the television on?"
+    topics: []
+    style: near_miss
+    pair: [other-sleep, pattern]
+  - utterance: "Do you dream a lot, or have vivid dreams?"
+    topics: []
+    style: near_miss
+    pair: [other-sleep, pattern]
+  - utterance: "How is this affecting you at college?"
+    topics: [function]
+    style: boundary
+    pair: [function, pattern]
+  - utterance: "Are you managing to stay awake and focus during the day?"
+    topics: [function]
+    style: boundary
+    pair: [function, pattern]
+  - utterance: "and um does it make you miss much at college like lessons and that"
+    topics: [function]
+    style: boundary_spoken
+    pair: [function, pattern]
+  - utterance: "Are you flagging by the afternoon? Do you crash out when you get home?"
+    topics: [function]
+    style: boundary_colloquial
+    pair: [function, pattern]
+  - utterance: "How do you cope once you're actually in lessons?"
+    topics: [function]
+    style: boundary_follow_up
+    pair: [function, pattern]
+    previous:
+      interviewer: "What time do you wake on college days?"
+      character: "I aim to settle by eleven but usually get into bed around midnight and don't fall asleep until about three. On college days Mum wakes me at seven and I feel awful."
+  - utterance: "On a typical college day, what time are you woken and how do you feel at that point?"
+    topics: [pattern]
+    style: boundary
+    pair: [function, pattern]
+  - utterance: "What time does your alarm, or someone else, get you up for college?"
+    topics: [pattern]
+    style: boundary
+    pair: [function, pattern]
+  - utterance: "so what time are you actually waking up in the week and how is it first thing"
+    topics: [pattern]
+    style: boundary_spoken
+    pair: [function, pattern]
+  - utterance: "Is it a struggle to drag yourself out of bed on college mornings?"
+    topics: [pattern]
+    style: boundary_colloquial
+    pair: [function, pattern]
+  - utterance: "Okay, so what time do you go to bed on the nights before?"
+    topics: [pattern]
+    style: boundary_follow_up
+    pair: [function, pattern]
+    previous:
+      interviewer: "Are you missing many lessons?"
+      character: "I've missed first lessons three days a week. I struggle to concentrate and nap for an hour after college."
+  - utterance: "Do you have any exams coming up soon?"
+    topics: []
+    style: near_miss
+    pair: [function, pattern]
+  - utterance: "Do you have a part-time job as well as college?"
+    topics: []
+    style: near_miss
+    pair: [function, pattern]

@@ -1,0 +1,169 @@
+# Training lines for the tone classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: postnatal-depression-safety-plan
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Do you ever feel like the baby would be better off with someone else?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Have you thought about taking your own life?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: um how is your appetite
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Is anyone else aware of how you've been feeling?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: What time of day do you feel at your lowest?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Sorry to ask, but are you thinking about harming yourself at the moment?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: If you don't mind, could you tell me what the evenings are like?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Hello Zoe, thanks for having me in.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: Hi, I'm Dr Collins, a psychiatrist from the community team, and I've come to see how you
+    are.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: So you've been low for a while and want us to put a proper plan in place.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: summary
+- utterance: Right. And how long has that been going on?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Okay, thank you for telling me.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: I'm sorry to hear that. Let's go on.
+  empathy: 1
+  empathy_words: I'm sorry to hear that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That sounds really hard. I'll write that down.
+  empathy: 1
+  empathy_words: That sounds really hard.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That must be difficult. Is there anything else you want me to know?
+  empathy: 1
+  empathy_words: That must be difficult.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I'm sorry you've been going through this. How are you finding the days?
+  empathy: 1
+  empathy_words: I'm sorry you've been going through this.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: You're frightened that these thoughts could come back, and it makes sense that you came to
+    ask for help rather than manage alone.
+  empathy: 2
+  empathy_words: You're frightened that these thoughts could come back, and it makes sense that you came
+    to ask for help rather than manage alone.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: Calling my sister helps me slow down. I want to be here for my daughter and have come
+      because I don't trust myself to manage alone.
+    character: Calling my sister helps me slow down. I want to be here for my daughter and have come because
+      I don't trust myself to manage alone.
+- utterance: You've been afraid people would think you don't love your baby, and that fear must have made
+    it so hard to speak up.
+  empathy: 2
+  empathy_words: You've been afraid people would think you don't love your baby, and that fear must have
+    made it so hard to speak up.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: I'm afraid admitting these thoughts will make people think I don't love my baby. That's
+      why I've kept quiet.
+    character: I'm afraid admitting these thoughts will make people think I don't love my baby. That's
+      why I've kept quiet.
+- utterance: Lying awake worrying even when someone else does a feed sounds utterly exhausting, and no
+    wonder the evenings feel so heavy.
+  empathy: 2
+  empathy_words: Lying awake worrying even when someone else does a feed sounds utterly exhausting, and
+    no wonder the evenings feel so heavy.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: Being so tired and alone in the evenings, with your mind telling you that you're failing,
+    must feel awful. What would make those hours easier?
+  empathy: 2
+  empathy_words: Being so tired and alone in the evenings, with your mind telling you that you're failing,
+    must feel awful.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+- utterance: Every new mother feels like this at first.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Every new mother feels like this at first.
+  style: confront_statement
+- utterance: You wouldn't really do anything to yourself, would you?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: would you
+  style: confront_tag
+- utterance: You've got a lovely baby, so you should be happy.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You've got a lovely baby, so you should be happy.
+  style: dismissive
+- utterance: honestly just keep busy and you'll feel better soon
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: just keep busy
+  style: dismissive

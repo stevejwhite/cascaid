@@ -1,0 +1,156 @@
+# Training lines for the tone classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: rehabilitation-supported-housing-plan
+case_version: 0.1.0
+status: draft
+items:
+- utterance: What would you like to be able to do in the new place?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Have you had any thoughts of harming yourself?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: What tends to happen when you start to become unwell?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Are you still hearing voices?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: um how are you getting on with your tablets
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: If you don't mind me asking, how do you feel about the money side of things?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Sorry to ask, but could you tell me who is important to you?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Good afternoon, Kwame.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: Hello Kwame, I'm the psychiatrist here on the ward, and I'd like to talk about your move.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: So you'd like the move to work, and you want to have a say in how it happens.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: summary
+- utterance: Okay, thanks Kwame.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Right. And how long has that been the case?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: That sounds hard.
+  empathy: 1
+  empathy_words: That sounds hard.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I'm sorry to hear that.
+  empathy: 1
+  empathy_words: I'm sorry to hear that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That sounds frustrating. What would you change?
+  empathy: 1
+  empathy_words: That sounds frustrating.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I understand. What matters most to you about the move?
+  empathy: 1
+  empathy_words: I understand.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: It makes sense that you would feel scared about being unnoticed, and I'm glad you felt able to tell me.
+  empathy: 2
+  empathy_words: It makes sense that you would feel scared about being unnoticed, and I'm glad you felt able to tell me.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: Is there anything about the move that worries you?
+    character: I'm scared nobody will notice if I go downhill. I haven't said that because I don't want the move cancelled.
+- utterance: It sounds hard to disagree in meetings when everyone around the table sounds so certain.
+  empathy: 2
+  empathy_words: It sounds hard to disagree in meetings when everyone around the table sounds so certain.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: How do you feel about your brother being involved?
+    character: I want my brother involved, but not making every choice for me. I sometimes agree in meetings because everyone sounds so certain.
+- utterance: Wanting your own space and more say over your life is completely understandable after so long on a ward.
+  empathy: 2
+  empathy_words: Wanting your own space and more say over your life is completely understandable after so long on a ward.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: You obviously want this move to work for you, and your wishes matter. What would make it feel right for you?
+  empathy: 2
+  empathy_words: You obviously want this move to work for you, and your wishes matter.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+- utterance: You can't go on being so dependent on the ward, Kwame.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You can't go on being so dependent on the ward
+  style: confront_statement
+- utterance: You'll take your tablets this time, won't you?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You'll take your tablets this time, won't you
+  style: confront_tag
+- utterance: Don't worry, the staff there will sort everything out.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Don't worry, the staff there will sort everything out
+  style: dismissive
+- utterance: We've heard all this before, so let's stick to the plan.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: We've heard all this before
+  style: dismissive

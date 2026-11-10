@@ -1,0 +1,542 @@
+# Training lines for the tone classifier. Drafted by GPT-6 (Codex) on
+# 2026-10-12. Not evaluation data.
+# Revised for Prompt D quality rules on 2026-10-13; reviewed by Steve J White on 2026-10-13.
+case_id: overdose-risk-assessment
+case_version: 0.4.0
+status: reviewed
+items:
+- utterance: What did you take during the overdose last night?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Had you planned to do this beforehand?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: um were you hoping not to be found
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Does being alive now feel like a relief to you?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Which events contributed to things reaching this point?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Are there thoughts of ending your life at the moment?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: so have you hurt yourself at any earlier time
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Has your drinking changed recently?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Is there a supply of medicines still available where you live?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: How did somebody become aware you needed help?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: er was there a note or message for anyone
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: When you think about another attempt, what might hold you back?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Can you describe your mood in the weeks before this?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Do you think you might try to harm yourself again?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Could you tell me whether anything still feels enjoyable?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: If you feel able to answer, did you make preparations beforehand?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Please could I ask whether you are thinking of another attempt?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: You can take a moment, but is there anything that might hold you back?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Would you be willing to say who became aware of what had happened?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: May I ask something personal about earlier times you hurt yourself?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: well only if youre comfortable saying were you expecting to be found
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Jordan, hello; thank you for speaking with me today.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: Good morning, I will sit here if that is all right.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: hi thanks for making time for this conversation
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: My work is with the psychiatry team that visits people on the wards.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: We have been asked to talk after what happened last night.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: You have told me you feel fine and would like to go home.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: summary
+- utterance: The doctors said your blood tests were okay this morning.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: summary
+- utterance: I will ask about the event and about what things are like for you now.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: explanation
+- utterance: You can let me know if you need a break between questions.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: explanation
+- utterance: Have I made clear why the team asked me to speak with you?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: check_understanding
+- utterance: Does that summary of what you said about leaving sound correct?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: check_understanding
+- utterance: Okay. What came before that?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Yes, go on, Jordan.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Mm. With anyone else?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Right. Where were you then?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: got you about what time
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: yeah and after the ambulance
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Thanks. Anything to add?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: I see what you mean.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: I am sorry you are struggling.
+  empathy: 1
+  empathy_words: I am sorry you are struggling.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That can't be easy to face.
+  empathy: 1
+  empathy_words: That can't be easy to face.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: It sounds deeply upsetting.
+  empathy: 1
+  empathy_words: It sounds deeply upsetting.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: You're having a difficult time.
+  empathy: 1
+  empathy_words: You're having a difficult time.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I can hear this feels painful.
+  empathy: 1
+  empathy_words: I can hear this feels painful.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: Your feelings deserve to be heard.
+  empathy: 1
+  empathy_words: Your feelings deserve to be heard.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: This must be hard to bear.
+  empathy: 1
+  empathy_words: This must be hard to bear.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: er it sounds quite a struggle.
+  empathy: 1
+  empathy_words: er it sounds quite a struggle.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I am sorry things feel so hard. Are thoughts of another attempt present?
+  empathy: 1
+  empathy_words: I am sorry things feel so hard.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: That sounds very distressing. Who first became aware of what happened?
+  empathy: 1
+  empathy_words: That sounds very distressing.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: It must feel difficult to revisit. Had you made preparations beforehand?
+  empathy: 1
+  empathy_words: It must feel difficult to revisit.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I can understand feeling overwhelmed. What has been going on recently?
+  empathy: 1
+  empathy_words: I can understand feeling overwhelmed.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: This sounds painful to discuss. Have there been earlier times you hurt yourself?
+  empathy: 1
+  empathy_words: This sounds painful to discuss.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: it sounds very hard at present. what might stop you making another attempt
+  empathy: 1
+  empathy_words: it sounds very hard at present.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: Losing both your relationship and your job in such a short time is a lot to bear.
+  empathy: 2
+  empathy_words: Losing both your relationship and your job in such a short time is a lot to bear.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: What has been happening in the lead-up to this?
+    character: My partner left me three weeks ago, and I lost my job last month.
+- utterance: I hear that part of you wishes you had not survived, and that must be painful to sit with.
+  empathy: 2
+  empathy_words: I hear that part of you wishes you had not survived, and that must be painful to sit
+    with.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: How do you feel about having survived?
+    character: Part of me is disappointed it didn't work. I don't know if I'd do it again.
+- utterance: Hardly sleeping on top of two months feeling low must leave you worn out.
+  empathy: 2
+  empathy_words: Hardly sleeping on top of two months feeling low must leave you worn out.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: How have you been feeling in recent weeks?
+    character: I've felt low for about two months. I'm hardly sleeping and nothing feels enjoyable.
+- utterance: Not wanting to hurt your mum and brother matters to you, and I respect that.
+  empathy: 2
+  empathy_words: Not wanting to hurt your mum and brother matters to you, and I respect that.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: What might make you pause before another attempt?
+    character: My mum and my younger brother. I don't want to hurt them.
+- utterance: I appreciate that being at home matters to you when you feel fine now.
+  empathy: 2
+  empathy_words: I appreciate that being at home matters to you when you feel fine now.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: You feel ready to go home, and I can understand wanting this conversation over.
+  empathy: 2
+  empathy_words: You feel ready to go home, and I can understand wanting this conversation over.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: It makes sense that you want to leave when you feel you are okay now.
+  empathy: 2
+  empathy_words: It makes sense that you want to leave when you feel you are okay now.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: After being told your blood tests are okay, I can understand your wish to get home.
+  empathy: 2
+  empathy_words: After being told your blood tests are okay, I can understand your wish to get home.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: with your partner leaving and your job gone there is so much for you to face.
+  empathy: 2
+  empathy_words: with your partner leaving and your job gone there is so much for you to face.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: Have there been major changes or losses recently?
+    character: My partner left me three weeks ago, and I lost my job last month.
+- utterance: I can hear how important your mum and brother are in wanting to stay alive. What would you
+    like to say about them?
+  empathy: 2
+  empathy_words: I can hear how important your mum and brother are in wanting to stay alive.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: Which people feel important when you think about staying alive?
+    character: My mum and my younger brother. I don't want to hurt them.
+- utterance: You feel disappointed to have survived and unsure about another attempt, which sounds painful.
+    Can you tell me more about those feelings?
+  empathy: 2
+  empathy_words: You feel disappointed to have survived and unsure about another attempt, which sounds
+    painful.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: How is it for you to still be here?
+    character: Part of me is disappointed it didn't work. I don't know if I'd do it again.
+- utterance: I am sorry these two months have been so empty of enjoyment for you. What has a day been
+    like?
+  empathy: 2
+  empathy_words: I am sorry these two months have been so empty of enjoyment for you.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: What has your mood been like before this?
+    character: I've felt low for about two months. I'm hardly sleeping and nothing feels enjoyable.
+- utterance: Your relationship ending so soon after losing work must have been hard to face. How have
+    you been managing since?
+  empathy: 2
+  empathy_words: Your relationship ending so soon after losing work must have been hard to face.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: What recent stresses have been affecting you?
+    character: My partner left me three weeks ago, and I lost my job last month.
+- utterance: It can be difficult to go back over hurting yourself as a teenager. What is it like talking
+    about that now?
+  empathy: 2
+  empathy_words: It can be difficult to go back over hurting yourself as a teenager.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: Have you deliberately injured yourself before this episode?
+    character: I cut my arms a few times as a teenager. Nothing since then.
+- utterance: You need to think about the effect an overdose has on other people.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You need to think about the effect an overdose has on other people.
+  style: confront_statement
+- utterance: I think you are trying to move on from last night rather too quickly.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: I think you are trying to move on from last night rather too quickly.
+  style: confront_statement
+- utterance: We can finish sooner if you give me the answers I need.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: We can finish sooner if you give me the answers I need.
+  style: confront_statement
+- utterance: It would help if you accepted that going home is not the main issue here.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: It would help if you accepted that going home is not the main issue here.
+  style: confront_statement
+- utterance: Why not talk to someone before letting things get to an overdose?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Why not talk to someone before letting things get to an overdose?
+  style: confront_why
+- utterance: Why should feeling fine today mean we can put last night behind us?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Why should feeling fine today mean we can put last night behind us?
+  style: confront_why
+- utterance: You realise this was not a sensible way to deal with things, don't you?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You realise this was not a sensible way to deal with things, don't you?
+  style: confront_tag
+- utterance: After all this, you should be grateful to be alive, shouldn't you?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: After all this, you should be grateful to be alive, shouldn't you?
+  style: confront_tag
+- utterance: Surely you could have found a better way of asking for help?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Surely you could have found a better way of asking for help?
+  style: confront_rhetorical
+- utterance: You are physically okay now, so there is no point dwelling on the overdose.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You are physically okay now, so there is no point dwelling on the overdose.
+  style: dismissive
+- utterance: well we all have bad days so try to look forward now
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: well we all have bad days so try to look forward now
+  style: dismissive
+- utterance: Once you get home this will probably feel less of a big deal.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Once you get home this will probably feel less of a big deal.
+  style: dismissive
+- utterance: 'Look, I just need you to answer the questions.'
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: 'Look, I just need you to answer the questions.'
+  style: impatient
+- utterance: 'I''m going to need a straight answer this time.'
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: 'I''m going to need a straight answer this time.'
+  style: impatient
+- utterance: 'Enough of the shrugging; tell me what happened.'
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: 'Enough of the shrugging; tell me what happened.'
+  style: impatient

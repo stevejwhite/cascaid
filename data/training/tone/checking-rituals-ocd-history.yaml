@@ -1,0 +1,159 @@
+# Training lines for the tone classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: checking-rituals-ocd-history
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Do you ever feel that life isn't worth living because of this?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: How do you cope when someone stops you from checking?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: What do your friends think about you leaving work?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: have you ever hurt yourself to get away from the worry
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: How does it feel when you leave the house without checking?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Sorry to ask, but how do things stand with your finances now?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: If you don't mind me asking, how long have you been out of work?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Good morning Ethan, thanks for coming.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: Hello Ethan, I'm Dr Rees, one of the doctors in this clinic.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: So the checking is taking hours and you've had to stop working, have I got that right?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: check_understanding
+- utterance: Right. And when did that begin?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Okay, thanks Ethan.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: I'm sorry to hear that.
+  empathy: 1
+  empathy_words: I'm sorry to hear that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That sounds really hard.
+  empathy: 1
+  empathy_words: That sounds really hard.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That must be difficult. How are you finding the evenings?
+  empathy: 1
+  empathy_words: That must be difficult.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I'm sorry you've been struggling. Could you tell me about your sleep?
+  empathy: 1
+  empathy_words: I'm sorry you've been struggling.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: It sounds as though you know the checking goes too far, but it still feels as though you'd be to blame if something went wrong.
+  empathy: 2
+  empathy_words: It sounds as though you know the checking goes too far, but it still feels as though you'd be to blame if something went wrong.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: Do you think it's excessive?
+    character: I know the amount I do doesn't make sense. I still feel responsible if I don't do it and something goes wrong.
+- utterance: Having to keep telling friends something other than the truth about your work sounds lonely, and I can see why you feel trapped.
+  empathy: 2
+  empathy_words: Having to keep telling friends something other than the truth about your work sounds lonely, and I can see why you feel trapped.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: What did you tell your friends?
+    character: I told friends I'd left work for something better. I'm ashamed that they might see how trapped I feel.
+- utterance: I can hear that you know how this sounds, and that it must feel embarrassing to say out loud.
+  empathy: 2
+  empathy_words: I can hear that you know how this sounds, and that it must feel embarrassing to say out loud.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: Arguing with your dad when he is trying to help must leave you feeling guilty and stuck, and that sounds very hard. How does he react?
+  empathy: 2
+  empathy_words: Arguing with your dad when he is trying to help must leave you feeling guilty and stuck, and that sounds very hard.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: Does anyone help you with the checking?
+    character: My dad checks things for me when I ask. We argue because he gets frustrated and I keep asking again.
+- utterance: You must see that checking the cooker twenty times is completely pointless.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: checking the cooker twenty times is completely pointless
+  style: confront_statement
+- utterance: Why on earth can't you just leave the house like everyone else?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Why on earth can't you just leave the house like everyone else
+  style: confront_why
+- utterance: Just try not to worry about it, I'm sure nothing will happen.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: I'm sure nothing will happen
+  style: dismissive
+- utterance: We really haven't got time for all these details, Ethan.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: We really haven't got time for all these details
+  style: dismissive

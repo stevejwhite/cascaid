@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-07",
+  "profiles": [
+    {
+      "id": "developer-apple-m4-16gb",
+      "purpose": "CASC POC development and evaluation host (native Metal inference)",
+      "status": "measured",
+      "hardware": {
+        "manufacturer": "Apple",
+        "model": "Apple M4 host",
+        "operating_system": "macOS 26.6.2 (25G83)",
+        "architecture": "arm64",
+        "cpu": "Apple M4",
+        "logical_processors": 10,
+        "ram_bytes": 17179869184,
+        "accelerators": [
+          {
+            "name": "Apple M4 GPU",
+            "cores": 10,
+            "type": "integrated_gpu",
+            "memory": "unified; shares 16 GiB system RAM",
+            "metal_support": "Metal 4",
+            "llm_offload_assumption": "native Metal MTL0 explicitly selected"
+          }
+        ]
+      },
+      "toolchain": {
+        "node": "24.15.0",
+        "python_managed": "3.12.13 via uv",
+        "system_python": "3.9.6; do not use for the API",
+        "llama_server": "pinned b11149 in ~/.cache/psychiatryeduai/runtimes/b11149; not global PATH"
+      },
+      "constraints": {
+        "inference": "native llama.cpp Metal; CPU fallback for diagnosis",
+        "maximum_candidate_parameters_billions": 4,
+        "initial_quantisation": "4-bit",
+        "initial_context_tokens": 4096,
+        "concurrency": 1,
+        "speech": "local speech recognition (Phase 2); no audio retained by default"
+      },
+      "service_objectives": {
+        "first_token_seconds": 2,
+        "scope": "Provisional single-user role-play target; Phase 4 measures per-stage and end-to-end turn latency"
+      },
+      "inference_benchmark_status": "casc_role_play_not_yet_measured",
+      "notes": [
+        "Hardware inventoried 2026-09-26.",
+        "p3_observations are grounded-QA measurements from before the CASC pivot (report at git tag pre-casc-archive); they indicate runtime speed, not role-play performance."
+      ],
+      "p3_observations": {
+        "captured_on": "2026-09-27",
+        "report": "docs/P3-REPORT.md at git tag pre-casc-archive",
+        "runtime": "llama.cpp b11149 Metal",
+        "context_tokens": 4096,
+        "concurrency": 1,
+        "latency": {
+          "mean_end_to_end_ms": 2169,
+          "p95_end_to_end_ms": 3265,
+          "mean_first_token_ms": 213,
+          "output_tokens_per_generation_second": 29.87,
+          "scope": "Warm resident models, two passes; throughput includes prompt processing"
+        },
+        "native_rss_peak_bytes": 3860889600,
+        "app_rss_peak_bytes": 229179392,
+        "combined_rss_peak_bytes": 4082581504,
+        "rss_caveat": "RSS may double-count shared pages; excludes GPU allocations and Docker VM. System pressure/swap and separate container usage accompany these samples.",
+        "swap_before": "vm.swapusage: total = 2048.00M  used = 1376.69M  free = 671.31M  (encrypted)",
+        "swap_after": "vm.swapusage: total = 2048.00M  used = 1368.69M  free = 679.31M  (encrypted)",
+        "cold_process_first_answer_ms": 2867,
+        "cold_process_first_token_ms": 972,
+        "cold_start_caveat": "First application answer after fresh native processes; file cache warmed by SHA verification; server startup includes built-in warmup",
+        "cancellation_slot_release_ms": 161
+      }
+    }
+  ],
+  "active_developer_profile_id": "developer-apple-m4-16gb"
+}

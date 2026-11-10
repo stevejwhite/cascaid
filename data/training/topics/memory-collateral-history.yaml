@@ -1,0 +1,830 @@
+# Training phrasings for the topic classifier. Drafted and revised by GPT-6 (Codex)
+# on 2026-10-12; reviewed by Steve J White on 2026-10-12. Not evaluation data.
+case_id: memory-collateral-history
+case_version: 0.4.1
+status: reviewed
+items:
+- utterance: Did this start suddenly or build up over time?
+  topics:
+  - onset
+  style: closed
+- utterance: Has it crept up on him, or was there a big overnight difference?
+  topics:
+  - onset
+  style: colloquial
+- utterance: Could you describe when these difficulties started and how they developed?
+  topics:
+  - onset
+  style: clinical
+- utterance: I wondered how long things have been changing for him
+  topics:
+  - onset
+  style: indirect
+- utterance: It can be upsetting to look back; over what period have you noticed the difference?
+  topics:
+  - onset
+  style: empathy_then_question
+- utterance: um when did the memory trouble first start
+  topics:
+  - onset
+  style: spoken
+- utterance: Roughly how long has this lasted?
+  topics:
+  - onset
+  style: brief
+- utterance: This has crept up rather than appearing overnight, hasn't it?
+  topics:
+  - onset
+  style: leading
+- utterance: Was there a point when things changed all at once?
+  topics:
+  - onset
+  style: follow_up
+  previous:
+    interviewer: How long have you noticed problems with his memory?
+    character: It came on gradually over about eighteen months. There wasn't a sudden change.
+- utterance: Tell me about when you first started noticing a change.
+  topics:
+  - onset
+  style: open
+- utterance: Is there a clear point when the problems started?
+  topics:
+  - onset
+  style: closed
+- utterance: Thinking back, was it there little by little or all at once?
+  topics:
+  - onset
+  style: colloquial
+- utterance: so the pace of it um a slow build up or a sharp change
+  topics:
+  - onset
+  style: spoken
+- utterance: Does that mean roughly eighteen months in total?
+  topics:
+  - onset
+  style: follow_up
+  previous:
+    interviewer: How long have you noticed problems with his memory?
+    character: It came on gradually over about eighteen months. There wasn't a sudden change.
+- utterance: Does he repeat questions he has already asked?
+  topics:
+  - memory-pattern
+  style: closed
+- utterance: How well does a conversation stay with him afterwards?
+  topics:
+  - memory-pattern
+  style: colloquial
+- utterance: Could you describe how his recent memory compares with older memories?
+  topics:
+  - memory-pattern
+  style: clinical
+- utterance: I wondered what examples of forgetting you have noticed
+  topics:
+  - memory-pattern
+  style: indirect
+- utterance: It can be painful to notice these changes; what seems to slip his mind?
+  topics:
+  - memory-pattern
+  style: empathy_then_question
+- utterance: um does he forget things youve just talked about
+  topics:
+  - memory-pattern
+  style: spoken
+- utterance: Any repeated questions or forgetting?
+  topics:
+  - memory-pattern
+  style: brief
+- utterance: Some things you've just said seem to disappear for him, don't they?
+  topics:
+  - memory-pattern
+  style: leading
+- utterance: Does the same question come up again after you've answered it?
+  topics:
+  - memory-pattern
+  style: follow_up
+  previous:
+    interviewer: What sorts of things does he forget?
+    character: He repeats the same questions and forgets conversations from the same day, but he remembers his time
+      in the navy clearly.
+- utterance: Tell me about something that shows how his memory is affected.
+  topics:
+  - memory-pattern
+  style: open
+- utterance: Is his memory for recent events different from years ago?
+  topics:
+  - memory-pattern
+  style: closed
+- utterance: After you've had a chat, does he seem to have lost track of it?
+  topics:
+  - memory-pattern
+  style: colloquial
+- utterance: so things from long ago compared with today what stays with him
+  topics:
+  - memory-pattern
+  style: spoken
+- utterance: Are those accounts of the navy much clearer than that?
+  topics:
+  - memory-pattern
+  style: follow_up
+  previous:
+    interviewer: What sorts of things does he forget?
+    character: He repeats the same questions and forgets conversations from the same day, but he remembers his time
+      in the navy clearly.
+- utterance: What happens when he goes out somewhere familiar on his own?
+  topics:
+  - getting-lost
+  style: open
+- utterance: Has he ever got lost somewhere he normally knows?
+  topics:
+  - getting-lost
+  style: closed
+- utterance: How does he get on finding his way back after a trip out?
+  topics:
+  - getting-lost
+  style: colloquial
+- utterance: Could you describe any episodes of getting lost?
+  topics:
+  - getting-lost
+  style: clinical
+- utterance: I wondered whether he gets lost even on familiar routes
+  topics:
+  - getting-lost
+  style: indirect
+- utterance: That uncertainty can be frightening; can he usually work out the way back?
+  topics:
+  - getting-lost
+  style: empathy_then_question
+- utterance: um has he got lost while out and about
+  topics:
+  - getting-lost
+  style: spoken
+- utterance: Any times he's got lost?
+  topics:
+  - getting-lost
+  style: brief
+- utterance: He isn't always sure which way to go, is he?
+  topics:
+  - getting-lost
+  style: leading
+- utterance: Was it the police who brought him back that time?
+  topics:
+  - getting-lost
+  style: follow_up
+  previous:
+    interviewer: What happens when he goes out somewhere familiar on his own?
+    character: Last month the police brought him home after he got lost walking back from the shops he's used for
+      years.
+- utterance: Tell me about any trouble with getting lost away from the house.
+  topics:
+  - getting-lost
+  style: open
+- utterance: Is getting lost something that has happened more recently?
+  topics:
+  - getting-lost
+  style: closed
+- utterance: When he's been out, has somebody had to guide him back?
+  topics:
+  - getting-lost
+  style: colloquial
+- utterance: so on a familiar route um can he still find his own way
+  topics:
+  - getting-lost
+  style: spoken
+- utterance: Had he been using those shops for years beforehand?
+  topics:
+  - getting-lost
+  style: follow_up
+  previous:
+    interviewer: What happens when he goes out somewhere familiar on his own?
+    character: Last month the police brought him home after he got lost walking back from the shops he's used for
+      years.
+- utterance: How is he managing everyday things such as meals and bills?
+  topics:
+  - daily-function
+  style: open
+- utterance: Has he kept up with paying his bills?
+  topics:
+  - daily-function
+  style: closed
+- utterance: How well is he keeping on top of things around the house?
+  topics:
+  - daily-function
+  style: colloquial
+- utterance: Could you describe his ability to manage cooking and household finances?
+  topics:
+  - daily-function
+  style: clinical
+- utterance: I wondered whether he can still cook proper meals for himself
+  topics:
+  - daily-function
+  style: indirect
+- utterance: It can be worrying to watch this change; what does he manage for himself day to day?
+  topics:
+  - daily-function
+  style: empathy_then_question
+- utterance: um are bills getting paid and meals getting made
+  topics:
+  - daily-function
+  style: spoken
+- utterance: Managing meals and bills independently?
+  topics:
+  - daily-function
+  style: brief
+- utterance: Some ordinary household responsibilities have slipped, haven't they?
+  topics:
+  - daily-function
+  style: leading
+- utterance: Did the missed payments nearly lead to losing the electricity supply?
+  topics:
+  - daily-function
+  style: follow_up
+  previous:
+    interviewer: How is he managing everyday things such as meals and bills?
+    character: He's missed paying bills, and the electricity was nearly cut off. He's stopped cooking proper meals.
+- utterance: Tell me how he is managing his daily activities.
+  topics:
+  - daily-function
+  style: open
+- utterance: Is cooking something he can still manage on his own?
+  topics:
+  - daily-function
+  style: closed
+- utterance: When he's by himself, does he sort out a proper dinner?
+  topics:
+  - daily-function
+  style: colloquial
+- utterance: so with ordinary household tasks um what is becoming difficult
+  topics:
+  - daily-function
+  style: spoken
+- utterance: And has preparing proper meals fallen away too?
+  topics:
+  - daily-function
+  style: follow_up
+  previous:
+    interviewer: How is he managing everyday things such as meals and bills?
+    character: He's missed paying bills, and the electricity was nearly cut off. He's stopped cooking proper meals.
+- utterance: What, if anything, worries you about his safety with the cooker?
+  topics:
+  - cooker-safety
+  style: open
+- utterance: Has he ever left the gas or cooker on?
+  topics:
+  - cooker-safety
+  style: closed
+- utterance: How reliably does he switch things off in the kitchen?
+  topics:
+  - cooker-safety
+  style: colloquial
+- utterance: Could you describe any safety incidents involving the cooker?
+  topics:
+  - cooker-safety
+  style: clinical
+- utterance: I wondered whether gas appliances have ever been left running
+  topics:
+  - cooker-safety
+  style: indirect
+- utterance: It is understandable to worry about him alone; have you found a burner left switched on?
+  topics:
+  - cooker-safety
+  style: empathy_then_question
+- utterance: um has anything happened with the gas or the cooker
+  topics:
+  - cooker-safety
+  style: spoken
+- utterance: Any cooker left switched on?
+  topics:
+  - cooker-safety
+  style: brief
+- utterance: Turning things off isn't always reliable, is it?
+  topics:
+  - cooker-safety
+  style: leading
+- utterance: Was that on two separate occasions?
+  topics:
+  - cooker-safety
+  style: follow_up
+  previous:
+    interviewer: What, if anything, worries you about his safety with the cooker?
+    character: I've found the gas hob left on twice.
+- utterance: Tell me about any occasions when the cooker was left on.
+  topics:
+  - cooker-safety
+  style: open
+- utterance: Is the gas always turned off when he has finished?
+  topics:
+  - cooker-safety
+  style: closed
+- utterance: When you go round, have you had to switch off something he'd left running?
+  topics:
+  - cooker-safety
+  style: colloquial
+- utterance: so the kitchen appliances um does he leave anything on by mistake
+  topics:
+  - cooker-safety
+  style: spoken
+- utterance: Were both incidents with the hob rather than another appliance?
+  topics:
+  - cooker-safety
+  style: follow_up
+  previous:
+    interviewer: What, if anything, worries you about his safety with the cooker?
+    character: I've found the gas hob left on twice.
+- utterance: What changes have you noticed in his mood or behaviour?
+  topics:
+  - mood-behaviour
+  style: open
+- utterance: Has he been more irritable than usual?
+  topics:
+  - mood-behaviour
+  style: closed
+- utterance: How has he been in himself lately?
+  topics:
+  - mood-behaviour
+  style: colloquial
+- utterance: Could you describe any change in his mood, personality or unusual experiences?
+  topics:
+  - mood-behaviour
+  style: clinical
+- utterance: I wondered whether his behaviour has changed alongside his memory
+  topics:
+  - mood-behaviour
+  style: indirect
+- utterance: It can be hard seeing someone change; is he more withdrawn or easily upset?
+  topics:
+  - mood-behaviour
+  style: empathy_then_question
+- utterance: um has his mood changed or has he been acting differently
+  topics:
+  - mood-behaviour
+  style: spoken
+- utterance: Any changes in his behaviour?
+  topics:
+  - mood-behaviour
+  style: brief
+- utterance: He seems a bit different in himself, doesn't he?
+  topics:
+  - mood-behaviour
+  style: leading
+- utterance: Does misplacing things make him particularly cross?
+  topics:
+  - mood-behaviour
+  style: follow_up
+  previous:
+    interviewer: What changes have you noticed in his mood or behaviour?
+    character: He's quieter than he used to be and gets irritable when he can't find things. He hasn't mentioned
+      seeing things that aren't there.
+- utterance: Tell me whether his personality seems different from before.
+  topics:
+  - mood-behaviour
+  style: open
+- utterance: Is irritability something you have noticed recently?
+  topics:
+  - mood-behaviour
+  style: closed
+- utterance: When things don't go his way, does he get ratty?
+  topics:
+  - mood-behaviour
+  style: colloquial
+- utterance: so has he ever described seeing something that wasnt really there
+  topics:
+  - mood-behaviour
+  style: spoken
+- utterance: And has he mentioned any experiences like that?
+  topics:
+  - mood-behaviour
+  style: follow_up
+  previous:
+    interviewer: What changes have you noticed in his mood or behaviour?
+    character: He's quieter than he used to be and gets irritable when he can't find things. He hasn't mentioned
+      seeing things that aren't there.
+- utterance: How is he otherwise, body-wise?
+  topics:
+  - physical-health
+  style: colloquial
+- utterance: Could you describe his medical history, including any strokes?
+  topics:
+  - physical-health
+  style: clinical
+- utterance: I wondered whether he has any long-term physical illnesses
+  topics:
+  - physical-health
+  style: indirect
+- utterance: There can be a lot to keep track of; what tablets does he take regularly?
+  topics:
+  - physical-health
+  style: empathy_then_question
+- utterance: um what physical health conditions has he been diagnosed with
+  topics:
+  - physical-health
+  style: spoken
+- utterance: Any medical illnesses or medication?
+  topics:
+  - physical-health
+  style: brief
+- utterance: He has probably needed a doctor for other things, hasn't he?
+  topics:
+  - physical-health
+  style: leading
+- utterance: Is amlodipine the one prescribed for that?
+  topics:
+  - physical-health
+  style: follow_up
+  previous:
+    interviewer: What physical health problems does your father have?
+    character: He has high blood pressure and takes amlodipine. As far as we know he's never had a stroke.
+- utterance: Tell me about the medication he takes for his physical health.
+  topics:
+  - physical-health
+  style: open
+- utterance: Is there any history of strokes?
+  topics:
+  - physical-health
+  style: closed
+- utterance: Apart from the forgetfulness, what else has he needed doctors for?
+  topics:
+  - physical-health
+  style: colloquial
+- utterance: so any ongoing bodily problems that need looking after
+  topics:
+  - physical-health
+  style: spoken
+- utterance: Just to clarify, has he ever had a stroke?
+  topics:
+  - physical-health
+  style: follow_up
+  previous:
+    interviewer: What physical health problems does your father have?
+    character: He has high blood pressure and takes amlodipine. As far as we know he's never had a stroke.
+- utterance: What is his usual pattern of drinking alcohol?
+  topics:
+  - alcohol
+  style: open
+- utterance: Does he smoke at present?
+  topics:
+  - alcohol
+  style: closed
+- utterance: How much booze would he usually have?
+  topics:
+  - alcohol
+  style: colloquial
+- utterance: Could you describe his alcohol intake and tobacco use?
+  topics:
+  - alcohol
+  style: clinical
+- utterance: I wondered whether drinking is part of his routine
+  topics:
+  - alcohol
+  style: indirect
+- utterance: It's fine to say if you're unsure; does he have a regular glass of something?
+  topics:
+  - alcohol
+  style: empathy_then_question
+- utterance: um does he drink alcohol regularly
+  topics:
+  - alcohol
+  style: spoken
+- utterance: Any drinking or smoking currently?
+  topics:
+  - alcohol
+  style: brief
+- utterance: He enjoys a tipple fairly often, doesn't he?
+  topics:
+  - alcohol
+  style: leading
+- utterance: Is it usually just one glass each evening?
+  topics:
+  - alcohol
+  style: follow_up
+  previous:
+    interviewer: What is his usual pattern of drinking alcohol?
+    character: He has a glass of whisky most evenings. He stopped smoking years ago.
+- utterance: Tell me about whether he smokes or used to smoke.
+  topics:
+  - alcohol
+  style: open
+- utterance: Is alcohol something he has most days?
+  topics:
+  - alcohol
+  style: closed
+- utterance: When it comes to fags, are they still part of things for him?
+  topics:
+  - alcohol
+  style: colloquial
+- utterance: so tobacco wise um is that current or something from years ago
+  topics:
+  - alcohol
+  style: spoken
+- utterance: Was giving up tobacco several years ago?
+  topics:
+  - alcohol
+  style: follow_up
+  previous:
+    interviewer: What is his usual pattern of drinking alcohol?
+    character: He has a glass of whisky most evenings. He stopped smoking years ago.
+- utterance: What history of dementia is there in his family, if any?
+  topics:
+  - family-history
+  style: open
+- utterance: Does this remind you of what another relative went through?
+  topics:
+  - family-history
+  style: colloquial
+- utterance: Could you describe any family history of dementia?
+  topics:
+  - family-history
+  style: clinical
+- utterance: I wondered whether this kind of illness runs in his family
+  topics:
+  - family-history
+  style: indirect
+- utterance: It may be difficult to revisit; have any of his relatives been through something similar?
+  topics:
+  - family-history
+  style: empathy_then_question
+- utterance: um any dementia in other family members
+  topics:
+  - family-history
+  style: spoken
+- utterance: Similar problems elsewhere in the family?
+  topics:
+  - family-history
+  style: brief
+- utterance: This sort of illness has affected a relative before, hasn't it?
+  topics:
+  - family-history
+  style: leading
+- utterance: Was she in her eighties at the time?
+  topics:
+  - family-history
+  style: follow_up
+  previous:
+    interviewer: What history of dementia is there in his family, if any?
+    character: His older sister had dementia in her eighties.
+- utterance: Tell me about anyone in his family who had memory difficulties.
+  topics:
+  - family-history
+  style: open
+- utterance: Is dementia something other family members have been diagnosed with?
+  topics:
+  - family-history
+  style: closed
+- utterance: Among his relations, has anyone had the same sort of decline?
+  topics:
+  - family-history
+  style: colloquial
+- utterance: so people related to him um has anything similar happened to them
+  topics:
+  - family-history
+  style: spoken
+- utterance: And was she older than your father?
+  topics:
+  - family-history
+  style: follow_up
+  previous:
+    interviewer: What history of dementia is there in his family, if any?
+    character: His older sister had dementia in her eighties.
+- utterance: What does your father think about his memory problems?
+  topics:
+  - his-view
+  style: open
+- utterance: Does he think there is anything wrong?
+  topics:
+  - his-view
+  style: closed
+- utterance: How does he react if you bring up the difficulties?
+  topics:
+  - his-view
+  style: colloquial
+- utterance: Could you describe his own understanding of the changes?
+  topics:
+  - his-view
+  style: clinical
+- utterance: I wondered what his view is of these problems
+  topics:
+  - his-view
+  style: indirect
+- utterance: It can be hard to raise sensitive things; how does he respond when you try?
+  topics:
+  - his-view
+  style: empathy_then_question
+- utterance: um what does he think when you mention the memory trouble
+  topics:
+  - his-view
+  style: spoken
+- utterance: What is his own view?
+  topics:
+  - his-view
+  style: brief
+- utterance: He doesn't see as much wrong as you do, does he?
+  topics:
+  - his-view
+  style: leading
+- utterance: Did he still say it was okay for us to talk?
+  topics:
+  - his-view
+  style: follow_up
+  previous:
+    interviewer: What does your father think about his memory problems?
+    character: He says he's fine and gets cross when I bring it up, though he did agree I could talk to you.
+- utterance: Tell me what he thinks about your worries over his memory.
+  topics:
+  - his-view
+  style: open
+- utterance: Is his view that everything is all right?
+  topics:
+  - his-view
+  style: closed
+- utterance: When you try to discuss it, does he brush it aside?
+  topics:
+  - his-view
+  style: colloquial
+- utterance: so from his side does he accept theres anything to look into
+  topics:
+  - his-view
+  style: spoken
+- utterance: Was speaking with me something he agreed you could do?
+  topics:
+  - his-view
+  style: follow_up
+  previous:
+    interviewer: What does your father think about his memory problems?
+    character: He says he's fine and gets cross when I bring it up, though he did agree I could talk to you.
+- utterance: How are you coping with looking after your father?
+  topics:
+  - carer-strain
+  style: open
+- utterance: Has caring for him been stressful for you?
+  topics:
+  - carer-strain
+  style: closed
+- utterance: How much is all this taking out of you personally?
+  topics:
+  - carer-strain
+  style: colloquial
+- utterance: Could you describe the effect of caring on your own wellbeing?
+  topics:
+  - carer-strain
+  style: clinical
+- utterance: I wondered what coping with all this has been like for you
+  topics:
+  - carer-strain
+  style: indirect
+- utterance: You matter in this too; what toll is looking after him taking on you?
+  topics:
+  - carer-strain
+  style: empathy_then_question
+- utterance: um if you feel able to say how are you coping yourself
+  topics:
+  - carer-strain
+  style: spoken
+- utterance: Any stress from caring for him?
+  topics:
+  - carer-strain
+  style: brief
+- utterance: This may be wearing you out, is that fair?
+  topics:
+  - carer-strain
+  style: leading
+- utterance: Are those visits happening after work every day?
+  topics:
+  - carer-strain
+  style: follow_up
+  previous:
+    interviewer: How are you coping with looking after your father?
+    character: I'm going round every day after work and I'm exhausted. I feel guilty even thinking about a care
+      home.
+- utterance: Help me understand how you are coping with the caring responsibilities.
+  topics:
+  - carer-strain
+  style: open
+- utterance: Is stress from looking after him affecting you personally?
+  topics:
+  - carer-strain
+  style: closed
+- utterance: If it's okay to ask, how much of yourself is this using up?
+  topics:
+  - carer-strain
+  style: colloquial
+- utterance: so just about you for a moment how are you holding up
+  topics:
+  - carer-strain
+  style: spoken
+- utterance: Is the guilt there even at the stage of considering it?
+  topics:
+  - carer-strain
+  style: follow_up
+  previous:
+    interviewer: How are you coping with looking after your father?
+    character: I'm going round every day after work and I'm exhausted. I feel guilty even thinking about a care
+      home.
+- utterance: How long has this been going on, and what kinds of things does he forget?
+  topics:
+  - onset
+  - memory-pattern
+  style: stacked
+- utterance: Can he still cook meals, and has he ever left the cooker on?
+  topics:
+  - daily-function
+  - cooker-safety
+  style: stacked
+- utterance: Has he got lost while out, and what does he think about the memory problems?
+  topics:
+  - getting-lost
+  - his-view
+  style: stacked
+- utterance: What physical illnesses does he have, and how are you coping with caring for him?
+  topics:
+  - physical-health
+  - carer-strain
+  style: stacked
+- utterance: Hello Helen, please make yourself comfortable.
+  topics: []
+  style: greeting
+- utterance: Good morning, thank you for coming to speak with me.
+  topics: []
+  style: greeting
+- utterance: Hi, it is good that we have this time together.
+  topics: []
+  style: greeting
+- utterance: I am a trainee in the older adults team.
+  topics: []
+  style: introduction
+- utterance: My role is to hear what you have noticed about your father.
+  topics: []
+  style: introduction
+- utterance: Today we are setting aside a few minutes for your account.
+  topics: []
+  style: introduction
+- utterance: It sounds worrying to wonder whether he is safe by himself.
+  topics: []
+  style: empathy
+- utterance: It can be difficult to talk about changes in someone close to you.
+  topics: []
+  style: empathy
+- utterance: I can hear that you are concerned about him.
+  topics: []
+  style: empathy
+- utterance: You are allowed time to gather your thoughts.
+  topics: []
+  style: empathy
+- utterance: You have described his memory getting worse.
+  topics: []
+  style: summary
+- utterance: 'Let me recap: you are worried about him living on his own.'
+  topics: []
+  style: summary
+- utterance: So your father has agreed that we can speak together.
+  topics: []
+  style: summary
+- utterance: The reason for this meeting is to hear your account of his memory difficulties.
+  topics: []
+  style: summary
+- utterance: I will ask about different parts of his routine in turn.
+  topics: []
+  style: explanation
+- utterance: We can take a moment if this becomes upsetting.
+  topics: []
+  style: explanation
+- utterance: It is fine to say that you are unsure about a detail.
+  topics: []
+  style: explanation
+- utterance: I will draw the main points together when we finish.
+  topics: []
+  style: explanation
+- utterance: Does my recap match why you wanted to speak with us?
+  topics: []
+  style: check_understanding
+- utterance: Have I understood your concern about him living alone?
+  topics: []
+  style: check_understanding
+- utterance: Was my explanation of why we are meeting clear?
+  topics: []
+  style: check_understanding
+- utterance: Does that summary of the reason for this conversation sound accurate?
+  topics: []
+  style: check_understanding
+- utterance: Does he have difficulty hearing what people say?
+  topics: []
+  style: off_case
+- utterance: Has he had any recent head injuries?
+  topics: []
+  style: off_case
+- utterance: Does he have problems with his eyesight?
+  topics: []
+  style: off_case
+- utterance: Do you have legal authority to make decisions on his behalf?
+  topics: []
+  style: off_case
+- utterance: Has anyone been taking his money without permission?
+  topics: []
+  style: near_miss
+- utterance: Is there any family history of suicide?
+  topics: []
+  style: near_miss
+- utterance: Are you worried about your own memory as well?
+  topics: []
+  style: near_miss
+- utterance: Has he ever refused medicine because he believed it was poisoned?
+  topics: []
+  style: near_miss

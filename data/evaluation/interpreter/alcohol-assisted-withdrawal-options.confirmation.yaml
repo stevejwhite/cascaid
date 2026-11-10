@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: alcohol-assisted-withdrawal-options
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: erm karen, describe what you'd drink over one ordinary day at the moment
+  expected:
+  - intake
+  rapport: false
+- utterance: When you go several hours without a drink, what starts happening in your body?
+  expected:
+  - withdrawal
+  rapport: false
+- utterance: Has cutting out alcohol ever led to a fit or needing hospital treatment?
+  expected:
+  - severe
+  rapport: false
+- utterance: How are you managing meals while you've been drinking this way?
+  expected:
+  - physical
+  rapport: false
+- utterance: What medicines or supplements, if any, are you taking alongside the alcohol?
+  expected:
+  - medicines
+  rapport: false
+- utterance: If treatment were at home, who could actually be there with you?
+  expected:
+  - setting
+  rapport: false
+- utterance: What are the usual early physical symptoms when a drink is delayed?
+  expected:
+  - withdrawal
+  rapport: false
+- utterance: Have you ever had a dangerous reaction to stopping alcohol that required hospital care?
+  expected:
+  - severe
+  rapport: false
+- utterance: what would you most like staying off it to make possible?
+  expected:
+  - wish
+  rapport: false
+  previous:
+    interviewer: Have you managed a spell without alcohol before?
+    character: After hospital I stayed dry for a month, then restarted when lonely.
+- utterance: You've come because you want to stop drinking and want help doing that safely.
+  expected: []
+  rapport: false

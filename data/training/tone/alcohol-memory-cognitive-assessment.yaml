@@ -1,0 +1,156 @@
+# Training lines for the tone classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: alcohol-memory-cognitive-assessment
+case_version: 0.1.0
+status: draft
+items:
+- utterance: What do you remember about how you came in?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: How much have you been drinking each day?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: What do you do when you can't remember something?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: um have you ever wanted to hurt yourself
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Do you worry about what happens when you leave?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Would you mind telling me what you had for breakfast?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Sorry to ask again, but could you tell me where we are?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Good morning, Gordon, may I sit down?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: I'm Dr Patel, one of the psychiatrists, and I've been asked to see you.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: I'm going to ask a few short questions about memory and thinking.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: explanation
+- utterance: Right. And what happened after that?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Okay, thank you, that's fine.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: That sounds frightening.
+  empathy: 1
+  empathy_words: That sounds frightening.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I'm sorry you're having such a difficult time.
+  empathy: 1
+  empathy_words: I'm sorry you're having such a difficult time.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That must be unsettling. Would you like me to repeat that?
+  empathy: 1
+  empathy_words: That must be unsettling.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I'm sorry to hear that. How long has it been going on?
+  empathy: 1
+  empathy_words: I'm sorry to hear that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: It sounds as if it's really embarrassing when people tell you that you have asked something already, especially when you don't notice it happening. That would make anyone feel uncomfortable.
+  empathy: 2
+  empathy_words: It sounds as if it's really embarrassing when people tell you that you have asked something already, especially when you don't notice it happening.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: How does it feel when people point that out?
+    character: I get embarrassed when people say I've already asked. I don't always realise I'm repeating myself.
+- utterance: You're frightened that you might not be allowed to live at home again, and you find it hard to admit you might need help. That's an understandable worry to have.
+  empathy: 2
+  empathy_words: You're frightened that you might not be allowed to live at home again, and you find it hard to admit you might need help.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: What worries you about the future?
+    character: I'm frightened I won't be allowed to live at home again. I don't like saying I might need help.
+- utterance: It must be disorienting to be in hospital and not be sure which one, or how you got here. Thank you for keeping going with my questions.
+  empathy: 2
+  empathy_words: It must be disorienting to be in hospital and not be sure which one, or how you got here.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: I can hear that you're trying hard to hold on to what I say, and that long instructions make you lose your place. Shall I keep each question short?
+  empathy: 2
+  empathy_words: I can hear that you're trying hard to hold on to what I say, and that long instructions make you lose your place.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+- utterance: That's not right, Gordon, you've been on this ward for six days.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: That's not right, Gordon
+  style: confront_statement
+- utterance: Why on earth would you drink that much for so long?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Why on earth would you drink that much for so long?
+  style: confront_why
+- utterance: Forgetting a few words is normal at your age, so don't worry about it.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: so don't worry about it
+  style: dismissive
+- utterance: Come on, you must remember something, you're not even trying.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: you're not even trying
+  style: dismissive

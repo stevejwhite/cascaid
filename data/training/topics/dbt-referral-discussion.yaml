@@ -1,0 +1,880 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: dbt-referral-discussion
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Has anyone explained DBT to you yet?
+  topics:
+  - therapy-understanding
+  style: closed
+- utterance: What's your take on what DBT actually is?
+  topics:
+  - therapy-understanding
+  style: colloquial
+- utterance: What is your current understanding of dialectical behaviour therapy?
+  topics:
+  - therapy-understanding
+  style: clinical
+- utterance: I wondered what you've heard about DBT so far
+  topics:
+  - therapy-understanding
+  style: indirect
+- utterance: It makes sense to want to know first; what have you been told about it?
+  topics:
+  - therapy-understanding
+  style: empathy_then_question
+- utterance: so um what what do you think DBT involves
+  topics:
+  - therapy-understanding
+  style: spoken
+- utterance: What do you know already?
+  topics:
+  - therapy-understanding
+  style: brief
+- utterance: And what would you expect a session to be like?
+  topics:
+  - therapy-understanding
+  style: follow_up
+  previous:
+    interviewer: Has anyone explained DBT to you yet?
+    character: I only know the name DBT; I thought it might be a class where someone tells me how to behave.
+- utterance: I suspect you've heard a few things about it already?
+  topics:
+  - therapy-understanding
+  style: leading
+- utterance: What are you expecting therapy to be like, Leah?
+  topics:
+  - therapy-understanding
+  style: open
+- utterance: Have you read anything about it online?
+  topics:
+  - therapy-understanding
+  style: closed
+- utterance: I'd be interested in what you imagine happens in DBT
+  topics:
+  - therapy-understanding
+  style: indirect
+- utterance: From what you've picked up, what's the word on DBT?
+  topics:
+  - therapy-understanding
+  style: colloquial
+- utterance: Fair enough wanting the details first; what's your picture of it at the moment?
+  topics:
+  - therapy-understanding
+  style: empathy_then_question
+- utterance: And how do you think DBT might compare with that?
+  topics:
+  - therapy-understanding
+  style: follow_up
+  previous:
+    interviewer: Have you had counselling before?
+    character: I had six counselling appointments last year and stopped after the therapist changed; I
+      felt I had to begin the whole story again.
+- utterance: What tends to set off a crisis for you?
+  topics:
+  - crisis-pattern
+  style: open
+- utterance: Do your feelings change very quickly?
+  topics:
+  - crisis-pattern
+  style: closed
+- utterance: What tips you over when things go wrong?
+  topics:
+  - crisis-pattern
+  style: colloquial
+- utterance: What are the usual triggers for your distress?
+  topics:
+  - crisis-pattern
+  style: clinical
+- utterance: I'd like to understand what happens in the lead-up to a crisis
+  topics:
+  - crisis-pattern
+  style: indirect
+- utterance: That sounds like a lot to live with; what usually starts it off?
+  topics:
+  - crisis-pattern
+  style: empathy_then_question
+- utterance: um when things get when things get bad what's usually going on
+  topics:
+  - crisis-pattern
+  style: spoken
+- utterance: And what triggers it?
+  topics:
+  - crisis-pattern
+  style: brief
+- utterance: What was going on for you before that?
+  topics:
+  - crisis-pattern
+  style: follow_up
+  previous:
+    interviewer: Have you hurt yourself lately?
+    character: I have cut my forearms roughly twice a month over the past six months, most recently ten
+      days ago; I went for a wound check that day.
+- utterance: Relationships seem to play a part in it, is that right?
+  topics:
+  - crisis-pattern
+  style: leading
+- utterance: How do your moods shift when something upsets you?
+  topics:
+  - crisis-pattern
+  style: open
+- utterance: Is it often linked to relationships?
+  topics:
+  - crisis-pattern
+  style: closed
+- utterance: I wondered how fast things can go from okay to really bad for you
+  topics:
+  - crisis-pattern
+  style: indirect
+- utterance: How quickly can you go from all right to awful?
+  topics:
+  - crisis-pattern
+  style: colloquial
+- utterance: It must be exhausting; how long has this pattern been going on?
+  topics:
+  - crisis-pattern
+  style: empathy_then_question
+- utterance: Can you tell me about the self-harm?
+  topics:
+  - self-injury-pattern
+  style: open
+- utterance: Do you cut yourself?
+  topics:
+  - self-injury-pattern
+  style: closed
+- utterance: How often are you hurting yourself at the moment?
+  topics:
+  - self-injury-pattern
+  style: colloquial
+- utterance: What's the frequency of self-harm currently?
+  topics:
+  - self-injury-pattern
+  style: clinical
+- utterance: I wondered when you last hurt yourself
+  topics:
+  - self-injury-pattern
+  style: indirect
+- utterance: Thank you for being open with me; how do you usually harm yourself?
+  topics:
+  - self-injury-pattern
+  style: empathy_then_question
+- utterance: and um the self harm how how often is that
+  topics:
+  - self-injury-pattern
+  style: spoken
+- utterance: And the last time you self-harmed?
+  topics:
+  - self-injury-pattern
+  style: brief
+- utterance: When that happens, do you ever hurt yourself?
+  topics:
+  - self-injury-pattern
+  style: follow_up
+  previous:
+    interviewer: What tends to set off a crisis for you?
+    character: When a partner seems distant I can go from fine to desperate within an hour; that has happened
+      on and off since I was nineteen.
+- utterance: I'm guessing the self-harm has been fairly regular lately?
+  topics:
+  - self-injury-pattern
+  style: leading
+- utterance: What does the self-harm involve for you?
+  topics:
+  - self-injury-pattern
+  style: open
+- utterance: Have you cut yourself in the last couple of weeks?
+  topics:
+  - self-injury-pattern
+  style: closed
+- utterance: I'd like to get a sense of how often you're cutting
+  topics:
+  - self-injury-pattern
+  style: indirect
+- utterance: Where are you at with the cutting just now?
+  topics:
+  - self-injury-pattern
+  style: colloquial
+- utterance: I know this is personal; when did you last harm yourself?
+  topics:
+  - self-injury-pattern
+  style: empathy_then_question
+- utterance: Would you feel able to tell me about any thoughts of wanting to die?
+  topics:
+  - current-intent
+  style: open
+- utterance: Are you having suicidal thoughts today?
+  topics:
+  - current-intent
+  style: closed
+- utterance: Do you ever feel like you'd be better off not here?
+  topics:
+  - current-intent
+  style: colloquial
+- utterance: Have you made any plans to end your life?
+  topics:
+  - current-intent
+  style: clinical
+- utterance: I'd like to ask gently about thoughts of not wanting to be alive
+  topics:
+  - current-intent
+  style: indirect
+- utterance: I appreciate this is hard to talk about; do you feel like ending your life right now?
+  topics:
+  - current-intent
+  style: empathy_then_question
+- utterance: um so do you do you have any thoughts of dying at the moment
+  topics:
+  - current-intent
+  style: spoken
+- utterance: Any thoughts of dying?
+  topics:
+  - current-intent
+  style: brief
+- utterance: And alongside that, are you having thoughts of ending your life?
+  topics:
+  - current-intent
+  style: follow_up
+  previous:
+    interviewer: Have you cut yourself in the last couple of weeks?
+    character: I have cut my forearms roughly twice a month over the past six months, most recently ten
+      days ago; I went for a wound check that day.
+- utterance: You're not thinking of ending things right now, are you?
+  topics:
+  - current-intent
+  style: leading
+- utterance: What thoughts do you have about death when things get bad?
+  topics:
+  - current-intent
+  style: open
+- utterance: Have you done anything to get ready to end your life?
+  topics:
+  - current-intent
+  style: closed
+- utterance: Do you ever feel like you just want it all to stop?
+  topics:
+  - current-intent
+  style: colloquial
+- utterance: I'm wondering whether you've felt suicidal recently
+  topics:
+  - current-intent
+  style: indirect
+- utterance: You've been really honest with me; is part of you wanting to die at the moment?
+  topics:
+  - current-intent
+  style: empathy_then_question
+- utterance: What help have you had in the past?
+  topics:
+  - previous-services
+  style: open
+- utterance: Have you given talking therapy a go before?
+  topics:
+  - previous-services
+  style: colloquial
+- utterance: Could you tell me about any previous psychological treatment?
+  topics:
+  - previous-services
+  style: clinical
+- utterance: I wondered what support you've tried before now
+  topics:
+  - previous-services
+  style: indirect
+- utterance: It's helpful to learn from what's gone before; why did you stop the last therapy?
+  topics:
+  - previous-services
+  style: empathy_then_question
+- utterance: um have you seen anyone like a counsellor or
+  topics:
+  - previous-services
+  style: spoken
+- utterance: Any therapy before?
+  topics:
+  - previous-services
+  style: brief
+- utterance: How many sessions did you manage?
+  topics:
+  - previous-services
+  style: follow_up
+  previous:
+    interviewer: Have you had counselling before?
+    character: I had six counselling appointments last year and stopped after the therapist changed; I
+      felt I had to begin the whole story again.
+- utterance: I imagine you've been offered some help along the way?
+  topics:
+  - previous-services
+  style: leading
+- utterance: Tell me about other treatment you've had for this.
+  topics:
+  - previous-services
+  style: open
+- utterance: Did you finish the counselling?
+  topics:
+  - previous-services
+  style: closed
+- utterance: What made you pack in the last lot of therapy?
+  topics:
+  - previous-services
+  style: colloquial
+- utterance: I'd like to hear how earlier therapy went for you
+  topics:
+  - previous-services
+  style: indirect
+- utterance: Starting something new can bring up old experiences; what happened with help you had before?
+  topics:
+  - previous-services
+  style: empathy_then_question
+- utterance: How do you feel about the group part of DBT?
+  topics:
+  - group-concern
+  style: open
+- utterance: Are you worried about being in a group?
+  topics:
+  - group-concern
+  style: closed
+- utterance: How are you about sitting in a room with strangers?
+  topics:
+  - group-concern
+  style: colloquial
+- utterance: Do you have any concerns about privacy in group therapy?
+  topics:
+  - group-concern
+  style: clinical
+- utterance: I wondered how you feel about sharing personal things in a group
+  topics:
+  - group-concern
+  style: indirect
+- utterance: Groups can feel daunting; what worries you about them?
+  topics:
+  - group-concern
+  style: empathy_then_question
+- utterance: um so the group bit how's that sound to you
+  topics:
+  - group-concern
+  style: spoken
+- utterance: And the group sessions?
+  topics:
+  - group-concern
+  style: brief
+- utterance: How do you feel about talking in front of others this time?
+  topics:
+  - group-concern
+  style: follow_up
+  previous:
+    interviewer: Have you had counselling before?
+    character: I had six counselling appointments last year and stopped after the therapist changed; I
+      felt I had to begin the whole story again.
+- utterance: The group side of things might feel a bit exposing, maybe?
+  topics:
+  - group-concern
+  style: leading
+- utterance: What concerns do you have about group skills training?
+  topics:
+  - group-concern
+  style: open
+- utterance: Is privacy in the group a worry for you?
+  topics:
+  - group-concern
+  style: closed
+- utterance: Does the idea of a group put you off?
+  topics:
+  - group-concern
+  style: colloquial
+- utterance: I'd like to hear what you think about the group sessions
+  topics:
+  - group-concern
+  style: indirect
+- utterance: Plenty find this part hard to picture; what's on your mind about joining a group?
+  topics:
+  - group-concern
+  style: empathy_then_question
+- utterance: How would therapy fit around your work?
+  topics:
+  - attendance
+  style: open
+- utterance: Can you get time off for appointments?
+  topics:
+  - attendance
+  style: closed
+- utterance: What days are you free to come in?
+  topics:
+  - attendance
+  style: colloquial
+- utterance: What's your availability for weekly sessions?
+  topics:
+  - attendance
+  style: clinical
+- utterance: I wondered how attending sessions might fit with your job
+  topics:
+  - attendance
+  style: indirect
+- utterance: I know juggling work is tricky; when could you make appointments?
+  topics:
+  - attendance
+  style: empathy_then_question
+- utterance: um so like what days could you actually make it in
+  topics:
+  - attendance
+  style: spoken
+- utterance: Which days suit you?
+  topics:
+  - attendance
+  style: brief
+- utterance: This one's a longer commitment; how long could you keep coming?
+  topics:
+  - attendance
+  style: follow_up
+  previous:
+    interviewer: Have you had counselling before?
+    character: I had six counselling appointments last year and stopped after the therapist changed; I
+      felt I had to begin the whole story again.
+- utterance: Work probably makes daytime sessions a bit tricky?
+  topics:
+  - attendance
+  style: leading
+- utterance: How much time could you set aside for therapy each week?
+  topics:
+  - attendance
+  style: open
+- utterance: How long could you stick with it, realistically?
+  topics:
+  - attendance
+  style: colloquial
+- utterance: I'd like to think about which slots in your week you could keep free
+  topics:
+  - attendance
+  style: indirect
+- utterance: It's a fair question to ask; how long are you able to commit for?
+  topics:
+  - attendance
+  style: empathy_then_question
+- utterance: How do you feel about practising skills at home?
+  topics:
+  - skills-practice
+  style: open
+- utterance: How are you with homework-type tasks?
+  topics:
+  - skills-practice
+  style: colloquial
+- utterance: How manageable would regular skills practice be for you?
+  topics:
+  - skills-practice
+  style: clinical
+- utterance: I wondered how you get on with written exercises
+  topics:
+  - skills-practice
+  style: indirect
+- utterance: Homework can feel like a chore; how much time could you give it?
+  topics:
+  - skills-practice
+  style: empathy_then_question
+- utterance: and um the stuff you do at home in between how'd that be
+  topics:
+  - skills-practice
+  style: spoken
+- utterance: And homework between sessions?
+  topics:
+  - skills-practice
+  style: brief
+- utterance: And outside sessions, how much time could you spend on practice?
+  topics:
+  - skills-practice
+  style: follow_up
+  previous:
+    interviewer: What days are you free to come in?
+    character: I work Monday and Thursday mornings; I could protect Tuesday afternoons and Friday mornings
+      for regular appointments, but I need to know how long the programme lasts.
+- utterance: Worksheets aren't everyone's thing, are they?
+  topics:
+  - skills-practice
+  style: leading
+- utterance: What gets in the way when you try tasks at home?
+  topics:
+  - skills-practice
+  style: open
+- utterance: Do you find filling in forms or diaries hard?
+  topics:
+  - skills-practice
+  style: closed
+- utterance: Could you squeeze in a bit of practice most days?
+  topics:
+  - skills-practice
+  style: colloquial
+- utterance: I'd like to know how you'd manage practising between appointments
+  topics:
+  - skills-practice
+  style: indirect
+- utterance: Lots of us struggle with homework; what kind of practice suits you best?
+  topics:
+  - skills-practice
+  style: empathy_then_question
+- utterance: Who do you contact when you're in crisis?
+  topics:
+  - crisis-contact-gap
+  style: open
+- utterance: Do you know who to ring out of hours?
+  topics:
+  - crisis-contact-gap
+  style: closed
+- utterance: Who's around to help if things kick off late at night?
+  topics:
+  - crisis-contact-gap
+  style: colloquial
+- utterance: What crisis plan do you have at the moment?
+  topics:
+  - crisis-contact-gap
+  style: clinical
+- utterance: I wondered who you turn to when things get bad
+  topics:
+  - crisis-contact-gap
+  style: indirect
+- utterance: Bad nights sound really tough; who can you reach then?
+  topics:
+  - crisis-contact-gap
+  style: empathy_then_question
+- utterance: so um if it all gets too much late on who'd you call
+  topics:
+  - crisis-contact-gap
+  style: spoken
+- utterance: Anyone with you in a crisis?
+  topics:
+  - crisis-contact-gap
+  style: brief
+- utterance: When it gets that bad, who can you contact?
+  topics:
+  - crisis-contact-gap
+  style: follow_up
+  previous:
+    interviewer: What tends to set off a crisis for you?
+    character: When a partner seems distant I can go from fine to desperate within an hour; that has happened
+      on and off since I was nineteen.
+- utterance: I'm guessing it's harder to get help after five o'clock?
+  topics:
+  - crisis-contact-gap
+  style: leading
+- utterance: What support is there for you between appointments?
+  topics:
+  - crisis-contact-gap
+  style: open
+- utterance: Is there someone who can stay with you when you're distressed?
+  topics:
+  - crisis-contact-gap
+  style: closed
+- utterance: Who've you got to lean on outside office hours?
+  topics:
+  - crisis-contact-gap
+  style: colloquial
+- utterance: I'd like to check who you can get hold of at weekends or overnight
+  topics:
+  - crisis-contact-gap
+  style: indirect
+- utterance: It sounds frightening when it happens; is there anyone who can sit with you?
+  topics:
+  - crisis-contact-gap
+  style: empathy_then_question
+- utterance: What do you have around you that you could hurt yourself with?
+  topics:
+  - means-access
+  style: open
+- utterance: Are there razors in the house?
+  topics:
+  - means-access
+  style: closed
+- utterance: Is there stuff lying about you could use to cut?
+  topics:
+  - means-access
+  style: colloquial
+- utterance: Do you have access to blades or sharp objects?
+  topics:
+  - means-access
+  style: clinical
+- utterance: I wondered whether there are sharp things easily to hand
+  topics:
+  - means-access
+  style: indirect
+- utterance: I know this is a practical question; could the razors be kept somewhere safer?
+  topics:
+  - means-access
+  style: empathy_then_question
+- utterance: um have you got like blades or razors around
+  topics:
+  - means-access
+  style: spoken
+- utterance: Any blades at home?
+  topics:
+  - means-access
+  style: brief
+- utterance: What do you usually use, and is it still in the house?
+  topics:
+  - means-access
+  style: follow_up
+  previous:
+    interviewer: Do you cut yourself?
+    character: I have cut my forearms roughly twice a month over the past six months, most recently ten
+      days ago; I went for a wound check that day.
+- utterance: There are probably sharp things around at home, are there?
+  topics:
+  - means-access
+  style: leading
+- utterance: How easy is it to get hold of something sharp at home?
+  topics:
+  - means-access
+  style: open
+- utterance: Has someone else been looking after the blades for you?
+  topics:
+  - means-access
+  style: closed
+- utterance: Could a friend hang on to the razors for a while?
+  topics:
+  - means-access
+  style: colloquial
+- utterance: I'd like to think about how we can make your home a bit safer
+  topics:
+  - means-access
+  style: indirect
+- utterance: That's a lot to manage; have you put sharp things out of reach?
+  topics:
+  - means-access
+  style: empathy_then_question
+- utterance: What are you hoping will change with therapy?
+  topics:
+  - personal-goal
+  style: open
+- utterance: Is there one thing you'd most like to be different?
+  topics:
+  - personal-goal
+  style: closed
+- utterance: If DBT worked, what would life look like?
+  topics:
+  - personal-goal
+  style: colloquial
+- utterance: What are your goals for treatment?
+  topics:
+  - personal-goal
+  style: clinical
+- utterance: I wondered what matters most to you in all this
+  topics:
+  - personal-goal
+  style: indirect
+- utterance: You've been through a lot; what would you want to get out of this?
+  topics:
+  - personal-goal
+  style: empathy_then_question
+- utterance: so um what what's the thing you'd really want to be better
+  topics:
+  - personal-goal
+  style: spoken
+- utterance: And your main goal?
+  topics:
+  - personal-goal
+  style: brief
+- utterance: If therapy helped with that, what difference would it make day to day?
+  topics:
+  - personal-goal
+  style: follow_up
+  previous:
+    interviewer: What tends to set off a crisis for you?
+    character: When a partner seems distant I can go from fine to desperate within an hour; that has happened
+      on and off since I was nineteen.
+- utterance: I imagine you'd like the crises to take up less of your life?
+  topics:
+  - personal-goal
+  style: leading
+- utterance: What would a good outcome look like for you?
+  topics:
+  - personal-goal
+  style: open
+- utterance: Is there something specific you'd like to get back to?
+  topics:
+  - personal-goal
+  style: closed
+- utterance: What's the dream, if this goes well?
+  topics:
+  - personal-goal
+  style: colloquial
+- utterance: I'd love to hear what you want therapy to help with
+  topics:
+  - personal-goal
+  style: indirect
+- utterance: It sounds like you've been fighting this for a while; what matters most to you now?
+  topics:
+  - personal-goal
+  style: empathy_then_question
+- utterance: How do you feel about being referred?
+  topics:
+  - referral-preference
+  style: open
+- utterance: Are you up for giving it a go?
+  topics:
+  - referral-preference
+  style: colloquial
+- utterance: Do you consent to a referral for assessment?
+  topics:
+  - referral-preference
+  style: clinical
+- utterance: I wondered where you've got to with deciding about a referral
+  topics:
+  - referral-preference
+  style: indirect
+- utterance: It's completely your decision; what are you thinking about the referral?
+  topics:
+  - referral-preference
+  style: empathy_then_question
+- utterance: so um do you want to go ahead or
+  topics:
+  - referral-preference
+  style: spoken
+- utterance: Shall I refer you?
+  topics:
+  - referral-preference
+  style: brief
+- utterance: Knowing that, do you still want to be referred?
+  topics:
+  - referral-preference
+  style: follow_up
+  previous:
+    interviewer: Do you have any concerns about privacy in group therapy?
+    character: I am nervous about other people hearing personal details in a group, and I don't know whether
+      I would have to tell them my whole history.
+- utterance: It sounds like you might be open to an assessment?
+  topics:
+  - referral-preference
+  style: leading
+- utterance: What would you like to do next about therapy?
+  topics:
+  - referral-preference
+  style: open
+- utterance: Are you happy to go for an initial assessment?
+  topics:
+  - referral-preference
+  style: closed
+- utterance: Where are you at with signing up?
+  topics:
+  - referral-preference
+  style: colloquial
+- utterance: I'd like to hear your choice about whether to start
+  topics:
+  - referral-preference
+  style: indirect
+- utterance: There's no pressure either way; how are you leaning?
+  topics:
+  - referral-preference
+  style: empathy_then_question
+- utterance: How often do you self-harm, and are there razors at home?
+  topics:
+  - self-injury-pattern
+  - means-access
+  style: stacked
+- utterance: What sets off a crisis, and who can you contact when it happens?
+  topics:
+  - crisis-pattern
+  - crisis-contact-gap
+  style: stacked
+- utterance: What days could you come, and how would you feel about homework?
+  topics:
+  - attendance
+  - skills-practice
+  style: stacked
+- utterance: What do you know about DBT, and have you had therapy before?
+  topics:
+  - therapy-understanding
+  - previous-services
+  style: stacked
+- utterance: Good morning Leah, come and have a seat.
+  topics: []
+  style: greeting
+- utterance: I'm one of the doctors in the psychotherapy service, Leah.
+  topics: []
+  style: introduction
+- utterance: Is it all right if we have a chat about DBT today?
+  topics: []
+  style: introduction
+- utterance: What would you like to start with?
+  topics: []
+  style: introduction
+- utterance: Before we start, have you got any questions for me?
+  topics: []
+  style: introduction
+- utterance: My aim today is to hear what matters to you and then talk through the options.
+  topics: []
+  style: introduction
+- utterance: I'd like to change tack for a moment.
+  topics: []
+  style: transition
+- utterance: Can we move on to the practical side now?
+  topics: []
+  style: transition
+- utterance: Next I'd like to tell you a bit about how DBT works.
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Leah.
+  topics: []
+  style: closing
+- utterance: Thanks for talking this through with me today.
+  topics: []
+  style: closing
+- utterance: It makes sense to want to know what you're signing up for.
+  topics: []
+  style: empathy
+- utterance: It sounds like things have been really hard lately.
+  topics: []
+  style: empathy
+- utterance: I can hear that being judged is a real worry for you.
+  topics: []
+  style: empathy
+- utterance: You've clearly thought carefully about this.
+  topics: []
+  style: empathy
+- utterance: So you'd like more information before you decide anything.
+  topics: []
+  style: summary
+- utterance: Let me sum up what we've talked about so far.
+  topics: []
+  style: summary
+- utterance: DBT is a structured therapy that combines individual sessions with group skills training.
+  topics: []
+  style: explanation
+- utterance: The skills groups are more like a class than a place to tell your story.
+  topics: []
+  style: explanation
+- utterance: Between sessions there's usually some practice to try out the skills.
+  topics: []
+  style: explanation
+- utterance: I can't promise a start date, as that depends on the local service.
+  topics: []
+  style: explanation
+- utterance: Most programmes ask for a commitment over several months.
+  topics: []
+  style: explanation
+- utterance: Phone coaching is part of some programmes, but it varies locally.
+  topics: []
+  style: explanation
+- utterance: Does that fit with what you'd expected?
+  topics: []
+  style: check_understanding
+- utterance: What do you make of what I've just said?
+  topics: []
+  style: check_understanding
+- utterance: Could you tell me back the main points, so I know I've explained it well?
+  topics: []
+  style: check_understanding
+- utterance: How are you sleeping these days?
+  topics: []
+  style: off_case
+- utterance: Do you drink alcohol or use any drugs?
+  topics: []
+  style: off_case
+- utterance: How's your physical health generally?
+  topics: []
+  style: off_case
+- utterance: How do you get on with the people you work with?
+  topics: []
+  style: near_miss
+- utterance: Is your GP aware of the referral?
+  topics: []
+  style: near_miss
+- utterance: Have you ever been in a group for anything else, like a sports team?
+  topics: []
+  style: near_miss
+- utterance: Did your counselling cost you anything?
+  topics: []
+  style: near_miss

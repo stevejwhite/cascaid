@@ -1,0 +1,230 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: dementia-disclosure-son
+case_version: 0.1.0
+status: draft
+items:
+  # ---- fear / understanding ----
+  - utterance: "Why are you so sure she would lose heart if she were told?"
+    topics: [fear]
+    style: boundary
+    pair: [fear, understanding]
+  - utterance: "Has anyone close to her been through dementia themselves?"
+    topics: [fear]
+    style: boundary
+    pair: [fear, understanding]
+  - utterance: "um what is it you're picturing happening if we tell her"
+    topics: [fear]
+    style: boundary_spoken
+    pair: [fear, understanding]
+  - utterance: "Do you think she'd be devastated by hearing it?"
+    topics: [fear]
+    style: boundary_colloquial
+    pair: [fear, understanding]
+  - utterance: "What is it that worries you about her hearing it?"
+    topics: [fear]
+    style: boundary_follow_up
+    pair: [fear, understanding]
+    previous:
+      interviewer: "Do you think she could cope with the explanation?"
+      character: "She can follow a short explanation if given time."
+  - utterance: "If we explained it slowly, would she be able to take in what we say?"
+    topics: [understanding]
+    style: boundary
+    pair: [fear, understanding]
+  - utterance: "Does having dementia mean she can't make her own decisions, in your view?"
+    topics: [understanding]
+    style: boundary
+    pair: [fear, understanding]
+  - utterance: "um does she actually get what the doctors tell her"
+    topics: [understanding]
+    style: boundary_spoken
+    pair: [fear, understanding]
+  - utterance: "Can she still weigh things up for herself?"
+    topics: [understanding]
+    style: boundary_colloquial
+    pair: [fear, understanding]
+  - utterance: "And is she able to follow what is said to her?"
+    topics: [understanding]
+    style: boundary_follow_up
+    pair: [fear, understanding]
+    previous:
+      interviewer: "How do you think she'd react if she knew?"
+      character: "I'm afraid she'll give up."
+  - utterance: "Has she ever had low mood or depression before?"
+    topics: []
+    style: near_miss
+    pair: [fear, understanding]
+  - utterance: "Has she had a memory test or a scan before this one?"
+    topics: []
+    style: near_miss
+    pair: [fear, understanding]
+
+  # ---- mother-wishes / sharing ----
+  - utterance: "Has she been asking you what the tests showed?"
+    topics: [mother-wishes]
+    style: boundary
+    pair: [mother-wishes, sharing]
+  - utterance: "Is she someone who likes doctors to be upfront with her?"
+    topics: [mother-wishes]
+    style: boundary
+    pair: [mother-wishes, sharing]
+  - utterance: "um has she said she'd rather know straight out"
+    topics: [mother-wishes]
+    style: boundary_spoken
+    pair: [mother-wishes, sharing]
+  - utterance: "Would she want the whole truth, even if it's bad news?"
+    topics: [mother-wishes]
+    style: boundary_colloquial
+    pair: [mother-wishes, sharing]
+  - utterance: "And does she want to hear the results herself?"
+    topics: [mother-wishes]
+    style: boundary_follow_up
+    pair: [mother-wishes, sharing]
+    previous:
+      interviewer: "Is she happy for you to be involved in the appointments?"
+      character: "She agreed I could attend discussions and hear the results with her."
+  - utterance: "Has she said you are allowed to hear the results?"
+    topics: [sharing]
+    style: boundary
+    pair: [mother-wishes, sharing]
+  - utterance: "Did she ask you to be the one who decides what she is told?"
+    topics: [sharing]
+    style: boundary
+    pair: [mother-wishes, sharing]
+  - utterance: "um did she say it's fine for you to come to the appointments"
+    topics: [sharing]
+    style: boundary_spoken
+    pair: [mother-wishes, sharing]
+  - utterance: "Has she given you the go-ahead to be in on all this?"
+    topics: [sharing]
+    style: boundary_colloquial
+    pair: [mother-wishes, sharing]
+  - utterance: "And has she asked you to speak for her?"
+    topics: [sharing]
+    style: boundary_follow_up
+    pair: [mother-wishes, sharing]
+    previous:
+      interviewer: "Has she said anything about the tests?"
+      character: "She has asked twice what the tests showed."
+  - utterance: "Has she written down her wishes, like a lasting power of attorney?"
+    topics: []
+    style: near_miss
+    pair: [mother-wishes, sharing]
+  - utterance: "Has she spoken to her GP about any of this?"
+    topics: []
+    style: near_miss
+    pair: [mother-wishes, sharing]
+
+  # ---- approach / burden ----
+  - utterance: "Who would she want next to her when we break the news?"
+    topics: [approach]
+    style: boundary
+    pair: [approach, burden]
+  - utterance: "Should we give her something to read afterwards?"
+    topics: [approach]
+    style: boundary
+    pair: [approach, burden]
+  - utterance: "um would it be better to explain it in small bits for her"
+    topics: [approach]
+    style: boundary_spoken
+    pair: [approach, burden]
+  - utterance: "What would make a hard conversation like that easier for her to manage?"
+    topics: [approach]
+    style: boundary_colloquial
+    pair: [approach, burden]
+  - utterance: "And would she want someone supporting her in the room?"
+    topics: [approach]
+    style: boundary_follow_up
+    pair: [approach, burden]
+    previous:
+      interviewer: "How are you finding the whole thing with your work?"
+      character: "I'm already struggling to balance work and helping her."
+  - utterance: "Is anyone supporting you in all this?"
+    topics: [burden]
+    style: boundary
+    pair: [approach, burden]
+  - utterance: "How are you managing to fit your job in around helping her?"
+    topics: [burden]
+    style: boundary
+    pair: [approach, burden]
+  - utterance: "um is it getting a bit much for you at the moment"
+    topics: [burden]
+    style: boundary_spoken
+    pair: [approach, burden]
+  - utterance: "Are you looking after yourself while you look after her?"
+    topics: [burden]
+    style: boundary_colloquial
+    pair: [approach, burden]
+  - utterance: "Have you had help for yourself with that?"
+    topics: [burden]
+    style: boundary_follow_up
+    pair: [approach, burden]
+    previous:
+      interviewer: "What helps her take things in?"
+      character: "She takes things in better with short explanations and something written to read afterwards."
+  - utterance: "Does she live on her own?"
+    topics: []
+    style: near_miss
+    pair: [approach, burden]
+  - utterance: "Does she have a carer who comes in?"
+    topics: []
+    style: near_miss
+    pair: [approach, burden]
+
+  # ---- fear / guilt ----
+  - utterance: "How do you think she will react when she hears?"
+    topics: [fear]
+    style: boundary
+    pair: [fear, guilt]
+  - utterance: "Was there someone in her family who had dementia?"
+    topics: [fear]
+    style: boundary
+    pair: [fear, guilt]
+  - utterance: "um what are you scared will happen to her if she knows"
+    topics: [fear]
+    style: boundary_spoken
+    pair: [fear, guilt]
+  - utterance: "Are you worried she'll just give up hope?"
+    topics: [fear]
+    style: boundary_colloquial
+    pair: [fear, guilt]
+  - utterance: "And is it her reaction you're most frightened of?"
+    topics: [fear]
+    style: boundary_follow_up
+    pair: [fear, guilt]
+    previous:
+      interviewer: "What is hardest about all this for you?"
+      character: "Part of me doesn't want to hear it either."
+  - utterance: "Would you find it hard yourself to hear the word said out loud?"
+    topics: [guilt]
+    style: boundary
+    pair: [fear, guilt]
+  - utterance: "What does this diagnosis mean for you and for her, going forward?"
+    topics: [guilt]
+    style: boundary
+    pair: [fear, guilt]
+  - utterance: "um are you frightened about what it means for you yourself"
+    topics: [guilt]
+    style: boundary_spoken
+    pair: [fear, guilt]
+  - utterance: "Is some of this about you not wanting to face it?"
+    topics: [guilt]
+    style: boundary_colloquial
+    pair: [fear, guilt]
+  - utterance: "And is it also about what it means for the two of you?"
+    topics: [guilt]
+    style: boundary_follow_up
+    pair: [fear, guilt]
+    previous:
+      interviewer: "Why do you think telling her would hurt?"
+      character: "I'm afraid she'll give up."
+  - utterance: "Do you feel you let her down by not noticing sooner?"
+    topics: []
+    style: near_miss
+    pair: [fear, guilt]
+  - utterance: "Are you frightened of hospitals and clinics yourself?"
+    topics: []
+    style: near_miss
+    pair: [fear, guilt]

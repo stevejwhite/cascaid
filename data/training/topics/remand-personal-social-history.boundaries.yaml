@@ -1,0 +1,359 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: remand-personal-social-history
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Which adults raised you as a child?
+  topics:
+  - childhood
+  style: boundary
+  pair:
+  - childhood
+  - relationships
+- utterance: Did you have a settled upbringing, would you say?
+  topics:
+  - childhood
+  style: boundary
+  pair:
+  - childhood
+  - relationships
+- utterance: Were you with the same people the whole way through growing up?
+  topics:
+  - childhood
+  style: boundary_colloquial
+  pair:
+  - childhood
+  - relationships
+- utterance: um so when you were little who were you living with
+  topics:
+  - childhood
+  style: boundary_spoken
+  pair:
+  - childhood
+  - relationships
+- utterance: And going back to when you were small, who was bringing you up?
+  topics:
+  - childhood
+  style: boundary_follow_up
+  pair:
+  - childhood
+  - relationships
+  previous:
+    interviewer: Is there anyone you're close to?
+    character: I'm single and have no children. My older sister calls weekly; she's the person I'm closest to.
+- utterance: Is there somebody special in your life just now?
+  topics:
+  - relationships
+  style: boundary
+  pair:
+  - childhood
+  - relationships
+- utterance: Do you have any children of your own?
+  topics:
+  - relationships
+  style: boundary
+  pair:
+  - childhood
+  - relationships
+- utterance: Is there anyone you'd say you're really close to these days?
+  topics:
+  - relationships
+  style: boundary_colloquial
+  pair:
+  - childhood
+  - relationships
+- utterance: okay and is there like a partner or kids on the scene
+  topics:
+  - relationships
+  style: boundary_spoken
+  pair:
+  - childhood
+  - relationships
+- utterance: And is there anybody you're close to now?
+  topics:
+  - relationships
+  style: boundary_follow_up
+  pair:
+  - childhood
+  - relationships
+  previous:
+    interviewer: Tell me about where you grew up.
+    character: I lived with my mum until I was nine, then had three foster placements before leaving care at eighteen.
+- utterance: Did anyone in your family ever have a mental illness?
+  topics: []
+  style: near_miss
+  pair:
+  - childhood
+  - relationships
+- utterance: Was there anyone with you when you were arrested?
+  topics: []
+  style: near_miss
+  pair:
+  - childhood
+  - relationships
+- utterance: Where did you spend your early years?
+  topics:
+  - childhood
+  style: boundary
+  pair:
+  - childhood
+  - housing
+- utterance: Did you move around a lot as a kid?
+  topics:
+  - childhood
+  style: boundary_colloquial
+  pair:
+  - childhood
+  - housing
+- utterance: Was it the same address all through your childhood?
+  topics:
+  - childhood
+  style: boundary
+  pair:
+  - childhood
+  - housing
+- utterance: so er when you were small who did you live with
+  topics:
+  - childhood
+  style: boundary_spoken
+  pair:
+  - childhood
+  - housing
+- utterance: And before that, back when you were a child, who were you living with?
+  topics:
+  - childhood
+  style: boundary_follow_up
+  pair:
+  - childhood
+  - housing
+  previous:
+    interviewer: Where were you living before you came here?
+    character: I was sleeping on a friend's sofa for six weeks. I don't know whether I can return there.
+- utterance: What was your living situation just before all this happened?
+  topics:
+  - housing
+  style: boundary
+  pair:
+  - childhood
+  - housing
+- utterance: Have you got an address to go back to?
+  topics:
+  - housing
+  style: boundary
+  pair:
+  - childhood
+  - housing
+- utterance: Did you have a place of your own, or were you sharing with someone?
+  topics:
+  - housing
+  style: boundary_colloquial
+  pair:
+  - childhood
+  - housing
+- utterance: right and where were you sort of living at the time
+  topics:
+  - housing
+  style: boundary_spoken
+  pair:
+  - childhood
+  - housing
+- utterance: OK, and more recently, where have you been living?
+  topics:
+  - housing
+  style: boundary_follow_up
+  pair:
+  - childhood
+  - housing
+  previous:
+    interviewer: Tell me about growing up.
+    character: I lived with my mum until I was nine, then had three foster placements before leaving care at eighteen.
+- utterance: Do you own your own property or rent one?
+  topics: []
+  style: near_miss
+  pair:
+  - childhood
+  - housing
+- utterance: Have you ever lived abroad?
+  topics: []
+  style: near_miss
+  pair:
+  - childhood
+  - housing
+- utterance: What would you like your life to look like once this is over?
+  topics:
+  - hopes
+  style: boundary
+  pair:
+  - hopes
+  - housing
+- utterance: Is there anything you'd want to be different when you get out?
+  topics:
+  - hopes
+  style: boundary
+  pair:
+  - hopes
+  - housing
+- utterance: If things went well for you, what would you be aiming for?
+  topics:
+  - hopes
+  style: boundary_colloquial
+  pair:
+  - hopes
+  - housing
+- utterance: and like what are you hoping for after all this
+  topics:
+  - hopes
+  style: boundary_spoken
+  pair:
+  - hopes
+  - housing
+- utterance: Looking ahead, what would you want things to be like?
+  topics:
+  - hopes
+  style: boundary_follow_up
+  pair:
+  - hopes
+  - housing
+  previous:
+    interviewer: Where were you staying before you came in?
+    character: I was sleeping on a friend's sofa for six weeks. I don't know whether I can return there.
+- utterance: Do you have anywhere to go on release, as things stand?
+  topics:
+  - housing
+  style: boundary
+  pair:
+  - hopes
+  - housing
+- utterance: Was your accommodation stable before you came in?
+  topics:
+  - housing
+  style: boundary
+  pair:
+  - hopes
+  - housing
+- utterance: Whose place were you staying at?
+  topics:
+  - housing
+  style: boundary_colloquial
+  pair:
+  - hopes
+  - housing
+- utterance: erm so was it a proper address you were living at
+  topics:
+  - housing
+  style: boundary_spoken
+  pair:
+  - hopes
+  - housing
+- utterance: Practically, though, do you have a roof over your head when you leave?
+  topics:
+  - housing
+  style: boundary_follow_up
+  pair:
+  - hopes
+  - housing
+  previous:
+    interviewer: What would you like to happen when you get out?
+    character: I'd like stable work and somewhere that is mine. I'm embarrassed that my sister keeps having to rescue me.
+- utterance: How are you managing for money at the moment?
+  topics: []
+  style: near_miss
+  pair:
+  - hopes
+  - housing
+- utterance: Would a hostel placement suit you, do you think?
+  topics: []
+  style: near_miss
+  pair:
+  - hopes
+  - housing
+- utterance: Was anyone putting you up in the weeks before the arrest?
+  topics:
+  - housing
+  style: boundary
+  pair:
+  - housing
+  - relationships
+- utterance: Did you have your own place?
+  topics:
+  - housing
+  style: boundary
+  pair:
+  - housing
+  - relationships
+- utterance: Is the person you were living with someone you could go back to?
+  topics:
+  - housing
+  style: boundary_colloquial
+  pair:
+  - housing
+  - relationships
+- utterance: um and were you like renting or just crashing somewhere
+  topics:
+  - housing
+  style: boundary_spoken
+  pair:
+  - housing
+  - relationships
+- utterance: And where were you actually sleeping at night?
+  topics:
+  - housing
+  style: boundary_follow_up
+  pair:
+  - housing
+  - relationships
+  previous:
+    interviewer: Are you close to your family?
+    character: I'm single and have no children. My older sister calls weekly; she's the person I'm closest to.
+- utterance: Is there a family member who rings or visits you in here?
+  topics:
+  - relationships
+  style: boundary
+  pair:
+  - housing
+  - relationships
+- utterance: Do you have someone supportive on the outside?
+  topics:
+  - relationships
+  style: boundary
+  pair:
+  - housing
+  - relationships
+- utterance: Is anyone waiting for you out there, like a partner?
+  topics:
+  - relationships
+  style: boundary_colloquial
+  pair:
+  - housing
+  - relationships
+- utterance: so do you have any brothers or sisters you talk to
+  topics:
+  - relationships
+  style: boundary_spoken
+  pair:
+  - housing
+  - relationships
+- utterance: And is there anyone in your life you rely on?
+  topics:
+  - relationships
+  style: boundary_follow_up
+  pair:
+  - housing
+  - relationships
+  previous:
+    interviewer: Where were you sleeping before?
+    character: I was sleeping on a friend's sofa for six weeks. I don't know whether I can return there.
+- utterance: Have any of your friends been in trouble with the law?
+  topics: []
+  style: near_miss
+  pair:
+  - housing
+  - relationships
+- utterance: Do you live in a rough area?
+  topics: []
+  style: near_miss
+  pair:
+  - housing
+  - relationships

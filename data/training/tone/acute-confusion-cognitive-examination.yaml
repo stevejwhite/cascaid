@@ -1,0 +1,155 @@
+# Training lines for the tone classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: acute-confusion-cognitive-examination
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Have you had any thoughts of hurting yourself?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Do you ever feel that people here are trying to harm you?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: so how have you been sleeping since you came in
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Sorry to ask, but would you mind telling me your full name?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: If it's all right, could I ask you to count backwards from twenty for me?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Hello Evelyn, good to see you this morning.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: Hello Evelyn, I'm the doctor from the liaison psychiatry team, and I visit the wards.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: I'm going to ask some simple questions about memory and concentration, and there are no right
+    or wrong answers.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: explanation
+- utterance: Okay, thanks, Evelyn.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: right and when did you first notice that
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: I'm sorry to hear that.
+  empathy: 1
+  empathy_words: I'm sorry to hear that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That sounds really difficult.
+  empathy: 1
+  empathy_words: That sounds really difficult.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That must be hard. Do you remember how you came to be in hospital?
+  empathy: 1
+  empathy_words: That must be hard.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I'm sorry. Have you been in any pain?
+  empathy: 1
+  empathy_words: I'm sorry.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: It must be unsettling to see a dog that the nurse can't see, and I'm glad you told me.
+  empathy: 2
+  empathy_words: It must be unsettling to see a dog that the nurse can't see, and I'm glad you told me.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: Have you been seeing anything unusual?
+    character: A little dog keeps appearing by the end of the bed and then disappearing; the nurse says
+      she can't see it.
+- utterance: It makes sense that you feel frightened when the answers won't come, and you are not stupid.
+  empathy: 2
+  empathy_words: It makes sense that you feel frightened when the answers won't come, and you are not
+    stupid.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: How are you feeling about these questions?
+    character: I'm frightened you'll think I'm stupid because I can't get the answers right; I wasn't
+      like this before.
+- utterance: You have been through a lot with the chest infection and now this confusion on top, which
+    must be frightening.
+  empathy: 2
+  empathy_words: You have been through a lot with the chest infection and now this confusion on top, which
+    must be frightening.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: It must be bewildering when the place doesn't fit together in your mind. Would it help if
+    I explained where you are?
+  empathy: 2
+  empathy_words: It must be bewildering when the place doesn't fit together in your mind.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: Where do you think you are at the moment?
+    character: I thought this was a guest house, but those curtains look like a hospital; I can't make
+      it fit together.
+- utterance: You really should know what month it is, Evelyn.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You really should know what month it is
+  style: confront_statement
+- utterance: Why can't you just concentrate on the question?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Why can't you just concentrate on the question
+  style: confront_why
+- utterance: There's nothing to worry about, it's just a bit of confusion.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: There's nothing to worry about
+  style: dismissive
+- utterance: We haven't got long, so please try to answer a bit quicker.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: please try to answer a bit quicker
+  style: dismissive

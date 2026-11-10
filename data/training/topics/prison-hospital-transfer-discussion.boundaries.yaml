@@ -1,0 +1,422 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: prison-hospital-transfer-discussion
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Is there anything practical you'd like to ask, like what you can bring with you?
+  topics:
+  - next-steps
+  style: boundary
+  pair:
+  - next-steps
+  - understanding
+- utterance: Have you got any questions about when the move would happen?
+  topics:
+  - next-steps
+  style: boundary_colloquial
+  pair:
+  - next-steps
+  - understanding
+- utterance: um what do you want to know about the move itself
+  topics:
+  - next-steps
+  style: boundary_spoken
+  pair:
+  - next-steps
+  - understanding
+- utterance: So what would you need to know about the practical side of it?
+  topics:
+  - next-steps
+  style: boundary_follow_up
+  pair:
+  - next-steps
+  - understanding
+  previous:
+    interviewer: Why do you think you are being sent to hospital?
+    character: I think they're moving me because I've complained, not because I'm ill; I don't see why
+      I need a psychiatric hospital.
+- utterance: What's your understanding of why this is happening?
+  topics:
+  - understanding
+  style: boundary
+  pair:
+  - next-steps
+  - understanding
+- utterance: Do you feel you're unwell at the moment?
+  topics:
+  - understanding
+  style: boundary_colloquial
+  pair:
+  - next-steps
+  - understanding
+- utterance: um why do you think they're moving you
+  topics:
+  - understanding
+  style: boundary_spoken
+  pair:
+  - next-steps
+  - understanding
+- utterance: And why do you think it's being arranged in the first place?
+  topics:
+  - understanding
+  style: boundary_follow_up
+  pair:
+  - next-steps
+  - understanding
+  previous:
+    interviewer: What do you want to know about the details?
+    character: Nobody has told me which hospital, when I'd go or what I can take; I want those details
+      written down because I lose track when people rush.
+- utterance: Do you know anyone who has been on a hospital ward like that?
+  topics: []
+  style: near_miss
+  pair:
+  - next-steps
+  - understanding
+- utterance: How are you finding being on remand here?
+  topics: []
+  style: near_miss
+  pair:
+  - next-steps
+  - understanding
+- utterance: Have you thought about challenging the decision?
+  topics:
+  - appeal-question
+  style: boundary
+  pair:
+  - appeal-question
+  - participation
+- utterance: Would you like to know who could help you say you disagree?
+  topics:
+  - appeal-question
+  style: boundary
+  pair:
+  - appeal-question
+  - participation
+- utterance: Is there anything you want to ask about getting independent advice?
+  topics:
+  - appeal-question
+  style: boundary_colloquial
+  pair:
+  - appeal-question
+  - participation
+- utterance: um do you know about getting someone independent on your side
+  topics:
+  - appeal-question
+  style: boundary_spoken
+  pair:
+  - appeal-question
+  - participation
+- utterance: And do you know whether anyone can help you push back on it?
+  topics:
+  - appeal-question
+  style: boundary_follow_up
+  pair:
+  - appeal-question
+  - participation
+  previous:
+    interviewer: How would you like things explained to you?
+    character: I'd be more willing to talk if someone explained one step at a time and checked what I
+      thought, rather than just reading a decision out.
+- utterance: What would help you feel part of the decisions?
+  topics:
+  - participation
+  style: boundary
+  pair:
+  - appeal-question
+  - participation
+- utterance: Would it be easier if we took it one bit at a time?
+  topics:
+  - participation
+  style: boundary_colloquial
+  pair:
+  - appeal-question
+  - participation
+- utterance: um is it better if I go slowly and check in with you as we go
+  topics:
+  - participation
+  style: boundary_spoken
+  pair:
+  - appeal-question
+  - participation
+- utterance: What would help you take part in this conversation, then?
+  topics:
+  - participation
+  style: boundary_follow_up
+  pair:
+  - appeal-question
+  - participation
+  previous:
+    interviewer: Do you want to challenge the decision?
+    character: I don't know whether I can ask someone independent to look at the decision, or who could
+      help me explain that I disagree.
+- utterance: Are you happy for me to take notes while we talk?
+  topics: []
+  style: near_miss
+  pair:
+  - appeal-question
+  - participation
+- utterance: Would you like a break before we carry on?
+  topics: []
+  style: near_miss
+  pair:
+  - appeal-question
+  - participation
+- utterance: Do you know whether you can contest the transfer?
+  topics:
+  - appeal-question
+  style: boundary
+  pair:
+  - appeal-question
+  - understanding
+- utterance: Who do you think could speak up for you if you disagree with it?
+  topics:
+  - appeal-question
+  style: boundary
+  pair:
+  - appeal-question
+  - understanding
+- utterance: Has anyone told you about an official way of saying no to this?
+  topics:
+  - appeal-question
+  style: boundary_colloquial
+  pair:
+  - appeal-question
+  - understanding
+- utterance: um do you know if there's anyone independent who can look at this decision
+  topics:
+  - appeal-question
+  style: boundary_spoken
+  pair:
+  - appeal-question
+  - understanding
+- utterance: And do you know if there's a way to challenge it?
+  topics:
+  - appeal-question
+  style: boundary_follow_up
+  pair:
+  - appeal-question
+  - understanding
+  previous:
+    interviewer: Why do you think this is happening?
+    character: I think they're moving me because I've complained, not because I'm ill; I don't see why
+      I need a psychiatric hospital.
+- utterance: Why do you think the team have decided on this?
+  topics:
+  - understanding
+  style: boundary
+  pair:
+  - appeal-question
+  - understanding
+- utterance: Do you think you need psychiatric treatment?
+  topics:
+  - understanding
+  style: boundary
+  pair:
+  - appeal-question
+  - understanding
+- utterance: What do you make of the reason you've been given for the move?
+  topics:
+  - understanding
+  style: boundary_colloquial
+  pair:
+  - appeal-question
+  - understanding
+- utterance: um do you think you're ill
+  topics:
+  - understanding
+  style: boundary_spoken
+  pair:
+  - appeal-question
+  - understanding
+- utterance: What do you make of the reason for the transfer, then?
+  topics:
+  - understanding
+  style: boundary_follow_up
+  pair:
+  - appeal-question
+  - understanding
+  previous:
+    interviewer: Do you know whether anyone independent can help you?
+    character: I don't know whether I can ask someone independent to look at the decision, or who could
+      help me explain that I disagree.
+- utterance: Who told you about the transfer in the first place?
+  topics: []
+  style: near_miss
+  pair:
+  - appeal-question
+  - understanding
+- utterance: Do you know how long the process usually takes?
+  topics: []
+  style: near_miss
+  pair:
+  - appeal-question
+  - understanding
+- utterance: Are you worried that going to hospital might count against you in court?
+  topics:
+  - legal-fear
+  style: boundary
+  pair:
+  - legal-fear
+  - understanding
+- utterance: What frightens you most about this move?
+  topics:
+  - legal-fear
+  style: boundary
+  pair:
+  - legal-fear
+  - understanding
+- utterance: Do you worry you might be kept in there for a long time?
+  topics:
+  - legal-fear
+  style: boundary_colloquial
+  pair:
+  - legal-fear
+  - understanding
+- utterance: um are you scared about what it means for your charge
+  topics:
+  - legal-fear
+  style: boundary_spoken
+  pair:
+  - legal-fear
+  - understanding
+- utterance: Is there something about it that frightens you, though?
+  topics:
+  - legal-fear
+  style: boundary_follow_up
+  pair:
+  - legal-fear
+  - understanding
+  previous:
+    interviewer: Do you think you are ill?
+    character: I think they're moving me because I've complained, not because I'm ill; I don't see why
+      I need a psychiatric hospital.
+- utterance: Do you think anything is wrong with your health?
+  topics:
+  - understanding
+  style: boundary
+  pair:
+  - legal-fear
+  - understanding
+- utterance: Why do you reckon you've been picked for this transfer?
+  topics:
+  - understanding
+  style: boundary_colloquial
+  pair:
+  - legal-fear
+  - understanding
+- utterance: um what's your take on why you're being moved
+  topics:
+  - understanding
+  style: boundary_spoken
+  pair:
+  - legal-fear
+  - understanding
+- utterance: And do you think you need to be in hospital at all?
+  topics:
+  - understanding
+  style: boundary_follow_up
+  pair:
+  - legal-fear
+  - understanding
+  previous:
+    interviewer: What worries you about the transfer?
+    character: I'm frightened that agreeing to hospital will be taken as admitting the charge, and that
+      I might never get out; I've been too embarrassed to ask.
+- utterance: Do you know what date your court hearing is?
+  topics: []
+  style: near_miss
+  pair:
+  - legal-fear
+  - understanding
+- utterance: Are you worried about how other prisoners will treat you afterwards?
+  topics: []
+  style: near_miss
+  pair:
+  - legal-fear
+  - understanding
+- utterance: Do you think agreeing might be seen as admitting something?
+  topics:
+  - legal-fear
+  style: boundary
+  pair:
+  - legal-fear
+  - treatment-objection
+- utterance: Are you worried you won't ever be let out again?
+  topics:
+  - legal-fear
+  style: boundary_colloquial
+  pair:
+  - legal-fear
+  - treatment-objection
+- utterance: um what is it about going that scares you most
+  topics:
+  - legal-fear
+  style: boundary_spoken
+  pair:
+  - legal-fear
+  - treatment-objection
+- utterance: Apart from that, is there anything about the move itself that frightens you?
+  topics:
+  - legal-fear
+  style: boundary_follow_up
+  pair:
+  - legal-fear
+  - treatment-objection
+  previous:
+    interviewer: Have you taken psychiatric medication before?
+    character: I took a psychiatric medicine during an admission three years ago and felt very sleepy;
+      I can't remember its name and don't want treatment forced on me without discussing that.
+- utterance: Have you ever taken psychiatric medication before?
+  topics:
+  - treatment-objection
+  style: boundary
+  pair:
+  - legal-fear
+  - treatment-objection
+- utterance: Did you get side effects from it?
+  topics:
+  - treatment-objection
+  style: boundary
+  pair:
+  - legal-fear
+  - treatment-objection
+- utterance: How would you feel about being given treatment you hadn't agreed to?
+  topics:
+  - treatment-objection
+  style: boundary_colloquial
+  pair:
+  - legal-fear
+  - treatment-objection
+- utterance: um did the tablets you had before suit you
+  topics:
+  - treatment-objection
+  style: boundary_spoken
+  pair:
+  - legal-fear
+  - treatment-objection
+- utterance: Do you have any worries about what treatment you'd be given?
+  topics:
+  - treatment-objection
+  style: boundary_follow_up
+  pair:
+  - legal-fear
+  - treatment-objection
+  previous:
+    interviewer: What frightens you most about the move?
+    character: I'm frightened that agreeing to hospital will be taken as admitting the charge, and that
+      I might never get out; I've been too embarrassed to ask.
+- utterance: Do you feel the staff here have treated you fairly?
+  topics: []
+  style: near_miss
+  pair:
+  - legal-fear
+  - treatment-objection
+- utterance: Do you have any other convictions?
+  topics: []
+  style: near_miss
+  pair:
+  - legal-fear
+  - treatment-objection

@@ -1,0 +1,54 @@
+# Training lines for the tone classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: alcohol-assisted-withdrawal-options
+case_version: 0.1.0
+status: draft
+items:
+  - {utterance: "When you last stopped, did anything frightening happen to you physically?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "um do you ever think about ending your life", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "How often do you need a drink before midday?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "Has your drinking affected your relationships with family?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "Who knows that you're here today?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "Sorry to ask so many questions, but how much do you usually drink?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: polite_question}
+  - {utterance: "Would you mind if I asked about your physical health?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: polite_question}
+  - {utterance: "Hi Karen, come in and have a seat.", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: greeting}
+  - {utterance: "Good afternoon, I'm the doctor you're seeing today.", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: introduction}
+  - {utterance: "So the plan is to assess you properly before choosing where you come off alcohol.", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: explanation}
+  - {utterance: "Right. And when did that happen?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: acknowledgement}
+  - {utterance: "okay. thanks, that's helpful", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: acknowledgement}
+  - {utterance: "That sounds hard.", empathy: 1, empathy_words: "That sounds hard.", confrontational: false, challenge_words: "", style: brief_empathy}
+  - {utterance: "i'm sorry to hear that.", empathy: 1, empathy_words: "i'm sorry to hear that.", confrontational: false, challenge_words: "", style: brief_empathy}
+  - {utterance: "That must be difficult. How long has it been like that?", empathy: 1, empathy_words: "That must be difficult.", confrontational: false, challenge_words: "", style: brief_empathy_question}
+  - {utterance: "I appreciate you telling me. Is there anyone you can lean on?", empathy: 1, empathy_words: "I appreciate you telling me.", confrontational: false, challenge_words: "", style: brief_empathy_question}
+  - utterance: "It sounds like you've been carrying a lot of shame about needing help again, and that made it hard to come in."
+    empathy: 2
+    empathy_words: "It sounds like you've been carrying a lot of shame about needing help again, and that made it hard to come in."
+    confrontational: false
+    challenge_words: ""
+    style: specific_empathy
+    previous:
+      interviewer: "What worries you most about getting help?"
+      character: "I'm ashamed of needing hospital again and worry people will think I wasted the last chance. That's why I delayed coming."
+  - utterance: "You want to rebuild things with your daughter, and you're frightened of making a promise you can't keep."
+    empathy: 2
+    empathy_words: "You want to rebuild things with your daughter, and you're frightened of making a promise you can't keep."
+    confrontational: false
+    challenge_words: ""
+    style: specific_empathy
+    previous:
+      interviewer: "What's making you want to stop now?"
+      character: "I'd like to rebuild contact with my daughter. I'm frightened of promising her something I can't sustain."
+  - {utterance: "You've come in wanting to stop safely, and I can tell how frightened you are of getting it wrong.", empathy: 2, empathy_words: "You've come in wanting to stop safely, and I can tell how frightened you are of getting it wrong.", confrontational: false, challenge_words: "", style: specific_empathy}
+  - utterance: "Being left on your own after hospital with no support sounds really isolating. What would help this time?"
+    empathy: 2
+    empathy_words: "Being left on your own after hospital with no support sounds really isolating."
+    confrontational: false
+    challenge_words: ""
+    style: specific_empathy_question
+    previous:
+      interviewer: "What happened after you stopped the last time?"
+      character: "After hospital I stayed dry for a month, then restarted when lonely. I didn't have follow-up support arranged."
+  - {utterance: "Honestly, you should have come in a long time ago.", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "you should have come in a long time ago", style: confront_statement}
+  - {utterance: "You knew it was risky to keep drinking, didn't you?", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "You knew it was risky to keep drinking, didn't you?", style: confront_tag}
+  - {utterance: "Lots of people stop drinking, so I'm sure you'll be fine.", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "I'm sure you'll be fine", style: dismissive}
+  - {utterance: "let's not worry about the shame stuff, we need to get through the medical bits", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "let's not worry about the shame stuff", style: dismissive}

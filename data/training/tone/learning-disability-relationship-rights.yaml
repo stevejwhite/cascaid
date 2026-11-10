@@ -1,0 +1,154 @@
+# Training lines for the tone classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: learning-disability-relationship-rights
+case_version: 0.1.0
+status: draft
+items:
+- utterance: What is it about the relationship that concerns you most, Denise?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Has your daughter ever said she felt pressured by him?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: so have you stopped her seeing him at any point
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: How does she let you know when she wants something to stop?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Sorry to ask, but does your daughter have anyone else she trusts to talk to?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Would it be all right if I asked how old your daughter is?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Good afternoon, Denise, thanks for coming in.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: So, if I've got this right, you're worried about what she understands and you'd like the
+    relationship to stop.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: check_understanding
+- utterance: Okay, thank you.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Right. And how long has that been going on?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: That sounds really hard.
+  empathy: 1
+  empathy_words: That sounds really hard.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I'm sorry to hear that.
+  empathy: 1
+  empathy_words: I'm sorry to hear that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That must be worrying. What has she said about it herself?
+  empathy: 1
+  empathy_words: That must be worrying.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I understand. How long have you been concerned?
+  empathy: 1
+  empathy_words: I understand.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: It sounds as though nobody gave you any guidance, and that must have left you feeling very
+    much on your own.
+  empathy: 2
+  empathy_words: It sounds as though nobody gave you any guidance, and that must have left you feeling
+    very much on your own.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: Has anyone explained how decisions about her are made now she's an adult?
+    character: I thought being her mother meant I could forbid it. Nobody has explained how decisions
+      are made now she's an adult.
+- utterance: After all those years of protecting her, it is completely understandable that you feel frightened
+    of getting this wrong.
+  empathy: 2
+  empathy_words: After all those years of protecting her, it is completely understandable that you feel
+    frightened of getting this wrong.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: How are you finding all of this yourself?
+    character: I've spent years protecting her and feel terrified of getting it wrong. It's hard to admit
+      I can't prevent every risk.
+- utterance: You clearly love your daughter very much, and wanting to keep her safe is natural for any
+    parent.
+  empathy: 2
+  empathy_words: You clearly love your daughter very much, and wanting to keep her safe is natural for
+    any parent.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: You have carried a lot of worry for a long time, and that is exhausting. Can I ask what she
+    says about the relationship?
+  empathy: 2
+  empathy_words: You have carried a lot of worry for a long time, and that is exhausting.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+- utterance: She's an adult, so you can't just forbid it, Denise.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: you can't just forbid it
+  style: confront_statement
+- utterance: You haven't really talked to her about it, have you?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You haven't really talked to her about it, have you
+  style: confront_tag
+- utterance: I'm sure it will all be fine.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: I'm sure it will all be fine
+  style: dismissive
+- utterance: Most parents feel like this, so I wouldn't worry too much.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: I wouldn't worry too much
+  style: dismissive

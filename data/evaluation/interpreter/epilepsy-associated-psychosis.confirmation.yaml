@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: epilepsy-associated-psychosis
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Sophie, does it seem that others can know what you're thinking even when you say nothing?
+  expected:
+  - broadcast
+  rapport: false
+- utterance: Have you noticed thoughts that seem to have been placed in your mind by somebody else?
+  expected:
+  - insertion
+  rapport: false
+- utterance: Does anyone or anything seem to take over your movements or actions?
+  expected:
+  - passivity
+  rapport: false
+- utterance: Have you heard a voice when there isn't anyone speaking nearby?
+  expected:
+  - voices
+  rapport: false
+- utterance: How did the unusual experiences fit in time with the seizures and your recovery afterwards?
+  expected:
+  - timing
+  rapport: false
+- utterance: Can you tell me where we are and who you understand you're speaking to?
+  expected:
+  - orientation
+  rapport: false
+- utterance: Do your own thoughts seem available for nearby people to hear?
+  expected:
+  - broadcast
+  rapport: false
+- utterance: Do any thoughts seem to belong to somebody else who has put them into your mind?
+  expected:
+  - insertion
+  rapport: false
+- utterance: what are you afraid this could mean for managing life on your own?
+  expected:
+  - fear
+  rapport: false
+  previous:
+    interviewer: How are you making sense of these experiences?
+    character: Part of me wonders whether this follows the seizures. It still feels real.
+- utterance: Something that used to feel private no longer feels private to you.
+  expected: []
+  rapport: false

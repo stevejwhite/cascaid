@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: rehabilitation-supported-housing-plan
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hi Kwame, good to see you. Shall we talk about the move?"
+    expected: []
+    rapport: false
+  - utterance: "What are you hoping for from living in supported housing?"
+    expected: [goal]
+    rapport: false
+  - utterance: "How are you getting on with cooking and looking after yourself?"
+    expected: [skills]
+    rapport: false
+  - utterance: "What medication are you on at the moment?"
+    expected: [medicine]
+    rapport: false
+  - utterance: "What do you know about the support you'd get at the new place?"
+    expected: [support]
+    rapport: false
+  - utterance: "How are you fixed for money?"
+    expected: [money]
+    rapport: false
+  - utterance: "What would you like to do with your days once you've moved?"
+    expected: [activity]
+    rapport: false
+  - utterance: "What are the first signs that you're becoming unwell?"
+    expected: [relapse]
+    rapport: false
+  - utterance: "Any thoughts of harming yourself or other people?"
+    expected: [risk]
+    rapport: false
+  - utterance: "It's really good that you want a say in this, and that makes complete sense."
+    expected: []
+    rapport: true
+  - utterance: "Is there anything about the move you've been worried to mention?"
+    expected: [fear]
+    rapport: false
+  - utterance: "Who would you like to be involved in decisions about your care?"
+    expected: [choices]
+    rapport: false
+  - utterance: "Any side effects from it?"
+    previous:
+      interviewer: "What medication are you on?"
+      character: "Olanzapine, 15 milligrams at night."
+    expected: [medicine]
+    rapport: false
+  - utterance: "When you've been that unwell, have you managed to keep eating?"
+    previous:
+      interviewer: "What are your early warning signs?"
+      character: "I stop sleeping and start thinking people are talking about me."
+    expected: [risk]
+    rapport: false
+  - utterance: "Do you smoke?"
+    expected: []
+    rapport: false
+  - utterance: "Have you got a GP lined up in the new area?"
+    expected: []
+    rapport: false
+  - utterance: "Moving after a long time on the ward is a big step."
+    expected: []
+    rapport: true
+  - utterance: "Let me just recap what we've agreed so far."
+    expected: []
+    rapport: false

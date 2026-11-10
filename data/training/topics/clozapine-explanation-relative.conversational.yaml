@@ -1,0 +1,149 @@
+# Conversational lines for the topic classifier: generic openers and transitions
+# (no topic), and questions addressed by name or with a preamble. Drafted by
+# Claude (Opus 5.5) on 2026-10-13 after real sessions showed most such lines fell
+# to Qwen. NOT YET REVIEWED by a person. Not evaluation data.
+case_id: clozapine-explanation-relative
+case_version: 0.4.0
+status: draft
+items:
+- utterance: Hello, thank you for coming in to talk about Daniel's treatment.
+  topics: &id001 []
+  style: greeting
+- utterance: I work with the team on the ward where your son is staying.
+  topics: *id001
+  style: introduction
+- utterance: I'd like to talk with you today about a medicine called clozapine.
+  topics: *id001
+  style: explanation
+- utterance: Is it all right if I explain a bit about the plan first?
+  topics: *id001
+  style: open
+- utterance: Please stop me at any point if you have questions.
+  topics: *id001
+  style: explanation
+- utterance: Shall we get started?
+  topics: *id001
+  style: brief
+- utterance: Is now still a good time to talk, Maria?
+  topics: *id001
+  style: brief
+- utterance: Thanks for waiting, Maria. Come and take a seat.
+  topics: *id001
+  style: greeting
+- utterance: okay so um I'll go through it step by step
+  topics: *id001
+  style: spoken
+- utterance: That's a really good question, and I'll come back to it in a moment.
+  topics: *id001
+  style: follow_up
+- utterance: Maria, before I explain anything, what do you already know about clozapine?
+  topics:
+  - prior-knowledge
+  style: open
+- utterance: Okay, and has anyone told you anything about it so far?
+  topics:
+  - prior-knowledge
+  style: follow_up
+- utterance: Right then Maria, when he's had bloods taken before, how has that gone for him?
+  topics:
+  - needle-fear
+  style: open
+- utterance: And how would he feel about having regular needles?
+  topics:
+  - needle-fear
+  style: open
+- utterance: Okay, what side effects did he have on the other tablets?
+  topics:
+  - previous-side-effects
+  style: open
+- utterance: Maria, did the last medication cause him any problems?
+  topics:
+  - previous-side-effects
+  style: closed
+- utterance: Maria, is he a smoker at all?
+  topics:
+  - smoking
+  style: brief
+- utterance: And how much coffee or tea does he get through in a day?
+  topics:
+  - smoking
+  style: follow_up
+- utterance: Okay, and does he use any cannabis or other drugs?
+  topics:
+  - cannabis
+  style: closed
+- utterance: Maria, does Daniel drink alcohol at all?
+  topics:
+  - cannabis
+  style: closed
+- utterance: Okay, and day to day, does he manage his tablets without being reminded?
+  topics:
+  - adherence
+  style: open
+- utterance: Who helps him with his medication at home, Maria?
+  topics:
+  - adherence
+  style: open
+- utterance: Maria, has your son told you how he feels about switching to this new medicine?
+  topics:
+  - daniel-view
+  style: open
+- utterance: Okay Maria, has Daniel said whether he'd agree to it?
+  topics:
+  - daniel-view
+  style: closed
+- utterance: If this works well, Maria, what would you love to see change for him?
+  topics:
+  - hopes
+  style: open
+- utterance: And how are you coping with everything yourself?
+  topics:
+  - hopes
+  style: open
+- utterance: Hi Maria, my name's Dr Shah.
+  topics: &id002 []
+  style: introduction
+- utterance: Nice to meet you, Maria.
+  topics: *id002
+  style: greeting
+- utterance: Thanks for making the time to come in.
+  topics: *id002
+  style: greeting
+- utterance: Could you bring me up to speed on the last few days?
+  topics: *id002
+  style: open
+- utterance: Is there anything you'd like to ask before we carry on?
+  topics: *id002
+  style: open
+- utterance: Okay, I'm going to explain the next part now.
+  topics: *id002
+  style: explanation
+- utterance: Bear with me while I find the leaflet.
+  topics: *id002
+  style: spoken
+- utterance: I'll try to avoid jargon, so do stop me.
+  topics: *id002
+  style: explanation
+- utterance: Let's take it one step at a time.
+  topics: *id002
+  style: explanation
+- utterance: Hello Maria, I'm Dr Shah from the ward team. We'd like to talk about a medicine for Daniel.
+    Have you heard anything about clozapine already?
+  topics:
+  - prior-knowledge
+  style: introduction
+- utterance: Nice to meet you, Maria. I'm one of the doctors. Can I ask how Daniel usually copes with
+    having his blood taken?
+  topics:
+  - needle-fear
+  style: introduction
+- utterance: Thanks for coming in, Maria. I'm going to explain a few things, but first, does Daniel smoke
+    at all these days?
+  topics:
+  - smoking
+  style: introduction
+- utterance: Hi Maria, I'm Dr Shah. Before I explain anything, how does Daniel himself feel about trying
+    a new medicine?
+  topics:
+  - daniel-view
+  style: introduction

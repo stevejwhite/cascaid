@@ -1,0 +1,227 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: child-ocd-family-treatment
+case_version: 0.1.0
+status: draft
+items:
+  # accommodation vs goals
+  - utterance: Do you ever join in with the rituals yourself, to help her through?
+    topics: [accommodation]
+    style: boundary
+    pair: [accommodation, goals]
+  - utterance: does she ask you the same thing over and over for reassurance
+    topics: [accommodation]
+    style: boundary_spoken
+    pair: [accommodation, goals]
+  - utterance: Do you find yourself checking things so she can relax?
+    topics: [accommodation]
+    style: boundary_colloquial
+    pair: [accommodation, goals]
+  - utterance: What do you do at home when she asks you for help with her checking?
+    topics: [accommodation]
+    style: boundary
+    pair: [accommodation, goals]
+  - utterance: And does that calm her down for long?
+    topics: [accommodation]
+    style: boundary_follow_up
+    pair: [accommodation, goals]
+    previous:
+      interviewer: How do you want to help her?
+      character: Yes, I check doors for her and answer the same safety question repeatedly. It settles her briefly, then she asks again.
+  - utterance: Is there something she misses doing with her friends because of all this?
+    topics: [goals]
+    style: boundary
+    pair: [accommodation, goals]
+  - utterance: so what would she like to get back to if things improve
+    topics: [goals]
+    style: boundary_spoken
+    pair: [accommodation, goals]
+  - utterance: Has she said whether she's up for getting some help for it?
+    topics: [goals]
+    style: boundary_colloquial
+    pair: [accommodation, goals]
+  - utterance: What would she hope to be able to do again if the OCD were under control?
+    topics: [goals]
+    style: boundary
+    pair: [accommodation, goals]
+  - utterance: And does she want a say in what happens?
+    topics: [goals]
+    style: boundary_follow_up
+    pair: [accommodation, goals]
+    previous:
+      interviewer: Would she be willing to see someone about this?
+      character: She wants to go swimming with friends again. She's agreed we can ask about help, although she wants a say in it.
+  - utterance: Does she know that you've come to see me today?
+    topics: []
+    style: near_miss
+    pair: [accommodation, goals]
+  - utterance: Has the rest of the family changed their routines because of her OCD?
+    topics: []
+    style: near_miss
+    pair: [accommodation, goals]
+  # goals vs treatment
+  - utterance: What is she hoping will be different once she gets help?
+    topics: [goals]
+    style: boundary
+    pair: [goals, treatment]
+  - utterance: is there anything she's missing out on that she'd love to do again
+    topics: [goals]
+    style: boundary_spoken
+    pair: [goals, treatment]
+  - utterance: Is she on board with the idea of getting treatment, from what she's said?
+    topics: [goals]
+    style: boundary_colloquial
+    pair: [goals, treatment]
+  - utterance: How does she feel about having a say in who she sees?
+    topics: [goals]
+    style: boundary
+    pair: [goals, treatment]
+  - utterance: And what would she like us to help her with first?
+    topics: [goals]
+    style: boundary_follow_up
+    pair: [goals, treatment]
+    previous:
+      interviewer: Has she said anything about seeing us?
+      character: She wants to go swimming with friends again. She's agreed we can ask about help, although she wants a say in it.
+  - utterance: Has she seen a therapist before, for any reason?
+    topics: [treatment]
+    style: boundary
+    pair: [goals, treatment]
+  - utterance: what's your understanding of exposure work, like what it involves
+    topics: [treatment]
+    style: boundary_spoken
+    pair: [goals, treatment]
+  - utterance: Is there anything about how therapy works that worries you?
+    topics: [treatment]
+    style: boundary_colloquial
+    pair: [goals, treatment]
+  - utterance: What is your understanding of how psychological treatment for OCD goes?
+    topics: [treatment]
+    style: boundary
+    pair: [goals, treatment]
+  - utterance: And is that what you're afraid might happen to her?
+    topics: [treatment]
+    style: boundary_follow_up
+    pair: [goals, treatment]
+    previous:
+      interviewer: Have you any thoughts about exposure therapy?
+      character: She's never had therapy. I thought exposure meant someone making her touch something frightening without warning.
+  - utterance: Would she be willing to take tablets if it came to that?
+    topics: []
+    style: near_miss
+    pair: [goals, treatment]
+  - utterance: Have you got any worries about how long treatment takes?
+    topics: []
+    style: near_miss
+    pair: [goals, treatment]
+  # fears vs goals
+  - utterance: If she skips a ritual, what does she say might go wrong?
+    topics: [fears]
+    style: boundary
+    pair: [fears, goals]
+  - utterance: does she say why she feels she has to repeat things
+    topics: [fears]
+    style: boundary_spoken
+    pair: [fears, goals]
+  - utterance: Has she told you what the thoughts are, the ones that bother her?
+    topics: [fears]
+    style: boundary_colloquial
+    pair: [fears, goals]
+  - utterance: Does she see the thoughts as something she wants, or something she hates?
+    topics: [fears]
+    style: boundary
+    pair: [fears, goals]
+  - utterance: And what does she worry will come of it?
+    topics: [fears]
+    style: boundary_follow_up
+    pair: [fears, goals]
+    previous:
+      interviewer: Why does she keep going back to wash again?
+      character: She says someone in our family could become seriously ill if she gets it wrong. She says she hates having the thoughts.
+  - utterance: What would she most like to get out of seeing someone?
+    topics: [goals]
+    style: boundary
+    pair: [fears, goals]
+  - utterance: so is there anything she misses doing that she'd like to get back to
+    topics: [goals]
+    style: boundary_spoken
+    pair: [fears, goals]
+  - utterance: Does she want to be involved in the decision about help?
+    topics: [goals]
+    style: boundary_colloquial
+    pair: [fears, goals]
+  - utterance: What does she look forward to that the OCD gets in the way of?
+    topics: [goals]
+    style: boundary
+    pair: [fears, goals]
+  - utterance: And is she hoping the help will let her do that?
+    topics: [goals]
+    style: boundary_follow_up
+    pair: [fears, goals]
+    previous:
+      interviewer: Does she worry about what treatment might mean for her?
+      character: She wants to go swimming with friends again. She's agreed we can ask about help, although she wants a say in it.
+  - utterance: Does she ever say she hears or sees things that others don't?
+    topics: []
+    style: near_miss
+    pair: [fears, goals]
+  - utterance: Is she worried about what her friends would think?
+    topics: []
+    style: near_miss
+    pair: [fears, goals]
+  # accommodation vs rituals
+  - utterance: What do you do when she asks you to check the door?
+    topics: [accommodation]
+    style: boundary
+    pair: [accommodation, rituals]
+  - utterance: do you end up answering her questions again and again
+    topics: [accommodation]
+    style: boundary_spoken
+    pair: [accommodation, rituals]
+  - utterance: Are you the one reassuring her when she's worried something isn't safe?
+    topics: [accommodation]
+    style: boundary_colloquial
+    pair: [accommodation, rituals]
+  - utterance: In what ways have you been drawn into her routines?
+    topics: [accommodation]
+    style: boundary
+    pair: [accommodation, rituals]
+  - utterance: And does it help her, or does she just ask again?
+    topics: [accommodation]
+    style: boundary_follow_up
+    pair: [accommodation, rituals]
+    previous:
+      interviewer: Do you get involved in what she does?
+      character: She washes repeatedly and checks taps and doors for about three hours daily. This started eight months ago.
+  - utterance: How much of her day goes on the washing and checking?
+    topics: [rituals]
+    style: boundary
+    pair: [accommodation, rituals]
+  - utterance: when did the hand washing first begin
+    topics: [rituals]
+    style: boundary_spoken
+    pair: [accommodation, rituals]
+  - utterance: What does she do over and over, from what you've seen?
+    topics: [rituals]
+    style: boundary_colloquial
+    pair: [accommodation, rituals]
+  - utterance: How many hours a day would you say these routines take up?
+    topics: [rituals]
+    style: boundary
+    pair: [accommodation, rituals]
+  - utterance: And how long has she been doing it?
+    topics: [rituals]
+    style: boundary_follow_up
+    pair: [accommodation, rituals]
+    previous:
+      interviewer: Do you do anything to help her when she checks?
+      character: Yes, I check doors for her and answer the same safety question repeatedly. It settles her briefly, then she asks again.
+  - utterance: Does she get upset when you try to stop her?
+    topics: []
+    style: near_miss
+    pair: [accommodation, rituals]
+  - utterance: Does she do any of it in front of her friends?
+    topics: []
+    style: near_miss
+    pair: [accommodation, rituals]

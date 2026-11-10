@@ -1,0 +1,70 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: alcohol-assisted-withdrawal-options
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hi Karen, I'm one of the doctors in the addiction service. Thanks for coming in."
+    expected: []
+    rapport: false
+  - utterance: "Can you tell me how much you're drinking at the moment, and what you drink?"
+    expected: [intake]
+    rapport: false
+  - utterance: "What happens to you if you go a while without a drink?"
+    expected: [withdrawal]
+    rapport: false
+  - utterance: "Have you ever had a fit or seen things when you've stopped drinking?"
+    expected: [severe]
+    rapport: false
+  - utterance: "How's your physical health? Are you eating properly, and has anyone checked your liver?"
+    expected: [physical]
+    rapport: false
+  - utterance: "Are you on any tablets at the moment, prescribed or otherwise?"
+    expected: [medicines]
+    rapport: false
+  - utterance: "Who's at home with you? Would anyone be around if you came off at home?"
+    expected: [setting]
+    rapport: false
+  - utterance: "Have you managed to stop before? What happened afterwards?"
+    expected: [relapse]
+    rapport: false
+  - utterance: "Have you had any thoughts of harming yourself or ending your life?"
+    expected: [risk]
+    rapport: false
+  - utterance: "It takes real courage to come in and say you want to stop."
+    expected: []
+    rapport: true
+  - utterance: "What would being sober mean for you? Is there something you're working towards?"
+    expected: [wish]
+    rapport: false
+  - utterance: "Coming in to talk about stopping when drinking has been part of every day for so long must feel really daunting for you. What's been making it hard to ask for help?"
+    expected: [fear]
+    rapport: true
+  - utterance: "have you ever been to AA or any mutual aid groups?"
+    expected: []
+    rapport: false
+  - utterance: "Do you smoke at all?"
+    expected: []
+    rapport: false
+  - utterance: "Okay, so it sounds like a supervised detox is going to be the safest route for you."
+    expected: []
+    rapport: false
+  - utterance: "And how long after waking do you have your first drink?"
+    previous:
+      interviewer: "How much do you get through in a day?"
+      character: "A 700-millilitre bottle of vodka."
+    expected: [intake]
+    rapport: false
+  - utterance: "Could she stay over with you for a few nights?"
+    previous:
+      interviewer: "Does anyone check in on you at home?"
+      character: "I live alone. My sister visits sometimes."
+    expected: [setting]
+    rapport: false
+  - utterance: "Did you get any support after that hospital stay?"
+    previous:
+      interviewer: "Has stopping ever gone wrong before?"
+      character: "I had a seizure two years ago and ended up in hospital."
+    expected: [relapse]
+    rapport: false

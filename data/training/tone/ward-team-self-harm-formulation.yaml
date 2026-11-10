@@ -1,0 +1,30 @@
+# Training lines for the tone classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: ward-team-self-harm-formulation
+case_version: 0.1.0
+status: draft
+items:
+  - {utterance: "How many hours has she spent on one-to-one observation?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "Do you ever feel like leaving the ward because of this?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "um did you say anything to her afterwards", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "What do the other nurses say to you at handover?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "Who else was on duty with you that day?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "Sorry to ask, but could you tell me how you reacted when she asked for someone else?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: polite_question}
+  - {utterance: "If you don't mind, could I ask how long you have worked with her?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: polite_question}
+  - {utterance: "Hello Nadia, it's Dr Hughes.", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: introduction}
+  - {utterance: "Hi Nadia, thanks for coming.", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: greeting}
+  - {utterance: "So the shifts are doing different things, and you'd like us to find one approach together.", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: summary}
+  - {utterance: "Right. And what happened after that?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: acknowledgement}
+  - {utterance: "Okay, thanks Nadia.", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: acknowledgement}
+  - {utterance: "I'm sorry to hear that.", empathy: 1, empathy_words: "I'm sorry to hear that.", confrontational: false, challenge_words: "", style: brief_empathy}
+  - {utterance: "That sounds really hard.", empathy: 1, empathy_words: "That sounds really hard.", confrontational: false, challenge_words: "", style: brief_empathy}
+  - {utterance: "That must be difficult. How are you coping with it?", empathy: 1, empathy_words: "That must be difficult.", confrontational: false, challenge_words: "", style: brief_empathy_question}
+  - {utterance: "I'm sorry you've had to deal with that. What happened next?", empathy: 1, empathy_words: "I'm sorry you've had to deal with that.", confrontational: false, challenge_words: "", style: brief_empathy_question}
+  - {utterance: "Feeling angry and then guilty for being angry is such a heavy thing to carry, and it shows how much you care about doing right by her.", empathy: 2, empathy_words: "Feeling angry and then guilty for being angry is such a heavy thing to carry, and it shows how much you care about doing right by her.", confrontational: false, challenge_words: "", style: specific_empathy, previous: {interviewer: "How do you feel towards her?", character: "I feel angry and then guilty for being angry. I'm frightened that my irritation will show."}}
+  - {utterance: "It sounds as though being pulled between colleagues who want opposite things at every handover leaves you without a safe place to think.", empathy: 2, empathy_words: "It sounds as though being pulled between colleagues who want opposite things at every handover leaves you without a safe place to think.", confrontational: false, challenge_words: "", style: specific_empathy, previous: {interviewer: "Do staff disagree about how to respond to her?", character: "Yes, some colleagues offer extra time and others say we should withdraw attention. We argue about it at handover."}}
+  - {utterance: "You came in worried about being judged, and I want you to know that I am not here to judge how you have been coping.", empathy: 2, empathy_words: "You came in worried about being judged, and I want you to know that I am not here to judge how you have been coping.", confrontational: false, challenge_words: "", style: specific_empathy}
+  - {utterance: "It must have felt painful to be asked for someone else when you were trying to help, and then to carry that on your own. Would it help to tell the team?", empathy: 2, empathy_words: "It must have felt painful to be asked for someone else when you were trying to help, and then to carry that on your own.", confrontational: false, challenge_words: "", style: specific_empathy_question, previous: {interviewer: "Is there anything you did with her that you regret?", character: "Yes, yesterday I cut our conversation short because I felt rejected when she asked for someone else. I haven't told the team."}}
+  - {utterance: "You shouldn't let a patient get to you like this.", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "You shouldn't let a patient get to you like this", style: confront_statement}
+  - {utterance: "Why on earth haven't you raised this with anyone before now?", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "Why on earth haven't you raised this with anyone before now", style: confront_why}
+  - {utterance: "It's part of the job on this ward, so you'll get used to it.", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "so you'll get used to it", style: dismissive}
+  - {utterance: "I'm sure everyone is doing their best, so there's no need to worry about the disagreements.", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "there's no need to worry about the disagreements", style: dismissive}

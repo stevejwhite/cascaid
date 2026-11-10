@@ -1,0 +1,50 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: bereavement-grief-depression-history
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: erm arthur, could you tell me a little about the circumstances of your wife's death
+  expected:
+  - loss
+  rapport: false
+- utterance: How much of your day is taken up with longing for her to be here?
+  expected:
+  - yearning
+  rapport: false
+- utterance: Are there things you've stayed away from because they remind you of being together?
+  expected:
+  - avoidance
+  rapport: false
+- utterance: Does the sadness stay much the same all day, or does it come and go?
+  expected:
+  - mood
+  rapport: false
+- utterance: Have there still been moments when you could enjoy company or have a laugh?
+  expected:
+  - enjoyment
+  rapport: false
+- utterance: What is a typical night's sleep like for you since she's been gone?
+  expected:
+  - sleep
+  rapport: false
+- utterance: Do you find yourself expecting or wishing for her to return despite knowing she's died?
+  expected:
+  - yearning
+  rapport: false
+- utterance: Have you wished your own life would end so that you could be with her?
+  expected:
+  - death-wish
+  rapport: false
+- utterance: how would you like to remember her alongside getting back to more of that?
+  expected:
+  - meaning
+  rapport: false
+  previous:
+    interviewer: How is it spending time with family now?
+    character: I can enjoy my grandchildren's visits and laugh with them, though afterwards I miss being
+      able to tell her about it.
+- utterance: Do you ever wake up with a headache?
+  expected: []
+  rapport: false

@@ -1,0 +1,51 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: restrictive-eating-physical-history
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Nia, what measurements did the GP take, and how do they compare with your weight a few months
+    ago?
+  expected:
+  - weight-change
+  rapport: false
+- utterance: Could you describe everything you'd eat on a typical day at the moment?
+  expected:
+  - food-intake
+  rapport: false
+- utterance: How much are you drinking, and what have you noticed about the amount or colour of your urine?
+  expected:
+  - fluids
+  rapport: false
+- utterance: What were you doing just before you passed out, and how quickly did you come round?
+  expected:
+  - fainting
+  rapport: false
+- utterance: Have you felt fluttering or irregular heartbeats on other occasions this week?
+  expected:
+  - palpitations
+  rapport: false
+- utterance: When was your last period, and were they regular before that?
+  expected:
+  - periods
+  rapport: false
+- utterance: Do you exercise even if you're feeling unwell, and how much?
+  expected:
+  - exercise
+  rapport: false
+- utterance: Do you make yourself vomit or take laxatives or water tablets, as distinct from restricting
+    food?
+  expected:
+  - purging
+  rapport: false
+- utterance: have you had any bone injuries from doing that?
+  expected:
+  - bone-history
+  rapport: false
+  previous:
+    interviewer: What exercise do you do?
+    character: I run for about an hour every morning.
+- utterance: You fainted at work, and your GP wanted you to have this assessment.
+  expected: []
+  rapport: false

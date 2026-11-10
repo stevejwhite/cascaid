@@ -1,0 +1,901 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: late-life-intrusion-beliefs
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Can you tell me what you think has been happening in your flat?
+  topics:
+  - belief
+  style: open
+- utterance: Do you believe the neighbours have been coming into your home?
+  topics:
+  - belief
+  style: closed
+- utterance: So who do you reckon has been going through your things, Dorothy?
+  topics:
+  - belief
+  style: colloquial
+- utterance: How convinced are you that someone is entering your flat?
+  topics:
+  - belief
+  style: clinical
+- utterance: I'd like to hear more about what you think the neighbours are doing
+  topics:
+  - belief
+  style: indirect
+- utterance: I can see this is unsettling. Who do you think is moving your belongings?
+  topics:
+  - belief
+  style: empathy_then_question
+- utterance: um so what's, what's been going on with the neighbours then
+  topics:
+  - belief
+  style: spoken
+- utterance: Who's been getting in?
+  topics:
+  - belief
+  style: brief
+- utterance: And who do you think is responsible for that?
+  topics:
+  - belief
+  style: follow_up
+  previous:
+    interviewer: When did you first notice things out of place?
+    character: It started four months ago when I couldn't find my purse where I expected. Since then I
+      notice something displaced most weeks.
+- utterance: You're quite certain it's the people next door, aren't you?
+  topics:
+  - belief
+  style: leading
+- utterance: What makes you so sure it's them rather than anyone else?
+  topics:
+  - belief
+  style: open
+- utterance: Have you ever actually caught anyone in the flat?
+  topics:
+  - belief
+  style: closed
+- utterance: Is someone letting themselves in while you're out, do you think?
+  topics:
+  - belief
+  style: colloquial
+- utterance: I'm wondering how certain you feel about all this
+  topics:
+  - belief
+  style: indirect
+- utterance: How sure are you, on a scale of nought to ten?
+  topics:
+  - belief
+  style: follow_up
+  previous:
+    interviewer: Do you believe the neighbours have been coming into your home?
+    character: I'm sure the neighbours enter when I'm out and move my things. I haven't seen them inside,
+      but I can't think of another explanation.
+- utterance: Dorothy, why do you think they'd want to come in?
+  topics:
+  - belief
+  style: open
+- utterance: When did all this start?
+  topics:
+  - onset
+  style: open
+- utterance: Was there a first time you noticed something wasn't where you'd left it?
+  topics:
+  - onset
+  style: closed
+- utterance: Over what time period have these concerns developed?
+  topics:
+  - onset
+  style: clinical
+- utterance: I'd be interested to know when you first became suspicious
+  topics:
+  - onset
+  style: indirect
+- utterance: That must be wearing. How often do you find things have been moved?
+  topics:
+  - onset
+  style: empathy_then_question
+- utterance: and er when, when was the first time, roughly
+  topics:
+  - onset
+  style: spoken
+- utterance: How often does it happen?
+  topics:
+  - onset
+  style: brief
+- utterance: I suppose this has been building for a while now?
+  topics:
+  - onset
+  style: leading
+- utterance: Tell me about the very first thing that seemed out of place.
+  topics:
+  - onset
+  style: open
+- utterance: Does it happen every day, or less often than that?
+  topics:
+  - onset
+  style: closed
+- utterance: Is this a recent thing, or has it been going on a good while?
+  topics:
+  - onset
+  style: colloquial
+- utterance: And what was it that went missing that first time?
+  topics:
+  - onset
+  style: follow_up
+  previous:
+    interviewer: When did all this start?
+    character: It started four months ago when I couldn't find my purse where I expected. Since then I
+      notice something displaced most weeks.
+- utterance: Roughly how many months ago did you first notice anything?
+  topics:
+  - onset
+  style: open
+- utterance: Dorothy, what was the first sign that something was wrong?
+  topics:
+  - onset
+  style: open
+- utterance: Have you heard voices when there's nobody around?
+  topics:
+  - hearing-voices
+  style: closed
+- utterance: What sort of things have you been hearing at home?
+  topics:
+  - hearing-voices
+  style: open
+- utterance: Do you ever hear someone talking when you're on your own?
+  topics:
+  - hearing-voices
+  style: colloquial
+- utterance: Have you had any experience of hearing voices others can't hear?
+  topics:
+  - hearing-voices
+  style: clinical
+- utterance: I wondered whether you've heard anything unusual in the flat
+  topics:
+  - hearing-voices
+  style: indirect
+- utterance: Living alone can make noises seem louder. Have you heard anyone speaking?
+  topics:
+  - hearing-voices
+  style: empathy_then_question
+- utterance: um and do you ever hear, er, people talking, voices
+  topics:
+  - hearing-voices
+  style: spoken
+- utterance: Any voices at all?
+  topics:
+  - hearing-voices
+  style: brief
+- utterance: Do you know whose voice it is?
+  topics:
+  - hearing-voices
+  style: follow_up
+  previous:
+    interviewer: Have you heard voices when there's nobody around?
+    character: Sometimes at night I hear a man's voice through the wall saying my name. I can't tell where
+      it comes from.
+- utterance: I expect you've heard some odd sounds from next door?
+  topics:
+  - hearing-voices
+  style: leading
+- utterance: What does the voice say to you?
+  topics:
+  - hearing-voices
+  style: open
+- utterance: Is it always at a particular time of day that you hear it?
+  topics:
+  - hearing-voices
+  style: closed
+- utterance: Ever hear anybody chatting when no one's there?
+  topics:
+  - hearing-voices
+  style: colloquial
+- utterance: Where does it seem to come from?
+  topics:
+  - hearing-voices
+  style: follow_up
+  previous:
+    interviewer: What sort of things have you been hearing at home?
+    character: Sometimes at night I hear a man's voice through the wall saying my name. I can't tell where
+      it comes from.
+- utterance: Tell me about anything you've heard that's puzzled you.
+  topics:
+  - hearing-voices
+  style: open
+- utterance: Dorothy, does anyone ever seem to be speaking about you or to you?
+  topics:
+  - hearing-voices
+  style: closed
+- utterance: Have you seen anything unusual, like people or shapes that others can't see?
+  topics:
+  - other-phenomena
+  style: closed
+- utterance: What other unusual experiences have you had, apart from hearing things?
+  topics:
+  - other-phenomena
+  style: open
+- utterance: Noticed any funny smells about the place?
+  topics:
+  - other-phenomena
+  style: colloquial
+- utterance: Have you felt that your thoughts are being interfered with?
+  topics:
+  - other-phenomena
+  style: clinical
+- utterance: I'd like to ask about other odd experiences besides voices
+  topics:
+  - other-phenomena
+  style: indirect
+- utterance: These are routine questions, so please bear with me. Do you ever feel something is controlling
+    your thoughts?
+  topics:
+  - other-phenomena
+  style: empathy_then_question
+- utterance: so um have you, do you ever see things that aren't really there
+  topics:
+  - other-phenomena
+  style: spoken
+- utterance: Seeing things at all?
+  topics:
+  - other-phenomena
+  style: brief
+- utterance: And apart from that, anything you've seen or smelt that seemed strange?
+  topics:
+  - other-phenomena
+  style: follow_up
+  previous:
+    interviewer: Have you heard voices when there's nobody around?
+    character: Sometimes at night I hear a man's voice through the wall saying my name. I can't tell where
+      it comes from.
+- utterance: Nothing else odd beyond the voice, I take it?
+  topics:
+  - other-phenomena
+  style: leading
+- utterance: Does it ever feel as though other people can hear what you're thinking?
+  topics:
+  - other-phenomena
+  style: closed
+- utterance: How about your senses of smell and taste, has anything changed or seemed strange?
+  topics:
+  - other-phenomena
+  style: open
+- utterance: Ever felt like someone's putting ideas into your head?
+  topics:
+  - other-phenomena
+  style: colloquial
+- utterance: Are your thoughts your own, or does it sometimes feel otherwise?
+  topics:
+  - other-phenomena
+  style: closed
+- utterance: Is that the only unusual thing, or have there been others?
+  topics:
+  - other-phenomena
+  style: follow_up
+  previous:
+    interviewer: What sort of things have you been hearing at home?
+    character: Sometimes at night I hear a man's voice through the wall saying my name. I can't tell where
+      it comes from.
+- utterance: Dorothy, have you noticed shadows or movements out of the corner of your eye?
+  topics:
+  - other-phenomena
+  style: closed
+- utterance: Are your ears giving you any bother?
+  topics:
+  - sensory
+  style: colloquial
+- utterance: Do you have any difficulties with your hearing or vision?
+  topics:
+  - sensory
+  style: clinical
+- utterance: I wanted to check how well you can hear and see
+  topics:
+  - sensory
+  style: indirect
+- utterance: Lots of people find these things harder as they get older. How is your eyesight?
+  topics:
+  - sensory
+  style: empathy_then_question
+- utterance: um and your eyes, er, can you see all right
+  topics:
+  - sensory
+  style: spoken
+- utterance: And your glasses?
+  topics:
+  - sensory
+  style: brief
+- utterance: How well do you hear things generally, without anything playing on your mind?
+  topics:
+  - sensory
+  style: follow_up
+  previous:
+    interviewer: What sort of things have you been hearing at home?
+    character: Sometimes at night I hear a man's voice through the wall saying my name. I can't tell where
+      it comes from.
+- utterance: I imagine your hearing's not quite what it was?
+  topics:
+  - sensory
+  style: leading
+- utterance: Tell me about your eyesight and any glasses you use.
+  topics:
+  - sensory
+  style: open
+- utterance: Is your hearing aid working properly at the moment?
+  topics:
+  - sensory
+  style: closed
+- utterance: Can you make out what people say on the telly all right?
+  topics:
+  - sensory
+  style: colloquial
+- utterance: Has anyone arranged to get it fixed?
+  topics:
+  - sensory
+  style: follow_up
+  previous:
+    interviewer: Do you wear a hearing aid?
+    character: My hearing is poor and my aid has been broken for two months. My glasses still help me
+      read.
+- utterance: When did you last have your hearing or eyes checked?
+  topics:
+  - sensory
+  style: open
+- utterance: Dorothy, can you hear me clearly enough right now?
+  topics:
+  - sensory
+  style: closed
+- utterance: How's your memory been?
+  topics:
+  - cognition
+  style: open
+- utterance: Do you manage your own bills and appointments?
+  topics:
+  - cognition
+  style: closed
+- utterance: Do you find yourself forgetting things more than you used to?
+  topics:
+  - cognition
+  style: colloquial
+- utterance: Have you noticed any change in your memory or concentration?
+  topics:
+  - cognition
+  style: clinical
+- utterance: I'd like to understand how you're managing day to day with things like paperwork
+  topics:
+  - cognition
+  style: indirect
+- utterance: These are questions I ask everyone. Have you ever got lost somewhere familiar?
+  topics:
+  - cognition
+  style: empathy_then_question
+- utterance: and um the shopping and that, do you manage it on your own
+  topics:
+  - cognition
+  style: spoken
+- utterance: Any trouble remembering things?
+  topics:
+  - cognition
+  style: brief
+- utterance: And are you managing the post and the bills yourself?
+  topics:
+  - cognition
+  style: follow_up
+  previous:
+    interviewer: Do you wear a hearing aid?
+    character: My hearing is poor and my aid has been broken for two months. My glasses still help me
+      read.
+- utterance: I'm guessing you keep on top of things pretty well?
+  topics:
+  - cognition
+  style: leading
+- utterance: Tell me about a normal day and how you keep track of things.
+  topics:
+  - cognition
+  style: open
+- utterance: Have you ever found yourself unsure how to get home?
+  topics:
+  - cognition
+  style: closed
+- utterance: Is your memory as sharp as ever, would you say?
+  topics:
+  - cognition
+  style: colloquial
+- utterance: How do you keep track of appointments, then?
+  topics:
+  - cognition
+  style: follow_up
+  previous:
+    interviewer: How's your memory been?
+    character: I manage bills and appointments with a calendar. I haven't got lost; yesterday I went to
+      my usual grocer and came straight home.
+- utterance: Could you tell me what you did yesterday?
+  topics:
+  - cognition
+  style: open
+- utterance: Dorothy, has anyone said they're worried about your memory?
+  topics:
+  - cognition
+  style: closed
+- utterance: How has your mood been lately?
+  topics:
+  - mood
+  style: open
+- utterance: Have you been feeling low?
+  topics:
+  - mood
+  style: closed
+- utterance: How are you in yourself, generally?
+  topics:
+  - mood
+  style: colloquial
+- utterance: Have you noticed any changes in your mood or sleep?
+  topics:
+  - mood
+  style: clinical
+- utterance: I wondered how your spirits have been with all this going on
+  topics:
+  - mood
+  style: indirect
+- utterance: It must be tiring feeling uneasy at home. How are you sleeping?
+  topics:
+  - mood
+  style: empathy_then_question
+- utterance: um so and sleep, are you, how are you sleeping
+  topics:
+  - mood
+  style: spoken
+- utterance: And your sleep?
+  topics:
+  - mood
+  style: brief
+- utterance: How has all of that been affecting your sleep and mood?
+  topics:
+  - mood
+  style: follow_up
+  previous:
+    interviewer: When did all this start?
+    character: It started four months ago when I couldn't find my purse where I expected. Since then I
+      notice something displaced most weeks.
+- utterance: I'd imagine you're feeling a bit down with all of this?
+  topics:
+  - mood
+  style: leading
+- utterance: What do you still enjoy doing?
+  topics:
+  - mood
+  style: open
+- utterance: Have there been times you've felt unusually full of energy?
+  topics:
+  - mood
+  style: closed
+- utterance: Are you still getting pleasure out of things?
+  topics:
+  - mood
+  style: colloquial
+- utterance: Tell me how you've been feeling in yourself over the last few weeks.
+  topics:
+  - mood
+  style: open
+- utterance: And how many hours do you manage a night?
+  topics:
+  - mood
+  style: follow_up
+  previous:
+    interviewer: Have you noticed any changes in your mood or sleep?
+    character: I'm anxious at home and sleep about five hours. I still enjoy seeing my niece and haven't
+      felt unusually energetic or persistently low.
+- utterance: Dorothy, would you say you've been feeling worried or tense?
+  topics:
+  - mood
+  style: closed
+- utterance: What have you done about the neighbours so far?
+  topics:
+  - risk
+  style: open
+- utterance: Have you confronted them at all?
+  topics:
+  - risk
+  style: closed
+- utterance: Have you had words with them over it?
+  topics:
+  - risk
+  style: colloquial
+- utterance: Have you had any thoughts of harming the neighbours or yourself?
+  topics:
+  - risk
+  style: clinical
+- utterance: I need to ask whether you've thought about protecting yourself in any way
+  topics:
+  - risk
+  style: indirect
+- utterance: I can see how much this has upset you. Have you thought of hurting anyone?
+  topics:
+  - risk
+  style: empathy_then_question
+- utterance: and um have you, have you said anything to them about it
+  topics:
+  - risk
+  style: spoken
+- utterance: Any thoughts of suicide?
+  topics:
+  - risk
+  style: brief
+- utterance: And have you ever tackled them about it?
+  topics:
+  - risk
+  style: follow_up
+  previous:
+    interviewer: Do you believe the neighbours have been coming into your home?
+    character: I'm sure the neighbours enter when I'm out and move my things. I haven't seen them inside,
+      but I can't think of another explanation.
+- utterance: You haven't felt like taking matters into your own hands, have you?
+  topics:
+  - risk
+  style: leading
+- utterance: How have you reacted when you think they've been in?
+  topics:
+  - risk
+  style: open
+- utterance: Do you keep anything by you to defend yourself?
+  topics:
+  - risk
+  style: closed
+- utterance: Ever felt like giving them a piece of your mind?
+  topics:
+  - risk
+  style: colloquial
+- utterance: Have you felt that life isn't worth living?
+  topics:
+  - risk
+  style: closed
+- utterance: And has it ever got heated between you?
+  topics:
+  - risk
+  style: follow_up
+  previous:
+    interviewer: Who do you think is moving your belongings?
+    character: I'm sure the neighbours enter when I'm out and move my things. I haven't seen them inside,
+      but I can't think of another explanation.
+- utterance: Dorothy, have you made any plans to deal with them yourself?
+  topics:
+  - risk
+  style: closed
+- utterance: Who comes to see you?
+  topics:
+  - isolation
+  style: open
+- utterance: Do you get lonely living on your own?
+  topics:
+  - isolation
+  style: closed
+- utterance: Have you got people who pop in on you?
+  topics:
+  - isolation
+  style: colloquial
+- utterance: What social contact and support do you have?
+  topics:
+  - isolation
+  style: clinical
+- utterance: I wondered what it's like for you, being on your own most of the time
+  topics:
+  - isolation
+  style: indirect
+- utterance: Living alone can be hard. Who do you have around you?
+  topics:
+  - isolation
+  style: empathy_then_question
+- utterance: um and family, friends, er, does anyone visit
+  topics:
+  - isolation
+  style: spoken
+- utterance: Any regular visitors?
+  topics:
+  - isolation
+  style: brief
+- utterance: Does she know how you're feeling about all this?
+  topics:
+  - isolation
+  style: follow_up
+  previous:
+    interviewer: What do you still enjoy doing?
+    character: I'm anxious at home and sleep about five hours. I still enjoy seeing my niece and haven't
+      felt unusually energetic or persistently low.
+- utterance: I'd guess the days can feel quite long on your own?
+  topics:
+  - isolation
+  style: leading
+- utterance: Tell me about the people in your life.
+  topics:
+  - isolation
+  style: open
+- utterance: Is there anyone you can talk to about how you're feeling?
+  topics:
+  - isolation
+  style: closed
+- utterance: Do you ever feel a bit cut off from everyone?
+  topics:
+  - isolation
+  style: colloquial
+- utterance: Why haven't you mentioned that to her?
+  topics:
+  - isolation
+  style: follow_up
+  previous:
+    interviewer: Do you get lonely living on your own?
+    character: My niece visits weekly. I don't tell her how lonely I feel because I don't want to be a
+      burden.
+- utterance: How often do you see anyone during the week?
+  topics:
+  - isolation
+  style: open
+- utterance: Dorothy, could we talk a little about how it feels being by yourself?
+  topics:
+  - isolation
+  style: open
+- utterance: Could anything other than the neighbours explain what's been happening?
+  topics:
+  - insight
+  style: open
+- utterance: Is there any chance your mind could be playing tricks on you?
+  topics:
+  - insight
+  style: colloquial
+- utterance: Do you think these experiences might be due to an illness?
+  topics:
+  - insight
+  style: clinical
+- utterance: I'm interested in what you'd make of other possible explanations
+  topics:
+  - insight
+  style: indirect
+- utterance: I'm not dismissing what you've told me. What would you think if a doctor said this could
+    be a health problem?
+  topics:
+  - insight
+  style: empathy_then_question
+- utterance: so um have you ever thought, er, it might be something else going on
+  topics:
+  - insight
+  style: spoken
+- utterance: Another explanation, possibly?
+  topics:
+  - insight
+  style: brief
+- utterance: Might something other than intruders account for that?
+  topics:
+  - insight
+  style: follow_up
+  previous:
+    interviewer: When did all this start?
+    character: It started four months ago when I couldn't find my purse where I expected. Since then I
+      notice something displaced most weeks.
+- utterance: You'd probably rule out it being anything medical?
+  topics:
+  - insight
+  style: leading
+- utterance: How would you feel about the idea that this might be treatable?
+  topics:
+  - insight
+  style: open
+- utterance: Would you be open to the idea that stress could be affecting things?
+  topics:
+  - insight
+  style: closed
+- utterance: Does it ever cross your mind that you might be mistaken?
+  topics:
+  - insight
+  style: colloquial
+- utterance: What worries you about thinking of it that way?
+  topics:
+  - insight
+  style: follow_up
+  previous:
+    interviewer: Do you think these experiences might be due to an illness?
+    character: I don't believe this is an illness. I'm afraid accepting that idea would mean nobody investigates
+      what's happening.
+- utterance: What do you think a doctor could do to help with this?
+  topics:
+  - insight
+  style: open
+- utterance: Dorothy, could we talk about what worries you about other explanations?
+  topics:
+  - insight
+  style: open
+- utterance: How has your physical health been?
+  topics:
+  - physical
+  style: open
+- utterance: Have you had any recent infections or fevers?
+  topics:
+  - physical
+  style: closed
+- utterance: Been under the weather at all recently?
+  topics:
+  - physical
+  style: colloquial
+- utterance: Are you taking any regular medication?
+  topics:
+  - physical
+  style: clinical
+- utterance: I'd like to ask a little about your general health and any tablets
+  topics:
+  - physical
+  style: indirect
+- utterance: I know it's a lot of questions. Do you drink any alcohol?
+  topics:
+  - physical
+  style: empathy_then_question
+- utterance: um and tablets, are you on any, er, medicines
+  topics:
+  - physical
+  style: spoken
+- utterance: Any recent illness?
+  topics:
+  - physical
+  style: brief
+- utterance: Have you been unwell physically around that time?
+  topics:
+  - physical
+  style: follow_up
+  previous:
+    interviewer: When did all this start?
+    character: It started four months ago when I couldn't find my purse where I expected. Since then I
+      notice something displaced most weeks.
+- utterance: I assume you're on a few tablets from your GP?
+  topics:
+  - physical
+  style: leading
+- utterance: What medicines do you take each day?
+  topics:
+  - physical
+  style: open
+- utterance: Do you have a drink at all?
+  topics:
+  - physical
+  style: closed
+- utterance: Had any bugs or chest infections lately?
+  topics:
+  - physical
+  style: colloquial
+- utterance: Has anything been changed or added recently?
+  topics:
+  - physical
+  style: follow_up
+  previous:
+    interviewer: Are you taking any regular medication?
+    character: I haven't had a recent fever or sudden illness. I take only my long-standing blood pressure
+      tablet and don't drink alcohol.
+- utterance: Tell me about any health problems you've had recently.
+  topics:
+  - physical
+  style: open
+- utterance: Dorothy, have you been suddenly unwell at any point this year?
+  topics:
+  - physical
+  style: closed
+- utterance: How's your hearing, and have you heard any voices?
+  topics:
+  - sensory
+  - hearing-voices
+  style: stacked
+- utterance: How's your mood, and do you have people who visit?
+  topics:
+  - mood
+  - isolation
+  style: stacked
+- utterance: When did it start, and have you confronted the neighbours about it?
+  topics:
+  - onset
+  - risk
+  style: stacked
+- utterance: How is your memory, and are you on any medication?
+  topics:
+  - cognition
+  - physical
+  style: stacked
+- utterance: Hello Dorothy, I'm one of the doctors from the older people's mental health team.
+  topics: []
+  style: introduction
+- utterance: Good morning Dorothy, thank you for letting me visit.
+  topics: []
+  style: greeting
+- utterance: Is it all right if we talk for a little while?
+  topics: []
+  style: greeting
+- utterance: Where would you like to start, Dorothy?
+  topics: []
+  style: greeting
+- utterance: Before we begin, is there anything you'd like to ask me?
+  topics: []
+  style: greeting
+- utterance: Hi Dorothy, my name's Alex, I'm a trainee psychiatrist.
+  topics: []
+  style: introduction
+- utterance: I'd like to move on and ask about something different now.
+  topics: []
+  style: transition
+- utterance: Thank you, that's helpful. Shall we turn to your health?
+  topics: []
+  style: transition
+- utterance: Now I'm going to ask some questions I ask everybody.
+  topics: []
+  style: transition
+- utterance: We're almost out of time, Dorothy.
+  topics: []
+  style: closing
+- utterance: Thank you for talking with me today.
+  topics: []
+  style: closing
+- utterance: um okay so, i'll just ask a couple more things if that's all right
+  topics: []
+  style: transition
+- utterance: It sounds very unsettling not to feel safe in your own home.
+  topics: []
+  style: empathy
+- utterance: I can tell how much you want someone to take this seriously.
+  topics: []
+  style: empathy
+- utterance: That sounds really worrying for you.
+  topics: []
+  style: empathy
+- utterance: So you've been feeling uneasy at home and you think your neighbours are coming in.
+  topics: []
+  style: summary
+- utterance: Let me make sure I've understood you correctly so far.
+  topics: []
+  style: summary
+- utterance: I ask about hearing and eyesight because they can affect how we make sense of things.
+  topics: []
+  style: explanation
+- utterance: We'd want to look into this carefully, including talking to people who know you.
+  topics: []
+  style: explanation
+- utterance: I'm going to ask some questions about memory, which I ask everyone your age.
+  topics: []
+  style: explanation
+- utterance: Does that make sense to you?
+  topics: []
+  style: check_understanding
+- utterance: Have I explained that clearly enough?
+  topics: []
+  style: check_understanding
+- utterance: Have you ever seen a psychiatrist before?
+  topics: []
+  style: off_case
+- utterance: Have you had any falls recently?
+  topics: []
+  style: off_case
+- utterance: Have you reported this to the police or the housing office?
+  topics: []
+  style: off_case
+- utterance: Is there any family history of mental illness or dementia?
+  topics: []
+  style: off_case
+- utterance: How are you managing with cooking and eating?
+  topics: []
+  style: off_case
+- utterance: Did you have any mental health problems when you were younger?
+  topics: []
+  style: off_case
+- utterance: Have you changed the locks at all?
+  topics: []
+  style: off_case
+- utterance: Does anyone else have a key to the flat?
+  topics: []
+  style: off_case
+- utterance: What are the neighbours like as people?
+  topics: []
+  style: near_miss
+- utterance: Have the neighbours ever complained about you?
+  topics: []
+  style: near_miss
+- utterance: Has anyone else in the building had things go missing?
+  topics: []
+  style: near_miss
+- utterance: Do the neighbours make a lot of noise generally?
+  topics: []
+  style: near_miss
+- utterance: Have the neighbours always been difficult to get on with?
+  topics: []
+  style: near_miss

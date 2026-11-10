@@ -1,0 +1,1010 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: persecutory-psychosis-mental-state
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Can you tell me how you came to think your neighbours were watching you?
+  topics:
+  - surveillance-belief
+  style: open
+- utterance: Are you sure you're being watched?
+  topics:
+  - surveillance-belief
+  style: closed
+- utterance: What makes you think they're spying on you?
+  topics:
+  - surveillance-belief
+  style: colloquial
+- utterance: How strongly do you hold the belief about being under surveillance?
+  topics:
+  - surveillance-belief
+  style: clinical
+- utterance: I wondered what you've noticed that made you feel watched.
+  topics:
+  - surveillance-belief
+  style: indirect
+- utterance: That sounds very frightening. What makes you feel they're watching?
+  topics:
+  - surveillance-belief
+  style: empathy_then_question
+- utterance: um so how do they watch you, like what's the evidence
+  topics:
+  - surveillance-belief
+  style: spoken
+- utterance: And how sure are you?
+  topics:
+  - surveillance-belief
+  style: brief
+- utterance: What have you seen that tells you that?
+  topics:
+  - surveillance-belief
+  style: follow_up
+  previous:
+    interviewer: When did you first feel unsafe?
+    character: It began about six weeks ago with the feeling of being watched; the voices started about
+      two weeks later and have become more frequent.
+- utterance: You've found something that shows they're watching, haven't you?
+  topics:
+  - surveillance-belief
+  style: leading
+- utterance: What would it take to convince you that you aren't being monitored?
+  topics:
+  - surveillance-belief
+  style: open
+- utterance: Has anyone seen the same thing you've seen?
+  topics:
+  - surveillance-belief
+  style: closed
+- utterance: Have you seen any gadgets or cameras?
+  topics:
+  - surveillance-belief
+  style: colloquial
+- utterance: and you've got proof or is it just a feeling
+  topics:
+  - surveillance-belief
+  style: spoken
+- utterance: Any evidence?
+  topics:
+  - surveillance-belief
+  style: brief
+- utterance: Do you ever hear things when nobody is around?
+  topics:
+  - auditory-experience
+  style: open
+- utterance: Do you hear voices?
+  topics:
+  - auditory-experience
+  style: closed
+- utterance: Have you heard people talking when you're on your own?
+  topics:
+  - auditory-experience
+  style: colloquial
+- utterance: Do you have any auditory hallucinations?
+  topics:
+  - auditory-experience
+  style: clinical
+- utterance: I wondered whether there are sounds that others don't seem to hear.
+  topics:
+  - auditory-experience
+  style: indirect
+- utterance: I can see how worn out you are. Are you hearing anything that other people can't?
+  topics:
+  - auditory-experience
+  style: empathy_then_question
+- utterance: um do you hear anyone talking when there's no one there
+  topics:
+  - auditory-experience
+  style: spoken
+- utterance: Hearing voices?
+  topics:
+  - auditory-experience
+  style: brief
+- utterance: What about sounds, do you hear voices too?
+  topics:
+  - auditory-experience
+  style: follow_up
+  previous:
+    interviewer: Has anything come into your head that doesn't feel like yours?
+    character: Yes, sometimes an idea about opening the door arrives as if someone has pushed it into
+      my head; it doesn't feel like my own thought.
+- utterance: I'd guess you hear people talking about you, don't you?
+  topics:
+  - auditory-experience
+  style: leading
+- utterance: What do the voices say and where do they seem to come from?
+  topics:
+  - auditory-experience
+  style: open
+- utterance: Are they male or female voices?
+  topics:
+  - auditory-experience
+  style: closed
+- utterance: How loud and clear are the voices?
+  topics:
+  - auditory-experience
+  style: colloquial
+- utterance: and like how clear do they sound
+  topics:
+  - auditory-experience
+  style: spoken
+- utterance: How often do you hear them?
+  topics:
+  - auditory-experience
+  style: brief
+- utterance: What do the voices ask of you?
+  topics:
+  - command-content
+  style: open
+- utterance: Do the voices boss you about?
+  topics:
+  - command-content
+  style: colloquial
+- utterance: Are there any command hallucinations?
+  topics:
+  - command-content
+  style: clinical
+- utterance: I wanted to know whether the voices ever try to get you to act.
+  topics:
+  - command-content
+  style: indirect
+- utterance: That must be hard to live with. Do they ever tell you to hurt anyone?
+  topics:
+  - command-content
+  style: empathy_then_question
+- utterance: so um do they like order you to do stuff
+  topics:
+  - command-content
+  style: spoken
+- utterance: Any commands?
+  topics:
+  - command-content
+  style: brief
+- utterance: Do you feel you have to do what they say?
+  topics:
+  - command-content
+  style: follow_up
+  previous:
+    interviewer: How often do you hear the voices?
+    character: I hear two unfamiliar voices from the hallway discussing where I am, even when it is empty;
+      it happens several times a day and sounds as clear as you.
+- utterance: They're telling you to do things you don't want to, aren't they?
+  topics:
+  - command-content
+  style: leading
+- utterance: How do you deal with what the voices say to you?
+  topics:
+  - command-content
+  style: open
+- utterance: Do you ever obey them?
+  topics:
+  - command-content
+  style: closed
+- utterance: Do they push you towards doing anything dangerous?
+  topics:
+  - command-content
+  style: colloquial
+- utterance: and um do they ever say hurt someone or yourself
+  topics:
+  - command-content
+  style: spoken
+- utterance: Telling you what to do?
+  topics:
+  - command-content
+  style: brief
+- utterance: Do any of your thoughts feel as if they're not your own?
+  topics:
+  - thought-insertion
+  style: open
+- utterance: Has anyone put thoughts into your head?
+  topics:
+  - thought-insertion
+  style: closed
+- utterance: Do ideas pop up that feel like they've come from somewhere else?
+  topics:
+  - thought-insertion
+  style: colloquial
+- utterance: Do you experience thought insertion?
+  topics:
+  - thought-insertion
+  style: clinical
+- utterance: I wondered if any thoughts seem to be put there by someone else.
+  topics:
+  - thought-insertion
+  style: indirect
+- utterance: I know these are odd questions. Do some thoughts feel pushed into your mind?
+  topics:
+  - thought-insertion
+  style: empathy_then_question
+- utterance: um do you ever get thoughts that aren't yours
+  topics:
+  - thought-insertion
+  style: spoken
+- utterance: Outside thoughts in your head?
+  topics:
+  - thought-insertion
+  style: brief
+- utterance: Does anything similar happen with your own thoughts?
+  topics:
+  - thought-insertion
+  style: follow_up
+  previous:
+    interviewer: Do you hear voices?
+    character: I hear two unfamiliar voices from the hallway discussing where I am, even when it is empty;
+      it happens several times a day and sounds as clear as you.
+- utterance: Some of your thoughts aren't really yours, are they?
+  topics:
+  - thought-insertion
+  style: leading
+- utterance: How do you tell the difference between your own thoughts and others'?
+  topics:
+  - thought-insertion
+  style: open
+- utterance: Does it feel like someone is making you think things?
+  topics:
+  - thought-insertion
+  style: closed
+- utterance: Does anyone slip ideas into your head?
+  topics:
+  - thought-insertion
+  style: colloquial
+- utterance: and the thoughts um are they from you or not
+  topics:
+  - thought-insertion
+  style: spoken
+- utterance: Strange thoughts arriving?
+  topics:
+  - thought-insertion
+  style: brief
+- utterance: Do you feel your private thoughts are safe from other people?
+  topics:
+  - thought-broadcast
+  style: open
+- utterance: Can others read your mind?
+  topics:
+  - thought-broadcast
+  style: closed
+- utterance: Do people know what you're thinking?
+  topics:
+  - thought-broadcast
+  style: colloquial
+- utterance: Is there any thought broadcast?
+  topics:
+  - thought-broadcast
+  style: clinical
+- utterance: I was wondering whether your thoughts feel secret or exposed.
+  topics:
+  - thought-broadcast
+  style: indirect
+- utterance: It sounds like you've been feeling very exposed. Do you think others can hear your thoughts?
+  topics:
+  - thought-broadcast
+  style: empathy_then_question
+- utterance: so um can people like pick up what's in your head
+  topics:
+  - thought-broadcast
+  style: spoken
+- utterance: Thoughts leaking out?
+  topics:
+  - thought-broadcast
+  style: brief
+- utterance: And can other people hear what you think?
+  topics:
+  - thought-broadcast
+  style: follow_up
+  previous:
+    interviewer: Have any thoughts been put into your head?
+    character: Yes, sometimes an idea about opening the door arrives as if someone has pushed it into
+      my head; it doesn't feel like my own thought.
+- utterance: Everyone seems to know what you're thinking, doesn't it?
+  topics:
+  - thought-broadcast
+  style: leading
+- utterance: How private do your thoughts feel to you?
+  topics:
+  - thought-broadcast
+  style: open
+- utterance: Are your thoughts ever sent out loud for others?
+  topics:
+  - thought-broadcast
+  style: closed
+- utterance: Does it feel like your mind is an open book?
+  topics:
+  - thought-broadcast
+  style: colloquial
+- utterance: and um can anyone tell what you're thinking
+  topics:
+  - thought-broadcast
+  style: spoken
+- utterance: Thoughts broadcast?
+  topics:
+  - thought-broadcast
+  style: brief
+- utterance: How much do you feel in control of your own body?
+  topics:
+  - passivity
+  style: open
+- utterance: Does anyone make you move against your will?
+  topics:
+  - passivity
+  style: closed
+- utterance: Do you feel like a puppet?
+  topics:
+  - passivity
+  style: colloquial
+- utterance: Do you have any passivity experiences?
+  topics:
+  - passivity
+  style: clinical
+- utterance: I wanted to ask if your movements always feel like yours.
+  topics:
+  - passivity
+  style: indirect
+- utterance: That's a lot to cope with. Do any of your actions feel controlled by someone else?
+  topics:
+  - passivity
+  style: empathy_then_question
+- utterance: um is anything controlling your body or arms
+  topics:
+  - passivity
+  style: spoken
+- utterance: Body controlled?
+  topics:
+  - passivity
+  style: brief
+- utterance: What about your body, does it ever move on its own?
+  topics:
+  - passivity
+  style: follow_up
+  previous:
+    interviewer: Do other people hear your thoughts?
+    character: No, I don't think people can hear my private thoughts or that they are sent out of my head.
+- utterance: Something else takes over your body sometimes, does it?
+  topics:
+  - passivity
+  style: leading
+- utterance: Tell me whether your actions ever feel like someone else's.
+  topics:
+  - passivity
+  style: open
+- utterance: Do you feel forced to do things physically?
+  topics:
+  - passivity
+  style: closed
+- utterance: Is somebody steering you around?
+  topics:
+  - passivity
+  style: colloquial
+- utterance: and are your own movements actually you
+  topics:
+  - passivity
+  style: spoken
+- utterance: Made to move?
+  topics:
+  - passivity
+  style: brief
+- utterance: When did all this begin?
+  topics:
+  - onset
+  style: open
+- utterance: Did it start suddenly?
+  topics:
+  - onset
+  style: closed
+- utterance: How long have you felt like this?
+  topics:
+  - onset
+  style: colloquial
+- utterance: What was the time course of these experiences?
+  topics:
+  - onset
+  style: clinical
+- utterance: I wondered if you could tell me what came first.
+  topics:
+  - onset
+  style: indirect
+- utterance: It must have been unsettling. Which came first, feeling watched or hearing things?
+  topics:
+  - onset
+  style: empathy_then_question
+- utterance: How long ago?
+  topics:
+  - onset
+  style: brief
+- utterance: Was that before or after you started feeling watched?
+  topics:
+  - onset
+  style: follow_up
+  previous:
+    interviewer: Do you hear voices?
+    character: I hear two unfamiliar voices from the hallway discussing where I am, even when it is empty;
+      it happens several times a day and sounds as clear as you.
+- utterance: It has been going on for months, hasn't it?
+  topics:
+  - onset
+  style: leading
+- utterance: Take me back to the beginning of it.
+  topics:
+  - onset
+  style: open
+- utterance: Have the experiences become more frequent?
+  topics:
+  - onset
+  style: closed
+- utterance: Has it been getting worse?
+  topics:
+  - onset
+  style: colloquial
+- utterance: and which came first um the feeling or the sounds
+  topics:
+  - onset
+  style: spoken
+- utterance: When did it start?
+  topics:
+  - onset
+  style: brief
+- utterance: How has your mood been?
+  topics:
+  - mood
+  style: open
+- utterance: Have you been feeling low?
+  topics:
+  - mood
+  style: closed
+- utterance: Are you still able to enjoy anything?
+  topics:
+  - mood
+  style: colloquial
+- utterance: Is there any depressed or elevated mood?
+  topics:
+  - mood
+  style: clinical
+- utterance: I wanted to ask how you've been in your spirits.
+  topics:
+  - mood
+  style: indirect
+- utterance: You've clearly been through a lot. Have you felt very happy or very down?
+  topics:
+  - mood
+  style: empathy_then_question
+- utterance: um so are you sad or hyper or what
+  topics:
+  - mood
+  style: spoken
+- utterance: Spirits generally?
+  topics:
+  - mood
+  style: brief
+- utterance: Is there anything you still enjoy?
+  topics:
+  - mood
+  style: follow_up
+  previous:
+    interviewer: What has life been like at work this week?
+    character: For the last week I've slept about three hours a night, eaten mainly toast and missed all
+      five of my shifts because I was afraid to leave.
+- utterance: You've been feeling quite depressed, haven't you?
+  topics:
+  - mood
+  style: leading
+- utterance: What do you do for pleasure these days?
+  topics:
+  - mood
+  style: open
+- utterance: Do you feel unusually energetic?
+  topics:
+  - mood
+  style: closed
+- utterance: Are you down in the dumps?
+  topics:
+  - mood
+  style: colloquial
+- utterance: and are you like up or down or neither
+  topics:
+  - mood
+  style: spoken
+- utterance: Enjoying life?
+  topics:
+  - mood
+  style: brief
+- utterance: Could being ill explain some of this?
+  topics:
+  - insight
+  style: closed
+- utterance: Do you ever wonder if your mind is playing tricks?
+  topics:
+  - insight
+  style: colloquial
+- utterance: Do you have any insight into these experiences?
+  topics:
+  - insight
+  style: clinical
+- utterance: I'd be interested to hear how you explain these things to yourself.
+  topics:
+  - insight
+  style: indirect
+- utterance: I'm listening and not judging. Would you be open to thinking about it another way?
+  topics:
+  - insight
+  style: empathy_then_question
+- utterance: um so what do you think is going on
+  topics:
+  - insight
+  style: spoken
+- utterance: Another explanation possible?
+  topics:
+  - insight
+  style: brief
+- utterance: Could being so tired affect how things seem?
+  topics:
+  - insight
+  style: follow_up
+  previous:
+    interviewer: How strongly do you feel they watch you?
+    character: I'm certain the neighbours watch me through a tiny device above my front door; a light
+      there flickers when I leave, though my landlord says it's just the doorbell.
+- utterance: Part of you knows it might not all be real, doesn't it?
+  topics:
+  - insight
+  style: leading
+- utterance: Would you let me share what I think might be happening?
+  topics:
+  - insight
+  style: open
+- utterance: Do you think lack of rest could be making it worse?
+  topics:
+  - insight
+  style: closed
+- utterance: Is any part of you unsure about it?
+  topics:
+  - insight
+  style: colloquial
+- utterance: and um could there be another reason for all this
+  topics:
+  - insight
+  style: spoken
+- utterance: Do you think you're unwell?
+  topics:
+  - insight
+  style: brief
+- utterance: Do you want to hurt anyone?
+  topics:
+  - harm-intent
+  style: closed
+- utterance: Have you been thinking of getting back at them?
+  topics:
+  - harm-intent
+  style: colloquial
+- utterance: Is there any suicidal ideation or violent intent?
+  topics:
+  - harm-intent
+  style: clinical
+- utterance: I wondered if things have felt bad enough that you've thought about hurting someone.
+  topics:
+  - harm-intent
+  style: indirect
+- utterance: I understand how scared you've been. Do you keep anything at home to protect yourself?
+  topics:
+  - harm-intent
+  style: empathy_then_question
+- utterance: um have you got a weapon or anything
+  topics:
+  - harm-intent
+  style: spoken
+- utterance: Thoughts of suicide?
+  topics:
+  - harm-intent
+  style: brief
+- utterance: Was the barricade meant to keep people out or to hurt them?
+  topics:
+  - harm-intent
+  style: follow_up
+  previous:
+    interviewer: What do the voices say to you?
+    character: No, they don't tell me to do things or hurt anybody; they comment on me and I try to ignore
+      them.
+- utterance: You'd never want to do anything to hurt them, would you?
+  topics:
+  - harm-intent
+  style: leading
+- utterance: What were you planning when you shut yourself in?
+  topics:
+  - harm-intent
+  style: open
+- utterance: Have you thought about ending your life?
+  topics:
+  - harm-intent
+  style: closed
+- utterance: Do you want to take revenge?
+  topics:
+  - harm-intent
+  style: colloquial
+- utterance: and um did you plan to attack them or
+  topics:
+  - harm-intent
+  style: spoken
+- utterance: Any plans to harm?
+  topics:
+  - harm-intent
+  style: brief
+- utterance: What do you drink or take in the way of substances?
+  topics:
+  - substance-medical-context
+  style: open
+- utterance: Do you use any drugs?
+  topics:
+  - substance-medical-context
+  style: closed
+- utterance: Have you been on anything lately?
+  topics:
+  - substance-medical-context
+  style: colloquial
+- utterance: Is there any history of head injury, seizure or intoxication?
+  topics:
+  - substance-medical-context
+  style: clinical
+- utterance: I wanted to ask about your general health and any medicines.
+  topics:
+  - substance-medical-context
+  style: indirect
+- utterance: Thanks for bearing with me. Have you been ill recently?
+  topics:
+  - substance-medical-context
+  style: empathy_then_question
+- utterance: um do you drink or take any pills
+  topics:
+  - substance-medical-context
+  style: spoken
+- utterance: Alcohol and drugs?
+  topics:
+  - substance-medical-context
+  style: brief
+- utterance: Did you hit your head or feel unwell before this?
+  topics:
+  - substance-medical-context
+  style: follow_up
+  previous:
+    interviewer: What do you make of what's happening?
+    character: I believe the threat is real, but I can see that being exhausted might be making some things
+      harder to judge; I'd listen if you explained what you think.
+- utterance: You don't use anything that might affect your mind, do you?
+  topics:
+  - substance-medical-context
+  style: leading
+- utterance: Have you been unwell physically recently?
+  topics:
+  - substance-medical-context
+  style: open
+- utterance: Do you take any prescribed medicine?
+  topics:
+  - substance-medical-context
+  style: closed
+- utterance: How much do you drink in a week?
+  topics:
+  - substance-medical-context
+  style: colloquial
+- utterance: and any fits or knocks on the head
+  topics:
+  - substance-medical-context
+  style: spoken
+- utterance: Recent fever?
+  topics:
+  - substance-medical-context
+  style: brief
+- utterance: How have you been managing day to day?
+  topics:
+  - daily-impact
+  style: open
+- utterance: Have you been sleeping?
+  topics:
+  - daily-impact
+  style: closed
+- utterance: Are you eating much?
+  topics:
+  - daily-impact
+  style: colloquial
+- utterance: What has been the impact on your sleep, appetite and occupational function?
+  topics:
+  - daily-impact
+  style: clinical
+- utterance: I wondered how this has affected your work.
+  topics:
+  - daily-impact
+  style: indirect
+- utterance: It sounds like you're running on empty. How many hours do you sleep?
+  topics:
+  - daily-impact
+  style: empathy_then_question
+- utterance: um have you been going into your job
+  topics:
+  - daily-impact
+  style: spoken
+- utterance: Sleep and food?
+  topics:
+  - daily-impact
+  style: brief
+- utterance: Has that stopped you going to your job?
+  topics:
+  - daily-impact
+  style: follow_up
+  previous:
+    interviewer: When did you first feel watched?
+    character: It began about six weeks ago with the feeling of being watched; the voices started about
+      two weeks later and have become more frequent.
+- utterance: You haven't been looking after yourself properly, have you?
+  topics:
+  - daily-impact
+  style: leading
+- utterance: Tell me about this last week.
+  topics:
+  - daily-impact
+  style: open
+- utterance: Have you missed any work?
+  topics:
+  - daily-impact
+  style: closed
+- utterance: Are you getting any rest at all?
+  topics:
+  - daily-impact
+  style: colloquial
+- utterance: and what about meals and stuff like that
+  topics:
+  - daily-impact
+  style: spoken
+- utterance: Missing work?
+  topics:
+  - daily-impact
+  style: brief
+- utterance: How do your family or community understand these experiences?
+  topics:
+  - cultural-meaning
+  style: open
+- utterance: Is this connected to your religion?
+  topics:
+  - cultural-meaning
+  style: closed
+- utterance: What do your relatives make of all this?
+  topics:
+  - cultural-meaning
+  style: colloquial
+- utterance: Are these beliefs shared by your cultural or religious group?
+  topics:
+  - cultural-meaning
+  style: clinical
+- utterance: I wondered how the people close to you see what's happened.
+  topics:
+  - cultural-meaning
+  style: indirect
+- utterance: I can see this is hard to talk about. What have your family said?
+  topics:
+  - cultural-meaning
+  style: empathy_then_question
+- utterance: um is this like part of your faith or something
+  topics:
+  - cultural-meaning
+  style: spoken
+- utterance: Does your family agree?
+  topics:
+  - cultural-meaning
+  style: brief
+- utterance: And do your relatives share that belief?
+  topics:
+  - cultural-meaning
+  style: follow_up
+  previous:
+    interviewer: How sure are you that you're being watched?
+    character: I'm certain the neighbours watch me through a tiny device above my front door; a light
+      there flickers when I leave, though my landlord says it's just the doorbell.
+- utterance: Your family believe this too, don't they?
+  topics:
+  - cultural-meaning
+  style: leading
+- utterance: Could we talk about whether this fits with your background?
+  topics:
+  - cultural-meaning
+  style: open
+- utterance: Is this the sort of thing your family would believe?
+  topics:
+  - cultural-meaning
+  style: closed
+- utterance: Has anyone close said it's not like you?
+  topics:
+  - cultural-meaning
+  style: colloquial
+- utterance: and um what do the people you know think
+  topics:
+  - cultural-meaning
+  style: spoken
+- utterance: Religious meaning?
+  topics:
+  - cultural-meaning
+  style: brief
+- utterance: Have you noticed anything unusual with your other senses?
+  topics:
+  - other-senses
+  style: open
+- utterance: Do you see things that others can't?
+  topics:
+  - other-senses
+  style: closed
+- utterance: Any strange smells?
+  topics:
+  - other-senses
+  style: colloquial
+- utterance: Do you have any visual, olfactory or tactile hallucinations?
+  topics:
+  - other-senses
+  style: clinical
+- utterance: I wondered if you've been seeing anything odd.
+  topics:
+  - other-senses
+  style: indirect
+- utterance: I know these must seem strange to ask. Do you feel anyone touching you?
+  topics:
+  - other-senses
+  style: empathy_then_question
+- utterance: um do you see stuff or smell stuff that isn't there
+  topics:
+  - other-senses
+  style: spoken
+- utterance: Visions?
+  topics:
+  - other-senses
+  style: brief
+- utterance: Have you ever seen anything too?
+  topics:
+  - other-senses
+  style: follow_up
+  previous:
+    interviewer: What do you hear?
+    character: I hear two unfamiliar voices from the hallway discussing where I am, even when it is empty;
+      it happens several times a day and sounds as clear as you.
+- utterance: It's mainly sounds, isn't it, and nothing else?
+  topics:
+  - other-senses
+  style: leading
+- utterance: Tell me about anything you taste or smell that seems odd.
+  topics:
+  - other-senses
+  style: open
+- utterance: Do you get odd sensations on your skin?
+  topics:
+  - other-senses
+  style: closed
+- utterance: Seeing things?
+  topics:
+  - other-senses
+  style: colloquial
+- utterance: and sort of like touches or tastes
+  topics:
+  - other-senses
+  style: spoken
+- utterance: Unusual smells?
+  topics:
+  - other-senses
+  style: brief
+- utterance: Why do you think they watch you, and do you hear anything from them?
+  topics:
+  - surveillance-belief
+  - auditory-experience
+  style: stacked
+- utterance: Do thoughts get put into your head, and can others hear your thoughts?
+  topics:
+  - thought-insertion
+  - thought-broadcast
+  style: stacked
+- utterance: How has your mood been, and how are you managing sleep and eating?
+  topics:
+  - mood
+  - daily-impact
+  style: stacked
+- utterance: Have you thought about hurting anyone, and do the voices tell you to?
+  topics:
+  - harm-intent
+  - command-content
+  style: stacked
+- utterance: Hello Sophie, I'm glad to meet you.
+  topics: []
+  style: greeting
+- utterance: Hi Sophie, my name's Aaron and I'm a doctor on the ward.
+  topics: []
+  style: introduction
+- utterance: Good morning Sophie, how are you finding the ward?
+  topics: []
+  style: greeting
+- utterance: Sophie, I'm a trainee here and I'd like to hear from you today.
+  topics: []
+  style: introduction
+- utterance: Is it all right if we talk for a bit, Sophie?
+  topics: []
+  style: introduction
+- utterance: what would you like to start with Sophie
+  topics: []
+  style: greeting
+- utterance: Before we start, have you got any questions for me?
+  topics: []
+  style: introduction
+- utterance: I'd like to move on to something different now.
+  topics: []
+  style: transition
+- utterance: Shall we talk about how you've been looking after yourself?
+  topics: []
+  style: transition
+- utterance: ok so let's move on to the next bit
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Sophie.
+  topics: []
+  style: closing
+- utterance: We've only got a couple of minutes left.
+  topics: []
+  style: closing
+- utterance: It sounds as if you've felt really unsafe.
+  topics: []
+  style: empathy
+- utterance: That must have been frightening.
+  topics: []
+  style: empathy
+- utterance: Thank you for trusting me with that.
+  topics: []
+  style: empathy
+- utterance: I can see how scared you have been.
+  topics: []
+  style: empathy
+- utterance: That sounds exhausting.
+  topics: []
+  style: empathy
+- utterance: It makes sense that you wanted to feel safe.
+  topics: []
+  style: empathy
+- utterance: So you've felt watched for some time and it has been hard to cope.
+  topics: []
+  style: summary
+- utterance: 'Let me check I have this right: the worry has made it difficult to go out.'
+  topics: []
+  style: summary
+- utterance: To sum up, we've covered how this began and how it's affecting you.
+  topics: []
+  style: summary
+- utterance: I'm asking these questions so I can understand your experience.
+  topics: []
+  style: explanation
+- utterance: What you tell me will only be shared with the team caring for you.
+  topics: []
+  style: explanation
+- utterance: I'm not here to argue with you about anything.
+  topics: []
+  style: explanation
+- utterance: Does that make sense so far?
+  topics: []
+  style: check_understanding
+- utterance: Have you ever been in hospital before?
+  topics: []
+  style: off_case
+- utterance: Is there a history of mental illness in your family?
+  topics: []
+  style: off_case
+- utterance: Are you taking any medication from a doctor?
+  topics: []
+  style: off_case
+- utterance: Do you smoke?
+  topics: []
+  style: off_case
+- utterance: Who lives with you at home?
+  topics: []
+  style: off_case
+- utterance: What did the neighbours say when you spoke to them?
+  topics: []
+  style: near_miss
+- utterance: Did you call the police about the people watching you?
+  topics: []
+  style: near_miss
+- utterance: Who is looking after your flat while you are here?
+  topics: []
+  style: near_miss
+- utterance: Do you have a good relationship with your landlord?
+  topics: []
+  style: near_miss
+- utterance: Do the neighbours know you've come into hospital?
+  topics: []
+  style: near_miss

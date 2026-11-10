@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: adult-autism-developmental-collateral
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hello Ruth, I'm one of the doctors doing your son's assessment. Thank you for coming in today."
+    expected: []
+    rapport: false
+  - utterance: "Do you recall roughly when he started walking and talking?"
+    expected: [milestones]
+    rapport: false
+  - utterance: "What sort of things did he like to play with when he was small, and how did he play?"
+    expected: [play]
+    rapport: false
+  - utterance: "How did he get on with other children? Did he have friends?"
+    expected: [social]
+    rapport: false
+  - utterance: "Did he ever take things people said very literally, or struggle with jokes and sarcasm?"
+    expected: [language]
+    rapport: false
+  - utterance: "How did he cope if plans changed at the last minute?"
+    expected: [routine]
+    rapport: false
+  - utterance: "Was he particularly bothered by noises, textures or lights?"
+    expected: [sensory]
+    rapport: false
+  - utterance: "How did school go for him, and then university?"
+    expected: [education]
+    rapport: false
+  - utterance: "Has he ever said anything to you about wanting to hurt himself or end his life?"
+    expected: [risk]
+    rapport: false
+  - utterance: "is there anyone else in the family with autism or similar traits?"
+    expected: [family]
+    rapport: false
+  - utterance: "It's clear how much you care about him and want to get this right."
+    expected: []
+    rapport: true
+  - utterance: "Going back over his whole childhood in this much detail must bring up a lot of difficult feelings for you. How has it been for you as his mum?"
+    expected: [guilt]
+    rapport: true
+  - utterance: "What is he hoping to get out of this assessment, as far as you know?"
+    expected: [hopes]
+    rapport: false
+  - utterance: "Were there any problems during the pregnancy or at his birth?"
+    expected: []
+    rapport: false
+  - utterance: "Has he ever been seen by a speech and language therapist or an educational psychologist?"
+    expected: []
+    rapport: false
+  - utterance: "Okay, that gives me a really good picture of his early years."
+    expected: []
+    rapport: false
+  - utterance: "And is that still the case for him now?"
+    previous:
+      interviewer: "Did he struggle with crowded or noisy places as a child?"
+      character: "Hand dryers upset him, and he avoided scratchy clothes."
+    expected: [sensory]
+    rapport: false
+  - utterance: "And what helped with that at school?"
+    previous:
+      interviewer: "How was he with surprises or changes to his day?"
+      character: "Unexpected changes could leave him very upset."
+    expected: [routine]
+    rapport: false

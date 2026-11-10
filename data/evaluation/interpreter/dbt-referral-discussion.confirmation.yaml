@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: dbt-referral-discussion
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Leah, what sort of thing do you imagine happens in DBT?
+  expected:
+  - therapy-understanding
+  rapport: false
+- utterance: What usually happens just before your feelings become difficult to manage?
+  expected:
+  - crisis-pattern
+  rapport: false
+- utterance: Could you give me a sense of how often you've hurt yourself recently?
+  expected:
+  - self-injury-pattern
+  rapport: false
+- utterance: Are you thinking of ending your life at present, or have you prepared to do so?
+  expected:
+  - current-intent
+  rapport: false
+- utterance: What was your experience of any talking treatment before this referral?
+  expected:
+  - previous-services
+  rapport: false
+- utterance: What concerns come up when you picture attending sessions with other people?
+  expected:
+  - group-concern
+  rapport: false
+- utterance: Which times could you keep free to attend the programme alongside work?
+  expected:
+  - attendance
+  rapport: false
+- utterance: Between appointments, how much practice could you manage and what makes exercises difficult?
+  expected:
+  - skills-practice
+  rapport: false
+- utterance: would you be willing to have an assessment to explore it further?
+  expected:
+  - referral-preference
+  rapport: false
+  previous:
+    interviewer: What do you understand about this treatment so far?
+    character: I only know the name DBT; I thought it might be a class where someone tells me how to behave.
+- utterance: Have any of your injuries needed stitches?
+  expected: []
+  rapport: false

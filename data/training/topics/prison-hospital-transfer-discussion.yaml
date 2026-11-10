@@ -1,0 +1,925 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: prison-hospital-transfer-discussion
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Do you think you've been unwell lately?
+  topics:
+  - understanding
+  style: closed
+- utterance: Why do you reckon they're moving you, Marcus?
+  topics:
+  - understanding
+  style: colloquial
+- utterance: How do you make sense of the decision that you need hospital assessment?
+  topics:
+  - understanding
+  style: clinical
+- utterance: I'd like to hear what you make of the plan for you to go to hospital
+  topics:
+  - understanding
+  style: indirect
+- utterance: I can see this has come as a shock. What do you think is behind the transfer?
+  topics:
+  - understanding
+  style: empathy_then_question
+- utterance: so um what do you think this is all about, the hospital thing
+  topics:
+  - understanding
+  style: spoken
+- utterance: And why do you think it's happening?
+  topics:
+  - understanding
+  style: brief
+- utterance: You don't think you need to go, do you?
+  topics:
+  - understanding
+  style: leading
+- utterance: Do you think that has anything to do with why they want you in hospital?
+  topics:
+  - understanding
+  style: follow_up
+  previous:
+    interviewer: Have you felt as though people are watching you?
+    character: For three weeks I've been certain a hidden camera in my cell is passing everything I do
+      to people outside; the officers say there isn't one.
+- utterance: Do you think that's a sign you're unwell?
+  topics:
+  - understanding
+  style: follow_up
+  previous:
+    interviewer: Do you hear voices when no-one is around?
+    character: I hear a man's voice saying I'm going to be caught out several times each evening, even
+      when nobody is nearby; it doesn't tell me to do anything.
+- utterance: Tell me how you see your own health at the moment.
+  topics:
+  - understanding
+  style: open
+- utterance: Is it clear to you what the hospital is for?
+  topics:
+  - understanding
+  style: closed
+- utterance: What have they told you about why you're going?
+  topics:
+  - understanding
+  style: colloquial
+- utterance: right so, er, do you think there's something wrong with you or not
+  topics:
+  - understanding
+  style: spoken
+- utterance: Tell me about any worries you have about being watched or monitored.
+  topics:
+  - persecution
+  style: open
+- utterance: Do you feel people are watching you at the moment?
+  topics:
+  - persecution
+  style: closed
+- utterance: Have you been feeling like someone's got eyes on you?
+  topics:
+  - persecution
+  style: colloquial
+- utterance: Have you had any suspicious thoughts or beliefs that others are monitoring you?
+  topics:
+  - persecution
+  style: clinical
+- utterance: I wondered how safe and private you feel in your cell at the moment
+  topics:
+  - persecution
+  style: indirect
+- utterance: That sounds really unsettling. Do you feel someone is following what you do?
+  topics:
+  - persecution
+  style: empathy_then_question
+- utterance: um have you been, like, feeling watched or that people are out to get you
+  topics:
+  - persecution
+  style: spoken
+- utterance: Anyone watching you?
+  topics:
+  - persecution
+  style: brief
+- utterance: You feel people are keeping tabs on you, don't you?
+  topics:
+  - persecution
+  style: leading
+- utterance: Do you feel people are against you in here, then?
+  topics:
+  - persecution
+  style: follow_up
+  previous:
+    interviewer: Why do you think you're going to hospital?
+    character: I think they're moving me because I've complained, not because I'm ill; I don't see why
+      I need a psychiatric hospital.
+- utterance: How sure are you that you're being watched?
+  topics:
+  - persecution
+  style: follow_up
+  previous:
+    interviewer: Are you hearing anything that's not there?
+    character: I hear a man's voice saying I'm going to be caught out several times each evening, even
+      when nobody is nearby; it doesn't tell me to do anything.
+- utterance: What's been going on in your mind about people outside knowing your business?
+  topics:
+  - persecution
+  style: open
+- utterance: Is there anything in your cell that you think is being used to watch you?
+  topics:
+  - persecution
+  style: closed
+- utterance: Do you reckon someone's spying on you?
+  topics:
+  - persecution
+  style: colloquial
+- utterance: so, um, how convinced are you that somebody's keeping an eye on you
+  topics:
+  - persecution
+  style: spoken
+- utterance: Tell me about any experiences of hearing things that other people don't.
+  topics:
+  - voices
+  style: open
+- utterance: Are you hearing anything that's not there?
+  topics:
+  - voices
+  style: colloquial
+- utterance: Have you been having any hallucinations, such as hearing voices?
+  topics:
+  - voices
+  style: clinical
+- utterance: I wondered whether you've heard anybody talking when nobody's there
+  topics:
+  - voices
+  style: indirect
+- utterance: I'm sorry you've been through so much. Do you ever hear someone talking to you when you're
+    alone?
+  topics:
+  - voices
+  style: empathy_then_question
+- utterance: um do you hear a voice or voices, like, when there's nobody there
+  topics:
+  - voices
+  style: spoken
+- utterance: Any voices at all?
+  topics:
+  - voices
+  style: brief
+- utterance: You've been hearing voices, haven't you?
+  topics:
+  - voices
+  style: leading
+- utterance: Is there anyone talking to you as well?
+  topics:
+  - voices
+  style: follow_up
+  previous:
+    interviewer: Do you feel people are watching you at the moment?
+    character: For three weeks I've been certain a hidden camera in my cell is passing everything I do
+      to people outside; the officers say there isn't one.
+- utterance: Does it ever tell you to do things?
+  topics:
+  - voices
+  style: follow_up
+  previous:
+    interviewer: Do you hear voices when no-one is around?
+    character: I hear a man's voice saying I'm going to be caught out several times each evening, even
+      when nobody is nearby; it doesn't tell me to do anything.
+- utterance: Describe what the voice or voices say to you.
+  topics:
+  - voices
+  style: open
+- utterance: Is it a man's voice or a woman's?
+  topics:
+  - voices
+  style: closed
+- utterance: What's the voice saying, then?
+  topics:
+  - voices
+  style: colloquial
+- utterance: and how often, um, does it happen, the hearing things
+  topics:
+  - voices
+  style: spoken
+- utterance: How have you been sleeping this week?
+  topics:
+  - sleep
+  style: open
+- utterance: Are you managing to sleep at night?
+  topics:
+  - sleep
+  style: closed
+- utterance: Are you getting any shut-eye in there?
+  topics:
+  - sleep
+  style: colloquial
+- utterance: How many hours of sleep are you getting a night?
+  topics:
+  - sleep
+  style: clinical
+- utterance: I wondered how your nights have been
+  topics:
+  - sleep
+  style: indirect
+- utterance: That sounds exhausting. How much are you sleeping at the moment?
+  topics:
+  - sleep
+  style: empathy_then_question
+- utterance: so um are you sleeping okay, like how many hours
+  topics:
+  - sleep
+  style: spoken
+- utterance: And sleep?
+  topics:
+  - sleep
+  style: brief
+- utterance: You're not sleeping much, are you?
+  topics:
+  - sleep
+  style: leading
+- utterance: Does that keep you awake at night?
+  topics:
+  - sleep
+  style: follow_up
+  previous:
+    interviewer: Do you feel people are watching you at the moment?
+    character: For three weeks I've been certain a hidden camera in my cell is passing everything I do
+      to people outside; the officers say there isn't one.
+- utterance: And are you getting enough sleep?
+  topics:
+  - sleep
+  style: follow_up
+  previous:
+    interviewer: Do you hear voices when no-one is around?
+    character: I hear a man's voice saying I'm going to be caught out several times each evening, even
+      when nobody is nearby; it doesn't tell me to do anything.
+- utterance: Tell me about how tired you've been feeling.
+  topics:
+  - sleep
+  style: open
+- utterance: Do you feel rested when you wake up?
+  topics:
+  - sleep
+  style: closed
+- utterance: Are you tossing and turning a lot?
+  topics:
+  - sleep
+  style: colloquial
+- utterance: so er what are your nights like at the moment
+  topics:
+  - sleep
+  style: spoken
+- utterance: How has your appetite been?
+  topics:
+  - eating
+  style: open
+- utterance: Are you finishing your meals?
+  topics:
+  - eating
+  style: closed
+- utterance: Are you eating much?
+  topics:
+  - eating
+  style: colloquial
+- utterance: How has your food and fluid intake been this week?
+  topics:
+  - eating
+  style: clinical
+- utterance: I wanted to ask about how you've been managing meals
+  topics:
+  - eating
+  style: indirect
+- utterance: It can be hard when you feel on edge. Are you eating and drinking normally?
+  topics:
+  - eating
+  style: empathy_then_question
+- utterance: um are you eating properly or leaving your food
+  topics:
+  - eating
+  style: spoken
+- utterance: And your eating?
+  topics:
+  - eating
+  style: brief
+- utterance: You haven't been eating much, have you?
+  topics:
+  - eating
+  style: leading
+- utterance: Is it the same with your meals?
+  topics:
+  - eating
+  style: follow_up
+  previous:
+    interviewer: How have you been sleeping this week?
+    character: I've slept about two hours a night for the past week because I'm on edge, and I feel exhausted.
+- utterance: Has that affected how much you manage to eat?
+  topics:
+  - eating
+  style: follow_up
+  previous:
+    interviewer: Do you feel people are watching you at the moment?
+    character: For three weeks I've been certain a hidden camera in my cell is passing everything I do
+      to people outside; the officers say there isn't one.
+- utterance: Tell me what you've eaten and drunk over the past few days.
+  topics:
+  - eating
+  style: open
+- utterance: Are you drinking enough fluids?
+  topics:
+  - eating
+  style: closed
+- utterance: Is the food going down okay in there?
+  topics:
+  - eating
+  style: colloquial
+- utterance: so, um, have you lost your appetite at all
+  topics:
+  - eating
+  style: spoken
+- utterance: How do you manage when you feel frightened or angry?
+  topics:
+  - safety
+  style: open
+- utterance: Are you thinking about hurting anyone?
+  topics:
+  - safety
+  style: colloquial
+- utterance: I wondered whether things have ever got so bad you thought about hurting someone
+  topics:
+  - safety
+  style: indirect
+- utterance: I know it's hard to be honest about this. Have you thought of harming yourself or anybody
+    else?
+  topics:
+  - safety
+  style: empathy_then_question
+- utterance: um have you been thinking of hurting yourself or, or someone else
+  topics:
+  - safety
+  style: spoken
+- utterance: Any thoughts of harm?
+  topics:
+  - safety
+  style: brief
+- utterance: You'd never hurt anyone, would you?
+  topics:
+  - safety
+  style: leading
+- utterance: Has that made you want to lash out at anyone?
+  topics:
+  - safety
+  style: follow_up
+  previous:
+    interviewer: Do you feel people are watching you at the moment?
+    character: For three weeks I've been certain a hidden camera in my cell is passing everything I do
+      to people outside; the officers say there isn't one.
+- utterance: Has it made you think about harming yourself?
+  topics:
+  - safety
+  style: follow_up
+  previous:
+    interviewer: Are you hearing anything that's not there?
+    character: I hear a man's voice saying I'm going to be caught out several times each evening, even
+      when nobody is nearby; it doesn't tell me to do anything.
+- utterance: Tell me about any fights or incidents since you've been inside.
+  topics:
+  - safety
+  style: open
+- utterance: Do you keep anything in your cell that could be used as a weapon?
+  topics:
+  - safety
+  style: closed
+- utterance: Have you been in any scraps with other prisoners or staff?
+  topics:
+  - safety
+  style: colloquial
+- utterance: so are you, like, safe, have you ever thought about ending it all
+  topics:
+  - safety
+  style: spoken
+- utterance: What are your thoughts about being given medication?
+  topics:
+  - treatment-objection
+  style: open
+- utterance: Have you taken any psychiatric medication before?
+  topics:
+  - treatment-objection
+  style: closed
+- utterance: Did tablets ever agree with you in the past?
+  topics:
+  - treatment-objection
+  style: colloquial
+- utterance: Have you had side effects from any psychiatric medicine before?
+  topics:
+  - treatment-objection
+  style: clinical
+- utterance: I wondered how you feel about treatment in hospital
+  topics:
+  - treatment-objection
+  style: indirect
+- utterance: It's natural to worry about this. How do you feel about being given treatment?
+  topics:
+  - treatment-objection
+  style: empathy_then_question
+- utterance: um have you been on any medication before and did it, you know, suit you
+  topics:
+  - treatment-objection
+  style: spoken
+- utterance: Previous medication, any problems?
+  topics:
+  - treatment-objection
+  style: brief
+- utterance: You'd rather not take any medication, wouldn't you?
+  topics:
+  - treatment-objection
+  style: leading
+- utterance: How would you feel about taking medicine there?
+  topics:
+  - treatment-objection
+  style: follow_up
+  previous:
+    interviewer: Why do you think you're going to hospital?
+    character: I think they're moving me because I've complained, not because I'm ill; I don't see why
+      I need a psychiatric hospital.
+- utterance: Have you ever had medicine for this before?
+  topics:
+  - treatment-objection
+  style: follow_up
+  previous:
+    interviewer: Do you feel people are watching you at the moment?
+    character: For three weeks I've been certain a hidden camera in my cell is passing everything I do
+      to people outside; the officers say there isn't one.
+- utterance: Tell me about any past experience of psychiatric treatment.
+  topics:
+  - treatment-objection
+  style: open
+- utterance: Do you have any concerns about being made to take treatment?
+  topics:
+  - treatment-objection
+  style: closed
+- utterance: Did any pills do you harm last time?
+  topics:
+  - treatment-objection
+  style: colloquial
+- utterance: so um what do you know about the meds and would you want them
+  topics:
+  - treatment-objection
+  style: spoken
+- utterance: What do you know about how to challenge this decision?
+  topics:
+  - appeal-question
+  style: open
+- utterance: Can you ask someone independent to look at the decision?
+  topics:
+  - appeal-question
+  style: closed
+- utterance: Do you know who could back you up if you disagree?
+  topics:
+  - appeal-question
+  style: colloquial
+- utterance: Have you been informed of any right of appeal or review?
+  topics:
+  - appeal-question
+  style: clinical
+- utterance: I wanted to check you know where to turn if you disagree with this
+  topics:
+  - appeal-question
+  style: indirect
+- utterance: I can hear you feel unheard. Has anyone explained how to dispute the transfer?
+  topics:
+  - appeal-question
+  style: empathy_then_question
+- utterance: um has anyone said you can, like, ask for it to be looked at again
+  topics:
+  - appeal-question
+  style: spoken
+- utterance: Has anyone mentioned appeals?
+  topics:
+  - appeal-question
+  style: brief
+- utterance: Nobody's told you about independent help, have they?
+  topics:
+  - appeal-question
+  style: leading
+- utterance: Do you know whether anyone can look at that decision again?
+  topics:
+  - appeal-question
+  style: follow_up
+  previous:
+    interviewer: Why do you think you're going to hospital?
+    character: I think they're moving me because I've complained, not because I'm ill; I don't see why
+      I need a psychiatric hospital.
+- utterance: And has anyone explained who could speak up for you?
+  topics:
+  - appeal-question
+  style: follow_up
+  previous:
+    interviewer: What do you know about the move itself?
+    character: Nobody has told me which hospital, when I'd go or what I can take; I want those details
+      written down because I lose track when people rush.
+- utterance: How would you go about telling someone you disagree?
+  topics:
+  - appeal-question
+  style: open
+- utterance: Has anyone offered you an advocate?
+  topics:
+  - appeal-question
+  style: closed
+- utterance: Is there anyone you can complain to about this?
+  topics:
+  - appeal-question
+  style: colloquial
+- utterance: so um do you know if there's someone to help you say you don't agree
+  topics:
+  - appeal-question
+  style: spoken
+- utterance: What information have you been given about the move itself?
+  topics:
+  - next-steps
+  style: open
+- utterance: Do you know which hospital you'd be going to?
+  topics:
+  - next-steps
+  style: closed
+- utterance: Has anyone said when you're going, or what you can bring?
+  topics:
+  - next-steps
+  style: colloquial
+- utterance: Have the practical arrangements of the transfer been explained to you?
+  topics:
+  - next-steps
+  style: clinical
+- utterance: I was wondering what you know so far about the practical side of going
+  topics:
+  - next-steps
+  style: indirect
+- utterance: It must be unsettling not knowing. What have you been told about where and when?
+  topics:
+  - next-steps
+  style: empathy_then_question
+- utterance: um do you know where you're going, like, when and what you can take
+  topics:
+  - next-steps
+  style: spoken
+- utterance: Any details of the move?
+  topics:
+  - next-steps
+  style: brief
+- utterance: Nobody's told you the details, have they?
+  topics:
+  - next-steps
+  style: leading
+- utterance: Has anyone said where they're sending you?
+  topics:
+  - next-steps
+  style: follow_up
+  previous:
+    interviewer: Why do you think you're going to hospital?
+    character: I think they're moving me because I've complained, not because I'm ill; I don't see why
+      I need a psychiatric hospital.
+- utterance: Do you know what you'll be able to take with you?
+  topics:
+  - next-steps
+  style: follow_up
+  previous:
+    interviewer: Do you know who could back you up if you disagree?
+    character: I don't know whether I can ask someone independent to look at the decision, or who could
+      help me explain that I disagree.
+- utterance: Tell me what you'd most like to know about the move.
+  topics:
+  - next-steps
+  style: open
+- utterance: Would it help to have the details of the transfer in writing?
+  topics:
+  - next-steps
+  style: closed
+- utterance: What do you know about the hospital, like when you'll go?
+  topics:
+  - next-steps
+  style: colloquial
+- utterance: so er what happens on the day, do you know
+  topics:
+  - next-steps
+  style: spoken
+- utterance: Who would you like us to let know about what's happening?
+  topics:
+  - family-contact
+  style: open
+- utterance: Is there a family member we should contact?
+  topics:
+  - family-contact
+  style: closed
+- utterance: Is there anyone you want us to ring?
+  topics:
+  - family-contact
+  style: colloquial
+- utterance: Do you consent to us sharing information about the transfer with your relatives?
+  topics:
+  - family-contact
+  style: clinical
+- utterance: I wondered who matters most to you outside, and who should hear about this
+  topics:
+  - family-contact
+  style: indirect
+- utterance: It's hard being away from people. Who would you like to stay in touch with?
+  topics:
+  - family-contact
+  style: empathy_then_question
+- utterance: um is there anyone, like family, you'd want told where you are
+  topics:
+  - family-contact
+  style: spoken
+- utterance: Who should we contact?
+  topics:
+  - family-contact
+  style: brief
+- utterance: You'd want your family told, wouldn't you?
+  topics:
+  - family-contact
+  style: leading
+- utterance: Would you like someone outside told about that?
+  topics:
+  - family-contact
+  style: follow_up
+  previous:
+    interviewer: Do you know where you're going?
+    character: Nobody has told me which hospital, when I'd go or what I can take; I want those details
+      written down because I lose track when people rush.
+- utterance: Is there anyone you want to speak to by phone while you're there?
+  topics:
+  - family-contact
+  style: follow_up
+  previous:
+    interviewer: How do you like things explained to you?
+    character: I'd be more willing to talk if someone explained one step at a time and checked what I
+      thought, rather than just reading a decision out.
+- utterance: Tell me about the people you'd want to see or phone while you're in hospital.
+  topics:
+  - family-contact
+  style: open
+- utterance: Are you happy for us to tell your relatives about the move?
+  topics:
+  - family-contact
+  style: closed
+- utterance: Anyone at home who ought to know what's going on?
+  topics:
+  - family-contact
+  style: colloquial
+- utterance: so er should we let anyone know, or keep it private
+  topics:
+  - family-contact
+  style: spoken
+- utterance: What worries you most about agreeing to go?
+  topics:
+  - legal-fear
+  style: open
+- utterance: Is there anything about this move that's scaring you?
+  topics:
+  - legal-fear
+  style: colloquial
+- utterance: Do you have any concerns about how the transfer relates to your legal situation?
+  topics:
+  - legal-fear
+  style: clinical
+- utterance: I wondered whether there's anything about this you've found hard to say
+  topics:
+  - legal-fear
+  style: indirect
+- utterance: I'd like you to feel able to say anything here. What frightens you about it?
+  topics:
+  - legal-fear
+  style: empathy_then_question
+- utterance: um is there something you're, like, scared of about going, with the court and that
+  topics:
+  - legal-fear
+  style: spoken
+- utterance: Worried about the charge?
+  topics:
+  - legal-fear
+  style: brief
+- utterance: You're worried this will go against you in court, aren't you?
+  topics:
+  - legal-fear
+  style: leading
+- utterance: Is there something else bothering you about it that's hard to say?
+  topics:
+  - legal-fear
+  style: follow_up
+  previous:
+    interviewer: Why do you think you're going to hospital?
+    character: I think they're moving me because I've complained, not because I'm ill; I don't see why
+      I need a psychiatric hospital.
+- utterance: Are you worried you might be kept in hospital for a long time?
+  topics:
+  - legal-fear
+  style: follow_up
+  previous:
+    interviewer: Has anyone mentioned appeals?
+    character: I don't know whether I can ask someone independent to look at the decision, or who could
+      help me explain that I disagree.
+- utterance: What do you think agreeing to hospital would mean for you?
+  topics:
+  - legal-fear
+  style: open
+- utterance: Do you worry that going would count against you?
+  topics:
+  - legal-fear
+  style: closed
+- utterance: Are you afraid you won't get out again?
+  topics:
+  - legal-fear
+  style: colloquial
+- utterance: so um does it feel like if you say yes it'd look bad
+  topics:
+  - legal-fear
+  style: spoken
+- utterance: What would help you feel more involved in these decisions?
+  topics:
+  - participation
+  style: open
+- utterance: Would it help if I explained things one step at a time?
+  topics:
+  - participation
+  style: closed
+- utterance: How do you like things explained to you?
+  topics:
+  - participation
+  style: colloquial
+- utterance: What are your communication preferences when decisions are discussed?
+  topics:
+  - participation
+  style: clinical
+- utterance: I'd like to know how best to talk you through all this
+  topics:
+  - participation
+  style: indirect
+- utterance: I want to make sure you're not rushed. How would you like me to go through it?
+  topics:
+  - participation
+  style: empathy_then_question
+- utterance: How should I explain things?
+  topics:
+  - participation
+  style: brief
+- utterance: You'd rather I went slowly, wouldn't you?
+  topics:
+  - participation
+  style: leading
+- utterance: Would it help if I checked what you think as we go?
+  topics:
+  - participation
+  style: follow_up
+  previous:
+    interviewer: What do you know about the move itself?
+    character: Nobody has told me which hospital, when I'd go or what I can take; I want those details
+      written down because I lose track when people rush.
+- utterance: What would make it easier to talk about all this?
+  topics:
+  - participation
+  style: follow_up
+  previous:
+    interviewer: Why do you think you're going to hospital?
+    character: I think they're moving me because I've complained, not because I'm ill; I don't see why
+      I need a psychiatric hospital.
+- utterance: Tell me what makes it easier for you to take part in meetings like this.
+  topics:
+  - participation
+  style: open
+- utterance: Do you want me to stop and check in after each part?
+  topics:
+  - participation
+  style: closed
+- utterance: Do you prefer short answers or the full picture?
+  topics:
+  - participation
+  style: colloquial
+- utterance: so er is it better if I go bit by bit or
+  topics:
+  - participation
+  style: spoken
+- utterance: Why do you think you're going to hospital, and do you feel people are watching you?
+  topics:
+  - understanding
+  - persecution
+  style: stacked
+- utterance: Do you hear any voices, and how have you been sleeping?
+  topics:
+  - voices
+  - sleep
+  style: stacked
+- utterance: Have you had medicine before, and do you know how to challenge the decision?
+  topics:
+  - treatment-objection
+  - appeal-question
+  style: stacked
+- utterance: Do you know where you're going, and is there anyone we should tell?
+  topics:
+  - next-steps
+  - family-contact
+  style: stacked
+- utterance: Hello Marcus, thanks for coming along.
+  topics: []
+  style: greeting
+- utterance: Good morning, Marcus. Please take a seat.
+  topics: []
+  style: greeting
+- utterance: Hi, I'm one of the psychiatry trainees on the prison healthcare team.
+  topics: []
+  style: introduction
+- utterance: My name is Dr Patel and I work with the healthcare team here.
+  topics: []
+  style: introduction
+- utterance: Is it all right if we talk about the move for a few minutes?
+  topics: []
+  style: greeting
+- utterance: Where would you like to start, Marcus?
+  topics: []
+  style: greeting
+- utterance: Before we begin, do you have any questions for me?
+  topics: []
+  style: greeting
+- utterance: I'd like to move on to something different now.
+  topics: []
+  style: transition
+- utterance: Let's talk about what comes next.
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Marcus.
+  topics: []
+  style: closing
+- utterance: Thank you for talking this through with me, I'll make sure the team hears what you've said.
+  topics: []
+  style: closing
+- utterance: Marcus, is this a good time, or would you rather we waited?
+  topics: []
+  style: greeting
+- utterance: It sounds like this has been a very frightening time for you.
+  topics: []
+  style: empathy
+- utterance: I can see you want to be treated as someone whose wishes count.
+  topics: []
+  style: empathy
+- utterance: That's a very understandable way to feel.
+  topics: []
+  style: empathy
+- utterance: So you haven't agreed to the move and nobody has explained it to you properly.
+  topics: []
+  style: summary
+- utterance: 'Let me check I''ve understood: you''re worried and you''d like more say in what happens.'
+  topics: []
+  style: summary
+- utterance: So the main things are your sleep, your worries and what the hospital will involve.
+  topics: []
+  style: summary
+- utterance: The purpose of the transfer is to give you the assessment and treatment that we cannot provide
+    here.
+  topics: []
+  style: explanation
+- utterance: Going to hospital is a health decision, and it is separate from your court case.
+  topics: []
+  style: explanation
+- utterance: I'll explain what the hospital team would do when you arrive, one step at a time.
+  topics: []
+  style: explanation
+- utterance: Does that make sense so far?
+  topics: []
+  style: check_understanding
+- utterance: Can you tell me in your own words what I've just said?
+  topics: []
+  style: check_understanding
+- utterance: Is there anything I've explained badly?
+  topics: []
+  style: check_understanding
+- utterance: Do you have any physical health problems?
+  topics: []
+  style: off_case
+- utterance: What did you do for a living before you came here?
+  topics: []
+  style: off_case
+- utterance: Do you smoke or use any drugs?
+  topics: []
+  style: off_case
+- utterance: Have you ever been in hospital for anything other than your mental health?
+  topics: []
+  style: off_case
+- utterance: Do you have any children?
+  topics: []
+  style: off_case
+- utterance: How long will I be in hospital for?
+  topics: []
+  style: near_miss
+- utterance: What will the court decide about my case?
+  topics: []
+  style: near_miss
+- utterance: What was the name and dose of the medicine you were given?
+  topics: []
+  style: near_miss
+- utterance: Who is your solicitor?
+  topics: []
+  style: near_miss
+- utterance: Did the officers search your cell this week?
+  topics: []
+  style: near_miss
+- utterance: When did you last see a psychiatrist?
+  topics: []
+  style: near_miss

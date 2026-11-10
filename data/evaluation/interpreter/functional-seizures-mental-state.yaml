@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: functional-seizures-mental-state
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hello Hannah, I'm one of the psychiatrists who works alongside the neurology team. Thanks for seeing me."
+    expected: []
+    rapport: false
+  - utterance: "What did the neurologist explain to you yesterday?"
+    expected: [understanding]
+    rapport: false
+  - utterance: "Can you describe what one of these attacks is like and how often they happen?"
+    expected: [episodes]
+    rapport: false
+  - utterance: "How has your mood been recently?"
+    expected: [mood]
+    rapport: false
+  - utterance: "Do you find yourself worrying a lot, or feeling anxious?"
+    expected: [anxiety]
+    rapport: false
+  - utterance: "Do you ever feel detached from yourself or your surroundings, like things aren't real?"
+    expected: [dissociation]
+    rapport: false
+  - utterance: "What was going on in your life around the time these started?"
+    expected: [stress]
+    rapport: false
+  - utterance: "Have you had any thoughts of harming yourself or ending your life?"
+    expected: [risk]
+    rapport: false
+  - utterance: "Have you ever heard voices when nobody's around?"
+    expected: [perceptions]
+    rapport: false
+  - utterance: "Has anything difficult or traumatic happened to you in the past?"
+    expected: [history]
+    rapport: false
+  - utterance: "How do you feel about the word functional, and what other people might make of it?"
+    expected: [stigma]
+    rapport: false
+  - utterance: "It sounds like you've had a really unsettling few days, and it's completely understandable to still be processing it."
+    expected: []
+    rapport: true
+  - previous:
+      interviewer: "Have you been hurt during any of the attacks?"
+      character: "I bruised my shoulder in a fall."
+    utterance: "And have you ever felt like you don't want to be here anymore?"
+    expected: [risk]
+    rapport: false
+  - previous:
+      interviewer: "What happens just before an attack?"
+      character: "I feel distant, then lose track of time."
+    utterance: "When you say distant, what's that like?"
+    expected: [dissociation]
+    rapport: false
+  - utterance: "Living with attacks that come out of nowhere, without knowing what was causing them, must have been incredibly draining."
+    expected: []
+    rapport: true
+  - utterance: "Are you on any anti-epileptic medication at the moment?"
+    expected: []
+    rapport: false
+  - utterance: "How has your appetite been?"
+    expected: []
+    rapport: false
+  - utterance: "Thank you, that helps me understand what the last few months have been like for you."
+    expected: []
+    rapport: false

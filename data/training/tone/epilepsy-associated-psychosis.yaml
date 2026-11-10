@@ -1,0 +1,159 @@
+# Training lines for the tone classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: epilepsy-associated-psychosis
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Have you ever thought of harming yourself?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Do you hear a voice that others can't?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Do you feel others can hear your thoughts?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Which tablets do you take for epilepsy?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: um when did the seizures happen
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Sorry, could I ask whether you know where you are today?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: If it's all right, may I ask a bit about your seizures?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Hello Sophie, I'm Dr Okafor from the community team.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: Hi Sophie, come and sit down.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: So these experiences have started since your seizures.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: summary
+- utterance: Right, thank you. And how often does that happen?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Okay, thanks Sophie.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: That sounds scary.
+  empathy: 1
+  empathy_words: That sounds scary.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I'm sorry to hear that.
+  empathy: 1
+  empathy_words: I'm sorry to hear that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That sounds stressful. Who is staying with you?
+  empathy: 1
+  empathy_words: That sounds stressful.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I understand. How long has it been like that?
+  empathy: 1
+  empathy_words: I understand.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I won't dismiss what you tell me, and it makes sense that this feels real and frightening to you.
+  empathy: 2
+  empathy_words: I won't dismiss what you tell me, and it makes sense that this feels real and frightening to you.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: What do you make of it?
+    character: Part of me wonders whether this follows the seizures. It still feels real, and I'm scared you'll dismiss everything I say.
+- utterance: You've worked hard for your independence, so it's understandable to be scared of losing it.
+  empathy: 2
+  empathy_words: You've worked hard for your independence, so it's understandable to be scared of losing it.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: What worries you most?
+    character: I worry I'll lose the independence I worked for with epilepsy. I haven't told my sister how frightened I am.
+- utterance: It sounds as though everything private has felt exposed, and that must be very distressing.
+  empathy: 2
+  empathy_words: It sounds as though everything private has felt exposed, and that must be very distressing.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: It must be very unsettling to feel so certain that your thoughts are exposed. Can you tell me more about how it began?
+  empathy: 2
+  empathy_words: It must be very unsettling to feel so certain that your thoughts are exposed.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: Can other people hear your thoughts?
+    character: I believe people nearby can hear my thoughts without me speaking. It started two days ago and feels certain.
+- utterance: You need to be sensible and accept that the voices aren't real.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You need to be sensible and accept that the voices aren't real
+  style: confront_statement
+- utterance: Why would anyone be able to hear your thoughts?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Why would anyone be able to hear your thoughts
+  style: confront_why
+- utterance: It's probably just the seizures, so there's nothing to worry about.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: there's nothing to worry about
+  style: dismissive
+- utterance: We don't have time for the details, so let's skip to the main thing.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: We don't have time for the details, so let's skip to the main thing
+  style: dismissive

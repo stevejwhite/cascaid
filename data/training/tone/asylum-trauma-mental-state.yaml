@@ -1,0 +1,59 @@
+# Training lines for the tone classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: asylum-trauma-mental-state
+case_version: 0.1.0
+status: draft
+items:
+  - {utterance: "Have you had thoughts of harming yourself lately?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "How often do the frightening memories come?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "What happens to your body when you wake from a bad dream?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "Are you able to eat properly at the moment?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "so um how far is the centre from where you're staying", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "Would it be all right if I asked a little about your sleep?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: polite_question}
+  - {utterance: "I hope you don't mind me asking, but is anyone causing you harm at the moment?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: polite_question}
+  - {utterance: "Hello Samira, my name is Dr Hughes and I'm a psychiatrist.", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: introduction}
+  - {utterance: "Good morning, thanks for meeting me here.", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: greeting}
+  - {utterance: "To recap, you'd like help with sleep, and we'll go at whatever pace suits you.", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: summary}
+  - {utterance: "Okay. And how long does that last?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: acknowledgement}
+  - {utterance: "okay um thank you for telling me", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: acknowledgement}
+  - {utterance: "That sounds really tough.", empathy: 1, empathy_words: "That sounds really tough.", confrontational: false, challenge_words: "", style: brief_empathy}
+  - {utterance: "I'm sorry you're going through that.", empathy: 1, empathy_words: "I'm sorry you're going through that.", confrontational: false, challenge_words: "", style: brief_empathy}
+  - {utterance: "That must be hard. How do you get through the day?", empathy: 1, empathy_words: "That must be hard.", confrontational: false, challenge_words: "", style: brief_empathy_question}
+  - {utterance: "I can imagine. Is there anything that helps?", empathy: 1, empathy_words: "I can imagine.", confrontational: false, challenge_words: "", style: brief_empathy_question}
+  - utterance: "You've found ways to protect yourself from reminders, and it's right that you decide what we talk about today."
+    empathy: 2
+    empathy_words: "You've found ways to protect yourself from reminders, and it's right that you decide what we talk about today."
+    confrontational: false
+    challenge_words: ""
+    style: specific_empathy
+    previous:
+      interviewer: "Do you avoid things that remind you?"
+      character: "I avoid news footage and crowded buses because they bring the memories back. I don't want to describe the events today."
+  - utterance: "Being so far from your sister and worried about where your details go must leave you feeling very alone."
+    empathy: 2
+    empathy_words: "Being so far from your sister and worried about where your details go must leave you feeling very alone."
+    confrontational: false
+    challenge_words: ""
+    style: specific_empathy
+    previous:
+      interviewer: "Who can you talk to?"
+      character: "I'm afraid personal details might reach people dealing with my claim without my agreement. My sister abroad is the only person I talk to regularly."
+  - utterance: "Waking frightened night after night with only a few hours of broken sleep sounds utterly exhausting."
+    empathy: 2
+    empathy_words: "Waking frightened night after night with only a few hours of broken sleep sounds utterly exhausting."
+    confrontational: false
+    challenge_words: ""
+    style: specific_empathy
+    previous:
+      interviewer: "How often do you have bad dreams?"
+      character: "I have frightening dreams four nights a week and wake sweating. I get about four hours of broken sleep."
+  - utterance: "You want help with what happens when you try to sleep, and I can hear how much that is weighing on you. What would make the biggest difference?"
+    empathy: 2
+    empathy_words: "You want help with what happens when you try to sleep, and I can hear how much that is weighing on you."
+    confrontational: false
+    challenge_words: ""
+    style: specific_empathy_question
+  - {utterance: "You really need to tell me exactly what happened if you want help.", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "You really need to tell me exactly what happened", style: confront_statement}
+  - {utterance: "Why would you avoid talking about it when that's what helps?", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "Why would you avoid talking about it", style: confront_why}
+  - {utterance: "At least you're safe here now, so try not to worry.", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "At least you're safe here now, so try not to worry.", style: dismissive}
+  - {utterance: "lots of people have bad dreams it's probably just stress", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "it's probably just stress", style: dismissive}

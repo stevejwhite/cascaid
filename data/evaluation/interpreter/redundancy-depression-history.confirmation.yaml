@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: redundancy-depression-history
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Owen, how does the start of feeling low fit with when you lost your job?
+  expected:
+  - onset
+  rapport: false
+- utterance: What happens now when you try activities or company that you used to enjoy?
+  expected:
+  - enjoyment
+  rapport: false
+- utterance: Could you talk me through falling asleep and waking during a typical night recently?
+  expected:
+  - sleep
+  rapport: false
+- utterance: Have eating and your weight changed over this spell of low mood?
+  expected:
+  - appetite
+  rapport: false
+- utterance: How much energy and concentration can you bring to everyday tasks such as applications?
+  expected:
+  - function
+  rapport: false
+- utterance: Has there been a previous spell like this or a time of unusually high energy and little sleep?
+  expected:
+  - past
+  rapport: false
+- utterance: What do you believe about your own value or usefulness now?
+  expected:
+  - self-worth
+  rapport: false
+- utterance: Are you wishing you would not wake up, or considering ending your life?
+  expected:
+  - suicide
+  rapport: false
+- utterance: would you feel able to tell them if those thoughts turned into an urge to act?
+  expected:
+  - support
+  rapport: false
+  previous:
+    interviewer: Have you spoken to your partner about the thoughts?
+    character: I haven't told my partner.
+- utterance: Losing the job has been followed by difficulties with sleep and getting out of the house.
+  expected: []
+  rapport: false

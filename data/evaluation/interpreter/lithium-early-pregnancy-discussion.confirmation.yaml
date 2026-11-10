@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: lithium-early-pregnancy-discussion
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Aisha, where are you up to with the pregnancy dates and booking with maternity services?
+  expected:
+  - pregnancy
+  rapport: false
+- utterance: How much lithium are you taking now, and have you kept taking it since finding out?
+  expected:
+  - medicine
+  rapport: false
+- utterance: Could you describe the previous times your bipolar illness led to hospital admission?
+  expected:
+  - episodes
+  rapport: false
+- utterance: Have you ever become unwell after stopping lithium, and how quickly did that happen?
+  expected:
+  - withdrawal-history
+  rapport: false
+- utterance: What worries have you had about taking lithium before you knew you were pregnant?
+  expected:
+  - baby-fear
+  rapport: false
+- utterance: How are your sleep and mood compared with when you're feeling well?
+  expected:
+  - current-state
+  rapport: false
+- utterance: What were the periods of illness requiring admission actually like for you?
+  expected:
+  - episodes
+  rapport: false
+- utterance: Was an admission preceded by stopping lithium, and how long after stopping did you deteriorate?
+  expected:
+  - withdrawal-history
+  rapport: false
+- utterance: how do you weigh that against the risks of treatment during this pregnancy?
+  expected:
+  - preferences
+  rapport: false
+  previous:
+    interviewer: What happened the last time you stopped lithium yourself?
+    character: Within six weeks I was becoming unwell.
+- utterance: Have you had any vomiting or diarrhoea since becoming pregnant?
+  expected: []
+  rapport: false

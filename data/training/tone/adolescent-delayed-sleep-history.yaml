@@ -1,0 +1,163 @@
+# Training lines for the tone classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: adolescent-delayed-sleep-history
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Have there been moments when you've wanted to hurt yourself?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: What happens at home when you can't get up for college?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: um how's your mood been lately
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Do you ever feel that things aren't worth going on for?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Would you mind telling me a bit about your evenings?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: If it's okay to ask, do you drink alcohol or use any drugs?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Good afternoon, Evie, please take a seat.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: I'm Dr Okoro, one of the clinic doctors, and I'll be seeing you today.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: So the problem is getting to sleep, and college mornings are the hardest part.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: summary
+- utterance: Right. And when did that start?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Okay, thanks, that's helpful.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: I'm sorry to hear that.
+  empathy: 1
+  empathy_words: I'm sorry to hear that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That sounds really hard.
+  empathy: 1
+  empathy_words: That sounds really hard.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That must be tough. What do you do when you can't settle?
+  empathy: 1
+  empathy_words: That must be tough.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I'm sorry you've had that. How many lessons have you missed?
+  empathy: 1
+  empathy_words: I'm sorry you've had that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: It sounds really draining to be lying awake while everyone else sleeps, then be woken after
+    only a few hours. Anyone would feel awful.
+  empathy: 2
+  empathy_words: It sounds really draining to be lying awake while everyone else sleeps, then be woken
+    after only a few hours.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: Tell me about a normal college morning.
+    character: I aim to settle by eleven but usually get into bed around midnight and don't fall asleep
+      until about three. On college days Mum wakes me at seven and I feel awful.
+- utterance: It must hurt to be called lazy at home when you're trying to get to sleep earlier and just
+    can't. That would make anyone feel misjudged.
+  empathy: 2
+  empathy_words: It must hurt to be called lazy at home when you're trying to get to sleep earlier and
+    just can't.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: How do people at home react?
+    character: Mum calls me lazy and we argue most mornings. I feel she thinks I'm doing it deliberately.
+- utterance: I can hear that you've been worrying about falling behind at college when you're trying your
+    best. That's a lot of pressure to carry.
+  empathy: 2
+  empathy_words: I can hear that you've been worrying about falling behind at college when you're trying
+    your best.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: You've been nervous about what gets shared with your mum, and that makes complete sense at
+    your age. Can I explain how I'll handle that?
+  empathy: 2
+  empathy_words: You've been nervous about what gets shared with your mum, and that makes complete sense
+    at your age.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: Are you worried about what I'll pass on?
+    character: No, I haven't harmed myself or wanted to die. I was nervous you'd tell Mum everything before
+      hearing me out.
+- utterance: You really need to cut down on the energy drinks and put the phone away.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You really need to cut down on the energy drinks and put the phone away.
+  style: confront_statement
+- utterance: You could just go to bed earlier, couldn't you?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You could just go to bed earlier, couldn't you?
+  style: confront_tag
+- utterance: Lots of teenagers stay up late, it's nothing to worry about.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: it's nothing to worry about
+  style: dismissive
+- utterance: Well, you'll grow out of it, so let's not make a fuss.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: let's not make a fuss
+  style: dismissive

@@ -1,0 +1,160 @@
+# Training lines for the tone classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: dementia-distress-care-plan
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Has your dad ever hit out at a carer?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Do you feel the home might ask him to leave if you object?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: How many hours does the agitation last in the evening?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: what does he usually take for his pain
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Sorry to ask, but could you tell me a bit about what the evenings are like?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: If you wouldn't mind, could you tell me what the home has said about medication?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Hello Denise, thanks for making time for this meeting.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: Hi, I'm Dr Evans, a trainee with the older adults' community team.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: Does it make sense so far to look at causes before deciding about medicine?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: check_understanding
+- utterance: Right. And how long has that been happening?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Okay, thanks, that's helpful.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: That sounds really difficult.
+  empathy: 1
+  empathy_words: That sounds really difficult.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I'm sorry to hear that. Thank you for telling me.
+  empathy: 1
+  empathy_words: I'm sorry to hear that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That must be worrying. Has the GP seen him about the change?
+  empathy: 1
+  empathy_words: That must be worrying.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I can see this is hard for you. What helps him settle when you visit?
+  empathy: 1
+  empathy_words: I can see this is hard for you.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: It must be upsetting to find his hearing aid in its box without a battery when you need him
+    to hear you.
+  empathy: 2
+  empathy_words: It must be upsetting to find his hearing aid in its box without a battery when you need
+    him to hear you.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: He has a hearing aid, but I found it in its box without a battery on my last two visits.
+    character: He has a hearing aid, but I found it in its box without a battery on my last two visits.
+- utterance: You feel guilty about agreeing to the move, and it makes sense that you're frightened of
+    upsetting the home.
+  empathy: 2
+  empathy_words: You feel guilty about agreeing to the move, and it makes sense that you're frightened
+    of upsetting the home.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: I feel guilty for agreeing to the move six months ago, and I'm frightened that objecting
+      will make the home say they cannot keep him.
+    character: I feel guilty for agreeing to the move six months ago, and I'm frightened that objecting
+      will make the home say they cannot keep him.
+- utterance: You want him comfortable but not switched off, and that sounds like a very caring way to
+    see it.
+  empathy: 2
+  empathy_words: You want him comfortable but not switched off, and that sounds like a very caring way
+    to see it.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: It must be frightening to watch him so distressed in the evenings when he was settled before,
+    so thank you for coming in. What do you think might be behind it?
+  empathy: 2
+  empathy_words: It must be frightening to watch him so distressed in the evenings when he was settled
+    before, so thank you for coming in.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+- utterance: Evening agitation is just part of the dementia, so there's not much more to look for.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Evening agitation is just part of the dementia, so there's not much more to look for.
+  style: confront_statement
+- utterance: You'd rather he stayed distressed than have a bit of medicine, wouldn't you?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You'd rather he stayed distressed than have a bit of medicine, wouldn't you?
+  style: confront_tag
+- utterance: The home know what they're doing, so I wouldn't worry about the details.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: The home know what they're doing, so I wouldn't worry about the details.
+  style: dismissive
+- utterance: We don't really have time to go into everything he enjoys, so let's keep to the medication.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: We don't really have time to go into everything he enjoys, so let's keep to the medication.
+  style: dismissive

@@ -1,0 +1,70 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: dental-extraction-capacity
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hello Ben, I'm one of the doctors, I've come to talk with you about your tooth."
+    expected: []
+    rapport: false
+  - utterance: "What helps you understand things best when people explain them?"
+    expected: [communication-needs]
+    rapport: false
+  - utterance: "Would you like anyone with you while we talk?"
+    expected: [support-person]
+    rapport: false
+  - utterance: "Can you tell me what's wrong with your tooth?"
+    expected: [dental-problem]
+    rapport: false
+  - utterance: "What have the dentists said they want to do?"
+    expected: [procedure-understanding]
+    rapport: false
+  - utterance: "What good things might happen if the tooth comes out?"
+    expected: [benefit-understanding]
+    rapport: false
+  - utterance: "Did they tell you about anything that could go wrong?"
+    expected: [risk-understanding]
+    rapport: false
+  - utterance: "What do you think will happen if you leave the tooth alone?"
+    expected: [no-treatment]
+    rapport: false
+  - utterance: "Have you tried any other way of having it done?"
+    expected: [alternatives]
+    rapport: false
+  - utterance: "Can you tell me in your own words what the choices are?"
+    expected: [retained-outline]
+    rapport: false
+  - utterance: "How are you weighing it all up?"
+    expected: [weighing-values]
+    rapport: false
+  - utterance: "Is there something that makes going to sleep for an operation especially scary for you?"
+    expected: [personal-fear]
+    rapport: false
+  - utterance: "So what have you decided about the operation today?"
+    expected: [choice]
+    rapport: false
+  - utterance: "Has anyone told you what you have to choose?"
+    expected: [coercion]
+    rapport: false
+  - utterance: "Ben, are you having any thoughts of hurting yourself?"
+    expected: [self-harm]
+    rapport: false
+  - utterance: "That sounds really scary, Ben."
+    expected: []
+    rapport: true
+  - utterance: "and what about if you don't have it out"
+    previous:
+      interviewer: "What did they say about the risks?"
+      character: "My mouth could be sore and bleed afterwards."
+    expected: [no-treatment]
+    rapport: false
+  - utterance: "Do you take any medicines every day?"
+    expected: []
+    rapport: false
+  - utterance: "Do you have any allergies?"
+    expected: []
+    rapport: false
+  - utterance: "OK Ben, so your tooth hurts, and you don't want to be put to sleep."
+    expected: []
+    rapport: false

@@ -1,0 +1,64 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: exposure-offending-formulation
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hi Dr Ravi, thanks for making time to go through this."
+    expected: []
+    rapport: false
+  - utterance: "What's the offending history on record?"
+    expected: [pattern]
+    rapport: false
+  - utterance: "Has he said anything about sexual interest or urges linked to the exposure?"
+    expected: [arousal]
+    rapport: false
+  - utterance: "What was going on for him around the time of the offences?"
+    expected: [context]
+    rapport: false
+  - utterance: "Is there any evidence of a mental illness like psychosis or mania?"
+    expected: [differential]
+    rapport: false
+  - utterance: "How does he view the impact on the people he exposed himself to?"
+    expected: [victims]
+    rapport: false
+  - utterance: "Does he still have urges now?"
+    expected: [dynamic]
+    rapport: false
+  - utterance: "What protective factors does he have?"
+    expected: [protection]
+    rapport: false
+  - utterance: "Has he had any treatment so far?"
+    expected: [treatment]
+    rapport: false
+  - utterance: "Who else is involved, and how will we share information?"
+    expected: [agencies]
+    rapport: false
+  - utterance: "Any concerns about his own risk of self-harm?"
+    expected: [self-risk]
+    rapport: false
+  - utterance: "Sounds like a tricky referral, and you're right to be careful with it."
+    expected: []
+    rapport: true
+  - utterance: "Do you have any worries about how the team is approaching the case?"
+    expected: [uncertainty]
+    rapport: false
+  - utterance: "Is anyone putting pressure on you for a particular answer?"
+    expected: [pressure]
+    rapport: false
+  - utterance: "so what else was going on at those times?"
+    previous:
+      interviewer: "Was alcohol involved?"
+      character: "He reports drinking before one incident but not the other."
+    expected: [context]
+    rapport: false
+  - utterance: "Does he have any children?"
+    expected: []
+    rapport: false
+  - utterance: "What's his employment situation?"
+    expected: []
+    rapport: false
+  - utterance: "Let me pull this together into a provisional formulation."
+    expected: []
+    rapport: false

@@ -1,0 +1,50 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: cannabis-voices-mental-state
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: well tyler, have you been hearing speech when there isn't anybody there to say it
+  expected:
+  - voices
+  rapport: false
+- utterance: If you hear voices, do they give you orders to do something?
+  expected:
+  - commands
+  rapport: false
+- utterance: Do you have a sense that somebody is deliberately trying to keep track of you?
+  expected:
+  - persecution
+  rapport: false
+- utterance: Do your thoughts seem entirely yours, or do they feel altered or accessible to other people?
+  expected:
+  - interference
+  rapport: false
+- utterance: What has your cannabis use been like recently compared with your usual amount?
+  expected:
+  - cannabis
+  rapport: false
+- utterance: Aside from cannabis, what substances or medicines have you had this week?
+  expected:
+  - other-drugs
+  rapport: false
+- utterance: Is anything you hear an instruction to act, rather than just talk about you?
+  expected:
+  - commands
+  rapport: false
+- utterance: Apart from what you hear, do you believe people are keeping you under observation?
+  expected:
+  - persecution
+  rapport: false
+- utterance: if one of those people approached, what might you do?
+  expected:
+  - safety
+  rapport: false
+  previous:
+    interviewer: How certain does the danger feel?
+    character: I think people outside are tracking me. I haven't seen anyone doing it, but it feels very
+      convincing.
+- utterance: Having something feel wrong and being unable to switch it off sounds frightening.
+  expected: []
+  rapport: true

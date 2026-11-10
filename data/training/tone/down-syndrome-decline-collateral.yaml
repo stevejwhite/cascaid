@@ -1,0 +1,154 @@
+# Training lines for the tone classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: down-syndrome-decline-collateral
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Does she ever get lost when she goes out?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Has she seemed sad or tearful lately?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Do you worry you left asking for help too long?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: um what is she taking at the moment, medication wise
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Sorry, could I ask what she could do a year ago?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: If you don't mind, may I ask who supports her day to day?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Morning Elaine, thanks for coming.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: So she has gradually been needing more help.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: summary
+- utterance: Right. And what happened after that?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Okay, thanks, that's clear.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: That sounds worrying.
+  empathy: 1
+  empathy_words: That sounds worrying.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I'm sorry to hear that.
+  empathy: 1
+  empathy_words: I'm sorry to hear that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That must be hard. How is the rest of the team?
+  empathy: 1
+  empathy_words: That must be hard.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I understand. What help would you want from us?
+  empathy: 1
+  empathy_words: I understand.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: It must be upsetting to see someone you know so well retreat and not be able to tell you
+    why.
+  empathy: 2
+  empathy_words: It must be upsetting to see someone you know so well retreat and not be able to tell
+    you why.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: How has she been in herself?
+    character: She spends more time in her room and stopped joining music sessions. She sometimes looks
+      tearful but hasn't explained why.
+- utterance: You were doing your best with what you knew, and it's natural to worry about it now.
+  empathy: 2
+  empathy_words: You were doing your best with what you knew, and it's natural to worry about it now.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: Did you wait before asking for help?
+    character: We initially called it ageing and waited. I worry we delayed asking for a proper assessment.
+- utterance: You obviously care a lot about her, and it must be hard when she needs help with things she
+    managed before.
+  empathy: 2
+  empathy_words: You obviously care a lot about her, and it must be hard when she needs help with things
+    she managed before.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: It sounds frustrating to want to help and not be sure how best to do it. What have you tried
+    so far?
+  empathy: 2
+  empathy_words: It sounds frustrating to want to help and not be sure how best to do it.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: What is hard in day-to-day care?
+    character: We want to help but don't know whether to prompt more or give her extra time. The team
+      needs guidance.
+- utterance: You should have asked for a proper assessment much earlier than this.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You should have asked for a proper assessment much earlier than this
+  style: confront_statement
+- utterance: You didn't think to get her bloods checked, did you?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You didn't think to get her bloods checked, did you
+  style: confront_tag
+- utterance: It's probably just ageing, so I wouldn't worry too much about it.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: so I wouldn't worry too much about it
+  style: dismissive
+- utterance: I don't need the details of her old routines, let's keep to the main points.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: I don't need the details of her old routines, let's keep to the main points
+  style: dismissive

@@ -1,0 +1,732 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: rehabilitation-supported-housing-plan
+case_version: 0.1.0
+status: draft
+items:
+- utterance: What are you hoping for from the move?
+  topics:
+  - goal
+  style: open
+- utterance: Is living more independently something you want?
+  topics:
+  - goal
+  style: closed
+- utterance: Are there particular things you're looking forward to doing?
+  topics:
+  - goal
+  style: closed
+- utterance: What would make the move feel worth it for you?
+  topics:
+  - goal
+  style: colloquial
+- utterance: What are your personal goals for discharge?
+  topics:
+  - goal
+  style: clinical
+- utterance: I'd like to start with what you want out of this
+  topics:
+  - goal
+  style: indirect
+- utterance: It's good to hear you want it to work. What would a good life there look like?
+  topics:
+  - goal
+  style: empathy_then_question
+- utterance: so um what are you what are you looking forward to most
+  topics:
+  - goal
+  style: spoken
+- utterance: Your main goal?
+  topics:
+  - goal
+  style: brief
+- utterance: And your hopes?
+  topics:
+  - goal
+  style: brief
+- utterance: What would visiting more often mean to you?
+  topics:
+  - goal
+  style: follow_up
+  previous:
+    interviewer: What are you hoping for, Kwame?
+    character: I want my own front door and to start cooking again. Being able to visit my brother without
+      ward routines matters to me.
+- utterance: I imagine having more freedom would be a big part of it?
+  topics:
+  - goal
+  style: leading
+- utterance: Tell me what independence means for you.
+  topics:
+  - goal
+  style: open
+- utterance: Does having a home of your own feel important?
+  topics:
+  - goal
+  style: closed
+- utterance: What everyday tasks can you manage on your own?
+  topics:
+  - skills
+  style: open
+- utterance: Do you need any help with shopping?
+  topics:
+  - skills
+  style: closed
+- utterance: Can you do your own washing?
+  topics:
+  - skills
+  style: closed
+- utterance: How handy are you in the kitchen?
+  topics:
+  - skills
+  style: colloquial
+- utterance: How would you rate your independent living skills?
+  topics:
+  - skills
+  style: clinical
+- utterance: I wondered which household jobs you feel confident with
+  topics:
+  - skills
+  style: indirect
+- utterance: Moving out is a big step. What do you still need a hand with at home?
+  topics:
+  - skills
+  style: empathy_then_question
+- utterance: um and things like cleaning and that do you do do you manage
+  topics:
+  - skills
+  style: spoken
+- utterance: And the housework?
+  topics:
+  - skills
+  style: brief
+- utterance: Help with cleaning?
+  topics:
+  - skills
+  style: brief
+- utterance: Who helps you put the checklist together?
+  topics:
+  - skills
+  style: follow_up
+  previous:
+    interviewer: How do you get on with cooking?
+    character: I can make simple meals and do laundry if I use a checklist. I still need reminders to
+      shop and clean regularly.
+- utterance: There are probably some jobs you'd want reminding about?
+  topics:
+  - skills
+  style: leading
+- utterance: Talk me through how you'd manage a week of food shopping.
+  topics:
+  - skills
+  style: open
+- utterance: Is there anything around the flat you'd find tricky?
+  topics:
+  - skills
+  style: closed
+- utterance: How are you getting on with your tablets?
+  topics:
+  - medicine
+  style: open
+- utterance: Do you get any side effects?
+  topics:
+  - medicine
+  style: closed
+- utterance: Would you need a reminder to take your medication?
+  topics:
+  - medicine
+  style: closed
+- utterance: Are the tablets doing their job?
+  topics:
+  - medicine
+  style: colloquial
+- utterance: What dose of olanzapine are you prescribed?
+  topics:
+  - medicine
+  style: clinical
+- utterance: I'd like to go through your medication with you
+  topics:
+  - medicine
+  style: indirect
+- utterance: Lots of people find tablets a nuisance. How does yours leave you feeling?
+  topics:
+  - medicine
+  style: empathy_then_question
+- utterance: um what about your er your medication how's that going
+  topics:
+  - medicine
+  style: spoken
+- utterance: And your olanzapine?
+  topics:
+  - medicine
+  style: brief
+- utterance: Remembering your doses?
+  topics:
+  - medicine
+  style: brief
+- utterance: Is the morning sleepiness getting in the way of things?
+  topics:
+  - medicine
+  style: follow_up
+  previous:
+    interviewer: What medication are you on?
+    character: I take olanzapine 15 milligrams at night. It helps, but I'm sleepy in the morning and need
+      a reminder to take it.
+- utterance: I'd guess the tablets make you a bit drowsy?
+  topics:
+  - medicine
+  style: leading
+- utterance: When do you usually take your medicine?
+  topics:
+  - medicine
+  style: open
+- utterance: Does it help keep you well?
+  topics:
+  - medicine
+  style: closed
+- utterance: What support will there be at the new place?
+  topics:
+  - support
+  style: open
+- utterance: Who will be visiting you after you move?
+  topics:
+  - support
+  style: open
+- utterance: Will there be staff on site?
+  topics:
+  - support
+  style: closed
+- utterance: Have you met your community worker yet?
+  topics:
+  - support
+  style: closed
+- utterance: Who's going to be popping in on you there?
+  topics:
+  - support
+  style: colloquial
+- utterance: What community support is arranged after discharge?
+  topics:
+  - support
+  style: clinical
+- utterance: I'd like to understand what help you'll have once you're there
+  topics:
+  - support
+  style: indirect
+- utterance: It's a lot of new people to get used to. Have you been to see the place with anyone?
+  topics:
+  - support
+  style: empathy_then_question
+- utterance: and um at the new place is there like staff around
+  topics:
+  - support
+  style: spoken
+- utterance: Staff in the building?
+  topics:
+  - support
+  style: brief
+- utterance: Who'll visit you?
+  topics:
+  - support
+  style: brief
+- utterance: Are they there at night as well?
+  topics:
+  - support
+  style: follow_up
+  previous:
+    interviewer: Have you seen the new place?
+    character: I've visited a flat with staff in the building during the day. I haven't met the community
+      worker who would visit me.
+- utterance: There'll be some staff around to help, I expect?
+  topics:
+  - support
+  style: leading
+- utterance: Tell me about your visit to the housing.
+  topics:
+  - support
+  style: open
+- utterance: Is someone from the community team going to come round?
+  topics:
+  - support
+  style: closed
+- utterance: How are you managing financially?
+  topics:
+  - money
+  style: open
+- utterance: What do you know about paying rent there?
+  topics:
+  - money
+  style: open
+- utterance: Have you paid rent before?
+  topics:
+  - money
+  style: closed
+- utterance: Are your benefits sorted?
+  topics:
+  - money
+  style: closed
+- utterance: Is your benefit entitlement in place for the move?
+  topics:
+  - money
+  style: clinical
+- utterance: I'd like to talk about money and bills
+  topics:
+  - money
+  style: indirect
+- utterance: Money can be a worry with a move. Would some help with budgeting be useful?
+  topics:
+  - money
+  style: empathy_then_question
+- utterance: um the the money side of things how's that looking
+  topics:
+  - money
+  style: spoken
+- utterance: And your finances?
+  topics:
+  - money
+  style: brief
+- utterance: Help with budgeting?
+  topics:
+  - money
+  style: brief
+- utterance: Who would you like to go through the budget with?
+  topics:
+  - money
+  style: follow_up
+  previous:
+    interviewer: How are your benefits?
+    character: My benefits are being reviewed. I've not managed rent payments before and want someone
+      to go through a budget with me.
+- utterance: Money's probably one thing you'd want a hand with?
+  topics:
+  - money
+  style: leading
+- utterance: Tell me how you'd want to handle bills.
+  topics:
+  - money
+  style: open
+- utterance: Do you feel confident managing a budget?
+  topics:
+  - money
+  style: closed
+- utterance: How would you like to spend your days?
+  topics:
+  - activity
+  style: open
+- utterance: What sort of activities interest you?
+  topics:
+  - activity
+  style: open
+- utterance: Are you thinking about work or volunteering?
+  topics:
+  - activity
+  style: closed
+- utterance: Do you have any hobbies you want to keep up?
+  topics:
+  - activity
+  style: closed
+- utterance: What would get you out of the house?
+  topics:
+  - activity
+  style: colloquial
+- utterance: What meaningful activity would you like to take up?
+  topics:
+  - activity
+  style: clinical
+- utterance: I wondered what you'd like to fill your week with
+  topics:
+  - activity
+  style: indirect
+- utterance: Having something to do makes a big difference. What would you enjoy?
+  topics:
+  - activity
+  style: empathy_then_question
+- utterance: so um during the day what would you what would you want to do
+  topics:
+  - activity
+  style: spoken
+- utterance: Any plans for work?
+  topics:
+  - activity
+  style: brief
+- utterance: And during the day?
+  topics:
+  - activity
+  style: brief
+- utterance: How would you feel about trying a job later on?
+  topics:
+  - activity
+  style: follow_up
+  previous:
+    interviewer: What would you like to do in the day?
+    character: I'd like to join a gardening group twice a week. A paid job feels too much just now.
+- utterance: You'd want something to keep you busy, I'd think?
+  topics:
+  - activity
+  style: leading
+- utterance: Tell me about things you used to enjoy before coming here.
+  topics:
+  - activity
+  style: open
+- utterance: Is there a group you'd like to join?
+  topics:
+  - activity
+  style: closed
+- utterance: How do you know when things are starting to slip?
+  topics:
+  - relapse
+  style: open
+- utterance: Does your sleep change before a relapse?
+  topics:
+  - relapse
+  style: closed
+- utterance: Are there particular thoughts that warn you?
+  topics:
+  - relapse
+  style: closed
+- utterance: What tips you off that you're going downhill?
+  topics:
+  - relapse
+  style: colloquial
+- utterance: What are your early warning signs?
+  topics:
+  - relapse
+  style: clinical
+- utterance: I'd like to make a plan around what happens when you start to get poorly
+  topics:
+  - relapse
+  style: indirect
+- utterance: It's good you're thinking ahead. What changes would you notice first?
+  topics:
+  - relapse
+  style: empathy_then_question
+- utterance: um when you start to get poorly what's what's the first thing
+  topics:
+  - relapse
+  style: spoken
+- utterance: Your warning signs?
+  topics:
+  - relapse
+  style: brief
+- utterance: How quickly does it build?
+  topics:
+  - relapse
+  style: brief
+- utterance: And how long does that usually take to come on?
+  topics:
+  - relapse
+  style: follow_up
+  previous:
+    interviewer: What happens before you become unwell?
+    character: Before I become unwell I stop sleeping and start thinking people are talking about me.
+      That usually builds over a fortnight.
+- utterance: I suppose your sleep might be one of the first things to go?
+  topics:
+  - relapse
+  style: leading
+- utterance: Tell me what happened last time you became unwell.
+  topics:
+  - relapse
+  style: open
+- utterance: Is there a pattern before you get ill?
+  topics:
+  - relapse
+  style: closed
+- utterance: What happens to looking after yourself when you're unwell?
+  topics:
+  - risk
+  style: open
+- utterance: Do you ever feel like hurting yourself?
+  topics:
+  - risk
+  style: closed
+- utterance: Has anyone been at risk from you when you've been ill?
+  topics:
+  - risk
+  style: closed
+- utterance: Do you let yourself go a bit when you're poorly?
+  topics:
+  - risk
+  style: colloquial
+- utterance: Have there been any concerns about self-neglect during relapses?
+  topics:
+  - risk
+  style: clinical
+- utterance: I need to ask about safety, both yours and other people's
+  topics:
+  - risk
+  style: indirect
+- utterance: These are questions I ask everyone. Have you ever wanted to harm someone?
+  topics:
+  - risk
+  style: empathy_then_question
+- utterance: and um when you're unwell do you do you still eat and look after yourself
+  topics:
+  - risk
+  style: spoken
+- utterance: Any thoughts of self-harm?
+  topics:
+  - risk
+  style: brief
+- utterance: Eating okay when unwell?
+  topics:
+  - risk
+  style: brief
+- utterance: What stopped you going out for food then?
+  topics:
+  - risk
+  style: follow_up
+  previous:
+    interviewer: Do you ever feel like hurting yourself?
+    character: No, I don't want to hurt myself or anyone. When very unwell I have stopped eating properly
+      because I was afraid to go shopping.
+- utterance: You've not had thoughts of hurting anyone, I take it?
+  topics:
+  - risk
+  style: leading
+- utterance: Tell me about any times you've struggled to look after yourself.
+  topics:
+  - risk
+  style: open
+- utterance: Is there any risk of suicide we should plan for?
+  topics:
+  - risk
+  style: closed
+- utterance: What worries you about living on your own?
+  topics:
+  - fear
+  style: open
+- utterance: How do you feel about coping there by yourself?
+  topics:
+  - fear
+  style: open
+- utterance: Are you worried no one would spot it if you got unwell?
+  topics:
+  - fear
+  style: closed
+- utterance: What's bugging you about the move?
+  topics:
+  - fear
+  style: colloquial
+- utterance: Do you have any concerns about being isolated after discharge?
+  topics:
+  - fear
+  style: clinical
+- utterance: I'd like to hear any worries you've not felt able to say so far
+  topics:
+  - fear
+  style: indirect
+- utterance: Big changes can be unsettling. What scares you most about going?
+  topics:
+  - fear
+  style: empathy_then_question
+- utterance: um is there anything about it that's that's worrying you
+  topics:
+  - fear
+  style: spoken
+- utterance: Any worries about going?
+  topics:
+  - fear
+  style: brief
+- utterance: Scared of anything?
+  topics:
+  - fear
+  style: brief
+- utterance: How do you feel about not having met that worker yet?
+  topics:
+  - fear
+  style: follow_up
+  previous:
+    interviewer: Who will visit you there?
+    character: I've visited a flat with staff in the building during the day. I haven't met the community
+      worker who would visit me.
+- utterance: Maybe there's a worry you might not be noticed if things got worse?
+  topics:
+  - fear
+  style: leading
+- utterance: What would you be worried to tell us in case it affected the move?
+  topics:
+  - fear
+  style: open
+- utterance: Do you worry about the move being called off?
+  topics:
+  - fear
+  style: closed
+- utterance: How much say do you feel you have in the planning?
+  topics:
+  - choices
+  style: open
+- utterance: Do you want your family involved?
+  topics:
+  - choices
+  style: closed
+- utterance: Have you felt able to disagree in meetings?
+  topics:
+  - choices
+  style: closed
+- utterance: Do you feel people listen to you in ward rounds?
+  topics:
+  - choices
+  style: colloquial
+- utterance: To what extent do you feel involved in decision-making?
+  topics:
+  - choices
+  style: clinical
+- utterance: I want to make sure this plan is yours and not just ours
+  topics:
+  - choices
+  style: indirect
+- utterance: You said you want a say in it. How do meetings feel for you?
+  topics:
+  - choices
+  style: empathy_then_question
+- utterance: um do you do you ever just go along with things in meetings
+  topics:
+  - choices
+  style: spoken
+- utterance: Who should be involved?
+  topics:
+  - choices
+  style: brief
+- utterance: Your say in decisions?
+  topics:
+  - choices
+  style: brief
+- utterance: How involved would you want your brother to be?
+  topics:
+  - choices
+  style: follow_up
+  previous:
+    interviewer: What matters to you about moving?
+    character: I want my own front door and to start cooking again. Being able to visit my brother without
+      ward routines matters to me.
+- utterance: It might be hard to speak up when everyone's sure of themselves?
+  topics:
+  - choices
+  style: leading
+- utterance: Tell me what it's like when your care is discussed with you.
+  topics:
+  - choices
+  style: open
+- utterance: Is there anyone you'd want kept out of the decisions?
+  topics:
+  - choices
+  style: closed
+- utterance: How are you with cooking, and what about money?
+  topics:
+  - skills
+  - money
+  style: stacked
+- utterance: What are your warning signs, and who will visit after you move?
+  topics:
+  - relapse
+  - support
+  style: stacked
+- utterance: How's the medication going, and what would you like to do in the daytime?
+  topics:
+  - medicine
+  - activity
+  style: stacked
+- utterance: What do you want from the move, and how much say do you feel you have?
+  topics:
+  - goal
+  - choices
+  style: stacked
+- utterance: Hello Kwame, thanks for meeting with me.
+  topics: []
+  style: greeting
+- utterance: Good morning Kwame, how are you today?
+  topics: []
+  style: greeting
+- utterance: I'm the psychiatrist on the ward; I wanted to talk about your move.
+  topics: []
+  style: introduction
+- utterance: Is it okay if we spend a few minutes planning together?
+  topics: []
+  style: introduction
+- utterance: Before we start, do you have any questions for me?
+  topics: []
+  style: introduction
+- utterance: What would you like to start with?
+  topics: []
+  style: transition
+- utterance: I'd like to move on to something a bit different now.
+  topics: []
+  style: transition
+- utterance: Let's think about the practical side next.
+  topics: []
+  style: transition
+- utterance: Can we come back to that in a minute?
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, so let's agree the main points.
+  topics: []
+  style: closing
+- utterance: Thanks Kwame, that's been really useful.
+  topics: []
+  style: closing
+- utterance: I'll write this up and share it with you before the next meeting.
+  topics: []
+  style: closing
+- utterance: It's clear how much you want this to work.
+  topics: []
+  style: empathy
+- utterance: That makes a lot of sense.
+  topics: []
+  style: empathy
+- utterance: You've worked hard to get to this point.
+  topics: []
+  style: empathy
+- utterance: It's completely reasonable to want a say in your own move.
+  topics: []
+  style: empathy
+- utterance: So you're keen to move, and there are a few practical things to sort out first.
+  topics: []
+  style: summary
+- utterance: Supported housing means there's help nearby while you get settled.
+  topics: []
+  style: explanation
+- utterance: The plan is yours, and we can change it as things go.
+  topics: []
+  style: explanation
+- utterance: A relapse plan just means we all know what to look out for.
+  topics: []
+  style: explanation
+- utterance: Does that sound fair to you?
+  topics: []
+  style: check_understanding
+- utterance: Can you tell me in your own words what we've agreed?
+  topics: []
+  style: check_understanding
+- utterance: When did you last have your bloods and weight checked?
+  topics: []
+  style: off_case
+- utterance: Do you use any drugs or alcohol?
+  topics: []
+  style: off_case
+- utterance: Do you have a GP near the new flat?
+  topics: []
+  style: off_case
+- utterance: Are you registered with a dentist?
+  topics: []
+  style: off_case
+- utterance: Do you have any physical health problems?
+  topics: []
+  style: off_case
+- utterance: What's the address of the new flat?
+  topics: []
+  style: near_miss
+- utterance: How long have you been on this ward?
+  topics: []
+  style: near_miss
+- utterance: What date is the move planned for?
+  topics: []
+  style: near_miss
+- utterance: Which vegetables would you want to grow?
+  topics: []
+  style: near_miss
+- utterance: How old is your brother?
+  topics: []
+  style: near_miss
+- utterance: Who prescribed the olanzapine originally?
+  topics: []
+  style: near_miss

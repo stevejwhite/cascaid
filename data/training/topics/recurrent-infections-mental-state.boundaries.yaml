@@ -1,0 +1,335 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: recurrent-infections-mental-state
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Do you fear being blamed for what has happened?
+  topics:
+  - abandonment
+  style: boundary
+  pair:
+  - abandonment
+  - anxiety
+- utterance: Are you afraid the team might give up on you?
+  topics:
+  - abandonment
+  style: boundary_colloquial
+  pair:
+  - abandonment
+  - anxiety
+- utterance: um do you worry the doctors might lose patience with you
+  topics:
+  - abandonment
+  style: boundary_spoken
+  pair:
+  - abandonment
+  - anxiety
+- utterance: Are you frightened the next infection could be worse?
+  topics:
+  - anxiety
+  style: boundary
+  pair:
+  - abandonment
+  - anxiety
+- utterance: Do you lie awake worrying about your health?
+  topics:
+  - anxiety
+  style: boundary
+  pair:
+  - abandonment
+  - anxiety
+- utterance: How much does not knowing the cause play on your mind?
+  topics:
+  - anxiety
+  style: boundary_colloquial
+  pair:
+  - abandonment
+  - anxiety
+- utterance: um does it keep you up at night thinking about it
+  topics:
+  - anxiety
+  style: boundary_spoken
+  pair:
+  - abandonment
+  - anxiety
+- utterance: And is it the health side of things that plays on your mind at night?
+  topics:
+  - anxiety
+  style: boundary_follow_up
+  pair:
+  - abandonment
+  - anxiety
+  previous:
+    interviewer: Are you worried the team might stop caring for you?
+    character: I'm frightened they'll stop caring for me if they think it's my fault. I haven't said how
+      much that worries me.
+- utterance: Do you trust the nurses on this ward?
+  topics: []
+  style: near_miss
+  pair:
+  - abandonment
+  - anxiety
+- utterance: Have you ever had a panic attack in hospital?
+  topics: []
+  style: near_miss
+  pair:
+  - abandonment
+  - anxiety
+- utterance: How did it feel when the team raised their suspicions?
+  topics:
+  - reaction
+  style: boundary
+  pair:
+  - abandonment
+  - reaction
+- utterance: Would you be willing to talk about what the team has noticed?
+  topics:
+  - reaction
+  style: boundary
+  pair:
+  - abandonment
+  - reaction
+- utterance: How are you finding the questions about how the wounds happen?
+  topics:
+  - reaction
+  style: boundary_colloquial
+  pair:
+  - abandonment
+  - reaction
+- utterance: um how does it feel hearing that the team has some concerns
+  topics:
+  - reaction
+  style: boundary_spoken
+  pair:
+  - abandonment
+  - reaction
+- utterance: And how does it feel to hear the team's concerns about the cause?
+  topics:
+  - reaction
+  style: boundary_follow_up
+  pair:
+  - abandonment
+  - reaction
+  previous:
+    interviewer: Are you afraid they'll stop caring for you?
+    character: I'm frightened they'll stop caring for me if they think it's my fault. I haven't said how
+      much that worries me.
+- utterance: Are you worried you could lose your care if they think you're to blame?
+  topics:
+  - abandonment
+  style: boundary
+  pair:
+  - abandonment
+  - reaction
+- utterance: Do you think the team might stop treating you?
+  topics:
+  - abandonment
+  style: boundary
+  pair:
+  - abandonment
+  - reaction
+- utterance: Is there a fear about what happens to your care from here?
+  topics:
+  - abandonment
+  style: boundary_colloquial
+  pair:
+  - abandonment
+  - reaction
+- utterance: um are you worried they'll give up on you
+  topics:
+  - abandonment
+  style: boundary_spoken
+  pair:
+  - abandonment
+  - reaction
+- utterance: Are you worried it might change how they look after you?
+  topics:
+  - abandonment
+  style: boundary_follow_up
+  pair:
+  - abandonment
+  - reaction
+  previous:
+    interviewer: How does it feel to hear that concern?
+    character: Hearing that suspicion makes me feel accused. I can discuss what the team has noticed,
+      but I don't want an assumption treated as proof.
+- utterance: Would you like someone with you for this conversation?
+  topics: []
+  style: near_miss
+  pair:
+  - abandonment
+  - reaction
+- utterance: Have you had a chance to look at your own notes?
+  topics: []
+  style: near_miss
+  pair:
+  - abandonment
+  - reaction
+- utterance: Do you ever hear voices when nobody is there?
+  topics:
+  - experiences
+  style: boundary
+  pair:
+  - experiences
+  - mood
+- utterance: Do you feel that something is controlling your thoughts or actions?
+  topics:
+  - experiences
+  style: boundary
+  pair:
+  - experiences
+  - mood
+- utterance: Are you able to follow what we're talking about?
+  topics:
+  - experiences
+  style: boundary_colloquial
+  pair:
+  - experiences
+  - mood
+- utterance: um any strange experiences like hearing things
+  topics:
+  - experiences
+  style: boundary_spoken
+  pair:
+  - experiences
+  - mood
+- utterance: Have you had anything odd happening to you, like hearing voices?
+  topics:
+  - experiences
+  style: boundary_follow_up
+  pair:
+  - experiences
+  - mood
+  previous:
+    interviewer: Is there anything you still enjoy?
+    character: I feel low when I'm stuck here, but I still enjoy calls with my friend. I haven't felt
+      low all day every day outside hospital.
+- utterance: Do you feel low at the moment?
+  topics:
+  - mood
+  style: boundary
+  pair:
+  - experiences
+  - mood
+- utterance: Is there anything that cheers you up in here?
+  topics:
+  - mood
+  style: boundary_colloquial
+  pair:
+  - experiences
+  - mood
+- utterance: um are there things you still enjoy
+  topics:
+  - mood
+  style: boundary_spoken
+  pair:
+  - experiences
+  - mood
+- utterance: And how's your mood in yourself?
+  topics:
+  - mood
+  style: boundary_follow_up
+  pair:
+  - experiences
+  - mood
+  previous:
+    interviewer: Do you hear voices?
+    character: No, I don't hear voices, feel controlled or lose track of where I am. I can follow what
+      we're discussing.
+- utterance: Are you eating normally on the ward?
+  topics: []
+  style: near_miss
+  pair:
+  - experiences
+  - mood
+- utterance: Has your weight changed recently?
+  topics: []
+  style: near_miss
+  pair:
+  - experiences
+  - mood
+- utterance: Do you feel low when you're in hospital?
+  topics:
+  - mood
+  style: boundary
+  pair:
+  - mood
+  - stress
+- utterance: Is there anything you still look forward to?
+  topics:
+  - mood
+  style: boundary
+  pair:
+  - mood
+  - stress
+- utterance: Do you feel down for most of the day?
+  topics:
+  - mood
+  style: boundary_colloquial
+  pair:
+  - mood
+  - stress
+- utterance: um are there things you can still get pleasure from
+  topics:
+  - mood
+  style: boundary_spoken
+  pair:
+  - mood
+  - stress
+- utterance: And how has your mood been with all of that?
+  topics:
+  - mood
+  style: boundary_follow_up
+  pair:
+  - mood
+  - stress
+  previous:
+    interviewer: How are things outside hospital with work?
+    character: My relationship ended nine months ago and I've been off work repeatedly. I'm behind on
+      bills and feel isolated.
+- utterance: What has been going on in your life outside hospital?
+  topics:
+  - stress
+  style: boundary
+  pair:
+  - mood
+  - stress
+- utterance: Have there been any changes in your relationships recently?
+  topics:
+  - stress
+  style: boundary
+  pair:
+  - mood
+  - stress
+- utterance: um how have things been at home and at work
+  topics:
+  - stress
+  style: boundary_spoken
+  pair:
+  - mood
+  - stress
+- utterance: And what has been happening in your life outside?
+  topics:
+  - stress
+  style: boundary_follow_up
+  pair:
+  - mood
+  - stress
+  previous:
+    interviewer: How is your mood?
+    character: I feel low when I'm stuck here, but I still enjoy calls with my friend. I haven't felt
+      low all day every day outside hospital.
+- utterance: Do you have any pets at home that need looking after?
+  topics: []
+  style: near_miss
+  pair:
+  - mood
+  - stress
+- utterance: Have you had any recent bereavements?
+  topics: []
+  style: near_miss
+  pair:
+  - mood
+  - stress

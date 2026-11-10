@@ -1,0 +1,359 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: school-aggression-teacher-collateral
+case_version: 0.1.0
+status: draft
+items:
+- utterance: How are you finding it, having him in your class?
+  topics:
+  - reaction
+  style: boundary
+  pair:
+  - reaction
+  - regret
+- utterance: Do you find yourself bracing for the next incident?
+  topics:
+  - reaction
+  style: boundary
+  pair:
+  - reaction
+  - regret
+- utterance: Is it wearing on you, day to day?
+  topics:
+  - reaction
+  style: boundary_colloquial
+  pair:
+  - reaction
+  - regret
+- utterance: and how do you feel when he walks into the room
+  topics:
+  - reaction
+  style: boundary_spoken
+  pair:
+  - reaction
+  - regret
+- utterance: And in general, how do you feel going into lessons with him?
+  topics:
+  - reaction
+  style: boundary_follow_up
+  pair:
+  - reaction
+  - regret
+  previous:
+    interviewer: Is there anything you wish you'd done differently with him?
+    character: I once corrected him sharply in front of the class. I regret it and haven't discussed it with colleagues.
+- utterance: Is there anything you wish you had handled differently with him?
+  topics:
+  - regret
+  style: boundary
+  pair:
+  - reaction
+  - regret
+- utterance: Have you ever lost your patience with him?
+  topics:
+  - regret
+  style: boundary
+  pair:
+  - reaction
+  - regret
+- utterance: Looking back, is there a moment with him that you're not proud of?
+  topics:
+  - regret
+  style: boundary_colloquial
+  pair:
+  - reaction
+  - regret
+- utterance: um have you ever raised your voice at him or anything
+  topics:
+  - regret
+  style: boundary_spoken
+  pair:
+  - reaction
+  - regret
+- utterance: Has there been a time you responded to him in a way you'd take back?
+  topics:
+  - regret
+  style: boundary_follow_up
+  pair:
+  - reaction
+  - regret
+  previous:
+    interviewer: How do you feel about teaching him?
+    character: I dread another incident and find myself expecting the worst before he's done anything.
+- utterance: Have you had any training in managing challenging behaviour?
+  topics: []
+  style: near_miss
+  pair:
+  - reaction
+  - regret
+- utterance: How do the other staff cope with him?
+  topics: []
+  style: near_miss
+  pair:
+  - reaction
+  - regret
+- utterance: What actually happened on the days he was excluded?
+  topics:
+  - events
+  style: boundary
+  pair:
+  - events
+  - safeguarding
+- utterance: Has he hurt other children when he's lashed out?
+  topics:
+  - events
+  style: boundary
+  pair:
+  - events
+  - safeguarding
+- utterance: Can you take me through the two incidents behind the exclusions?
+  topics:
+  - events
+  style: boundary_colloquial
+  pair:
+  - events
+  - safeguarding
+- utterance: so um what did he actually do that time
+  topics:
+  - events
+  style: boundary_spoken
+  pair:
+  - events
+  - safeguarding
+- utterance: And what was it he did that led to the exclusions?
+  topics:
+  - events
+  style: boundary_follow_up
+  pair:
+  - events
+  - safeguarding
+  previous:
+    interviewer: Has he told you anything worrying about home?
+    character: He hasn't disclosed harm to me and I've seen no unexplained injuries. Our safeguarding lead knows about his distress and is checking attendance and family support.
+- utterance: Have you noticed any bruises or marks on him?
+  topics:
+  - safeguarding
+  style: boundary
+  pair:
+  - events
+  - safeguarding
+- utterance: Has he said anything that worried you about how he's being treated?
+  topics:
+  - safeguarding
+  style: boundary
+  pair:
+  - events
+  - safeguarding
+- utterance: Has your designated safeguarding lead been told?
+  topics:
+  - safeguarding
+  style: boundary_colloquial
+  pair:
+  - events
+  - safeguarding
+- utterance: and are there any child protection worries at all
+  topics:
+  - safeguarding
+  style: boundary_spoken
+  pair:
+  - events
+  - safeguarding
+- utterance: Has he himself come in with any marks or injuries?
+  topics:
+  - safeguarding
+  style: boundary_follow_up
+  pair:
+  - events
+  - safeguarding
+  previous:
+    interviewer: What did he do on the days he was excluded?
+    character: 'He was excluded twice this term: once after pushing a pupil and once after throwing a chair. Nobody needed hospital care.'
+- utterance: Has he ever been in trouble with the police?
+  topics: []
+  style: near_miss
+  pair:
+  - events
+  - safeguarding
+- utterance: Has he ever been cruel to animals?
+  topics: []
+  style: near_miss
+  pair:
+  - events
+  - safeguarding
+- utterance: What exactly did he do when he was excluded?
+  topics:
+  - events
+  style: boundary
+  pair:
+  - events
+  - triggers
+- utterance: Did anyone get hurt in the worst incident?
+  topics:
+  - events
+  style: boundary
+  pair:
+  - events
+  - triggers
+- utterance: Talk me through the worst thing he's done at school.
+  topics:
+  - events
+  style: boundary_colloquial
+  pair:
+  - events
+  - triggers
+- utterance: um so can you tell me what happened in the incidents
+  topics:
+  - events
+  style: boundary_spoken
+  pair:
+  - events
+  - triggers
+- utterance: And the incident that got him excluded, what did he do?
+  topics:
+  - events
+  style: boundary_follow_up
+  pair:
+  - events
+  - triggers
+  previous:
+    interviewer: What sets him off?
+    character: It often starts when he's asked to read aloud or correct written work in front of others.
+- utterance: What's going on just before he kicks off?
+  topics:
+  - triggers
+  style: boundary
+  pair:
+  - events
+  - triggers
+- utterance: Is it certain kinds of work that tip him over?
+  topics:
+  - triggers
+  style: boundary
+  pair:
+  - events
+  - triggers
+- utterance: Does he react worse in some lessons than others?
+  topics:
+  - triggers
+  style: boundary_colloquial
+  pair:
+  - events
+  - triggers
+- utterance: erm what usually leads up to it
+  topics:
+  - triggers
+  style: boundary_spoken
+  pair:
+  - events
+  - triggers
+- utterance: What was happening in the lesson just before that?
+  topics:
+  - triggers
+  style: boundary_follow_up
+  pair:
+  - events
+  - triggers
+  previous:
+    interviewer: Tell me about the exclusions.
+    character: 'He was excluded twice this term: once after pushing a pupil and once after throwing a chair. Nobody needed hospital care.'
+- utterance: Does he behave differently with supply teachers?
+  topics: []
+  style: near_miss
+  pair:
+  - events
+  - triggers
+- utterance: What sanctions does the school usually use after an incident?
+  topics: []
+  style: near_miss
+  pair:
+  - events
+  - triggers
+- utterance: Has anything made you worry about his welfare outside school?
+  topics:
+  - safeguarding
+  style: boundary
+  pair:
+  - safeguarding
+  - triggers
+- utterance: Is anyone at school keeping an eye on his attendance and family situation?
+  topics:
+  - safeguarding
+  style: boundary
+  pair:
+  - safeguarding
+  - triggers
+- utterance: Have you seen anything that made you think he might be at risk?
+  topics:
+  - safeguarding
+  style: boundary_colloquial
+  pair:
+  - safeguarding
+  - triggers
+- utterance: um has he ever told you about anything bad happening to him
+  topics:
+  - safeguarding
+  style: boundary_spoken
+  pair:
+  - safeguarding
+  - triggers
+- utterance: Besides that, has anything worried you about how he's looked after?
+  topics:
+  - safeguarding
+  style: boundary_follow_up
+  pair:
+  - safeguarding
+  - triggers
+  previous:
+    interviewer: What tends to bring on his outbursts?
+    character: It often starts when he's asked to read aloud or correct written work in front of others.
+- utterance: Does something in the classroom wind him up?
+  topics:
+  - triggers
+  style: boundary
+  pair:
+  - safeguarding
+  - triggers
+- utterance: Which kinds of work does he struggle to cope with?
+  topics:
+  - triggers
+  style: boundary
+  pair:
+  - safeguarding
+  - triggers
+- utterance: Is there a time in the day when it tends to kick off?
+  topics:
+  - triggers
+  style: boundary_colloquial
+  pair:
+  - safeguarding
+  - triggers
+- utterance: so like what is it that makes him blow up
+  topics:
+  - triggers
+  style: boundary_spoken
+  pair:
+  - safeguarding
+  - triggers
+- utterance: And in the classroom, what's going on right before he loses it?
+  topics:
+  - triggers
+  style: boundary_follow_up
+  pair:
+  - safeguarding
+  - triggers
+  previous:
+    interviewer: Have you had to involve the safeguarding lead?
+    character: He hasn't disclosed harm to me and I've seen no unexplained injuries. Our safeguarding lead knows about his distress and is checking attendance and family support.
+- utterance: Does he have a teaching assistant with him?
+  topics: []
+  style: near_miss
+  pair:
+  - safeguarding
+  - triggers
+- utterance: Has the SENCo met his parents?
+  topics: []
+  style: near_miss
+  pair:
+  - safeguarding
+  - triggers

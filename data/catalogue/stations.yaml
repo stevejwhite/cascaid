@@ -1,0 +1,986 @@
+# Station catalogue: definitions for a full set of CASC-style stations, from which detailed
+# case files (data/cases/<id>.yaml) will be written later. Original fiction; not RCPsych
+# material. Structure, proportions and coverage follow the pinned CASC Syllabus and
+# Blueprint (March 2023): four complete running orders of 16 stations, each valid on its
+# own, which together meet every minimum frequency in the blueprint matrix.
+# services/api/tests/test_station_catalogue.py checks all of this; docs/STATION-CATALOGUE.md
+# is generated from this file (npm run catalogue:doc).
+
+blueprint:
+  source_id: mrcpsych_casc
+  version: "March 2023 | sha256:ae1eac93e556b3701a4aae70f1f9e784ad47ecd51ff69a0ae70631a703062a99"
+  stations_per_running_order: {history: 5, examination: 5, management: 6}
+  sessions:
+    morning: {reading_seconds: 240, stations: {management: 6, history: 1, examination: 1}}
+    afternoon: {reading_seconds: 90, stations: {history: 4, examination: 4}}
+  # Minimum percentage of running orders that test each subdivision (Table 2).
+  minimum_percentage:
+    presenting_complaint_and_psychiatric_history: 100
+    physical_health_history: 50
+    developmental_history: 50
+    personal_and_social_history: 50
+    collateral_history: 100
+    mental_state_cognitive: 75
+    mental_state_psychotic: 100
+    mental_state_non_psychotic: 100
+    capacity_assessment: 25
+    physical_examination: 50
+    risk_assessment: 50
+    formulation: 100
+    management_biological: 100
+    management_psychological: 50
+    holistic_management_plan: 100
+    safety_planning: 50
+    legal_and_ethical_management: 100
+  # Every running order includes at least one of each group.
+  at_least_one_of:
+    - [risk_assessment, safety_planning]
+    - [mental_state_cognitive, capacity_assessment]
+    - [physical_health_history, physical_examination]
+  # Every running order has at least these stations per specialty (the rest are "any").
+  minimum_specialty: {general: 4, child_and_adolescent: 1, intellectual_disability: 1, old_age: 1,
+                      forensic: 1, medical_psychotherapy: 1, addiction: 1}
+  # Each communication subdivision is the emphasis of at least one station per running order.
+  communication_emphasis: [personalisation_and_respect, recognising_and_responding_to_cues,
+                           empathy, providing_clear_and_accurate_information]
+
+# Coverage the syllabus describes ("Range of clinical scenarios"); the test requires each.
+coverage:
+  settings: [inpatient, outpatient, emergency, general_hospital, community, criminal_justice, educational]
+  age_bands: [child, adolescent, adult, older_adult]
+  roles: [patient, relative, carer, colleague]
+  condition_groups:
+    neurodevelopmental: Neurodevelopmental disorders
+    primary_psychotic: Schizophrenia or other primary psychotic disorders
+    catatonia: Catatonia
+    mood: Mood disorders
+    anxiety_fear: Anxiety or fear-related disorders
+    obsessive_compulsive: Obsessive-compulsive or related disorders
+    stress_associated: Disorders specifically associated with stress
+    dissociative: Dissociative disorders
+    feeding_eating: Feeding or eating disorders
+    elimination: Elimination disorders
+    bodily_distress: Disorders of bodily distress or bodily experience
+    substance_addictive: Disorders due to substance use or addictive behaviours
+    impulse_control: Impulse control disorders
+    disruptive_dissocial: Disruptive behaviour or dissocial disorders
+    personality: Personality disorders and related traits
+    paraphilic: Paraphilic disorders
+    factitious: Factitious disorders
+    neurocognitive: Neurocognitive disorders
+    perinatal: Disorders associated with pregnancy, childbirth or the puerperium
+    psychological_factors: Psychological or behavioural factors affecting other conditions
+    secondary_syndromes: Secondary mental or behavioural syndromes
+    sleep_wake: Sleep-wake disorders
+    sexual_dysfunction: Sexual dysfunctions
+    gender_incongruence: Gender incongruence
+
+# Each station: code (running order + number), session, blueprint slot, communication
+# emphasis, setting, who the candidate meets (and the patient's age band when that is
+# someone else), condition group, a one-line scenario, the
+# candidate's task, the areas its hidden facts should cover, and the existing case it maps
+# to, if any. simulator: physical_examination marks stations the current voice simulator
+# cannot yet run (the candidate must examine; findings need a new mechanism).
+stations:
+
+# ---------------------------------------------------------------- running order A
+- code: A01
+  session: morning
+  skill: management
+  subdivision: formulation
+  specialty: general
+  communication: providing_clear_and_accurate_information
+  setting: inpatient
+  meets: {role: colleague, who: consultant psychiatrist, age_band: adult}
+  patient_age_band: adult
+  condition: primary_psychotic
+  scenario: A 22-year-old man admitted with a first episode of psychosis after months of social withdrawal.
+  task: Present the history, mental state, differential diagnosis and an initial management plan to the consultant.
+  covers: [differential including substance-induced psychosis, physical work-up, collateral sources, early intervention referral]
+  existing_case: first-episode-psychosis-formulation
+- code: A02
+  session: morning
+  skill: management
+  subdivision: management_biological
+  specialty: general
+  communication: providing_clear_and_accurate_information
+  setting: outpatient
+  meets: {role: relative, who: mother, age_band: older_adult}
+  patient_age_band: adult
+  condition: primary_psychotic
+  scenario: Mother of a man with treatment-resistant schizophrenia who is being offered clozapine.
+  task: Explain clozapine, its monitoring and side effects, and address her concerns.
+  covers: [previous treatments, blood monitoring, side effects, smoking and caffeine, adherence]
+  existing_case: clozapine-explanation-relative
+- code: A03
+  session: morning
+  skill: management
+  subdivision: management_psychological
+  specialty: medical_psychotherapy
+  communication: empathy
+  setting: outpatient
+  meets: {role: patient, who: woman with recurrent self-harm and unstable relationships, age_band: adult}
+  condition: personality
+  scenario: A 27-year-old woman referred for a structured psychological therapy after repeated crises.
+  task: Explain dialectical behaviour therapy and agree whether she wishes to be referred.
+  covers: [what the therapy involves, commitment and group skills, crisis contacts, her previous experience of services]
+  existing_case: dbt-referral-discussion
+- code: A04
+  session: morning
+  skill: management
+  subdivision: holistic_management_plan
+  specialty: old_age
+  communication: recognising_and_responding_to_cues
+  setting: community
+  meets: {role: relative, who: daughter, age_band: adult}
+  patient_age_band: older_adult
+  condition: neurocognitive
+  scenario: A man with Alzheimer's disease in a care home has become agitated in the evenings; staff have asked for sedation.
+  task: Agree a plan with his daughter for his distress, including non-drug approaches and the place of medication.
+  covers: [triggers and routine, pain and infection, care home staff, antipsychotic risks, review]
+  existing_case: dementia-distress-care-plan
+- code: A05
+  session: morning
+  skill: management
+  subdivision: safety_planning
+  specialty: child_and_adolescent
+  communication: empathy
+  setting: emergency
+  meets: {role: patient, who: 15-year-old girl, age_band: adolescent}
+  condition: mood
+  scenario: A 15-year-old seen in the emergency department after cutting herself more deeply than before.
+  task: Develop a safety plan with her before she goes home.
+  covers: [triggers, coping strategies, trusted adults, means restriction at home, school, safeguarding, follow-up]
+  existing_case: adolescent-self-harm-safety-plan
+- code: A06
+  session: morning
+  skill: management
+  subdivision: legal_and_ethical_management
+  specialty: forensic
+  communication: personalisation_and_respect
+  setting: criminal_justice
+  meets: {role: patient, who: man on remand in prison, age_band: adult}
+  condition: primary_psychotic
+  scenario: A man on remand with worsening paranoid psychosis is to be transferred from prison to hospital.
+  task: Explain why, and the principles of compulsory treatment, and respond to his objections.
+  covers: [his understanding, the reasons for transfer, rights and appeal in principle, what happens next]
+  existing_case: prison-hospital-transfer-discussion
+- code: A07
+  session: morning
+  skill: history
+  subdivision: physical_health_history
+  specialty: general
+  communication: recognising_and_responding_to_cues
+  setting: outpatient
+  meets: {role: patient, who: woman with an eating disorder, age_band: adult}
+  condition: feeding_eating
+  scenario: A 24-year-old woman with restrictive eating referred by her GP after fainting at work.
+  task: Take a physical health history.
+  covers: [weight and intake, dizziness and palpitations, menstrual history, exercise and purging, bone health, medication]
+  existing_case: restrictive-eating-physical-history
+- code: A08
+  session: morning
+  skill: examination
+  subdivision: capacity_assessment
+  specialty: intellectual_disability
+  communication: personalisation_and_respect
+  setting: general_hospital
+  meets: {role: patient, who: man with a mild intellectual disability, age_band: adult}
+  condition: neurodevelopmental
+  scenario: A man with a mild intellectual disability refuses a dental extraction under general anaesthetic.
+  task: Assess his capacity to decide, making reasonable adjustments.
+  covers: [understanding, retaining, weighing up, communicating, adjustments, his reasons]
+  existing_case: dental-extraction-capacity
+- code: A09
+  session: afternoon
+  skill: history
+  subdivision: presenting_complaint_and_psychiatric_history
+  specialty: addiction
+  communication: personalisation_and_respect
+  setting: outpatient
+  meets: {role: patient, who: man referred about his drinking, age_band: adult}
+  condition: substance_addictive
+  scenario: A man referred after abnormal liver tests who minimises his drinking.
+  task: Take a history of his alcohol use.
+  covers: [quantity, dependence features, withdrawal, consequences, mood and risk, motivation]
+  existing_case: alcohol-history
+- code: A10
+  session: afternoon
+  skill: history
+  subdivision: presenting_complaint_and_psychiatric_history
+  specialty: general
+  communication: recognising_and_responding_to_cues
+  setting: outpatient
+  meets: {role: patient, who: young adult brought by a sibling's concern, age_band: adult}
+  condition: mood
+  scenario: A young adult with reduced sleep, overspending and grand business plans.
+  task: Take a history of the presenting problem.
+  covers: [sleep, mood onset, spending and function, risk, substances, past low periods]
+  existing_case: elevated-mood-history
+- code: A11
+  session: afternoon
+  skill: history
+  subdivision: collateral_history
+  specialty: old_age
+  communication: recognising_and_responding_to_cues
+  setting: outpatient
+  meets: {role: relative, who: daughter, age_band: adult}
+  patient_age_band: older_adult
+  condition: neurocognitive
+  scenario: The daughter of a man referred to a memory clinic for forgetfulness and getting lost.
+  task: Take a collateral history.
+  covers: [onset and course, memory pattern, safety, daily function, mood and behaviour, carer strain]
+  existing_case: memory-collateral-history
+- code: A12
+  session: afternoon
+  skill: history
+  subdivision: developmental_history
+  specialty: child_and_adolescent
+  communication: personalisation_and_respect
+  setting: outpatient
+  meets: {role: relative, who: mother of a 7-year-old boy, age_band: adult}
+  patient_age_band: child
+  condition: neurodevelopmental
+  scenario: A 7-year-old referred by school for inattention, restlessness and difficulty with friendships.
+  task: Take a developmental history from his mother.
+  covers: [pregnancy and birth, milestones, early social communication, behaviour at home and school, family history]
+  existing_case: child-attention-developmental-history
+- code: A13
+  session: afternoon
+  skill: examination
+  subdivision: risk_assessment
+  specialty: general
+  communication: empathy
+  setting: general_hospital
+  meets: {role: patient, who: adult admitted after an overdose, age_band: adult}
+  condition: mood
+  scenario: An adult medically fit for discharge after an overdose the night before.
+  task: Assess the risk of further self-harm and suicide.
+  covers: [the overdose, planning and precautions, current intent, triggers, protective factors, access to means]
+  existing_case: overdose-risk-assessment
+- code: A14
+  session: afternoon
+  skill: examination
+  subdivision: mental_state_psychotic
+  specialty: general
+  communication: recognising_and_responding_to_cues
+  setting: inpatient
+  meets: {role: patient, who: woman on an acute ward, age_band: adult}
+  condition: primary_psychotic
+  scenario: A woman admitted after barricading herself in her flat, convinced that neighbours are watching her.
+  task: Examine her mental state for psychotic phenomena.
+  covers: [persecutory beliefs and their conviction, voices and their content, thought interference, insight]
+  existing_case: persecutory-psychosis-mental-state
+- code: A15
+  session: afternoon
+  skill: examination
+  subdivision: mental_state_non_psychotic
+  specialty: general
+  communication: empathy
+  setting: outpatient
+  meets: {role: patient, who: man with sudden attacks of fear, age_band: adult}
+  condition: anxiety_fear
+  scenario: A man who has stopped using buses and supermarkets after repeated attacks of overwhelming fear.
+  task: Examine his mental state for anxiety and related symptoms.
+  covers: [panic symptoms, anticipatory anxiety, avoidance, mood, alcohol use, effect on life]
+  existing_case: panic-avoidance-mental-state
+- code: A16
+  session: afternoon
+  skill: examination
+  subdivision: mental_state_cognitive
+  specialty: old_age
+  communication: personalisation_and_respect
+  setting: general_hospital
+  meets: {role: patient, who: older woman on a medical ward, age_band: older_adult}
+  condition: neurocognitive
+  scenario: An older woman on a medical ward who has become confused over two days.
+  task: Examine her cognition, with attention to delirium.
+  covers: [attention, orientation, memory, fluctuation, perceptual disturbance, explaining what you are doing]
+  existing_case: acute-confusion-cognitive-examination
+
+# ---------------------------------------------------------------- running order B
+- code: B01
+  session: morning
+  skill: management
+  subdivision: formulation
+  specialty: medical_psychotherapy
+  communication: recognising_and_responding_to_cues
+  setting: inpatient
+  meets: {role: colleague, who: ward nurse, age_band: adult}
+  patient_age_band: adult
+  condition: personality
+  scenario: A nurse is distressed and angry about a patient who repeatedly self-harms and divides the team.
+  task: Help the nurse make sense of the situation, including the feelings it evokes, and agree a team approach.
+  covers: [the nurse's feelings, splitting in the team, countertransference, consistent care plan, support and supervision]
+  existing_case: ward-team-self-harm-formulation
+
+- code: B02
+  session: morning
+  skill: management
+  subdivision: management_biological
+  specialty: general
+  communication: providing_clear_and_accurate_information
+  setting: outpatient
+  meets: {role: patient, who: pregnant woman with bipolar disorder, age_band: adult}
+  condition: perinatal
+  scenario: A woman with bipolar disorder, eight weeks pregnant, who takes a mood stabiliser with known risks in pregnancy.
+  task: Discuss her medication and the plan for pregnancy and after birth.
+  covers: [risks to the baby, risk of relapse, alternatives, perinatal team, postnatal period, her wishes]
+  existing_case: lithium-early-pregnancy-discussion
+
+- code: B03
+  session: morning
+  skill: management
+  subdivision: management_biological
+  specialty: old_age
+  communication: empathy
+  setting: inpatient
+  meets: {role: relative, who: husband, age_band: older_adult}
+  patient_age_band: older_adult
+  condition: mood
+  scenario: An older woman with severe depression who has stopped eating and drinking; ECT is being considered.
+  task: Explain ECT to her husband and address his fears.
+  covers: [why now, what happens, consent and capacity in principle, side effects including memory, alternatives]
+  existing_case: ect-explanation-husband
+
+- code: B04
+  session: morning
+  skill: management
+  subdivision: holistic_management_plan
+  specialty: intellectual_disability
+  communication: personalisation_and_respect
+  setting: community
+  meets: {role: carer, who: support worker, age_band: adult}
+  patient_age_band: adult
+  condition: neurodevelopmental
+  scenario: A young man with autism and a moderate intellectual disability has hit staff since moving to supported living.
+  task: Agree a plan with his support worker for the change in behaviour.
+  covers: [physical causes and pain, communication needs, environment and routine, positive behaviour support, medication review]
+  existing_case: supported-living-behaviour-plan
+
+- code: B05
+  session: morning
+  skill: management
+  subdivision: legal_and_ethical_management
+  specialty: addiction
+  communication: personalisation_and_respect
+  setting: outpatient
+  meets: {role: patient, who: van driver with alcohol dependence, age_band: adult}
+  condition: substance_addictive
+  scenario: A man with alcohol dependence tells you he still drives for work and has driven after drinking.
+  task: Discuss his fitness to drive and your duties, including confidentiality.
+  covers: [his driving, the risk, his duty to inform the licensing authority, when a doctor may disclose, support to stop]
+  existing_case: alcohol-driving-confidentiality
+
+- code: B06
+  session: morning
+  skill: management
+  subdivision: management_psychological
+  specialty: child_and_adolescent
+  communication: providing_clear_and_accurate_information
+  setting: outpatient
+  meets: {role: relative, who: father of a 14-year-old, age_band: adult}
+  patient_age_band: adolescent
+  condition: obsessive_compulsive
+  scenario: A 14-year-old girl spends hours washing and checking; her father is drawn into her rituals.
+  task: Explain the recommended psychological treatment to her father.
+  covers: [what the treatment involves, exposure and response prevention, family accommodation, school, medication if needed]
+  existing_case: child-ocd-family-treatment
+
+- code: B07
+  session: morning
+  skill: history
+  subdivision: personal_and_social_history
+  specialty: forensic
+  communication: personalisation_and_respect
+  setting: criminal_justice
+  meets: {role: patient, who: man on remand, age_band: adult}
+  condition: personality
+  scenario: A man on remand for assault, referred by prison healthcare for a report.
+  task: Take a personal and social history.
+  covers: [childhood and care history, schooling, work, relationships, substances, offending history]
+  existing_case: remand-personal-social-history
+
+- code: B08
+  session: morning
+  skill: examination
+  subdivision: physical_examination
+  specialty: general
+  communication: providing_clear_and_accurate_information
+  setting: inpatient
+  meets: {role: patient, who: man recently started on an antipsychotic, age_band: adult}
+  condition: primary_psychotic
+  scenario: A man on an acute ward, recently started on an antipsychotic, is stiff, sweating and confused.
+  task: Examine him for the relevant physical signs and say what investigations you would arrange.
+  covers: [temperature and observations, rigidity, tremor, consciousness, investigations, urgency]
+  simulator: physical_examination
+- code: B09
+  session: afternoon
+  skill: history
+  subdivision: presenting_complaint_and_psychiatric_history
+  specialty: general
+  communication: empathy
+  setting: community
+  meets: {role: patient, who: man seen at home by the crisis team, age_band: adult}
+  condition: mood
+  scenario: A man made redundant three months ago who has stopped going out and sleeps poorly.
+  task: Take a history of his low mood.
+  covers: [core depressive symptoms, biological symptoms, onset and stressors, alcohol, thoughts of suicide, support]
+  existing_case: redundancy-depression-history
+
+- code: B10
+  session: afternoon
+  skill: history
+  subdivision: presenting_complaint_and_psychiatric_history
+  specialty: general
+  communication: recognising_and_responding_to_cues
+  setting: general_hospital
+  meets: {role: patient, who: woman with many unexplained physical symptoms, age_band: adult}
+  condition: bodily_distress
+  scenario: A woman referred from medical clinics after many investigations for pain and fatigue found no cause.
+  task: Take a history, exploring her symptoms and her understanding of them.
+  covers: [symptom history, investigations so far, her beliefs and worries, mood and anxiety, impact on life]
+  existing_case: persistent-pain-fatigue-history
+
+- code: B11
+  session: afternoon
+  skill: history
+  subdivision: collateral_history
+  specialty: child_and_adolescent
+  communication: recognising_and_responding_to_cues
+  setting: educational
+  meets: {role: colleague, who: class teacher, age_band: adult}
+  patient_age_band: child
+  condition: disruptive_dissocial
+  scenario: A 10-year-old boy excluded twice this term for aggression and defiance at school.
+  task: Take a collateral history from his teacher.
+  covers: [behaviour pattern, triggers, learning, peers, home circumstances known to school, safeguarding concerns]
+  existing_case: school-aggression-teacher-collateral
+
+- code: B12
+  session: afternoon
+  skill: history
+  subdivision: developmental_history
+  specialty: general
+  communication: personalisation_and_respect
+  setting: outpatient
+  meets: {role: relative, who: mother of a 24-year-old, age_band: adult}
+  patient_age_band: adult
+  condition: neurodevelopmental
+  scenario: A 24-year-old referred for an adult autism assessment after difficulties at university.
+  task: Take a developmental history from his mother.
+  covers: [early development, play and social communication, sensory differences, schooling, family history]
+  existing_case: adult-autism-developmental-collateral
+
+- code: B13
+  session: afternoon
+  skill: examination
+  subdivision: risk_assessment
+  specialty: general
+  communication: empathy
+  setting: emergency
+  meets: {role: patient, who: man convinced his partner is unfaithful, age_band: adult}
+  condition: primary_psychotic
+  scenario: A man brought to the emergency department after threatening his partner over fixed beliefs of infidelity.
+  task: Assess the risk he poses to others.
+  covers: [the belief and its evidence, threats and violence, weapons, intent and plans, substances, protective factors]
+  existing_case: jealousy-partner-risk
+
+- code: B14
+  session: afternoon
+  skill: examination
+  subdivision: mental_state_psychotic
+  specialty: addiction
+  communication: recognising_and_responding_to_cues
+  setting: emergency
+  meets: {role: patient, who: young man who uses high-potency cannabis, age_band: adult}
+  condition: substance_addictive
+  scenario: A young man brought in by friends, frightened and hearing voices after heavy cannabis use.
+  task: Examine his mental state for psychotic phenomena.
+  covers: [voices, persecutory ideas, thought interference, cannabis use and timing, other drugs, insight]
+  existing_case: cannabis-voices-mental-state
+
+- code: B15
+  session: afternoon
+  skill: examination
+  subdivision: mental_state_non_psychotic
+  specialty: general
+  communication: personalisation_and_respect
+  setting: community
+  meets: {role: patient, who: woman seeking asylum, age_band: adult}
+  condition: stress_associated
+  scenario: A woman seeking asylum, seen at a community centre, with nightmares and intrusive memories.
+  task: Examine her mental state for symptoms related to trauma, sensitively.
+  covers: [re-experiencing, avoidance, hyperarousal, mood and sleep, safety, cultural and practical needs]
+  existing_case: asylum-trauma-mental-state
+
+- code: B16
+  session: afternoon
+  skill: examination
+  subdivision: mental_state_cognitive
+  specialty: old_age
+  communication: recognising_and_responding_to_cues
+  setting: outpatient
+  meets: {role: patient, who: man in his sixties, age_band: older_adult}
+  condition: neurocognitive
+  scenario: A man in his sixties whose personality has changed, with disinhibited behaviour and poor planning.
+  task: Examine his cognition, including frontal and executive function.
+  covers: [attention, memory, verbal fluency, abstraction, planning, insight]
+  existing_case: behavioural-change-cognitive-assessment
+
+# ---------------------------------------------------------------- running order C
+- code: C01
+  session: morning
+  skill: management
+  subdivision: formulation
+  specialty: general
+  communication: providing_clear_and_accurate_information
+  setting: outpatient
+  meets: {role: colleague, who: general practitioner, age_band: adult}
+  patient_age_band: older_adult
+  condition: mood
+  scenario: A GP asks whether a published trial of an app-based therapy for depression applies to her older patients.
+  task: Discuss the study's design and findings and whether they generalise to her patients.
+  covers: [population studied, comparison, outcomes, bias and drop-out, generalisability, how to use it]
+  existing_case: depression-app-trial-applicability
+
+- code: C02
+  session: morning
+  skill: management
+  subdivision: management_biological
+  specialty: general
+  communication: personalisation_and_respect
+  setting: outpatient
+  meets: {role: patient, who: man on an antidepressant, age_band: adult}
+  condition: sexual_dysfunction
+  scenario: A man whose depression has improved wants to stop his antidepressant because of sexual side effects.
+  task: Discuss his options.
+  covers: [the side effects, risk of relapse and discontinuation, dose or switch options, timing, follow-up]
+  existing_case: antidepressant-sexual-effects-discussion
+
+- code: C03
+  session: morning
+  skill: management
+  subdivision: holistic_management_plan
+  specialty: general
+  communication: personalisation_and_respect
+  setting: inpatient
+  meets: {role: patient, who: man on a rehabilitation ward, age_band: adult}
+  condition: primary_psychotic
+  scenario: A man with long-standing schizophrenia preparing to move from a rehabilitation ward to supported housing.
+  task: Agree a plan for the move with him.
+  covers: [his goals, daily living skills, medication, support and services, finances and activity, relapse signs]
+  existing_case: rehabilitation-supported-housing-plan
+
+- code: C04
+  session: morning
+  skill: management
+  subdivision: legal_and_ethical_management
+  specialty: old_age
+  communication: empathy
+  setting: outpatient
+  meets: {role: relative, who: son, age_band: adult}
+  patient_age_band: older_adult
+  condition: neurocognitive
+  scenario: A son asks that his mother is not told she has dementia, fearing it will upset her.
+  task: Respond to his request, explaining your duties to his mother.
+  covers: [his concerns, her right to know, how the news can be given, confidentiality, support for both]
+  existing_case: dementia-disclosure-son
+
+- code: C05
+  session: morning
+  skill: management
+  subdivision: safety_planning
+  specialty: forensic
+  communication: recognising_and_responding_to_cues
+  setting: inpatient
+  meets: {role: patient, who: man on a forensic step-down unit, age_band: adult}
+  condition: personality
+  scenario: A man with past violence when intoxicated is about to start unescorted community leave.
+  task: Agree a safety plan for his leave.
+  covers: [warning signs, alcohol, conditions of leave, contacts, what he will do if things go wrong]
+  existing_case: forensic-leave-safety-plan
+
+- code: C06
+  session: morning
+  skill: management
+  subdivision: management_psychological
+  specialty: medical_psychotherapy
+  communication: empathy
+  setting: outpatient
+  meets: {role: patient, who: woman with longstanding social anxiety, age_band: adult}
+  condition: anxiety_fear
+  scenario: A woman in her thirties who avoids colleagues and meetings and has never had psychological therapy.
+  task: Assess what she wants from therapy and explain the options.
+  covers: [her difficulties and goals, previous help, therapy options, what therapy asks of her, her choice]
+  existing_case: social-anxiety-therapy-choice
+
+- code: C07
+  session: morning
+  skill: history
+  subdivision: collateral_history
+  specialty: intellectual_disability
+  communication: recognising_and_responding_to_cues
+  setting: community
+  meets: {role: carer, who: care home manager, age_band: adult}
+  patient_age_band: adult
+  condition: neurocognitive
+  scenario: A woman with Down syndrome, in her fifties, is losing skills and has become withdrawn.
+  task: Take a collateral history from the care home manager.
+  covers: [baseline abilities, change over time, memory, physical health, mood and behaviour, life events]
+  existing_case: down-syndrome-decline-collateral
+
+- code: C08
+  session: morning
+  skill: examination
+  subdivision: mental_state_psychotic
+  specialty: general
+  communication: recognising_and_responding_to_cues
+  setting: inpatient
+  meets: {role: patient, who: man who has stopped speaking and moving, age_band: adult}
+  condition: catatonia
+  scenario: A man on an acute ward who has become mute, holds fixed postures and refuses food.
+  task: Examine his mental state, including catatonic features.
+  covers: [mutism, posturing, negativism, echo phenomena, response to instruction, physical risks]
+- code: C09
+  session: afternoon
+  skill: history
+  subdivision: presenting_complaint_and_psychiatric_history
+  specialty: child_and_adolescent
+  communication: personalisation_and_respect
+  setting: outpatient
+  meets: {role: patient, who: 17-year-old, age_band: adolescent}
+  condition: sleep_wake
+  scenario: A 17-year-old who cannot fall asleep until the early hours and is missing college mornings.
+  task: Take a history of the sleep problem.
+  covers: [sleep pattern, screens and gaming, caffeine and substances, mood, daytime function, family]
+  existing_case: adolescent-delayed-sleep-history
+
+- code: C10
+  session: afternoon
+  skill: history
+  subdivision: physical_health_history
+  specialty: addiction
+  communication: empathy
+  setting: community
+  meets: {role: patient, who: woman on opioid substitution treatment, age_band: adult}
+  condition: substance_addictive
+  scenario: A woman on opioid substitution treatment attending a drug service review.
+  task: Take a physical health history.
+  covers: [injecting and sites, blood-borne viruses, overdose history, chest and leg symptoms, dental health, contraception]
+  existing_case: opioid-treatment-physical-health
+
+- code: C11
+  session: afternoon
+  skill: history
+  subdivision: collateral_history
+  specialty: general
+  communication: recognising_and_responding_to_cues
+  setting: community
+  meets: {role: relative, who: husband, age_band: adult}
+  patient_age_band: adult
+  condition: perinatal
+  scenario: A woman two weeks after giving birth has become confused and frightened and hears voices.
+  task: Take a collateral history from her husband.
+  covers: [onset and change, sleep, beliefs about the baby, past history, family history, the baby's safety]
+  existing_case: postpartum-psychosis-husband-collateral
+
+- code: C12
+  session: afternoon
+  skill: history
+  subdivision: personal_and_social_history
+  specialty: general
+  communication: personalisation_and_respect
+  setting: outpatient
+  meets: {role: patient, who: transgender woman referred with low mood, age_band: adult}
+  condition: gender_incongruence
+  scenario: A transgender woman referred with low mood while waiting for gender services.
+  task: Take a personal and social history.
+  covers: [upbringing, identity and transition so far, relationships and support, work, discrimination, wellbeing]
+  existing_case: transgender-woman-social-history
+
+- code: C13
+  session: afternoon
+  skill: examination
+  subdivision: mental_state_psychotic
+  specialty: old_age
+  communication: empathy
+  setting: community
+  meets: {role: patient, who: older woman living alone, age_band: older_adult}
+  condition: primary_psychotic
+  scenario: An older woman who believes her neighbours are entering her flat and moving her belongings.
+  task: Examine her mental state for psychotic phenomena.
+  covers: [the beliefs, hallucinations, onset, sensory impairment, cognition screen, insight]
+  existing_case: late-life-intrusion-beliefs
+
+- code: C14
+  session: afternoon
+  skill: examination
+  subdivision: mental_state_non_psychotic
+  specialty: general
+  communication: recognising_and_responding_to_cues
+  setting: general_hospital
+  meets: {role: patient, who: woman on a neurology ward, age_band: adult}
+  condition: dissociative
+  scenario: A woman with seizures that tests show are not epileptic, told the diagnosis yesterday.
+  task: Examine her mental state.
+  covers: [her understanding, mood, anxiety, dissociative symptoms, stressors and trauma, risk]
+  existing_case: functional-seizures-mental-state
+
+- code: C15
+  session: afternoon
+  skill: examination
+  subdivision: mental_state_non_psychotic
+  specialty: general
+  communication: personalisation_and_respect
+  setting: outpatient
+  meets: {role: patient, who: man with explosive outbursts, age_band: adult}
+  condition: impulse_control
+  scenario: A man referred after losing his temper and damaging property several times.
+  task: Examine his mental state.
+  covers: [the outbursts, build-up and aftermath, mood, substances, risk to others, remorse and insight]
+  existing_case: explosive-outbursts-mental-state
+
+- code: C16
+  session: afternoon
+  skill: examination
+  subdivision: mental_state_cognitive
+  specialty: general
+  communication: providing_clear_and_accurate_information
+  setting: general_hospital
+  meets: {role: patient, who: man with heavy alcohol use, age_band: adult}
+  condition: neurocognitive
+  scenario: A man on a medical ward with long heavy drinking, who cannot recall recent events.
+  task: Examine his cognition.
+  covers: [orientation, new learning and recall, confabulation, attention, executive function, explanation of findings]
+  existing_case: alcohol-memory-cognitive-assessment
+
+# ---------------------------------------------------------------- running order D
+- code: D01
+  session: morning
+  skill: management
+  subdivision: formulation
+  specialty: forensic
+  communication: providing_clear_and_accurate_information
+  setting: criminal_justice
+  meets: {role: colleague, who: consultant forensic psychiatrist, age_band: adult}
+  patient_age_band: adult
+  condition: paraphilic
+  scenario: A man on probation for indecent exposure is referred for assessment.
+  task: Present your formulation of his offending and risk, and a management plan.
+  covers: [pattern of behaviour, contributing factors, risk and protective factors, treatment options, multi-agency work]
+  existing_case: exposure-offending-formulation
+
+- code: D02
+  session: morning
+  skill: management
+  subdivision: formulation
+  specialty: child_and_adolescent
+  communication: empathy
+  setting: outpatient
+  meets: {role: relative, who: parents of a 9-year-old, age_band: adult}
+  patient_age_band: child
+  condition: elimination
+  scenario: A 9-year-old has started wetting and soiling since his parents separated.
+  task: Explain your understanding of the problem to his parents and the plan.
+  covers: [physical causes ruled out, stress and change, how parents respond, practical plan, school, follow-up]
+  existing_case: child-wetting-soiling-family-formulation
+
+- code: D03
+  session: morning
+  skill: management
+  subdivision: management_biological
+  specialty: addiction
+  communication: providing_clear_and_accurate_information
+  setting: community
+  meets: {role: patient, who: woman who wants to stop drinking, age_band: adult}
+  condition: substance_addictive
+  scenario: A woman with alcohol dependence who wants to stop and asks about medication.
+  task: Discuss assisted withdrawal and medication to prevent relapse.
+  covers: [withdrawal history, community or inpatient withdrawal, vitamin supplementation, relapse prevention options, support]
+  existing_case: alcohol-assisted-withdrawal-options
+
+- code: D04
+  session: morning
+  skill: management
+  subdivision: holistic_management_plan
+  specialty: old_age
+  communication: recognising_and_responding_to_cues
+  setting: inpatient
+  meets: {role: colleague, who: ward nurse, age_band: adult}
+  patient_age_band: older_adult
+  condition: mood
+  scenario: An older man admitted with depression and self-neglect is nearly ready to go home, where he lives alone.
+  task: Plan his discharge with the ward nurse.
+  covers: [mood and risk, physical health, home safety, social care, follow-up, carer and community contacts]
+  existing_case: older-adult-depression-discharge-plan
+
+- code: D05
+  session: morning
+  skill: management
+  subdivision: legal_and_ethical_management
+  specialty: intellectual_disability
+  communication: personalisation_and_respect
+  setting: community
+  meets: {role: relative, who: mother of a young woman, age_band: adult}
+  patient_age_band: adult
+  condition: neurodevelopmental
+  scenario: The mother of a young woman with a moderate intellectual disability wants to stop her having a relationship.
+  task: Discuss her concerns, your duties and how decisions will be made.
+  covers: [the mother's worries, her daughter's rights and wishes, capacity, best interests, safeguarding, support]
+  existing_case: learning-disability-relationship-rights
+
+- code: D06
+  session: morning
+  skill: management
+  subdivision: safety_planning
+  specialty: general
+  communication: empathy
+  setting: community
+  meets: {role: patient, who: mother of a three-month-old, age_band: adult}
+  condition: perinatal
+  scenario: A mother with postnatal depression who has thoughts that she and the baby would be better off without her.
+  task: Agree a safety plan with her.
+  covers: [current thoughts and intent, support at home, care of the baby, perinatal team, crisis contacts, safeguarding]
+  existing_case: postnatal-depression-safety-plan
+
+- code: D07
+  session: morning
+  skill: history
+  subdivision: developmental_history
+  specialty: medical_psychotherapy
+  communication: empathy
+  setting: outpatient
+  meets: {role: patient, who: woman referred for psychotherapy, age_band: adult}
+  condition: stress_associated
+  scenario: A woman referred for psychotherapy with longstanding emotional numbness and difficult relationships.
+  task: Take a developmental history, including early relationships and adversity.
+  covers: [early caregivers, attachment, adverse experiences, school and peers, adolescence, patterns in relationships]
+  existing_case: developmental-relationships-trauma-history
+
+- code: D08
+  session: morning
+  skill: examination
+  subdivision: capacity_assessment
+  specialty: general
+  communication: personalisation_and_respect
+  setting: general_hospital
+  meets: {role: patient, who: man with diabetes and low mood, age_band: adult}
+  condition: psychological_factors
+  scenario: A man with a diabetic foot infection refuses the recommended amputation.
+  task: Assess his capacity to refuse the operation.
+  covers: [understanding, retaining, weighing up, communicating, the role of his mood, his values]
+  existing_case: amputation-refusal-capacity
+
+- code: D09
+  session: afternoon
+  skill: history
+  subdivision: presenting_complaint_and_psychiatric_history
+  specialty: general
+  communication: personalisation_and_respect
+  setting: outpatient
+  meets: {role: patient, who: young man with checking rituals, age_band: adult}
+  condition: obsessive_compulsive
+  scenario: A young man who spends hours each day checking locks and appliances and has stopped working.
+  task: Take a history of the presenting problem.
+  covers: [obsessions and compulsions, time and distress, resistance and insight, mood, effect on life, family]
+  existing_case: checking-rituals-ocd-history
+
+- code: D10
+  session: afternoon
+  skill: history
+  subdivision: presenting_complaint_and_psychiatric_history
+  specialty: old_age
+  communication: empathy
+  setting: community
+  meets: {role: patient, who: widower seen at home, age_band: older_adult}
+  condition: stress_associated
+  scenario: An older man seen at home a year after his wife's death, who is still unable to resume his life.
+  task: Take a history, distinguishing grief from depression.
+  covers: [the loss, longing and preoccupation, mood and enjoyment, sleep and appetite, thoughts of death, support]
+  existing_case: bereavement-grief-depression-history
+
+- code: D11
+  session: afternoon
+  skill: history
+  subdivision: collateral_history
+  specialty: forensic
+  communication: recognising_and_responding_to_cues
+  setting: criminal_justice
+  meets: {role: colleague, who: probation officer, age_band: adult}
+  patient_age_band: adult
+  condition: primary_psychotic
+  scenario: A man with schizophrenia on probation has missed appointments and his probation officer is worried.
+  task: Take a collateral history from the probation officer.
+  covers: [recent changes, medication, substances, threats or offending, living situation, the officer's concerns]
+  existing_case: probation-psychosis-collateral
+
+- code: D12
+  session: afternoon
+  skill: history
+  subdivision: personal_and_social_history
+  specialty: child_and_adolescent
+  communication: recognising_and_responding_to_cues
+  setting: educational
+  meets: {role: patient, who: 16-year-old young carer, age_band: adolescent}
+  condition: mood
+  scenario: A 16-year-old who cares for a parent with a disabling illness, referred by the school nurse.
+  task: Take a personal and social history.
+  covers: [home and caring role, school, friends, money and housing, support, mood and safety]
+  existing_case: young-carer-social-history
+
+- code: D13
+  session: afternoon
+  skill: examination
+  subdivision: risk_assessment
+  specialty: general
+  communication: empathy
+  setting: criminal_justice
+  meets: {role: patient, who: man in a police custody suite, age_band: adult}
+  condition: mood
+  scenario: A man arrested for the first time who told a custody officer he wants to die.
+  task: Assess his risk of suicide.
+  covers: [his thoughts and plans, the arrest and its meaning, past self-harm, alcohol, protective factors, immediate safety]
+  existing_case: first-arrest-suicide-risk
+
+- code: D14
+  session: afternoon
+  skill: examination
+  subdivision: mental_state_psychotic
+  specialty: general
+  communication: recognising_and_responding_to_cues
+  setting: community
+  meets: {role: patient, who: woman with epilepsy, age_band: adult}
+  condition: secondary_syndromes
+  scenario: A woman with epilepsy who, after a cluster of seizures, believes her thoughts are being broadcast.
+  task: Examine her mental state for psychotic phenomena.
+  covers: [thought broadcast and insertion, passivity, voices, timing with seizures, orientation, insight]
+  existing_case: epilepsy-associated-psychosis
+
+- code: D15
+  session: afternoon
+  skill: examination
+  subdivision: mental_state_non_psychotic
+  specialty: general
+  communication: personalisation_and_respect
+  setting: general_hospital
+  meets: {role: patient, who: woman with repeated unexplained infections, age_band: adult}
+  condition: factitious
+  scenario: A woman with repeated infections that the medical team suspect may be self-induced.
+  task: Examine her mental state, sensitively.
+  covers: [her account, mood, stressors, past history, risk, her response to the team's concern]
+  existing_case: recurrent-infections-mental-state
+
+- code: D16
+  session: afternoon
+  skill: examination
+  subdivision: physical_examination
+  specialty: general
+  communication: providing_clear_and_accurate_information
+  setting: emergency
+  meets: {role: patient, who: woman taking lithium, age_band: adult}
+  condition: mood
+  scenario: A woman taking lithium with a coarse tremor, vomiting and unsteadiness.
+  task: Examine her for signs of toxicity and say what investigations you would arrange.
+  covers: [tremor, gait and coordination, hydration, consciousness, investigations, urgency]
+  simulator: physical_examination

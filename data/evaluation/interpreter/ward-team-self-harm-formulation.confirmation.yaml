@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: ward-team-self-harm-formulation
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Nadia, how many self-injury episodes have there been recently, and were the injuries assessed?
+  expected:
+  - episodes
+  rapport: false
+- utterance: What was happening on the ward just before the most recent episode?
+  expected:
+  - context
+  rapport: false
+- utterance: What different responses are staff arguing for when she becomes distressed?
+  expected:
+  - division
+  rapport: false
+- utterance: What emotions do you notice in yourself during these interactions?
+  expected:
+  - feelings
+  rapport: false
+- utterance: Have those feelings affected something you actually did in an interaction with her?
+  expected:
+  - reaction
+  rapport: false
+- utterance: Is there a written approach that all shifts are following consistently?
+  expected:
+  - plan
+  rapport: false
+- utterance: What change on the ward came just before yesterday's distress?
+  expected:
+  - context
+  rapport: false
+- utterance: How has she herself described what staff changes mean to her?
+  expected:
+  - perspective
+  rapport: false
+- utterance: what would you like the team to put in place to help with that?
+  expected:
+  - goal
+  rapport: false
+  previous:
+    interviewer: Where are disagreements showing up?
+    character: We argue about it at handover.
+- utterance: It can be difficult to talk openly when a team is struggling with its own reactions.
+  expected: []
+  rapport: true

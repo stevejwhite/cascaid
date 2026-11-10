@@ -1,0 +1,1955 @@
+# Synthetic interviews for the student interpreter. Drafted by GPT-6 (Codex)
+# on 2026-10-13; NOT YET REVIEWED. Not evaluation data.
+case_id: clozapine-explanation-relative
+case_version: 0.4.0
+status: draft
+interviews:
+- id: clozapine-explanation-relative-01
+  trainee: Nervous FY2; hesitates, adds rambling preambles, then checks details.
+  turns:
+  - doctor: Hello Maria, I'm the junior doctor meeting with you today; thank you for coming to talk.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'm not quite sure where to begin, so what would you like me to hear first?
+    character: The team want Daniel to try clozapine. I want to know what it means for him before he starts.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Sorry, I am getting ahead of myself. Let me go back a little. Tell me what Daniel has tried
+      for his illness up to now.
+    character: He has tried other tablets but still hears voices.
+    topics:
+    - treatment-history
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And are those experiences still happening most days?
+    character: Daniel has tried two other tablets for his illness and still hears voices most days.
+    topics:
+    - treatment-history
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'll take this bit by bit, and you can stop me if my question is unclear.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Wanting to know what this medicine means for your son before he starts makes sense. Tell me
+      what you hope treatment might make possible for him.
+    character: I'd like him well enough to return to college, but I'm scared to hope.
+    topics:
+    - hopes
+    empathy: specific
+    empathy_words: Wanting to know what this medicine means for your son before he starts makes sense.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What makes it difficult to let yourself hope?
+    character: I just want him well enough to go back to college. I'm scared of getting my hopes up again.
+    topics:
+    - hopes
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: He still hears voices most days after trying two tablets. I want to make sure I have followed
+      you properly; have I got the gist?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Sorry, I am getting ahead of myself. Let me go back a little. Tell me what you have heard
+      about clozapine so far.
+    character: A friend said it was dangerous and mentioned lots of blood tests.
+    topics:
+    - prior-knowledge
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Which part of that warning stuck with you?
+    character: A friend told me clozapine is dangerous and that people on it need blood tests all the
+      time.
+    topics:
+    - prior-knowledge
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Would it be all right to change the subject for a moment?
+    character: Yes, go on.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me how Daniel is with needles and blood samples.
+    character: Daniel hates needles. He fainted having blood taken once.
+    topics:
+    - needle-fear
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Has anything happened to him during one before?
+    character: Daniel hates needles. He fainted at the GP once when they took blood.
+    topics:
+    - needle-fear
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. I'm sorry it has been such a rough experience
+      for you.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: I'm sorry it has been such a rough experience for you.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me what unwanted effects his earlier tablets caused.
+    character: His last tablet didn't really suit him.
+    topics:
+    - previous-side-effects
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: In what way did it not suit him?
+    character: On his last tablet he put on a lot of weight and felt sleepy all day.
+    topics:
+    - previous-side-effects
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'd like to hear how things stand after his earlier medicines. Could we talk about any difficulty
+      he has with needles?
+    character: Daniel has tried two other tablets for his illness and still hears voices most days. Daniel
+      hates needles.
+    topics:
+    - treatment-history
+    - needle-fear
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, i want to make sure I have followed you properly; have I got the gist?
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Do you know whether Daniel has any food allergies?
+    character: I'm sorry, I don't know about that. Daniel would be the one to ask.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thank you, Maria; that gives me a clearer picture of what you wanted me to hear.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: clozapine-explanation-relative-02
+  trainee: Brisk trainee; short questions, clear signposting, little small talk.
+  turns:
+  - doctor: Maria, I'm the trainee you've come to see; thanks for making time.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Where shall we begin today?
+    character: The team want Daniel to try clozapine. I want to know what it means for him before he starts.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'd like to go over how he felt on the last medicine.
+    character: His last tablet didn't really suit him.
+    topics:
+    - previous-side-effects
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Was there anything like sleepiness throughout the day?
+    character: On his last tablet he put on a lot of weight and felt sleepy all day.
+    topics:
+    - previous-side-effects
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'll ask a few things, then draw them together.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I understand why a new treatment for Daniel deserves a proper explanation for you. I'd like
+      to hear what you want for Daniel's future.
+    character: I'd like him well enough to return to college, but I'm scared to hope.
+    topics:
+    - hopes
+    empathy: specific
+    empathy_words: I understand why a new treatment for Daniel deserves a proper explanation for you.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And where would you like him to get back to?
+    character: I just want him well enough to go back to college. I'm scared of getting my hopes up again.
+    topics:
+    - hopes
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: His last tablet caused weight gain and sleepiness throughout the day. I'll pause there; does
+      my account fit what you meant?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me about Daniel's cigarette use.
+    character: He smokes cigarettes every day.
+    topics:
+    - smoking
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: About how many does that come to?
+    character: He smokes about fifteen cigarettes a day.
+    topics:
+    - smoking
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What colour are the curtains in his room?
+    character: I'm sorry, I don't know about that. Daniel would be the one to ask.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me about any cannabis Daniel uses.
+    character: He sometimes smokes cannabis.
+    topics:
+    - cannabis
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Who is he with when that happens?
+    character: He sometimes smokes cannabis with his friends.
+    topics:
+    - cannabis
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. That is a difficult thing to have to deal with.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: That is a difficult thing to have to deal with.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me how Daniel gets on with remembering his tablets.
+    character: I remind him about the tablets, but he does still forget.
+    topics:
+    - adherence
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Who gives him those reminders?
+    character: I remind him to take his tablets every morning, but he does forget sometimes.
+    topics:
+    - adherence
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could we talk about weight or tiredness with his previous tablet? Could we discuss any recreational
+      drugs you know he takes?
+    character: On his last tablet he put on a lot of weight and felt sleepy all day. He sometimes smokes
+      cannabis with his friends.
+    topics:
+    - previous-side-effects
+    - cannabis
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, i'll pause there; does my account fit what you meant?
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Shall we switch to a different area now?
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thanks for those answers, Maria. I'll draw this conversation to a close.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: clozapine-explanation-relative-03
+  trainee: Warm trainee; uses the person's name, listens and validates before moving on.
+  turns:
+  - doctor: Welcome, Maria; I'm the trainee speaking with you today. Thank you for making time.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What would you most like me to hear before I ask anything specific?
+    character: The team want Daniel to try clozapine. I want to know what it means for him before he starts.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Take your time with this next bit. I'd like to ask who helps him take the medicine regularly.
+    character: I remind him about the tablets, but he does still forget.
+    topics:
+    - adherence
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And when do you usually remind him?
+    character: I remind him to take his tablets every morning, but he does forget sometimes.
+    topics:
+    - adherence
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: There is room to pause; you do not have to rush through this conversation.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Your wish to understand what happens next for Daniel is entirely reasonable. Could we talk
+      about your expectations and how you are coping with them?
+    character: I'd like him well enough to return to college, but I'm scared to hope.
+    topics:
+    - hopes
+    empathy: specific
+    empathy_words: Your wish to understand what happens next for Daniel is entirely reasonable.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Is that what you are hoping he will be well enough for?
+    character: I just want him well enough to go back to college. I'm scared of getting my hopes up again.
+    topics:
+    - hopes
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You remind him every morning, but some doses still get missed. Please put me right if my recap
+      has missed what you meant.
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Take your time with this next bit. Tell me what Daniel himself thinks about trying clozapine.
+    character: He wants the voices to stop, but the blood tests frighten him.
+    topics:
+    - daniel-view
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What is the part he is frightened of?
+    character: Daniel says he'll try anything that stops the voices, but he's frightened of the blood
+      tests.
+    topics:
+    - daniel-view
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Is it all right if we turn to something different?
+    character: Yes, go on.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'd like to hear how things stand after his earlier medicines.
+    character: He has tried other tablets but still hears voices.
+    topics:
+    - treatment-history
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: How many different tablets has that involved?
+    character: Daniel has tried two other tablets for his illness and still hears voices most days.
+    topics:
+    - treatment-history
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. I can appreciate how difficult that has been
+      to face.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: I can appreciate how difficult that has been to face.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'd like to start with what others have told you about this medicine.
+    character: A friend said it was dangerous and mentioned lots of blood tests.
+    topics:
+    - prior-knowledge
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And where did that information come from?
+    character: A friend told me clozapine is dangerous and that people on it need blood tests all the
+      time.
+    topics:
+    - prior-knowledge
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could we go through whether doses ever get missed? Describe what his previous treatment has
+      achieved.
+    character: I remind him to take his tablets every morning, but he does forget sometimes. Daniel has
+      tried two other tablets for his illness and still hears voices most days.
+    topics:
+    - adherence
+    - treatment-history
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, please put me right if my recap has missed what you meant.
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Has Daniel ever needed glasses for reading?
+    character: I'm sorry, I don't know about that. Daniel would be the one to ask.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I appreciate you talking with me today, Maria; thank you for your time.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: clozapine-explanation-relative-04
+  trainee: Formal and careful trainee; complete sentences and polite requests.
+  turns:
+  - doctor: Good morning, Maria. I am the trainee conducting this discussion. Thank you for attending.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: How would you prefer to begin our discussion?
+    character: The team want Daniel to try clozapine. I want to know what it means for him before he starts.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: If I may, I would like to clarify the following. Could we go over your understanding of clozapine?
+    character: A friend said it was dangerous and mentioned lots of blood tests.
+    topics:
+    - prior-knowledge
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What were you told about the tests involved?
+    character: A friend told me clozapine is dangerous and that people on it need blood tests all the
+      time.
+    topics:
+    - prior-knowledge
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I shall ask about a number of areas before bringing the account together.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: It is understandable that you want the proposed medicine explained before Daniel takes it.
+      What change would matter most to you if this treatment helps?
+    character: I'd like him well enough to return to college, but I'm scared to hope.
+    topics:
+    - hopes
+    empathy: specific
+    empathy_words: It is understandable that you want the proposed medicine explained before Daniel takes
+      it.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: How do you feel about hoping for that again?
+    character: I just want him well enough to go back to college. I'm scared of getting my hopes up again.
+    topics:
+    - hopes
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: A friend warned you about danger with clozapine and frequent blood tests. Please let me know
+      whether I have represented your account accurately.
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: If I may, I would like to clarify the following. I'd like to ask about his experience of having
+      blood taken.
+    character: Daniel hates needles. He fainted having blood taken once.
+    topics:
+    - needle-fear
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Where was he when that happened?
+    character: Daniel hates needles. He fainted at the GP once when they took blood.
+    topics:
+    - needle-fear
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Do you know the name of his dentist?
+    character: I'm sorry, I don't know about that. Daniel would be the one to ask.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could we talk about weight or tiredness with his previous tablet?
+    character: His last tablet didn't really suit him.
+    topics:
+    - previous-side-effects
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What happened to his weight on that one?
+    character: On his last tablet he put on a lot of weight and felt sleepy all day.
+    topics:
+    - previous-side-effects
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. I recognise that this has been a distressing
+      experience for you.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: I recognise that this has been a distressing experience for you.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'd like to establish whether he is smoking at present.
+    character: He smokes cigarettes every day.
+    topics:
+    - smoking
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And is that the amount each day?
+    character: He smokes about fifteen cigarettes a day.
+    topics:
+    - smoking
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What information have you already come across about the proposed tablet? Tell me what unwanted
+      effects his earlier tablets caused.
+    character: A friend told me clozapine is dangerous and that people on it need blood tests all the
+      time. On his last tablet he put on a lot of weight and felt sleepy all day.
+    topics:
+    - prior-knowledge
+    - previous-side-effects
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, please let me know whether I have represented your account accurately.
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: May we turn to a separate subject at this point?
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thank you for your account today, Maria. That concludes my questions for now.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: clozapine-explanation-relative-05
+  trainee: Rambling trainee; long signposts, sometimes returns to a point to get specifics.
+  turns:
+  - doctor: Hello Maria, thanks for meeting me; I'm one of the trainees, and we'll have a bit of time
+      together.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: There are several things we could cover, but where would you like to start?
+    character: The team want Daniel to try clozapine. I want to know what it means for him before he starts.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: There are a few details I need, though I don't want to jump too far ahead. Could we talk about
+      how much tobacco he uses?
+    character: He smokes cigarettes every day.
+    topics:
+    - smoking
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What sort of daily number are we talking about?
+    character: He smokes about fifteen cigarettes a day.
+    topics:
+    - smoking
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I might go back over a detail now and then to make sure I have the order clear.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I appreciate how important it is to you to understand this recommendation for Daniel. Tell
+      me what you hope treatment might make possible for him.
+    character: I'd like him well enough to return to college, but I'm scared to hope.
+    topics:
+    - hopes
+    empathy: specific
+    empathy_words: I appreciate how important it is to you to understand this recommendation for Daniel.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could you say what you are hoping he could return to?
+    character: I just want him well enough to go back to college. I'm scared of getting my hopes up again.
+    topics:
+    - hopes
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Daniel smokes about fifteen cigarettes each day. I've gone round that a bit; is my account
+      still a fair reflection of what you said?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: There are a few details I need, though I don't want to jump too far ahead. I'd like to ask
+      about drugs he might use socially.
+    character: He sometimes smokes cannabis.
+    topics:
+    - cannabis
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And is that something he does sometimes?
+    character: He sometimes smokes cannabis with his friends.
+    topics:
+    - cannabis
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before I lose track, could I take us to a different bit of the story?
+    character: Yes, go on.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could we go through whether doses ever get missed?
+    character: I remind him about the tablets, but he does still forget.
+    topics:
+    - adherence
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Does he still miss them even with that help?
+    character: I remind him to take his tablets every morning, but he does forget sometimes.
+    topics:
+    - adherence
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. It seems you have had a really difficult time
+      with all this.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: It seems you have had a really difficult time with all this.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'd like to hear his own view of the proposed medicine.
+    character: He wants the voices to stop, but the blood tests frighten him.
+    topics:
+    - daniel-view
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And what does he most want it to change?
+    character: Daniel says he'll try anything that stops the voices, but he's frightened of the blood
+      tests.
+    topics:
+    - daniel-view
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What does his smoking look like over a day? Tell me how Daniel gets on with remembering his
+      tablets.
+    character: He smokes about fifteen cigarettes a day. I remind him to take his tablets every morning,
+      but he does forget sometimes.
+    topics:
+    - smoking
+    - adherence
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, i've gone round that a bit; is my account still a fair reflection of what
+      you said?
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Was the ward easy to find this morning?
+    character: I'm sorry, I don't know about that. Daniel would be the one to ask.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'll leave the questions there now, Maria; thank you for sticking with the conversation.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: clozapine-explanation-relative-06
+  trainee: Abrupt trainee; direct questions, occasional pressure, then an attempt to repair rapport.
+  turns:
+  - doctor: Hello Maria. I'm the trainee. We'll talk now, if you're ready.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Give me your own account before I begin the questions.
+    character: The team want Daniel to try clozapine. I want to know what it means for him before he starts.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could we talk about whether he wants to try it?
+    character: He wants the voices to stop, but the blood tests frighten him.
+    topics:
+    - daniel-view
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Would he try it despite that fear?
+    character: Daniel says he'll try anything that stops the voices, but he's frightened of the blood
+      tests.
+    topics:
+    - daniel-view
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I need to cover several areas in this discussion.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You want to know what you are facing with Daniel's new tablet, and that makes sense. I'd like
+      to hear what you want for Daniel's future.
+    character: I'd like him well enough to return to college, but I'm scared to hope.
+    topics:
+    - hopes
+    empathy: specific
+    empathy_words: You want to know what you are facing with Daniel's new tablet, and that makes sense.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What is it about hoping again that frightens you?
+    character: I just want him well enough to go back to college. I'm scared of getting my hopes up again.
+    topics:
+    - hopes
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: He wants the voices to stop but is afraid of the blood tests. Is that a fair account of what
+      you have said so far?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could we go over the tablets he has already had?
+    character: He has tried other tablets but still hears voices.
+    topics:
+    - treatment-history
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What is still troubling him despite them?
+    character: Daniel has tried two other tablets for his illness and still hears voices most days.
+    topics:
+    - treatment-history
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Do you know where the visitors' parking is?
+    character: I'm sorry, I don't know about that. Daniel would be the one to ask.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What information have you already come across about the proposed tablet?
+    character: A friend said it was dangerous and mentioned lots of blood tests.
+    topics:
+    - prior-knowledge
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could you say a little more about what your friend said?
+    character: A friend told me clozapine is dangerous and that people on it need blood tests all the
+      time.
+    topics:
+    - prior-knowledge
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. I am sorry; that has clearly been difficult
+      for you.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: I am sorry; that has clearly been difficult for you.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could we talk about any difficulty he has with needles?
+    character: Daniel hates needles. He fainted having blood taken once.
+    topics:
+    - needle-fear
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And what was happening when he fainted?
+    character: Daniel hates needles. He fainted at the GP once when they took blood.
+    topics:
+    - needle-fear
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What has he said to you about agreeing to this treatment? I'd like to start with what others
+      have told you about this medicine.
+    character: Daniel says he'll try anything that stops the voices, but he's frightened of the blood
+      tests. A friend told me clozapine is dangerous and that people on it need blood tests all the time.
+    topics:
+    - daniel-view
+    - prior-knowledge
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: The consultant has made the choice, so we should not get caught up in doubts.
+    character: I'm not sure, to be honest. You'd have to ask Daniel.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: The consultant has made the choice, so we should not get caught up in doubts.
+  - doctor: Can we leave that there and take another subject?
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: That's the end of my questions for the moment, Maria. Thank you for answering.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: clozapine-explanation-relative-07
+  trainee: Speech-recognition transcript; lower case, fillers, false starts and sparse punctuation.
+  turns:
+  - doctor: hi maria um im the trainee doctor thanks for sitting down with me
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: so um where would you like to start with all this
+    character: The team want Daniel to try clozapine. I want to know what it means for him before he starts.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: er i was going to ask no let me come back to this describe what happens when daniel has a
+      blood test.
+    character: Daniel hates needles. He fainted having blood taken once.
+    topics:
+    - needle-fear
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: what makes those appointments difficult for him
+    character: Daniel hates needles. He fainted at the GP once when they took blood.
+    topics:
+    - needle-fear
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: ill ask a few things and then bring it together at the end
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: um i understand why knowing what this medicine means for daniel matters to you. could we talk
+      about your expectations and how you are coping with them
+    character: I'd like him well enough to return to college, but I'm scared to hope.
+    topics:
+    - hopes
+    empathy: specific
+    empathy_words: um i understand why knowing what this medicine means for daniel matters to you.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: where would you like him to be well enough to go
+    character: I just want him well enough to go back to college. I'm scared of getting my hopes up again.
+    topics:
+    - hopes
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: daniel dislikes needles and has fainted while blood was taken. so have i picked that up the
+      way you meant it
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: er i was going to ask no let me come back to this describe what did not suit him about earlier
+      medication.
+    character: His last tablet didn't really suit him.
+    topics:
+    - previous-side-effects
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: could you be more specific about those effects
+    character: On his last tablet he put on a lot of weight and felt sleepy all day.
+    topics:
+    - previous-side-effects
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: um could we talk about a different bit now
+    character: Yes, go on.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: what does his smoking look like over a day
+    character: He smokes cigarettes every day.
+    topics:
+    - smoking
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: roughly how many cigarettes is that
+    character: He smokes about fifteen cigarettes a day.
+    topics:
+    - smoking
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: thinking back to what you were saying earlier. um im sorry that has been so difficult to go
+      through.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: um im sorry that has been so difficult to go through.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: could we discuss any recreational drugs you know he takes
+    character: He sometimes smokes cannabis.
+    topics:
+    - cannabis
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: is that with his friends
+    character: He sometimes smokes cannabis with his friends.
+    topics:
+    - cannabis
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: tell me how daniel is with needles and blood samples. id like to establish whether he is smoking
+      at present.
+    character: Daniel hates needles. He smokes about fifteen cigarettes a day.
+    topics:
+    - needle-fear
+    - smoking
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: before we finish so have i picked that up the way you meant it
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: have you brought an appointment letter with you
+    character: I'm sorry, I don't know about that. Daniel would be the one to ask.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: thanks maria um thats all i wanted to ask for now
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: clozapine-explanation-relative-08
+  trainee: Trainee who summarises frequently; repeats the account back before changing topic.
+  turns:
+  - doctor: Hello Maria, I'm the trainee here to hear your account. Thank you for speaking with me.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What would you like to put on the table first?
+    character: The team want Daniel to try clozapine. I want to know what it means for him before he starts.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'll hold that in mind as we go on. What do you know about cannabis in his life?
+    character: He sometimes smokes cannabis.
+    topics:
+    - cannabis
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What have you heard about who he does that with?
+    character: He sometimes smokes cannabis with his friends.
+    topics:
+    - cannabis
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You want to understand the proposed clozapine treatment before Daniel starts.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Wanting a clear picture of clozapine before he starts is a reasonable concern. What change
+      would matter most to you if this treatment helps?
+    character: I'd like him well enough to return to college, but I'm scared to hope.
+    topics:
+    - hopes
+    empathy: specific
+    empathy_words: Wanting a clear picture of clozapine before he starts is a reasonable concern.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What would that improvement let him do?
+    character: I just want him well enough to go back to college. I'm scared of getting my hopes up again.
+    topics:
+    - hopes
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: He sometimes uses cannabis with friends. I have tried to keep to your account; have I understood
+      it as you intended?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: He sometimes uses cannabis with friends. I'll hold that in mind as we go on. Describe the
+      routine for getting his tablets taken.
+    character: I remind him about the tablets, but he does still forget.
+    topics:
+    - adherence
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Is it every morning that you prompt him?
+    character: I remind him to take his tablets every morning, but he does forget sometimes.
+    topics:
+    - adherence
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Which bus stop did you use coming here?
+    character: I'm sorry, I don't know about that. Daniel would be the one to ask.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What has he said to you about agreeing to this treatment?
+    character: He wants the voices to stop, but the blood tests frighten him.
+    topics:
+    - daniel-view
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Is stopping the voices what he is hoping for?
+    character: Daniel says he'll try anything that stops the voices, but he's frightened of the blood
+      tests.
+    topics:
+    - daniel-view
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. That is quite a difficult situation to have
+      been in.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: That is quite a difficult situation to have been in.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Describe what his previous treatment has achieved.
+    character: He has tried other tablets but still hears voices.
+    topics:
+    - treatment-history
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: So have the voices stopped with those?
+    character: Daniel has tried two other tablets for his illness and still hears voices most days.
+    topics:
+    - treatment-history
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me about any cannabis Daniel uses. I'd like to hear his own view of the proposed medicine.
+    character: He sometimes smokes cannabis with his friends. Daniel says he'll try anything that stops
+      the voices, but he's frightened of the blood tests.
+    topics:
+    - cannabis
+    - daniel-view
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, i have tried to keep to your account; have I understood it as you intended?
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Shall we put that part aside and look at something else?
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thank you, Maria. I'll finish by keeping those points together in my notes.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: clozapine-explanation-relative-09
+  trainee: Sometimes confrontational trainee; slips into minimising or lecturing despite some empathy.
+  turns:
+  - doctor: Morning, Maria. I'm the doctor doing this interview; thanks for being here.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What is the main thing you want me to hear at the start?
+    character: The team want Daniel to try clozapine. I want to know what it means for him before he starts.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: We ought to be clear about this next part. Tell me what Daniel has tried for his illness up
+      to now.
+    character: He has tried other tablets but still hears voices.
+    topics:
+    - treatment-history
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let us pin that part down. And are those experiences still happening most days?
+    character: Daniel has tried two other tablets for his illness and still hears voices most days.
+    topics:
+    - treatment-history
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: There are several things to cover before we finish.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I hear that understanding the team's plan for your son matters to you. Tell me what you hope
+      treatment might make possible for him.
+    character: I'd like him well enough to return to college, but I'm scared to hope.
+    topics:
+    - hopes
+    empathy: specific
+    empathy_words: I hear that understanding the team's plan for your son matters to you.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me about the hesitation you feel in hoping for that.
+    character: I just want him well enough to go back to college. I'm scared of getting my hopes up again.
+    topics:
+    - hopes
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: He still hears voices most days after trying two tablets. Does that follow what you meant
+      to tell me?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: We ought to be clear about this next part. Tell me what you have heard about clozapine so
+      far.
+    character: A friend said it was dangerous and mentioned lots of blood tests.
+    topics:
+    - prior-knowledge
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let us pin that part down. Which part of that warning stuck with you?
+    character: A friend told me clozapine is dangerous and that people on it need blood tests all the
+      time.
+    topics:
+    - prior-knowledge
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Can we move the conversation to another area?
+    character: Yes, go on.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let us pin that part down. Tell me how Daniel is with needles and blood samples.
+    character: Daniel hates needles. He fainted having blood taken once.
+    topics:
+    - needle-fear
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let us pin that part down. Has anything happened to him during one before?
+    character: Daniel hates needles. He fainted at the GP once when they took blood.
+    topics:
+    - needle-fear
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. I can see this has been a hard experience to
+      have.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: I can see this has been a hard experience to have.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let us pin that part down. Tell me what unwanted effects his earlier tablets caused.
+    character: His last tablet didn't really suit him.
+    topics:
+    - previous-side-effects
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let us pin that part down. In what way did it not suit him?
+    character: On his last tablet he put on a lot of weight and felt sleepy all day.
+    topics:
+    - previous-side-effects
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let us pin that part down. I'd like to hear how things stand after his earlier medicines.
+      Could we talk about any difficulty he has with needles?
+    character: Daniel has tried two other tablets for his illness and still hears voices most days. Daniel
+      hates needles.
+    topics:
+    - treatment-history
+    - needle-fear
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You need to give the recommendation a chance instead of thinking about every drawback.
+    character: I'm not sure, to be honest. You'd have to ask Daniel.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: You need to give the recommendation a chance instead of thinking about every
+      drawback.
+  - doctor: Do you know the name of the person at reception?
+    character: I'm sorry, I don't know about that. Daniel would be the one to ask.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'll stop my questions there, Maria. Thank you for talking it through.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: clozapine-explanation-relative-10
+  trainee: Reflective trainee; patient pauses, validates, and checks the person's perspective.
+  turns:
+  - doctor: Hello, Maria; thank you for meeting with me. I'm a trainee with the team.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Where would it feel right to begin telling me your account?
+    character: The team want Daniel to try clozapine. I want to know what it means for him before he starts.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I would like to understand this in your own words. I'd like to go over how he felt on the
+      last medicine.
+    character: His last tablet didn't really suit him.
+    topics:
+    - previous-side-effects
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I would like to stay with that for a moment. Was there anything like sleepiness throughout
+      the day?
+    character: On his last tablet he put on a lot of weight and felt sleepy all day.
+    topics:
+    - previous-side-effects
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: We can pause while you find the words; there is no need for a perfect account.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before Daniel starts another medicine, it makes sense to want space for your questions. I'd
+      like to hear what you want for Daniel's future.
+    character: I'd like him well enough to return to college, but I'm scared to hope.
+    topics:
+    - hopes
+    empathy: specific
+    empathy_words: Before Daniel starts another medicine, it makes sense to want space for your questions.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What makes you cautious about looking ahead?
+    character: I just want him well enough to go back to college. I'm scared of getting my hopes up again.
+    topics:
+    - hopes
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: His last tablet caused weight gain and sleepiness throughout the day. Does the way I have
+      brought that together capture what you wanted to say?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I would like to understand this in your own words. Tell me about Daniel's cigarette use.
+    character: He smokes cigarettes every day.
+    topics:
+    - smoking
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I would like to stay with that for a moment. About how many does that come to?
+    character: He smokes about fifteen cigarettes a day.
+    topics:
+    - smoking
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What time does the hospital cafe close?
+    character: I'm sorry, I don't know about that. Daniel would be the one to ask.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I would like to stay with that for a moment. Tell me about any cannabis Daniel uses.
+    character: He sometimes smokes cannabis.
+    topics:
+    - cannabis
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I would like to stay with that for a moment. Who is he with when that happens?
+    character: He sometimes smokes cannabis with his friends.
+    topics:
+    - cannabis
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. I hear that this has been difficult for you
+      to carry.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: I hear that this has been difficult for you to carry.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I would like to stay with that for a moment. Tell me how Daniel gets on with remembering his
+      tablets.
+    character: I remind him about the tablets, but he does still forget.
+    topics:
+    - adherence
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I would like to stay with that for a moment. Who gives him those reminders?
+    character: I remind him to take his tablets every morning, but he does forget sometimes.
+    topics:
+    - adherence
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I would like to stay with that for a moment. Could we talk about weight or tiredness with
+      his previous tablet? Could we discuss any recreational drugs you know he takes?
+    character: On his last tablet he put on a lot of weight and felt sleepy all day. He sometimes smokes
+      cannabis with his friends.
+    topics:
+    - previous-side-effects
+    - cannabis
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, does the way I have brought that together capture what you wanted to say?
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Would now be a reasonable point to change the subject?
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thank you for helping me understand, Maria. I'll end the interview at this point.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: clozapine-explanation-relative-11
+  trainee: Uncertain trainee; self-corrects wording and sometimes offers premature reassurance.
+  turns:
+  - doctor: Hi Maria, I'm the trainee talking with you today; thanks for coming to see us.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What should we begin with, from your point of view?
+    character: The team want Daniel to try clozapine. I want to know what it means for him before he starts.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let me put that better before I go on. I'd like to ask who helps him take the medicine regularly.
+    character: I remind him about the tablets, but he does still forget.
+    topics:
+    - adherence
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let me check I am asking this clearly. And when do you usually remind him?
+    character: I remind him to take his tablets every morning, but he does forget sometimes.
+    topics:
+    - adherence
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: If I phrase something badly, I can ask it a different way.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Your wish to hear what clozapine involves for Daniel deserves time and attention. Could we
+      talk about your expectations and how you are coping with them?
+    character: I'd like him well enough to return to college, but I'm scared to hope.
+    topics:
+    - hopes
+    empathy: specific
+    empathy_words: Your wish to hear what clozapine involves for Daniel deserves time and attention.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: So which change are you most hoping to see?
+    character: I just want him well enough to go back to college. I'm scared of getting my hopes up again.
+    topics:
+    - hopes
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You remind him every morning, but some doses still get missed. I think I have followed that;
+      have I understood your meaning?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let me put that better before I go on. Tell me what Daniel himself thinks about trying clozapine.
+    character: He wants the voices to stop, but the blood tests frighten him.
+    topics:
+    - daniel-view
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let me check I am asking this clearly. What is the part he is frightened of?
+    character: Daniel says he'll try anything that stops the voices, but he's frightened of the blood
+      tests.
+    topics:
+    - daniel-view
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could I change tack and ask about another part?
+    character: Yes, go on.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let me check I am asking this clearly. I'd like to hear how things stand after his earlier
+      medicines.
+    character: He has tried other tablets but still hears voices.
+    topics:
+    - treatment-history
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let me check I am asking this clearly. How many different tablets has that involved?
+    character: Daniel has tried two other tablets for his illness and still hears voices most days.
+    topics:
+    - treatment-history
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. It must have been really hard to find yourself
+      dealing with that.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: It must have been really hard to find yourself dealing with that.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let me check I am asking this clearly. I'd like to start with what others have told you about
+      this medicine.
+    character: A friend said it was dangerous and mentioned lots of blood tests.
+    topics:
+    - prior-knowledge
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let me check I am asking this clearly. And where did that information come from?
+    character: A friend told me clozapine is dangerous and that people on it need blood tests all the
+      time.
+    topics:
+    - prior-knowledge
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let me check I am asking this clearly. Could we go through whether doses ever get missed?
+      Describe what his previous treatment has achieved.
+    character: I remind him to take his tablets every morning, but he does forget sometimes. Daniel has
+      tried two other tablets for his illness and still hears voices most days.
+    topics:
+    - adherence
+    - treatment-history
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: It is just another tablet at the end of the day, so try not to build it up.
+    character: I'm not sure, to be honest. You'd have to ask Daniel.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: It is just another tablet at the end of the day, so try not to build it up.
+  - doctor: Did anyone give you directions to this room?
+    character: I'm sorry, I don't know about that. Daniel would be the one to ask.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'll leave it there, Maria. Thank you for explaining things as we went along.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: clozapine-explanation-relative-12
+  trainee: Conversational trainee; relaxed wording, short acknowledgements and practical follow-ups.
+  turns:
+  - doctor: Hello Maria, nice to meet you. I'm one of the trainee doctors; thanks for coming along.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What would be a good place for us to start?
+    character: The team want Daniel to try clozapine. I want to know what it means for him before he starts.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Just so I've got the picture. Could we go over your understanding of clozapine?
+    character: A friend said it was dangerous and mentioned lots of blood tests.
+    topics:
+    - prior-knowledge
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Right, just picking up on that. What were you told about the tests involved?
+    character: A friend told me clozapine is dangerous and that people on it need blood tests all the
+      time.
+    topics:
+    - prior-knowledge
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'll pick up a few details and we can bring it all together afterwards.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I can see why you want us to go through what this tablet means for him. What change would
+      matter most to you if this treatment helps?
+    character: I'd like him well enough to return to college, but I'm scared to hope.
+    topics:
+    - hopes
+    empathy: specific
+    empathy_words: I can see why you want us to go through what this tablet means for him.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: How does the idea of that future feel to you?
+    character: I just want him well enough to go back to college. I'm scared of getting my hopes up again.
+    topics:
+    - hopes
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: A friend warned you about danger with clozapine and frequent blood tests. Have I got the picture
+      you were trying to give me?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Just so I've got the picture. I'd like to ask about his experience of having blood taken.
+    character: Daniel hates needles. He fainted having blood taken once.
+    topics:
+    - needle-fear
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Right, just picking up on that. Where was he when that happened?
+    character: Daniel hates needles. He fainted at the GP once when they took blood.
+    topics:
+    - needle-fear
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Which ward entrance did you come through?
+    character: I'm sorry, I don't know about that. Daniel would be the one to ask.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Right, just picking up on that. Could we talk about weight or tiredness with his previous
+      tablet?
+    character: His last tablet didn't really suit him.
+    topics:
+    - previous-side-effects
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Right, just picking up on that. What happened to his weight on that one?
+    character: On his last tablet he put on a lot of weight and felt sleepy all day.
+    topics:
+    - previous-side-effects
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. That is a tough thing to be having to deal
+      with.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: That is a tough thing to be having to deal with.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Right, just picking up on that. I'd like to establish whether he is smoking at present.
+    character: He smokes cigarettes every day.
+    topics:
+    - smoking
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Right, just picking up on that. And is that the amount each day?
+    character: He smokes about fifteen cigarettes a day.
+    topics:
+    - smoking
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Right, just picking up on that. What information have you already come across about the proposed
+      tablet? Tell me what unwanted effects his earlier tablets caused.
+    character: A friend told me clozapine is dangerous and that people on it need blood tests all the
+      time. On his last tablet he put on a lot of weight and felt sleepy all day.
+    topics:
+    - prior-knowledge
+    - previous-side-effects
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, have I got the picture you were trying to give me?
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Shall we take a different bit of this next?
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thanks for talking it over with me, Maria. That's all for the moment.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''

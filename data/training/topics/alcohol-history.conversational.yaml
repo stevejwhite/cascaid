@@ -1,0 +1,199 @@
+# Conversational lines for the topic classifier: generic openers and transitions
+# (no topic), and questions addressed by name or with a preamble. Drafted by
+# Claude (Opus 5.5) on 2026-10-13 after real sessions showed most such lines fell
+# to Qwen. NOT YET REVIEWED by a person. Not evaluation data.
+case_id: alcohol-history
+case_version: 0.4.0
+status: draft
+items:
+- utterance: Morning Chris, come in and have a seat.
+  topics: &id001 []
+  style: greeting
+- utterance: Hi Chris, I'm one of the doctors here. Is it all right if we have a chat?
+  topics: *id001
+  style: introduction
+- utterance: What would you like to talk about first?
+  topics: *id001
+  style: open
+- utterance: Could you start by telling me why you've come along today?
+  topics: *id001
+  style: open
+- utterance: In your own words, what's brought you here?
+  topics: *id001
+  style: open
+- utterance: How are you doing today, Chris?
+  topics: *id001
+  style: greeting
+- utterance: Is now an okay time to talk?
+  topics: *id001
+  style: brief
+- utterance: Before we start, do you have any questions for me?
+  topics: *id001
+  style: open
+- utterance: Thanks for waiting. Shall we make a start?
+  topics: *id001
+  style: greeting
+- utterance: um so tell me a little about yourself
+  topics: *id001
+  style: spoken
+- utterance: Okay. I just need to ask you a few questions, is that alright?
+  topics: *id001
+  style: spoken
+- utterance: Right then, I'm going to go through a few things with you now.
+  topics: *id001
+  style: spoken
+- utterance: That's helpful, thank you. Let's move on to something else.
+  topics: *id001
+  style: follow_up
+- utterance: Okay then Chris, if you had to put a figure on it, what's a normal amount for you?
+  topics:
+  - quantity
+  style: spoken
+- utterance: Right, thanks. And what sort of things do you drink, Chris?
+  topics:
+  - quantity
+  style: follow_up
+- utterance: And Chris, is a drink the first thing you reach for when you wake up?
+  topics:
+  - morning-drinking
+  style: colloquial
+- utterance: Okay, so do you ever need a drink in the morning to get going?
+  topics:
+  - morning-drinking
+  style: spoken
+- utterance: Thanks Chris. What's it like for you if you go a day without a drink?
+  topics:
+  - withdrawal
+  style: open
+- utterance: Okay, and have you ever had the shakes when you've stopped?
+  topics:
+  - withdrawal
+  style: closed
+- utterance: Right, Chris, do you find you need more than you used to for the same effect?
+  topics:
+  - tolerance
+  style: closed
+- utterance: And does it take a lot more to feel drunk these days?
+  topics:
+  - tolerance
+  style: colloquial
+- utterance: Okay Chris, going back a bit, when did your drinking first become a problem?
+  topics:
+  - duration
+  style: spoken
+- utterance: So roughly how many years has it been like this for you?
+  topics:
+  - duration
+  style: follow_up
+- utterance: Alright Chris, have you ever tried to cut back?
+  topics:
+  - loss-of-control
+  style: spoken
+- utterance: And when you mean to stop at one or two, how does that usually go?
+  topics:
+  - loss-of-control
+  style: open
+- utterance: Okay Chris, has the drinking caused any trouble at work?
+  topics:
+  - consequences
+  style: closed
+- utterance: Right, and has it had any effect on your family or your money?
+  topics:
+  - consequences
+  style: follow_up
+- utterance: Chris, do you ever get behind the wheel after you've had a drink?
+  topics:
+  - consequences
+  style: closed
+- utterance: Thanks Chris. How has your mood been lately?
+  topics:
+  - mood
+  style: open
+- utterance: Okay, and how are you sleeping these days, Chris?
+  topics:
+  - mood
+  style: open
+- utterance: 'Chris, I ask everyone this: have you had any thoughts of harming yourself?'
+  topics:
+  - risk
+  style: clinical
+- utterance: Right, and have things ever felt so bad you've thought of ending your life?
+  topics:
+  - risk
+  style: closed
+- utterance: Okay Chris, do you use anything else, like cannabis or other drugs?
+  topics:
+  - other-substances
+  style: closed
+- utterance: Alright, and cigarettes, Chris, are they part of things too?
+  topics:
+  - other-substances
+  style: brief
+- utterance: Right Chris, how's your physical health been?
+  topics:
+  - physical-health
+  style: open
+- utterance: Okay, and what did the GP say about your liver?
+  topics:
+  - physical-health
+  style: follow_up
+- utterance: Chris, what would you like to be different about your drinking?
+  topics:
+  - motivation
+  style: open
+- utterance: Okay, and is there anything that makes you want to change?
+  topics:
+  - motivation
+  style: open
+- utterance: Hi there Chris, my name's Dr Shah, I'm one of the psychiatrists.
+  topics: &id002 []
+  style: introduction
+- utterance: Nice to meet you, Chris.
+  topics: *id002
+  style: greeting
+- utterance: What should I call you, Chris or something else?
+  topics: *id002
+  style: brief
+- utterance: Thanks for being so open with me.
+  topics: *id002
+  style: follow_up
+- utterance: So Chris, what's been going on for you lately?
+  topics: *id002
+  style: open
+- utterance: Could you bring me up to speed on the last few days?
+  topics: *id002
+  style: open
+- utterance: What made you decide to come today?
+  topics: *id002
+  style: open
+- utterance: Is there anything you'd like to ask before we carry on?
+  topics: *id002
+  style: open
+- utterance: Okay, I'm going to change direction slightly now.
+  topics: *id002
+  style: spoken
+- utterance: Bear with me while I jot that down.
+  topics: *id002
+  style: spoken
+- utterance: I'd like to understand things from your point of view.
+  topics: *id002
+  style: indirect
+- utterance: Hello Chris, I'm Dr Shah, one of the psychiatrists. Your GP asked us to see you. Roughly
+    how much would you say you drink in a week?
+  topics:
+  - quantity
+  style: introduction
+- utterance: Nice to meet you, Chris. I'm one of the doctors in the team, and I wanted to ask, do you
+    ever get shaky if you miss a drink?
+  topics:
+  - withdrawal
+  style: introduction
+- utterance: Thanks for coming in, Chris. I'm going to ask a few things. First, has drinking ever got
+    you into trouble with the police?
+  topics:
+  - consequences
+  style: introduction
+- utterance: Hi Chris, I'm Dr Shah. Before anything else, I wanted to check, how has your mood been recently?
+  topics:
+  - mood
+  style: introduction

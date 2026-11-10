@@ -1,0 +1,92 @@
+# Author-labelled interpreter cases (development set, not clinically reviewed).
+# expected: fact IDs a correct interpreter selects; [] means no topic.
+# rapport: expected rapport flag. previous: optional prior exchange for follow-ups.
+case_id: overdose-risk-assessment
+case_version: 0.4.0
+# development: used for prompt and label tuning. Report test-split results separately.
+split: development
+items:
+  - utterance: Hello Jordan, I'm one of the psychiatry doctors. Thanks for agreeing to talk to me.
+    expected: []
+    rapport: false
+  - utterance: Can you tell me what happened last night?
+    expected: [overdose-details]
+    rapport: false
+  - utterance: What did you take, and how many tablets?
+    expected: [overdose-details]
+    rapport: false
+  - utterance: Had you planned it? When did you get hold of the tablets?
+    expected: [planning]
+    rapport: false
+  - utterance: Did you leave a note or say goodbye to anyone?
+    expected: [note]
+    rapport: false
+  - utterance: How did you end up coming to hospital?
+    expected: [discovery]
+    rapport: false
+  - utterance: Did you call anyone for help afterwards?
+    expected: [discovery]
+    rapport: false
+  - utterance: It sounds like things have been incredibly hard for you recently.
+    expected: []
+    rapport: true
+  - utterance: Did you take steps to make sure nobody would find you?
+    expected: [precautions]
+    rapport: false
+  - utterance: What's been happening in your life over the last few weeks?
+    expected: [trigger]
+    rapport: false
+  - utterance: Has anything stressful happened recently?
+    expected: [trigger]
+    rapport: false
+  - utterance: How has your mood been lately?
+    expected: [mood]
+    rapport: false
+  - utterance: How are you sleeping and eating?
+    expected: [mood]
+    rapport: false
+  - utterance: Have you ever harmed yourself before?
+    expected: [past-self-harm]
+    rapport: false
+  - utterance: Is this the first time you've taken an overdose?
+    expected: [past-self-harm]
+    rapport: false
+  - utterance: Do you drink alcohol or use any drugs?
+    expected: [alcohol]
+    rapport: false
+  - utterance: How do you feel now about having survived?
+    expected: [current-intent]
+    rapport: false
+  - utterance: Do you still have thoughts of ending your life?
+    expected: [current-intent]
+    rapport: false
+  - utterance: Is there anything that keeps you going, people who matter to you?
+    expected: [protective-factors]
+    rapport: false
+  - utterance: Who could you turn to for support?
+    expected: [protective-factors]
+    rapport: false
+  - utterance: Are there any more tablets at home?
+    expected: [access-to-means]
+    rapport: false
+  - utterance: Are you married? Do you have any children?
+    expected: []
+    rapport: false
+  - utterance: What's your favourite football team?
+    expected: []
+    rapport: false
+  - utterance: I'm sorry you've been going through all this. Thank you for being so honest with me.
+    expected: []
+    rapport: true
+  - utterance: How long has that been going on?
+    previous:
+      interviewer: How has your mood been lately?
+      character: I've been feeling really down.
+    expected: [mood]
+    rapport: false
+  - utterance: And what did the doctors say about your blood tests?
+    expected: [medically-fit]
+    rapport: false
+  - utterance: So to summarise, you took an overdose last night after a really difficult few weeks.
+    expected: []
+    rapport: false

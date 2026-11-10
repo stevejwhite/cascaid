@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: probation-psychosis-collateral
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hi Lewis, thanks for coming in. I'm one of the psychiatrists with the community team."
+    expected: []
+    rapport: false
+  - utterance: "Can you tell me how his attendance has been with you?"
+    expected: [attendance]
+    rapport: false
+  - utterance: "When you last saw him, how did he come across?"
+    expected: [observations]
+    rapport: false
+  - utterance: "Do you know if he's still taking his medication?"
+    expected: [medication]
+    rapport: false
+  - utterance: "Any concerns about drugs or alcohol?"
+    expected: [substances]
+    rapport: false
+  - utterance: "Has he made any threats towards anyone?"
+    expected: [threats]
+    rapport: false
+  - utterance: "What are his living arrangements like?"
+    expected: [housing]
+    rapport: false
+  - utterance: "Is there anything in his history from previous relapses that worries you?"
+    expected: [history]
+    rapport: false
+  - utterance: "Have you managed to get hold of his community mental health team?"
+    expected: [contacts]
+    rapport: false
+  - utterance: "It's clear you've gone out of your way for him, and that's really helpful."
+    expected: []
+    rapport: true
+  - utterance: "Looking back, is there anything you'd have handled differently?"
+    expected: [uncertainty]
+    rapport: false
+  - utterance: "Do you have any sense of whether he's at risk to himself?"
+    expected: [self-risk]
+    rapport: false
+  - utterance: "Do we know if he's actually been in contact with her?"
+    previous:
+      interviewer: "Has he made any threats?"
+      character: "He said his former partner would be sorry if she came round."
+    expected: [threats]
+    rapport: false
+  - utterance: "Is that something you've seen yourself, or just the neighbour's report?"
+    previous:
+      interviewer: "Any drugs or alcohol?"
+      character: "A neighbour reported smelling cannabis."
+    expected: [substances]
+    rapport: false
+  - utterance: "Has he got any court dates coming up?"
+    expected: []
+    rapport: false
+  - utterance: "Is he on any licence conditions about where he can live?"
+    expected: []
+    rapport: false
+  - utterance: "Thanks Lewis, I know these situations are hard to manage."
+    expected: []
+    rapport: true
+  - utterance: "OK, so the picture is of someone who's dropped off over the last month and seems more guarded."
+    expected: []
+    rapport: false

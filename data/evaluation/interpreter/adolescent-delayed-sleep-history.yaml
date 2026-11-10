@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: adolescent-delayed-sleep-history
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hi Evie, I'm one of the doctors in clinic today. Thanks for coming in."
+    expected: []
+    rapport: false
+  - utterance: "Talk me through a typical school night. What time do you go to bed and when do you actually drop off?"
+    expected: [pattern]
+    rapport: false
+  - utterance: "What happens with your sleep at the weekend when you don't have to be up?"
+    expected: [free-days]
+    rapport: false
+  - utterance: "When did this all start, and has it changed at all since then?"
+    expected: [course]
+    rapport: false
+  - utterance: "What are you usually doing in the hour or two before bed? Any phones, gaming, that kind of thing?"
+    expected: [screens]
+    rapport: false
+  - utterance: "Do you have much caffeine, like coffee, tea or energy drinks?"
+    expected: [caffeine]
+    rapport: false
+  - utterance: "Any alcohol, cigarettes or drugs at all?"
+    expected: [caffeine]
+    rapport: false
+  - utterance: "How is it affecting you during the day, with college and so on?"
+    expected: [function]
+    rapport: false
+  - utterance: "How has your mood been lately? Do you still enjoy things?"
+    expected: [mood]
+    rapport: false
+  - utterance: "has anyone said you snore or stop breathing in your sleep? any funny feelings in your legs?"
+    expected: [other-sleep]
+    rapport: false
+  - utterance: "It sounds really frustrating to lie there wide awake when you're trying to do the right thing."
+    expected: []
+    rapport: true
+  - utterance: "How are things at home with Mum around all this?"
+    expected: [family]
+    rapport: false
+  - utterance: "Getting called lazy when you're genuinely struggling to sleep must feel really unfair and upsetting. Have you ever had thoughts of hurting yourself or not wanting to be here?"
+    expected: [risk]
+    rapport: true
+  - utterance: "Do you work any shifts or have a part-time job in the evenings?"
+    expected: []
+    rapport: false
+  - utterance: "Have you tried any melatonin or sleeping tablets before?"
+    expected: []
+    rapport: false
+  - utterance: "So just to sum up, you're falling asleep very late and finding mornings really hard."
+    expected: []
+    rapport: false
+  - utterance: "And once you're asleep, do you wake up during the night?"
+    previous:
+      interviewer: "What time do you finally fall asleep?"
+      character: "Not until about three usually."
+    expected: [other-sleep]
+    rapport: false
+  - utterance: "And how do you feel when you wake up then?"
+    previous:
+      interviewer: "What about Saturdays and Sundays?"
+      character: "I sleep from about three till midday."
+    expected: [free-days]
+    rapport: false

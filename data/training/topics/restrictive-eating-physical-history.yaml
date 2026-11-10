@@ -1,0 +1,996 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: restrictive-eating-physical-history
+case_version: 0.1.0
+status: draft
+items:
+- utterance: What's your weight at the moment, Nia?
+  topics:
+  - weight-change
+  style: open
+- utterance: Tell me how your weight has changed over the last few months.
+  topics:
+  - weight-change
+  style: open
+- utterance: Do you know your height and your current weight?
+  topics:
+  - weight-change
+  style: closed
+- utterance: Has your weight dropped recently?
+  topics:
+  - weight-change
+  style: closed
+- utterance: Have you been getting thinner lately?
+  topics:
+  - weight-change
+  style: colloquial
+- utterance: Roughly how many kilos have come off, and over how long?
+  topics:
+  - weight-change
+  style: colloquial
+- utterance: Could you tell me your current weight and height so I can work out your BMI?
+  topics:
+  - weight-change
+  style: clinical
+- utterance: I'd like to get a sense of your weight now compared with a few months ago
+  topics:
+  - weight-change
+  style: indirect
+- utterance: I was wondering when your weight started to change
+  topics:
+  - weight-change
+  style: indirect
+- utterance: I know weighing can feel uncomfortable to talk about. When were you last weighed?
+  topics:
+  - weight-change
+  style: empathy_then_question
+- utterance: um so your weight what what is it roughly now
+  topics:
+  - weight-change
+  style: spoken
+- utterance: And your weight?
+  topics:
+  - weight-change
+  style: brief
+- utterance: Has the weight come off steadily or quite suddenly?
+  topics:
+  - weight-change
+  style: follow_up
+  previous:
+    interviewer: What's your weight at the moment, Nia?
+    character: I weighed 43 kilograms at the GP yesterday and I'm 165 centimetres tall; I was 52 kilograms
+      three months ago.
+- utterance: I'm guessing you've lost a fair bit of weight lately?
+  topics:
+  - weight-change
+  style: leading
+- utterance: What do you eat on a typical day?
+  topics:
+  - food-intake
+  style: open
+- utterance: Talk me through yesterday's meals, from breakfast onwards.
+  topics:
+  - food-intake
+  style: open
+- utterance: How long have you been eating less than usual?
+  topics:
+  - food-intake
+  style: open
+- utterance: Are you cutting back on what you eat?
+  topics:
+  - food-intake
+  style: closed
+- utterance: Do you eat any snacks between meals?
+  topics:
+  - food-intake
+  style: closed
+- utterance: What's on your plate on an ordinary day?
+  topics:
+  - food-intake
+  style: colloquial
+- utterance: Been skipping meals or keeping portions small?
+  topics:
+  - food-intake
+  style: colloquial
+- utterance: Could you describe your current dietary intake in detail?
+  topics:
+  - food-intake
+  style: clinical
+- utterance: I'd like to hear exactly what a normal day's food looks like for you
+  topics:
+  - food-intake
+  style: indirect
+- utterance: I wondered how long you've been restricting your food
+  topics:
+  - food-intake
+  style: indirect
+- utterance: There's no right or wrong answer here. What would you have for lunch?
+  topics:
+  - food-intake
+  style: empathy_then_question
+- utterance: so um what what would you eat say for breakfast
+  topics:
+  - food-intake
+  style: spoken
+- utterance: And meals?
+  topics:
+  - food-intake
+  style: brief
+- utterance: Has it been like that for long, or is that more recent?
+  topics:
+  - food-intake
+  style: follow_up
+  previous:
+    interviewer: What do you eat on a typical day?
+    character: I've been restricting what I eat for eighteen months; for the last month a usual day is
+      a small bowl of plain cereal, an apple at lunch and a small bowl of vegetable soup in the evening,
+      with no snacks.
+- utterance: You've been eating a lot less than you need, haven't you?
+  topics:
+  - food-intake
+  style: leading
+- utterance: How much do you drink in a day, water and other drinks?
+  topics:
+  - fluids
+  style: open
+- utterance: What fluids do you have over a day?
+  topics:
+  - fluids
+  style: open
+- utterance: How often are you passing urine?
+  topics:
+  - fluids
+  style: open
+- utterance: Are you drinking plenty of water?
+  topics:
+  - fluids
+  style: closed
+- utterance: Is your urine a normal colour?
+  topics:
+  - fluids
+  style: closed
+- utterance: How many cups of tea or glasses of water get you through the day?
+  topics:
+  - fluids
+  style: colloquial
+- utterance: Going to the loo much for a wee?
+  topics:
+  - fluids
+  style: colloquial
+- utterance: Could you estimate your daily fluid intake and urine output?
+  topics:
+  - fluids
+  style: clinical
+- utterance: I'd like to check how much you're drinking
+  topics:
+  - fluids
+  style: indirect
+- utterance: I was wondering whether your waterworks have changed at all
+  topics:
+  - fluids
+  style: indirect
+- utterance: Sorry if this is a bit personal. How often do you pass water?
+  topics:
+  - fluids
+  style: empathy_then_question
+- utterance: um and drinks like water do you do you get much
+  topics:
+  - fluids
+  style: spoken
+- utterance: Fluids each day?
+  topics:
+  - fluids
+  style: brief
+- utterance: Do you ever feel thirsty but hold back from drinking more?
+  topics:
+  - fluids
+  style: follow_up
+  previous:
+    interviewer: How much do you drink in a day, water and other drinks?
+    character: I drink about one litre of water a day and one mug of tea; I pass small amounts of dark
+      urine about three times a day.
+- utterance: You probably don't drink a huge amount, do you?
+  topics:
+  - fluids
+  style: leading
+- utterance: Talk me through the moments before you passed out.
+  topics:
+  - fainting
+  style: open
+- utterance: Do you get dizzy when you stand up?
+  topics:
+  - fainting
+  style: closed
+- utterance: Did you lose consciousness completely?
+  topics:
+  - fainting
+  style: closed
+- utterance: How long were you out for?
+  topics:
+  - fainting
+  style: open
+- utterance: Did everything go fuzzy before you went down?
+  topics:
+  - fainting
+  style: colloquial
+- utterance: Been feeling light-headed getting up from a chair?
+  topics:
+  - fainting
+  style: colloquial
+- utterance: Could you describe the episode of syncope and any warning symptoms?
+  topics:
+  - fainting
+  style: clinical
+- utterance: I'd like to understand exactly what happened yesterday at work
+  topics:
+  - fainting
+  style: indirect
+- utterance: I wondered whether you've felt faint at other times this week
+  topics:
+  - fainting
+  style: indirect
+- utterance: That sounds frightening. What were you doing just before it happened?
+  topics:
+  - fainting
+  style: empathy_then_question
+- utterance: so um the faint what were you what were you doing at the time
+  topics:
+  - fainting
+  style: spoken
+- utterance: Any dizziness since?
+  topics:
+  - fainting
+  style: brief
+- utterance: When you went down, did you hit your head?
+  topics:
+  - fainting
+  style: follow_up
+  previous:
+    interviewer: Can you tell me what happened when you fainted at work?
+    character: Yesterday I stood up at the till, felt everything go grey and briefly passed out; a colleague
+      said I woke within a minute, and I've felt dizzy on standing most days this week.
+- utterance: I imagine you've felt woozy when you stand up quickly?
+  topics:
+  - fainting
+  style: leading
+- utterance: What has your heartbeat felt like recently?
+  topics:
+  - palpitations
+  style: open
+- utterance: Tell me about any chest symptoms you've had.
+  topics:
+  - palpitations
+  style: open
+- utterance: Any pain in your chest?
+  topics:
+  - palpitations
+  style: closed
+- utterance: Has your heart felt like it's skipping beats?
+  topics:
+  - palpitations
+  style: closed
+- utterance: Does your heart ever go a bit funny or thump?
+  topics:
+  - palpitations
+  style: colloquial
+- utterance: Ever felt your ticker pounding for no reason?
+  topics:
+  - palpitations
+  style: colloquial
+- utterance: Could I ask about palpitations or chest pain?
+  topics:
+  - palpitations
+  style: clinical
+- utterance: I'd like to check whether you've felt your heart beating oddly
+  topics:
+  - palpitations
+  style: indirect
+- utterance: I was wondering about chest pain at all
+  topics:
+  - palpitations
+  style: indirect
+- utterance: I appreciate it's a lot of questions. How has your heart been feeling?
+  topics:
+  - palpitations
+  style: empathy_then_question
+- utterance: um and your heart does it ever you know flutter
+  topics:
+  - palpitations
+  style: spoken
+- utterance: Any palpitations?
+  topics:
+  - palpitations
+  style: brief
+- utterance: Does it ever come on while you're running?
+  topics:
+  - palpitations
+  style: follow_up
+  previous:
+    interviewer: Have you noticed your heart racing or fluttering?
+    character: Yes, my heart has fluttered for a minute or two on three evenings this week; I haven't
+      had chest pain.
+- utterance: Your heart's probably been doing odd things lately?
+  topics:
+  - palpitations
+  style: leading
+- utterance: How have your periods been recently?
+  topics:
+  - periods
+  style: open
+- utterance: Is there any chance you could be pregnant?
+  topics:
+  - periods
+  style: closed
+- utterance: Do you use any contraception?
+  topics:
+  - periods
+  style: closed
+- utterance: Has your time of the month changed lately?
+  topics:
+  - periods
+  style: colloquial
+- utterance: Any chance there's a baby on the way?
+  topics:
+  - periods
+  style: colloquial
+- utterance: Could you tell me about your menstrual cycle, including any amenorrhoea?
+  topics:
+  - periods
+  style: clinical
+- utterance: I'd like to ask about your periods, if that's all right
+  topics:
+  - periods
+  style: indirect
+- utterance: I need to check whether pregnancy is a possibility
+  topics:
+  - periods
+  style: indirect
+- utterance: I'm sorry to ask something so personal. Have your periods stopped?
+  topics:
+  - periods
+  style: empathy_then_question
+- utterance: so um periods are they are they still coming
+  topics:
+  - periods
+  style: spoken
+- utterance: Last menstrual period?
+  topics:
+  - periods
+  style: brief
+- utterance: And pregnancy, might that be possible?
+  topics:
+  - periods
+  style: follow_up
+  previous:
+    interviewer: When was your last period?
+    character: My last period was five months ago; they used to be monthly, I'm not using hormonal contraception
+      and I haven't had sex for eight months.
+- utterance: Your periods have probably gone a bit irregular?
+  topics:
+  - periods
+  style: leading
+- utterance: How much exercise do you do?
+  topics:
+  - exercise
+  style: open
+- utterance: What does a normal week of exercise look like for you?
+  topics:
+  - exercise
+  style: open
+- utterance: Tell me about any running or gym work you do.
+  topics:
+  - exercise
+  style: open
+- utterance: Do you exercise every day?
+  topics:
+  - exercise
+  style: closed
+- utterance: Have you kept exercising even when you feel weak?
+  topics:
+  - exercise
+  style: closed
+- utterance: Are you out jogging much?
+  topics:
+  - exercise
+  style: colloquial
+- utterance: Pushing yourself to keep moving even when you're shattered?
+  topics:
+  - exercise
+  style: colloquial
+- utterance: Could you describe your physical activity levels and any compulsive exercise?
+  topics:
+  - exercise
+  style: clinical
+- utterance: I'd like to understand how active you are
+  topics:
+  - exercise
+  style: indirect
+- utterance: I wondered whether you feel you have to exercise
+  topics:
+  - exercise
+  style: indirect
+- utterance: Lots of people find exercise hard to cut back. How much are you doing now?
+  topics:
+  - exercise
+  style: empathy_then_question
+- utterance: and um exercise do you do do you do much
+  topics:
+  - exercise
+  style: spoken
+- utterance: Any running?
+  topics:
+  - exercise
+  style: brief
+- utterance: What happens if you feel faint while you're out running?
+  topics:
+  - exercise
+  style: follow_up
+  previous:
+    interviewer: How much exercise do you do?
+    character: I run for about an hour every morning and have kept doing that even when I feel weak.
+- utterance: I imagine you're doing quite a lot of exercise?
+  topics:
+  - exercise
+  style: leading
+- utterance: Do you use laxatives or water tablets?
+  topics:
+  - purging
+  style: closed
+- utterance: What else, if anything, do you do to get rid of food after eating?
+  topics:
+  - purging
+  style: open
+- utterance: Would you feel able to talk about whether you've ever vomited to control your weight?
+  topics:
+  - purging
+  style: open
+- utterance: Some people take things to make them go to the toilet. Is that something you've done?
+  topics:
+  - purging
+  style: empathy_then_question
+- utterance: Ever brought food back up on purpose?
+  topics:
+  - purging
+  style: colloquial
+- utterance: Taken anything to help flush food through?
+  topics:
+  - purging
+  style: colloquial
+- utterance: Could I ask about compensatory behaviours such as self-induced vomiting or laxative use?
+  topics:
+  - purging
+  style: clinical
+- utterance: I'd like to ask about being sick on purpose, and I'll go gently
+  topics:
+  - purging
+  style: indirect
+- utterance: I was wondering whether diuretics or laxatives have ever come into it
+  topics:
+  - purging
+  style: indirect
+- utterance: um so do you ever um sort of try to get rid of food afterwards
+  topics:
+  - purging
+  style: spoken
+- utterance: Any vomiting?
+  topics:
+  - purging
+  style: brief
+- utterance: And have you ever used laxatives?
+  topics:
+  - purging
+  style: follow_up
+  previous:
+    interviewer: Have you ever made yourself sick after eating?
+    character: No, I don't make myself sick or use laxatives or water pills; I feel ashamed about how
+      much time I spend planning what I allow myself to eat.
+- utterance: Sometimes people make themselves sick too, has that happened?
+  topics:
+  - purging
+  style: leading
+- utterance: How do you tend to deal with it if you feel you've eaten too much?
+  topics:
+  - purging
+  style: open
+- utterance: Have you ever broken any bones?
+  topics:
+  - bone-history
+  style: closed
+- utterance: Tell me about any injuries to your bones.
+  topics:
+  - bone-history
+  style: open
+- utterance: Has anyone done a bone density scan for you?
+  topics:
+  - bone-history
+  style: closed
+- utterance: What fractures or bone problems have you had?
+  topics:
+  - bone-history
+  style: open
+- utterance: Any bone pain at the moment?
+  topics:
+  - bone-history
+  style: closed
+- utterance: Ever cracked a bone doing sport?
+  topics:
+  - bone-history
+  style: colloquial
+- utterance: Any niggles in your feet or shins that turned out to be a break?
+  topics:
+  - bone-history
+  style: colloquial
+- utterance: Could I ask about stress fractures or any DEXA scanning?
+  topics:
+  - bone-history
+  style: clinical
+- utterance: I'd like to check about your bones
+  topics:
+  - bone-history
+  style: indirect
+- utterance: I wondered whether anyone has checked your bone strength
+  topics:
+  - bone-history
+  style: indirect
+- utterance: I know this might seem unrelated. Have you had any broken bones?
+  topics:
+  - bone-history
+  style: empathy_then_question
+- utterance: um any any fractures or anything like that
+  topics:
+  - bone-history
+  style: spoken
+- utterance: Fractures at all?
+  topics:
+  - bone-history
+  style: brief
+- utterance: Did that heal properly in the end?
+  topics:
+  - bone-history
+  style: follow_up
+  previous:
+    interviewer: Have you ever broken any bones?
+    character: I had a stress fracture in my left foot after running last year; I haven't had a bone density
+      scan and have no new bone pain now.
+- utterance: You may have had a stress fracture at some point?
+  topics:
+  - bone-history
+  style: leading
+- utterance: What medicines are you taking at the moment?
+  topics:
+  - medicines
+  style: open
+- utterance: Do you take any supplements or vitamins?
+  topics:
+  - medicines
+  style: closed
+- utterance: Are you using slimming tablets of any sort?
+  topics:
+  - medicines
+  style: closed
+- utterance: Tell me about any long-term health conditions you have.
+  topics:
+  - medicines
+  style: open
+- utterance: Have you got diabetes or any other medical condition?
+  topics:
+  - medicines
+  style: closed
+- utterance: Any pills from the chemist or online to help lose weight?
+  topics:
+  - medicines
+  style: colloquial
+- utterance: Is the GP treating you for anything else?
+  topics:
+  - medicines
+  style: colloquial
+- utterance: Could you tell me about any regular medication or past medical history?
+  topics:
+  - medicines
+  style: clinical
+- utterance: I'd like to go over any tablets you take
+  topics:
+  - medicines
+  style: indirect
+- utterance: I wondered whether you've tried diet pills
+  topics:
+  - medicines
+  style: indirect
+- utterance: It's helpful for your safety to know. What medication do you take?
+  topics:
+  - medicines
+  style: empathy_then_question
+- utterance: um and tablets any any prescribed meds
+  topics:
+  - medicines
+  style: spoken
+- utterance: Regular medication?
+  topics:
+  - medicines
+  style: brief
+- utterance: What about anything bought over the counter or online?
+  topics:
+  - medicines
+  style: follow_up
+  previous:
+    interviewer: What medicines are you taking at the moment?
+    character: I take no prescribed medicine, supplements or slimming products, and I don't have diabetes
+      or another long-term illness that needs treatment.
+- utterance: You're probably not on any regular tablets?
+  topics:
+  - medicines
+  style: leading
+- utterance: How often do you open your bowels?
+  topics:
+  - bowel-symptoms
+  style: open
+- utterance: Have you had any constipation?
+  topics:
+  - bowel-symptoms
+  style: closed
+- utterance: Do you feel bloated after eating?
+  topics:
+  - bowel-symptoms
+  style: closed
+- utterance: What's happening with your tummy and bowels lately?
+  topics:
+  - bowel-symptoms
+  style: open
+- utterance: Is there ever blood when you go to the toilet?
+  topics:
+  - bowel-symptoms
+  style: closed
+- utterance: Going for a poo much?
+  topics:
+  - bowel-symptoms
+  style: colloquial
+- utterance: Feel all blown up after a meal?
+  topics:
+  - bowel-symptoms
+  style: colloquial
+- utterance: Could I ask about your bowel habit?
+  topics:
+  - bowel-symptoms
+  style: clinical
+- utterance: I'd like to check how your stomach and bowels are
+  topics:
+  - bowel-symptoms
+  style: indirect
+- utterance: I wondered whether things have slowed down with your bowels
+  topics:
+  - bowel-symptoms
+  style: indirect
+- utterance: Sorry, this is a slightly awkward one. Have you been constipated?
+  topics:
+  - bowel-symptoms
+  style: empathy_then_question
+- utterance: um so your bowels are they are they regular
+  topics:
+  - bowel-symptoms
+  style: spoken
+- utterance: Any bloating?
+  topics:
+  - bowel-symptoms
+  style: brief
+- utterance: And any blood when you go?
+  topics:
+  - bowel-symptoms
+  style: follow_up
+  previous:
+    interviewer: How often do you open your bowels?
+    character: I open my bowels about once a week and feel bloated after eating; I haven't noticed blood.
+- utterance: You've probably been a bit constipated?
+  topics:
+  - bowel-symptoms
+  style: leading
+- utterance: Have you had any thoughts of ending your life?
+  topics:
+  - self-harm
+  style: closed
+- utterance: What thoughts have you had about harming yourself?
+  topics:
+  - self-harm
+  style: open
+- utterance: Are there other ways you hurt yourself, like cutting?
+  topics:
+  - self-harm
+  style: closed
+- utterance: Tell me whether you've had any suicidal thoughts recently.
+  topics:
+  - self-harm
+  style: open
+- utterance: Any plans in place to end things?
+  topics:
+  - self-harm
+  style: closed
+- utterance: Do you ever feel like you'd be better off not here?
+  topics:
+  - self-harm
+  style: colloquial
+- utterance: Ever done anything to hurt yourself on purpose?
+  topics:
+  - self-harm
+  style: colloquial
+- utterance: Could I ask about suicidal ideation or deliberate self-harm?
+  topics:
+  - self-harm
+  style: clinical
+- utterance: I ask everyone about thoughts of suicide, so I'd like to check that with you
+  topics:
+  - self-harm
+  style: indirect
+- utterance: I wondered whether you've ever injured yourself deliberately
+  topics:
+  - self-harm
+  style: indirect
+- utterance: When things feel this hard some people feel hopeless. Have you thought about dying?
+  topics:
+  - self-harm
+  style: empathy_then_question
+- utterance: um have you have you ever wanted to not be alive
+  topics:
+  - self-harm
+  style: spoken
+- utterance: Any suicidal thoughts?
+  topics:
+  - self-harm
+  style: brief
+- utterance: And have you ever harmed yourself in any other way?
+  topics:
+  - self-harm
+  style: follow_up
+  previous:
+    interviewer: Have you had any thoughts of ending your life?
+    character: No, I don't want to die, have no suicide plan and haven't deliberately injured myself in
+      another way.
+- utterance: You've not had thoughts of ending your life, I take it?
+  topics:
+  - self-harm
+  style: leading
+- utterance: How do you feel about your body, Nia?
+  topics:
+  - weight-fear
+  style: open
+- utterance: What would it be like for you to put on some weight?
+  topics:
+  - weight-fear
+  style: open
+- utterance: Are you frightened of gaining weight?
+  topics:
+  - weight-fear
+  style: closed
+- utterance: Do you see yourself as thin?
+  topics:
+  - weight-fear
+  style: closed
+- utterance: When you look in the mirror, what do you see?
+  topics:
+  - weight-fear
+  style: colloquial
+- utterance: If you had to gain a few kilos, how would that sit with you?
+  topics:
+  - weight-fear
+  style: colloquial
+- utterance: Could we talk about body image and any fear of weight gain?
+  topics:
+  - weight-fear
+  style: clinical
+- utterance: I'd like to understand how you feel about your size
+  topics:
+  - weight-fear
+  style: indirect
+- utterance: I'm wondering what thoughts come up about getting bigger
+  topics:
+  - weight-fear
+  style: indirect
+- utterance: You don't have to have the words for it straight away. How do you feel about your shape?
+  topics:
+  - weight-fear
+  style: empathy_then_question
+- utterance: um so how how do you see your body at the moment
+  topics:
+  - weight-fear
+  style: spoken
+- utterance: And putting on weight?
+  topics:
+  - weight-fear
+  style: brief
+- utterance: How would it feel to put weight back on?
+  topics:
+  - weight-fear
+  style: follow_up
+  previous:
+    interviewer: What do you eat on a typical day?
+    character: I've been restricting what I eat for eighteen months; for the last month a usual day is
+      a small bowl of plain cereal, an apple at lunch and a small bowl of vegetable soup in the evening,
+      with no snacks.
+- utterance: I imagine the thought of gaining weight might be scary?
+  topics:
+  - weight-fear
+  style: leading
+- utterance: Is your size something you worry about a lot?
+  topics:
+  - weight-fear
+  style: closed
+- utterance: How much alcohol do you drink?
+  topics:
+  - alcohol-drugs
+  style: open
+- utterance: Do you use any recreational drugs?
+  topics:
+  - alcohol-drugs
+  style: closed
+- utterance: Have you ever taken stimulants like speed or cocaine?
+  topics:
+  - alcohol-drugs
+  style: closed
+- utterance: Tell me about any alcohol or drug use.
+  topics:
+  - alcohol-drugs
+  style: open
+- utterance: Are you a drinker at all?
+  topics:
+  - alcohol-drugs
+  style: closed
+- utterance: Out drinking much at weekends?
+  topics:
+  - alcohol-drugs
+  style: colloquial
+- utterance: Anything to give you a bit more energy, like party drugs?
+  topics:
+  - alcohol-drugs
+  style: colloquial
+- utterance: Could I ask about substance use, including stimulants?
+  topics:
+  - alcohol-drugs
+  style: clinical
+- utterance: I'd like to check about alcohol and drugs
+  topics:
+  - alcohol-drugs
+  style: indirect
+- utterance: I was wondering whether you use anything to keep your appetite down, such as stimulants
+  topics:
+  - alcohol-drugs
+  style: indirect
+- utterance: I ask everyone this, so no judgement. Do you drink or use drugs?
+  topics:
+  - alcohol-drugs
+  style: empathy_then_question
+- utterance: um and alcohol drugs that sort of thing
+  topics:
+  - alcohol-drugs
+  style: spoken
+- utterance: Alcohol or drugs?
+  topics:
+  - alcohol-drugs
+  style: brief
+- utterance: And what about recreational drugs?
+  topics:
+  - alcohol-drugs
+  style: follow_up
+  previous:
+    interviewer: How much alcohol do you drink?
+    character: I don't drink alcohol or use recreational drugs, and I don't take stimulants.
+- utterance: I don't suppose you drink much?
+  topics:
+  - alcohol-drugs
+  style: leading
+- utterance: Have you fainted before, and have you noticed your heart racing?
+  topics:
+  - fainting
+  - palpitations
+  style: stacked
+- utterance: What do you eat in a day, and how much do you drink?
+  topics:
+  - food-intake
+  - fluids
+  style: stacked
+- utterance: When was your last period, and have you ever had a stress fracture?
+  topics:
+  - periods
+  - bone-history
+  style: stacked
+- utterance: Do you take any medicines, and do you drink alcohol?
+  topics:
+  - medicines
+  - alcohol-drugs
+  style: stacked
+- utterance: Hello Nia, thanks for coming in today.
+  topics: []
+  style: greeting
+- utterance: Is it okay if we talk about how you've been physically?
+  topics: []
+  style: greeting
+- utterance: Where would you like to begin?
+  topics: []
+  style: greeting
+- utterance: Before we start, is there anything you'd like to ask me?
+  topics: []
+  style: greeting
+- utterance: Come in and take a seat, Nia.
+  topics: []
+  style: greeting
+- utterance: My name's Dr Shah, I'm a trainee psychiatrist.
+  topics: []
+  style: introduction
+- utterance: I'd like to move on to something different now.
+  topics: []
+  style: transition
+- utterance: Thanks. I'm going to ask some questions about your body now.
+  topics: []
+  style: transition
+- utterance: Let's switch to a different area for a moment.
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Nia.
+  topics: []
+  style: closing
+- utterance: Thank you for being so open with me today.
+  topics: []
+  style: closing
+- utterance: You're not making a fuss; fainting at work is worth taking seriously.
+  topics: []
+  style: empathy
+- utterance: It took courage to come today.
+  topics: []
+  style: empathy
+- utterance: That sounds really hard to live with.
+  topics: []
+  style: empathy
+- utterance: I can hear you're worried about being judged.
+  topics: []
+  style: empathy
+- utterance: So far you've told me about fainting, your heart and what you eat.
+  topics: []
+  style: summary
+- utterance: Let me sum up what I've heard so I've got it right.
+  topics: []
+  style: summary
+- utterance: I'm asking these questions because restricting food can affect your heart and blood pressure.
+  topics: []
+  style: explanation
+- utterance: Today is about checking your physical safety, not making you eat anything.
+  topics: []
+  style: explanation
+- utterance: The fainting worries me, and I think you need a medical check today.
+  topics: []
+  style: explanation
+- utterance: Does that make sense so far?
+  topics: []
+  style: check_understanding
+- utterance: Can you tell me in your own words why I'm concerned?
+  topics: []
+  style: check_understanding
+- utterance: Is anything I've said unclear?
+  topics: []
+  style: check_understanding
+- utterance: How has your mood been recently?
+  topics: []
+  style: off_case
+- utterance: How are you sleeping?
+  topics: []
+  style: off_case
+- utterance: Have you ever had help for your eating before?
+  topics: []
+  style: off_case
+- utterance: How is work going generally?
+  topics: []
+  style: off_case
+- utterance: Do you feel the cold more than other people?
+  topics: []
+  style: off_case
+- utterance: Has your hair or skin changed at all?
+  topics: []
+  style: off_case
+- utterance: Does anyone you live with know about your eating?
+  topics: []
+  style: near_miss
+- utterance: What did the GP say about the fainting?
+  topics: []
+  style: near_miss
+- utterance: Has anyone at work commented on your weight?
+  topics: []
+  style: near_miss
+- utterance: Who drove you home after you fainted?
+  topics: []
+  style: near_miss

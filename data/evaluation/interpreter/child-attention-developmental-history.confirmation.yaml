@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: child-attention-developmental-history
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Farah, when did Idris manage sitting up and walking without help?
+  expected:
+  - motor-milestones
+  rapport: false
+- utterance: How did his first words develop into talking in phrases?
+  expected:
+  - language
+  rapport: false
+- utterance: When he was little, would he show you interesting things and join in pretend games?
+  expected:
+  - social-communication
+  rapport: false
+- utterance: What happens when he has a task with several steps to do at home?
+  expected:
+  - home-attention
+  rapport: false
+- utterance: Has being constantly on the move ever put him in a dangerous situation?
+  expected:
+  - activity-control
+  rapport: false
+- utterance: What examples has his teacher given of how he behaves during lessons?
+  expected:
+  - school-observations
+  rapport: false
+- utterance: At home, can he stay with getting dressed without repeated reminders?
+  expected:
+  - home-attention
+  rapport: false
+- utterance: In lessons specifically, what does his teacher say about sitting and finishing work?
+  expected:
+  - school-observations
+  rapport: false
+- utterance: does that leave you worrying about what other parents think of you?
+  expected:
+  - parent-concern
+  rapport: false
+  previous:
+    interviewer: What has been happening with friendships?
+    character: Children then avoid him, and he comes home upset.
+- utterance: Does Idris ever have brief blank spells where he doesn't respond when you call him?
+  expected: []
+  rapport: false

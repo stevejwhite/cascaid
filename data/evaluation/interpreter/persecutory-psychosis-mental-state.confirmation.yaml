@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: persecutory-psychosis-mental-state
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Sophie, what do you believe the neighbours use to watch you, and what makes you sure?
+  expected:
+  - surveillance-belief
+  rapport: false
+- utterance: Do you hear people talking about you even when you cannot see anybody there?
+  expected:
+  - auditory-experience
+  rapport: false
+- utterance: If you hear voices, do they ever direct you to do anything?
+  expected:
+  - command-content
+  rapport: false
+- utterance: Do any ideas feel as if they have arrived from outside rather than being your own?
+  expected:
+  - thought-insertion
+  rapport: false
+- utterance: Does it seem possible for other people to hear your thoughts without you speaking?
+  expected:
+  - thought-broadcast
+  rapport: false
+- utterance: When did feeling watched begin in relation to when the voices appeared?
+  expected:
+  - onset
+  rapport: false
+- utterance: Does an idea ever seem to be put into your mind by somebody outside you?
+  expected:
+  - thought-insertion
+  rapport: false
+- utterance: Do thoughts you already have seem to be sent out so others can hear them?
+  expected:
+  - thought-broadcast
+  rapport: false
+- utterance: was that to keep them out, or were you preparing to hurt anyone?
+  expected:
+  - harm-intent
+  rapport: false
+  previous:
+    interviewer: What did you do when you felt unsafe in the flat?
+    character: I put furniture against the door.
+- utterance: Feeling unsafe enough to shut yourself in sounds frightening, and I am listening.
+  expected: []
+  rapport: true

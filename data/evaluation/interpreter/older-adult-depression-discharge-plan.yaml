@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: older-adult-depression-discharge-plan
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hi Chloe, thanks for making time for this, I know the ward's busy."
+    expected: []
+    rapport: false
+  - utterance: "How's he been getting on over the admission, mood-wise?"
+    expected: [recovery]
+    rapport: false
+  - utterance: "Where are we with his suicide risk at the moment?"
+    expected: [risk]
+    rapport: false
+  - utterance: "Any physical health issues we need to think about before he goes?"
+    expected: [physical]
+    rapport: false
+  - utterance: "What's he on, and is he managing his own tablets yet?"
+    expected: [medication]
+    rapport: false
+  - utterance: "What do we know about the state of his home?"
+    expected: [home]
+    rapport: false
+  - utterance: "How is he with day to day things like washing, dressing and shopping?"
+    expected: [care]
+    rapport: false
+  - utterance: "Has a care package been agreed?"
+    expected: [care]
+    rapport: false
+    previous:
+      interviewer: "Is he managing personal care on the ward?"
+      character: "He washes and dresses himself, but shopping feels overwhelming to him."
+  - utterance: "Who's going to follow him up in the community after discharge?"
+    expected: [followup]
+    rapport: false
+  - utterance: "Is there any family or friends he wants us to involve?"
+    expected: [network]
+    rapport: false
+  - utterance: "Could she help out with him every day?"
+    expected: [network]
+    rapport: false
+    previous:
+      interviewer: "Is there anyone he'd like us to speak to?"
+      character: "He's happy for us to talk to his niece."
+  - utterance: "Is anything about how this discharge is being planned making you uneasy?"
+    expected: [pressure]
+    rapport: false
+  - utterance: "What does he himself want from going home?"
+    expected: [wishes]
+    rapport: false
+  - utterance: "It sounds like you've put a lot of thought into him, and you clearly care about getting this right."
+    expected: []
+    rapport: true
+  - utterance: "Has he had a capacity assessment about the decision to return home?"
+    expected: []
+    rapport: false
+  - utterance: "does he have any pets at home"
+    expected: []
+    rapport: false
+  - utterance: "Okay, so the plan so far is that I'll pull together what we've discussed and share it with the team."
+    expected: []
+    rapport: false
+  - utterance: "You've obviously got to know him well over these weeks, and that really helps."
+    expected: []
+    rapport: true

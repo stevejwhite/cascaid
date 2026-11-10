@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: persistent-pain-fatigue-history
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hello Meera, I'm one of the liaison psychiatrists. Thanks for seeing me today."
+    expected: []
+    rapport: false
+  - utterance: "Can you tell me about the pain, where it is and how long you've had it?"
+    expected: [pain]
+    rapport: false
+  - utterance: "Does anything make it worse?"
+    expected: [pain]
+    rapport: false
+    previous:
+      interviewer: "Where do you get the aching?"
+      character: "Across my back, shoulders and legs, most days."
+  - utterance: "How's your energy? Do you wake up feeling rested?"
+    expected: [fatigue]
+    rapport: false
+  - utterance: "What tests have you had so far, and what were you told?"
+    expected: [investigation]
+    rapport: false
+  - utterance: "What do you think might be causing all this?"
+    expected: [belief]
+    rapport: false
+  - utterance: "How has it affected your work and what you can do at home?"
+    expected: [function]
+    rapport: false
+  - utterance: "How have you been feeling emotionally with all of this going on?"
+    expected: [mood]
+    rapport: false
+  - utterance: "Are you taking any painkillers or other medication?"
+    expected: [medication]
+    rapport: false
+  - utterance: "Have things ever got so bad that you've thought about ending your life?"
+    expected: [safety]
+    rapport: false
+  - utterance: "How did you feel about being referred to a psychiatrist?"
+    expected: [dismissal]
+    rapport: false
+  - utterance: "What was going on in your life around the time it all began?"
+    expected: [stress]
+    rapport: false
+  - utterance: "And alcohol, how much do you drink?"
+    expected: [medication]
+    rapport: false
+    previous:
+      interviewer: "Any tablets you take regularly?"
+      character: "Just paracetamol now and then."
+  - utterance: "Living with pain every day for that long sounds really draining."
+    expected: []
+    rapport: true
+  - utterance: "Have you noticed any numbness or tingling in your hands or feet?"
+    expected: []
+    rapport: false
+  - utterance: "Is there anything that has helped at all, like physio or exercise?"
+    expected: []
+    rapport: false
+  - utterance: "I want you to know I'm taking what you're describing seriously."
+    expected: []
+    rapport: true
+  - utterance: "so that's eighteen months of aching and tiredness, and the tests have come back normal so far"
+    expected: []
+    rapport: false

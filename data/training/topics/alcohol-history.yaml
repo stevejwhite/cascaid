@@ -1,0 +1,890 @@
+# Training phrasings for the topic classifier. Drafted and revised by GPT-6 (Codex)
+# on 2026-10-12; reviewed by Steve J White on 2026-10-12. Not evaluation data.
+case_id: alcohol-history
+case_version: 0.4.0
+status: reviewed
+items:
+- utterance: What does a usual day's drinking amount to for you?
+  topics:
+  - quantity
+  style: open
+- utterance: Do you drink spirits, beer, wine, or something else?
+  topics:
+  - quantity
+  style: closed
+- utterance: Could you estimate the amount of alcohol you drink in a week?
+  topics:
+  - quantity
+  style: clinical
+- utterance: I wondered what size drinks you usually pour yourself
+  topics:
+  - quantity
+  style: indirect
+- utterance: There's no judgement here; roughly how much do you have over twenty-four hours?
+  topics:
+  - quantity
+  style: empathy_then_question
+- utterance: um what do you tend to drink and how much of it
+  topics:
+  - quantity
+  style: spoken
+- utterance: Roughly how many drinks daily?
+  topics:
+  - quantity
+  style: brief
+- utterance: You probably have more than the occasional glass, don't you?
+  topics:
+  - quantity
+  style: leading
+- utterance: And is that amount higher on Saturdays?
+  topics:
+  - quantity
+  style: follow_up
+  previous:
+    interviewer: What does a usual day's drinking amount to for you?
+    character: I get through about a litre bottle of vodka a day, sometimes more at the weekend.
+- utterance: Describe how your drinking amount varies through the week.
+  topics:
+  - quantity
+  style: open
+- utterance: Is your usual drink a spirit or something less strong?
+  topics:
+  - quantity
+  style: closed
+- utterance: On a normal evening, what would the empties add up to?
+  topics:
+  - quantity
+  style: colloquial
+- utterance: so adding it all together how much booze would that be
+  topics:
+  - quantity
+  style: spoken
+- utterance: When you say a bottle, how big is it?
+  topics:
+  - quantity
+  style: follow_up
+  previous:
+    interviewer: What does a usual day's drinking amount to for you?
+    character: I get through about a litre bottle of vodka a day, sometimes more at the weekend.
+- utterance: What is drinking in the morning like for you, if it happens?
+  topics:
+  - morning-drinking
+  style: open
+- utterance: Do you ever have a drink soon after waking?
+  topics:
+  - morning-drinking
+  style: closed
+- utterance: How soon after getting up would you reach for a glass?
+  topics:
+  - morning-drinking
+  style: colloquial
+- utterance: Could you describe when you usually have your first drink?
+  topics:
+  - morning-drinking
+  style: clinical
+- utterance: I wondered whether morning drinking is part of your routine
+  topics:
+  - morning-drinking
+  style: indirect
+- utterance: You can be open with me; is alcohol something you need when you wake?
+  topics:
+  - morning-drinking
+  style: empathy_then_question
+- utterance: um is there ever a drink before youve got going in the morning
+  topics:
+  - morning-drinking
+  style: spoken
+- utterance: Any drinking before breakfast then?
+  topics:
+  - morning-drinking
+  style: brief
+- utterance: You don't always wait until later for alcohol, do you?
+  topics:
+  - morning-drinking
+  style: leading
+- utterance: Is that straight after opening your eyes?
+  topics:
+  - morning-drinking
+  style: follow_up
+  previous:
+    interviewer: What is drinking in the morning like for you, if it happens?
+    character: I have my first drink as soon as I wake up, to steady myself.
+- utterance: Describe what leads you to have the first drink of the day.
+  topics:
+  - morning-drinking
+  style: open
+- utterance: Is drinking before breakfast something that happens?
+  topics:
+  - morning-drinking
+  style: closed
+- utterance: On waking, do you feel a need for a swig?
+  topics:
+  - morning-drinking
+  style: colloquial
+- utterance: so once youre out of bed how soon would you reach for alcohol
+  topics:
+  - morning-drinking
+  style: spoken
+- utterance: Does that help steady you for getting up?
+  topics:
+  - morning-drinking
+  style: follow_up
+  previous:
+    interviewer: What is drinking in the morning like for you, if it happens?
+    character: I have my first drink as soon as I wake up, to steady myself.
+- utterance: What happens to your body when you stop drinking for a while?
+  topics:
+  - withdrawal
+  style: open
+- utterance: Do you get shaky if you go without alcohol?
+  topics:
+  - withdrawal
+  style: closed
+- utterance: How rough do you feel when there's no booze?
+  topics:
+  - withdrawal
+  style: colloquial
+- utterance: Have you experienced withdrawal symptoms during a break from alcohol?
+  topics:
+  - withdrawal
+  style: clinical
+- utterance: I wondered whether not drinking brings on shakes or sweating
+  topics:
+  - withdrawal
+  style: indirect
+- utterance: This can be frightening to discuss; has going without alcohol ever made you very unwell?
+  topics:
+  - withdrawal
+  style: empathy_then_question
+- utterance: um if you miss your usual drink do you get the shakes
+  topics:
+  - withdrawal
+  style: spoken
+- utterance: Any sweating when you stop?
+  topics:
+  - withdrawal
+  style: brief
+- utterance: Your body doesn't always cope well without alcohol, does it?
+  topics:
+  - withdrawal
+  style: leading
+- utterance: How far into the break did those symptoms arrive?
+  topics:
+  - withdrawal
+  style: follow_up
+  previous:
+    interviewer: What happens to your body when you stop drinking for a while?
+    character: If I go without, I get the shakes and sweats by lunchtime. I had a fit two years ago when I tried
+      to stop on my own.
+- utterance: Describe any shaking or sweating that happens when you go without a drink.
+  topics:
+  - withdrawal
+  style: open
+- utterance: Is stopping drinking something that makes you physically ill?
+  topics:
+  - withdrawal
+  style: closed
+- utterance: When there's no booze, does your body start playing up?
+  topics:
+  - withdrawal
+  style: colloquial
+- utterance: so during a break from alcohol has anything worrying happened physically
+  topics:
+  - withdrawal
+  style: spoken
+- utterance: Was that fit during a spell without alcohol?
+  topics:
+  - withdrawal
+  style: follow_up
+  previous:
+    interviewer: What happens to your body when you stop drinking for a while?
+    character: If I go without, I get the shakes and sweats by lunchtime. I had a fit two years ago when I tried
+      to stop on my own.
+- utterance: How has the amount you need to feel an effect changed over time?
+  topics:
+  - tolerance
+  style: open
+- utterance: Does the same glass still give you the same buzz?
+  topics:
+  - tolerance
+  style: colloquial
+- utterance: Have you noticed needing an increasing amount to feel an effect?
+  topics:
+  - tolerance
+  style: clinical
+- utterance: I wondered whether a drink affects you less strongly than it once did
+  topics:
+  - tolerance
+  style: indirect
+- utterance: There's no blame in this; does your old usual amount still do the trick?
+  topics:
+  - tolerance
+  style: empathy_then_question
+- utterance: um is it more alcohol now to get the same effect as before
+  topics:
+  - tolerance
+  style: spoken
+- utterance: More needed for the effect?
+  topics:
+  - tolerance
+  style: brief
+- utterance: It takes a bigger amount to get a buzz these days, doesn't it?
+  topics:
+  - tolerance
+  style: leading
+- utterance: Would the amount you used to have still register at all?
+  topics:
+  - tolerance
+  style: follow_up
+  previous:
+    interviewer: How has the amount you need to feel an effect changed over time?
+    character: I need a lot more than I used to before I feel anything.
+- utterance: Describe any change in the amount needed before you feel alcohol's effects.
+  topics:
+  - tolerance
+  style: open
+- utterance: Is a small amount enough for the same effect it once had?
+  topics:
+  - tolerance
+  style: closed
+- utterance: Would what used to give you a kick barely register these days?
+  topics:
+  - tolerance
+  style: colloquial
+- utterance: so comparing the same size glass now and years ago is the buzz different
+  topics:
+  - tolerance
+  style: spoken
+- utterance: Does that mean a smaller serving used to be enough?
+  topics:
+  - tolerance
+  style: follow_up
+  previous:
+    interviewer: How has the amount you need to feel an effect changed over time?
+    character: I need a lot more than I used to before I feel anything.
+- utterance: How long has drinking this way been part of your life?
+  topics:
+  - duration
+  style: open
+- utterance: Did your drinking become heavier recently, or further back?
+  topics:
+  - duration
+  style: closed
+- utterance: Has your usual pattern with booze been there for months, or years?
+  topics:
+  - duration
+  style: colloquial
+- utterance: Could you describe when the current pattern of drinking began?
+  topics:
+  - duration
+  style: clinical
+- utterance: I wondered how long your current drinking pattern has been there
+  topics:
+  - duration
+  style: indirect
+- utterance: You can take your time looking back; when did having this much become usual?
+  topics:
+  - duration
+  style: empathy_then_question
+- utterance: um how far back does this sort of drinking go
+  topics:
+  - duration
+  style: spoken
+- utterance: Drinking like this since when?
+  topics:
+  - duration
+  style: brief
+- utterance: This amount has been usual for quite a while, hasn't it?
+  topics:
+  - duration
+  style: leading
+- utterance: Was that increase around the time you split up?
+  topics:
+  - duration
+  style: follow_up
+  previous:
+    interviewer: How long has drinking this way been part of your life?
+    character: I've drunk heavily for about ten years. It got worse after my divorce four years ago.
+- utterance: Describe how your drinking has changed over the years.
+  topics:
+  - duration
+  style: open
+- utterance: Is there a point you associate with drinking becoming heavier?
+  topics:
+  - duration
+  style: closed
+- utterance: Thinking back, when did booze become such a regular thing?
+  topics:
+  - duration
+  style: colloquial
+- utterance: so this amount of booze um roughly when did it become the norm
+  topics:
+  - duration
+  style: spoken
+- utterance: Had the heavy use already been there before that increase?
+  topics:
+  - duration
+  style: follow_up
+  previous:
+    interviewer: How long has drinking this way been part of your life?
+    character: I've drunk heavily for about ten years. It got worse after my divorce four years ago.
+- utterance: What has happened when you've tried to cut down your drinking?
+  topics:
+  - loss-of-control
+  style: open
+- utterance: Have you ever tried to cut down and found you couldn't keep it up?
+  topics:
+  - loss-of-control
+  style: closed
+- utterance: How have things gone when you've decided to ease off the booze?
+  topics:
+  - loss-of-control
+  style: colloquial
+- utterance: Could you describe any unsuccessful attempts to reduce your drinking?
+  topics:
+  - loss-of-control
+  style: clinical
+- utterance: I wondered whether you've managed to stick to cutting down
+  topics:
+  - loss-of-control
+  style: indirect
+- utterance: It can be discouraging; have you found it hard to stick to having less?
+  topics:
+  - loss-of-control
+  style: empathy_then_question
+- utterance: um if youve tried to cut down how has that gone
+  topics:
+  - loss-of-control
+  style: spoken
+- utterance: Any attempts to cut down?
+  topics:
+  - loss-of-control
+  style: brief
+- utterance: Having less is harder than simply deciding to, isn't it?
+  topics:
+  - loss-of-control
+  style: leading
+- utterance: Was that as far as you managed to keep it going?
+  topics:
+  - loss-of-control
+  style: follow_up
+  previous:
+    interviewer: What has happened when you've tried to cut down your drinking?
+    character: I've tried to cut down loads of times, but I've never lasted more than two days.
+- utterance: Describe what cutting down has been like for you.
+  topics:
+  - loss-of-control
+  style: open
+- utterance: Is keeping control of the amount something you struggle with?
+  topics:
+  - loss-of-control
+  style: closed
+- utterance: When you've promised yourself less, has it stayed that way?
+  topics:
+  - loss-of-control
+  style: colloquial
+- utterance: so have you been able to keep to a lower amount for very long
+  topics:
+  - loss-of-control
+  style: spoken
+- utterance: Did you manage a third day at that lower amount?
+  topics:
+  - loss-of-control
+  style: follow_up
+  previous:
+    interviewer: What has happened when you've tried to cut down your drinking?
+    character: I've tried to cut down loads of times, but I've never lasted more than two days.
+- utterance: What effects has drinking had on your work or other responsibilities?
+  topics:
+  - consequences
+  style: open
+- utterance: Have you had any problems at work because of alcohol?
+  topics:
+  - consequences
+  style: closed
+- utterance: Has booze landed you in trouble with anybody?
+  topics:
+  - consequences
+  style: colloquial
+- utterance: Could you describe any work or legal consequences of your drinking?
+  topics:
+  - consequences
+  style: clinical
+- utterance: I wondered whether alcohol has caused difficulties in your job
+  topics:
+  - consequences
+  style: indirect
+- utterance: You won't be judged here; has alcohol got in the way of your responsibilities?
+  topics:
+  - consequences
+  style: empathy_then_question
+- utterance: Any problems linked to drinking?
+  topics:
+  - consequences
+  style: brief
+- utterance: Booze has probably caused some trouble outside the house, hasn't it?
+  topics:
+  - consequences
+  style: leading
+- utterance: Were both warnings about arriving late?
+  topics:
+  - consequences
+  style: follow_up
+  previous:
+    interviewer: What effects has drinking had on your work or other responsibilities?
+    character: I've had two warnings at work for being late, and I lost my driving licence for drink driving last
+      year.
+- utterance: Describe any problems with your driving licence related to drinking.
+  topics:
+  - consequences
+  style: open
+- utterance: Is alcohol affecting how reliably you get to work?
+  topics:
+  - consequences
+  style: closed
+- utterance: When booze gets in the way, what sort of trouble follows?
+  topics:
+  - consequences
+  style: colloquial
+- utterance: so away from the amount itself has it cost you anything important
+  topics:
+  - consequences
+  style: spoken
+- utterance: And was that licence trouble last year?
+  topics:
+  - consequences
+  style: follow_up
+  previous:
+    interviewer: What effects has drinking had on your work or other responsibilities?
+    character: I've had two warnings at work for being late, and I lost my driving licence for drink driving last
+      year.
+- utterance: How would you describe your mood recently?
+  topics:
+  - mood
+  style: open
+- utterance: Have you been feeling low much of the time?
+  topics:
+  - mood
+  style: closed
+- utterance: Does life feel rather bleak at the moment?
+  topics:
+  - mood
+  style: colloquial
+- utterance: Could you tell me whether low mood has been persistent?
+  topics:
+  - mood
+  style: clinical
+- utterance: I wondered how your mood has been between drinks
+  topics:
+  - mood
+  style: indirect
+- utterance: It's okay to say if things are hard; have you felt downhearted lately?
+  topics:
+  - mood
+  style: empathy_then_question
+- utterance: um in yourself has your mood been up or down
+  topics:
+  - mood
+  style: spoken
+- utterance: Mostly low or fairly cheerful?
+  topics:
+  - mood
+  style: brief
+- utterance: Things haven't felt particularly bright for you, have they?
+  topics:
+  - mood
+  style: leading
+- utterance: Are you certain that the alcohol accounts for that?
+  topics:
+  - mood
+  style: follow_up
+  previous:
+    interviewer: How would you describe your mood recently?
+    character: I feel low a lot of the time, but I'm not sure whether that's the drink.
+- utterance: Describe any low feelings you've been having recently.
+  topics:
+  - mood
+  style: open
+- utterance: Is low mood something that troubles you often?
+  topics:
+  - mood
+  style: closed
+- utterance: When you're on your own with things, do you feel down in the dumps?
+  topics:
+  - mood
+  style: colloquial
+- utterance: so emotionally um how are things for you
+  topics:
+  - mood
+  style: spoken
+- utterance: Does that downhearted feeling occur much of the time?
+  topics:
+  - mood
+  style: follow_up
+  previous:
+    interviewer: How would you describe your mood recently?
+    character: I feel low a lot of the time, but I'm not sure whether that's the drink.
+- utterance: What thoughts, if any, have you had about harming yourself?
+  topics:
+  - risk
+  style: open
+- utterance: Have you deliberately hurt yourself at any point?
+  topics:
+  - risk
+  style: closed
+- utterance: Does it ever get so bad you wish you weren't here?
+  topics:
+  - risk
+  style: colloquial
+- utterance: Could you tell me about any thoughts of ending your life?
+  topics:
+  - risk
+  style: clinical
+- utterance: I wondered whether you've been thinking of harming yourself
+  topics:
+  - risk
+  style: indirect
+- utterance: These are difficult things to say; have you wanted to be dead?
+  topics:
+  - risk
+  style: empathy_then_question
+- utterance: um has hurting yourself ever seemed like a way out
+  topics:
+  - risk
+  style: spoken
+- utterance: You haven't wanted to end it all, have you?
+  topics:
+  - risk
+  style: leading
+- utterance: And has that ever led to an actual injury you caused deliberately?
+  topics:
+  - risk
+  style: follow_up
+  previous:
+    interviewer: What thoughts, if any, have you had about harming yourself?
+    character: I've never tried to harm myself, and I don't have thoughts of ending my life.
+- utterance: Describe any urges you've had to harm yourself.
+  topics:
+  - risk
+  style: open
+- utterance: Is ending your life something you've considered recently?
+  topics:
+  - risk
+  style: closed
+- utterance: When things feel too much, do you ever wish it could all end?
+  topics:
+  - risk
+  style: colloquial
+- utterance: so just asking plainly have you ever deliberately injured your body
+  topics:
+  - risk
+  style: spoken
+- utterance: Does that mean you don't want to die at present?
+  topics:
+  - risk
+  style: follow_up
+  previous:
+    interviewer: What thoughts, if any, have you had about harming yourself?
+    character: I've never tried to harm myself, and I don't have thoughts of ending my life.
+- utterance: What smoking or drug use is part of your life besides alcohol?
+  topics:
+  - other-substances
+  style: open
+- utterance: Do you smoke cigarettes at the moment?
+  topics:
+  - other-substances
+  style: closed
+- utterance: How many fags, if any, do you get through?
+  topics:
+  - other-substances
+  style: colloquial
+- utterance: Could you describe any recreational drug use alongside drinking?
+  topics:
+  - other-substances
+  style: clinical
+- utterance: I wondered whether you use drugs other than alcohol
+  topics:
+  - other-substances
+  style: indirect
+- utterance: You can answer without being judged; do you use anything else for a buzz?
+  topics:
+  - other-substances
+  style: empathy_then_question
+- utterance: um is there any smoking or other drugs as well as drinking
+  topics:
+  - other-substances
+  style: spoken
+- utterance: Booze isn't necessarily the only thing you use, is it?
+  topics:
+  - other-substances
+  style: leading
+- utterance: Is that about one packet over twenty-four hours?
+  topics:
+  - other-substances
+  style: follow_up
+  previous:
+    interviewer: What smoking or drug use is part of your life besides alcohol?
+    character: I smoke twenty a day. I don't use any other drugs.
+- utterance: Describe how much you smoke, if you do.
+  topics:
+  - other-substances
+  style: open
+- utterance: Is cannabis or another recreational drug something you use?
+  topics:
+  - other-substances
+  style: closed
+- utterance: Apart from booze, is there anything you take to get a kick?
+  topics:
+  - other-substances
+  style: colloquial
+- utterance: so tobacco wise um is that part of your routine
+  topics:
+  - other-substances
+  style: spoken
+- utterance: Does that exclude recreational pills as well?
+  topics:
+  - other-substances
+  style: follow_up
+  previous:
+    interviewer: What smoking or drug use is part of your life besides alcohol?
+    character: I smoke twenty a day. I don't use any other drugs.
+- utterance: How have eating and keeping food down been for you?
+  topics:
+  - physical-health
+  style: open
+- utterance: Have you been eating as much as usual?
+  topics:
+  - physical-health
+  style: closed
+- utterance: How much food are you getting inside you these days?
+  topics:
+  - physical-health
+  style: colloquial
+- utterance: Could you describe any vomiting you have been having?
+  topics:
+  - physical-health
+  style: clinical
+- utterance: I wondered whether eating has become difficult
+  topics:
+  - physical-health
+  style: indirect
+- utterance: It can be uncomfortable to discuss; have you been bringing anything back up?
+  topics:
+  - physical-health
+  style: empathy_then_question
+- utterance: um are you eating properly or having very little
+  topics:
+  - physical-health
+  style: spoken
+- utterance: Any vomiting or difficulty eating?
+  topics:
+  - physical-health
+  style: brief
+- utterance: Meals haven't always been easy to manage, have they?
+  topics:
+  - physical-health
+  style: leading
+- utterance: Is the stuff you bring up bile rather than food?
+  topics:
+  - physical-health
+  style: follow_up
+  previous:
+    interviewer: How have eating and keeping food down been for you?
+    character: I don't eat much, and I sometimes bring up a bit of bile in the morning.
+- utterance: Describe any problems with eating or vomiting.
+  topics:
+  - physical-health
+  style: open
+- utterance: Is vomiting something that has been troubling you recently?
+  topics:
+  - physical-health
+  style: closed
+- utterance: At mealtimes, are you having much or barely a bite?
+  topics:
+  - physical-health
+  style: colloquial
+- utterance: so physically um are you managing to keep things down
+  topics:
+  - physical-health
+  style: spoken
+- utterance: And is that usually just after you get up?
+  topics:
+  - physical-health
+  style: follow_up
+  previous:
+    interviewer: How have eating and keeping food down been for you?
+    character: I don't eat much, and I sometimes bring up a bit of bile in the morning.
+- utterance: What might make changing your drinking worthwhile for you?
+  topics:
+  - motivation
+  style: open
+- utterance: Is there a reason you would like to cut back or stop?
+  topics:
+  - motivation
+  style: closed
+- utterance: What would make giving the booze a miss feel worth it?
+  topics:
+  - motivation
+  style: colloquial
+- utterance: Could you describe your reasons for considering a change in drinking?
+  topics:
+  - motivation
+  style: clinical
+- utterance: I wondered what would motivate you to change things
+  topics:
+  - motivation
+  style: indirect
+- utterance: It can be hard to think about; what might make being sober matter to you?
+  topics:
+  - motivation
+  style: empathy_then_question
+- utterance: Any reasons to change things?
+  topics:
+  - motivation
+  style: brief
+- utterance: There may be something important that makes sobriety worth considering, is that fair?
+  topics:
+  - motivation
+  style: leading
+- utterance: Is being able to see him what's made stopping matter?
+  topics:
+  - motivation
+  style: follow_up
+  previous:
+    interviewer: What might make changing your drinking worthwhile for you?
+    character: My daughter has stopped letting me see my grandson when I've been drinking. That's what's made me
+      think I need to stop.
+- utterance: Help me understand what you would want to change about drinking.
+  topics:
+  - motivation
+  style: open
+- utterance: Does anything in particular motivate you to consider stopping?
+  topics:
+  - motivation
+  style: closed
+- utterance: If it's okay to ask, what might give you that push to give up?
+  topics:
+  - motivation
+  style: colloquial
+- utterance: so gently asking what would make life without booze worthwhile
+  topics:
+  - motivation
+  style: spoken
+- utterance: Was losing that contact what made you consider giving up?
+  topics:
+  - motivation
+  style: follow_up
+  previous:
+    interviewer: What might make changing your drinking worthwhile for you?
+    character: My daughter has stopped letting me see my grandson when I've been drinking. That's what's made me
+      think I need to stop.
+- utterance: How much do you drink most days, and how long has that pattern been going on?
+  topics:
+  - quantity
+  - duration
+  style: stacked
+- utterance: What happens when you go without alcohol, and have you managed to cut down?
+  topics:
+  - withdrawal
+  - loss-of-control
+  style: stacked
+- utterance: How has your mood been, and have you had thoughts of hurting yourself?
+  topics:
+  - mood
+  - risk
+  style: stacked
+- utterance: When do you first drink after waking, and what would make stopping worthwhile?
+  topics:
+  - morning-drinking
+  - motivation
+  style: stacked
+- utterance: Hello Chris, good to meet you.
+  topics: []
+  style: greeting
+- utterance: Morning, thanks for coming along today.
+  topics: []
+  style: greeting
+- utterance: Hi there, please come through.
+  topics: []
+  style: greeting
+- utterance: I am one of the doctors in this service.
+  topics: []
+  style: introduction
+- utterance: My role today is to listen to your account.
+  topics: []
+  style: introduction
+- utterance: We have a few minutes together for this conversation.
+  topics: []
+  style: introduction
+- utterance: It can be uncomfortable to talk about personal things.
+  topics: []
+  style: empathy
+- utterance: You deserve to be heard without being judged.
+  topics: []
+  style: empathy
+- utterance: Feeling differently from your GP about this can be frustrating.
+  topics: []
+  style: empathy
+- utterance: It is all right to need a moment before answering.
+  topics: []
+  style: empathy
+- utterance: Your GP has asked you to come because of the liver test results.
+  topics: []
+  style: summary
+- utterance: You have said you do not think the drinking is that bad.
+  topics: []
+  style: summary
+- utterance: So the referral followed some results your GP was concerned about.
+  topics: []
+  style: summary
+- utterance: 'Let me recap the reason for today: your GP suggested discussing your drinking.'
+  topics: []
+  style: summary
+- utterance: I ask everyone a few questions about alcohol.
+  topics: []
+  style: explanation
+- utterance: You can pause this conversation whenever you need to.
+  topics: []
+  style: explanation
+- utterance: I will explain unfamiliar wording as we go.
+  topics: []
+  style: explanation
+- utterance: The next part of my questions covers your general wellbeing.
+  topics: []
+  style: explanation
+- utterance: Have I made the purpose of this conversation clear?
+  topics: []
+  style: check_understanding
+- utterance: Does my recap of why you were referred sound right?
+  topics: []
+  style: check_understanding
+- utterance: Was my explanation of what we will cover understandable?
+  topics: []
+  style: check_understanding
+- utterance: Have I understood that you see this differently from your GP?
+  topics: []
+  style: check_understanding
+- utterance: Have you ever heard a voice when nobody was there?
+  topics: []
+  style: off_case
+- utterance: Do you ever have sudden attacks of panic?
+  topics: []
+  style: off_case
+- utterance: Have you had any counselling in the past?
+  topics: []
+  style: off_case
+- utterance: Is there a chance you might lose your accommodation?
+  topics: []
+  style: off_case
+- utterance: Has anyone else in your family had problems with drinking?
+  topics: []
+  style: near_miss
+- utterance: Has another person threatened to harm you?
+  topics: []
+  style: near_miss
+- utterance: Do you gamble money you need for essentials?
+  topics: []
+  style: near_miss
+- utterance: Have you ever been admitted to hospital with alcohol poisoning?
+  topics: []
+  style: near_miss

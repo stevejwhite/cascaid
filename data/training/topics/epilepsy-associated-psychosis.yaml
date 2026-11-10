@@ -1,0 +1,771 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: epilepsy-associated-psychosis
+case_version: 0.1.0
+status: draft
+items:
+- utterance: What is it that has stopped being private?
+  topics:
+  - broadcast
+  style: open
+- utterance: Tell me about people knowing what's in your mind.
+  topics:
+  - broadcast
+  style: open
+- utterance: Can other people hear your thoughts?
+  topics:
+  - broadcast
+  style: closed
+- utterance: Do you feel your thoughts leave your head and get out into the room?
+  topics:
+  - broadcast
+  style: closed
+- utterance: Do you think the people around you are listening in on your head?
+  topics:
+  - broadcast
+  style: colloquial
+- utterance: Do you have the experience that your thoughts are being broadcast aloud?
+  topics:
+  - broadcast
+  style: clinical
+- utterance: I wondered whether other people can pick up your thoughts
+  topics:
+  - broadcast
+  style: indirect
+- utterance: I'd like to understand if your thoughts feel open to others
+  topics:
+  - broadcast
+  style: indirect
+- utterance: That sounds frightening. Do other people hear what you think?
+  topics:
+  - broadcast
+  style: empathy_then_question
+- utterance: Take your time, Sophie. Can people nearby read your mind?
+  topics:
+  - broadcast
+  style: empathy_then_question
+- utterance: um so can people hear what you're thinking, like
+  topics:
+  - broadcast
+  style: spoken
+- utterance: so your thoughts, do other people know them
+  topics:
+  - broadcast
+  style: spoken
+- utterance: and people hearing your thoughts?
+  topics:
+  - broadcast
+  style: brief
+- utterance: Where do your thoughts seem to come from?
+  topics:
+  - insertion
+  style: open
+- utterance: Tell me about thoughts that don't feel like yours.
+  topics:
+  - insertion
+  style: open
+- utterance: Do some thoughts feel put into your head?
+  topics:
+  - insertion
+  style: closed
+- utterance: Do you ever have thoughts that seem to belong to someone else?
+  topics:
+  - insertion
+  style: closed
+- utterance: Does it feel like someone else is putting ideas in your head?
+  topics:
+  - insertion
+  style: colloquial
+- utterance: Are there thoughts in there that aren't yours?
+  topics:
+  - insertion
+  style: colloquial
+- utterance: Are there any thoughts that feel as if they were inserted by an outside force?
+  topics:
+  - insertion
+  style: clinical
+- utterance: I wondered whether any thoughts feel foreign to you
+  topics:
+  - insertion
+  style: indirect
+- utterance: I'd like to ask if someone is planting thoughts in your mind
+  topics:
+  - insertion
+  style: indirect
+- utterance: I know this is hard to put into words. Do any thoughts feel as if they come from outside
+    you?
+  topics:
+  - insertion
+  style: empathy_then_question
+- utterance: Thank you, Sophie. Do you ever feel thoughts are being put there for you?
+  topics:
+  - insertion
+  style: empathy_then_question
+- utterance: um do you get thoughts that, that aren't your own
+  topics:
+  - insertion
+  style: spoken
+- utterance: so someone else's thoughts in your head, is that a thing
+  topics:
+  - insertion
+  style: spoken
+- utterance: What about the other way round, thoughts coming into your head from elsewhere?
+  topics:
+  - insertion
+  style: follow_up
+  previous:
+    interviewer: Can other people hear your thoughts?
+    character: I believe people nearby can hear my thoughts without me speaking. It started two days ago
+      and feels certain.
+- utterance: How much control do you feel you have over your own body?
+  topics:
+  - passivity
+  style: open
+- utterance: Tell me about whether your actions feel like yours.
+  topics:
+  - passivity
+  style: open
+- utterance: Does anyone seem to be moving your body for you?
+  topics:
+  - passivity
+  style: closed
+- utterance: Do you feel made to do things you don't want to?
+  topics:
+  - passivity
+  style: closed
+- utterance: Does it feel like someone's pulling your strings?
+  topics:
+  - passivity
+  style: colloquial
+- utterance: Is anyone making you move or act, do you think?
+  topics:
+  - passivity
+  style: colloquial
+- utterance: Do any of your movements feel as if they are being controlled from outside?
+  topics:
+  - passivity
+  style: clinical
+- utterance: I wondered if your actions still feel like your own
+  topics:
+  - passivity
+  style: indirect
+- utterance: I'd like to ask whether anything is controlling what you do
+  topics:
+  - passivity
+  style: indirect
+- utterance: I appreciate your patience. Do you feel something outside you is steering your body?
+  topics:
+  - passivity
+  style: empathy_then_question
+- utterance: That sounds scary. Are you being made to act in ways you can't stop?
+  topics:
+  - passivity
+  style: empathy_then_question
+- utterance: um are you in control of what you do, like your body
+  topics:
+  - passivity
+  style: spoken
+- utterance: so does someone make you move or do stuff
+  topics:
+  - passivity
+  style: spoken
+- utterance: and control of your movements?
+  topics:
+  - passivity
+  style: brief
+- utterance: I'd imagine you feel controlled by something, is that right?
+  topics:
+  - passivity
+  style: leading
+- utterance: What do you hear that other people don't?
+  topics:
+  - voices
+  style: open
+- utterance: Tell me about any voices.
+  topics:
+  - voices
+  style: open
+- utterance: Do you hear a voice when nobody is there?
+  topics:
+  - voices
+  style: closed
+- utterance: What does the voice say to you?
+  topics:
+  - voices
+  style: colloquial
+- utterance: How often do you hear it?
+  topics:
+  - voices
+  style: colloquial
+- utterance: Are you hearing voices, and do they give you orders?
+  topics:
+  - voices
+  style: clinical
+- utterance: I wondered if you've been hearing anything unusual
+  topics:
+  - voices
+  style: indirect
+- utterance: I'd like to hear what the voice is like
+  topics:
+  - voices
+  style: indirect
+- utterance: That must be unsettling. Is there a voice talking to you?
+  topics:
+  - voices
+  style: empathy_then_question
+- utterance: I'm listening, Sophie. Does the voice say what you should do?
+  topics:
+  - voices
+  style: empathy_then_question
+- utterance: um do you hear voices, like talking to you
+  topics:
+  - voices
+  style: spoken
+- utterance: so what's it saying, the voice
+  topics:
+  - voices
+  style: spoken
+- utterance: Do you hear any of them out loud though?
+  topics:
+  - voices
+  style: follow_up
+  previous:
+    interviewer: Do some thoughts feel put there?
+    character: Yes, some thoughts feel put there by someone else. I can't identify who, but they don't
+      feel like mine.
+- utterance: What was happening before these experiences started?
+  topics:
+  - timing
+  style: open
+- utterance: Tell me how the seizures and these experiences fit together in time.
+  topics:
+  - timing
+  style: open
+- utterance: Did you feel back to normal in between?
+  topics:
+  - timing
+  style: closed
+- utterance: When did the seizures happen?
+  topics:
+  - timing
+  style: colloquial
+- utterance: Was there a gap between the fits and this?
+  topics:
+  - timing
+  style: colloquial
+- utterance: What is the time relationship between your seizures and these symptoms?
+  topics:
+  - timing
+  style: clinical
+- utterance: I wondered how soon after your last seizure this began
+  topics:
+  - timing
+  style: indirect
+- utterance: I'd like to understand whether there was a quiet spell before it started
+  topics:
+  - timing
+  style: indirect
+- utterance: I know it's been a rough week. How many seizures did you have?
+  topics:
+  - timing
+  style: empathy_then_question
+- utterance: Thanks for bearing with me. Were you well in the days after the seizures?
+  topics:
+  - timing
+  style: empathy_then_question
+- utterance: um so the seizures, when were they, how many
+  topics:
+  - timing
+  style: spoken
+- utterance: so after the fits did you feel okay for a bit
+  topics:
+  - timing
+  style: spoken
+- utterance: and when the seizures were?
+  topics:
+  - timing
+  style: brief
+- utterance: This all started straight after the seizures, didn't it?
+  topics:
+  - timing
+  style: leading
+- utterance: How clear is your head about what place this is today?
+  topics:
+  - orientation
+  style: open
+- utterance: Do you know who I am?
+  topics:
+  - orientation
+  style: closed
+- utterance: Do you know what this place is?
+  topics:
+  - orientation
+  style: colloquial
+- utterance: Are you finding it hard to keep track of where you are?
+  topics:
+  - orientation
+  style: colloquial
+- utterance: Can you tell me the place, and who you're talking to?
+  topics:
+  - orientation
+  style: clinical
+- utterance: I wondered whether you know where you are right now
+  topics:
+  - orientation
+  style: indirect
+- utterance: I'd like to check you're clear about who I am and why you're here
+  topics:
+  - orientation
+  style: indirect
+- utterance: I'm sorry to ask something basic. Do you know what place this is?
+  topics:
+  - orientation
+  style: empathy_then_question
+- utterance: Thanks, Sophie. Have you felt muddled about where you are today?
+  topics:
+  - orientation
+  style: empathy_then_question
+- utterance: um do you know where we are, like what is this place
+  topics:
+  - orientation
+  style: spoken
+- utterance: so who am I, do you know
+  topics:
+  - orientation
+  style: spoken
+- utterance: and where you are now?
+  topics:
+  - orientation
+  style: brief
+- utterance: You're a bit confused about where you are, aren't you?
+  topics:
+  - orientation
+  style: leading
+- utterance: What medication do you take for your epilepsy?
+  topics:
+  - treatment
+  style: open
+- utterance: Tell me about how you take your seizure tablets.
+  topics:
+  - treatment
+  style: open
+- utterance: Have you missed any doses?
+  topics:
+  - treatment
+  style: closed
+- utterance: Has your epilepsy treatment changed recently?
+  topics:
+  - treatment
+  style: closed
+- utterance: What tablets are you on?
+  topics:
+  - treatment
+  style: colloquial
+- utterance: Have you forgotten your pills at all?
+  topics:
+  - treatment
+  style: colloquial
+- utterance: What antiseizure drug and dose are you on, and have you been taking it?
+  topics:
+  - treatment
+  style: clinical
+- utterance: I wondered which epilepsy medicine you take
+  topics:
+  - treatment
+  style: indirect
+- utterance: I'd like to check whether your tablets have changed
+  topics:
+  - treatment
+  style: indirect
+- utterance: That's helpful. How much do you take each day?
+  topics:
+  - treatment
+  style: empathy_then_question
+- utterance: I'm sorry to go through the basics. Have you skipped any tablets?
+  topics:
+  - treatment
+  style: empathy_then_question
+- utterance: um what are you on, for the epilepsy
+  topics:
+  - treatment
+  style: spoken
+- utterance: so any missed doses or changes in meds
+  topics:
+  - treatment
+  style: spoken
+- utterance: and your medication?
+  topics:
+  - treatment
+  style: brief
+- utterance: What are you taking to control those?
+  topics:
+  - treatment
+  style: follow_up
+  previous:
+    interviewer: When were your seizures?
+    character: I had three seizures five days ago. I was tired afterwards, then felt back to normal for
+      two days before these experiences began.
+- utterance: Tell me about any thoughts of harm.
+  topics:
+  - safety
+  style: open
+- utterance: Who is looking after you at the moment?
+  topics:
+  - safety
+  style: open
+- utterance: Have you thought about hurting yourself?
+  topics:
+  - safety
+  style: closed
+- utterance: Have you wanted to harm anyone else?
+  topics:
+  - safety
+  style: closed
+- utterance: Are you scared you might do something to someone?
+  topics:
+  - safety
+  style: colloquial
+- utterance: Is anyone staying with you at the moment?
+  topics:
+  - safety
+  style: colloquial
+- utterance: Any thoughts of self-harm or harm to others, and what supports are around you?
+  topics:
+  - safety
+  style: clinical
+- utterance: I wondered whether you've felt like acting against anyone
+  topics:
+  - safety
+  style: indirect
+- utterance: I'd like to know if you're safe at home
+  topics:
+  - safety
+  style: indirect
+- utterance: That sounds frightening. Have you had any thoughts of harming yourself?
+  topics:
+  - safety
+  style: empathy_then_question
+- utterance: I appreciate how hard this is. Is there someone with you for safety?
+  topics:
+  - safety
+  style: empathy_then_question
+- utterance: so who's with you, are you on your own
+  topics:
+  - safety
+  style: spoken
+- utterance: and keeping safe?
+  topics:
+  - safety
+  style: brief
+- utterance: Has it made you want to hurt anyone?
+  topics:
+  - safety
+  style: follow_up
+  previous:
+    interviewer: What does the voice say?
+    character: I hear a man's voice commenting on what I'm doing several times daily. It hasn't ordered
+      me to do anything.
+- utterance: What do you make of what's been happening?
+  topics:
+  - insight
+  style: open
+- utterance: How do you explain these experiences to yourself?
+  topics:
+  - insight
+  style: open
+- utterance: Do you think the seizures might be behind it?
+  topics:
+  - insight
+  style: closed
+- utterance: Do you feel they're real?
+  topics:
+  - insight
+  style: closed
+- utterance: What's your own take on all this?
+  topics:
+  - insight
+  style: colloquial
+- utterance: Do you think it might be linked to the fits?
+  topics:
+  - insight
+  style: colloquial
+- utterance: What is your understanding of the experiences, and might they relate to your epilepsy?
+  topics:
+  - insight
+  style: clinical
+- utterance: I wondered how you're making sense of it
+  topics:
+  - insight
+  style: indirect
+- utterance: I'd like to talk about your worries over how we will understand this
+  topics:
+  - insight
+  style: indirect
+- utterance: I'm taking this seriously, Sophie. What do you think is going on?
+  topics:
+  - insight
+  style: empathy_then_question
+- utterance: That sounds really hard. Do you think the seizures could have caused it?
+  topics:
+  - insight
+  style: empathy_then_question
+- utterance: um what do you think is happening, like why
+  topics:
+  - insight
+  style: spoken
+- utterance: so do you think it's the epilepsy or what
+  topics:
+  - insight
+  style: spoken
+- utterance: and your own explanation?
+  topics:
+  - insight
+  style: brief
+- utterance: Do you think that's connected to this?
+  topics:
+  - insight
+  style: follow_up
+  previous:
+    interviewer: When did the seizures happen?
+    character: I had three seizures five days ago. I was tired afterwards, then felt back to normal for
+      two days before these experiences began.
+- utterance: What are you most afraid of at the moment?
+  topics:
+  - fear
+  style: open
+- utterance: Are you worried about what this means for your life?
+  topics:
+  - fear
+  style: closed
+- utterance: Have you been able to talk to anyone about how frightened you are?
+  topics:
+  - fear
+  style: closed
+- utterance: Is there anything you've been keeping to yourself?
+  topics:
+  - fear
+  style: colloquial
+- utterance: What's scaring you most?
+  topics:
+  - fear
+  style: colloquial
+- utterance: What are your main fears about the impact on your daily life?
+  topics:
+  - fear
+  style: clinical
+- utterance: I wondered what you're most afraid might happen
+  topics:
+  - fear
+  style: indirect
+- utterance: I'd like to hear about fears that have been hard to share
+  topics:
+  - fear
+  style: indirect
+- utterance: This must be a lot to carry. Is there something you haven't told those close to you?
+  topics:
+  - fear
+  style: empathy_then_question
+- utterance: You're doing well. What do you worry this means for you?
+  topics:
+  - fear
+  style: empathy_then_question
+- utterance: um what's the worst of it for you, what are you afraid of
+  topics:
+  - fear
+  style: spoken
+- utterance: so is there a fear you haven't said out loud
+  topics:
+  - fear
+  style: spoken
+- utterance: and what frightens you?
+  topics:
+  - fear
+  style: brief
+- utterance: What worries you about that for the future?
+  topics:
+  - fear
+  style: follow_up
+  previous:
+    interviewer: How do you explain it?
+    character: Part of me wonders whether this follows the seizures. It still feels real, and I'm scared
+      you'll dismiss everything I say.
+- utterance: Tell me about alcohol or drugs lately.
+  topics:
+  - differential
+  style: open
+- utterance: What else has been going on with your health this week?
+  topics:
+  - differential
+  style: open
+- utterance: Have you used any drugs?
+  topics:
+  - differential
+  style: closed
+- utterance: Have you had a temperature?
+  topics:
+  - differential
+  style: closed
+- utterance: Have you had a drink this week?
+  topics:
+  - differential
+  style: colloquial
+- utterance: Has anything like this ever happened before?
+  topics:
+  - differential
+  style: colloquial
+- utterance: Any recreational drugs, alcohol, fever or earlier episodes like this?
+  topics:
+  - differential
+  style: clinical
+- utterance: I wondered whether you've been unwell in any other way
+  topics:
+  - differential
+  style: indirect
+- utterance: I'd like to check if you've had anything to drink or take
+  topics:
+  - differential
+  style: indirect
+- utterance: I'm sorry to ask. Have you taken any street drugs?
+  topics:
+  - differential
+  style: empathy_then_question
+- utterance: Thanks, Sophie. Have you felt feverish or ill with an infection?
+  topics:
+  - differential
+  style: empathy_then_question
+- utterance: um any drink or drugs this week
+  topics:
+  - differential
+  style: spoken
+- utterance: so is this the first time you've felt like this
+  topics:
+  - differential
+  style: spoken
+- utterance: and alcohol?
+  topics:
+  - differential
+  style: brief
+- utterance: You've probably had a few drinks lately, haven't you?
+  topics:
+  - differential
+  style: leading
+- utterance: Can others hear your thoughts, and do some thoughts feel put there by someone?
+  topics:
+  - broadcast
+  - insertion
+  style: stacked
+- utterance: Do you hear voices, and have they told you to hurt anyone?
+  topics:
+  - voices
+  - safety
+  style: stacked
+- utterance: When did the seizures happen, and what do you take for them?
+  topics:
+  - timing
+  - treatment
+  style: stacked
+- utterance: Where are you now, and have you had any alcohol this week?
+  topics:
+  - orientation
+  - differential
+  style: stacked
+- utterance: Hello Sophie, I'm Dr Okafor, one of the doctors on the community team.
+  topics: []
+  style: greeting
+- utterance: Hi Sophie, thanks for seeing me so quickly.
+  topics: []
+  style: greeting
+- utterance: Is it all right if we talk for a while?
+  topics: []
+  style: introduction
+- utterance: What would you like to start with, Sophie?
+  topics: []
+  style: greeting
+- utterance: Before we begin, do you have any questions for me?
+  topics: []
+  style: greeting
+- utterance: How are you feeling at the moment, Sophie?
+  topics: []
+  style: greeting
+- utterance: I'd like to move on to something different now.
+  topics: []
+  style: transition
+- utterance: Okay, let's look at another area for a bit.
+  topics: []
+  style: transition
+- utterance: Thanks, Sophie, that's clear. Can we go on?
+  topics: []
+  style: transition
+- utterance: We're nearly out of time now.
+  topics: []
+  style: closing
+- utterance: Thank you for talking to me today, Sophie.
+  topics: []
+  style: closing
+- utterance: I'm going to arrange some next steps with you before you go.
+  topics: []
+  style: closing
+- utterance: It must be scary when it feels so real.
+  topics: []
+  style: empathy
+- utterance: I can see how hard this is for you to talk about.
+  topics: []
+  style: empathy
+- utterance: It must be exhausting having this on your mind.
+  topics: []
+  style: empathy
+- utterance: So you've had some seizures and then some very unusual experiences.
+  topics: []
+  style: summary
+- utterance: 'Let me check I have this: you''ve been frightened and have come to get help.'
+  topics: []
+  style: summary
+- utterance: To sum up, these experiences began recently and are troubling you.
+  topics: []
+  style: summary
+- utterance: I'm going to ask about several different experiences, and some may sound odd, but I ask everyone.
+  topics: []
+  style: explanation
+- utterance: After this I'll want to arrange some physical checks as well.
+  topics: []
+  style: explanation
+- utterance: Seizures can sometimes be followed by changes in thinking, but I haven't decided anything
+    yet.
+  topics: []
+  style: explanation
+- utterance: Does that make sense, Sophie?
+  topics: []
+  style: check_understanding
+- utterance: Have I understood you properly?
+  topics: []
+  style: check_understanding
+- utterance: Is that what you meant?
+  topics: []
+  style: check_understanding
+- utterance: Do you have any family history of epilepsy?
+  topics: []
+  style: off_case
+- utterance: How has your sleep been?
+  topics: []
+  style: off_case
+- utterance: Have you had a head injury recently?
+  topics: []
+  style: off_case
+- utterance: Do you drive?
+  topics: []
+  style: off_case
+- utterance: What did the seizures feel like while they were happening?
+  topics: []
+  style: near_miss
+- utterance: Who prescribes your epilepsy tablets?
+  topics: []
+  style: near_miss
+- utterance: Did you hurt yourself during any of the seizures?
+  topics: []
+  style: near_miss
+- utterance: Do you feel low in mood since the seizures?
+  topics: []
+  style: near_miss
+- utterance: Do you think people are following you?
+  topics: []
+  style: near_miss

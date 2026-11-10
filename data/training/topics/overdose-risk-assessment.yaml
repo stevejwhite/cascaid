@@ -1,0 +1,950 @@
+# Training phrasings for the topic classifier. Drafted and revised by GPT-6 (Codex)
+# on 2026-10-12; reviewed by Steve J White on 2026-10-12. Not evaluation data.
+case_id: overdose-risk-assessment
+case_version: 0.4.0
+status: reviewed
+items:
+- utterance: What have you been told about your blood tests today?
+  topics:
+  - medically-fit
+  style: open
+- utterance: Have the doctors explained the blood-test results to you?
+  topics:
+  - medically-fit
+  style: closed
+- utterance: How did they say things looked on the results?
+  topics:
+  - medically-fit
+  style: colloquial
+- utterance: Could you describe what the medical team said about your blood results?
+  topics:
+  - medically-fit
+  style: clinical
+- utterance: I wondered what you understood from the blood tests this morning
+  topics:
+  - medically-fit
+  style: indirect
+- utterance: Waiting for results can be worrying; what have the doctors told you about yours?
+  topics:
+  - medically-fit
+  style: empathy_then_question
+- utterance: um what did they say about the blood tests today
+  topics:
+  - medically-fit
+  style: spoken
+- utterance: Blood tests all right today?
+  topics:
+  - medically-fit
+  style: brief
+- utterance: The doctors sound reassured by your results, don't they?
+  topics:
+  - medically-fit
+  style: leading
+- utterance: Was that reassurance given this morning?
+  topics:
+  - medically-fit
+  style: follow_up
+  previous:
+    interviewer: What have you been told about your blood tests today?
+    character: The doctors told me this morning that my blood tests are okay now.
+- utterance: Tell me about the update you were given on your blood tests.
+  topics:
+  - medically-fit
+  style: open
+- utterance: Is your understanding that the blood tests are okay now?
+  topics:
+  - medically-fit
+  style: closed
+- utterance: When they came round today, what was the message about the results?
+  topics:
+  - medically-fit
+  style: colloquial
+- utterance: so the results that came back um what have you been told
+  topics:
+  - medically-fit
+  style: spoken
+- utterance: Did they specifically say the results were okay by then?
+  topics:
+  - medically-fit
+  style: follow_up
+  previous:
+    interviewer: What have you been told about your blood tests today?
+    character: The doctors told me this morning that my blood tests are okay now.
+- utterance: What did you take in the overdose last night?
+  topics:
+  - overdose-details
+  style: open
+- utterance: Did you take tablets, something to drink, or both?
+  topics:
+  - overdose-details
+  style: closed
+- utterance: How much did you swallow during that episode?
+  topics:
+  - overdose-details
+  style: colloquial
+- utterance: Could you describe what you took and the amount involved in the overdose?
+  topics:
+  - overdose-details
+  style: clinical
+- utterance: I wondered which tablets or other substances were taken
+  topics:
+  - overdose-details
+  style: indirect
+- utterance: I know this may be difficult to revisit; what went into your body during that episode?
+  topics:
+  - overdose-details
+  style: empathy_then_question
+- utterance: um what tablets or anything else did you take last night
+  topics:
+  - overdose-details
+  style: spoken
+- utterance: Which tablets and how many?
+  topics:
+  - overdose-details
+  style: brief
+- utterance: It was more than an ordinary dose, wasn't it?
+  topics:
+  - overdose-details
+  style: leading
+- utterance: Was that around eleven in the evening?
+  topics:
+  - overdose-details
+  style: follow_up
+  previous:
+    interviewer: What did you take in the overdose last night?
+    character: I took about twenty paracetamol tablets with some wine at around eleven last night.
+- utterance: Tell me about the timing of the overdose.
+  topics:
+  - overdose-details
+  style: open
+- utterance: Is there anything else you took along with the tablets?
+  topics:
+  - overdose-details
+  style: closed
+- utterance: At what point in the evening did you swallow it?
+  topics:
+  - overdose-details
+  style: colloquial
+- utterance: so the amount you swallowed um roughly how much was it
+  topics:
+  - overdose-details
+  style: spoken
+- utterance: Were those all paracetamol?
+  topics:
+  - overdose-details
+  style: follow_up
+  previous:
+    interviewer: What did you take in the overdose last night?
+    character: I took about twenty paracetamol tablets with some wine at around eleven last night.
+- utterance: What planning, if any, went into this beforehand?
+  topics:
+  - planning
+  style: open
+- utterance: Had you planned the overdose ahead of time?
+  topics:
+  - planning
+  style: closed
+- utterance: How far ahead did you get things ready?
+  topics:
+  - planning
+  style: colloquial
+- utterance: Could you describe any preparation for the overdose?
+  topics:
+  - planning
+  style: clinical
+- utterance: I wondered how long you had been planning to do this
+  topics:
+  - planning
+  style: indirect
+- utterance: It can be hard to look back; was this a spur-of-the-moment act or decided beforehand?
+  topics:
+  - planning
+  style: empathy_then_question
+- utterance: um was there a plan in advance or did it happen suddenly
+  topics:
+  - planning
+  style: spoken
+- utterance: Any planning before the overdose?
+  topics:
+  - planning
+  style: brief
+- utterance: This wasn't entirely out of the blue for you, was it?
+  topics:
+  - planning
+  style: leading
+- utterance: Was the purchase made two days earlier?
+  topics:
+  - planning
+  style: follow_up
+  previous:
+    interviewer: What planning, if any, went into this beforehand?
+    character: Yes, I'd planned it. I bought the tablets two days ago, from two different shops.
+- utterance: Tell me about how you prepared, if you did.
+  topics:
+  - planning
+  style: open
+- utterance: Is planning ahead something that happened before this episode?
+  topics:
+  - planning
+  style: closed
+- utterance: When you obtained what you used, was this already what you intended?
+  topics:
+  - planning
+  style: colloquial
+- utterance: so beforehand um had you made arrangements for doing it
+  topics:
+  - planning
+  style: spoken
+- utterance: Did you buy them in more than one place?
+  topics:
+  - planning
+  style: follow_up
+  previous:
+    interviewer: What planning, if any, went into this beforehand?
+    character: Yes, I'd planned it. I bought the tablets two days ago, from two different shops.
+- utterance: What were your expectations about being alone when this happened?
+  topics:
+  - precautions
+  style: open
+- utterance: Were you alone because you wanted to avoid being found?
+  topics:
+  - precautions
+  style: closed
+- utterance: How likely did you think an interruption would be?
+  topics:
+  - precautions
+  style: colloquial
+- utterance: Could you describe whether you took precautions against being discovered?
+  topics:
+  - precautions
+  style: clinical
+- utterance: I wondered whether you chose to be alone at the time
+  topics:
+  - precautions
+  style: indirect
+- utterance: It may be hard to describe; did you expect somebody might walk in?
+  topics:
+  - precautions
+  style: empathy_then_question
+- utterance: um if you feel able to say were you trying not to be found
+  topics:
+  - precautions
+  style: spoken
+- utterance: Did you expect to be found?
+  topics:
+  - precautions
+  style: brief
+- utterance: You may have hoped nobody would interrupt, is that fair?
+  topics:
+  - precautions
+  style: leading
+- utterance: Was their weekend away why you expected no interruption?
+  topics:
+  - precautions
+  style: follow_up
+  previous:
+    interviewer: What were your expectations about being alone when this happened?
+    character: I waited until my flatmate was away for the weekend so nobody would walk in.
+- utterance: Help me understand whether being alone influenced when you did this.
+  topics:
+  - precautions
+  style: open
+- utterance: Was avoiding being found part of your decision?
+  topics:
+  - precautions
+  style: closed
+- utterance: If it's okay to ask, did you wait until nobody else would be there?
+  topics:
+  - precautions
+  style: colloquial
+- utterance: so thinking about the circumstances did you expect anyone to interrupt you
+  topics:
+  - precautions
+  style: spoken
+- utterance: Was the wait intended to avoid an interruption?
+  topics:
+  - precautions
+  style: follow_up
+  previous:
+    interviewer: What were your expectations about being alone when this happened?
+    character: I waited until my flatmate was away for the weekend so nobody would walk in.
+- utterance: What notes or messages, if any, did you leave for anyone?
+  topics:
+  - note
+  style: open
+- utterance: Did you write a note before this happened?
+  topics:
+  - note
+  style: closed
+- utterance: Was there anything on paper for someone to read afterwards?
+  topics:
+  - note
+  style: colloquial
+- utterance: Could you tell me about any farewell note or message you prepared?
+  topics:
+  - note
+  style: clinical
+- utterance: I wondered whether you left a letter or a note
+  topics:
+  - note
+  style: indirect
+- utterance: This can be painful to discuss; did you put anything in writing for somebody?
+  topics:
+  - note
+  style: empathy_then_question
+- utterance: Any note or goodbye message?
+  topics:
+  - note
+  style: brief
+- utterance: There may have been something you wanted someone to read, wasn't there?
+  topics:
+  - note
+  style: leading
+- utterance: Is that paper still in your bag?
+  topics:
+  - note
+  style: follow_up
+  previous:
+    interviewer: What notes or messages, if any, did you leave for anyone?
+    character: I wrote a note to my mum. It's in my bag.
+- utterance: Tell me about any note you wrote in connection with this.
+  topics:
+  - note
+  style: open
+- utterance: Is there a note or message you wanted somebody to have?
+  topics:
+  - note
+  style: closed
+- utterance: Before it happened, did you jot something down for anyone?
+  topics:
+  - note
+  style: colloquial
+- utterance: so was there anything you left in writing for another person
+  topics:
+  - note
+  style: spoken
+- utterance: Was your mum the intended reader?
+  topics:
+  - note
+  style: follow_up
+  previous:
+    interviewer: What notes or messages, if any, did you leave for anyone?
+    character: I wrote a note to my mum. It's in my bag.
+- utterance: How did you come to be found and brought to hospital?
+  topics:
+  - discovery
+  style: open
+- utterance: Did you call for help yourself?
+  topics:
+  - discovery
+  style: closed
+- utterance: Who first realised something was wrong after it happened?
+  topics:
+  - discovery
+  style: colloquial
+- utterance: Could you describe who discovered what had happened and sought help?
+  topics:
+  - discovery
+  style: clinical
+- utterance: I wondered who found you after the overdose
+  topics:
+  - discovery
+  style: indirect
+- utterance: That can be difficult to revisit; how did somebody else become aware of what had happened?
+  topics:
+  - discovery
+  style: empathy_then_question
+- utterance: um who found you or called for help afterwards
+  topics:
+  - discovery
+  style: spoken
+- utterance: Who got help for you?
+  topics:
+  - discovery
+  style: brief
+- utterance: Someone else raised the alarm, didn't they?
+  topics:
+  - discovery
+  style: leading
+- utterance: Had your flatmate returned earlier than expected?
+  topics:
+  - discovery
+  style: follow_up
+  previous:
+    interviewer: How did you come to be found and brought to hospital?
+    character: My flatmate came back early and called an ambulance. I didn't call anyone myself.
+- utterance: Tell me about how you got to hospital after the overdose.
+  topics:
+  - discovery
+  style: open
+- utterance: Was seeking help something you did yourself?
+  topics:
+  - discovery
+  style: closed
+- utterance: Once it had happened, how did anybody get involved?
+  topics:
+  - discovery
+  style: colloquial
+- utterance: so after youd taken it um who realised something was wrong
+  topics:
+  - discovery
+  style: spoken
+- utterance: Does that mean you did not make a call yourself?
+  topics:
+  - discovery
+  style: follow_up
+  previous:
+    interviewer: How did you come to be found and brought to hospital?
+    character: My flatmate came back early and called an ambulance. I didn't call anyone myself.
+- utterance: What thoughts of suicide, if any, are you having now?
+  topics:
+  - current-intent
+  style: open
+- utterance: Are you thinking about ending your life at present?
+  topics:
+  - current-intent
+  style: closed
+- utterance: How is it for you to still be alive after this?
+  topics:
+  - current-intent
+  style: colloquial
+- utterance: Could you describe any current intention to harm yourself again?
+  topics:
+  - current-intent
+  style: clinical
+- utterance: I wondered how you feel about surviving the overdose
+  topics:
+  - current-intent
+  style: indirect
+- utterance: It's okay if the feelings are mixed; is any part of you wishing the outcome had been different?
+  topics:
+  - current-intent
+  style: empathy_then_question
+- utterance: um if you can say are thoughts of dying still there
+  topics:
+  - current-intent
+  style: spoken
+- utterance: Any thoughts of dying now?
+  topics:
+  - current-intent
+  style: brief
+- utterance: You may not be certain you wouldn't try again, is that fair?
+  topics:
+  - current-intent
+  style: leading
+- utterance: Does that uncertainty include possibly doing it again?
+  topics:
+  - current-intent
+  style: follow_up
+  previous:
+    interviewer: What thoughts of suicide, if any, are you having now?
+    character: Part of me is disappointed it didn't work. I don't know if I'd do it again.
+- utterance: Help me understand how you feel about having survived.
+  topics:
+  - current-intent
+  style: open
+- utterance: Is suicide something you are still considering?
+  topics:
+  - current-intent
+  style: closed
+- utterance: If it's okay to ask, is being here alive a relief or more complicated?
+  topics:
+  - current-intent
+  style: colloquial
+- utterance: so gently asking is another attempt something you can rule out
+  topics:
+  - current-intent
+  style: spoken
+- utterance: Is the disappointment only part of how you feel about it?
+  topics:
+  - current-intent
+  style: follow_up
+  previous:
+    interviewer: What thoughts of suicide, if any, are you having now?
+    character: Part of me is disappointed it didn't work. I don't know if I'd do it again.
+- utterance: What recent stresses have been affecting you before this happened?
+  topics:
+  - trigger
+  style: open
+- utterance: Have there been any major changes or losses recently?
+  topics:
+  - trigger
+  style: closed
+- utterance: How have things been going in your life leading up to this?
+  topics:
+  - trigger
+  style: colloquial
+- utterance: Could you describe any stressful events preceding the overdose?
+  topics:
+  - trigger
+  style: clinical
+- utterance: I wondered what has been happening recently that may have contributed
+  topics:
+  - trigger
+  style: indirect
+- utterance: It can be painful to look back; has anything in your life fallen apart lately?
+  topics:
+  - trigger
+  style: empathy_then_question
+- utterance: um were there recent stresses or changes before this
+  topics:
+  - trigger
+  style: spoken
+- utterance: Any recent stresses or losses?
+  topics:
+  - trigger
+  style: brief
+- utterance: A lot has probably been piling up for you, hasn't it?
+  topics:
+  - trigger
+  style: leading
+- utterance: Was the separation about three weeks earlier?
+  topics:
+  - trigger
+  style: follow_up
+  previous:
+    interviewer: What recent stresses have been affecting you before this happened?
+    character: My partner left me three weeks ago, and I lost my job last month.
+- utterance: Tell me about any recent events that made things more difficult.
+  topics:
+  - trigger
+  style: open
+- utterance: Is there a recent change you connect with this happening?
+  topics:
+  - trigger
+  style: closed
+- utterance: Before last night, had something big gone wrong in your life?
+  topics:
+  - trigger
+  style: colloquial
+- utterance: so looking at the lead up um what was going on around you
+  topics:
+  - trigger
+  style: spoken
+- utterance: And did losing your job happen last month?
+  topics:
+  - trigger
+  style: follow_up
+  previous:
+    interviewer: What recent stresses have been affecting you before this happened?
+    character: My partner left me three weeks ago, and I lost my job last month.
+- utterance: How has your mood been in the weeks before this?
+  topics:
+  - mood
+  style: open
+- utterance: Have you been feeling low recently?
+  topics:
+  - mood
+  style: closed
+- utterance: How are things in yourself when you wake up each day?
+  topics:
+  - mood
+  style: colloquial
+- utterance: Could you describe any low mood or loss of enjoyment?
+  topics:
+  - mood
+  style: clinical
+- utterance: I wondered how your sleep and enjoyment of things have been
+  topics:
+  - mood
+  style: indirect
+- utterance: It's okay to say if things feel bleak; is anything still giving you pleasure?
+  topics:
+  - mood
+  style: empathy_then_question
+- utterance: um have you been low in mood for a while
+  topics:
+  - mood
+  style: spoken
+- utterance: Any low mood or poor sleep?
+  topics:
+  - mood
+  style: brief
+- utterance: Things haven't felt very bright lately, have they?
+  topics:
+  - mood
+  style: leading
+- utterance: Has that low spell lasted about two months?
+  topics:
+  - mood
+  style: follow_up
+  previous:
+    interviewer: How has your mood been in the weeks before this?
+    character: I've felt low for about two months. I'm hardly sleeping and nothing feels enjoyable.
+- utterance: Tell me about your mood and whether things still feel enjoyable.
+  topics:
+  - mood
+  style: open
+- utterance: Is sleep something you've been struggling with?
+  topics:
+  - mood
+  style: closed
+- utterance: When you do something you usually like, does it still feel good?
+  topics:
+  - mood
+  style: colloquial
+- utterance: so in yourself um has it all been feeling rather flat
+  topics:
+  - mood
+  style: spoken
+- utterance: And during that same spell has pleasure been absent?
+  topics:
+  - mood
+  style: follow_up
+  previous:
+    interviewer: How has your mood been in the weeks before this?
+    character: I've felt low for about two months. I'm hardly sleeping and nothing feels enjoyable.
+- utterance: What previous self-harm, if any, has there been?
+  topics:
+  - past-self-harm
+  style: open
+- utterance: Was there another time when you deliberately hurt your own body?
+  topics:
+  - past-self-harm
+  style: colloquial
+- utterance: Could you describe any past self-harm or suicide attempts?
+  topics:
+  - past-self-harm
+  style: clinical
+- utterance: I wondered whether harming yourself had happened before
+  topics:
+  - past-self-harm
+  style: indirect
+- utterance: It can be difficult to revisit; have you deliberately injured yourself at another time?
+  topics:
+  - past-self-harm
+  style: empathy_then_question
+- utterance: Any earlier episodes of self-harm?
+  topics:
+  - past-self-harm
+  style: brief
+- utterance: This may not be the first time you've deliberately hurt yourself, is that right?
+  topics:
+  - past-self-harm
+  style: leading
+- utterance: Was cutting your arms how you injured yourself then?
+  topics:
+  - past-self-harm
+  style: follow_up
+  previous:
+    interviewer: What previous self-harm, if any, has there been?
+    character: I cut my arms a few times as a teenager. Nothing since then.
+- utterance: Tell me about any self-harm earlier in your life.
+  topics:
+  - past-self-harm
+  style: open
+- utterance: Is there a history of harming yourself before this occasion?
+  topics:
+  - past-self-harm
+  style: closed
+- utterance: Thinking back, have you ever done something to deliberately injure your body?
+  topics:
+  - past-self-harm
+  style: colloquial
+- utterance: so aside from this episode um has hurting yourself happened at another time
+  topics:
+  - past-self-harm
+  style: spoken
+- utterance: Does that mean none between those teenage incidents and this episode?
+  topics:
+  - past-self-harm
+  style: follow_up
+  previous:
+    interviewer: What previous self-harm, if any, has there been?
+    character: I cut my arms a few times as a teenager. Nothing since then.
+- utterance: What has your usual drinking been like recently?
+  topics:
+  - alcohol
+  style: open
+- utterance: How much booze would you have on an ordinary evening?
+  topics:
+  - alcohol
+  style: colloquial
+- utterance: Could you describe your regular alcohol use, apart from this overdose?
+  topics:
+  - alcohol
+  style: clinical
+- utterance: I wondered how often you have been drinking recently
+  topics:
+  - alcohol
+  style: indirect
+- utterance: These can be difficult questions; has booze become a regular thing for you?
+  topics:
+  - alcohol
+  style: empathy_then_question
+- utterance: um how much alcohol do you have in a normal week
+  topics:
+  - alcohol
+  style: spoken
+- utterance: Drinking much in recent weeks?
+  topics:
+  - alcohol
+  style: brief
+- utterance: A glass or two is probably part of quite a few evenings, isn't it?
+  topics:
+  - alcohol
+  style: leading
+- utterance: Has that routine been there since the relationship ended?
+  topics:
+  - alcohol
+  style: follow_up
+  previous:
+    interviewer: What has your usual drinking been like recently?
+    character: Since my partner left I've been drinking most nights, about a bottle of wine.
+- utterance: Tell me about the amount you usually drink.
+  topics:
+  - alcohol
+  style: open
+- utterance: Is alcohol something you have regularly at the moment?
+  topics:
+  - alcohol
+  style: closed
+- utterance: Outside of last night, what's a usual evening like for booze?
+  topics:
+  - alcohol
+  style: colloquial
+- utterance: so just the usual pattern um how often would you have a glass of something
+  topics:
+  - alcohol
+  style: spoken
+- utterance: Is that on most evenings rather than only at weekends?
+  topics:
+  - alcohol
+  style: follow_up
+  previous:
+    interviewer: What has your usual drinking been like recently?
+    character: Since my partner left I've been drinking most nights, about a bottle of wine.
+- utterance: What tablets or other medicines are available to you at home?
+  topics:
+  - access-to-means
+  style: open
+- utterance: Are there more tablets where you live?
+  topics:
+  - access-to-means
+  style: closed
+- utterance: How easy would it be to get hold of more pills?
+  topics:
+  - access-to-means
+  style: colloquial
+- utterance: Could you describe your current access to medicines you could take?
+  topics:
+  - access-to-means
+  style: clinical
+- utterance: I wondered whether any tablets remain at home
+  topics:
+  - access-to-means
+  style: indirect
+- utterance: I know this is personal; is there still a supply of pills where you live?
+  topics:
+  - access-to-means
+  style: empathy_then_question
+- utterance: There may still be some pills within reach, is that right?
+  topics:
+  - access-to-means
+  style: leading
+- utterance: Is the bathroom cabinet where that supply remains?
+  topics:
+  - access-to-means
+  style: follow_up
+  previous:
+    interviewer: What tablets or other medicines are available to you at home?
+    character: There are more tablets in the bathroom cabinet at home.
+- utterance: Tell me about any medicines that are still available to you.
+  topics:
+  - access-to-means
+  style: open
+- utterance: Is there a supply of tablets you could easily access?
+  topics:
+  - access-to-means
+  style: closed
+- utterance: If you went back, would there be pills there that you could take?
+  topics:
+  - access-to-means
+  style: colloquial
+- utterance: so after this episode um is there any supply still within reach
+  topics:
+  - access-to-means
+  style: spoken
+- utterance: Does that mean the supply has not all been used up?
+  topics:
+  - access-to-means
+  style: follow_up
+  previous:
+    interviewer: What tablets or other medicines are available to you at home?
+    character: There are more tablets in the bathroom cabinet at home.
+- utterance: What reasons for living feel important to you, if any?
+  topics:
+  - protective-factors
+  style: open
+- utterance: Is there anyone in your family who makes you want to stay alive?
+  topics:
+  - protective-factors
+  style: closed
+- utterance: Who would you hesitate to put through losing you?
+  topics:
+  - protective-factors
+  style: colloquial
+- utterance: Could you describe any relationships or reasons that might protect you from another attempt?
+  topics:
+  - protective-factors
+  style: clinical
+- utterance: I wondered what keeps you going when things are difficult
+  topics:
+  - protective-factors
+  style: indirect
+- utterance: It can be hard to find something to hold on to; is there someone whose hurt would make you pause?
+  topics:
+  - protective-factors
+  style: empathy_then_question
+- utterance: um if you can say what reasons for living matter to you
+  topics:
+  - protective-factors
+  style: spoken
+- utterance: Any family bonds that hold you?
+  topics:
+  - protective-factors
+  style: brief
+- utterance: There may be someone important you would hesitate to leave, is that fair?
+  topics:
+  - protective-factors
+  style: leading
+- utterance: Is your younger brother also someone you wouldn't want to upset?
+  topics:
+  - protective-factors
+  style: follow_up
+  previous:
+    interviewer: What reasons for living feel important to you, if any?
+    character: My mum and my younger brother. I don't want to hurt them.
+- utterance: Help me understand which reasons for living you can hold on to.
+  topics:
+  - protective-factors
+  style: open
+- utterance: Are family relationships a reason you might stop yourself?
+  topics:
+  - protective-factors
+  style: closed
+- utterance: If it's okay to ask, whose pain would you really hate to cause?
+  topics:
+  - protective-factors
+  style: colloquial
+- utterance: so people important to you um who could make you hesitate about another attempt
+  topics:
+  - protective-factors
+  style: spoken
+- utterance: Is not wanting to hurt them what makes those bonds important here?
+  topics:
+  - protective-factors
+  style: follow_up
+  previous:
+    interviewer: What reasons for living feel important to you, if any?
+    character: My mum and my younger brother. I don't want to hurt them.
+- utterance: What did you take in the overdose, and had you planned it ahead of time?
+  topics:
+  - overdose-details
+  - planning
+  style: stacked
+- utterance: Who got help afterwards, and had you tried to avoid being found?
+  topics:
+  - discovery
+  - precautions
+  style: stacked
+- utterance: How do you feel about surviving, and are there more tablets available at home?
+  topics:
+  - current-intent
+  - access-to-means
+  style: stacked
+- utterance: How has your mood been, and what reasons for living feel important to you?
+  topics:
+  - mood
+  - protective-factors
+  style: stacked
+- utterance: Hello Jordan, thank you for speaking with me.
+  topics: []
+  style: greeting
+- utterance: Good morning, may I sit here with you?
+  topics: []
+  style: greeting
+- utterance: Hi there, I am glad we have a little time together.
+  topics: []
+  style: greeting
+- utterance: I am one of the psychiatry trainees from the liaison team.
+  topics: []
+  style: introduction
+- utterance: My role is to listen to your account today.
+  topics: []
+  style: introduction
+- utterance: We have a few minutes set aside for this conversation.
+  topics: []
+  style: introduction
+- utterance: It can be difficult to talk about something so personal.
+  topics: []
+  style: empathy
+- utterance: I hear that you would like to be home rather than here.
+  topics: []
+  style: empathy
+- utterance: It is okay to need time before putting this into words.
+  topics: []
+  style: empathy
+- utterance: You deserve to be listened to without being judged.
+  topics: []
+  style: empathy
+- utterance: You were brought to the emergency department after an overdose last night.
+  topics: []
+  style: summary
+- utterance: 'Let me recap: you have been told the blood tests are okay now.'
+  topics: []
+  style: summary
+- utterance: You have said you feel fine and would like to go home.
+  topics: []
+  style: summary
+- utterance: So the medical team has said you are medically fit.
+  topics: []
+  style: summary
+- utterance: I will ask about what occurred and then about how things are for you today.
+  topics: []
+  style: explanation
+- utterance: We can slow down or pause if you need to.
+  topics: []
+  style: explanation
+- utterance: Some of these questions are personal, and you can take your time.
+  topics: []
+  style: explanation
+- utterance: I will summarise your account before we finish.
+  topics: []
+  style: explanation
+- utterance: Have I explained the reason for this conversation clearly?
+  topics: []
+  style: check_understanding
+- utterance: Does my recap of why we are meeting sound right?
+  topics: []
+  style: check_understanding
+- utterance: Was my explanation of my role clear?
+  topics: []
+  style: check_understanding
+- utterance: Have I understood that you would like to go home?
+  topics: []
+  style: check_understanding
+- utterance: Have you ever heard a voice telling you what to do?
+  topics: []
+  style: off_case
+- utterance: Have you had any treatment from a mental health team before?
+  topics: []
+  style: off_case
+- utterance: Is anyone dependent on you for their day-to-day care?
+  topics: []
+  style: off_case
+- utterance: Have there been periods of feeling unusually high or full of energy?
+  topics: []
+  style: off_case
+- utterance: Do you take any tablets for your blood pressure?
+  topics: []
+  style: near_miss
+- utterance: Has anyone in your family attempted suicide?
+  topics: []
+  style: near_miss
+- utterance: Have you had fits when cutting down on alcohol?
+  topics: []
+  style: near_miss
+- utterance: Has somebody threatened to hurt you at home?
+  topics: []
+  style: near_miss

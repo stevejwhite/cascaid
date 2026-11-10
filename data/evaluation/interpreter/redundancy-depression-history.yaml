@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: redundancy-depression-history
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hi Owen, nice to meet you. I'm one of the doctors in the clinic."
+    expected: []
+    rapport: false
+  - utterance: "Tell me about how things have been since you lost your job."
+    expected: [onset]
+    rapport: false
+  - utterance: "Are you still enjoying the things you used to?"
+    expected: [enjoyment]
+    rapport: false
+  - utterance: "How's your sleep?"
+    expected: [sleep]
+    rapport: false
+  - utterance: "and appetite, eating ok?"
+    expected: [appetite]
+    rapport: false
+  - utterance: "How are you getting on with day to day things, like concentrating?"
+    expected: [function]
+    rapport: false
+  - utterance: "Have you ever felt like this before?"
+    expected: [past]
+    rapport: false
+  - utterance: "How much are you drinking at the moment?"
+    expected: [alcohol]
+    rapport: false
+  - utterance: "That sounds really hard, Owen."
+    expected: []
+    rapport: true
+  - utterance: "Have things ever got so bad you've thought about ending your life?"
+    expected: [suicide]
+    rapport: false
+  - utterance: "How do you feel about yourself these days?"
+    expected: [self-worth]
+    rapport: false
+  - utterance: "Who have you got around you for support?"
+    expected: [support]
+    rapport: false
+  - utterance: "Is that every night?"
+    previous:
+      interviewer: "How's your sleep?"
+      character: "I wake at four and can't get back to sleep."
+    expected: [sleep]
+    rapport: false
+  - utterance: "Have you made any plans?"
+    previous:
+      interviewer: "Have you had any thoughts that life isn't worth living?"
+      character: "Sometimes I wish I wouldn't wake up."
+    expected: [suicide]
+    rapport: false
+  - utterance: "Do you have any physical health problems?"
+    expected: []
+    rapport: false
+  - utterance: "What did your job involve?"
+    expected: []
+    rapport: false
+  - utterance: "It makes sense that you'd feel knocked back after losing your job."
+    expected: []
+    rapport: true
+  - utterance: "I'm going to ask you some more specific questions now."
+    expected: []
+    rapport: false

@@ -1,0 +1,548 @@
+# Training lines for the tone classifier. Drafted by GPT-6 (Codex) on
+# 2026-10-12. Not evaluation data.
+# Revised for Prompt D quality rules on 2026-10-13; reviewed by Steve J White on 2026-10-13.
+case_id: elevated-mood-history
+case_version: 0.4.0
+status: reviewed
+items:
+- utterance: What does your sister think has changed about you?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Have you spent more than you can afford recently?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: um has any of this got in the way of turning up for work
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Are there thoughts of ending your life at all?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Does driving feel different from usual at the moment?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Which risks, if any, have you taken on the road?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: so have you felt like hurting anybody else
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Has there been a previous spell of feeling very low?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Is disagreement with your sister a concern for you?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: How do you see her worry about these changes?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: er could alcohol or drugs have featured in the last week
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: When did feeling this upbeat begin?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Can you describe whether you are more easily annoyed?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Do you wake feeling rested after the sleep you get?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Would anyone be able to spend time with you if needed?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: If you are comfortable answering, have you spent beyond your means?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Please could I ask about thoughts of hurting yourself?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: You can tell me as much as you wish, but have there been earlier low spells?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Might I ask how the disagreement with your sister seems to you?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Only if you are willing to say, have you taken recreational drugs?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: well apologies for asking but has it been difficult to keep up with work
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Alex, hello; I am pleased we could meet today.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: Welcome, and thank you for attending this appointment.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: hi come through and choose a seat
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: My role in the community team is to hear your account today.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: We have arranged this conversation following your sister’s concern.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: You describe feeling great, with energy and plenty of plans.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: summary
+- utterance: The business you mentioned involves restoring vintage bikes.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: summary
+- utterance: I will ask about the last week and about other times in your life.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: explanation
+- utterance: There will be a chance to put things in your own words.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: explanation
+- utterance: Does that recap capture why you have come today?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: check_understanding
+- utterance: Was my outline of the conversation easy to follow?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: check_understanding
+- utterance: Mm. Which plan was that?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Okay, keep going.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Right. Before or after work?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Yes. Who else was there?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: got that what happened afterwards
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: yeah how long ago roughly
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: I follow. Anything else, Alex?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Thanks, that answers it.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: I'm sorry this has felt difficult.
+  empathy: 1
+  empathy_words: I'm sorry this has felt difficult.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That sounds rather draining for you.
+  empathy: 1
+  empathy_words: That sounds rather draining for you.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: It seems a lot to handle.
+  empathy: 1
+  empathy_words: It seems a lot to handle.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I can appreciate this is upsetting.
+  empathy: 1
+  empathy_words: I can appreciate this is upsetting.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: You sound understandably frustrated.
+  empathy: 1
+  empathy_words: You sound understandably frustrated.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: This must be a strain.
+  empathy: 1
+  empathy_words: This must be a strain.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That's an uncomfortable situation to face.
+  empathy: 1
+  empathy_words: That's an uncomfortable situation to face.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: um it sounds hard to sit with.
+  empathy: 1
+  empathy_words: um it sounds hard to sit with.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I am sorry things feel strained. How do you see the disagreement?
+  empathy: 1
+  empathy_words: I am sorry things feel strained.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: That sounds difficult to manage. Has work been affected?
+  empathy: 1
+  empathy_words: That sounds difficult to manage.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: It must feel pretty frustrating. Are you getting annoyed more easily?
+  empathy: 1
+  empathy_words: It must feel pretty frustrating.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I can understand this feels awkward. Have you spent more than you intended?
+  empathy: 1
+  empathy_words: I can understand this feels awkward.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: This sounds upsetting for you. Have you had thoughts of hurting yourself?
+  empathy: 1
+  empathy_words: This sounds upsetting for you.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: it sounds like a lot to face. have there been earlier times of feeling low
+  empathy: 1
+  empathy_words: it sounds like a lot to face.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: Wanting to keep things good with your sister makes complete sense to me.
+  empathy: 2
+  empathy_words: Wanting to keep things good with your sister makes complete sense to me.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: What do you make of your sister being worried?
+    character: I don't think I'm ill, but I can see my sister is really worried, and I don't want to fall
+      out with her.
+- utterance: I can imagine it is frustrating to hear your sister question what you can afford.
+  empathy: 2
+  empathy_words: I can imagine it is frustrating to hear your sister question what you can afford.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: What have you spent on the business so far?
+    character: I've missed two shifts at work and spent £800 on equipment for a new business. My sister
+      says I can't afford it.
+- utterance: Two months of feeling very low must have been hard to get through.
+  empathy: 2
+  empathy_words: Two months of feeling very low must have been hard to get through.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: Have you had a low spell at another time?
+    character: Two years ago I had a period of feeling very low for a couple of months.
+- utterance: No wonder interruptions bother you when you are so keen to get on with your plans.
+  empathy: 2
+  empathy_words: No wonder interruptions bother you when you are so keen to get on with your plans.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: How have you been feeling in yourself this week?
+    character: I've felt unusually upbeat for about a week. I get irritated when people interrupt my plans.
+- utterance: Getting that vintage bike business started clearly means a lot to you.
+  empathy: 2
+  empathy_words: Getting that vintage bike business started clearly means a lot to you.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: It makes sense that you want me to hear about feeling great as well as your sister wanting
+    this meeting.
+  empathy: 2
+  empathy_words: It makes sense that you want me to hear about feeling great as well as your sister wanting
+    this meeting.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: With all that energy, I can imagine how eager you are to get your plans moving.
+  empathy: 2
+  empathy_words: With all that energy, I can imagine how eager you are to get your plans moving.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: Your enthusiasm for the bike business comes across, and I appreciate how much it means to
+    you.
+  empathy: 2
+  empathy_words: Your enthusiasm for the bike business comes across, and I appreciate how much it means
+    to you.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: keeping the peace with your sister is understandably important even though you feel well.
+  empathy: 2
+  empathy_words: keeping the peace with your sister is understandably important even though you feel well.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: Do you see any illness in what is happening?
+    character: I don't think I'm ill, but I can see my sister is really worried, and I don't want to fall
+      out with her.
+- utterance: I am sorry you spent those months feeling so low. What do you remember that time being like?
+  empathy: 2
+  empathy_words: I am sorry you spent those months feeling so low.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: Have you ever felt low for a prolonged period?
+    character: Two years ago I had a period of feeling very low for a couple of months.
+- utterance: Being interrupted in the middle of plans you care about is frustrating for you. What tends
+    to happen then?
+  empathy: 2
+  empathy_words: Being interrupted in the middle of plans you care about is frustrating for you.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: What happens emotionally when somebody interrupts you?
+    character: I've felt unusually upbeat for about a week. I get irritated when people interrupt my plans.
+- utterance: You are trying to recognise her worry without falling out, which is a difficult balance.
+    What would you like her to understand?
+  empathy: 2
+  empathy_words: You are trying to recognise her worry without falling out, which is a difficult balance.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: How do you see the difference between your view and hers?
+    character: I don't think I'm ill, but I can see my sister is really worried, and I don't want to fall
+      out with her.
+- utterance: That bike business means a lot to you, and I can hear your enthusiasm. What appeals to you
+    about restoring bikes?
+  empathy: 2
+  empathy_words: That bike business means a lot to you, and I can hear your enthusiasm.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: Could you describe this venture?
+    character: I'm starting a business restoring vintage bikes. It's going to be huge.
+- utterance: It must be uncomfortable having your sister question that spending on your business. How
+    did you feel when she said that?
+  empathy: 2
+  empathy_words: It must be uncomfortable having your sister question that spending on your business.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: Has anybody expressed concerns about your spending?
+    character: I've missed two shifts at work and spent £800 on equipment for a new business. My sister
+      says I can't afford it.
+- utterance: You need to slow down and be a bit more realistic about these plans.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You need to slow down and be a bit more realistic about these plans.
+  style: confront_statement
+- utterance: I think your sister is seeing things more clearly than you are just now.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: I think your sister is seeing things more clearly than you are just now.
+  style: confront_statement
+- utterance: Feeling this good is not a reason to dismiss what other people tell you.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Feeling this good is not a reason to dismiss what other people tell you.
+  style: confront_statement
+- utterance: We will get further if you accept that there is something wrong.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: We will get further if you accept that there is something wrong.
+  style: confront_statement
+- utterance: Why not listen to your sister instead of insisting everything is fine?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Why not listen to your sister instead of insisting everything is fine?
+  style: confront_why
+- utterance: Why keep talking about plans when we are meant to be discussing your health?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Why keep talking about plans when we are meant to be discussing your health?
+  style: confront_why
+- utterance: There must be more to this than just feeling energetic, mustn't there?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: There must be more to this than just feeling energetic, mustn't there?
+  style: confront_tag
+- utterance: You cannot expect everyone to share your excitement, can you?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You cannot expect everyone to share your excitement, can you?
+  style: confront_tag
+- utterance: Surely a bit less enthusiasm and a bit more thought would help?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Surely a bit less enthusiasm and a bit more thought would help?
+  style: confront_rhetorical
+- utterance: The business can wait; I do not need to hear the details.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: The business can wait; I do not need to hear the details.
+  style: dismissive
+- utterance: well everyone has plans so lets move past that now
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: well everyone has plans so lets move past that now
+  style: dismissive
+- utterance: It is probably just a burst of energy, so there is no need to go into it.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: It is probably just a burst of energy, so there is no need to go into it.
+  style: dismissive
+- utterance: 'Slow down and let me get a word in.'
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: 'Slow down and let me get a word in.'
+  style: impatient
+- utterance: 'That''s enough about the bikes for now.'
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: 'That''s enough about the bikes for now.'
+  style: impatient
+- utterance: 'Stick to what I''m asking, please.'
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: 'Stick to what I''m asking, please.'
+  style: impatient

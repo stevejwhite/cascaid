@@ -1,0 +1,42 @@
+{
+  "name": "@psychiatryeduai/web",
+  "version": "0.1.0",
+  "private": true,
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "scripts": {
+    "predev": "node scripts/vad-assets.mjs",
+    "dev": "next dev --hostname 127.0.0.1 --port 3105",
+    "prebuild": "node scripts/vad-assets.mjs",
+    "build": "next build",
+    "start": "next start --hostname 127.0.0.1 --port 3105",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@testing-library/jest-dom": "7.0.1",
+    "@testing-library/react": "16.3.3",
+    "@testing-library/user-event": "14.6.7",
+    "@types/node": "26.6.3",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/three": "0.180.0",
+    "@vitejs/plugin-react": "6.1.1",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.3.6",
+    "jsdom": "30.1.1",
+    "openapi-typescript": "7.13.0",
+    "typescript": "5.9.3",
+    "vitest": "5.0.2"
+  },
+  "dependencies": {
+    "@ricky0123/vad-web": "0.0.31",
+    "next": "16.3.6",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "three": "0.180.0"
+  }
+}

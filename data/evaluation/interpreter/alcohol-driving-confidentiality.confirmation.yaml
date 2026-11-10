@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: alcohol-driving-confidentiality
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: well gareth, how much of your working week is actually spent behind the wheel
+  expected:
+  - driving
+  rapport: false
+- utterance: If I followed an ordinary evening at home, how much alcohol would I see you drink?
+  expected:
+  - quantity
+  rapport: false
+- utterance: What is it like physically in the morning before you've had any alcohol?
+  expected:
+  - withdrawal
+  rapport: false
+- utterance: What arrangements have you made for getting here and using the van after this appointment?
+  expected:
+  - today
+  rapport: false
+- utterance: What, if anything, have you told the licensing authority about the drinking?
+  expected:
+  - notification
+  rapport: false
+- utterance: What would you like clarified about when I might have to share information about driving?
+  expected:
+  - privacy
+  rapport: false
+- utterance: Who has the van keys right now, and when were you expecting to get them back?
+  expected:
+  - today
+  rapport: false
+- utterance: What alternatives are there for work and getting there if you can't drive?
+  expected:
+  - support
+  rapport: false
+- utterance: if that money stopped coming in, what would be hardest to manage?
+  expected:
+  - fear
+  rapport: false
+  previous:
+    interviewer: Is there other paid work alongside the delivery job?
+    character: It's my only paid work.
+- utterance: Have you ever had your eyesight tested for driving?
+  expected: []
+  rapport: false

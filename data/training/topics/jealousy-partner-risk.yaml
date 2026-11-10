@@ -1,0 +1,809 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: jealousy-partner-risk
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Do you think she's seeing someone else?
+  topics:
+  - belief
+  style: closed
+- utterance: Darren, do you reckon she's been cheating on you?
+  topics:
+  - belief
+  style: colloquial
+- utterance: How firmly do you hold the belief that she's being unfaithful?
+  topics:
+  - belief
+  style: clinical
+- utterance: I wondered how sure you are that she's having an affair
+  topics:
+  - belief
+  style: indirect
+- utterance: That sounds like a lot to carry. How certain are you that she's with someone else?
+  topics:
+  - belief
+  style: empathy_then_question
+- utterance: so um what's what's your sense of what she's up to
+  topics:
+  - belief
+  style: spoken
+- utterance: Sure she's seeing someone?
+  topics:
+  - belief
+  style: brief
+- utterance: And what does she say when you put it to her?
+  topics:
+  - belief
+  style: follow_up
+  previous:
+    interviewer: What was it that first got you suspicious?
+    character: Six weeks ago she smiled at her phone and turned it over. Since then ordinary delays getting
+      home feel like proof.
+- utterance: You're pretty convinced she's unfaithful, aren't you?
+  topics:
+  - belief
+  style: leading
+- utterance: How do you explain what's been happening in your relationship?
+  topics:
+  - belief
+  style: open
+- utterance: Is there any chance you could be mistaken about the affair?
+  topics:
+  - belief
+  style: closed
+- utterance: Could you have got the wrong end of the stick here?
+  topics:
+  - belief
+  style: colloquial
+- utterance: I'd like to understand whether you've considered other explanations
+  topics:
+  - belief
+  style: indirect
+- utterance: right and er are you completely certain about that, about her seeing someone
+  topics:
+  - belief
+  style: spoken
+- utterance: When she does reply, does she admit to anything?
+  topics:
+  - belief
+  style: follow_up
+  previous:
+    interviewer: Have you been sending her messages?
+    character: Yesterday I said she'd regret it if she left. I've sent repeated messages demanding that
+      she answer me.
+- utterance: What was it that first got you suspicious?
+  topics:
+  - evidence
+  style: open
+- utterance: Has something specific happened that makes you think so?
+  topics:
+  - evidence
+  style: closed
+- utterance: So what tipped you off that something was going on?
+  topics:
+  - evidence
+  style: colloquial
+- utterance: On what evidence do you base that belief?
+  topics:
+  - evidence
+  style: clinical
+- utterance: I'm curious what you've noticed that points to an affair
+  topics:
+  - evidence
+  style: indirect
+- utterance: I can hear how angry you are. What has she done that makes you think she's seeing someone?
+  topics:
+  - evidence
+  style: empathy_then_question
+- utterance: um so when did you first sort of start to notice things
+  topics:
+  - evidence
+  style: spoken
+- utterance: What makes you think that?
+  topics:
+  - evidence
+  style: brief
+- utterance: And what's convinced you, if she denies it?
+  topics:
+  - evidence
+  style: follow_up
+  previous:
+    interviewer: Do you think she's seeing someone else?
+    character: I'm certain she's seeing someone else. I can't accept another explanation, even though
+      she denies it.
+- utterance: I suppose there was a particular moment that set this off?
+  topics:
+  - evidence
+  style: leading
+- utterance: Talk me through the things you've seen that seem like proof.
+  topics:
+  - evidence
+  style: open
+- utterance: Have you actually seen her with another man?
+  topics:
+  - evidence
+  style: closed
+- utterance: What's she been doing that's got you thinking this?
+  topics:
+  - evidence
+  style: colloquial
+- utterance: I'd like to hear how this suspicion started
+  topics:
+  - evidence
+  style: indirect
+- utterance: Since then, what other things have you picked up on?
+  topics:
+  - evidence
+  style: follow_up
+  previous:
+    interviewer: What was it that first got you suspicious?
+    character: Six weeks ago she smiled at her phone and turned it over. Since then ordinary delays getting
+      home feel like proof.
+- utterance: When did your suspicions begin?
+  topics:
+  - evidence
+  style: open
+- utterance: What did you say to her when things got heated?
+  topics:
+  - threat
+  style: open
+- utterance: Darren, what were the actual words you used with her?
+  topics:
+  - threat
+  style: colloquial
+- utterance: Could you describe the threats you've made towards your partner?
+  topics:
+  - threat
+  style: clinical
+- utterance: I need to understand exactly what was said in the argument
+  topics:
+  - threat
+  style: indirect
+- utterance: I know this is hard to go over. What did you tell her when you argued?
+  topics:
+  - threat
+  style: empathy_then_question
+- utterance: and um the the threat, what was it you actually said
+  topics:
+  - threat
+  style: spoken
+- utterance: What exactly did you say?
+  topics:
+  - threat
+  style: brief
+- utterance: And since then, have you said anything to frighten her?
+  topics:
+  - threat
+  style: follow_up
+  previous:
+    interviewer: Have you ever hurt her physically?
+    character: Yes, I grabbed her wrist two weeks ago and left a bruise. I hadn't hit her before that.
+- utterance: I imagine some things were said in the heat of the moment?
+  topics:
+  - threat
+  style: leading
+- utterance: How have you been contacting her since the argument?
+  topics:
+  - threat
+  style: open
+- utterance: Have you been sending her messages?
+  topics:
+  - threat
+  style: closed
+- utterance: Been texting her a lot?
+  topics:
+  - threat
+  style: brief
+- utterance: And those messages, what did they say?
+  topics:
+  - threat
+  style: follow_up
+  previous:
+    interviewer: Did you threaten her?
+    character: Yesterday I said she'd regret it if she left. I've sent repeated messages demanding that
+      she answer me.
+- utterance: Tell me about any calls or texts you've sent her.
+  topics:
+  - threat
+  style: open
+- utterance: Has anything been said that she might have taken as a threat?
+  topics:
+  - threat
+  style: closed
+- utterance: Can you tell me about any times things have got physical between you?
+  topics:
+  - past-violence
+  style: open
+- utterance: Have you ever hurt her physically?
+  topics:
+  - past-violence
+  style: closed
+- utterance: Have you ever laid a hand on her?
+  topics:
+  - past-violence
+  style: colloquial
+- utterance: Is there any history of violence towards your partner?
+  topics:
+  - past-violence
+  style: clinical
+- utterance: I wondered whether it's ever gone beyond words with her
+  topics:
+  - past-violence
+  style: indirect
+- utterance: I appreciate this isn't easy to talk about. Has there been any violence?
+  topics:
+  - past-violence
+  style: empathy_then_question
+- utterance: so er has it ever, um, has it ever got physical
+  topics:
+  - past-violence
+  style: spoken
+- utterance: Ever been violent towards her?
+  topics:
+  - past-violence
+  style: brief
+- utterance: And have you ever acted on that kind of anger with her?
+  topics:
+  - past-violence
+  style: follow_up
+  previous:
+    interviewer: Did you threaten her?
+    character: Yesterday I said she'd regret it if she left. I've sent repeated messages demanding that
+      she answer me.
+- utterance: It's never got physical, has it?
+  topics:
+  - past-violence
+  style: leading
+- utterance: What's the most serious thing that's happened when you've lost your temper with her?
+  topics:
+  - past-violence
+  style: open
+- utterance: Has she ever been injured during an argument with you?
+  topics:
+  - past-violence
+  style: closed
+- utterance: Has it ever come to blows?
+  topics:
+  - past-violence
+  style: colloquial
+- utterance: Was that the only time?
+  topics:
+  - past-violence
+  style: follow_up
+  previous:
+    interviewer: Have you ever hurt her physically?
+    character: Yes, I grabbed her wrist two weeks ago and left a bruise. I hadn't hit her before that.
+- utterance: When was the last time you pushed, grabbed or hit her?
+  topics:
+  - past-violence
+  style: open
+- utterance: 'Darren, I need to ask directly: have you injured her at any point?'
+  topics:
+  - past-violence
+  style: closed
+- utterance: Are you thinking of going to see her?
+  topics:
+  - intent
+  style: closed
+- utterance: What's your next move with her, Darren?
+  topics:
+  - intent
+  style: colloquial
+- utterance: Do you have any intention of harming her?
+  topics:
+  - intent
+  style: clinical
+- utterance: I'd like to understand what you intend to do next
+  topics:
+  - intent
+  style: indirect
+- utterance: You're clearly very angry. Do you think you might hurt her?
+  topics:
+  - intent
+  style: empathy_then_question
+- utterance: um so what what happens tonight, like where will you go
+  topics:
+  - intent
+  style: spoken
+- utterance: And tonight, what's the plan?
+  topics:
+  - intent
+  style: brief
+- utterance: Is that where you're heading after this?
+  topics:
+  - intent
+  style: follow_up
+  previous:
+    interviewer: Where are your partner and any children now?
+    character: She and our eight-year-old daughter are at her sister's. My brother brought me here, but
+      I haven't agreed to stay with him.
+- utterance: You've probably thought about going round to have it out with her?
+  topics:
+  - intent
+  style: leading
+- utterance: How do you see the next few days going with her?
+  topics:
+  - intent
+  style: open
+- utterance: Could you promise me you wouldn't harm her?
+  topics:
+  - intent
+  style: closed
+- utterance: Is part of you wanting to go round there and sort it?
+  topics:
+  - intent
+  style: colloquial
+- utterance: I'm wondering whether you might try to see her later on
+  topics:
+  - intent
+  style: indirect
+- utterance: Do you still mean that now?
+  topics:
+  - intent
+  style: follow_up
+  previous:
+    interviewer: What did you say to her when things got heated?
+    character: Yesterday I said she'd regret it if she left. I've sent repeated messages demanding that
+      she answer me.
+- utterance: Would you feel able to tell me if you've thought about harming her?
+  topics:
+  - intent
+  style: closed
+- utterance: Tell me about any weapons you have or could get hold of.
+  topics:
+  - weapons
+  style: open
+- utterance: Are you carrying anything you could hurt someone with?
+  topics:
+  - weapons
+  style: closed
+- utterance: Have you got a knife or anything on you now?
+  topics:
+  - weapons
+  style: colloquial
+- utterance: Do you have access to any weapons?
+  topics:
+  - weapons
+  style: clinical
+- utterance: I need to ask whether there are any weapons around you
+  topics:
+  - weapons
+  style: indirect
+- utterance: I know these questions feel intrusive. Do you have anything on you that could be used as
+    a weapon?
+  topics:
+  - weapons
+  style: empathy_then_question
+- utterance: and er weapons, have you got any, anything at all
+  topics:
+  - weapons
+  style: spoken
+- utterance: Carrying anything right now?
+  topics:
+  - weapons
+  style: brief
+- utterance: I assume you're not carrying any weapons today?
+  topics:
+  - weapons
+  style: leading
+- utterance: What could you get hold of at home that might be used to hurt someone?
+  topics:
+  - weapons
+  style: open
+- utterance: Are there knives or other weapons in the house?
+  topics:
+  - weapons
+  style: closed
+- utterance: Anything dangerous lying around at your place?
+  topics:
+  - weapons
+  style: colloquial
+- utterance: So could you get back in there tonight if you wanted?
+  topics:
+  - weapons
+  style: follow_up
+  previous:
+    interviewer: Tell me about any weapons you have or could get hold of.
+    character: I'm carrying no weapon. There are kitchen knives at our home, and I still have a key.
+- utterance: Would you have any way of getting hold of a gun?
+  topics:
+  - weapons
+  style: closed
+- utterance: Darren, is there anything sharp on you at the moment?
+  topics:
+  - weapons
+  style: closed
+- utterance: Do you use any drugs?
+  topics:
+  - substances
+  style: closed
+- utterance: Been on the booze much this week?
+  topics:
+  - substances
+  style: colloquial
+- utterance: Could you describe your current alcohol and drug use?
+  topics:
+  - substances
+  style: clinical
+- utterance: I'd like to know a bit about alcohol and drugs
+  topics:
+  - substances
+  style: indirect
+- utterance: It's been a stressful time. Have you been drinking more to cope?
+  topics:
+  - substances
+  style: empathy_then_question
+- utterance: um and drink, do you, how much do you drink
+  topics:
+  - substances
+  style: spoken
+- utterance: Any alcohol today?
+  topics:
+  - substances
+  style: brief
+- utterance: And is that every night?
+  topics:
+  - substances
+  style: follow_up
+  previous:
+    interviewer: How much have you been drinking lately?
+    character: I've drunk four cans of lager each evening this week. I don't use drugs and haven't drunk
+      today.
+- utterance: You've probably been drinking a bit more this week?
+  topics:
+  - substances
+  style: leading
+- utterance: What do you drink on a typical evening?
+  topics:
+  - substances
+  style: open
+- utterance: Have you had anything to drink today?
+  topics:
+  - substances
+  style: closed
+- utterance: Any weed, cocaine, anything like that?
+  topics:
+  - substances
+  style: colloquial
+- utterance: So when did you last have a drink?
+  topics:
+  - substances
+  style: follow_up
+  previous:
+    interviewer: Have you had anything to drink today?
+    character: I've drunk four cans of lager each evening this week. I don't use drugs and haven't drunk
+      today.
+- utterance: Tell me about any drugs you've taken recently.
+  topics:
+  - substances
+  style: open
+- utterance: Are you under the influence of anything right now?
+  topics:
+  - substances
+  style: closed
+- utterance: Do you have children together?
+  topics:
+  - protection
+  style: closed
+- utterance: Who's she staying with at the moment?
+  topics:
+  - protection
+  style: colloquial
+- utterance: What arrangements are in place to keep you and your partner apart?
+  topics:
+  - protection
+  style: clinical
+- utterance: I'd like to know where she is right now
+  topics:
+  - protection
+  style: indirect
+- utterance: This has turned your home upside down. Is anyone else living with you both, like children?
+  topics:
+  - protection
+  style: empathy_then_question
+- utterance: and um is she, where is she staying now
+  topics:
+  - protection
+  style: spoken
+- utterance: Where's she now, Darren?
+  topics:
+  - protection
+  style: brief
+- utterance: Who else will be at her sister's?
+  topics:
+  - protection
+  style: follow_up
+  previous:
+    interviewer: What are you planning to do when you leave here?
+    character: I intend to go to her sister's tonight and make her speak to me. I'm angry enough that
+      I can't promise I won't hurt her.
+- utterance: I take it there are children involved?
+  topics:
+  - protection
+  style: leading
+- utterance: Who came with you here today?
+  topics:
+  - protection
+  style: open
+- utterance: Is there somewhere you could stay tonight other than home?
+  topics:
+  - protection
+  style: closed
+- utterance: Got anyone who could put you up for a few nights?
+  topics:
+  - protection
+  style: colloquial
+- utterance: Would you be willing to stay at his place?
+  topics:
+  - protection
+  style: follow_up
+  previous:
+    interviewer: Who came with you here today?
+    character: She and our eight-year-old daughter are at her sister's. My brother brought me here, but
+      I haven't agreed to stay with him.
+- utterance: Is there a family member or friend who could help you keep your distance for now?
+  topics:
+  - protection
+  style: closed
+- utterance: Have you got kids, Darren?
+  topics:
+  - protection
+  style: brief
+- utterance: What thoughts have you had about harming yourself?
+  topics:
+  - suicide
+  style: open
+- utterance: Have you felt like you'd be better off dead?
+  topics:
+  - suicide
+  style: colloquial
+- utterance: Have you had any suicidal thoughts?
+  topics:
+  - suicide
+  style: clinical
+- utterance: I wondered whether you've had any thoughts of hurting yourself
+  topics:
+  - suicide
+  style: indirect
+- utterance: When relationships fall apart people can feel very low. Have you thought about killing yourself?
+  topics:
+  - suicide
+  style: empathy_then_question
+- utterance: um and have you ever, er, done anything to harm yourself
+  topics:
+  - suicide
+  style: spoken
+- utterance: Any thoughts of suicide?
+  topics:
+  - suicide
+  style: brief
+- utterance: And what about harming yourself?
+  topics:
+  - suicide
+  style: follow_up
+  previous:
+    interviewer: Do you have any intention of harming her?
+    character: I intend to go to her sister's tonight and make her speak to me. I'm angry enough that
+      I can't promise I won't hurt her.
+- utterance: You haven't thought of ending it all, have you?
+  topics:
+  - suicide
+  style: leading
+- utterance: If she did leave, would you feel like ending your life?
+  topics:
+  - suicide
+  style: closed
+- utterance: Ever got to the point of wanting to end it?
+  topics:
+  - suicide
+  style: colloquial
+- utterance: Not even in the last few days?
+  topics:
+  - suicide
+  style: follow_up
+  previous:
+    interviewer: Have you had any suicidal thoughts?
+    character: No, I haven't thought of killing myself or harmed myself before.
+- utterance: Is there any past history of you hurting yourself?
+  topics:
+  - suicide
+  style: closed
+- utterance: Darren, does life ever feel not worth living?
+  topics:
+  - suicide
+  style: open
+- utterance: What would it mean to you if the relationship ended?
+  topics:
+  - loss
+  style: open
+- utterance: Are you worried about being left on your own?
+  topics:
+  - loss
+  style: closed
+- utterance: What's it like for you, thinking she might walk away?
+  topics:
+  - loss
+  style: colloquial
+- utterance: What emotions lie underneath the anger?
+  topics:
+  - loss
+  style: clinical
+- utterance: I wondered what feelings might be underneath all this anger
+  topics:
+  - loss
+  style: indirect
+- utterance: There's clearly a lot going on for you. What scares you most about her leaving?
+  topics:
+  - loss
+  style: empathy_then_question
+- utterance: so um how does it feel, thinking about being on your own
+  topics:
+  - loss
+  style: spoken
+- utterance: And being alone, how's that?
+  topics:
+  - loss
+  style: brief
+- utterance: What would it be like for you if that were true?
+  topics:
+  - loss
+  style: follow_up
+  previous:
+    interviewer: Do you think she's seeing someone else?
+    character: I'm certain she's seeing someone else. I can't accept another explanation, even though
+      she denies it.
+- utterance: I suspect part of this is about being afraid of losing her?
+  topics:
+  - loss
+  style: leading
+- utterance: How do you usually deal with feeling hurt?
+  topics:
+  - loss
+  style: open
+- utterance: Does the anger cover up other feelings sometimes?
+  topics:
+  - loss
+  style: closed
+- utterance: Is it more about fear than anger, deep down?
+  topics:
+  - loss
+  style: colloquial
+- utterance: When did you first notice turning those feelings into anger?
+  topics:
+  - loss
+  style: follow_up
+  previous:
+    interviewer: Are you worried about being left on your own?
+    character: I'm frightened of being left alone and ashamed of how desperate I feel. I usually turn
+      that into anger.
+- utterance: Could we talk about what losing her would mean for you?
+  topics:
+  - loss
+  style: open
+- utterance: Darren, what's the hardest part of this for you?
+  topics:
+  - loss
+  style: open
+- utterance: Have you ever hurt her, and do you have any weapons at home?
+  topics:
+  - past-violence
+  - weapons
+  style: stacked
+- utterance: How much are you drinking, and have you had any thoughts of harming yourself?
+  topics:
+  - substances
+  - suicide
+  style: stacked
+- utterance: Where is she now, and what are you planning to do next?
+  topics:
+  - protection
+  - intent
+  style: stacked
+- utterance: What made you suspicious, and what did you say to her when you argued?
+  topics:
+  - evidence
+  - threat
+  style: stacked
+- utterance: Hello Darren, I'm one of the psychiatrists on call tonight.
+  topics: []
+  style: introduction
+- utterance: Hi Darren, thanks for waiting. Have a seat.
+  topics: []
+  style: greeting
+- utterance: Good evening Darren, my name's Sam and I'm a psychiatry trainee.
+  topics: []
+  style: introduction
+- utterance: Is it all right if we talk for a few minutes, Darren?
+  topics: []
+  style: greeting
+- utterance: What would you like to start with?
+  topics: []
+  style: greeting
+- utterance: Before we start, do you have any questions?
+  topics: []
+  style: greeting
+- utterance: I'd like to move on to something a bit different now.
+  topics: []
+  style: transition
+- utterance: Okay, I'm going to ask some questions about safety now.
+  topics: []
+  style: transition
+- utterance: Thanks for being straight with me. Let's turn to something else.
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Darren.
+  topics: []
+  style: closing
+- utterance: Before you go, is there anything else you want me to know?
+  topics: []
+  style: closing
+- utterance: Let me explain what will happen after we finish talking.
+  topics: []
+  style: explanation
+- utterance: It sounds like you feel nobody is listening to you.
+  topics: []
+  style: empathy
+- utterance: I can see you're really angry about all this.
+  topics: []
+  style: empathy
+- utterance: That must be exhausting to live with every day.
+  topics: []
+  style: empathy
+- utterance: It's clear this relationship matters a great deal to you.
+  topics: []
+  style: empathy
+- utterance: So you're convinced she's been unfaithful and things came to a head in an argument.
+  topics: []
+  style: summary
+- utterance: 'Let me check I''ve got this right: you''re angry and feel everyone''s against you.'
+  topics: []
+  style: summary
+- utterance: I'm asking these questions because I need to make sure everyone stays safe.
+  topics: []
+  style: explanation
+- utterance: Whatever you tell me about risk to others, I may need to share to keep people safe.
+  topics: []
+  style: explanation
+- utterance: Feeling this jealous can sometimes be part of a mental health problem, which is why I'm asking.
+  topics: []
+  style: explanation
+- utterance: Does that make sense so far?
+  topics: []
+  style: check_understanding
+- utterance: Is it clear why I'm asking about her safety?
+  topics: []
+  style: check_understanding
+- utterance: Have you ever had a head injury?
+  topics: []
+  style: off_case
+- utterance: Have you seen a mental health professional before?
+  topics: []
+  style: off_case
+- utterance: Are the police involved at the moment?
+  topics: []
+  style: off_case
+- utterance: Do you have any physical health problems?
+  topics: []
+  style: off_case
+- utterance: Have you felt this jealous in previous relationships?
+  topics: []
+  style: off_case
+- utterance: Has anyone in your family had mental illness?
+  topics: []
+  style: off_case
+- utterance: Has she ever been violent towards you?
+  topics: []
+  style: near_miss
+- utterance: Has she ever accused you of having an affair?
+  topics: []
+  style: near_miss
+- utterance: Does anyone else in your family drink heavily?
+  topics: []
+  style: near_miss
+- utterance: Have you ever been in trouble with the police for carrying a weapon?
+  topics: []
+  style: near_miss
+- utterance: Have you ever had threats made against you?
+  topics: []
+  style: near_miss

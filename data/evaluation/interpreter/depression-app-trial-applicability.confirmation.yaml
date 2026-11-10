@@ -1,0 +1,50 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: depression-app-trial-applicability
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Dr Sian, who was eligible to enter the trial, particularly in terms of age and illness severity?
+  expected:
+  - population
+  rapport: false
+- utterance: What exactly did each randomised group receive during the study period?
+  expected:
+  - comparison
+  rapport: false
+- utterance: How did the researchers define recovery, and what results did they report using that definition?
+  expected:
+  - outcomes
+  rapport: false
+- utterance: How many people in each group were missing from the final assessment?
+  expected:
+  - attrition
+  rapport: false
+- utterance: What in the design makes it difficult to separate an app effect from attention or expectations?
+  expected:
+  - bias
+  rapport: false
+- utterance: How do the patients in your own practice compare in age and ability to use a smartphone?
+  expected:
+  - practice
+  rapport: false
+- utterance: What age range and access to technology were required of people entering the trial?
+  expected:
+  - population
+  rapport: false
+- utterance: In your own surgery, what are patients' ages and ability to access smartphones like?
+  expected:
+  - practice
+  rapport: false
+- utterance: does that leave you unsure how to judge whether any benefit matters clinically?
+  expected:
+  - uncertainty
+  rapport: false
+  previous:
+    interviewer: What is available to help judge the result?
+    character: The summary provides no confidence intervals or significance tests.
+- utterance: It makes sense to check whether these findings fit your patients before changing what you
+    offer.
+  expected: []
+  rapport: true

@@ -1,0 +1,785 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: ect-explanation-husband
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Can you tell me how she's been over the last few months?
+  topics:
+  - course
+  style: open
+- utterance: When did you first notice things changing with her mood?
+  topics:
+  - course
+  style: open
+- utterance: How has her illness developed up to now?
+  topics:
+  - course
+  style: open
+- utterance: Has she been unwell like this for more than a few weeks?
+  topics:
+  - course
+  style: closed
+- utterance: Is it fairly recently that she came onto the ward?
+  topics:
+  - course
+  style: closed
+- utterance: How long has she been down like this, Peter?
+  topics:
+  - course
+  style: colloquial
+- utterance: What's the duration of this depressive episode?
+  topics:
+  - course
+  style: clinical
+- utterance: I wondered how long she's been in hospital now
+  topics:
+  - course
+  style: indirect
+- utterance: I'd like to get a sense of how long she's been struggling with her mood
+  topics:
+  - course
+  style: indirect
+- utterance: This must have been a long road. How long has she been depressed?
+  topics:
+  - course
+  style: empathy_then_question
+- utterance: so um how long has she, how long has she been this way
+  topics:
+  - course
+  style: spoken
+- utterance: And how long in hospital?
+  topics:
+  - course
+  style: brief
+- utterance: She's been low for some weeks now, hasn't she?
+  topics:
+  - course
+  style: leading
+- utterance: Could you take me back to when this all began?
+  topics:
+  - course
+  style: open
+- utterance: What has she been managing to eat and drink lately?
+  topics:
+  - intake
+  style: open
+- utterance: Tell me about her eating and drinking over the last few days.
+  topics:
+  - intake
+  style: open
+- utterance: How is her physical health being watched, with her not eating?
+  topics:
+  - intake
+  style: open
+- utterance: Is she taking any fluids at all?
+  topics:
+  - intake
+  style: closed
+- utterance: Has she refused meals when you've been visiting?
+  topics:
+  - intake
+  style: closed
+- utterance: Is she getting anything down her at all, food or drink?
+  topics:
+  - intake
+  style: colloquial
+- utterance: How's she doing with her meals and cups of tea?
+  topics:
+  - intake
+  style: colloquial
+- utterance: What's her oral intake been like?
+  topics:
+  - intake
+  style: clinical
+- utterance: I wondered whether she's been accepting any food or drink on the ward
+  topics:
+  - intake
+  style: indirect
+- utterance: I'd like to hear what you've noticed about her meals
+  topics:
+  - intake
+  style: indirect
+- utterance: It's hard to watch someone you love not eat. When did she stop taking food and drink?
+  topics:
+  - intake
+  style: empathy_then_question
+- utterance: um is she, has she been drinking anything at all, water or tea
+  topics:
+  - intake
+  style: spoken
+- utterance: And her eating?
+  topics:
+  - intake
+  style: brief
+- utterance: And in the last few days, has she been eating or drinking?
+  topics:
+  - intake
+  style: follow_up
+  previous:
+    interviewer: Could you take me back to when this all began?
+    character: She's been very withdrawn for eight weeks and came into hospital ten days ago.
+- utterance: She's hardly touching her food, is she?
+  topics:
+  - intake
+  style: leading
+- utterance: Do you know what checks the nurses are doing because of the eating?
+  topics:
+  - intake
+  style: open
+- utterance: What sort of things has she been saying about herself?
+  topics:
+  - symptoms
+  style: open
+- utterance: How does she talk about the family at the moment?
+  topics:
+  - symptoms
+  style: open
+- utterance: What happens when you try to reassure her?
+  topics:
+  - symptoms
+  style: open
+- utterance: Has she been blaming herself for anything?
+  topics:
+  - symptoms
+  style: closed
+- utterance: Does she feel guilty about something?
+  topics:
+  - symptoms
+  style: closed
+- utterance: Is she beating herself up about things?
+  topics:
+  - symptoms
+  style: colloquial
+- utterance: Does it help at all when you tell her it's okay?
+  topics:
+  - symptoms
+  style: colloquial
+- utterance: Has she expressed any ideas of guilt or worthlessness?
+  topics:
+  - symptoms
+  style: clinical
+- utterance: I wondered whether she's said things about herself that don't add up
+  topics:
+  - symptoms
+  style: indirect
+- utterance: I'm interested in whether she's been feeling she's done something wrong
+  topics:
+  - symptoms
+  style: indirect
+- utterance: That must be a lot to take in. Does she believe she's let people down?
+  topics:
+  - symptoms
+  style: empathy_then_question
+- utterance: and does she um say things like it's all her fault or
+  topics:
+  - symptoms
+  style: spoken
+- utterance: Any guilt she's mentioned?
+  topics:
+  - symptoms
+  style: brief
+- utterance: Is there any truth in it, as far as you know?
+  topics:
+  - symptoms
+  style: follow_up
+  previous:
+    interviewer: Has she been blaming herself for anything?
+    character: Yes, she says she's ruined our family, although I can't think of anything she's done. She
+      won't believe my reassurance.
+- utterance: She's been saying it's all her fault, hasn't she?
+  topics:
+  - symptoms
+  style: leading
+- utterance: When she's at her lowest, what does she believe about herself?
+  topics:
+  - symptoms
+  style: open
+- utterance: What has she said about death or dying?
+  topics:
+  - risk
+  style: open
+- utterance: How worried are you about her safety at the moment?
+  topics:
+  - risk
+  style: open
+- utterance: Has she talked about ending her life?
+  topics:
+  - risk
+  style: closed
+- utterance: Did you pass on to anyone anything she said about wanting to die?
+  topics:
+  - risk
+  style: closed
+- utterance: Is she saying she'd be better off gone?
+  topics:
+  - risk
+  style: colloquial
+- utterance: Ever heard her say anything like not wanting to be here?
+  topics:
+  - risk
+  style: colloquial
+- utterance: Have there been any suicidal thoughts expressed?
+  topics:
+  - risk
+  style: clinical
+- utterance: I need to ask whether she's mentioned wanting to die
+  topics:
+  - risk
+  style: indirect
+- utterance: I wondered if she's said anything that worried you about suicide
+  topics:
+  - risk
+  style: indirect
+- utterance: This is a hard thing to ask about. Has she talked about wanting to die?
+  topics:
+  - risk
+  style: empathy_then_question
+- utterance: um I have to ask has she, has she said anything about suicide
+  topics:
+  - risk
+  style: spoken
+- utterance: Any talk of suicide?
+  topics:
+  - risk
+  style: brief
+- utterance: With her feeling like that, has it gone as far as her saying she'd rather be dead?
+  topics:
+  - risk
+  style: follow_up
+  previous:
+    interviewer: When she's at her lowest, what does she believe about herself?
+    character: Yes, she says she's ruined our family, although I can't think of anything she's done. She
+      won't believe my reassurance.
+- utterance: She's probably said she doesn't want to go on, has she?
+  topics:
+  - risk
+  style: leading
+- utterance: Who did you tell when she said anything worrying about dying?
+  topics:
+  - risk
+  style: open
+- utterance: What do you already know about ECT?
+  topics:
+  - procedure
+  style: open
+- utterance: How do you imagine a treatment session goes?
+  topics:
+  - procedure
+  style: open
+- utterance: What have you heard about what ECT involves?
+  topics:
+  - procedure
+  style: open
+- utterance: Do you know whether she'd be asleep for it?
+  topics:
+  - procedure
+  style: closed
+- utterance: Are you worried it might hurt her?
+  topics:
+  - procedure
+  style: closed
+- utterance: What image have you got in your head of ECT?
+  topics:
+  - procedure
+  style: colloquial
+- utterance: What's your understanding of the ECT procedure?
+  topics:
+  - procedure
+  style: clinical
+- utterance: I'd be interested to hear what you know about how the treatment's given
+  topics:
+  - procedure
+  style: indirect
+- utterance: I wondered if you have particular worries about her being in pain during it
+  topics:
+  - procedure
+  style: indirect
+- utterance: Lots of people have frightening ideas about it. What do you imagine happening?
+  topics:
+  - procedure
+  style: empathy_then_question
+- utterance: so um have you, do you know much about how ECT is actually done
+  topics:
+  - procedure
+  style: spoken
+- utterance: Any idea how ECT works?
+  topics:
+  - procedure
+  style: brief
+- utterance: Is it being awake that worries you most, or the pain?
+  topics:
+  - procedure
+  style: follow_up
+  previous:
+    interviewer: What do you already know about ECT?
+    character: I picture her being awake and in pain. I don't understand what actually happens during
+      a treatment.
+- utterance: You've probably seen it shown on TV as quite brutal, haven't you?
+  topics:
+  - procedure
+  style: leading
+- utterance: Tell me what you think happens on the day she has a treatment.
+  topics:
+  - procedure
+  style: open
+- utterance: What worries do you have about her memory with ECT?
+  topics:
+  - memory
+  style: open
+- utterance: How do you feel about the possible effects on memory?
+  topics:
+  - memory
+  style: open
+- utterance: Could we talk about any fears you have about memory loss?
+  topics:
+  - memory
+  style: open
+- utterance: Are you concerned it might affect her memory?
+  topics:
+  - memory
+  style: closed
+- utterance: Is memory loss one of the things on your mind?
+  topics:
+  - memory
+  style: closed
+- utterance: Is the memory side of things playing on your mind?
+  topics:
+  - memory
+  style: colloquial
+- utterance: Worried it'll mess with her memory at all?
+  topics:
+  - memory
+  style: colloquial
+- utterance: What concerns do you have about cognitive side effects?
+  topics:
+  - memory
+  style: clinical
+- utterance: I wondered whether you've been worrying about her memory afterwards
+  topics:
+  - memory
+  style: indirect
+- utterance: I'd like to hear about any worries around what she might forget
+  topics:
+  - memory
+  style: indirect
+- utterance: You clearly care about her a great deal. What worries you about her memory?
+  topics:
+  - memory
+  style: empathy_then_question
+- utterance: and um the memory side, is, is that something that worries you
+  topics:
+  - memory
+  style: spoken
+- utterance: Any memory worries?
+  topics:
+  - memory
+  style: brief
+- utterance: And beyond pain, do you have worries about what it might do to her memory?
+  topics:
+  - memory
+  style: follow_up
+  previous:
+    interviewer: What do you already know about ECT?
+    character: I picture her being awake and in pain. I don't understand what actually happens during
+      a treatment.
+- utterance: I suspect memory is one of your big worries, is it?
+  topics:
+  - memory
+  style: leading
+- utterance: When you think about her memory after treatment, what goes through your mind?
+  topics:
+  - memory
+  style: open
+- utterance: What has she said about having ECT?
+  topics:
+  - consent
+  style: open
+- utterance: How much do you think she understands about the decision?
+  topics:
+  - consent
+  style: open
+- utterance: What do you see as your part in the decision?
+  topics:
+  - consent
+  style: open
+- utterance: Has she agreed to the treatment?
+  topics:
+  - consent
+  style: closed
+- utterance: Do you think she can weigh up the choice at the moment?
+  topics:
+  - consent
+  style: closed
+- utterance: Has she given her yes or no to it?
+  topics:
+  - consent
+  style: colloquial
+- utterance: Where do you think you fit into deciding this?
+  topics:
+  - consent
+  style: colloquial
+- utterance: Has her capacity to consent been discussed with you?
+  topics:
+  - consent
+  style: clinical
+- utterance: I wondered how she's responded when ECT has been raised with her
+  topics:
+  - consent
+  style: indirect
+- utterance: I'd like to understand what you think your role is in agreeing to it
+  topics:
+  - consent
+  style: indirect
+- utterance: It's a big decision for a family. Has she been able to say what she wants?
+  topics:
+  - consent
+  style: empathy_then_question
+- utterance: so um does she, does she understand what's being suggested do you think
+  topics:
+  - consent
+  style: spoken
+- utterance: Has she consented, Peter?
+  topics:
+  - consent
+  style: brief
+- utterance: When you asked her what she'd understood, what did she say?
+  topics:
+  - consent
+  style: follow_up
+  previous:
+    interviewer: What has she said about having ECT?
+    character: She has said no but couldn't explain what she'd understood when I asked. I don't know whether
+      she can make this decision, or what my role is.
+- utterance: You might be thinking you can sign for her, is that right?
+  topics:
+  - consent
+  style: leading
+- utterance: When it's been explained to her, how has she reacted?
+  topics:
+  - consent
+  style: open
+- utterance: Which medications has she tried?
+  topics:
+  - alternatives
+  style: open
+- utterance: What other options would you like to hear about?
+  topics:
+  - alternatives
+  style: open
+- utterance: Has she been on an antidepressant?
+  topics:
+  - alternatives
+  style: closed
+- utterance: Did the tablets make any difference?
+  topics:
+  - alternatives
+  style: closed
+- utterance: Have the pills done anything for her?
+  topics:
+  - alternatives
+  style: colloquial
+- utterance: Any other routes you'd like us to talk through besides ECT?
+  topics:
+  - alternatives
+  style: colloquial
+- utterance: What pharmacological treatment has she received?
+  topics:
+  - alternatives
+  style: clinical
+- utterance: I wondered what medication she's been on before this
+  topics:
+  - alternatives
+  style: indirect
+- utterance: I'd like to know whether you've thought about options apart from ECT
+  topics:
+  - alternatives
+  style: indirect
+- utterance: You'll want to know we've thought this through. Has she tried medication already?
+  topics:
+  - alternatives
+  style: empathy_then_question
+- utterance: um what, what's she been taking for the depression so far
+  topics:
+  - alternatives
+  style: spoken
+- utterance: Any antidepressants tried?
+  topics:
+  - alternatives
+  style: brief
+- utterance: And has she tried other treatments before it came to this?
+  topics:
+  - alternatives
+  style: follow_up
+  previous:
+    interviewer: What has she said about having ECT?
+    character: She has said no but couldn't explain what she'd understood when I asked. I don't know whether
+      she can make this decision, or what my role is.
+- utterance: I expect she's been on tablets for a while?
+  topics:
+  - alternatives
+  style: leading
+- utterance: How has she responded to the treatment she's had so far?
+  topics:
+  - alternatives
+  style: open
+- utterance: What's it been like for you having to be involved in these decisions?
+  topics:
+  - burden
+  style: open
+- utterance: How much pressure do you feel at the moment?
+  topics:
+  - burden
+  style: open
+- utterance: Is it all feeling like a lot to carry?
+  topics:
+  - burden
+  style: closed
+- utterance: Do you feel the decisions are resting on you?
+  topics:
+  - burden
+  style: closed
+- utterance: How are you holding up yourself, Peter?
+  topics:
+  - burden
+  style: colloquial
+- utterance: Is it all getting on top of you?
+  topics:
+  - burden
+  style: colloquial
+- utterance: Would you say you're under a lot of strain as her carer?
+  topics:
+  - burden
+  style: clinical
+- utterance: I wondered how you yourself are managing with all of this
+  topics:
+  - burden
+  style: indirect
+- utterance: I'd like to hear a bit about how this is affecting you
+  topics:
+  - burden
+  style: indirect
+- utterance: You've been carrying a great deal. How are you finding it?
+  topics:
+  - burden
+  style: empathy_then_question
+- utterance: and um how about you, how are you, are you managing
+  topics:
+  - burden
+  style: spoken
+- utterance: And how are you doing?
+  topics:
+  - burden
+  style: brief
+- utterance: That's a lot to hold. How is that pressure affecting you?
+  topics:
+  - burden
+  style: follow_up
+  previous:
+    interviewer: What has she said about having ECT?
+    character: She has said no but couldn't explain what she'd understood when I asked. I don't know whether
+      she can make this decision, or what my role is.
+- utterance: It must feel at times like it's all on your shoulders, does it?
+  topics:
+  - burden
+  style: leading
+- utterance: When you go home after visiting, how do you feel?
+  topics:
+  - burden
+  style: open
+- utterance: Who else in the family can support you?
+  topics:
+  - practical
+  style: open
+- utterance: Who would you like to be there when we discuss things?
+  topics:
+  - practical
+  style: open
+- utterance: What help do you have around you?
+  topics:
+  - practical
+  style: open
+- utterance: Is there anyone who could come to meetings with you?
+  topics:
+  - practical
+  style: closed
+- utterance: Do you have family nearby?
+  topics:
+  - practical
+  style: closed
+- utterance: Anyone who can give you a hand with all this?
+  topics:
+  - practical
+  style: colloquial
+- utterance: Got anyone to come along with you to these chats?
+  topics:
+  - practical
+  style: colloquial
+- utterance: Who would be appropriate to include in future meetings?
+  topics:
+  - practical
+  style: clinical
+- utterance: I wondered whether there's someone who could join you for these discussions
+  topics:
+  - practical
+  style: indirect
+- utterance: I'd like to know who else is around to support you both
+  topics:
+  - practical
+  style: indirect
+- utterance: You shouldn't have to do this alone. Is there family who could help?
+  topics:
+  - practical
+  style: empathy_then_question
+- utterance: um have you got, is there family close by at all
+  topics:
+  - practical
+  style: spoken
+- utterance: Anyone else to help?
+  topics:
+  - practical
+  style: brief
+- utterance: Is there anyone who could share some of that with you?
+  topics:
+  - practical
+  style: follow_up
+  previous:
+    interviewer: How are you coping with all this yourself?
+    character: Sometimes I wish someone else would make every decision. I feel disloyal saying that because
+      I love her.
+- utterance: I imagine you've got some family you can lean on?
+  topics:
+  - practical
+  style: leading
+- utterance: How involved are your children, if you have any?
+  topics:
+  - practical
+  style: open
+- utterance: How long has she been unwell, and is she eating and drinking at all?
+  topics:
+  - course
+  - intake
+  style: stacked
+- utterance: Has she said she wants to die, and does she blame herself for anything?
+  topics:
+  - risk
+  - symptoms
+  style: stacked
+- utterance: What treatment has she had so far, and what do you know about ECT itself?
+  topics:
+  - alternatives
+  - procedure
+  style: stacked
+- utterance: Has she agreed to it, and who else in the family can be involved?
+  topics:
+  - consent
+  - practical
+  style: stacked
+- utterance: Hello Peter, thanks for coming in to see me.
+  topics: []
+  style: greeting
+- utterance: Hi Peter, I'm one of the psychiatrists looking after your wife.
+  topics: []
+  style: introduction
+- utterance: Is it all right if we talk for a few minutes about her treatment?
+  topics: []
+  style: introduction
+- utterance: Good afternoon, Peter. Please take a seat.
+  topics: []
+  style: greeting
+- utterance: What would you like to start with?
+  topics: []
+  style: introduction
+- utterance: Before we start, do you have any questions for me?
+  topics: []
+  style: introduction
+- utterance: Peter, sorry to keep you waiting.
+  topics: []
+  style: greeting
+- utterance: I'd like to move on to talk about the treatment itself now.
+  topics: []
+  style: transition
+- utterance: Can we turn to something a bit different now?
+  topics: []
+  style: transition
+- utterance: Thanks, that's helpful. Let me move on to the next part.
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Peter.
+  topics: []
+  style: closing
+- utterance: Thank you for talking with me today; we'll meet again soon.
+  topics: []
+  style: closing
+- utterance: Is there anything else you'd like to ask before we finish?
+  topics: []
+  style: closing
+- utterance: I can see how worried you are about her.
+  topics: []
+  style: empathy
+- utterance: It's clear how much you care about your wife.
+  topics: []
+  style: empathy
+- utterance: This is a really difficult situation for anyone to be in.
+  topics: []
+  style: empathy
+- utterance: So she's been unwell for some weeks and isn't eating or drinking, and the team are worried.
+  topics: []
+  style: summary
+- utterance: 'Let me check I''ve got this right: you''re worried about pain and about her memory.'
+  topics: []
+  style: summary
+- utterance: ECT is given under a general anaesthetic, so she would be asleep and wouldn't feel the treatment.
+  topics: []
+  style: explanation
+- utterance: A muscle relaxant is given too, so her body hardly moves during the seizure.
+  topics: []
+  style: explanation
+- utterance: Treatments are usually given twice a week, and we review her progress after each one.
+  topics: []
+  style: explanation
+- utterance: Some people have memory problems around the time of treatment, and for most these improve
+    in the weeks afterwards.
+  topics: []
+  style: explanation
+- utterance: Because she isn't eating or drinking, ECT may work faster than tablets, which is why we're
+    considering it now.
+  topics: []
+  style: explanation
+- utterance: Nobody, including you, can consent on her behalf; if she can't decide, the team must act
+    in her best interests within the law.
+  topics: []
+  style: explanation
+- utterance: Before treatment she'd be checked by an anaesthetist and have a physical health review.
+  topics: []
+  style: explanation
+- utterance: Does that make sense so far?
+  topics: []
+  style: check_understanding
+- utterance: Could you tell me in your own words what you've understood about the treatment?
+  topics: []
+  style: check_understanding
+- utterance: Is there anything I've said that wasn't clear?
+  topics: []
+  style: check_understanding
+- utterance: Does she have any heart problems the anaesthetist should know about?
+  topics: []
+  style: off_case
+- utterance: Has she ever had ECT in the past?
+  topics: []
+  style: off_case
+- utterance: Did she have an illness like this when she was younger?
+  topics: []
+  style: off_case
+- utterance: What did she used to enjoy eating before all this?
+  topics: []
+  style: near_miss
+- utterance: How is your own memory these days, Peter?
+  topics: []
+  style: near_miss
+- utterance: How long have you two been married?
+  topics: []
+  style: near_miss
+- utterance: Has she had any side effects from the antidepressant?
+  topics: []
+  style: near_miss

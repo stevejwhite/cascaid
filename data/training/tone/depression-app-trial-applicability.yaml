@@ -1,0 +1,158 @@
+# Training lines for the tone classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: depression-app-trial-applicability
+case_version: 0.1.0
+status: draft
+items:
+- utterance: What would happen if a patient became suicidal while using it?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Is demand on the practice pushing you towards this?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Is there anything about reading papers that you feel unsure of?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: How many people were in the study?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Sorry to ask, but could you tell me how the groups were formed?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: If you don't mind, could you say what the main result was?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Hello Sian, I'm Dr Reid, a psychiatrist here.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: Good to see you, Sian, come in.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: So you are weighing up one small trial against your older patients' needs.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: summary
+- utterance: Right. And how many dropped out?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Okay, thanks, that's clear.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: That must be hard.
+  empathy: 1
+  empathy_words: That must be hard.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I understand.
+  empathy: 1
+  empathy_words: I understand.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That sounds stressful. How many patients are we talking about?
+  empathy: 1
+  empathy_words: That sounds stressful.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: Of course. What follow-up would you arrange?
+  empathy: 1
+  empathy_words: Of course.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: It takes courage to admit that, and plenty of doctors feel the same embarrassment.
+  empathy: 2
+  empathy_words: It takes courage to admit that, and plenty of doctors feel the same embarrassment.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: What's the part of papers you find hardest?
+    character: I'm embarrassed that I sometimes confuse a statistically significant result with a worthwhile
+      benefit for an individual.
+- utterance: That sounds like a heavy load, feeling pushed towards yes when you want to be careful.
+  empathy: 2
+  empathy_words: That sounds like a heavy load, feeling pushed towards yes when you want to be careful.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: What's behind the timing?
+    character: Our waiting list is growing, and I'm worried I'm looking for reasons to say yes because
+      we're short of appointments.
+- utterance: You clearly care a great deal about getting this right for your older patients.
+  empathy: 2
+  empathy_words: You clearly care a great deal about getting this right for your older patients.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: It's understandable to feel uneasy about a gap like that when patients' safety is at stake.
+    What would you want in place?
+  empathy: 2
+  empathy_words: It's understandable to feel uneasy about a gap like that when patients' safety is at
+    stake.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: What about someone who becomes very unwell?
+    character: I wouldn't want an app to delay assessment of someone suicidal or seriously unwell. We
+      haven't designed an escalation process.
+- utterance: You really should have checked the sample before getting this far.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You really should have checked the sample before getting this far
+  style: confront_statement
+- utterance: Why on earth would you consider an app without knowing who was studied?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Why on earth would you consider an app without knowing who was studied
+  style: confront_why
+- utterance: It's only one small trial, so there's not much point going through the numbers.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: there's not much point going through the numbers
+  style: dismissive
+- utterance: Don't worry, I'm sure it'll be fine for most of your patients.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: I'm sure it'll be fine for most of your patients
+  style: dismissive

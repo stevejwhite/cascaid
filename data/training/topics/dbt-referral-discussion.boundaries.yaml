@@ -1,0 +1,230 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: dbt-referral-discussion
+case_version: 0.1.0
+status: draft
+items:
+  # ---- previous-services / referral-preference ----
+  - utterance: "Have you ever signed up for a course of therapy before? How did it go?"
+    topics: [previous-services]
+    style: boundary
+    pair: [previous-services, referral-preference]
+  - utterance: "Did you see an earlier therapy through to the end?"
+    topics: [previous-services]
+    style: boundary
+    pair: [previous-services, referral-preference]
+  - utterance: "um were you ever offered something like this before and what happened with it"
+    topics: [previous-services]
+    style: boundary_spoken
+    pair: [previous-services, referral-preference]
+  - utterance: "Have you been through any treatment that didn't work out for you?"
+    topics: [previous-services]
+    style: boundary_colloquial
+    pair: [previous-services, referral-preference]
+  - utterance: "What made you walk away from it?"
+    topics: [previous-services]
+    style: boundary_follow_up
+    pair: [previous-services, referral-preference]
+    previous:
+      interviewer: "Have you ever been to see someone about all this?"
+      character: "I had six counselling appointments last year and stopped after the therapist changed"
+  - utterance: "Would you like me to go ahead and put you forward for it?"
+    topics: [referral-preference]
+    style: boundary
+    pair: [previous-services, referral-preference]
+  - utterance: "Would you be willing to come for an assessment before deciding on the whole programme?"
+    topics: [referral-preference]
+    style: boundary
+    pair: [previous-services, referral-preference]
+  - utterance: "so um do you want to try it this time or not really"
+    topics: [referral-preference]
+    style: boundary_spoken
+    pair: [previous-services, referral-preference]
+  - utterance: "Are you leaning towards giving this a go?"
+    topics: [referral-preference]
+    style: boundary_colloquial
+    pair: [previous-services, referral-preference]
+  - utterance: "And would you be happy for us to take that further now?"
+    topics: [referral-preference]
+    style: boundary_follow_up
+    pair: [previous-services, referral-preference]
+    previous:
+      interviewer: "Did anything about the earlier counselling put you off?"
+      character: "I felt I had to begin the whole story again."
+  - utterance: "Would you prefer a female therapist?"
+    topics: []
+    style: near_miss
+    pair: [previous-services, referral-preference]
+  - utterance: "Do you know anyone else who has been through this programme?"
+    topics: []
+    style: near_miss
+    pair: [previous-services, referral-preference]
+
+  # ---- attendance / referral-preference ----
+  - utterance: "If we went ahead, which days could you realistically keep free?"
+    topics: [attendance]
+    style: boundary
+    pair: [attendance, referral-preference]
+  - utterance: "How many months of weekly sessions could you commit to?"
+    topics: [attendance]
+    style: boundary
+    pair: [attendance, referral-preference]
+  - utterance: "um so would your job let you come in during the week"
+    topics: [attendance]
+    style: boundary_spoken
+    pair: [attendance, referral-preference]
+  - utterance: "Could you fit a regular appointment around your shifts?"
+    topics: [attendance]
+    style: boundary_colloquial
+    pair: [attendance, referral-preference]
+  - utterance: "Would the length of it be a problem for you?"
+    topics: [attendance]
+    style: boundary_follow_up
+    pair: [attendance, referral-preference]
+    previous:
+      interviewer: "Are you thinking of going ahead with the programme?"
+      character: "Yes, I'd be willing to attend an assessment to find out more, but I haven't agreed to a full course yet."
+  - utterance: "Do you want to try one assessment appointment first?"
+    topics: [referral-preference]
+    style: boundary
+    pair: [attendance, referral-preference]
+  - utterance: "Are you ready to commit to the whole course today?"
+    topics: [referral-preference]
+    style: boundary
+    pair: [attendance, referral-preference]
+  - utterance: "um so are you saying yes to the referral or do you want to think about it"
+    topics: [referral-preference]
+    style: boundary_spoken
+    pair: [attendance, referral-preference]
+  - utterance: "Is it a yes from you, or would you rather hold off?"
+    topics: [referral-preference]
+    style: boundary_colloquial
+    pair: [attendance, referral-preference]
+  - utterance: "So are you happy to come along and find out more?"
+    topics: [referral-preference]
+    style: boundary_follow_up
+    pair: [attendance, referral-preference]
+    previous:
+      interviewer: "When could you get to appointments?"
+      character: "I work Monday and Thursday mornings; I could protect Tuesday afternoons and Friday mornings for regular appointments"
+  - utterance: "Would you need help with travel costs to get to the clinic?"
+    topics: []
+    style: near_miss
+    pair: [attendance, referral-preference]
+  - utterance: "Does your employer know you might be coming to therapy?"
+    topics: []
+    style: near_miss
+    pair: [attendance, referral-preference]
+
+  # ---- personal-goal / referral-preference ----
+  - utterance: "Imagine this helped. What would you notice changing for you?"
+    topics: [personal-goal]
+    style: boundary
+    pair: [personal-goal, referral-preference]
+  - utterance: "What matters most to you about getting better?"
+    topics: [personal-goal]
+    style: boundary
+    pair: [personal-goal, referral-preference]
+  - utterance: "um what would you actually like to be able to do that you can't now"
+    topics: [personal-goal]
+    style: boundary_spoken
+    pair: [personal-goal, referral-preference]
+  - utterance: "Is there something in your life you'd like to put right?"
+    topics: [personal-goal]
+    style: boundary_colloquial
+    pair: [personal-goal, referral-preference]
+  - utterance: "What would you want to change, if you did go ahead?"
+    topics: [personal-goal]
+    style: boundary_follow_up
+    pair: [personal-goal, referral-preference]
+    previous:
+      interviewer: "Is this something you'd be open to trying?"
+      character: "Yes, I'd be willing to attend an assessment to find out more, but I haven't agreed to a full course yet."
+  - utterance: "Would you like to start with just an assessment, or hold off altogether?"
+    topics: [referral-preference]
+    style: boundary
+    pair: [personal-goal, referral-preference]
+  - utterance: "Do you want to be referred, Leah?"
+    topics: [referral-preference]
+    style: boundary
+    pair: [personal-goal, referral-preference]
+  - utterance: "so um are you up for it then or still not sure"
+    topics: [referral-preference]
+    style: boundary_spoken
+    pair: [personal-goal, referral-preference]
+  - utterance: "Shall I get the ball rolling, or would you rather not just yet?"
+    topics: [referral-preference]
+    style: boundary_colloquial
+    pair: [personal-goal, referral-preference]
+  - utterance: "So is that something you'd like me to arrange?"
+    topics: [referral-preference]
+    style: boundary_follow_up
+    pair: [personal-goal, referral-preference]
+    previous:
+      interviewer: "What would you want to be better in your life?"
+      character: "I'd like a disagreement not to take over my whole evening"
+  - utterance: "Would you want a family member to come along to appointments?"
+    topics: []
+    style: near_miss
+    pair: [personal-goal, referral-preference]
+  - utterance: "Where do you see yourself in five years?"
+    topics: []
+    style: near_miss
+    pair: [personal-goal, referral-preference]
+
+  # ---- attendance / previous-services ----
+  - utterance: "How long a programme could you realistically stick with?"
+    topics: [attendance]
+    style: boundary
+    pair: [attendance, previous-services]
+  - utterance: "Do your working hours leave room for regular sessions?"
+    topics: [attendance]
+    style: boundary
+    pair: [attendance, previous-services]
+  - utterance: "um which mornings are you at work and which are you free"
+    topics: [attendance]
+    style: boundary_spoken
+    pair: [attendance, previous-services]
+  - utterance: "Could you keep turning up every week?"
+    topics: [attendance]
+    style: boundary_colloquial
+    pair: [attendance, previous-services]
+  - utterance: "And is it a particular time of the week that works for you?"
+    topics: [attendance]
+    style: boundary_follow_up
+    pair: [attendance, previous-services]
+    previous:
+      interviewer: "How did you find sticking with things before?"
+      character: "I had six counselling appointments last year and stopped after the therapist changed"
+  - utterance: "How many sessions did you actually get to in the past?"
+    topics: [previous-services]
+    style: boundary
+    pair: [attendance, previous-services]
+  - utterance: "Why did you stop going to the last lot of appointments?"
+    topics: [previous-services]
+    style: boundary
+    pair: [attendance, previous-services]
+  - utterance: "um so have you been to therapy before and did you keep going"
+    topics: [previous-services]
+    style: boundary_spoken
+    pair: [attendance, previous-services]
+  - utterance: "Did you ever drop out of treatment before?"
+    topics: [previous-services]
+    style: boundary_colloquial
+    pair: [attendance, previous-services]
+  - utterance: "And did something happen to make you stop?"
+    topics: [previous-services]
+    style: boundary_follow_up
+    pair: [attendance, previous-services]
+    previous:
+      interviewer: "How regularly could you come?"
+      character: "I work Monday and Thursday mornings; I could protect Tuesday afternoons and Friday mornings for regular appointments"
+  - utterance: "Do you get paid if you take time off for appointments?"
+    topics: []
+    style: near_miss
+    pair: [attendance, previous-services]
+  - utterance: "Has anyone from the service phoned you to arrange a time yet?"
+    topics: []
+    style: near_miss
+    pair: [attendance, previous-services]

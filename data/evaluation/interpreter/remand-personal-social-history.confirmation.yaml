@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: remand-personal-social-history
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Leon, who looked after you as a child, and did where you lived change?
+  expected:
+  - childhood
+  rapport: false
+- utterance: How did school go for you, including reading and any qualifications when you left?
+  expected:
+  - school
+  rapport: false
+- utterance: What work had you been doing in the years before coming into remand?
+  expected:
+  - employment
+  rapport: false
+- utterance: Where were you staying just before the arrest, and could you return there?
+  expected:
+  - housing
+  rapport: false
+- utterance: Who are the important people in your life now, including partners or children?
+  expected:
+  - relationships
+  rapport: false
+- utterance: What was your usual use of alcohol or cannabis before being remanded?
+  expected:
+  - substances
+  rapport: false
+- utterance: Who was responsible for looking after you before adulthood?
+  expected:
+  - childhood
+  rapport: false
+- utterance: Without going into details, were you frightened by fighting between adults at home?
+  expected:
+  - adversity
+  rapport: false
+- utterance: what sort of future would you want instead of that uncertainty?
+  expected:
+  - hopes
+  rapport: false
+  previous:
+    interviewer: Where were you living before the arrest?
+    character: I was sleeping on a friend's sofa for six weeks. I don't know whether I can return there.
+- utterance: It is reasonable to want to know who will read your account before sharing personal things.
+  expected: []
+  rapport: true

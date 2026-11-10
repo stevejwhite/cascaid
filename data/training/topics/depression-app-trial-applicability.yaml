@@ -1,0 +1,756 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: depression-app-trial-applicability
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Who took part in the study?
+  topics:
+  - population
+  style: open
+- utterance: Tell me about the people who were recruited.
+  topics:
+  - population
+  style: open
+- utterance: Were there any age limits on who could join?
+  topics:
+  - population
+  style: closed
+- utterance: Was the sample size reasonably large?
+  topics:
+  - population
+  style: closed
+- utterance: So who exactly did they get for this trial?
+  topics:
+  - population
+  style: colloquial
+- utterance: How many people did they actually sign up?
+  topics:
+  - population
+  style: colloquial
+- utterance: What were the inclusion criteria, and how big was the sample?
+  topics:
+  - population
+  style: clinical
+- utterance: I wondered what sort of people were enrolled in the study
+  topics:
+  - population
+  style: indirect
+- utterance: I'd be interested to hear where the participants came from
+  topics:
+  - population
+  style: indirect
+- utterance: I know this is a lot to take in. How old were the participants?
+  topics:
+  - population
+  style: empathy_then_question
+- utterance: That's a fair point to raise. Where did they recruit them?
+  topics:
+  - population
+  style: empathy_then_question
+- utterance: um so who was in it, like what ages
+  topics:
+  - population
+  style: spoken
+- utterance: so how many, how many people took part
+  topics:
+  - population
+  style: spoken
+- utterance: and the age range?
+  topics:
+  - population
+  style: brief
+- utterance: I'd guess they mostly recruited younger people, did they?
+  topics:
+  - population
+  style: leading
+- utterance: What did the two groups receive?
+  topics:
+  - comparison
+  style: open
+- utterance: Could you describe how the study was set up?
+  topics:
+  - comparison
+  style: open
+- utterance: Was there a control group?
+  topics:
+  - comparison
+  style: closed
+- utterance: Did people get chosen for each group at random?
+  topics:
+  - comparison
+  style: closed
+- utterance: So what did the other lot get?
+  topics:
+  - comparison
+  style: colloquial
+- utterance: How did they decide who got the app and who didn't?
+  topics:
+  - comparison
+  style: colloquial
+- utterance: What was the comparator, and how was allocation done?
+  topics:
+  - comparison
+  style: clinical
+- utterance: I wondered what the control arm actually received
+  topics:
+  - comparison
+  style: indirect
+- utterance: I'd like to understand how people ended up in each group
+  topics:
+  - comparison
+  style: indirect
+- utterance: That's helpful to know. What was the intervention compared against?
+  topics:
+  - comparison
+  style: empathy_then_question
+- utterance: Thanks for bringing it along. How long did people use the app for?
+  topics:
+  - comparison
+  style: empathy_then_question
+- utterance: um so what did the people not using the app do
+  topics:
+  - comparison
+  style: spoken
+- utterance: so was it, did they randomise people or
+  topics:
+  - comparison
+  style: spoken
+- utterance: and the comparison group?
+  topics:
+  - comparison
+  style: brief
+- utterance: And what did they each get?
+  topics:
+  - comparison
+  style: follow_up
+  previous:
+    interviewer: How many took part?
+    character: The fictional study recruited 120 US primary-care adults aged eighteen to fifty-five, with
+      a mean age of thirty-six. All had mild or moderate depressive symptoms and a compatible smartphone;
+      some also had anxiety. Nobody over fifty-five was eligible.
+- utterance: What did they measure?
+  topics:
+  - outcomes
+  style: open
+- utterance: What were the main findings of the trial?
+  topics:
+  - outcomes
+  style: open
+- utterance: Did they use a standard rating scale?
+  topics:
+  - outcomes
+  style: closed
+- utterance: Did the app group do better than the control group?
+  topics:
+  - outcomes
+  style: closed
+- utterance: So how did people actually get on?
+  topics:
+  - outcomes
+  style: colloquial
+- utterance: What counted as being better, in their terms?
+  topics:
+  - outcomes
+  style: colloquial
+- utterance: What was the primary outcome, and how was recovery defined?
+  topics:
+  - outcomes
+  style: clinical
+- utterance: I wondered what the results showed for symptom scores
+  topics:
+  - outcomes
+  style: indirect
+- utterance: I'd like to hear how they defined recovery
+  topics:
+  - outcomes
+  style: indirect
+- utterance: I appreciate you explaining it. What were the actual results?
+  topics:
+  - outcomes
+  style: empathy_then_question
+- utterance: Okay, that makes sense. How did they work out who had recovered?
+  topics:
+  - outcomes
+  style: empathy_then_question
+- utterance: um what was the outcome, like what scale did they use
+  topics:
+  - outcomes
+  style: spoken
+- utterance: so how many got better in each group
+  topics:
+  - outcomes
+  style: spoken
+- utterance: and the results?
+  topics:
+  - outcomes
+  style: brief
+- utterance: I imagine the app group showed a big improvement, did they?
+  topics:
+  - outcomes
+  style: leading
+- utterance: How many people completed the study?
+  topics:
+  - attrition
+  style: open
+- utterance: Tell me what happened to the people who dropped out.
+  topics:
+  - attrition
+  style: open
+- utterance: Did everyone complete the final assessment?
+  topics:
+  - attrition
+  style: closed
+- utterance: Were there more dropouts in one group than the other?
+  topics:
+  - attrition
+  style: closed
+- utterance: How many people fell by the wayside?
+  topics:
+  - attrition
+  style: colloquial
+- utterance: Did lots of them just disappear before the end?
+  topics:
+  - attrition
+  style: colloquial
+- utterance: What was the attrition rate in each arm?
+  topics:
+  - attrition
+  style: clinical
+- utterance: I wondered how much follow-up data was missing
+  topics:
+  - attrition
+  style: indirect
+- utterance: I'd like to know how many people left the study early
+  topics:
+  - attrition
+  style: indirect
+- utterance: That's useful. Were any participants lost to follow-up?
+  topics:
+  - attrition
+  style: empathy_then_question
+- utterance: Thanks, Sian. How many didn't make the final assessment?
+  topics:
+  - attrition
+  style: empathy_then_question
+- utterance: um so did people drop out, how many
+  topics:
+  - attrition
+  style: spoken
+- utterance: so the numbers at the end, were they all there
+  topics:
+  - attrition
+  style: spoken
+- utterance: and the dropouts?
+  topics:
+  - attrition
+  style: brief
+- utterance: And did everyone have a result at the end?
+  topics:
+  - attrition
+  style: follow_up
+  previous:
+    interviewer: What did they measure?
+    character: 'They used an invented, unvalidated symptom score from zero to thirty, with lower scores
+      better. Both groups averaged sixteen at baseline; follow-up completers averaged nine with the app
+      and twelve with usual care at eight weeks. Recovery meant a score below five OR at least a fifty-percent
+      fall from baseline: twenty-four of sixty app participants versus twelve of sixty controls, counting
+      missing outcomes as not recovered. I want to distinguish improvement from full remission; the summary
+      provides no confidence intervals or significance tests.'
+- utterance: How might the way the study was run have affected the results?
+  topics:
+  - bias
+  style: open
+- utterance: What are the weaknesses in the design?
+  topics:
+  - bias
+  style: open
+- utterance: Did participants know which group they were in?
+  topics:
+  - bias
+  style: closed
+- utterance: Could the improvement just be down to people expecting to feel better?
+  topics:
+  - bias
+  style: colloquial
+- utterance: Were the people with the app getting extra attention from someone?
+  topics:
+  - bias
+  style: colloquial
+- utterance: What was the risk of bias, particularly performance and detection bias?
+  topics:
+  - bias
+  style: clinical
+- utterance: I wondered who rated the symptoms at the end
+  topics:
+  - bias
+  style: indirect
+- utterance: I'd like to think about whether expectations played a part
+  topics:
+  - bias
+  style: indirect
+- utterance: I can see why you're unsure. Was there an active control condition?
+  topics:
+  - bias
+  style: empathy_then_question
+- utterance: That's a sensible worry. Who did the rating, the participants or someone independent?
+  topics:
+  - bias
+  style: empathy_then_question
+- utterance: um was it blind, did they know what group they were in
+  topics:
+  - bias
+  style: spoken
+- utterance: so could it be a placebo thing, like expectation
+  topics:
+  - bias
+  style: spoken
+- utterance: and the risk of bias?
+  topics:
+  - bias
+  style: brief
+- utterance: It sounds like it might not have been very tightly controlled, was it?
+  topics:
+  - bias
+  style: leading
+- utterance: How do your patients compare with the people in the study?
+  topics:
+  - practice
+  style: open
+- utterance: Are most of your patients older?
+  topics:
+  - practice
+  style: closed
+- utterance: Do your older patients have access to what they'd need to use it?
+  topics:
+  - practice
+  style: closed
+- utterance: What are your patients like, then?
+  topics:
+  - practice
+  style: colloquial
+- utterance: Would your patients be able to use something like this?
+  topics:
+  - practice
+  style: colloquial
+- utterance: What is the age profile and physical comorbidity of your practice population?
+  topics:
+  - practice
+  style: clinical
+- utterance: I wondered who in your practice you had in mind for this
+  topics:
+  - practice
+  style: indirect
+- utterance: I'd like to hear about your older patients and how they cope with apps
+  topics:
+  - practice
+  style: indirect
+- utterance: That's an important point. How comfortable are your patients with gadgets?
+  topics:
+  - practice
+  style: empathy_then_question
+- utterance: I can see you care about this. What's the typical patient in your surgery like?
+  topics:
+  - practice
+  style: empathy_then_question
+- utterance: um so your patients, are they older or what
+  topics:
+  - practice
+  style: spoken
+- utterance: so would they, would they manage it, your lot
+  topics:
+  - practice
+  style: spoken
+- utterance: and your own patients?
+  topics:
+  - practice
+  style: brief
+- utterance: How does that match the people you see?
+  topics:
+  - practice
+  style: follow_up
+  previous:
+    interviewer: Who took part in the study?
+    character: The fictional study recruited 120 US primary-care adults aged eighteen to fifty-five, with
+      a mean age of thirty-six. All had mild or moderate depressive symptoms and a compatible smartphone;
+      some also had anxiety. Nobody over fifty-five was eligible.
+- utterance: How are you thinking of offering it to patients?
+  topics:
+  - use
+  style: open
+- utterance: What would you want to do with the app in your practice?
+  topics:
+  - use
+  style: open
+- utterance: Would you recommend a specific product?
+  topics:
+  - use
+  style: closed
+- utterance: Would patients be able to choose whether to use it?
+  topics:
+  - use
+  style: closed
+- utterance: So what's the plan, are you going to roll it out?
+  topics:
+  - use
+  style: colloquial
+- utterance: Are you thinking of swapping it in for normal treatment?
+  topics:
+  - use
+  style: colloquial
+- utterance: Would this be adjunctive to treatment as usual, with review?
+  topics:
+  - use
+  style: clinical
+- utterance: I wondered how you imagine it fitting into what you already offer
+  topics:
+  - use
+  style: indirect
+- utterance: I'd like to know whether it would be offered or just suggested
+  topics:
+  - use
+  style: indirect
+- utterance: I appreciate your caution. Would it sit alongside what patients get already?
+  topics:
+  - use
+  style: empathy_then_question
+- utterance: That sounds sensible. What follow-up would there be?
+  topics:
+  - use
+  style: empathy_then_question
+- utterance: um so how would you actually use it
+  topics:
+  - use
+  style: spoken
+- utterance: so is it instead of, or as well as, you know, the usual stuff
+  topics:
+  - use
+  style: spoken
+- utterance: and how you'd offer it?
+  topics:
+  - use
+  style: brief
+- utterance: So how would you use it with them?
+  topics:
+  - use
+  style: follow_up
+  previous:
+    interviewer: Would it work for your patients?
+    character: Many of my patients are over seventy and have several physical illnesses. Some use phones
+      confidently; others have no smartphone or struggle with small screens.
+- utterance: What would happen if someone got worse while using it?
+  topics:
+  - safety
+  style: open
+- utterance: Tell me about the risks if a patient became very low.
+  topics:
+  - safety
+  style: open
+- utterance: Is there a plan for patients who become suicidal?
+  topics:
+  - safety
+  style: closed
+- utterance: Would anyone be monitoring for worsening symptoms?
+  topics:
+  - safety
+  style: closed
+- utterance: What if someone gets really bad while they're on it?
+  topics:
+  - safety
+  style: colloquial
+- utterance: Who picks it up if a patient's in crisis?
+  topics:
+  - safety
+  style: colloquial
+- utterance: What escalation pathway exists for deterioration or suicide risk?
+  topics:
+  - safety
+  style: clinical
+- utterance: I wondered what you'd do about patients at risk of self-harm
+  topics:
+  - safety
+  style: indirect
+- utterance: I'd like to hear how urgent problems would be picked up
+  topics:
+  - safety
+  style: indirect
+- utterance: It's good you're thinking of this. When would you want patients seen urgently?
+  topics:
+  - safety
+  style: empathy_then_question
+- utterance: That's a big responsibility. How would you spot someone deteriorating?
+  topics:
+  - safety
+  style: empathy_then_question
+- utterance: um what about suicide risk with the app
+  topics:
+  - safety
+  style: spoken
+- utterance: so if someone got worse, what then
+  topics:
+  - safety
+  style: spoken
+- utterance: and safety netting?
+  topics:
+  - safety
+  style: brief
+- utterance: What about someone who becomes unwell?
+  topics:
+  - safety
+  style: follow_up
+  previous:
+    interviewer: How would you offer it?
+    character: I'm considering it as one option alongside usual care, with patient choice and follow-up.
+      I haven't recommended a particular product.
+- utterance: Which parts of reading papers do you find trickier?
+  topics:
+  - uncertainty
+  style: open
+- utterance: How do you feel about interpreting results like these?
+  topics:
+  - uncertainty
+  style: open
+- utterance: Do you ever find statistics hard to apply to one patient?
+  topics:
+  - uncertainty
+  style: closed
+- utterance: Is there any part of appraisal you feel less sure about?
+  topics:
+  - uncertainty
+  style: closed
+- utterance: Does the stats side of papers ever throw you?
+  topics:
+  - uncertainty
+  style: colloquial
+- utterance: Is it hard to know what a result means for the person in front of you?
+  topics:
+  - uncertainty
+  style: colloquial
+- utterance: How confident are you in separating a statistical result from practical benefit?
+  topics:
+  - uncertainty
+  style: clinical
+- utterance: I wondered whether any bits of appraisal feel less comfortable for you
+  topics:
+  - uncertainty
+  style: indirect
+- utterance: I'd be interested to hear what you find hard about papers like this
+  topics:
+  - uncertainty
+  style: indirect
+- utterance: There's no rush, Sian. Is there anything about interpreting trials you find difficult?
+  topics:
+  - uncertainty
+  style: empathy_then_question
+- utterance: Most of us find some of this tricky. Which bits do you feel least confident about?
+  topics:
+  - uncertainty
+  style: empathy_then_question
+- utterance: um is there anything about the numbers you're less sure on
+  topics:
+  - uncertainty
+  style: spoken
+- utterance: so what do you find hard, with papers I mean
+  topics:
+  - uncertainty
+  style: spoken
+- utterance: and how confident are you with statistics?
+  topics:
+  - uncertainty
+  style: brief
+- utterance: Is any of that hard to follow, to be honest?
+  topics:
+  - uncertainty
+  style: follow_up
+  previous:
+    interviewer: Does that make sense so far?
+    character: 'They used an invented, unvalidated symptom score from zero to thirty, with lower scores
+      better. Both groups averaged sixteen at baseline; follow-up completers averaged nine with the app
+      and twelve with usual care at eight weeks. Recovery meant a score below five OR at least a fifty-percent
+      fall from baseline: twenty-four of sixty app participants versus twelve of sixty controls, counting
+      missing outcomes as not recovered. I want to distinguish improvement from full remission; the summary
+      provides no confidence intervals or significance tests.'
+- utterance: What's making you want to look at this now?
+  topics:
+  - pressure
+  style: open
+- utterance: How are things at the practice at the moment?
+  topics:
+  - pressure
+  style: open
+- utterance: Is the service under a lot of pressure?
+  topics:
+  - pressure
+  style: closed
+- utterance: Is demand on appointments part of why you're considering this?
+  topics:
+  - pressure
+  style: closed
+- utterance: Is it busy at your end, are appointments hard to come by?
+  topics:
+  - pressure
+  style: colloquial
+- utterance: Do you feel under any pressure to find something that works quickly?
+  topics:
+  - pressure
+  style: colloquial
+- utterance: To what extent are capacity constraints influencing your decision?
+  topics:
+  - pressure
+  style: clinical
+- utterance: I wondered whether things at your surgery are pushing you towards this
+  topics:
+  - pressure
+  style: indirect
+- utterance: I'd like to understand what's behind the timing of this decision
+  topics:
+  - pressure
+  style: indirect
+- utterance: That sounds like a lot on your plate. Is demand part of what's driving this?
+  topics:
+  - pressure
+  style: empathy_then_question
+- utterance: I'm sure you're stretched. Do you feel pushed towards saying yes?
+  topics:
+  - pressure
+  style: empathy_then_question
+- utterance: um is something making you want this to work
+  topics:
+  - pressure
+  style: spoken
+- utterance: so what pressures are you under, at the practice
+  topics:
+  - pressure
+  style: spoken
+- utterance: and the pressure on appointments?
+  topics:
+  - pressure
+  style: brief
+- utterance: Is anything pushing you towards that choice?
+  topics:
+  - pressure
+  style: follow_up
+  previous:
+    interviewer: So how would you offer it?
+    character: I'm considering it as one option alongside usual care, with patient choice and follow-up.
+      I haven't recommended a particular product.
+- utterance: How many people were recruited, and how many finished?
+  topics:
+  - population
+  - attrition
+  style: stacked
+- utterance: What did each group receive, and what were the results?
+  topics:
+  - comparison
+  - outcomes
+  style: stacked
+- utterance: Who are your patients, and what would you do if one got worse?
+  topics:
+  - practice
+  - safety
+  style: stacked
+- utterance: Did people know which group they were in, and how many dropped out?
+  topics:
+  - bias
+  - attrition
+  style: stacked
+- utterance: Hello Dr Sian, thanks for coming in to see me.
+  topics: []
+  style: greeting
+- utterance: Good morning Sian, please take a seat.
+  topics: []
+  style: greeting
+- utterance: Hi, I'm one of the psychiatrists here. Is it all right if we talk about this study?
+  topics: []
+  style: introduction
+- utterance: Sian, I'm Dr Reid, a psychiatrist in the outpatient clinic.
+  topics: []
+  style: introduction
+- utterance: What would you like to start with, Sian?
+  topics: []
+  style: greeting
+- utterance: Before we start, any questions for me?
+  topics: []
+  style: greeting
+- utterance: Is it all right if we go through this together?
+  topics: []
+  style: greeting
+- utterance: I'd like to move on to something different now.
+  topics: []
+  style: transition
+- utterance: Right, let's look at another side of this.
+  topics: []
+  style: transition
+- utterance: Thanks, that's clear. Shall we turn to the next part?
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, so let me pull things together.
+  topics: []
+  style: closing
+- utterance: Thank you for your time today, Sian.
+  topics: []
+  style: closing
+- utterance: It sounds like you have a lot of decisions to make for your patients.
+  topics: []
+  style: empathy
+- utterance: That must be a difficult position to be in.
+  topics: []
+  style: empathy
+- utterance: I can see you want to get this right for the people you look after.
+  topics: []
+  style: empathy
+- utterance: Appraising studies when you are busy can't be easy.
+  topics: []
+  style: empathy
+- utterance: So, to pull together what we have discussed, you want to know whether this study helps with
+    your own patients.
+  topics: []
+  style: summary
+- utterance: 'Let me summarise: you came to talk about whether this trial applies to your practice.'
+  topics: []
+  style: summary
+- utterance: So far we have been looking at one small trial of an app.
+  topics: []
+  style: summary
+- utterance: I'll explain how I usually go about appraising a trial, step by step.
+  topics: []
+  style: explanation
+- utterance: A randomised trial tries to make groups similar by chance.
+  topics: []
+  style: explanation
+- utterance: Let me say what I mean by confidence in a result.
+  topics: []
+  style: explanation
+- utterance: Does that make sense so far?
+  topics: []
+  style: check_understanding
+- utterance: Have I explained that clearly enough?
+  topics: []
+  style: check_understanding
+- utterance: Am I right in thinking you wanted to focus on this one trial?
+  topics: []
+  style: check_understanding
+- utterance: Which brand of app is it?
+  topics: []
+  style: off_case
+- utterance: Was the trial registered before it started?
+  topics: []
+  style: off_case
+- utterance: Were the researchers independent of the app's makers?
+  topics: []
+  style: off_case
+- utterance: How many GPs were involved in running the trial?
+  topics: []
+  style: near_miss
+- utterance: Which symptom scale do your own patients usually complete?
+  topics: []
+  style: near_miss
+- utterance: How many of your patients have you already put on the app?
+  topics: []
+  style: near_miss
+- utterance: Did the app group have more appointments with their GP?
+  topics: []
+  style: near_miss
+- utterance: What were the dropout rates in other studies of apps?
+  topics: []
+  style: near_miss

@@ -1,0 +1,30 @@
+# Training lines for the tone classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: transgender-woman-social-history
+case_version: 0.1.0
+status: draft
+items:
+  - {utterance: "Has anyone ever threatened you because of who you are?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "How often do you feel you want to escape everything?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "um do your parents know about your partner", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "What are you doing to cope with the waiting?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "What time do you usually get up for work?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "Sorry to pry, but could you tell me a bit about how you spend your evenings?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: polite_question}
+  - {utterance: "If you don't mind, could I ask what name you would like on your notes?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: polite_question}
+  - {utterance: "Hello Maya, I'm Dr Okafor, one of the psychiatrists.", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: introduction}
+  - {utterance: "Hi Maya, lovely to meet you.", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: greeting}
+  - {utterance: "So you live with your partner, work part of the week and have been feeling low for a couple of months.", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: summary}
+  - {utterance: "Right. And when did that start?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: acknowledgement}
+  - {utterance: "Okay, thank you Maya.", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: acknowledgement}
+  - {utterance: "I'm sorry to hear that.", empathy: 1, empathy_words: "I'm sorry to hear that.", confrontational: false, challenge_words: "", style: brief_empathy}
+  - {utterance: "That sounds really tough.", empathy: 1, empathy_words: "That sounds really tough.", confrontational: false, challenge_words: "", style: brief_empathy}
+  - {utterance: "That must be hard. How long has it been like that?", empathy: 1, empathy_words: "That must be hard.", confrontational: false, challenge_words: "", style: brief_empathy_question}
+  - {utterance: "I'm sorry about that. What happened afterwards?", empathy: 1, empathy_words: "I'm sorry about that.", confrontational: false, challenge_words: "", style: brief_empathy_question}
+  - {utterance: "Eighteen months is a long time to wait for something that matters so much to you, and I can hear how draining that has been.", empathy: 2, empathy_words: "Eighteen months is a long time to wait for something that matters so much to you, and I can hear how draining that has been.", confrontational: false, challenge_words: "", style: specific_empathy, previous: {interviewer: "Where are you up to with the referral?", character: "I've changed my name and how I present socially. I've been waiting eighteen months for specialist assessment and haven't started hormones."}}
+  - {utterance: "It sounds as though being shouted at in the street has left you feeling on guard, and it is understandable that you have changed your route.", empathy: 2, empathy_words: "It sounds as though being shouted at in the street has left you feeling on guard, and it is understandable that you have changed your route.", confrontational: false, challenge_words: "", style: specific_empathy, previous: {interviewer: "Has anyone been unkind to you?", character: "I've been shouted at in the street twice this year and avoid that route now. I haven't told my partner how much it unsettled me."}}
+  - {utterance: "You have said you want ordinary questions without assumptions, and I think that is a completely reasonable thing to ask for.", empathy: 2, empathy_words: "You have said you want ordinary questions without assumptions, and I think that is a completely reasonable thing to ask for.", confrontational: false, challenge_words: "", style: specific_empathy}
+  - {utterance: "It must hurt when your parents leave your partner out of invitations after you have been so open with them. Has that changed how you see them?", empathy: 2, empathy_words: "It must hurt when your parents leave your partner out of invitations after you have been so open with them.", confrontational: false, challenge_words: "", style: specific_empathy_question, previous: {interviewer: "How are things with your family these days?", character: "My brother is supportive. My parents avoid discussing my life, and I feel hurt when they leave my partner out of invitations."}}
+  - {utterance: "I don't see why being trans should make you so miserable.", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "I don't see why being trans should make you so miserable", style: confront_statement}
+  - {utterance: "Why would you put yourself through all of that?", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "Why would you put yourself through all of that", style: confront_why}
+  - {utterance: "Lots of people get shouted at, you just have to toughen up.", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "you just have to toughen up", style: dismissive}
+  - {utterance: "Feeling low is normal while you wait, so I wouldn't read too much into it.", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "I wouldn't read too much into it", style: dismissive}

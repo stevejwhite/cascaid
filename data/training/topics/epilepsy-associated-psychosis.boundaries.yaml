@@ -1,0 +1,227 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: epilepsy-associated-psychosis
+case_version: 0.1.0
+status: draft
+items:
+  # ---- broadcast / insertion ----
+  - utterance: "Does it seem to you that others can read your mind without a word from you?"
+    topics: [broadcast]
+    style: boundary
+    pair: [broadcast, insertion]
+  - utterance: "When you're out and about, does it seem that people around you can pick up on your thoughts?"
+    topics: [broadcast]
+    style: boundary
+    pair: [broadcast, insertion]
+  - utterance: "Is it as if your mind is an open book to everyone nearby?"
+    topics: [broadcast]
+    style: boundary_colloquial
+    pair: [broadcast, insertion]
+  - utterance: "so um do you think your thoughts are somehow getting out to other people"
+    topics: [broadcast]
+    style: boundary_spoken
+    pair: [broadcast, insertion]
+  - utterance: "And what about your own thoughts, can anyone else tune in to them?"
+    topics: [broadcast]
+    style: boundary_follow_up
+    pair: [broadcast, insertion]
+    previous:
+      interviewer: "Are there any thoughts in your head that aren't your own?"
+      character: "Yes, some thoughts feel put there by someone else."
+  - utterance: "Are there thoughts in your head that don't feel as though you thought them?"
+    topics: [insertion]
+    style: boundary
+    pair: [broadcast, insertion]
+  - utterance: "Does anyone seem to be planting ideas in your mind?"
+    topics: [insertion]
+    style: boundary
+    pair: [broadcast, insertion]
+  - utterance: "Do you ever get thoughts popping up that feel like they belong to somebody else?"
+    topics: [insertion]
+    style: boundary_colloquial
+    pair: [broadcast, insertion]
+  - utterance: "um do any of the thoughts you have feel like they've come from outside you"
+    topics: [insertion]
+    style: boundary_spoken
+    pair: [broadcast, insertion]
+  - utterance: "What about the opposite, is anything being pushed into your head from outside?"
+    topics: [insertion]
+    style: boundary_follow_up
+    pair: [broadcast, insertion]
+    previous:
+      interviewer: "Can other people hear what you're thinking?"
+      character: "I believe people nearby can hear my thoughts without me speaking."
+  - utterance: "Do you feel your thoughts are being taken out of your head by someone?"
+    topics: []
+    style: near_miss
+    pair: [broadcast, insertion]
+  - utterance: "Do your thoughts ever race so fast that you can't keep up with them?"
+    topics: []
+    style: near_miss
+    pair: [broadcast, insertion]
+  # ---- orientation / safety ----
+  - utterance: "Can you tell me where you are at the moment and who you're speaking with?"
+    topics: [orientation]
+    style: boundary
+    pair: [orientation, safety]
+  - utterance: "Have there been times lately when you've lost track of where you were?"
+    topics: [orientation]
+    style: boundary
+    pair: [orientation, safety]
+  - utterance: "Are you finding it hard to keep hold of what's going on around you today?"
+    topics: [orientation]
+    style: boundary_colloquial
+    pair: [orientation, safety]
+  - utterance: "so um where would you say we are at the moment, and who am I"
+    topics: [orientation]
+    style: boundary_spoken
+    pair: [orientation, safety]
+  - utterance: "Good. Can you tell me what this place is and what I do here?"
+    topics: [orientation]
+    style: boundary_follow_up
+    pair: [orientation, safety]
+    previous:
+      interviewer: "Are you safe at the moment?"
+      character: "My sister is with me because I'm frightened to be alone."
+  - utterance: "Has the idea of causing harm to anybody, yourself included, crossed your mind?"
+    topics: [safety]
+    style: boundary
+    pair: [orientation, safety]
+  - utterance: "Have you done anything to other people because of what you've been experiencing?"
+    topics: [safety]
+    style: boundary
+    pair: [orientation, safety]
+  - utterance: "Is there anyone with you at the moment, so you're not on your own?"
+    topics: [safety]
+    style: boundary_colloquial
+    pair: [orientation, safety]
+  - utterance: "um have you been feeling like you might harm yourself or anybody"
+    topics: [safety]
+    style: boundary_spoken
+    pair: [orientation, safety]
+  - utterance: "Good. And has there been any urge to do harm to yourself or somebody else?"
+    topics: [safety]
+    style: boundary_follow_up
+    pair: [orientation, safety]
+    previous:
+      interviewer: "Do you know where you are?"
+      character: "I know I'm at the community clinic speaking with a doctor."
+  - utterance: "Do you drive, and has anyone talked to you about driving after the seizures?"
+    topics: []
+    style: near_miss
+    pair: [orientation, safety]
+  - utterance: "Is there someone who could look after your children if you needed to be in hospital?"
+    topics: []
+    style: near_miss
+    pair: [orientation, safety]
+  # ---- fear / insight ----
+  - utterance: "What are you most worried about for the future?"
+    topics: [fear]
+    style: boundary
+    pair: [fear, insight]
+  - utterance: "Is there anything you're frightened of that you haven't managed to tell anyone?"
+    topics: [fear]
+    style: boundary
+    pair: [fear, insight]
+  - utterance: "What do you think all this might mean for how you live your life?"
+    topics: [fear]
+    style: boundary_colloquial
+    pair: [fear, insight]
+  - utterance: "um are there things you're scared of that you've kept to yourself"
+    topics: [fear]
+    style: boundary_spoken
+    pair: [fear, insight]
+  - utterance: "OK. And what are you most afraid might happen because of it?"
+    topics: [fear]
+    style: boundary_follow_up
+    pair: [fear, insight]
+    previous:
+      interviewer: "Do you think the seizures could be behind this?"
+      character: "Part of me wonders whether this follows the seizures."
+  - utterance: "What do you make of what has been happening to you?"
+    topics: [insight]
+    style: boundary
+    pair: [fear, insight]
+  - utterance: "Do these experiences feel real to you, or could there be some other explanation?"
+    topics: [insight]
+    style: boundary
+    pair: [fear, insight]
+  - utterance: "Could the seizures be connected to what you are going through, do you think?"
+    topics: [insight]
+    style: boundary_colloquial
+    pair: [fear, insight]
+  - utterance: "so um how would you explain it all to yourself"
+    topics: [insight]
+    style: boundary_spoken
+    pair: [fear, insight]
+  - utterance: "And how do you understand what's going on for you right now?"
+    topics: [insight]
+    style: boundary_follow_up
+    pair: [fear, insight]
+    previous:
+      interviewer: "What are you most worried about?"
+      character: "I worry I'll lose the independence I worked for with epilepsy."
+  - utterance: "Has anyone else in your family had experiences like these?"
+    topics: []
+    style: near_miss
+    pair: [fear, insight]
+  - utterance: "Have you been feeling low or hopeless about it all?"
+    topics: []
+    style: near_miss
+    pair: [fear, insight]
+  # ---- passivity / safety ----
+  - utterance: "Do you ever feel that something outside you is controlling what you do?"
+    topics: [passivity]
+    style: boundary
+    pair: [passivity, safety]
+  - utterance: "Do your arms or legs ever move as if someone else were working them?"
+    topics: [passivity]
+    style: boundary
+    pair: [passivity, safety]
+  - utterance: "Do you feel you're being made to do things you wouldn't choose to do?"
+    topics: [passivity]
+    style: boundary_colloquial
+    pair: [passivity, safety]
+  - utterance: "so er are your actions still your own or does someone else seem to be behind them"
+    topics: [passivity]
+    style: boundary_spoken
+    pair: [passivity, safety]
+  - utterance: "And do you feel something outside you is making you do things?"
+    topics: [passivity]
+    style: boundary_follow_up
+    pair: [passivity, safety]
+    previous:
+      interviewer: "Have you wanted to act against anyone?"
+      character: "I haven't wanted to harm myself or anyone, and I haven't acted against people."
+  - utterance: "Have you had any urge to hurt someone because of what you're going through?"
+    topics: [safety]
+    style: boundary
+    pair: [passivity, safety]
+  - utterance: "Has it crossed your mind to do yourself any damage?"
+    topics: [safety]
+    style: boundary
+    pair: [passivity, safety]
+  - utterance: "Is somebody staying with you at the moment?"
+    topics: [safety]
+    style: boundary_colloquial
+    pair: [passivity, safety]
+  - utterance: "um has there been any time you've thought about hurting yourself or someone"
+    topics: [safety]
+    style: boundary_spoken
+    pair: [passivity, safety]
+  - utterance: "OK. Is there any part of you that wants to lash out at someone, or at yourself?"
+    topics: [safety]
+    style: boundary_follow_up
+    pair: [passivity, safety]
+    previous:
+      interviewer: "Do you feel something is controlling your body?"
+      character: "No, I don't feel someone is moving my body or making me act."
+  - utterance: "Do you feel people are following you or watching what you do?"
+    topics: []
+    style: near_miss
+    pair: [passivity, safety]
+  - utterance: "Do you feel the television or radio is sending messages meant for you?"
+    topics: []
+    style: near_miss
+    pair: [passivity, safety]

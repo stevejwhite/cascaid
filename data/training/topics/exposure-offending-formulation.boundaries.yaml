@@ -1,0 +1,227 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: exposure-offending-formulation
+case_version: 0.1.0
+status: draft
+items:
+  # ---- context / pattern ----
+  - utterance: "What was going on in his life in the lead-up to the offences?"
+    topics: [context]
+    style: boundary
+    pair: [context, pattern]
+  - utterance: "Had he been drinking when these incidents took place?"
+    topics: [context]
+    style: boundary
+    pair: [context, pattern]
+  - utterance: "Had anything stressful happened to him just before the incidents?"
+    topics: [context]
+    style: boundary_colloquial
+    pair: [context, pattern]
+  - utterance: "um do we know what state he was in before each of them"
+    topics: [context]
+    style: boundary_spoken
+    pair: [context, pattern]
+  - utterance: "And what was happening for him in the period before each of them?"
+    topics: [context]
+    style: boundary_follow_up
+    pair: [context, pattern]
+    previous:
+      interviewer: "How many convictions does he have?"
+      character: "I have records of two exposure convictions involving non-consenting adults over eighteen months."
+  - utterance: "Has he offended like this before?"
+    topics: [pattern]
+    style: boundary
+    pair: [context, pattern]
+  - utterance: "How many convictions are on his record?"
+    topics: [pattern]
+    style: boundary
+    pair: [context, pattern]
+  - utterance: "Is there anything on his record beyond exposure, like touching someone?"
+    topics: [pattern]
+    style: boundary_colloquial
+    pair: [context, pattern]
+  - utterance: "so um how many times has he been caught for this"
+    topics: [pattern]
+    style: boundary_spoken
+    pair: [context, pattern]
+  - utterance: "Right. Does he have other convictions on record, or just these?"
+    topics: [pattern]
+    style: boundary_follow_up
+    pair: [context, pattern]
+    previous:
+      interviewer: "Was alcohol involved?"
+      character: "He reports drinking before one, but not the other; alcohol cannot explain both."
+  - utterance: "What time of day did the offences take place?"
+    topics: []
+    style: near_miss
+    pair: [context, pattern]
+  - utterance: "Were the offences in a public park, do you know?"
+    topics: []
+    style: near_miss
+    pair: [context, pattern]
+  # ---- dynamic / self-risk ----
+  - utterance: "Is he still having urges to offend at the moment?"
+    topics: [dynamic]
+    style: boundary
+    pair: [dynamic, self-risk]
+  - utterance: "Does he have any plan to reoffend?"
+    topics: [dynamic]
+    style: boundary
+    pair: [dynamic, self-risk]
+  - utterance: "Do we know what he's been up to lately and whether he's had chances to do it again?"
+    topics: [dynamic]
+    style: boundary_colloquial
+    pair: [dynamic, self-risk]
+  - utterance: "um is there any risk of him doing it again at the moment"
+    topics: [dynamic]
+    style: boundary_spoken
+    pair: [dynamic, self-risk]
+  - utterance: "And what about the risk to others, is he describing any current urges to reoffend?"
+    topics: [dynamic]
+    style: boundary_follow_up
+    pair: [dynamic, self-risk]
+    previous:
+      interviewer: "Has he said anything about suicide?"
+      character: "He denied suicidal intent at referral but described feeling ashamed after conviction."
+  - utterance: "Has anyone asked him directly whether he's had thoughts of ending his life?"
+    topics: [self-risk]
+    style: boundary
+    pair: [dynamic, self-risk]
+  - utterance: "How has he been coping emotionally since the conviction?"
+    topics: [self-risk]
+    style: boundary
+    pair: [dynamic, self-risk]
+  - utterance: "Is there a worry he might hurt himself?"
+    topics: [self-risk]
+    style: boundary_colloquial
+    pair: [dynamic, self-risk]
+  - utterance: "so um has he said anything about wanting to end it all"
+    topics: [self-risk]
+    style: boundary_spoken
+    pair: [dynamic, self-risk]
+  - utterance: "OK, and is there any risk to himself, any thoughts of self-harm?"
+    topics: [self-risk]
+    style: boundary_follow_up
+    pair: [dynamic, self-risk]
+    previous:
+      interviewer: "Does he have current urges?"
+      character: "He reports continuing urges but denies a current plan."
+  - utterance: "Is he working at present?"
+    topics: []
+    style: near_miss
+    pair: [dynamic, self-risk]
+  - utterance: "Is he in a relationship, do you know?"
+    topics: []
+    style: near_miss
+    pair: [dynamic, self-risk]
+  # ---- agencies / protection ----
+  - utterance: "Who is the probation officer I would need to speak to?"
+    topics: [agencies]
+    style: boundary
+    pair: [agencies, protection]
+  - utterance: "Who is coordinating his supervision plan?"
+    topics: [agencies]
+    style: boundary
+    pair: [agencies, protection]
+  - utterance: "How would we share information between ourselves and probation?"
+    topics: [agencies]
+    style: boundary_colloquial
+    pair: [agencies, protection]
+  - utterance: "um who in probation is actually in charge of his case"
+    topics: [agencies]
+    style: boundary_spoken
+    pair: [agencies, protection]
+  - utterance: "Right. And who in probation is holding his plan?"
+    topics: [agencies]
+    style: boundary_follow_up
+    pair: [agencies, protection]
+    previous:
+      interviewer: "Is he engaging with probation?"
+      character: "He has attended three probation meetings and asked for help."
+  - utterance: "Is he engaging with the probation service?"
+    topics: [protection]
+    style: boundary
+    pair: [agencies, protection]
+  - utterance: "Has he got anyone supportive around him?"
+    topics: [protection]
+    style: boundary
+    pair: [agencies, protection]
+  - utterance: "Is there anything that might be keeping his risk down?"
+    topics: [protection]
+    style: boundary_colloquial
+    pair: [agencies, protection]
+  - utterance: "so um is he turning up to his appointments and wanting help"
+    topics: [protection]
+    style: boundary_spoken
+    pair: [agencies, protection]
+  - utterance: "And how has he been about attending, does he seem to be engaging?"
+    topics: [protection]
+    style: boundary_follow_up
+    pair: [agencies, protection]
+    previous:
+      interviewer: "Who is his probation officer?"
+      character: "A named probation officer holds the supervision plan."
+  - utterance: "What sentence was he given?"
+    topics: []
+    style: near_miss
+    pair: [agencies, protection]
+  - utterance: "Has he got a solicitor acting for him?"
+    topics: []
+    style: near_miss
+    pair: [agencies, protection]
+  # ---- differential / treatment ----
+  - utterance: "Is there any sign he's been manic or psychotic?"
+    topics: [differential]
+    style: boundary
+    pair: [differential, treatment]
+  - utterance: "Is there anything in the history that points to a neurological problem?"
+    topics: [differential]
+    style: boundary
+    pair: [differential, treatment]
+  - utterance: "What other conditions still need to be ruled out before we settle on anything?"
+    topics: [differential]
+    style: boundary_colloquial
+    pair: [differential, treatment]
+  - utterance: "um is there anything about his mental health that we haven't looked at yet"
+    topics: [differential]
+    style: boundary_spoken
+    pair: [differential, treatment]
+  - utterance: "Right. Is there any evidence of mania, psychosis or something neurological going on?"
+    topics: [differential]
+    style: boundary_follow_up
+    pair: [differential, treatment]
+    previous:
+      interviewer: "Has he been on any medication?"
+      character: "He has had no specialist psychological work for this and takes no psychiatric medicine."
+  - utterance: "Has he been offered any talking treatment for this yet?"
+    topics: [treatment]
+    style: boundary
+    pair: [differential, treatment]
+  - utterance: "Is he on any medication at the moment?"
+    topics: [treatment]
+    style: boundary
+    pair: [differential, treatment]
+  - utterance: "Has anyone ever tried to get him some psychological help for the offending?"
+    topics: [treatment]
+    style: boundary_colloquial
+    pair: [differential, treatment]
+  - utterance: "so um has he seen a psychologist or been given any tablets"
+    topics: [treatment]
+    style: boundary_spoken
+    pair: [differential, treatment]
+  - utterance: "And has he had any treatment so far, tablets or talking therapy?"
+    topics: [treatment]
+    style: boundary_follow_up
+    pair: [differential, treatment]
+    previous:
+      interviewer: "Is there evidence of psychosis?"
+      character: "The referral describes no clear manic or psychotic episode."
+  - utterance: "Does he have a GP who knows him well?"
+    topics: []
+    style: near_miss
+    pair: [differential, treatment]
+  - utterance: "Where does he live, and with whom?"
+    topics: []
+    style: near_miss
+    pair: [differential, treatment]

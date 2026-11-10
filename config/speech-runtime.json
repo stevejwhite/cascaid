@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "platform": "darwin-arm64",
+  "name": "whisper.cpp",
+  "version": "v1.9.5",
+  "commit": "d1be6fde11ac6e0407606b4e42fe72d34add8037",
+  "licence": "MIT",
+  "source": {
+    "url": "https://github.com/ggml-org/whisper.cpp/archive/refs/tags/v1.9.5.tar.gz",
+    "filename": "whisper.cpp-v1.9.5.tar.gz",
+    "size_bytes": 9626464,
+    "checksum_sha256": "ff1a9053feb509ff9d7729703355541ae9690073a6b1c40eb692c962e0dc1720"
+  },
+  "build": {
+    "cmake": "4.4.4",
+    "target": "whisper-server",
+    "flags": [
+      "-DCMAKE_BUILD_TYPE=Release",
+      "-DGGML_METAL=ON",
+      "-DGGML_METAL_EMBED_LIBRARY=ON",
+      "-DWHISPER_BUILD_EXAMPLES=ON",
+      "-DWHISPER_BUILD_TESTS=OFF",
+      "-DWHISPER_SDL2=OFF",
+      "-DBUILD_SHARED_LIBS=OFF"
+    ]
+  },
+  "port": 8182,
+  "threads": 4,
+  "language": "en",
+  "model_revision": "5359861c739e955e79d9a303bcbc70fb988958b1",
+  "default_model": "ggml-small.en.bin",
+  "models": [
+    {
+      "filename": "ggml-large-v3-turbo-q5_0.bin",
+      "description": "Whisper large-v3-turbo, 5-bit quantised (more robust; about 4x slower)",
+      "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/5359861c739e955e79d9a303bcbc70fb988958b1/ggml-large-v3-turbo-q5_0.bin",
+      "size_bytes": 574041195,
+      "checksum_sha256": "394221709cd5ad1f40c46e6031ca61bce88931e6e088c188294c6d5a55ffa7e2",
+      "licence": "MIT"
+    },
+    {
+      "filename": "ggml-small.en.bin",
+      "description": "Whisper small, English-only (default since 2026-10-13: as accurate on the evaluation, 4x faster)",
+      "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/5359861c739e955e79d9a303bcbc70fb988958b1/ggml-small.en.bin",
+      "size_bytes": 487614201,
+      "checksum_sha256": "c6138d6d58ecc8322097e0f987c32f1be8bb0a18532a3f88f734d1bbf9c41e5d",
+      "licence": "MIT"
+    },
+    {
+      "filename": "ggml-base.en.bin",
+      "description": "Whisper base, English-only (comparison)",
+      "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/5359861c739e955e79d9a303bcbc70fb988958b1/ggml-base.en.bin",
+      "size_bytes": 147964211,
+      "checksum_sha256": "a03779c86df3323075f5e796cb2ce5029f00ec8869eee3fdfb897afe36c6d002",
+      "licence": "MIT"
+    }
+  ],
+  "notes": [
+    "No macOS server binary is published, so speech:install builds whisper-server from the checksum-verified source tarball with Metal.",
+    "Audio is sent only to this loopback server and is never written to disk by the application.",
+    "Default changed from large-v3-turbo to small.en on 2026-10-13 (npm run eval:asr, 570 synthetic utterances): WER 0.15% vs 0.11%, 223 ms vs 985 ms per utterance; base.en was faster still (78 ms) but WER 1.22%. Synthetic voices are clean: re-check on real recordings, and use npm run speech:start -- --model ggml-large-v3-turbo-q5_0.bin if accented speech suffers."
+  ]
+}

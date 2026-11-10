@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: antidepressant-sexual-effects-discussion
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: so daniel, which antidepressant are you on, and how are you taking it day to day
+  expected:
+  - prescription
+  rapport: false
+- utterance: Which parts of life have started to feel better since taking the antidepressant?
+  expected:
+  - benefit
+  rapport: false
+- utterance: What changes in sexual desire or response have you noticed since treatment?
+  expected:
+  - sexual
+  rapport: false
+- utterance: If you're in a relationship, how have the sexual difficulties affected closeness?
+  expected:
+  - relationship
+  rapport: false
+- utterance: Before this illness, had there been other spells of depression or unusually high mood?
+  expected:
+  - history
+  rapport: false
+- utterance: Have you ever felt different physically after leaving out doses for a few days?
+  expected:
+  - withdrawal
+  rapport: false
+- utterance: What change have you noticed in desire or reaching orgasm, rather than in your mood?
+  expected:
+  - sexual
+  rapport: false
+- utterance: If you have a partner, what have they made of the sexual difficulties?
+  expected:
+  - relationship
+  rapport: false
+- utterance: were there thoughts of not wanting to be alive during that spell?
+  expected:
+  - risk
+  rapport: false
+  previous:
+    interviewer: How were things before treatment began helping?
+    character: Before treatment I was low and withdrawn for three months.
+- utterance: Since taking this medicine, do your hands shake when you're holding a cup?
+  expected: []
+  rapport: false

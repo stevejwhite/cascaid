@@ -1,0 +1,321 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: redundancy-depression-history
+case_version: 0.1.0
+status: draft
+items:
+- utterance: When did the low mood begin?
+  topics:
+  - onset
+  style: boundary
+  pair:
+  - onset
+  - self-worth
+- utterance: Has the low feeling been there for most of the day?
+  topics:
+  - onset
+  style: boundary
+  pair:
+  - onset
+  - self-worth
+- utterance: Did it start after the redundancy or before it?
+  topics:
+  - onset
+  style: boundary_colloquial
+  pair:
+  - onset
+  - self-worth
+- utterance: And how long has the low mood been going on?
+  topics:
+  - onset
+  style: boundary_follow_up
+  pair:
+  - onset
+  - self-worth
+  previous:
+    interviewer: Do you feel you've let people down?
+    character: I feel I've let my partner down and that I'm useless. It's hard admitting how much I believe
+      that.
+- utterance: What do you think of yourself at the moment?
+  topics:
+  - self-worth
+  style: boundary
+  pair:
+  - onset
+  - self-worth
+- utterance: Do you blame yourself for what has happened?
+  topics:
+  - self-worth
+  style: boundary
+  pair:
+  - onset
+  - self-worth
+- utterance: Do you ever feel you're useless?
+  topics:
+  - self-worth
+  style: boundary_colloquial
+  pair:
+  - onset
+  - self-worth
+- utterance: And how do you see yourself through all of that?
+  topics:
+  - self-worth
+  style: boundary_follow_up
+  pair:
+  - onset
+  - self-worth
+  previous:
+    interviewer: How long have you been low?
+    character: I lost my job three months ago. For the last six weeks I've felt low nearly all day, even
+      when nothing particular has happened.
+- utterance: Are you angry with your old employer?
+  topics: []
+  style: near_miss
+  pair:
+  - onset
+  - self-worth
+- utterance: Do you find it hard to trust people since the redundancy?
+  topics: []
+  style: near_miss
+  pair:
+  - onset
+  - self-worth
+- utterance: Have you had any thoughts of ending your life?
+  topics:
+  - suicide
+  style: boundary
+  pair:
+  - suicide
+  - support
+- utterance: Do you ever wish you wouldn't wake up in the morning?
+  topics:
+  - suicide
+  style: boundary
+  pair:
+  - suicide
+  - support
+- utterance: Have you made any plans to hurt yourself?
+  topics:
+  - suicide
+  style: boundary_colloquial
+  pair:
+  - suicide
+  - support
+- utterance: um have you been thinking about suicide
+  topics:
+  - suicide
+  style: boundary_spoken
+  pair:
+  - suicide
+  - support
+- utterance: Who would you tell if you felt unsafe?
+  topics:
+  - support
+  style: boundary
+  pair:
+  - suicide
+  - support
+- utterance: Who is there at home to look out for you?
+  topics:
+  - support
+  style: boundary
+  pair:
+  - suicide
+  - support
+- utterance: What's keeping you going at the moment?
+  topics:
+  - support
+  style: boundary_colloquial
+  pair:
+  - suicide
+  - support
+- utterance: um is there anyone you'd reach out to if things got really bad
+  topics:
+  - support
+  style: boundary_spoken
+  pair:
+  - suicide
+  - support
+- utterance: And who would you tell if those thoughts got stronger?
+  topics:
+  - support
+  style: boundary_follow_up
+  pair:
+  - suicide
+  - support
+  previous:
+    interviewer: Have you had thoughts of ending your life?
+    character: Sometimes I wish I wouldn't wake up. I haven't made a plan or preparations and don't intend
+      to act, but I haven't told my partner.
+- utterance: Have you ever harmed yourself in the past?
+  topics: []
+  style: near_miss
+  pair:
+  - suicide
+  - support
+- utterance: Do you have access to a lot of medication at home?
+  topics: []
+  style: near_miss
+  pair:
+  - suicide
+  - support
+- utterance: Has your drinking changed since you lost your job?
+  topics:
+  - alcohol
+  style: boundary
+  pair:
+  - alcohol
+  - enjoyment
+- utterance: Do you take any drugs to help you cope?
+  topics:
+  - alcohol
+  style: boundary_colloquial
+  pair:
+  - alcohol
+  - enjoyment
+- utterance: um do you have a drink much in the evenings
+  topics:
+  - alcohol
+  style: boundary_spoken
+  pair:
+  - alcohol
+  - enjoyment
+- utterance: What about the drinking, has that changed at all?
+  topics:
+  - alcohol
+  style: boundary_follow_up
+  pair:
+  - alcohol
+  - enjoyment
+  previous:
+    interviewer: Are you enjoying anything at the moment?
+    character: No, I don't enjoy football or seeing friends now. I turn down invitations and sit indoors
+      most days.
+- utterance: Is there anything you still look forward to doing?
+  topics:
+  - enjoyment
+  style: boundary
+  pair:
+  - alcohol
+  - enjoyment
+- utterance: Have you stopped seeing your friends?
+  topics:
+  - enjoyment
+  style: boundary
+  pair:
+  - alcohol
+  - enjoyment
+- utterance: um do you still get out and about with people
+  topics:
+  - enjoyment
+  style: boundary_spoken
+  pair:
+  - alcohol
+  - enjoyment
+- utterance: And what about hobbies, are you still getting anything out of them?
+  topics:
+  - enjoyment
+  style: boundary_follow_up
+  pair:
+  - alcohol
+  - enjoyment
+  previous:
+    interviewer: How much are you drinking?
+    character: I drink two cans of lager most evenings, more than before redundancy. I don't use recreational
+      drugs.
+- utterance: Do you gamble at all?
+  topics: []
+  style: near_miss
+  pair:
+  - alcohol
+  - enjoyment
+- utterance: Are you getting into debt?
+  topics: []
+  style: near_miss
+  pair:
+  - alcohol
+  - enjoyment
+- utterance: When did you begin to feel this way?
+  topics:
+  - onset
+  style: boundary
+  pair:
+  - onset
+  - past
+- utterance: Did the low mood come on after the redundancy?
+  topics:
+  - onset
+  style: boundary
+  pair:
+  - onset
+  - past
+- utterance: How much of each day do you feel low?
+  topics:
+  - onset
+  style: boundary_colloquial
+  pair:
+  - onset
+  - past
+- utterance: um so when did all this start
+  topics:
+  - onset
+  style: boundary_spoken
+  pair:
+  - onset
+  - past
+- utterance: And when did this particular episode start?
+  topics:
+  - onset
+  style: boundary_follow_up
+  pair:
+  - onset
+  - past
+  previous:
+    interviewer: Have you had depression before?
+    character: No, I've never had an episode like this, treatment for mental illness, or a spell of needing
+      little sleep while unusually energetic.
+- utterance: Have you ever been treated for a mental health problem?
+  topics:
+  - past
+  style: boundary
+  pair:
+  - onset
+  - past
+- utterance: Have you ever had spells of boundless energy where you needed hardly any sleep?
+  topics:
+  - past
+  style: boundary_colloquial
+  pair:
+  - onset
+  - past
+- utterance: um has this happened to you at any other time in your life
+  topics:
+  - past
+  style: boundary_spoken
+  pair:
+  - onset
+  - past
+- utterance: And has there been any other time you've felt like this?
+  topics:
+  - past
+  style: boundary_follow_up
+  pair:
+  - onset
+  - past
+  previous:
+    interviewer: When did it start?
+    character: I lost my job three months ago. For the last six weeks I've felt low nearly all day, even
+      when nothing particular has happened.
+- utterance: Does depression run in your family?
+  topics: []
+  style: near_miss
+  pair:
+  - onset
+  - past
+- utterance: Were you ever bullied at school?
+  topics: []
+  style: near_miss
+  pair:
+  - onset
+  - past

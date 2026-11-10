@@ -1,0 +1,159 @@
+# Training lines for the tone classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: adult-autism-developmental-collateral
+case_version: 0.1.0
+status: draft
+items:
+- utterance: What was he like as a young child?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Has he ever said he wanted to hurt himself?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: How do you feel looking back on how you responded when he was upset?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: um did anyone else in the family struggle in the same way
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: What happened when he was overwhelmed at school?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Would you mind telling me a little about his first years?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: If you don't mind me asking, how did you cope with his tantrums?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Good morning, Ruth, thank you for making the journey.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: I'm Dr Malik, a psychiatry trainee, and I'm seeing you with your son's permission.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: Have I understood correctly that you remember the main events but not the dates?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: check_understanding
+- utterance: Right. And how old was he then?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Okay, thanks, that's very helpful.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: That sounds really difficult.
+  empathy: 1
+  empathy_words: That sounds really difficult.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I'm sorry you had to go through that.
+  empathy: 1
+  empathy_words: I'm sorry you had to go through that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That must have been hard. How did the family manage?
+  empathy: 1
+  empathy_words: That must have been hard.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I'm sorry to hear that. How did school respond?
+  empathy: 1
+  empathy_words: I'm sorry to hear that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: It sounds as though you were doing your best to work out why he got so upset, and that you still carry some worry about whether you understood him. That shows how much you care.
+  empathy: 2
+  empathy_words: It sounds as though you were doing your best to work out why he got so upset, and that you still carry some worry about whether you understood him.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: How do you feel when you look back?
+    character: I'm ashamed that I called him stubborn when he was overwhelmed. I worry I failed to understand him.
+- utterance: It must be worrying to think people might see only a label when you know how many sides there are to him. Wanting him to be seen as a whole person makes complete sense.
+  empathy: 2
+  empathy_words: It must be worrying to think people might see only a label when you know how many sides there are to him.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: What do you hope for?
+    character: He wants practical help and has agreed to this assessment. I'm worried people will reduce him to a label.
+- utterance: You've been working hard to recall so many details from years ago while being careful about what you're sure of. That takes real effort.
+  empathy: 2
+  empathy_words: You've been working hard to recall so many details from years ago while being careful about what you're sure of.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: It must be unsettling to realise he may not tell you everything when all you want is to keep him safe. Would it be all right if I asked him directly as well?
+  empathy: 2
+  empathy_words: It must be unsettling to realise he may not tell you everything when all you want is to keep him safe.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: Has he said anything about wanting to harm himself?
+    character: He hasn't told me he wants to harm himself. I haven't asked directly, and he doesn't tell me everything.
+- utterance: Lots of children are fussy about noise, so that isn't unusual.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: so that isn't unusual
+  style: confront_statement
+- utterance: You'd have noticed if there was a real problem, wouldn't you?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You'd have noticed if there was a real problem, wouldn't you?
+  style: confront_tag
+- utterance: Try not to blame yourself, it was a long time ago and there's no point dwelling on it.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: there's no point dwelling on it
+  style: dismissive
+- utterance: Surely every boy of that age is stubborn at times and it's not worth worrying about.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: it's not worth worrying about
+  style: dismissive

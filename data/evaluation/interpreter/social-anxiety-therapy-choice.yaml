@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: social-anxiety-therapy-choice
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hello Louise, I'm one of the doctors here, nice to meet you."
+    expected: []
+    rapport: false
+  - utterance: "What kinds of situations do you find difficult?"
+    expected: [situations]
+    rapport: false
+  - utterance: "What goes through your mind when you're in a meeting?"
+    expected: [fear]
+    rapport: false
+  - utterance: "What happens in your body when you get anxious?"
+    expected: [body]
+    rapport: false
+  - utterance: "How do you cope with it day to day?"
+    expected: [strategies]
+    rapport: false
+  - utterance: "What would you like to be different if therapy worked?"
+    expected: [goals]
+    rapport: false
+  - utterance: "Have you had any treatment for this before?"
+    expected: [help]
+    rapport: false
+  - utterance: "How would you feel about coming every week, and doing some homework in between?"
+    expected: [commitment]
+    rapport: false
+  - utterance: "Have you ever had thoughts of harming yourself?"
+    expected: [risk]
+    rapport: false
+  - utterance: "do you ever have a drink to help with the nerves"
+    expected: [risk]
+    rapport: false
+  - utterance: "Would you rather do therapy one to one or in a group?"
+    expected: [preference]
+    rapport: false
+  - utterance: "It takes a lot of courage to come here when talking to new people is so hard."
+    expected: []
+    rapport: true
+  - utterance: "Living with this since your teens and hiding it at work sounds really lonely. How do you feel about yourself for having this?"
+    expected: [shame]
+    rapport: true
+  - utterance: "And what are you scared will happen if you do it?"
+    previous:
+      interviewer: "What would make you call in sick?"
+      character: "Usually a presentation coming up."
+    expected: [fear]
+    rapport: false
+  - utterance: "what's your main worry about it?"
+    previous:
+      interviewer: "Would weekly sessions be possible for you?"
+      character: "If it's arranged around work, yes."
+    expected: [commitment]
+    rapport: false
+  - utterance: "Does anyone in your family have anxiety?"
+    expected: []
+    rapport: false
+  - utterance: "Do you have any physical health problems?"
+    expected: []
+    rapport: false
+  - utterance: "So CBT would involve gradually facing those situations with support from a therapist."
+    expected: []
+    rapport: false

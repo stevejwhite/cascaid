@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: panic-avoidance-mental-state
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hi Owen, I'm one of the trainee psychiatrists. Thanks for coming in."
+    expected: []
+    rapport: false
+  - utterance: "Talk me through what happens in your body during one of these attacks."
+    expected: [attack-sensations]
+    rapport: false
+  - utterance: "When did they first start, and how often are you getting them now?"
+    expected: [course]
+    rapport: false
+  - utterance: "What goes through your mind when it's at its peak?"
+    expected: [catastrophic-thought]
+    rapport: false
+  - utterance: "In between attacks, do you find yourself worrying about having another one?"
+    expected: [anticipation]
+    rapport: false
+  - utterance: "What is it about buses that makes you steer clear of them?"
+    expected: [avoidance]
+    rapport: false
+  - utterance: "How has all this affected your work and home life?"
+    expected: [function]
+    rapport: false
+  - utterance: "How would you describe your mood generally?"
+    expected: [mood]
+    rapport: false
+  - utterance: "Have you had any thoughts of wanting to end your life?"
+    expected: [suicide-risk]
+    rapport: false
+  - utterance: "How much are you drinking at the moment?"
+    expected: [alcohol]
+    rapport: false
+  - utterance: "And is that something new for you?"
+    expected: [alcohol]
+    rapport: false
+    previous:
+      interviewer: "Do you drink alcohol at all, Owen?"
+      character: "A couple of cans before I go out, a few evenings a week."
+  - utterance: "How much caffeine do you have in a day, and any drugs?"
+    expected: [stimulants]
+    rapport: false
+  - utterance: "Has anyone checked your heart, like an ECG or bloods?"
+    expected: [physical-assessment]
+    rapport: false
+  - utterance: "during an attack do things around you ever feel unreal or far away"
+    expected: [unreality]
+    rapport: false
+  - utterance: "Does anything make it harder for you to ask people for help when it starts?"
+    expected: [embarrassment]
+    rapport: false
+  - utterance: "Does anyone know what you're going through?"
+    expected: [support]
+    rapport: false
+  - utterance: "It doesn't sound ridiculous at all, it sounds really frightening."
+    expected: []
+    rapport: true
+  - utterance: "Have you ever had panic attacks like this as a child?"
+    expected: []
+    rapport: false
+  - utterance: "Okay, thanks Owen, that gives me a clearer sense of the pattern."
+    expected: []
+    rapport: false

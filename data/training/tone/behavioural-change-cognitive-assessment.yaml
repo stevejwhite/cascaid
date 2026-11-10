@@ -1,0 +1,158 @@
+# Training lines for the tone classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: behavioural-change-cognitive-assessment
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Has anyone told you that you've been behaving differently?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Do you find yourself saying things you later regret?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: have you ever felt unsafe in the kitchen or on the road
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Do you ever feel that people treat you like a child?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: How are things between you and your family at the moment?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Sorry, would you mind telling me how you spend a typical day?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: If it's all right, could I ask how you manage your money?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Hello, I'm Dr Rees, one of the doctors in this older adult clinic.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: So your family are worried about some changes, but you feel things are mostly fine.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: summary
+- utterance: Right. And how long has it been like that?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Okay, thank you, that's helpful.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: That sounds frustrating.
+  empathy: 1
+  empathy_words: That sounds frustrating.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I'm sorry about that.
+  empathy: 1
+  empathy_words: I'm sorry about that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That sounds tiring. Do you find it hard when people correct you?
+  empathy: 1
+  empathy_words: That sounds tiring.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I can imagine that's annoying. What do you do when it happens?
+  empathy: 1
+  empathy_words: I can imagine that's annoying.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: It sounds as though being corrected all the time leaves you worried you'll lose your say
+    in decisions.
+  empathy: 2
+  empathy_words: It sounds as though being corrected all the time leaves you worried you'll lose your
+    say in decisions.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: How does it feel when they correct you?
+    character: I get cross when everyone corrects me. Underneath that I'm worried they won't let me decide
+      anything.
+- utterance: Having your spending questioned in front of the family sounds embarrassing, and I can see
+    why it stings.
+  empathy: 2
+  empathy_words: Having your spending questioned in front of the family sounds embarrassing, and I can
+    see why it stings.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: Has the family disagreed with you about spending?
+    character: I bought three expensive tool sets without asking my wife. She says we can't afford it;
+      I find that embarrassing.
+- utterance: I can hear that you feel your family are making more of this than they need to.
+  empathy: 2
+  empathy_words: I can hear that you feel your family are making more of this than they need to.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: You've clearly managed your own affairs for a long time, and I can see why being questioned
+    now feels unfair. What would help the most?
+  empathy: 2
+  empathy_words: You've clearly managed your own affairs for a long time, and I can see why being questioned
+    now feels unfair.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+- utterance: Your family wouldn't have sent you here if there were nothing wrong.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Your family wouldn't have sent you here if there were nothing wrong
+  style: confront_statement
+- utterance: Why on earth would you spend money you haven't got?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Why on earth would you spend money you haven't got
+  style: confront_why
+- utterance: You really should be taking this more seriously, Malcolm.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You really should be taking this more seriously
+  style: dismissive
+- utterance: Let's not go over all that again, we need to get on.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: we need to get on
+  style: dismissive

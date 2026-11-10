@@ -1,0 +1,160 @@
+# Training lines for the tone classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: young-carer-social-history
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Do you ever wake up wishing you weren't here?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Do you find yourself feeling resentful of your parent's illness?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: What happens when there isn't enough food in the house?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Which days is your parent hardest to look after?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: When did you first start doing these jobs at home?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: I hope you don't mind my asking, but do you cope on your own at night?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: sorry to ask, but would you be able to tell me who helps at home
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Good morning, Tessa. I'm one of the doctors from the young people's service.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: I'll write a few notes as we go, and nobody sees them without a good reason.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: explanation
+- utterance: Right. And how long has that been going on?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Okay, thanks for that.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: That sounds really hard.
+  empathy: 1
+  empathy_words: That sounds really hard.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I'm sorry you're going through this.
+  empathy: 1
+  empathy_words: I'm sorry you're going through this.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That sounds like a lot to deal with. Do you have any time to yourself?
+  empathy: 1
+  empathy_words: That sounds like a lot to deal with.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I'm sorry to hear that. How long has it been like this?
+  empathy: 1
+  empathy_words: I'm sorry to hear that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: Giving up football and worrying about leaving your mum every time you go out must feel lonely.
+  empathy: 2
+  empathy_words: Giving up football and worrying about leaving your mum every time you go out must feel
+    lonely.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: How do you spend your time outside lessons?
+    character: I text friends but rarely go out because I worry about leaving Mum. I stopped going to
+      football practice.
+- utterance: It must be frightening helping your mum up when you are struggling and have no clear backup
+    plan.
+  empathy: 2
+  empathy_words: It must be frightening helping your mum up when you are struggling and have no clear
+    backup plan.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: What happens when there is an accident at home?
+    character: I sometimes help Mum up when she falls, even though I struggle. I know to call for urgent
+      help if she is injured, but we don't have a clear backup plan.
+- utterance: It makes sense that you don't want a big fuss made about your family.
+  empathy: 2
+  empathy_words: It makes sense that you don't want a big fuss made about your family.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: You want your family to stay together safely, and that fear is completely understandable.
+    What would help you trust us?
+  empathy: 2
+  empathy_words: You want your family to stay together safely, and that fear is completely understandable.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: How do you feel about asking for help?
+    character: I'm scared asking for help will split our family up. I want someone to help us stay together
+      safely.
+- utterance: Someone should have noticed this was too much for a sixteen-year-old a long time ago.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Someone should have noticed this was too much for a sixteen-year-old a long time ago.
+  style: confront_statement
+- utterance: Why haven't you told anyone how bad it has got?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Why haven't you told anyone how bad it has got?
+  style: confront_why
+- utterance: Lots of teenagers have chores, so I wouldn't worry too much about it.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Lots of teenagers have chores, so I wouldn't worry too much about it.
+  style: dismissive
+- utterance: You'll be fine, I'm sure it will all sort itself out soon.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You'll be fine, I'm sure it will all sort itself out soon.
+  style: dismissive

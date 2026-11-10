@@ -1,0 +1,70 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: prison-hospital-transfer-discussion
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hi Marcus, I'm one of the psychiatry doctors working with the healthcare team here. Is it alright if we talk for a bit?"
+    expected: []
+    rapport: false
+  - utterance: "What's your understanding of why the move to hospital is being suggested?"
+    expected: [understanding]
+    rapport: false
+  - utterance: "Have you been feeling that anyone is watching you or keeping tabs on you?"
+    expected: [persecution]
+    rapport: false
+  - utterance: "Do you ever hear voices when there's no one around?"
+    expected: [voices]
+    rapport: false
+  - utterance: "How are you sleeping at the moment?"
+    expected: [sleep]
+    rapport: false
+  - utterance: "and your appetite, are you eating ok"
+    expected: [eating]
+    rapport: false
+  - utterance: "Have you had any thoughts of harming yourself or anyone else?"
+    expected: [safety]
+    rapport: false
+  - utterance: "Have you ever been on medication for your mental health?"
+    expected: [treatment-objection]
+    rapport: false
+  - utterance: "Do you know whether there's anyone you can go to if you want to challenge this decision?"
+    expected: [appeal-question]
+    rapport: false
+  - utterance: "What have you been told so far about the practical side, like where and when?"
+    expected: [next-steps]
+    rapport: false
+  - utterance: "Is there anyone you'd want us to let know about the move?"
+    expected: [family-contact]
+    rapport: false
+  - utterance: "It sounds really unsettling to be told you're moving without anyone explaining it to you."
+    expected: []
+    rapport: true
+  - utterance: "What worries you most about what agreeing to hospital might mean for you?"
+    expected: [legal-fear]
+    rapport: false
+  - utterance: "How would you like us to go through things with you so it feels fair?"
+    expected: [participation]
+    rapport: false
+  - utterance: "How long have you been sure about that?"
+    previous:
+      interviewer: "Do you feel anyone is monitoring you?"
+      character: "There's a hidden camera in my cell passing everything to people outside."
+    expected: [persecution]
+    rapport: false
+  - utterance: "Is that partly why you're against going into hospital?"
+    previous:
+      interviewer: "Have you taken medication before?"
+      character: "Once, during an admission three years ago. It made me very sleepy."
+    expected: [treatment-objection]
+    rapport: false
+  - utterance: "Do you have a solicitor at the moment?"
+    expected: []
+    rapport: false
+  - utterance: "Have you got any physical health problems, like diabetes or asthma?"
+    expected: []
+    rapport: false
+  - utterance: "I'll go through what the hospital is for and what your rights are there in a moment."
+    expected: []
+    rapport: false

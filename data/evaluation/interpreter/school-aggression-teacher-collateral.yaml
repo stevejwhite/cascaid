@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: school-aggression-teacher-collateral
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Morning Rachel, thanks for making time to meet with me."
+    expected: []
+    rapport: false
+  - utterance: "Could you describe the incidents that led to the exclusions?"
+    expected: [events]
+    rapport: false
+  - utterance: "How long has his behaviour been like this? Was he like this last year?"
+    expected: [pattern]
+    rapport: false
+  - utterance: "Are there particular situations that seem to set him off?"
+    expected: [triggers]
+    rapport: false
+  - utterance: "How's he getting on academically?"
+    expected: [learning]
+    rapport: false
+  - utterance: "Can he concentrate and sit still in class?"
+    expected: [attention]
+    rapport: false
+  - utterance: "does he do better with practical stuff in smaller groups"
+    expected: [attention]
+    rapport: false
+  - utterance: "Who does he get on with in his class?"
+    expected: [peers]
+    rapport: false
+  - utterance: "What do you know about things at home?"
+    expected: [home]
+    rapport: false
+  - utterance: "Have you had any safeguarding concerns about him?"
+    expected: [safeguarding]
+    rapport: false
+  - utterance: "has anyone ever teased him about that?"
+    previous:
+      interviewer: "What tends to happen just before an outburst?"
+      character: "Usually he's been asked to read aloud in front of the class."
+    expected: [peers]
+    rapport: false
+  - utterance: "Has he had a formal assessment for that?"
+    previous:
+      interviewer: "How far behind is his reading?"
+      character: "About two years behind."
+    expected: [learning]
+    rapport: false
+  - utterance: "It sounds like you really care about him and this term has been exhausting."
+    expected: []
+    rapport: true
+  - utterance: "How are you finding it, teaching him at the moment?"
+    expected: [reaction]
+    rapport: false
+  - utterance: "Having a chair thrown in your classroom must leave you feeling on edge every single day. Is there anything about how you've handled him that you'd do differently?"
+    expected: [regret]
+    rapport: true
+  - utterance: "Is he on any medication that you know of?"
+    expected: []
+    rapport: false
+  - utterance: "Does he have any brothers or sisters?"
+    expected: []
+    rapport: false
+  - utterance: "So he's had two exclusions this term and things seem to kick off around reading."
+    expected: []
+    rapport: false

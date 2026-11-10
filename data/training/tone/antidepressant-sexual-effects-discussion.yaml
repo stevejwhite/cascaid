@@ -1,0 +1,59 @@
+# Training lines for the tone classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: antidepressant-sexual-effects-discussion
+case_version: 0.1.0
+status: draft
+items:
+  - {utterance: "Have you noticed any change in your sex life since starting treatment?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "Have there been times you've thought about ending things?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "um how are things between you and your partner at the moment", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "How long have you been taking the tablets for?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "What were you told about side effects when you started?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "Sorry, I know this is personal, but may I ask whether it's affecting intimacy?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: polite_question}
+  - {utterance: "Would you mind if I asked a few questions about your mood first?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: polite_question}
+  - {utterance: "Good morning Daniel, I'm Dr Okafor, one of the psychiatrists here.", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: greeting}
+  - {utterance: "Hello, thanks for waiting, shall we make a start?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: greeting}
+  - {utterance: "So you're feeling better in mood, but you'd like to come off the tablets.", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: summary}
+  - {utterance: "Right. And when did that start?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: acknowledgement}
+  - {utterance: "right okay thanks for that", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: acknowledgement}
+  - {utterance: "I'm sorry to hear that.", empathy: 1, empathy_words: "I'm sorry to hear that.", confrontational: false, challenge_words: "", style: brief_empathy}
+  - {utterance: "That must be difficult.", empathy: 1, empathy_words: "That must be difficult.", confrontational: false, challenge_words: "", style: brief_empathy}
+  - {utterance: "That sounds hard. How long has it been going on?", empathy: 1, empathy_words: "That sounds hard.", confrontational: false, challenge_words: "", style: brief_empathy_question}
+  - {utterance: "I can understand that. What would you like to do about it?", empathy: 1, empathy_words: "I can understand that.", confrontational: false, challenge_words: "", style: brief_empathy_question}
+  - utterance: "It sounds really painful to feel ashamed and to pull away from your partner when it isn't about attraction at all."
+    empathy: 2
+    empathy_words: "It sounds really painful to feel ashamed and to pull away from your partner when it isn't about attraction at all."
+    confrontational: false
+    challenge_words: ""
+    style: specific_empathy
+    previous:
+      interviewer: "How have things been with your partner?"
+      character: "My partner thinks I'm no longer attracted to them. I feel ashamed and avoid being close because I don't know how to explain it."
+  - utterance: "You want this problem taken seriously and a real say in any change, and that's completely fair."
+    empathy: 2
+    empathy_words: "You want this problem taken seriously and a real say in any change, and that's completely fair."
+    confrontational: false
+    challenge_words: ""
+    style: specific_empathy
+    previous:
+      interviewer: "What would you like to happen with your treatment?"
+      character: "I want the sexual problem taken seriously while keeping the mood improvement. I'd consider a change, but I don't want another medicine chosen without discussing it."
+  - utterance: "Feeling better but not wanting to keep taking the very thing that helped must leave you quite torn."
+    empathy: 2
+    empathy_words: "Feeling better but not wanting to keep taking the very thing that helped must leave you quite torn."
+    confrontational: false
+    challenge_words: ""
+    style: specific_empathy
+  - utterance: "Losing your desire and struggling to reach orgasm, when that was never a problem before, sounds really distressing. How has that been for you day to day?"
+    empathy: 2
+    empathy_words: "Losing your desire and struggling to reach orgasm, when that was never a problem before, sounds really distressing."
+    confrontational: false
+    challenge_words: ""
+    style: specific_empathy_question
+    previous:
+      interviewer: "Has the medication changed your interest in sex?"
+      character: "Since the dose increased, my desire has fallen and I often can't reach orgasm. That wasn't a problem before treatment."
+  - {utterance: "Honestly, a bit of sexual side effect is a small price to pay for feeling well.", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "a bit of sexual side effect is a small price to pay for feeling well", style: confront_statement}
+  - {utterance: "Why on earth would you stop something that's working?", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "Why on earth would you stop something that's working?", style: confront_why}
+  - {utterance: "Let's not dwell on the sex side too much, the main thing is your mood is better.", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "Let's not dwell on the sex side too much", style: dismissive}
+  - {utterance: "well lots of people just put up with it you know", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "lots of people just put up with it", style: dismissive}

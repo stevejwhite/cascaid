@@ -1,0 +1,227 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: asylum-trauma-mental-state
+case_version: 0.1.0
+status: draft
+items:
+  # intrusions vs nightmares
+  - utterance: During the day, do memories of what happened push their way into your mind?
+    topics: [intrusions]
+    style: boundary
+    pair: [intrusions, nightmares]
+  - utterance: do you ever feel like it's happening all over again while you're awake
+    topics: [intrusions]
+    style: boundary_spoken
+    pair: [intrusions, nightmares]
+  - utterance: Do you get flashbacks that take you right back there, even when you're not trying to sleep?
+    topics: [intrusions]
+    style: boundary_colloquial
+    pair: [intrusions, nightmares]
+  - utterance: How often do these unwanted memories come to you, and what are they like?
+    topics: [intrusions]
+    style: boundary
+    pair: [intrusions, nightmares]
+  - utterance: And do they ever feel so real that you forget where you are?
+    topics: [intrusions]
+    style: boundary_follow_up
+    pair: [intrusions, nightmares]
+    previous:
+      interviewer: You mentioned intrusive memories. Do they come often?
+      character: Yes, memories break in every day. For a few moments I feel as if I'm back in danger, then I realise I'm here.
+  - utterance: How many nights a week do you have bad dreams?
+    topics: [nightmares]
+    style: boundary
+    pair: [intrusions, nightmares]
+  - utterance: and when you do sleep, how much are you getting a night
+    topics: [nightmares]
+    style: boundary_spoken
+    pair: [intrusions, nightmares]
+  - utterance: Do you wake up frightened or in a sweat after you've been dreaming?
+    topics: [nightmares]
+    style: boundary_colloquial
+    pair: [intrusions, nightmares]
+  - utterance: Once you wake from one of those dreams, can you get back to sleep?
+    topics: [nightmares]
+    style: boundary
+    pair: [intrusions, nightmares]
+  - utterance: And how many hours does that leave you with each night?
+    topics: [nightmares]
+    style: boundary_follow_up
+    pair: [intrusions, nightmares]
+    previous:
+      interviewer: Are your sleeping problems linked to scary dreams?
+      character: I have frightening dreams four nights a week and wake sweating. I get about four hours of broken sleep.
+  - utterance: Do you hear or see anything that other people can't?
+    topics: []
+    style: near_miss
+    pair: [intrusions, nightmares]
+  - utterance: Are you taking anything to help you sleep?
+    topics: []
+    style: near_miss
+    pair: [intrusions, nightmares]
+  # avoidance vs intrusions
+  - utterance: Do you keep clear of certain situations because they would bring it all back?
+    topics: [avoidance]
+    style: boundary
+    pair: [avoidance, intrusions]
+  - utterance: do you keep away from anything that might set the memories off
+    topics: [avoidance]
+    style: boundary_spoken
+    pair: [avoidance, intrusions]
+  - utterance: Would you rather not talk about what you went through, at least today?
+    topics: [avoidance]
+    style: boundary_colloquial
+    pair: [avoidance, intrusions]
+  - utterance: Do you steer clear of television or certain types of transport since this started?
+    topics: [avoidance]
+    style: boundary
+    pair: [avoidance, intrusions]
+  - utterance: Is there anything you now go out of your way not to do because of that?
+    topics: [avoidance]
+    style: boundary_follow_up
+    pair: [avoidance, intrusions]
+    previous:
+      interviewer: Do the memories come back suddenly?
+      character: Yes, memories break in every day. For a few moments I feel as if I'm back in danger, then I realise I'm here.
+  - utterance: Do the memories come back by themselves, without anything prompting them?
+    topics: [intrusions]
+    style: boundary
+    pair: [avoidance, intrusions]
+  - utterance: so when it comes back to you what's that like in the moment
+    topics: [intrusions]
+    style: boundary_spoken
+    pair: [avoidance, intrusions]
+  - utterance: Do you get a sense of being back in danger, even though you know you're safe?
+    topics: [intrusions]
+    style: boundary_colloquial
+    pair: [avoidance, intrusions]
+  - utterance: Tell me about the times when the past seems to break in on you.
+    topics: [intrusions]
+    style: boundary
+    pair: [avoidance, intrusions]
+  - utterance: And how long do those moments last before you come back to the present?
+    topics: [intrusions]
+    style: boundary_follow_up
+    pair: [avoidance, intrusions]
+    previous:
+      interviewer: Do you avoid reminders of what happened?
+      character: I avoid news footage and crowded buses because they bring the memories back. I don't want to describe the events today.
+  - utterance: Do you have any thoughts that you might be in danger now?
+    topics: []
+    style: near_miss
+    pair: [avoidance, intrusions]
+  - utterance: Do you use alcohol to block out the memories?
+    topics: []
+    style: near_miss
+    pair: [avoidance, intrusions]
+  # avoidance vs practical
+  - utterance: Is there anywhere you don't go any more because of what happened?
+    topics: [avoidance]
+    style: boundary
+    pair: [avoidance, practical]
+  - utterance: do you find you steer clear of using public transport
+    topics: [avoidance]
+    style: boundary_spoken
+    pair: [avoidance, practical]
+  - utterance: Have you stopped doing things you used to do because they make you uncomfortable?
+    topics: [avoidance]
+    style: boundary_colloquial
+    pair: [avoidance, practical]
+  - utterance: Would you be happy to go over the events with me, or would you prefer not to?
+    topics: [avoidance]
+    style: boundary
+    pair: [avoidance, practical]
+  - utterance: Is that because of what it brings back, rather than how much it costs?
+    topics: [avoidance]
+    style: boundary_follow_up
+    pair: [avoidance, practical]
+    previous:
+      interviewer: Do you manage to get around town on buses?
+      character: I'm in temporary accommodation and may be moved again. I worry about my claim and have little money for transport.
+  - utterance: Where are you living at the moment, and is it secure?
+    topics: [practical]
+    style: boundary
+    pair: [avoidance, practical]
+  - utterance: is money a worry for you at the moment, like getting around
+    topics: [practical]
+    style: boundary_spoken
+    pair: [avoidance, practical]
+  - utterance: How are you managing for money and getting to appointments?
+    topics: [practical]
+    style: boundary_colloquial
+    pair: [avoidance, practical]
+  - utterance: Are you worried about how your application is going?
+    topics: [practical]
+    style: boundary
+    pair: [avoidance, practical]
+  - utterance: And is there a chance you'll have to move again soon?
+    topics: [practical]
+    style: boundary_follow_up
+    pair: [avoidance, practical]
+    previous:
+      interviewer: Is it hard to come to places like this community centre?
+      character: I avoid news footage and crowded buses because they bring the memories back. I don't want to describe the events today.
+  - utterance: Do you have any family in this country who could help out?
+    topics: []
+    style: near_miss
+    pair: [avoidance, practical]
+  - utterance: Do you have a legal representative helping you?
+    topics: []
+    style: near_miss
+    pair: [avoidance, practical]
+  # avoidance vs trust
+  - utterance: Are there things you'd rather not be reminded of, or not discuss with me?
+    topics: [avoidance]
+    style: boundary
+    pair: [avoidance, trust]
+  - utterance: is there anything you keep away from so you don't think about it
+    topics: [avoidance]
+    style: boundary_spoken
+    pair: [avoidance, trust]
+  - utterance: Do you find yourself changing what you watch or where you go to dodge the memories?
+    topics: [avoidance]
+    style: boundary_colloquial
+    pair: [avoidance, trust]
+  - utterance: Would going into detail about the past today be too much for you?
+    topics: [avoidance]
+    style: boundary
+    pair: [avoidance, trust]
+  - utterance: Is that something you try not to think about as well?
+    topics: [avoidance]
+    style: boundary_follow_up
+    pair: [avoidance, trust]
+    previous:
+      interviewer: Is there something that makes you hesitate to share things with me?
+      character: I avoid news footage and crowded buses because they bring the memories back. I don't want to describe the events today.
+  - utterance: Are you worried about who might see what we write down about you?
+    topics: [trust]
+    style: boundary
+    pair: [avoidance, trust]
+  - utterance: um is there anyone you can talk to regularly about all this
+    topics: [trust]
+    style: boundary_spoken
+    pair: [avoidance, trust]
+  - utterance: Do you have any concerns that what you tell me might get back to the people dealing with your case?
+    topics: [trust]
+    style: boundary_colloquial
+    pair: [avoidance, trust]
+  - utterance: Who do you feel you can confide in at the moment?
+    topics: [trust]
+    style: boundary
+    pair: [avoidance, trust]
+  - utterance: And is that someone you speak to often?
+    topics: [trust]
+    style: boundary_follow_up
+    pair: [avoidance, trust]
+    previous:
+      interviewer: Do you have anyone to lean on?
+      character: I'm afraid personal details might reach people dealing with my claim without my agreement. My sister abroad is the only person I talk to regularly.
+  - utterance: Would you prefer to see a female doctor from now on?
+    topics: []
+    style: near_miss
+    pair: [avoidance, trust]
+  - utterance: Do you feel safe where you are living?
+    topics: []
+    style: near_miss
+    pair: [avoidance, trust]

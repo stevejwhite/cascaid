@@ -1,0 +1,862 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: bereavement-grief-depression-history
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Was her death sudden?
+  topics:
+  - loss
+  style: closed
+- utterance: What happened to her, if you don't mind me asking?
+  topics:
+  - loss
+  style: colloquial
+- utterance: What were the circumstances of your wife's death?
+  topics:
+  - loss
+  style: clinical
+- utterance: I wondered if you'd tell me about her illness
+  topics:
+  - loss
+  style: indirect
+- utterance: I'm so sorry for your loss. How long were the two of you together?
+  topics:
+  - loss
+  style: empathy_then_question
+- utterance: um so how long were you married, and when did she go
+  topics:
+  - loss
+  style: spoken
+- utterance: Her illness?
+  topics:
+  - loss
+  style: brief
+- utterance: Could you tell me what happened to her?
+  topics:
+  - loss
+  style: follow_up
+  previous:
+    interviewer: Do you spend a lot of time thinking about her?
+    character: I spend hours thinking about her every day and wishing she would come through the door.
+      Part of me still finds it hard to accept she's gone.
+- utterance: And how long had you been married?
+  topics:
+  - loss
+  style: follow_up
+  previous:
+    interviewer: How do you want to remember her?
+    character: Remembering her on important dates matters to me. I don't believe I must stop grieving,
+      but I want to find a way to take part in life again.
+- utterance: She was ill for a long time before she died, wasn't she?
+  topics:
+  - loss
+  style: leading
+- utterance: Tell me about your marriage and how long it lasted
+  topics:
+  - loss
+  style: open
+- utterance: How long did you two have together?
+  topics:
+  - loss
+  style: colloquial
+- utterance: Did she die at home or in hospital?
+  topics:
+  - loss
+  style: closed
+- utterance: so when was it exactly that she passed
+  topics:
+  - loss
+  style: spoken
+- utterance: How much of the day do you spend thinking about her?
+  topics:
+  - yearning
+  style: open
+- utterance: Do you find yourself longing for her?
+  topics:
+  - yearning
+  style: closed
+- utterance: Do you still half expect her to walk in?
+  topics:
+  - yearning
+  style: colloquial
+- utterance: Do you experience yearning for the deceased?
+  topics:
+  - yearning
+  style: clinical
+- utterance: I wondered how present she is in your thoughts through the day
+  topics:
+  - yearning
+  style: indirect
+- utterance: That sounds so painful. Is it hard to accept that she has gone?
+  topics:
+  - yearning
+  style: empathy_then_question
+- utterance: um do you think about her a lot, like all the time
+  topics:
+  - yearning
+  style: spoken
+- utterance: Missing her?
+  topics:
+  - yearning
+  style: brief
+- utterance: And how much do you think about her now?
+  topics:
+  - yearning
+  style: follow_up
+  previous:
+    interviewer: Can you tell me what happened to her?
+    character: My wife died twelve months ago after a short illness. We'd been married for forty-eight
+      years.
+- utterance: Do you find it hard to believe she's gone?
+  topics:
+  - yearning
+  style: follow_up
+  previous:
+    interviewer: How have you been sleeping?
+    character: I sleep about five hours, often waking and reaching for her. I don't feel rested.
+- utterance: You miss her terribly, I expect?
+  topics:
+  - yearning
+  style: leading
+- utterance: What goes through your mind when you think of her?
+  topics:
+  - yearning
+  style: open
+- utterance: Does it still feel unreal to you?
+  topics:
+  - yearning
+  style: colloquial
+- utterance: Do you spend hours dwelling on her?
+  topics:
+  - yearning
+  style: closed
+- utterance: so does it still feel like she might be about to, you know, come home
+  topics:
+  - yearning
+  style: spoken
+- utterance: Which things have you found yourself keeping away from since she died?
+  topics:
+  - avoidance
+  style: open
+- utterance: Have you stopped doing any activities you used to do together?
+  topics:
+  - avoidance
+  style: closed
+- utterance: Is there stuff you can't bring yourself to go back to?
+  topics:
+  - avoidance
+  style: colloquial
+- utterance: Have you been avoiding reminders of your wife?
+  topics:
+  - avoidance
+  style: clinical
+- utterance: I wondered what's happened to her belongings
+  topics:
+  - avoidance
+  style: indirect
+- utterance: That sounds very hard. Have you changed what you do or where you go since she died?
+  topics:
+  - avoidance
+  style: empathy_then_question
+- utterance: um have you given up anything you used to do, like together
+  topics:
+  - avoidance
+  style: spoken
+- utterance: Avoiding any reminders?
+  topics:
+  - avoidance
+  style: brief
+- utterance: Are there places or things that make that feeling worse so you stay away?
+  topics:
+  - avoidance
+  style: follow_up
+  previous:
+    interviewer: Do you wish she would come back?
+    character: I spend hours thinking about her every day and wishing she would come through the door.
+      Part of me still finds it hard to accept she's gone.
+- utterance: Her things are still where she left them, I imagine?
+  topics:
+  - avoidance
+  style: leading
+- utterance: How have you dealt with her clothes and things?
+  topics:
+  - avoidance
+  style: open
+- utterance: Have you been able to clear out her stuff?
+  topics:
+  - avoidance
+  style: colloquial
+- utterance: Have you stopped going to clubs or groups?
+  topics:
+  - avoidance
+  style: closed
+- utterance: so is there anything you just can't face doing now
+  topics:
+  - avoidance
+  style: spoken
+- utterance: How has your mood been through the day?
+  topics:
+  - mood
+  style: open
+- utterance: Does the sadness come and go?
+  topics:
+  - mood
+  style: closed
+- utterance: Are there times when you feel a bit lighter?
+  topics:
+  - mood
+  style: colloquial
+- utterance: Is your low mood constant or does it fluctuate?
+  topics:
+  - mood
+  style: clinical
+- utterance: I wondered what the low points are like for you
+  topics:
+  - mood
+  style: indirect
+- utterance: I can see it weighs on you. Does the sadness come in waves?
+  topics:
+  - mood
+  style: empathy_then_question
+- utterance: um is it like all day sad or does it come and go
+  topics:
+  - mood
+  style: spoken
+- utterance: And your mood?
+  topics:
+  - mood
+  style: brief
+- utterance: How are you in between visits, are you low all the time?
+  topics:
+  - mood
+  style: follow_up
+  previous:
+    interviewer: Is there anything you still enjoy?
+    character: Yes, I can enjoy my grandchildren's visits and laugh with them, though afterwards I miss
+      being able to tell her about it.
+- utterance: Does the sadness hit you more when something reminds you of her?
+  topics:
+  - mood
+  style: follow_up
+  previous:
+    interviewer: Have you stopped doing things you did together?
+    character: I haven't returned to the gardening club because we went together. I leave her side of
+      the wardrobe untouched.
+- utterance: You've been miserable pretty much every minute, haven't you?
+  topics:
+  - mood
+  style: leading
+- utterance: What triggers the sadness?
+  topics:
+  - mood
+  style: open
+- utterance: Do you have any better spells in the day?
+  topics:
+  - mood
+  style: colloquial
+- utterance: Do you feel low even when nothing reminds you of her?
+  topics:
+  - mood
+  style: closed
+- utterance: so how bad does it get, like is it constant
+  topics:
+  - mood
+  style: spoken
+- utterance: What do you still enjoy these days?
+  topics:
+  - enjoyment
+  style: open
+- utterance: Can you still laugh?
+  topics:
+  - enjoyment
+  style: closed
+- utterance: Is there anything that cheers you up?
+  topics:
+  - enjoyment
+  style: colloquial
+- utterance: Have you retained the capacity for pleasure?
+  topics:
+  - enjoyment
+  style: clinical
+- utterance: I wondered if there are moments when you find some joy
+  topics:
+  - enjoyment
+  style: indirect
+- utterance: It's good to hear you're managing. Do you still find any pleasure in things?
+  topics:
+  - enjoyment
+  style: empathy_then_question
+- utterance: um is there anything you still look forward to, like family or whatever
+  topics:
+  - enjoyment
+  style: spoken
+- utterance: Anything enjoyable?
+  topics:
+  - enjoyment
+  style: brief
+- utterance: And are there times when you can enjoy yourself?
+  topics:
+  - enjoyment
+  style: follow_up
+  previous:
+    interviewer: Is the sadness there all the time?
+    character: The sadness comes in waves, often with reminders. Between them I can feel quieter, rather
+      than miserable every minute.
+- utterance: When your family visit, do you get anything out of it?
+  topics:
+  - enjoyment
+  style: follow_up
+  previous:
+    interviewer: Who phones or visits you?
+    character: My daughter phones daily and visits weekly. My faith community has invited me back, but
+      I haven't felt ready.
+- utterance: Nothing gives you any pleasure any more, does it?
+  topics:
+  - enjoyment
+  style: leading
+- utterance: Tell me about the good moments, if there are any
+  topics:
+  - enjoyment
+  style: open
+- utterance: Does having family around lift your spirits at all?
+  topics:
+  - enjoyment
+  style: colloquial
+- utterance: Do you still smile or laugh sometimes?
+  topics:
+  - enjoyment
+  style: closed
+- utterance: so does anything still make you happy
+  topics:
+  - enjoyment
+  style: spoken
+- utterance: Do you wake in the night?
+  topics:
+  - sleep
+  style: closed
+- utterance: Are you getting a decent night's kip?
+  topics:
+  - sleep
+  style: colloquial
+- utterance: Have you had any sleep disturbance?
+  topics:
+  - sleep
+  style: clinical
+- utterance: I wondered how your nights are
+  topics:
+  - sleep
+  style: indirect
+- utterance: That must be exhausting. How many hours do you get?
+  topics:
+  - sleep
+  style: empathy_then_question
+- utterance: um do you sleep ok, or wake up a lot
+  topics:
+  - sleep
+  style: spoken
+- utterance: And sleep?
+  topics:
+  - sleep
+  style: brief
+- utterance: What are the nights like for you?
+  topics:
+  - sleep
+  style: follow_up
+  previous:
+    interviewer: Do you spend a lot of time thinking about her?
+    character: I spend hours thinking about her every day and wishing she would come through the door.
+      Part of me still finds it hard to accept she's gone.
+- utterance: Are you sleeping any better than you're eating?
+  topics:
+  - sleep
+  style: follow_up
+  previous:
+    interviewer: I eat less because cooking for one feels pointless.
+    character: I eat less because cooking for one feels pointless. I've lost three kilograms over the
+      year.
+- utterance: You don't sleep well, do you?
+  topics:
+  - sleep
+  style: leading
+- utterance: What happens when you wake up in the night?
+  topics:
+  - sleep
+  style: open
+- utterance: Do you feel rested in the morning?
+  topics:
+  - sleep
+  style: colloquial
+- utterance: Do you sleep through to morning?
+  topics:
+  - sleep
+  style: closed
+- utterance: so how many hours do you get, roughly
+  topics:
+  - sleep
+  style: spoken
+- utterance: How is your appetite?
+  topics:
+  - appetite
+  style: open
+- utterance: Have you lost any weight?
+  topics:
+  - appetite
+  style: closed
+- utterance: Are you eating properly these days?
+  topics:
+  - appetite
+  style: colloquial
+- utterance: Have there been changes in appetite or weight?
+  topics:
+  - appetite
+  style: clinical
+- utterance: I wondered how you manage with meals
+  topics:
+  - appetite
+  style: indirect
+- utterance: It must be lonely in the house. Are you eating less than you used to?
+  topics:
+  - appetite
+  style: empathy_then_question
+- utterance: um so are you eating enough, like cooking and that
+  topics:
+  - appetite
+  style: spoken
+- utterance: And eating?
+  topics:
+  - appetite
+  style: brief
+- utterance: How about your appetite, is that affected?
+  topics:
+  - appetite
+  style: follow_up
+  previous:
+    interviewer: How have you been sleeping?
+    character: I sleep about five hours, often waking and reaching for her. I don't feel rested.
+- utterance: Who does the cooking now?
+  topics:
+  - appetite
+  style: follow_up
+  previous:
+    interviewer: When did she die?
+    character: My wife died twelve months ago after a short illness. We'd been married for forty-eight
+      years.
+- utterance: You've gone off your food since she died, haven't you?
+  topics:
+  - appetite
+  style: leading
+- utterance: What do you have to eat in a normal day?
+  topics:
+  - appetite
+  style: open
+- utterance: Do you bother cooking for yourself?
+  topics:
+  - appetite
+  style: colloquial
+- utterance: Do your clothes feel looser?
+  topics:
+  - appetite
+  style: closed
+- utterance: so have you dropped any weight at all
+  topics:
+  - appetite
+  style: spoken
+- utterance: Who do you have around you at the moment?
+  topics:
+  - support
+  style: open
+- utterance: Does anyone visit you regularly?
+  topics:
+  - support
+  style: closed
+- utterance: Who's keeping an eye on you?
+  topics:
+  - support
+  style: colloquial
+- utterance: What social supports do you have in place?
+  topics:
+  - support
+  style: clinical
+- utterance: I wondered who you can lean on
+  topics:
+  - support
+  style: indirect
+- utterance: It sounds a lonely time. Do you have family close by?
+  topics:
+  - support
+  style: empathy_then_question
+- utterance: um who comes to see you, or phones and that
+  topics:
+  - support
+  style: spoken
+- utterance: Family and friends?
+  topics:
+  - support
+  style: brief
+- utterance: Who has been with you since then?
+  topics:
+  - support
+  style: follow_up
+  previous:
+    interviewer: When did she die?
+    character: My wife died twelve months ago after a short illness. We'd been married for forty-eight
+      years.
+- utterance: Has anyone from your community been in touch?
+  topics:
+  - support
+  style: follow_up
+  previous:
+    interviewer: Have you stopped doing things you did together?
+    character: I haven't returned to the gardening club because we went together. I leave her side of
+      the wardrobe untouched.
+- utterance: You've got plenty of people checking on you, haven't you?
+  topics:
+  - support
+  style: leading
+- utterance: Tell me about the people who look in on you
+  topics:
+  - support
+  style: open
+- utterance: Do you have a religious community you could turn to?
+  topics:
+  - support
+  style: colloquial
+- utterance: Does your family phone you regularly?
+  topics:
+  - support
+  style: closed
+- utterance: so who's around for you, family or whoever
+  topics:
+  - support
+  style: spoken
+- utterance: Is there anything about her death that you find hard to stop thinking about?
+  topics:
+  - guilt
+  style: open
+- utterance: Do you blame yourself in any way?
+  topics:
+  - guilt
+  style: closed
+- utterance: Do you ever feel it was your fault?
+  topics:
+  - guilt
+  style: colloquial
+- utterance: Do you experience guilt related to her death?
+  topics:
+  - guilt
+  style: clinical
+- utterance: I wondered whether anything weighs on you about those last weeks
+  topics:
+  - guilt
+  style: indirect
+- utterance: You've told me so much already. Is there anything you wish you'd done differently?
+  topics:
+  - guilt
+  style: empathy_then_question
+- utterance: um is there a thing you keep going over, like regrets
+  topics:
+  - guilt
+  style: spoken
+- utterance: Any regrets?
+  topics:
+  - guilt
+  style: brief
+- utterance: Do you ever wonder whether things could have gone differently?
+  topics:
+  - guilt
+  style: follow_up
+  previous:
+    interviewer: Can you tell me what happened to her?
+    character: My wife died twelve months ago after a short illness. We'd been married for forty-eight
+      years.
+- utterance: Is there something you go over in your mind?
+  topics:
+  - guilt
+  style: follow_up
+  previous:
+    interviewer: Do you spend a lot of time thinking about her?
+    character: I spend hours thinking about her every day and wishing she would come through the door.
+      Part of me still finds it hard to accept she's gone.
+- utterance: You feel you should have done more, don't you?
+  topics:
+  - guilt
+  style: leading
+- utterance: If it feels all right, could we talk about anything you find painful to think about?
+  topics:
+  - guilt
+  style: open
+- utterance: Do you ever torment yourself with what-ifs?
+  topics:
+  - guilt
+  style: colloquial
+- utterance: Do you wish you had noticed something sooner?
+  topics:
+  - guilt
+  style: closed
+- utterance: so was there anything you um wish had gone differently
+  topics:
+  - guilt
+  style: spoken
+- utterance: How do you feel about your own future?
+  topics:
+  - death-wish
+  style: open
+- utterance: Do you ever wish you could be with her?
+  topics:
+  - death-wish
+  style: closed
+- utterance: Do you ever wish you weren't here either?
+  topics:
+  - death-wish
+  style: colloquial
+- utterance: Have you had any thoughts of suicide?
+  topics:
+  - death-wish
+  style: clinical
+- utterance: I wondered whether life has ever felt not worth carrying on
+  topics:
+  - death-wish
+  style: indirect
+- utterance: I can hear how much you miss her. Have you had thoughts of ending your life?
+  topics:
+  - death-wish
+  style: empathy_then_question
+- utterance: um sorry to ask but have you thought about not wanting to be here
+  topics:
+  - death-wish
+  style: spoken
+- utterance: Thoughts of suicide?
+  topics:
+  - death-wish
+  style: brief
+- utterance: Do those thoughts ever turn to wishing you could join her?
+  topics:
+  - death-wish
+  style: follow_up
+  previous:
+    interviewer: Do you spend a lot of time thinking about her?
+    character: I spend hours thinking about her every day and wishing she would come through the door.
+      Part of me still finds it hard to accept she's gone.
+- utterance: Have you made any plans to end your life?
+  topics:
+  - death-wish
+  style: follow_up
+  previous:
+    interviewer: Is the sadness there all the time?
+    character: The sadness comes in waves, often with reminders. Between them I can feel quieter, rather
+      than miserable every minute.
+- utterance: Sometimes you feel you'd be better off dead, don't you?
+  topics:
+  - death-wish
+  style: leading
+- utterance: Would you be able to tell me if you've had dark thoughts?
+  topics:
+  - death-wish
+  style: open
+- utterance: Have you thought of hurting yourself?
+  topics:
+  - death-wish
+  style: colloquial
+- utterance: Have you prepared anything or made any plans?
+  topics:
+  - death-wish
+  style: closed
+- utterance: so um have you had any thoughts of taking your own life
+  topics:
+  - death-wish
+  style: spoken
+- utterance: What does remembering her mean to you?
+  topics:
+  - meaning
+  style: open
+- utterance: Are there special dates you mark?
+  topics:
+  - meaning
+  style: closed
+- utterance: How do you want to carry on from here?
+  topics:
+  - meaning
+  style: colloquial
+- utterance: What are your hopes for re-engaging with life?
+  topics:
+  - meaning
+  style: clinical
+- utterance: I wondered how your beliefs shape the way you grieve
+  topics:
+  - meaning
+  style: indirect
+- utterance: She was clearly very special. How do you want to remember her?
+  topics:
+  - meaning
+  style: empathy_then_question
+- utterance: um are there customs you keep, like anniversaries
+  topics:
+  - meaning
+  style: spoken
+- utterance: Important dates?
+  topics:
+  - meaning
+  style: brief
+- utterance: Is there anything you'd like to be able to do again?
+  topics:
+  - meaning
+  style: follow_up
+  previous:
+    interviewer: Have you stopped doing things you did together?
+    character: I haven't returned to the gardening club because we went together. I leave her side of
+      the wardrobe untouched.
+- utterance: What would you hope to do again in time?
+  topics:
+  - meaning
+  style: follow_up
+  previous:
+    interviewer: Do you ever wish you could be with her?
+    character: Sometimes I wish I could be with her, but I haven't planned or prepared to end my life.
+      I want to see my grandchildren grow up.
+- utterance: You feel you'll never be able to take part in anything again, don't you?
+  topics:
+  - meaning
+  style: leading
+- utterance: How do you see yourself getting back to life?
+  topics:
+  - meaning
+  style: open
+- utterance: Do you think you should stop grieving?
+  topics:
+  - meaning
+  style: colloquial
+- utterance: Do you have traditions that help you remember her?
+  topics:
+  - meaning
+  style: closed
+- utterance: so what would you like life to look like in time
+  topics:
+  - meaning
+  style: spoken
+- utterance: Do you blame yourself for anything, and have you thought of ending your life?
+  topics:
+  - guilt
+  - death-wish
+  style: stacked
+- utterance: What do you still enjoy, and who is around to support you?
+  topics:
+  - enjoyment
+  - support
+  style: stacked
+- utterance: Is there anything you've stopped doing, and what do the important dates mean to you?
+  topics:
+  - avoidance
+  - meaning
+  style: stacked
+- utterance: Good afternoon, Arthur.
+  topics: []
+  style: greeting
+- utterance: Hello Arthur, thank you for having me in.
+  topics: []
+  style: greeting
+- utterance: Hi Arthur, it's good to meet you.
+  topics: []
+  style: greeting
+- utterance: My name is Dr Rees and I'm from the older adult mental health team.
+  topics: []
+  style: introduction
+- utterance: Arthur, I'm a doctor who has come to see how you're getting on.
+  topics: []
+  style: introduction
+- utterance: I'm one of the community doctors, and your GP asked me to call.
+  topics: []
+  style: introduction
+- utterance: Is it all right if we sit and talk for a while?
+  topics: []
+  style: introduction
+- utterance: What would you like to start with?
+  topics: []
+  style: introduction
+- utterance: Before we start, is there anything you'd like to ask me?
+  topics: []
+  style: introduction
+- utterance: I'd like to move on to something different now.
+  topics: []
+  style: transition
+- utterance: Shall we talk a bit about how you're looking after yourself?
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Arthur.
+  topics: []
+  style: closing
+- utterance: Thank you for letting me into your home today.
+  topics: []
+  style: closing
+- utterance: It sounds as though the days are very long without her.
+  topics: []
+  style: empathy
+- utterance: Forty-eight years is a long time to share your life.
+  topics: []
+  style: empathy
+- utterance: I'm sorry, this must be very painful to talk about.
+  topics: []
+  style: empathy
+- utterance: You've clearly cared for her a great deal.
+  topics: []
+  style: empathy
+- utterance: So the days revolve around her, and you've found some things hard to go back to.
+  topics: []
+  style: summary
+- utterance: Let me pull together what you've told me so far.
+  topics: []
+  style: summary
+- utterance: To sum up, you have people around you, but nights and mealtimes are hard.
+  topics: []
+  style: summary
+- utterance: I'm here to listen and to understand how you are, not to hurry you.
+  topics: []
+  style: explanation
+- utterance: Everyone grieves in their own way, and there's no set time for it.
+  topics: []
+  style: explanation
+- utterance: What you tell me stays within the team looking after you.
+  topics: []
+  style: explanation
+- utterance: Does that sound right so far?
+  topics: []
+  style: check_understanding
+- utterance: Have I understood you properly?
+  topics: []
+  style: check_understanding
+- utterance: Is it clear why I'm asking these things?
+  topics: []
+  style: check_understanding
+- utterance: Do you have any health problems of your own?
+  topics: []
+  style: off_case
+- utterance: Have you been drinking more since she died?
+  topics: []
+  style: off_case
+- utterance: Did you work as a gardener?
+  topics: []
+  style: off_case
+- utterance: Have you ever seen or heard her when she isn't there?
+  topics: []
+  style: off_case
+- utterance: Are you taking any tablets from your doctor?
+  topics: []
+  style: off_case
+- utterance: How was her funeral?
+  topics: []
+  style: near_miss
+- utterance: What was her name?
+  topics: []
+  style: near_miss
+- utterance: Do you still keep up a garden?
+  topics: []
+  style: near_miss
+- utterance: What was her favourite thing to cook?
+  topics: []
+  style: near_miss
+- utterance: Has your doctor given you tablets to help you sleep?
+  topics: []
+  style: near_miss
+- utterance: Which hospital was she in?
+  topics: []
+  style: near_miss

@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: child-wetting-soiling-family-formulation
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Mark, had he been dry reliably before these wetting accidents started?
+  expected:
+  - wetting
+  rapport: false
+- utterance: What have you noticed about poo accidents and whether passing a stool hurts?
+  expected:
+  - soiling
+  rapport: false
+- utterance: What physical checks have already been done to look for a cause of the accidents?
+  expected:
+  - medical
+  rapport: false
+- utterance: What changed in family life around the time this began?
+  expected:
+  - change
+  rapport: false
+- utterance: After an accident, what do you say or do with him?
+  expected:
+  - response
+  rapport: false
+- utterance: Does anything at school make it difficult for him to ask to use the toilet?
+  expected:
+  - school
+  rapport: false
+- utterance: Looking just at urine accidents, are they in the bed, in the daytime or both?
+  expected:
+  - wetting
+  rapport: false
+- utterance: Leaving wetting aside, how often does stool end up in his underwear?
+  expected:
+  - soiling
+  rapport: false
+- utterance: does that come into arguments between you about where he should live?
+  expected:
+  - conflict
+  rapport: false
+  previous:
+    interviewer: How do you see the link with the separation?
+    character: I think our separation has caused all of this and feel guilty.
+- utterance: You're looking for ways of helping your son with the accidents.
+  expected: []
+  rapport: false

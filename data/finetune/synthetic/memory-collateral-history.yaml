@@ -1,0 +1,1978 @@
+# Synthetic interviews for the student interpreter. Drafted by GPT-6 (Codex)
+# on 2026-10-13; NOT YET REVIEWED. Not evaluation data.
+case_id: memory-collateral-history
+case_version: 0.4.1
+status: draft
+interviews:
+- id: memory-collateral-history-01
+  trainee: Nervous FY2; hesitates, adds rambling preambles, then checks details.
+  turns:
+  - doctor: Hello Helen, I'm the junior doctor meeting with you today; thank you for coming to talk.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'm not quite sure where to begin, so what would you like me to hear first?
+    character: Dad's memory is getting worse. I'm worried that living alone isn't safe for him any more.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Sorry, I am getting ahead of myself. Let me go back a little. Tell me how your dad's memory
+      difficulties first developed.
+    character: It came on gradually.
+    topics:
+    - onset
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Roughly how far back does that go?
+    character: It came on gradually over about eighteen months. There wasn't a sudden change.
+    topics:
+    - onset
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'll take this bit by bit, and you can stop me if my question is unclear.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Seeing his memory worsen while wondering whether he is safe alone must be worrying. Tell me
+      how all this is affecting you personally.
+    character: I'm exhausted from visiting after work, and thinking about a care home makes me feel guilty.
+    topics:
+    - carer-strain
+    empathy: specific
+    empathy_words: Seeing his memory worsen while wondering whether he is safe alone must be worrying.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: How often are you making those visits?
+    character: I'm going round every day after work and I'm exhausted. I feel guilty even thinking about
+      a care home.
+    topics:
+    - carer-strain
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: The changes developed gradually over around eighteen months. I want to make sure I have followed
+      you properly; have I got the gist?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Sorry, I am getting ahead of myself. Let me go back a little. Tell me the sort of things your
+      dad forgets.
+    character: He repeats questions and forgets conversations from earlier in the day.
+    topics:
+    - memory-pattern
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What about things from much earlier in his life?
+    character: He repeats the same questions and forgets conversations from the same day, but he remembers
+      his time in the navy clearly.
+    topics:
+    - memory-pattern
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Would it be all right to change the subject for a moment?
+    character: Yes, go on.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me how he manages finding his way when out.
+    character: He got lost coming back from the shops.
+    topics:
+    - getting-lost
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Did anyone need to help him get back?
+    character: Last month the police brought him home after he got lost walking back from the shops he's
+      used for years.
+    topics:
+    - getting-lost
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. I'm sorry it has been such a rough experience
+      for you.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: I'm sorry it has been such a rough experience for you.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me how he manages meals and household bills.
+    character: He's not really keeping on top of things at home any more.
+    topics:
+    - daily-function
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could you give me examples of what is slipping?
+    character: He's missed paying bills, and the electricity was nearly cut off. He's stopped cooking
+      proper meals.
+    topics:
+    - daily-function
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'd like to establish the time course of these changes. Could we go over any time he has not
+      found the way home?
+    character: It came on gradually over about eighteen months. Last month the police brought him home
+      after he got lost walking back from the shops he's used for years.
+    topics:
+    - onset
+    - getting-lost
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, i want to make sure I have followed you properly; have I got the gist?
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Do you know whether your dad has any food allergies?
+    character: I'm not sure about that — I'd have to check with Dad.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thank you, Helen; that gives me a clearer picture of what you wanted me to hear.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: memory-collateral-history-02
+  trainee: Brisk trainee; short questions, clear signposting, little small talk.
+  turns:
+  - doctor: Helen, I'm the trainee you've come to see; thanks for making time.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Where shall we begin today?
+    character: Dad's memory is getting worse. I'm worried that living alone isn't safe for him any more.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'd like to ask about keeping up with ordinary tasks at home.
+    character: He's not really keeping on top of things at home any more.
+    topics:
+    - daily-function
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What has happened with keeping up with bills?
+    character: He's missed paying bills, and the electricity was nearly cut off. He's stopped cooking
+      proper meals.
+    topics:
+    - daily-function
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'll ask a few things, then draw them together.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Your concern about your dad living alone with worsening memory is understandable. I'd like
+      to ask about your own wellbeing with the caring.
+    character: I'm exhausted from visiting after work, and thinking about a care home makes me feel guilty.
+    topics:
+    - carer-strain
+    empathy: specific
+    empathy_words: Your concern about your dad living alone with worsening memory is understandable.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And how do you feel about a care home?
+    character: I'm going round every day after work and I'm exhausted. I feel guilty even thinking about
+      a care home.
+    topics:
+    - carer-strain
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Bills have been missed and proper meals are no longer being cooked. I'll pause there; does
+      my account fit what you meant?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me about any hazards with appliances at home.
+    character: I've found the gas hob left on.
+    topics:
+    - cooker-safety
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: How many times have you found it like that?
+    character: I've found the gas hob left on twice.
+    topics:
+    - cooker-safety
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What is the name of the street where his dentist works?
+    character: I'm not sure about that — I'd have to check with Dad.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me whether his mood or manner has changed.
+    character: He's quieter, and he gets irritable at times.
+    topics:
+    - mood-behaviour
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What seems to make him cross?
+    character: He's quieter than he used to be and gets irritable when he can't find things. He hasn't
+      mentioned seeing things that aren't there.
+    topics:
+    - mood-behaviour
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. That is a difficult thing to have to deal with.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: That is a difficult thing to have to deal with.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me about his medical conditions and regular tablets.
+    character: He has high blood pressure and takes a tablet for it.
+    topics:
+    - physical-health
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What is the tablet called?
+    character: He has high blood pressure and takes amlodipine. As far as we know he's never had a stroke.
+    topics:
+    - physical-health
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could we go over cooking and paying for things? Could we go over how he is emotionally compared
+      with before?
+    character: He's missed paying bills, and the electricity was nearly cut off. He's quieter than he
+      used to be and gets irritable when he can't find things.
+    topics:
+    - daily-function
+    - mood-behaviour
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, i'll pause there; does my account fit what you meant?
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Shall we switch to a different area now?
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thanks for those answers, Helen. I'll draw this conversation to a close.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: memory-collateral-history-03
+  trainee: Warm trainee; uses the person's name, listens and validates before moving on.
+  turns:
+  - doctor: Welcome, Helen; I'm the trainee speaking with you today. Thank you for making time.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What would you most like me to hear before I ask anything specific?
+    character: Dad's memory is getting worse. I'm worried that living alone isn't safe for him any more.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Take your time with this next bit. I'd like to ask about blood pressure, strokes and other
+      physical illness.
+    character: He has high blood pressure and takes a tablet for it.
+    topics:
+    - physical-health
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And has there ever been a stroke as far as you know?
+    character: He has high blood pressure and takes amlodipine. As far as we know he's never had a stroke.
+    topics:
+    - physical-health
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: There is room to pause; you do not have to rush through this conversation.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I hear how important it is to you to know your dad is safe at home. Could we talk about how
+      you are managing the demands on you?
+    character: I'm exhausted from visiting after work, and thinking about a care home makes me feel guilty.
+    topics:
+    - carer-strain
+    empathy: specific
+    empathy_words: I hear how important it is to you to know your dad is safe at home.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Where do the visits fit around work?
+    character: I'm going round every day after work and I'm exhausted. I feel guilty even thinking about
+      a care home.
+    topics:
+    - carer-strain
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: He takes amlodipine for blood pressure and has no known stroke history. Please put me right
+      if my recap has missed what you meant.
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Take your time with this next bit. Tell me about his drinking and whether he smokes.
+    character: He has a glass of whisky in the evening.
+    topics:
+    - alcohol
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What does he have in that glass?
+    character: He has a glass of whisky most evenings. He stopped smoking years ago.
+    topics:
+    - alcohol
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Is it all right if we turn to something different?
+    character: Yes, go on.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me whether anyone else in the family has had dementia.
+    character: His older sister had dementia.
+    topics:
+    - family-history
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Which relative was that?
+    character: His older sister had dementia in her eighties.
+    topics:
+    - family-history
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. I can appreciate how difficult that has been
+      to face.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: I can appreciate how difficult that has been to face.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me what your dad thinks about these difficulties.
+    character: He says he's fine and gets cross if I bring it up.
+    topics:
+    - his-view
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What does he say about himself then?
+    character: He says he's fine and gets cross when I bring it up, though he did agree I could talk to
+      you.
+    topics:
+    - his-view
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could we go over his health and the medicines he takes? Could we go over any family history
+      of dementia?
+    character: He has high blood pressure and takes amlodipine. His older sister had dementia in her eighties.
+    topics:
+    - physical-health
+    - family-history
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, please put me right if my recap has missed what you meant.
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Do you know his shoe size?
+    character: I'm not sure about that — I'd have to check with Dad.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I appreciate you talking with me today, Helen; thank you for your time.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: memory-collateral-history-04
+  trainee: Formal and careful trainee; complete sentences and polite requests.
+  turns:
+  - doctor: Good morning, Helen. I am the trainee conducting this discussion. Thank you for attending.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: How would you prefer to begin our discussion?
+    character: Dad's memory is getting worse. I'm worried that living alone isn't safe for him any more.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: If I may, I would like to clarify the following. I'd like to hear his reaction when you mention
+      his memory.
+    character: He says he's fine and gets cross if I bring it up.
+    topics:
+    - his-view
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And did he agree to you speaking with me?
+    character: He says he's fine and gets cross when I bring it up, though he did agree I could talk to
+      you.
+    topics:
+    - his-view
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I shall ask about a number of areas before bringing the account together.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: It makes sense to seek help when worsening memory leaves you uncertain about his safety. What
+      has supporting your dad been like for you?
+    character: I'm exhausted from visiting after work, and thinking about a care home makes me feel guilty.
+    topics:
+    - carer-strain
+    empathy: specific
+    empathy_words: It makes sense to seek help when worsening memory leaves you uncertain about his safety.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What is the thought that leaves you feeling guilty?
+    character: I'm going round every day after work and I'm exhausted. I feel guilty even thinking about
+      a care home.
+    topics:
+    - carer-strain
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: He says he is fine and gets cross, though he agreed you could talk with me. Please let me
+      know whether I have represented your account accurately.
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: If I may, I would like to clarify the following. I'd like to establish the time course of
+      these changes.
+    character: It came on gradually.
+    topics:
+    - onset
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And was there a sudden step or a gradual change?
+    character: It came on gradually over about eighteen months. There wasn't a sudden change.
+    topics:
+    - onset
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Has he ever had a hearing test?
+    character: I'm not sure about that — I'd have to check with Dad.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'd like an example of his memory in everyday conversation.
+    character: He repeats questions and forgets conversations from earlier in the day.
+    topics:
+    - memory-pattern
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And does he ask the same thing again?
+    character: He repeats the same questions and forgets conversations from the same day, but he remembers
+      his time in the navy clearly.
+    topics:
+    - memory-pattern
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. I recognise that this has been a distressing
+      experience for you.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: I recognise that this has been a distressing experience for you.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'd like to ask about losing his way on familiar journeys.
+    character: He got lost coming back from the shops.
+    topics:
+    - getting-lost
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And when did that happen?
+    character: Last month the police brought him home after he got lost walking back from the shops he's
+      used for years.
+    topics:
+    - getting-lost
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could we talk about his own view of what is happening? Describe the pattern you notice in
+      what he remembers.
+    character: He says he's fine and gets cross when I bring it up, though he did agree I could talk to
+      you. He repeats the same questions and forgets conversations from the same day, but he remembers
+      his time in the navy clearly.
+    topics:
+    - his-view
+    - memory-pattern
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, please let me know whether I have represented your account accurately.
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: May we turn to a separate subject at this point?
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thank you for your account today, Helen. That concludes my questions for now.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: memory-collateral-history-05
+  trainee: Rambling trainee; long signposts, sometimes returns to a point to get specifics.
+  turns:
+  - doctor: Hello Helen, thanks for meeting me; I'm one of the trainees, and we'll have a bit of time
+      together.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: There are several things we could cover, but where would you like to start?
+    character: Dad's memory is getting worse. I'm worried that living alone isn't safe for him any more.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: There are a few details I need, though I don't want to jump too far ahead. Could we go over
+      any time he has not found the way home?
+    character: He got lost coming back from the shops.
+    topics:
+    - getting-lost
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Was it a route he had used before?
+    character: Last month the police brought him home after he got lost walking back from the shops he's
+      used for years.
+    topics:
+    - getting-lost
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I might go back over a detail now and then to make sure I have the order clear.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Trying to understand whether your dad can safely live alone must weigh on you. Tell me how
+      all this is affecting you personally.
+    character: I'm exhausted from visiting after work, and thinking about a care home makes me feel guilty.
+    topics:
+    - carer-strain
+    empathy: specific
+    empathy_words: Trying to understand whether your dad can safely live alone must weigh on you.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could you say how the visiting fits into your day?
+    character: I'm going round every day after work and I'm exhausted. I feel guilty even thinking about
+      a care home.
+    topics:
+    - carer-strain
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: He got lost returning from familiar shops last month and the police brought him home. I've
+      gone round that a bit; is my account still a fair reflection of what you said?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: There are a few details I need, though I don't want to jump too far ahead. Could we go over
+      cooking and paying for things?
+    character: He's not really keeping on top of things at home any more.
+    topics:
+    - daily-function
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What has happened to preparing proper meals?
+    character: He's missed paying bills, and the electricity was nearly cut off. He's stopped cooking
+      proper meals.
+    topics:
+    - daily-function
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before I lose track, could I take us to a different bit of the story?
+    character: Yes, go on.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'd like to ask whether the cooker has been left on.
+    character: I've found the gas hob left on.
+    topics:
+    - cooker-safety
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And which appliance was left on?
+    character: I've found the gas hob left on twice.
+    topics:
+    - cooker-safety
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. It seems you have had a really difficult time
+      with all this.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: It seems you have had a really difficult time with all this.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'd like to ask about his behaviour and anything unusual he sees.
+    character: He's quieter, and he gets irritable at times.
+    topics:
+    - mood-behaviour
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Has he described something he could see that other people couldn't?
+    character: He's quieter than he used to be and gets irritable when he can't find things. He hasn't
+      mentioned seeing things that aren't there.
+    topics:
+    - mood-behaviour
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Describe any difficulty navigating around places he knows. Describe any unsafe things you
+      have found in his kitchen.
+    character: Last month the police brought him home after he got lost walking back from the shops he's
+      used for years. I've found the gas hob left on twice.
+    topics:
+    - getting-lost
+    - cooker-safety
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, i've gone round that a bit; is my account still a fair reflection of what
+      you said?
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Was it easy to find the consultation room?
+    character: I'm not sure about that — I'd have to check with Dad.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'll leave the questions there now, Helen; thank you for sticking with the conversation.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: memory-collateral-history-06
+  trainee: Abrupt trainee; direct questions, occasional pressure, then an attempt to repair rapport.
+  turns:
+  - doctor: Hello Helen. I'm the trainee. We'll talk now, if you're ready.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Give me your own account before I begin the questions.
+    character: Dad's memory is getting worse. I'm worried that living alone isn't safe for him any more.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could we go over how he is emotionally compared with before?
+    character: He's quieter, and he gets irritable at times.
+    topics:
+    - mood-behaviour
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Is he talking less than he used to?
+    character: He's quieter than he used to be and gets irritable when he can't find things. He hasn't
+      mentioned seeing things that aren't there.
+    topics:
+    - mood-behaviour
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I need to cover several areas in this discussion.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You are worried about his safety as his memory worsens, and that deserves attention. I'd like
+      to ask about your own wellbeing with the caring.
+    character: I'm exhausted from visiting after work, and thinking about a care home makes me feel guilty.
+    topics:
+    - carer-strain
+    empathy: specific
+    empathy_words: You are worried about his safety as his memory worsens, and that deserves attention.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What is it that you feel guilty even considering?
+    character: I'm going round every day after work and I'm exhausted. I feel guilty even thinking about
+      a care home.
+    topics:
+    - carer-strain
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: He is quieter and gets cross over lost things, without reporting seeing things. Is that a
+      fair account of what you have said so far?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could we go over his health and the medicines he takes?
+    character: He has high blood pressure and takes a tablet for it.
+    topics:
+    - physical-health
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What does he take for that condition?
+    character: He has high blood pressure and takes amlodipine. As far as we know he's never had a stroke.
+    topics:
+    - physical-health
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Do you know when the car park closes?
+    character: I'm not sure about that — I'd have to check with Dad.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'd like to ask what alcohol he has in the evenings.
+    character: He has a glass of whisky in the evening.
+    topics:
+    - alcohol
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And is that most evenings?
+    character: He has a glass of whisky most evenings. He stopped smoking years ago.
+    topics:
+    - alcohol
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. I am sorry; that has clearly been difficult
+      for you.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: I am sorry; that has clearly been difficult for you.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'd like to ask about memory illness among his relatives.
+    character: His older sister had dementia.
+    topics:
+    - family-history
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And roughly how old was she then?
+    character: His older sister had dementia in her eighties.
+    topics:
+    - family-history
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Describe any change in his temperament or seeing things. Describe his usual alcohol use and
+      smoking history.
+    character: He's quieter than he used to be and gets irritable when he can't find things. He has a
+      glass of whisky most evenings.
+    topics:
+    - mood-behaviour
+    - alcohol
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Families have to expect some forgetting at this age rather than treating every lapse as a
+      problem.
+    character: I honestly don't know.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: Families have to expect some forgetting at this age rather than treating every
+      lapse as a problem.
+  - doctor: Can we leave that there and take another subject?
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: That's the end of my questions for the moment, Helen. Thank you for answering.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: memory-collateral-history-07
+  trainee: Speech-recognition transcript; lower case, fillers, false starts and sparse punctuation.
+  turns:
+  - doctor: hi helen um im the trainee doctor thanks for sitting down with me
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: so um where would you like to start with all this
+    character: Dad's memory is getting worse. I'm worried that living alone isn't safe for him any more.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: er i was going to ask no let me come back to this could we go over any family history of dementia
+    character: His older sister had dementia.
+    topics:
+    - family-history
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: was she older than your dad
+    character: His older sister had dementia in her eighties.
+    topics:
+    - family-history
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: ill ask a few things and then bring it together at the end
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: um it must be worrying seeing his memory worsen when he lives on his own. could we talk about
+      how you are managing the demands on you
+    character: I'm exhausted from visiting after work, and thinking about a care home makes me feel guilty.
+    topics:
+    - carer-strain
+    empathy: specific
+    empathy_words: um it must be worrying seeing his memory worsen when he lives on his own.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: how is making those visits leaving you feeling
+    character: I'm going round every day after work and I'm exhausted. I feel guilty even thinking about
+      a care home.
+    topics:
+    - carer-strain
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: his older sister had dementia in her eighties. so have i picked that up the way you meant
+      it
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: er i was going to ask no let me come back to this could we talk about his own view of what
+      is happening
+    character: He says he's fine and gets cross if I bring it up.
+    topics:
+    - his-view
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: does bringing it up tend to make him cross
+    character: He says he's fine and gets cross when I bring it up, though he did agree I could talk to
+      you.
+    topics:
+    - his-view
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: um could we talk about a different bit now
+    character: Yes, go on.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: could we go back to the beginning of the memory problems
+    character: It came on gradually.
+    topics:
+    - onset
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: what period of time are we looking at
+    character: It came on gradually over about eighteen months. There wasn't a sudden change.
+    topics:
+    - onset
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: thinking back to what you were saying earlier. um im sorry that has been so difficult to go
+      through.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: um im sorry that has been so difficult to go through.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: could we go over what stays in his memory and what does not
+    character: He repeats questions and forgets conversations from earlier in the day.
+    topics:
+    - memory-pattern
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: is it the conversation from that very day he forgets
+    character: He repeats the same questions and forgets conversations from the same day, but he remembers
+      his time in the navy clearly.
+    topics:
+    - memory-pattern
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: what similar difficulties have you known in his family tell me how your dads memory difficulties
+      first developed.
+    character: His older sister had dementia in her eighties. It came on gradually over about eighteen
+      months.
+    topics:
+    - family-history
+    - onset
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: before we finish so have i picked that up the way you meant it
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: which reception desk did you check in at
+    character: I'm not sure about that — I'd have to check with Dad.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: thanks helen um thats all i wanted to ask for now
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: memory-collateral-history-08
+  trainee: Trainee who summarises frequently; repeats the account back before changing topic.
+  turns:
+  - doctor: Hello Helen, I'm the trainee here to hear your account. Thank you for speaking with me.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What would you like to put on the table first?
+    character: Dad's memory is getting worse. I'm worried that living alone isn't safe for him any more.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'll hold that in mind as we go on. Describe the pattern you notice in what he remembers.
+    character: He repeats questions and forgets conversations from earlier in the day.
+    topics:
+    - memory-pattern
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What does he still remember clearly?
+    character: He repeats the same questions and forgets conversations from the same day, but he remembers
+      his time in the navy clearly.
+    topics:
+    - memory-pattern
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Your dad's worsening memory has left you worried about him living alone.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Your dad's safety matters to you, and I understand why the memory changes raise concerns.
+      What has supporting your dad been like for you?
+    character: I'm exhausted from visiting after work, and thinking about a care home makes me feel guilty.
+    topics:
+    - carer-strain
+    empathy: specific
+    empathy_words: Your dad's safety matters to you, and I understand why the memory changes raise concerns.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What sort of frequency are we talking about with the visits?
+    character: I'm going round every day after work and I'm exhausted. I feel guilty even thinking about
+      a care home.
+    topics:
+    - carer-strain
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: He forgets recent conversations and repeats questions, but remembers his navy days. I have
+      tried to keep to your account; have I understood it as you intended?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: He forgets recent conversations and repeats questions, but remembers his navy days. I'll hold
+      that in mind as we go on. Describe any difficulty navigating around places he knows.
+    character: He got lost coming back from the shops.
+    topics:
+    - getting-lost
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Where had he been coming back from?
+    character: Last month the police brought him home after he got lost walking back from the shops he's
+      used for years.
+    topics:
+    - getting-lost
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Have you kept the appointment letter?
+    character: I'm not sure about that — I'd have to check with Dad.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Describe how he is coping with practical household jobs.
+    character: He's not really keeping on top of things at home any more.
+    topics:
+    - daily-function
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Has keeping up with payments been part of the problem?
+    character: He's missed paying bills, and the electricity was nearly cut off. He's stopped cooking
+      proper meals.
+    topics:
+    - daily-function
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. That is quite a difficult situation to have
+      been in.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: That is quite a difficult situation to have been in.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could we go over safety around the gas hob?
+    character: I've found the gas hob left on.
+    topics:
+    - cooker-safety
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Was that the gas hob both times?
+    character: I've found the gas hob left on twice.
+    topics:
+    - cooker-safety
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me the sort of things your dad forgets. I'd like to ask about keeping up with ordinary
+      tasks at home.
+    character: He repeats the same questions and forgets conversations from the same day, but he remembers
+      his time in the navy clearly. He's missed paying bills, and the electricity was nearly cut off.
+    topics:
+    - memory-pattern
+    - daily-function
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, i have tried to keep to your account; have I understood it as you intended?
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Shall we put that part aside and look at something else?
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thank you, Helen. I'll finish by keeping those points together in my notes.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: memory-collateral-history-09
+  trainee: Sometimes confrontational trainee; slips into minimising or lecturing despite some empathy.
+  turns:
+  - doctor: Morning, Helen. I'm the doctor doing this interview; thanks for being here.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What is the main thing you want me to hear at the start?
+    character: Dad's memory is getting worse. I'm worried that living alone isn't safe for him any more.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: We ought to be clear about this next part. Describe any unsafe things you have found in his
+      kitchen.
+    character: I've found the gas hob left on.
+    topics:
+    - cooker-safety
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What did you find when you went in?
+    character: I've found the gas hob left on twice.
+    topics:
+    - cooker-safety
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: There are several things to cover before we finish.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Watching his memory get worse can be hard when you fear he is unsafe alone. Tell me how all
+      this is affecting you personally.
+    character: I'm exhausted from visiting after work, and thinking about a care home makes me feel guilty.
+    topics:
+    - carer-strain
+    empathy: specific
+    empathy_words: Watching his memory get worse can be hard when you fear he is unsafe alone.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me about the feeling that comes with considering that option.
+    character: I'm going round every day after work and I'm exhausted. I feel guilty even thinking about
+      a care home.
+    topics:
+    - carer-strain
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You have found the gas hob left on twice. Does that follow what you meant to tell me?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: We ought to be clear about this next part. Describe any change in his temperament or seeing
+      things.
+    character: He's quieter, and he gets irritable at times.
+    topics:
+    - mood-behaviour
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: When does that irritability tend to show?
+    character: He's quieter than he used to be and gets irritable when he can't find things. He hasn't
+      mentioned seeing things that aren't there.
+    topics:
+    - mood-behaviour
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Can we move the conversation to another area?
+    character: Yes, go on.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Describe the physical health problems you know he has.
+    character: He has high blood pressure and takes a tablet for it.
+    topics:
+    - physical-health
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Is that for his blood pressure?
+    character: He has high blood pressure and takes amlodipine. As far as we know he's never had a stroke.
+    topics:
+    - physical-health
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. I can see this has been a hard experience to
+      have.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: I can see this has been a hard experience to have.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could we go over tobacco and alcohol for your dad?
+    character: He has a glass of whisky in the evening.
+    topics:
+    - alcohol
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: When did the smoking stop?
+    character: He has a glass of whisky most evenings. He stopped smoking years ago.
+    topics:
+    - alcohol
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me about any hazards with appliances at home. I'd like to ask about blood pressure, strokes
+      and other physical illness.
+    character: I've found the gas hob left on twice. He has high blood pressure and takes amlodipine.
+    topics:
+    - cooker-safety
+    - physical-health
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You ought to have arranged things before you felt he was unsafe.
+    character: I honestly don't know.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: You ought to have arranged things before you felt he was unsafe.
+  - doctor: What is the name of the receptionist you spoke to?
+    character: I'm not sure about that — I'd have to check with Dad.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'll stop my questions there, Helen. Thank you for talking it through.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: memory-collateral-history-10
+  trainee: Reflective trainee; patient pauses, validates, and checks the person's perspective.
+  turns:
+  - doctor: Hello, Helen; thank you for meeting with me. I'm a trainee with the team.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Where would it feel right to begin telling me your account?
+    character: Dad's memory is getting worse. I'm worried that living alone isn't safe for him any more.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I would like to understand this in your own words. Describe his usual alcohol use and smoking
+      history.
+    character: He has a glass of whisky in the evening.
+    topics:
+    - alcohol
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Is it a single glass at those times?
+    character: He has a glass of whisky most evenings. He stopped smoking years ago.
+    topics:
+    - alcohol
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: We can pause while you find the words; there is no need for a perfect account.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I appreciate why knowing whether he is safe by himself matters so much to you. I'd like to
+      ask about your own wellbeing with the caring.
+    character: I'm exhausted from visiting after work, and thinking about a care home makes me feel guilty.
+    topics:
+    - carer-strain
+    empathy: specific
+    empathy_words: I appreciate why knowing whether he is safe by himself matters so much to you.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: So how often are you getting there after work?
+    character: I'm going round every day after work and I'm exhausted. I feel guilty even thinking about
+      a care home.
+    topics:
+    - carer-strain
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: He has a glass of whisky most evenings and stopped smoking years ago. Does the way I have
+      brought that together capture what you wanted to say?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I would like to understand this in your own words. What similar difficulties have you known
+      in his family?
+    character: His older sister had dementia.
+    topics:
+    - family-history
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: At what stage in her life did she have that illness?
+    character: His older sister had dementia in her eighties.
+    topics:
+    - family-history
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Do you know the number of the local bus route?
+    character: I'm not sure about that — I'd have to check with Dad.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Describe how he responds to your concerns.
+    character: He says he's fine and gets cross if I bring it up.
+    topics:
+    - his-view
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: How does he react when you try to discuss it?
+    character: He says he's fine and gets cross when I bring it up, though he did agree I could talk to
+      you.
+    topics:
+    - his-view
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. I hear that this has been difficult for you
+      to carry.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: I hear that this has been difficult for you to carry.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Describe how quickly things changed with his memory.
+    character: It came on gradually.
+    topics:
+    - onset
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Did it all happen at once?
+    character: It came on gradually over about eighteen months. There wasn't a sudden change.
+    topics:
+    - onset
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me about his drinking and whether he smokes. I'd like to hear his reaction when you mention
+      his memory.
+    character: He has a glass of whisky most evenings. He says he's fine and gets cross when I bring it
+      up, though he did agree I could talk to you.
+    topics:
+    - alcohol
+    - his-view
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, does the way I have brought that together capture what you wanted to say?
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Would now be a reasonable point to change the subject?
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thank you for helping me understand, Helen. I'll end the interview at this point.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: memory-collateral-history-11
+  trainee: Uncertain trainee; self-corrects wording and sometimes offers premature reassurance.
+  turns:
+  - doctor: Hi Helen, I'm the trainee talking with you today; thanks for coming to see us.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What should we begin with, from your point of view?
+    character: Dad's memory is getting worse. I'm worried that living alone isn't safe for him any more.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let me put that better before I go on. Tell me how your dad's memory difficulties first developed.
+    character: It came on gradually.
+    topics:
+    - onset
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let me check I am asking this clearly. Roughly how far back does that go?
+    character: It came on gradually over about eighteen months. There wasn't a sudden change.
+    topics:
+    - onset
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: If I phrase something badly, I can ask it a different way.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: His memory has changed, and it is understandable that this leaves you worried about him. Could
+      we talk about how you are managing the demands on you?
+    character: I'm exhausted from visiting after work, and thinking about a care home makes me feel guilty.
+    topics:
+    - carer-strain
+    empathy: specific
+    empathy_words: His memory has changed, and it is understandable that this leaves you worried about
+      him.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What does the thought of a care home bring up for you?
+    character: I'm going round every day after work and I'm exhausted. I feel guilty even thinking about
+      a care home.
+    topics:
+    - carer-strain
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: The changes developed gradually over around eighteen months. I think I have followed that;
+      have I understood your meaning?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let me put that better before I go on. Tell me the sort of things your dad forgets.
+    character: He repeats questions and forgets conversations from earlier in the day.
+    topics:
+    - memory-pattern
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let me check I am asking this clearly. What about things from much earlier in his life?
+    character: He repeats the same questions and forgets conversations from the same day, but he remembers
+      his time in the navy clearly.
+    topics:
+    - memory-pattern
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could I change tack and ask about another part?
+    character: Yes, go on.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let me check I am asking this clearly. Tell me how he manages finding his way when out.
+    character: He got lost coming back from the shops.
+    topics:
+    - getting-lost
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let me check I am asking this clearly. Did anyone need to help him get back?
+    character: Last month the police brought him home after he got lost walking back from the shops he's
+      used for years.
+    topics:
+    - getting-lost
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. It must have been really hard to find yourself
+      dealing with that.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: It must have been really hard to find yourself dealing with that.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let me check I am asking this clearly. Tell me how he manages meals and household bills.
+    character: He's not really keeping on top of things at home any more.
+    topics:
+    - daily-function
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let me check I am asking this clearly. Could you give me examples of what is slipping?
+    character: He's missed paying bills, and the electricity was nearly cut off. He's stopped cooking
+      proper meals.
+    topics:
+    - daily-function
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let me check I am asking this clearly. I'd like to establish the time course of these changes.
+      Could we go over any time he has not found the way home?
+    character: It came on gradually over about eighteen months. Last month the police brought him home
+      after he got lost walking back from the shops he's used for years.
+    topics:
+    - onset
+    - getting-lost
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: He is getting older, so you may simply need to worry less about the memory.
+    character: I honestly don't know.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: He is getting older, so you may simply need to worry less about the memory.
+  - doctor: Which entrance did the letter say to use?
+    character: I'm not sure about that — I'd have to check with Dad.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'll leave it there, Helen. Thank you for explaining things as we went along.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: memory-collateral-history-12
+  trainee: Conversational trainee; relaxed wording, short acknowledgements and practical follow-ups.
+  turns:
+  - doctor: Hello Helen, nice to meet you. I'm one of the trainee doctors; thanks for coming along.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What would be a good place for us to start?
+    character: Dad's memory is getting worse. I'm worried that living alone isn't safe for him any more.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Just so I've got the picture. I'd like to ask about keeping up with ordinary tasks at home.
+    character: He's not really keeping on top of things at home any more.
+    topics:
+    - daily-function
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Right, just picking up on that. What has happened with keeping up with bills?
+    character: He's missed paying bills, and the electricity was nearly cut off. He's stopped cooking
+      proper meals.
+    topics:
+    - daily-function
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'll pick up a few details and we can bring it all together afterwards.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I can see why you want someone to hear your worries about your dad being alone. What has supporting
+      your dad been like for you?
+    character: I'm exhausted from visiting after work, and thinking about a care home makes me feel guilty.
+    topics:
+    - carer-strain
+    empathy: specific
+    empathy_words: I can see why you want someone to hear your worries about your dad being alone.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Where do your own work hours fit around going over?
+    character: I'm going round every day after work and I'm exhausted. I feel guilty even thinking about
+      a care home.
+    topics:
+    - carer-strain
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Bills have been missed and proper meals are no longer being cooked. Have I got the picture
+      you were trying to give me?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Just so I've got the picture. Tell me about any hazards with appliances at home.
+    character: I've found the gas hob left on.
+    topics:
+    - cooker-safety
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Right, just picking up on that. How many times have you found it like that?
+    character: I've found the gas hob left on twice.
+    topics:
+    - cooker-safety
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Did you bring a map of the hospital?
+    character: I'm not sure about that — I'd have to check with Dad.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Right, just picking up on that. Tell me whether his mood or manner has changed.
+    character: He's quieter, and he gets irritable at times.
+    topics:
+    - mood-behaviour
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Right, just picking up on that. What seems to make him cross?
+    character: He's quieter than he used to be and gets irritable when he can't find things. He hasn't
+      mentioned seeing things that aren't there.
+    topics:
+    - mood-behaviour
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. That is a tough thing to be having to deal
+      with.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: That is a tough thing to be having to deal with.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Right, just picking up on that. Tell me about his medical conditions and regular tablets.
+    character: He has high blood pressure and takes a tablet for it.
+    topics:
+    - physical-health
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Right, just picking up on that. What is the tablet called?
+    character: He has high blood pressure and takes amlodipine. As far as we know he's never had a stroke.
+    topics:
+    - physical-health
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Right, just picking up on that. Could we go over cooking and paying for things? Could we go
+      over how he is emotionally compared with before?
+    character: He's missed paying bills, and the electricity was nearly cut off. He's quieter than he
+      used to be and gets irritable when he can't find things.
+    topics:
+    - daily-function
+    - mood-behaviour
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, have I got the picture you were trying to give me?
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Shall we take a different bit of this next?
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thanks for talking it over with me, Helen. That's all for the moment.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''

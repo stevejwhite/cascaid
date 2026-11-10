@@ -1,0 +1,359 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: supported-living-behaviour-plan
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Did you feel able to ask for help earlier on?
+  topics:
+  - guarded
+  style: boundary
+  pair:
+  - guarded
+  - strain
+- utterance: Was there any pressure on the team to say things were fine?
+  topics:
+  - guarded
+  style: boundary
+  pair:
+  - guarded
+  - strain
+- utterance: Did you worry about how the placement would look if you raised problems?
+  topics:
+  - guarded
+  style: boundary_colloquial
+  pair:
+  - guarded
+  - strain
+- utterance: um was it hard to tell anyone how things were really going
+  topics:
+  - guarded
+  style: boundary_spoken
+  pair:
+  - guarded
+  - strain
+- utterance: And was it hard to tell anyone how things were going?
+  topics:
+  - guarded
+  style: boundary_follow_up
+  pair:
+  - guarded
+  - strain
+  previous:
+    interviewer: How do you feel before a shift?
+    character: I'm anxious before going in because I don't feel trained to help him communicate.
+- utterance: How do you feel when you go in for a shift?
+  topics:
+  - strain
+  style: boundary
+  pair:
+  - guarded
+  - strain
+- utterance: Do you feel equipped to support him?
+  topics:
+  - strain
+  style: boundary
+  pair:
+  - guarded
+  - strain
+- utterance: Have you had training in communicating with people with autism?
+  topics:
+  - strain
+  style: boundary_colloquial
+  pair:
+  - guarded
+  - strain
+- utterance: er so how are you finding looking after him
+  topics:
+  - strain
+  style: boundary_spoken
+  pair:
+  - guarded
+  - strain
+- utterance: And how confident do you feel working with him?
+  topics:
+  - strain
+  style: boundary_follow_up
+  pair:
+  - guarded
+  - strain
+  previous:
+    interviewer: Why didn't you ask for help sooner?
+    character: We described the move as going well because we were afraid the placement would be blamed. That has delayed asking for help.
+- utterance: Do you get time off after an incident?
+  topics: []
+  style: near_miss
+  pair:
+  - guarded
+  - strain
+- utterance: Do you do sleep-in shifts?
+  topics: []
+  style: near_miss
+  pair:
+  - guarded
+  - strain
+- utterance: What tends to be going on right before he lashes out?
+  topics:
+  - before
+  style: boundary
+  pair:
+  - before
+  - pattern
+- utterance: Does he show any signs that he's getting upset?
+  topics:
+  - before
+  style: boundary
+  pair:
+  - before
+  - pattern
+- utterance: Is it during particular tasks that it starts?
+  topics:
+  - before
+  style: boundary_colloquial
+  pair:
+  - before
+  - pattern
+- utterance: um so what leads up to it usually
+  topics:
+  - before
+  style: boundary_spoken
+  pair:
+  - before
+  - pattern
+- utterance: And what was going on just before those?
+  topics:
+  - before
+  style: boundary_follow_up
+  pair:
+  - before
+  - pattern
+  previous:
+    interviewer: How many times has he hit out?
+    character: He's hit a staff member four times in the three weeks since moving. Once a colleague had a bruised arm; there have been no other injuries.
+- utterance: How many times has he struck a member of staff?
+  topics:
+  - pattern
+  style: boundary
+  pair:
+  - before
+  - pattern
+- utterance: Has anyone actually been hurt?
+  topics:
+  - pattern
+  style: boundary
+  pair:
+  - before
+  - pattern
+- utterance: Has it been getting more frequent since he moved?
+  topics:
+  - pattern
+  style: boundary_colloquial
+  pair:
+  - before
+  - pattern
+- utterance: erm so how often is this happening
+  topics:
+  - pattern
+  style: boundary_spoken
+  pair:
+  - before
+  - pattern
+- utterance: And how many times has this happened since he moved?
+  topics:
+  - pattern
+  style: boundary_follow_up
+  pair:
+  - before
+  - pattern
+  previous:
+    interviewer: What happens before he hits?
+    character: Three incidents happened when unfamiliar staff hurried him into the shared bathroom. He first covered his ears and turned away.
+- utterance: Does he ever hit himself?
+  topics: []
+  style: near_miss
+  pair:
+  - before
+  - pattern
+- utterance: Has he damaged any property?
+  topics: []
+  style: near_miss
+  pair:
+  - before
+  - pattern
+- utterance: How does he let you know what he needs?
+  topics:
+  - communication
+  style: boundary
+  pair:
+  - communication
+  - strain
+- utterance: Does he use signs or symbols?
+  topics:
+  - communication
+  style: boundary
+  pair:
+  - communication
+  - strain
+- utterance: How much does he take in when you give him instructions?
+  topics:
+  - communication
+  style: boundary_colloquial
+  pair:
+  - communication
+  - strain
+- utterance: um what's his speech like
+  topics:
+  - communication
+  style: boundary_spoken
+  pair:
+  - communication
+  - strain
+- utterance: And how does he communicate with you?
+  topics:
+  - communication
+  style: boundary_follow_up
+  pair:
+  - communication
+  - strain
+  previous:
+    interviewer: Do you feel trained for this?
+    character: I'm anxious before going in because I don't feel trained to help him communicate.
+- utterance: Do you feel confident supporting him?
+  topics:
+  - strain
+  style: boundary
+  pair:
+  - communication
+  - strain
+- utterance: Is it stressful for you going into work?
+  topics:
+  - strain
+  style: boundary
+  pair:
+  - communication
+  - strain
+- utterance: Have you had enough training for this?
+  topics:
+  - strain
+  style: boundary_colloquial
+  pair:
+  - communication
+  - strain
+- utterance: so er how are you coping with it all
+  topics:
+  - strain
+  style: boundary_spoken
+  pair:
+  - communication
+  - strain
+- utterance: And how do you feel when you support him?
+  topics:
+  - strain
+  style: boundary_follow_up
+  pair:
+  - communication
+  - strain
+  previous:
+    interviewer: How does he communicate?
+    character: He uses short phrases and picture cards. The cards haven't been unpacked, and he struggles with several instructions at once.
+- utterance: Does he go to a day service?
+  topics: []
+  style: near_miss
+  pair:
+  - communication
+  - strain
+- utterance: Is his family involved?
+  topics: []
+  style: near_miss
+  pair:
+  - communication
+  - strain
+- utterance: How many incidents have there been?
+  topics:
+  - pattern
+  style: boundary
+  pair:
+  - pattern
+  - response
+- utterance: When did the hitting start?
+  topics:
+  - pattern
+  style: boundary
+  pair:
+  - pattern
+  - response
+- utterance: Has it become more frequent since the move?
+  topics:
+  - pattern
+  style: boundary_colloquial
+  pair:
+  - pattern
+  - response
+- utterance: um so how often does he actually hit someone
+  topics:
+  - pattern
+  style: boundary_spoken
+  pair:
+  - pattern
+  - response
+- utterance: And how many times has it happened?
+  topics:
+  - pattern
+  style: boundary_follow_up
+  pair:
+  - pattern
+  - response
+  previous:
+    interviewer: What do you do when it happens?
+    character: We usually abandon the task and move away. There isn't an agreed support plan or a record of what happened beforehand.
+- utterance: What do staff do afterwards?
+  topics:
+  - response
+  style: boundary
+  pair:
+  - pattern
+  - response
+- utterance: Has anyone drawn up a plan for how to support him?
+  topics:
+  - response
+  style: boundary
+  pair:
+  - pattern
+  - response
+- utterance: Do you write down what happened beforehand?
+  topics:
+  - response
+  style: boundary_colloquial
+  pair:
+  - pattern
+  - response
+- utterance: erm so what's the usual response from the team
+  topics:
+  - response
+  style: boundary_spoken
+  pair:
+  - pattern
+  - response
+- utterance: And what do you do afterwards?
+  topics:
+  - response
+  style: boundary_follow_up
+  pair:
+  - pattern
+  - response
+  previous:
+    interviewer: How often does it happen?
+    character: He's hit a staff member four times in the three weeks since moving. Once a colleague had a bruised arm; there have been no other injuries.
+- utterance: Have the police been called?
+  topics: []
+  style: near_miss
+  pair:
+  - pattern
+  - response
+- utterance: Has the regulator been informed?
+  topics: []
+  style: near_miss
+  pair:
+  - pattern
+  - response

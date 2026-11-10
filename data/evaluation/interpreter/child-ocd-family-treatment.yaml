@@ -1,0 +1,70 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: child-ocd-family-treatment
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hello Imran, thanks for coming in today, I'm one of the trainees in the team."
+    expected: []
+    rapport: false
+  - utterance: "Can you tell me what her washing and checking looks like day to day?"
+    expected: [rituals]
+    rapport: false
+  - utterance: "When did all of this begin?"
+    expected: [rituals]
+    rapport: false
+  - utterance: "What does she tell you she's afraid will happen if she doesn't do it?"
+    expected: [fears]
+    rapport: false
+  - utterance: "Do you ever end up joining in, like checking things for her or reassuring her?"
+    expected: [accommodation]
+    rapport: false
+  - utterance: "How's it affecting school?"
+    expected: [school]
+    rapport: false
+  - utterance: "Has she had any talking therapy before?"
+    expected: [treatment]
+    rapport: false
+  - utterance: "What have you heard about exposure work?"
+    expected: [treatment]
+    rapport: false
+  - utterance: "Is she on any medication at the moment?"
+    expected: [medication]
+    rapport: false
+  - utterance: "Any damage to her skin from all the washing? And has she ever talked about harming herself?"
+    expected: [risk]
+    rapport: false
+  - utterance: "what happens if you say no to checking for her"
+    expected: [distress]
+    rapport: false
+  - utterance: "Do you ever blame yourself for how things have got?"
+    expected: [blame]
+    rapport: false
+  - utterance: "It's clear how much you love her and want to get this right."
+    expected: []
+    rapport: true
+  - utterance: "Seeing your daughter that distressed every day must be exhausting."
+    expected: []
+    rapport: true
+  - utterance: "What does she want to get back to doing?"
+    expected: [goals]
+    rapport: false
+  - utterance: "And what's going through her mind while she's doing them?"
+    previous:
+      interviewer: "How long are the rituals taking?"
+      character: "About three hours a day."
+    expected: [fears]
+    rapport: false
+  - utterance: "Does anyone else in the family have OCD?"
+    expected: []
+    rapport: false
+  - utterance: "How is her appetite?"
+    expected: []
+    rapport: false
+  - utterance: "How would you feel about her trying medication if therapy alone wasn't enough?"
+    expected: [medication]
+    rapport: false
+  - utterance: "So the washing and checking are taking hours and it's having a real impact on school and on all of you."
+    expected: []
+    rapport: false

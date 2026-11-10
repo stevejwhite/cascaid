@@ -1,0 +1,223 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: acute-confusion-cognitive-examination
+case_version: 0.1.0
+status: draft
+items:
+  - utterance: "Earlier I gave you three words to remember. What were they?"
+    topics: [delayed-recall]
+    style: boundary
+    pair: [delayed-recall, registration]
+  - utterance: "Go back to the words I mentioned a few minutes ago; can you tell me any of them?"
+    topics: [delayed-recall]
+    style: boundary
+    pair: [delayed-recall, registration]
+  - utterance: "um so can you remember what those three things were that i said to you before"
+    topics: [delayed-recall]
+    style: boundary_spoken
+    pair: [delayed-recall, registration]
+  - utterance: "Any of those words still floating about in your head, Evelyn?"
+    topics: [delayed-recall]
+    style: boundary_colloquial
+    pair: [delayed-recall, registration]
+  - utterance: "Good, we've done the months. Now what were the three words I gave you earlier?"
+    topics: [delayed-recall]
+    style: boundary_follow_up
+    pair: [delayed-recall, registration]
+    previous:
+      interviewer: "Let's try the months backwards, starting with December."
+      character: "December, November... October... I've lost where I was going."
+  - utterance: "Here are three words, orange, window and coin; say them to me now so I know you've heard them."
+    topics: [registration]
+    style: boundary
+    pair: [delayed-recall, registration]
+  - utterance: "Listen carefully: orange, window, coin. Could you say those aloud right away?"
+    topics: [registration]
+    style: boundary
+    pair: [delayed-recall, registration]
+  - utterance: "okay so i'll say them and i want you to say them back to me straight away"
+    topics: [registration]
+    style: boundary_spoken
+    pair: [delayed-recall, registration]
+  - utterance: "Just say it after me, orange, window, coin, and see if they stick."
+    topics: [registration]
+    style: boundary_colloquial
+    pair: [delayed-recall, registration]
+  - utterance: "Right, can you say those three words back to me now?"
+    topics: [registration]
+    style: boundary_follow_up
+    pair: [delayed-recall, registration]
+    previous:
+      interviewer: "Orange, window, coin. I'd like you to take those in."
+      character: "Yes, you can ask me some questions; please tell me what they're for and go slowly."
+  - utterance: "Do you usually have trouble remembering names and words?"
+    topics: []
+    style: near_miss
+    pair: [delayed-recall, registration]
+  - utterance: "Could you write the three words down for me?"
+    topics: []
+    style: near_miss
+    pair: [delayed-recall, registration]
+  - utterance: "Is it all right if I ask you a few questions about your memory?"
+    topics: [permission]
+    style: boundary
+    pair: [embarrassment, permission]
+  - utterance: "I'd like to test your thinking a little; would that be okay with you?"
+    topics: [permission]
+    style: boundary
+    pair: [embarrassment, permission]
+  - utterance: "so er is it alright if i ask a few things about your memory evelyn"
+    topics: [permission]
+    style: boundary_spoken
+    pair: [embarrassment, permission]
+  - utterance: "Would you be happy to go through some questions with me? I'll explain what they're for."
+    topics: [permission]
+    style: boundary_colloquial
+    pair: [embarrassment, permission]
+  - utterance: "Nice to meet you. May I go through a few questions with you, and I'll tell you why as we go?"
+    topics: [permission]
+    style: boundary_follow_up
+    pair: [embarrassment, permission]
+    previous:
+      interviewer: "I'm Evelyn, and I'm seventy-nine."
+      character: "I'm Evelyn, and I'm seventy-nine."
+  - utterance: "How are you finding these questions so far?"
+    topics: [embarrassment]
+    style: boundary
+    pair: [embarrassment, permission]
+  - utterance: "Is there anything worrying you about answering them?"
+    topics: [embarrassment]
+    style: boundary
+    pair: [embarrassment, permission]
+  - utterance: "um does it feel a bit awkward when you can't get the answer"
+    topics: [embarrassment]
+    style: boundary_spoken
+    pair: [embarrassment, permission]
+  - utterance: "Are you feeling a bit daft or put on the spot with all my questions?"
+    topics: [embarrassment]
+    style: boundary_colloquial
+    pair: [embarrassment, permission]
+  - utterance: "That's absolutely fine. How did it feel trying that one?"
+    topics: [embarrassment]
+    style: boundary_follow_up
+    pair: [embarrassment, permission]
+    previous:
+      interviewer: "Can you tell me the months backwards from December?"
+      character: "December, November... October... I've lost where I was going."
+  - utterance: "Would you like a nurse to sit with us while we talk?"
+    topics: []
+    style: near_miss
+    pair: [embarrassment, permission]
+  - utterance: "Have you been feeling low in yourself since you came in?"
+    topics: []
+    style: near_miss
+    pair: [embarrassment, permission]
+  - utterance: "Are there times of day when your thinking feels clearer than others?"
+    topics: [fluctuation]
+    style: boundary
+    pair: [embarrassment, fluctuation]
+  - utterance: "Does the muddle stay the same all day, or does it vary?"
+    topics: [fluctuation]
+    style: boundary
+    pair: [embarrassment, fluctuation]
+  - utterance: "right and is it like that all the time or does it kind of come and go"
+    topics: [fluctuation]
+    style: boundary_spoken
+    pair: [embarrassment, fluctuation]
+  - utterance: "Have you had better spells and worse spells since the confusion started?"
+    topics: [fluctuation]
+    style: boundary_colloquial
+    pair: [embarrassment, fluctuation]
+  - utterance: "Is it constant, or has it been up and down?"
+    topics: [fluctuation]
+    style: boundary_follow_up
+    pair: [embarrassment, fluctuation]
+    previous:
+      interviewer: "I'm frightened you'll think I'm stupid because I can't get the answers right; I wasn't like this before."
+      character: "I'm frightened you'll think I'm stupid because I can't get the answers right; I wasn't like this before."
+  - utterance: "Does it bother you that you're finding some of these questions hard?"
+    topics: [embarrassment]
+    style: boundary
+    pair: [embarrassment, fluctuation]
+  - utterance: "I wonder if being confused makes you feel a bit self-conscious with me."
+    topics: [embarrassment]
+    style: boundary
+    pair: [embarrassment, fluctuation]
+  - utterance: "is it worrying you that you might get things wrong in front of me"
+    topics: [embarrassment]
+    style: boundary_spoken
+    pair: [embarrassment, fluctuation]
+  - utterance: "You needn't worry about getting it wrong; how are you feeling about being asked all this?"
+    topics: [embarrassment]
+    style: boundary_colloquial
+    pair: [embarrassment, fluctuation]
+  - utterance: "That's all right. Does it upset you when the answers won't come?"
+    topics: [embarrassment]
+    style: boundary_follow_up
+    pair: [embarrassment, fluctuation]
+    previous:
+      interviewer: "I can't bring any of those words back now."
+      character: "I can't bring any of those words back now."
+  - utterance: "Has anyone told you what is causing the confusion?"
+    topics: []
+    style: near_miss
+    pair: [embarrassment, fluctuation]
+  - utterance: "Have you ever been confused like this at any time in your life before?"
+    topics: []
+    style: near_miss
+    pair: [embarrassment, fluctuation]
+  - utterance: "Have you noticed anything in the room that other people haven't?"
+    topics: [visual-experience]
+    style: boundary
+    pair: [fluctuation, visual-experience]
+  - utterance: "Do you ever see things you can't quite explain, like shapes or figures?"
+    topics: [visual-experience]
+    style: boundary
+    pair: [fluctuation, visual-experience]
+  - utterance: "and have you been seeing anything that isn't really there you know animals or people"
+    topics: [visual-experience]
+    style: boundary_spoken
+    pair: [fluctuation, visual-experience]
+  - utterance: "Any funny things catching your eye by the bed, things that seem to come and go?"
+    topics: [visual-experience]
+    style: boundary_colloquial
+    pair: [fluctuation, visual-experience]
+  - utterance: "And during those spells, do you see anything that other people don't?"
+    topics: [visual-experience]
+    style: boundary_follow_up
+    pair: [fluctuation, visual-experience]
+    previous:
+      interviewer: "It comes and goes; sometimes I can follow a whole conversation, then later I can't make sense of what people are saying."
+      character: "It comes and goes; sometimes I can follow a whole conversation, then later I can't make sense of what people are saying."
+  - utterance: "Is your confusion worse at certain times, perhaps in the evening?"
+    topics: [fluctuation]
+    style: boundary
+    pair: [fluctuation, visual-experience]
+  - utterance: "Does it vary from hour to hour?"
+    topics: [fluctuation]
+    style: boundary
+    pair: [fluctuation, visual-experience]
+  - utterance: "so does it sort of get worse and then better again through the day"
+    topics: [fluctuation]
+    style: boundary_spoken
+    pair: [fluctuation, visual-experience]
+  - utterance: "Do you get patches when you feel completely yourself again, and then lose it?"
+    topics: [fluctuation]
+    style: boundary_colloquial
+    pair: [fluctuation, visual-experience]
+  - utterance: "Thank you. Does your thinking go in and out like that as well, with clearer times?"
+    topics: [fluctuation]
+    style: boundary_follow_up
+    pair: [fluctuation, visual-experience]
+    previous:
+      interviewer: "A little dog keeps appearing by the end of the bed and then disappearing; the nurse says she can't see it."
+      character: "A little dog keeps appearing by the end of the bed and then disappearing; the nurse says she can't see it."
+  - utterance: "Have you been hearing voices that nobody else can hear?"
+    topics: []
+    style: near_miss
+    pair: [fluctuation, visual-experience]
+  - utterance: "Do you ever feel that someone is trying to harm you?"
+    topics: []
+    style: near_miss
+    pair: [fluctuation, visual-experience]

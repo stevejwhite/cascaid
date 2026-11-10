@@ -1,0 +1,799 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: functional-seizures-mental-state
+case_version: 0.1.0
+status: draft
+items:
+- utterance: How did the doctors explain to you what is going on?
+  topics:
+  - understanding
+  style: open
+- utterance: Has anyone said what they think is causing your attacks?
+  topics:
+  - understanding
+  style: closed
+- utterance: Did the neurologist use a particular name for the condition?
+  topics:
+  - understanding
+  style: closed
+- utterance: What did they say it was, then?
+  topics:
+  - understanding
+  style: colloquial
+- utterance: Does it make any sense to you, what they've told you?
+  topics:
+  - understanding
+  style: colloquial
+- utterance: What is your understanding of the diagnosis you were given?
+  topics:
+  - understanding
+  style: clinical
+- utterance: I wondered how the explanation has sat with you
+  topics:
+  - understanding
+  style: indirect
+- utterance: That must be a lot to take in. What did they tell you yesterday?
+  topics:
+  - understanding
+  style: empathy_then_question
+- utterance: so um what did they actually say to you about it
+  topics:
+  - understanding
+  style: spoken
+- utterance: did they, did anyone explain why it's happening
+  topics:
+  - understanding
+  style: spoken
+- utterance: What were you told?
+  topics:
+  - understanding
+  style: brief
+- utterance: And how did they explain that?
+  topics:
+  - understanding
+  style: follow_up
+  previous:
+    interviewer: What did the neurologist tell you?
+    character: I was told these attacks aren't caused by epileptic activity and are called functional
+      seizures. I don't yet understand how that can happen.
+- utterance: Does that make sense to you?
+  topics:
+  - understanding
+  style: follow_up
+  previous:
+    interviewer: What did the neurologist tell you?
+    character: I was told these attacks aren't caused by epileptic activity and are called functional
+      seizures. I don't yet understand how that can happen.
+- utterance: You probably think the doctors have got it wrong, don't you?
+  topics:
+  - understanding
+  style: leading
+- utterance: Can you describe what happens during an attack?
+  topics:
+  - episodes
+  style: open
+- utterance: How long have you been having these attacks?
+  topics:
+  - episodes
+  style: open
+- utterance: Do the attacks happen every day?
+  topics:
+  - episodes
+  style: closed
+- utterance: Do you lose awareness during an episode?
+  topics:
+  - episodes
+  style: closed
+- utterance: What's it like when one comes on?
+  topics:
+  - episodes
+  style: colloquial
+- utterance: How often do you get them?
+  topics:
+  - episodes
+  style: colloquial
+- utterance: Could you describe the semiology of a typical episode and its frequency?
+  topics:
+  - episodes
+  style: clinical
+- utterance: I'd like to hear about when these started and what they're like
+  topics:
+  - episodes
+  style: indirect
+- utterance: It sounds frightening. What do other people see when you have one?
+  topics:
+  - episodes
+  style: empathy_then_question
+- utterance: so um what happens, from the start of one to the end
+  topics:
+  - episodes
+  style: spoken
+- utterance: when did, when did these first start up
+  topics:
+  - episodes
+  style: spoken
+- utterance: How often do they happen?
+  topics:
+  - episodes
+  style: brief
+- utterance: And how long do they go on for?
+  topics:
+  - episodes
+  style: follow_up
+  previous:
+    interviewer: What happens during an attack?
+    character: They began eight months ago and happen about twice a week. I feel distant, then lose track
+      of time; people say I shake for several minutes.
+- utterance: What do people say they see?
+  topics:
+  - episodes
+  style: follow_up
+  previous:
+    interviewer: What happens during an attack?
+    character: They began eight months ago and happen about twice a week. I feel distant, then lose track
+      of time; people say I shake for several minutes.
+- utterance: They happen without any warning at all, don't they?
+  topics:
+  - episodes
+  style: leading
+- utterance: What do you still enjoy doing at the moment?
+  topics:
+  - mood
+  style: open
+- utterance: Do you feel low in yourself?
+  topics:
+  - mood
+  style: closed
+- utterance: Can you still enjoy things you used to like?
+  topics:
+  - mood
+  style: closed
+- utterance: Have you been feeling down?
+  topics:
+  - mood
+  style: colloquial
+- utterance: Are you still enjoying the things you used to?
+  topics:
+  - mood
+  style: colloquial
+- utterance: Have you experienced a persistent low mood or loss of interest?
+  topics:
+  - mood
+  style: clinical
+- utterance: I wondered how your spirits have been in general
+  topics:
+  - mood
+  style: indirect
+- utterance: You've had a lot going on. How has your mood been?
+  topics:
+  - mood
+  style: empathy_then_question
+- utterance: so um are you feeling depressed at all
+  topics:
+  - mood
+  style: spoken
+- utterance: do you still, like, get pleasure out of anything
+  topics:
+  - mood
+  style: spoken
+- utterance: And your mood?
+  topics:
+  - mood
+  style: brief
+- utterance: And is that all day, or only after an attack?
+  topics:
+  - mood
+  style: follow_up
+  previous:
+    interviewer: How has your mood been?
+    character: I feel low after an attack but still enjoy music and talking to friends. I don't feel low
+      all day every day.
+- utterance: What about the things you enjoy?
+  topics:
+  - mood
+  style: follow_up
+  previous:
+    interviewer: How has your mood been?
+    character: I feel low after an attack but still enjoy music and talking to friends. I don't feel low
+      all day every day.
+- utterance: You've been very low since this started, haven't you?
+  topics:
+  - mood
+  style: leading
+- utterance: How do you feel about the possibility of having another attack?
+  topics:
+  - anxiety
+  style: open
+- utterance: What has changed in what you do day to day because of the attacks?
+  topics:
+  - anxiety
+  style: open
+- utterance: Do you worry about having an attack when you're out?
+  topics:
+  - anxiety
+  style: closed
+- utterance: Do you avoid going places on your own?
+  topics:
+  - anxiety
+  style: closed
+- utterance: Are you nervous about going out in case one happens?
+  topics:
+  - anxiety
+  style: colloquial
+- utterance: Do you notice anything in your body when you think about it?
+  topics:
+  - anxiety
+  style: colloquial
+- utterance: Is there anticipatory anxiety or agoraphobic avoidance?
+  topics:
+  - anxiety
+  style: clinical
+- utterance: I wondered how confident you feel leaving the house
+  topics:
+  - anxiety
+  style: indirect
+- utterance: It must be unsettling. Do you feel afraid of another one happening?
+  topics:
+  - anxiety
+  style: empathy_then_question
+- utterance: um are you scared of it happening again, like when you're out
+  topics:
+  - anxiety
+  style: spoken
+- utterance: so do you, do you stay in more than you used to
+  topics:
+  - anxiety
+  style: spoken
+- utterance: Worried about another one?
+  topics:
+  - anxiety
+  style: brief
+- utterance: And does that stop you going out?
+  topics:
+  - anxiety
+  style: follow_up
+  previous:
+    interviewer: Do you worry about another attack?
+    character: I'm constantly worried another attack will happen in public. I avoid going out alone and
+      feel my heart race when I try.
+- utterance: And what do you feel in your body when you worry?
+  topics:
+  - anxiety
+  style: follow_up
+  previous:
+    interviewer: Do you worry about another attack?
+    character: I'm constantly worried another attack will happen in public. I avoid going out alone and
+      feel my heart race when I try.
+- utterance: You're always on edge about it, aren't you?
+  topics:
+  - anxiety
+  style: leading
+- utterance: What do you notice in the moments before an attack?
+  topics:
+  - dissociation
+  style: open
+- utterance: How do things around you seem at the time?
+  topics:
+  - dissociation
+  style: open
+- utterance: Do you ever feel detached from your surroundings?
+  topics:
+  - dissociation
+  style: closed
+- utterance: Does everything feel unreal before it starts?
+  topics:
+  - dissociation
+  style: closed
+- utterance: Do you ever feel spaced out or not really there?
+  topics:
+  - dissociation
+  style: colloquial
+- utterance: Does the world look odd or far away to you sometimes?
+  topics:
+  - dissociation
+  style: colloquial
+- utterance: Do you experience depersonalisation or derealisation?
+  topics:
+  - dissociation
+  style: clinical
+- utterance: I wondered if things ever feel strange or dreamlike around you
+  topics:
+  - dissociation
+  style: indirect
+- utterance: That sounds scary. Do you get a sense of being cut off from what's around you?
+  topics:
+  - dissociation
+  style: empathy_then_question
+- utterance: um does it ever feel like you're, you're watching from outside
+  topics:
+  - dissociation
+  style: spoken
+- utterance: do things like, seem not real before one comes
+  topics:
+  - dissociation
+  style: spoken
+- utterance: Anything feel unreal?
+  topics:
+  - dissociation
+  style: brief
+- utterance: And is that before the attack or during it?
+  topics:
+  - dissociation
+  style: follow_up
+  previous:
+    interviewer: Do you feel detached before an attack?
+    character: Sometimes before an attack the room feels far away, as if I'm behind glass. I know it's
+      a feeling, not that the room actually changed.
+- utterance: Do you know it's just a feeling?
+  topics:
+  - dissociation
+  style: follow_up
+  previous:
+    interviewer: Do you feel detached before an attack?
+    character: Sometimes before an attack the room feels far away, as if I'm behind glass. I know it's
+      a feeling, not that the room actually changed.
+- utterance: You feel completely cut off from reality, don't you?
+  topics:
+  - dissociation
+  style: leading
+- utterance: What pressures have you been under this year?
+  topics:
+  - stress
+  style: open
+- utterance: Were you under a lot of stress when the attacks began?
+  topics:
+  - stress
+  style: closed
+- utterance: Do the attacks always come when you're stressed?
+  topics:
+  - stress
+  style: closed
+- utterance: What was happening around that time, work or at home?
+  topics:
+  - stress
+  style: colloquial
+- utterance: Is it always when things get on top of you?
+  topics:
+  - stress
+  style: colloquial
+- utterance: Were there identifiable psychosocial stressors at onset?
+  topics:
+  - stress
+  style: clinical
+- utterance: I wondered about anything that was weighing on you back then
+  topics:
+  - stress
+  style: indirect
+- utterance: It sounds like you've had a lot on your plate. What was happening in your life around then?
+  topics:
+  - stress
+  style: empathy_then_question
+- utterance: so um was there a lot on, you know, at that time
+  topics:
+  - stress
+  style: spoken
+- utterance: does it only happen when you're stressed or not always
+  topics:
+  - stress
+  style: spoken
+- utterance: Any stress at the time?
+  topics:
+  - stress
+  style: brief
+- utterance: And how were you coping with all of that?
+  topics:
+  - stress
+  style: follow_up
+  previous:
+    interviewer: What was going on when this started?
+    character: I was juggling work and caring for my mother when this started. Not every attack happens
+      when I feel stressed.
+- utterance: And do they always come when you're stressed?
+  topics:
+  - stress
+  style: follow_up
+  previous:
+    interviewer: What was going on when this started?
+    character: I was juggling work and caring for my mother when this started. Not every attack happens
+      when I feel stressed.
+- utterance: I imagine it's all down to stress, isn't it?
+  topics:
+  - stress
+  style: leading
+- utterance: How have you felt about your life since all this began?
+  topics:
+  - risk
+  style: open
+- utterance: What injuries have you had during an attack?
+  topics:
+  - risk
+  style: open
+- utterance: Have you ever thought of harming yourself?
+  topics:
+  - risk
+  style: closed
+- utterance: Have you hurt yourself in a fall?
+  topics:
+  - risk
+  style: closed
+- utterance: Have you ever not wanted to be here?
+  topics:
+  - risk
+  style: colloquial
+- utterance: Have you banged yourself up during one?
+  topics:
+  - risk
+  style: colloquial
+- utterance: Is there any suicidal ideation, and have you sustained injuries during episodes?
+  topics:
+  - risk
+  style: clinical
+- utterance: I wanted to ask if you have ever had dark thoughts about yourself
+  topics:
+  - risk
+  style: indirect
+- utterance: This has been very hard on you. Have you had thoughts of ending your life?
+  topics:
+  - risk
+  style: empathy_then_question
+- utterance: um have you, have you been thinking about hurting yourself
+  topics:
+  - risk
+  style: spoken
+- utterance: did you ever get hurt when you fell or whatever
+  topics:
+  - risk
+  style: spoken
+- utterance: Any thoughts of self-harm?
+  topics:
+  - risk
+  style: brief
+- utterance: And have you been injured at all?
+  topics:
+  - risk
+  style: follow_up
+  previous:
+    interviewer: Have you thought of harming yourself?
+    character: No, I don't want to die or hurt myself. I bruised my shoulder in a fall during an attack.
+- utterance: Do you ever think of ending your life?
+  topics:
+  - risk
+  style: follow_up
+  previous:
+    interviewer: How has your mood been?
+    character: I feel low after an attack but still enjoy music and talking to friends. I don't feel low
+      all day every day.
+- utterance: You must have thought life isn't worth living at times, haven't you?
+  topics:
+  - risk
+  style: leading
+- utterance: What do you experience between your attacks?
+  topics:
+  - perceptions
+  style: open
+- utterance: How are your thoughts at the moment?
+  topics:
+  - perceptions
+  style: open
+- utterance: Do you feel anyone is controlling you?
+  topics:
+  - perceptions
+  style: closed
+- utterance: Are you hearing things that other people can't?
+  topics:
+  - perceptions
+  style: colloquial
+- utterance: Between attacks, do you know where you are and what's happening?
+  topics:
+  - perceptions
+  style: colloquial
+- utterance: Do you experience hallucinations or delusional beliefs?
+  topics:
+  - perceptions
+  style: clinical
+- utterance: I wondered whether you have any odd experiences, like hearing something no one else does
+  topics:
+  - perceptions
+  style: indirect
+- utterance: It's unsettling not to know what's causing this. Do you hear anything that isn't there?
+  topics:
+  - perceptions
+  style: empathy_then_question
+- utterance: um do you hear voices or anything, or feel watched
+  topics:
+  - perceptions
+  style: spoken
+- utterance: are you, like, clear in your head in between
+  topics:
+  - perceptions
+  style: spoken
+- utterance: Any voices?
+  topics:
+  - perceptions
+  style: brief
+- utterance: And are you clear about where you are between them?
+  topics:
+  - perceptions
+  style: follow_up
+  previous:
+    interviewer: Do you hear voices?
+    character: No, I don't hear voices or believe someone is controlling me. Between attacks I know where
+      I am and what's going on.
+- utterance: Do you ever feel that someone else is behind it?
+  topics:
+  - perceptions
+  style: follow_up
+  previous:
+    interviewer: Do you hear voices?
+    character: No, I don't hear voices or believe someone is controlling me. Between attacks I know where
+      I am and what's going on.
+- utterance: You probably have odd thoughts, don't you?
+  topics:
+  - perceptions
+  style: leading
+- utterance: Has anything frightening happened to you in the past?
+  topics:
+  - history
+  style: open
+- utterance: Is there anything from earlier in your life that you think might matter?
+  topics:
+  - history
+  style: open
+- utterance: Have you ever been in a relationship where you felt unsafe?
+  topics:
+  - history
+  style: closed
+- utterance: Do you think any past experience could be connected to the attacks?
+  topics:
+  - history
+  style: closed
+- utterance: Has anyone ever treated you badly?
+  topics:
+  - history
+  style: colloquial
+- utterance: Was there a time in your life that was really scary?
+  topics:
+  - history
+  style: colloquial
+- utterance: Is there a history of interpersonal trauma or abuse?
+  topics:
+  - history
+  style: clinical
+- utterance: I wondered if you would like to tell me about anything difficult from the past
+  topics:
+  - history
+  style: indirect
+- utterance: Only tell me what you feel able to. Did something frightening happen to you earlier on?
+  topics:
+  - history
+  style: empathy_then_question
+- utterance: um was there, was there anything in your past, like, that scared you
+  topics:
+  - history
+  style: spoken
+- utterance: have you ever been hurt by someone close to you
+  topics:
+  - history
+  style: spoken
+- utterance: Anything in your past?
+  topics:
+  - history
+  style: brief
+- utterance: Would you want to say more about that?
+  topics:
+  - history
+  style: follow_up
+  previous:
+    interviewer: Has anything frightening happened in your past?
+    character: There was a frightening relationship years ago. I don't want to go into details today and
+      don't know whether it's related.
+- utterance: Do you think it might be related to the attacks?
+  topics:
+  - history
+  style: follow_up
+  previous:
+    interviewer: Has anything frightening happened in your past?
+    character: There was a frightening relationship years ago. I don't want to go into details today and
+      don't know whether it's related.
+- utterance: Something bad happened to you once, didn't it?
+  topics:
+  - history
+  style: leading
+- utterance: What does this diagnosis mean to you?
+  topics:
+  - stigma
+  style: open
+- utterance: How do you think other people see this?
+  topics:
+  - stigma
+  style: open
+- utterance: Are you worried people won't believe you?
+  topics:
+  - stigma
+  style: closed
+- utterance: Do you feel people think you are making it up?
+  topics:
+  - stigma
+  style: closed
+- utterance: Do people think you're putting it on?
+  topics:
+  - stigma
+  style: colloquial
+- utterance: Are you afraid of how other people will react?
+  topics:
+  - stigma
+  style: colloquial
+- utterance: Do you have concerns regarding stigma or disbelief?
+  topics:
+  - stigma
+  style: clinical
+- utterance: I wondered how it feels to hear it's not epilepsy
+  topics:
+  - stigma
+  style: indirect
+- utterance: That sounds really difficult. Do you feel people question whether it's real?
+  topics:
+  - stigma
+  style: empathy_then_question
+- utterance: um do you feel like people, like, don't believe you
+  topics:
+  - stigma
+  style: spoken
+- utterance: so what do you think people will make of the diagnosis
+  topics:
+  - stigma
+  style: spoken
+- utterance: Fear of not being believed?
+  topics:
+  - stigma
+  style: brief
+- utterance: And has anyone said that to you?
+  topics:
+  - stigma
+  style: follow_up
+  previous:
+    interviewer: How do you think other people see this?
+    character: I'm afraid people hear 'not epilepsy' and think I'm putting it on. I can't choose when
+      it happens.
+- utterance: How does that make you feel?
+  topics:
+  - stigma
+  style: follow_up
+  previous:
+    interviewer: How do you think other people see this?
+    character: I'm afraid people hear 'not epilepsy' and think I'm putting it on. I can't choose when
+      it happens.
+- utterance: People think you're making it up, don't they?
+  topics:
+  - stigma
+  style: leading
+- utterance: What were you told about the cause, and how often do the attacks happen?
+  topics:
+  - understanding
+  - episodes
+  style: stacked
+- utterance: How is your mood, and are you worried about going out?
+  topics:
+  - mood
+  - anxiety
+  style: stacked
+- utterance: What was going on when it started, and has anything frightening happened in your past?
+  topics:
+  - stress
+  - history
+  style: stacked
+- utterance: Have you thought of harming yourself, and do you ever hear voices?
+  topics:
+  - risk
+  - perceptions
+  style: stacked
+- utterance: Good morning Hannah, thank you for seeing me.
+  topics: []
+  style: greeting
+- utterance: Hello Hannah, how are you feeling today?
+  topics: []
+  style: greeting
+- utterance: Hi Hannah, can I sit down here?
+  topics: []
+  style: greeting
+- utterance: Hello Hannah, my name's Dr Patel and I'm one of the psychiatrists who sees people on the
+    wards.
+  topics: []
+  style: introduction
+- utterance: Hannah, I'm a doctor from the liaison team. Is it all right if we have a talk?
+  topics: []
+  style: introduction
+- utterance: Hi, I'm Sam, a psychiatry doctor, and I've been asked to come and meet you.
+  topics: []
+  style: introduction
+- utterance: What would you like to start with, Hannah?
+  topics: []
+  style: open
+- utterance: Where would you like to begin?
+  topics: []
+  style: open
+- utterance: Before we start, do you have any questions for me, Hannah?
+  topics: []
+  style: open
+- utterance: Is it okay if I ask you some questions about how you've been?
+  topics: []
+  style: open
+- utterance: I'd like to move on to something different now.
+  topics: []
+  style: transition
+- utterance: Can we turn to another area, Hannah?
+  topics: []
+  style: transition
+- utterance: Let's talk about how things are for you outside the hospital.
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Hannah.
+  topics: []
+  style: closing
+- utterance: We only have a few minutes left, so I'll wrap up soon.
+  topics: []
+  style: closing
+- utterance: Thank you very much for talking to me today.
+  topics: []
+  style: closing
+- utterance: That sounds very frightening.
+  topics: []
+  style: empathy
+- utterance: It sounds like a lot to take in all at once.
+  topics: []
+  style: empathy
+- utterance: I can see this has been really unsettling for you.
+  topics: []
+  style: empathy
+- utterance: Thank you for being so open with me, Hannah.
+  topics: []
+  style: empathy
+- utterance: So you've been given a diagnosis you're still making sense of, and the attacks have been
+    affecting your life.
+  topics: []
+  style: summary
+- utterance: 'Let me check I''ve understood: you''re confused about what you were told and worried about
+    what comes next.'
+  topics: []
+  style: summary
+- utterance: I'll ask about your mood, your worries and how you're coping, and then we can talk about
+    what might help.
+  topics: []
+  style: explanation
+- utterance: I should say that I'm here to understand you better, not to question whether your attacks
+    are real.
+  topics: []
+  style: explanation
+- utterance: Does that make sense so far?
+  topics: []
+  style: check_understanding
+- utterance: Have I explained that clearly, Hannah?
+  topics: []
+  style: check_understanding
+- utterance: Have you had any problems with your memory?
+  topics: []
+  style: off_case
+- utterance: Do you take any regular medication?
+  topics: []
+  style: off_case
+- utterance: Is there any history of epilepsy in your family?
+  topics: []
+  style: off_case
+- utterance: Have you been sleeping properly in hospital?
+  topics: []
+  style: off_case
+- utterance: Have you ever had a seizure in front of your friends?
+  topics: []
+  style: near_miss
+- utterance: Do you remember the tests they did on the ward?
+  topics: []
+  style: near_miss
+- utterance: Have you had treatment for the attacks?
+  topics: []
+  style: near_miss
+- utterance: Do you live alone, Hannah?
+  topics: []
+  style: off_case
+- utterance: Did the neurologist show you the video of the attacks?
+  topics: []
+  style: near_miss

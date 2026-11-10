@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: alcohol-memory-cognitive-assessment
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hello Gordon, I'm one of the doctors on the ward. Sorry, I know you've had lots of people asking you things."
+    expected: []
+    rapport: false
+  - utterance: "Can you tell me where you are right now, and why you came in?"
+    expected: [orientation]
+    rapport: false
+  - utterance: "What's today's date, Gordon? Or the season, if you're not sure?"
+    expected: [time]
+    rapport: false
+  - utterance: "I'd like you to repeat three words after me: harbour, ribbon, candle."
+    expected: [registration]
+    rapport: false
+  - utterance: "Now, those three words from a few minutes ago, can you say them back to me?"
+    expected: [recall]
+    rapport: false
+  - utterance: "How easy is it for you to keep track of a conversation at the moment?"
+    expected: [attention]
+    rapport: false
+  - utterance: "What were you doing yesterday, before I came to see you?"
+    expected: [account]
+    rapport: false
+  - utterance: "If you were making yourself a cup of tea and some beans on toast, how would you go about it?"
+    expected: [planning]
+    rapport: false
+  - utterance: "How much have you been drinking over the years, and when did you last have a drink?"
+    expected: [alcohol]
+    rapport: false
+  - utterance: "Have you had any thoughts of harming yourself or anybody else?"
+    expected: [safety]
+    rapport: false
+  - utterance: "Do you ever find you've asked people the same thing more than once?"
+    expected: [insight]
+    rapport: false
+  - utterance: "I can imagine all these questions are pretty tiresome."
+    expected: []
+    rapport: true
+  - utterance: "Being stuck on a ward for days without being sure why you're here must feel really unsettling for you, Gordon. What's worrying you most about what happens next?"
+    expected: [fear]
+    rapport: true
+  - utterance: "do you have any trouble with your eyesight or walking?"
+    expected: []
+    rapport: false
+  - utterance: "Who do you live with at home?"
+    expected: []
+    rapport: false
+  - utterance: "Okay, thanks Gordon. I'll explain what I've noticed in a moment."
+    expected: []
+    rapport: false
+  - utterance: "And what would you need for that?"
+    previous:
+      interviewer: "If you were cooking a simple meal, what would you do first?"
+      character: "I'd put the pan on first."
+    expected: [planning]
+    rapport: false
+  - utterance: "Could it be that you've actually been here in hospital the whole time?"
+    previous:
+      interviewer: "What did you get up to yesterday?"
+      character: "I went to work at the garage, then came back here."
+    expected: [account]
+    rapport: false

@@ -1,0 +1,227 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: forensic-leave-safety-plan
+case_version: 0.1.0
+status: draft
+items:
+  # ---- contacts / disclosure ----
+  - utterance: "Who can you phone while you're out on leave?"
+    topics: [contacts]
+    style: boundary
+    pair: [contacts, disclosure]
+  - utterance: "What contact will you have with the ward while you are away from it?"
+    topics: [contacts]
+    style: boundary
+    pair: [contacts, disclosure]
+  - utterance: "Will anyone you trust know where you're going?"
+    topics: [contacts]
+    style: boundary_colloquial
+    pair: [contacts, disclosure]
+  - utterance: "um have you got a phone on you and someone you can ring if you need to"
+    topics: [contacts]
+    style: boundary_spoken
+    pair: [contacts, disclosure]
+  - utterance: "OK. And who will you be able to ring while you're out if you need to?"
+    topics: [contacts]
+    style: boundary_follow_up
+    pair: [contacts, disclosure]
+    previous:
+      interviewer: "Has anybody been in touch that we should know about?"
+      character: "An old drinking friend messaged asking to meet me."
+  - utterance: "Has anyone from your drinking days been in touch with you?"
+    topics: [disclosure]
+    style: boundary
+    pair: [contacts, disclosure]
+  - utterance: "Is there anything about outside contact that you haven't mentioned to the team?"
+    topics: [disclosure]
+    style: boundary
+    pair: [contacts, disclosure]
+  - utterance: "Has anyone been messaging you that you've kept to yourself?"
+    topics: [disclosure]
+    style: boundary_colloquial
+    pair: [contacts, disclosure]
+  - utterance: "um is there something you've not told us about people getting in touch"
+    topics: [disclosure]
+    style: boundary_spoken
+    pair: [contacts, disclosure]
+  - utterance: "Good. Has anyone from your past contacted you that we don't know about?"
+    topics: [disclosure]
+    style: boundary_follow_up
+    pair: [contacts, disclosure]
+    previous:
+      interviewer: "Who will you be able to phone?"
+      character: "I have a charged phone and the ward number."
+  - utterance: "How much money will you take with you?"
+    topics: []
+    style: near_miss
+    pair: [contacts, disclosure]
+  - utterance: "Will you be taking your wallet and keys?"
+    topics: []
+    style: near_miss
+    pair: [contacts, disclosure]
+  # ---- current-risk / violence ----
+  - utterance: "Is there anyone you're thinking of harming today?"
+    topics: [current-risk]
+    style: boundary
+    pair: [current-risk, violence]
+  - utterance: "Is there anyone you feel like confronting at the moment?"
+    topics: [current-risk]
+    style: boundary
+    pair: [current-risk, violence]
+  - utterance: "Have you got any thoughts of harming yourself today?"
+    topics: [current-risk]
+    style: boundary_colloquial
+    pair: [current-risk, violence]
+  - utterance: "um right now are you planning to hurt anyone"
+    topics: [current-risk]
+    style: boundary_spoken
+    pair: [current-risk, violence]
+  - utterance: "Right. And at this moment, are you planning to harm anybody?"
+    topics: [current-risk]
+    style: boundary_follow_up
+    pair: [current-risk, violence]
+    previous:
+      interviewer: "Tell me about the assault."
+      character: "Two years ago I seriously injured a man after drinking and an argument."
+  - utterance: "Can you tell me about the assault that led to your admission?"
+    topics: [violence]
+    style: boundary
+    pair: [current-risk, violence]
+  - utterance: "What happened when you hurt someone in the past?"
+    topics: [violence]
+    style: boundary
+    pair: [current-risk, violence]
+  - utterance: "What's your take on what you did back then?"
+    topics: [violence]
+    style: boundary_colloquial
+    pair: [current-risk, violence]
+  - utterance: "so um when was the last time you actually hurt somebody"
+    topics: [violence]
+    style: boundary_spoken
+    pair: [current-risk, violence]
+  - utterance: "OK. Let's go back to the violence in your past, what happened then?"
+    topics: [violence]
+    style: boundary_follow_up
+    pair: [current-risk, violence]
+    previous:
+      interviewer: "Do you have any thoughts of hurting anyone?"
+      character: "No, I have no plan to confront or hurt anyone, and no thoughts of harming myself today."
+  - utterance: "Did you receive a custodial sentence for it?"
+    topics: []
+    style: near_miss
+    pair: [current-risk, violence]
+  - utterance: "How did the other person's family react?"
+    topics: []
+    style: near_miss
+    pair: [current-risk, violence]
+  # ---- contingency / motivation ----
+  - utterance: "What would you do if you missed the bus back?"
+    topics: [contingency]
+    style: boundary
+    pair: [contingency, motivation]
+  - utterance: "If things started to go wrong while you were out, what would you do?"
+    topics: [contingency]
+    style: boundary
+    pair: [contingency, motivation]
+  - utterance: "Who would you turn to if you felt overwhelmed out there?"
+    topics: [contingency]
+    style: boundary_colloquial
+    pair: [contingency, motivation]
+  - utterance: "so um what's the plan if you can't get back on time"
+    topics: [contingency]
+    style: boundary_spoken
+    pair: [contingency, motivation]
+  - utterance: "Okay, practically though, what would you do if you couldn't get back on time?"
+    topics: [contingency]
+    style: boundary_follow_up
+    pair: [contingency, motivation]
+    previous:
+      interviewer: "Why does it matter to you to stick to the plan?"
+      character: "I want my sister to trust me again."
+  - utterance: "What would a successful leave mean to you?"
+    topics: [motivation]
+    style: boundary
+    pair: [contingency, motivation]
+  - utterance: "Why does it matter to you to keep to the plan?"
+    topics: [motivation]
+    style: boundary
+    pair: [contingency, motivation]
+  - utterance: "How would it feel if leave got stopped because of a slip?"
+    topics: [motivation]
+    style: boundary_colloquial
+    pair: [contingency, motivation]
+  - utterance: "um what are you most worried about with this step"
+    topics: [motivation]
+    style: boundary_spoken
+    pair: [contingency, motivation]
+  - utterance: "Fine. Why is it so important to you to get this right?"
+    topics: [motivation]
+    style: boundary_follow_up
+    pair: [contingency, motivation]
+    previous:
+      interviewer: "What would you do if you were late?"
+      character: "I'd call the ward rather than try to sort everything alone."
+  - utterance: "How will you pass the time while you're out?"
+    topics: []
+    style: near_miss
+    pair: [contingency, motivation]
+  - utterance: "What would you like to do once you're eventually discharged?"
+    topics: []
+    style: near_miss
+    pair: [contingency, motivation]
+  # ---- current-risk / warning ----
+  - utterance: "Is there anybody you're thinking of getting back at today?"
+    topics: [current-risk]
+    style: boundary
+    pair: [current-risk, warning]
+  - utterance: "Do you have any urge to confront someone at the moment?"
+    topics: [current-risk]
+    style: boundary
+    pair: [current-risk, warning]
+  - utterance: "Are you having any dark thoughts about yourself today?"
+    topics: [current-risk]
+    style: boundary_colloquial
+    pair: [current-risk, warning]
+  - utterance: "um are you thinking of hurting anyone or yourself right now"
+    topics: [current-risk]
+    style: boundary_spoken
+    pair: [current-risk, warning]
+  - utterance: "OK. Is anything on your mind today about harming someone or yourself?"
+    topics: [current-risk]
+    style: boundary_follow_up
+    pair: [current-risk, warning]
+    previous:
+      interviewer: "What are the signs that you're getting angry?"
+      character: "My jaw tightens, I pace and start thinking everyone is disrespecting me."
+  - utterance: "How do you know when you're starting to get angry?"
+    topics: [warning]
+    style: boundary
+    pair: [current-risk, warning]
+  - utterance: "What happens to you before you lose control?"
+    topics: [warning]
+    style: boundary
+    pair: [current-risk, warning]
+  - utterance: "What's the first thing that tells you it's building?"
+    topics: [warning]
+    style: boundary_colloquial
+    pair: [current-risk, warning]
+  - utterance: "so um what do you notice when you start getting wound up"
+    topics: [warning]
+    style: boundary_spoken
+    pair: [current-risk, warning]
+  - utterance: "Good. What do you notice in yourself when you start getting wound up?"
+    topics: [warning]
+    style: boundary_follow_up
+    pair: [current-risk, warning]
+    previous:
+      interviewer: "Any thoughts of hurting anyone today?"
+      character: "No, I have no plan to confront or hurt anyone, and no thoughts of harming myself today."
+  - utterance: "Have you done any anger management courses?"
+    topics: []
+    style: near_miss
+    pair: [current-risk, warning]
+  - utterance: "Do you take any medication to help with your temper?"
+    topics: []
+    style: near_miss
+    pair: [current-risk, warning]

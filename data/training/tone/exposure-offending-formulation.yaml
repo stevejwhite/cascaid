@@ -1,0 +1,156 @@
+# Training lines for the tone classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: exposure-offending-formulation
+case_version: 0.1.0
+status: draft
+items:
+- utterance: How many convictions are there on his record?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Is there anything to suggest he has touched anyone?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: does he say he feels sexually aroused when he exposes himself
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Has anyone asked him whether he feels suicidal?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: What do we know about how he sees the people who were frightened?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Sorry to ask, but could you tell me what treatment he has had?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: If you don't mind, who is holding the supervision plan?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Good afternoon Dr Ravi, thanks for seeing me.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: Hello, I'm the trainee who has been asked to discuss this referral with you.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: I'll go through the facts first, then my formulation, then risk and the plan.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: explanation
+- utterance: Right. And what did he say about that?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Okay, thank you, that's helpful.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: That sounds difficult.
+  empathy: 1
+  empathy_words: That sounds difficult.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I'm sorry to hear that.
+  empathy: 1
+  empathy_words: I'm sorry to hear that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That must be hard. What would help you most from this discussion?
+  empathy: 1
+  empathy_words: That must be hard.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I can imagine that's frustrating. How reliable is the history?
+  empathy: 1
+  empathy_words: I can imagine that's frustrating.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: It sounds as though you feel uneasy about being pushed to give a simple prediction when so much is unknown.
+  empathy: 2
+  empathy_words: It sounds as though you feel uneasy about being pushed to give a simple prediction when so much is unknown.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: What are people asking you to decide?
+    character: I've been asked for a simple safe-or-unsafe answer. I'm uncomfortable because we cannot promise an individual outcome.
+- utterance: I can see you are worried the gaps in the records might be mistaken for a complete history, and that is a fair concern.
+  empathy: 2
+  empathy_words: I can see you are worried the gaps in the records might be mistaken for a complete history, and that is a fair concern.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: Is the history complete?
+    character: I worry the team may treat an incomplete record as a complete history. I've not yet had a chance to challenge that assumption.
+- utterance: You obviously want to take his own distress seriously as well as the risk to other people, which seems very sensible.
+  empathy: 2
+  empathy_words: You obviously want to take his own distress seriously as well as the risk to other people, which seems very sensible.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: It must be uncomfortable to be asked for a yes or no answer when no one can promise an outcome. How would you like me to frame the uncertainty?
+  empathy: 2
+  empathy_words: It must be uncomfortable to be asked for a yes or no answer when no one can promise an outcome.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+- utterance: That is a pretty weak referral and it should have been better.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: That is a pretty weak referral and it should have been better.
+  style: confront_statement
+- utterance: Why haven't you already done the full diagnostic assessment?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Why haven't you already done the full diagnostic assessment?
+  style: confront_why
+- utterance: Surely it's just a straightforward paraphilia, so we should treat it as one.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Surely it's just a straightforward paraphilia, so we should treat it as one.
+  style: dismissive
+- utterance: He's attending probation, so I think the risk is fairly low.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: He's attending probation, so I think the risk is fairly low.
+  style: dismissive

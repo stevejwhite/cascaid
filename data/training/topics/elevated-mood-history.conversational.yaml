@@ -1,0 +1,162 @@
+# Conversational lines for the topic classifier: generic openers and transitions
+# (no topic), and questions addressed by name or with a preamble. Drafted by
+# Claude (Opus 5.5) on 2026-10-13 after real sessions showed most such lines fell
+# to Qwen. NOT YET REVIEWED by a person. Not evaluation data.
+case_id: elevated-mood-history
+case_version: 0.4.0
+status: draft
+items:
+- utterance: Hello there Alex, good to see you, come on in.
+  topics: &id001 []
+  style: greeting
+- utterance: I'm one of the doctors here, it's nice to meet you, Alex.
+  topics: *id001
+  style: introduction
+- utterance: Is it okay if I ask you some questions?
+  topics: *id001
+  style: brief
+- utterance: Where would you like to start?
+  topics: *id001
+  style: open
+- utterance: So what's brought you in to see us?
+  topics: *id001
+  style: open
+- utterance: Thanks for waiting, Alex. Shall we get going?
+  topics: *id001
+  style: greeting
+- utterance: right okay um let me just ask you a few things
+  topics: *id001
+  style: spoken
+- utterance: That's really interesting, thank you. Can I move on to something else?
+  topics: *id001
+  style: follow_up
+- utterance: Okay Alex, I'm just going to go through a few areas now.
+  topics: *id001
+  style: spoken
+- utterance: Okay Alex, how many hours are you sleeping at the moment?
+  topics:
+  - sleep-reduced
+  style: spoken
+- utterance: And Alex, with so little sleep, does it wear you out at all?
+  topics:
+  - sleep-reduced
+  style: closed
+- utterance: So Alex, in yourself, what sort of spirits have you been in?
+  topics:
+  - mood-onset
+  style: open
+- utterance: Okay, and thinking back, roughly when did this phase kick off?
+  topics:
+  - mood-onset
+  style: follow_up
+- utterance: Right, Alex, how are things going at work?
+  topics:
+  - function-work-spending
+  style: open
+- utterance: Alright, and money-wise Alex, has much been going out lately?
+  topics:
+  - function-work-spending
+  style: closed
+- utterance: Alex, I'm just checking on safety, any close calls behind the wheel recently?
+  topics:
+  - risk-driving
+  style: closed
+- utterance: Okay Alex, I ask everyone this, has anyone been at risk of getting hurt, yourself included?
+  topics:
+  - risk-driving
+  style: clinical
+- utterance: Do you live on your own, Alex?
+  topics:
+  - support-sister
+  style: brief
+- utterance: And who do you have around you for support?
+  topics:
+  - support-sister
+  style: open
+- utterance: Alex, are you using any alcohol or drugs at the moment?
+  topics:
+  - substances
+  style: closed
+- utterance: Right, and are there any tablets you've been prescribed, Alex?
+  topics:
+  - substances
+  style: brief
+- utterance: Have you ever had a time when you felt very low, Alex?
+  topics:
+  - past-low-period
+  style: closed
+- utterance: And have you had any mental health problems before?
+  topics:
+  - past-low-period
+  style: closed
+- utterance: Alex, thinking about your relatives, has anyone had troubles with their mental health?
+  topics:
+  - family-and-physical
+  style: closed
+- utterance: Okay, and how's your physical health generally?
+  topics:
+  - family-and-physical
+  style: open
+- utterance: Okay Alex, putting it all together, how do you make sense of this yourself?
+  topics:
+  - insight-worry
+  style: open
+- utterance: Why do you think your sister might be worried?
+  topics:
+  - insight-worry
+  style: open
+- utterance: Tell me a bit more about the business, Alex.
+  topics:
+  - new-business
+  style: open
+- utterance: Okay, so what are your plans for it?
+  topics:
+  - new-business
+  style: follow_up
+- utterance: Hi Alex, my name's Dr Shah, I'm one of the psychiatrists.
+  topics: &id002 []
+  style: introduction
+- utterance: Nice to meet you, Alex.
+  topics: *id002
+  style: greeting
+- utterance: What would you like me to call you?
+  topics: *id002
+  style: brief
+- utterance: So Alex, what's been going on for you lately?
+  topics: *id002
+  style: open
+- utterance: Could you bring me up to speed on the last few days?
+  topics: *id002
+  style: open
+- utterance: Is there anything you'd like to ask before we carry on?
+  topics: *id002
+  style: open
+- utterance: Okay, I'm going to change direction slightly now.
+  topics: *id002
+  style: spoken
+- utterance: Bear with me while I make a quick note.
+  topics: *id002
+  style: spoken
+- utterance: Thanks, Alex, that's really useful to know.
+  topics: *id002
+  style: follow_up
+- utterance: Hi Alex, I'm Dr Shah, one of the psychiatrists here. Your sister's been worried. How has
+    your sleep been over the last week or so?
+  topics:
+  - sleep-reduced
+  style: introduction
+- utterance: Nice to meet you, Alex. I'm one of the doctors. Could you tell me about the business you've
+    been setting up?
+  topics:
+  - new-business
+  style: introduction
+- utterance: Thanks for coming in, Alex. I'm going to ask a few things. To start with, how have you been
+    for money recently?
+  topics:
+  - function-work-spending
+  style: introduction
+- utterance: Hello Alex, I'm Dr Shah. Before we go on, do you drink alcohol or use anything else at the
+    moment?
+  topics:
+  - substances
+  style: introduction

@@ -1,0 +1,60 @@
+# Author-labelled interpreter cases. Held-out test split: written before interpreter
+# tuning (2026-10-07) and not used to tune prompts or labels.
+case_id: elevated-mood-history
+case_version: 0.4.0
+split: test
+items:
+  - utterance: Hi Alex, I'm one of the doctors. What brings you here today?
+    expected: []
+    rapport: false
+  - utterance: How have you been sleeping recently?
+    expected: [sleep-reduced]
+    rapport: false
+  - utterance: Do you feel tired during the day?
+    expected: [sleep-reduced]
+    rapport: false
+  - utterance: How would you describe your mood at the moment?
+    expected: [mood-onset]
+    rapport: false
+  - utterance: When did you first notice feeling this way?
+    expected: [mood-onset]
+    rapport: false
+  - utterance: Have you been getting irritable with people?
+    expected: [mood-onset]
+    rapport: false
+  - utterance: How has this affected your work?
+    expected: [function-work-spending]
+    rapport: false
+  - utterance: Have you been spending more money than usual?
+    expected: [function-work-spending]
+    rapport: false
+  - utterance: Have you done anything risky, like driving fast?
+    expected: [risk-driving]
+    rapport: false
+  - utterance: Have you had any thoughts of harming yourself or anyone else?
+    expected: [risk-driving]
+    rapport: false
+  - utterance: Who's around to support you at the moment?
+    expected: [support-sister]
+    rapport: false
+  - utterance: Do you drink alcohol or take any drugs?
+    expected: [substances]
+    rapport: false
+  - utterance: Are you on any medication?
+    expected: [substances]
+    rapport: false
+  - utterance: Have you ever had problems with your mental health before?
+    expected: [past-low-period]
+    rapport: false
+  - utterance: Does anyone in your family have mental health problems?
+    expected: [family-and-physical]
+    rapport: false
+  - utterance: It must be frustrating when people don't share your enthusiasm.
+    expected: []
+    rapport: true
+  - utterance: What do you think is going on?
+    expected: [insight-worry]
+    rapport: false
+  - utterance: What's your star sign?
+    expected: []
+    rapport: false

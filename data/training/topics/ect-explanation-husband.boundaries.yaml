@@ -1,0 +1,227 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: ect-explanation-husband
+case_version: 0.1.0
+status: draft
+items:
+  # ---- alternatives / procedure ----
+  - utterance: "Before we think about ECT, what else has she been given to try to lift her mood?"
+    topics: [alternatives]
+    style: boundary
+    pair: [alternatives, procedure]
+  - utterance: "Has she had any tablets for the depression so far, and did they make a difference?"
+    topics: [alternatives]
+    style: boundary
+    pair: [alternatives, procedure]
+  - utterance: "Is ECT the only route, or have other treatments been offered to her?"
+    topics: [alternatives]
+    style: boundary_colloquial
+    pair: [alternatives, procedure]
+  - utterance: "um so was she on anything else for this before we got to talking about ECT"
+    topics: [alternatives]
+    style: boundary_spoken
+    pair: [alternatives, procedure]
+  - utterance: "Okay, and before it came to this, did she have any medication that helped?"
+    topics: [alternatives]
+    style: boundary_follow_up
+    pair: [alternatives, procedure]
+    previous:
+      interviewer: "What picture do you have of the treatment?"
+      character: "I picture her being awake and in pain."
+  - utterance: "What do you know about how ECT is actually given?"
+    topics: [procedure]
+    style: boundary
+    pair: [alternatives, procedure]
+  - utterance: "What do you imagine she would go through on the day of a treatment?"
+    topics: [procedure]
+    style: boundary
+    pair: [alternatives, procedure]
+  - utterance: "How much do you actually know about what they do to someone having ECT?"
+    topics: [procedure]
+    style: boundary_colloquial
+    pair: [alternatives, procedure]
+  - utterance: "so um what's your understanding of what happens when someone has it"
+    topics: [procedure]
+    style: boundary_spoken
+    pair: [alternatives, procedure]
+  - utterance: "Right. And what have you understood about what ECT itself involves?"
+    topics: [procedure]
+    style: boundary_follow_up
+    pair: [alternatives, procedure]
+    previous:
+      interviewer: "Has she tried other treatments for this?"
+      character: "The team tried an antidepressant for six weeks, including before admission, without improvement."
+  - utterance: "Has she ever had ECT before, in another hospital?"
+    topics: []
+    style: near_miss
+    pair: [alternatives, procedure]
+  - utterance: "How many sessions of it do you think she would need?"
+    topics: []
+    style: near_miss
+    pair: [alternatives, procedure]
+  # ---- consent / symptoms ----
+  - utterance: "Do you think she is able to weigh up the decision about treatment for herself?"
+    topics: [consent]
+    style: boundary
+    pair: [consent, symptoms]
+  - utterance: "Has she told you whether she agrees to what the team is proposing?"
+    topics: [consent]
+    style: boundary
+    pair: [consent, symptoms]
+  - utterance: "Who gets to say yes to this treatment, do you think?"
+    topics: [consent]
+    style: boundary_colloquial
+    pair: [consent, symptoms]
+  - utterance: "so um does she seem to follow what she's actually being asked to agree to"
+    topics: [consent]
+    style: boundary_spoken
+    pair: [consent, symptoms]
+  - utterance: "And when it comes to the treatment, does she seem to understand what she is being asked to decide?"
+    topics: [consent]
+    style: boundary_follow_up
+    pair: [consent, symptoms]
+    previous:
+      interviewer: "Is she saying things about herself that you can't talk her out of?"
+      character: "Yes, she says she's ruined our family, although I can't think of anything she's done."
+  - utterance: "What kinds of thing does she say about herself when you sit with her?"
+    topics: [symptoms]
+    style: boundary
+    pair: [consent, symptoms]
+  - utterance: "Does she blame herself for things that you don't think are her doing?"
+    topics: [symptoms]
+    style: boundary
+    pair: [consent, symptoms]
+  - utterance: "When you try to cheer her up or put her mind at rest, does she take it on board?"
+    topics: [symptoms]
+    style: boundary_colloquial
+    pair: [consent, symptoms]
+  - utterance: "has she been saying she's let people down or that it's all her fault sort of thing"
+    topics: [symptoms]
+    style: boundary_spoken
+    pair: [consent, symptoms]
+  - utterance: "Does she talk about having done something wrong, then?"
+    topics: [symptoms]
+    style: boundary_follow_up
+    pair: [consent, symptoms]
+    previous:
+      interviewer: "Can she make this decision herself?"
+      character: "I don't know whether she can make this decision, or what my role is."
+  - utterance: "Does she have any other medical problems that would matter for an anaesthetic?"
+    topics: []
+    style: near_miss
+    pair: [consent, symptoms]
+  - utterance: "Does she think the staff on the ward are trying to harm her?"
+    topics: []
+    style: near_miss
+    pair: [consent, symptoms]
+  # ---- consent / procedure ----
+  - utterance: "Do you know whether she's agreed to have the treatment?"
+    topics: [consent]
+    style: boundary
+    pair: [consent, procedure]
+  - utterance: "How do you see your own part in deciding whether she has ECT?"
+    topics: [consent]
+    style: boundary
+    pair: [consent, procedure]
+  - utterance: "Would she be able to grasp what we're asking her to agree to, do you think?"
+    topics: [consent]
+    style: boundary_colloquial
+    pair: [consent, procedure]
+  - utterance: "so um has she said whether she's happy to go ahead or not"
+    topics: [consent]
+    style: boundary_spoken
+    pair: [consent, procedure]
+  - utterance: "Right, and does your wife herself seem able to understand it and make up her mind?"
+    topics: [consent]
+    style: boundary_follow_up
+    pair: [consent, procedure]
+    previous:
+      interviewer: "Do you understand what ECT involves?"
+      character: "I don't understand what actually happens during a treatment."
+  - utterance: "What picture do you have in your head of the treatment itself?"
+    topics: [procedure]
+    style: boundary
+    pair: [consent, procedure]
+  - utterance: "What do you imagine it's like for the person who is having it?"
+    topics: [procedure]
+    style: boundary
+    pair: [consent, procedure]
+  - utterance: "What d'you reckon actually goes on in the treatment room?"
+    topics: [procedure]
+    style: boundary_colloquial
+    pair: [consent, procedure]
+  - utterance: "so er what have you been picturing when you think about her having it"
+    topics: [procedure]
+    style: boundary_spoken
+    pair: [consent, procedure]
+  - utterance: "OK. So what have you understood about the way ECT is carried out?"
+    topics: [procedure]
+    style: boundary_follow_up
+    pair: [consent, procedure]
+    previous:
+      interviewer: "Can she make this decision herself?"
+      character: "She has said no but couldn't explain what she'd understood when I asked."
+  - utterance: "Has she ever had a general anaesthetic for another operation?"
+    topics: []
+    style: near_miss
+    pair: [consent, procedure]
+  - utterance: "Did she ever write down what treatments she would want if she became unwell?"
+    topics: []
+    style: near_miss
+    pair: [consent, procedure]
+  # ---- course / procedure ----
+  - utterance: "How long has she been in hospital now?"
+    topics: [course]
+    style: boundary
+    pair: [course, procedure]
+  - utterance: "How long was she unwell before she was admitted?"
+    topics: [course]
+    style: boundary
+    pair: [course, procedure]
+  - utterance: "What's the timeline been, from her first becoming ill up to today?"
+    topics: [course]
+    style: boundary_colloquial
+    pair: [course, procedure]
+  - utterance: "so um how long has she been like this for"
+    topics: [course]
+    style: boundary_spoken
+    pair: [course, procedure]
+  - utterance: "Thanks. How long ago did all this start?"
+    topics: [course]
+    style: boundary_follow_up
+    pair: [course, procedure]
+    previous:
+      interviewer: "What do you understand about the treatment?"
+      character: "I picture her being awake and in pain."
+  - utterance: "What have you been told so far about ECT, and what did you make of it?"
+    topics: [procedure]
+    style: boundary
+    pair: [course, procedure]
+  - utterance: "Tell me what you think would happen to her during a treatment."
+    topics: [procedure]
+    style: boundary
+    pair: [course, procedure]
+  - utterance: "Have you seen or heard anything about ECT that's shaped how you see it?"
+    topics: [procedure]
+    style: boundary_colloquial
+    pair: [course, procedure]
+  - utterance: "um what's your idea of what it involves for her when she's on the ward having it"
+    topics: [procedure]
+    style: boundary_spoken
+    pair: [course, procedure]
+  - utterance: "I see. What's your picture of the ECT itself, then?"
+    topics: [procedure]
+    style: boundary_follow_up
+    pair: [course, procedure]
+    previous:
+      interviewer: "How long has she been in hospital?"
+      character: "She's been very withdrawn for eight weeks and came into hospital ten days ago."
+  - utterance: "Has she been in hospital with depression before this admission?"
+    topics: []
+    style: near_miss
+    pair: [course, procedure]
+  - utterance: "What was she like before she became ill?"
+    topics: []
+    style: near_miss
+    pair: [course, procedure]

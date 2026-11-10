@@ -1,0 +1,359 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: older-adult-depression-discharge-plan
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Can he manage washing and dressing himself on the ward?
+  topics:
+  - care
+  style: boundary
+  pair:
+  - care
+  - home
+- utterance: Has a social care assessment been requested for him?
+  topics:
+  - care
+  style: boundary
+  pair:
+  - care
+  - home
+- utterance: What help will he need day to day once he's back?
+  topics:
+  - care
+  style: boundary_colloquial
+  pair:
+  - care
+  - home
+- utterance: um is he managing to look after himself, like personal care and shopping
+  topics:
+  - care
+  style: boundary_spoken
+  pair:
+  - care
+  - home
+- utterance: And how is he coping with the day-to-day tasks himself?
+  topics:
+  - care
+  style: boundary_follow_up
+  pair:
+  - care
+  - home
+  previous:
+    interviewer: What did the home visit find?
+    character: The home visit found spoiled food and heating that wasn't working. Arrangements to address those haven't been confirmed.
+- utterance: Has anyone been to see the state of his home?
+  topics:
+  - home
+  style: boundary
+  pair:
+  - care
+  - home
+- utterance: Is the property fit for him to go back to, or are there repairs needed?
+  topics:
+  - home
+  style: boundary
+  pair:
+  - care
+  - home
+- utterance: What's the house like, is it okay for him to go back to?
+  topics:
+  - home
+  style: boundary_colloquial
+  pair:
+  - care
+  - home
+- utterance: so um has someone checked what condition his home is in
+  topics:
+  - home
+  style: boundary_spoken
+  pair:
+  - care
+  - home
+- utterance: And what's the condition of his home like, is it safe to return to?
+  topics:
+  - home
+  style: boundary_follow_up
+  pair:
+  - care
+  - home
+  previous:
+    interviewer: What daily help does he need?
+    character: He can wash and dress here, but says shopping feels overwhelming. A social care assessment is requested, with no agreed package yet.
+- utterance: Does he own or rent his home?
+  topics: []
+  style: near_miss
+  pair:
+  - care
+  - home
+- utterance: Is anyone feeding or looking after his pets at the moment?
+  topics: []
+  style: near_miss
+  pair:
+  - care
+  - home
+- utterance: Is the place he lives in ready for him to return to?
+  topics:
+  - home
+  style: boundary
+  pair:
+  - home
+  - recovery
+- utterance: Are there things that need fixing at his house before he goes?
+  topics:
+  - home
+  style: boundary
+  pair:
+  - home
+  - recovery
+- utterance: What's it like at his place?
+  topics:
+  - home
+  style: boundary_colloquial
+  pair:
+  - home
+  - recovery
+- utterance: right and um has anyone checked the house is okay for him
+  topics:
+  - home
+  style: boundary_spoken
+  pair:
+  - home
+  - recovery
+- utterance: And what about the house, is it ready for him?
+  topics:
+  - home
+  style: boundary_follow_up
+  pair:
+  - home
+  - recovery
+  previous:
+    interviewer: How is his mood on the ward?
+    character: He is seventy-eight and has been here five weeks. He now joins meals and activities, but still has low mornings.
+- utterance: How has his mood been over the past few days?
+  topics:
+  - recovery
+  style: boundary
+  pair:
+  - home
+  - recovery
+- utterance: Is he joining in with the activities on the ward?
+  topics:
+  - recovery
+  style: boundary
+  pair:
+  - home
+  - recovery
+- utterance: How's he getting on now, is he brighter?
+  topics:
+  - recovery
+  style: boundary_colloquial
+  pair:
+  - home
+  - recovery
+- utterance: um so how has he been in himself lately is he feeling better
+  topics:
+  - recovery
+  style: boundary_spoken
+  pair:
+  - home
+  - recovery
+- utterance: Okay, and how has he been in himself on the ward?
+  topics:
+  - recovery
+  style: boundary_follow_up
+  pair:
+  - home
+  - recovery
+  previous:
+    interviewer: Is his house in a fit state?
+    character: The home visit found spoiled food and heating that wasn't working. Arrangements to address those haven't been confirmed.
+- utterance: Has he lived there for a long time?
+  topics: []
+  style: near_miss
+  pair:
+  - home
+  - recovery
+- utterance: Has he had any previous admissions?
+  topics: []
+  style: near_miss
+  pair:
+  - home
+  - recovery
+- utterance: Are there any problems with the property that need sorting before he leaves?
+  topics:
+  - home
+  style: boundary
+  pair:
+  - home
+  - pressure
+- utterance: Has anybody gone to look at his home yet?
+  topics:
+  - home
+  style: boundary
+  pair:
+  - home
+  - pressure
+- utterance: Is the place a mess or is it fine?
+  topics:
+  - home
+  style: boundary_colloquial
+  pair:
+  - home
+  - pressure
+- utterance: um what did they find when they checked his house
+  topics:
+  - home
+  style: boundary_spoken
+  pair:
+  - home
+  - pressure
+- utterance: Practically though, is his home ready for him?
+  topics:
+  - home
+  style: boundary_follow_up
+  pair:
+  - home
+  - pressure
+  previous:
+    interviewer: Are you worried about the timing?
+    character: I'm worried bed pressure is driving the date. I haven't felt comfortable saying that in the larger meeting.
+- utterance: Do you feel the date is being driven by anything other than his needs?
+  topics:
+  - pressure
+  style: boundary
+  pair:
+  - home
+  - pressure
+- utterance: Is there anything about the timing of discharge you're uncomfortable raising in front of the wider team?
+  topics:
+  - pressure
+  style: boundary
+  pair:
+  - home
+  - pressure
+- utterance: Do you think we're rushing him out?
+  topics:
+  - pressure
+  style: boundary_colloquial
+  pair:
+  - home
+  - pressure
+- utterance: um are you happy with the date or do you think it's too soon
+  topics:
+  - pressure
+  style: boundary_spoken
+  pair:
+  - home
+  - pressure
+- utterance: Are you comfortable with the timing, or do you feel we're being hurried?
+  topics:
+  - pressure
+  style: boundary_follow_up
+  pair:
+  - home
+  - pressure
+  previous:
+    interviewer: What did the visit find at his house?
+    character: The home visit found spoiled food and heating that wasn't working. Arrangements to address those haven't been confirmed.
+- utterance: Does he have transport home on the day?
+  topics: []
+  style: near_miss
+  pair:
+  - home
+  - pressure
+- utterance: Did the occupational therapist go along to the visit?
+  topics: []
+  style: near_miss
+  pair:
+  - home
+  - pressure
+- utterance: Do you have any reservations about discharging him now?
+  topics:
+  - pressure
+  style: boundary
+  pair:
+  - pressure
+  - risk
+- utterance: Is there anything about the timetable you haven't felt able to say in front of the wider team?
+  topics:
+  - pressure
+  style: boundary
+  pair:
+  - pressure
+  - risk
+- utterance: Between us, do you think he's being pushed out too early?
+  topics:
+  - pressure
+  style: boundary_colloquial
+  pair:
+  - pressure
+  - risk
+- utterance: mm are you um feeling any pressure to get him out
+  topics:
+  - pressure
+  style: boundary_spoken
+  pair:
+  - pressure
+  - risk
+- utterance: And do you personally feel comfortable with when he's going?
+  topics:
+  - pressure
+  style: boundary_follow_up
+  pair:
+  - pressure
+  - risk
+  previous:
+    interviewer: Has he said anything about wanting to die?
+    character: He denied suicidal intent yesterday. At admission he said he didn't care whether he lived, and we haven't explored how returning alone might affect that.
+- utterance: Has he said anything recently about wanting to end his life?
+  topics:
+  - risk
+  style: boundary
+  pair:
+  - pressure
+  - risk
+- utterance: How has his risk of suicide been assessed?
+  topics:
+  - risk
+  style: boundary
+  pair:
+  - pressure
+  - risk
+- utterance: Is he saying anything worrying about not wanting to be here?
+  topics:
+  - risk
+  style: boundary_colloquial
+  pair:
+  - pressure
+  - risk
+- utterance: um has he expressed any thoughts of harming himself recently
+  topics:
+  - risk
+  style: boundary_spoken
+  pair:
+  - pressure
+  - risk
+- utterance: Has he talked about suicide at all on the ward?
+  topics:
+  - risk
+  style: boundary_follow_up
+  pair:
+  - pressure
+  - risk
+  previous:
+    interviewer: Do you feel we're rushing this?
+    character: I'm worried bed pressure is driving the date. I haven't felt comfortable saying that in the larger meeting.
+- utterance: Is the consultant happy with the plan?
+  topics: []
+  style: near_miss
+  pair:
+  - pressure
+  - risk
+- utterance: Does he have a history of alcohol problems?
+  topics: []
+  style: near_miss
+  pair:
+  - pressure
+  - risk

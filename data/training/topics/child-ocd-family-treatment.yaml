@@ -1,0 +1,738 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: child-ocd-family-treatment
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Does she spend hours on them each day?
+  topics:
+  - rituals
+  style: closed
+- utterance: What is the frequency and duration of her compulsive behaviours?
+  topics:
+  - rituals
+  style: clinical
+- utterance: I wanted to hear when the handwashing first started
+  topics:
+  - rituals
+  style: indirect
+- utterance: That sounds exhausting for everyone. How long has this been going on?
+  topics:
+  - rituals
+  style: empathy_then_question
+- utterance: um so how many hours is she spending on it, roughly
+  topics:
+  - rituals
+  style: spoken
+- utterance: And how long each day?
+  topics:
+  - rituals
+  style: brief
+- utterance: When did you first notice it?
+  topics:
+  - rituals
+  style: follow_up
+  previous:
+    interviewer: She's been struggling for a while, I gather.
+    character: She's late most mornings and has missed six full days this month. Her tutor knows she's
+      struggling but not the details.
+- utterance: It takes up a big chunk of her day, doesn't it?
+  topics:
+  - rituals
+  style: leading
+- utterance: Describe what you see when she is washing or checking.
+  topics:
+  - rituals
+  style: open
+- utterance: Did the washing begin suddenly or gradually?
+  topics:
+  - rituals
+  style: closed
+- utterance: How often is she at the sink?
+  topics:
+  - rituals
+  style: colloquial
+- utterance: and how long's it been, the checking and that
+  topics:
+  - rituals
+  style: spoken
+- utterance: How many hours a day?
+  topics:
+  - rituals
+  style: brief
+- utterance: What does she say about why she needs to do these things?
+  topics:
+  - fears
+  style: open
+- utterance: Is she afraid something bad will happen if she stops?
+  topics:
+  - fears
+  style: closed
+- utterance: What are the content of her obsessional thoughts?
+  topics:
+  - fears
+  style: clinical
+- utterance: I wondered what goes through her mind when she feels she has to repeat things
+  topics:
+  - fears
+  style: indirect
+- utterance: It must be hard to watch. Has she said what she's frightened of?
+  topics:
+  - fears
+  style: empathy_then_question
+- utterance: um does she say why she has to do it, like what she's scared of
+  topics:
+  - fears
+  style: spoken
+- utterance: What does she fear?
+  topics:
+  - fears
+  style: brief
+- utterance: Does she say how she feels about having those thoughts?
+  topics:
+  - fears
+  style: follow_up
+  previous:
+    interviewer: You said it takes hours every day.
+    character: She washes repeatedly and checks taps and doors for about three hours daily. This started
+      eight months ago.
+- utterance: She thinks it's all pointless, but can't stop, I'd guess?
+  topics:
+  - fears
+  style: leading
+- utterance: Tell me how she explains it to you.
+  topics:
+  - fears
+  style: open
+- utterance: Does she tell you anything bad might happen?
+  topics:
+  - fears
+  style: closed
+- utterance: Does she have these horrible thoughts she can't shake?
+  topics:
+  - fears
+  style: colloquial
+- utterance: so what is it she thinks will go wrong
+  topics:
+  - fears
+  style: spoken
+- utterance: Unwanted thoughts?
+  topics:
+  - fears
+  style: brief
+- utterance: How do you respond when she asks for help with them?
+  topics:
+  - accommodation
+  style: open
+- utterance: Do you check things for her?
+  topics:
+  - accommodation
+  style: closed
+- utterance: Do you end up joining in with the checking?
+  topics:
+  - accommodation
+  style: colloquial
+- utterance: To what extent are you accommodating her compulsions?
+  topics:
+  - accommodation
+  style: clinical
+- utterance: I wondered whether you ever help her with the rituals
+  topics:
+  - accommodation
+  style: indirect
+- utterance: You're clearly trying hard to support her. Do you reassure her when she asks?
+  topics:
+  - accommodation
+  style: empathy_then_question
+- utterance: um do you do things for her, like checking the doors
+  topics:
+  - accommodation
+  style: spoken
+- utterance: And do you help her?
+  topics:
+  - accommodation
+  style: brief
+- utterance: Does that calm her down for long?
+  topics:
+  - accommodation
+  style: follow_up
+  previous:
+    interviewer: You said you want to help without making things worse.
+    character: She says someone in our family could become seriously ill if she gets it wrong. She says
+      she hates having the thoughts.
+- utterance: I expect you give her the reassurance she asks for?
+  topics:
+  - accommodation
+  style: leading
+- utterance: What do you do when she asks the same thing again and again?
+  topics:
+  - accommodation
+  style: open
+- utterance: Do you answer her questions when she asks them repeatedly?
+  topics:
+  - accommodation
+  style: closed
+- utterance: Do you find yourself doing the checks for her?
+  topics:
+  - accommodation
+  style: colloquial
+- utterance: so how do you cope with, like, the same question over and over
+  topics:
+  - accommodation
+  style: spoken
+- utterance: Reassurance for her?
+  topics:
+  - accommodation
+  style: brief
+- utterance: Has she been missing school?
+  topics:
+  - school
+  style: closed
+- utterance: Is she getting there on time in the mornings?
+  topics:
+  - school
+  style: colloquial
+- utterance: What is her current school attendance and punctuality?
+  topics:
+  - school
+  style: clinical
+- utterance: I'd like to hear what the school know about how she's been
+  topics:
+  - school
+  style: indirect
+- utterance: That sounds like a lot to cope with. Does her teacher know about it?
+  topics:
+  - school
+  style: empathy_then_question
+- utterance: um is she going in ok, to school I mean
+  topics:
+  - school
+  style: spoken
+- utterance: Her attendance?
+  topics:
+  - school
+  style: brief
+- utterance: Do her teachers know the whole story?
+  topics:
+  - school
+  style: follow_up
+  previous:
+    interviewer: She's spending hours washing and checking.
+    character: She washes repeatedly and checks taps and doors for about three hours daily. This started
+      eight months ago.
+- utterance: I imagine she's off school quite a lot?
+  topics:
+  - school
+  style: leading
+- utterance: What has the school said about her recently?
+  topics:
+  - school
+  style: open
+- utterance: Is she having trouble getting in for the start of the day?
+  topics:
+  - school
+  style: closed
+- utterance: How many school days has she lost lately?
+  topics:
+  - school
+  style: colloquial
+- utterance: and um who at school knows what's going on
+  topics:
+  - school
+  style: spoken
+- utterance: Time off school?
+  topics:
+  - school
+  style: brief
+- utterance: What help has she had so far for this?
+  topics:
+  - treatment
+  style: open
+- utterance: Has she seen a therapist before?
+  topics:
+  - treatment
+  style: closed
+- utterance: Have you heard anything about how therapy for OCD works?
+  topics:
+  - treatment
+  style: colloquial
+- utterance: What is your understanding of how psychological treatment for OCD works?
+  topics:
+  - treatment
+  style: clinical
+- utterance: I was wondering what you imagine therapy would involve
+  topics:
+  - treatment
+  style: indirect
+- utterance: I can hear you want to protect her. What worries you about the therapy?
+  topics:
+  - treatment
+  style: empathy_then_question
+- utterance: Any therapy so far?
+  topics:
+  - treatment
+  style: brief
+- utterance: I suppose the idea of therapy worries you quite a bit?
+  topics:
+  - treatment
+  style: leading
+- utterance: Tell me what you've been told about treatment.
+  topics:
+  - treatment
+  style: open
+- utterance: Do you know what the therapy would involve?
+  topics:
+  - treatment
+  style: closed
+- utterance: What have you picked up about what therapists do?
+  topics:
+  - treatment
+  style: colloquial
+- utterance: so have you been offered anything, like CBT
+  topics:
+  - treatment
+  style: spoken
+- utterance: Previous treatment?
+  topics:
+  - treatment
+  style: brief
+- utterance: What are your thoughts about medicine for her?
+  topics:
+  - medication
+  style: open
+- utterance: Is she taking any tablets?
+  topics:
+  - medication
+  style: closed
+- utterance: Would you want her on tablets?
+  topics:
+  - medication
+  style: colloquial
+- utterance: Is she currently prescribed any psychotropic medication?
+  topics:
+  - medication
+  style: clinical
+- utterance: I wondered how you feel about medication being an option
+  topics:
+  - medication
+  style: indirect
+- utterance: It's a big decision for any parent. What would you want to know about tablets?
+  topics:
+  - medication
+  style: empathy_then_question
+- utterance: um is she on anything, like medicine for it
+  topics:
+  - medication
+  style: spoken
+- utterance: What would you want to understand before deciding?
+  topics:
+  - medication
+  style: follow_up
+  previous:
+    interviewer: She's never had talking therapy, you said.
+    character: She's never had therapy. I thought exposure meant someone making her touch something frightening
+      without warning.
+- utterance: You're probably against the idea of tablets, aren't you?
+  topics:
+  - medication
+  style: leading
+- utterance: What questions do you have about drugs for OCD?
+  topics:
+  - medication
+  style: open
+- utterance: Are you worried about side effects?
+  topics:
+  - medication
+  style: closed
+- utterance: Would medicine be something you'd think about?
+  topics:
+  - medication
+  style: colloquial
+- utterance: so does she take anything and what do you think about it
+  topics:
+  - medication
+  style: spoken
+- utterance: Medicines and monitoring?
+  topics:
+  - medication
+  style: brief
+- utterance: Has the OCD affected her body?
+  topics:
+  - risk
+  style: open
+- utterance: Has she ever said she wants to hurt herself?
+  topics:
+  - risk
+  style: closed
+- utterance: Has she said anything about not wanting to be here?
+  topics:
+  - risk
+  style: colloquial
+- utterance: Has she expressed any suicidal ideation or self-harm?
+  topics:
+  - risk
+  style: clinical
+- utterance: I wondered whether she's ever talked about harming herself
+  topics:
+  - risk
+  style: indirect
+- utterance: I'm sorry to ask something so painful. Has she ever spoken about wanting to die?
+  topics:
+  - risk
+  style: empathy_then_question
+- utterance: um has she ever said anything about hurting herself or like ending it
+  topics:
+  - risk
+  style: spoken
+- utterance: Any thoughts of suicide?
+  topics:
+  - risk
+  style: brief
+- utterance: Have you asked her directly about that?
+  topics:
+  - risk
+  style: follow_up
+  previous:
+    interviewer: You're clearly worried about how much she is distressed.
+    character: She washes repeatedly and checks taps and doors for about three hours daily. This started
+      eight months ago.
+- utterance: She has never said she doesn't want to live, has she?
+  topics:
+  - risk
+  style: leading
+- utterance: What have you noticed physically from all the washing?
+  topics:
+  - risk
+  style: open
+- utterance: Are her hands sore?
+  topics:
+  - risk
+  style: closed
+- utterance: Have you spotted any damage from all that washing?
+  topics:
+  - risk
+  style: colloquial
+- utterance: so is her skin ok, from the washing
+  topics:
+  - risk
+  style: spoken
+- utterance: Self-harm worries?
+  topics:
+  - risk
+  style: brief
+- utterance: How do you feel about your part in all of this?
+  topics:
+  - blame
+  style: open
+- utterance: Do you blame yourself for her OCD?
+  topics:
+  - blame
+  style: closed
+- utterance: Do you ever feel it's your fault?
+  topics:
+  - blame
+  style: colloquial
+- utterance: Do you experience guilt about your role in her difficulties?
+  topics:
+  - blame
+  style: clinical
+- utterance: I wondered whether you have wondered about your own part in this
+  topics:
+  - blame
+  style: indirect
+- utterance: You obviously care a great deal about her. Do you feel responsible in any way?
+  topics:
+  - blame
+  style: empathy_then_question
+- utterance: um do you think you might have made it worse, helping her
+  topics:
+  - blame
+  style: spoken
+- utterance: Any guilt about it?
+  topics:
+  - blame
+  style: brief
+- utterance: Have you talked to her about that?
+  topics:
+  - blame
+  style: follow_up
+  previous:
+    interviewer: Does your help calm her for long, or does she ask again?
+    character: Yes, I check doors for her and answer the same safety question repeatedly. It settles her
+      briefly, then she asks again.
+- utterance: You probably wonder if you did something to cause it?
+  topics:
+  - blame
+  style: leading
+- utterance: Is there anything that's been weighing on you about how you've helped?
+  topics:
+  - blame
+  style: open
+- utterance: Have you told her how you feel about it?
+  topics:
+  - blame
+  style: closed
+- utterance: Do you ever beat yourself up over this?
+  topics:
+  - blame
+  style: colloquial
+- utterance: so er have you thought it might be partly down to you
+  topics:
+  - blame
+  style: spoken
+- utterance: Do you feel responsible?
+  topics:
+  - blame
+  style: brief
+- utterance: What happens when you try to say no to her?
+  topics:
+  - distress
+  style: open
+- utterance: Does she get upset when you refuse?
+  topics:
+  - distress
+  style: closed
+- utterance: How does she react when you won't join in?
+  topics:
+  - distress
+  style: colloquial
+- utterance: How does she respond when the accommodation is withdrawn?
+  topics:
+  - distress
+  style: clinical
+- utterance: I wondered what it is like when you try to hold back from helping
+  topics:
+  - distress
+  style: indirect
+- utterance: That sounds like a really hard position to be in. What happens if you decline?
+  topics:
+  - distress
+  style: empathy_then_question
+- utterance: um what does she do if you say stop, you can't do it
+  topics:
+  - distress
+  style: spoken
+- utterance: And if you refuse?
+  topics:
+  - distress
+  style: brief
+- utterance: What does she do when you try that?
+  topics:
+  - distress
+  style: follow_up
+  previous:
+    interviewer: You said you check doors and answer her again and again.
+    character: Yes, I check doors for her and answer the same safety question repeatedly. It settles her
+      briefly, then she asks again.
+- utterance: I imagine she becomes very upset when you won't help?
+  topics:
+  - distress
+  style: leading
+- utterance: How do you cope when she is in a state?
+  topics:
+  - distress
+  style: open
+- utterance: Do you ever find it hard to hold your ground?
+  topics:
+  - distress
+  style: closed
+- utterance: Do you end up giving in when she gets upset?
+  topics:
+  - distress
+  style: colloquial
+- utterance: and then when she's crying, what do you, um, do
+  topics:
+  - distress
+  style: spoken
+- utterance: Saying no to her?
+  topics:
+  - distress
+  style: brief
+- utterance: What would she like to be able to do again?
+  topics:
+  - goals
+  style: open
+- utterance: Does she want help?
+  topics:
+  - goals
+  style: closed
+- utterance: Is there anything she's keen to get back to?
+  topics:
+  - goals
+  style: colloquial
+- utterance: What are her treatment goals and preferences?
+  topics:
+  - goals
+  style: clinical
+- utterance: I'd like to hear what she herself wants from treatment
+  topics:
+  - goals
+  style: indirect
+- utterance: She sounds like she has a lot of strengths. What would she like to change?
+  topics:
+  - goals
+  style: empathy_then_question
+- utterance: um what does she say she wants, like from therapy
+  topics:
+  - goals
+  style: spoken
+- utterance: What does she want?
+  topics:
+  - goals
+  style: brief
+- utterance: And does she have a say in the decision?
+  topics:
+  - goals
+  style: follow_up
+  previous:
+    interviewer: She's never had any therapy so far.
+    character: She's never had therapy. I thought exposure meant someone making her touch something frightening
+      without warning.
+- utterance: She doesn't really want help herself, does she?
+  topics:
+  - goals
+  style: leading
+- utterance: What matters most to her at the moment?
+  topics:
+  - goals
+  style: open
+- utterance: Is she willing to see someone about it?
+  topics:
+  - goals
+  style: closed
+- utterance: Is there something she misses doing with her friends?
+  topics:
+  - goals
+  style: colloquial
+- utterance: so is she on board with getting some help
+  topics:
+  - goals
+  style: spoken
+- utterance: Her wishes about help?
+  topics:
+  - goals
+  style: brief
+- utterance: How long does she spend washing and checking, and what does she say she is afraid of?
+  topics:
+  - rituals
+  - fears
+  style: stacked
+- utterance: How is she doing at school, and what would she like to get back to doing?
+  topics:
+  - school
+  - goals
+  style: stacked
+- utterance: Has she had any therapy, and is she taking any medicine?
+  topics:
+  - treatment
+  - medication
+  style: stacked
+- utterance: Do you feel responsible for this, and what happens when you try to refuse her?
+  topics:
+  - blame
+  - distress
+  style: stacked
+- utterance: Hello Imran, thank you for coming in today.
+  topics: []
+  style: greeting
+- utterance: Good morning, Imran. Please take a seat.
+  topics: []
+  style: greeting
+- utterance: Hello, I'm a doctor in the child and adolescent team and I'll be talking with you today.
+  topics: []
+  style: introduction
+- utterance: Hi Imran, my name is Dr Hale, I'm one of the trainees here.
+  topics: []
+  style: introduction
+- utterance: Is it all right if we talk about your daughter for a while?
+  topics: []
+  style: greeting
+- utterance: What would you like to start with, Imran?
+  topics: []
+  style: greeting
+- utterance: Before we start, do you have any questions for me?
+  topics: []
+  style: greeting
+- utterance: Is it all right if I take some notes as we go?
+  topics: []
+  style: greeting
+- utterance: I'd like to move on to something different now.
+  topics: []
+  style: transition
+- utterance: Shall we turn to how we might support her at school?
+  topics: []
+  style: transition
+- utterance: I'd like to talk about what treatment could look like, if that's all right.
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Imran.
+  topics: []
+  style: closing
+- utterance: Thank you so much for talking to me today.
+  topics: []
+  style: closing
+- utterance: We'll need to stop in a minute, so is there anything you'd like to ask?
+  topics: []
+  style: closing
+- utterance: It's clear how much you want to do the right thing for her.
+  topics: []
+  style: empathy
+- utterance: That sounds a very worrying time for the whole family.
+  topics: []
+  style: empathy
+- utterance: I can hear how hard you've been trying.
+  topics: []
+  style: empathy
+- utterance: So she has been washing and checking for hours each day and you're keen to support her without
+    making things worse.
+  topics: []
+  style: summary
+- utterance: 'Let me check I''ve understood: she''s finding school hard and you want to know what treatment
+    could involve.'
+  topics: []
+  style: summary
+- utterance: OCD is a common condition and nobody in the family is to blame for it.
+  topics: []
+  style: explanation
+- utterance: Treatment usually involves talking therapy, in small steps, with her agreement.
+  topics: []
+  style: explanation
+- utterance: Does that make sense so far?
+  topics: []
+  style: check_understanding
+- utterance: Is there anything about that you would like me to go over again?
+  topics: []
+  style: check_understanding
+- utterance: How is she sleeping at night?
+  topics: []
+  style: off_case
+- utterance: Has she been eating well?
+  topics: []
+  style: off_case
+- utterance: Is she using her phone or social media a lot?
+  topics: []
+  style: off_case
+- utterance: Has she got a good friend she can talk to?
+  topics: []
+  style: off_case
+- utterance: How are her brothers or sisters getting on?
+  topics: []
+  style: off_case
+- utterance: What was her health like as a young child?
+  topics: []
+  style: off_case
+- utterance: Does she have any worries about her weight or the way she looks?
+  topics: []
+  style: near_miss
+- utterance: Does she check her homework over and over?
+  topics: []
+  style: near_miss
+- utterance: Does she wash her hands more when she is feeling unwell?
+  topics: []
+  style: near_miss
+- utterance: Does your family have any worries about money?
+  topics: []
+  style: near_miss
+- utterance: Has she had any problems with her periods or growth?
+  topics: []
+  style: off_case

@@ -1,0 +1,766 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: first-arrest-suicide-risk
+case_version: 0.1.0
+status: draft
+items:
+- utterance: What happened that led to you being arrested?
+  topics:
+  - arrest
+  style: open
+- utterance: Can you tell me how you came to be in custody today?
+  topics:
+  - arrest
+  style: open
+- utterance: Is this the first time you've ever been arrested?
+  topics:
+  - arrest
+  style: closed
+- utterance: Have you been in trouble with the police before?
+  topics:
+  - arrest
+  style: closed
+- utterance: So what kicked all this off, Ryan?
+  topics:
+  - arrest
+  style: colloquial
+- utterance: Could you describe the circumstances of your arrest?
+  topics:
+  - arrest
+  style: clinical
+- utterance: I wondered what you understand about why you're being held here
+  topics:
+  - arrest
+  style: indirect
+- utterance: This must be a lot to take in. What's your understanding of what happens from here?
+  topics:
+  - arrest
+  style: empathy_then_question
+- utterance: It sounds overwhelming. Can you tell me what went on before the police got involved?
+  topics:
+  - arrest
+  style: empathy_then_question
+- utterance: um so what what happened before you ended up here
+  topics:
+  - arrest
+  style: spoken
+- utterance: And the arrest itself?
+  topics:
+  - arrest
+  style: brief
+- utterance: And has anyone explained what the next steps are?
+  topics:
+  - arrest
+  style: follow_up
+  previous:
+    interviewer: Is this your first time in a police station?
+    character: I was arrested after a fight outside a pub. I've never been arrested before and don't know
+      what will happen next.
+- utterance: I'm guessing this isn't something you've been through before?
+  topics:
+  - arrest
+  style: leading
+- utterance: Do you know what's likely to happen while you're held here?
+  topics:
+  - arrest
+  style: closed
+- utterance: Talk me through what went on before you were brought in.
+  topics:
+  - arrest
+  style: open
+- utterance: What do you make of being in custody for the first time?
+  topics:
+  - arrest
+  style: open
+- utterance: How often are thoughts of dying coming into your head at the moment?
+  topics:
+  - thoughts
+  style: open
+- utterance: Are you having thoughts of ending your life right now?
+  topics:
+  - thoughts
+  style: closed
+- utterance: Did you mean it when you said you wanted to die?
+  topics:
+  - thoughts
+  style: closed
+- utterance: Are you still feeling like you'd rather not be here at all?
+  topics:
+  - thoughts
+  style: colloquial
+- utterance: Could you tell me about any current suicidal ideation?
+  topics:
+  - thoughts
+  style: clinical
+- utterance: I'd like to understand what you meant by saying you wanted to die
+  topics:
+  - thoughts
+  style: indirect
+- utterance: That sounds really frightening. Are those thoughts about dying still there now?
+  topics:
+  - thoughts
+  style: empathy_then_question
+- utterance: You're clearly going through a lot. How strong are the thoughts of not wanting to live?
+  topics:
+  - thoughts
+  style: empathy_then_question
+- utterance: so um the bit about wanting to die is that still is that still how you feel
+  topics:
+  - thoughts
+  style: spoken
+- utterance: And thoughts of dying now?
+  topics:
+  - thoughts
+  style: brief
+- utterance: Does anything make them ease off, even for a bit?
+  topics:
+  - thoughts
+  style: follow_up
+  previous:
+    interviewer: Are you having thoughts of suicide at the moment?
+    character: I meant it when I said I wanted to die. The thought keeps coming back while I'm alone in
+      the cell.
+- utterance: I imagine those thoughts have been coming and going since you got here?
+  topics:
+  - thoughts
+  style: leading
+- utterance: How much of today have you spent thinking about wanting to die?
+  topics:
+  - thoughts
+  style: open
+- utterance: Is the wish to die something you're feeling at this moment?
+  topics:
+  - thoughts
+  style: closed
+- utterance: What goes through your mind when you think about dying?
+  topics:
+  - thoughts
+  style: open
+- utterance: How likely do you feel you are to act on those thoughts?
+  topics:
+  - intent
+  style: open
+- utterance: Do you think you might act on the thoughts if nobody was with you?
+  topics:
+  - intent
+  style: closed
+- utterance: Would you be able to tell me whether you might do something to yourself tonight?
+  topics:
+  - intent
+  style: closed
+- utterance: Are you worried you could actually go through with it?
+  topics:
+  - intent
+  style: colloquial
+- utterance: Can I ask about your intent to act on these thoughts?
+  topics:
+  - intent
+  style: clinical
+- utterance: I'm wondering how close you feel to acting on the urge
+  topics:
+  - intent
+  style: indirect
+- utterance: It takes courage to talk about this. Do you feel you could harm yourself if you were by yourself
+    here?
+  topics:
+  - intent
+  style: empathy_then_question
+- utterance: Thank you for being so honest with me. How strong is the urge to actually do something?
+  topics:
+  - intent
+  style: empathy_then_question
+- utterance: um i suppose what i want to know is do you think you'd act on it
+  topics:
+  - intent
+  style: spoken
+- utterance: Any urge to act tonight?
+  topics:
+  - intent
+  style: brief
+- utterance: When that thought comes back, do you feel you'd act on it?
+  topics:
+  - intent
+  style: follow_up
+  previous:
+    interviewer: Are you having thoughts of ending your life at the moment?
+    character: I meant it when I said I wanted to die. The thought keeps coming back while I'm alone in
+      the cell.
+- utterance: It sounds like you're not sure you could keep yourself safe tonight?
+  topics:
+  - intent
+  style: leading
+- utterance: How in control of these urges do you feel right now?
+  topics:
+  - intent
+  style: open
+- utterance: Is there a chance you'd try something before morning?
+  topics:
+  - intent
+  style: closed
+- utterance: Could you see yourself acting on it today?
+  topics:
+  - intent
+  style: closed
+- utterance: Are there any plans you've made to kill yourself?
+  topics:
+  - plan
+  style: closed
+- utterance: What have you thought about in terms of how you'd do it?
+  topics:
+  - plan
+  style: open
+- utterance: Is there anything on you or nearby that you could hurt yourself with?
+  topics:
+  - plan
+  style: closed
+- utterance: Got a way of doing it in mind?
+  topics:
+  - plan
+  style: colloquial
+- utterance: Have you made any preparations for suicide?
+  topics:
+  - plan
+  style: clinical
+- utterance: I need to ask whether you've worked out a method
+  topics:
+  - plan
+  style: indirect
+- utterance: I know these are hard questions. Have you got anything ready to harm yourself with?
+  topics:
+  - plan
+  style: empathy_then_question
+- utterance: That's a lot to carry. Is there a particular way you've thought of?
+  topics:
+  - plan
+  style: empathy_then_question
+- utterance: um and is there like a plan in your head for how
+  topics:
+  - plan
+  style: spoken
+- utterance: Any plan for how?
+  topics:
+  - plan
+  style: brief
+- utterance: When it keeps coming back like that, have you pictured how you'd do it?
+  topics:
+  - plan
+  style: follow_up
+  previous:
+    interviewer: How often are the thoughts of dying coming?
+    character: I meant it when I said I wanted to die. The thought keeps coming back while I'm alone in
+      the cell.
+- utterance: You probably haven't got as far as thinking about a method, have you?
+  topics:
+  - plan
+  style: leading
+- utterance: What could you get hold of here that you might use?
+  topics:
+  - plan
+  style: open
+- utterance: How far have your thoughts gone about the way you'd do it?
+  topics:
+  - plan
+  style: open
+- utterance: Did you look up or collect anything to end your life with?
+  topics:
+  - plan
+  style: closed
+- utterance: Have you ever tried to end your life before?
+  topics:
+  - history
+  style: closed
+- utterance: Can you tell me about any times in the past when you've hurt yourself?
+  topics:
+  - history
+  style: open
+- utterance: Has a mental health team or psychiatrist ever been involved with you?
+  topics:
+  - history
+  style: closed
+- utterance: Ever done anything to yourself before, like taking tablets or cutting?
+  topics:
+  - history
+  style: colloquial
+- utterance: Is there any history of previous suicide attempts or self-harm?
+  topics:
+  - history
+  style: clinical
+- utterance: I'd like to hear about anything like this happening in the past
+  topics:
+  - history
+  style: indirect
+- utterance: I know it's personal. Have you felt this way at any earlier point in your life?
+  topics:
+  - history
+  style: empathy_then_question
+- utterance: Thanks for bearing with me. Did you ever need medical help after harming yourself?
+  topics:
+  - history
+  style: empathy_then_question
+- utterance: um and before this have you ever um done anything to harm yourself
+  topics:
+  - history
+  style: spoken
+- utterance: Any past attempts?
+  topics:
+  - history
+  style: brief
+- utterance: Did you get any support for your mental health after that?
+  topics:
+  - history
+  style: follow_up
+  previous:
+    interviewer: Have you ever tried to end your life in the past?
+    character: I took an overdose at nineteen after a breakup and was treated in hospital. I haven't had
+      psychiatric care since.
+- utterance: I take it you've never had any contact with mental health services?
+  topics:
+  - history
+  style: leading
+- utterance: What's happened in the past when things have got really bad?
+  topics:
+  - history
+  style: open
+- utterance: When was the last time, if ever, you harmed yourself?
+  topics:
+  - history
+  style: open
+- utterance: Was there a time before now when you acted on thoughts like these?
+  topics:
+  - history
+  style: closed
+- utterance: Have you had help from a counsellor or doctor for your mental health in the past?
+  topics:
+  - history
+  style: closed
+- utterance: How much had you had to drink before you were arrested?
+  topics:
+  - alcohol
+  style: open
+- utterance: Do you normally drink much during the week?
+  topics:
+  - alcohol
+  style: closed
+- utterance: Were you using any drugs as well?
+  topics:
+  - alcohol
+  style: closed
+- utterance: Had you had a skinful when it all happened?
+  topics:
+  - alcohol
+  style: colloquial
+- utterance: Do you experience any alcohol withdrawal symptoms?
+  topics:
+  - alcohol
+  style: clinical
+- utterance: I wanted to ask about drinking and any drugs you take
+  topics:
+  - alcohol
+  style: indirect
+- utterance: I'm not here to judge. How much alcohol do you usually get through?
+  topics:
+  - alcohol
+  style: empathy_then_question
+- utterance: so um yesterday how much had you been drinking roughly
+  topics:
+  - alcohol
+  style: spoken
+- utterance: And the drinking?
+  topics:
+  - alcohol
+  style: brief
+- utterance: Drugs of any kind?
+  topics:
+  - alcohol
+  style: brief
+- utterance: I'm guessing alcohol played a part in what happened?
+  topics:
+  - alcohol
+  style: leading
+- utterance: What does your drinking look like in a normal week?
+  topics:
+  - alcohol
+  style: open
+- utterance: Do you get the shakes or feel unwell when you go without a drink?
+  topics:
+  - alcohol
+  style: closed
+- utterance: How often do you use cannabis or anything else?
+  topics:
+  - alcohol
+  style: open
+- utterance: Is alcohol something you rely on?
+  topics:
+  - alcohol
+  style: closed
+- utterance: Are you worried about losing your job?
+  topics:
+  - loss
+  style: closed
+- utterance: Is there a relationship you're scared this might cost you?
+  topics:
+  - loss
+  style: closed
+- utterance: What's the worst you reckon could come out of this?
+  topics:
+  - loss
+  style: colloquial
+- utterance: What consequences do you anticipate from the arrest?
+  topics:
+  - loss
+  style: clinical
+- utterance: I'd like to understand what you're imagining this will mean for your life
+  topics:
+  - loss
+  style: indirect
+- utterance: That sounds like a heavy feeling. What do you think people will do when they find out?
+  topics:
+  - loss
+  style: empathy_then_question
+- utterance: um what what's going through your head about work and that
+  topics:
+  - loss
+  style: spoken
+- utterance: Worried about your job?
+  topics:
+  - loss
+  style: brief
+- utterance: And what do you think that will mean for things like work or home?
+  topics:
+  - loss
+  style: follow_up
+  previous:
+    interviewer: What led to your arrest?
+    character: I was arrested after a fight outside a pub. I've never been arrested before and don't know
+      what will happen next.
+- utterance: I suppose you're worried this will affect your job or relationships?
+  topics:
+  - loss
+  style: leading
+- utterance: Who or what are you afraid of losing because of this?
+  topics:
+  - loss
+  style: open
+- utterance: When you say you can't face anyone, what do you think they'll do?
+  topics:
+  - loss
+  style: open
+- utterance: Has anyone told you what this will mean for your job?
+  topics:
+  - loss
+  style: closed
+- utterance: How do you see this affecting your future?
+  topics:
+  - loss
+  style: open
+- utterance: Who could you contact while you're here?
+  topics:
+  - support
+  style: open
+- utterance: Is there anyone close to you who knows where you are?
+  topics:
+  - support
+  style: closed
+- utterance: Who are the people who matter most to you?
+  topics:
+  - support
+  style: open
+- utterance: Anyone in your corner you could ring?
+  topics:
+  - support
+  style: colloquial
+- utterance: What protective factors do you have, such as people who keep you going?
+  topics:
+  - support
+  style: clinical
+- utterance: I wondered who you have in your life that you could lean on
+  topics:
+  - support
+  style: indirect
+- utterance: It must feel lonely in here. Is there someone you'd want us to call?
+  topics:
+  - support
+  style: empathy_then_question
+- utterance: You've had a really tough time. What's kept you going so far?
+  topics:
+  - support
+  style: empathy_then_question
+- utterance: um have you got like family or friends you could talk to
+  topics:
+  - support
+  style: spoken
+- utterance: Anyone you can call?
+  topics:
+  - support
+  style: brief
+- utterance: I'm guessing there are people out there who'd want to know you're struggling?
+  topics:
+  - support
+  style: leading
+- utterance: What reasons do you have to keep living?
+  topics:
+  - support
+  style: open
+- utterance: Do you have family nearby?
+  topics:
+  - support
+  style: closed
+- utterance: Has anyone you're close to been told you're here?
+  topics:
+  - support
+  style: closed
+- utterance: Who would you want to hear from right now?
+  topics:
+  - support
+  style: open
+- utterance: How was your mood before all this happened?
+  topics:
+  - mood
+  style: open
+- utterance: When did you start feeling this hopeless?
+  topics:
+  - mood
+  style: open
+- utterance: Were things alright with you in yourself before this week?
+  topics:
+  - mood
+  style: colloquial
+- utterance: Have you noticed any low mood or loss of enjoyment in recent weeks?
+  topics:
+  - mood
+  style: clinical
+- utterance: I'd like to know how you'd been feeling in the weeks before the arrest
+  topics:
+  - mood
+  style: indirect
+- utterance: It's clear you're in a dark place now. Were you feeling anything like this before you were
+    arrested?
+  topics:
+  - mood
+  style: empathy_then_question
+- utterance: That's a lot to be carrying. Had you been enjoying things in the weeks leading up to this?
+  topics:
+  - mood
+  style: empathy_then_question
+- utterance: um before this happened how were you doing generally
+  topics:
+  - mood
+  style: spoken
+- utterance: And your mood before?
+  topics:
+  - mood
+  style: brief
+- utterance: Were you having thoughts like that before you were arrested?
+  topics:
+  - mood
+  style: follow_up
+  previous:
+    interviewer: Are you having thoughts of ending your life just now?
+    character: I meant it when I said I wanted to die. The thought keeps coming back while I'm alone in
+      the cell.
+- utterance: I wonder if things had been getting on top of you for a while?
+  topics:
+  - mood
+  style: leading
+- utterance: How have you been sleeping over the last month?
+  topics:
+  - mood
+  style: open
+- utterance: Was there anything getting you down before this?
+  topics:
+  - mood
+  style: closed
+- utterance: Have you been feeling depressed lately?
+  topics:
+  - mood
+  style: closed
+- utterance: At what point did everything start to feel pointless?
+  topics:
+  - mood
+  style: open
+- utterance: How would you feel about talking with the healthcare staff here?
+  topics:
+  - help
+  style: open
+- utterance: What makes it hard to ask staff for help?
+  topics:
+  - help
+  style: open
+- utterance: Would it help to have someone keep an eye on you?
+  topics:
+  - help
+  style: colloquial
+- utterance: Would you accept closer observation while you're in custody?
+  topics:
+  - help
+  style: clinical
+- utterance: I'm wondering what you'd find helpful to keep you safe while you're here
+  topics:
+  - help
+  style: indirect
+- utterance: It's okay to need help right now. Could we talk about what stops you asking the officers
+    for support?
+  topics:
+  - help
+  style: empathy_then_question
+- utterance: Asking for help is the right thing to do. Would you let staff check on you more often?
+  topics:
+  - help
+  style: empathy_then_question
+- utterance: Happy for someone to sit nearby?
+  topics:
+  - help
+  style: brief
+- utterance: Would you let someone stay with you so you're not on your own?
+  topics:
+  - help
+  style: follow_up
+  previous:
+    interviewer: Do you think you might act on those thoughts if you're left alone?
+    character: I'm frightened I might act if I'm left alone tonight. I haven't made an attempt here, but
+      I can't say the urge has passed.
+- utterance: You'd probably find it easier if someone stayed close, wouldn't you?
+  topics:
+  - help
+  style: leading
+- utterance: What do you think would help you get through tonight safely?
+  topics:
+  - help
+  style: open
+- utterance: Is there anything stopping you from telling the staff how you feel?
+  topics:
+  - help
+  style: closed
+- utterance: Can I let the healthcare team know how unsafe you're feeling?
+  topics:
+  - help
+  style: closed
+- utterance: How do you think the officers would react if you asked for support?
+  topics:
+  - help
+  style: open
+- utterance: Have you ever tried to end your life before, and are you drinking much at the moment?
+  topics:
+  - history
+  - alcohol
+  style: stacked
+- utterance: Who could you call, and would you accept someone staying nearby?
+  topics:
+  - support
+  - help
+  style: stacked
+- utterance: Have you got a plan, and do you think you'd act on it tonight?
+  topics:
+  - plan
+  - intent
+  style: stacked
+- utterance: What happened to get you arrested, and how had your mood been before that?
+  topics:
+  - arrest
+  - mood
+  style: stacked
+- utterance: Hi Ryan, thanks for agreeing to see me.
+  topics: []
+  style: greeting
+- utterance: Is it all right if we have a chat for a few minutes?
+  topics: []
+  style: introduction
+- utterance: Where would you like to start?
+  topics: []
+  style: transition
+- utterance: Before we get going, is there anything you want to ask me?
+  topics: []
+  style: introduction
+- utterance: I'd like to move on and ask about something a bit different now.
+  topics: []
+  style: transition
+- utterance: I'm going to ask some quite personal questions, is that okay?
+  topics: []
+  style: transition
+- utterance: Can I switch to asking about the drinking side of things?
+  topics: []
+  style: transition
+- utterance: We're almost out of time, so I'll just pull things together.
+  topics: []
+  style: closing
+- utterance: Thanks for talking to me so openly, Ryan.
+  topics: []
+  style: closing
+- utterance: Before I go, is there anything else you want me to know?
+  topics: []
+  style: closing
+- utterance: Hello there Ryan, I'm Sam, a psychiatrist working alongside the custody nurses.
+  topics: []
+  style: introduction
+- utterance: That sounds absolutely terrifying.
+  topics: []
+  style: empathy
+- utterance: It makes sense that you're feeling ashamed right now.
+  topics: []
+  style: empathy
+- utterance: I can hear how frightened you are.
+  topics: []
+  style: empathy
+- utterance: Thank you for telling me, I know that wasn't easy.
+  topics: []
+  style: empathy
+- utterance: So you're feeling desperate after the arrest and the thoughts of dying keep returning.
+  topics: []
+  style: summary
+- utterance: 'Let me check I''ve got this right: you''re frightened about what happens next and you''ve
+    been thinking about dying.'
+  topics: []
+  style: summary
+- utterance: My job today is to work out how to keep you safe while you're here.
+  topics: []
+  style: explanation
+- utterance: I can't tell you what the police will decide, but I can make sure the healthcare team knows
+    how you're feeling.
+  topics: []
+  style: explanation
+- utterance: Anything about your safety that we talk about will be shared with the custody healthcare
+    staff.
+  topics: []
+  style: explanation
+- utterance: Does that make sense so far?
+  topics: []
+  style: check_understanding
+- utterance: Is there anything I've said that you'd like me to go over again?
+  topics: []
+  style: check_understanding
+- utterance: Did you get hurt at all?
+  topics: []
+  style: off_case
+- utterance: Are you on any regular medication?
+  topics: []
+  style: off_case
+- utterance: Have you got a solicitor yet?
+  topics: []
+  style: off_case
+- utterance: Is there any family history of mental illness?
+  topics: []
+  style: off_case
+- utterance: Do you have any debts or money worries?
+  topics: []
+  style: off_case
+- utterance: Have you ever heard voices or felt people were out to get you?
+  topics: []
+  style: off_case
+- utterance: What time were you arrested?
+  topics: []
+  style: near_miss
+- utterance: How long have you been with your partner?
+  topics: []
+  style: near_miss
+- utterance: How much does a night out usually cost you?
+  topics: []
+  style: near_miss
+- utterance: Do you have a phone number for your GP?
+  topics: []
+  style: near_miss
+- utterance: How long has the officer said you'll be kept here?
+  topics: []
+  style: near_miss
+- utterance: Did you manage to get any sleep in custody last night?
+  topics: []
+  style: near_miss

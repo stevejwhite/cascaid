@@ -1,0 +1,167 @@
+# Conversational lines for the topic classifier: generic openers and transitions
+# (no topic), and questions addressed by name or with a preamble. Drafted by
+# Claude (Opus 5.5) on 2026-10-13 after real sessions showed most such lines fell
+# to Qwen. NOT YET REVIEWED by a person. Not evaluation data.
+case_id: memory-collateral-history
+case_version: 0.4.1
+status: draft
+items:
+- utterance: Hello Helen, thanks for coming in with your dad.
+  topics: &id001 []
+  style: greeting
+- utterance: My name's Dr Patel, I'm one of the doctors in the clinic.
+  topics: *id001
+  style: introduction
+- utterance: Is it alright if I ask you a few questions about your father?
+  topics: *id001
+  style: brief
+- utterance: Where would you like to start?
+  topics: *id001
+  style: open
+- utterance: Shall we begin?
+  topics: *id001
+  style: brief
+- utterance: Thanks for waiting, both of you. Do take a seat.
+  topics: *id001
+  style: greeting
+- utterance: okay so um I'm just going to ask about a few different things
+  topics: *id001
+  style: spoken
+- utterance: Thank you, that's really helpful. Can we move on?
+  topics: *id001
+  style: follow_up
+- utterance: Helen, when did you first notice a change in your dad?
+  topics:
+  - onset
+  style: open
+- utterance: And did it come on gradually or quite suddenly?
+  topics:
+  - onset
+  style: closed
+- utterance: Okay Helen, what sort of slips have you noticed with his memory?
+  topics:
+  - memory-pattern
+  style: open
+- utterance: Helen, do you find he tells you the same story twice in one visit?
+  topics:
+  - memory-pattern
+  style: closed
+- utterance: Has your dad ever got lost when he's been out, Helen?
+  topics:
+  - getting-lost
+  style: closed
+- utterance: And is he still driving at the moment?
+  topics:
+  - getting-lost
+  style: closed
+- utterance: Helen, on an ordinary day, can he still get himself a meal and keep himself clean?
+  topics:
+  - daily-function
+  style: open
+- utterance: Okay, and who looks after his bills?
+  topics:
+  - daily-function
+  style: open
+- utterance: Right Helen, has anything at home given you a fright, like pans left on the hob?
+  topics:
+  - cooker-safety
+  style: closed
+- utterance: Has he ever left the gas on?
+  topics:
+  - cooker-safety
+  style: closed
+- utterance: How has his mood been, Helen?
+  topics:
+  - mood-behaviour
+  style: open
+- utterance: Okay, and has his personality changed at all?
+  topics:
+  - mood-behaviour
+  style: closed
+- utterance: What's his physical health like, Helen?
+  topics:
+  - physical-health
+  style: open
+- utterance: Helen, is your dad on any tablets from his GP?
+  topics:
+  - physical-health
+  style: closed
+- utterance: Does your dad drink alcohol, Helen?
+  topics:
+  - alcohol
+  style: closed
+- utterance: And does he smoke at all?
+  topics:
+  - alcohol
+  style: brief
+- utterance: Helen, has anyone else on his side of the family had dementia?
+  topics:
+  - family-history
+  style: closed
+- utterance: Okay, did any of his relatives have memory problems?
+  topics:
+  - family-history
+  style: closed
+- utterance: What does your dad make of all this, Helen?
+  topics:
+  - his-view
+  style: open
+- utterance: Okay, does he think anything is wrong?
+  topics:
+  - his-view
+  style: closed
+- utterance: And Helen, what's it been like for you, looking after him?
+  topics:
+  - carer-strain
+  style: open
+- utterance: Do you get any support for yourself?
+  topics:
+  - carer-strain
+  style: closed
+- utterance: Hi Helen, hi Arthur, my name's Dr Shah.
+  topics: &id002 []
+  style: introduction
+- utterance: Nice to meet you both.
+  topics: *id002
+  style: greeting
+- utterance: Thanks for making the time to come in today.
+  topics: *id002
+  style: greeting
+- utterance: Is there anything you'd like to ask before we carry on?
+  topics: *id002
+  style: open
+- utterance: Okay, I'm going to move on to a different area now.
+  topics: *id002
+  style: spoken
+- utterance: Bear with me while I write that down.
+  topics: *id002
+  style: spoken
+- utterance: Thanks Helen, that's really useful to know.
+  topics: *id002
+  style: follow_up
+- utterance: Arthur, please do join in whenever you like.
+  topics: *id002
+  style: indirect
+- utterance: Let's take it one step at a time.
+  topics: *id002
+  style: spoken
+- utterance: Hello Helen, hello Arthur, I'm Dr Shah from the memory clinic. Your GP referred you. Helen,
+    what sort of things has your dad been forgetting?
+  topics:
+  - memory-pattern
+  style: introduction
+- utterance: Nice to meet you both. I'm one of the doctors here. Helen, when did you first start to notice
+    changes in him?
+  topics:
+  - onset
+  style: introduction
+- utterance: Thanks for coming in today. I'm going to ask a few questions. First, has your dad ever got
+    lost on his way somewhere?
+  topics:
+  - getting-lost
+  style: introduction
+- utterance: Hi Helen, I'm Dr Shah. Before we go further, how is your dad managing with things like meals
+    and bills?
+  topics:
+  - daily-function
+  style: introduction

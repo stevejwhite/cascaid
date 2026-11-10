@@ -1,0 +1,751 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: social-anxiety-therapy-choice
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Which social situations do you tend to avoid?
+  topics:
+  - situations
+  style: open
+- utterance: When did the anxiety first begin?
+  topics:
+  - situations
+  style: open
+- utterance: Tell me what happens for you in meetings at work.
+  topics:
+  - situations
+  style: open
+- utterance: Do you find it hard to speak up in meetings?
+  topics:
+  - situations
+  style: closed
+- utterance: Has it got worse recently?
+  topics:
+  - situations
+  style: closed
+- utterance: What sort of things do you steer clear of because of nerves?
+  topics:
+  - situations
+  style: colloquial
+- utterance: How far back does all this go?
+  topics:
+  - situations
+  style: colloquial
+- utterance: Could you describe the onset and course of your social anxiety?
+  topics:
+  - situations
+  style: clinical
+- utterance: I'd like to hear about the situations you find hardest
+  topics:
+  - situations
+  style: indirect
+- utterance: I was wondering how long you've felt like this around people
+  topics:
+  - situations
+  style: indirect
+- utterance: Take all the time you need. Which situations do you avoid most?
+  topics:
+  - situations
+  style: empathy_then_question
+- utterance: um so what what kind of situations do you um avoid
+  topics:
+  - situations
+  style: spoken
+- utterance: And at work?
+  topics:
+  - situations
+  style: brief
+- utterance: Has anything made it worse in the last year or so?
+  topics:
+  - situations
+  style: follow_up
+  previous:
+    interviewer: Which social situations do you tend to avoid?
+    character: I avoid speaking in meetings and eat lunch alone. It's been like this since my late teens,
+      worse since a promotion last year.
+- utterance: I imagine meetings are particularly hard?
+  topics:
+  - situations
+  style: leading
+- utterance: What worries you most when you're with other people?
+  topics:
+  - fear
+  style: open
+- utterance: What do you think others will think of you?
+  topics:
+  - fear
+  style: open
+- utterance: Afterwards, what goes through your mind about how it went?
+  topics:
+  - fear
+  style: open
+- utterance: Are you worried people will judge you?
+  topics:
+  - fear
+  style: closed
+- utterance: Do you go over conversations again later?
+  topics:
+  - fear
+  style: closed
+- utterance: What's the worst that you picture happening?
+  topics:
+  - fear
+  style: colloquial
+- utterance: Beat yourself up afterwards, replaying what you said?
+  topics:
+  - fear
+  style: colloquial
+- utterance: Could you tell me about the feared outcomes and any post-event rumination?
+  topics:
+  - fear
+  style: clinical
+- utterance: I'd like to understand what you fear people might notice
+  topics:
+  - fear
+  style: indirect
+- utterance: I wondered whether you replay things in your head afterwards
+  topics:
+  - fear
+  style: indirect
+- utterance: That sounds like a lot to carry. What are you afraid people will think?
+  topics:
+  - fear
+  style: empathy_then_question
+- utterance: so um when you're in a meeting what are you sort of worried about
+  topics:
+  - fear
+  style: spoken
+- utterance: The worry is what?
+  topics:
+  - fear
+  style: brief
+- utterance: And after the meeting's over, what happens in your head?
+  topics:
+  - fear
+  style: follow_up
+  previous:
+    interviewer: What worries you most when you're with other people?
+    character: I expect people to notice me shaking and think I'm incompetent. Afterwards I replay everything
+      I said.
+- utterance: I'd guess you worry about looking foolish?
+  topics:
+  - fear
+  style: leading
+- utterance: Do you blush or shake when people look at you?
+  topics:
+  - body
+  style: closed
+- utterance: Does your heart start racing when you're the centre of attention?
+  topics:
+  - body
+  style: closed
+- utterance: Tell me about the physical feelings you get.
+  topics:
+  - body
+  style: open
+- utterance: How does anxiety show up physically for you?
+  topics:
+  - body
+  style: open
+- utterance: Going red or getting the shakes, that kind of thing?
+  topics:
+  - body
+  style: colloquial
+- utterance: What does nervousness feel like for you, physically?
+  topics:
+  - body
+  style: colloquial
+- utterance: Could you describe any somatic symptoms of anxiety?
+  topics:
+  - body
+  style: clinical
+- utterance: I'd like to know what you notice in your body at those moments
+  topics:
+  - body
+  style: indirect
+- utterance: I wondered whether you get physical symptoms like sweating or trembling
+  topics:
+  - body
+  style: indirect
+- utterance: Those moments sound really uncomfortable. What do you feel physically?
+  topics:
+  - body
+  style: empathy_then_question
+- utterance: um and physically like do you get any any symptoms
+  topics:
+  - body
+  style: spoken
+- utterance: Any shaking?
+  topics:
+  - body
+  style: brief
+- utterance: Is there anything else your body does at those times?
+  topics:
+  - body
+  style: follow_up
+  previous:
+    interviewer: What happens in your body when you get anxious?
+    character: My face gets hot, my hands shake and my heart races when attention turns to me.
+- utterance: Your heart probably pounds at times like that?
+  topics:
+  - body
+  style: leading
+- utterance: How do you try to get through situations that make you anxious?
+  topics:
+  - strategies
+  style: open
+- utterance: What do you do to hide the anxiety from others?
+  topics:
+  - strategies
+  style: open
+- utterance: Do you rehearse what you're going to say beforehand?
+  topics:
+  - strategies
+  style: closed
+- utterance: Have you ever found ways to get out of presentations?
+  topics:
+  - strategies
+  style: closed
+- utterance: Is eye contact something you avoid?
+  topics:
+  - strategies
+  style: closed
+- utterance: What tricks have you got for getting through a meeting?
+  topics:
+  - strategies
+  style: colloquial
+- utterance: Any little things you do so people won't notice?
+  topics:
+  - strategies
+  style: colloquial
+- utterance: Could you tell me about any safety behaviours you use?
+  topics:
+  - strategies
+  style: clinical
+- utterance: I'd like to understand how you cope in the moment
+  topics:
+  - strategies
+  style: indirect
+- utterance: I'm wondering whether you plan what to say in advance
+  topics:
+  - strategies
+  style: indirect
+- utterance: It makes sense you'd find ways to cope. What do you do to get through?
+  topics:
+  - strategies
+  style: empathy_then_question
+- utterance: um so when you know something's coming up do you um prepare
+  topics:
+  - strategies
+  style: spoken
+- utterance: Coping tricks?
+  topics:
+  - strategies
+  style: brief
+- utterance: And when a presentation is coming up, what do you do?
+  topics:
+  - strategies
+  style: follow_up
+  previous:
+    interviewer: What do you do to hide the anxiety from others?
+    character: I rehearse sentences and keep my eyes down. Sometimes I call in sick before a presentation.
+- utterance: I imagine you've found ways to keep your head down?
+  topics:
+  - strategies
+  style: leading
+- utterance: What would you like therapy to help you with?
+  topics:
+  - goals
+  style: open
+- utterance: If therapy went well, what would be different?
+  topics:
+  - goals
+  style: open
+- utterance: At work, what would you like to be able to do?
+  topics:
+  - goals
+  style: open
+- utterance: Is there something specific you'd like to manage in meetings?
+  topics:
+  - goals
+  style: closed
+- utterance: Would you like to feel able to socialise with colleagues?
+  topics:
+  - goals
+  style: closed
+- utterance: For you, what would a good result look like?
+  topics:
+  - goals
+  style: colloquial
+- utterance: Where would you like to be in six months?
+  topics:
+  - goals
+  style: colloquial
+- utterance: Could we set out some goals for treatment?
+  topics:
+  - goals
+  style: clinical
+- utterance: I'd like to hear what you'd want to get out of this
+  topics:
+  - goals
+  style: indirect
+- utterance: I'm wondering what small change would matter most to you
+  topics:
+  - goals
+  style: indirect
+- utterance: You've clearly thought about this. What are you hoping for?
+  topics:
+  - goals
+  style: empathy_then_question
+- utterance: um so what what would you like to be different
+  topics:
+  - goals
+  style: spoken
+- utterance: Your goals?
+  topics:
+  - goals
+  style: brief
+- utterance: And outside meetings, what else would you like to manage?
+  topics:
+  - goals
+  style: follow_up
+  previous:
+    interviewer: What would you like therapy to help you with?
+    character: I want to contribute one idea in meetings and have lunch with colleagues without planning
+      every word.
+- utterance: I imagine you'd like meetings to feel easier?
+  topics:
+  - goals
+  style: leading
+- utterance: What help have you had before for this?
+  topics:
+  - help
+  style: open
+- utterance: Have you ever taken medication for anxiety or mood?
+  topics:
+  - help
+  style: closed
+- utterance: Tell me about anything you've tried yourself.
+  topics:
+  - help
+  style: open
+- utterance: Did you ever see your GP about it?
+  topics:
+  - help
+  style: closed
+- utterance: What have you looked into on your own?
+  topics:
+  - help
+  style: open
+- utterance: Ever been on tablets for your nerves?
+  topics:
+  - help
+  style: colloquial
+- utterance: Tried any self-help stuff along the way?
+  topics:
+  - help
+  style: colloquial
+- utterance: Could you tell me about previous treatment, including any psychotropic medication?
+  topics:
+  - help
+  style: clinical
+- utterance: I'd like to know what you've already tried
+  topics:
+  - help
+  style: indirect
+- utterance: I wondered whether a doctor has ever prescribed anything for this
+  topics:
+  - help
+  style: indirect
+- utterance: It's good that you're here now. Have you sought help before?
+  topics:
+  - help
+  style: empathy_then_question
+- utterance: um and have you have you had any treatment before
+  topics:
+  - help
+  style: spoken
+- utterance: Previous help?
+  topics:
+  - help
+  style: brief
+- utterance: How did you get on using that advice?
+  topics:
+  - help
+  style: follow_up
+  previous:
+    interviewer: What help have you had before for this?
+    character: No, I've never had therapy or psychiatric medication. I've read advice online, but I haven't
+      known how to use it.
+- utterance: You've probably tried a few things on your own?
+  topics:
+  - help
+  style: leading
+- utterance: How would weekly appointments fit around your work?
+  topics:
+  - commitment
+  style: open
+- utterance: Would you manage to come in once a week?
+  topics:
+  - commitment
+  style: closed
+- utterance: How do you feel about practising things between sessions?
+  topics:
+  - commitment
+  style: open
+- utterance: Is there anything that would make it hard to attend regularly?
+  topics:
+  - commitment
+  style: closed
+- utterance: What concerns do you have about homework between appointments?
+  topics:
+  - commitment
+  style: open
+- utterance: Can you get time off work for sessions?
+  topics:
+  - commitment
+  style: colloquial
+- utterance: Would doing a bit of practice each week be doable?
+  topics:
+  - commitment
+  style: colloquial
+- utterance: Could you commit to regular attendance and between-session tasks?
+  topics:
+  - commitment
+  style: clinical
+- utterance: I'd like to check how sessions might fit into your week
+  topics:
+  - commitment
+  style: indirect
+- utterance: I wondered how you feel about tasks to try between meetings
+  topics:
+  - commitment
+  style: indirect
+- utterance: Therapy is a commitment, I know. How would you fit it in?
+  topics:
+  - commitment
+  style: empathy_then_question
+- utterance: um practically could you could you get here every week
+  topics:
+  - commitment
+  style: spoken
+- utterance: Weekly sessions okay?
+  topics:
+  - commitment
+  style: brief
+- utterance: What worries you about the practising?
+  topics:
+  - commitment
+  style: follow_up
+  previous:
+    interviewer: Would you manage to come in once a week?
+    character: I can attend weekly if it's arranged around work. I'm worried about what I'd be expected
+      to practise between meetings.
+- utterance: I imagine work might make sessions tricky?
+  topics:
+  - commitment
+  style: leading
+- utterance: Do you drink to help you cope with social events?
+  topics:
+  - risk
+  style: closed
+- utterance: How much alcohol do you drink?
+  topics:
+  - risk
+  style: open
+- utterance: What thoughts, if any, have you had of ending your life?
+  topics:
+  - risk
+  style: open
+- utterance: Tell me whether you've ever self-harmed.
+  topics:
+  - risk
+  style: open
+- utterance: Ever have a drink beforehand to calm your nerves?
+  topics:
+  - risk
+  style: colloquial
+- utterance: When things feel bad, do you ever feel you'd be better off not here?
+  topics:
+  - risk
+  style: colloquial
+- utterance: Could I ask about suicidal ideation or self-harm?
+  topics:
+  - risk
+  style: clinical
+- utterance: I ask everyone about safety, so I'd like to check whether you've wanted to hurt yourself
+  topics:
+  - risk
+  style: indirect
+- utterance: I wondered whether alcohol plays any part in coping
+  topics:
+  - risk
+  style: indirect
+- utterance: Living with this for years must be hard. Have you ever felt like harming yourself?
+  topics:
+  - risk
+  style: empathy_then_question
+- utterance: um and drinking is is that something you use to cope
+  topics:
+  - risk
+  style: spoken
+- utterance: Any self-harm?
+  topics:
+  - risk
+  style: brief
+- utterance: How often would you have a drink before something social?
+  topics:
+  - risk
+  style: follow_up
+  previous:
+    interviewer: Have you had any thoughts of harming yourself?
+    character: No, I haven't wanted to harm myself. I sometimes drink a glass of wine before a work social
+      event, not daily.
+- utterance: You're not drinking to cope, I take it?
+  topics:
+  - risk
+  style: leading
+- utterance: Would you prefer individual or group therapy?
+  topics:
+  - preference
+  style: closed
+- utterance: How would you feel about joining a group?
+  topics:
+  - preference
+  style: open
+- utterance: Could we talk about which therapy setting feels possible for you?
+  topics:
+  - preference
+  style: open
+- utterance: Does the idea of a group worry you?
+  topics:
+  - preference
+  style: closed
+- utterance: What kind of setting would you feel most comfortable in?
+  topics:
+  - preference
+  style: open
+- utterance: One-to-one or with others, what suits you better?
+  topics:
+  - preference
+  style: colloquial
+- utterance: How does sitting in a room with other people with anxiety sound?
+  topics:
+  - preference
+  style: colloquial
+- utterance: Could I ask about your preference for individual versus group format?
+  topics:
+  - preference
+  style: clinical
+- utterance: I'd like to hear which way of doing therapy feels manageable
+  topics:
+  - preference
+  style: indirect
+- utterance: I wondered how you'd feel about starting on your own with a therapist
+  topics:
+  - preference
+  style: indirect
+- utterance: There's no wrong answer. Would you rather see someone one-to-one?
+  topics:
+  - preference
+  style: empathy_then_question
+- utterance: Group or individual?
+  topics:
+  - preference
+  style: brief
+- utterance: And would you want to work on that one-to-one or alongside others?
+  topics:
+  - preference
+  style: follow_up
+  previous:
+    interviewer: What would you like therapy to help you with?
+    character: I want to contribute one idea in meetings and have lunch with colleagues without planning
+      every word.
+- utterance: I'd guess a group might feel daunting?
+  topics:
+  - preference
+  style: leading
+- utterance: How do you feel about yourself for having these difficulties?
+  topics:
+  - shame
+  style: open
+- utterance: What do you tell colleagues when you avoid things?
+  topics:
+  - shame
+  style: open
+- utterance: Do you judge yourself for feeling anxious?
+  topics:
+  - shame
+  style: closed
+- utterance: Could we talk about how you feel about having this problem?
+  topics:
+  - shame
+  style: open
+- utterance: Do your colleagues know you feel anxious?
+  topics:
+  - shame
+  style: closed
+- utterance: Are you hard on yourself about it?
+  topics:
+  - shame
+  style: colloquial
+- utterance: When you skip lunch with people, what excuse do you give?
+  topics:
+  - shame
+  style: colloquial
+- utterance: Could I ask about any self-criticism or shame linked to the anxiety?
+  topics:
+  - shame
+  style: clinical
+- utterance: I'd like to understand how you see yourself in all this
+  topics:
+  - shame
+  style: indirect
+- utterance: I wondered what you say to people at work when you turn things down
+  topics:
+  - shame
+  style: indirect
+- utterance: A lot of people feel embarrassed about anxiety. How do you feel about it?
+  topics:
+  - shame
+  style: empathy_then_question
+- utterance: um and how do you how do you feel about yourself with all this
+  topics:
+  - shame
+  style: spoken
+- utterance: Hard on yourself?
+  topics:
+  - shame
+  style: brief
+- utterance: And what do you tell people at work?
+  topics:
+  - shame
+  style: follow_up
+  previous:
+    interviewer: Do you judge yourself for feeling anxious?
+    character: I think I should have grown out of this. I tell colleagues I'm busy rather than admit I'm
+      afraid.
+- utterance: I imagine you can be quite tough on yourself about it?
+  topics:
+  - shame
+  style: leading
+- utterance: What worries you in meetings, and what happens in your body?
+  topics:
+  - fear
+  - body
+  style: stacked
+- utterance: What would you like to get out of therapy, and would you prefer one-to-one or a group?
+  topics:
+  - goals
+  - preference
+  style: stacked
+- utterance: Have you had any treatment before, and could you come weekly?
+  topics:
+  - help
+  - commitment
+  style: stacked
+- utterance: How do you hide the anxiety, and do you drink to cope?
+  topics:
+  - strategies
+  - risk
+  style: stacked
+- utterance: Hello Louise, thanks for coming in.
+  topics: []
+  style: greeting
+- utterance: Hi Louise, I'm one of the doctors in the psychotherapy clinic.
+  topics: []
+  style: introduction
+- utterance: Is it okay if we have a chat about how things are?
+  topics: []
+  style: greeting
+- utterance: What would you like to start with?
+  topics: []
+  style: greeting
+- utterance: Before we start, have you got any questions?
+  topics: []
+  style: greeting
+- utterance: Come on in, Louise, have a seat.
+  topics: []
+  style: greeting
+- utterance: My name is Dr Evans and I'm a trainee here.
+  topics: []
+  style: introduction
+- utterance: I'd like to move on to something different now.
+  topics: []
+  style: transition
+- utterance: Thank you. Shall we talk about treatment options now?
+  topics: []
+  style: transition
+- utterance: Let's shift focus a little.
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Louise.
+  topics: []
+  style: closing
+- utterance: Thanks for talking with me; we'll send you some written information.
+  topics: []
+  style: closing
+- utterance: There's no right thing to say here, so take your time.
+  topics: []
+  style: empathy
+- utterance: It sounds like you've been coping with this on your own for a long time.
+  topics: []
+  style: empathy
+- utterance: Coming here today was a big step.
+  topics: []
+  style: empathy
+- utterance: It's completely fine to pause.
+  topics: []
+  style: empathy
+- utterance: So meetings and lunches are the hardest parts at the moment.
+  topics: []
+  style: summary
+- utterance: Let me sum up what you've told me so far.
+  topics: []
+  style: summary
+- utterance: The main recommended option is individual CBT focused on social anxiety, usually weekly.
+  topics: []
+  style: explanation
+- utterance: In therapy you'd agree experiments together; nobody would force you into anything.
+  topics: []
+  style: explanation
+- utterance: There's also guided self-help, and medication if therapy isn't right for you.
+  topics: []
+  style: explanation
+- utterance: Does that make sense?
+  topics: []
+  style: check_understanding
+- utterance: Can you tell me in your own words what CBT would involve?
+  topics: []
+  style: check_understanding
+- utterance: Is there anything about the options you'd like me to explain again?
+  topics: []
+  style: check_understanding
+- utterance: How is your sleep?
+  topics: []
+  style: off_case
+- utterance: How has your mood been lately?
+  topics: []
+  style: off_case
+- utterance: How is your physical health generally?
+  topics: []
+  style: off_case
+- utterance: Do you live with anyone?
+  topics: []
+  style: off_case
+- utterance: Do you have any friends outside work?
+  topics: []
+  style: off_case
+- utterance: What does your job involve day to day?
+  topics: []
+  style: near_miss
+- utterance: What kind of meetings does your team have?
+  topics: []
+  style: near_miss
+- utterance: Has anyone at work ever offered you support?
+  topics: []
+  style: near_miss
+- utterance: What time does your working day finish?
+  topics: []
+  style: near_miss

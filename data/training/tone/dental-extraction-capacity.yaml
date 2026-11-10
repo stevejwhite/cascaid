@@ -1,0 +1,162 @@
+# Training lines for the tone classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: dental-extraction-capacity
+case_version: 0.1.0
+status: draft
+items:
+  - utterance: "Have you ever felt so low that you wanted to die?"
+    empathy: 0
+    empathy_words: ""
+    confrontational: false
+    challenge_words: ""
+    style: plain_question
+  - utterance: "What happened at the dentist the last time they tried?"
+    empathy: 0
+    empathy_words: ""
+    confrontational: false
+    challenge_words: ""
+    style: plain_question
+  - utterance: "so um what is it you're most scared of with the operation"
+    empathy: 0
+    empathy_words: ""
+    confrontational: false
+    challenge_words: ""
+    style: plain_question
+  - utterance: "How long has the pain been going on for?"
+    empathy: 0
+    empathy_words: ""
+    confrontational: false
+    challenge_words: ""
+    style: plain_question
+  - utterance: "Which option would you choose if it were up to you today?"
+    empathy: 0
+    empathy_words: ""
+    confrontational: false
+    challenge_words: ""
+    style: plain_question
+  - utterance: "Sorry to ask again, but could you tell me who you live with?"
+    empathy: 0
+    empathy_words: ""
+    confrontational: false
+    challenge_words: ""
+    style: polite_question
+  - utterance: "Would you mind if I asked a bit about your work?"
+    empathy: 0
+    empathy_words: ""
+    confrontational: false
+    challenge_words: ""
+    style: polite_question
+  - utterance: "Good afternoon Ben, I'm a doctor from the mental health team."
+    empathy: 0
+    empathy_words: ""
+    confrontational: false
+    challenge_words: ""
+    style: introduction
+  - utterance: "Hello again Ben, thank you for waiting for me."
+    empathy: 0
+    empathy_words: ""
+    confrontational: false
+    challenge_words: ""
+    style: greeting
+  - utterance: "So you understand the tooth needs to come out, but you'd like to talk about other ways first."
+    empathy: 0
+    empathy_words: ""
+    confrontational: false
+    challenge_words: ""
+    style: summary
+  - utterance: "Right. And when did it start hurting?"
+    empathy: 0
+    empathy_words: ""
+    confrontational: false
+    challenge_words: ""
+    style: acknowledgement
+  - utterance: "okay um thanks for telling me"
+    empathy: 0
+    empathy_words: ""
+    confrontational: false
+    challenge_words: ""
+    style: acknowledgement
+  - utterance: "That must be hard."
+    empathy: 1
+    empathy_words: "That must be hard"
+    confrontational: false
+    challenge_words: ""
+    style: brief_empathy
+  - utterance: "I'm sorry to hear that."
+    empathy: 1
+    empathy_words: "I'm sorry to hear that"
+    confrontational: false
+    challenge_words: ""
+    style: brief_empathy
+  - utterance: "That sounds tough. How are you sleeping?"
+    empathy: 1
+    empathy_words: "That sounds tough"
+    confrontational: false
+    challenge_words: ""
+    style: brief_empathy_question
+  - utterance: "I'm sorry you've been through that. What happened next?"
+    empathy: 1
+    empathy_words: "I'm sorry you've been through that"
+    confrontational: false
+    challenge_words: ""
+    style: brief_empathy_question
+  - utterance: "Losing your grandad during an operation last year must make this feel very frightening for you."
+    empathy: 2
+    empathy_words: "Losing your grandad during an operation last year must make this feel very frightening for you"
+    confrontational: false
+    challenge_words: ""
+    style: specific_empathy
+    previous:
+      interviewer: "Is there something that makes the idea of the operation especially scary?"
+      character: "My grandad died while he was having an operation last year; I know his heart was very ill and that my situation is different, but I keep thinking about it."
+  - utterance: "Being awake clearly matters a great deal to you, and wanting the other options heard first makes sense."
+    empathy: 2
+    empathy_words: "Being awake clearly matters a great deal to you, and wanting the other options heard first makes sense"
+    confrontational: false
+    challenge_words: ""
+    style: specific_empathy
+    previous:
+      interviewer: "How are you thinking through the different choices?"
+      character: "I know leaving it could make me more ill, but being awake matters enough to me that I want the other options discussed before I agree."
+  - utterance: "You've been really clear that you don't want to be put to sleep, and I respect that."
+    empathy: 2
+    empathy_words: "You've been really clear that you don't want to be put to sleep, and I respect that"
+    confrontational: false
+    challenge_words: ""
+    style: specific_empathy
+  - utterance: "It's important to you that people ask you rather than Jo, and that's completely fair. What else would help today?"
+    empathy: 2
+    empathy_words: "It's important to you that people ask you rather than Jo, and that's completely fair"
+    confrontational: false
+    challenge_words: ""
+    style: specific_empathy_question
+    previous:
+      interviewer: "Is there anyone you'd like to have with you?"
+      character: "I'd like my support worker, Jo, beside me, but I want you to ask me the questions rather than asking Jo to answer."
+  - utterance: "You really need to have this tooth out, Ben, there isn't another sensible choice."
+    empathy: 0
+    empathy_words: ""
+    confrontational: true
+    challenge_words: "You really need to have this tooth out, Ben, there isn't another sensible choice"
+    style: confront_statement
+  - utterance: "Why on earth would you leave a rotten tooth in your mouth?"
+    empathy: 0
+    empathy_words: ""
+    confrontational: true
+    challenge_words: "Why on earth would you leave a rotten tooth in your mouth?"
+    style: confront_why
+  - utterance: "Honestly, the anaesthetic is nothing to worry about."
+    empathy: 0
+    empathy_words: ""
+    confrontational: true
+    challenge_words: "the anaesthetic is nothing to worry about"
+    style: dismissive
+  - utterance: "let's not go over the grandad thing again, we're short on time"
+    empathy: 0
+    empathy_words: ""
+    confrontational: true
+    challenge_words: "let's not go over the grandad thing again, we're short on time"
+    style: dismissive
+    previous:
+      interviewer: "What is it that worries you most about being asleep?"
+      character: "My grandad died while he was having an operation last year; I know his heart was very ill and that my situation is different, but I keep thinking about it."

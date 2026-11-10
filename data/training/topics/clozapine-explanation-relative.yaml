@@ -1,0 +1,690 @@
+# Training phrasings for the topic classifier. Drafted and revised by GPT-6 (Codex)
+# on 2026-10-12; reviewed by Steve J White on 2026-10-12. Not evaluation data.
+case_id: clozapine-explanation-relative
+case_version: 0.4.0
+status: reviewed
+items:
+- utterance: What treatment has Daniel had for the voices so far?
+  topics:
+  - treatment-history
+  style: open
+- utterance: Have the tablets he has tried made the voices go away?
+  topics:
+  - treatment-history
+  style: closed
+- utterance: How has he got on with what he's been given up to now?
+  topics:
+  - treatment-history
+  style: colloquial
+- utterance: Could you describe his response to previous treatment?
+  topics:
+  - treatment-history
+  style: clinical
+- utterance: I wondered how well the medicines he has already tried have worked
+  topics:
+  - treatment-history
+  style: indirect
+- utterance: It sounds hard for him; has anything he's been given settled the voices?
+  topics:
+  - treatment-history
+  style: empathy_then_question
+- utterance: um which treatments has he already tried for this
+  topics:
+  - treatment-history
+  style: spoken
+- utterance: Voices despite treatment so far?
+  topics:
+  - treatment-history
+  style: brief
+- utterance: The tablets so far haven't quite done the job, have they?
+  topics:
+  - treatment-history
+  style: leading
+- utterance: Are they still there on most days?
+  topics:
+  - treatment-history
+  style: follow_up
+  previous:
+    interviewer: What treatment has Daniel had for the voices so far?
+    character: Daniel has tried two other tablets for his illness and still hears voices most days.
+- utterance: Describe what symptoms remain despite the treatment he has had.
+  topics:
+  - treatment-history
+  style: open
+- utterance: Is he still having symptoms while on those medicines?
+  topics:
+  - treatment-history
+  style: closed
+- utterance: After what he's been given, is he still hearing things?
+  topics:
+  - treatment-history
+  style: colloquial
+- utterance: so what hes had up to now um has that really helped
+  topics:
+  - treatment-history
+  style: spoken
+- utterance: Were there two different ones altogether?
+  topics:
+  - treatment-history
+  style: follow_up
+  previous:
+    interviewer: What treatment has Daniel had for the voices so far?
+    character: Daniel has tried two other tablets for his illness and still hears voices most days.
+- utterance: Has anyone told you anything about this medicine?
+  topics:
+  - prior-knowledge
+  style: closed
+- utterance: What's the picture you've been given of this new option?
+  topics:
+  - prior-knowledge
+  style: colloquial
+- utterance: Could you describe your current understanding of clozapine?
+  topics:
+  - prior-knowledge
+  style: clinical
+- utterance: I wondered what you already know about this treatment
+  topics:
+  - prior-knowledge
+  style: indirect
+- utterance: It is understandable to feel uncertain; what information have you had so far?
+  topics:
+  - prior-knowledge
+  style: empathy_then_question
+- utterance: um before i explain clozapine what have you heard about it
+  topics:
+  - prior-knowledge
+  style: spoken
+- utterance: Anything you've heard about clozapine?
+  topics:
+  - prior-knowledge
+  style: brief
+- utterance: The picture you have been given may sound worrying, doesn't it?
+  topics:
+  - prior-knowledge
+  style: leading
+- utterance: Did that account come from a friend?
+  topics:
+  - prior-knowledge
+  style: follow_up
+  previous:
+    interviewer: What have you heard about clozapine already?
+    character: A friend told me clozapine is dangerous and that people on it need blood tests all the time.
+- utterance: Tell me about any information you have been given about clozapine.
+  topics:
+  - prior-knowledge
+  style: open
+- utterance: Is there anything you have heard about the medicine that worries you?
+  topics:
+  - prior-knowledge
+  style: closed
+- utterance: Before we get into it, what have people been telling you?
+  topics:
+  - prior-knowledge
+  style: colloquial
+- utterance: so what is your starting picture of this proposed tablet
+  topics:
+  - prior-knowledge
+  style: spoken
+- utterance: Was frequent testing part of that account?
+  topics:
+  - prior-knowledge
+  style: follow_up
+  previous:
+    interviewer: What have you heard about clozapine already?
+    character: A friend told me clozapine is dangerous and that people on it need blood tests all the time.
+- utterance: Is he frightened of needles?
+  topics:
+  - needle-fear
+  style: closed
+- utterance: When someone takes a sample from his arm, how does he get on?
+  topics:
+  - needle-fear
+  style: colloquial
+- utterance: Could you describe his reaction to blood tests?
+  topics:
+  - needle-fear
+  style: clinical
+- utterance: I wondered whether needles are something he finds difficult
+  topics:
+  - needle-fear
+  style: indirect
+- utterance: It's okay to raise practical worries; would having a sample taken be frightening for him?
+  topics:
+  - needle-fear
+  style: empathy_then_question
+- utterance: um what is he like with needles or blood tests
+  topics:
+  - needle-fear
+  style: spoken
+- utterance: Any fear of blood tests?
+  topics:
+  - needle-fear
+  style: brief
+- utterance: Having a sample taken isn't something he enjoys, is it?
+  topics:
+  - needle-fear
+  style: leading
+- utterance: Did he completely pass out that time?
+  topics:
+  - needle-fear
+  style: follow_up
+  previous:
+    interviewer: How does Daniel feel about needles and having blood taken?
+    character: Daniel hates needles. He fainted at the GP once when they took blood.
+- utterance: Tell me about his experiences of having blood taken.
+  topics:
+  - needle-fear
+  style: open
+- utterance: Has he ever felt faint during a blood test?
+  topics:
+  - needle-fear
+  style: closed
+- utterance: When the syringe comes out, does he get very nervous?
+  topics:
+  - needle-fear
+  style: colloquial
+- utterance: so a sample from his arm um how would he cope with that
+  topics:
+  - needle-fear
+  style: spoken
+- utterance: Was that while they were taking the sample?
+  topics:
+  - needle-fear
+  style: follow_up
+  previous:
+    interviewer: How does Daniel feel about needles and having blood taken?
+    character: Daniel hates needles. He fainted at the GP once when they took blood.
+- utterance: What side effects has he had from earlier medicines?
+  topics:
+  - previous-side-effects
+  style: open
+- utterance: Did any of his tablets cause side effects?
+  topics:
+  - previous-side-effects
+  style: closed
+- utterance: How well did the earlier tablets agree with him?
+  topics:
+  - previous-side-effects
+  style: colloquial
+- utterance: Could you describe any unwanted effects from previous treatment?
+  topics:
+  - previous-side-effects
+  style: clinical
+- utterance: I wondered whether side effects have been a problem before
+  topics:
+  - previous-side-effects
+  style: indirect
+- utterance: It's understandable to be cautious; has something he's taken made him feel unwell?
+  topics:
+  - previous-side-effects
+  style: empathy_then_question
+- utterance: um have earlier tablets given him any side effects
+  topics:
+  - previous-side-effects
+  style: spoken
+- utterance: Any side effects from tablets?
+  topics:
+  - previous-side-effects
+  style: brief
+- utterance: Some of the earlier tablets weren't easy to put up with, were they?
+  topics:
+  - previous-side-effects
+  style: leading
+- utterance: Was the drowsiness there throughout the daytime?
+  topics:
+  - previous-side-effects
+  style: follow_up
+  previous:
+    interviewer: What side effects has he had from earlier medicines?
+    character: On his last tablet he put on a lot of weight and felt sleepy all day.
+- utterance: Tell me about any side effects that bothered him on other medicines.
+  topics:
+  - previous-side-effects
+  style: open
+- utterance: Have side effects made earlier treatment difficult for him?
+  topics:
+  - previous-side-effects
+  style: closed
+- utterance: When he was on the earlier ones, did anything unpleasant happen?
+  topics:
+  - previous-side-effects
+  style: colloquial
+- utterance: so apart from whether it helped did what he was given agree with him
+  topics:
+  - previous-side-effects
+  style: spoken
+- utterance: Was getting bigger another change alongside that drowsiness?
+  topics:
+  - previous-side-effects
+  style: follow_up
+  previous:
+    interviewer: What side effects has he had from earlier medicines?
+    character: On his last tablet he put on a lot of weight and felt sleepy all day.
+- utterance: What can you tell me about Daniel's smoking?
+  topics:
+  - smoking
+  style: open
+- utterance: Does he smoke cigarettes at present?
+  topics:
+  - smoking
+  style: closed
+- utterance: How many fags, if any, does he get through?
+  topics:
+  - smoking
+  style: colloquial
+- utterance: Could you describe his usual tobacco use?
+  topics:
+  - smoking
+  style: clinical
+- utterance: I wondered whether smoking is part of his routine
+  topics:
+  - smoking
+  style: indirect
+- utterance: You can be open about this; does he use tobacco?
+  topics:
+  - smoking
+  style: empathy_then_question
+- utterance: um if he smokes how many cigarettes is it usually
+  topics:
+  - smoking
+  style: spoken
+- utterance: Any cigarette smoking at present?
+  topics:
+  - smoking
+  style: brief
+- utterance: He probably uses tobacco fairly regularly, doesn't he?
+  topics:
+  - smoking
+  style: leading
+- utterance: Would that be less than a pack of twenty?
+  topics:
+  - smoking
+  style: follow_up
+  previous:
+    interviewer: What can you tell me about Daniel's smoking?
+    character: He smokes about fifteen cigarettes a day.
+- utterance: Tell me how much he smokes, if he does.
+  topics:
+  - smoking
+  style: open
+- utterance: Is smoking something he does every day?
+  topics:
+  - smoking
+  style: closed
+- utterance: When it comes to tobacco, is it a lot or none at all?
+  topics:
+  - smoking
+  style: colloquial
+- utterance: so tobacco wise um what would he get through in a day
+  topics:
+  - smoking
+  style: spoken
+- utterance: Is that figure per day rather than per week?
+  topics:
+  - smoking
+  style: follow_up
+  previous:
+    interviewer: What can you tell me about Daniel's smoking?
+    character: He smokes about fifteen cigarettes a day.
+- utterance: What do you know about any cannabis Daniel uses?
+  topics:
+  - cannabis
+  style: open
+- utterance: Does he use cannabis at all?
+  topics:
+  - cannabis
+  style: closed
+- utterance: Is weed something he ever has?
+  topics:
+  - cannabis
+  style: colloquial
+- utterance: Could you describe any recreational drug use you know of?
+  topics:
+  - cannabis
+  style: clinical
+- utterance: I wondered whether he uses cannabis or other drugs
+  topics:
+  - cannabis
+  style: indirect
+- utterance: I know this can be awkward to discuss; does he ever use weed?
+  topics:
+  - cannabis
+  style: empathy_then_question
+- utterance: um is cannabis part of the picture for him
+  topics:
+  - cannabis
+  style: spoken
+- utterance: Any cannabis use you know of?
+  topics:
+  - cannabis
+  style: brief
+- utterance: He has tried something recreational at times, hasn't he?
+  topics:
+  - cannabis
+  style: leading
+- utterance: Is that usually in company rather than by himself?
+  topics:
+  - cannabis
+  style: follow_up
+  previous:
+    interviewer: What do you know about any cannabis Daniel uses?
+    character: He sometimes smokes cannabis with his friends.
+- utterance: Tell me about any cannabis use you are aware of.
+  topics:
+  - cannabis
+  style: open
+- utterance: Is he using recreational drugs at the moment?
+  topics:
+  - cannabis
+  style: closed
+- utterance: Do joints ever feature when he's relaxing?
+  topics:
+  - cannabis
+  style: colloquial
+- utterance: so apart from tobacco um does he use anything for a buzz
+  topics:
+  - cannabis
+  style: spoken
+- utterance: Would occasional use describe that better than every day?
+  topics:
+  - cannabis
+  style: follow_up
+  previous:
+    interviewer: What do you know about any cannabis Daniel uses?
+    character: He sometimes smokes cannabis with his friends.
+- utterance: How does Daniel manage to remember his tablets?
+  topics:
+  - adherence
+  style: open
+- utterance: Does he ever forget to take his medicine?
+  topics:
+  - adherence
+  style: closed
+- utterance: When a dose is due, does he manage to stick to the routine?
+  topics:
+  - adherence
+  style: colloquial
+- utterance: Could you describe how regularly he takes his prescribed medication?
+  topics:
+  - adherence
+  style: clinical
+- utterance: I wondered whether remembering tablets is difficult for him
+  topics:
+  - adherence
+  style: indirect
+- utterance: It can be a lot to keep track of; does he need a nudge to get his dose in?
+  topics:
+  - adherence
+  style: empathy_then_question
+- utterance: um does he remember his tablets or need reminding
+  topics:
+  - adherence
+  style: spoken
+- utterance: Any trouble remembering the medicine?
+  topics:
+  - adherence
+  style: brief
+- utterance: Doses probably get missed sometimes, don't they?
+  topics:
+  - adherence
+  style: leading
+- utterance: Do you give that prompt in the morning?
+  topics:
+  - adherence
+  style: follow_up
+  previous:
+    interviewer: How does Daniel manage to remember his tablets?
+    character: I remind him to take his tablets every morning, but he does forget sometimes.
+- utterance: Tell me whether anyone helps him remember his tablets.
+  topics:
+  - adherence
+  style: open
+- utterance: Is taking his medication regularly a problem?
+  topics:
+  - adherence
+  style: closed
+- utterance: When it's time for a dose, does he need somebody to prompt him?
+  topics:
+  - adherence
+  style: colloquial
+- utterance: so with his daily routine um does he ever miss a dose
+  topics:
+  - adherence
+  style: spoken
+- utterance: Can he still miss one after you've reminded him?
+  topics:
+  - adherence
+  style: follow_up
+  previous:
+    interviewer: How does Daniel manage to remember his tablets?
+    character: I remind him to take his tablets every morning, but he does forget sometimes.
+- utterance: Has he said whether he wants to take it?
+  topics:
+  - daniel-view
+  style: closed
+- utterance: Is he up for giving this new option a go?
+  topics:
+  - daniel-view
+  style: colloquial
+- utterance: Could you describe his views on accepting this treatment?
+  topics:
+  - daniel-view
+  style: clinical
+- utterance: I wondered what he thinks about the proposed medicine
+  topics:
+  - daniel-view
+  style: indirect
+- utterance: This can be a difficult decision; is he willing to give it a try?
+  topics:
+  - daniel-view
+  style: empathy_then_question
+- utterance: um how does he feel about trying clozapine himself
+  topics:
+  - daniel-view
+  style: spoken
+- utterance: What are Daniel's own views?
+  topics:
+  - daniel-view
+  style: brief
+- utterance: He is open to giving it a chance, isn't he?
+  topics:
+  - daniel-view
+  style: leading
+- utterance: Is stopping the voices what makes him willing?
+  topics:
+  - daniel-view
+  style: follow_up
+  previous:
+    interviewer: What does Daniel think about trying clozapine?
+    character: Daniel says he'll try anything that stops the voices, but he's frightened of the blood tests.
+- utterance: Tell me what he has said about whether he wants this treatment.
+  topics:
+  - daniel-view
+  style: open
+- utterance: Does he agree with trying the new medicine?
+  topics:
+  - daniel-view
+  style: closed
+- utterance: From his side, is this an option he'd go along with?
+  topics:
+  - daniel-view
+  style: colloquial
+- utterance: so leaving other peoples opinions aside is he willing himself
+  topics:
+  - daniel-view
+  style: spoken
+- utterance: Despite that fear, would he still give it a try?
+  topics:
+  - daniel-view
+  style: follow_up
+  previous:
+    interviewer: What does Daniel think about trying clozapine?
+    character: Daniel says he'll try anything that stops the voices, but he's frightened of the blood tests.
+- utterance: What are your hopes for Daniel if treatment helps?
+  topics:
+  - hopes
+  style: open
+- utterance: Is there something you particularly hope he will be able to do?
+  topics:
+  - hopes
+  style: closed
+- utterance: For you, what would getting better look like for him?
+  topics:
+  - hopes
+  style: colloquial
+- utterance: Could you describe the outcome you would hope for from treatment?
+  topics:
+  - hopes
+  style: clinical
+- utterance: I wondered what you want most for him over the coming months
+  topics:
+  - hopes
+  style: indirect
+- utterance: It is understandable to feel cautious; what improvement would matter most to you?
+  topics:
+  - hopes
+  style: empathy_then_question
+- utterance: um if you feel able to say what are your hopes for him
+  topics:
+  - hopes
+  style: spoken
+- utterance: What would you hope changes?
+  topics:
+  - hopes
+  style: brief
+- utterance: It may be hard to let yourself believe things could improve, is that fair?
+  topics:
+  - hopes
+  style: leading
+- utterance: Does letting yourself imagine that also feel frightening?
+  topics:
+  - hopes
+  style: follow_up
+  previous:
+    interviewer: What are your hopes for Daniel if treatment helps?
+    character: I just want him well enough to go back to college. I'm scared of getting my hopes up again.
+- utterance: Help me understand what you would want treatment to change for him.
+  topics:
+  - hopes
+  style: open
+- utterance: Are there hopes you find difficult to let yourself have?
+  topics:
+  - hopes
+  style: closed
+- utterance: If things did go well, what would mean the most to you?
+  topics:
+  - hopes
+  style: colloquial
+- utterance: so thinking about him getting better what would that look like to you
+  topics:
+  - hopes
+  style: spoken
+- utterance: Is returning to education the improvement you have in mind?
+  topics:
+  - hopes
+  style: follow_up
+  previous:
+    interviewer: What are your hopes for Daniel if treatment helps?
+    character: I just want him well enough to go back to college. I'm scared of getting my hopes up again.
+- utterance: What have you heard about clozapine, and what does Daniel think about trying it?
+  topics:
+  - prior-knowledge
+  - daniel-view
+  style: stacked
+- utterance: How is he with needles, and has he had side effects from earlier medicines?
+  topics:
+  - needle-fear
+  - previous-side-effects
+  style: stacked
+- utterance: Does he remember his tablets, and what are your hopes for his recovery?
+  topics:
+  - adherence
+  - hopes
+  style: stacked
+- utterance: Hello Maria, please take a seat.
+  topics: []
+  style: greeting
+- utterance: Good afternoon, thank you for joining me.
+  topics: []
+  style: greeting
+- utterance: Hi, it is good to meet you today.
+  topics: []
+  style: greeting
+- utterance: I am a trainee working with the team looking after Daniel.
+  topics: []
+  style: introduction
+- utterance: I will be talking through the proposed treatment with you.
+  topics: []
+  style: introduction
+- utterance: We have time to discuss this together now.
+  topics: []
+  style: introduction
+- utterance: It is understandable to want a clear explanation before something new starts.
+  topics: []
+  style: empathy
+- utterance: These decisions can feel daunting when they involve someone close to you.
+  topics: []
+  style: empathy
+- utterance: It sounds difficult that the voices have continued despite treatment.
+  topics: []
+  style: empathy
+- utterance: It is all right to take time over your questions.
+  topics: []
+  style: empathy
+- utterance: You have told me he still hears voices despite trying two other tablets.
+  topics: []
+  style: summary
+- utterance: So clozapine has been recommended and you want to understand what it involves.
+  topics: []
+  style: summary
+- utterance: 'Let me recap: Daniel has agreed that we can discuss the treatment together.'
+  topics: []
+  style: summary
+- utterance: The plan for today is to explain the proposed medicine and hear your concerns.
+  topics: []
+  style: summary
+- utterance: I will take the explanation one part at a time.
+  topics: []
+  style: explanation
+- utterance: We can pause whenever you need a break.
+  topics: []
+  style: explanation
+- utterance: I will avoid jargon where I can.
+  topics: []
+  style: explanation
+- utterance: I will leave time at the end to check my explanation was clear.
+  topics: []
+  style: explanation
+- utterance: Have I captured why you wanted to discuss clozapine today?
+  topics: []
+  style: check_understanding
+- utterance: Was my wording about the proposed treatment clear?
+  topics: []
+  style: check_understanding
+- utterance: Does my recap of what has already been tried sound right?
+  topics: []
+  style: check_understanding
+- utterance: Does Daniel have any allergies to medicines?
+  topics: []
+  style: off_case
+- utterance: Has he ever had a seizure?
+  topics: []
+  style: off_case
+- utterance: Are you aware of any heart problems he has?
+  topics: []
+  style: off_case
+- utterance: Does he regularly have difficulty opening his bowels?
+  topics: []
+  style: off_case
+- utterance: Has anyone else in his family taken clozapine?
+  topics: []
+  style: near_miss
+- utterance: Has he ever deliberately taken too many tablets?
+  topics: []
+  style: near_miss
+- utterance: Are there any inherited blood disorders in his family?
+  topics: []
+  style: near_miss
+- utterance: Has he ever accidentally burnt himself with a cigarette?
+  topics: []
+  style: near_miss

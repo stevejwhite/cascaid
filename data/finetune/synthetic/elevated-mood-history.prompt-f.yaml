@@ -1,0 +1,1622 @@
+# Hard-case interviews for the student interpreter (Prompt F). Drafted by GPT-6 (Codex)
+# on 2026-10-14; NOT YET REVIEWED. Not evaluation data.
+case_id: elevated-mood-history
+case_version: 0.4.0
+status: draft
+interviews:
+- id: elevated-mood-history-f01
+  trainee: Hesitant FY2; apologetic preambles, sometimes pressures when unsure.
+  turns:
+  - doctor: Hello Alex, thanks for making yourself available; I'm the trainee allocated to talk with you.
+    character: My sister wanted this appointment because she says I have changed. I feel great and have
+      lots of plans.
+    kind: ordinary
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Have you been driving in a way that is unusual for you?
+    character: I drove much faster than usual yesterday. I haven't thought about harming myself or anyone
+      else.
+    kind: ordinary
+    topics:
+    - risk-driving
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What did the speedometer actually show then?
+    character: That is not something I can tell you.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You have described driving faster than usual, and speaking honestly about risks can feel uncomfortable.
+    character: Thank you for listening.
+    kind: reflection
+    topics: []
+    empathy: specific
+    empathy_words: You have described driving faster than usual, and speaking honestly about risks can
+      feel uncomfortable.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What amount of sleep leaves you ready for the next day now?
+    character: For the last week I've slept about three hours a night and don't feel tired.
+    kind: neighbour
+    topics:
+    - sleep-reduced
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Have those nights been recorded on a sleep tracker?
+    character: I do not know the answer to that.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You are treating your sister's concern as if it counts for nothing. Over what period have
+      you felt so upbeat?
+    character: You sound like you have already decided about me.
+    kind: confrontational
+    topics:
+    - mood-onset
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: You are treating your sister's concern as if it counts for nothing.
+  - doctor: What brings out irritation in you at the moment?
+    character: I've felt unusually upbeat for about a week. I get irritated when people interrupt my plans.
+    kind: neighbour
+    topics:
+    - mood-onset
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Has there been any wish to hurt yourself or another person recently?
+    character: I drove much faster than usual yesterday. I haven't thought about harming myself or anyone
+      else.
+    kind: reflection
+    topics:
+    - risk-driving
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Did you fill in a mood rating scale this week?
+    character: I do not know the answer to that.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Is anyone offering to be with you at home for a while?
+    character: My sister has offered to stay with me for a few days.
+    kind: ordinary
+    topics:
+    - support-sister
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Why didn't you listen when she said there had been a change?
+    character: I do not want another lecture.
+    kind: confrontational
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: Why didn't you listen when she said there had been a change?
+  - doctor: What does your sister do for work?
+    character: I am not sure about that detail.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: When did the brighter mood and irritation first appear?
+    character: I've felt unusually upbeat for about a week. I get irritated when people interrupt my plans.
+    kind: neighbour
+    topics:
+    - mood-onset
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: How much have you paid out for the project, and has work been missed?
+    character: I've missed two shifts at work and spent £800 on equipment for a new business. My sister
+      says I can't afford it.
+    kind: reflection
+    topics:
+    - function-work-spending
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I need a grounded answer rather than enthusiasm about everything. Were there months of depressed
+      mood at an earlier stage in your life?
+    character: This is getting irritating.
+    kind: confrontational
+    topics:
+    - past-low-period
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: I need a grounded answer rather than enthusiasm about everything.
+  - doctor: Have you had a low spell before the present high energy?
+    character: Two years ago I had a period of feeling very low for a couple of months.
+    kind: neighbour
+    topics:
+    - past-low-period
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Were you given any named treatment during that low spell?
+    character: I do not know the answer to that.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You went through months of feeling very low, and looking back on that may be painful.
+    character: Thank you for listening.
+    kind: reflection
+    topics: []
+    empathy: specific
+    empathy_words: You went through months of feeling very low, and looking back on that may be painful.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Surely feeling wonderful cannot be the whole story?
+    character: I am not keen to keep talking if you put it like that.
+    kind: confrontational
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: Surely feeling wonderful cannot be the whole story?
+  - doctor: 'Let me repeat the point I wrote down: “Two years ago I had a period of feeling very low for
+      a couple of months.”'
+    character: Yes, those were my words.
+    kind: ordinary
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'll end our discussion here, Alex; thank you for working through my questions.
+    character: Goodbye.
+    kind: ordinary
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: elevated-mood-history-f02
+  trainee: Fast, businesslike trainee; short questions with occasional disbelief.
+  turns:
+  - doctor: Alex, good morning. I'm the trainee with the team, and this is our time to talk.
+    character: My sister wanted this appointment because she says I have changed. I feel great and have
+      lots of plans.
+    kind: ordinary
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What part do coffee, alcohol or other drugs play in your week?
+    character: Two coffees a day, a little alcohol at weekends, no recreational drugs and no prescribed
+      medicines.
+    kind: ordinary
+    topics:
+    - substances
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What size mug are those coffees in?
+    character: That is not something I can tell you.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You have been clear about coffee and alcohol, and I appreciate answering such personal questions
+      can be awkward.
+    character: Thank you for listening.
+    kind: reflection
+    topics: []
+    empathy: specific
+    empathy_words: You have been clear about coffee and alcohol, and I appreciate answering such personal
+      questions can be awkward.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What kind of work will your proposed business specialise in?
+    character: I'm starting a business restoring vintage bikes. It's going to be huge.
+    kind: neighbour
+    topics:
+    - new-business
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What would you charge to do that restoration?
+    character: I do not know the answer to that.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You ought to accept that other people may see you more accurately. What has the business meant
+      for your attendance at work?
+    character: You sound like you have already decided about me.
+    kind: confrontational
+    topics:
+    - function-work-spending
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: You ought to accept that other people may see you more accurately.
+  - doctor: Has spending on the plans caused difficulty with money?
+    character: I've missed two shifts at work and spent £800 on equipment for a new business. My sister
+      says I can't afford it.
+    kind: neighbour
+    topics:
+    - function-work-spending
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: May I be more precise here. How much have you paid out for the project, and has work been
+      missed?
+    character: I've missed two shifts at work and spent £800 on equipment for a new business. My sister
+      says I can't afford it.
+    kind: reflection
+    topics:
+    - function-work-spending
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Which shop sold you the business equipment?
+    character: I do not know the answer to that.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Does any relative have similar illness, and do you have lasting physical conditions?
+    character: I don't know of any similar illness in my family and have no long-term physical health
+      problems.
+    kind: ordinary
+    topics:
+    - family-and-physical
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Your sister would not send you here for fun, would she?
+    character: I do not want another lecture.
+    kind: confrontational
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: Your sister would not send you here for fun, would she?
+  - doctor: Have you ever had a genetic test for an illness in the family?
+    character: I am not sure about that detail.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Have you been taking any prescribed or recreational substances?
+    character: Two coffees a day, a little alcohol at weekends, no recreational drugs and no prescribed
+      medicines.
+    kind: neighbour
+    topics:
+    - substances
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What was the earlier period of low mood like in duration?
+    character: Two years ago I had a period of feeling very low for a couple of months.
+    kind: reflection
+    topics:
+    - past-low-period
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: There is a difference between confidence and refusing to face a problem. How long are you
+      asleep before waking up full of energy?
+    character: This is getting irritating.
+    kind: confrontational
+    topics:
+    - sleep-reduced
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: There is a difference between confidence and refusing to face a problem.
+  - doctor: Are you tired after the nights you have been having?
+    character: For the last week I've slept about three hours a night and don't feel tired.
+    kind: neighbour
+    topics:
+    - sleep-reduced
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Have you used a sleep-tracking watch during this week?
+    character: I do not know the answer to that.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You feel rested despite very short nights, and I want your own experience of that to be heard.
+    character: Thank you for listening.
+    kind: reflection
+    topics: []
+    empathy: specific
+    empathy_words: You feel rested despite very short nights, and I want your own experience of that to
+      be heard.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: All this excitement is not useful to the interview.
+    character: I am not keen to keep talking if you put it like that.
+    kind: confrontational
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: All this excitement is not useful to the interview.
+  - doctor: 'The point I have noted is: “For the last week I''ve slept about three hours a night and don''t
+      feel tired.”'
+    character: Yes, those were my words.
+    kind: ordinary
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: We can leave the interview at that point, Alex. Thank you for your time today.
+    character: Goodbye.
+    kind: ordinary
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: elevated-mood-history-f03
+  trainee: Warm trainee who occasionally slips into premature reassurance.
+  turns:
+  - doctor: It's good to meet you, Alex; I'm a trainee doctor. Thank you for coming to speak today.
+    character: My sister wanted this appointment because she says I have changed. I feel great and have
+      lots of plans.
+    kind: ordinary
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What risks have you taken when you have been behind the wheel?
+    character: I drove much faster than usual yesterday. I haven't thought about harming myself or anyone
+      else.
+    kind: ordinary
+    topics:
+    - risk-driving
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Which road were you on for that journey?
+    character: That is not something I can tell you.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Being open about the driving and thoughts of harm can feel exposing, and I appreciate your
+      frankness.
+    character: Thank you for listening.
+    kind: reflection
+    topics: []
+    empathy: specific
+    empathy_words: Being open about the driving and thoughts of harm can feel exposing, and I appreciate
+      your frankness.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Who could come and stay rather than leave you on your own?
+    character: My sister has offered to stay with me for a few days.
+    kind: neighbour
+    topics:
+    - support-sister
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Does she already have a key to get in?
+    character: I do not know the answer to that.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I do not believe that everything is going as well as you say. How do you explain what your
+      sister has been worried about?
+    character: You sound like you have already decided about me.
+    kind: confrontational
+    topics:
+    - insight-worry
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: I do not believe that everything is going as well as you say.
+  - doctor: You feel well and have plans, and it matters that your own view is heard. Does any part of
+      you regard this change as illness?
+    character: I don't think I'm ill, but I can see my sister is really worried, and I don't want to fall
+      out with her.
+    kind: neighbour
+    topics:
+    - insight-worry
+    empathy: specific
+    empathy_words: You feel well and have plans, and it matters that your own view is heard.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Were there months of depressed mood at an earlier stage in your life?
+    character: Two years ago I had a period of feeling very low for a couple of months.
+    kind: reflection
+    topics:
+    - past-low-period
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Has your sister sent her concerns to us in an email?
+    character: I do not know the answer to that.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What practical company has your sister offered?
+    character: My sister has offered to stay with me for a few days.
+    kind: ordinary
+    topics:
+    - support-sister
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Why didn't you take a step back when people started worrying?
+    character: I do not want another lecture.
+    kind: confrontational
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: Why didn't you take a step back when people started worrying?
+  - doctor: Does she have a spare key to your home?
+    character: I am not sure about that detail.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: One further detail, if you can. Have you been driving in a way that is unusual for you?
+    character: I drove much faster than usual yesterday. I haven't thought about harming myself or anyone
+      else.
+    kind: neighbour
+    topics:
+    - risk-driving
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: How important is avoiding disagreement with your sister in this?
+    character: I don't think I'm ill, but I can see my sister is really worried, and I don't want to fall
+      out with her.
+    kind: reflection
+    topics:
+    - insight-worry
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You need to let me lead this instead of taking it back to your plans. What has the business
+      meant for your attendance at work?
+    character: This is getting irritating.
+    kind: confrontational
+    topics:
+    - function-work-spending
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: You need to let me lead this instead of taking it back to your plans.
+  - doctor: Picking up a different point. Has spending on the plans caused difficulty with money?
+    character: I've missed two shifts at work and spent £800 on equipment for a new business. My sister
+      says I can't afford it.
+    kind: neighbour
+    topics:
+    - function-work-spending
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Was that purchase paid by debit card or credit card?
+    character: I do not know the answer to that.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You are absorbed in the business, and I hear that it feels important to you.
+    character: Thank you for listening.
+    kind: reflection
+    topics: []
+    empathy: specific
+    empathy_words: You are absorbed in the business, and I hear that it feels important to you.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Being enthusiastic does not make your account convincing.
+    character: I am not keen to keep talking if you put it like that.
+    kind: confrontational
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: Being enthusiastic does not make your account convincing.
+  - doctor: 'What I heard you say was: “I''ve missed two shifts at work and spent £800 on equipment for
+      a new business.”'
+    character: Yes, those were my words.
+    kind: ordinary
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thank you for staying with the conversation, Alex; I'll bring my part to an end.
+    character: Goodbye.
+    kind: ordinary
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: elevated-mood-history-f04
+  trainee: Formal trainee; carefully framed questions but can sound moralising.
+  turns:
+  - doctor: Welcome to the interview, Alex. I am the trainee meeting with you and appreciate your attendance.
+    character: My sister wanted this appointment because she says I have changed. I feel great and have
+      lots of plans.
+    kind: ordinary
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: How much caffeine is there alongside any alcohol?
+    character: Two coffees a day, a little alcohol at weekends, no recreational drugs and no prescribed
+      medicines.
+    kind: ordinary
+    topics:
+    - substances
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Which brand is the coffee you mentioned?
+    character: That is not something I can tell you.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Discussing drinks and drugs openly can feel intrusive, and I appreciate how direct you have
+      been.
+    character: Thank you for listening.
+    kind: reflection
+    topics: []
+    empathy: specific
+    empathy_words: Discussing drinks and drugs openly can feel intrusive, and I appreciate how direct
+      you have been.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Over what period have you felt so upbeat?
+    character: I've felt unusually upbeat for about a week. I get irritated when people interrupt my plans.
+    kind: neighbour
+    topics:
+    - mood-onset
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Did you mark the start of that feeling in a diary?
+    character: I do not know the answer to that.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You are too caught up in yourself to hear the concern properly. Have you had a low spell before
+      the present high energy?
+    character: You sound like you have already decided about me.
+    kind: confrontational
+    topics:
+    - past-low-period
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: You are too caught up in yourself to hear the concern properly.
+  - doctor: There is something I still need to ask. What was the earlier period of low mood like in duration?
+    character: Two years ago I had a period of feeling very low for a couple of months.
+    kind: neighbour
+    topics:
+    - past-low-period
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Being brought into a discussion about change while feeling great can seem frustrating. How
+      do you explain what your sister has been worried about?
+    character: I don't think I'm ill, but I can see my sister is really worried, and I don't want to fall
+      out with her.
+    kind: reflection
+    topics:
+    - insight-worry
+    empathy: specific
+    empathy_words: Being brought into a discussion about change while feeling great can seem frustrating.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Which doctor saw you during those months, if anyone?
+    character: I do not know the answer to that.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What lasting health conditions do you have, and does anyone in the family have similar illness?
+    character: I don't know of any similar illness in my family and have no long-term physical health
+      problems.
+    kind: ordinary
+    topics:
+    - family-and-physical
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: The sensible thing is to agree there is a problem, isn't it?
+    character: I do not want another lecture.
+    kind: confrontational
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: The sensible thing is to agree there is a problem, isn't it?
+  - doctor: What was your most recent blood pressure reading?
+    character: I am not sure about that detail.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What long-term health difficulties or similar family illnesses are you aware of?
+    character: I don't know of any similar illness in my family and have no long-term physical health
+      problems.
+    kind: neighbour
+    topics:
+    - family-and-physical
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: To put that more plainly. Has there been any wish to hurt yourself or another person recently?
+    character: I drove much faster than usual yesterday. I haven't thought about harming myself or anyone
+      else.
+    kind: reflection
+    topics:
+    - risk-driving
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I am asking for facts, so stop trying to sell me the future. Were there months of depressed
+      mood at an earlier stage in your life?
+    character: This is getting irritating.
+    kind: confrontational
+    topics:
+    - past-low-period
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: I am asking for facts, so stop trying to sell me the future.
+  - doctor: Let us separate this from the last question. Have you had a low spell before the present high
+      energy?
+    character: Two years ago I had a period of feeling very low for a couple of months.
+    kind: neighbour
+    topics:
+    - past-low-period
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Were you living at your current address during that period?
+    character: I do not know the answer to that.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Those earlier months of low mood must have been difficult to live through.
+    character: Thank you for listening.
+    kind: reflection
+    topics: []
+    empathy: specific
+    empathy_words: Those earlier months of low mood must have been difficult to live through.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Surely a little common sense would tell you to slow down?
+    character: I am not keen to keep talking if you put it like that.
+    kind: confrontational
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: Surely a little common sense would tell you to slow down?
+  - doctor: 'To check my record, your words were: “Two years ago I had a period of feeling very low for
+      a couple of months.”'
+    character: Yes, those were my words.
+    kind: ordinary
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: That completes this interview, Alex; thank you for giving your account.
+    character: Goodbye.
+    kind: ordinary
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: elevated-mood-history-f05
+  trainee: Rambling trainee; changes direction, then tries to regain control abruptly.
+  turns:
+  - doctor: Hi Alex, I'm doing this part of the appointment; I'm one of the trainees, so thank you for
+      joining the discussion.
+    character: My sister wanted this appointment because she says I have changed. I feel great and have
+      lots of plans.
+    kind: ordinary
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: How do you picture the venture you are starting?
+    character: I'm starting a business restoring vintage bikes. It's going to be huge.
+    kind: ordinary
+    topics:
+    - new-business
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: um have you registered a trading name for it
+    character: That is not something I can tell you.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: you are excited about restoring vintage bikes and i hear how much possibility you see in it.
+    character: Thank you for listening.
+    kind: reflection
+    topics: []
+    empathy: specific
+    empathy_words: you are excited about restoring vintage bikes and i hear how much possibility you see
+      in it.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I will ask this directly. What part do coffee, alcohol or other drugs play in your week?
+    character: Two coffees a day, a little alcohol at weekends, no recreational drugs and no prescribed
+      medicines.
+    kind: neighbour
+    topics:
+    - substances
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: do you put sugar in either of those daily coffees
+    character: I do not know the answer to that.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You should be giving your sister's opinion priority over this excitement. What amount of sleep
+      leaves you ready for the next day now?
+    character: You sound like you have already decided about me.
+    kind: confrontational
+    topics:
+    - sleep-reduced
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: You should be giving your sister's opinion priority over this excitement.
+  - doctor: How long are you asleep before waking up full of energy?
+    character: For the last week I've slept about three hours a night and don't feel tired.
+    kind: neighbour
+    topics:
+    - sleep-reduced
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: for this next part take your time. what risks have you taken when you have been behind the
+      wheel
+    character: I drove much faster than usual yesterday. I haven't thought about harming myself or anyone
+      else.
+    kind: reflection
+    topics:
+    - risk-driving
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: what time does your alarm go off after that sleep
+    character: I do not know the answer to that.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Sorry, my question is this. Are you tired after the nights you have been having?
+    character: For the last week I've slept about three hours a night and don't feel tired.
+    kind: ordinary
+    topics:
+    - sleep-reduced
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Why didn't you question your own judgement before coming here?
+    character: I do not want another lecture.
+    kind: confrontational
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: Why didn't you question your own judgement before coming here?
+  - doctor: er let me check does your bedroom face the road
+    character: I am not sure about that detail.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What are you planning to restore for the business?
+    character: I'm starting a business restoring vintage bikes. It's going to be huge.
+    kind: neighbour
+    topics:
+    - new-business
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: turning to another detail now. how much have you paid out for the project and has work been
+      missed
+    character: I've missed two shifts at work and spent £800 on equipment for a new business. My sister
+      says I can't afford it.
+    kind: reflection
+    topics:
+    - function-work-spending
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Your certainty is making it difficult to take what you say seriously. Does any part of you
+      regard this change as illness?
+    character: This is getting irritating.
+    kind: confrontational
+    topics:
+    - insight-worry
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: Your certainty is making it difficult to take what you say seriously.
+  - doctor: Your enthusiasm deserves to be heard as well as the concern that led to this meeting. How
+      important is avoiding disagreement with your sister in this?
+    character: I don't think I'm ill, but I can see my sister is really worried, and I don't want to fall
+      out with her.
+    kind: neighbour
+    topics:
+    - insight-worry
+    empathy: specific
+    empathy_words: Your enthusiasm deserves to be heard as well as the concern that led to this meeting.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: who suggested the words to use in your referral letter
+    character: I do not know the answer to that.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You recognise her concern without feeling ill yourself, and keeping the relationship good
+      matters to you.
+    character: Thank you for listening.
+    kind: reflection
+    topics: []
+    empathy: specific
+    empathy_words: You recognise her concern without feeling ill yourself, and keeping the relationship
+      good matters to you.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Plans can wait; they are not worth this much of our time.
+    character: I am not keen to keep talking if you put it like that.
+    kind: confrontational
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: Plans can wait; they are not worth this much of our time.
+  - doctor: 'Pulling out one point from that account, you said: “I don''t think I''m ill, but I can see
+      my sister is really worried, and I don''t want to fall out with her.”'
+    character: Yes, those were my words.
+    kind: ordinary
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I've reached the end of what I wanted to cover, Alex; thanks for bearing with the changes
+      of subject.
+    character: Goodbye.
+    kind: ordinary
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: elevated-mood-history-f06
+  trainee: Direct trainee; asks difficult questions neutrally but sometimes blames.
+  turns:
+  - doctor: Morning, Alex; I'm the doctor interviewing you at this appointment. Thanks for sitting with
+      me.
+    character: My sister wanted this appointment because she says I have changed. I feel great and have
+      lots of plans.
+    kind: ordinary
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Help me understand this particular bit. What brings out irritation in you at the moment?
+    character: I've felt unusually upbeat for about a week. I get irritated when people interrupt my plans.
+    kind: ordinary
+    topics:
+    - mood-onset
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Did a colleague first point out that brighter mood?
+    character: That is not something I can tell you.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You feel upbeat and want to get on with plans, so interruptions feel frustrating to you.
+    character: Thank you for listening.
+    kind: reflection
+    topics: []
+    empathy: specific
+    empathy_words: You feel upbeat and want to get on with plans, so interruptions feel frustrating to
+      you.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: On a separate point for a moment. Have you been driving in a way that is unusual for you?
+    character: I drove much faster than usual yesterday. I haven't thought about harming myself or anyone
+      else.
+    kind: neighbour
+    topics:
+    - risk-driving
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What speed did the car's display show yesterday?
+    character: I do not know the answer to that.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I think you are brushing aside anything that does not suit your mood. What has the business
+      meant for your attendance at work?
+    character: You sound like you have already decided about me.
+    kind: confrontational
+    topics:
+    - function-work-spending
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: I think you are brushing aside anything that does not suit your mood.
+  - doctor: Bear with me while I get this clear. Has spending on the plans caused difficulty with money?
+    character: I've missed two shifts at work and spent £800 on equipment for a new business. My sister
+      says I can't afford it.
+    kind: neighbour
+    topics:
+    - function-work-spending
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: If you can, say a little about this. How much have you paid out for the project, and has work
+      been missed?
+    character: I've missed two shifts at work and spent £800 on equipment for a new business. My sister
+      says I can't afford it.
+    kind: reflection
+    topics:
+    - function-work-spending
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What model of equipment did you buy?
+    character: I do not know the answer to that.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Just to focus the question. Has there been any wish to hurt yourself or another person recently?
+    character: I drove much faster than usual yesterday. I haven't thought about harming myself or anyone
+      else.
+    kind: ordinary
+    topics:
+    - risk-driving
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You cannot really believe everyone else is wrong, can you?
+    character: I do not want another lecture.
+    kind: confrontational
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: You cannot really believe everyone else is wrong, can you?
+  - doctor: Which road were you on when you drove faster?
+    character: I am not sure about that detail.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: We have not quite covered this part. What amount of sleep leaves you ready for the next day
+      now?
+    character: For the last week I've slept about three hours a night and don't feel tired.
+    kind: neighbour
+    topics:
+    - sleep-reduced
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: At this point I need to check something. What was the earlier period of low mood like in duration?
+    character: Two years ago I had a period of feeling very low for a couple of months.
+    kind: reflection
+    topics:
+    - past-low-period
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: We will get nowhere until you admit the change is a concern. When did the brighter mood and
+      irritation first appear?
+    character: This is getting irritating.
+    kind: confrontational
+    topics:
+    - mood-onset
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: We will get nowhere until you admit the change is a concern.
+  - doctor: Without rushing your answer. Over what period have you felt so upbeat?
+    character: I've felt unusually upbeat for about a week. I get irritated when people interrupt my plans.
+    kind: neighbour
+    topics:
+    - mood-onset
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Who was the first colleague to notice you were upbeat?
+    character: I do not know the answer to that.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Having people break into plans you feel enthusiastic about is clearly irritating for you.
+    character: Thank you for listening.
+    kind: reflection
+    topics: []
+    empathy: specific
+    empathy_words: Having people break into plans you feel enthusiastic about is clearly irritating for
+      you.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Surely being asked to see a doctor should tell you something?
+    character: I am not keen to keep talking if you put it like that.
+    kind: confrontational
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: Surely being asked to see a doctor should tell you something?
+  - doctor: 'For my summary, the detail you gave was: “I''ve felt unusually upbeat for about a week.”'
+    character: Yes, those were my words.
+    kind: ordinary
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: That's where I'll stop the questions, Alex. Thank you for taking part in the conversation.
+    character: Goodbye.
+    kind: ordinary
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: elevated-mood-history-f07
+  trainee: Transcribed speech; lower case, hesitations and false starts, with occasional lecturing.
+  turns:
+  - doctor: hi alex er im one of the doctors here to talk with you thanks for meeting me
+    character: My sister wanted this appointment because she says I have changed. I feel great and have
+      lots of plans.
+    kind: ordinary
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: er sorry let me put that properly is anyone offering to be with you at home for a while
+    character: My sister has offered to stay with me for a few days.
+    kind: ordinary
+    topics:
+    - support-sister
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: how far away would she be coming from
+    character: That is not something I can tell you.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: you have your sister offering to stay and having someone willing to be there can matter.
+    character: Thank you for listening.
+    kind: reflection
+    topics: []
+    empathy: specific
+    empathy_words: you have your sister offering to stay and having someone willing to be there can matter.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: um hang on does any relative have similar illness and do you have lasting physical conditions
+    character: I don't know of any similar illness in my family and have no long-term physical health
+      problems.
+    kind: neighbour
+    topics:
+    - family-and-physical
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: which surgery keeps your family medical records
+    character: I do not know the answer to that.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: you have to stop acting as if feeling good answers every question. were there months of depressed
+      mood at an earlier stage in your life
+    character: You sound like you have already decided about me.
+    kind: confrontational
+    topics:
+    - past-low-period
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: you have to stop acting as if feeling good answers every question.
+  - doctor: moving across to something else briefly. have you had a low spell before the present high
+      energy
+    character: Two years ago I had a period of feeling very low for a couple of months.
+    kind: neighbour
+    topics:
+    - past-low-period
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: so i was going to ask no what was the earlier period of low mood like in duration
+    character: Two years ago I had a period of feeling very low for a couple of months.
+    kind: reflection
+    topics:
+    - past-low-period
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: was that low period written in a medical certificate
+    character: I do not know the answer to that.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: er what i meant was have you been taking any prescribed or recreational substances
+    character: Two coffees a day, a little alcohol at weekends, no recreational drugs and no prescribed
+      medicines.
+    kind: ordinary
+    topics:
+    - substances
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: why didnt you put the plans aside and concentrate on what she said
+    character: I do not want another lecture.
+    kind: confrontational
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: why didnt you put the plans aside and concentrate on what she said
+  - doctor: what brand of coffee do you drink
+    character: I am not sure about that detail.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: there is a related question to ask. what kind of work will your proposed business specialise
+      in
+    character: I'm starting a business restoring vintage bikes. It's going to be huge.
+    kind: neighbour
+    topics:
+    - new-business
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: um just a second i appreciate that the energy feels good to you even though your sister sees
+      a change. how do you explain what your sister has been worried about
+    character: I don't think I'm ill, but I can see my sister is really worried, and I don't want to fall
+      out with her.
+    kind: reflection
+    topics:
+    - insight-worry
+    empathy: specific
+    empathy_words: i appreciate that the energy feels good to you even though your sister sees a change.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: i need you to come down to earth and give me an answer. what has the business meant for your
+      attendance at work
+    character: This is getting irritating.
+    kind: confrontational
+    topics:
+    - function-work-spending
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: i need you to come down to earth and give me an answer.
+  - doctor: no sorry ill ask it this way has spending on the plans caused difficulty with money
+    character: I've missed two shifts at work and spent £800 on equipment for a new business. My sister
+      says I can't afford it.
+    kind: neighbour
+    topics:
+    - function-work-spending
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: who covered the missed shifts
+    character: I do not know the answer to that.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: the business has your attention at the moment and i appreciate wanting to explain its importance.
+    character: Thank you for listening.
+    kind: reflection
+    topics: []
+    empathy: specific
+    empathy_words: the business has your attention at the moment and i appreciate wanting to explain its
+      importance.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: your excitement is just getting in the way now.
+    character: I am not keen to keep talking if you put it like that.
+    kind: confrontational
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: your excitement is just getting in the way now.
+  - doctor: so the bit i heard was “ive missed two shifts at work and spent £800 on equipment for a new
+      business.”
+    character: Yes, those were my words.
+    kind: ordinary
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: okay alex er ill stop asking things now thanks for talking today
+    character: Goodbye.
+    kind: ordinary
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: elevated-mood-history-f08
+  trainee: Reflective trainee; checks details, yet becomes impatient with uncertainty.
+  turns:
+  - doctor: Alex, hello. Thank you for being willing to have this conversation with a trainee today.
+    character: My sister wanted this appointment because she says I have changed. I feel great and have
+      lots of plans.
+    kind: ordinary
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let me phrase this carefully. What lasting health conditions do you have, and does anyone
+      in the family have similar illness?
+    character: I don't know of any similar illness in my family and have no long-term physical health
+      problems.
+    kind: ordinary
+    topics:
+    - family-and-physical
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Have you had genetic testing for that kind of family illness?
+    character: That is not something I can tell you.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You have explained what you know about family illness, and I appreciate talking about health
+      can feel personal.
+    character: Thank you for listening.
+    kind: reflection
+    topics: []
+    empathy: specific
+    empathy_words: You have explained what you know about family illness, and I appreciate talking about
+      health can feel personal.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Another thing I wanted to check. How do you picture the venture you are starting?
+    character: I'm starting a business restoring vintage bikes. It's going to be huge.
+    kind: neighbour
+    topics:
+    - new-business
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Have you chosen a registered name for the bike business?
+    character: I do not know the answer to that.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You ought to show more regard for the people trying to help. Does any part of you regard this
+      change as illness?
+    character: You sound like you have already decided about me.
+    kind: confrontational
+    topics:
+    - insight-worry
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: You ought to show more regard for the people trying to help.
+  - doctor: You feel well and have plans, and it matters that your own view is heard. How important is
+      avoiding disagreement with your sister in this?
+    character: I don't think I'm ill, but I can see my sister is really worried, and I don't want to fall
+      out with her.
+    kind: neighbour
+    topics:
+    - insight-worry
+    empathy: specific
+    empathy_words: You feel well and have plans, and it matters that your own view is heard.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: How do you explain what your sister has been worried about?
+    character: I don't think I'm ill, but I can see my sister is really worried, and I don't want to fall
+      out with her.
+    kind: reflection
+    topics:
+    - insight-worry
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Did you write your view of being well on an appointment form?
+    character: I do not know the answer to that.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: To keep these points separate. What are you planning to restore for the business?
+    character: I'm starting a business restoring vintage bikes. It's going to be huge.
+    kind: ordinary
+    topics:
+    - new-business
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: The people close to you deserve a bit more sense, don't they?
+    character: I do not want another lecture.
+    kind: confrontational
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: The people close to you deserve a bit more sense, don't they?
+  - doctor: What would you charge to restore a bike?
+    character: I am not sure about that detail.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I will come at this a different way. Who could come and stay rather than leave you on your
+      own?
+    character: My sister has offered to stay with me for a few days.
+    kind: neighbour
+    topics:
+    - support-sister
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Perhaps I can make my question clearer. What risks have you taken when you have been behind
+      the wheel?
+    character: I drove much faster than usual yesterday. I haven't thought about harming myself or anyone
+      else.
+    kind: reflection
+    topics:
+    - risk-driving
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I am not going to accept feeling great as an explanation for everything. Does any part of
+      you regard this change as illness?
+    character: This is getting irritating.
+    kind: confrontational
+    topics:
+    - insight-worry
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: I am not going to accept feeling great as an explanation for everything.
+  - doctor: Please take a moment over this one. How important is avoiding disagreement with your sister
+      in this?
+    character: I don't think I'm ill, but I can see my sister is really worried, and I don't want to fall
+      out with her.
+    kind: neighbour
+    topics:
+    - insight-worry
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Has your sister booked her own appointment to discuss the worry?
+    character: I do not know the answer to that.
+    kind: near_miss
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Your wish not to fall out with your sister is understandable even though you disagree about
+      illness.
+    character: Thank you for listening.
+    kind: reflection
+    topics: []
+    empathy: specific
+    empathy_words: Your wish not to fall out with your sister is understandable even though you disagree
+      about illness.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Surely you can put the enthusiasm away for a few minutes?
+    character: I am not keen to keep talking if you put it like that.
+    kind: confrontational
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: Surely you can put the enthusiasm away for a few minutes?
+  - doctor: 'As I understand your account, you said: “I don''t think I''m ill, but I can see my sister
+      is really worried, and I don''t want to fall out with her.”'
+    character: Yes, those were my words.
+    kind: ordinary
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I appreciate the time you have given this, Alex; our discussion can end there.
+    character: Goodbye.
+    kind: ordinary
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''

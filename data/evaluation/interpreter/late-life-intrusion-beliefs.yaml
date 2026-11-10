@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: late-life-intrusion-beliefs
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Good afternoon Dorothy, I'm a doctor from the older people's mental health team. Thank you for letting me in."
+    expected: []
+    rapport: false
+  - utterance: "What do you think is happening in your flat?"
+    expected: [belief]
+    rapport: false
+  - utterance: "When did you first notice things being moved?"
+    expected: [onset]
+    rapport: false
+  - utterance: "Do you ever hear anything unusual at night, like voices or noises?"
+    expected: [hearing-voices]
+    rapport: false
+  - utterance: "Have you seen anything odd, or smelt anything strange in the flat?"
+    expected: [other-phenomena]
+    rapport: false
+  - utterance: "How are your hearing and eyesight these days?"
+    expected: [sensory]
+    rapport: false
+  - utterance: "How do you get on with things like paying bills and keeping track of appointments?"
+    expected: [cognition]
+    rapport: false
+  - utterance: "How have you been feeling in yourself, and how are you sleeping?"
+    expected: [mood]
+    rapport: false
+  - utterance: "Have you ever confronted the neighbours or felt like you might do something to them?"
+    expected: [risk]
+    rapport: false
+  - utterance: "Do you get much company, or do you spend a lot of time alone?"
+    expected: [isolation]
+    rapport: false
+  - utterance: "Have you wondered whether stress or your health could be playing a part in this?"
+    expected: [insight]
+    rapport: false
+  - utterance: "Have you been physically unwell recently, and what tablets do you take?"
+    expected: [physical]
+    rapport: false
+  - utterance: "Not feeling safe in your own home must be really unsettling, Dorothy."
+    expected: []
+    rapport: true
+  - previous:
+      interviewer: "Do you hear anything at night?"
+      character: "Sometimes I hear a man's voice through the wall saying my name."
+    utterance: "Could you be mishearing, with your hearing as it is?"
+    expected: [sensory]
+    rapport: false
+  - previous:
+      interviewer: "Have you had any arguments with them?"
+      character: "I have shouted through the wall."
+    utterance: "And how about thoughts of harming yourself?"
+    expected: [risk]
+    rapport: false
+  - utterance: "Have you changed the locks or reported this to your landlord?"
+    expected: []
+    rapport: false
+  - utterance: "Do you have any family history of dementia?"
+    expected: []
+    rapport: false
+  - utterance: "Okay, so things go missing or get moved most weeks, and you feel sure it's the people next door."
+    expected: []
+    rapport: false

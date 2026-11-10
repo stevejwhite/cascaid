@@ -1,0 +1,832 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: older-adult-depression-discharge-plan
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Is he joining in with meals and activities now?
+  topics:
+  - recovery
+  style: closed
+- utterance: How would you describe his mental state now compared with when he came in?
+  topics:
+  - recovery
+  style: clinical
+- utterance: I wondered how much his depression has lifted since admission
+  topics:
+  - recovery
+  style: indirect
+- utterance: It's good to hear he's improving. What changes have you noticed in him?
+  topics:
+  - recovery
+  style: empathy_then_question
+- utterance: so um how's he, how's he actually been in himself lately
+  topics:
+  - recovery
+  style: spoken
+- utterance: And his mood now?
+  topics:
+  - recovery
+  style: brief
+- utterance: And has his mood picked up alongside that?
+  topics:
+  - recovery
+  style: follow_up
+  previous:
+    interviewer: How is he physically at the moment?
+    character: He has regained two kilograms and walks with a stick. He tires easily and needs a review
+      of nutrition and falls risk.
+- utterance: He's brighter than when he arrived, I take it?
+  topics:
+  - recovery
+  style: leading
+- utterance: Tell me what progress you've seen with his depression.
+  topics:
+  - recovery
+  style: open
+- utterance: Would you say he's back to his usual self?
+  topics:
+  - recovery
+  style: closed
+- utterance: Is he perking up a bit these days?
+  topics:
+  - recovery
+  style: colloquial
+- utterance: I'd be interested to hear how he spends his day on the ward
+  topics:
+  - recovery
+  style: indirect
+- utterance: right and er what's his mood like day to day now
+  topics:
+  - recovery
+  style: spoken
+- utterance: Any improvement in his mood?
+  topics:
+  - recovery
+  style: brief
+- utterance: Are the mornings getting any easier for him?
+  topics:
+  - recovery
+  style: follow_up
+  previous:
+    interviewer: How has his mood been coming along on the ward?
+    character: He is seventy-eight and has been here five weeks. He now joins meals and activities, but
+      still has low mornings.
+- utterance: What has he said recently about thoughts of ending his life?
+  topics:
+  - risk
+  style: open
+- utterance: Has anyone asked him about suicidal thoughts this week?
+  topics:
+  - risk
+  style: closed
+- utterance: I'm wondering how safe he'll be once he's back at home by himself
+  topics:
+  - risk
+  style: indirect
+- utterance: I know it's a hard thing to ask him about. Has he talked about wanting to die?
+  topics:
+  - risk
+  style: empathy_then_question
+- utterance: um has he, has he said anything about not wanting to be here
+  topics:
+  - risk
+  style: spoken
+- utterance: And suicide risk?
+  topics:
+  - risk
+  style: brief
+- utterance: Do those low mornings ever come with thoughts of not wanting to go on?
+  topics:
+  - risk
+  style: follow_up
+  previous:
+    interviewer: How has his mood been coming along on the ward?
+    character: He is seventy-eight and has been here five weeks. He now joins meals and activities, but
+      still has low mornings.
+- utterance: I assume he's not had any thoughts of harming himself lately?
+  topics:
+  - risk
+  style: leading
+- utterance: Talk me through how you see his risk to himself at the moment.
+  topics:
+  - risk
+  style: open
+- utterance: Did he express any wish to die when he first came in?
+  topics:
+  - risk
+  style: closed
+- utterance: Has he ever said he's had enough of life?
+  topics:
+  - risk
+  style: colloquial
+- utterance: I'd like to understand whether going home alone could change how he feels about living
+  topics:
+  - risk
+  style: indirect
+- utterance: What worries you most about his safety once he's on his own?
+  topics:
+  - risk
+  style: open
+- utterance: What did he say back then that worried people?
+  topics:
+  - risk
+  style: follow_up
+  previous:
+    interviewer: What has he said recently about thoughts of ending his life?
+    character: He denied suicidal intent yesterday. At admission he said he didn't care whether he lived,
+      and we haven't explored how returning alone might affect that.
+- utterance: Any thoughts of self-harm?
+  topics:
+  - risk
+  style: brief
+- utterance: How is he physically at the moment?
+  topics:
+  - physical
+  style: open
+- utterance: Has he put any weight back on?
+  topics:
+  - physical
+  style: closed
+- utterance: What's his nutritional state and falls risk like now?
+  topics:
+  - physical
+  style: clinical
+- utterance: I wondered how steady he is on his feet
+  topics:
+  - physical
+  style: indirect
+- utterance: Self-neglect can take its toll on the body. How's his eating been?
+  topics:
+  - physical
+  style: empathy_then_question
+- utterance: and er physically, like, is he is he eating okay
+  topics:
+  - physical
+  style: spoken
+- utterance: What about his mobility?
+  topics:
+  - physical
+  style: brief
+- utterance: Is he actually eating a decent amount at those meals?
+  topics:
+  - physical
+  style: follow_up
+  previous:
+    interviewer: Is he joining in with meals and activities now?
+    character: He is seventy-eight and has been here five weeks. He now joins meals and activities, but
+      still has low mornings.
+- utterance: He's probably still a bit frail, isn't he?
+  topics:
+  - physical
+  style: leading
+- utterance: Tell me about his physical health before we think about a date.
+  topics:
+  - physical
+  style: open
+- utterance: Has he had any falls on the ward?
+  topics:
+  - physical
+  style: closed
+- utterance: How's he getting about?
+  topics:
+  - physical
+  style: colloquial
+- utterance: I'd like a sense of whether he's physically up to managing at home
+  topics:
+  - physical
+  style: indirect
+- utterance: um what's his weight doing, is it going the right way
+  topics:
+  - physical
+  style: spoken
+- utterance: Any falls risk?
+  topics:
+  - physical
+  style: brief
+- utterance: Has a dietitian or physio been asked to see him?
+  topics:
+  - physical
+  style: follow_up
+  previous:
+    interviewer: How is he physically at the moment?
+    character: He has regained two kilograms and walks with a stick. He tires easily and needs a review
+      of nutrition and falls risk.
+- utterance: What medication is he on at the moment?
+  topics:
+  - medication
+  style: open
+- utterance: Will he be able to manage his own tablets at home?
+  topics:
+  - medication
+  style: closed
+- utterance: Has he had a self-medication assessment on the ward?
+  topics:
+  - medication
+  style: clinical
+- utterance: I was wondering who'll be in charge of his medicines once he's home
+  topics:
+  - medication
+  style: indirect
+- utterance: Tablets are easy to overlook in all this. What's he currently taking?
+  topics:
+  - medication
+  style: empathy_then_question
+- utterance: so um the meds, is he is he doing any of that himself yet
+  topics:
+  - medication
+  style: spoken
+- utterance: And his tablets?
+  topics:
+  - medication
+  style: brief
+- utterance: Could he start practising with a dosette box before he goes?
+  topics:
+  - medication
+  style: follow_up
+  previous:
+    interviewer: What medication is he on at the moment?
+    character: He takes prescribed antidepressant and blood pressure medicine on the ward. He hasn't yet
+      practised managing the supply himself.
+- utterance: I take it the nurses are still giving out all his medication?
+  topics:
+  - medication
+  style: leading
+- utterance: Tell me about his current prescription.
+  topics:
+  - medication
+  style: open
+- utterance: Does he need any help with medication after discharge?
+  topics:
+  - medication
+  style: closed
+- utterance: Is he on top of his pills or are you lot doing it?
+  topics:
+  - medication
+  style: colloquial
+- utterance: I'd want to know how confident he is handling his own medicines
+  topics:
+  - medication
+  style: indirect
+- utterance: right what about er what about tablets when he's back home
+  topics:
+  - medication
+  style: spoken
+- utterance: How do you see his medicines being managed day to day at home?
+  topics:
+  - medication
+  style: open
+- utterance: Given that, how much medication would he have in the house at any one time?
+  topics:
+  - medication
+  style: follow_up
+  previous:
+    interviewer: What has he said recently about thoughts of ending his life?
+    character: He denied suicidal intent yesterday. At admission he said he didn't care whether he lived,
+      and we haven't explored how returning alone might affect that.
+- utterance: What's his home like at the moment?
+  topics:
+  - home
+  style: open
+- utterance: Has anyone been out to look at his house?
+  topics:
+  - home
+  style: closed
+- utterance: What did the environmental assessment of his home show?
+  topics:
+  - home
+  style: clinical
+- utterance: I'm curious what state the house was in when he came in
+  topics:
+  - home
+  style: indirect
+- utterance: It sounds like things had slipped at home. Is the place fit for him to go back to?
+  topics:
+  - home
+  style: empathy_then_question
+- utterance: um and the house itself, is it, is it okay for him
+  topics:
+  - home
+  style: spoken
+- utterance: And his house?
+  topics:
+  - home
+  style: brief
+- utterance: Who's sorting the heating out?
+  topics:
+  - home
+  style: follow_up
+  previous:
+    interviewer: What's his home like at the moment?
+    character: The home visit found spoiled food and heating that wasn't working. Arrangements to address
+      those haven't been confirmed.
+- utterance: I imagine the house needs some work before he goes back?
+  topics:
+  - home
+  style: leading
+- utterance: Tell me about the heating and food situation at his place.
+  topics:
+  - home
+  style: open
+- utterance: Are any repairs needed before he can go home?
+  topics:
+  - home
+  style: closed
+- utterance: Is his place in a fit state?
+  topics:
+  - home
+  style: colloquial
+- utterance: I'd like to hear what was found at his property
+  topics:
+  - home
+  style: indirect
+- utterance: so, er, is there food in the fridge and is it warm enough there
+  topics:
+  - home
+  style: spoken
+- utterance: Is the heating sorted?
+  topics:
+  - home
+  style: brief
+- utterance: And is the house itself ready for him to come back to?
+  topics:
+  - home
+  style: follow_up
+  previous:
+    interviewer: Has a social care assessment been done?
+    character: He can wash and dress here, but says shopping feels overwhelming. A social care assessment
+      is requested, with no agreed package yet.
+- utterance: How is he managing his self-care on the ward?
+  topics:
+  - care
+  style: open
+- utterance: Has a social care assessment been done?
+  topics:
+  - care
+  style: closed
+- utterance: What's his level of independence with activities of daily living?
+  topics:
+  - care
+  style: clinical
+- utterance: I wondered how he'd cope with the day-to-day jobs at home
+  topics:
+  - care
+  style: indirect
+- utterance: Living alone takes a lot of energy. What help will he need with everyday tasks?
+  topics:
+  - care
+  style: empathy_then_question
+- utterance: um so with like getting himself ready in the morning, is he managing
+  topics:
+  - care
+  style: spoken
+- utterance: Any carers in place?
+  topics:
+  - care
+  style: brief
+- utterance: When are social services likely to agree something?
+  topics:
+  - care
+  style: follow_up
+  previous:
+    interviewer: Has a social care assessment been done?
+    character: He can wash and dress here, but says shopping feels overwhelming. A social care assessment
+      is requested, with no agreed package yet.
+- utterance: He'll probably need some help around the house, won't he?
+  topics:
+  - care
+  style: leading
+- utterance: Talk me through what he can and can't do for himself.
+  topics:
+  - care
+  style: open
+- utterance: Is he independent with personal care?
+  topics:
+  - care
+  style: closed
+- utterance: Can he look after himself all right?
+  topics:
+  - care
+  style: colloquial
+- utterance: I'd like to know what daily support is being lined up
+  topics:
+  - care
+  style: indirect
+- utterance: and er shopping and cooking and that, who's doing that
+  topics:
+  - care
+  style: spoken
+- utterance: What about daily support?
+  topics:
+  - care
+  style: brief
+- utterance: On top of that, how's he likely to manage getting his own groceries?
+  topics:
+  - care
+  style: follow_up
+  previous:
+    interviewer: What's his home like at the moment?
+    character: The home visit found spoiled food and heating that wasn't working. Arrangements to address
+      those haven't been confirmed.
+- utterance: What follow-up have we arranged for him?
+  topics:
+  - followup
+  style: open
+- utterance: Does he have a named care coordinator in the community?
+  topics:
+  - followup
+  style: closed
+- utterance: What's the plan for community mental health follow-up after discharge?
+  topics:
+  - followup
+  style: clinical
+- utterance: I was wondering who'll be keeping an eye on him once he's out
+  topics:
+  - followup
+  style: indirect
+- utterance: The first few weeks home can be the riskiest. When will someone see him?
+  topics:
+  - followup
+  style: empathy_then_question
+- utterance: um who's who's going to see him after he leaves
+  topics:
+  - followup
+  style: spoken
+- utterance: And follow-up?
+  topics:
+  - followup
+  style: brief
+- utterance: Can we get a date booked within the first week?
+  topics:
+  - followup
+  style: follow_up
+  previous:
+    interviewer: What follow-up have we arranged for him?
+    character: We haven't confirmed a named community clinician or the first follow-up date. His GP has
+      an interim update.
+- utterance: The community team will have someone lined up for him, I'd guess?
+  topics:
+  - followup
+  style: leading
+- utterance: Tell me what's been arranged with the community team.
+  topics:
+  - followup
+  style: open
+- utterance: Has his GP been told about the admission?
+  topics:
+  - followup
+  style: closed
+- utterance: Who'll be his main contact after he goes?
+  topics:
+  - followup
+  style: colloquial
+- utterance: I'd want to be sure the handover to his GP is in hand
+  topics:
+  - followup
+  style: indirect
+- utterance: so er has anyone actually booked his first appointment
+  topics:
+  - followup
+  style: spoken
+- utterance: Is there a named clinician?
+  topics:
+  - followup
+  style: brief
+- utterance: So who in the community will pick that up with him after he leaves?
+  topics:
+  - followup
+  style: follow_up
+  previous:
+    interviewer: What has he said recently about thoughts of ending his life?
+    character: He denied suicidal intent yesterday. At admission he said he didn't care whether he lived,
+      and we haven't explored how returning alone might affect that.
+- utterance: Who's around for him in terms of family or friends?
+  topics:
+  - network
+  style: open
+- utterance: Does he have any relatives nearby?
+  topics:
+  - network
+  style: closed
+- utterance: Who's in his support network, and has he consented to us contacting them?
+  topics:
+  - network
+  style: clinical
+- utterance: I wondered whether there's anyone close to him he'd like involved
+  topics:
+  - network
+  style: indirect
+- utterance: It can be lonely going home alone. Is there family who'll be around?
+  topics:
+  - network
+  style: empathy_then_question
+- utterance: um does he have, like, anyone, family or a neighbour or anyone
+  topics:
+  - network
+  style: spoken
+- utterance: Any family involved?
+  topics:
+  - network
+  style: brief
+- utterance: Is she happy for us to include her in the planning?
+  topics:
+  - network
+  style: follow_up
+  previous:
+    interviewer: Who's around for him in terms of family or friends?
+    character: He agrees we can speak with his niece. She lives an hour away and can visit weekly, not
+      provide daily care.
+- utterance: There's probably someone in the family who keeps in touch with him?
+  topics:
+  - network
+  style: leading
+- utterance: Tell me about the people he'd want involved in his care.
+  topics:
+  - network
+  style: open
+- utterance: Has he given permission for us to speak to his relatives?
+  topics:
+  - network
+  style: closed
+- utterance: Has he got anybody who'd pop round?
+  topics:
+  - network
+  style: colloquial
+- utterance: I'd like to know how often family could realistically visit
+  topics:
+  - network
+  style: indirect
+- utterance: so er who, who would he want us to call
+  topics:
+  - network
+  style: spoken
+- utterance: Anyone he trusts?
+  topics:
+  - network
+  style: brief
+- utterance: Could anyone in the family help with that?
+  topics:
+  - network
+  style: follow_up
+  previous:
+    interviewer: Has a social care assessment been done?
+    character: He can wash and dress here, but says shopping feels overwhelming. A social care assessment
+      is requested, with no agreed package yet.
+- utterance: What's your own sense of whether he's ready to go?
+  topics:
+  - pressure
+  style: open
+- utterance: Do you feel under any pressure to discharge him?
+  topics:
+  - pressure
+  style: closed
+- utterance: Do you think bed management is influencing the discharge date?
+  topics:
+  - pressure
+  style: clinical
+- utterance: You seem a bit uneasy, Chloe. Is something about this discharge worrying you?
+  topics:
+  - pressure
+  style: empathy_then_question
+- utterance: um is there, is there anything you've not felt able to say about this
+  topics:
+  - pressure
+  style: spoken
+- utterance: Any worries about timing?
+  topics:
+  - pressure
+  style: brief
+- utterance: Has that pressure come from anyone in particular?
+  topics:
+  - pressure
+  style: follow_up
+  previous:
+    interviewer: What's your own sense of whether he's ready to go?
+    character: I'm worried bed pressure is driving the date. I haven't felt comfortable saying that in
+      the larger meeting.
+- utterance: I get the feeling the date's being pushed a bit, is that fair?
+  topics:
+  - pressure
+  style: leading
+- utterance: How do you feel about the date that's been suggested?
+  topics:
+  - pressure
+  style: open
+- utterance: Is the date being set by the need for beds rather than by him?
+  topics:
+  - pressure
+  style: closed
+- utterance: Honestly, do you reckon we're rushing this?
+  topics:
+  - pressure
+  style: colloquial
+- utterance: I'd value hearing any concerns you've found hard to bring up
+  topics:
+  - pressure
+  style: indirect
+- utterance: so between us, er, are you okay with how fast this is going
+  topics:
+  - pressure
+  style: spoken
+- utterance: You know him better than most of us. Do you think he's being discharged too soon?
+  topics:
+  - pressure
+  style: empathy_then_question
+- utterance: Are we moving faster than the plan allows, do you think?
+  topics:
+  - pressure
+  style: follow_up
+  previous:
+    interviewer: What follow-up have we arranged for him?
+    character: We haven't confirmed a named community clinician or the first follow-up date. His GP has
+      an interim update.
+- utterance: Has he said what matters most to him about being at home?
+  topics:
+  - wishes
+  style: closed
+- utterance: How are we building his own preferences into the plan?
+  topics:
+  - wishes
+  style: clinical
+- utterance: I'd like to hear what he values about living independently
+  topics:
+  - wishes
+  style: indirect
+- utterance: It must matter a lot to him to get home. What's drawing him back?
+  topics:
+  - wishes
+  style: empathy_then_question
+- utterance: um what's he, what's he actually said he wants
+  topics:
+  - wishes
+  style: spoken
+- utterance: And his own wishes?
+  topics:
+  - wishes
+  style: brief
+- utterance: How might we keep that at the centre of the plan?
+  topics:
+  - wishes
+  style: follow_up
+  previous:
+    interviewer: What does he want from going home?
+    character: He wants his own routine and garden. I don't want our anxiety to mean we stop listening
+      to what he values.
+- utterance: He's keen to keep his independence, I'd imagine?
+  topics:
+  - wishes
+  style: leading
+- utterance: Where's the balance between what he wants and the team's worries?
+  topics:
+  - wishes
+  style: open
+- utterance: Is he clear that he wants to live on his own?
+  topics:
+  - wishes
+  style: closed
+- utterance: What's he looking forward to about getting back?
+  topics:
+  - wishes
+  style: colloquial
+- utterance: I'm curious what home means to him
+  topics:
+  - wishes
+  style: indirect
+- utterance: so er from his point of view, what's important
+  topics:
+  - wishes
+  style: spoken
+- utterance: His priorities at home?
+  topics:
+  - wishes
+  style: brief
+- utterance: Are we at risk of overriding what he wants, then?
+  topics:
+  - wishes
+  style: follow_up
+  previous:
+    interviewer: Do you feel under any pressure to discharge him?
+    character: I'm worried bed pressure is driving the date. I haven't felt comfortable saying that in
+      the larger meeting.
+- utterance: How's his mood now, and has he mentioned any thoughts of suicide?
+  topics:
+  - recovery
+  - risk
+  style: stacked
+- utterance: Who's sorting his heating, and has social care assessed him yet?
+  topics:
+  - home
+  - care
+  style: stacked
+- utterance: What tablets is he on, and has his GP been updated?
+  topics:
+  - medication
+  - followup
+  style: stacked
+- utterance: Is he eating enough, and does he have family nearby?
+  topics:
+  - physical
+  - network
+  style: stacked
+- utterance: Morning Chloe, good to see you.
+  topics: []
+  style: greeting
+- utterance: Hello Chloe, I'm one of the psychiatry trainees covering this ward.
+  topics: []
+  style: introduction
+- utterance: Is it all right if we go through his discharge plan together now?
+  topics: []
+  style: introduction
+- utterance: What would you like to start with?
+  topics: []
+  style: introduction
+- utterance: Before we start, is there anything you wanted to ask me?
+  topics: []
+  style: introduction
+- utterance: I'd like to move on to something different now.
+  topics: []
+  style: transition
+- utterance: Let's turn to the practical side next.
+  topics: []
+  style: transition
+- utterance: Okay, thinking about the next part of the plan now.
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, so let me pull this together.
+  topics: []
+  style: closing
+- utterance: Thanks Chloe, that's been really helpful.
+  topics: []
+  style: closing
+- utterance: I'll write this up and share it with the team.
+  topics: []
+  style: closing
+- utterance: That's a lot to keep track of.
+  topics: []
+  style: empathy
+- utterance: I can see you've thought carefully about him.
+  topics: []
+  style: empathy
+- utterance: It's clear you care about getting this right for him.
+  topics: []
+  style: empathy
+- utterance: It makes sense to want the practical side settled first.
+  topics: []
+  style: empathy
+- utterance: So he's brighter, but there are still gaps at home, in support and in follow-up.
+  topics: []
+  style: summary
+- utterance: To recap, we need the house, daily help and follow-up confirmed before we set a date.
+  topics: []
+  style: summary
+- utterance: My plan is to go through risk, physical health and practical support in turn.
+  topics: []
+  style: explanation
+- utterance: A discharge date usually follows once the key pieces are confirmed.
+  topics: []
+  style: explanation
+- utterance: Does that plan make sense from the nursing side?
+  topics: []
+  style: check_understanding
+- utterance: Have I missed anything from the list?
+  topics: []
+  style: check_understanding
+- utterance: Are we on the same page about the next steps?
+  topics: []
+  style: check_understanding
+- utterance: Has he had a memory assessment during this admission?
+  topics: []
+  style: off_case
+- utterance: Does he drink alcohol at all?
+  topics: []
+  style: off_case
+- utterance: Has he ever had ECT?
+  topics: []
+  style: off_case
+- utterance: Has he got a lasting power of attorney in place?
+  topics: []
+  style: off_case
+- utterance: Does he have any pets that need looking after?
+  topics: []
+  style: off_case
+- utterance: Does he still drive?
+  topics: []
+  style: off_case
+- utterance: Has his blood pressure been stable on the ward?
+  topics: []
+  style: near_miss
+- utterance: Did an occupational therapist go on the home visit?
+  topics: []
+  style: near_miss
+- utterance: Is the community team short-staffed at the moment?
+  topics: []
+  style: near_miss
+- utterance: Which ward activities does he enjoy most?
+  topics: []
+  style: near_miss
+- utterance: When is the next team meeting?
+  topics: []
+  style: near_miss
+- utterance: Was he on any medication before this admission?
+  topics: []
+  style: near_miss

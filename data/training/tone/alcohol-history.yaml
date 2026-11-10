@@ -1,0 +1,547 @@
+# Training lines for the tone classifier. Drafted by GPT-6 (Codex) on
+# 2026-10-12. Not evaluation data.
+# Revised for Prompt D quality rules on 2026-10-13; reviewed by Steve J White on 2026-10-13.
+case_id: alcohol-history
+case_version: 0.4.0
+status: reviewed
+items:
+- utterance: What amount of alcohol would you get through in a usual week?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Have you ever felt unable to cut back on drinking?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: um has drinking caused difficulties with people close to you
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Does going without alcohol ever make you physically unwell?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: When you try to have less, what tends to happen?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Are there times when you wish you were dead?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: so have you ever deliberately injured yourself
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Has drinking got you into trouble with your employer?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Which parts of giving up alcohol concern you?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Is low mood something you have been experiencing?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: er would there be a reason you wanted to stop drinking
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Apart from alcohol, is there anything you take to get a buzz?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: How soon after waking do you first have alcohol?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Can you tell me when this pattern of drinking began?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Do you need larger amounts than before to feel an effect?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: If it is all right to ask, have you wanted to hurt yourself?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Would you be willing to describe what happens without a drink?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Please could you say whether you have tried cutting down?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Apologies for asking something personal, but has alcohol affected your relationships?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: You can take your time answering, but are you feeling low?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: well if you dont mind me asking is drinking getting in the way of work
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Good afternoon, Chris, please come in.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: Hello there, thank you for making the journey.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: hi thanks for coming along to this appointment
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: I am a doctor working with this addiction service.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: We are meeting to talk about the drinking your GP mentioned.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: Your GP suggested this conversation after the liver test results.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: summary
+- utterance: You have said you do not see the drinking as that bad.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: summary
+- utterance: I will ask about several parts of your routine before drawing things together.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: explanation
+- utterance: There is time for a pause if you need one.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: explanation
+- utterance: Does that description of why we are meeting match yours?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: check_understanding
+- utterance: Was the purpose of my questions clear enough?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: check_understanding
+- utterance: Mm, go on.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Right. About how often?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Okay, I'm with you.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Yes. And after that?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: got you any more to add
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: yeah so when was this
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Thanks. Which drink was that?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: I see. Over how long?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: That sounds pretty hard to bear.
+  empathy: 1
+  empathy_words: That sounds pretty hard to bear.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I'm sorry things have been rough.
+  empathy: 1
+  empathy_words: I'm sorry things have been rough.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: It must feel awful at times.
+  empathy: 1
+  empathy_words: It must feel awful at times.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I can hear how difficult this is.
+  empathy: 1
+  empathy_words: I can hear how difficult this is.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: You've had such a tough time.
+  empathy: 1
+  empathy_words: You've had such a tough time.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That is a lot to carry.
+  empathy: 1
+  empathy_words: That is a lot to carry.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: Things sound really upsetting for you.
+  empathy: 1
+  empathy_words: Things sound really upsetting for you.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: um that sounds a tough experience.
+  empathy: 1
+  empathy_words: um that sounds a tough experience.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I'm sorry it's been so difficult. Have you tried having less alcohol?
+  empathy: 1
+  empathy_words: I'm sorry it's been so difficult.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: That sounds unpleasant to go through. What happens when you miss a drink?
+  empathy: 1
+  empathy_words: That sounds unpleasant to go through.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: Your situation sounds really tough. Are you feeling low these days?
+  empathy: 1
+  empathy_words: Your situation sounds really tough.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I appreciate this may feel awkward. Has drinking affected your relationships?
+  empathy: 1
+  empathy_words: I appreciate this may feel awkward.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: It sounds like a difficult time. Have you wanted to hurt yourself?
+  empathy: 1
+  empathy_words: It sounds like a difficult time.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: this must be hard to discuss. is alcohol getting in the way of work
+  empathy: 1
+  empathy_words: this must be hard to discuss.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I can imagine how frightening those shakes and that fit were.
+  empathy: 2
+  empathy_words: I can imagine how frightening those shakes and that fit were.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: What happens to your body when you do not drink?
+    character: If I go without, I get the shakes and sweats by lunchtime. I had a fit two years ago when
+      I tried to stop on my own.
+- utterance: Not being able to see your grandson must really hurt.
+  empathy: 2
+  empathy_words: Not being able to see your grandson must really hurt.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: What makes giving up alcohol matter to you?
+    character: My daughter has stopped letting me see my grandson when I've been drinking. That's what's
+      made me think I need to stop.
+- utterance: You have kept trying to cut down, and I appreciate how discouraging it is when it does not
+    last.
+  empathy: 2
+  empathy_words: You have kept trying to cut down, and I appreciate how discouraging it is when it does
+    not last.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: How have attempts to cut down gone?
+    character: I've tried to cut down loads of times, but I've never lasted more than two days.
+- utterance: It must be miserable bringing up bile when you are barely eating.
+  empathy: 2
+  empathy_words: It must be miserable bringing up bile when you are barely eating.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: How are eating and keeping food down for you?
+    character: I don't eat much, and I sometimes bring up a bit of bile in the morning.
+- utterance: I understand that your drinking looks less worrying to you than to your GP.
+  empathy: 2
+  empathy_words: I understand that your drinking looks less worrying to you than to your GP.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: Coming to discuss alcohol when you think it is not that bad can feel uncomfortable.
+  empathy: 2
+  empathy_words: Coming to discuss alcohol when you think it is not that bad can feel uncomfortable.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: It makes sense to want your own view of your drinking heard here.
+  empathy: 2
+  empathy_words: It makes sense to want your own view of your drinking heard here.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: Your GP has asked you to come, and I appreciate that you see the drinking differently.
+  empathy: 2
+  empathy_words: Your GP has asked you to come, and I appreciate that you see the drinking differently.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: needing more alcohol to feel anything must be difficult to make sense of.
+  empathy: 2
+  empathy_words: needing more alcohol to feel anything must be difficult to make sense of.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: Does the same amount affect you as it used to?
+    character: I need a lot more than I used to before I feel anything.
+- utterance: I hear how much seeing your grandson matters in wanting to stop. What is it like being unable
+    to see him?
+  empathy: 2
+  empathy_words: I hear how much seeing your grandson matters in wanting to stop.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: What might make giving up worth considering?
+    character: My daughter has stopped letting me see my grandson when I've been drinking. That's what's
+      made me think I need to stop.
+- utterance: After having a fit when you stopped, I can understand any worry about going without alcohol.
+    How do you feel about that experience now?
+  empathy: 2
+  empathy_words: After having a fit when you stopped, I can understand any worry about going without alcohol.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: Has going without alcohol ever made you seriously unwell?
+    character: If I go without, I get the shakes and sweats by lunchtime. I had a fit two years ago when
+      I tried to stop on my own.
+- utterance: Those repeated attempts to cut down must have taken a lot out of you. What was it like each
+    time?
+  empathy: 2
+  empathy_words: Those repeated attempts to cut down must have taken a lot out of you.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: What happened when you tried to cut down?
+    character: I've tried to cut down loads of times, but I've never lasted more than two days.
+- utterance: It is hard to feel low and not know whether drinking explains it. How has that uncertainty
+    affected you?
+  empathy: 2
+  empathy_words: It is hard to feel low and not know whether drinking explains it.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: How have things been emotionally?
+    character: I feel low a lot of the time, but I'm not sure whether that's the drink.
+- utterance: With warnings at work and a lost licence, there is a lot for you to deal with. Which has
+    affected you most?
+  empathy: 2
+  empathy_words: With warnings at work and a lost licence, there is a lot for you to deal with.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: Has drinking led to trouble at work?
+    character: I've had two warnings at work for being late, and I lost my driving licence for drink driving
+      last year.
+- utterance: You need to take the liver results more seriously than that.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You need to take the liver results more seriously than that.
+  style: confront_statement
+- utterance: I think you are looking for reasons to carry on drinking.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: I think you are looking for reasons to carry on drinking.
+  style: confront_statement
+- utterance: At some point you have to decide to use a bit of willpower.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: At some point you have to decide to use a bit of willpower.
+  style: confront_statement
+- utterance: We can only get anywhere if you admit the drinking is a problem.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: We can only get anywhere if you admit the drinking is a problem.
+  style: confront_statement
+- utterance: Why wait for a bad blood test before thinking about your drinking?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Why wait for a bad blood test before thinking about your drinking?
+  style: confront_why
+- utterance: Why not just make yourself have fewer drinks each evening?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Why not just make yourself have fewer drinks each evening?
+  style: confront_why
+- utterance: Your GP would not send you here over nothing, would they?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Your GP would not send you here over nothing, would they?
+  style: confront_tag
+- utterance: Cutting back is really a matter of making the effort, isn't it?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Cutting back is really a matter of making the effort, isn't it?
+  style: confront_tag
+- utterance: Surely getting referred here is enough to tell you the drinking is excessive?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Surely getting referred here is enough to tell you the drinking is excessive?
+  style: confront_rhetorical
+- utterance: It is only a conversation about alcohol; there is no need to be defensive.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: It is only a conversation about alcohol; there is no need to be defensive.
+  style: dismissive
+- utterance: well everyone finds these questions awkward so lets just get through them
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: well everyone finds these questions awkward so lets just get through them
+  style: dismissive
+- utterance: Being concerned about the test results will not help, so put that aside for now.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Being concerned about the test results will not help, so put that aside for now.
+  style: dismissive
+- utterance: 'Skip the jokes and get to the point, please.'
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: 'Skip the jokes and get to the point, please.'
+  style: impatient
+- utterance: 'Keep your answers short; I haven''t got long.'
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: 'Keep your answers short; I haven''t got long.'
+  style: impatient
+- utterance: 'Just tell me the amount, never mind the excuses.'
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: 'Just tell me the amount, never mind the excuses.'
+  style: impatient

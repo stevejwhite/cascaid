@@ -1,0 +1,54 @@
+# Training lines for the tone classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: alcohol-driving-confidentiality
+case_version: 0.1.0
+status: draft
+items:
+  - {utterance: "Have you had any accidents while driving?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "um do you ever feel like life isn't worth living", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "Has drinking caused problems in your relationship?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "How much would you drink on a weekend?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "When did you last have a drink?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "Sorry, I know it's personal, but could I ask about your money situation?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: polite_question}
+  - {utterance: "Would it be okay to ask a bit more about your driving?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: polite_question}
+  - {utterance: "Morning Gareth, I'm the doctor you're seeing today.", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: introduction}
+  - {utterance: "Hi, come in, take a seat wherever you like.", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: greeting}
+  - {utterance: "So we've covered your work and your drinking, and now I'd like to talk about what comes next.", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: summary}
+  - {utterance: "Right. And how long ago was that?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: acknowledgement}
+  - {utterance: "Okay, got it.", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: acknowledgement}
+  - {utterance: "That's tough.", empathy: 1, empathy_words: "That's tough.", confrontational: false, challenge_words: "", style: brief_empathy}
+  - {utterance: "I can understand that.", empathy: 1, empathy_words: "I can understand that.", confrontational: false, challenge_words: "", style: brief_empathy}
+  - {utterance: "That sounds stressful. Who else knows about this?", empathy: 1, empathy_words: "That sounds stressful.", confrontational: false, challenge_words: "", style: brief_empathy_question}
+  - {utterance: "i'm sorry, that's hard. how are you managing", empathy: 1, empathy_words: "i'm sorry, that's hard.", confrontational: false, challenge_words: "", style: brief_empathy_question}
+  - utterance: "You're frightened about the rent, and you've been keeping that worry to yourself rather than sharing it with your partner."
+    empathy: 2
+    empathy_words: "You're frightened about the rent, and you've been keeping that worry to yourself rather than sharing it with your partner."
+    confrontational: false
+    challenge_words: ""
+    style: specific_empathy
+    previous:
+      interviewer: "What worries you most about stopping driving?"
+      character: "I'm frightened we won't cover the rent. I've kept that worry from my partner."
+  - utterance: "You came in believing everything here was private, so it must feel unsettling to hear there are limits."
+    empathy: 2
+    empathy_words: "You came in believing everything here was private, so it must feel unsettling to hear there are limits."
+    confrontational: false
+    challenge_words: ""
+    style: specific_empathy
+    previous:
+      interviewer: "What did you think about confidentiality here?"
+      character: "I thought everything here was private. I want to know whether you could tell anyone if I carried on driving."
+  - {utterance: "Your job is your living, so of course you want to know what this means for you.", empathy: 2, empathy_words: "Your job is your living, so of course you want to know what this means for you.", confrontational: false, challenge_words: "", style: specific_empathy}
+  - utterance: "Nearly hitting that car must have really shaken you up. How did you feel afterwards?"
+    empathy: 2
+    empathy_words: "Nearly hitting that car must have really shaken you up."
+    confrontational: false
+    challenge_words: ""
+    style: specific_empathy_question
+    previous:
+      interviewer: "Have you ever driven after drinking?"
+      character: "Yes, I drove yesterday morning after two cans to stop the shakes. I nearly hit a parked car."
+  - {utterance: "You have to accept that you can't drive any more.", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "You have to accept that you can't drive any more.", style: confront_statement}
+  - {utterance: "Why would you drive after drinking when you know it's dangerous?", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "Why would you drive after drinking when you know it's dangerous?", style: confront_why}
+  - {utterance: "The job isn't really the important thing here.", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "The job isn't really the important thing here.", style: dismissive}
+  - {utterance: "look, you'll find other work, it'll be fine", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "you'll find other work, it'll be fine", style: dismissive}

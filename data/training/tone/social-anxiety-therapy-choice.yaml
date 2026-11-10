@@ -1,0 +1,171 @@
+# Training lines for the tone classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: social-anxiety-therapy-choice
+case_version: 0.1.0
+status: draft
+items:
+- utterance: What is it you fear people will think?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: How do you feel about yourself for struggling with this?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: um what happens when you have to present
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: How often do you eat lunch with others?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Sorry, I hope you don't mind me asking, but do you drink before events?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Is it all right if I ask what you'd like to change?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Hello Louise, I'm one of the trainee psychiatrists.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: Good afternoon, thanks for waiting.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: CBT for social anxiety usually means weekly sessions and some practice in between.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: explanation
+- utterance: Right. And how long ago was the promotion?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+  previous:
+    interviewer: When did the anxiety first begin?
+    character: I avoid speaking in meetings and eat lunch alone. It's been like this since my late teens,
+      worse since a promotion last year.
+- utterance: okay thank you
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: That sounds difficult.
+  empathy: 1
+  empathy_words: That sounds difficult.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I understand.
+  empathy: 1
+  empathy_words: I understand.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That must be hard. What helps a little?
+  empathy: 1
+  empathy_words: That must be hard.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I can see that's not easy to talk about. Shall we go on?
+  empathy: 1
+  empathy_words: I can see that's not easy to talk about.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: Replaying everything you said and worrying people think you're incompetent sounds exhausting
+    to live with.
+  empathy: 2
+  empathy_words: Replaying everything you said and worrying people think you're incompetent sounds exhausting
+    to live with.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: What worries you most when you're with other people?
+    character: I expect people to notice me shaking and think I'm incompetent. Afterwards I replay everything
+      I said.
+- utterance: It makes complete sense that a group would feel frightening when talking in front of people
+    is the very thing you find hardest.
+  empathy: 2
+  empathy_words: It makes complete sense that a group would feel frightening when talking in front of
+    people is the very thing you find hardest.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: Would you prefer individual or group therapy?
+    character: I'd prefer to begin individually. I'm embarrassed that even joining a group about anxiety
+      sounds frightening.
+- utterance: Not knowing what you're supposed to say here is completely understandable at a first appointment
+    like this.
+  empathy: 2
+  empathy_words: Not knowing what you're supposed to say here is completely understandable at a first
+    appointment like this.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: so wanting to share just one idea in meetings sounds like a really meaningful goal for you.
+    what would that first step look like
+  empathy: 2
+  empathy_words: so wanting to share just one idea in meetings sounds like a really meaningful goal for
+    you.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: What would you like therapy to help you with?
+    character: I want to contribute one idea in meetings and have lunch with colleagues without planning
+      every word.
+- utterance: Everyone gets a bit nervous in meetings, you just need to push through it.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Everyone gets a bit nervous in meetings, you just need to push through it.
+  style: confront_statement
+- utterance: You'll have to do the homework if you want to get better, won't you?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You'll have to do the homework if you want to get better, won't you?
+  style: confront_tag
+- utterance: Honestly, a group would be fine, you're overthinking it.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: you're overthinking it.
+  style: dismissive
+- utterance: Let's not dwell on the shaking, it's not important.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: it's not important.
+  style: dismissive
+  previous:
+    interviewer: What happens in your body when you get anxious?
+    character: My face gets hot, my hands shake and my heart races when attention turns to me.

@@ -1,0 +1,926 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: first-episode-psychosis-formulation
+case_version: 0.1.0
+status: draft
+items:
+- utterance: What do we know about how his daily life has changed over the last few months?
+  topics:
+  - functional-course
+  style: open
+- utterance: Has anyone confirmed when he stopped going to college?
+  topics:
+  - functional-course
+  style: closed
+- utterance: Is there any collateral on when he stopped seeing his friends?
+  topics:
+  - functional-course
+  style: closed
+- utterance: How's he been getting on with college, do we know?
+  topics:
+  - functional-course
+  style: colloquial
+- utterance: Is there information on his current level of social and occupational functioning?
+  topics:
+  - functional-course
+  style: clinical
+- utterance: I wanted to clarify the timeline of his withdrawal from college and friends
+  topics:
+  - functional-course
+  style: indirect
+- utterance: I appreciate you've had a busy morning. Do we have anything on his attendance?
+  topics:
+  - functional-course
+  style: empathy_then_question
+- utterance: Thanks for making time for this. What did you find out about his social life?
+  topics:
+  - functional-course
+  style: empathy_then_question
+- utterance: um so the withdrawal from friends do we know when that actually started
+  topics:
+  - functional-course
+  style: spoken
+- utterance: And his college attendance?
+  topics:
+  - functional-course
+  style: brief
+- utterance: And has that affected whether he's been going to his course?
+  topics:
+  - functional-course
+  style: follow_up
+  previous:
+    interviewer: What exactly did he tell you about his phone?
+    character: He told me yesterday that his phone was monitoring him and that he was completely certain,
+      although he could not show me evidence.
+- utterance: Presumably he's been gradually dropping out of things over those months?
+  topics:
+  - functional-course
+  style: leading
+- utterance: What's the source for the four months of withdrawal?
+  topics:
+  - functional-course
+  style: open
+- utterance: Did the drop in college attendance and seeing friends happen at the same time?
+  topics:
+  - functional-course
+  style: closed
+- utterance: Who has given us the information about his course and friendships?
+  topics:
+  - functional-course
+  style: open
+- utterance: How has his everyday routine changed over this period?
+  topics:
+  - functional-course
+  style: open
+- utterance: What exactly does he believe about his phone?
+  topics:
+  - persecutory-account
+  style: open
+- utterance: Has he been able to give any evidence for the phone monitoring?
+  topics:
+  - persecutory-account
+  style: closed
+- utterance: Is the belief held with full conviction, or is there some doubt?
+  topics:
+  - persecutory-account
+  style: clinical
+- utterance: How fixed is he on the phone thing?
+  topics:
+  - persecutory-account
+  style: colloquial
+- utterance: I'd like to understand the content of his belief about the phone a bit better
+  topics:
+  - persecutory-account
+  style: indirect
+- utterance: It must be frightening for him. How firmly does he hold the idea about the phone?
+  topics:
+  - persecutory-account
+  style: empathy_then_question
+- utterance: so um the phone thing is it is it a fixed belief would you say
+  topics:
+  - persecutory-account
+  style: spoken
+- utterance: And the phone belief?
+  topics:
+  - persecutory-account
+  style: brief
+- utterance: Did he show any doubt at all when you questioned it?
+  topics:
+  - persecutory-account
+  style: follow_up
+  previous:
+    interviewer: What does he think is going on with his phone?
+    character: He told me yesterday that his phone was monitoring him and that he was completely certain,
+      although he could not show me evidence.
+- utterance: I'd assume he can't really back the monitoring idea up with anything?
+  topics:
+  - persecutory-account
+  style: leading
+- utterance: What did he say when you asked how he knows the phone is being watched?
+  topics:
+  - persecutory-account
+  style: open
+- utterance: Can he be talked round at all about the phone?
+  topics:
+  - persecutory-account
+  style: closed
+- utterance: Has he described the phone monitoring to you directly?
+  topics:
+  - persecutory-account
+  style: closed
+- utterance: What's your sense of the strength of his belief about being monitored?
+  topics:
+  - persecutory-account
+  style: open
+- utterance: Thank you for seeing him yourself. Did he seem sure about it, in your view?
+  topics:
+  - persecutory-account
+  style: empathy_then_question
+- utterance: Can you tell me more about the voices he's been hearing?
+  topics:
+  - auditory-account
+  style: open
+- utterance: What are the voices actually saying?
+  topics:
+  - auditory-account
+  style: open
+- utterance: Are the voices ever telling him to do things?
+  topics:
+  - auditory-account
+  style: closed
+- utterance: In what situations does he tend to hear them?
+  topics:
+  - auditory-account
+  style: open
+- utterance: Are the hallucinations second or third person, and are there any command hallucinations?
+  topics:
+  - auditory-account
+  style: clinical
+- utterance: What's the story with the voices?
+  topics:
+  - auditory-account
+  style: colloquial
+- utterance: I wanted to get a better picture of the voices he described
+  topics:
+  - auditory-account
+  style: indirect
+- utterance: That must be very distressing for him. How often is he hearing them?
+  topics:
+  - auditory-account
+  style: empathy_then_question
+- utterance: um and the voices are they like talking to him or about him
+  topics:
+  - auditory-account
+  style: spoken
+- utterance: Any command voices?
+  topics:
+  - auditory-account
+  style: brief
+- utterance: Has he ever acted on anything they've said?
+  topics:
+  - auditory-account
+  style: follow_up
+  previous:
+    interviewer: What are the voices saying to him?
+    character: He described two unfamiliar voices talking about him when alone, several times a day for
+      three weeks; he denied commands to act.
+- utterance: I'm assuming the voices are saying negative things about him?
+  topics:
+  - auditory-account
+  style: leading
+- utterance: How frequent are the voices day to day?
+  topics:
+  - auditory-account
+  style: open
+- utterance: Did he recognise either of the voices?
+  topics:
+  - auditory-account
+  style: closed
+- utterance: Has he heard anything instructing him to hurt someone?
+  topics:
+  - auditory-account
+  style: closed
+- utterance: So tell me what he's said about the voices.
+  topics:
+  - auditory-account
+  style: open
+- utterance: Did you find any evidence of a depressive or manic episode?
+  topics:
+  - mood-differential
+  style: closed
+- utterance: How would you describe his mood when you saw him?
+  topics:
+  - mood-differential
+  style: open
+- utterance: Has he had any periods of high energy with little need for sleep?
+  topics:
+  - mood-differential
+  style: closed
+- utterance: Is there anything to suggest bipolar disorder here?
+  topics:
+  - mood-differential
+  style: closed
+- utterance: Were there any affective symptoms on mental state examination?
+  topics:
+  - mood-differential
+  style: clinical
+- utterance: Did he seem low or wired at all?
+  topics:
+  - mood-differential
+  style: colloquial
+- utterance: I'd like to rule out a mood disorder before we settle on anything
+  topics:
+  - mood-differential
+  style: indirect
+- utterance: I know the admission summary is brief on mood. What did you make of his affect?
+  topics:
+  - mood-differential
+  style: empathy_then_question
+- utterance: um so mood wise was he was he low at all or up
+  topics:
+  - mood-differential
+  style: spoken
+- utterance: And his mood?
+  topics:
+  - mood-differential
+  style: brief
+- utterance: Were the voices tied in with any change in his mood?
+  topics:
+  - mood-differential
+  style: follow_up
+  previous:
+    interviewer: Can you tell me more about what he's hearing?
+    character: He described two unfamiliar voices talking about him when alone, several times a day for
+      three weeks; he denied commands to act.
+- utterance: I'm guessing there's nothing to suggest mania?
+  topics:
+  - mood-differential
+  style: leading
+- utterance: What's your view on whether this could be a psychotic depression?
+  topics:
+  - mood-differential
+  style: open
+- utterance: Has he been sleeping much less without feeling tired?
+  topics:
+  - mood-differential
+  style: closed
+- utterance: Did his mood seem in keeping with what he believes?
+  topics:
+  - mood-differential
+  style: closed
+- utterance: How confident are we that there's no sustained mood episode?
+  topics:
+  - mood-differential
+  style: open
+- utterance: When did he last use?
+  topics:
+  - cannabis-timeline
+  style: open
+- utterance: Is he using any other drugs alongside the cannabis?
+  topics:
+  - cannabis-timeline
+  style: closed
+- utterance: What's his alcohol intake like?
+  topics:
+  - cannabis-timeline
+  style: open
+- utterance: Could you clarify the onset and pattern of his cannabis use relative to the psychotic symptoms?
+  topics:
+  - cannabis-timeline
+  style: clinical
+- utterance: How heavy a smoker is he?
+  topics:
+  - cannabis-timeline
+  style: colloquial
+- utterance: I wondered whether the cannabis use started before or after the voices
+  topics:
+  - cannabis-timeline
+  style: indirect
+- utterance: I realise he may not have been fully open. Did he say what kind of cannabis he uses?
+  topics:
+  - cannabis-timeline
+  style: empathy_then_question
+- utterance: um the cannabis how often is he actually smoking
+  topics:
+  - cannabis-timeline
+  style: spoken
+- utterance: Any other substances?
+  topics:
+  - cannabis-timeline
+  style: brief
+- utterance: And was he using cannabis back then, when he stopped going?
+  topics:
+  - cannabis-timeline
+  style: follow_up
+  previous:
+    interviewer: Do we know when he stopped attending college?
+    character: 'I spoke with his tutor: he stopped attending his plumbing course four months ago and stopped
+      meeting friends around the same time.'
+- utterance: I'd guess he's been using quite heavily recently?
+  topics:
+  - cannabis-timeline
+  style: leading
+- utterance: Has he used any cocaine or amphetamines?
+  topics:
+  - cannabis-timeline
+  style: closed
+- utterance: Do we know whether drink is also playing a part?
+  topics:
+  - cannabis-timeline
+  style: closed
+- utterance: When was his most recent joint?
+  topics:
+  - cannabis-timeline
+  style: closed
+- utterance: How long has the daily use been going on?
+  topics:
+  - cannabis-timeline
+  style: open
+- utterance: Was there anything abnormal on his neurological exam?
+  topics:
+  - physical-screen
+  style: closed
+- utterance: Does he have any medical problems or take any medication?
+  topics:
+  - physical-screen
+  style: closed
+- utterance: Was he febrile?
+  topics:
+  - physical-screen
+  style: closed
+- utterance: Were his observations within normal limits?
+  topics:
+  - physical-screen
+  style: clinical
+- utterance: Physically, is he well in himself?
+  topics:
+  - physical-screen
+  style: colloquial
+- utterance: I wanted to check there's nothing physical we're missing on examination
+  topics:
+  - physical-screen
+  style: indirect
+- utterance: Thanks for examining him yourself. Any history of fits?
+  topics:
+  - physical-screen
+  style: empathy_then_question
+- utterance: um did anyone check his obs and that
+  topics:
+  - physical-screen
+  style: spoken
+- utterance: And his physical exam?
+  topics:
+  - physical-screen
+  style: brief
+- utterance: Given that, did you find anything neurological when you examined him?
+  topics:
+  - physical-screen
+  style: follow_up
+  previous:
+    interviewer: What are the voices like?
+    character: He described two unfamiliar voices talking about him when alone, several times a day for
+      three weeks; he denied commands to act.
+- utterance: I take it the examination was unremarkable?
+  topics:
+  - physical-screen
+  style: leading
+- utterance: What were his vital signs like?
+  topics:
+  - physical-screen
+  style: open
+- utterance: Has he ever had a seizure?
+  topics:
+  - physical-screen
+  style: closed
+- utterance: Is he on any regular medicines?
+  topics:
+  - physical-screen
+  style: closed
+- utterance: How did his pulse and blood pressure look?
+  topics:
+  - physical-screen
+  style: open
+- utterance: Have his bloods come back yet?
+  topics:
+  - investigations-pending
+  style: closed
+- utterance: Has he had an ECG?
+  topics:
+  - investigations-pending
+  style: closed
+- utterance: What investigations are still outstanding?
+  topics:
+  - investigations-pending
+  style: open
+- utterance: Has anyone weighed him?
+  topics:
+  - investigations-pending
+  style: closed
+- utterance: Has his HbA1c and lipid profile been checked?
+  topics:
+  - investigations-pending
+  style: clinical
+- utterance: Where are we with his blood tests?
+  topics:
+  - investigations-pending
+  style: colloquial
+- utterance: I wanted to check what tests have been sent off
+  topics:
+  - investigations-pending
+  style: indirect
+- utterance: I know it's been a busy shift. Did anyone get round to doing an ECG?
+  topics:
+  - investigations-pending
+  style: empathy_then_question
+- utterance: so um have we got any results back
+  topics:
+  - investigations-pending
+  style: spoken
+- utterance: Bloods and ECG done?
+  topics:
+  - investigations-pending
+  style: brief
+- utterance: And have bloods been taken to go with that?
+  topics:
+  - investigations-pending
+  style: follow_up
+  previous:
+    interviewer: What did you find on examination?
+    character: 'I examined him yesterday: temperature was 36.8 degrees, pulse 84 and blood pressure 122
+      over 76, with no focal neurological findings; he reports no seizures, chronic illness or prescribed
+      medicines.'
+- utterance: I'm assuming the routine bloods are still pending?
+  topics:
+  - investigations-pending
+  style: leading
+- utterance: What do we still need to do in terms of tests?
+  topics:
+  - investigations-pending
+  style: open
+- utterance: Has anyone checked his blood sugar?
+  topics:
+  - investigations-pending
+  style: closed
+- utterance: Which results are we still waiting on?
+  topics:
+  - investigations-pending
+  style: open
+- utterance: What's been done so far for his physical health monitoring?
+  topics:
+  - investigations-pending
+  style: open
+- utterance: Is there any risk to others?
+  topics:
+  - immediate-safety
+  style: closed
+- utterance: How likely is he to try to leave the ward?
+  topics:
+  - immediate-safety
+  style: open
+- utterance: What are the main risks on the ward at the moment?
+  topics:
+  - immediate-safety
+  style: open
+- utterance: What's your assessment of his current risk to self and others?
+  topics:
+  - immediate-safety
+  style: clinical
+- utterance: Is he likely to do a runner?
+  topics:
+  - immediate-safety
+  style: colloquial
+- utterance: I'd like to know about any risk of him harming himself or someone else
+  topics:
+  - immediate-safety
+  style: indirect
+- utterance: He sounds very frightened. Has he said anything about suicide?
+  topics:
+  - immediate-safety
+  style: empathy_then_question
+- utterance: um and risk wise has there been any aggression or anything
+  topics:
+  - immediate-safety
+  style: spoken
+- utterance: Any suicidal thoughts?
+  topics:
+  - immediate-safety
+  style: brief
+- utterance: Has he said he'd do anything to stop whoever he thinks is monitoring him?
+  topics:
+  - immediate-safety
+  style: follow_up
+  previous:
+    interviewer: How sure is he about the phone?
+    character: He told me yesterday that his phone was monitoring him and that he was completely certain,
+      although he could not show me evidence.
+- utterance: I'm guessing there's a risk he'll try to walk out?
+  topics:
+  - immediate-safety
+  style: leading
+- utterance: Have there been any incidents of violence since admission?
+  topics:
+  - immediate-safety
+  style: closed
+- utterance: Does he have any plans to end his life?
+  topics:
+  - immediate-safety
+  style: closed
+- utterance: What are the nursing staff worried about with him?
+  topics:
+  - immediate-safety
+  style: open
+- utterance: Has he made any threats to anyone?
+  topics:
+  - immediate-safety
+  style: closed
+- utterance: Who could give us a collateral history?
+  topics:
+  - collateral-consent
+  style: open
+- utterance: Is there anyone we can speak to who knows him well?
+  topics:
+  - collateral-consent
+  style: closed
+- utterance: Is there family around we could ring?
+  topics:
+  - collateral-consent
+  style: colloquial
+- utterance: Have we obtained consent for a collateral history?
+  topics:
+  - collateral-consent
+  style: clinical
+- utterance: I'd like to get a collateral account from someone close to him
+  topics:
+  - collateral-consent
+  style: indirect
+- utterance: Thanks for all the work you've done on this. Is there a relative we can talk to?
+  topics:
+  - collateral-consent
+  style: empathy_then_question
+- utterance: um has anyone spoken to his family yet
+  topics:
+  - collateral-consent
+  style: spoken
+- utterance: Any family involved?
+  topics:
+  - collateral-consent
+  style: brief
+- utterance: Is there family who could tell us more about that period?
+  topics:
+  - collateral-consent
+  style: follow_up
+  previous:
+    interviewer: Do we know how his daily life has changed?
+    character: 'I spoke with his tutor: he stopped attending his plumbing course four months ago and stopped
+      meeting friends around the same time.'
+- utterance: Presumably his family would be able to fill in some gaps?
+  topics:
+  - collateral-consent
+  style: leading
+- utterance: Who does he live with?
+  topics:
+  - collateral-consent
+  style: open
+- utterance: When could we get hold of a relative?
+  topics:
+  - collateral-consent
+  style: open
+- utterance: Have we spoken with his sister yet?
+  topics:
+  - collateral-consent
+  style: closed
+- utterance: What's happening about speaking to the people closest to him?
+  topics:
+  - collateral-consent
+  style: open
+- utterance: Did he give permission for us to share information with anyone?
+  topics:
+  - collateral-consent
+  style: closed
+- utterance: Does he think he needs any treatment?
+  topics:
+  - engagement
+  style: closed
+- utterance: Is he willing to stay on the ward?
+  topics:
+  - engagement
+  style: closed
+- utterance: What is his level of insight into his illness?
+  topics:
+  - engagement
+  style: clinical
+- utterance: Is he on board with being here?
+  topics:
+  - engagement
+  style: colloquial
+- utterance: I wondered how open he is to the idea of help from us
+  topics:
+  - engagement
+  style: indirect
+- utterance: It must be hard for him to trust us. Has he accepted that he might need help?
+  topics:
+  - engagement
+  style: empathy_then_question
+- utterance: um is he is he happy to stay in
+  topics:
+  - engagement
+  style: spoken
+- utterance: Is he accepting help?
+  topics:
+  - engagement
+  style: brief
+- utterance: Has he agreed to stay for now, then?
+  topics:
+  - engagement
+  style: follow_up
+  previous:
+    interviewer: What are the risks at the moment?
+    character: He denied thoughts or plans to harm himself or anyone else, and no assault was reported;
+      staff remain concerned that he may leave because he feels unsafe here.
+- utterance: I suspect he doesn't see this as a mental health problem?
+  topics:
+  - engagement
+  style: leading
+- utterance: What's he said about taking treatment from us?
+  topics:
+  - engagement
+  style: open
+- utterance: Would he agree to discuss treatment with us?
+  topics:
+  - engagement
+  style: closed
+- utterance: How willing is he to engage with the team?
+  topics:
+  - engagement
+  style: open
+- utterance: What does he want from this admission?
+  topics:
+  - engagement
+  style: open
+- utterance: Has he said whether he wants to go home?
+  topics:
+  - engagement
+  style: closed
+- utterance: How does he understand what's happening to him?
+  topics:
+  - cultural-context
+  style: open
+- utterance: Does he have any religious explanation for these experiences?
+  topics:
+  - cultural-context
+  style: closed
+- utterance: Do we need an interpreter for him?
+  topics:
+  - cultural-context
+  style: closed
+- utterance: What's his cultural background and does it shape how he sees this?
+  topics:
+  - cultural-context
+  style: open
+- utterance: Have we explored his explanatory model?
+  topics:
+  - cultural-context
+  style: clinical
+- utterance: Does he put it down to anything spiritual?
+  topics:
+  - cultural-context
+  style: colloquial
+- utterance: I'd like to understand his own take on these experiences
+  topics:
+  - cultural-context
+  style: indirect
+- utterance: I'm aware we haven't had much time with him. What language is he most comfortable in?
+  topics:
+  - cultural-context
+  style: empathy_then_question
+- utterance: um does he see it as like a religious thing at all
+  topics:
+  - cultural-context
+  style: spoken
+- utterance: Any interpreter needs?
+  topics:
+  - cultural-context
+  style: brief
+- utterance: Does he see that as part of his faith or something else?
+  topics:
+  - cultural-context
+  style: follow_up
+  previous:
+    interviewer: What does he believe about the phone?
+    character: He told me yesterday that his phone was monitoring him and that he was completely certain,
+      although he could not show me evidence.
+- utterance: I'd imagine his background might shape how he makes sense of this?
+  topics:
+  - cultural-context
+  style: leading
+- utterance: What does he think is causing these experiences?
+  topics:
+  - cultural-context
+  style: open
+- utterance: Would family or faith beliefs influence how he interprets the voices?
+  topics:
+  - cultural-context
+  style: closed
+- utterance: Has anyone asked what this means to him culturally?
+  topics:
+  - cultural-context
+  style: closed
+- utterance: How would he describe this in his own words?
+  topics:
+  - cultural-context
+  style: open
+- utterance: What's the plan for follow-up after discharge?
+  topics:
+  - continuity-concern
+  style: open
+- utterance: Has anyone sent the EIP referral?
+  topics:
+  - continuity-concern
+  style: closed
+- utterance: Who will take on his care once he leaves?
+  topics:
+  - continuity-concern
+  style: open
+- utterance: Do you have any worries about him dropping out of care later?
+  topics:
+  - continuity-concern
+  style: closed
+- utterance: Has he been referred to the early intervention in psychosis service?
+  topics:
+  - continuity-concern
+  style: clinical
+- utterance: What happens with him after he goes home?
+  topics:
+  - continuity-concern
+  style: colloquial
+- utterance: I'm conscious we need to think about his follow-up beyond the ward
+  topics:
+  - continuity-concern
+  style: indirect
+- utterance: I can tell you're thinking ahead. What worries you about his follow-up?
+  topics:
+  - continuity-concern
+  style: empathy_then_question
+- utterance: um so after discharge who who's going to see him
+  topics:
+  - continuity-concern
+  style: spoken
+- utterance: And follow-up after discharge?
+  topics:
+  - continuity-concern
+  style: brief
+- utterance: And once he does go home, what's in place to keep him engaged?
+  topics:
+  - continuity-concern
+  style: follow_up
+  previous:
+    interviewer: Does he accept that he needs treatment?
+    character: He says he needs protection rather than psychiatric treatment, but has agreed to stay today
+      and discuss options with us.
+- utterance: I imagine the early intervention team will need to be involved?
+  topics:
+  - continuity-concern
+  style: leading
+- utterance: Which community team will pick him up?
+  topics:
+  - continuity-concern
+  style: open
+- utterance: How do we make sure he doesn't fall through the gaps after he leaves?
+  topics:
+  - continuity-concern
+  style: open
+- utterance: Is there a care coordinator allocated?
+  topics:
+  - continuity-concern
+  style: closed
+- utterance: What do you think we need to put in place before discharge?
+  topics:
+  - continuity-concern
+  style: open
+- utterance: Has he had bloods done, and what did the physical exam show?
+  topics:
+  - investigations-pending
+  - physical-screen
+  style: stacked
+- utterance: How much cannabis is he using, and is there any mood component?
+  topics:
+  - cannabis-timeline
+  - mood-differential
+  style: stacked
+- utterance: Has he consented to us speaking to family, and is he willing to stay?
+  topics:
+  - collateral-consent
+  - engagement
+  style: stacked
+- utterance: What are the voices saying, and how sure is he about the phone?
+  topics:
+  - auditory-account
+  - persecutory-account
+  style: stacked
+- utterance: Hi Ravi, thanks for meeting with me.
+  topics: []
+  style: greeting
+- utterance: Morning Ravi, I'm the trainee who admitted Samir yesterday.
+  topics: []
+  style: introduction
+- utterance: Is now a good time to go through Samir's case?
+  topics: []
+  style: introduction
+- utterance: Shall I start with the history and then the mental state?
+  topics: []
+  style: transition
+- utterance: Before I start, is there anything particular you'd like me to focus on?
+  topics: []
+  style: introduction
+- utterance: I'd like to move on to the differential now.
+  topics: []
+  style: transition
+- utterance: Moving on to the management plan.
+  topics: []
+  style: transition
+- utterance: Can I go over the risk side next?
+  topics: []
+  style: transition
+- utterance: I'm conscious we're nearly out of time.
+  topics: []
+  style: closing
+- utterance: Thanks Ravi, that's been really helpful.
+  topics: []
+  style: closing
+- utterance: Is there anything else you'd like me to cover before we finish?
+  topics: []
+  style: closing
+- utterance: Hello Ravi, have you got ten minutes to discuss the new admission?
+  topics: []
+  style: greeting
+- utterance: Samir is a 22-year-old man admitted yesterday with a first episode of psychosis.
+  topics: []
+  style: summary
+- utterance: In summary, he has four months of social withdrawal and three weeks of persecutory beliefs
+    and voices.
+  topics: []
+  style: summary
+- utterance: On mental state he was frightened but coherent and fully orientated.
+  topics: []
+  style: summary
+- utterance: My working impression is a first episode of psychosis, with cannabis as a possible contributor.
+  topics: []
+  style: explanation
+- utterance: I'd keep a substance-induced psychosis on the differential.
+  topics: []
+  style: explanation
+- utterance: I wouldn't want to commit to a diagnosis of schizophrenia at this stage.
+  topics: []
+  style: explanation
+- utterance: I'd like to discuss the option of antipsychotic medication with him once the baseline tests
+    are done.
+  topics: []
+  style: explanation
+- utterance: I think we should involve the early intervention team from the start.
+  topics: []
+  style: explanation
+- utterance: Does that formulation sound reasonable to you?
+  topics: []
+  style: check_understanding
+- utterance: Have I missed anything important in my presentation?
+  topics: []
+  style: check_understanding
+- utterance: I appreciate you taking the time, I know the ward's been busy.
+  topics: []
+  style: empathy
+- utterance: It's been a difficult admission for everyone.
+  topics: []
+  style: empathy
+- utterance: Is there a family history of psychosis?
+  topics: []
+  style: off_case
+- utterance: Does he have a forensic history?
+  topics: []
+  style: off_case
+- utterance: Has he ever had a brain scan?
+  topics: []
+  style: off_case
+- utterance: Is he detained under the Mental Health Act?
+  topics: []
+  style: off_case
+- utterance: What was his early development like?
+  topics: []
+  style: off_case
+- utterance: Does he have any housing or money problems?
+  topics: []
+  style: off_case
+- utterance: What grades was he getting at college?
+  topics: []
+  style: near_miss
+- utterance: What kind of phone does he have?
+  topics: []
+  style: near_miss
+- utterance: How much does he spend on cannabis each week?
+  topics: []
+  style: near_miss
+- utterance: Has he had an EEG?
+  topics: []
+  style: near_miss
+- utterance: How old is his sister?
+  topics: []
+  style: near_miss

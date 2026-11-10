@@ -1,0 +1,67 @@
+# Author-labelled communication-indicator cases. Held-out TEST split: written and committed
+# (2026-10-07) before the indicator rules existed; never used to tune them.
+# question: open (invites a narrative answer), closed (yes/no or a specific fact), none.
+# summary: reflects back what the person has said. check_understanding: checks the person
+# has understood or invites their questions.
+split: test
+items:
+  - {text: "How have things been for you lately?", question: open, summary: false, check_understanding: false}
+  - {text: "Tell me about your drinking.", question: open, summary: false, check_understanding: false}
+  - {text: "Can you tell me more about what happened last night?", question: open, summary: false, check_understanding: false}
+  - {text: "What's been worrying you most?", question: open, summary: false, check_understanding: false}
+  - {text: "How does that affect your day-to-day life?", question: open, summary: false, check_understanding: false}
+  - {text: "Talk me through a typical day.", question: open, summary: false, check_understanding: false}
+  - {text: "Why do you think that is?", question: open, summary: false, check_understanding: false}
+  - {text: "In what way has his personality changed?", question: open, summary: false, check_understanding: false}
+  - {text: "Could you describe the voices for me?", question: open, summary: false, check_understanding: false}
+  - {text: "What are your thoughts about clozapine?", question: open, summary: false, check_understanding: false}
+  - {text: "How are you feeling in yourself?", question: open, summary: false, check_understanding: false}
+  - {text: "What would help you most right now?", question: open, summary: false, check_understanding: false}
+  - {text: "And how has your sleep been?", question: open, summary: false, check_understanding: false}
+  - {text: "Do you drink every day?", question: closed, summary: false, check_understanding: false}
+  - {text: "Are you sleeping well?", question: closed, summary: false, check_understanding: false}
+  - {text: "Have you ever had a seizure?", question: closed, summary: false, check_understanding: false}
+  - {text: "How many units do you drink a week?", question: closed, summary: false, check_understanding: false}
+  - {text: "How long has this been going on?", question: closed, summary: false, check_understanding: false}
+  - {text: "When did you buy the tablets?", question: closed, summary: false, check_understanding: false}
+  - {text: "Is there any dementia in the family?", question: closed, summary: false, check_understanding: false}
+  - {text: "Did you leave a note?", question: closed, summary: false, check_understanding: false}
+  - {text: "Who do you live with?", question: closed, summary: false, check_understanding: false}
+  - {text: "Does he smoke?", question: closed, summary: false, check_understanding: false}
+  - {text: "Where did you get the pills from?", question: closed, summary: false, check_understanding: false}
+  - {text: "Which medication is he on?", question: closed, summary: false, check_understanding: false}
+  - {text: "Any thoughts of harming yourself?", question: closed, summary: false, check_understanding: false}
+  - {text: "Would you say your mood is low?", question: closed, summary: false, check_understanding: false}
+  - {text: "How often do you drink?", question: closed, summary: false, check_understanding: false}
+  - {text: "Was anyone with you?", question: closed, summary: false, check_understanding: false}
+  - {text: "How old were you when it started?", question: closed, summary: false, check_understanding: false}
+  - {text: "Can he still manage the stairs?", question: closed, summary: false, check_understanding: false}
+  - {text: "Do you drink in the mornings? And do you get the shakes?", question: closed, summary: false, check_understanding: false}
+  - {text: "That sounds really difficult.", question: none, summary: false, check_understanding: false}
+  - {text: "I'm sorry to hear that.", question: none, summary: false, check_understanding: false}
+  - {text: "Hello, I'm one of the doctors on the team.", question: none, summary: false, check_understanding: false}
+  - {text: "Thank you for telling me that.", question: none, summary: false, check_understanding: false}
+  - {text: "Clozapine is used when other medicines haven't worked well enough.", question: none, summary: false, check_understanding: false}
+  - {text: "The blood tests are weekly for the first eighteen weeks.", question: none, summary: false, check_understanding: false}
+  - {text: "I'd like to ask some questions about your mood now.", question: none, summary: false, check_understanding: false}
+  - {text: "So to summarise, you've been drinking heavily for ten years and it got worse after your divorce.", question: none, summary: true, check_understanding: false}
+  - {text: "Let me just recap what you've told me so far.", question: none, summary: true, check_understanding: false}
+  - {text: "If I've understood correctly, his memory has been getting worse for about eighteen months.", question: none, summary: true, check_understanding: false}
+  - {text: "So you took the tablets last night and your flatmate found you, is that right?", question: closed, summary: true, check_understanding: false}
+  - {text: "What I'm hearing is that you're exhausted from caring for your dad.", question: none, summary: true, check_understanding: false}
+  - {text: "Just to sum up, you've had about a week of very little sleep and lots of energy.", question: none, summary: true, check_understanding: false}
+  - {text: "Does that make sense?", question: closed, summary: false, check_understanding: true}
+  - {text: "Do you have any questions about what I've said?", question: closed, summary: false, check_understanding: true}
+  - {text: "Can you tell me in your own words what you understand about the blood tests?", question: open, summary: false, check_understanding: true}
+  - {text: "Is there anything I've said that isn't clear?", question: closed, summary: false, check_understanding: true}
+  - {text: "What questions do you have for me?", question: open, summary: false, check_understanding: true}
+  - {text: "Is that clear so far?", question: closed, summary: false, check_understanding: true}
+  - {text: "I appreciate this is a lot of information. Shall I go over anything again?", question: closed, summary: false, check_understanding: true}
+  - {text: "It sounds like you've been through a lot. How are you coping?", question: open, summary: false, check_understanding: false}
+  - {text: "OK.", question: none, summary: false, check_understanding: false}
+  - {text: "Right, and what happened next?", question: open, summary: false, check_understanding: false}
+  - {text: "You mentioned your sister earlier. What does she think?", question: open, summary: false, check_understanding: false}
+  - {text: "Have you noticed any changes in his behaviour?", question: closed, summary: false, check_understanding: false}
+  - {text: "Please go on.", question: open, summary: false, check_understanding: false}
+  - {text: "Is it OK if I ask about alcohol and drugs?", question: closed, summary: false, check_understanding: false}
+  - {text: "What did you take?", question: open, summary: false, check_understanding: false}

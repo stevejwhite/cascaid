@@ -1,0 +1,162 @@
+# Training lines for the tone classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: postpartum-psychosis-husband-collateral
+case_version: 0.1.0
+status: draft
+items:
+- utterance: When did she last sleep properly?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Has she said she wants to hurt the baby?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: um has she ever tried to harm herself
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: What happened on the night she got most upset?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: How many people live in the house?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Sorry to ask, but could you tell me how the delivery went?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Would you mind telling me a little about her family?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Hello Ben, I'm Dr Carter, one of the psychiatrists.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: So she's been up most nights and saying odd things, and you've been worried for a few days.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: summary
+- utterance: Right. And who was in the house that evening?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Okay, thanks Ben.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: I'm sorry to hear that.
+  empathy: 1
+  empathy_words: I'm sorry to hear that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That sounds really hard.
+  empathy: 1
+  empathy_words: That sounds really hard.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I'm sorry to hear that. Did she sleep at all that night?
+  empathy: 1
+  empathy_words: I'm sorry to hear that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: That sounds difficult. What happened next?
+  empathy: 1
+  empathy_words: That sounds difficult.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: You've been watching her go through all those sleepless nights and feeling helpless to change
+    anything, and that must be exhausting.
+  empathy: 2
+  empathy_words: You've been watching her go through all those sleepless nights and feeling helpless to
+    change anything, and that must be exhausting.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: How has she been sleeping?
+    character: She's slept less than two hours each night for three nights, even when I've taken over
+      feeding. She says she doesn't need rest.
+- utterance: It sounds as though you've had to keep a constant watch on your wife and the baby, and that
+    is a heavy load to carry.
+  empathy: 2
+  empathy_words: It sounds as though you've had to keep a constant watch on your wife and the baby, and
+    that is a heavy load to carry.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: Who is with her at the moment?
+    character: My sister is with my wife, and my mother is caring for the baby in another room. We haven't
+      left my wife alone with the baby since yesterday.
+- utterance: You came in frightened and worn out, and it makes sense that you want someone to take this
+    seriously.
+  empathy: 2
+  empathy_words: You came in frightened and worn out, and it makes sense that you want someone to take
+    this seriously.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: It must be so painful to hear her say something like that about your own baby. Has she said
+    it to anyone else?
+  empathy: 2
+  empathy_words: It must be so painful to hear her say something like that about your own baby.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: What has she been saying about the baby?
+    character: She says the baby has been replaced and isn't ours. Reassurance hasn't changed her mind.
+- utterance: You really should have called someone sooner than this.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You really should have called someone sooner
+  style: confront_statement
+- utterance: Why on earth did you wait so long before getting help?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Why on earth did you wait so long
+  style: confront_why
+- utterance: Lots of new mums are a bit emotional, it's probably just the baby blues.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: it's probably just the baby blues
+  style: dismissive
+- utterance: I'm sure she'll be fine once she gets some sleep, so try not to worry.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: I'm sure she'll be fine once she gets some sleep, so try not to worry
+  style: dismissive

@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: ect-explanation-husband
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hello Peter, I'm the doctor looking after your wife on the ward, thanks for waiting."
+    expected: []
+    rapport: false
+  - utterance: "How long has she been unwell?"
+    expected: [course]
+    rapport: false
+  - utterance: "How has she been with eating and drinking?"
+    expected: [intake]
+    rapport: false
+  - utterance: "Has she said anything that seemed out of character, like feeling very guilty about something?"
+    expected: [symptoms]
+    rapport: false
+  - utterance: "Has she said anything about not wanting to live?"
+    expected: [risk]
+    rapport: false
+  - utterance: "What do you already know or imagine about what ECT involves?"
+    expected: [procedure]
+    rapport: false
+  - utterance: "What worries you most about side effects of the treatment?"
+    expected: [memory]
+    rapport: false
+  - utterance: "What has she said about the treatment herself?"
+    expected: [consent]
+    rapport: false
+  - utterance: "What treatments has she had so far?"
+    expected: [alternatives]
+    rapport: false
+  - utterance: "This must be incredibly worrying for you, seeing her like this."
+    expected: []
+    rapport: true
+  - utterance: "It's completely understandable to feel overwhelmed."
+    expected: []
+    rapport: true
+  - utterance: "How are you coping with all of this yourself?"
+    expected: [burden]
+    rapport: false
+  - utterance: "Is there anyone else in the family who could support you?"
+    expected: [practical]
+    rapport: false
+  - utterance: "And fluids?"
+    previous:
+      interviewer: "Has she been eating?"
+      character: "She's refused her meals for the last two days."
+    expected: [intake]
+    rapport: false
+  - utterance: "did that help at all?"
+    previous:
+      interviewer: "Has she been offered other treatments?"
+      character: "She had an antidepressant for six weeks."
+    expected: [alternatives]
+    rapport: false
+  - utterance: "Has she ever had ECT before?"
+    expected: []
+    rapport: false
+  - utterance: "Does she have any heart problems?"
+    expected: []
+    rapport: false
+  - utterance: "I'll explain how the procedure works and what the risks are in a moment."
+    expected: []
+    rapport: false

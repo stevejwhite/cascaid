@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: probation-psychosis-collateral
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Lewis, how has attendance changed from the pattern you knew before?
+  expected:
+  - attendance
+  rapport: false
+- utterance: At your own contact with him, what did you directly see or hear that suggested a change?
+  expected:
+  - observations
+  rapport: false
+- utterance: What has he told you about collecting treatment, and has the clinic confirmed that?
+  expected:
+  - medication
+  rapport: false
+- utterance: What evidence is there about recent substance use, and where did that information come from?
+  expected:
+  - substances
+  rapport: false
+- utterance: Has he made any threat towards a particular person that needs following up urgently?
+  expected:
+  - threats
+  rapport: false
+- utterance: What do you know about how he is managing the flat, bills and basic needs?
+  expected:
+  - housing
+  rapport: false
+- utterance: On the occasions you've seen him recently, what did you notice yourself?
+  expected:
+  - observations
+  rapport: false
+- utterance: What did he specifically tell you about collecting tablets, and is that verified?
+  expected:
+  - medication
+  rapport: false
+- utterance: during that contact, did you get to ask about suicide or eating?
+  expected:
+  - self-risk
+  rapport: false
+  previous:
+    interviewer: What happened when you went to see him?
+    character: At a home visit last week he spoke through the door.
+- utterance: Do you know whether he has any children who depend on him?
+  expected: []
+  rapport: false

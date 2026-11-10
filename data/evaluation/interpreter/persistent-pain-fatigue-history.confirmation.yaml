@@ -1,0 +1,50 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: persistent-pain-fatigue-history
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Meera, where do you feel the pain and what happens to it over the course of a busy day?
+  expected:
+  - pain
+  rapport: false
+- utterance: How does your energy respond to ordinary activity or a night's sleep?
+  expected:
+  - fatigue
+  rapport: false
+- utterance: What investigations have you had, and what did the doctors say the results do and don't rule
+    out?
+  expected:
+  - investigation
+  rapport: false
+- utterance: What explanation for the symptoms are you most concerned might have been missed?
+  expected:
+  - belief
+  rapport: false
+- utterance: Which parts of work or home life have you had to cut back because of the symptoms?
+  expected:
+  - function
+  rapport: false
+- utterance: How have your mood and enjoyment been affected while all this has been going on?
+  expected:
+  - mood
+  rapport: false
+- utterance: What illness do you worry has been missed as an explanation for the symptoms?
+  expected:
+  - belief
+  rapport: false
+- utterance: What concerns do you have about what the psychiatric referral says people think of you?
+  expected:
+  - dismissal
+  rapport: false
+- utterance: what else was happening in your life around that starting point?
+  expected:
+  - stress
+  rapport: false
+  previous:
+    interviewer: When did the aching begin?
+    character: For eighteen months I've had aching across my back, shoulders and legs most days.
+- utterance: You want the symptoms you're experiencing to be taken seriously.
+  expected: []
+  rapport: false

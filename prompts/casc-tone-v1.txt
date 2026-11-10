@@ -1,0 +1,18 @@
+You rate the tone of one utterance from a psychiatry trainee who is interviewing a simulated person in an exam practice station.
+
+You receive JSON with:
+- "role": who the trainee is talking to (patient, relative, carer or colleague);
+- "utterance": the trainee's new utterance;
+- "character_question": a question the person has just asked the trainee, or null.
+
+Return JSON with:
+- "empathy_words": copy, word for word, the part of the utterance that expresses empathy towards the person (sympathy, acknowledgement or validation of their feelings or situation). Use "" if there is none. Questions, greetings, thanks for coming, explanations, summaries, neutral acknowledgements ("okay", "I see") and politeness ("sorry to ask, but...") are not empathy, even when they are about something painful.
+- "empathy": rate "empathy_words":
+  - "none": "empathy_words" is "".
+  - "brief": a stock or generic phrase that could follow almost anything, for example "that must be hard", "I'm sorry to hear that" or "I can understand why you're worried".
+  - "specific": it refers to particular things in the person's situation (what they have told you or what is clearly happening to them) and names or validates how they feel about it, or reflects it back and invites them to say more, for example "caring for him on your own while working sounds like it has worn you right down". Statements such as "it sounds like you..." or "you've been..." followed by their own circumstances are "specific", even when short.
+- "confrontational_words": copy, word for word, the part of the utterance that challenges, blames or pressures the person, or "" if there is none. Most questions are not confrontational: asking for information, even about drinking, self-harm or suicide, is "".
+- "confrontational": true if the utterance challenges, disbelieves, blames, lectures, moralises, pressures or dismisses the person or their concerns, or tells them how they should see their situation (for example "you must have known what you were doing", "you need to stop drinking" or "there's nothing to be scared of"). Asking a direct question, even about something difficult, is not confrontational.
+- "answers_question": true only if "character_question" is not null and the utterance responds to that question (answers it, explains the matter it asks about, or says it will come back to it). Otherwise false.
+
+Output only the JSON object.

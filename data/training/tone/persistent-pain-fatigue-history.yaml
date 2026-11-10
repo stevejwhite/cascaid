@@ -1,0 +1,170 @@
+# Training lines for the tone classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: persistent-pain-fatigue-history
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Have you ever felt that life isn't worth living?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Do you ever cry about how things are?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: How often does the pain stop you sleeping?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: um has any of this put a strain on your relationships
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: When were you last able to do a full week at work?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Sorry to ask so many questions, but could you tell me how much you're sleeping?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Would you mind if I asked about your family's health?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Hello Meera, thanks for waiting.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: I'm a psychiatrist on the liaison team, and I've got about seven minutes with you today.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: So far you've told me about the pain, the tiredness and how it's affecting work.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: summary
+- utterance: Right. And who else lives with you?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Okay, thank you.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: That sounds really tough.
+  empathy: 1
+  empathy_words: That sounds really tough.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I'm sorry you've been going through this.
+  empathy: 1
+  empathy_words: I'm sorry you've been going through this.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That must be hard. How do you get through a bad day?
+  empathy: 1
+  empathy_words: That must be hard.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: i'm sorry to hear that. so what happens on a good day
+  empathy: 1
+  empathy_words: i'm sorry to hear that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: It took real courage to come today when you were afraid we'd think you were making it up.
+  empathy: 2
+  empathy_words: It took real courage to come today when you were afraid we'd think you were making it
+    up.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: How did you feel about coming here today?
+    character: I'm afraid this referral means everyone thinks I'm making it up. I almost didn't come.
+- utterance: Cutting back to three days and relying on your sister must feel like a big loss of independence.
+  empathy: 2
+  empathy_words: Cutting back to three days and relying on your sister must feel like a big loss of independence.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: How have things changed at work and at home?
+    character: I've reduced work to three days weekly. My sister does heavy shopping and I avoid outings
+      if I think I'll be exhausted afterwards.
+- utterance: You've been carrying this pain and exhaustion for a long time while feeling nobody really
+    believed you.
+  empathy: 2
+  empathy_words: You've been carrying this pain and exhaustion for a long time while feeling nobody really
+    believed you.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: After seeing your aunt go undiagnosed for months, it makes sense you're frightened something
+    is being missed. What would help you feel listened to today?
+  empathy: 2
+  empathy_words: After seeing your aunt go undiagnosed for months, it makes sense you're frightened something
+    is being missed.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: What's worrying you most about the cause?
+    character: I worry there is a serious muscle illness being missed. My aunt was ill for months before
+      anyone knew what was wrong.
+- utterance: Honestly, the tests are normal, so there's nothing serious to worry about.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: the tests are normal, so there's nothing serious to worry about
+  style: confront_statement
+- utterance: Why on earth would you avoid going out if the tests are fine?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Why on earth would you avoid going out if the tests are fine?
+  style: confront_why
+- utterance: Let's not get into your aunt; that's not really relevant.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: that's not really relevant
+  style: dismissive
+  previous:
+    interviewer: What do you think could be behind it all?
+    character: I worry there is a serious muscle illness being missed. My aunt was ill for months before
+      anyone knew what was wrong.
+- utterance: yeah okay we don't need all the detail just the main points
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: we don't need all the detail
+  style: dismissive

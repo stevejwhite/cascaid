@@ -1,0 +1,757 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: opioid-treatment-physical-health
+case_version: 0.1.0
+status: draft
+items:
+- utterance: What does your treatment involve at the moment?
+  topics:
+  - treatment
+  style: open
+- utterance: Are you on a prescribed medicine for your opioid treatment?
+  topics:
+  - treatment
+  style: closed
+- utterance: What are they giving you here, and how much of it?
+  topics:
+  - treatment
+  style: colloquial
+- utterance: What is your current daily dose of substitute medication?
+  topics:
+  - treatment
+  style: clinical
+- utterance: I wondered what you're prescribed for the treatment.
+  topics:
+  - treatment
+  style: indirect
+- utterance: Thanks for coming in today. How much do you take each day?
+  topics:
+  - treatment
+  style: empathy_then_question
+- utterance: um so what's your dose these days
+  topics:
+  - treatment
+  style: spoken
+- utterance: And your daily dose?
+  topics:
+  - treatment
+  style: brief
+- utterance: Okay. Which medicine do you take for the treatment, and what dose?
+  topics:
+  - treatment
+  style: follow_up
+  previous:
+    interviewer: Have you been tested for infections?
+    character: I shared equipment years ago. My last HIV and hepatitis tests were eighteen months ago
+      and negative; I'm unsure whether I completed hepatitis B vaccination.
+- utterance: You pick up your medicine from the pharmacy every day, I imagine?
+  topics:
+  - treatment
+  style: leading
+- utterance: Can you take me through how you get your prescription?
+  topics:
+  - treatment
+  style: open
+- utterance: Has the dose changed recently?
+  topics:
+  - treatment
+  style: closed
+- utterance: How's the script going, is it steady?
+  topics:
+  - treatment
+  style: colloquial
+- utterance: sorry so how do you get it, from a pharmacy or here or
+  topics:
+  - treatment
+  style: spoken
+- utterance: Where do you get it from?
+  topics:
+  - treatment
+  style: brief
+- utterance: Tell me about any injecting you've done.
+  topics:
+  - injecting
+  style: open
+- utterance: Have you had a hit lately?
+  topics:
+  - injecting
+  style: colloquial
+- utterance: When was your most recent episode of injecting?
+  topics:
+  - injecting
+  style: clinical
+- utterance: I'd like to understand where you've been injecting.
+  topics:
+  - injecting
+  style: indirect
+- utterance: I'm not here to judge. Which parts of your body do you use?
+  topics:
+  - injecting
+  style: empathy_then_question
+- utterance: Any recent injecting?
+  topics:
+  - injecting
+  style: brief
+- utterance: And do you still inject on top of that?
+  topics:
+  - injecting
+  style: follow_up
+  previous:
+    interviewer: What are you prescribed at the moment?
+    character: I take oral methadone 60 milligrams daily and collect it under supervision. I've been on
+      this dose for four months.
+- utterance: I expect you've got some marks from injecting over the years?
+  topics:
+  - injecting
+  style: leading
+- utterance: How have your injection sites been looking?
+  topics:
+  - injecting
+  style: open
+- utterance: Is there any redness or swelling where you inject?
+  topics:
+  - injecting
+  style: closed
+- utterance: Any bad spots on your arms or anywhere else?
+  topics:
+  - injecting
+  style: colloquial
+- utterance: and is it like your arms or legs or what
+  topics:
+  - injecting
+  style: spoken
+- utterance: Any open wounds at all?
+  topics:
+  - injecting
+  style: brief
+- utterance: What do you know about your infection risks from drug use?
+  topics:
+  - bbv
+  style: open
+- utterance: Have you ever shared needles or other kit with anyone?
+  topics:
+  - bbv
+  style: closed
+- utterance: Did you ever pass works around with other people?
+  topics:
+  - bbv
+  style: colloquial
+- utterance: When were you last tested for HIV and hepatitis?
+  topics:
+  - bbv
+  style: clinical
+- utterance: I'd like to hear about your blood tests for infections.
+  topics:
+  - bbv
+  style: indirect
+- utterance: Lots of people have been in that position. Have you had a hepatitis vaccine?
+  topics:
+  - bbv
+  style: empathy_then_question
+- utterance: um have you been checked for HIV or the hepatitis ones
+  topics:
+  - bbv
+  style: spoken
+- utterance: Any vaccination against hepatitis B?
+  topics:
+  - bbv
+  style: brief
+- utterance: Okay. Have you ever shared equipment with anyone?
+  topics:
+  - bbv
+  style: follow_up
+  previous:
+    interviewer: When did you last inject?
+    character: I last injected heroin six weeks ago, usually in my arms. I have old scars but no current
+      red, hot or leaking wound.
+- utterance: I imagine you've shared things at some point, haven't you?
+  topics:
+  - bbv
+  style: leading
+- utterance: How have your blood-borne virus tests turned out in the past?
+  topics:
+  - bbv
+  style: open
+- utterance: Did you finish a course of hepatitis B jabs?
+  topics:
+  - bbv
+  style: closed
+- utterance: Ever done the sexual health and blood screen?
+  topics:
+  - bbv
+  style: colloquial
+- utterance: and the sharing thing, was that a while back or
+  topics:
+  - bbv
+  style: spoken
+- utterance: Last HIV test?
+  topics:
+  - bbv
+  style: brief
+- utterance: Have you had any close calls with overdose?
+  topics:
+  - overdose
+  style: open
+- utterance: Did you ever go over on anything?
+  topics:
+  - overdose
+  style: colloquial
+- utterance: Do you hold a naloxone supply at home?
+  topics:
+  - overdose
+  style: clinical
+- utterance: I wondered whether you've ever come close to dying from your drugs.
+  topics:
+  - overdose
+  style: indirect
+- utterance: That sounds frightening. Do you carry an overdose rescue kit?
+  topics:
+  - overdose
+  style: empathy_then_question
+- utterance: so um have you ever overdosed or nearly
+  topics:
+  - overdose
+  style: spoken
+- utterance: Any past overdoses?
+  topics:
+  - overdose
+  style: brief
+- utterance: Right. Have you ever had an accidental overdose?
+  topics:
+  - overdose
+  style: follow_up
+  previous:
+    interviewer: What are you prescribed at the moment?
+    character: I take oral methadone 60 milligrams daily and collect it under supervision. I've been on
+      this dose for four months.
+- utterance: You'll have had at least one scare with overdose, I'd guess?
+  topics:
+  - overdose
+  style: leading
+- utterance: How do you protect yourself from overdosing now?
+  topics:
+  - overdose
+  style: open
+- utterance: Do you drink alcohol or take sleeping tablets with your treatment?
+  topics:
+  - overdose
+  style: closed
+- utterance: Do you have the life-saving nasal spray or injection kit?
+  topics:
+  - overdose
+  style: colloquial
+- utterance: and do you like take anything alongside, like valium or drink
+  topics:
+  - overdose
+  style: spoken
+- utterance: Using alcohol too?
+  topics:
+  - overdose
+  style: brief
+- utterance: How has your chest been lately?
+  topics:
+  - chest
+  style: open
+- utterance: Have you had any chest pain?
+  topics:
+  - chest
+  style: closed
+- utterance: Do you get out of puff at all?
+  topics:
+  - chest
+  style: colloquial
+- utterance: Have you experienced dyspnoea, a persistent cough or fever?
+  topics:
+  - chest
+  style: clinical
+- utterance: I wanted to ask about any breathing difficulties.
+  topics:
+  - chest
+  style: indirect
+- utterance: It helps me to cover everything properly. Have you been coughing?
+  topics:
+  - chest
+  style: empathy_then_question
+- utterance: so um any chest stuff, like pain or a cough
+  topics:
+  - chest
+  style: spoken
+- utterance: Any temperature or cough?
+  topics:
+  - chest
+  style: brief
+- utterance: Right. And what about your breathing, any cough?
+  topics:
+  - chest
+  style: follow_up
+  previous:
+    interviewer: Any swelling in your legs?
+    character: No, neither leg is newly swollen or painful, and I don't have ulcers.
+- utterance: Your breathing has been fine, hasn't it?
+  topics:
+  - chest
+  style: leading
+- utterance: Tell me about your breathing.
+  topics:
+  - chest
+  style: open
+- utterance: Do you feel feverish at all?
+  topics:
+  - chest
+  style: closed
+- utterance: Any tightness in your chest when you walk upstairs?
+  topics:
+  - chest
+  style: colloquial
+- utterance: and the chest is okay, nothing like pains or whatever
+  topics:
+  - chest
+  style: spoken
+- utterance: Breathless at all?
+  topics:
+  - chest
+  style: brief
+- utterance: How are your legs?
+  topics:
+  - legs
+  style: open
+- utterance: Has either leg become swollen?
+  topics:
+  - legs
+  style: closed
+- utterance: Any pain or puffiness in your calves?
+  topics:
+  - legs
+  style: colloquial
+- utterance: Is there any unilateral leg swelling or ulceration?
+  topics:
+  - legs
+  style: clinical
+- utterance: I'd like to check whether your legs have given you any trouble.
+  topics:
+  - legs
+  style: indirect
+- utterance: I appreciate your patience with all these questions. Have you got any sores on your legs?
+  topics:
+  - legs
+  style: empathy_then_question
+- utterance: um are your calves sore or anything like that
+  topics:
+  - legs
+  style: spoken
+- utterance: Calf pain?
+  topics:
+  - legs
+  style: brief
+- utterance: Good. And what about your legs, any swelling?
+  topics:
+  - legs
+  style: follow_up
+  previous:
+    interviewer: Have you been short of breath?
+    character: No, I have no chest pain, breathlessness, fever or ongoing cough.
+- utterance: Nothing has gone wrong with your legs lately, has it?
+  topics:
+  - legs
+  style: leading
+- utterance: Describe how your legs have been feeling.
+  topics:
+  - legs
+  style: open
+- utterance: Do you have any ulcers on your feet or ankles?
+  topics:
+  - legs
+  style: closed
+- utterance: Are your ankles swelling up at all?
+  topics:
+  - legs
+  style: colloquial
+- utterance: and then your legs like is there swelling
+  topics:
+  - legs
+  style: spoken
+- utterance: Any leg ulcers?
+  topics:
+  - legs
+  style: brief
+- utterance: What has your mouth been like recently?
+  topics:
+  - dental
+  style: open
+- utterance: Do you have a toothache?
+  topics:
+  - dental
+  style: closed
+- utterance: Is a tooth bothering you?
+  topics:
+  - dental
+  style: colloquial
+- utterance: Any dental pain on mastication or problems with your gums?
+  topics:
+  - dental
+  style: clinical
+- utterance: I wondered how your teeth are at the moment.
+  topics:
+  - dental
+  style: indirect
+- utterance: Dental problems can be miserable. Do you have a dentist?
+  topics:
+  - dental
+  style: empathy_then_question
+- utterance: um so any problems with your teeth or gums
+  topics:
+  - dental
+  style: spoken
+- utterance: Pain when chewing?
+  topics:
+  - dental
+  style: brief
+- utterance: Okay. Now what about your teeth, any pain?
+  topics:
+  - dental
+  style: follow_up
+  previous:
+    interviewer: Any swelling in your legs?
+    character: No, neither leg is newly swollen or painful, and I don't have ulcers.
+- utterance: I suppose your teeth haven't had much attention lately?
+  topics:
+  - dental
+  style: leading
+- utterance: How long has your tooth been giving you trouble?
+  topics:
+  - dental
+  style: open
+- utterance: Have you registered with a dentist?
+  topics:
+  - dental
+  style: closed
+- utterance: Any trouble biting into food?
+  topics:
+  - dental
+  style: colloquial
+- utterance: and the face, is it puffed up or sore or
+  topics:
+  - dental
+  style: spoken
+- utterance: Seen a dentist yet?
+  topics:
+  - dental
+  style: brief
+- utterance: What are you doing about contraception?
+  topics:
+  - reproductive
+  style: open
+- utterance: Do you use barrier protection during sex?
+  topics:
+  - reproductive
+  style: closed
+- utterance: Any chance you could be pregnant?
+  topics:
+  - reproductive
+  style: colloquial
+- utterance: When was your last menstrual period?
+  topics:
+  - reproductive
+  style: clinical
+- utterance: I wanted to ask about your periods and whether pregnancy is possible.
+  topics:
+  - reproductive
+  style: indirect
+- utterance: These are personal questions, so say if it's too much. Have you taken a pregnancy test?
+  topics:
+  - reproductive
+  style: empathy_then_question
+- utterance: so um when was your last period
+  topics:
+  - reproductive
+  style: spoken
+- utterance: Pregnancy test done?
+  topics:
+  - reproductive
+  style: brief
+- utterance: Okay. And what about contraception, do you use any?
+  topics:
+  - reproductive
+  style: follow_up
+  previous:
+    interviewer: How are your teeth?
+    character: A back tooth hurts when I chew and has done for three weeks. I haven't found a dentist
+      yet; I have no facial swelling.
+- utterance: You aren't always protected during sex, I assume?
+  topics:
+  - reproductive
+  style: leading
+- utterance: How regular have your periods been?
+  topics:
+  - reproductive
+  style: open
+- utterance: Are you protected against pregnancy when you have sex?
+  topics:
+  - reproductive
+  style: closed
+- utterance: Have you missed a period?
+  topics:
+  - reproductive
+  style: colloquial
+- utterance: and the protection side of things, is it always or
+  topics:
+  - reproductive
+  style: spoken
+- utterance: Using protection every time?
+  topics:
+  - reproductive
+  style: brief
+- utterance: What makes it hard to ask for medical help?
+  topics:
+  - barriers
+  style: open
+- utterance: Have you felt judged by health staff?
+  topics:
+  - barriers
+  style: closed
+- utterance: Do you get fobbed off when you go to appointments?
+  topics:
+  - barriers
+  style: colloquial
+- utterance: Do you experience stigma when you seek care?
+  topics:
+  - barriers
+  style: clinical
+- utterance: I wondered how it has been for you attending clinics and surgeries.
+  topics:
+  - barriers
+  style: indirect
+- utterance: It can be hard to speak up about your health. Do you ever find it hard to say what's wrong
+    when you're there?
+  topics:
+  - barriers
+  style: empathy_then_question
+- utterance: um is it hard for you to like go to appointments
+  topics:
+  - barriers
+  style: spoken
+- utterance: Feeling blamed by staff?
+  topics:
+  - barriers
+  style: brief
+- utterance: Is it hard to ask for help with things like that?
+  topics:
+  - barriers
+  style: follow_up
+  previous:
+    interviewer: Have you found a dentist yet?
+    character: A back tooth hurts when I chew and has done for three weeks. I haven't found a dentist
+      yet; I have no facial swelling.
+- utterance: I imagine services haven't always been kind to you?
+  topics:
+  - barriers
+  style: leading
+- utterance: Could we talk about how doctors have treated you?
+  topics:
+  - barriers
+  style: open
+- utterance: Do you ever walk out of appointments?
+  topics:
+  - barriers
+  style: closed
+- utterance: Has anyone made you feel to blame for your problems?
+  topics:
+  - barriers
+  style: colloquial
+- utterance: and when you go for help do you um feel looked down on
+  topics:
+  - barriers
+  style: spoken
+- utterance: Avoiding appointments?
+  topics:
+  - barriers
+  style: brief
+- utterance: How have you been feeling in yourself about life?
+  topics:
+  - risk
+  style: open
+- utterance: Have you ever thought of ending your life?
+  topics:
+  - risk
+  style: closed
+- utterance: Was it an accident or did you mean it?
+  topics:
+  - risk
+  style: colloquial
+- utterance: Was the overdose a deliberate act of self-harm?
+  topics:
+  - risk
+  style: clinical
+- utterance: I wanted to ask whether you've had any thoughts of harming yourself.
+  topics:
+  - risk
+  style: indirect
+- utterance: I know this is a hard subject. Have you wanted to die?
+  topics:
+  - risk
+  style: empathy_then_question
+- utterance: so um was it on purpose or not
+  topics:
+  - risk
+  style: spoken
+- utterance: Thoughts of suicide?
+  topics:
+  - risk
+  style: brief
+- utterance: Looking back, did you mean it to happen?
+  topics:
+  - risk
+  style: follow_up
+  previous:
+    interviewer: Have you ever had an overdose?
+    character: I had an accidental overdose a year ago. I have a naloxone kit now; I don't use alcohol
+      or sedatives.
+- utterance: It wasn't deliberate, was it?
+  topics:
+  - risk
+  style: leading
+- utterance: How do you feel about the overdose now?
+  topics:
+  - risk
+  style: open
+- utterance: Are you having any suicidal thoughts now?
+  topics:
+  - risk
+  style: closed
+- utterance: Do you ever feel like you've had enough of everything?
+  topics:
+  - risk
+  style: colloquial
+- utterance: and um do you want to stay well or
+  topics:
+  - risk
+  style: spoken
+- utterance: Wanting to stay alive?
+  topics:
+  - risk
+  style: brief
+- utterance: When did you last inject, and have you ever shared equipment?
+  topics:
+  - injecting
+  - bbv
+  style: stacked
+- utterance: Any chest pain or cough, and what about swelling in your legs?
+  topics:
+  - chest
+  - legs
+  style: stacked
+- utterance: Is a tooth bothering you, and could you be pregnant?
+  topics:
+  - dental
+  - reproductive
+  style: stacked
+- utterance: What dose are you on, and have you ever overdosed?
+  topics:
+  - treatment
+  - overdose
+  style: stacked
+- utterance: Hello Jodie, nice to meet you.
+  topics: []
+  style: greeting
+- utterance: Hi Jodie, my name's Sam and I'm one of the trainee doctors here.
+  topics: []
+  style: introduction
+- utterance: Good morning Jodie, thanks for coming in.
+  topics: []
+  style: greeting
+- utterance: Jodie, I'm a doctor on placement with the team today.
+  topics: []
+  style: introduction
+- utterance: Is it all right if we talk about your health for a few minutes, Jodie?
+  topics: []
+  style: introduction
+- utterance: what would you like to start with Jodie
+  topics: []
+  style: greeting
+- utterance: Before we start, have you got any questions for me?
+  topics: []
+  style: introduction
+- utterance: I'd like to move on to something different now.
+  topics: []
+  style: transition
+- utterance: Shall we turn to a different part of your health?
+  topics: []
+  style: transition
+- utterance: ok so let's go on to the next bit
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Jodie.
+  topics: []
+  style: closing
+- utterance: We only have a couple of minutes left.
+  topics: []
+  style: closing
+- utterance: It sounds as though you've had a hard time with services.
+  topics: []
+  style: empathy
+- utterance: That must have been really frightening.
+  topics: []
+  style: empathy
+- utterance: It takes courage to talk about all of this.
+  topics: []
+  style: empathy
+- utterance: I can see this isn't easy to talk about.
+  topics: []
+  style: empathy
+- utterance: Thank you for being so open with me.
+  topics: []
+  style: empathy
+- utterance: That sounds exhausting.
+  topics: []
+  style: empathy
+- utterance: So you collect your medicine daily and you've been well apart from a sore tooth.
+  topics: []
+  style: summary
+- utterance: 'Let me check I have this right: you''re stable on treatment but there are a few health worries.'
+  topics: []
+  style: summary
+- utterance: To sum up, there are some things to look into over the coming weeks.
+  topics: []
+  style: summary
+- utterance: I'm asking these questions because I want to look after your physical health too.
+  topics: []
+  style: explanation
+- utterance: Anything you tell me will stay within the team looking after you.
+  topics: []
+  style: explanation
+- utterance: I'd like to get a full picture so we can sort out the right checks.
+  topics: []
+  style: explanation
+- utterance: Does that make sense so far?
+  topics: []
+  style: check_understanding
+- utterance: Do you have any problems with your kidneys or liver?
+  topics: []
+  style: off_case
+- utterance: Are you eating regularly at the moment?
+  topics: []
+  style: off_case
+- utterance: Have you got somewhere stable to live?
+  topics: []
+  style: off_case
+- utterance: Do you smoke tobacco?
+  topics: []
+  style: off_case
+- utterance: Are you on any other prescribed medicines?
+  topics: []
+  style: off_case
+- utterance: Have you had your cervical screening?
+  topics: []
+  style: off_case
+- utterance: Do you use any drugs other than opioids?
+  topics: []
+  style: near_miss
+- utterance: Did your dentist say it needs to come out?
+  topics: []
+  style: near_miss
+- utterance: Have you ever been in prison for drugs?
+  topics: []
+  style: near_miss
+- utterance: Do you have children who need to be considered?
+  topics: []
+  style: near_miss

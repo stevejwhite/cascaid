@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: explosive-outbursts-mental-state
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hi Joel, nice to meet you, I'm one of the doctors in the clinic."
+    expected: []
+    rapport: false
+  - utterance: "How often do you lose your temper like this?"
+    expected: [outbursts]
+    rapport: false
+  - utterance: "What tends to trigger it?"
+    expected: [build-up]
+    rapport: false
+  - utterance: "Do you ever plan these outbursts or use them to get something?"
+    expected: [purpose]
+    rapport: false
+  - utterance: "How do you feel afterwards?"
+    expected: [aftermath]
+    rapport: false
+  - utterance: "How's your mood generally between the episodes?"
+    expected: [mood]
+    rapport: false
+  - utterance: "How much do you drink, and do you use any drugs?"
+    expected: [substances]
+    rapport: false
+  - utterance: "Have you ever heard voices or felt people were against you?"
+    expected: [psychosis]
+    rapport: false
+  - utterance: "Have you ever hurt anyone during one of these?"
+    expected: [risk]
+    rapport: false
+  - utterance: "Has anything happened that came closer to someone getting hurt than you've let on?"
+    expected: [guarded]
+    rapport: false
+  - utterance: "What do you make of these reactions yourself?"
+    expected: [insight]
+    rapport: false
+  - utterance: "It takes courage to come in and talk about this."
+    expected: []
+    rapport: true
+  - utterance: "and are the outbursts linked to drinking?"
+    previous:
+      interviewer: "Do you drink?"
+      character: "Two pints on Fridays."
+    expected: [substances]
+    rapport: false
+  - utterance: "Have you ever got physical with your partner?"
+    previous:
+      interviewer: "Has it affected your relationship?"
+      character: "My partner is considering leaving."
+    expected: [risk]
+    rapport: false
+  - utterance: "Did you have any head injuries growing up?"
+    expected: []
+    rapport: false
+  - utterance: "Were you ever assessed for ADHD at school?"
+    expected: []
+    rapport: false
+  - utterance: "Okay, so these episodes are short but they've been happening a lot."
+    expected: []
+    rapport: false
+  - utterance: "how's your sleep"
+    expected: [mood]
+    rapport: false

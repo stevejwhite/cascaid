@@ -1,0 +1,336 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: rehabilitation-supported-housing-plan
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Do you notice your nights getting worse before you become ill?
+  topics:
+  - relapse
+  style: boundary
+  pair:
+  - relapse
+  - risk
+- utterance: Do you start to feel people are talking about you before you get ill?
+  topics:
+  - relapse
+  style: boundary_colloquial
+  pair:
+  - relapse
+  - risk
+- utterance: um how can you tell when you're starting to go downhill
+  topics:
+  - relapse
+  style: boundary_spoken
+  pair:
+  - relapse
+  - risk
+- utterance: And what are the early signs that it's building?
+  topics:
+  - relapse
+  style: boundary_follow_up
+  pair:
+  - relapse
+  - risk
+  previous:
+    interviewer: Have you ever neglected yourself when you were ill?
+    character: No, I don't want to hurt myself or anyone. When very unwell I have stopped eating properly
+      because I was afraid to go shopping.
+- utterance: When you've been very unwell, have you stopped looking after yourself?
+  topics:
+  - risk
+  style: boundary
+  pair:
+  - relapse
+  - risk
+- utterance: Have you gone without proper meals during a bad spell?
+  topics:
+  - risk
+  style: boundary_colloquial
+  pair:
+  - relapse
+  - risk
+- utterance: um do you ever think about hurting anyone
+  topics:
+  - risk
+  style: boundary_spoken
+  pair:
+  - relapse
+  - risk
+- utterance: And at that point, do you manage to look after yourself, like eating?
+  topics:
+  - risk
+  style: boundary_follow_up
+  pair:
+  - relapse
+  - risk
+  previous:
+    interviewer: What are the early signs of you getting ill?
+    character: Before I become unwell I stop sleeping and start thinking people are talking about me.
+      That usually builds over a fortnight.
+- utterance: Have you ever got into trouble with the police when unwell?
+  topics: []
+  style: near_miss
+  pair:
+  - relapse
+  - risk
+- utterance: Have you had compulsory admissions in the past?
+  topics: []
+  style: near_miss
+  pair:
+  - relapse
+  - risk
+- utterance: Are there any interests or hobbies you want to keep up?
+  topics:
+  - activity
+  style: boundary
+  pair:
+  - activity
+  - skills
+- utterance: Are you thinking of work or volunteering?
+  topics:
+  - activity
+  style: boundary_colloquial
+  pair:
+  - activity
+  - skills
+- utterance: um what would a normal day look like for you there
+  topics:
+  - activity
+  style: boundary_spoken
+  pair:
+  - activity
+  - skills
+- utterance: And what would you like to do with your time there?
+  topics:
+  - activity
+  style: boundary_follow_up
+  pair:
+  - activity
+  - skills
+  previous:
+    interviewer: Can you cook for yourself?
+    character: I can make simple meals and do laundry if I use a checklist. I still need reminders to
+      shop and clean regularly.
+- utterance: Are you able to cook for yourself?
+  topics:
+  - skills
+  style: boundary
+  pair:
+  - activity
+  - skills
+- utterance: Do you manage your own washing?
+  topics:
+  - skills
+  style: boundary
+  pair:
+  - activity
+  - skills
+- utterance: Who would remind you to clean and do the shopping?
+  topics:
+  - skills
+  style: boundary_colloquial
+  pair:
+  - activity
+  - skills
+- utterance: um how are you with the cooking and the laundry
+  topics:
+  - skills
+  style: boundary_spoken
+  pair:
+  - activity
+  - skills
+- utterance: And practically, can you manage the cooking and cleaning?
+  topics:
+  - skills
+  style: boundary_follow_up
+  pair:
+  - activity
+  - skills
+  previous:
+    interviewer: What do you want to do in the daytime?
+    character: I'd like to join a gardening group twice a week. A paid job feels too much just now.
+- utterance: Can you travel on buses on your own?
+  topics: []
+  style: near_miss
+  pair:
+  - activity
+  - skills
+- utterance: Do you have a smartphone?
+  topics: []
+  style: near_miss
+  pair:
+  - activity
+  - skills
+- utterance: What are you hoping to get out of the move?
+  topics:
+  - goal
+  style: boundary
+  pair:
+  - activity
+  - goal
+- utterance: What would living independently mean for you?
+  topics:
+  - goal
+  style: boundary_colloquial
+  pair:
+  - activity
+  - goal
+- utterance: um what are you hoping this move will give you
+  topics:
+  - goal
+  style: boundary_spoken
+  pair:
+  - activity
+  - goal
+- utterance: And what's the bigger picture for you in moving?
+  topics:
+  - goal
+  style: boundary_follow_up
+  pair:
+  - activity
+  - goal
+  previous:
+    interviewer: What would you like to do in the day?
+    character: I'd like to join a gardening group twice a week. A paid job feels too much just now.
+- utterance: Would you like to take up a group or a class?
+  topics:
+  - activity
+  style: boundary
+  pair:
+  - activity
+  - goal
+- utterance: Do you want to be doing some sort of work?
+  topics:
+  - activity
+  style: boundary
+  pair:
+  - activity
+  - goal
+- utterance: How would you fill your weekdays?
+  topics:
+  - activity
+  style: boundary_colloquial
+  pair:
+  - activity
+  - goal
+- utterance: um are you thinking of any groups or hobbies
+  topics:
+  - activity
+  style: boundary_spoken
+  pair:
+  - activity
+  - goal
+- utterance: And how would you spend your days once you're there?
+  topics:
+  - activity
+  style: boundary_follow_up
+  pair:
+  - activity
+  - goal
+  previous:
+    interviewer: What do you want from the move?
+    character: I want my own front door and to start cooking again. Being able to visit my brother without
+      ward routines matters to me.
+- utterance: Do you have any cultural or religious needs for the new place?
+  topics: []
+  style: near_miss
+  pair:
+  - activity
+  - goal
+- utterance: Is the flat in an area that you already know?
+  topics: []
+  style: near_miss
+  pair:
+  - activity
+  - goal
+- utterance: How would you manage the rent?
+  topics:
+  - money
+  style: boundary
+  pair:
+  - activity
+  - money
+- utterance: Are your benefits sorted out?
+  topics:
+  - money
+  style: boundary
+  pair:
+  - activity
+  - money
+- utterance: Would you like some help with budgeting?
+  topics:
+  - money
+  style: boundary_colloquial
+  pair:
+  - activity
+  - money
+- utterance: um who's going to help with the money side of things
+  topics:
+  - money
+  style: boundary_spoken
+  pair:
+  - activity
+  - money
+- utterance: And how would you cope financially?
+  topics:
+  - money
+  style: boundary_follow_up
+  pair:
+  - activity
+  - money
+  previous:
+    interviewer: Are you thinking of getting a job?
+    character: I'd like to join a gardening group twice a week. A paid job feels too much just now.
+- utterance: Do you want to be in paid work?
+  topics:
+  - activity
+  style: boundary
+  pair:
+  - activity
+  - money
+- utterance: Have you thought about volunteering?
+  topics:
+  - activity
+  style: boundary
+  pair:
+  - activity
+  - money
+- utterance: Is there something you'd like to do during the day, such as a hobby?
+  topics:
+  - activity
+  style: boundary_colloquial
+  pair:
+  - activity
+  - money
+- utterance: um are you thinking of doing anything like a job or a course
+  topics:
+  - activity
+  style: boundary_spoken
+  pair:
+  - activity
+  - money
+- utterance: And what would you want to be doing during the week?
+  topics:
+  - activity
+  style: boundary_follow_up
+  pair:
+  - activity
+  - money
+  previous:
+    interviewer: Is your income secure?
+    character: My benefits are being reviewed. I've not managed rent payments before and want someone
+      to go through a budget with me.
+- utterance: Would you need a bus pass for getting around?
+  topics: []
+  style: near_miss
+  pair:
+  - activity
+  - money
+- utterance: Do you have any worries about the neighbours?
+  topics: []
+  style: near_miss
+  pair:
+  - activity
+  - money

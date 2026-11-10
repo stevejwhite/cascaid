@@ -1,0 +1,50 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: exposure-offending-formulation
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Dr Ravi, what offending is actually documented, rather than reported without records?
+  expected:
+  - pattern
+  rapport: false
+- utterance: What has he said about the sexual feelings associated with exposing himself?
+  expected:
+  - arousal
+  rapport: false
+- utterance: Do the circumstances around the recorded incidents suggest any recurring triggers?
+  expected:
+  - context
+  rapport: false
+- utterance: What do we know so far about possible mood, psychotic or neurological explanations?
+  expected:
+  - differential
+  rapport: false
+- utterance: How has he described the impact of his behaviour on the people exposed to it?
+  expected:
+  - victims
+  rapport: false
+- utterance: What information do we have about urges or intentions that are still present now?
+  expected:
+  - dynamic
+  rapport: false
+- utterance: What recurring sexual excitement does he describe in his own account?
+  expected:
+  - arousal
+  rapport: false
+- utterance: What does he report about urges or plans at present, as distinct from the longer history?
+  expected:
+  - dynamic
+  rapport: false
+- utterance: has the effect of those on his own safety been explored?
+  expected:
+  - self-risk
+  rapport: false
+  previous:
+    interviewer: What offences are established from the records?
+    character: I have records of two exposure convictions involving non-consenting adults over eighteen
+      months.
+- utterance: It is reasonable to want the uncertainties recognised before offering a formulation.
+  expected: []
+  rapport: true

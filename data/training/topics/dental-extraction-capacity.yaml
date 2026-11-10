@@ -1,0 +1,1044 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: dental-extraction-capacity
+case_version: 0.1.0
+status: draft
+items:
+- utterance: How do you like people to give you information?
+  topics:
+  - communication-needs
+  style: open
+- utterance: Would it help if I drew a picture as I explain?
+  topics:
+  - communication-needs
+  style: closed
+- utterance: Is it easier for you if I keep my sentences short?
+  topics:
+  - communication-needs
+  style: closed
+- utterance: What's the best way for me to put things so they make sense to you?
+  topics:
+  - communication-needs
+  style: colloquial
+- utterance: Are there any communication needs I should know about before we go on?
+  topics:
+  - communication-needs
+  style: clinical
+- utterance: I'd like to know how I can make my explanations easier to follow
+  topics:
+  - communication-needs
+  style: indirect
+- utterance: Hospitals can be confusing places. What would make it easier for you to understand me?
+  topics:
+  - communication-needs
+  style: empathy_then_question
+- utterance: um so is there anything that helps you sort of take things in
+  topics:
+  - communication-needs
+  style: spoken
+- utterance: okay and if I'm explaining something what what works best for you
+  topics:
+  - communication-needs
+  style: spoken
+- utterance: Pictures or words, which suits you?
+  topics:
+  - communication-needs
+  style: brief
+- utterance: And when I'm explaining things, how should I do it so it suits you?
+  topics:
+  - communication-needs
+  style: follow_up
+  previous:
+    interviewer: Who would you like with you while we talk?
+    character: I'd like my support worker, Jo, beside me, but I want you to ask me the questions rather
+      than asking Jo to answer.
+- utterance: And with leaflets, would a few short words and a picture be better?
+  topics:
+  - communication-needs
+  style: follow_up
+  previous:
+    interviewer: Is it easier for you if I keep my sentences short?
+    character: I follow better if you say one thing at a time and use a picture; I can read short words,
+      but long leaflets are difficult.
+- utterance: I imagine some ways of explaining things work better for you than others, is that right?
+  topics:
+  - communication-needs
+  style: leading
+- utterance: Can you tell me what makes written information easy or hard for you to read?
+  topics:
+  - communication-needs
+  style: open
+- utterance: Tell me who you'd want beside you for appointments like this.
+  topics:
+  - support-person
+  style: open
+- utterance: Would you like your support worker to sit in with us?
+  topics:
+  - support-person
+  style: closed
+- utterance: Should I put the questions to you or to whoever comes with you?
+  topics:
+  - support-person
+  style: closed
+- utterance: Is there anyone you'd want in your corner during this chat?
+  topics:
+  - support-person
+  style: colloquial
+- utterance: Do you have a support worker you'd like present for this assessment?
+  topics:
+  - support-person
+  style: clinical
+- utterance: I wondered whether you'd like someone from your home to join us
+  topics:
+  - support-person
+  style: indirect
+- utterance: It's a lot to deal with on your own. Is there someone you'd like here with you?
+  topics:
+  - support-person
+  style: empathy_then_question
+- utterance: er so do you want anyone with you or are you happy just us
+  topics:
+  - support-person
+  style: spoken
+- utterance: and um when somebody's with you who should I be talking to
+  topics:
+  - support-person
+  style: spoken
+- utterance: Anyone you'd like here?
+  topics:
+  - support-person
+  style: brief
+- utterance: That's fine. So even with Jo here, you'd like me to ask you directly?
+  topics:
+  - support-person
+  style: follow_up
+  previous:
+    interviewer: Who would you like with you while we talk?
+    character: I'd like my support worker, Jo, beside me, but I want you to ask me the questions rather
+      than asking Jo to answer.
+- utterance: And would having someone familiar next to you help as well?
+  topics:
+  - support-person
+  style: follow_up
+  previous:
+    interviewer: Is it easier for you if I keep my sentences short?
+    character: I follow better if you say one thing at a time and use a picture; I can read short words,
+      but long leaflets are difficult.
+- utterance: I expect you'd rather have someone you know with you, wouldn't you?
+  topics:
+  - support-person
+  style: leading
+- utterance: How would you like any support staff to be involved while we talk?
+  topics:
+  - support-person
+  style: open
+- utterance: What did the dentist tell you about the tooth?
+  topics:
+  - dental-problem
+  style: open
+- utterance: Is the tooth hurting you at the moment?
+  topics:
+  - dental-problem
+  style: closed
+- utterance: Does it hurt when you eat?
+  topics:
+  - dental-problem
+  style: closed
+- utterance: What's been going on with that tooth of yours?
+  topics:
+  - dental-problem
+  style: colloquial
+- utterance: In your own words, what is the problem the dental team found?
+  topics:
+  - dental-problem
+  style: clinical
+- utterance: I'd like to hear what you know about your tooth
+  topics:
+  - dental-problem
+  style: indirect
+- utterance: Toothache can be really miserable. How long has it been sore?
+  topics:
+  - dental-problem
+  style: empathy_then_question
+- utterance: so um the tooth what's what's the matter with it
+  topics:
+  - dental-problem
+  style: spoken
+- utterance: right okay and is it is it painful at all
+  topics:
+  - dental-problem
+  style: spoken
+- utterance: And the tooth itself?
+  topics:
+  - dental-problem
+  style: brief
+- utterance: Three weeks is a long time. Did the dentist say whether it can be fixed?
+  topics:
+  - dental-problem
+  style: follow_up
+  previous:
+    interviewer: Can you tell me what's wrong with your tooth?
+    character: The big tooth at the back has a hole too deep to mend; it has hurt when I chew for three
+      weeks.
+- utterance: Which side of your mouth is it on?
+  topics:
+  - dental-problem
+  style: follow_up
+  previous:
+    interviewer: What did the dentist tell you about the tooth?
+    character: The big tooth at the back has a hole too deep to mend; it has hurt when I chew for three
+      weeks.
+- utterance: I gather the tooth has been giving you a lot of pain?
+  topics:
+  - dental-problem
+  style: leading
+- utterance: How has the tooth been affecting you day to day?
+  topics:
+  - dental-problem
+  style: open
+- utterance: What do you understand about how they would take the tooth out?
+  topics:
+  - procedure-understanding
+  style: open
+- utterance: Can you tell me what being put to sleep for the operation would mean?
+  topics:
+  - procedure-understanding
+  style: open
+- utterance: Do you know if you'd be awake or asleep when they take it out?
+  topics:
+  - procedure-understanding
+  style: closed
+- utterance: Would it mean coming into hospital for the day?
+  topics:
+  - procedure-understanding
+  style: closed
+- utterance: What's your idea of what happens on the day they pull the tooth?
+  topics:
+  - procedure-understanding
+  style: colloquial
+- utterance: What do you understand a general anaesthetic to involve?
+  topics:
+  - procedure-understanding
+  style: clinical
+- utterance: I'm curious what you think happens when someone is put to sleep for an operation
+  topics:
+  - procedure-understanding
+  style: indirect
+- utterance: I know you don't want to be put to sleep. What do you think it would involve?
+  topics:
+  - procedure-understanding
+  style: empathy_then_question
+- utterance: um so if they did take it out how how would they do it
+  topics:
+  - procedure-understanding
+  style: spoken
+- utterance: okay and what does put to sleep mean to you
+  topics:
+  - procedure-understanding
+  style: spoken
+- utterance: And the operation itself?
+  topics:
+  - procedure-understanding
+  style: brief
+- utterance: And where would that happen, here or at the dentist's?
+  topics:
+  - procedure-understanding
+  style: follow_up
+  previous:
+    interviewer: Can you tell me what being put to sleep for the operation would mean?
+    character: They want to give me medicine so I am unconscious while they remove that tooth, then wake
+      me afterwards; it means going to hospital.
+- utterance: So what have they said they'd do about it?
+  topics:
+  - procedure-understanding
+  style: follow_up
+  previous:
+    interviewer: What did the dentist tell you about the tooth?
+    character: The big tooth at the back has a hole too deep to mend; it has hurt when I chew for three
+      weeks.
+- utterance: You'd be fast asleep while they work on it, is that how you understand it?
+  topics:
+  - procedure-understanding
+  style: leading
+- utterance: Talk me through what the dental team are planning to do.
+  topics:
+  - procedure-understanding
+  style: open
+- utterance: What good would come from having the tooth taken out?
+  topics:
+  - benefit-understanding
+  style: open
+- utterance: Why do you think the dentist wants to take it out?
+  topics:
+  - benefit-understanding
+  style: open
+- utterance: Do you think taking it out would help with the pain?
+  topics:
+  - benefit-understanding
+  style: closed
+- utterance: Has anyone explained how the treatment could help you?
+  topics:
+  - benefit-understanding
+  style: closed
+- utterance: What's in it for you if the tooth comes out?
+  topics:
+  - benefit-understanding
+  style: colloquial
+- utterance: What are the benefits of the extraction, as you understand them?
+  topics:
+  - benefit-understanding
+  style: clinical
+- utterance: I wondered what you think would get better if it was removed
+  topics:
+  - benefit-understanding
+  style: indirect
+- utterance: Being in pain for weeks is hard. How might removing the tooth help?
+  topics:
+  - benefit-understanding
+  style: empathy_then_question
+- utterance: so um why why would it be a good idea to have it out
+  topics:
+  - benefit-understanding
+  style: spoken
+- utterance: er what would be better after if they took it
+  topics:
+  - benefit-understanding
+  style: spoken
+- utterance: And the upside of removing it?
+  topics:
+  - benefit-understanding
+  style: brief
+- utterance: And why would they go to all that trouble, what's it for?
+  topics:
+  - benefit-understanding
+  style: follow_up
+  previous:
+    interviewer: Talk me through what the dental team are planning to do.
+    character: They want to give me medicine so I am unconscious while they remove that tooth, then wake
+      me afterwards; it means going to hospital.
+- utterance: Would that help with eating as well?
+  topics:
+  - benefit-understanding
+  style: follow_up
+  previous:
+    interviewer: What good would come from having the tooth taken out?
+    character: Taking it out should stop that tooth causing pain once it heals, and stop it causing an
+      infection later.
+- utterance: I suppose getting rid of it might make things more comfortable?
+  topics:
+  - benefit-understanding
+  style: leading
+- utterance: How could having this treatment make a difference for you?
+  topics:
+  - benefit-understanding
+  style: open
+- utterance: What could go wrong with the operation?
+  topics:
+  - risk-understanding
+  style: open
+- utterance: What have you been told about the risks?
+  topics:
+  - risk-understanding
+  style: open
+- utterance: Did anyone mention problems you might have afterwards?
+  topics:
+  - risk-understanding
+  style: closed
+- utterance: Do you know whether being put to sleep carries any dangers?
+  topics:
+  - risk-understanding
+  style: closed
+- utterance: What are the downsides of having it done this way?
+  topics:
+  - risk-understanding
+  style: colloquial
+- utterance: What do you understand about the risks of a general anaesthetic?
+  topics:
+  - risk-understanding
+  style: clinical
+- utterance: I'd be interested to know what problems you think might happen after the anaesthetic
+  topics:
+  - risk-understanding
+  style: indirect
+- utterance: It's sensible to think about what might go wrong. What has the dentist said could happen?
+  topics:
+  - risk-understanding
+  style: empathy_then_question
+- utterance: um and are there any are there any risks with it
+  topics:
+  - risk-understanding
+  style: spoken
+- utterance: so after it's done how might you feel
+  topics:
+  - risk-understanding
+  style: spoken
+- utterance: Any risks they mentioned?
+  topics:
+  - risk-understanding
+  style: brief
+- utterance: And how likely did they say the serious problems are?
+  topics:
+  - risk-understanding
+  style: follow_up
+  previous:
+    interviewer: What have you been told about the risks?
+    character: They said my mouth could be sore and bleed afterwards and I might feel sick; they also
+      said serious trouble with being put to sleep is uncommon but possible.
+- utterance: And on the other side, what are the bad bits?
+  topics:
+  - risk-understanding
+  style: follow_up
+  previous:
+    interviewer: What good would come from having the tooth taken out?
+    character: Taking it out should stop that tooth causing pain once it heals, and stop it causing an
+      infection later.
+- utterance: I expect there are some risks, like with any operation, aren't there?
+  topics:
+  - risk-understanding
+  style: leading
+- utterance: How might you feel in the days after the operation?
+  topics:
+  - risk-understanding
+  style: open
+- utterance: What could happen if you don't have any treatment?
+  topics:
+  - no-treatment
+  style: open
+- utterance: Do you think the tooth might get better by itself?
+  topics:
+  - no-treatment
+  style: closed
+- utterance: Is there any risk in just leaving it where it is?
+  topics:
+  - no-treatment
+  style: closed
+- utterance: If you just leave it be, how do you see things going?
+  topics:
+  - no-treatment
+  style: colloquial
+- utterance: What are the consequences of declining treatment altogether?
+  topics:
+  - no-treatment
+  style: clinical
+- utterance: I wanted to understand what you think would happen to the tooth if nothing is done
+  topics:
+  - no-treatment
+  style: indirect
+- utterance: I can see you don't want the operation. What might happen if the tooth stays in?
+  topics:
+  - no-treatment
+  style: empathy_then_question
+- utterance: and um if you did nothing at all what then
+  topics:
+  - no-treatment
+  style: spoken
+- utterance: so say it stays in, er, what might happen
+  topics:
+  - no-treatment
+  style: spoken
+- utterance: And doing nothing?
+  topics:
+  - no-treatment
+  style: brief
+- utterance: And how bad could it get, do you think?
+  topics:
+  - no-treatment
+  style: follow_up
+  previous:
+    interviewer: What do you think would happen if the tooth was left alone?
+    character: If it stays, the pain might get worse and my face could swell with an infection; I know
+      it will not repair itself.
+- utterance: And what are the risks of not having it out?
+  topics:
+  - no-treatment
+  style: follow_up
+  previous:
+    interviewer: What have you been told about the risks?
+    character: They said my mouth could be sore and bleed afterwards and I might feel sick; they also
+      said serious trouble with being put to sleep is uncommon but possible.
+- utterance: Leaving it probably won't make the pain go away, will it?
+  topics:
+  - no-treatment
+  style: leading
+- utterance: Where do you think things go from here if the tooth isn't treated?
+  topics:
+  - no-treatment
+  style: open
+- utterance: What other ways of treating the tooth have you heard about?
+  topics:
+  - alternatives
+  style: open
+- utterance: What happened when they tried before with the local anaesthetic?
+  topics:
+  - alternatives
+  style: open
+- utterance: Have they tried to take it out already?
+  topics:
+  - alternatives
+  style: closed
+- utterance: Would you be willing to talk about another way of doing it?
+  topics:
+  - alternatives
+  style: closed
+- utterance: Is there a different way of sorting the tooth that you'd be happier with?
+  topics:
+  - alternatives
+  style: colloquial
+- utterance: What alternatives to a general anaesthetic have been discussed?
+  topics:
+  - alternatives
+  style: clinical
+- utterance: I understand there was an earlier attempt at the dentist, and I wondered how that went
+  topics:
+  - alternatives
+  style: indirect
+- utterance: That earlier visit sounds like it was frightening. What other options would you like to ask
+    about?
+  topics:
+  - alternatives
+  style: empathy_then_question
+- utterance: um are there any other options apart from being asleep
+  topics:
+  - alternatives
+  style: spoken
+- utterance: so the last time at the dentist what what happened
+  topics:
+  - alternatives
+  style: spoken
+- utterance: Any other options?
+  topics:
+  - alternatives
+  style: brief
+- utterance: What sort of thing might help you stay calm next time?
+  topics:
+  - alternatives
+  style: follow_up
+  previous:
+    interviewer: What happened when they tried before with the local anaesthetic?
+    character: They tried with a numbing injection last month, but I panicked and asked them to stop;
+      I'd like to ask whether slower appointments or another way of keeping calm could work.
+- utterance: And besides being asleep, is there another option?
+  topics:
+  - alternatives
+  style: follow_up
+  previous:
+    interviewer: What do you understand a general anaesthetic to involve?
+    character: They want to give me medicine so I am unconscious while they remove that tooth, then wake
+      me afterwards; it means going to hospital.
+- utterance: There might be other ways of doing this that you'd prefer, is that right?
+  topics:
+  - alternatives
+  style: leading
+- utterance: How would you feel about trying the local anaesthetic again with more support?
+  topics:
+  - alternatives
+  style: open
+- utterance: What do you remember about the options we went through?
+  topics:
+  - retained-outline
+  style: open
+- utterance: Are you able to remember the different options?
+  topics:
+  - retained-outline
+  style: closed
+- utterance: Could you tell me back what we just talked about?
+  topics:
+  - retained-outline
+  style: closed
+- utterance: Just so I know it's stuck, what were the options again?
+  topics:
+  - retained-outline
+  style: colloquial
+- utterance: For me to be sure, would you recall the treatment options we've covered?
+  topics:
+  - retained-outline
+  style: clinical
+- utterance: I'd like to hear the options back in your own words
+  topics:
+  - retained-outline
+  style: indirect
+- utterance: That was a lot of information. What do you remember from it?
+  topics:
+  - retained-outline
+  style: empathy_then_question
+- utterance: okay so um can you tell me what the what the choices were
+  topics:
+  - retained-outline
+  style: spoken
+- utterance: right so if you had to say it back what are the options
+  topics:
+  - retained-outline
+  style: spoken
+- utterance: The choices again, Ben?
+  topics:
+  - retained-outline
+  style: brief
+- utterance: Before we go on, can you remind me of all the choices we've covered?
+  topics:
+  - retained-outline
+  style: follow_up
+  previous:
+    interviewer: What other ways of treating the tooth have you heard about?
+    character: They tried with a numbing injection last month, but I panicked and asked them to stop;
+      I'd like to ask whether slower appointments or another way of keeping calm could work.
+- utterance: And which of those was the one where you stay awake?
+  topics:
+  - retained-outline
+  style: follow_up
+  previous:
+    interviewer: Can you tell me again what the choices are?
+    character: 'I remember the choices: have it removed while I''m unconscious, talk about another way
+      of doing it, or leave it and risk more pain and infection.'
+- utterance: You've got a good idea of the options now, haven't you? Can you list them?
+  topics:
+  - retained-outline
+  style: leading
+- utterance: If your support worker asked you later what we discussed, what would you tell them?
+  topics:
+  - retained-outline
+  style: open
+- utterance: How are you weighing up the different options?
+  topics:
+  - weighing-values
+  style: open
+- utterance: What matters most to you in making this decision?
+  topics:
+  - weighing-values
+  style: open
+- utterance: Is there one thing that matters more to you than the others?
+  topics:
+  - weighing-values
+  style: closed
+- utterance: Have you thought about the good and bad points of each choice?
+  topics:
+  - weighing-values
+  style: closed
+- utterance: When you put it all together, what tips it one way or the other for you?
+  topics:
+  - weighing-values
+  style: colloquial
+- utterance: What are your reasons for preferring not to have the anaesthetic?
+  topics:
+  - weighing-values
+  style: clinical
+- utterance: I'd like to understand how you're balancing the pain against your worries
+  topics:
+  - weighing-values
+  style: indirect
+- utterance: It's clearly important to you to have a say. How are you deciding between the choices?
+  topics:
+  - weighing-values
+  style: empathy_then_question
+- utterance: um so how do you how do you decide which one's best
+  topics:
+  - weighing-values
+  style: spoken
+- utterance: so what's the most important bit for you in all this
+  topics:
+  - weighing-values
+  style: spoken
+- utterance: What matters most here?
+  topics:
+  - weighing-values
+  style: brief
+- utterance: Knowing that, how does it fit with what you want?
+  topics:
+  - weighing-values
+  style: follow_up
+  previous:
+    interviewer: What do you think would happen if the tooth was left alone?
+    character: If it stays, the pain might get worse and my face could swell with an infection; I know
+      it will not repair itself.
+- utterance: And if the other ways don't work out, how would you weigh it up then?
+  topics:
+  - weighing-values
+  style: follow_up
+  previous:
+    interviewer: How are you weighing up the different options?
+    character: I know leaving it could make me more ill, but being awake matters enough to me that I want
+      the other options discussed before I agree.
+- utterance: It sounds like avoiding being put to sleep matters a lot to you, does it?
+  topics:
+  - weighing-values
+  style: leading
+- utterance: Tell me your reasons for the choice you're leaning towards.
+  topics:
+  - weighing-values
+  style: open
+- utterance: What is it about being put to sleep that worries you?
+  topics:
+  - personal-fear
+  style: open
+- utterance: Would you feel able to tell me what scares you about the operation?
+  topics:
+  - personal-fear
+  style: open
+- utterance: Has something happened that makes you worried about operations?
+  topics:
+  - personal-fear
+  style: closed
+- utterance: Are you worried you might not wake up?
+  topics:
+  - personal-fear
+  style: closed
+- utterance: What's at the back of your mind when you think about being put under?
+  topics:
+  - personal-fear
+  style: colloquial
+- utterance: Is there a past experience that's shaped your fear of anaesthetics?
+  topics:
+  - personal-fear
+  style: clinical
+- utterance: I sense there's something behind your worry, and I'd like to understand it if you're happy
+    to share
+  topics:
+  - personal-fear
+  style: indirect
+- utterance: It sounds like this really frightens you. Can you tell me what goes through your mind?
+  topics:
+  - personal-fear
+  style: empathy_then_question
+- utterance: um is it okay if I ask what what worries you most about it
+  topics:
+  - personal-fear
+  style: spoken
+- utterance: so the being asleep bit what is it that bothers you
+  topics:
+  - personal-fear
+  style: spoken
+- utterance: What worries you most?
+  topics:
+  - personal-fear
+  style: brief
+- utterance: Can I ask what makes being awake feel so important?
+  topics:
+  - personal-fear
+  style: follow_up
+  previous:
+    interviewer: How are you weighing up the different options?
+    character: I know leaving it could make me more ill, but being awake matters enough to me that I want
+      the other options discussed before I agree.
+- utterance: How often do you find yourself thinking about it?
+  topics:
+  - personal-fear
+  style: follow_up
+  previous:
+    interviewer: Would you feel able to tell me what scares you about the operation?
+    character: My grandad died while he was having an operation last year; I know his heart was very ill
+      and that my situation is different, but I keep thinking about it.
+- utterance: I wonder if someone you know has had a bad experience with an operation?
+  topics:
+  - personal-fear
+  style: leading
+- utterance: When you picture the day of the operation, what feelings come up?
+  topics:
+  - personal-fear
+  style: open
+- utterance: What would you like to happen next?
+  topics:
+  - choice
+  style: open
+- utterance: Are you agreeing to the general anaesthetic today?
+  topics:
+  - choice
+  style: closed
+- utterance: Do you want to go ahead with having it out?
+  topics:
+  - choice
+  style: closed
+- utterance: So where have you landed on all this?
+  topics:
+  - choice
+  style: colloquial
+- utterance: Are you consenting to the extraction under general anaesthetic?
+  topics:
+  - choice
+  style: clinical
+- utterance: I need to be clear about your decision today
+  topics:
+  - choice
+  style: indirect
+- utterance: You've thought about this carefully. What's your decision for now?
+  topics:
+  - choice
+  style: empathy_then_question
+- utterance: okay so um what do you want to do
+  topics:
+  - choice
+  style: spoken
+- utterance: so is it a yes or a no for today
+  topics:
+  - choice
+  style: spoken
+- utterance: Your decision today?
+  topics:
+  - choice
+  style: brief
+- utterance: Out of those, which one would you pick right now?
+  topics:
+  - choice
+  style: follow_up
+  previous:
+    interviewer: Before we go on, can you remind me of all the choices we've covered?
+    character: 'I remember the choices: have it removed while I''m unconscious, talk about another way
+      of doing it, or leave it and risk more pain and infection.'
+- utterance: And when would you like that conversation to happen?
+  topics:
+  - choice
+  style: follow_up
+  previous:
+    interviewer: What have you decided about the operation today?
+    character: No, I am not agreeing to a general anaesthetic today; I want another conversation with
+      the dentist and Jo before I decide whether to change my mind.
+- utterance: I take it you're not ready to say yes today?
+  topics:
+  - choice
+  style: leading
+- utterance: How would you like us to take things forward?
+  topics:
+  - choice
+  style: open
+- utterance: How much is this decision your own?
+  topics:
+  - coercion
+  style: open
+- utterance: Has somebody been leaning on you about this?
+  topics:
+  - coercion
+  style: colloquial
+- utterance: Do you feel under any undue influence in making this decision?
+  topics:
+  - coercion
+  style: clinical
+- utterance: I want to make sure nobody is pushing you into this
+  topics:
+  - coercion
+  style: indirect
+- utterance: It's your mouth and your choice. Has anybody told you what you must do?
+  topics:
+  - coercion
+  style: empathy_then_question
+- utterance: um has anyone at home or or work been telling you what to pick
+  topics:
+  - coercion
+  style: spoken
+- utterance: so is this all coming from you or
+  topics:
+  - coercion
+  style: spoken
+- utterance: Anyone pressuring you?
+  topics:
+  - coercion
+  style: brief
+- utterance: Is that what you want, or what someone else wants?
+  topics:
+  - coercion
+  style: follow_up
+  previous:
+    interviewer: What have you decided about the operation today?
+    character: No, I am not agreeing to a general anaesthetic today; I want another conversation with
+      the dentist and Jo before I decide whether to change my mind.
+- utterance: Did anyone tell you to say that?
+  topics:
+  - coercion
+  style: follow_up
+  previous:
+    interviewer: How are you weighing up the different options?
+    character: I know leaving it could make me more ill, but being awake matters enough to me that I want
+      the other options discussed before I agree.
+- utterance: Nobody's making you say this, are they?
+  topics:
+  - coercion
+  style: leading
+- utterance: Tell me if anyone has tried to make you choose a certain way.
+  topics:
+  - coercion
+  style: open
+- utterance: Have you had any thoughts of wanting to die?
+  topics:
+  - self-harm
+  style: closed
+- utterance: Do you ever think about hurting yourself?
+  topics:
+  - self-harm
+  style: closed
+- utterance: What thoughts have you had about harming yourself or other people?
+  topics:
+  - self-harm
+  style: open
+- utterance: Have things ever got so bad you didn't want to be here?
+  topics:
+  - self-harm
+  style: colloquial
+- utterance: Is your refusal in any way related to wanting to harm yourself?
+  topics:
+  - self-harm
+  style: clinical
+- utterance: I need to check whether saying no is linked to wanting to come to harm
+  topics:
+  - self-harm
+  style: indirect
+- utterance: Pain and worry can wear anyone down. Have you had thoughts of ending your life?
+  topics:
+  - self-harm
+  style: empathy_then_question
+- utterance: um I ask everyone this have you ever wanted to hurt yourself
+  topics:
+  - self-harm
+  style: spoken
+- utterance: so um do you ever get thoughts about not being around
+  topics:
+  - self-harm
+  style: spoken
+- utterance: Any thoughts of self-harm?
+  topics:
+  - self-harm
+  style: brief
+- utterance: Can I check that's not because you want to hurt yourself?
+  topics:
+  - self-harm
+  style: follow_up
+  previous:
+    interviewer: What have you decided about the operation today?
+    character: No, I am not agreeing to a general anaesthetic today; I want another conversation with
+      the dentist and Jo before I decide whether to change my mind.
+- utterance: And what about thoughts of hurting other people?
+  topics:
+  - self-harm
+  style: follow_up
+  previous:
+    interviewer: Have you had any thoughts of wanting to die?
+    character: No, I don't want to hurt myself or anyone else, and I'm not refusing because I want to
+      die.
+- utterance: You're not saying no because you want to die, are you?
+  topics:
+  - self-harm
+  style: leading
+- utterance: Tell me if you've had any thoughts of harming someone else.
+  topics:
+  - self-harm
+  style: open
+- utterance: When things are tough, do dark thoughts ever come into your head?
+  topics:
+  - self-harm
+  style: closed
+- utterance: What's wrong with the tooth, and what would they do to fix it?
+  topics:
+  - dental-problem
+  - procedure-understanding
+  style: stacked
+- utterance: What good would taking it out do, and what are the risks?
+  topics:
+  - benefit-understanding
+  - risk-understanding
+  style: stacked
+- utterance: Who would you like with you, and how should I explain things?
+  topics:
+  - support-person
+  - communication-needs
+  style: stacked
+- utterance: Has anyone pressured you, and what have you decided today?
+  topics:
+  - coercion
+  - choice
+  style: stacked
+- utterance: Hello Ben, thanks for seeing me today.
+  topics: []
+  style: greeting
+- utterance: Hi Ben, have a seat wherever you're comfortable.
+  topics: []
+  style: greeting
+- utterance: I'm one of the psychiatry doctors here, Ben, and I help people with decisions about their
+    care.
+  topics: []
+  style: introduction
+- utterance: Is it all right if we talk for a few minutes about your tooth?
+  topics: []
+  style: introduction
+- utterance: What would you like to start with, Ben?
+  topics: []
+  style: introduction
+- utterance: Before we start, do you have any questions for me?
+  topics: []
+  style: introduction
+- utterance: I'd like to move on to something different now, if that's okay.
+  topics: []
+  style: transition
+- utterance: Thanks, Ben. I'm going to ask about a few other things now.
+  topics: []
+  style: transition
+- utterance: Let's take a short pause before the next bit.
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Ben.
+  topics: []
+  style: closing
+- utterance: Thank you for talking with me today, you've been really helpful.
+  topics: []
+  style: closing
+- utterance: We'll stop there, and I'll speak with the dental team next.
+  topics: []
+  style: closing
+- utterance: It sounds like you've been in a lot of pain.
+  topics: []
+  style: empathy
+- utterance: I can see this is worrying for you, Ben.
+  topics: []
+  style: empathy
+- utterance: You've been really clear with me, and that matters.
+  topics: []
+  style: empathy
+- utterance: It makes sense to feel nervous about this.
+  topics: []
+  style: empathy
+- utterance: I hear that you want to be the one making this choice.
+  topics: []
+  style: empathy
+- utterance: So you'd prefer not to be put to sleep, and you'd like to hear about other options first.
+  topics: []
+  style: summary
+- utterance: Let me sum up what you've told me so far.
+  topics: []
+  style: summary
+- utterance: So far you've told me the tooth hurts and you're not keen on the operation.
+  topics: []
+  style: summary
+- utterance: My job today is to check how you're making this decision, not to make it for you.
+  topics: []
+  style: explanation
+- utterance: The tooth can't be mended, so the dentist has suggested taking it out.
+  topics: []
+  style: explanation
+- utterance: Being put to sleep means you wouldn't feel or remember the treatment.
+  topics: []
+  style: explanation
+- utterance: You're allowed to say no, and we'll listen to your reasons.
+  topics: []
+  style: explanation
+- utterance: Does that make sense so far?
+  topics: []
+  style: check_understanding
+- utterance: Was that too much at once? Tell me if it was.
+  topics: []
+  style: check_understanding
+- utterance: Is there anything I've said that wasn't clear?
+  topics: []
+  style: check_understanding
+- utterance: Do you smoke at all?
+  topics: []
+  style: off_case
+- utterance: How are you sleeping at the moment?
+  topics: []
+  style: off_case
+- utterance: When did you last see a dentist for a check-up?
+  topics: []
+  style: near_miss
+- utterance: Have you ever had a general anaesthetic yourself before?
+  topics: []
+  style: near_miss
+- utterance: Does your support worker help you with your money?
+  topics: []
+  style: near_miss
+- utterance: Have you had any other teeth taken out in the past?
+  topics: []
+  style: near_miss

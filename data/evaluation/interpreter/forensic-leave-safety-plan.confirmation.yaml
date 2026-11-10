@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: forensic-leave-safety-plan
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Callum, what would you like to do during leave and how would you get there?
+  expected:
+  - destination
+  rapport: false
+- utterance: While you're out, which rules would you be expected to stick to?
+  expected:
+  - conditions
+  rapport: false
+- utterance: What do you understand happened in the incident of violence that brought you here?
+  expected:
+  - violence
+  rapport: false
+- utterance: How can you tell in yourself that anger is beginning to build?
+  expected:
+  - warning
+  rapport: false
+- utterance: Where might pressure or temptation to drink come up during this trip?
+  expected:
+  - alcohol
+  rapport: false
+- utterance: Who could you reach while you're away if you needed support from the ward?
+  expected:
+  - contacts
+  rapport: false
+- utterance: What means of contacting the ward or support will you have with you?
+  expected:
+  - contacts
+  rapport: false
+- utterance: If you cannot get back at the agreed time, what would your next step be?
+  expected:
+  - contingency
+  rapport: false
+- utterance: have any of those people been in touch about meeting up?
+  expected:
+  - disclosure
+  rapport: false
+  previous:
+    interviewer: What could make avoiding alcohol harder on the route?
+    character: The direct route passes the pub where I used to meet friends.
+- utterance: It sounds important to you to have the chance to show you can manage this step.
+  expected: []
+  rapport: true

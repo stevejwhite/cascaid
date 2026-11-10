@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-09-25",
+  "default_inference_mode": "local_only",
+  "hosted_fallback_allowed": false,
+  "allowed_licences_for_spike": [
+    "Apache-2.0",
+    "MIT",
+    "BSD-2-Clause",
+    "BSD-3-Clause"
+  ],
+  "release_requirements": {
+    "legal_review": "approved",
+    "commercial_use": true,
+    "medical_domain_restriction": false,
+    "redistribution_terms_recorded": true,
+    "exact_artifact_checksum": true,
+    "evaluation_status": "passed"
+  },
+  "blocked_conditions": [
+    "licence is absent or cannot be verified from a publisher-controlled source",
+    "commercial use is prohibited",
+    "the licence prohibits the intended educational or medical-domain use",
+    "the artefact revision or checksum cannot be pinned",
+    "the model requires prompts, evidence or learner data to leave local-only mode",
+    "the candidate has not passed the evaluation suite for its intended task"
+  ],
+  "notes": [
+    "Eligibility for a local spike is not approval for educational release.",
+    "Redistribution of model weights must be reviewed separately from downloading weights for local evaluation.",
+    "The register records project due diligence and is not legal advice."
+  ]
+}

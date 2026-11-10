@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: forensic-leave-safety-plan
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hi Callum, good to see you. I'm here to go through the leave plan with you today."
+    expected: []
+    rapport: false
+  - utterance: "Where are you hoping to go on your first unescorted leave?"
+    expected: [destination]
+    rapport: false
+  - utterance: "What's your understanding of the conditions you'd need to stick to while you're out?"
+    expected: [conditions]
+    rapport: false
+  - utterance: "Can you tell me in your own words about the offence that brought you here?"
+    expected: [violence]
+    rapport: false
+  - utterance: "What are the first signs that your anger's starting to build?"
+    expected: [warning]
+    rapport: false
+  - utterance: "How are you getting on with cravings for alcohol these days?"
+    expected: [alcohol]
+    rapport: false
+  - utterance: "If you needed help while you're out, who would you get in touch with?"
+    expected: [contacts]
+    rapport: false
+  - utterance: "What would you do if something went wrong and you couldn't get back on time?"
+    expected: [contingency]
+    rapport: false
+  - utterance: "Right now, do you have any thoughts of hurting anybody, or yourself?"
+    expected: [current-risk]
+    rapport: false
+  - utterance: "Has anyone from your old circle been in contact with you recently?"
+    expected: [disclosure]
+    rapport: false
+  - utterance: "What does getting this leave mean to you personally?"
+    expected: [motivation]
+    rapport: false
+  - utterance: "You've worked really hard to get to this point, and it's obvious how much it matters to you to get it right."
+    expected: []
+    rapport: true
+  - previous:
+      interviewer: "How would you get there?"
+      character: "I'd take the bus. The direct route goes past the pub I used to drink in."
+    utterance: "And how do you think you'd cope walking past it if you were feeling tense?"
+    expected: [alcohol]
+    rapport: false
+  - previous:
+      interviewer: "What would you notice first if you were getting wound up?"
+      character: "My jaw tightens and I start pacing."
+    utterance: "How quickly does that tend to escalate?"
+    expected: [warning]
+    rapport: false
+  - utterance: "It must be hard carrying your past around while trying to prove to everyone you've changed."
+    expected: []
+    rapport: true
+  - utterance: "Are you still taking your depot, and any side effects?"
+    expected: []
+    rapport: false
+  - utterance: "Have you been doing any work or courses on the ward lately?"
+    expected: []
+    rapport: false
+  - utterance: "Okay, so far we've got where you're going, no alcohol, phone on and back on time. Let's build on that."
+    expected: []
+    rapport: false

@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: acute-confusion-cognitive-examination
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hello Evelyn, I'm one of the psychiatry doctors on the ward. Nice to meet you."
+    expected: []
+    rapport: false
+  - utterance: "I'd like to ask you some questions to check how your memory and concentration are doing today. Would that be alright?"
+    expected: [permission]
+    rapport: false
+  - utterance: "Can you tell me your full name and how old you are?"
+    expected: [personal-orientation]
+    rapport: false
+  - utterance: "What's the date today, do you know? And roughly what time of day is it?"
+    expected: [time-orientation]
+    rapport: false
+  - utterance: "Where do you think we are at the moment, Evelyn?"
+    expected: [place-orientation]
+    rapport: false
+  - utterance: "Could you say the months of the year for me backwards, starting with December?"
+    expected: [attention]
+    rapport: false
+  - utterance: "I'm going to say three words, orange, window, coin. Can you repeat them back to me now?"
+    expected: [registration]
+    rapport: false
+  - utterance: "Earlier I asked you to remember three words. What were they?"
+    expected: [delayed-recall]
+    rapport: false
+  - utterance: "Does your thinking feel the same all day, or is it clearer at some times than others?"
+    expected: [fluctuation]
+    rapport: false
+  - utterance: "Have you been seeing anything that other people don't seem to see?"
+    expected: [visual-experience]
+    rapport: false
+  - utterance: "Do you know why you've been brought into hospital? Have you been feeling unwell?"
+    expected: [illness-awareness]
+    rapport: false
+  - utterance: "how have you been sleeping on the ward, um, day and night?"
+    expected: [sleep-wake]
+    rapport: false
+  - utterance: "Can you hear me okay like this? And do you normally wear glasses or a hearing aid?"
+    expected: [sensory-access]
+    rapport: false
+  - utterance: "Have you tried getting out of bed by yourself at all? I want to make sure you're safe here."
+    expected: [immediate-safety]
+    rapport: false
+  - utterance: "It sounds really unsettling to wake up somewhere that doesn't make sense and to lose track of the days."
+    expected: []
+    rapport: true
+  - utterance: "Being in a strange place with a chest infection while your mind feels muddled must be very frightening for you. How are you feeling about these questions?"
+    expected: [embarrassment]
+    rapport: true
+  - utterance: "Have you ever had any problems with your heart or with falls before?"
+    expected: []
+    rapport: false
+  - utterance: "Thank you, Evelyn. I'm going to speak with the ward team now about what we've found."
+    expected: []
+    rapport: false
+  - utterance: "And do you remember how you got here?"
+    previous:
+      interviewer: "Have you been poorly recently?"
+      character: "I've had a cough and felt hot."
+    expected: [illness-awareness]
+    rapport: false

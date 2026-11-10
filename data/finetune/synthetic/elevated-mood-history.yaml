@@ -1,0 +1,2004 @@
+# Synthetic interviews for the student interpreter. Drafted by GPT-6 (Codex)
+# on 2026-10-13; NOT YET REVIEWED. Not evaluation data.
+case_id: elevated-mood-history
+case_version: 0.4.0
+status: draft
+interviews:
+- id: elevated-mood-history-01
+  trainee: Nervous FY2; hesitates, adds rambling preambles, then checks details.
+  turns:
+  - doctor: Hello Alex, I'm the junior doctor meeting with you today; thank you for coming to talk.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'm not quite sure where to begin, so what would you like me to hear first?
+    character: My sister says I've changed and wanted me to come. I feel great, with plenty of energy
+      and plans.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Sorry, I am getting ahead of myself. Let me go back a little. Tell me what a night's sleep
+      is like at the moment.
+    character: I'm not sleeping much, but I don't feel tired.
+    topics:
+    - sleep-reduced
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: How many hours does that work out to?
+    character: For the last week I've slept about three hours a night and don't feel tired.
+    topics:
+    - sleep-reduced
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'll take this bit by bit, and you can stop me if my question is unclear.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I appreciate that you feel full of energy while your sister sees a change. Tell me your own
+      understanding of what is happening.
+    character: I don't think I'm ill, but my sister is worried and I don't want to fall out.
+    topics:
+    - insight-worry
+    empathy: specific
+    empathy_words: I appreciate that you feel full of energy while your sister sees a change.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What is it about that which concerns you?
+    character: I don't think I'm ill, but I can see my sister is really worried, and I don't want to fall
+      out with her.
+    topics:
+    - insight-worry
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: For a week, you have slept around three hours without feeling tired. I want to make sure I
+      have followed you properly; have I got the gist?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Sorry, I am getting ahead of myself. Let me go back a little. Tell me how your mood has been
+      recently.
+    character: I've been unusually upbeat. Interruptions to my plans irritate me.
+    topics:
+    - mood-onset
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Over what stretch of time have you felt like this?
+    character: I've felt unusually upbeat for about a week. I get irritated when people interrupt my plans.
+    topics:
+    - mood-onset
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Would it be all right to change the subject for a moment?
+    character: Yes, go on.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me how work and spending fit around your plans.
+    character: Work isn't really my focus right now. The business is.
+    topics:
+    - function-work-spending
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could you give me the actual amount and what happened at work?
+    character: I've missed two shifts at work and spent £800 on equipment for a new business. My sister
+      says I can't afford it.
+    topics:
+    - function-work-spending
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. I'm sorry it has been such a rough experience
+      for you.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: I'm sorry it has been such a rough experience for you.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me about any change in how you drive or risks you take.
+    character: I drove much faster than usual.
+    topics:
+    - risk-driving
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: When did you drive like that?
+    character: I drove much faster than usual yesterday. I haven't thought about harming myself or anyone
+      else.
+    topics:
+    - risk-driving
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'd like to ask how much rest you are getting overnight. Could we go over your recent work
+      attendance and purchases?
+    character: For the last week I've slept about three hours a night and don't feel tired. I've missed
+      two shifts at work and spent £800 on equipment for a new business.
+    topics:
+    - sleep-reduced
+    - function-work-spending
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, i want to make sure I have followed you properly; have I got the gist?
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Do you know your most recent blood pressure reading?
+    character: I'm not sure what you mean — can we talk about something else? I've got a lot on at the
+      moment.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thank you, Alex; that gives me a clearer picture of what you wanted me to hear.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: elevated-mood-history-02
+  trainee: Brisk trainee; short questions, clear signposting, little small talk.
+  turns:
+  - doctor: Alex, I'm the trainee you've come to see; thanks for making time.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Where shall we begin today?
+    character: My sister says I've changed and wanted me to come. I feel great, with plenty of energy
+      and plans.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'd like to ask about driving fast and any thoughts of harming people.
+    character: I drove much faster than usual.
+    topics:
+    - risk-driving
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And has there been any wish to hurt yourself?
+    character: I drove much faster than usual yesterday. I haven't thought about harming myself or anyone
+      else.
+    topics:
+    - risk-driving
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'll ask a few things, then draw them together.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: With so many plans on your mind, it makes sense that you want your enthusiasm heard. I'd like
+      to hear whether you see any reason for concern.
+    character: I don't think I'm ill, but my sister is worried and I don't want to fall out.
+    topics:
+    - insight-worry
+    empathy: specific
+    empathy_words: With so many plans on your mind, it makes sense that you want your enthusiasm heard.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And how do you want things to be between you and her?
+    character: I don't think I'm ill, but I can see my sister is really worried, and I don't want to fall
+      out with her.
+    topics:
+    - insight-worry
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You drove faster yesterday, with no thoughts of harming yourself or anyone else. I'll pause
+      there; does my account fit what you meant?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me who could be around to support you.
+    character: My sister has offered to stay.
+    topics:
+    - support-sister
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Who made that offer?
+    character: My sister has offered to stay with me for a few days.
+    topics:
+    - support-sister
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What is the registration number of your car?
+    character: I'm not sure what you mean — can we talk about something else? I've got a lot on at the
+      moment.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me about caffeine, alcohol and any drugs or medicines.
+    character: I have coffee and a little alcohol, but no drugs or prescribed medicines.
+    topics:
+    - substances
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What does the coffee add up to each day?
+    character: Two coffees a day, a little alcohol at weekends, no recreational drugs and no prescribed
+      medicines.
+    topics:
+    - substances
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. That is a difficult thing to have to deal with.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: That is a difficult thing to have to deal with.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me about earlier spells of feeling depressed.
+    character: There was a time when I felt very low.
+    topics:
+    - past-low-period
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: How long did that spell last?
+    character: Two years ago I had a period of feeling very low for a couple of months.
+    topics:
+    - past-low-period
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could we go over safety on the road and thoughts of self-harm? Could we go over coffee, alcohol
+      and other substances?
+    character: I drove much faster than usual yesterday. Two coffees a day, a little alcohol at weekends,
+      no recreational drugs and no prescribed medicines.
+    topics:
+    - risk-driving
+    - substances
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, i'll pause there; does my account fit what you meant?
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Shall we switch to a different area now?
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thanks for those answers, Alex. I'll draw this conversation to a close.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: elevated-mood-history-03
+  trainee: Warm trainee; uses the person's name, listens and validates before moving on.
+  turns:
+  - doctor: Welcome, Alex; I'm the trainee speaking with you today. Thank you for making time.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What would you most like me to hear before I ask anything specific?
+    character: My sister says I've changed and wanted me to come. I feel great, with plenty of energy
+      and plans.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Take your time with this next bit. I'd like to hear whether there has been a previous low
+      period.
+    character: There was a time when I felt very low.
+    topics:
+    - past-low-period
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And how far back was that?
+    character: Two years ago I had a period of feeling very low for a couple of months.
+    topics:
+    - past-low-period
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: There is room to pause; you do not have to rush through this conversation.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You feel great yourself, and I can understand wanting that recognised in this conversation.
+      Could we talk about how you make sense of your sister's worry?
+    character: I don't think I'm ill, but my sister is worried and I don't want to fall out.
+    topics:
+    - insight-worry
+    empathy: specific
+    empathy_words: You feel great yourself, and I can understand wanting that recognised in this conversation.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Do you see yourself as ill at all?
+    character: I don't think I'm ill, but I can see my sister is really worried, and I don't want to fall
+      out with her.
+    topics:
+    - insight-worry
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Two years ago there were a couple of months of low mood. Please put me right if my recap has
+      missed what you meant.
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Take your time with this next bit. Tell me about illnesses in the family and your own physical
+      health.
+    character: I don't know of similar illness in the family, and I have no long-term physical problems.
+    topics:
+    - family-and-physical
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Is there anything similar that you know of among relatives?
+    character: I don't know of any similar illness in my family and have no long-term physical health
+      problems.
+    topics:
+    - family-and-physical
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Is it all right if we turn to something different?
+    character: Yes, go on.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me about the project you have in mind.
+    character: I'm starting a business restoring vintage bikes.
+    topics:
+    - new-business
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What sort of things will you be restoring?
+    character: I'm starting a business restoring vintage bikes. It's going to be huge.
+    topics:
+    - new-business
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. I can appreciate how difficult that has been
+      to face.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: I can appreciate how difficult that has been to face.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'd like to ask how much rest you are getting overnight.
+    character: I'm not sleeping much, but I don't feel tired.
+    topics:
+    - sleep-reduced
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And how long has it been like that?
+    character: For the last week I've slept about three hours a night and don't feel tired.
+    topics:
+    - sleep-reduced
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could we go back to any earlier difficulty with your mood? Could we talk through your plans
+      for the venture?
+    character: Two years ago I had a period of feeling very low for a couple of months. I'm starting a
+      business restoring vintage bikes.
+    topics:
+    - past-low-period
+    - new-business
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, please put me right if my recap has missed what you meant.
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could you read the appointment time written on your letter?
+    character: I'm not sure what you mean — can we talk about something else? I've got a lot on at the
+      moment.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I appreciate you talking with me today, Alex; thank you for your time.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: elevated-mood-history-04
+  trainee: Formal and careful trainee; complete sentences and polite requests.
+  turns:
+  - doctor: Good morning, Alex. I am the trainee conducting this discussion. Thank you for attending.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: How would you prefer to begin our discussion?
+    character: My sister says I've changed and wanted me to come. I feel great, with plenty of energy
+      and plans.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: If I may, I would like to clarify the following. Could we go through your sleeping over the
+      last few nights?
+    character: I'm not sleeping much, but I don't feel tired.
+    topics:
+    - sleep-reduced
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What are you like afterwards, tired or rested?
+    character: For the last week I've slept about three hours a night and don't feel tired.
+    topics:
+    - sleep-reduced
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I shall ask about a number of areas before bringing the account together.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Your own experience of feeling energetic matters alongside your sister's concerns. What do
+      you think is going on from your point of view?
+    character: I don't think I'm ill, but my sister is worried and I don't want to fall out.
+    topics:
+    - insight-worry
+    empathy: specific
+    empathy_words: Your own experience of feeling energetic matters alongside your sister's concerns.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Is avoiding an argument part of what matters to you?
+    character: I don't think I'm ill, but I can see my sister is really worried, and I don't want to fall
+      out with her.
+    topics:
+    - insight-worry
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: For a week, you have slept around three hours without feeling tired. Please let me know whether
+      I have represented your account accurately.
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: If I may, I would like to clarify the following. I'd like to hear about feeling upbeat or
+      getting irritated.
+    character: I've been unusually upbeat. Interruptions to my plans irritate me.
+    topics:
+    - mood-onset
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And what tends to irritate you?
+    character: I've felt unusually upbeat for about a week. I get irritated when people interrupt my plans.
+    topics:
+    - mood-onset
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: When did you last visit a dentist?
+    character: I'm not sure what you mean — can we talk about something else? I've got a lot on at the
+      moment.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'd like to ask what has happened with shifts or buying things.
+    character: Work isn't really my focus right now. The business is.
+    topics:
+    - function-work-spending
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And what have you bought for it?
+    character: I've missed two shifts at work and spent £800 on equipment for a new business. My sister
+      says I can't afford it.
+    topics:
+    - function-work-spending
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. I recognise that this has been a distressing
+      experience for you.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: I recognise that this has been a distressing experience for you.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could we go over safety on the road and thoughts of self-harm?
+    character: I drove much faster than usual.
+    topics:
+    - risk-driving
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What about wanting to harm anybody else?
+    character: I drove much faster than usual yesterday. I haven't thought about harming myself or anyone
+      else.
+    topics:
+    - risk-driving
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Describe your sleep and how rested you feel. Describe whether everyday work or money matters
+      have changed.
+    character: For the last week I've slept about three hours a night and don't feel tired. I've missed
+      two shifts at work and spent £800 on equipment for a new business.
+    topics:
+    - sleep-reduced
+    - function-work-spending
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, please let me know whether I have represented your account accurately.
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: May we turn to a separate subject at this point?
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thank you for your account today, Alex. That concludes my questions for now.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: elevated-mood-history-05
+  trainee: Rambling trainee; long signposts, sometimes returns to a point to get specifics.
+  turns:
+  - doctor: Hello Alex, thanks for meeting me; I'm one of the trainees, and we'll have a bit of time together.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: There are several things we could cover, but where would you like to start?
+    character: My sister says I've changed and wanted me to come. I feel great, with plenty of energy
+      and plans.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: There are a few details I need, though I don't want to jump too far ahead. Describe whether
+      you have put yourself or anyone else at risk.
+    character: I drove much faster than usual.
+    topics:
+    - risk-driving
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Was that faster than you would normally go?
+    character: I drove much faster than usual yesterday. I haven't thought about harming myself or anyone
+      else.
+    topics:
+    - risk-driving
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I might go back over a detail now and then to make sure I have the order clear.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I hear how much energy you have for your plans, and I appreciate your excitement. Tell me
+      your own understanding of what is happening.
+    character: I don't think I'm ill, but my sister is worried and I don't want to fall out.
+    topics:
+    - insight-worry
+    empathy: specific
+    empathy_words: I hear how much energy you have for your plans, and I appreciate your excitement.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could you say more about what you want to avoid between you?
+    character: I don't think I'm ill, but I can see my sister is really worried, and I don't want to fall
+      out with her.
+    topics:
+    - insight-worry
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You drove faster yesterday, with no thoughts of harming yourself or anyone else. I've gone
+      round that a bit; is my account still a fair reflection of what you said?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: There are a few details I need, though I don't want to jump too far ahead. I'd like to hear
+      whether anyone has offered to stay.
+    character: My sister has offered to stay.
+    topics:
+    - support-sister
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And how long did she offer to stay?
+    character: My sister has offered to stay with me for a few days.
+    topics:
+    - support-sister
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before I lose track, could I take us to a different bit of the story?
+    character: Yes, go on.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'd like to ask what you drink or take that could affect how you feel.
+    character: I have coffee and a little alcohol, but no drugs or prescribed medicines.
+    topics:
+    - substances
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And is the alcohol mostly at weekends?
+    character: Two coffees a day, a little alcohol at weekends, no recreational drugs and no prescribed
+      medicines.
+    topics:
+    - substances
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. It seems you have had a really difficult time
+      with all this.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: It seems you have had a really difficult time with all this.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could we go back to any earlier difficulty with your mood?
+    character: There was a time when I felt very low.
+    topics:
+    - past-low-period
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Was it a matter of days or months then?
+    character: Two years ago I had a period of feeling very low for a couple of months.
+    topics:
+    - past-low-period
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me about any change in how you drive or risks you take. Describe any prescribed medicines
+      or recreational drugs you use.
+    character: I drove much faster than usual yesterday. Two coffees a day, a little alcohol at weekends,
+      no recreational drugs and no prescribed medicines.
+    topics:
+    - risk-driving
+    - substances
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, i've gone round that a bit; is my account still a fair reflection of what
+      you said?
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Was the clinic sign clear from the street?
+    character: I'm not sure what you mean — can we talk about something else? I've got a lot on at the
+      moment.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'll leave the questions there now, Alex; thank you for sticking with the conversation.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: elevated-mood-history-06
+  trainee: Abrupt trainee; direct questions, occasional pressure, then an attempt to repair rapport.
+  turns:
+  - doctor: Hello Alex. I'm the trainee. We'll talk now, if you're ready.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Give me your own account before I begin the questions.
+    character: My sister says I've changed and wanted me to come. I feel great, with plenty of energy
+      and plans.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Describe any time before this when you felt very low.
+    character: There was a time when I felt very low.
+    topics:
+    - past-low-period
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: When in your life was that low patch?
+    character: Two years ago I had a period of feeling very low for a couple of months.
+    topics:
+    - past-low-period
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I need to cover several areas in this discussion.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: It can be frustrating coming to discuss changes when you are feeling so well yourself. I'd
+      like to hear whether you see any reason for concern.
+    character: I don't think I'm ill, but my sister is worried and I don't want to fall out.
+    topics:
+    - insight-worry
+    empathy: specific
+    empathy_words: It can be frustrating coming to discuss changes when you are feeling so well yourself.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What is your own view about whether this is an illness?
+    character: I don't think I'm ill, but I can see my sister is really worried, and I don't want to fall
+      out with her.
+    topics:
+    - insight-worry
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Two years ago there were a couple of months of low mood. Is that a fair account of what you
+      have said so far?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'd like to ask about similar problems in relatives or lasting health conditions.
+    character: I don't know of similar illness in the family, and I have no long-term physical problems.
+    topics:
+    - family-and-physical
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And any long-term physical problem yourself?
+    character: I don't know of any similar illness in my family and have no long-term physical health
+      problems.
+    topics:
+    - family-and-physical
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Do you know which room the next appointment is in?
+    character: I'm not sure what you mean — can we talk about something else? I've got a lot on at the
+      moment.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'd like to hear what this new business involves.
+    character: I'm starting a business restoring vintage bikes.
+    topics:
+    - new-business
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: And how big do you expect it to become?
+    character: I'm starting a business restoring vintage bikes. It's going to be huge.
+    topics:
+    - new-business
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. I am sorry; that has clearly been difficult
+      for you.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: I am sorry; that has clearly been difficult for you.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Describe your sleep and how rested you feel.
+    character: I'm not sleeping much, but I don't feel tired.
+    topics:
+    - sleep-reduced
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Are you feeling tired on that amount?
+    character: For the last week I've slept about three hours a night and don't feel tired.
+    topics:
+    - sleep-reduced
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me about earlier spells of feeling depressed. Describe the work you want the new business
+      to do.
+    character: Two years ago I had a period of feeling very low for a couple of months. I'm starting a
+      business restoring vintage bikes.
+    topics:
+    - past-low-period
+    - new-business
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Your sister would not have asked you here unless you needed to hear some sense.
+    character: Does that matter? I've got bigger things going on.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: Your sister would not have asked you here unless you needed to hear some sense.
+  - doctor: Can we leave that there and take another subject?
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: That's the end of my questions for the moment, Alex. Thank you for answering.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: elevated-mood-history-07
+  trainee: Speech-recognition transcript; lower case, fillers, false starts and sparse punctuation.
+  turns:
+  - doctor: hi alex um im the trainee doctor thanks for sitting down with me
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: so um where would you like to start with all this
+    character: My sister says I've changed and wanted me to come. I feel great, with plenty of energy
+      and plans.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: er i was going to ask no let me come back to this tell me what a nights sleep is like at the
+      moment.
+    character: I'm not sleeping much, but I don't feel tired.
+    topics:
+    - sleep-reduced
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: um just so ive got that how many hours does that work out to
+    character: For the last week I've slept about three hours a night and don't feel tired.
+    topics:
+    - sleep-reduced
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: ill ask a few things and then bring it together at the end
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: um you feel great with all these plans and i understand wanting that heard. could we talk
+      about how you make sense of your sisters worry
+    character: I don't think I'm ill, but my sister is worried and I don't want to fall out.
+    topics:
+    - insight-worry
+    empathy: specific
+    empathy_words: um you feel great with all these plans and i understand wanting that heard.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: how do you see her concern even if you feel well
+    character: I don't think I'm ill, but I can see my sister is really worried, and I don't want to fall
+      out with her.
+    topics:
+    - insight-worry
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: for a week you have slept around three hours without feeling tired. so have i picked that
+      up the way you meant it
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: er i was going to ask no let me come back to this could we go through any change in your mood
+      this week
+    character: I've been unusually upbeat. Interruptions to my plans irritate me.
+    topics:
+    - mood-onset
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: how long has that been going on for
+    character: I've felt unusually upbeat for about a week. I get irritated when people interrupt my plans.
+    topics:
+    - mood-onset
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: um could we talk about a different bit now
+    character: Yes, go on.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: could we go over your recent work attendance and purchases
+    character: Work isn't really my focus right now. The business is.
+    topics:
+    - function-work-spending
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: have any shifts been missed while you focus on that
+    character: I've missed two shifts at work and spent £800 on equipment for a new business. My sister
+      says I can't afford it.
+    topics:
+    - function-work-spending
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: thinking back to what you were saying earlier. um im sorry that has been so difficult to go
+      through.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: um im sorry that has been so difficult to go through.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: um just so ive got that tell me about any change in how you drive or risks you take.
+    character: I drove much faster than usual.
+    topics:
+    - risk-driving
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: um just so ive got that when did you drive like that
+    character: I drove much faster than usual yesterday. I haven't thought about harming myself or anyone
+      else.
+    topics:
+    - risk-driving
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: id like to ask how much rest you are getting overnight. tell me how work and spending fit
+      around your plans.
+    character: For the last week I've slept about three hours a night and don't feel tired. I've missed
+      two shifts at work and spent £800 on equipment for a new business.
+    topics:
+    - sleep-reduced
+    - function-work-spending
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: before we finish so have i picked that up the way you meant it
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: what number is the bus that stops outside
+    character: I'm not sure what you mean — can we talk about something else? I've got a lot on at the
+      moment.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: thanks alex um thats all i wanted to ask for now
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: elevated-mood-history-08
+  trainee: Trainee who summarises frequently; repeats the account back before changing topic.
+  turns:
+  - doctor: Hello Alex, I'm the trainee here to hear your account. Thank you for speaking with me.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What would you like to put on the table first?
+    character: My sister says I've changed and wanted me to come. I feel great, with plenty of energy
+      and plans.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'll hold that in mind as we go on. I'd like to ask about driving fast and any thoughts of
+      harming people.
+    character: I drove much faster than usual.
+    topics:
+    - risk-driving
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Coming back to that last point. And has there been any wish to hurt yourself?
+    character: I drove much faster than usual yesterday. I haven't thought about harming myself or anyone
+      else.
+    topics:
+    - risk-driving
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You feel great and full of plans, while your sister wanted you to come here.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Your sister wanted this meeting while you feel well, and I appreciate that difference. What
+      do you think is going on from your point of view?
+    character: I don't think I'm ill, but my sister is worried and I don't want to fall out.
+    topics:
+    - insight-worry
+    empathy: specific
+    empathy_words: Your sister wanted this meeting while you feel well, and I appreciate that difference.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What is the part of her reaction that matters to you?
+    character: I don't think I'm ill, but I can see my sister is really worried, and I don't want to fall
+      out with her.
+    topics:
+    - insight-worry
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You drove faster yesterday, with no thoughts of harming yourself or anyone else. I have tried
+      to keep to your account; have I understood it as you intended?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You drove faster yesterday, with no thoughts of harming yourself or anyone else. I'll hold
+      that in mind as we go on. Could we discuss the company or support available at home?
+    character: My sister has offered to stay.
+    topics:
+    - support-sister
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Was that for a few days?
+    character: My sister has offered to stay with me for a few days.
+    topics:
+    - support-sister
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Did reception give you an appointment card?
+    character: I'm not sure what you mean — can we talk about something else? I've got a lot on at the
+      moment.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could we go over coffee, alcohol and other substances?
+    character: I have coffee and a little alcohol, but no drugs or prescribed medicines.
+    topics:
+    - substances
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Are there any prescribed tablets in that mix?
+    character: Two coffees a day, a little alcohol at weekends, no recreational drugs and no prescribed
+      medicines.
+    topics:
+    - substances
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. That is quite a difficult situation to have
+      been in.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: That is quite a difficult situation to have been in.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Coming back to that last point. Tell me about earlier spells of feeling depressed.
+    character: There was a time when I felt very low.
+    topics:
+    - past-low-period
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Coming back to that last point. How long did that spell last?
+    character: Two years ago I had a period of feeling very low for a couple of months.
+    topics:
+    - past-low-period
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could we go over safety on the road and thoughts of self-harm? Tell me about caffeine, alcohol
+      and any drugs or medicines.
+    character: I drove much faster than usual yesterday. Two coffees a day, a little alcohol at weekends,
+      no recreational drugs and no prescribed medicines.
+    topics:
+    - risk-driving
+    - substances
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, i have tried to keep to your account; have I understood it as you intended?
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Shall we put that part aside and look at something else?
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thank you, Alex. I'll finish by keeping those points together in my notes.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: elevated-mood-history-09
+  trainee: Sometimes confrontational trainee; slips into minimising or lecturing despite some empathy.
+  turns:
+  - doctor: Morning, Alex. I'm the doctor doing this interview; thanks for being here.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What is the main thing you want me to hear at the start?
+    character: My sister says I've changed and wanted me to come. I feel great, with plenty of energy
+      and plans.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: We ought to be clear about this next part. I'd like to hear whether there has been a previous
+      low period.
+    character: There was a time when I felt very low.
+    topics:
+    - past-low-period
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let us pin that part down. And how far back was that?
+    character: Two years ago I had a period of feeling very low for a couple of months.
+    topics:
+    - past-low-period
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: There are several things to cover before we finish.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I can hear that feeling energetic and making plans has been positive for you. Tell me your
+      own understanding of what is happening.
+    character: I don't think I'm ill, but my sister is worried and I don't want to fall out.
+    topics:
+    - insight-worry
+    empathy: specific
+    empathy_words: I can hear that feeling energetic and making plans has been positive for you.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me what you most want to preserve between you and her.
+    character: I don't think I'm ill, but I can see my sister is really worried, and I don't want to fall
+      out with her.
+    topics:
+    - insight-worry
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Two years ago there were a couple of months of low mood. Does that follow what you meant to
+      tell me?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: We ought to be clear about this next part. Could we cover family mental illness and any long-term
+      physical problems?
+    character: I don't know of similar illness in the family, and I have no long-term physical problems.
+    topics:
+    - family-and-physical
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Are there any lasting health conditions to add?
+    character: I don't know of any similar illness in my family and have no long-term physical health
+      problems.
+    topics:
+    - family-and-physical
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Can we move the conversation to another area?
+    character: Yes, go on.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could we talk through your plans for the venture?
+    character: I'm starting a business restoring vintage bikes.
+    topics:
+    - new-business
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What is the business actually going to work on?
+    character: I'm starting a business restoring vintage bikes. It's going to be huge.
+    topics:
+    - new-business
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. I can see this has been a hard experience to
+      have.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: I can see this has been a hard experience to have.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let us pin that part down. I'd like to ask how much rest you are getting overnight.
+    character: I'm not sleeping much, but I don't feel tired.
+    topics:
+    - sleep-reduced
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let us pin that part down. And how long has it been like that?
+    character: For the last week I've slept about three hours a night and don't feel tired.
+    topics:
+    - sleep-reduced
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could we go back to any earlier difficulty with your mood? Tell me about the project you have
+      in mind.
+    character: Two years ago I had a period of feeling very low for a couple of months. I'm starting a
+      business restoring vintage bikes.
+    topics:
+    - past-low-period
+    - new-business
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You need to be less certain about these plans and more willing to listen.
+    character: Does that matter? I've got bigger things going on.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: You need to be less certain about these plans and more willing to listen.
+  - doctor: Which entrance is closest to where you parked?
+    character: I'm not sure what you mean — can we talk about something else? I've got a lot on at the
+      moment.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'll stop my questions there, Alex. Thank you for talking it through.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: elevated-mood-history-10
+  trainee: Reflective trainee; patient pauses, validates, and checks the person's perspective.
+  turns:
+  - doctor: Hello, Alex; thank you for meeting with me. I'm a trainee with the team.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Where would it feel right to begin telling me your account?
+    character: My sister says I've changed and wanted me to come. I feel great, with plenty of energy
+      and plans.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I would like to understand this in your own words. Could we go through your sleeping over
+      the last few nights?
+    character: I'm not sleeping much, but I don't feel tired.
+    topics:
+    - sleep-reduced
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I would like to stay with that for a moment. What are you like afterwards, tired or rested?
+    character: For the last week I've slept about three hours a night and don't feel tired.
+    topics:
+    - sleep-reduced
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: We can pause while you find the words; there is no need for a perfect account.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Making room for your own view matters when it was your sister who wanted you here. I'd like
+      to hear whether you see any reason for concern.
+    character: I don't think I'm ill, but my sister is worried and I don't want to fall out.
+    topics:
+    - insight-worry
+    empathy: specific
+    empathy_words: Making room for your own view matters when it was your sister who wanted you here.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: So where do you and she see this differently?
+    character: I don't think I'm ill, but I can see my sister is really worried, and I don't want to fall
+      out with her.
+    topics:
+    - insight-worry
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: For a week, you have slept around three hours without feeling tired. Does the way I have brought
+      that together capture what you wanted to say?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I would like to understand this in your own words. Describe how you have been feeling in yourself
+      lately.
+    character: I've been unusually upbeat. Interruptions to my plans irritate me.
+    topics:
+    - mood-onset
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What happens when somebody interrupts those plans?
+    character: I've felt unusually upbeat for about a week. I get irritated when people interrupt my plans.
+    topics:
+    - mood-onset
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Do you remember the name of the person who booked this?
+    character: I'm not sure what you mean — can we talk about something else? I've got a lot on at the
+      moment.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Describe whether everyday work or money matters have changed.
+    character: Work isn't really my focus right now. The business is.
+    topics:
+    - function-work-spending
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What does your sister say about paying for it?
+    character: I've missed two shifts at work and spent £800 on equipment for a new business. My sister
+      says I can't afford it.
+    topics:
+    - function-work-spending
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. I hear that this has been difficult for you
+      to carry.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: I hear that this has been difficult for you to carry.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I would like to stay with that for a moment. Could we go over safety on the road and thoughts
+      of self-harm?
+    character: I drove much faster than usual.
+    topics:
+    - risk-driving
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I would like to stay with that for a moment. What about wanting to harm anybody else?
+    character: I drove much faster than usual yesterday. I haven't thought about harming myself or anyone
+      else.
+    topics:
+    - risk-driving
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Describe your sleep and how rested you feel. I'd like to ask what has happened with shifts
+      or buying things.
+    character: For the last week I've slept about three hours a night and don't feel tired. I've missed
+      two shifts at work and spent £800 on equipment for a new business.
+    topics:
+    - sleep-reduced
+    - function-work-spending
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, does the way I have brought that together capture what you wanted to say?
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Would now be a reasonable point to change the subject?
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thank you for helping me understand, Alex. I'll end the interview at this point.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: elevated-mood-history-11
+  trainee: Uncertain trainee; self-corrects wording and sometimes offers premature reassurance.
+  turns:
+  - doctor: Hi Alex, I'm the trainee talking with you today; thanks for coming to see us.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What should we begin with, from your point of view?
+    character: My sister says I've changed and wanted me to come. I feel great, with plenty of energy
+      and plans.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let me put that better before I go on. Describe whether you have put yourself or anyone else
+      at risk.
+    character: I drove much faster than usual.
+    topics:
+    - risk-driving
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let me check I am asking this clearly. Was that faster than you would normally go?
+    character: I drove much faster than usual yesterday. I haven't thought about harming myself or anyone
+      else.
+    topics:
+    - risk-driving
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: If I phrase something badly, I can ask it a different way.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: It is understandable to want to explain feeling good as well as hearing her concerns. Could
+      we talk about how you make sense of your sister's worry?
+    character: I don't think I'm ill, but my sister is worried and I don't want to fall out.
+    topics:
+    - insight-worry
+    empathy: specific
+    empathy_words: It is understandable to want to explain feeling good as well as hearing her concerns.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What is it you would not want to happen with her?
+    character: I don't think I'm ill, but I can see my sister is really worried, and I don't want to fall
+      out with her.
+    topics:
+    - insight-worry
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You drove faster yesterday, with no thoughts of harming yourself or anyone else. I think I
+      have followed that; have I understood your meaning?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let me put that better before I go on. What offers of help have you had from people close
+      to you?
+    character: My sister has offered to stay.
+    topics:
+    - support-sister
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What exactly has she offered to do?
+    character: My sister has offered to stay with me for a few days.
+    topics:
+    - support-sister
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Could I change tack and ask about another part?
+    character: Yes, go on.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Describe any prescribed medicines or recreational drugs you use.
+    character: I have coffee and a little alcohol, but no drugs or prescribed medicines.
+    topics:
+    - substances
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What about recreational drugs alongside those drinks?
+    character: Two coffees a day, a little alcohol at weekends, no recreational drugs and no prescribed
+      medicines.
+    topics:
+    - substances
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. It must have been really hard to find yourself
+      dealing with that.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: It must have been really hard to find yourself dealing with that.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let me check I am asking this clearly. Could we go back to any earlier difficulty with your
+      mood?
+    character: There was a time when I felt very low.
+    topics:
+    - past-low-period
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Let me check I am asking this clearly. Was it a matter of days or months then?
+    character: Two years ago I had a period of feeling very low for a couple of months.
+    topics:
+    - past-low-period
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me about any change in how you drive or risks you take. I'd like to ask what you drink
+      or take that could affect how you feel.
+    character: I drove much faster than usual yesterday. Two coffees a day, a little alcohol at weekends,
+      no recreational drugs and no prescribed medicines.
+    topics:
+    - risk-driving
+    - substances
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: It is only enthusiasm; there is no need to spend so long talking about it.
+    character: Does that matter? I've got bigger things going on.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: true
+    confrontational_words: It is only enthusiasm; there is no need to spend so long talking about it.
+  - doctor: What is the postcode of the clinic?
+    character: I'm not sure what you mean — can we talk about something else? I've got a lot on at the
+      moment.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'll leave it there, Alex. Thank you for explaining things as we went along.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+- id: elevated-mood-history-12
+  trainee: Conversational trainee; relaxed wording, short acknowledgements and practical follow-ups.
+  turns:
+  - doctor: Hello Alex, nice to meet you. I'm one of the trainee doctors; thanks for coming along.
+    character: Hello.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: What would be a good place for us to start?
+    character: My sister says I've changed and wanted me to come. I feel great, with plenty of energy
+      and plans.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Just so I've got the picture. Describe any time before this when you felt very low.
+    character: There was a time when I felt very low.
+    topics:
+    - past-low-period
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Right, just picking up on that. When in your life was that low patch?
+    character: Two years ago I had a period of feeling very low for a couple of months.
+    topics:
+    - past-low-period
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: I'll pick up a few details and we can bring it all together afterwards.
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: You have a lot of enthusiasm for your plans, and I want to understand what they mean to you.
+      What do you think is going on from your point of view?
+    character: I don't think I'm ill, but my sister is worried and I don't want to fall out.
+    topics:
+    - insight-worry
+    empathy: specific
+    empathy_words: You have a lot of enthusiasm for your plans, and I want to understand what they mean
+      to you.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: How do you put those two views together yourself?
+    character: I don't think I'm ill, but I can see my sister is really worried, and I don't want to fall
+      out with her.
+    topics:
+    - insight-worry
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Two years ago there were a couple of months of low mood. Have I got the picture you were trying
+      to give me?
+    character: Yes, that is what I meant.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Just so I've got the picture. What do you know of similar illness in the family, and how is
+      your health?
+    character: I don't know of similar illness in the family, and I have no long-term physical problems.
+    topics:
+    - family-and-physical
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: So no similar family illness that you are aware of?
+    character: I don't know of any similar illness in my family and have no long-term physical health
+      problems.
+    topics:
+    - family-and-physical
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Have you brought the appointment letter along?
+    character: I'm not sure what you mean — can we talk about something else? I've got a lot on at the
+      moment.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Describe the work you want the new business to do.
+    character: I'm starting a business restoring vintage bikes.
+    topics:
+    - new-business
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Are older bikes what you have in mind?
+    character: I'm starting a business restoring vintage bikes. It's going to be huge.
+    topics:
+    - new-business
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thinking back to what you were saying earlier. That is a tough thing to be having to deal
+      with.
+    character: Thank you.
+    topics: []
+    empathy: brief
+    empathy_words: That is a tough thing to be having to deal with.
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Right, just picking up on that. Describe your sleep and how rested you feel.
+    character: I'm not sleeping much, but I don't feel tired.
+    topics:
+    - sleep-reduced
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Right, just picking up on that. Are you feeling tired on that amount?
+    character: For the last week I've slept about three hours a night and don't feel tired.
+    topics:
+    - sleep-reduced
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Tell me about earlier spells of feeling depressed. I'd like to hear what this new business
+      involves.
+    character: Two years ago I had a period of feeling very low for a couple of months. I'm starting a
+      business restoring vintage bikes.
+    topics:
+    - past-low-period
+    - new-business
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Before we finish, have I got the picture you were trying to give me?
+    character: Yes.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Shall we take a different bit of this next?
+    character: All right.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''
+  - doctor: Thanks for talking it over with me, Alex. That's all for the moment.
+    character: Goodbye.
+    topics: []
+    empathy: none
+    empathy_words: ''
+    confrontational: false
+    confrontational_words: ''

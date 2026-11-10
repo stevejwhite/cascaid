@@ -1,0 +1,871 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: lithium-early-pregnancy-discussion
+case_version: 0.1.0
+status: draft
+items:
+- utterance: How are things going with the pregnancy so far?
+  topics:
+  - pregnancy
+  style: open
+- utterance: Tell me about the dates and who is looking after you.
+  topics:
+  - pregnancy
+  style: open
+- utterance: Have you been booked in with a midwife yet?
+  topics:
+  - pregnancy
+  style: closed
+- utterance: Are your dates confirmed by a scan?
+  topics:
+  - pregnancy
+  style: closed
+- utterance: When is the baby due, roughly?
+  topics:
+  - pregnancy
+  style: colloquial
+- utterance: Have you seen anyone about the pregnancy yet?
+  topics:
+  - pregnancy
+  style: colloquial
+- utterance: What is your gestation by dates, and what antenatal care is arranged?
+  topics:
+  - pregnancy
+  style: clinical
+- utterance: I wondered when your first antenatal appointment is
+  topics:
+  - pregnancy
+  style: indirect
+- utterance: Congratulations, and I know this is a lot to think about. When did you find out?
+  topics:
+  - pregnancy
+  style: empathy_then_question
+- utterance: so um when did you, when was your last period
+  topics:
+  - pregnancy
+  style: spoken
+- utterance: have you got a booking in with anyone yet, a midwife or whatever
+  topics:
+  - pregnancy
+  style: spoken
+- utterance: And your due date?
+  topics:
+  - pregnancy
+  style: brief
+- utterance: And when is that appointment?
+  topics:
+  - pregnancy
+  style: follow_up
+  previous:
+    interviewer: Are you booked in with a midwife?
+    character: Yes, I'm eight weeks pregnant by my dates. My midwife booking is next week.
+- utterance: Has a midwife seen you yet?
+  topics:
+  - pregnancy
+  style: follow_up
+  previous:
+    interviewer: Are you booked in with a midwife?
+    character: Yes, I'm eight weeks pregnant by my dates. My midwife booking is next week.
+- utterance: You've already had your first scan, haven't you?
+  topics:
+  - pregnancy
+  style: leading
+- utterance: What exactly are you taking at the moment?
+  topics:
+  - medicine
+  style: open
+- utterance: How have you been managing with your medication since you found out?
+  topics:
+  - medicine
+  style: open
+- utterance: Are you taking your lithium every day?
+  topics:
+  - medicine
+  style: closed
+- utterance: Has anyone changed the dose recently?
+  topics:
+  - medicine
+  style: closed
+- utterance: How much lithium are you on?
+  topics:
+  - medicine
+  style: colloquial
+- utterance: Have you missed any tablets?
+  topics:
+  - medicine
+  style: colloquial
+- utterance: What is your current lithium dosage and your adherence to it?
+  topics:
+  - medicine
+  style: clinical
+- utterance: I wanted to check the dose and how regularly you take it
+  topics:
+  - medicine
+  style: indirect
+- utterance: I can see you want to do the right thing. Are you still taking it each day?
+  topics:
+  - medicine
+  style: empathy_then_question
+- utterance: um what dose are you on, and do you take it at a certain time
+  topics:
+  - medicine
+  style: spoken
+- utterance: so have you, have you carried on with it or stopped
+  topics:
+  - medicine
+  style: spoken
+- utterance: What dose are you on?
+  topics:
+  - medicine
+  style: brief
+- utterance: And do you take it at a particular time of day?
+  topics:
+  - medicine
+  style: follow_up
+  previous:
+    interviewer: How much lithium do you take?
+    character: I take lithium carbonate 800 milligrams at night. I've kept taking it every day while waiting
+      for advice.
+- utterance: Have you missed any since then?
+  topics:
+  - medicine
+  style: follow_up
+  previous:
+    interviewer: How much lithium do you take?
+    character: I take lithium carbonate 800 milligrams at night. I've kept taking it every day while waiting
+      for advice.
+- utterance: You've probably cut it down by yourself, haven't you?
+  topics:
+  - medicine
+  style: leading
+- utterance: Tell me about your illness in the past.
+  topics:
+  - episodes
+  style: open
+- utterance: How have your highs affected you over the years?
+  topics:
+  - episodes
+  style: open
+- utterance: Have you ever been admitted to hospital with your mood?
+  topics:
+  - episodes
+  style: closed
+- utterance: Have you had periods of very little sleep and lots of energy?
+  topics:
+  - episodes
+  style: closed
+- utterance: Have you ever been properly high and ended up in hospital?
+  topics:
+  - episodes
+  style: colloquial
+- utterance: What happened the last time you were poorly?
+  topics:
+  - episodes
+  style: colloquial
+- utterance: What is your history of manic episodes and hospital admissions?
+  topics:
+  - episodes
+  style: clinical
+- utterance: I'd like to hear about earlier episodes of the illness
+  topics:
+  - episodes
+  style: indirect
+- utterance: That can't have been easy to go through. How many times have you been unwell with it?
+  topics:
+  - episodes
+  style: empathy_then_question
+- utterance: so um have you been in hospital before for it
+  topics:
+  - episodes
+  style: spoken
+- utterance: when was the last time you were really unwell
+  topics:
+  - episodes
+  style: spoken
+- utterance: Past admissions?
+  topics:
+  - episodes
+  style: brief
+- utterance: And when was the most recent time?
+  topics:
+  - episodes
+  style: follow_up
+  previous:
+    interviewer: Have you been admitted to hospital before?
+    character: I've had two admissions for periods when I barely slept, spent recklessly and felt unstoppable.
+      The most recent was three years ago.
+- utterance: What was it like when you were high?
+  topics:
+  - episodes
+  style: follow_up
+  previous:
+    interviewer: Have you been admitted to hospital before?
+    character: I've had two admissions for periods when I barely slept, spent recklessly and felt unstoppable.
+      The most recent was three years ago.
+- utterance: You've been in hospital a great many times, haven't you?
+  topics:
+  - episodes
+  style: leading
+- utterance: What happened when you came off lithium before?
+  topics:
+  - withdrawal-history
+  style: open
+- utterance: Tell me about any time you've gone without your medication.
+  topics:
+  - withdrawal-history
+  style: open
+- utterance: Have you ever stopped lithium suddenly?
+  topics:
+  - withdrawal-history
+  style: closed
+- utterance: Did you become unwell after you stopped it before?
+  topics:
+  - withdrawal-history
+  style: closed
+- utterance: Has there been a time you came off it, and how did that go?
+  topics:
+  - withdrawal-history
+  style: colloquial
+- utterance: How quickly did you go downhill when you stopped?
+  topics:
+  - withdrawal-history
+  style: colloquial
+- utterance: Has there been a previous discontinuation, and was relapse associated with it?
+  topics:
+  - withdrawal-history
+  style: clinical
+- utterance: I wondered how you managed when you were last off your tablets
+  topics:
+  - withdrawal-history
+  style: indirect
+- utterance: I know stopping is tempting at times. What happened when you came off it before?
+  topics:
+  - withdrawal-history
+  style: empathy_then_question
+- utterance: um did you ever stop taking it on your own
+  topics:
+  - withdrawal-history
+  style: spoken
+- utterance: and when you stopped, did things get worse, or
+  topics:
+  - withdrawal-history
+  style: spoken
+- utterance: Ever stopped it before?
+  topics:
+  - withdrawal-history
+  style: brief
+- utterance: How long was it before you noticed anything?
+  topics:
+  - withdrawal-history
+  style: follow_up
+  previous:
+    interviewer: Have you stopped lithium before?
+    character: Yes, I stopped lithium on my own before that last admission. Within six weeks I was becoming
+      unwell.
+- utterance: Was that your own decision?
+  topics:
+  - withdrawal-history
+  style: follow_up
+  previous:
+    interviewer: Have you stopped lithium before?
+    character: Yes, I stopped lithium on my own before that last admission. Within six weeks I was becoming
+      unwell.
+- utterance: You've stopped it before and been fine, haven't you?
+  topics:
+  - withdrawal-history
+  style: leading
+- utterance: How are you feeling about the effect of the medicine on the baby so far?
+  topics:
+  - baby-fear
+  style: open
+- utterance: Are you worried that the lithium might have harmed the baby?
+  topics:
+  - baby-fear
+  style: closed
+- utterance: Is there something about the pregnancy you find hard to say?
+  topics:
+  - baby-fear
+  style: closed
+- utterance: Are you frightened you've done something to the baby?
+  topics:
+  - baby-fear
+  style: colloquial
+- utterance: What's the thing that's keeping you awake at night about all this?
+  topics:
+  - baby-fear
+  style: colloquial
+- utterance: Do you have concerns about foetal exposure to lithium in the first weeks?
+  topics:
+  - baby-fear
+  style: clinical
+- utterance: I wondered what has been on your mind about the baby's health
+  topics:
+  - baby-fear
+  style: indirect
+- utterance: It's completely understandable to worry. Are you afraid the tablets have affected the baby?
+  topics:
+  - baby-fear
+  style: empathy_then_question
+- utterance: so um are you scared it's hurt the baby, taking it early on
+  topics:
+  - baby-fear
+  style: spoken
+- utterance: is there something you're, you're finding hard to say about it
+  topics:
+  - baby-fear
+  style: spoken
+- utterance: Worried about the baby?
+  topics:
+  - baby-fear
+  style: brief
+- utterance: Would you like to say more about that?
+  topics:
+  - baby-fear
+  style: follow_up
+  previous:
+    interviewer: What worries you most about the baby?
+    character: I'm scared I've already harmed the baby by taking it before I knew I was pregnant. I'm
+      ashamed to say that out loud.
+- utterance: Do you feel guilty about it?
+  topics:
+  - baby-fear
+  style: follow_up
+  previous:
+    interviewer: What worries you most about the baby?
+    character: I'm scared I've already harmed the baby by taking it before I knew I was pregnant. I'm
+      ashamed to say that out loud.
+- utterance: You blame yourself for taking the tablets, don't you?
+  topics:
+  - baby-fear
+  style: leading
+- utterance: How have you been in yourself recently?
+  topics:
+  - current-state
+  style: open
+- utterance: What is a normal day like for you at the moment?
+  topics:
+  - current-state
+  style: open
+- utterance: Are you feeling unusually high or low just now?
+  topics:
+  - current-state
+  style: closed
+- utterance: Are you getting enough sleep?
+  topics:
+  - current-state
+  style: closed
+- utterance: Has your mood been all over the place lately?
+  topics:
+  - current-state
+  style: colloquial
+- utterance: How are you sleeping these days?
+  topics:
+  - current-state
+  style: colloquial
+- utterance: What is your current mental state with regard to mood and sleep?
+  topics:
+  - current-state
+  style: clinical
+- utterance: I wanted to hear how your mood has been over the past few weeks
+  topics:
+  - current-state
+  style: indirect
+- utterance: There's a lot going on for you. How have you been feeling in your mood?
+  topics:
+  - current-state
+  style: empathy_then_question
+- utterance: um how's your sleep been, and, and your energy
+  topics:
+  - current-state
+  style: spoken
+- utterance: so do you feel, like, any different to normal in your mood
+  topics:
+  - current-state
+  style: spoken
+- utterance: Mood at the moment?
+  topics:
+  - current-state
+  style: brief
+- utterance: And how many hours are you sleeping?
+  topics:
+  - current-state
+  style: follow_up
+  previous:
+    interviewer: How has your mood been lately?
+    character: No, I don't feel unusually high or low now. I'm sleeping seven hours and managing my usual
+      routine.
+- utterance: Is your usual routine all right?
+  topics:
+  - current-state
+  style: follow_up
+  previous:
+    interviewer: How has your mood been lately?
+    character: No, I don't feel unusually high or low now. I'm sleeping seven hours and managing my usual
+      routine.
+- utterance: You've been feeling a bit up lately, haven't you?
+  topics:
+  - current-state
+  style: leading
+- utterance: Have you had any dark thoughts recently?
+  topics:
+  - risk
+  style: open
+- utterance: Tell me about any times in your life when you've wanted to harm yourself.
+  topics:
+  - risk
+  style: open
+- utterance: Have you thought of hurting yourself?
+  topics:
+  - risk
+  style: closed
+- utterance: Have you ever tried to end your life?
+  topics:
+  - risk
+  style: closed
+- utterance: Have you ever tried to take your own life?
+  topics:
+  - risk
+  style: colloquial
+- utterance: Any thoughts about hurting anyone else?
+  topics:
+  - risk
+  style: colloquial
+- utterance: Is there any current suicidal ideation, or past attempts?
+  topics:
+  - risk
+  style: clinical
+- utterance: I wondered whether you've felt unsafe in any way
+  topics:
+  - risk
+  style: indirect
+- utterance: It's a hard question and I'm sorry to ask. Have you felt like harming yourself?
+  topics:
+  - risk
+  style: empathy_then_question
+- utterance: um have you been thinking about, about hurting yourself or anyone
+  topics:
+  - risk
+  style: spoken
+- utterance: so ever tried to, you know, end it all
+  topics:
+  - risk
+  style: spoken
+- utterance: Any self-harm thoughts?
+  topics:
+  - risk
+  style: brief
+- utterance: And have you ever acted on thoughts like that?
+  topics:
+  - risk
+  style: follow_up
+  previous:
+    interviewer: Have you thought of harming yourself?
+    character: No, I haven't been thinking of hurting myself or anyone else, and I've never attempted
+      suicide.
+- utterance: Have you ever put anyone else at risk?
+  topics:
+  - risk
+  style: follow_up
+  previous:
+    interviewer: Have you thought of harming yourself?
+    character: No, I haven't been thinking of hurting myself or anyone else, and I've never attempted
+      suicide.
+- utterance: There's been a time when you wanted to end your life, hasn't there?
+  topics:
+  - risk
+  style: leading
+- utterance: What are you thinking about for after the birth?
+  topics:
+  - postnatal
+  style: open
+- utterance: Who will be around to help you once the baby arrives?
+  topics:
+  - postnatal
+  style: open
+- utterance: Would you like to breastfeed?
+  topics:
+  - postnatal
+  style: closed
+- utterance: Will anyone be helping you with night feeds?
+  topics:
+  - postnatal
+  style: closed
+- utterance: Have you thought about how you'll cope in the first few weeks?
+  topics:
+  - postnatal
+  style: colloquial
+- utterance: Who's going to do the night-time bits?
+  topics:
+  - postnatal
+  style: colloquial
+- utterance: What are your intentions regarding lactation and what support is available postnatally?
+  topics:
+  - postnatal
+  style: clinical
+- utterance: I wondered what you've planned for when the baby arrives
+  topics:
+  - postnatal
+  style: indirect
+- utterance: It's good that you're thinking ahead. Do you plan to feed the baby yourself?
+  topics:
+  - postnatal
+  style: empathy_then_question
+- utterance: um are you planning to, to breastfeed or what
+  topics:
+  - postnatal
+  style: spoken
+- utterance: so is there anyone to help you with, with nights and stuff
+  topics:
+  - postnatal
+  style: spoken
+- utterance: And after the birth?
+  topics:
+  - postnatal
+  style: brief
+- utterance: And what support is at home?
+  topics:
+  - postnatal
+  style: follow_up
+  previous:
+    interviewer: What are your plans for after the birth?
+    character: I'd like to breastfeed if it's possible safely. My partner can share night care, but we
+      haven't made a plan for after the birth.
+- utterance: Have you got a plan written down?
+  topics:
+  - postnatal
+  style: follow_up
+  previous:
+    interviewer: What are your plans for after the birth?
+    character: I'd like to breastfeed if it's possible safely. My partner can share night care, but we
+      haven't made a plan for after the birth.
+- utterance: You'd rather not breastfeed, would you?
+  topics:
+  - postnatal
+  style: leading
+- utterance: What checks have you had on your blood recently?
+  topics:
+  - monitoring
+  style: open
+- utterance: Tell me about your recent monitoring at the clinic.
+  topics:
+  - monitoring
+  style: open
+- utterance: Do you know your last lithium level?
+  topics:
+  - monitoring
+  style: closed
+- utterance: Have your kidney and thyroid been checked recently?
+  topics:
+  - monitoring
+  style: closed
+- utterance: When did you last have a blood test?
+  topics:
+  - monitoring
+  style: colloquial
+- utterance: What number was your lithium level?
+  topics:
+  - monitoring
+  style: colloquial
+- utterance: What was your most recent serum lithium concentration and renal and thyroid function?
+  topics:
+  - monitoring
+  style: clinical
+- utterance: I wanted to know about your latest blood results
+  topics:
+  - monitoring
+  style: indirect
+- utterance: I know blood tests are a nuisance. When was the last time your lithium was checked?
+  topics:
+  - monitoring
+  style: empathy_then_question
+- utterance: so um have you had any bloods done lately
+  topics:
+  - monitoring
+  style: spoken
+- utterance: do you know what your level was, or if your kidneys were okay
+  topics:
+  - monitoring
+  style: spoken
+- utterance: Latest blood tests?
+  topics:
+  - monitoring
+  style: brief
+- utterance: And were the other results normal?
+  topics:
+  - monitoring
+  style: follow_up
+  previous:
+    interviewer: When was your last lithium level?
+    character: My last lithium level was 0.7 three weeks ago; the clinic said my kidney and thyroid tests
+      were normal.
+- utterance: When was that done?
+  topics:
+  - monitoring
+  style: follow_up
+  previous:
+    interviewer: When was your last lithium level?
+    character: My last lithium level was 0.7 three weeks ago; the clinic said my kidney and thyroid tests
+      were normal.
+- utterance: Your levels have been too high, haven't they?
+  topics:
+  - monitoring
+  style: leading
+- utterance: What matters most to you in making decisions about treatment?
+  topics:
+  - preferences
+  style: open
+- utterance: What are your wishes for this pregnancy?
+  topics:
+  - preferences
+  style: open
+- utterance: Do you want to go ahead with the pregnancy?
+  topics:
+  - preferences
+  style: closed
+- utterance: Is being well enough to care for the baby important to you?
+  topics:
+  - preferences
+  style: closed
+- utterance: What do you want out of this appointment?
+  topics:
+  - preferences
+  style: colloquial
+- utterance: What's most important to you, you and the baby both?
+  topics:
+  - preferences
+  style: colloquial
+- utterance: What are your values and priorities with regard to the pregnancy and treatment choice?
+  topics:
+  - preferences
+  style: clinical
+- utterance: I'd like to understand what you want to happen from here
+  topics:
+  - preferences
+  style: indirect
+- utterance: This is a big decision for you. What matters most to you in all this?
+  topics:
+  - preferences
+  style: empathy_then_question
+- utterance: so um what, what would you like to happen with the baby and the medicine
+  topics:
+  - preferences
+  style: spoken
+- utterance: how do you weigh up, like, your health against the baby's
+  topics:
+  - preferences
+  style: spoken
+- utterance: What matters most?
+  topics:
+  - preferences
+  style: brief
+- utterance: And what would you like us to prioritise?
+  topics:
+  - preferences
+  style: follow_up
+  previous:
+    interviewer: What matters most to you here?
+    character: Yes, I want to continue the pregnancy. Staying well enough to care for my child matters
+      as much to me as avoiding harm from treatment.
+- utterance: Is that what you want for the baby too?
+  topics:
+  - preferences
+  style: follow_up
+  previous:
+    interviewer: What matters most to you here?
+    character: Yes, I want to continue the pregnancy. Staying well enough to care for my child matters
+      as much to me as avoiding harm from treatment.
+- utterance: You'd prefer to stop everything for the baby's sake, wouldn't you?
+  topics:
+  - preferences
+  style: leading
+- utterance: What specialist input have you had so far?
+  topics:
+  - referral
+  style: open
+- utterance: Is this your first time being pregnant?
+  topics:
+  - referral
+  style: open
+- utterance: Have you met a perinatal mental health team?
+  topics:
+  - referral
+  style: closed
+- utterance: Has anyone given you specialist advice about medication in pregnancy?
+  topics:
+  - referral
+  style: closed
+- utterance: Has a specialist team been involved yet?
+  topics:
+  - referral
+  style: colloquial
+- utterance: Is this your first baby?
+  topics:
+  - referral
+  style: colloquial
+- utterance: Has there been referral to perinatal psychiatry, and what is your parity?
+  topics:
+  - referral
+  style: clinical
+- utterance: I wondered whether any specialist service has been in touch
+  topics:
+  - referral
+  style: indirect
+- utterance: I'm sure it's been a lot to navigate. Have you seen anyone who specialises in pregnancy and
+    mental health?
+  topics:
+  - referral
+  style: empathy_then_question
+- utterance: um have you been, have you seen a pregnancy mental health person
+  topics:
+  - referral
+  style: spoken
+- utterance: so is it your first, first pregnancy or
+  topics:
+  - referral
+  style: spoken
+- utterance: Seen a specialist team?
+  topics:
+  - referral
+  style: brief
+- utterance: And is it your first pregnancy?
+  topics:
+  - referral
+  style: follow_up
+  previous:
+    interviewer: Have you seen a specialist team?
+    character: No, I haven't met a perinatal mental health team. This is my first pregnancy.
+- utterance: So nobody has advised you yet?
+  topics:
+  - referral
+  style: follow_up
+  previous:
+    interviewer: Have you seen a specialist team?
+    character: No, I haven't met a perinatal mental health team. This is my first pregnancy.
+- utterance: You've already seen the perinatal team, haven't you?
+  topics:
+  - referral
+  style: leading
+- utterance: When is your first appointment for the pregnancy, and when were your bloods last checked?
+  topics:
+  - pregnancy
+  - monitoring
+  style: stacked
+- utterance: How much lithium do you take, and did anything happen when you stopped it before?
+  topics:
+  - medicine
+  - withdrawal-history
+  style: stacked
+- utterance: Have you been in hospital with your mood before, and have you ever tried to harm yourself?
+  topics:
+  - episodes
+  - risk
+  style: stacked
+- utterance: What are your plans for after the birth, and has a specialist team been involved yet?
+  topics:
+  - postnatal
+  - referral
+  style: stacked
+- utterance: Hello Aisha, please take a seat.
+  topics: []
+  style: greeting
+- utterance: Hi Aisha, how are you today?
+  topics: []
+  style: greeting
+- utterance: Hello Aisha, I'm Dr Mensah, one of the psychiatrists in the clinic.
+  topics: []
+  style: introduction
+- utterance: Aisha, I'm a doctor on the team here. Is it all right if we talk about your medicine?
+  topics: []
+  style: introduction
+- utterance: Hi Aisha, my name's Sam and I'm a doctor in this clinic.
+  topics: []
+  style: introduction
+- utterance: What would you like to start with, Aisha?
+  topics: []
+  style: open
+- utterance: Where would you like to begin?
+  topics: []
+  style: open
+- utterance: Before we start, do you have any questions for me, Aisha?
+  topics: []
+  style: open
+- utterance: Is it all right if we spend a few minutes talking this through?
+  topics: []
+  style: open
+- utterance: I'd like to move on to something different now.
+  topics: []
+  style: transition
+- utterance: Can we turn to another area, Aisha?
+  topics: []
+  style: transition
+- utterance: Let's talk about how you're getting on in other ways.
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Aisha.
+  topics: []
+  style: closing
+- utterance: We only have a couple of minutes left, so I'll start to wrap up.
+  topics: []
+  style: closing
+- utterance: Thank you for coming in today, Aisha.
+  topics: []
+  style: closing
+- utterance: That sounds like a really worrying time for you.
+  topics: []
+  style: empathy
+- utterance: It's clear you want to make the best decision for you and your baby.
+  topics: []
+  style: empathy
+- utterance: I can hear how much this is weighing on you.
+  topics: []
+  style: empathy
+- utterance: Thank you for being so open about this.
+  topics: []
+  style: empathy
+- utterance: So you're eight weeks pregnant, you've carried on with your tablets, and you want a shared
+    decision about what's next.
+  topics: []
+  style: summary
+- utterance: 'Let me check I''ve understood: you want to stay well and keep the baby safe.'
+  topics: []
+  style: summary
+- utterance: What I'd like to do is understand your history, then talk through the options and get specialist
+    advice.
+  topics: []
+  style: explanation
+- utterance: I won't tell you to stop or change anything today; we'll make a plan together.
+  topics: []
+  style: explanation
+- utterance: Does that make sense so far?
+  topics: []
+  style: check_understanding
+- utterance: Have I explained that clearly, Aisha?
+  topics: []
+  style: check_understanding
+- utterance: Do you smoke or drink at all?
+  topics: []
+  style: off_case
+- utterance: Are you taking folic acid?
+  topics: []
+  style: off_case
+- utterance: Does anyone in your family have a mental illness?
+  topics: []
+  style: off_case
+- utterance: Do you have any other medical conditions?
+  topics: []
+  style: off_case
+- utterance: Have you had any side effects from the lithium?
+  topics: []
+  style: near_miss
+- utterance: Have you tried any other medication for your mood?
+  topics: []
+  style: near_miss
+- utterance: Do you have any other children?
+  topics: []
+  style: near_miss
+- utterance: Do you have a job you need to think about while pregnant?
+  topics: []
+  style: off_case
+- utterance: Have you had any scans yet?
+  topics: []
+  style: near_miss

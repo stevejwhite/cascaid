@@ -1,0 +1,166 @@
+# Training lines for the tone classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: panic-avoidance-mental-state
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Are you drinking more than you used to?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Do you ever wish you weren't here?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: um have you stopped going to places you used to enjoy
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: What do you do when you feel one coming on?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Have you told anyone how frightened you get?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Sorry to press, but could you tell me a bit more about the worst attack?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: If you don't mind, I'd like to ask how much you've been having to drink.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Hello Owen, good to see you.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: Hi, I'm Tom, a trainee psychiatrist, and I'll be speaking with you for a few minutes.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: Have I understood that correctly, that it started on a bus?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: check_understanding
+- utterance: Right. And how long ago was that?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Okay, thank you.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: That sounds difficult. I'll make a note of it.
+  empathy: 1
+  empathy_words: That sounds difficult.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I'm sorry to hear that. Let's go on to your general health.
+  empathy: 1
+  empathy_words: I'm sorry to hear that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That must be hard. Is there more you'd like to tell me?
+  empathy: 1
+  empathy_words: That must be hard.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: Oh dear. Did you manage to get home that day?
+  empathy: 1
+  empathy_words: Oh dear.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: Feeling that you might die when your heart pounds is terrifying, and it makes sense that
+    you now dread the next attack.
+  empathy: 2
+  empathy_words: Feeling that you might die when your heart pounds is terrifying, and it makes sense that
+    you now dread the next attack.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: At the worst point I think I'm having a heart attack and might die, even though afterwards
+      I'm less convinced.
+    character: At the worst point I think I'm having a heart attack and might die, even though afterwards
+      I'm less convinced.
+- utterance: You're worried about being seen struggling in public, so it's no wonder that asking strangers
+    for help feels so hard.
+  empathy: 2
+  empathy_words: You're worried about being seen struggling in public, so it's no wonder that asking strangers
+    for help feels so hard.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: I'm ashamed people might think I'm drunk or making a scene; that thought makes it harder
+      to ask for help when I start to panic.
+    character: I'm ashamed people might think I'm drunk or making a scene; that thought makes it harder
+      to ask for help when I start to panic.
+- utterance: Being unable to get on a bus when it used to be easy must feel very frustrating and unfair.
+  empathy: 2
+  empathy_words: Being unable to get on a bus when it used to be easy must feel very frustrating and unfair.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: It sounds as if your life has shrunk because of the fear, and that must be upsetting for
+    you. What matters most to you getting back?
+  empathy: 2
+  empathy_words: It sounds as if your life has shrunk because of the fear, and that must be upsetting
+    for you.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+- utterance: You just need to push yourself and get on the bus.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You just need to push yourself and get on the bus.
+  style: confront_statement
+- utterance: You've been using alcohol as a crutch, haven't you?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: haven't you
+  style: confront_tag
+- utterance: It's only anxiety, nothing dangerous. Plenty of people get it.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: It's only anxiety, nothing dangerous.
+  style: dismissive
+- utterance: honestly just try not to think about it and you'll be fine
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: try not to think about it
+  style: dismissive

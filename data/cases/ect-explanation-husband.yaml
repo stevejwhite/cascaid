@@ -1,0 +1,149 @@
+# Original fictional case for the PsychiatryEduAI CASC proof of concept (CC-BY-4.0).
+# Author draft (LLM-drafted). Not clinically validated.
+# Author notes: Review urgency and adequacy of previous treatment without implying that medication trials are always required before urgent ECT.
+# Author notes: Check balanced short- and longer-term memory discussion, anaesthetic assessment and jurisdiction-neutral consent/capacity principles.
+# Research basis (public guidance; original wording, no source text retained):
+# - Royal College of Psychiatrists: Electroconvulsive therapy (ECT), public information
+id: ect-explanation-husband
+version: 0.1.0
+title: Discussing ECT with a husband
+blueprint:
+  skill: management
+  subdivision: management_biological
+  specialty: old_age
+  communication_focus:
+    - empathy
+timing:
+  reading_seconds: 240
+  interview_seconds: 420
+authorship:
+  author: LLM draft
+  status: author_draft
+  clinically_validated: false
+candidate_instructions: >-
+  You are the inpatient psychiatrist. Meet Peter, whose wife has severe depression and has stopped
+  eating and drinking; the team is considering ECT. Explain the rationale, procedure, risks and
+  alternatives, and discuss consent and capacity principles without assuming a spouse can consent
+  on her behalf.
+persona:
+  role: relative
+  name: Peter
+  age: 77
+  description: >-
+    A retired electrician visiting his wife on the ward.
+  speech_style: Measured and polite; asks one concrete question at a time.
+  affect: Worried and protective.
+  opening_statement: >-
+    I was told you'd explain the treatment you're considering for my wife.
+  voice:
+    sex: male
+    age: older
+    accent: en-GB
+    speaker: am_fenrir
+  avatar: male-adult-03
+facts:
+  - id: course
+    content: >-
+      She's been very withdrawn for eight weeks and came into hospital ten days ago.
+    disclosure: on_direct_question
+    asked_about: [how long she has been depressed, when she came to hospital, recent course of her illness]
+    domain: presenting-concern
+    key: true
+  - id: intake
+    content: >-
+      For the last two days I've seen her refuse meals and almost all drinks. Staff told me they're
+      monitoring her physical health urgently.
+    disclosure: on_direct_question
+    asked_about: [eating and drinking, refusing food or fluids, physical checks for poor intake]
+    domain: presenting-concern
+    key: true
+  - id: symptoms
+    content: >-
+      Yes, she says she's ruined our family, although I can't think of anything she's done. She
+      won't believe my reassurance.
+    disclosure: on_direct_question
+    asked_about: [what she says about guilt, belief that she has ruined the family, response to reassurance]
+    domain: presenting-concern
+    key: true
+  - id: risk
+    content: >-
+      Yesterday she told me she didn't deserve to live. I told the nurse straight away.
+    disclosure: on_direct_question
+    asked_about: [has she said she wants to die, suicidal comments, what you told staff about suicide risk]
+    domain: presenting-concern
+    key: true
+  - id: procedure
+    content: >-
+      I picture her being awake and in pain. I don't understand what actually happens during a treatment.
+    disclosure: on_direct_question
+    asked_about: [what you understand about ECT, being asleep during ECT, worries about pain during treatment]
+    domain: presenting-concern
+    key: true
+  - id: memory
+    content: >-
+      I'm frightened she might lose memories of our life together. I don't know how likely or lasting
+      that could be.
+    disclosure: after_rapport
+    asked_about: [worries about memory loss, ECT and memories of family life, could we talk about the memory effects you fear]
+    domain: presenting-concern
+    key: true
+    vague: It's difficult to talk about.
+  - id: consent
+    content: >-
+      She has said no but couldn't explain what she'd understood when I asked. I don't know whether
+      she can make this decision, or what my role is.
+    disclosure: on_direct_question
+    asked_about: [consent to ECT, can she understand the decision, your role in agreeing to treatment]
+    domain: presenting-concern
+    key: true
+  - id: alternatives
+    content: >-
+      The team tried an antidepressant for six weeks, including before admission, without improvement.
+      I don't remember its name; I want to understand other options.
+    disclosure: on_direct_question
+    asked_about: [antidepressants tried so far, alternatives to ECT, response to previous treatment]
+    domain: presenting-concern
+    key: true
+  - id: burden
+    content: >-
+      Sometimes I wish someone else would make every decision. I feel disloyal saying that because
+      I love her.
+    disclosure: after_rapport
+    asked_about: [how you are coping as her husband, burden of making decisions, could we talk about the pressure on you]
+    domain: presenting-concern
+    rapport_needed: 2
+    key: false
+  - id: practical
+    content: >-
+      Our daughter lives nearby and can come to discussions with me if my wife agrees.
+    disclosure: on_direct_question
+    asked_about: [family support for appointments, who can join discussions, help from your daughter]
+    domain: presenting-concern
+    key: false
+tasks: []
+unscripted_response: I'd rather leave that for now.
+deflections:
+  - Can we leave that for another time?
+  - I'd prefer not to go into that.
+affect_stages:
+  - id: starting
+    affect: Worried and protective.
+    expression: anxious
+    hesitations:
+      - Mm.
+  - id: engaged
+    affect: Reassured by clear explanations, still concerned.
+    expression: sad
+    rapport_at_least: 1
+    hesitations:
+      - Mm.
+  - id: challenged
+    affect: Protective and suspicious if dismissed.
+    expression: tense
+    on_confrontation: true
+    hesitations:
+      - Right.
+questions:
+  - id: question-1
+    text: What can I do to help her understand the choices?
+    after_seconds: 300

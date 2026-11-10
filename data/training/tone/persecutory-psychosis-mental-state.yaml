@@ -1,0 +1,168 @@
+# Training lines for the tone classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: persecutory-psychosis-mental-state
+case_version: 0.1.0
+status: draft
+items:
+- utterance: How many hours of sleep have you had this week?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Have you had thoughts of killing yourself?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: um do you feel safe here on the ward
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Do you think anyone is trying to harm you?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Who have you spoken to about all this?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: If you don't mind, could you tell me what happened before you came in?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Sorry to ask, but is there anything you'd rather I didn't write down?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Hello Sophie, please sit wherever you're comfortable.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: Hi, I'm Meera, a trainee psychiatrist, and I've come to see how you are.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: I'll write brief notes, and only the team looking after you will see them.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: explanation
+- utterance: Right. And when did you notice that?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Okay, thanks Sophie.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: I'm sorry to hear that. Can we go on?
+  empathy: 1
+  empathy_words: I'm sorry to hear that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That sounds hard. I'll make a note.
+  empathy: 1
+  empathy_words: That sounds hard.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That sounds difficult. How are you feeling right now?
+  empathy: 1
+  empathy_words: That sounds difficult.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I'm sorry you've had to go through that. Is there more you'd like me to know?
+  empathy: 1
+  empathy_words: I'm sorry you've had to go through that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: It sounds as though you don't feel safe even in your own home, and that must be exhausting
+    and frightening.
+  empathy: 2
+  empathy_words: It sounds as though you don't feel safe even in your own home, and that must be exhausting
+    and frightening.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: I'm certain the neighbours watch me through a tiny device above my front door; a light
+      there flickers when I leave, though my landlord says it's just the doorbell.
+    character: I'm certain the neighbours watch me through a tiny device above my front door; a light
+      there flickers when I leave, though my landlord says it's just the doorbell.
+- utterance: You were worried that your cousin says it doesn't sound like you, and it must hurt not to
+    be believed by someone close.
+  empathy: 2
+  empathy_words: You were worried that your cousin says it doesn't sound like you, and it must hurt not
+    to be believed by someone close.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: This isn't part of my religion or anything my family believes; I'm embarrassed because
+      my cousin says it doesn't sound like me, but I still feel there is a threat.
+    character: This isn't part of my religion or anything my family believes; I'm embarrassed because
+      my cousin says it doesn't sound like me, but I still feel there is a threat.
+- utterance: Not eating or sleeping properly for a week while you were frightened to leave your flat must
+    have been really draining.
+  empathy: 2
+  empathy_words: Not eating or sleeping properly for a week while you were frightened to leave your flat
+    must have been really draining.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: Being afraid to leave your home must have made every day feel like a struggle, and I'd like
+    to understand it better. What was it like last week?
+  empathy: 2
+  empathy_words: Being afraid to leave your home must have made every day feel like a struggle, and I'd
+    like to understand it better.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+- utterance: There's no such thing as a device above your door.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: There's no such thing as a device above your door.
+  style: confront_statement
+- utterance: Why on earth would your neighbours bother watching you?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Why on earth would your neighbours bother watching you
+  style: confront_why
+- utterance: It's all in your head, Sophie, so there's no need to be scared.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: It's all in your head.
+  style: dismissive
+- utterance: honestly you just need some sleep and then it'll all go away
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: you just need some sleep
+  style: dismissive

@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: developmental-relationships-trauma-history
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Leila, who was around looking after you as you grew up?
+  expected:
+  - caregivers
+  rapport: false
+- utterance: When you were upset as a child, was there someone you felt able to turn to?
+  expected:
+  - attachment
+  rapport: false
+- utterance: Would it be all right to ask whether home ever felt frightening, without going into incidents?
+  expected:
+  - adversity
+  rapport: false
+- utterance: How did school feel for you compared with being at home?
+  expected:
+  - school
+  rapport: false
+- utterance: What were friendships like for you during your school years?
+  expected:
+  - peers
+  rapport: false
+- utterance: How did you manage becoming more independent in your teenage years?
+  expected:
+  - adolescence
+  rapport: false
+- utterance: When closeness feels risky, what do you tend to do in the relationship?
+  expected:
+  - pattern
+  rapport: false
+- utterance: When a disagreement is actually happening, do you feel connected to your emotions?
+  expected:
+  - numbness
+  rapport: false
+- utterance: does that worry show up when you think about getting help here too?
+  expected:
+  - needs
+  rapport: false
+  previous:
+    interviewer: What feels risky about someone getting close?
+    character: When someone gets close I worry they'll leave.
+- utterance: You can talk about what happened, but identifying the feelings is harder.
+  expected: []
+  rapport: false

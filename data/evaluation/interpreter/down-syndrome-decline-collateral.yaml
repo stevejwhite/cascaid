@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: down-syndrome-decline-collateral
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hi Elaine, thanks for meeting me. I'm the psychiatrist from the learning disability team."
+    expected: []
+    rapport: false
+  - utterance: "What was she like a year or so ago, what could she do for herself?"
+    expected: [baseline]
+    rapport: false
+  - utterance: "Has this come on suddenly or bit by bit?"
+    expected: [course]
+    rapport: false
+  - utterance: "How's her memory been?"
+    expected: [memory]
+    rapport: false
+  - utterance: "Which day-to-day tasks does she now need help with?"
+    expected: [skills]
+    rapport: false
+  - utterance: "Have you noticed any change in her mood or how sociable she is?"
+    expected: [mood]
+    rapport: false
+  - utterance: "Any physical health problems we should know about, thyroid or hearing for example?"
+    expected: [health]
+    rapport: false
+  - utterance: "Has anything changed in her life recently, people coming or going?"
+    expected: [events]
+    rapport: false
+  - utterance: "Have there been any incidents where she's been at risk?"
+    expected: [safety]
+    rapport: false
+  - utterance: "What medication is she on, and have there been any changes?"
+    expected: [medicines]
+    rapport: false
+  - utterance: "You clearly know her really well and care about her a great deal."
+    expected: []
+    rapport: true
+  - utterance: "Looking back, is there anything you feel could have been done differently?"
+    expected: [uncertainty]
+    rapport: false
+  - utterance: "What support would help the staff team right now?"
+    expected: [strain]
+    rapport: false
+  - utterance: "When were her thyroid levels last checked?"
+    previous:
+      interviewer: "Is she taking any regular medicines?"
+      character: "Just her thyroid tablets, nothing new."
+    expected: [health]
+    rapport: false
+  - utterance: "does she still know who the staff are?"
+    previous:
+      interviewer: "How's her memory?"
+      character: "She keeps asking whether lunch has happened."
+    expected: [memory]
+    rapport: false
+  - utterance: "Does she have any family who visit?"
+    expected: []
+    rapport: false
+  - utterance: "Does she have any problems with her heart?"
+    expected: []
+    rapport: false
+  - utterance: "Right, thanks, that gives me a clear picture of how things have changed."
+    expected: []
+    rapport: false

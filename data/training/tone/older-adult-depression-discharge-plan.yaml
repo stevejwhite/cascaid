@@ -1,0 +1,156 @@
+# Training lines for the tone classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: older-adult-depression-discharge-plan
+case_version: 0.1.0
+status: draft
+items:
+- utterance: How has his mood been over the last week?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Has anyone asked him directly about suicidal thoughts?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Has he said anything about not wanting to go on living?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: um has he been eating properly since he came in
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: What has he said about being on his own at home?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Sorry, could I just check how long he has been on the ward?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Would you mind telling me what the ward team think about the discharge date?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Morning, Chloe, thanks for making time.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: Hello Chloe, I'm the psychiatry trainee who has been asked to help plan his discharge.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: So he's improving, but there are practical things to settle before he goes home, and I'd like to go through them in turn.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: summary
+- utterance: Okay, thanks Chloe.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Right. And who else has been involved so far?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: That sounds difficult.
+  empathy: 1
+  empathy_words: That sounds difficult.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I'm sorry to hear that.
+  empathy: 1
+  empathy_words: I'm sorry to hear that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That sounds tough. What would help most from our side?
+  empathy: 1
+  empathy_words: That sounds tough.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I understand. Can we go through the risks first?
+  empathy: 1
+  empathy_words: I understand.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: It sounds uncomfortable to carry that worry without feeling able to say it in the meeting.
+  empathy: 2
+  empathy_words: It sounds uncomfortable to carry that worry without feeling able to say it in the meeting.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: Is there anything you're uneasy about in the plan?
+    character: I'm worried bed pressure is driving the date. I haven't felt comfortable saying that in the larger meeting.
+- utterance: You obviously care about him, and keeping his own values at the centre of the plan matters a great deal.
+  empathy: 2
+  empathy_words: You obviously care about him, and keeping his own values at the centre of the plan matters a great deal.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: What does he want for himself once he's home?
+    character: He wants his own routine and garden. I don't want our anxiety to mean we stop listening to what he values.
+- utterance: You have clearly been looking after him closely on the ward, and I can tell you want this to go well for him.
+  empathy: 2
+  empathy_words: You have clearly been looking after him closely on the ward, and I can tell you want this to go well for him.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: It sounds like you are under a lot of pressure to get this right, and that can't be easy. What would you most like us to protect in the plan?
+  empathy: 2
+  empathy_words: It sounds like you are under a lot of pressure to get this right, and that can't be easy.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+- utterance: The ward needs the bed, Chloe, so we have to be realistic about the date.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: The ward needs the bed
+  style: confront_statement
+- utterance: Why hasn't the social care assessment been done yet?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Why hasn't the social care assessment been done yet
+  style: confront_why
+- utterance: He's improving, so I wouldn't worry too much about the risk.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: I wouldn't worry too much about the risk
+  style: dismissive
+- utterance: Let's not make this more complicated than it needs to be.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Let's not make this more complicated than it needs to be
+  style: dismissive

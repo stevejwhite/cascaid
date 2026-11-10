@@ -1,0 +1,50 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: older-adult-depression-discharge-plan
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Chloe, what changes in mood and activity have you seen during this admission?
+  expected:
+  - recovery
+  rapport: false
+- utterance: What do we know about his current thoughts of death and the effect of being home alone?
+  expected:
+  - risk
+  rapport: false
+- utterance: What physical needs could make managing at home difficult at present?
+  expected:
+  - physical
+  rapport: false
+- utterance: Has he shown he can organise and take his own medication supply yet?
+  expected:
+  - medication
+  rapport: false
+- utterance: What did the home assessment find that still needs sorting before he returns?
+  expected:
+  - home
+  rapport: false
+- utterance: What help will he need with daily tasks, and has a care package actually been agreed?
+  expected:
+  - care
+  rapport: false
+- utterance: What help with daily tasks is agreed through social care?
+  expected:
+  - care
+  rapport: false
+- utterance: What practical help can family actually offer, with his permission?
+  expected:
+  - network
+  rapport: false
+- utterance: is there pressure to set a discharge date before those are resolved?
+  expected:
+  - pressure
+  rapport: false
+  previous:
+    interviewer: What did the home visit identify?
+    character: The home visit found spoiled food and heating that wasn't working. Arrangements to address
+      those haven't been confirmed.
+- utterance: It's helpful that you've raised the practical concerns while he's making progress.
+  expected: []
+  rapport: true

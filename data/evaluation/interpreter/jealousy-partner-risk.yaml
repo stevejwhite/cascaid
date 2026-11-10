@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: jealousy-partner-risk
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hello Darren, I'm the psychiatrist on duty tonight. Thanks for talking with me."
+    expected: []
+    rapport: false
+  - utterance: "Tell me what's been going on between you and your partner."
+    expected: [belief]
+    rapport: false
+  - utterance: "What makes you think she's being unfaithful?"
+    expected: [evidence]
+    rapport: false
+  - utterance: "I understand there was some sort of threat. What exactly did you say to her?"
+    expected: [threat]
+    rapport: false
+  - utterance: "Have you ever been physical with her, pushed her or hurt her in any way?"
+    expected: [past-violence]
+    rapport: false
+  - utterance: "What are you planning to do when you leave here tonight?"
+    expected: [intent]
+    rapport: false
+  - utterance: "Do you have anything on you, or access to anything, that could be used as a weapon?"
+    expected: [weapons]
+    rapport: false
+  - utterance: "How much have you been drinking lately?"
+    expected: [substances]
+    rapport: false
+  - utterance: "Where is your partner staying at the moment, and where will you go tonight?"
+    expected: [protection]
+    rapport: false
+  - utterance: "Have you had any thoughts of ending your own life?"
+    expected: [suicide]
+    rapport: false
+  - utterance: "Underneath all the anger, what are you feeling?"
+    expected: [loss]
+    rapport: false
+  - utterance: "It sounds like you feel completely on your own with this, and that everyone has turned against you."
+    expected: []
+    rapport: true
+  - previous:
+      interviewer: "Have you got any weapons?"
+      character: "I'm carrying nothing. There are kitchen knives at home."
+    utterance: "Can you still get into the house?"
+    expected: [weapons]
+    rapport: false
+  - previous:
+      interviewer: "Are you using any drugs?"
+      character: "No drugs, and I haven't drunk today."
+    utterance: "And your partner, is she somewhere safe right now?"
+    expected: [protection]
+    rapport: false
+  - utterance: "I can hear how much pain you're in, Darren, and it's good that you're here talking about it."
+    expected: []
+    rapport: true
+  - utterance: "Is there any history of mental illness in your family?"
+    expected: []
+    rapport: false
+  - utterance: "Are you working at the moment?"
+    expected: []
+    rapport: false
+  - utterance: "So the certainty that she's seeing someone has really taken over in the last few weeks, and things at home have become very tense."
+    expected: []
+    rapport: false

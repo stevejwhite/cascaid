@@ -1,0 +1,223 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: alcohol-driving-confidentiality
+case_version: 0.1.0
+status: draft
+items:
+  - utterance: "In a working day, how long are you actually driving for?"
+    topics: [driving]
+    style: boundary
+    pair: [driving, support]
+  - utterance: "Tell me about your job: what exactly do you drive, and how often?"
+    topics: [driving]
+    style: boundary
+    pair: [driving, support]
+  - utterance: "so um how many days a week are you out on the road"
+    topics: [driving]
+    style: boundary_spoken
+    pair: [driving, support]
+  - utterance: "So is the job mostly driving, in terms of your week?"
+    topics: [driving]
+    style: boundary_colloquial
+    pair: [driving, support]
+  - utterance: "OK. And what does a normal shift in the van look like for you?"
+    topics: [driving]
+    style: boundary_follow_up
+    pair: [driving, support]
+    previous:
+      interviewer: "My manager has warehouse work, but I haven't asked about it. My brother could take me there for a fortnight."
+      character: "My manager has warehouse work, but I haven't asked about it. My brother could take me there for a fortnight."
+  - utterance: "If you couldn't drive, is there any other work you could do?"
+    topics: [support]
+    style: boundary
+    pair: [driving, support]
+  - utterance: "Is there anyone who could help get you around for a while?"
+    topics: [support]
+    style: boundary
+    pair: [driving, support]
+  - utterance: "and would your employer have something else for you that doesn't involve driving"
+    topics: [support]
+    style: boundary_spoken
+    pair: [driving, support]
+  - utterance: "Could someone give you a lift to work for a bit, or is there a plan B?"
+    topics: [support]
+    style: boundary_colloquial
+    pair: [driving, support]
+  - utterance: "If that had to stop for a while, what could you do instead for money?"
+    topics: [support]
+    style: boundary_follow_up
+    pair: [driving, support]
+    previous:
+      interviewer: "I drive a delivery van five days a week, usually six hours a day. It's my only paid work."
+      character: "I drive a delivery van five days a week, usually six hours a day. It's my only paid work."
+  - utterance: "Do you have any penalty points on your licence?"
+    topics: []
+    style: near_miss
+    pair: [driving, support]
+  - utterance: "Do you have a family to support?"
+    topics: []
+    style: near_miss
+    pair: [driving, support]
+  - utterance: "Is there anyone you could rely on to help with transport over the next few weeks?"
+    topics: [support]
+    style: boundary
+    pair: [support, today]
+  - utterance: "Could you do a different kind of work at your firm in the meantime?"
+    topics: [support]
+    style: boundary
+    pair: [support, today]
+  - utterance: "right so who could help you out if you weren't driving um family or anything"
+    topics: [support]
+    style: boundary_spoken
+    pair: [support, today]
+  - utterance: "Anyone who could cover for you or give you a hand while this gets sorted?"
+    topics: [support]
+    style: boundary_colloquial
+    pair: [support, today]
+  - utterance: "Is he someone who could help you on a longer-term basis, if you stopped driving?"
+    topics: [support]
+    style: boundary_follow_up
+    pair: [support, today]
+    previous:
+      interviewer: "My brother drove me here and has my van keys. I expected to collect them tonight for tomorrow's shift."
+      character: "My brother drove me here and has my van keys. I expected to collect them tonight for tomorrow's shift."
+  - utterance: "How did you get to the clinic today?"
+    topics: [today]
+    style: boundary
+    pair: [support, today]
+  - utterance: "Do you have your keys with you at the moment?"
+    topics: [today]
+    style: boundary
+    pair: [support, today]
+  - utterance: "so um are you going to be driving yourself home after this"
+    topics: [today]
+    style: boundary_spoken
+    pair: [support, today]
+  - utterance: "Who's got hold of your van keys right now?"
+    topics: [today]
+    style: boundary_colloquial
+    pair: [support, today]
+  - utterance: "Okay. And when are you next planning to get behind the wheel?"
+    topics: [today]
+    style: boundary_follow_up
+    pair: [support, today]
+    previous:
+      interviewer: "My manager has warehouse work, but I haven't asked about it. My brother could take me there for a fortnight."
+      character: "My manager has warehouse work, but I haven't asked about it. My brother could take me there for a fortnight."
+  - utterance: "Does your partner know you're here?"
+    topics: []
+    style: near_miss
+    pair: [support, today]
+  - utterance: "Are you registered with a GP?"
+    topics: []
+    style: near_miss
+    pair: [support, today]
+  - utterance: "How many hours do you spend on the road in a normal working day?"
+    topics: [driving]
+    style: boundary
+    pair: [driving, today]
+  - utterance: "What sort of vehicle do you drive and how many days a week?"
+    topics: [driving]
+    style: boundary
+    pair: [driving, today]
+  - utterance: "and is driving your only job or do you do anything else as well"
+    topics: [driving]
+    style: boundary_spoken
+    pair: [driving, today]
+  - utterance: "Is the van the main way you make a living?"
+    topics: [driving]
+    style: boundary_colloquial
+    pair: [driving, today]
+  - utterance: "Right. In a typical week, how much driving is your job?"
+    topics: [driving]
+    style: boundary_follow_up
+    pair: [driving, today]
+    previous:
+      interviewer: "My brother drove me here and has my van keys. I expected to collect them tonight for tomorrow's shift."
+      character: "My brother drove me here and has my van keys. I expected to collect them tonight for tomorrow's shift."
+  - utterance: "Did you drive yourself to the appointment today?"
+    topics: [today]
+    style: boundary
+    pair: [driving, today]
+  - utterance: "When are you next due to be behind the wheel?"
+    topics: [today]
+    style: boundary
+    pair: [driving, today]
+  - utterance: "um so who's got the keys to the van at the moment"
+    topics: [today]
+    style: boundary_spoken
+    pair: [driving, today]
+  - utterance: "Are you back out in the van tomorrow?"
+    topics: [today]
+    style: boundary_colloquial
+    pair: [driving, today]
+  - utterance: "And as of now, are you the one holding the keys, or has someone else got them?"
+    topics: [today]
+    style: boundary_follow_up
+    pair: [driving, today]
+    previous:
+      interviewer: "I drive a delivery van five days a week, usually six hours a day. It's my only paid work."
+      character: "I drive a delivery van five days a week, usually six hours a day. It's my only paid work."
+  - utterance: "Is the van insured?"
+    topics: []
+    style: near_miss
+    pair: [driving, today]
+  - utterance: "Do you wear glasses for driving?"
+    topics: []
+    style: near_miss
+    pair: [driving, today]
+  - utterance: "Have you ever driven when you'd been drinking?"
+    topics: [impaired]
+    style: boundary
+    pair: [impaired, quantity]
+  - utterance: "Has there been any close call while you were behind the wheel after drinking?"
+    topics: [impaired]
+    style: boundary
+    pair: [impaired, quantity]
+  - utterance: "so have you been out in the van when you've had a drink um recently"
+    topics: [impaired]
+    style: boundary_spoken
+    pair: [impaired, quantity]
+  - utterance: "Ever got in the van with a few cans in you?"
+    topics: [impaired]
+    style: boundary_colloquial
+    pair: [impaired, quantity]
+  - utterance: "Have you driven after any of that?"
+    topics: [impaired]
+    style: boundary_follow_up
+    pair: [impaired, quantity]
+    previous:
+      interviewer: "I drink eight 500-millilitre cans of 5% lager each evening. That's been my pattern for two years."
+      character: "I drink eight 500-millilitre cans of 5% lager each evening. That's been my pattern for two years."
+  - utterance: "How many drinks would you have on a typical day?"
+    topics: [quantity]
+    style: boundary
+    pair: [impaired, quantity]
+  - utterance: "How much do you get through in a day, and how many years has that gone on?"
+    topics: [quantity]
+    style: boundary
+    pair: [impaired, quantity]
+  - utterance: "and what are you drinking um beer spirits and how many a night"
+    topics: [quantity]
+    style: boundary_spoken
+    pair: [impaired, quantity]
+  - utterance: "How many are you getting through of an evening?"
+    topics: [quantity]
+    style: boundary_colloquial
+    pair: [impaired, quantity]
+  - utterance: "Okay, and on a normal day how much do you drink in total?"
+    topics: [quantity]
+    style: boundary_follow_up
+    pair: [impaired, quantity]
+    previous:
+      interviewer: "Yes, I drove yesterday morning after two cans to stop the shakes. I nearly hit a parked car."
+      character: "Yes, I drove yesterday morning after two cans to stop the shakes. I nearly hit a parked car."
+  - utterance: "Have you been with the same firm for long?"
+    topics: []
+    style: near_miss
+    pair: [impaired, quantity]
+  - utterance: "Does your partner drink as well?"
+    topics: []
+    style: near_miss
+    pair: [impaired, quantity]

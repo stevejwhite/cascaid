@@ -1,0 +1,358 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: postpartum-psychosis-husband-collateral
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Does anyone in her family have a mental illness?
+  topics:
+  - family
+  style: boundary
+  pair:
+  - family
+  - past
+- utterance: Has her mother or any of her sisters ever been unwell like this?
+  topics:
+  - family
+  style: boundary
+  pair:
+  - family
+  - past
+- utterance: Is there any history of serious mood problems among her relatives?
+  topics:
+  - family
+  style: boundary_colloquial
+  pair:
+  - family
+  - past
+- utterance: um any mental health problems running in her family
+  topics:
+  - family
+  style: boundary_spoken
+  pair:
+  - family
+  - past
+- utterance: And what about her relatives, is there anything like that on her side?
+  topics:
+  - family
+  style: boundary_follow_up
+  pair:
+  - family
+  - past
+  previous:
+    interviewer: Has she ever seen anyone for her mental health?
+    character: She's never had psychiatric treatment that I know of. This is our first baby.
+- utterance: Has she ever had any mental health treatment herself?
+  topics:
+  - past
+  style: boundary
+  pair:
+  - family
+  - past
+- utterance: Has she ever been under a psychiatrist or taken psychiatric medication?
+  topics:
+  - past
+  style: boundary
+  pair:
+  - family
+  - past
+- utterance: Was she ever depressed or very anxious before the pregnancy?
+  topics:
+  - past
+  style: boundary_colloquial
+  pair:
+  - family
+  - past
+- utterance: um has she been unwell like this before
+  topics:
+  - past
+  style: boundary_spoken
+  pair:
+  - family
+  - past
+- utterance: And has she herself ever needed to see mental health services?
+  topics:
+  - past
+  style: boundary_follow_up
+  pair:
+  - family
+  - past
+  previous:
+    interviewer: Does mental illness run in her family?
+    character: Her mother has told me she has bipolar disorder. I don't know whether she was unwell after
+      giving birth.
+- utterance: Has she ever tried to harm herself in the past?
+  topics: []
+  style: near_miss
+  pair:
+  - family
+  - past
+- utterance: Was there anything difficult in her childhood or upbringing?
+  topics: []
+  style: near_miss
+  pair:
+  - family
+  - past
+- utterance: Does she seem to know where she is?
+  topics:
+  - confusion
+  style: boundary
+  pair:
+  - confusion
+  - voices
+- utterance: Does she lose her thread when she's talking to you?
+  topics:
+  - confusion
+  style: boundary
+  pair:
+  - confusion
+  - voices
+- utterance: Has she seemed muddled about the time or the place?
+  topics:
+  - confusion
+  style: boundary_colloquial
+  pair:
+  - confusion
+  - voices
+- utterance: um is she disorientated at all
+  topics:
+  - confusion
+  style: boundary_spoken
+  pair:
+  - confusion
+  - voices
+- utterance: And does she seem to know where she is when that happens?
+  topics:
+  - confusion
+  style: boundary_follow_up
+  pair:
+  - confusion
+  - voices
+  previous:
+    interviewer: Have you seen her talking to anyone?
+    character: She says a woman's voice is warning her not to trust us. I've seen her answer when nobody
+      else is speaking.
+- utterance: Have you seen her talking as though someone else is in the room?
+  topics:
+  - voices
+  style: boundary
+  pair:
+  - confusion
+  - voices
+- utterance: Does she say she can hear things that you can't?
+  topics:
+  - voices
+  style: boundary
+  pair:
+  - confusion
+  - voices
+- utterance: Has she told you that someone is speaking to her?
+  topics:
+  - voices
+  style: boundary_colloquial
+  pair:
+  - confusion
+  - voices
+- utterance: um does she seem to be hearing something
+  topics:
+  - voices
+  style: boundary_spoken
+  pair:
+  - confusion
+  - voices
+- utterance: And does she seem to be answering something you can't hear?
+  topics:
+  - voices
+  style: boundary_follow_up
+  pair:
+  - confusion
+  - voices
+  previous:
+    interviewer: Does she lose track of conversations?
+    character: At times she knows we're at home, but last night she thought we were in another house.
+      She loses track mid-sentence.
+- utterance: Is she speaking much faster than she usually does?
+  topics: []
+  style: near_miss
+  pair:
+  - confusion
+  - voices
+- utterance: Has she been spending money or going out at odd hours?
+  topics: []
+  style: near_miss
+  pair:
+  - confusion
+  - voices
+- utterance: How have you been managing yourself through all this?
+  topics:
+  - coping
+  style: boundary
+  pair:
+  - coping
+  - sleep
+- utterance: Have you had any rest yourself?
+  topics:
+  - coping
+  style: boundary
+  pair:
+  - coping
+  - sleep
+- utterance: Have you felt able to ask anyone for help?
+  topics:
+  - coping
+  style: boundary_colloquial
+  pair:
+  - coping
+  - sleep
+- utterance: um and how are you holding up in all this
+  topics:
+  - coping
+  style: boundary_spoken
+  pair:
+  - coping
+  - sleep
+- utterance: And what about you, are you getting any rest?
+  topics:
+  - coping
+  style: boundary_follow_up
+  pair:
+  - coping
+  - sleep
+  previous:
+    interviewer: How much has she been sleeping?
+    character: She's slept less than two hours each night for three nights, even when I've taken over
+      feeding. She says she doesn't need rest.
+- utterance: How many hours has she been sleeping at night?
+  topics:
+  - sleep
+  style: boundary
+  pair:
+  - coping
+  - sleep
+- utterance: Does she settle if you take over the night feeds?
+  topics:
+  - sleep
+  style: boundary
+  pair:
+  - coping
+  - sleep
+- utterance: Does she say she's too wired to rest?
+  topics:
+  - sleep
+  style: boundary_colloquial
+  pair:
+  - coping
+  - sleep
+- utterance: um is she sleeping at all
+  topics:
+  - sleep
+  style: boundary_spoken
+  pair:
+  - coping
+  - sleep
+- utterance: And what about her, is she getting any sleep?
+  topics:
+  - sleep
+  style: boundary_follow_up
+  pair:
+  - coping
+  - sleep
+  previous:
+    interviewer: How are you coping?
+    character: I've barely slept either. I worried asking for help would mean our baby would be taken
+      away.
+- utterance: Is she eating and drinking enough?
+  topics: []
+  style: near_miss
+  pair:
+  - coping
+  - sleep
+- utterance: Are you worried about your job or money at the moment?
+  topics: []
+  style: near_miss
+  pair:
+  - coping
+  - sleep
+- utterance: Has she had any mental health problems before this?
+  topics:
+  - past
+  style: boundary
+  pair:
+  - past
+  - physical
+- utterance: Is this her first baby, or has she been through this before?
+  topics:
+  - past
+  style: boundary_colloquial
+  pair:
+  - past
+  - physical
+- utterance: um was she ever treated for depression or anything like that
+  topics:
+  - past
+  style: boundary_spoken
+  pair:
+  - past
+  - physical
+- utterance: And has she ever needed mental health care before?
+  topics:
+  - past
+  style: boundary_follow_up
+  pair:
+  - past
+  - physical
+  previous:
+    interviewer: Was the delivery straightforward?
+    character: The delivery was uncomplicated. I haven't noticed fever; she takes prescribed pain relief
+      only, and I know of no alcohol or drug use.
+- utterance: Was there anything difficult about the delivery?
+  topics:
+  - physical
+  style: boundary
+  pair:
+  - past
+  - physical
+- utterance: Has she had a temperature or seemed physically ill?
+  topics:
+  - physical
+  style: boundary
+  pair:
+  - past
+  - physical
+- utterance: Is she on any tablets at the moment?
+  topics:
+  - physical
+  style: boundary_colloquial
+  pair:
+  - past
+  - physical
+- utterance: um any fever or infection since she gave birth
+  topics:
+  - physical
+  style: boundary_spoken
+  pair:
+  - past
+  - physical
+- utterance: And physically, has she been well otherwise?
+  topics:
+  - physical
+  style: boundary_follow_up
+  pair:
+  - past
+  - physical
+  previous:
+    interviewer: Has she seen a psychiatrist before?
+    character: She's never had psychiatric treatment that I know of. This is our first baby.
+- utterance: Has she ever had a head injury or a seizure?
+  topics: []
+  style: near_miss
+  pair:
+  - past
+  - physical
+- utterance: Did she have any thyroid trouble during the pregnancy?
+  topics: []
+  style: near_miss
+  pair:
+  - past
+  - physical

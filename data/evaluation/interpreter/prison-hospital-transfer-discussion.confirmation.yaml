@@ -1,0 +1,50 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: prison-hospital-transfer-discussion
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Marcus, what reason do you think there is for the proposed move to hospital?
+  expected:
+  - understanding
+  rapport: false
+- utterance: Have there been particular worries about somebody observing what you do in the cell?
+  expected:
+  - persecution
+  rapport: false
+- utterance: Do you hear anything when you're alone that other people don't seem to hear?
+  expected:
+  - voices
+  rapport: false
+- utterance: When you feel frightened here, have you thought of hurting yourself or somebody else?
+  expected:
+  - safety
+  rapport: false
+- utterance: What previous experience of psychiatric treatment makes you reluctant to have it again?
+  expected:
+  - treatment-objection
+  rapport: false
+- utterance: What would you like to know about getting independent help to challenge the decision?
+  expected:
+  - appeal-question
+  rapport: false
+- utterance: What questions do you have about independent review of the transfer decision?
+  expected:
+  - appeal-question
+  rapport: false
+- utterance: What are you afraid accepting hospital care could mean for the criminal proceedings or your
+    freedom?
+  expected:
+  - legal-fear
+  rapport: false
+- utterance: who would you want informed once those arrangements are known?
+  expected:
+  - family-contact
+  rapport: false
+  previous:
+    interviewer: What information are you waiting for?
+    character: Nobody has told me which hospital, when I'd go or what I can take.
+- utterance: You haven't agreed to the transfer and want to understand what would happen in hospital.
+  expected: []
+  rapport: false

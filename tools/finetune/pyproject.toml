@@ -1,0 +1,12 @@
+[project]
+name = "psychiatry-finetune"
+version = "0.1.0"
+description = "Local LoRA fine-tuning of the student interpreter with MLX (Apple Silicon only)."
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "mlx==0.32.3",
+  "mlx-lm==0.32.0",
+]
+
+[tool.uv]
+package = false

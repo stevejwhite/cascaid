@@ -1,0 +1,801 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: recurrent-infections-mental-state
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Is this your first admission with an infection?
+  topics:
+  - account
+  style: closed
+- utterance: Have you been running a temperature with these?
+  topics:
+  - account
+  style: closed
+- utterance: How many times have you been in now?
+  topics:
+  - account
+  style: colloquial
+- utterance: Could you describe the course of your infections over recent months?
+  topics:
+  - account
+  style: clinical
+- utterance: I'd like to hear about these infections from your point of view
+  topics:
+  - account
+  style: indirect
+- utterance: It sounds frustrating to keep coming back. Where have the infections been?
+  topics:
+  - account
+  style: empathy_then_question
+- utterance: so um how long has this been going on the the infections
+  topics:
+  - account
+  style: spoken
+- utterance: Admissions so far?
+  topics:
+  - account
+  style: brief
+- utterance: And the infections themselves?
+  topics:
+  - account
+  style: brief
+- utterance: Did the first one start in the same way as this one?
+  topics:
+  - account
+  style: follow_up
+  previous:
+    interviewer: Tell me about the infections, Paula.
+    character: I've had three admissions in six months with fever and infected skin wounds. I don't understand
+      why it keeps happening.
+- utterance: You've had a few of these in quite a short time, I think?
+  topics:
+  - account
+  style: leading
+- utterance: Talk me through the last few months with your health.
+  topics:
+  - account
+  style: open
+- utterance: Did these start with wounds on your skin?
+  topics:
+  - account
+  style: closed
+- utterance: What have the doctors told you about the cause?
+  topics:
+  - explanation
+  style: open
+- utterance: What's your own understanding of why this keeps happening?
+  topics:
+  - explanation
+  style: open
+- utterance: Do you have a theory about what's going on?
+  topics:
+  - explanation
+  style: closed
+- utterance: What do you reckon is behind it all?
+  topics:
+  - explanation
+  style: colloquial
+- utterance: What explanation has the medical team offered for these infections?
+  topics:
+  - explanation
+  style: clinical
+- utterance: I'm curious what sense you've made of it
+  topics:
+  - explanation
+  style: indirect
+- utterance: Not knowing must be really hard. What do you think might be causing them?
+  topics:
+  - explanation
+  style: empathy_then_question
+- utterance: um have they er have they said why it keeps happening
+  topics:
+  - explanation
+  style: spoken
+- utterance: Any explanation yet?
+  topics:
+  - explanation
+  style: brief
+- utterance: Your own theory?
+  topics:
+  - explanation
+  style: brief
+- utterance: And have you been given any idea why?
+  topics:
+  - explanation
+  style: follow_up
+  previous:
+    interviewer: What's been happening with your health?
+    character: I've had three admissions in six months with fever and infected skin wounds. I don't understand
+      why it keeps happening.
+- utterance: I imagine you've wondered whether something's wrong with your immune system?
+  topics:
+  - explanation
+  style: leading
+- utterance: How do you make sense of the infections coming back?
+  topics:
+  - explanation
+  style: open
+- utterance: Is there something you suspect your body might not be doing properly?
+  topics:
+  - explanation
+  style: closed
+- utterance: How are the team treating the infections?
+  topics:
+  - treatment
+  style: open
+- utterance: Are you on antibiotics at the moment?
+  topics:
+  - treatment
+  style: closed
+- utterance: Do you know which antibiotic you've been given?
+  topics:
+  - treatment
+  style: closed
+- utterance: What are they giving you for it?
+  topics:
+  - treatment
+  style: colloquial
+- utterance: What is your current medical management?
+  topics:
+  - treatment
+  style: clinical
+- utterance: I wanted to check what treatment you're getting at the moment
+  topics:
+  - treatment
+  style: indirect
+- utterance: It sounds like a lot to go through. Are the nurses dressing the wounds for you?
+  topics:
+  - treatment
+  style: empathy_then_question
+- utterance: and um are you on any er medicines for it right now
+  topics:
+  - treatment
+  style: spoken
+- utterance: And the treatment?
+  topics:
+  - treatment
+  style: brief
+- utterance: Any dressings?
+  topics:
+  - treatment
+  style: brief
+- utterance: Is that through a drip or as tablets?
+  topics:
+  - treatment
+  style: follow_up
+  previous:
+    interviewer: Are you having antibiotics?
+    character: I'm receiving antibiotics and dressings from the ward team. I don't know the antibiotic's
+      name; it's on my chart.
+- utterance: They've got you on some antibiotics, I expect?
+  topics:
+  - treatment
+  style: leading
+- utterance: Tell me about the care you're getting for the wounds.
+  topics:
+  - treatment
+  style: open
+- utterance: Have they started you on anything new this admission?
+  topics:
+  - treatment
+  style: closed
+- utterance: How have you been feeling in yourself?
+  topics:
+  - mood
+  style: open
+- utterance: Do you feel low most of the time?
+  topics:
+  - mood
+  style: closed
+- utterance: Are you still enjoying anything?
+  topics:
+  - mood
+  style: closed
+- utterance: How are your spirits holding up?
+  topics:
+  - mood
+  style: colloquial
+- utterance: Have you noticed persistent low mood or loss of interest?
+  topics:
+  - mood
+  style: clinical
+- utterance: I wondered how your mood is when you're not in hospital
+  topics:
+  - mood
+  style: indirect
+- utterance: Being on the ward again can be grim. Has your mood dropped?
+  topics:
+  - mood
+  style: empathy_then_question
+- utterance: And your mood?
+  topics:
+  - mood
+  style: brief
+- utterance: Anything you still enjoy?
+  topics:
+  - mood
+  style: brief
+- utterance: Is that different from how you were a year ago?
+  topics:
+  - mood
+  style: follow_up
+  previous:
+    interviewer: How do you feel when you're here?
+    character: I feel low when I'm stuck here, but I still enjoy calls with my friend. I haven't felt
+      low all day every day outside hospital.
+- utterance: I'd imagine you've been feeling fairly low with all this?
+  topics:
+  - mood
+  style: leading
+- utterance: What's your mood like when you're at home?
+  topics:
+  - mood
+  style: open
+- utterance: Is there a time of day your mood is at its worst?
+  topics:
+  - mood
+  style: closed
+- utterance: What worries you most about your health?
+  topics:
+  - anxiety
+  style: open
+- utterance: How anxious are you about another infection?
+  topics:
+  - anxiety
+  style: open
+- utterance: Are you frightened it might happen again?
+  topics:
+  - anxiety
+  style: closed
+- utterance: Is worry keeping you awake?
+  topics:
+  - anxiety
+  style: closed
+- utterance: Does it play on your mind at night?
+  topics:
+  - anxiety
+  style: colloquial
+- utterance: Have you been experiencing much health anxiety?
+  topics:
+  - anxiety
+  style: clinical
+- utterance: I'd like to understand any fears you have about your health from here
+  topics:
+  - anxiety
+  style: indirect
+- utterance: That uncertainty sounds hard to live with. Do you find yourself worrying a lot?
+  topics:
+  - anxiety
+  style: empathy_then_question
+- utterance: so um do you do you worry about getting ill again
+  topics:
+  - anxiety
+  style: spoken
+- utterance: And the worry?
+  topics:
+  - anxiety
+  style: brief
+- utterance: How's your sleep?
+  topics:
+  - anxiety
+  style: brief
+- utterance: What goes through your mind when you're lying awake?
+  topics:
+  - anxiety
+  style: follow_up
+  previous:
+    interviewer: How's your sleep been?
+    character: I'm afraid the next infection will be worse. I lie awake worrying about not knowing the
+      cause.
+- utterance: I suspect you've been quite anxious about all this?
+  topics:
+  - anxiety
+  style: leading
+- utterance: What's your biggest fear about the infections?
+  topics:
+  - anxiety
+  style: open
+- utterance: Do you think the next one could be more serious?
+  topics:
+  - anxiety
+  style: closed
+- utterance: What's been going on in your life outside hospital?
+  topics:
+  - stress
+  style: open
+- utterance: How have things been at home and at work?
+  topics:
+  - stress
+  style: open
+- utterance: Have there been any big changes in the last year?
+  topics:
+  - stress
+  style: closed
+- utterance: Are you under any money pressures?
+  topics:
+  - stress
+  style: closed
+- utterance: What's life been throwing at you lately?
+  topics:
+  - stress
+  style: colloquial
+- utterance: Have there been any recent stressful life events?
+  topics:
+  - stress
+  style: clinical
+- utterance: I'd like to understand what else has been happening for you lately
+  topics:
+  - stress
+  style: indirect
+- utterance: It sounds like a hard few months. Who do you have around you at home?
+  topics:
+  - stress
+  style: empathy_then_question
+- utterance: um outside of all this how how are things like home and work
+  topics:
+  - stress
+  style: spoken
+- utterance: Any other stresses?
+  topics:
+  - stress
+  style: brief
+- utterance: And work?
+  topics:
+  - stress
+  style: brief
+- utterance: How have you been managing with the bills?
+  topics:
+  - stress
+  style: follow_up
+  previous:
+    interviewer: How have things been away from the ward?
+    character: My relationship ended nine months ago and I've been off work repeatedly. I'm behind on
+      bills and feel isolated.
+- utterance: There's been a fair bit of strain outside hospital too, I'd guess?
+  topics:
+  - stress
+  style: leading
+- utterance: Tell me about your relationships at the moment.
+  topics:
+  - stress
+  style: open
+- utterance: Do you feel lonely at all?
+  topics:
+  - stress
+  style: closed
+- utterance: What difficulties with your mental health have you had before?
+  topics:
+  - history
+  style: open
+- utterance: Have you ever seen a psychiatrist?
+  topics:
+  - history
+  style: closed
+- utterance: Did you ever have talking therapy?
+  topics:
+  - history
+  style: closed
+- utterance: Ever needed support with your nerves or mood before?
+  topics:
+  - history
+  style: colloquial
+- utterance: Do you have any past psychiatric history?
+  topics:
+  - history
+  style: clinical
+- utterance: I'd like to ask about any previous contact with mental health services
+  topics:
+  - history
+  style: indirect
+- utterance: Thank you for being open with me. Has there been a time before when you struggled emotionally?
+  topics:
+  - history
+  style: empathy_then_question
+- utterance: um before all this had you er had any mental health problems
+  topics:
+  - history
+  style: spoken
+- utterance: Any past treatment?
+  topics:
+  - history
+  style: brief
+- utterance: Previous psychiatric admissions?
+  topics:
+  - history
+  style: brief
+- utterance: How did you find the counselling at the time?
+  topics:
+  - history
+  style: follow_up
+  previous:
+    interviewer: Have you ever had help with your mental health?
+    character: I had counselling after a bereavement ten years ago. I've never been admitted to a psychiatric
+      ward.
+- utterance: This isn't the first time you've needed some support, perhaps?
+  topics:
+  - history
+  style: leading
+- utterance: Tell me about any times in your life you've had emotional support from services.
+  topics:
+  - history
+  style: open
+- utterance: Were you ever treated in hospital for your mental health?
+  topics:
+  - history
+  style: closed
+- utterance: What thoughts have you had about harming yourself?
+  topics:
+  - risk
+  style: open
+- utterance: Some people in difficult times hurt themselves; is that something that's happened to you?
+  topics:
+  - risk
+  style: open
+- utterance: Have you had thoughts of ending your life?
+  topics:
+  - risk
+  style: closed
+- utterance: Do you ever feel like harming anyone else?
+  topics:
+  - risk
+  style: closed
+- utterance: Have things ever got so bad you've wanted to be dead?
+  topics:
+  - risk
+  style: colloquial
+- utterance: Have you ever deliberately injured yourself?
+  topics:
+  - risk
+  style: clinical
+- utterance: I need to ask everyone about whether they've ever hurt themselves
+  topics:
+  - risk
+  style: indirect
+- utterance: These are hard questions and I ask them of everyone. Have you done anything to your wounds
+    yourself?
+  topics:
+  - risk
+  style: empathy_then_question
+- utterance: um i have to ask do you ever er think about suicide
+  topics:
+  - risk
+  style: spoken
+- utterance: Any thoughts of suicide?
+  topics:
+  - risk
+  style: brief
+- utterance: Any self-harm?
+  topics:
+  - risk
+  style: brief
+- utterance: And have you ever had thoughts like that in the past?
+  topics:
+  - risk
+  style: follow_up
+  previous:
+    interviewer: Have you had thoughts of ending your life?
+    character: No, I haven't deliberately caused these infections or injured myself. I don't want to die
+      or harm anyone.
+- utterance: You've not had any thoughts of harming yourself, have you?
+  topics:
+  - risk
+  style: leading
+- utterance: Can I ask whether any of the wounds could have been made worse on purpose?
+  topics:
+  - risk
+  style: open
+- utterance: Is anyone else at risk from you?
+  topics:
+  - risk
+  style: closed
+- utterance: How do you feel about what the team have raised with you?
+  topics:
+  - reaction
+  style: open
+- utterance: The team mentioned a concern about how the infections started; how has that been for you
+    to hear?
+  topics:
+  - reaction
+  style: open
+- utterance: Are you comfortable talking about what the team has noticed?
+  topics:
+  - reaction
+  style: closed
+- utterance: Is it upsetting to be asked about this?
+  topics:
+  - reaction
+  style: closed
+- utterance: How did it land when the doctors brought that up?
+  topics:
+  - reaction
+  style: colloquial
+- utterance: How have you responded to the medical team's concerns?
+  topics:
+  - reaction
+  style: clinical
+- utterance: I'm interested in how you feel about the questions the team have been asking
+  topics:
+  - reaction
+  style: indirect
+- utterance: I know this is a sensitive area. What was it like hearing their concern?
+  topics:
+  - reaction
+  style: empathy_then_question
+- utterance: um so when they they mentioned that worry how did that feel
+  topics:
+  - reaction
+  style: spoken
+- utterance: And the team's concern?
+  topics:
+  - reaction
+  style: brief
+- utterance: Does it feel unfair?
+  topics:
+  - reaction
+  style: brief
+- utterance: How did it feel to be asked that?
+  topics:
+  - reaction
+  style: follow_up
+  previous:
+    interviewer: Have you ever done anything to cause the infections yourself?
+    character: No, I haven't deliberately caused these infections or injured myself. I don't want to die
+      or harm anyone.
+- utterance: That must have been a hard thing to hear from the team, I'd imagine?
+  topics:
+  - reaction
+  style: leading
+- utterance: What would you want the team to understand about how this concern feels?
+  topics:
+  - reaction
+  style: open
+- utterance: Would you be willing to talk about what the team have seen?
+  topics:
+  - reaction
+  style: closed
+- utterance: What are you most afraid will happen to your care?
+  topics:
+  - abandonment
+  style: open
+- utterance: How do you think the team will treat you from here?
+  topics:
+  - abandonment
+  style: open
+- utterance: Do you fear being blamed for being ill?
+  topics:
+  - abandonment
+  style: closed
+- utterance: Scared they'll give up on you?
+  topics:
+  - abandonment
+  style: colloquial
+- utterance: Do you have concerns about the continuity of your medical care?
+  topics:
+  - abandonment
+  style: clinical
+- utterance: I wondered whether you're worried about how this might affect your care
+  topics:
+  - abandonment
+  style: indirect
+- utterance: You've been through a lot with the team. Is there something you're scared of in how they
+    see you?
+  topics:
+  - abandonment
+  style: empathy_then_question
+- utterance: um is there is there a worry they won't keep helping you
+  topics:
+  - abandonment
+  style: spoken
+- utterance: Worried about your care?
+  topics:
+  - abandonment
+  style: brief
+- utterance: Fear of being blamed?
+  topics:
+  - abandonment
+  style: brief
+- utterance: What do you think might happen if they did treat it as proof?
+  topics:
+  - abandonment
+  style: follow_up
+  previous:
+    interviewer: How do you feel about the team's concern?
+    character: Hearing that suspicion makes me feel accused. I can discuss what the team has noticed,
+      but I don't want an assumption treated as proof.
+- utterance: You might be worried this changes how they look after you?
+  topics:
+  - abandonment
+  style: leading
+- utterance: What's the worst you think could come of the team's concern?
+  topics:
+  - abandonment
+  style: open
+- utterance: Have you been able to tell anyone how much this side of it worries you?
+  topics:
+  - abandonment
+  style: closed
+- utterance: Have you had any unusual experiences, like hearing things others can't?
+  topics:
+  - experiences
+  style: open
+- utterance: What's your thinking been like, clear or muddled?
+  topics:
+  - experiences
+  style: open
+- utterance: Do you ever hear voices when no one's there?
+  topics:
+  - experiences
+  style: closed
+- utterance: Can you tell me where we are right now?
+  topics:
+  - experiences
+  style: closed
+- utterance: Is your head feeling clear today?
+  topics:
+  - experiences
+  style: colloquial
+- utterance: Have you ever felt something outside you was controlling your thoughts or body?
+  topics:
+  - experiences
+  style: clinical
+- utterance: I'd like to check whether you've had any odd experiences, like voices
+  topics:
+  - experiences
+  style: indirect
+- utterance: Some of these questions might seem strange. Do you ever feel someone else is controlling
+    you?
+  topics:
+  - experiences
+  style: empathy_then_question
+- utterance: um any any voices or anything like that
+  topics:
+  - experiences
+  style: spoken
+- utterance: Any voices?
+  topics:
+  - experiences
+  style: brief
+- utterance: Following me okay?
+  topics:
+  - experiences
+  style: brief
+- utterance: And have you felt confused at all on the ward?
+  topics:
+  - experiences
+  style: follow_up
+  previous:
+    interviewer: Do you ever hear things other people can't?
+    character: No, I don't hear voices, feel controlled or lose track of where I am. I can follow what
+      we're discussing.
+- utterance: You're managing to follow all this okay, aren't you?
+  topics:
+  - experiences
+  style: leading
+- utterance: How well are you able to keep track of what we're discussing?
+  topics:
+  - experiences
+  style: open
+- utterance: Do you know what day it is today?
+  topics:
+  - experiences
+  style: closed
+- utterance: How's your mood been, and have you had any thoughts of suicide?
+  topics:
+  - mood
+  - risk
+  style: stacked
+- utterance: What's going on outside hospital, and have you had help with your mental health before?
+  topics:
+  - stress
+  - history
+  style: stacked
+- utterance: What treatment are you on, and what have the doctors said about the cause?
+  topics:
+  - treatment
+  - explanation
+  style: stacked
+- utterance: Have you heard any voices, and have you ever harmed yourself?
+  topics:
+  - experiences
+  - risk
+  style: stacked
+- utterance: Hello Paula, thank you for seeing me.
+  topics: []
+  style: greeting
+- utterance: I'm one of the psychiatrists who works with the medical wards.
+  topics: []
+  style: introduction
+- utterance: Hi Paula, my name's Dr Mensah, the medical team asked me to come and see you.
+  topics: []
+  style: introduction
+- utterance: Is it okay if we talk for a little while?
+  topics: []
+  style: introduction
+- utterance: Before we get going, do you have any questions for me?
+  topics: []
+  style: introduction
+- utterance: What would you like to start with?
+  topics: []
+  style: transition
+- utterance: I'd like to move on to a slightly different area now.
+  topics: []
+  style: transition
+- utterance: Next I'd like to ask some questions that I ask everyone.
+  topics: []
+  style: transition
+- utterance: Let's come back to the physical side in a moment.
+  topics: []
+  style: transition
+- utterance: We're nearly out of time now.
+  topics: []
+  style: closing
+- utterance: Thanks for talking with me so openly, Paula.
+  topics: []
+  style: closing
+- utterance: I'll speak to the ward team after this.
+  topics: []
+  style: closing
+- utterance: That sounds really frightening.
+  topics: []
+  style: empathy
+- utterance: It's understandable to want answers after all this.
+  topics: []
+  style: empathy
+- utterance: You've been through a lot in the last few months.
+  topics: []
+  style: empathy
+- utterance: I can hear how much you want your symptoms taken seriously.
+  topics: []
+  style: empathy
+- utterance: That's a lot of uncertainty to live with.
+  topics: []
+  style: empathy
+- utterance: Let me just recap what you've told me so far.
+  topics: []
+  style: summary
+- utterance: My job is to see how you're coping, not to judge you.
+  topics: []
+  style: explanation
+- utterance: We often see people on medical wards when things are stressful.
+  topics: []
+  style: explanation
+- utterance: The team are still looking into the physical causes alongside this.
+  topics: []
+  style: explanation
+- utterance: Does that make sense?
+  topics: []
+  style: check_understanding
+- utterance: Is there anything I've said that wasn't clear?
+  topics: []
+  style: check_understanding
+- utterance: Do you have diabetes or any other long-term conditions?
+  topics: []
+  style: off_case
+- utterance: How much alcohol do you drink?
+  topics: []
+  style: off_case
+- utterance: Do you have any children?
+  topics: []
+  style: off_case
+- utterance: Does anyone in your family have health problems like this?
+  topics: []
+  style: off_case
+- utterance: Which ward were you on last time?
+  topics: []
+  style: near_miss
+- utterance: When is your next blood test?
+  topics: []
+  style: near_miss
+- utterance: Did you have to wait long in A and E this time?
+  topics: []
+  style: near_miss
+- utterance: How long have you been on this ward?
+  topics: []
+  style: near_miss
+- utterance: Do you know when you'll be discharged?
+  topics: []
+  style: near_miss
+- utterance: What's the name of the consultant in charge of your care?
+  topics: []
+  style: near_miss

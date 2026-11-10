@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: asylum-trauma-mental-state
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: er while you're awake, do memories ever make it feel as though the danger is happening again
+  expected:
+  - intrusions
+  rapport: false
+- utterance: Samira, what is happening in your dreams, and how much sleep are you getting?
+  expected:
+  - nightmares
+  rapport: false
+- utterance: Are there places or things you keep away from because of what they bring back?
+  expected:
+  - avoidance
+  rapport: false
+- utterance: How much of the day do you feel on guard or easily startled?
+  expected:
+  - arousal
+  rapport: false
+- utterance: When did these difficulties start, and has there been a change in how bad they are?
+  expected:
+  - course
+  rapport: false
+- utterance: What has happened to your ability to feel pleasure or enjoy everyday things?
+  expected:
+  - mood
+  rapport: false
+- utterance: What worries about your accommodation or travel costs are making life difficult now?
+  expected:
+  - practical
+  rapport: false
+- utterance: What concerns do you have about personal details from this conversation being passed on?
+  expected:
+  - trust
+  rapport: false
+- utterance: if we return to that another day, who would you feel comfortable speaking with?
+  expected:
+  - preferences
+  rapport: false
+  previous:
+    interviewer: We can leave the details of what happened for another time.
+    character: I don't want to describe the events today.
+- utterance: You don't need to justify finding sleep difficult after frightening experiences.
+  expected: []
+  rapport: true

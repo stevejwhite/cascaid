@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: postnatal-depression-safety-plan
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hi Zoe, I'm the psychiatrist from the community team. Thanks for letting me come round."
+    expected: []
+    rapport: false
+  - utterance: "How long have you been feeling down like this?"
+    expected: [course]
+    rapport: false
+  - utterance: "Have you had thoughts that your family would be better off without you?"
+    expected: [thoughts]
+    rapport: false
+  - utterance: "Have you thought about how you might do it?"
+    expected: [thoughts]
+    rapport: false
+    previous:
+      interviewer: "Have you had any thoughts of ending your life?"
+      character: "I think my family would be better without me."
+  - utterance: "Are there any medicines or anything else in the house you could use to harm yourself?"
+    expected: [means]
+    rapport: false
+  - utterance: "Have you ever had thoughts of harming your baby?"
+    expected: [baby]
+    rapport: false
+  - utterance: "Who can be with you over the next few days?"
+    expected: [support]
+    rapport: false
+  - utterance: "Does your partner know how you've been feeling?"
+    expected: [support]
+    rapport: false
+    previous:
+      interviewer: "Who's around to help you?"
+      character: "My sister can stay tonight if I ask."
+  - utterance: "Are there times of day when things get worse, or signs that you're heading downhill?"
+    expected: [warning]
+    rapport: false
+  - utterance: "What helps you get through the really bad moments?"
+    expected: [coping]
+    rapport: false
+  - utterance: "Have you been seen by the perinatal mental health team yet?"
+    expected: [services]
+    rapport: false
+  - utterance: "how are you sleeping"
+    expected: [sleep]
+    rapport: false
+  - utterance: "Is there anything that's made it hard to tell people how you're feeling?"
+    expected: [fear]
+    rapport: false
+  - utterance: "Have you heard voices or had any strange ideas about the baby?"
+    expected: [experiences]
+    rapport: false
+  - utterance: "Getting through each day with a three-month-old while feeling this low sounds incredibly hard."
+    expected: []
+    rapport: true
+  - utterance: "Did you have any mental health problems before the pregnancy?"
+    expected: []
+    rapport: false
+  - utterance: "How was the birth itself?"
+    expected: []
+    rapport: false
+  - utterance: "Okay, let's write down together what we've agreed so far."
+    expected: []
+    rapport: false

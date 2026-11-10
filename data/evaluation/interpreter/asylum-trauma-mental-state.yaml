@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: asylum-trauma-mental-state
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hello Samira, I'm one of the doctors who visits the centre. Thank you for coming to see me today."
+    expected: []
+    rapport: false
+  - utterance: "Do upsetting memories ever pop into your head during the day when you don't want them to?"
+    expected: [intrusions]
+    rapport: false
+  - utterance: "Tell me about what happens when you try to sleep."
+    expected: [nightmares]
+    rapport: false
+  - utterance: "Are there places or things you stay away from because they remind you of what happened?"
+    expected: [avoidance]
+    rapport: false
+  - utterance: "Do you find yourself on edge, or easily startled?"
+    expected: [arousal]
+    rapport: false
+  - utterance: "When did all of this start, and has it changed over time?"
+    expected: [course]
+    rapport: false
+  - utterance: "how have you been in your mood generally"
+    expected: [mood]
+    rapport: false
+  - utterance: "Have things ever got so bad that you've thought about ending your life?"
+    expected: [safety]
+    rapport: false
+  - utterance: "Where are you living at the moment, and how are you managing for money?"
+    expected: [practical]
+    rapport: false
+  - utterance: "Are you happy for us to talk in English, or would you prefer an interpreter?"
+    expected: [preferences]
+    rapport: false
+  - utterance: "Is there anything that worries you about sharing personal information with me?"
+    expected: [trust]
+    rapport: false
+  - utterance: "It sounds incredibly tiring to be dealing with all of this on top of everything else, Samira."
+    expected: []
+    rapport: true
+  - utterance: "You don't have to tell me what happened. You're in control of what we talk about."
+    expected: []
+    rapport: true
+  - previous:
+      interviewer: "Are you sleeping OK?"
+      character: "I have frightening dreams four nights a week and wake sweating."
+    utterance: "And roughly how many hours do you manage to get?"
+    expected: [nightmares]
+    rapport: false
+  - previous:
+      interviewer: "How has your mood been?"
+      character: "I often feel numb, although talking with my sister still helps."
+    utterance: "Is she someone you speak to often, or is there anyone else you talk to?"
+    expected: [trust]
+    rapport: false
+  - utterance: "Have you seen a GP since you arrived in the UK?"
+    expected: []
+    rapport: false
+  - utterance: "Do you drink alcohol or use anything to help you cope?"
+    expected: []
+    rapport: false
+  - utterance: "So the nightmares, the memories during the day, and feeling jumpy are the main things troubling you right now."
+    expected: []
+    rapport: false

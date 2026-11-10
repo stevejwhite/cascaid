@@ -1,0 +1,227 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: behavioural-change-cognitive-assessment
+case_version: 0.1.0
+status: draft
+items:
+  # feelings vs insight
+  - utterance: What do you make of the concerns your family have raised, do you think they have a point?
+    topics: [insight]
+    style: boundary
+    pair: [feelings, insight]
+  - utterance: so why do you think you were sent here today
+    topics: [insight]
+    style: boundary_spoken
+    pair: [feelings, insight]
+  - utterance: Your family say you've changed. Do you see it that way yourself?
+    topics: [insight]
+    style: boundary_colloquial
+    pair: [feelings, insight]
+  - utterance: Is there anything that you feel is different about you compared with a few years ago?
+    topics: [insight]
+    style: boundary
+    pair: [feelings, insight]
+  - utterance: And do you think there's anything wrong at all?
+    topics: [insight]
+    style: boundary_follow_up
+    pair: [feelings, insight]
+    previous:
+      interviewer: What has your family been saying about you?
+      character: They say I've become rude and careless over the last year. I don't think there's much wrong with me.
+  - utterance: How does it make you feel when people around you point out your mistakes?
+    topics: [feelings]
+    style: boundary
+    pair: [feelings, insight]
+  - utterance: do you ever worry that they might take decisions away from you
+    topics: [feelings]
+    style: boundary_spoken
+    pair: [feelings, insight]
+  - utterance: Does it get you annoyed when everyone's on at you?
+    topics: [feelings]
+    style: boundary_colloquial
+    pair: [feelings, insight]
+  - utterance: What goes on for you emotionally when your family raise these worries?
+    topics: [feelings]
+    style: boundary
+    pair: [feelings, insight]
+  - utterance: And is there something underneath that irritation that bothers you?
+    topics: [feelings]
+    style: boundary_follow_up
+    pair: [feelings, insight]
+    previous:
+      interviewer: Do you get cross when people say things like that?
+      character: I get cross when everyone corrects me. Underneath that I'm worried they won't let me decide anything.
+  - utterance: Do you think you might have a problem with your memory?
+    topics: []
+    style: near_miss
+    pair: [feelings, insight]
+  - utterance: Would you be willing to let us speak to your family as well?
+    topics: []
+    style: near_miss
+    pair: [feelings, insight]
+  # conduct vs insight
+  - utterance: Have you said anything to people you don't know that you later realised was out of order?
+    topics: [conduct]
+    style: boundary
+    pair: [conduct, insight]
+  - utterance: do you ever find yourself saying things out loud that other people think are rude
+    topics: [conduct]
+    style: boundary_spoken
+    pair: [conduct, insight]
+  - utterance: When someone looks upset by something you've said, what do you do?
+    topics: [conduct]
+    style: boundary_colloquial
+    pair: [conduct, insight]
+  - utterance: Have you been acting differently around other people recently, more blunt or less restrained?
+    topics: [conduct]
+    style: boundary
+    pair: [conduct, insight]
+  - utterance: Can you give me an example of something like that?
+    topics: [conduct]
+    style: boundary_follow_up
+    pair: [conduct, insight]
+    previous:
+      interviewer: Your family say you've been rude. Does that happen out and about?
+      character: They say I've become rude and careless over the last year. I don't think there's much wrong with me.
+  - utterance: Do you accept what they're telling you about the changes?
+    topics: [insight]
+    style: boundary
+    pair: [conduct, insight]
+  - utterance: so what do you reckon is going on with you then
+    topics: [insight]
+    style: boundary_spoken
+    pair: [conduct, insight]
+  - utterance: Did you want to come today, or was that your family's idea?
+    topics: [insight]
+    style: boundary_colloquial
+    pair: [conduct, insight]
+  - utterance: In your own view, has there been any change in your personality?
+    topics: [insight]
+    style: boundary
+    pair: [conduct, insight]
+  - utterance: And do you agree with them about that?
+    topics: [insight]
+    style: boundary_follow_up
+    pair: [conduct, insight]
+    previous:
+      interviewer: Have you been saying things that upset strangers?
+      character: Yes, I've made personal comments to strangers and laughed when they looked upset. I don't see why everyone makes such a fuss.
+  - utterance: Do you ever lose your temper and become aggressive towards people?
+    topics: []
+    style: near_miss
+    pair: [conduct, insight]
+  - utterance: Have you ever got into trouble with the police?
+    topics: []
+    style: near_miss
+    pair: [conduct, insight]
+  # conduct vs feelings
+  - utterance: Have there been times when you've said something hurtful to someone you've just met?
+    topics: [conduct]
+    style: boundary
+    pair: [conduct, feelings]
+  - utterance: do you find it funny when other people get upset
+    topics: [conduct]
+    style: boundary_spoken
+    pair: [conduct, feelings]
+  - utterance: Do you say whatever comes into your head to people, even if it's a bit personal?
+    topics: [conduct]
+    style: boundary_colloquial
+    pair: [conduct, feelings]
+  - utterance: How do you react in the moment when somebody looks offended by what you've said?
+    topics: [conduct]
+    style: boundary
+    pair: [conduct, feelings]
+  - utterance: And what do you do then, when you see them looking upset?
+    topics: [conduct]
+    style: boundary_follow_up
+    pair: [conduct, feelings]
+    previous:
+      interviewer: Are you getting into scrapes with people since your behaviour changed?
+      character: Yes, I've made personal comments to strangers and laughed when they looked upset. I don't see why everyone makes such a fuss.
+  - utterance: Is it frustrating when you feel people are trying to run your life?
+    topics: [feelings]
+    style: boundary
+    pair: [conduct, feelings]
+  - utterance: um does it bother you deep down when they tell you off
+    topics: [feelings]
+    style: boundary_spoken
+    pair: [conduct, feelings]
+  - utterance: Are you afraid of losing your say in things?
+    topics: [feelings]
+    style: boundary_colloquial
+    pair: [conduct, feelings]
+  - utterance: What's it like for you, being corrected so often by the people close to you?
+    topics: [feelings]
+    style: boundary
+    pair: [conduct, feelings]
+  - utterance: And what sort of worries sit behind that?
+    topics: [feelings]
+    style: boundary_follow_up
+    pair: [conduct, feelings]
+    previous:
+      interviewer: Do people correct you much these days?
+      character: I get cross when everyone corrects me. Underneath that I'm worried they won't let me decide anything.
+  - utterance: Have you been feeling low or tearful lately?
+    topics: []
+    style: near_miss
+    pair: [conduct, feelings]
+  - utterance: Do you ever behave inappropriately in a sexual way?
+    topics: []
+    style: near_miss
+    pair: [conduct, feelings]
+  # money vs planning
+  - utterance: Have you bought anything big lately that your family weren't happy about?
+    topics: [money]
+    style: boundary
+    pair: [money, planning]
+  - utterance: do you and your family argue about what you spend
+    topics: [money]
+    style: boundary_spoken
+    pair: [money, planning]
+  - utterance: Have you been splashing out on stuff and not telling anyone?
+    topics: [money]
+    style: boundary_colloquial
+    pair: [money, planning]
+  - utterance: Is affording things becoming an issue at home?
+    topics: [money]
+    style: boundary
+    pair: [money, planning]
+  - utterance: Did they say anything about the cost of what you came home with?
+    topics: [money]
+    style: boundary_follow_up
+    pair: [money, planning]
+    previous:
+      interviewer: Do you ever come home with things you didn't need?
+      character: I'd go to the shop and see what's there. I don't make a list or check what we've already got, so I come home with the same things.
+  - utterance: When you go out to do a big shop, how do you go about it?
+    topics: [planning]
+    style: boundary
+    pair: [money, planning]
+  - utterance: um do you use a list or just wing it when you're getting groceries
+    topics: [planning]
+    style: boundary_spoken
+    pair: [money, planning]
+  - utterance: Do you check the cupboards before you head out, or just see what looks good?
+    topics: [planning]
+    style: boundary_colloquial
+    pair: [money, planning]
+  - utterance: How would you organise yourself if you were stocking up the house for the week?
+    topics: [planning]
+    style: boundary
+    pair: [money, planning]
+  - utterance: And does it ever happen that you end up with doubles of things?
+    topics: [planning]
+    style: boundary_follow_up
+    pair: [money, planning]
+    previous:
+      interviewer: Could you talk me through how you'd decide what to buy?
+      character: I bought three expensive tool sets without asking my wife. She says we can't afford it; I find that embarrassing.
+  - utterance: Do you handle the household bills yourself?
+    topics: []
+    style: near_miss
+    pair: [money, planning]
+  - utterance: Have you had any difficulty organising your day, like getting to appointments on time?
+    topics: []
+    style: near_miss
+    pair: [money, planning]

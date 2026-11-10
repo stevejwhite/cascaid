@@ -1,0 +1,156 @@
+# Training lines for the tone classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: child-ocd-family-treatment
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Has she ever talked about wanting to harm herself?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Do you ever find it hard to say no to her?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Do you blame yourself in any way for how she is?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Is she still going into school?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: what has she tried so far to get help
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Sorry to ask, but would you mind telling me what a normal day looks like for her?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: If it's not too much to ask, what do you understand about how therapy for OCD works?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Hello Imran, thanks for coming in this morning.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: Hi, I'm Dr Patel, one of the trainees on the child and adolescent team.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: So the washing and checking take hours each day, school is a struggle and she hasn't had any treatment yet.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: summary
+- utterance: Right. And how long has that been happening?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Okay, thanks, I'll make a note of that.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: That sounds really tough.
+  empathy: 1
+  empathy_words: That sounds really tough.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I'm sorry to hear that. Thank you for explaining.
+  empathy: 1
+  empathy_words: I'm sorry to hear that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That must be so hard for you. What happens when you try to stop helping?
+  empathy: 1
+  empathy_words: That must be so hard for you.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I can see how worried you are. Has anyone talked to you about treatment?
+  empathy: 1
+  empathy_words: I can see how worried you are.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: It sounds like you give in because you can't bear to see her so distressed, and that's very understandable.
+  empathy: 2
+  empathy_words: It sounds like you give in because you can't bear to see her so distressed, and that's very understandable.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: When I try to refuse suddenly she cries and begs me. I give in because I can't bear seeing her distressed.
+    character: When I try to refuse suddenly she cries and begs me. I give in because I can't bear seeing her distressed.
+- utterance: It's painful to see her hands cracked from washing, and I can hear how much you want to protect her.
+  empathy: 2
+  empathy_words: It's painful to see her hands cracked from washing, and I can hear how much you want to protect her.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: Her hands are cracked from washing. She hasn't told me she wants to die or hurt herself deliberately; I haven't asked her directly.
+    character: Her hands are cracked from washing. She hasn't told me she wants to die or hurt herself deliberately; I haven't asked her directly.
+- utterance: You said you want to help without making things worse, and that shows how much you care about her.
+  empathy: 2
+  empathy_words: You said you want to help without making things worse, and that shows how much you care about her.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: It must be very hard watching your daughter spend hours on routines that take over her day, so I'm glad you came today. What would you like to know about treatment?
+  empathy: 2
+  empathy_words: It must be very hard watching your daughter spend hours on routines that take over her day, so I'm glad you came today.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+- utterance: You shouldn't be giving in to her every time.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You shouldn't be giving in to her every time.
+  style: confront_statement
+- utterance: You've been making the OCD worse by helping her, haven't you?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You've been making the OCD worse by helping her, haven't you?
+  style: confront_tag
+- utterance: Lots of teenagers go through a phase of being a bit fussy, so try not to worry.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Lots of teenagers go through a phase of being a bit fussy, so try not to worry.
+  style: dismissive
+- utterance: Honestly, I wouldn't worry about the school side of it just now.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Honestly, I wouldn't worry about the school side of it just now.
+  style: dismissive

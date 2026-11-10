@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: amputation-refusal-capacity
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: um stephen, what is your understanding of what is wrong with the foot
+  expected:
+  - condition
+  rapport: false
+- utterance: Could you explain what the surgeons are proposing to do and what you would lose?
+  expected:
+  - operation
+  rapport: false
+- utterance: How do you understand the chances of treatment working if you don't have surgery?
+  expected:
+  - alternatives
+  rapport: false
+- utterance: What can you still remember of the choices explained to you earlier today?
+  expected:
+  - retention
+  rapport: false
+- utterance: How are you balancing the possible benefit of surgery against what worries you about it?
+  expected:
+  - weighing
+  rapport: false
+- utterance: Where have you got to in your decision about the operation at this point?
+  expected:
+  - choice
+  rapport: false
+- utterance: Is saying no to the operation a way of trying to bring your life to an end?
+  expected:
+  - suicide
+  rapport: false
+- utterance: How has your mood been since the foot became worse, even apart from deciding about surgery?
+  expected:
+  - mood
+  rapport: false
+- utterance: what would help you get a clearer picture of that?
+  expected:
+  - support
+  rapport: false
+  previous:
+    interviewer: What is still uncertain for you when you think about surgery?
+    character: I don't yet know what life afterwards would actually involve.
+- utterance: You want us to recognise that this decision concerns your own body.
+  expected: []
+  rapport: false

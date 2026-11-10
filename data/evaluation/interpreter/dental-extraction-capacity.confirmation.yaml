@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: dental-extraction-capacity
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Ben, how could I explain things so they're easier for you to follow?
+  expected:
+  - communication-needs
+  rapport: false
+- utterance: Tell me what you've understood about what is wrong with the tooth.
+  expected:
+  - dental-problem
+  rapport: false
+- utterance: What do you think would happen to you if you had the treatment they're suggesting?
+  expected:
+  - procedure-understanding
+  rapport: false
+- utterance: How could taking the tooth out help you afterwards?
+  expected:
+  - benefit-understanding
+  rapport: false
+- utterance: What problems have they told you might happen because of the treatment?
+  expected:
+  - risk-understanding
+  rapport: false
+- utterance: What do you think could happen to the tooth if it isn't taken out?
+  expected:
+  - no-treatment
+  rapport: false
+- utterance: What matters most in balancing relief from the tooth against being unconscious?
+  expected:
+  - weighing-values
+  rapport: false
+- utterance: What decision are you communicating today, even if you might discuss it again later?
+  expected:
+  - choice
+  rapport: false
+- utterance: is there an experience behind why that feels so worrying?
+  expected:
+  - personal-fear
+  rapport: false
+  previous:
+    interviewer: What concerns you most about the proposed treatment?
+    character: Being awake matters enough to me that I want the other options discussed before I agree.
+- utterance: Does the tooth pain spread up towards your ear?
+  expected: []
+  rapport: false

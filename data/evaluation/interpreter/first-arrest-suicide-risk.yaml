@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: first-arrest-suicide-risk
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hi Ryan, I'm one of the doctors who works with the custody healthcare team. Is it okay if we talk for a few minutes?"
+    expected: []
+    rapport: false
+  - utterance: "Can you tell me what happened that led to you being brought in here?"
+    expected: [arrest]
+    rapport: false
+  - utterance: "The officer said you mentioned wanting to die. Can you tell me more about those thoughts?"
+    expected: [thoughts]
+    rapport: false
+  - utterance: "Being locked in a cell after your first ever arrest, with all this going round your head, sounds really frightening."
+    expected: []
+    rapport: true
+  - utterance: "How likely do you think it is that you'd act on those thoughts tonight?"
+    expected: [intent]
+    rapport: false
+  - utterance: "Have you thought about how you might do it?"
+    expected: [plan]
+    rapport: false
+  - utterance: "Have you ever tried to harm yourself or end your life in the past?"
+    expected: [history]
+    rapport: false
+  - utterance: "had you been drinking at all before this happened"
+    expected: [alcohol]
+    rapport: false
+  - utterance: "What do you think this arrest is going to mean for your life outside?"
+    expected: [loss]
+    rapport: false
+  - utterance: "Who is there in your life you could lean on right now?"
+    expected: [support]
+    rapport: false
+  - utterance: "How were things for you, mood-wise, in the weeks before last night?"
+    expected: [mood]
+    rapport: false
+  - utterance: "What would help you feel safer while you're here tonight?"
+    expected: [help]
+    rapport: false
+  - previous:
+      interviewer: "Do you have anyone you could talk to?"
+      character: "My sister would answer if I called."
+    utterance: "And does she know where you are at the moment?"
+    expected: [support]
+    rapport: false
+  - previous:
+      interviewer: "Did you drink before the fight?"
+      character: "I had eight pints last night."
+    utterance: "Okay. And other drugs, anything like that?"
+    expected: [alcohol]
+    rapport: false
+  - utterance: "It makes sense that you feel ashamed, but you did the right thing telling the officer how you felt."
+    expected: []
+    rapport: true
+  - utterance: "Have you got a solicitor yet, and do you know when you'll be interviewed?"
+    expected: []
+    rapport: false
+  - utterance: "Do you have any physical health problems or take any regular medication?"
+    expected: []
+    rapport: false
+  - utterance: "So what I'm hearing is that last night changed things very suddenly for you, and the thoughts of dying have come since then."
+    expected: []
+    rapport: false

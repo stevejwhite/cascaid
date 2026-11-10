@@ -1,0 +1,227 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: first-arrest-suicide-risk
+case_version: 0.1.0
+status: draft
+items:
+  # ---- history / plan ----
+  - utterance: "Have you ever tried to hurt yourself before?"
+    topics: [history]
+    style: boundary
+    pair: [history, plan]
+  - utterance: "Have you ever been under a mental health team or seen a psychiatrist?"
+    topics: [history]
+    style: boundary
+    pair: [history, plan]
+  - utterance: "Is this the first time you've felt like this, or has it happened before?"
+    topics: [history]
+    style: boundary_colloquial
+    pair: [history, plan]
+  - utterance: "um have you ever actually done anything to yourself in the past"
+    topics: [history]
+    style: boundary_spoken
+    pair: [history, plan]
+  - utterance: "OK. Have you ever acted on thoughts like this in the past?"
+    topics: [history]
+    style: boundary_follow_up
+    pair: [history, plan]
+    previous:
+      interviewer: "Have you got a plan?"
+      character: "I haven't made a specific plan or set anything aside."
+  - utterance: "Have you given any thought to the way you might do it?"
+    topics: [plan]
+    style: boundary
+    pair: [history, plan]
+  - utterance: "Is there anything on you or in the cell that you could use to hurt yourself?"
+    topics: [plan]
+    style: boundary
+    pair: [history, plan]
+  - utterance: "Have you been getting anything ready, or lining something up?"
+    topics: [plan]
+    style: boundary_colloquial
+    pair: [history, plan]
+  - utterance: "so um have you got a way in mind of doing it"
+    topics: [plan]
+    style: boundary_spoken
+    pair: [history, plan]
+  - utterance: "Right. And this time, have you thought how you'd go about it?"
+    topics: [plan]
+    style: boundary_follow_up
+    pair: [history, plan]
+    previous:
+      interviewer: "Have you ever tried before?"
+      character: "I took an overdose at nineteen after a breakup and was treated in hospital."
+  - utterance: "Has anyone in your family died by suicide?"
+    topics: []
+    style: near_miss
+    pair: [history, plan]
+  - utterance: "Have you got any court dates coming up that you know of?"
+    topics: []
+    style: near_miss
+    pair: [history, plan]
+  # ---- intent / plan ----
+  - utterance: "How likely do you think you are to act on it tonight?"
+    topics: [intent]
+    style: boundary
+    pair: [intent, plan]
+  - utterance: "If we left you alone in the cell, would you try to end your life?"
+    topics: [intent]
+    style: boundary
+    pair: [intent, plan]
+  - utterance: "Do you feel you might do something to yourself in the next few hours?"
+    topics: [intent]
+    style: boundary_colloquial
+    pair: [intent, plan]
+  - utterance: "um how strong is the urge to actually go through with it tonight"
+    topics: [intent]
+    style: boundary_spoken
+    pair: [intent, plan]
+  - utterance: "OK. But how strong is the urge to actually do something tonight?"
+    topics: [intent]
+    style: boundary_follow_up
+    pair: [intent, plan]
+    previous:
+      interviewer: "Have you made any plans?"
+      character: "I haven't made a specific plan or set anything aside."
+  - utterance: "Have you thought about the method you would use?"
+    topics: [plan]
+    style: boundary
+    pair: [intent, plan]
+  - utterance: "Is there anything in here you've been eyeing up?"
+    topics: [plan]
+    style: boundary
+    pair: [intent, plan]
+  - utterance: "Have you made any preparations at all?"
+    topics: [plan]
+    style: boundary_colloquial
+    pair: [intent, plan]
+  - utterance: "so er have you worked out how you'd do it"
+    topics: [plan]
+    style: boundary_spoken
+    pair: [intent, plan]
+  - utterance: "And have you worked out the way you might go about it?"
+    topics: [plan]
+    style: boundary_follow_up
+    pair: [intent, plan]
+    previous:
+      interviewer: "Would you act on it tonight?"
+      character: "I'm frightened I might act if I'm left alone tonight."
+  - utterance: "Would you like us to contact a solicitor for you?"
+    topics: []
+    style: near_miss
+    pair: [intent, plan]
+  - utterance: "How long would you want someone to keep checking on you?"
+    topics: []
+    style: near_miss
+    pair: [intent, plan]
+  # ---- arrest / loss ----
+  - utterance: "Can you take me through how you came to be arrested?"
+    topics: [arrest]
+    style: boundary
+    pair: [arrest, loss]
+  - utterance: "What do you understand about being held here?"
+    topics: [arrest]
+    style: boundary
+    pair: [arrest, loss]
+  - utterance: "What actually went on to get you brought in?"
+    topics: [arrest]
+    style: boundary_colloquial
+    pair: [arrest, loss]
+  - utterance: "so um what happened last night to get you arrested"
+    topics: [arrest]
+    style: boundary_spoken
+    pair: [arrest, loss]
+  - utterance: "And what led to you being arrested in the first place?"
+    topics: [arrest]
+    style: boundary_follow_up
+    pair: [arrest, loss]
+    previous:
+      interviewer: "What are you most afraid of?"
+      character: "I think I'll lose my apprenticeship and my girlfriend will leave."
+  - utterance: "What are you afraid this will mean for your life?"
+    topics: [loss]
+    style: boundary
+    pair: [arrest, loss]
+  - utterance: "How do you think this will affect things at work or at home?"
+    topics: [loss]
+    style: boundary
+    pair: [arrest, loss]
+  - utterance: "What do you reckon you'll end up losing over this?"
+    topics: [loss]
+    style: boundary_colloquial
+    pair: [arrest, loss]
+  - utterance: "um what are you most worried might come of all this"
+    topics: [loss]
+    style: boundary_spoken
+    pair: [arrest, loss]
+  - utterance: "And what do you fear this will cost you?"
+    topics: [loss]
+    style: boundary_follow_up
+    pair: [arrest, loss]
+    previous:
+      interviewer: "What happened to get you arrested?"
+      character: "I was arrested after a fight outside a pub."
+  - utterance: "Has the officer told you what you will be charged with?"
+    topics: []
+    style: near_miss
+    pair: [arrest, loss]
+  - utterance: "Have you got a lawyer on the way?"
+    topics: []
+    style: near_miss
+    pair: [arrest, loss]
+  # ---- help / support ----
+  - utterance: "Would you be willing to have someone sit with you tonight?"
+    topics: [help]
+    style: boundary
+    pair: [help, support]
+  - utterance: "Would you accept some help from the healthcare team here?"
+    topics: [help]
+    style: boundary
+    pair: [help, support]
+  - utterance: "What would make it easier for you to ask the staff for help?"
+    topics: [help]
+    style: boundary_colloquial
+    pair: [help, support]
+  - utterance: "um would you be okay with someone keeping an eye on you in here"
+    topics: [help]
+    style: boundary_spoken
+    pair: [help, support]
+  - utterance: "OK. Would you be okay with a member of staff staying close by tonight?"
+    topics: [help]
+    style: boundary_follow_up
+    pair: [help, support]
+    previous:
+      interviewer: "Who could you call?"
+      character: "My sister would answer if I called."
+  - utterance: "Is there somebody you could ring if you wanted to speak to someone?"
+    topics: [support]
+    style: boundary
+    pair: [help, support]
+  - utterance: "Who matters most to you?"
+    topics: [support]
+    style: boundary
+    pair: [help, support]
+  - utterance: "Is there anyone who knows you're in here?"
+    topics: [support]
+    style: boundary_colloquial
+    pair: [help, support]
+  - utterance: "so um is there anyone you'd want us to get in touch with"
+    topics: [support]
+    style: boundary_spoken
+    pair: [help, support]
+  - utterance: "Good. And who in your life could we contact for you?"
+    topics: [support]
+    style: boundary_follow_up
+    pair: [help, support]
+    previous:
+      interviewer: "Would you accept staff staying with you?"
+      character: "I'd accept someone staying nearby and speaking with healthcare staff."
+  - utterance: "Would you like a blanket or something to eat?"
+    topics: []
+    style: near_miss
+    pair: [help, support]
+  - utterance: "Do you want to make a phone call to your employer?"
+    topics: []
+    style: near_miss
+    pair: [help, support]

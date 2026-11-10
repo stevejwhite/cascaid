@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: supported-living-behaviour-plan
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Beth, how often has he hit someone since the move, and has anybody been injured?
+  expected:
+  - pattern
+  rapport: false
+- utterance: What was happening immediately before he hit staff, including any early signs of distress?
+  expected:
+  - before
+  rapport: false
+- utterance: How does he usually understand information or let people know what he needs?
+  expected:
+  - communication
+  rapport: false
+- utterance: Have you seen changes in eating or behaviour that could indicate physical pain?
+  expected:
+  - physical
+  rapport: false
+- utterance: What differences in noise or routine are there between this home and the previous one?
+  expected:
+  - routine
+  rapport: false
+- utterance: What do staff usually do straight after an incident, and is that response agreed?
+  expected:
+  - response
+  rapport: false
+- utterance: Just before an incident, what are staff asking him to do and what does he signal?
+  expected:
+  - before
+  rapport: false
+- utterance: Immediately after an incident, what do staff do with the task they were attempting?
+  expected:
+  - response
+  rapport: false
+- utterance: how confident do you feel about helping him communicate when that happens?
+  expected:
+  - strain
+  rapport: false
+  previous:
+    interviewer: What signs come before he hits?
+    character: He first covered his ears and turned away.
+- utterance: Since the move, staff are trying to understand a change in his behaviour.
+  expected: []
+  rapport: false

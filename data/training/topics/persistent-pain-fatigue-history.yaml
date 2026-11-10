@@ -1,0 +1,739 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: persistent-pain-fatigue-history
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Where in your body do you feel the pain?
+  topics:
+  - pain
+  style: open
+- utterance: Is the pain there every day?
+  topics:
+  - pain
+  style: closed
+- utterance: Where does it hurt, Meera?
+  topics:
+  - pain
+  style: colloquial
+- utterance: Could you describe the site, duration and pattern of the pain?
+  topics:
+  - pain
+  style: clinical
+- utterance: I wondered how long you've been living with this pain
+  topics:
+  - pain
+  style: indirect
+- utterance: I'd like to hear where the pain tends to be
+  topics:
+  - pain
+  style: indirect
+- utterance: That sounds hard to live with; how long has the pain been going on?
+  topics:
+  - pain
+  style: empathy_then_question
+- utterance: I can see this matters a lot to you. What makes the pain worse?
+  topics:
+  - pain
+  style: empathy_then_question
+- utterance: so um the pain where is it mostly
+  topics:
+  - pain
+  style: spoken
+- utterance: and how long have you had the er the pain for
+  topics:
+  - pain
+  style: spoken
+- utterance: And the pain itself?
+  topics:
+  - pain
+  style: brief
+- utterance: Does it stay in one place or shift about?
+  topics:
+  - pain
+  style: follow_up
+  previous:
+    interviewer: Where in your body do you feel the pain?
+    character: For eighteen months I've had aching across my back, shoulders and legs most days. It moves
+      around and is worse after a busy day.
+- utterance: I imagine it's there most of the time, is it?
+  topics:
+  - pain
+  style: leading
+- utterance: How has your energy been?
+  topics:
+  - fatigue
+  style: open
+- utterance: Tell me a bit about the fatigue.
+  topics:
+  - fatigue
+  style: open
+- utterance: Do you feel rested when you wake up?
+  topics:
+  - fatigue
+  style: closed
+- utterance: Are you worn out after ordinary jobs at home?
+  topics:
+  - fatigue
+  style: closed
+- utterance: Are you running on empty most days?
+  topics:
+  - fatigue
+  style: colloquial
+- utterance: Would you say your sleep is unrefreshing?
+  topics:
+  - fatigue
+  style: clinical
+- utterance: I wondered how tired you feel after everyday activities
+  topics:
+  - fatigue
+  style: indirect
+- utterance: I'm interested in how your energy holds up through the day
+  topics:
+  - fatigue
+  style: indirect
+- utterance: Being tired all the time is draining; how do you feel after a night's sleep?
+  topics:
+  - fatigue
+  style: empathy_then_question
+- utterance: That must wear you down. When did the tiredness begin?
+  topics:
+  - fatigue
+  style: empathy_then_question
+- utterance: um so the tiredness what's that like for you
+  topics:
+  - fatigue
+  style: spoken
+- utterance: And your energy levels?
+  topics:
+  - fatigue
+  style: brief
+- utterance: Did the tiredness come on at a similar time to the pain?
+  topics:
+  - fatigue
+  style: follow_up
+  previous:
+    interviewer: Can you tell me about the pain you've been having?
+    character: For eighteen months I've had aching across my back, shoulders and legs most days. It moves
+      around and is worse after a busy day.
+- utterance: I'd guess you're pretty tired too, are you?
+  topics:
+  - fatigue
+  style: leading
+- utterance: What tests have you had so far?
+  topics:
+  - investigation
+  style: open
+- utterance: What have the doctors told you about the results?
+  topics:
+  - investigation
+  style: open
+- utterance: Have you had any blood tests?
+  topics:
+  - investigation
+  style: closed
+- utterance: Has anyone given you a diagnosis?
+  topics:
+  - investigation
+  style: closed
+- utterance: What have the doctors made of it all?
+  topics:
+  - investigation
+  style: colloquial
+- utterance: I wondered what tests you've been through
+  topics:
+  - investigation
+  style: indirect
+- utterance: I'd find it helpful to know what the doctors have found
+  topics:
+  - investigation
+  style: indirect
+- utterance: It sounds like you've been to a lot of appointments. What did the tests show?
+  topics:
+  - investigation
+  style: empathy_then_question
+- utterance: That must be frustrating. Who have you seen about it so far?
+  topics:
+  - investigation
+  style: empathy_then_question
+- utterance: so um have they done er scans or bloods or anything
+  topics:
+  - investigation
+  style: spoken
+- utterance: what did they um what did the GP say about the results
+  topics:
+  - investigation
+  style: spoken
+- utterance: Any tests so far?
+  topics:
+  - investigation
+  style: brief
+- utterance: Did anyone say what else might still need checking?
+  topics:
+  - investigation
+  style: follow_up
+  previous:
+    interviewer: What tests have you had so far?
+    character: My GP said my blood count, thyroid and inflammation tests were normal. A specialist found
+      no inflammatory joint condition; nobody said all possible causes were excluded.
+- utterance: I take it the blood tests came back clear?
+  topics:
+  - investigation
+  style: leading
+- utterance: What illness are you worried you might have?
+  topics:
+  - belief
+  style: open
+- utterance: Do you have your own idea of the cause?
+  topics:
+  - belief
+  style: closed
+- utterance: Are you worried something's been missed?
+  topics:
+  - belief
+  style: closed
+- utterance: What's your gut feeling about what's behind it?
+  topics:
+  - belief
+  style: colloquial
+- utterance: What's your understanding of the cause of your symptoms?
+  topics:
+  - belief
+  style: clinical
+- utterance: I wondered what you think might be going on in your body
+  topics:
+  - belief
+  style: indirect
+- utterance: I'd like to understand your own view of what's causing it
+  topics:
+  - belief
+  style: indirect
+- utterance: It's natural to want answers; what do you fear it could be?
+  topics:
+  - belief
+  style: empathy_then_question
+- utterance: Not knowing must be worrying. Has anything made you think of a particular illness?
+  topics:
+  - belief
+  style: empathy_then_question
+- utterance: so what um what do you reckon it is
+  topics:
+  - belief
+  style: spoken
+- utterance: is there er something you're scared it might be
+  topics:
+  - belief
+  style: spoken
+- utterance: And your worst fear?
+  topics:
+  - belief
+  style: brief
+- utterance: What makes you think it could be something like that?
+  topics:
+  - belief
+  style: follow_up
+  previous:
+    interviewer: What illness are you worried you might have?
+    character: I worry there is a serious muscle illness being missed. My aunt was ill for months before
+      anyone knew what was wrong.
+- utterance: You've probably wondered if it's something physical that's been overlooked?
+  topics:
+  - belief
+  style: leading
+- utterance: How has this affected your work?
+  topics:
+  - function
+  style: open
+- utterance: What does a normal week look like for you now?
+  topics:
+  - function
+  style: open
+- utterance: Do you get any help with shopping?
+  topics:
+  - function
+  style: closed
+- utterance: How are you managing day to day?
+  topics:
+  - function
+  style: colloquial
+- utterance: Could you tell me about your level of functioning at the moment?
+  topics:
+  - function
+  style: clinical
+- utterance: I wondered what you've had to give up because of the symptoms
+  topics:
+  - function
+  style: indirect
+- utterance: I'm curious how the symptoms have changed your working life
+  topics:
+  - function
+  style: indirect
+- utterance: It must be hard to juggle all this. Are there things you avoid doing now?
+  topics:
+  - function
+  style: empathy_then_question
+- utterance: That's a lot to cope with; who helps you with jobs like shopping?
+  topics:
+  - function
+  style: empathy_then_question
+- utterance: so with work um are you are you still doing your usual hours
+  topics:
+  - function
+  style: spoken
+- utterance: um what kind of things have you stopped doing
+  topics:
+  - function
+  style: spoken
+- utterance: And how's work going?
+  topics:
+  - function
+  style: brief
+- utterance: And what about the rest of the week?
+  topics:
+  - function
+  style: follow_up
+  previous:
+    interviewer: Are you still working?
+    character: I've reduced work to three days weekly. My sister does heavy shopping and I avoid outings
+      if I think I'll be exhausted afterwards.
+- utterance: I suppose you've had to cut back on quite a lot?
+  topics:
+  - function
+  style: leading
+- utterance: How has your mood been?
+  topics:
+  - mood
+  style: open
+- utterance: How have you been feeling in yourself emotionally?
+  topics:
+  - mood
+  style: open
+- utterance: Do you ever feel low?
+  topics:
+  - mood
+  style: closed
+- utterance: Are you getting any pleasure out of things?
+  topics:
+  - mood
+  style: closed
+- utterance: How are your spirits these days?
+  topics:
+  - mood
+  style: colloquial
+- utterance: Have you noticed any change in your mood or level of enjoyment?
+  topics:
+  - mood
+  style: clinical
+- utterance: I wondered how your emotional wellbeing has been through all this
+  topics:
+  - mood
+  style: indirect
+- utterance: I'd like to ask about your mood, if that's alright
+  topics:
+  - mood
+  style: indirect
+- utterance: Living with this would get anyone down. Do you feel low at times?
+  topics:
+  - mood
+  style: empathy_then_question
+- utterance: I hear how worrying this has been; has anxiety about your health been a problem?
+  topics:
+  - mood
+  style: empathy_then_question
+- utterance: um and in yourself like mood wise how are things
+  topics:
+  - mood
+  style: spoken
+- utterance: do you er worry a lot about your health
+  topics:
+  - mood
+  style: spoken
+- utterance: And your mood generally?
+  topics:
+  - mood
+  style: brief
+- utterance: Is there anything that lifts you on the harder days?
+  topics:
+  - mood
+  style: follow_up
+  previous:
+    interviewer: Do you ever feel low?
+    character: I feel low on difficult days, but I still enjoy talking with my niece. I've felt more anxious
+      about my health over the past six months.
+- utterance: I'd imagine you feel pretty down some days?
+  topics:
+  - mood
+  style: leading
+- utterance: What do you take for the pain?
+  topics:
+  - medication
+  style: open
+- utterance: What medicines are you on at the moment?
+  topics:
+  - medication
+  style: open
+- utterance: Do you use any painkillers?
+  topics:
+  - medication
+  style: closed
+- utterance: Do you use any recreational drugs?
+  topics:
+  - medication
+  style: closed
+- utterance: Are you taking anything to help with it?
+  topics:
+  - medication
+  style: colloquial
+- utterance: Could you go through your current medication with me?
+  topics:
+  - medication
+  style: clinical
+- utterance: I wondered about any tablets you take
+  topics:
+  - medication
+  style: indirect
+- utterance: I need to ask about alcohol too
+  topics:
+  - medication
+  style: indirect
+- utterance: I know pain can push people to try all sorts; what have you been using for it?
+  topics:
+  - medication
+  style: empathy_then_question
+- utterance: It can feel intrusive, I know. How much alcohol do you have?
+  topics:
+  - medication
+  style: empathy_then_question
+- utterance: and um any medication from the GP or er over the counter
+  topics:
+  - medication
+  style: spoken
+- utterance: so alcohol how much would you have
+  topics:
+  - medication
+  style: spoken
+- utterance: Painkillers at all?
+  topics:
+  - medication
+  style: brief
+- utterance: How often do you need to take it?
+  topics:
+  - medication
+  style: follow_up
+  previous:
+    interviewer: What do you take for the pain?
+    character: I use paracetamol occasionally, within the packet directions. I take no other medicines,
+      rarely drink alcohol and don't use drugs.
+- utterance: You're probably getting through a fair few painkillers, are you?
+  topics:
+  - medication
+  style: leading
+- utterance: Sometimes people who feel this way have thoughts of ending their life; has that happened
+    for you?
+  topics:
+  - safety
+  style: open
+- utterance: What thoughts have you had about not wanting to go on?
+  topics:
+  - safety
+  style: open
+- utterance: Have you had any thoughts of suicide?
+  topics:
+  - safety
+  style: closed
+- utterance: Has there been any self harm?
+  topics:
+  - safety
+  style: closed
+- utterance: Could I ask about suicidal thoughts or self-harm?
+  topics:
+  - safety
+  style: clinical
+- utterance: I wondered whether you've ever felt life wasn't worth living
+  topics:
+  - safety
+  style: indirect
+- utterance: I ask everyone about self harm, so I'd like to check that with you
+  topics:
+  - safety
+  style: indirect
+- utterance: Pain like this can be really wearing. Have you ever thought about ending your life?
+  topics:
+  - safety
+  style: empathy_then_question
+- utterance: I'm sorry it's been so hard; have you done anything to hurt yourself?
+  topics:
+  - safety
+  style: empathy_then_question
+- utterance: um i have to ask have you had any thoughts of er killing yourself
+  topics:
+  - safety
+  style: spoken
+- utterance: so any times you've wanted to um not be here
+  topics:
+  - safety
+  style: spoken
+- utterance: Any thoughts of suicide?
+  topics:
+  - safety
+  style: brief
+- utterance: Have there been times you've felt close to it?
+  topics:
+  - safety
+  style: follow_up
+  previous:
+    interviewer: Have you had any thoughts of suicide?
+    character: No, I haven't wanted to end my life or harmed myself.
+- utterance: You've not had any thoughts of harming yourself, I take it?
+  topics:
+  - safety
+  style: leading
+- utterance: What does this referral mean to you?
+  topics:
+  - dismissal
+  style: open
+- utterance: Are you worried people don't believe you?
+  topics:
+  - dismissal
+  style: closed
+- utterance: Were you uneasy about today's appointment?
+  topics:
+  - dismissal
+  style: closed
+- utterance: Did you feel a bit fobbed off being sent to see me?
+  topics:
+  - dismissal
+  style: colloquial
+- utterance: What were your expectations of a liaison psychiatry appointment?
+  topics:
+  - dismissal
+  style: clinical
+- utterance: I'm keen to know how you felt when you heard you'd be seeing a psychiatrist
+  topics:
+  - dismissal
+  style: indirect
+- utterance: I'd really like to hear any worries you have about this appointment
+  topics:
+  - dismissal
+  style: indirect
+- utterance: You said you need someone to take this seriously, and I do. What worries you about being
+    here?
+  topics:
+  - dismissal
+  style: empathy_then_question
+- utterance: It sounds like you haven't always felt listened to. Do you worry about not being believed?
+  topics:
+  - dismissal
+  style: empathy_then_question
+- utterance: um a lot of people feel a bit funny about seeing a psychiatrist how was it for you
+  topics:
+  - dismissal
+  style: spoken
+- utterance: so what what went through your mind when you got the referral
+  topics:
+  - dismissal
+  style: spoken
+- utterance: How do you feel about today?
+  topics:
+  - dismissal
+  style: brief
+- utterance: Who do you feel hasn't believed you?
+  topics:
+  - dismissal
+  style: follow_up
+  previous:
+    interviewer: How do you feel about today?
+    character: I'm afraid this referral means everyone thinks I'm making it up. I almost didn't come.
+- utterance: Perhaps you worried I'd say it's all in your head?
+  topics:
+  - dismissal
+  style: leading
+- utterance: What was going on in your life when the symptoms first appeared?
+  topics:
+  - stress
+  style: open
+- utterance: Tell me about any pressures you were under around that time.
+  topics:
+  - stress
+  style: open
+- utterance: Were you looking after anyone when this started?
+  topics:
+  - stress
+  style: closed
+- utterance: Was there a lot of stress when it first came on?
+  topics:
+  - stress
+  style: closed
+- utterance: Was life throwing much at you back then?
+  topics:
+  - stress
+  style: colloquial
+- utterance: Were there any significant life events around the onset?
+  topics:
+  - stress
+  style: clinical
+- utterance: I wondered what else was happening around the start of all this
+  topics:
+  - stress
+  style: indirect
+- utterance: I'd be interested to hear about any caring responsibilities you had then
+  topics:
+  - stress
+  style: indirect
+- utterance: I'm not suggesting it's all stress, I promise. Was anything difficult going on when it started?
+  topics:
+  - stress
+  style: empathy_then_question
+- utterance: I can hear you want to be believed. Were things hard at home when the pain first came on?
+  topics:
+  - stress
+  style: empathy_then_question
+- utterance: um just thinking back to when it started was there er a lot going on
+  topics:
+  - stress
+  style: spoken
+- utterance: and were you were you caring for someone at that point
+  topics:
+  - stress
+  style: spoken
+- utterance: Much stress back then?
+  topics:
+  - stress
+  style: brief
+- utterance: How were you managing with that at the time?
+  topics:
+  - stress
+  style: follow_up
+  previous:
+    interviewer: What was going on in your life when the symptoms first appeared?
+    character: I was caring for my father when it began. That was stressful, but I don't see how it explains
+      everything.
+- utterance: I suppose there might have been a fair bit going on then?
+  topics:
+  - stress
+  style: leading
+- utterance: How long have you had the pain, and how's your sleep and energy?
+  topics:
+  - pain
+  - fatigue
+  style: stacked
+- utterance: What tests have you had, and what do you think is causing it?
+  topics:
+  - investigation
+  - belief
+  style: stacked
+- utterance: How's work going, and how has your mood been?
+  topics:
+  - function
+  - mood
+  style: stacked
+- utterance: Do you take anything for the pain, and have you had any thoughts of harming yourself?
+  topics:
+  - medication
+  - safety
+  style: stacked
+- utterance: Hello Meera, thanks for coming in today.
+  topics: []
+  style: greeting
+- utterance: I'm one of the doctors from the liaison psychiatry team.
+  topics: []
+  style: introduction
+- utterance: Good morning Meera, I'm a doctor from the psychiatry team working with your medical doctors.
+  topics: []
+  style: introduction
+- utterance: Is it all right if we talk for a few minutes about how things have been?
+  topics: []
+  style: greeting
+- utterance: What would you like to start with?
+  topics: []
+  style: transition
+- utterance: Before we start, do you have any questions for me?
+  topics: []
+  style: greeting
+- utterance: I'd like to move on to something a bit different now.
+  topics: []
+  style: transition
+- utterance: Thanks, that's helpful. Can I ask about another area now?
+  topics: []
+  style: transition
+- utterance: I'm going to switch to some questions about how you're feeling in yourself.
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Meera.
+  topics: []
+  style: closing
+- utterance: Thank you for talking with me so openly today.
+  topics: []
+  style: closing
+- utterance: Before we finish, is there anything you'd like to ask me?
+  topics: []
+  style: closing
+- utterance: That sounds exhausting to live with.
+  topics: []
+  style: empathy
+- utterance: I believe you that this pain is real.
+  topics: []
+  style: empathy
+- utterance: It makes sense you'd want proper answers.
+  topics: []
+  style: empathy
+- utterance: It's clearly had a big impact on your life.
+  topics: []
+  style: empathy
+- utterance: So the pain and tiredness have been going on for a long time, and the tests haven't given
+    you an answer.
+  topics: []
+  style: summary
+- utterance: 'Let me check I''ve got this right: it''s affecting work and you''re worried something''s
+    been missed.'
+  topics: []
+  style: summary
+- utterance: From what you've said, you've been coping with a lot on your own.
+  topics: []
+  style: summary
+- utterance: My job is to look at how this is affecting you as a whole person, not to say it's in your
+    head.
+  topics: []
+  style: explanation
+- utterance: Seeing a psychiatrist doesn't mean the medical team think the symptoms aren't real.
+  topics: []
+  style: explanation
+- utterance: The physical side will still be looked at alongside anything we discuss today.
+  topics: []
+  style: explanation
+- utterance: Does that make sense so far?
+  topics: []
+  style: check_understanding
+- utterance: Have I explained that clearly enough?
+  topics: []
+  style: check_understanding
+- utterance: Is there anything I've said that you'd like me to go over again?
+  topics: []
+  style: check_understanding
+- utterance: Have you noticed any rashes or swelling in your joints?
+  topics: []
+  style: off_case
+- utterance: Do you get headaches as well?
+  topics: []
+  style: off_case
+- utterance: Have you had any problems with your bowels?
+  topics: []
+  style: off_case
+- utterance: Have you lost any weight without trying?
+  topics: []
+  style: off_case
+- utterance: Have you ever seen a psychologist or counsellor before?
+  topics: []
+  style: off_case
+- utterance: What time do you usually go to bed?
+  topics: []
+  style: near_miss
+- utterance: When's your next appointment with the GP?
+  topics: []
+  style: near_miss
+- utterance: What do you do for a living?
+  topics: []
+  style: near_miss
+- utterance: Do you have any allergies to medicines?
+  topics: []
+  style: near_miss

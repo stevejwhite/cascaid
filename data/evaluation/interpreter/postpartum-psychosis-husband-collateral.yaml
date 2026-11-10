@@ -1,0 +1,70 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: postpartum-psychosis-husband-collateral
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hello Ben, I'm one of the psychiatrists from the community team. Thanks for seeing me at such short notice."
+    expected: []
+    rapport: false
+  - utterance: "When did you first notice she wasn't herself?"
+    expected: [onset]
+    rapport: false
+  - utterance: "How has she been sleeping?"
+    expected: [sleep]
+    rapport: false
+  - utterance: "Has she said anything about the baby that struck you as strange?"
+    expected: [beliefs]
+    rapport: false
+  - utterance: "Has she mentioned hearing things that other people can't hear?"
+    expected: [voices]
+    rapport: false
+  - utterance: "Does she always seem to know where she is, or does she get muddled?"
+    expected: [confusion]
+    rapport: false
+  - utterance: "Has she ever seen a psychiatrist or had any mental health problems before?"
+    expected: [past]
+    rapport: false
+  - utterance: "Is there any mental illness in her family that you know of?"
+    expected: [family]
+    rapport: false
+  - utterance: "Who is looking after the baby right now?"
+    expected: [safety]
+    rapport: false
+  - utterance: "This must be incredibly frightening for you, seeing her change so fast."
+    expected: []
+    rapport: true
+  - utterance: "Has she said anything that makes you worry she might harm herself or the baby?"
+    expected: [danger]
+    rapport: false
+  - utterance: "And how are you holding up yourself?"
+    expected: [coping]
+    rapport: false
+  - utterance: "Was the birth straightforward? Has she had a temperature, or is she taking anything?"
+    expected: [physical]
+    rapport: false
+  - utterance: "and does anything you say to her change her mind?"
+    previous:
+      interviewer: "Has she said anything odd about the baby?"
+      character: "She says the baby has been replaced and isn't ours."
+    expected: [beliefs]
+    rapport: false
+  - utterance: "Do you know if her mum was ever unwell after having children?"
+    previous:
+      interviewer: "Any mental illness in the family?"
+      character: "Her mother has told me she has bipolar disorder."
+    expected: [family]
+    rapport: false
+  - utterance: "Is she breastfeeding at the moment?"
+    expected: []
+    rapport: false
+  - utterance: "Has the health visitor been round this week?"
+    expected: []
+    rapport: false
+  - utterance: "You've done exactly the right thing by calling us today."
+    expected: []
+    rapport: true
+  - utterance: "So over the last few days she's become frightened, isn't sleeping and is saying some unusual things."
+    expected: []
+    rapport: false

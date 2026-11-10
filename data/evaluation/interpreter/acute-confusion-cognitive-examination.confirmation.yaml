@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: acute-confusion-cognitive-examination
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: um evelyn, could you tell me today's date as best you can
+  expected:
+  - time-orientation
+  rapport: false
+- utterance: What sort of place do you think we're sitting in just now?
+  expected:
+  - place-orientation
+  rapport: false
+- utterance: Starting at December, could you work back through the months for me?
+  expected:
+  - attention
+  rapport: false
+- utterance: 'Please repeat these straight back to me: orange, window, coin.'
+  expected:
+  - registration
+  rapport: false
+- utterance: Does making sense of a conversation feel equally easy throughout the day?
+  expected:
+  - fluctuation
+  rapport: false
+- utterance: Do things ever appear in front of you and then vanish, without anyone else noticing them?
+  expected:
+  - visual-experience
+  rapport: false
+- utterance: If I asked whether it was morning or evening now, which would you say?
+  expected:
+  - time-orientation
+  rapport: false
+- utterance: Leaving the date aside, what kind of building do you think you're in?
+  expected:
+  - place-orientation
+  rapport: false
+- utterance: and which ones can you bring back now?
+  expected:
+  - delayed-recall
+  rapport: false
+  previous:
+    interviewer: Keep orange, window and coin in mind; I'll ask for them again after we've talked.
+    character: Orange... I'm sorry, I didn't keep the other two in my head. Could you say them again?
+- utterance: It must be unsettling not to be sure what's happening around you.
+  expected: []
+  rapport: true

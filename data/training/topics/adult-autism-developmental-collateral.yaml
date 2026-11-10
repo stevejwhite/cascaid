@@ -1,0 +1,828 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: adult-autism-developmental-collateral
+case_version: 0.1.0
+status: draft
+items:
+- utterance: How was his early development, as far as you remember?
+  topics:
+  - milestones
+  style: open
+- utterance: Did he walk at about the usual age?
+  topics:
+  - milestones
+  style: closed
+- utterance: Was he speaking in sentences before nursery?
+  topics:
+  - milestones
+  style: closed
+- utterance: When did he say his first words?
+  topics:
+  - milestones
+  style: colloquial
+- utterance: Was he a late talker, or a normal one?
+  topics:
+  - milestones
+  style: colloquial
+- utterance: Do you remember when he took his first steps?
+  topics:
+  - milestones
+  style: colloquial
+- utterance: What were the motor and speech milestones in infancy?
+  topics:
+  - milestones
+  style: clinical
+- utterance: I wondered how early development went when he was a baby and toddler
+  topics:
+  - milestones
+  style: indirect
+- utterance: It's hard to recall so far back. When did he begin to talk?
+  topics:
+  - milestones
+  style: empathy_then_question
+- utterance: um so when did he walk, and, uh, when did the talking come
+  topics:
+  - milestones
+  style: spoken
+- utterance: and as a baby, like, was he on time for things
+  topics:
+  - milestones
+  style: spoken
+- utterance: First words and walking?
+  topics:
+  - milestones
+  style: brief
+- utterance: And when did he start talking?
+  topics:
+  - milestones
+  style: follow_up
+  previous:
+    interviewer: He took instructions very literally and often missed teasing. That still happens now.
+    character: He took instructions very literally and often missed teasing. That still happens now.
+- utterance: I imagine he was very late to speak, wasn't he?
+  topics:
+  - milestones
+  style: leading
+- utterance: What did he like to play with as a little boy?
+  topics:
+  - play
+  style: open
+- utterance: How did he spend his time when he was playing?
+  topics:
+  - play
+  style: open
+- utterance: Did he join in pretend games?
+  topics:
+  - play
+  style: closed
+- utterance: Did he play with toys in the usual way?
+  topics:
+  - play
+  style: closed
+- utterance: What sort of games did he go for?
+  topics:
+  - play
+  style: colloquial
+- utterance: Did he play by himself or with others?
+  topics:
+  - play
+  style: colloquial
+- utterance: Was he into make-believe at all?
+  topics:
+  - play
+  style: colloquial
+- utterance: Can you describe his play in early childhood, including imaginative play?
+  topics:
+  - play
+  style: clinical
+- utterance: I wondered what his favourite toys and games were
+  topics:
+  - play
+  style: indirect
+- utterance: It's lovely that you remember so much. What was his play like?
+  topics:
+  - play
+  style: empathy_then_question
+- utterance: um what did he play with, did he do pretend stuff or, you know, just lined things up
+  topics:
+  - play
+  style: spoken
+- utterance: so as a child how did he, uh, how did he play
+  topics:
+  - play
+  style: spoken
+- utterance: His play as a child?
+  topics:
+  - play
+  style: brief
+- utterance: What did he do for fun at that age?
+  topics:
+  - play
+  style: follow_up
+  previous:
+    interviewer: He did well in maths with a structured timetable. At university he struggled with shared
+      accommodation and organising assignments despite understanding the work.
+    character: He did well in maths with a structured timetable. At university he struggled with shared
+      accommodation and organising assignments despite understanding the work.
+- utterance: He mostly played alone and never joined in, didn't he?
+  topics:
+  - play
+  style: leading
+- utterance: Tell me about his friendships growing up.
+  topics:
+  - social
+  style: open
+- utterance: Did he have friends at school?
+  topics:
+  - social
+  style: closed
+- utterance: Did he wait his turn when talking with other children?
+  topics:
+  - social
+  style: closed
+- utterance: Did he make mates easily?
+  topics:
+  - social
+  style: colloquial
+- utterance: What was he like when chatting with other kids?
+  topics:
+  - social
+  style: colloquial
+- utterance: Did he go on and on about things he liked?
+  topics:
+  - social
+  style: colloquial
+- utterance: How were his peer relationships and reciprocal conversation?
+  topics:
+  - social
+  style: clinical
+- utterance: I wondered what his friendships were like as he grew up
+  topics:
+  - social
+  style: indirect
+- utterance: That can be painful to watch as a parent. Did he have friends?
+  topics:
+  - social
+  style: empathy_then_question
+- utterance: um so did he have friends, or was it, like, hard for him to join in
+  topics:
+  - social
+  style: spoken
+- utterance: and when he talked to other children, uh, how did that go
+  topics:
+  - social
+  style: spoken
+- utterance: Friends as a child?
+  topics:
+  - social
+  style: brief
+- utterance: Did he have friends there too?
+  topics:
+  - social
+  style: follow_up
+  previous:
+    interviewer: He did well in maths with a structured timetable. At university he struggled with shared
+      accommodation and organising assignments despite understanding the work.
+    character: He did well in maths with a structured timetable. At university he struggled with shared
+      accommodation and organising assignments despite understanding the work.
+- utterance: He didn't want friends at all, did he?
+  topics:
+  - social
+  style: leading
+- utterance: How did he understand what people said to him?
+  topics:
+  - language
+  style: open
+- utterance: What did he make of jokes and figures of speech?
+  topics:
+  - language
+  style: open
+- utterance: Did he take things literally?
+  topics:
+  - language
+  style: closed
+- utterance: Did he pick up on hints?
+  topics:
+  - language
+  style: closed
+- utterance: Did jokes go over his head?
+  topics:
+  - language
+  style: colloquial
+- utterance: Did he get it when people were having a laugh at him?
+  topics:
+  - language
+  style: colloquial
+- utterance: Could you tell him something with a hint and he'd get it?
+  topics:
+  - language
+  style: colloquial
+- utterance: Is there difficulty with pragmatic language or non-literal meaning?
+  topics:
+  - language
+  style: clinical
+- utterance: I wondered how he deals with sarcasm and sayings
+  topics:
+  - language
+  style: indirect
+- utterance: It's good you can recall these details. Did he understand jokes?
+  topics:
+  - language
+  style: empathy_then_question
+- utterance: um was he, like, quite literal, did he miss it if someone was winding him up
+  topics:
+  - language
+  style: spoken
+- utterance: so if you said something indirect, uh, would he get it
+  topics:
+  - language
+  style: spoken
+- utterance: Jokes and hints?
+  topics:
+  - language
+  style: brief
+- utterance: Does that still happen now?
+  topics:
+  - language
+  style: follow_up
+  previous:
+    interviewer: He wanted friends but often talked at length about his interests without noticing others
+      wanted a turn. He usually had one friend at a time.
+    character: He wanted friends but often talked at length about his interests without noticing others
+      wanted a turn. He usually had one friend at a time.
+- utterance: He understood sarcasm perfectly, didn't he?
+  topics:
+  - language
+  style: leading
+- utterance: How did he cope when plans changed?
+  topics:
+  - routine
+  style: open
+- utterance: What happened when something unexpected came up?
+  topics:
+  - routine
+  style: open
+- utterance: Did he need things to stay the same?
+  topics:
+  - routine
+  style: closed
+- utterance: Did he get upset about changes?
+  topics:
+  - routine
+  style: closed
+- utterance: What was he like if you changed the plan last minute?
+  topics:
+  - routine
+  style: colloquial
+- utterance: Did he like to know what was happening next?
+  topics:
+  - routine
+  style: colloquial
+- utterance: Did he fall apart when the day went differently?
+  topics:
+  - routine
+  style: colloquial
+- utterance: How did he respond to disruption of routine?
+  topics:
+  - routine
+  style: clinical
+- utterance: I wondered how he managed when things didn't go to plan
+  topics:
+  - routine
+  style: indirect
+- utterance: That sounds like it was hard for both of you. How did he handle change?
+  topics:
+  - routine
+  style: empathy_then_question
+- utterance: um what happened if the day changed, did he get really upset or, you know, cope
+  topics:
+  - routine
+  style: spoken
+- utterance: so did he need, uh, a set routine to feel settled
+  topics:
+  - routine
+  style: spoken
+- utterance: And changes in routine?
+  topics:
+  - routine
+  style: brief
+- utterance: How did he cope with changes there?
+  topics:
+  - routine
+  style: follow_up
+  previous:
+    interviewer: He did well in maths with a structured timetable. At university he struggled with shared
+      accommodation and organising assignments despite understanding the work.
+    character: He did well in maths with a structured timetable. At university he struggled with shared
+      accommodation and organising assignments despite understanding the work.
+- utterance: He was always very easy-going about changes, wasn't he?
+  topics:
+  - routine
+  style: leading
+- utterance: How did he respond to sounds, textures and so on?
+  topics:
+  - sensory
+  style: open
+- utterance: What kinds of things did he find uncomfortable as a child?
+  topics:
+  - sensory
+  style: open
+- utterance: Was he sensitive to noise?
+  topics:
+  - sensory
+  style: closed
+- utterance: Was there clothing he wouldn't wear?
+  topics:
+  - sensory
+  style: closed
+- utterance: Did loud noises bother him?
+  topics:
+  - sensory
+  style: colloquial
+- utterance: Were there foods or fabrics he couldn't stand?
+  topics:
+  - sensory
+  style: colloquial
+- utterance: What places does he steer clear of now?
+  topics:
+  - sensory
+  style: colloquial
+- utterance: Were there sensory sensitivities, including auditory and tactile?
+  topics:
+  - sensory
+  style: clinical
+- utterance: I wondered whether certain sounds or feelings upset him
+  topics:
+  - sensory
+  style: indirect
+- utterance: That must have been puzzling at the time. Was he bothered by noise or clothes?
+  topics:
+  - sensory
+  style: empathy_then_question
+- utterance: um was he, like, sensitive to noise or, uh, to how things felt on his skin
+  topics:
+  - sensory
+  style: spoken
+- utterance: so were there sounds he really hated
+  topics:
+  - sensory
+  style: spoken
+- utterance: Noise and clothing sensitivities?
+  topics:
+  - sensory
+  style: brief
+- utterance: Does he still avoid those things?
+  topics:
+  - sensory
+  style: follow_up
+  previous:
+    interviewer: He took instructions very literally and often missed teasing. That still happens now.
+    character: He took instructions very literally and often missed teasing. That still happens now.
+- utterance: Noise never seemed to bother him at all, did it?
+  topics:
+  - sensory
+  style: leading
+- utterance: How did he get on at school?
+  topics:
+  - education
+  style: open
+- utterance: What was university like for him?
+  topics:
+  - education
+  style: open
+- utterance: Was he good at any subjects?
+  topics:
+  - education
+  style: closed
+- utterance: Did he find it hard to organise his work?
+  topics:
+  - education
+  style: closed
+- utterance: How did he cope with living with other students?
+  topics:
+  - education
+  style: colloquial
+- utterance: What was he like at learning new things?
+  topics:
+  - education
+  style: colloquial
+- utterance: Did he keep on top of his coursework?
+  topics:
+  - education
+  style: colloquial
+- utterance: What was his academic profile, and what difficulties arose at university?
+  topics:
+  - education
+  style: clinical
+- utterance: I wondered how his learning went at school and later on
+  topics:
+  - education
+  style: indirect
+- utterance: That sounds like a tough time for him. How did he manage his studies?
+  topics:
+  - education
+  style: empathy_then_question
+- utterance: so did he do well, or was it, like, a struggle with the work
+  topics:
+  - education
+  style: spoken
+- utterance: School and university?
+  topics:
+  - education
+  style: brief
+- utterance: What about his studies?
+  topics:
+  - education
+  style: follow_up
+  previous:
+    interviewer: Unexpected changes could leave him very upset. At school we used a written timetable,
+      which helped.
+    character: Unexpected changes could leave him very upset. At school we used a written timetable, which
+      helped.
+- utterance: He failed at everything academically, didn't he?
+  topics:
+  - education
+  style: leading
+- utterance: Has he ever said anything that worried you about his safety?
+  topics:
+  - risk
+  style: open
+- utterance: What have you noticed about how low he's been feeling?
+  topics:
+  - risk
+  style: open
+- utterance: Has he ever talked about wanting to die?
+  topics:
+  - risk
+  style: closed
+- utterance: Have you asked him whether he's thought of harming himself?
+  topics:
+  - risk
+  style: closed
+- utterance: Has he ever said he wants to end it all?
+  topics:
+  - risk
+  style: colloquial
+- utterance: Do you worry he might hurt himself?
+  topics:
+  - risk
+  style: colloquial
+- utterance: Has he spoken to you about dark thoughts?
+  topics:
+  - risk
+  style: colloquial
+- utterance: Is there any known suicidal ideation or self-harm in your son?
+  topics:
+  - risk
+  style: clinical
+- utterance: I wondered whether you have any concerns about his safety
+  topics:
+  - risk
+  style: indirect
+- utterance: I know this is a difficult question. Has he mentioned wanting to harm himself?
+  topics:
+  - risk
+  style: empathy_then_question
+- utterance: um has he ever, like, said he'd hurt himself or not want to be here
+  topics:
+  - risk
+  style: spoken
+- utterance: so have you, uh, ever had to ask him about suicide
+  topics:
+  - risk
+  style: spoken
+- utterance: Any concerns about self-harm?
+  topics:
+  - risk
+  style: brief
+- utterance: Has he ever said anything about wanting to die?
+  topics:
+  - risk
+  style: follow_up
+  previous:
+    interviewer: His father prefers routines too, but nobody in our family has a confirmed autism diagnosis.
+    character: His father prefers routines too, but nobody in our family has a confirmed autism diagnosis.
+- utterance: He's always seemed fine in himself, hasn't he?
+  topics:
+  - risk
+  style: leading
+- utterance: What can you tell me about the wider family?
+  topics:
+  - family
+  style: open
+- utterance: Are there other people in the family with similar ways?
+  topics:
+  - family
+  style: open
+- utterance: Does anyone else in the family have autism?
+  topics:
+  - family
+  style: closed
+- utterance: Is anyone in the family similar to him?
+  topics:
+  - family
+  style: closed
+- utterance: Does it run in the family at all?
+  topics:
+  - family
+  style: colloquial
+- utterance: Has any relative been diagnosed with anything like this?
+  topics:
+  - family
+  style: colloquial
+- utterance: Does his dad have similar traits?
+  topics:
+  - family
+  style: colloquial
+- utterance: Is there a family history of neurodevelopmental conditions?
+  topics:
+  - family
+  style: clinical
+- utterance: I wondered whether any relatives share some of his characteristics
+  topics:
+  - family
+  style: indirect
+- utterance: Thank you for being so patient with my questions. Is there autism anywhere in the family?
+  topics:
+  - family
+  style: empathy_then_question
+- utterance: um is there anyone else, like, in the family who's the same
+  topics:
+  - family
+  style: spoken
+- utterance: so does anyone have, uh, a diagnosis in the family
+  topics:
+  - family
+  style: spoken
+- utterance: Family history of autism?
+  topics:
+  - family
+  style: brief
+- utterance: What about on his father's side?
+  topics:
+  - family
+  style: follow_up
+  previous:
+    interviewer: He hasn't told me he wants to harm himself. I haven't asked directly, and he doesn't
+      tell me everything.
+    character: He hasn't told me he wants to harm himself. I haven't asked directly, and he doesn't tell
+      me everything.
+- utterance: Nobody else in the family is anything like him, are they?
+  topics:
+  - family
+  style: leading
+- utterance: How do you feel looking back on his childhood?
+  topics:
+  - guilt
+  style: open
+- utterance: Is there anything you wish you'd done differently?
+  topics:
+  - guilt
+  style: open
+- utterance: Do you blame yourself in any way?
+  topics:
+  - guilt
+  style: closed
+- utterance: Do you feel you missed signs at the time?
+  topics:
+  - guilt
+  style: closed
+- utterance: Do you ever feel bad about how you handled things back then?
+  topics:
+  - guilt
+  style: colloquial
+- utterance: Do you beat yourself up over it?
+  topics:
+  - guilt
+  style: colloquial
+- utterance: Is there something that weighs on you from when he was small?
+  topics:
+  - guilt
+  style: colloquial
+- utterance: Is there parental guilt or regret about earlier management?
+  topics:
+  - guilt
+  style: clinical
+- utterance: I wondered how it feels to think back now, knowing what you know
+  topics:
+  - guilt
+  style: indirect
+- utterance: It's clear how much you care. Do you feel guilty about any of it?
+  topics:
+  - guilt
+  style: empathy_then_question
+- utterance: um do you, like, think back and wish you'd understood him better
+  topics:
+  - guilt
+  style: spoken
+- utterance: so how does it feel, uh, going back over all those years
+  topics:
+  - guilt
+  style: spoken
+- utterance: Any regrets looking back?
+  topics:
+  - guilt
+  style: brief
+- utterance: How does that sit with you now?
+  topics:
+  - guilt
+  style: follow_up
+  previous:
+    interviewer: He wants practical help and has agreed to this assessment. I'm worried people will reduce
+      him to a label.
+    character: He wants practical help and has agreed to this assessment. I'm worried people will reduce
+      him to a label.
+- utterance: You think you did everything right, don't you?
+  topics:
+  - guilt
+  style: leading
+- utterance: What does he hope to get from this assessment?
+  topics:
+  - hopes
+  style: open
+- utterance: What would you both like to come out of today?
+  topics:
+  - hopes
+  style: open
+- utterance: Does he want to be here?
+  topics:
+  - hopes
+  style: closed
+- utterance: Are you worried about a diagnosis?
+  topics:
+  - hopes
+  style: closed
+- utterance: What's he after from all this?
+  topics:
+  - hopes
+  style: colloquial
+- utterance: What are you hoping to hear from us?
+  topics:
+  - hopes
+  style: colloquial
+- utterance: Do you have any worries about how the assessment will go?
+  topics:
+  - hopes
+  style: colloquial
+- utterance: What are the patient's and family's expectations of assessment?
+  topics:
+  - hopes
+  style: clinical
+- utterance: I wondered what you and he want to get out of this process
+  topics:
+  - hopes
+  style: indirect
+- utterance: I can see you want the best for him. What does he hope will happen?
+  topics:
+  - hopes
+  style: empathy_then_question
+- utterance: um so what's he hoping for, like, why did he want the assessment
+  topics:
+  - hopes
+  style: spoken
+- utterance: and you, uh, how do you feel about a diagnosis possibly
+  topics:
+  - hopes
+  style: spoken
+- utterance: His hopes for assessment?
+  topics:
+  - hopes
+  style: brief
+- utterance: And what does he want out of it?
+  topics:
+  - hopes
+  style: follow_up
+  previous:
+    interviewer: I'm ashamed that I called him stubborn when he was overwhelmed. I worry I failed to understand
+      him.
+    character: I'm ashamed that I called him stubborn when he was overwhelmed. I worry I failed to understand
+      him.
+- utterance: He doesn't really want any help, does he?
+  topics:
+  - hopes
+  style: leading
+- utterance: When did he start to walk and talk, and what sort of play did he enjoy?
+  topics:
+  - milestones
+  - play
+  style: stacked
+- utterance: Was he sensitive to noise, and how did he deal with unexpected changes?
+  topics:
+  - sensory
+  - routine
+  style: stacked
+- utterance: Has he got friends, and does anyone in the family have similar ways?
+  topics:
+  - social
+  - family
+  style: stacked
+- utterance: How did he do at school, and what does he hope to get from the assessment?
+  topics:
+  - education
+  - hopes
+  style: stacked
+- utterance: Hello Ruth, thanks for coming in today.
+  topics: []
+  style: greeting
+- utterance: Hi Ruth, please take a seat.
+  topics: []
+  style: greeting
+- utterance: My name's Dr Evans, I'm one of the psychiatrists in the clinic, Ruth.
+  topics: []
+  style: introduction
+- utterance: I'm the doctor assessing your son, and I'd like your help with his early history.
+  topics: []
+  style: introduction
+- utterance: Is it all right if we go through some questions about his childhood, Ruth?
+  topics: []
+  style: conversational
+- utterance: Where would you like to start?
+  topics: []
+  style: conversational
+- utterance: Before we start, do you have any questions for me?
+  topics: []
+  style: conversational
+- utterance: Would it be all right if I call you Ruth?
+  topics: []
+  style: conversational
+- utterance: Is it okay if I take notes while we talk?
+  topics: []
+  style: conversational
+- utterance: Are you comfortable, or shall I close the door?
+  topics: []
+  style: conversational
+- utterance: I'd like to move on to something different now.
+  topics: []
+  style: transition
+- utterance: Can we turn to talking about his adult life?
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Ruth.
+  topics: []
+  style: closing
+- utterance: Thank you for your time and for remembering so much, Ruth.
+  topics: []
+  style: closing
+- utterance: It sounds like you've been thinking about this for a long time.
+  topics: []
+  style: empathy
+- utterance: That must be difficult to look back on.
+  topics: []
+  style: empathy
+- utterance: I can see how much you want to get this right for him.
+  topics: []
+  style: empathy
+- utterance: It's understandable to feel unsure about what you remember.
+  topics: []
+  style: empathy
+- utterance: So he was an early walker and a talker, and he's found university hard.
+  topics: []
+  style: summary
+- utterance: 'Let me check I have this right: he needed predictable days and found some situations tough.'
+  topics: []
+  style: summary
+- utterance: I'll ask about his early years, because that helps us understand what's going on now.
+  topics: []
+  style: explanation
+- utterance: What you tell me adds to, but doesn't replace, what he tells us himself.
+  topics: []
+  style: explanation
+- utterance: Remembering exact dates is hard, so just tell me what you can.
+  topics: []
+  style: explanation
+- utterance: Does that make sense so far?
+  topics: []
+  style: check_understanding
+- utterance: Is there anything I've said that isn't clear?
+  topics: []
+  style: check_understanding
+- utterance: Was your pregnancy or the birth straightforward?
+  topics: []
+  style: off_case
+- utterance: Did he have any serious illnesses or hospital stays as a child?
+  topics: []
+  style: off_case
+- utterance: Has he ever had any problems with his sleep?
+  topics: []
+  style: off_case
+- utterance: Does he take any medication at the moment?
+  topics: []
+  style: off_case
+- utterance: Has he ever had trouble with his eating or weight?
+  topics: []
+  style: off_case
+- utterance: Did he ever struggle with reading and writing?
+  topics: []
+  style: near_miss
+- utterance: What jobs have people in your family done?
+  topics: []
+  style: near_miss
+- utterance: Does he enjoy being in busy places such as shops?
+  topics: []
+  style: near_miss
+- utterance: Was he ever bullied by other children?
+  topics: []
+  style: near_miss
+- utterance: How are you finding things, with him being at university?
+  topics: []
+  style: near_miss

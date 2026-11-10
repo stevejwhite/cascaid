@@ -1,0 +1,772 @@
+# Training phrasings for the topic classifier. Drafted and revised by GPT-6 (Codex)
+# on 2026-10-12; reviewed by Steve J White on 2026-10-12. Not evaluation data.
+case_id: elevated-mood-history
+case_version: 0.4.0
+status: reviewed
+items:
+- utterance: What has your sleep been like over the last week?
+  topics:
+  - sleep-reduced
+  style: open
+- utterance: Do you feel tired if you get less sleep?
+  topics:
+  - sleep-reduced
+  style: closed
+- utterance: How much shut-eye are you getting at the moment?
+  topics:
+  - sleep-reduced
+  style: colloquial
+- utterance: Could you describe any change in your need for sleep?
+  topics:
+  - sleep-reduced
+  style: clinical
+- utterance: I wondered how many hours you have been sleeping
+  topics:
+  - sleep-reduced
+  style: indirect
+- utterance: It can be frustrating to be questioned; how rested are you when you get up?
+  topics:
+  - sleep-reduced
+  style: empathy_then_question
+- utterance: um how much sleep would you say youre getting
+  topics:
+  - sleep-reduced
+  style: spoken
+- utterance: Sleeping much at the moment?
+  topics:
+  - sleep-reduced
+  style: brief
+- utterance: A little rest seems to go a long way for you, doesn't it?
+  topics:
+  - sleep-reduced
+  style: leading
+- utterance: After just those hours, are you worn out?
+  topics:
+  - sleep-reduced
+  style: follow_up
+  previous:
+    interviewer: What has your sleep been like over the last week?
+    character: For the last week I've slept about three hours a night and don't feel tired.
+- utterance: Tell me about how you feel after a night's sleep.
+  topics:
+  - sleep-reduced
+  style: open
+- utterance: Is your sleep different from what is usual for you?
+  topics:
+  - sleep-reduced
+  style: closed
+- utterance: When you've had your head down for a bit, do you wake feeling fresh?
+  topics:
+  - sleep-reduced
+  style: colloquial
+- utterance: so between getting into bed and getting up how much rest is there
+  topics:
+  - sleep-reduced
+  style: spoken
+- utterance: Has it been like that for the whole week?
+  topics:
+  - sleep-reduced
+  style: follow_up
+  previous:
+    interviewer: What has your sleep been like over the last week?
+    character: For the last week I've slept about three hours a night and don't feel tired.
+- utterance: How has your mood changed over the past week?
+  topics:
+  - mood-onset
+  style: open
+- utterance: Have you been more irritable than usual?
+  topics:
+  - mood-onset
+  style: closed
+- utterance: Does everything seem especially bright at the moment?
+  topics:
+  - mood-onset
+  style: colloquial
+- utterance: Could you describe when this change in mood began?
+  topics:
+  - mood-onset
+  style: clinical
+- utterance: I wondered whether your mood has been more irritable than usual
+  topics:
+  - mood-onset
+  style: indirect
+- utterance: It can be irritating to have people question you; how have you been feeling in yourself?
+  topics:
+  - mood-onset
+  style: empathy_then_question
+- utterance: um with your mood has it felt unusually up lately
+  topics:
+  - mood-onset
+  style: spoken
+- utterance: More cheerful or more irritable?
+  topics:
+  - mood-onset
+  style: brief
+- utterance: You've been feeling unusually on top of things, haven't you?
+  topics:
+  - mood-onset
+  style: leading
+- utterance: Does being interrupted make you cross during this spell?
+  topics:
+  - mood-onset
+  style: follow_up
+  previous:
+    interviewer: How has your mood changed over the past week?
+    character: I've felt unusually upbeat for about a week. I get irritated when people interrupt my plans.
+- utterance: Describe how long your mood has felt different.
+  topics:
+  - mood-onset
+  style: open
+- utterance: Is irritability something you've noticed alongside feeling great?
+  topics:
+  - mood-onset
+  style: closed
+- utterance: With everyday annoyances, do you find yourself getting cross more easily?
+  topics:
+  - mood-onset
+  style: colloquial
+- utterance: so this extra upbeat feeling um when did you first notice it
+  topics:
+  - mood-onset
+  style: spoken
+- utterance: Was the extra cheerfulness present throughout those seven days?
+  topics:
+  - mood-onset
+  style: follow_up
+  previous:
+    interviewer: How has your mood changed over the past week?
+    character: I've felt unusually upbeat for about a week. I get irritated when people interrupt my plans.
+- utterance: What has changed in your work or spending recently?
+  topics:
+  - function-work-spending
+  style: open
+- utterance: How have you been getting on with turning up for your usual responsibilities?
+  topics:
+  - function-work-spending
+  style: colloquial
+- utterance: Could you describe any effects on your work attendance or finances?
+  topics:
+  - function-work-spending
+  style: clinical
+- utterance: I wondered whether your spending has changed with these plans
+  topics:
+  - function-work-spending
+  style: indirect
+- utterance: It can feel intrusive to be asked; have you bought more than you can afford?
+  topics:
+  - function-work-spending
+  style: empathy_then_question
+- utterance: um has work been affected or have you been spending a lot
+  topics:
+  - function-work-spending
+  style: spoken
+- utterance: Any changes in your spending?
+  topics:
+  - function-work-spending
+  style: brief
+- utterance: Some ordinary responsibilities have taken a back seat, haven't they?
+  topics:
+  - function-work-spending
+  style: leading
+- utterance: Was it two shifts altogether?
+  topics:
+  - function-work-spending
+  style: follow_up
+  previous:
+    interviewer: What has changed in your work or spending recently?
+    character: I've missed two shifts at work and spent £800 on equipment for a new business. My sister says I can't
+      afford it.
+- utterance: Tell me how much money has gone into the business so far.
+  topics:
+  - function-work-spending
+  style: open
+- utterance: Is work something you've been keeping up with as usual?
+  topics:
+  - function-work-spending
+  style: closed
+- utterance: When it comes to buying things, have you splashed out lately?
+  topics:
+  - function-work-spending
+  style: colloquial
+- utterance: so has any of this affected your ability to work
+  topics:
+  - function-work-spending
+  style: spoken
+- utterance: Is it your sister who says you can't afford that?
+  topics:
+  - function-work-spending
+  style: follow_up
+  previous:
+    interviewer: What has changed in your work or spending recently?
+    character: I've missed two shifts at work and spent £800 on equipment for a new business. My sister says I can't
+      afford it.
+- utterance: What has your driving been like recently, if you drive?
+  topics:
+  - risk-driving
+  style: open
+- utterance: How careful have you been when you're behind the wheel?
+  topics:
+  - risk-driving
+  style: colloquial
+- utterance: Could you tell me about any recent thoughts of self-harm?
+  topics:
+  - risk-driving
+  style: clinical
+- utterance: I wondered whether you've been taking chances while driving
+  topics:
+  - risk-driving
+  style: indirect
+- utterance: It's okay to answer honestly; have you wanted to hurt yourself or anybody else?
+  topics:
+  - risk-driving
+  style: empathy_then_question
+- utterance: um have you been driving differently from usual
+  topics:
+  - risk-driving
+  style: spoken
+- utterance: Any thoughts about harming yourself?
+  topics:
+  - risk-driving
+  style: brief
+- utterance: You have been a bit more daring on the road, haven't you?
+  topics:
+  - risk-driving
+  style: leading
+- utterance: Was that faster trip yesterday?
+  topics:
+  - risk-driving
+  style: follow_up
+  previous:
+    interviewer: What has your driving been like recently, if you drive?
+    character: I drove much faster than usual yesterday. I haven't thought about harming myself or anyone else.
+- utterance: Describe any risks you have taken while driving.
+  topics:
+  - risk-driving
+  style: open
+- utterance: Is harming someone else something you have considered?
+  topics:
+  - risk-driving
+  style: closed
+- utterance: When you're in the car, do you ever put your foot down more than you should?
+  topics:
+  - risk-driving
+  style: colloquial
+- utterance: so just asking plainly have you wanted to end your life
+  topics:
+  - risk-driving
+  style: spoken
+- utterance: Does that mean you haven't wanted to hurt other people either?
+  topics:
+  - risk-driving
+  style: follow_up
+  previous:
+    interviewer: What has your driving been like recently, if you drive?
+    character: I drove much faster than usual yesterday. I haven't thought about harming myself or anyone else.
+- utterance: What support is available to you at the moment?
+  topics:
+  - support-sister
+  style: open
+- utterance: Has anyone offered to stay with you?
+  topics:
+  - support-sister
+  style: closed
+- utterance: Who could come and keep you company for a bit?
+  topics:
+  - support-sister
+  style: colloquial
+- utterance: Could you describe any practical support people have offered?
+  topics:
+  - support-sister
+  style: clinical
+- utterance: I wondered who would be around to support you if needed
+  topics:
+  - support-sister
+  style: indirect
+- utterance: You needn't face things alone; is there someone who could spend time with you?
+  topics:
+  - support-sister
+  style: empathy_then_question
+- utterance: um who is there for support if you need company
+  topics:
+  - support-sister
+  style: spoken
+- utterance: Anyone around to support you?
+  topics:
+  - support-sister
+  style: brief
+- utterance: Someone close could probably keep you company, couldn't they?
+  topics:
+  - support-sister
+  style: leading
+- utterance: Would she be there for several days?
+  topics:
+  - support-sister
+  style: follow_up
+  previous:
+    interviewer: What support is available to you at the moment?
+    character: My sister has offered to stay with me for a few days.
+- utterance: Tell me what support you could have from people close to you.
+  topics:
+  - support-sister
+  style: open
+- utterance: Is support available from someone who could stay for a while?
+  topics:
+  - support-sister
+  style: closed
+- utterance: If you fancied some company, who could come over?
+  topics:
+  - support-sister
+  style: colloquial
+- utterance: so for the next little while could someone be there with you
+  topics:
+  - support-sister
+  style: spoken
+- utterance: Was staying with you something she offered herself?
+  topics:
+  - support-sister
+  style: follow_up
+  previous:
+    interviewer: What support is available to you at the moment?
+    character: My sister has offered to stay with me for a few days.
+- utterance: What alcohol, drugs or medicines are you using at present?
+  topics:
+  - substances
+  style: open
+- utterance: Do you drink coffee or other caffeinated drinks?
+  topics:
+  - substances
+  style: closed
+- utterance: How much booze is there in a usual week for you?
+  topics:
+  - substances
+  style: colloquial
+- utterance: Could you describe any prescribed medication or recreational drug use?
+  topics:
+  - substances
+  style: clinical
+- utterance: I wondered whether alcohol or drugs have featured recently
+  topics:
+  - substances
+  style: indirect
+- utterance: These questions can feel personal; are you taking anything for a buzz?
+  topics:
+  - substances
+  style: empathy_then_question
+- utterance: um is there alcohol or drugs or medication in the picture
+  topics:
+  - substances
+  style: spoken
+- utterance: Any alcohol or drugs lately?
+  topics:
+  - substances
+  style: brief
+- utterance: There are probably a few things you use to unwind or perk up, aren't there?
+  topics:
+  - substances
+  style: leading
+- utterance: Is the coffee two cups over a whole day?
+  topics:
+  - substances
+  style: follow_up
+  previous:
+    interviewer: What alcohol, drugs or medicines are you using at present?
+    character: Two coffees a day, a little alcohol at weekends, no recreational drugs and no prescribed medicines.
+- utterance: Tell me about your usual caffeine intake.
+  topics:
+  - substances
+  style: open
+- utterance: Is there any medication that you take regularly?
+  topics:
+  - substances
+  style: closed
+- utterance: When you need to stay awake, do you turn to coffee?
+  topics:
+  - substances
+  style: colloquial
+- utterance: so anything prescribed or something recreational what are you having
+  topics:
+  - substances
+  style: spoken
+- utterance: And is that small amount mostly on Saturdays or Sundays?
+  topics:
+  - substances
+  style: follow_up
+  previous:
+    interviewer: What alcohol, drugs or medicines are you using at present?
+    character: Two coffees a day, a little alcohol at weekends, no recreational drugs and no prescribed medicines.
+- utterance: What previous periods of low mood have you had, if any?
+  topics:
+  - past-low-period
+  style: open
+- utterance: Have you ever had depression before?
+  topics:
+  - past-low-period
+  style: closed
+- utterance: Was there another time when you felt down for weeks on end?
+  topics:
+  - past-low-period
+  style: colloquial
+- utterance: Could you describe any earlier episodes of depression?
+  topics:
+  - past-low-period
+  style: clinical
+- utterance: I wondered whether you have a history of feeling very low
+  topics:
+  - past-low-period
+  style: indirect
+- utterance: It may be difficult to revisit; have you had a lengthy spell of feeling downhearted?
+  topics:
+  - past-low-period
+  style: empathy_then_question
+- utterance: um before this has there been a period of low mood
+  topics:
+  - past-low-period
+  style: spoken
+- utterance: Any earlier depression or low mood?
+  topics:
+  - past-low-period
+  style: brief
+- utterance: You've had a down patch at another time, haven't you?
+  topics:
+  - past-low-period
+  style: leading
+- utterance: Did that spell last roughly two months?
+  topics:
+  - past-low-period
+  style: follow_up
+  previous:
+    interviewer: What previous periods of low mood have you had, if any?
+    character: Two years ago I had a period of feeling very low for a couple of months.
+- utterance: Tell me about any previous episodes when you felt very low.
+  topics:
+  - past-low-period
+  style: open
+- utterance: Is depression something you have experienced in the past?
+  topics:
+  - past-low-period
+  style: closed
+- utterance: Thinking back across your life, has there been a really bleak stretch?
+  topics:
+  - past-low-period
+  style: colloquial
+- utterance: so apart from feeling upbeat now um any prolonged down patch before
+  topics:
+  - past-low-period
+  style: spoken
+- utterance: Was that about two years earlier than this visit?
+  topics:
+  - past-low-period
+  style: follow_up
+  previous:
+    interviewer: What previous periods of low mood have you had, if any?
+    character: Two years ago I had a period of feeling very low for a couple of months.
+- utterance: What physical health problems do you have, if any?
+  topics:
+  - family-and-physical
+  style: open
+- utterance: Does anyone in your family have a similar illness?
+  topics:
+  - family-and-physical
+  style: closed
+- utterance: Are there any ongoing problems with your body that need looking after?
+  topics:
+  - family-and-physical
+  style: colloquial
+- utterance: Could you describe your physical health and any family history of similar illness?
+  topics:
+  - family-and-physical
+  style: clinical
+- utterance: I wondered whether there are illnesses like this in your family
+  topics:
+  - family-and-physical
+  style: indirect
+- utterance: It's fine to say you don't know; have any relatives had something similar?
+  topics:
+  - family-and-physical
+  style: empathy_then_question
+- utterance: um any long term physical health conditions
+  topics:
+  - family-and-physical
+  style: spoken
+- utterance: Any similar illness in the family?
+  topics:
+  - family-and-physical
+  style: brief
+- utterance: You haven't had much trouble with ongoing bodily illness, have you?
+  topics:
+  - family-and-physical
+  style: leading
+- utterance: Does that mean no relative has a similar known illness?
+  topics:
+  - family-and-physical
+  style: follow_up
+  previous:
+    interviewer: What physical health problems do you have, if any?
+    character: I don't know of any similar illness in my family and have no long-term physical health problems.
+- utterance: Tell me about any long-term physical health conditions you have.
+  topics:
+  - family-and-physical
+  style: open
+- utterance: Is a similar illness known in your family?
+  topics:
+  - family-and-physical
+  style: closed
+- utterance: Among your relatives, has anything like this cropped up?
+  topics:
+  - family-and-physical
+  style: colloquial
+- utterance: so away from how youre feeling um any lasting problems with your body
+  topics:
+  - family-and-physical
+  style: spoken
+- utterance: And are there any long-standing bodily problems of your own?
+  topics:
+  - family-and-physical
+  style: follow_up
+  previous:
+    interviewer: What physical health problems do you have, if any?
+    character: I don't know of any similar illness in my family and have no long-term physical health problems.
+- utterance: What do you think about your sister's worries that you've changed?
+  topics:
+  - insight-worry
+  style: open
+- utterance: Does any of this seem like illness to you?
+  topics:
+  - insight-worry
+  style: closed
+- utterance: From your side, is there anything wrong at all?
+  topics:
+  - insight-worry
+  style: colloquial
+- utterance: Could you describe your understanding of why you have been asked to attend?
+  topics:
+  - insight-worry
+  style: clinical
+- utterance: I wondered what you think is happening to you
+  topics:
+  - insight-worry
+  style: indirect
+- utterance: It can be hard to disagree with someone close; how do you make sense of her worries?
+  topics:
+  - insight-worry
+  style: empathy_then_question
+- utterance: um what do you think about being here for this
+  topics:
+  - insight-worry
+  style: spoken
+- utterance: What is your understanding of this?
+  topics:
+  - insight-worry
+  style: brief
+- utterance: You don't see much wrong from your side, do you?
+  topics:
+  - insight-worry
+  style: leading
+- utterance: Can you still recognise that she is worried?
+  topics:
+  - insight-worry
+  style: follow_up
+  previous:
+    interviewer: What do you think about your sister's worries that you've changed?
+    character: I don't think I'm ill, but I can see my sister is really worried, and I don't want to fall out with
+      her.
+- utterance: Help me understand what you think about the changes she has noticed.
+  topics:
+  - insight-worry
+  style: open
+- utterance: Is your sister's concern something you understand?
+  topics:
+  - insight-worry
+  style: closed
+- utterance: If it's okay to ask, does seeing a doctor seem necessary to you?
+  topics:
+  - insight-worry
+  style: colloquial
+- utterance: so looking at it your way is this just feeling good or something else
+  topics:
+  - insight-worry
+  style: spoken
+- utterance: Is keeping a good relationship with her important despite that disagreement?
+  topics:
+  - insight-worry
+  style: follow_up
+  previous:
+    interviewer: What do you think about your sister's worries that you've changed?
+    character: I don't think I'm ill, but I can see my sister is really worried, and I don't want to fall out with
+      her.
+- utterance: What are your plans for the new business?
+  topics:
+  - new-business
+  style: open
+- utterance: Is the business about restoring old bikes?
+  topics:
+  - new-business
+  style: closed
+- utterance: What's the big idea you're excited to get off the ground?
+  topics:
+  - new-business
+  style: colloquial
+- utterance: Could you describe the purpose of your proposed business?
+  topics:
+  - new-business
+  style: clinical
+- utterance: I wondered how you picture this business developing
+  topics:
+  - new-business
+  style: indirect
+- utterance: I can hear your enthusiasm; what are you hoping to set up?
+  topics:
+  - new-business
+  style: empathy_then_question
+- utterance: um what sort of business are you planning
+  topics:
+  - new-business
+  style: spoken
+- utterance: What is the business idea?
+  topics:
+  - new-business
+  style: brief
+- utterance: You expect this venture to do really well, don't you?
+  topics:
+  - new-business
+  style: leading
+- utterance: Will the bicycles be vintage ones?
+  topics:
+  - new-business
+  style: follow_up
+  previous:
+    interviewer: What are your plans for the new business?
+    character: I'm starting a business restoring vintage bikes. It's going to be huge.
+- utterance: Tell me more about your plans for this business.
+  topics:
+  - new-business
+  style: open
+- utterance: Does your project involve fixing up vintage bicycles?
+  topics:
+  - new-business
+  style: closed
+- utterance: If it takes off, what do you imagine the venture becoming?
+  topics:
+  - new-business
+  style: colloquial
+- utterance: so this idea youre keen on what will you actually be doing
+  topics:
+  - new-business
+  style: spoken
+- utterance: Are you expecting it to become something really large?
+  topics:
+  - new-business
+  style: follow_up
+  previous:
+    interviewer: What are your plans for the new business?
+    character: I'm starting a business restoring vintage bikes. It's going to be huge.
+- utterance: How much sleep are you getting, and how much caffeine do you have?
+  topics:
+  - sleep-reduced
+  - substances
+  style: stacked
+- utterance: What are your plans for the business, and how much money have you spent on it?
+  topics:
+  - new-business
+  - function-work-spending
+  style: stacked
+- utterance: Have you taken chances while driving, and is there someone who could stay with you?
+  topics:
+  - risk-driving
+  - support-sister
+  style: stacked
+- utterance: How has your mood been lately, and have there been previous periods of feeling very low?
+  topics:
+  - mood-onset
+  - past-low-period
+  style: stacked
+- utterance: Hello Alex, come in and make yourself comfortable.
+  topics: []
+  style: greeting
+- utterance: Good afternoon, thanks for making time to come.
+  topics: []
+  style: greeting
+- utterance: Hi there, it is nice to meet you.
+  topics: []
+  style: greeting
+- utterance: I am a doctor from the community team.
+  topics: []
+  style: introduction
+- utterance: My role is to hear your account of the last week.
+  topics: []
+  style: introduction
+- utterance: We will spend these few minutes talking together.
+  topics: []
+  style: introduction
+- utterance: It can feel frustrating when someone else thinks you need to see a doctor.
+  topics: []
+  style: empathy
+- utterance: I can hear that you and your sister see things differently.
+  topics: []
+  style: empathy
+- utterance: Having to explain yourself can be tiring.
+  topics: []
+  style: empathy
+- utterance: It is understandable to want your own point of view heard.
+  topics: []
+  style: empathy
+- utterance: You have described feeling great and full of energy.
+  topics: []
+  style: summary
+- utterance: 'Let me pull together the reason for today: your sister has noticed a change this week.'
+  topics: []
+  style: summary
+- utterance: So you are planning a business restoring vintage bikes.
+  topics: []
+  style: summary
+- utterance: I have heard that you expect this venture to become very successful.
+  topics: []
+  style: summary
+- utterance: I will give you time to describe things in your own words.
+  topics: []
+  style: explanation
+- utterance: Some questions may feel personal, so we can take them slowly.
+  topics: []
+  style: explanation
+- utterance: We can pause if you need a moment.
+  topics: []
+  style: explanation
+- utterance: I will recap the main points at the end.
+  topics: []
+  style: explanation
+- utterance: Have I understood the bicycle idea correctly?
+  topics: []
+  style: check_understanding
+- utterance: Does that recap sound like your account?
+  topics: []
+  style: check_understanding
+- utterance: Was my explanation of our conversation clear?
+  topics: []
+  style: check_understanding
+- utterance: Have I captured why your sister wanted you to come today?
+  topics: []
+  style: check_understanding
+- utterance: Have you heard voices when nobody else was there?
+  topics: []
+  style: off_case
+- utterance: Have you ever needed admission to a psychiatric ward?
+  topics: []
+  style: off_case
+- utterance: Were there any difficulties with your development as a child?
+  topics: []
+  style: off_case
+- utterance: Have you ever experienced a physical assault?
+  topics: []
+  style: off_case
+- utterance: Has anyone noticed you stop breathing in your sleep?
+  topics: []
+  style: near_miss
+- utterance: Do you gamble money online?
+  topics: []
+  style: near_miss
+- utterance: Has anyone at work been bullying you?
+  topics: []
+  style: near_miss
+- utterance: Have you ever been arrested for supplying drugs?
+  topics: []
+  style: near_miss

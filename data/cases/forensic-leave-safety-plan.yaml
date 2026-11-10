@@ -1,0 +1,153 @@
+# Original fictional case for the PsychiatryEduAI CASC proof of concept (CC-BY-4.0).
+# Author draft (LLM-drafted). Not clinically validated.
+# Author notes: Review dynamic violence formulation, victim safety and realistic contingencies; stated intention is not a validated risk prediction.
+# Author notes: Leave authority and restrictions require the actual legal and clinical framework; no fictional conversation grants permission.
+# Research basis (public guidance; original wording, no source text retained):
+# - NICE NG10: Violence and aggression
+# - NICE NG66: Mental health of adults in contact with the criminal justice system
+id: forensic-leave-safety-plan
+version: 0.1.0
+title: Planning safe unescorted leave
+blueprint:
+  skill: management
+  subdivision: safety_planning
+  specialty: forensic
+  communication_focus:
+    - recognising_and_responding_to_cues
+timing:
+  reading_seconds: 240
+  interview_seconds: 420
+authorship:
+  author: LLM draft
+  status: author_draft
+  clinically_validated: false
+candidate_instructions: >-
+  You are reviewing Callum on a forensic step-down ward before proposed unescorted leave. He has
+  a history of violence while intoxicated. Agree an individual safety plan covering warning signs,
+  alcohol, agreed conditions, contacts and contingencies; do not grant leave or assume proposed
+  safeguards are sufficient.
+persona:
+  role: patient
+  name: Callum
+  age: 29
+  description: >-
+    A man preparing for a step towards community living.
+  speech_style: Direct, occasionally minimising; responds to specific practical discussion.
+  affect: Keen to demonstrate independence.
+  opening_statement: >-
+    I want to show I can manage this.
+  voice:
+    sex: male
+    age: young
+    accent: en-GB
+    speaker: am_puck
+  avatar: male-adult-01
+facts:
+  - id: destination
+    content: >-
+      I want to visit my sister for two hours and travel by bus. I haven't agreed the route with
+      the team yet.
+    disclosure: on_direct_question
+    asked_about: [where you want to go on leave, travel route and visit length, purpose of the visit]
+    domain: presenting-concern
+    key: true
+  - id: conditions
+    content: >-
+      I understand I must avoid alcohol, keep my phone on and return at the agreed time. I need
+      the final arrangements explained in writing.
+    disclosure: on_direct_question
+    asked_about: [leave conditions, rules about alcohol and returning, written arrangements for leave]
+    domain: presenting-concern
+    key: true
+  - id: violence
+    content: >-
+      Two years ago I seriously injured a man after drinking and an argument. I accept I caused
+      the harm.
+    disclosure: on_direct_question
+    asked_about: [past violence after drinking, what happened in the assault, harm you caused before]
+    domain: presenting-concern
+    key: true
+  - id: warning
+    content: >-
+      My jaw tightens, I pace and start thinking everyone is disrespecting me. That can build over
+      half an hour.
+    disclosure: on_direct_question
+    asked_about: [signs you are getting angry, what happens before you lose control, early warning signs of aggression]
+    domain: presenting-concern
+    key: true
+  - id: alcohol
+    content: >-
+      I still get urges to drink when tense. The direct route passes the pub where I used to meet
+      friends.
+    disclosure: on_direct_question
+    asked_about: [alcohol cravings, pubs on the route, temptation to drink during leave]
+    domain: presenting-concern
+    key: true
+  - id: contacts
+    content: >-
+      I have a charged phone and the ward number. My sister knows I'm visiting and is willing to
+      call with me if needed.
+    disclosure: on_direct_question
+    asked_about: [who to phone during leave, support from your sister, charged phone and ward number]
+    domain: presenting-concern
+    key: true
+  - id: contingency
+    content: >-
+      I'd call the ward rather than try to sort everything alone. I need to know what to do if I
+      can't return on time.
+    disclosure: on_direct_question
+    asked_about: [what you would do if leave went wrong, missing the bus back, asking for help if overwhelmed]
+    domain: presenting-concern
+    key: true
+  - id: current-risk
+    content: >-
+      No, I have no plan to confront or hurt anyone, and no thoughts of harming myself today.
+    disclosure: on_direct_question
+    asked_about: [plans to hurt anyone today, thoughts of self harm, wanting to confront someone]
+    domain: presenting-concern
+    key: true
+  - id: disclosure
+    content: >-
+      An old drinking friend messaged asking to meet me. I haven't replied, but I haven't told the
+      team either.
+    disclosure: after_rapport
+    asked_about: [contact with old drinking friends, anything about outside contact the team should know, would you feel able to tell me about contact you have not mentioned to staff]
+    domain: presenting-concern
+    rapport_needed: 2
+    vague: There is something I should mention.
+    key: false
+  - id: motivation
+    content: >-
+      I want my sister to trust me again. I'm afraid one setback will mean nobody gives me another
+      chance.
+    disclosure: after_rapport
+    asked_about: [what successful leave means to you, worries about setbacks, could we talk about why keeping to the plan matters]
+    domain: presenting-concern
+    key: false
+tasks: []
+unscripted_response: I'd rather leave that for now.
+deflections:
+  - Can we leave that for another time?
+  - I'd prefer not to go into that.
+affect_stages:
+  - id: starting
+    affect: Keen to demonstrate independence.
+    expression: neutral
+    hesitations:
+      - Mm.
+  - id: engaged
+    affect: More honest about uncertainties.
+    expression: warm
+    rapport_at_least: 1
+    hesitations:
+      - Mm.
+  - id: challenged
+    affect: Minimises concerns if lectured.
+    expression: irritable
+    on_confrontation: true
+    hesitations:
+      - Right.
+questions:
+  - id: question-1
+    text: If I ring because I'm struggling, how will the team respond?
+    after_seconds: 300

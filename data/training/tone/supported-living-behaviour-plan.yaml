@@ -1,0 +1,162 @@
+# Training lines for the tone classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: supported-living-behaviour-plan
+case_version: 0.1.0
+status: draft
+items:
+  - utterance: "Has the colleague who was hurt been able to talk about what happened?"
+    empathy: 0
+    empathy_words: ""
+    confrontational: false
+    challenge_words: ""
+    style: plain_question
+  - utterance: "Have you ever felt unsafe at work with him?"
+    empathy: 0
+    empathy_words: ""
+    confrontational: false
+    challenge_words: ""
+    style: plain_question
+  - utterance: "um has anyone raised a safeguarding concern about the incidents"
+    empathy: 0
+    empathy_words: ""
+    confrontational: false
+    challenge_words: ""
+    style: plain_question
+  - utterance: "What's his bedtime routine like?"
+    empathy: 0
+    empathy_words: ""
+    confrontational: false
+    challenge_words: ""
+    style: plain_question
+  - utterance: "Who else is involved in his care at the moment?"
+    empathy: 0
+    empathy_words: ""
+    confrontational: false
+    challenge_words: ""
+    style: plain_question
+  - utterance: "Sorry to ask, but could you go over the last incident in a bit more detail?"
+    empathy: 0
+    empathy_words: ""
+    confrontational: false
+    challenge_words: ""
+    style: polite_question
+  - utterance: "Would you mind if I asked about the staffing rota?"
+    empathy: 0
+    empathy_words: ""
+    confrontational: false
+    challenge_words: ""
+    style: polite_question
+  - utterance: "Good afternoon Beth, I'm the psychiatrist here today."
+    empathy: 0
+    empathy_words: ""
+    confrontational: false
+    challenge_words: ""
+    style: introduction
+  - utterance: "Thanks for making the time to come in, Beth."
+    empathy: 0
+    empathy_words: ""
+    confrontational: false
+    challenge_words: ""
+    style: greeting
+  - utterance: "So the move has been a big change for him, and for the staff."
+    empathy: 0
+    empathy_words: ""
+    confrontational: false
+    challenge_words: ""
+    style: summary
+  - utterance: "Right, okay. And who else works with him?"
+    empathy: 0
+    empathy_words: ""
+    confrontational: false
+    challenge_words: ""
+    style: acknowledgement
+  - utterance: "Okay, thank you, that's useful."
+    empathy: 0
+    empathy_words: ""
+    confrontational: false
+    challenge_words: ""
+    style: acknowledgement
+  - utterance: "That sounds really tough."
+    empathy: 1
+    empathy_words: "That sounds really tough."
+    confrontational: false
+    challenge_words: ""
+    style: brief_empathy
+  - utterance: "I'm sorry it's been so difficult."
+    empathy: 1
+    empathy_words: "I'm sorry it's been so difficult."
+    confrontational: false
+    challenge_words: ""
+    style: brief_empathy
+  - utterance: "That must be hard. What happened next?"
+    empathy: 1
+    empathy_words: "That must be hard."
+    confrontational: false
+    challenge_words: ""
+    style: brief_empathy_question
+  - utterance: "um that sounds stressful. how is the team coping"
+    empathy: 1
+    empathy_words: "that sounds stressful."
+    confrontational: false
+    challenge_words: ""
+    style: brief_empathy_question
+  - utterance: "Going in without feeling trained to help him communicate sounds genuinely daunting, so it makes sense you'd feel anxious."
+    empathy: 2
+    empathy_words: "Going in without feeling trained to help him communicate sounds genuinely daunting, so it makes sense you'd feel anxious."
+    confrontational: false
+    challenge_words: ""
+    style: specific_empathy
+    previous:
+      interviewer: "How do you feel before a shift with him?"
+      character: "I'm anxious before going in because I don't feel trained to help him communicate."
+  - utterance: "You were worried the house would get the blame, so it's understandable that people held back from asking for help."
+    empathy: 2
+    empathy_words: "You were worried the house would get the blame, so it's understandable that people held back from asking for help."
+    confrontational: false
+    challenge_words: ""
+    style: specific_empathy
+    previous:
+      interviewer: "Has there been pressure to say the move was going well?"
+      character: "We described the move as going well because we were afraid the placement would be blamed. That has delayed asking for help."
+  - utterance: "It's clear you've been working hard to understand what's changed for him, and that isn't easy."
+    empathy: 2
+    empathy_words: "It's clear you've been working hard to understand what's changed for him, and that isn't easy."
+    confrontational: false
+    challenge_words: ""
+    style: specific_empathy
+  - utterance: "Seeing a colleague hurt and still not knowing why must be really unsettling for all of you. How has the team been since?"
+    empathy: 2
+    empathy_words: "Seeing a colleague hurt and still not knowing why must be really unsettling for all of you."
+    confrontational: false
+    challenge_words: ""
+    style: specific_empathy_question
+    previous:
+      interviewer: "How many times has he hit out?"
+      character: "He's hit a staff member four times in the three weeks since moving. Once a colleague had a bruised arm; there have been no other injuries."
+  - utterance: "Frankly, someone should have flagged this to us much sooner."
+    empathy: 0
+    empathy_words: ""
+    confrontational: true
+    challenge_words: "Frankly, someone should have flagged this to us much sooner."
+    style: confront_statement
+  - utterance: "Why on earth hasn't anyone unpacked his picture cards?"
+    empathy: 0
+    empathy_words: ""
+    confrontational: true
+    challenge_words: "Why on earth hasn't anyone unpacked his picture cards?"
+    style: confront_why
+    previous:
+      interviewer: "How does he communicate?"
+      character: "He uses short phrases and picture cards. The cards haven't been unpacked, and he struggles with several instructions at once."
+  - utterance: "Lots of people find moving hard, he'll settle down in a few weeks."
+    empathy: 0
+    empathy_words: ""
+    confrontational: true
+    challenge_words: "he'll settle down in a few weeks."
+    style: dismissive
+  - utterance: "Let's not get bogged down in how you feel, I just need the facts."
+    empathy: 0
+    empathy_words: ""
+    confrontational: true
+    challenge_words: "Let's not get bogged down in how you feel, I just need the facts."
+    style: dismissive

@@ -1,0 +1,733 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: school-aggression-teacher-collateral
+case_version: 0.1.0
+status: draft
+items:
+- utterance: What led to the two exclusions?
+  topics:
+  - events
+  style: open
+- utterance: Tell me what happened on each occasion he was sent home.
+  topics:
+  - events
+  style: open
+- utterance: Was anyone hurt during those incidents?
+  topics:
+  - events
+  style: closed
+- utterance: Did anyone need medical treatment afterwards?
+  topics:
+  - events
+  style: closed
+- utterance: What did he actually do that got him excluded?
+  topics:
+  - events
+  style: colloquial
+- utterance: How bad did things get when he lost it?
+  topics:
+  - events
+  style: colloquial
+- utterance: Could you describe the nature and severity of the aggressive incidents?
+  topics:
+  - events
+  style: clinical
+- utterance: I'd find it useful to hear exactly what happened before each exclusion
+  topics:
+  - events
+  style: indirect
+- utterance: I was wondering whether there were any injuries
+  topics:
+  - events
+  style: indirect
+- utterance: It sounds like a hard term for everyone. What happened in the incidents?
+  topics:
+  - events
+  style: empathy_then_question
+- utterance: so um the exclusions what what actually happened
+  topics:
+  - events
+  style: spoken
+- utterance: And the exclusions?
+  topics:
+  - events
+  style: brief
+- utterance: Was anybody hurt in the second one?
+  topics:
+  - events
+  style: follow_up
+  previous:
+    interviewer: What led to the two exclusions?
+    character: 'He was excluded twice this term: once after pushing a pupil and once after throwing a
+      chair. Nobody needed hospital care.'
+- utterance: I assume there was some physical aggression involved?
+  topics:
+  - events
+  style: leading
+- utterance: When did his behaviour start to change?
+  topics:
+  - pattern
+  style: open
+- utterance: How often is he arguing with staff at the moment?
+  topics:
+  - pattern
+  style: open
+- utterance: How does this year compare with last year?
+  topics:
+  - pattern
+  style: open
+- utterance: Was he like this last year as well?
+  topics:
+  - pattern
+  style: closed
+- utterance: Is it happening most days now?
+  topics:
+  - pattern
+  style: closed
+- utterance: How many days a week does he kick off with adults?
+  topics:
+  - pattern
+  style: colloquial
+- utterance: Could you describe the onset and frequency of the oppositional behaviour?
+  topics:
+  - pattern
+  style: clinical
+- utterance: I'd like to understand the timeline of when things got worse
+  topics:
+  - pattern
+  style: indirect
+- utterance: I'm wondering whether this is a change from how he used to be
+  topics:
+  - pattern
+  style: indirect
+- utterance: That must be wearing for the staff. When did it start?
+  topics:
+  - pattern
+  style: empathy_then_question
+- utterance: um so has it has it always been like this or
+  topics:
+  - pattern
+  style: spoken
+- utterance: Since when?
+  topics:
+  - pattern
+  style: brief
+- utterance: And was there much of this before September?
+  topics:
+  - pattern
+  style: follow_up
+  previous:
+    interviewer: When did his behaviour start to change?
+    character: Since September he's argued with adults on most days. Last year there were occasional disagreements,
+      not this level of disruption.
+- utterance: I'd guess it's got worse fairly recently?
+  topics:
+  - pattern
+  style: leading
+- utterance: What tends to happen just before an incident?
+  topics:
+  - triggers
+  style: open
+- utterance: What situations seem to trigger his outbursts?
+  topics:
+  - triggers
+  style: open
+- utterance: Does it happen more when he's corrected in front of classmates?
+  topics:
+  - triggers
+  style: closed
+- utterance: Have you noticed any pattern in what kicks things off?
+  topics:
+  - triggers
+  style: open
+- utterance: What winds him up in class?
+  topics:
+  - triggers
+  style: colloquial
+- utterance: Could you describe the antecedents to his aggressive episodes?
+  topics:
+  - triggers
+  style: clinical
+- utterance: I'd like to hear about what's going on in the lesson when he becomes distressed
+  topics:
+  - triggers
+  style: indirect
+- utterance: I wondered whether certain activities make things worse
+  topics:
+  - triggers
+  style: indirect
+- utterance: You clearly know him well. What usually comes before an outburst?
+  topics:
+  - triggers
+  style: empathy_then_question
+- utterance: um and what what's going on just before he kicks off
+  topics:
+  - triggers
+  style: spoken
+- utterance: Any triggers?
+  topics:
+  - triggers
+  style: brief
+- utterance: What was the class doing when the chair was thrown?
+  topics:
+  - triggers
+  style: follow_up
+  previous:
+    interviewer: What led to the two exclusions?
+    character: 'He was excluded twice this term: once after pushing a pupil and once after throwing a
+      chair. Nobody needed hospital care.'
+- utterance: I imagine it's often linked to something specific in the lesson?
+  topics:
+  - triggers
+  style: leading
+- utterance: How is he getting on with his reading?
+  topics:
+  - learning
+  style: open
+- utterance: Where is he academically compared with others his age?
+  topics:
+  - learning
+  style: open
+- utterance: What progress is he making with his school work?
+  topics:
+  - learning
+  style: open
+- utterance: Has he had a learning or language assessment?
+  topics:
+  - learning
+  style: closed
+- utterance: Is he behind in any subjects?
+  topics:
+  - learning
+  style: closed
+- utterance: Does he struggle with his letters at all?
+  topics:
+  - learning
+  style: colloquial
+- utterance: How's he doing with the books, roughly?
+  topics:
+  - learning
+  style: colloquial
+- utterance: Could you tell me about his attainment and any specific learning difficulties identified?
+  topics:
+  - learning
+  style: clinical
+- utterance: I'd like to get a sense of his literacy
+  topics:
+  - learning
+  style: indirect
+- utterance: I was wondering whether anyone has looked into his learning
+  topics:
+  - learning
+  style: indirect
+- utterance: I know teachers see a lot of this. How far behind is he with reading?
+  topics:
+  - learning
+  style: empathy_then_question
+- utterance: so um reading is he is he okay with it
+  topics:
+  - learning
+  style: spoken
+- utterance: And his reading?
+  topics:
+  - learning
+  style: brief
+- utterance: Has anyone referred him for a specialist assessment of that?
+  topics:
+  - learning
+  style: follow_up
+  previous:
+    interviewer: How is he getting on with his reading?
+    character: He's around two years behind in reading. We haven't completed a specialist learning or
+      language assessment.
+- utterance: I wonder if his reading is a bit behind?
+  topics:
+  - learning
+  style: leading
+- utterance: How is his concentration in lessons?
+  topics:
+  - attention
+  style: open
+- utterance: Can he sit still during class?
+  topics:
+  - attention
+  style: closed
+- utterance: What's his attention like on activities he enjoys?
+  topics:
+  - attention
+  style: open
+- utterance: Does he leave his seat a lot?
+  topics:
+  - attention
+  style: closed
+- utterance: How long can he stay focused on something?
+  topics:
+  - attention
+  style: open
+- utterance: Is he fidgety or up and about all the time?
+  topics:
+  - attention
+  style: colloquial
+- utterance: When he's into something, can he stick at it?
+  topics:
+  - attention
+  style: colloquial
+- utterance: Could you describe any inattention or hyperactivity you've observed?
+  topics:
+  - attention
+  style: clinical
+- utterance: I'd be interested in how well he concentrates
+  topics:
+  - attention
+  style: indirect
+- utterance: I wondered whether his focus differs between subjects
+  topics:
+  - attention
+  style: indirect
+- utterance: That's helpful, thank you. How does he manage with sitting through lessons?
+  topics:
+  - attention
+  style: empathy_then_question
+- utterance: um is he is he able to concentrate okay
+  topics:
+  - attention
+  style: spoken
+- utterance: Concentration?
+  topics:
+  - attention
+  style: brief
+- utterance: And when he's doing something he likes, does he focus better?
+  topics:
+  - attention
+  style: follow_up
+  previous:
+    interviewer: Can he sit still during class?
+    character: He gets up frequently during writing tasks but can spend twenty minutes building a model
+      in a small group.
+- utterance: I imagine he finds it hard to stay in his seat?
+  topics:
+  - attention
+  style: leading
+- utterance: How does he get on with other children?
+  topics:
+  - peers
+  style: open
+- utterance: Has he been bullied or teased by anyone?
+  topics:
+  - peers
+  style: closed
+- utterance: What are his relationships like with classmates?
+  topics:
+  - peers
+  style: open
+- utterance: Tell me about his friendships.
+  topics:
+  - peers
+  style: open
+- utterance: Has anyone been picking on him?
+  topics:
+  - peers
+  style: colloquial
+- utterance: Who does he hang around with at break?
+  topics:
+  - peers
+  style: colloquial
+- utterance: Could you describe his peer relationships and any bullying?
+  topics:
+  - peers
+  style: clinical
+- utterance: I'd like to hear how he fits in socially
+  topics:
+  - peers
+  style: indirect
+- utterance: I wondered whether the other children ever make fun of him
+  topics:
+  - peers
+  style: indirect
+- utterance: Children can be hard on each other. Has he been mocked at all?
+  topics:
+  - peers
+  style: empathy_then_question
+- utterance: um friends does he does he have friends
+  topics:
+  - peers
+  style: spoken
+- utterance: Any bullying?
+  topics:
+  - peers
+  style: brief
+- utterance: What were the other pupils teasing him about?
+  topics:
+  - peers
+  style: follow_up
+  previous:
+    interviewer: Has he been bullied or teased by anyone?
+    character: He has one close friend. Two pupils have mocked his reading; we've addressed the incidents
+      we know about.
+- utterance: He's probably had a hard time from other pupils, would you say?
+  topics:
+  - peers
+  style: leading
+- utterance: How is he behaving at home, as far as you know?
+  topics:
+  - home
+  style: open
+- utterance: Have there been any changes in the family recently?
+  topics:
+  - home
+  style: closed
+- utterance: Are his parents still together?
+  topics:
+  - home
+  style: closed
+- utterance: Is it the same story at home?
+  topics:
+  - home
+  style: colloquial
+- utterance: Anything going on at home that might be unsettling him?
+  topics:
+  - home
+  style: colloquial
+- utterance: Could you share what you know about family circumstances and recent life events?
+  topics:
+  - home
+  style: clinical
+- utterance: I'd like to understand what's happening at home
+  topics:
+  - home
+  style: indirect
+- utterance: I'm wondering what his parents have told the school
+  topics:
+  - home
+  style: indirect
+- utterance: I know you only see part of the picture. What do you know about home?
+  topics:
+  - home
+  style: empathy_then_question
+- utterance: so um home life what what do you know about that
+  topics:
+  - home
+  style: spoken
+- utterance: And at home?
+  topics:
+  - home
+  style: brief
+- utterance: How are contact arrangements working since then?
+  topics:
+  - home
+  style: follow_up
+  previous:
+    interviewer: What do you know about his home situation?
+    character: His mother says he argues at home too. His parents separated in the summer; I don't know
+      how arrangements are working.
+- utterance: I wonder if there's been some upheaval at home?
+  topics:
+  - home
+  style: leading
+- utterance: Has he ever disclosed anything worrying to you?
+  topics:
+  - safeguarding
+  style: closed
+- utterance: Have you noticed any unexplained injuries?
+  topics:
+  - safeguarding
+  style: closed
+- utterance: Is the safeguarding lead aware of him?
+  topics:
+  - safeguarding
+  style: closed
+- utterance: What safeguarding steps has the school taken so far?
+  topics:
+  - safeguarding
+  style: open
+- utterance: Ever heard him say anything that made you worry someone was hurting him?
+  topics:
+  - safeguarding
+  style: colloquial
+- utterance: Any bruises or marks you couldn't account for?
+  topics:
+  - safeguarding
+  style: colloquial
+- utterance: Could I ask about any child protection concerns or referrals?
+  topics:
+  - safeguarding
+  style: clinical
+- utterance: I need to ask about safeguarding
+  topics:
+  - safeguarding
+  style: indirect
+- utterance: I wondered whether your designated lead is involved
+  topics:
+  - safeguarding
+  style: indirect
+- utterance: I know this is a difficult area. Has anything raised concerns about his safety?
+  topics:
+  - safeguarding
+  style: empathy_then_question
+- utterance: um so safeguarding is is anyone worried
+  topics:
+  - safeguarding
+  style: spoken
+- utterance: Any disclosures?
+  topics:
+  - safeguarding
+  style: brief
+- utterance: And what is the safeguarding lead doing about it?
+  topics:
+  - safeguarding
+  style: follow_up
+  previous:
+    interviewer: Do you have any safeguarding concerns about him?
+    character: He hasn't disclosed harm to me and I've seen no unexplained injuries. Our safeguarding
+      lead knows about his distress and is checking attendance and family support.
+- utterance: I assume there's nothing he's told you about being hurt?
+  topics:
+  - safeguarding
+  style: leading
+- utterance: What's it been like for you personally, Rachel?
+  topics:
+  - reaction
+  style: open
+- utterance: Do you find yourself dreading another incident?
+  topics:
+  - reaction
+  style: closed
+- utterance: Could we talk about your own feelings towards him?
+  topics:
+  - reaction
+  style: open
+- utterance: Is it affecting how you feel going into lessons with him?
+  topics:
+  - reaction
+  style: closed
+- utterance: How are you holding up with all this?
+  topics:
+  - reaction
+  style: colloquial
+- utterance: Does he ever get under your skin?
+  topics:
+  - reaction
+  style: colloquial
+- utterance: Could I ask about the emotional impact on you as his teacher?
+  topics:
+  - reaction
+  style: clinical
+- utterance: I'd like to hear how this has been for you
+  topics:
+  - reaction
+  style: indirect
+- utterance: I'm wondering how you feel walking into class with him
+  topics:
+  - reaction
+  style: indirect
+- utterance: This sounds like it's taken a toll. How are you feeling about him?
+  topics:
+  - reaction
+  style: empathy_then_question
+- utterance: um and you how how are you finding it
+  topics:
+  - reaction
+  style: spoken
+- utterance: And for you?
+  topics:
+  - reaction
+  style: brief
+- utterance: And how has all that left you feeling about teaching him?
+  topics:
+  - reaction
+  style: follow_up
+  previous:
+    interviewer: What led to the two exclusions?
+    character: 'He was excluded twice this term: once after pushing a pupil and once after throwing a
+      chair. Nobody needed hospital care.'
+- utterance: I'd imagine you're quite on edge with him now?
+  topics:
+  - reaction
+  style: leading
+- utterance: How have you tended to respond when he gets angry?
+  topics:
+  - regret
+  style: open
+- utterance: Is there anything you wish you'd handled differently with him?
+  topics:
+  - regret
+  style: closed
+- utterance: Would you feel able to talk about an interaction with him you regret?
+  topics:
+  - regret
+  style: open
+- utterance: Have there been times you've reacted in a way you weren't happy with?
+  topics:
+  - regret
+  style: closed
+- utterance: Looking back, what would you change about how you've handled him?
+  topics:
+  - regret
+  style: open
+- utterance: Ever snapped at him and felt bad afterwards?
+  topics:
+  - regret
+  style: colloquial
+- utterance: Any moments you'd take back if you could?
+  topics:
+  - regret
+  style: colloquial
+- utterance: Could you reflect on any of your own responses you'd want to revisit?
+  topics:
+  - regret
+  style: clinical
+- utterance: I'd be interested in how you've dealt with him in class
+  topics:
+  - regret
+  style: indirect
+- utterance: I wondered if there's a moment that's stayed with you
+  topics:
+  - regret
+  style: indirect
+- utterance: We all have moments like that. Is there one with him you think about?
+  topics:
+  - regret
+  style: empathy_then_question
+- utterance: um has there been a a time you've you know reacted and regretted it
+  topics:
+  - regret
+  style: spoken
+- utterance: Any regrets?
+  topics:
+  - regret
+  style: brief
+- utterance: Have you talked to any colleagues about that?
+  topics:
+  - regret
+  style: follow_up
+  previous:
+    interviewer: Is there anything you wish you'd handled differently with him?
+    character: I once corrected him sharply in front of the class. I regret it and haven't discussed it
+      with colleagues.
+- utterance: Everyone loses patience sometimes, has that happened with him?
+  topics:
+  - regret
+  style: leading
+- utterance: How is his reading, and how is his concentration?
+  topics:
+  - learning
+  - attention
+  style: stacked
+- utterance: Does he have friends, and what's going on at home?
+  topics:
+  - peers
+  - home
+  style: stacked
+- utterance: What led to the exclusions, and what tends to set him off?
+  topics:
+  - events
+  - triggers
+  style: stacked
+- utterance: When did this start, and are there any safeguarding concerns?
+  topics:
+  - pattern
+  - safeguarding
+  style: stacked
+- utterance: Hi, I'm a trainee in the child and adolescent mental health team.
+  topics: []
+  style: introduction
+- utterance: Is it okay if we go through some questions about him?
+  topics: []
+  style: greeting
+- utterance: Where would you like to start?
+  topics: []
+  style: greeting
+- utterance: Before we begin, is there anything you'd like to ask me?
+  topics: []
+  style: greeting
+- utterance: Good to meet you, Rachel, have a seat.
+  topics: []
+  style: greeting
+- utterance: I'm Dr Okafor, working with the CAMHS team.
+  topics: []
+  style: introduction
+- utterance: I'd like to move on to something different now.
+  topics: []
+  style: transition
+- utterance: Thanks, that's really useful. Can we turn to another area?
+  topics: []
+  style: transition
+- utterance: Let's switch focus for a moment.
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Rachel.
+  topics: []
+  style: closing
+- utterance: Thanks so much for your time; this has been really helpful.
+  topics: []
+  style: closing
+- utterance: It's clear how much you care about him.
+  topics: []
+  style: empathy
+- utterance: That sounds like a really draining term.
+  topics: []
+  style: empathy
+- utterance: I appreciate how thoughtfully you've described all this.
+  topics: []
+  style: empathy
+- utterance: It's understandable to feel tired with this much going on.
+  topics: []
+  style: empathy
+- utterance: So far you've described the exclusions, his reading and what happens in class.
+  topics: []
+  style: summary
+- utterance: Let me recap what we've covered to make sure I've got it right.
+  topics: []
+  style: summary
+- utterance: I'm gathering information from school so we get a full picture; we won't diagnose from this
+    alone.
+  topics: []
+  style: explanation
+- utterance: We'll also see him and his family before drawing any conclusions.
+  topics: []
+  style: explanation
+- utterance: I'll share what's relevant with the team and the safeguarding lead if needed.
+  topics: []
+  style: explanation
+- utterance: Does that make sense?
+  topics: []
+  style: check_understanding
+- utterance: Is that clear about what happens next?
+  topics: []
+  style: check_understanding
+- utterance: Is there anything I've said that you'd like me to go over?
+  topics: []
+  style: check_understanding
+- utterance: How is his speech and language generally?
+  topics: []
+  style: off_case
+- utterance: Does he have any medical conditions you know of?
+  topics: []
+  style: off_case
+- utterance: How is his attendance overall?
+  topics: []
+  style: off_case
+- utterance: Does he get on with the teaching assistant?
+  topics: []
+  style: off_case
+- utterance: How does he cope with changes to routine?
+  topics: []
+  style: off_case
+- utterance: Has he ever been seen by an educational psychologist?
+  topics: []
+  style: off_case
+- utterance: Does he sleep in class or seem tired?
+  topics: []
+  style: off_case
+- utterance: How did the other pupil's parents react to the exclusion?
+  topics: []
+  style: near_miss
+- utterance: What's the school's policy on exclusions?
+  topics: []
+  style: near_miss
+- utterance: How do you usually teach reading to the class?
+  topics: []
+  style: near_miss
+- utterance: Who is the safeguarding lead at your school?
+  topics: []
+  style: near_miss

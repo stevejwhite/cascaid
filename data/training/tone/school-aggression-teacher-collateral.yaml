@@ -1,0 +1,168 @@
+# Training lines for the tone classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: school-aggression-teacher-collateral
+case_version: 0.1.0
+status: draft
+items:
+- utterance: What happens just before he becomes aggressive?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Has he ever told you that someone has hurt him?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Have you seen any marks or bruises you couldn't explain?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: um how does he get on with his mum at home
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: How far behind is he in literacy?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Sorry to take up your time, but could you tell me about the second exclusion?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Would it be all right to ask how you've been finding it?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Hello Rachel, I'm one of the psychiatry trainees.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: Thanks for coming in this afternoon.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: I'm collecting the school's view alongside the family's before anyone reaches conclusions.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: explanation
+- utterance: Right. And when was that?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: okay that's helpful
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: That sounds hard.
+  empathy: 1
+  empathy_words: That sounds hard.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I can understand that.
+  empathy: 1
+  empathy_words: I can understand that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That must be tiring. How are the other staff coping?
+  empathy: 1
+  empathy_words: That must be tiring.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I appreciate you sharing that. What happened afterwards?
+  empathy: 1
+  empathy_words: I appreciate you sharing that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: Dreading the next incident before he's even done anything sounds like a really heavy thing to carry every day.
+  empathy: 2
+  empathy_words: Dreading the next incident before he's even done anything sounds like a really heavy thing to carry every day.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: How do you feel about teaching him at the moment?
+    character: I dread another incident and find myself expecting the worst before he's done anything.
+- utterance: It takes honesty to admit you regret correcting him in front of the class, and that reflection really matters.
+  empathy: 2
+  empathy_words: It takes honesty to admit you regret correcting him in front of the class, and that reflection really matters.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: Is there anything you wish you'd handled differently with him?
+    character: I once corrected him sharply in front of the class. I regret it and haven't discussed it with colleagues.
+- utterance: You clearly want to understand what's behind these incidents rather than just label him, and that comes across.
+  empathy: 2
+  empathy_words: You clearly want to understand what's behind these incidents rather than just label him, and that comes across.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: so being asked to read aloud in front of classmates sounds like a real source of embarrassment for him. how do staff handle that now
+  empathy: 2
+  empathy_words: so being asked to read aloud in front of classmates sounds like a real source of embarrassment for him.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+  previous:
+    interviewer: What tends to happen just before an incident?
+    character: It often starts when he's asked to read aloud or correct written work in front of others.
+- utterance: Children who throw chairs usually just need firmer boundaries.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Children who throw chairs usually just need firmer boundaries.
+  style: confront_statement
+  previous:
+    interviewer: What led to the two exclusions?
+    character: 'He was excluded twice this term: once after pushing a pupil and once after throwing a chair. Nobody needed hospital care.'
+- utterance: Why on earth wasn't his reading picked up years ago?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Why on earth wasn't his reading picked up years ago?
+  style: confront_why
+  previous:
+    interviewer: How is he getting on with his reading?
+    character: He's around two years behind in reading. We haven't completed a specialist learning or language assessment.
+- utterance: Lots of parents separate, I doubt that's relevant.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: I doubt that's relevant.
+  style: dismissive
+  previous:
+    interviewer: What do you know about his home situation?
+    character: His mother says he argues at home too. His parents separated in the summer; I don't know how arrangements are working.
+- utterance: I'm sure it's nothing to worry about, he'll grow out of it.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: I'm sure it's nothing to worry about, he'll grow out of it.
+  style: dismissive

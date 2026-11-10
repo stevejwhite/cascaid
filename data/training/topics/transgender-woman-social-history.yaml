@@ -1,0 +1,757 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: transgender-woman-social-history
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Tell me about where you grew up and what family life was like then.
+  topics:
+  - upbringing
+  style: open
+- utterance: Did you enjoy school?
+  topics:
+  - upbringing
+  style: closed
+- utterance: What was school like for you, Maya?
+  topics:
+  - upbringing
+  style: colloquial
+- utterance: Can you describe your early development and childhood environment?
+  topics:
+  - upbringing
+  style: clinical
+- utterance: I'd be interested to hear about your childhood
+  topics:
+  - upbringing
+  style: indirect
+- utterance: Thanks for sharing so much already. What was it like growing up?
+  topics:
+  - upbringing
+  style: empathy_then_question
+- utterance: um so where did you grow up, and who was at home
+  topics:
+  - upbringing
+  style: spoken
+- utterance: And your school days?
+  topics:
+  - upbringing
+  style: brief
+- utterance: You had a fairly settled childhood, didn't you?
+  topics:
+  - upbringing
+  style: leading
+- utterance: And where did you live as a child?
+  topics:
+  - upbringing
+  style: follow_up
+  previous:
+    interviewer: Who do you live with now?
+    character: I live with my partner, who is supportive. Two close friends are people I can talk openly
+      with.
+- utterance: How would you describe your time at school?
+  topics:
+  - upbringing
+  style: open
+- utterance: Did you have brothers or sisters growing up?
+  topics:
+  - upbringing
+  style: closed
+- utterance: Were you a quiet kid or more outgoing?
+  topics:
+  - upbringing
+  style: colloquial
+- utterance: How would you describe your gender identity?
+  topics:
+  - identity
+  style: open
+- utterance: Which pronouns would you like me to use?
+  topics:
+  - identity
+  style: closed
+- utterance: When did it first click for you?
+  topics:
+  - identity
+  style: colloquial
+- utterance: At what age did you become aware of your gender identity?
+  topics:
+  - identity
+  style: clinical
+- utterance: I'd like to understand how your sense of who you are developed over the years
+  topics:
+  - identity
+  style: indirect
+- utterance: Thank you for trusting me with this. When did you first understand who you were?
+  topics:
+  - identity
+  style: empathy_then_question
+- utterance: um what name and pronouns should I be using, and when did you, you know, work it out
+  topics:
+  - identity
+  style: spoken
+- utterance: When did you know?
+  topics:
+  - identity
+  style: brief
+- utterance: You've known for quite a long time, haven't you?
+  topics:
+  - identity
+  style: leading
+- utterance: When did you start to understand your gender, then?
+  topics:
+  - identity
+  style: follow_up
+  previous:
+    interviewer: Tell me about where you grew up.
+    character: I grew up with my parents and younger brother in a small town. School was mostly okay,
+      though I kept a lot to myself.
+- utterance: Who did you tell first about who you are?
+  topics:
+  - identity
+  style: follow_up
+  previous:
+    interviewer: How have things changed for you recently?
+    character: I've changed my name and how I present socially. I've been waiting eighteen months for
+      specialist assessment and haven't started hormones.
+- utterance: Tell me how you came to tell people close to you about your identity.
+  topics:
+  - identity
+  style: open
+- utterance: Was it in childhood that you started to understand your gender?
+  topics:
+  - identity
+  style: closed
+- utterance: When did you come out to people?
+  topics:
+  - identity
+  style: colloquial
+- utterance: so um how old were you when you told, like, your friends and family
+  topics:
+  - identity
+  style: spoken
+- utterance: Tell me about the steps you've taken in your transition so far.
+  topics:
+  - transition
+  style: open
+- utterance: Have you started any hormone treatment?
+  topics:
+  - transition
+  style: closed
+- utterance: What is the current status of your referral to the gender service?
+  topics:
+  - transition
+  style: clinical
+- utterance: I wondered how the wait for specialist care has been going
+  topics:
+  - transition
+  style: indirect
+- utterance: That can't be easy. How long have you been waiting for an assessment?
+  topics:
+  - transition
+  style: empathy_then_question
+- utterance: um so have you changed your name or, like, how you dress, and are you on the list
+  topics:
+  - transition
+  style: spoken
+- utterance: And the waiting list?
+  topics:
+  - transition
+  style: brief
+- utterance: You've been waiting a long time, haven't you?
+  topics:
+  - transition
+  style: leading
+- utterance: And what have you done about it since then, socially?
+  topics:
+  - transition
+  style: follow_up
+  previous:
+    interviewer: When did you realise?
+    character: I'm a woman and use she and her. I began understanding that in my teens and told people
+      close to me at twenty-four.
+- utterance: Is the wait making that worse?
+  topics:
+  - transition
+  style: follow_up
+  previous:
+    interviewer: How has your mood been?
+    character: I've felt low most days for two months and sleep poorly. I still enjoy some time with friends,
+      but it's harder to get going.
+- utterance: What changes have you made to how you live day to day?
+  topics:
+  - transition
+  style: open
+- utterance: Has your name been changed?
+  topics:
+  - transition
+  style: closed
+- utterance: so er has anything started yet, medically I mean
+  topics:
+  - transition
+  style: spoken
+- utterance: Tell me about the people closest to you.
+  topics:
+  - relationships
+  style: open
+- utterance: Do you live with anyone?
+  topics:
+  - relationships
+  style: closed
+- utterance: Who've you got around you?
+  topics:
+  - relationships
+  style: colloquial
+- utterance: Can you describe your current relationships and sources of social support?
+  topics:
+  - relationships
+  style: clinical
+- utterance: I wondered who you feel able to talk to openly
+  topics:
+  - relationships
+  style: indirect
+- utterance: I'm glad you can talk to me. Who do you live with at the moment?
+  topics:
+  - relationships
+  style: empathy_then_question
+- utterance: um are you in a relationship, or have you got friends you can talk to
+  topics:
+  - relationships
+  style: spoken
+- utterance: Any close friends?
+  topics:
+  - relationships
+  style: brief
+- utterance: You've got people you can talk to, haven't you?
+  topics:
+  - relationships
+  style: leading
+- utterance: And who do you go home to?
+  topics:
+  - relationships
+  style: follow_up
+  previous:
+    interviewer: What do you do for work?
+    character: I work in a bookshop and enjoy helping customers. My hours were reduced recently, which
+      has made money tighter.
+- utterance: Are those people supportive of you?
+  topics:
+  - relationships
+  style: follow_up
+  previous:
+    interviewer: How would you describe your identity?
+    character: I'm a woman and use she and her. I began understanding that in my teens and told people
+      close to me at twenty-four.
+- utterance: Describe your home life and who shares it with you.
+  topics:
+  - relationships
+  style: open
+- utterance: Got anyone you can really be yourself with?
+  topics:
+  - relationships
+  style: colloquial
+- utterance: so er who do you spend most of your time with
+  topics:
+  - relationships
+  style: spoken
+- utterance: How are you getting by money-wise?
+  topics:
+  - employment
+  style: colloquial
+- utterance: What is your current employment and financial situation?
+  topics:
+  - employment
+  style: clinical
+- utterance: I wanted to ask about your job and how it's going
+  topics:
+  - employment
+  style: indirect
+- utterance: Work can be a lot with a low mood. How are things at your job?
+  topics:
+  - employment
+  style: empathy_then_question
+- utterance: um what do you do for a living, and is money okay
+  topics:
+  - employment
+  style: spoken
+- utterance: And your job?
+  topics:
+  - employment
+  style: brief
+- utterance: Money's tight at the moment, isn't it?
+  topics:
+  - employment
+  style: leading
+- utterance: Is work part of what's wearing you down?
+  topics:
+  - employment
+  style: follow_up
+  previous:
+    interviewer: How has your mood been?
+    character: I've felt low most days for two months and sleep poorly. I still enjoy some time with friends,
+      but it's harder to get going.
+- utterance: And how is your income coping?
+  topics:
+  - employment
+  style: follow_up
+  previous:
+    interviewer: Where are you up to with the referral?
+    character: I've changed my name and how I present socially. I've been waiting eighteen months for
+      specialist assessment and haven't started hormones.
+- utterance: How do you find your working day, and has anything changed there?
+  topics:
+  - employment
+  style: open
+- utterance: Have your hours changed recently?
+  topics:
+  - employment
+  style: closed
+- utterance: Do you like your job?
+  topics:
+  - employment
+  style: colloquial
+- utterance: so, um, are you worried about money at all
+  topics:
+  - employment
+  style: spoken
+- utterance: Have you come across any unfair treatment or prejudice because of who you are?
+  topics:
+  - discrimination
+  style: open
+- utterance: Has anyone given you a hard time out and about?
+  topics:
+  - discrimination
+  style: colloquial
+- utterance: Have you experienced any harassment or hate-related incidents?
+  topics:
+  - discrimination
+  style: clinical
+- utterance: I wondered how safe you feel getting around day to day
+  topics:
+  - discrimination
+  style: indirect
+- utterance: I'd like you to feel comfortable saying anything here. Has anything happened outside that
+    upset you?
+  topics:
+  - discrimination
+  style: empathy_then_question
+- utterance: um has anybody, like, been horrible to you when you're out
+  topics:
+  - discrimination
+  style: spoken
+- utterance: Any harassment?
+  topics:
+  - discrimination
+  style: brief
+- utterance: People haven't always been kind, have they?
+  topics:
+  - discrimination
+  style: leading
+- utterance: Have you had any trouble with strangers?
+  topics:
+  - discrimination
+  style: follow_up
+  previous:
+    interviewer: Who do you live with now?
+    character: I live with my partner, who is supportive. Two close friends are people I can talk openly
+      with.
+- utterance: Has anything happened that's made you feel unsafe lately?
+  topics:
+  - discrimination
+  style: follow_up
+  previous:
+    interviewer: How has your mood been?
+    character: I've felt low most days for two months and sleep poorly. I still enjoy some time with friends,
+      but it's harder to get going.
+- utterance: Tell me about times you've felt unsafe going about your daily life.
+  topics:
+  - discrimination
+  style: open
+- utterance: Do you avoid anywhere because of how people treat you?
+  topics:
+  - discrimination
+  style: closed
+- utterance: Ever had any abuse from people?
+  topics:
+  - discrimination
+  style: colloquial
+- utterance: so um has anything bad happened with, like, people being nasty
+  topics:
+  - discrimination
+  style: spoken
+- utterance: Have you been feeling low?
+  topics:
+  - mood
+  style: closed
+- utterance: How've you been in yourself lately?
+  topics:
+  - mood
+  style: colloquial
+- utterance: Have you noticed changes in mood, sleep or energy over recent weeks?
+  topics:
+  - mood
+  style: clinical
+- utterance: I wondered how you've been feeling day to day
+  topics:
+  - mood
+  style: indirect
+- utterance: I'm sorry things have been hard. How long have you been feeling low?
+  topics:
+  - mood
+  style: empathy_then_question
+- utterance: um so how's your mood, and are you sleeping and that
+  topics:
+  - mood
+  style: spoken
+- utterance: Mood and sleep lately?
+  topics:
+  - mood
+  style: brief
+- utterance: You haven't been enjoying much, have you?
+  topics:
+  - mood
+  style: leading
+- utterance: And how's your mood been with all that?
+  topics:
+  - mood
+  style: follow_up
+  previous:
+    interviewer: What do you do for work?
+    character: I work in a bookshop and enjoy helping customers. My hours were reduced recently, which
+      has made money tighter.
+- utterance: Has that left you feeling low?
+  topics:
+  - mood
+  style: follow_up
+  previous:
+    interviewer: Has anything happened that's made you feel unsafe?
+    character: I've been shouted at in the street twice this year and avoid that route now. I haven't
+      told my partner how much it unsettled me.
+- utterance: What do you still enjoy at the moment?
+  topics:
+  - mood
+  style: open
+- utterance: Is it hard to get going in the mornings?
+  topics:
+  - mood
+  style: closed
+- utterance: Are you feeling down in the dumps?
+  topics:
+  - mood
+  style: colloquial
+- utterance: so er how long have you felt like this, the low mood I mean
+  topics:
+  - mood
+  style: spoken
+- utterance: How do you feel about the future, and whether life feels worth it?
+  topics:
+  - risk
+  style: open
+- utterance: Have you ever felt like doing yourself in?
+  topics:
+  - risk
+  style: colloquial
+- utterance: Have you experienced suicidal thoughts or engaged in any self harm?
+  topics:
+  - risk
+  style: clinical
+- utterance: I wondered whether things have ever felt so heavy you wished you could escape
+  topics:
+  - risk
+  style: indirect
+- utterance: Thank you for being so open. Have you had any thoughts of harming yourself?
+  topics:
+  - risk
+  style: empathy_then_question
+- utterance: um have you, like, thought about suicide or hurting yourself
+  topics:
+  - risk
+  style: spoken
+- utterance: Any self harm?
+  topics:
+  - risk
+  style: brief
+- utterance: You've never thought of hurting yourself, have you?
+  topics:
+  - risk
+  style: leading
+- utterance: Has it ever got so bad that you've thought about ending it?
+  topics:
+  - risk
+  style: follow_up
+  previous:
+    interviewer: How has your mood been?
+    character: I've felt low most days for two months and sleep poorly. I still enjoy some time with friends,
+      but it's harder to get going.
+- utterance: Do you ever wish you weren't here?
+  topics:
+  - risk
+  style: follow_up
+  previous:
+    interviewer: Has anything happened outside that upset you?
+    character: I've been shouted at in the street twice this year and avoid that route now. I haven't
+      told my partner how much it unsettled me.
+- utterance: Tell me about any thoughts you've had of not wanting to carry on.
+  topics:
+  - risk
+  style: open
+- utterance: Ever hurt yourself on purpose?
+  topics:
+  - risk
+  style: colloquial
+- utterance: so um are you safe, like, no thoughts of doing anything to yourself
+  topics:
+  - risk
+  style: spoken
+- utterance: Are you in touch with your parents?
+  topics:
+  - family-now
+  style: closed
+- utterance: How do your folks treat you now?
+  topics:
+  - family-now
+  style: colloquial
+- utterance: How would you describe the quality of support from your relatives?
+  topics:
+  - family-now
+  style: clinical
+- utterance: I wondered how your relatives have taken things
+  topics:
+  - family-now
+  style: indirect
+- utterance: That sounds like a lot to carry. How has your family responded to you?
+  topics:
+  - family-now
+  style: empathy_then_question
+- utterance: um what about your family, like are they supportive or not
+  topics:
+  - family-now
+  style: spoken
+- utterance: And relatives?
+  topics:
+  - family-now
+  style: brief
+- utterance: Your family haven't been very accepting, have they?
+  topics:
+  - family-now
+  style: leading
+- utterance: How did your family react when you told people?
+  topics:
+  - family-now
+  style: follow_up
+  previous:
+    interviewer: When did you tell people?
+    character: I'm a woman and use she and her. I began understanding that in my teens and told people
+      close to me at twenty-four.
+- utterance: Do your relatives make them welcome?
+  topics:
+  - family-now
+  style: follow_up
+  previous:
+    interviewer: Who do you live with now?
+    character: I live with my partner, who is supportive. Two close friends are people I can talk openly
+      with.
+- utterance: Tell me how it feels when you think about your relatives.
+  topics:
+  - family-now
+  style: open
+- utterance: Has anyone in the family been supportive?
+  topics:
+  - family-now
+  style: closed
+- utterance: Do your mum and dad keep in touch?
+  topics:
+  - family-now
+  style: colloquial
+- utterance: so, um, any family around who've got your back
+  topics:
+  - family-now
+  style: spoken
+- utterance: What would you most like help with today?
+  topics:
+  - goals
+  style: open
+- utterance: Is there something specific you'd like us to focus on?
+  topics:
+  - goals
+  style: closed
+- utterance: What do you want to get out of coming here?
+  topics:
+  - goals
+  style: colloquial
+- utterance: What are your treatment priorities at this stage?
+  topics:
+  - goals
+  style: clinical
+- utterance: I was wondering what would make the biggest difference to you right now
+  topics:
+  - goals
+  style: indirect
+- utterance: I want to make sure this helps. What would you like from today's appointment?
+  topics:
+  - goals
+  style: empathy_then_question
+- utterance: um so what do you want from us, like what's most important
+  topics:
+  - goals
+  style: spoken
+- utterance: What would help most?
+  topics:
+  - goals
+  style: brief
+- utterance: You'd like support with your mood first, wouldn't you?
+  topics:
+  - goals
+  style: leading
+- utterance: What would you like us to do about that?
+  topics:
+  - goals
+  style: follow_up
+  previous:
+    interviewer: How has your mood been?
+    character: I've felt low most days for two months and sleep poorly. I still enjoy some time with friends,
+      but it's harder to get going.
+- utterance: Would you like to be kept updated on that?
+  topics:
+  - goals
+  style: follow_up
+  previous:
+    interviewer: Where are you up to with the referral?
+    character: I've changed my name and how I present socially. I've been waiting eighteen months for
+      specialist assessment and haven't started hormones.
+- utterance: Where should we start in making things better for you?
+  topics:
+  - goals
+  style: open
+- utterance: Would you like to hear about support for money problems as well?
+  topics:
+  - goals
+  style: closed
+- utterance: What do you need from me today?
+  topics:
+  - goals
+  style: colloquial
+- utterance: so er what are you hoping for from this appointment
+  topics:
+  - goals
+  style: spoken
+- utterance: What was your childhood like, and when did you understand your gender?
+  topics:
+  - upbringing
+  - identity
+  style: stacked
+- utterance: Who do you live with, and what do you do for work?
+  topics:
+  - relationships
+  - employment
+  style: stacked
+- utterance: How has your mood been, and have you had any thoughts of harming yourself?
+  topics:
+  - mood
+  - risk
+  style: stacked
+- utterance: Has anyone treated you unfairly, and how is your family with you now?
+  topics:
+  - discrimination
+  - family-now
+  style: stacked
+- utterance: Hello Maya, thanks for coming in today.
+  topics: []
+  style: greeting
+- utterance: Good morning, Maya. Do come and sit down.
+  topics: []
+  style: greeting
+- utterance: Hi, I'm one of the psychiatrists in the outpatient clinic.
+  topics: []
+  style: introduction
+- utterance: My name is Dr Okafor and I'll be seeing you today.
+  topics: []
+  style: introduction
+- utterance: Is it all right if we talk for a little while?
+  topics: []
+  style: greeting
+- utterance: Where would you like to start, Maya?
+  topics: []
+  style: greeting
+- utterance: Before we get going, do you have any questions for me?
+  topics: []
+  style: greeting
+- utterance: I'd like to move on to something different now.
+  topics: []
+  style: transition
+- utterance: Let's turn to the practical side of things.
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Maya.
+  topics: []
+  style: closing
+- utterance: Thank you for being so open with me today, I'll write this up carefully.
+  topics: []
+  style: closing
+- utterance: Maya, are you comfortable, or would you like a break?
+  topics: []
+  style: greeting
+- utterance: That sounds like it has been really tiring for you.
+  topics: []
+  style: empathy
+- utterance: It makes sense that you'd want to be asked ordinary questions.
+  topics: []
+  style: empathy
+- utterance: Thank you, I know that isn't always easy to talk about.
+  topics: []
+  style: empathy
+- utterance: So you've been feeling low for a while, and you'd like some help while you wait.
+  topics: []
+  style: summary
+- utterance: 'Let me check I''ve understood: life has been hard lately, but you have people around you.'
+  topics: []
+  style: summary
+- utterance: So the main worries seem to be your mood, your money and the waiting.
+  topics: []
+  style: summary
+- utterance: What I'd like to do is look at what support we can offer while you wait for the referral.
+  topics: []
+  style: explanation
+- utterance: I'll explain how this appointment works, and you can stop me whenever you like.
+  topics: []
+  style: explanation
+- utterance: Low mood can have many causes, and being trans is not one of them.
+  topics: []
+  style: explanation
+- utterance: Does that make sense so far?
+  topics: []
+  style: check_understanding
+- utterance: Is there anything I've said that you'd like me to repeat?
+  topics: []
+  style: check_understanding
+- utterance: Can I just check I've got your name and pronouns the way you want them?
+  topics: []
+  style: check_understanding
+- utterance: Do you drink alcohol?
+  topics: []
+  style: off_case
+- utterance: Have you ever been in trouble with the police?
+  topics: []
+  style: off_case
+- utterance: Have you ever been admitted to a psychiatric hospital?
+  topics: []
+  style: off_case
+- utterance: Do you take any regular medication?
+  topics: []
+  style: off_case
+- utterance: What dose of hormones are you hoping to start on?
+  topics: []
+  style: near_miss
+- utterance: Which clinic is your referral with?
+  topics: []
+  style: near_miss
+- utterance: What is your partner's name?
+  topics: []
+  style: near_miss
+- utterance: Which company do you work for?
+  topics: []
+  style: near_miss
+- utterance: Were you bullied at school?
+  topics: []
+  style: near_miss
+- utterance: What does your partner think about your low mood?
+  topics: []
+  style: near_miss

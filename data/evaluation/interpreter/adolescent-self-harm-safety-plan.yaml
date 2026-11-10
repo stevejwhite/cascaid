@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: adolescent-self-harm-safety-plan
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hi Amelia, I'm one of the doctors from the team that sees young people in A&E. Thanks for talking to me."
+    expected: []
+    rapport: false
+  - utterance: "Can you tell me what happened today?"
+    expected: [episode]
+    rapport: false
+  - utterance: "Was something going on earlier today that led up to it?"
+    expected: [peer-trigger]
+    rapport: false
+  - utterance: "How do you notice when things are starting to build up for you? What are the first signs?"
+    expected: [warning-signs]
+    rapport: false
+  - utterance: "When you cut, what were you hoping would happen? Did you want to end your life?"
+    expected: [intent]
+    rapport: false
+  - utterance: "How has your mood been generally over the last few weeks, and your sleep?"
+    expected: [low-mood]
+    rapport: false
+  - utterance: "What's helped you get through those urges in the past without hurting yourself?"
+    expected: [coping]
+    rapport: false
+  - utterance: "Is there a grown-up you trust who you could go to if things got bad tonight?"
+    expected: [trusted-adult]
+    rapport: false
+  - utterance: "What's at home that you could use to hurt yourself, like blades or tablets?"
+    expected: [means]
+    rapport: false
+  - utterance: "Is there anyone at school you'd be okay with knowing, so they can keep an eye out for you?"
+    expected: [school-help]
+    rapport: false
+  - utterance: "Do you have anyone from mental health services you're already seeing, or a number to ring?"
+    expected: [professional-follow-up]
+    rapport: false
+  - utterance: "how would you like the plan written down, like on your phone or on paper?"
+    expected: [plan-format]
+    rapport: false
+  - utterance: "Have you had anything to drink or taken anything today?"
+    expected: [substances]
+    rapport: false
+  - utterance: "That sounds like an awful lot to cope with."
+    expected: []
+    rapport: true
+  - utterance: "Ending up in A&E after cutting deeper than before must have been really frightening for you. Is anyone, at home or anywhere else, hurting you or making you feel unsafe?"
+    expected: [safeguarding]
+    rapport: true
+  - utterance: "How are you feeling about talking to your mum about how you're doing now?"
+    expected: [sharing-concern]
+    rapport: false
+  - utterance: "Do you play any sports or go to any clubs after school?"
+    expected: []
+    rapport: false
+  - utterance: "Okay, so we've got a few steps here we can build into your plan together."
+    expected: []
+    rapport: false
+  - utterance: "And is she here with you now?"
+    previous:
+      interviewer: "Who's the adult you feel closest to?"
+      character: "Mum. She's the one I trust most."
+    expected: [trusted-adult]
+    rapport: false

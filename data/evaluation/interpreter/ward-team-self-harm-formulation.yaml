@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: ward-team-self-harm-formulation
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hi Nadia, thanks for coming to talk this through with me."
+    expected: []
+    rapport: false
+  - utterance: "How many times has she self-harmed recently?"
+    expected: [episodes]
+    rapport: false
+  - utterance: "Was there anything that seemed to set off the most recent episode?"
+    expected: [context]
+    rapport: false
+  - utterance: "How is the team responding to her? Is everyone on the same page?"
+    expected: [division]
+    rapport: false
+  - utterance: "How are you feeling about all this yourself?"
+    expected: [feelings]
+    rapport: false
+  - utterance: "Has the way you've been feeling affected how you've responded to her?"
+    expected: [reaction]
+    rapport: false
+  - utterance: "Is there a care plan everyone's working from?"
+    expected: [plan]
+    rapport: false
+  - utterance: "How is she right now, is she safe?"
+    expected: [safety]
+    rapport: false
+  - utterance: "Have you had any supervision or space to reflect on this?"
+    expected: [supervision]
+    rapport: false
+  - utterance: "Has she said anything about what's going on for her?"
+    expected: [perspective]
+    rapport: false
+  - utterance: "What would you like to come out of today?"
+    expected: [goal]
+    rapport: false
+  - utterance: "That sounds like a really difficult week for you."
+    expected: []
+    rapport: true
+  - utterance: "Being caught between colleagues at handover while trying to care for her must be draining for you. Has anything happened between you and her that's on your mind?"
+    expected: [reaction]
+    rapport: true
+  - utterance: "what has she said to you about that?"
+    previous:
+      interviewer: "What happened yesterday?"
+      character: "She got upset when her named nurse was moved to another ward."
+    expected: [perspective]
+    rapport: false
+  - utterance: "What would you want from one?"
+    previous:
+      interviewer: "Is there a written plan?"
+      character: "No, different shifts make different promises."
+    expected: [goal]
+    rapport: false
+  - utterance: "What's her diagnosis?"
+    expected: []
+    rapport: false
+  - utterance: "Is she detained under the Mental Health Act?"
+    expected: []
+    rapport: false
+  - utterance: "So the team is split and there's no shared plan yet."
+    expected: []
+    rapport: false

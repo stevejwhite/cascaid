@@ -1,0 +1,227 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: cannabis-voices-mental-state
+case_version: 0.1.0
+status: draft
+items:
+  # cannabis vs other-drugs
+  - utterance: Roughly how much weed are you going through these days?
+    topics: [cannabis]
+    style: boundary
+    pair: [cannabis, other-drugs]
+  - utterance: when did you last have a smoke
+    topics: [cannabis]
+    style: boundary_spoken
+    pair: [cannabis, other-drugs]
+  - utterance: Has the amount you smoke gone up recently?
+    topics: [cannabis]
+    style: boundary_colloquial
+    pair: [cannabis, other-drugs]
+  - utterance: How long have you been using the strong stuff for?
+    topics: [cannabis]
+    style: boundary
+    pair: [cannabis, other-drugs]
+  - utterance: And was that every single day?
+    topics: [cannabis]
+    style: boundary_follow_up
+    pair: [cannabis, other-drugs]
+    previous:
+      interviewer: Tell me how often you've been using cannabis.
+      character: I've smoked strong cannabis daily for two years. Last week I increased to about four joints daily; I last smoked yesterday evening.
+  - utterance: Have you taken anything else, like pills, powders or anything you'd buy off a mate?
+    topics: [other-drugs]
+    style: boundary
+    pair: [cannabis, other-drugs]
+  - utterance: do you drink much, or take any prescribed tablets
+    topics: [other-drugs]
+    style: boundary_spoken
+    pair: [cannabis, other-drugs]
+  - utterance: Apart from the cannabis, have you been on any other substances this week?
+    topics: [other-drugs]
+    style: boundary_colloquial
+    pair: [cannabis, other-drugs]
+  - utterance: How much alcohol do you usually have?
+    topics: [other-drugs]
+    style: boundary
+    pair: [cannabis, other-drugs]
+  - utterance: And what about your alcohol over the same time?
+    topics: [other-drugs]
+    style: boundary_follow_up
+    pair: [cannabis, other-drugs]
+    previous:
+      interviewer: How much cannabis do you smoke?
+      character: I've smoked strong cannabis daily for two years. Last week I increased to about four joints daily; I last smoked yesterday evening.
+  - utterance: Have you ever been in trouble for using drugs?
+    topics: []
+    style: near_miss
+    pair: [cannabis, other-drugs]
+  - utterance: Where do you get your cannabis from?
+    topics: []
+    style: near_miss
+    pair: [cannabis, other-drugs]
+  # commands vs voices
+  - utterance: What do the voices sound like to you?
+    topics: [voices]
+    style: boundary
+    pair: [commands, voices]
+  - utterance: and are they coming from inside your head or from outside
+    topics: [voices]
+    style: boundary_spoken
+    pair: [commands, voices]
+  - utterance: Do you hear people talking when there's no one in the room?
+    topics: [voices]
+    style: boundary_colloquial
+    pair: [commands, voices]
+  - utterance: How many times an hour would you say they speak?
+    topics: [voices]
+    style: boundary
+    pair: [commands, voices]
+  - utterance: And how long has that been happening?
+    topics: [voices]
+    style: boundary_follow_up
+    pair: [commands, voices]
+    previous:
+      interviewer: Are you hearing anything that others can't?
+      character: For three days I've heard two unfamiliar men talking about me when nobody is there. It happens several times an hour and sounds outside my head.
+  - utterance: Does anything you hear instruct you to act in some way?
+    topics: [commands]
+    style: boundary
+    pair: [commands, voices]
+  - utterance: do they ever tell you to hurt anyone or yourself
+    topics: [commands]
+    style: boundary_spoken
+    pair: [commands, voices]
+  - utterance: Do you feel like you have to do what they say?
+    topics: [commands]
+    style: boundary_colloquial
+    pair: [commands, voices]
+  - utterance: Is anything they say an order, something you have to act on?
+    topics: [commands]
+    style: boundary
+    pair: [commands, voices]
+  - utterance: And do you do what they tell you?
+    topics: [commands]
+    style: boundary_follow_up
+    pair: [commands, voices]
+    previous:
+      interviewer: What are the voices saying to you?
+      character: No, they haven't told me to do anything. They comment that I'm being watched.
+  - utterance: Do the voices ever sound like someone you know?
+    topics: []
+    style: near_miss
+    pair: [commands, voices]
+  - utterance: Do the voices make you feel frightened?
+    topics: []
+    style: near_miss
+    pair: [commands, voices]
+  # cannabis vs insight
+  - utterance: How much cannabis have you smoked in the last week?
+    topics: [cannabis]
+    style: boundary
+    pair: [cannabis, insight]
+  - utterance: when was the last time you had a joint
+    topics: [cannabis]
+    style: boundary_spoken
+    pair: [cannabis, insight]
+  - utterance: How strong is the stuff you smoke, and how often?
+    topics: [cannabis]
+    style: boundary_colloquial
+    pair: [cannabis, insight]
+  - utterance: Has your pattern of smoking changed over the last few weeks?
+    topics: [cannabis]
+    style: boundary
+    pair: [cannabis, insight]
+  - utterance: And how many joints is that in a day?
+    topics: [cannabis]
+    style: boundary_follow_up
+    pair: [cannabis, insight]
+    previous:
+      interviewer: Do you smoke cannabis?
+      character: I've smoked strong cannabis daily for two years. Last week I increased to about four joints daily; I last smoked yesterday evening.
+  - utterance: Do you think the weed could be part of why this is happening?
+    topics: [insight]
+    style: boundary
+    pair: [cannabis, insight]
+  - utterance: so what do you think is making you feel like this
+    topics: [insight]
+    style: boundary_spoken
+    pair: [cannabis, insight]
+  - utterance: Would you be open to some help to feel safe again?
+    topics: [insight]
+    style: boundary_colloquial
+    pair: [cannabis, insight]
+  - utterance: Do you have any theory about why things have felt so strange lately?
+    topics: [insight]
+    style: boundary
+    pair: [cannabis, insight]
+  - utterance: And do you think smoking might have anything to do with it?
+    topics: [insight]
+    style: boundary_follow_up
+    pair: [cannabis, insight]
+    previous:
+      interviewer: What do you think is behind these experiences?
+      character: Part of me wonders if the cannabis is involved. Another part thinks the danger is real; I want help to feel safe.
+  - utterance: Have you ever tried to cut down on your smoking?
+    topics: []
+    style: near_miss
+    pair: [cannabis, insight]
+  - utterance: Has smoking ever made you feel paranoid before?
+    topics: []
+    style: near_miss
+    pair: [cannabis, insight]
+  # interference vs persecution
+  - utterance: Do you feel anyone is following you or out to get you?
+    topics: [persecution]
+    style: boundary
+    pair: [interference, persecution]
+  - utterance: is somebody keeping tabs on you
+    topics: [persecution]
+    style: boundary_spoken
+    pair: [interference, persecution]
+  - utterance: Do you feel like people outside are after you?
+    topics: [persecution]
+    style: boundary_colloquial
+    pair: [interference, persecution]
+  - utterance: What makes you believe that you are being watched?
+    topics: [persecution]
+    style: boundary
+    pair: [interference, persecution]
+  - utterance: And have you actually seen anybody doing it?
+    topics: [persecution]
+    style: boundary_follow_up
+    pair: [interference, persecution]
+    previous:
+      interviewer: Do you feel under threat from anyone?
+      character: I think people outside are tracking me. I haven't seen anyone doing it, but it feels very convincing.
+  - utterance: Do your thoughts feel like they're your own, or does something put them in your head?
+    topics: [interference]
+    style: boundary
+    pair: [interference, persecution]
+  - utterance: can other people hear what you're thinking
+    topics: [interference]
+    style: boundary_spoken
+    pair: [interference, persecution]
+  - utterance: Does it ever feel like someone's pulling thoughts out of your mind?
+    topics: [interference]
+    style: boundary_colloquial
+    pair: [interference, persecution]
+  - utterance: Are there thoughts in your head that you feel aren't yours or that you can't control?
+    topics: [interference]
+    style: boundary
+    pair: [interference, persecution]
+  - utterance: And do you feel they are being sent out so others can pick them up?
+    topics: [interference]
+    style: boundary_follow_up
+    pair: [interference, persecution]
+    previous:
+      interviewer: Is anyone interfering with you in any way?
+      character: No, I don't think thoughts are being put in, taken out or broadcast. They still feel like my own.
+  - utterance: Do you feel that your food or drink has been tampered with?
+    topics: []
+    style: near_miss
+    pair: [interference, persecution]
+  - utterance: Do you feel that the television or radio sends you messages?
+    topics: []
+    style: near_miss
+    pair: [interference, persecution]

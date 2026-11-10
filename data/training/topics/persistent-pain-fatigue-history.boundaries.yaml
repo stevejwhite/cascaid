@@ -1,0 +1,359 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: persistent-pain-fatigue-history
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Is there a particular condition you're afraid you might have?
+  topics:
+  - belief
+  style: boundary
+  pair:
+  - belief
+  - dismissal
+- utterance: If you had to guess what's wrong with you, what would you say?
+  topics:
+  - belief
+  style: boundary
+  pair:
+  - belief
+  - dismissal
+- utterance: Are you worried a doctor might have overlooked something serious?
+  topics:
+  - belief
+  style: boundary_colloquial
+  pair:
+  - belief
+  - dismissal
+- utterance: And what do you think might really be going on in your body?
+  topics:
+  - belief
+  style: boundary_follow_up
+  pair:
+  - belief
+  - dismissal
+  previous:
+    interviewer: I'm here to listen to you properly.
+    character: I'm afraid this referral means everyone thinks I'm making it up. I almost didn't come.
+- utterance: How did you feel when you were told you'd be seeing a psychiatrist?
+  topics:
+  - dismissal
+  style: boundary
+  pair:
+  - belief
+  - dismissal
+- utterance: Has it felt as if people haven't believed you?
+  topics:
+  - dismissal
+  style: boundary
+  pair:
+  - belief
+  - dismissal
+- utterance: Was it a hard decision to come along today?
+  topics:
+  - dismissal
+  style: boundary_colloquial
+  pair:
+  - belief
+  - dismissal
+- utterance: um do you feel like the doctors have been taking you seriously
+  topics:
+  - dismissal
+  style: boundary_spoken
+  pair:
+  - belief
+  - dismissal
+- utterance: And has anyone made you feel you were exaggerating it?
+  topics:
+  - dismissal
+  style: boundary_follow_up
+  pair:
+  - belief
+  - dismissal
+  previous:
+    interviewer: What do you think might be wrong?
+    character: I worry there is a serious muscle illness being missed. My aunt was ill for months before
+      anyone knew what was wrong.
+- utterance: Did you ask for this referral to psychiatry yourself, or did someone suggest it?
+  topics: []
+  style: near_miss
+  pair:
+  - belief
+  - dismissal
+- utterance: Do you ever search online for what your symptoms might mean?
+  topics: []
+  style: near_miss
+  pair:
+  - belief
+  - dismissal
+- utterance: Do you wake up feeling refreshed, or still drained?
+  topics:
+  - fatigue
+  style: boundary
+  pair:
+  - fatigue
+  - mood
+- utterance: Would you say it's more a lack of energy than feeling sad?
+  topics:
+  - fatigue
+  style: boundary
+  pair:
+  - fatigue
+  - mood
+- utterance: Do you run out of steam after doing quite ordinary things?
+  topics:
+  - fatigue
+  style: boundary_colloquial
+  pair:
+  - fatigue
+  - mood
+- utterance: so um how's your energy been after a normal day
+  topics:
+  - fatigue
+  style: boundary_spoken
+  pair:
+  - fatigue
+  - mood
+- utterance: And do you feel worn out even when you haven't done much?
+  topics:
+  - fatigue
+  style: boundary_follow_up
+  pair:
+  - fatigue
+  - mood
+  previous:
+    interviewer: How has your mood been?
+    character: I feel low on difficult days, but I still enjoy talking with my niece. I've felt more anxious
+      about my health over the past six months.
+- utterance: Do you ever feel flat or miserable when the pain is bad?
+  topics:
+  - mood
+  style: boundary
+  pair:
+  - fatigue
+  - mood
+- utterance: Is there anything you still look forward to?
+  topics:
+  - mood
+  style: boundary
+  pair:
+  - fatigue
+  - mood
+- utterance: Do you still get a bit of pleasure out of time with friends or family?
+  topics:
+  - mood
+  style: boundary_colloquial
+  pair:
+  - fatigue
+  - mood
+- utterance: um do you still get pleasure out of things when you're this worn down
+  topics:
+  - mood
+  style: boundary_spoken
+  pair:
+  - fatigue
+  - mood
+- utterance: And does all of that get you down?
+  topics:
+  - mood
+  style: boundary_follow_up
+  pair:
+  - fatigue
+  - mood
+  previous:
+    interviewer: Does sleep help you feel rested?
+    character: I'm exhausted after shopping and sleep doesn't refresh me. That started around the same
+      time as the aching.
+- utterance: Do you snore or stop breathing at night, as far as anyone has noticed?
+  topics: []
+  style: near_miss
+  pair:
+  - fatigue
+  - mood
+- utterance: Have you noticed your appetite or weight changing?
+  topics: []
+  style: near_miss
+  pair:
+  - fatigue
+  - mood
+- utterance: Is there something specific you're worried it could turn out to be?
+  topics:
+  - belief
+  style: boundary
+  pair:
+  - belief
+  - mood
+- utterance: Do you have a theory of your own about what's behind it?
+  topics:
+  - belief
+  style: boundary
+  pair:
+  - belief
+  - mood
+- utterance: What's your own explanation for why you feel like this?
+  topics:
+  - belief
+  style: boundary_colloquial
+  pair:
+  - belief
+  - mood
+- utterance: so what do you reckon it is that's wrong with you
+  topics:
+  - belief
+  style: boundary_spoken
+  pair:
+  - belief
+  - mood
+- utterance: Is there a name for it that keeps going through your mind?
+  topics:
+  - belief
+  style: boundary_follow_up
+  pair:
+  - belief
+  - mood
+  previous:
+    interviewer: How have you been feeling in yourself lately?
+    character: I feel low on difficult days, but I still enjoy talking with my niece. I've felt more anxious
+      about my health over the past six months.
+- utterance: Would you say you've been more nervous in yourself lately?
+  topics:
+  - mood
+  style: boundary
+  pair:
+  - belief
+  - mood
+- utterance: How has your mood been generally, on the harder days?
+  topics:
+  - mood
+  style: boundary
+  pair:
+  - belief
+  - mood
+- utterance: Do you find you're feeling a bit down with it all?
+  topics:
+  - mood
+  style: boundary_colloquial
+  pair:
+  - belief
+  - mood
+- utterance: um has the worry been getting on top of you more recently
+  topics:
+  - mood
+  style: boundary_spoken
+  pair:
+  - belief
+  - mood
+- utterance: And how has that been affecting your spirits?
+  topics:
+  - mood
+  style: boundary_follow_up
+  pair:
+  - belief
+  - mood
+  previous:
+    interviewer: What do you think is causing it?
+    character: I worry there is a serious muscle illness being missed. My aunt was ill for months before
+      anyone knew what was wrong.
+- utterance: Do you get a racing heart or sweating when you're anxious?
+  topics: []
+  style: near_miss
+  pair:
+  - belief
+  - mood
+- utterance: Have you ever had a panic attack in a public place?
+  topics: []
+  style: near_miss
+  pair:
+  - belief
+  - mood
+- utterance: Have you had to cut down on anything because of how you feel?
+  topics:
+  - function
+  style: boundary
+  pair:
+  - function
+  - mood
+- utterance: Who helps you out with the practical jobs at home?
+  topics:
+  - function
+  style: boundary
+  pair:
+  - function
+  - mood
+- utterance: Are there things you've stopped doing because you dread the after-effects?
+  topics:
+  - function
+  style: boundary_colloquial
+  pair:
+  - function
+  - mood
+- utterance: um has it changed how much you can manage at work
+  topics:
+  - function
+  style: boundary_spoken
+  pair:
+  - function
+  - mood
+- utterance: And has it stopped you doing things you used to do?
+  topics:
+  - function
+  style: boundary_follow_up
+  pair:
+  - function
+  - mood
+  previous:
+    interviewer: Do you feel low sometimes?
+    character: I feel low on difficult days, but I still enjoy talking with my niece. I've felt more anxious
+      about my health over the past six months.
+- utterance: On the bad days, does it get you down?
+  topics:
+  - mood
+  style: boundary
+  pair:
+  - function
+  - mood
+- utterance: Are there things that still lift your spirits?
+  topics:
+  - mood
+  style: boundary
+  pair:
+  - function
+  - mood
+- utterance: Do you feel more worried about your health than you did last year?
+  topics:
+  - mood
+  style: boundary_colloquial
+  pair:
+  - function
+  - mood
+- utterance: um are there still things you actually enjoy
+  topics:
+  - mood
+  style: boundary_spoken
+  pair:
+  - function
+  - mood
+- utterance: And how do you feel in yourself about all that?
+  topics:
+  - mood
+  style: boundary_follow_up
+  pair:
+  - function
+  - mood
+  previous:
+    interviewer: How has work been?
+    character: I've reduced work to three days weekly. My sister does heavy shopping and I avoid outings
+      if I think I'll be exhausted afterwards.
+- utterance: Are you getting any financial help because you can't work full time?
+  topics: []
+  style: near_miss
+  pair:
+  - function
+  - mood
+- utterance: Does the pain get worse in crowds or noisy places?
+  topics: []
+  style: near_miss
+  pair:
+  - function
+  - mood

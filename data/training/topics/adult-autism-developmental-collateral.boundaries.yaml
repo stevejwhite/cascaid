@@ -1,0 +1,223 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: adult-autism-developmental-collateral
+case_version: 0.1.0
+status: draft
+items:
+  - utterance: "Looking back, is there anything you wish you'd done differently when he was growing up?"
+    topics: [guilt]
+    style: boundary
+    pair: [guilt, hopes]
+  - utterance: "How do you feel when you think about those early years?"
+    topics: [guilt]
+    style: boundary
+    pair: [guilt, hopes]
+  - utterance: "and um do you ever blame yourself for not seeing it sooner"
+    topics: [guilt]
+    style: boundary_spoken
+    pair: [guilt, hopes]
+  - utterance: "Do you beat yourself up about how you handled things back then?"
+    topics: [guilt]
+    style: boundary_colloquial
+    pair: [guilt, hopes]
+  - utterance: "And for you, is there anything that weighs on you from when he was younger?"
+    topics: [guilt]
+    style: boundary_follow_up
+    pair: [guilt, hopes]
+    previous:
+      interviewer: "He wants practical help and has agreed to this assessment. I'm worried people will reduce him to a label."
+      character: "He wants practical help and has agreed to this assessment. I'm worried people will reduce him to a label."
+  - utterance: "What does he want to come away with after today's assessment?"
+    topics: [hopes]
+    style: boundary
+    pair: [guilt, hopes]
+  - utterance: "How do you feel about him possibly being given a diagnosis?"
+    topics: [hopes]
+    style: boundary
+    pair: [guilt, hopes]
+  - utterance: "so what are you both hoping will come out of today really"
+    topics: [hopes]
+    style: boundary_spoken
+    pair: [guilt, hopes]
+  - utterance: "What would a good outcome look like for the two of you?"
+    topics: [hopes]
+    style: boundary_colloquial
+    pair: [guilt, hopes]
+  - utterance: "Thank you for sharing that. Going forward, what would you and he like from the assessment?"
+    topics: [hopes]
+    style: boundary_follow_up
+    pair: [guilt, hopes]
+    previous:
+      interviewer: "I'm ashamed that I called him stubborn when he was overwhelmed. I worry I failed to understand him."
+      character: "I'm ashamed that I called him stubborn when he was overwhelmed. I worry I failed to understand him."
+  - utterance: "Is he living with you at the moment?"
+    topics: []
+    style: near_miss
+    pair: [guilt, hopes]
+  - utterance: "Do you have any other children?"
+    topics: []
+    style: near_miss
+    pair: [guilt, hopes]
+  - utterance: "What did he like doing when he played on his own as a little boy?"
+    topics: [play]
+    style: boundary
+    pair: [play, social]
+  - utterance: "Did he play make-believe games?"
+    topics: [play]
+    style: boundary
+    pair: [play, social]
+  - utterance: "and when he was small what sort of toys was he into and how did he play with them"
+    topics: [play]
+    style: boundary_spoken
+    pair: [play, social]
+  - utterance: "Was he a kid who'd play pretend, or did he do his own thing with his toys?"
+    topics: [play]
+    style: boundary_colloquial
+    pair: [play, social]
+  - utterance: "And what did he do with his toys at home?"
+    topics: [play]
+    style: boundary_follow_up
+    pair: [play, social]
+    previous:
+      interviewer: "He wanted friends but often talked at length about his interests without noticing others wanted a turn. He usually had one friend at a time."
+      character: "He wanted friends but often talked at length about his interests without noticing others wanted a turn. He usually had one friend at a time."
+  - utterance: "How did he get on with the other children at school?"
+    topics: [social]
+    style: boundary
+    pair: [play, social]
+  - utterance: "Did he make friends easily, and keep them?"
+    topics: [social]
+    style: boundary
+    pair: [play, social]
+  - utterance: "so um in conversations would he let other people have a say or"
+    topics: [social]
+    style: boundary_spoken
+    pair: [play, social]
+  - utterance: "Was he the sort of lad who'd chat away with other kids?"
+    topics: [social]
+    style: boundary_colloquial
+    pair: [play, social]
+  - utterance: "And when other children were around, how did he get on with them?"
+    topics: [social]
+    style: boundary_follow_up
+    pair: [play, social]
+    previous:
+      interviewer: "He spent hours arranging toy buses by route. He sometimes joined pretend games if another child gave him a clear role."
+      character: "He spent hours arranging toy buses by route. He sometimes joined pretend games if another child gave him a clear role."
+  - utterance: "Did he like music as a child?"
+    topics: []
+    style: near_miss
+    pair: [play, social]
+  - utterance: "Did he watch a lot of television when he was young?"
+    topics: []
+    style: near_miss
+    pair: [play, social]
+  - utterance: "Does he understand jokes and sarcasm?"
+    topics: [language]
+    style: boundary
+    pair: [guilt, language]
+  - utterance: "If you asked him to do something, would he take it exactly at face value?"
+    topics: [language]
+    style: boundary
+    pair: [guilt, language]
+  - utterance: "and did he pick up on hints or when people were teasing him um"
+    topics: [language]
+    style: boundary_spoken
+    pair: [guilt, language]
+  - utterance: "Does he get it when people are pulling his leg?"
+    topics: [language]
+    style: boundary_colloquial
+    pair: [guilt, language]
+  - utterance: "Does he understand when someone's joking or being sarcastic?"
+    topics: [language]
+    style: boundary_follow_up
+    pair: [guilt, language]
+    previous:
+      interviewer: "I'm ashamed that I called him stubborn when he was overwhelmed. I worry I failed to understand him."
+      character: "I'm ashamed that I called him stubborn when he was overwhelmed. I worry I failed to understand him."
+  - utterance: "Do you feel you let him down in any way when he was little?"
+    topics: [guilt]
+    style: boundary
+    pair: [guilt, language]
+  - utterance: "How does it feel for you now, thinking about how you responded when he struggled?"
+    topics: [guilt]
+    style: boundary
+    pair: [guilt, language]
+  - utterance: "i mean do you ever feel bad about how you dealt with him when he was upset"
+    topics: [guilt]
+    style: boundary_spoken
+    pair: [guilt, language]
+  - utterance: "Do you ever kick yourself over not having understood him better?"
+    topics: [guilt]
+    style: boundary_colloquial
+    pair: [guilt, language]
+  - utterance: "How do you feel when you think back to misunderstanding him?"
+    topics: [guilt]
+    style: boundary_follow_up
+    pair: [guilt, language]
+    previous:
+      interviewer: "He took instructions very literally and often missed teasing. That still happens now."
+      character: "He took instructions very literally and often missed teasing. That still happens now."
+  - utterance: "Has he ever had a hearing test?"
+    topics: []
+    style: near_miss
+    pair: [guilt, language]
+  - utterance: "Does he speak any other languages?"
+    topics: []
+    style: near_miss
+    pair: [guilt, language]
+  - utterance: "At what age did he take his first steps and say his first words?"
+    topics: [milestones]
+    style: boundary
+    pair: [milestones, social]
+  - utterance: "Were there any worries about his early development?"
+    topics: [milestones]
+    style: boundary
+    pair: [milestones, social]
+  - utterance: "so um when did he say his first words roughly"
+    topics: [milestones]
+    style: boundary_spoken
+    pair: [milestones, social]
+  - utterance: "Was he a bit slow or quick off the mark as a baby?"
+    topics: [milestones]
+    style: boundary_colloquial
+    pair: [milestones, social]
+  - utterance: "Going further back, when did he start to talk?"
+    topics: [milestones]
+    style: boundary_follow_up
+    pair: [milestones, social]
+    previous:
+      interviewer: "He wanted friends but often talked at length about his interests without noticing others wanted a turn. He usually had one friend at a time."
+      character: "He wanted friends but often talked at length about his interests without noticing others wanted a turn. He usually had one friend at a time."
+  - utterance: "Was he able to have a back-and-forth conversation with other children?"
+    topics: [social]
+    style: boundary
+    pair: [milestones, social]
+  - utterance: "Did he have close friends growing up?"
+    topics: [social]
+    style: boundary
+    pair: [milestones, social]
+  - utterance: "and did he like being around other kids or was he more on his own you know"
+    topics: [social]
+    style: boundary_spoken
+    pair: [milestones, social]
+  - utterance: "Did he mix well with the other kids at school?"
+    topics: [social]
+    style: boundary_colloquial
+    pair: [milestones, social]
+  - utterance: "And once he was talking, how did he get on in conversation with other children?"
+    topics: [social]
+    style: boundary_follow_up
+    pair: [milestones, social]
+    previous:
+      interviewer: "He walked around fourteen months and used phrases before his third birthday. I don't remember exact speech dates."
+      character: "He walked around fourteen months and used phrases before his third birthday. I don't remember exact speech dates."
+  - utterance: "Was he born on time?"
+    topics: []
+    style: near_miss
+    pair: [milestones, social]
+  - utterance: "Did he have any serious illnesses as a baby?"
+    topics: []
+    style: near_miss
+    pair: [milestones, social]

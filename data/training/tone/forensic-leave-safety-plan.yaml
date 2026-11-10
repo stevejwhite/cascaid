@@ -1,0 +1,54 @@
+# Training lines for the tone classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: forensic-leave-safety-plan
+case_version: 0.1.0
+status: draft
+items:
+  - {utterance: "What happened the last time you were violent?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "Do you ever think about drinking when you're stressed?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "Have you had thoughts of hurting anyone this week?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "When are you hoping the leave will start?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "um which day would you want to go", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "Sorry to go back over this, but could you tell me what happened before the offence?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: polite_question}
+  - {utterance: "Would it be all right to talk about the route now?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: polite_question}
+  - {utterance: "Hello Callum, I'm a psychiatry trainee working with your team.", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: introduction}
+  - {utterance: "Hiya Callum, thanks for coming to meet me.", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: greeting}
+  - {utterance: "So you'd keep your phone on and ring the ward if anything went wrong.", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: summary}
+  - {utterance: "Okay. And who else knows?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: acknowledgement}
+  - {utterance: "Right, thank you.", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: acknowledgement}
+  - {utterance: "That sounds tough.", empathy: 1, empathy_words: "That sounds tough.", confrontational: false, challenge_words: "", style: brief_empathy}
+  - {utterance: "I can understand that.", empathy: 1, empathy_words: "I can understand that.", confrontational: false, challenge_words: "", style: brief_empathy}
+  - {utterance: "That must be hard. What helps when it happens?", empathy: 1, empathy_words: "That must be hard.", confrontational: false, challenge_words: "", style: brief_empathy_question}
+  - {utterance: "i hear you. how often does that happen", empathy: 1, empathy_words: "i hear you.", confrontational: false, challenge_words: "", style: brief_empathy_question}
+  - utterance: "Wanting your sister to trust you again, and fearing one slip could cost you that, is a heavy thing to carry."
+    empathy: 2
+    empathy_words: "Wanting your sister to trust you again, and fearing one slip could cost you that, is a heavy thing to carry."
+    confrontational: false
+    challenge_words: ""
+    style: specific_empathy
+    previous:
+      interviewer: "What does this leave mean to you?"
+      character: "I want my sister to trust me again. I'm afraid one setback will mean nobody gives me another chance."
+  - utterance: "Having to pass the pub where you used to meet your friends sounds like a real test when you're tense."
+    empathy: 2
+    empathy_words: "Having to pass the pub where you used to meet your friends sounds like a real test when you're tense."
+    confrontational: false
+    challenge_words: ""
+    style: specific_empathy
+    previous:
+      interviewer: "Do you still get cravings for alcohol?"
+      character: "I still get urges to drink when tense. The direct route passes the pub where I used to meet friends."
+  - {utterance: "You're keen to show everyone you can manage this, and that determination comes across clearly.", empathy: 2, empathy_words: "You're keen to show everyone you can manage this, and that determination comes across clearly.", confrontational: false, challenge_words: "", style: specific_empathy}
+  - utterance: "It took courage to tell me about that message when you haven't told the team yet. How would you feel about us sharing it with them together?"
+    empathy: 2
+    empathy_words: "It took courage to tell me about that message when you haven't told the team yet."
+    confrontational: false
+    challenge_words: ""
+    style: specific_empathy_question
+    previous:
+      interviewer: "Has anyone from your past been in touch?"
+      character: "An old drinking friend messaged asking to meet me. I haven't replied, but I haven't told the team either."
+  - {utterance: "You do realise one drink could undo everything you've worked for.", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "You do realise one drink could undo everything you've worked for.", style: confront_statement}
+  - {utterance: "You've already thought about meeting him, haven't you?", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "You've already thought about meeting him, haven't you?", style: confront_tag}
+  - {utterance: "The pub's not a problem, just don't go in.", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "The pub's not a problem, just don't go in.", style: dismissive}
+  - {utterance: "i'm sure it'll be fine, you'll be back before you know it", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "i'm sure it'll be fine, you'll be back before you know it", style: dismissive}

@@ -1,0 +1,32 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+node_modules/
+.next/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+test-results/
+playwright-report/
+artifacts/
+data/local/
+*.log
+.DS_Store
+Thumbs.db
+# Session transcripts and recordings stay local.
+data/sessions/
+# Case editor drafts and exports stay local until reviewed and integrated.
+data/authoring/
+# Opt-in evaluation recordings of real voices stay local.
+data/recordings/
+# Converted avatars (npm run avatars:install); sources pinned in config/avatar-register.json.
+apps/web/public/avatars/
+# Voice-activity model and runtime, copied from pinned npm packages by apps/web predev/prebuild.
+apps/web/public/vad/

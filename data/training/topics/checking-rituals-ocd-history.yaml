@@ -1,0 +1,776 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: checking-rituals-ocd-history
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Do you get unpleasant thoughts that something bad might happen?
+  topics:
+  - obsessions
+  style: closed
+- utterance: What's the worry that keeps nagging at you?
+  topics:
+  - obsessions
+  style: colloquial
+- utterance: Do you experience intrusive thoughts about harm?
+  topics:
+  - obsessions
+  style: clinical
+- utterance: I wondered what goes through your head when you leave the house
+  topics:
+  - obsessions
+  style: indirect
+- utterance: That sounds exhausting. What are you afraid might happen if it isn't checked?
+  topics:
+  - obsessions
+  style: empathy_then_question
+- utterance: um so what are the thoughts, like what are you scared of
+  topics:
+  - obsessions
+  style: spoken
+- utterance: The thoughts themselves?
+  topics:
+  - obsessions
+  style: brief
+- utterance: And what thought makes you go back?
+  topics:
+  - obsessions
+  style: follow_up
+  previous:
+    interviewer: Can you tell me what the checking involves?
+    character: I check the door lock and cooker repeatedly, going back if it doesn't feel certain. I sometimes
+      take photographs but then check those too.
+- utterance: Do those thoughts feel like your own, or like they come from somewhere else?
+  topics:
+  - obsessions
+  style: follow_up
+  previous:
+    interviewer: Do you think you check more than you need to?
+    character: I know the amount I do doesn't make sense. I still feel responsible if I don't do it and
+      something goes wrong.
+- utterance: You're afraid someone might get hurt if you don't check, aren't you?
+  topics:
+  - obsessions
+  style: leading
+- utterance: Tell me about the worries that come into your mind
+  topics:
+  - obsessions
+  style: open
+- utterance: Do these thoughts feel like yours or put there by someone else?
+  topics:
+  - obsessions
+  style: colloquial
+- utterance: Do you get thoughts you can't switch off?
+  topics:
+  - obsessions
+  style: closed
+- utterance: so is it like a thought that pops up again and again
+  topics:
+  - obsessions
+  style: spoken
+- utterance: What do you do to put your mind at rest?
+  topics:
+  - compulsions
+  style: open
+- utterance: Do you check the doors repeatedly?
+  topics:
+  - compulsions
+  style: closed
+- utterance: How many times do you go back and check?
+  topics:
+  - compulsions
+  style: colloquial
+- utterance: What compulsive behaviours do you carry out?
+  topics:
+  - compulsions
+  style: clinical
+- utterance: I'd like to hear exactly what the checking involves
+  topics:
+  - compulsions
+  style: indirect
+- utterance: It takes courage to talk about. What do you actually do when you check?
+  topics:
+  - compulsions
+  style: empathy_then_question
+- utterance: um so what is it that you do, walk me through the checking
+  topics:
+  - compulsions
+  style: spoken
+- utterance: What do you check?
+  topics:
+  - compulsions
+  style: brief
+- utterance: And what do you do about those thoughts?
+  topics:
+  - compulsions
+  style: follow_up
+  previous:
+    interviewer: What goes through your mind before you check?
+    character: I get repeated unwanted thoughts that I have left something unsafe and someone will be
+      hurt. They feel like my own thoughts, not messages from outside.
+- utterance: Can you take me through a typical time you check?
+  topics:
+  - compulsions
+  style: follow_up
+  previous:
+    interviewer: How long does the checking take each day?
+    character: It began two years ago and has worsened over six months. Checking now takes about four
+      hours each day.
+- utterance: You go back and check again and again, don't you?
+  topics:
+  - compulsions
+  style: leading
+- utterance: Describe a time when you were checking
+  topics:
+  - compulsions
+  style: open
+- utterance: Do you ever use your phone to help you check things?
+  topics:
+  - compulsions
+  style: colloquial
+- utterance: Do you check things like the cooker?
+  topics:
+  - compulsions
+  style: closed
+- utterance: so how does the checking go, like in what order
+  topics:
+  - compulsions
+  style: spoken
+- utterance: How long does the checking take you each day?
+  topics:
+  - duration
+  style: open
+- utterance: Has it got worse over time?
+  topics:
+  - duration
+  style: closed
+- utterance: When did all this start?
+  topics:
+  - duration
+  style: colloquial
+- utterance: What is the duration and progression of these symptoms?
+  topics:
+  - duration
+  style: clinical
+- utterance: I wondered how much of your day it takes up
+  topics:
+  - duration
+  style: indirect
+- utterance: This sounds draining. How many hours does it eat up daily?
+  topics:
+  - duration
+  style: empathy_then_question
+- utterance: um how long has it been going on, and is it getting worse
+  topics:
+  - duration
+  style: spoken
+- utterance: How long daily?
+  topics:
+  - duration
+  style: brief
+- utterance: And how long has this been going on?
+  topics:
+  - duration
+  style: follow_up
+  previous:
+    interviewer: How has this affected your work?
+    character: I stopped my warehouse job two months ago because I was repeatedly late. I rarely arrange
+      anything outside now.
+- utterance: How much of the day does that use up?
+  topics:
+  - duration
+  style: follow_up
+  previous:
+    interviewer: What do you do when you check?
+    character: I check the door lock and cooker repeatedly, going back if it doesn't feel certain. I sometimes
+      take photographs but then check those too.
+- utterance: It takes up a big chunk of the day, doesn't it?
+  topics:
+  - duration
+  style: leading
+- utterance: Take me back to when it began
+  topics:
+  - duration
+  style: open
+- utterance: Has it been getting any better or worse recently?
+  topics:
+  - duration
+  style: colloquial
+- utterance: Has it been there for years?
+  topics:
+  - duration
+  style: closed
+- utterance: so was there a point where it ramped up
+  topics:
+  - duration
+  style: spoken
+- utterance: Does it make you more anxious if you don't check?
+  topics:
+  - resistance
+  style: closed
+- utterance: Do you feel any better after you've checked?
+  topics:
+  - resistance
+  style: colloquial
+- utterance: What is your anxiety level when you resist the ritual?
+  topics:
+  - resistance
+  style: clinical
+- utterance: I wondered how it feels when you try to stop yourself
+  topics:
+  - resistance
+  style: indirect
+- utterance: That sounds really distressing. What happens when you try to hold off?
+  topics:
+  - resistance
+  style: empathy_then_question
+- utterance: um so if you don't check what happens like do you get anxious
+  topics:
+  - resistance
+  style: spoken
+- utterance: And after checking?
+  topics:
+  - resistance
+  style: brief
+- utterance: And what happens if you don't do that?
+  topics:
+  - resistance
+  style: follow_up
+  previous:
+    interviewer: What do you do when you check?
+    character: I check the door lock and cooker repeatedly, going back if it doesn't feel certain. I sometimes
+      take photographs but then check those too.
+- utterance: Does anything help the worry once you've checked?
+  topics:
+  - resistance
+  style: follow_up
+  previous:
+    interviewer: What are the thoughts that worry you?
+    character: I get repeated unwanted thoughts that I have left something unsafe and someone will be
+      hurt. They feel like my own thoughts, not messages from outside.
+- utterance: Checking calms you down for a while, doesn't it?
+  topics:
+  - resistance
+  style: leading
+- utterance: What does the checking do for the feeling?
+  topics:
+  - resistance
+  style: open
+- utterance: Have you ever tried to just walk out the door?
+  topics:
+  - resistance
+  style: colloquial
+- utterance: Does the doubt come back afterwards?
+  topics:
+  - resistance
+  style: closed
+- utterance: so when you've checked is that it, or does it come back
+  topics:
+  - resistance
+  style: spoken
+- utterance: How do you see the amount of checking you do?
+  topics:
+  - insight
+  style: open
+- utterance: Do you think it's excessive?
+  topics:
+  - insight
+  style: closed
+- utterance: Part of you must know it's too much, right?
+  topics:
+  - insight
+  style: colloquial
+- utterance: Do you have insight into the irrationality of the behaviour?
+  topics:
+  - insight
+  style: clinical
+- utterance: I wondered how likely you think the danger really is
+  topics:
+  - insight
+  style: indirect
+- utterance: It's brave of you to talk about it. How realistic does the danger seem when you think it
+    over?
+  topics:
+  - insight
+  style: empathy_then_question
+- utterance: um do you think it makes sense or not, all that checking
+  topics:
+  - insight
+  style: spoken
+- utterance: Does it make sense?
+  topics:
+  - insight
+  style: brief
+- utterance: Do you think that's more than is needed?
+  topics:
+  - insight
+  style: follow_up
+  previous:
+    interviewer: How long does the checking take each day?
+    character: It began two years ago and has worsened over six months. Checking now takes about four
+      hours each day.
+- utterance: Do you feel it would be your fault if something happened?
+  topics:
+  - insight
+  style: follow_up
+  previous:
+    interviewer: What happens if you try not to check?
+    character: If I try to leave without repeating it, anxiety rises sharply. Checking eases it briefly,
+      then the doubt returns.
+- utterance: You know you're checking more than anyone needs to, don't you?
+  topics:
+  - insight
+  style: leading
+- utterance: Do you feel responsible for what might happen?
+  topics:
+  - insight
+  style: open
+- utterance: Do you ever think you're being daft about it?
+  topics:
+  - insight
+  style: colloquial
+- utterance: Do you feel to blame if something went wrong?
+  topics:
+  - insight
+  style: closed
+- utterance: so would you say it's reasonable or er over the top
+  topics:
+  - insight
+  style: spoken
+- utterance: Has it cost you your job?
+  topics:
+  - function
+  style: colloquial
+- utterance: What is the functional impact of the symptoms?
+  topics:
+  - function
+  style: clinical
+- utterance: I wondered how it has affected what you can do day to day
+  topics:
+  - function
+  style: indirect
+- utterance: I'm sorry it's come to this. Have you been able to keep going out and seeing people?
+  topics:
+  - function
+  style: empathy_then_question
+- utterance: um so are you working or did you have to stop
+  topics:
+  - function
+  style: spoken
+- utterance: And work?
+  topics:
+  - function
+  style: brief
+- utterance: What has that meant for your job?
+  topics:
+  - function
+  style: follow_up
+  previous:
+    interviewer: How long does the checking take each day?
+    character: It began two years ago and has worsened over six months. Checking now takes about four
+      hours each day.
+- utterance: Does it stop you doing things outside the house?
+  topics:
+  - function
+  style: follow_up
+  previous:
+    interviewer: Does anyone help you with the checking?
+    character: My dad checks things for me when I ask. We argue because he gets frustrated and I keep
+      asking again.
+- utterance: You can't really go out because of it, can you?
+  topics:
+  - function
+  style: leading
+- utterance: What has the checking stopped you doing?
+  topics:
+  - function
+  style: open
+- utterance: Do you get out much these days?
+  topics:
+  - function
+  style: colloquial
+- utterance: Have you been late for things?
+  topics:
+  - function
+  style: closed
+- utterance: so how's it affecting your job and getting out
+  topics:
+  - function
+  style: spoken
+- utterance: How do the people at home deal with it?
+  topics:
+  - family
+  style: open
+- utterance: Does anyone help you check things?
+  topics:
+  - family
+  style: closed
+- utterance: Do you ask others to check for you?
+  topics:
+  - family
+  style: colloquial
+- utterance: Is there family accommodation of your symptoms?
+  topics:
+  - family
+  style: clinical
+- utterance: I wondered how your family react to the checking
+  topics:
+  - family
+  style: indirect
+- utterance: It must be hard on everyone. Do you ask anyone to check things for you?
+  topics:
+  - family
+  style: empathy_then_question
+- utterance: um so does your family get involved, do you ask them to check
+  topics:
+  - family
+  style: spoken
+- utterance: And your family?
+  topics:
+  - family
+  style: brief
+- utterance: Does anyone else ever check on your behalf?
+  topics:
+  - family
+  style: follow_up
+  previous:
+    interviewer: What do you do when you check?
+    character: I check the door lock and cooker repeatedly, going back if it doesn't feel certain. I sometimes
+      take photographs but then check those too.
+- utterance: How do the people you live with cope with that?
+  topics:
+  - family
+  style: follow_up
+  previous:
+    interviewer: Are you still working?
+    character: I stopped my warehouse job two months ago because I was repeatedly late. I rarely arrange
+      anything outside now.
+- utterance: Your family must find it frustrating, mustn't they?
+  topics:
+  - family
+  style: leading
+- utterance: Who else is affected by the checking?
+  topics:
+  - family
+  style: open
+- utterance: Do you and your family ever argue about it?
+  topics:
+  - family
+  style: colloquial
+- utterance: Do you ask for reassurance from people at home?
+  topics:
+  - family
+  style: closed
+- utterance: so who else is dragged into this
+  topics:
+  - family
+  style: spoken
+- utterance: Have you been feeling low?
+  topics:
+  - mood
+  style: closed
+- utterance: Are you feeling down about all this?
+  topics:
+  - mood
+  style: colloquial
+- utterance: Have you had depressive symptoms?
+  topics:
+  - mood
+  style: clinical
+- utterance: I wondered how you've been in your spirits
+  topics:
+  - mood
+  style: indirect
+- utterance: This sounds like a lot to cope with. Are you still enjoying anything?
+  topics:
+  - mood
+  style: empathy_then_question
+- utterance: um so how's your mood, and your sleep
+  topics:
+  - mood
+  style: spoken
+- utterance: Has it got you down?
+  topics:
+  - mood
+  style: follow_up
+  previous:
+    interviewer: Are you still working?
+    character: I stopped my warehouse job two months ago because I was repeatedly late. I rarely arrange
+      anything outside now.
+- utterance: How have you been sleeping with all that?
+  topics:
+  - mood
+  style: follow_up
+  previous:
+    interviewer: How long does the checking take each day?
+    character: It began two years ago and has worsened over six months. Checking now takes about four
+      hours each day.
+- utterance: You've been feeling pretty low, haven't you?
+  topics:
+  - mood
+  style: leading
+- utterance: What's your sleep been like lately?
+  topics:
+  - mood
+  style: open
+- utterance: Have you lost interest in things?
+  topics:
+  - mood
+  style: colloquial
+- utterance: Do you still enjoy the things you used to?
+  topics:
+  - mood
+  style: closed
+- utterance: so um do you feel depressed or not
+  topics:
+  - mood
+  style: spoken
+- utterance: What feels hardest to say to people about this?
+  topics:
+  - shame
+  style: open
+- utterance: Do you feel embarrassed about the checking?
+  topics:
+  - shame
+  style: closed
+- utterance: Have you told your mates what's going on?
+  topics:
+  - shame
+  style: colloquial
+- utterance: Is there any shame or concealment associated with your symptoms?
+  topics:
+  - shame
+  style: clinical
+- utterance: I wondered what other people know about all this
+  topics:
+  - shame
+  style: indirect
+- utterance: You're doing really well talking about it. Have you been open with friends?
+  topics:
+  - shame
+  style: empathy_then_question
+- utterance: um does anyone else know what you're going through, like friends
+  topics:
+  - shame
+  style: spoken
+- utterance: What do friends know?
+  topics:
+  - shame
+  style: brief
+- utterance: What have you told people about leaving work?
+  topics:
+  - shame
+  style: follow_up
+  previous:
+    interviewer: I stopped my warehouse job two months ago.
+    character: I stopped my warehouse job two months ago because I was repeatedly late. I rarely arrange
+      anything outside now.
+- utterance: Does anyone outside the family know about it?
+  topics:
+  - shame
+  style: follow_up
+  previous:
+    interviewer: How do the people at home cope?
+    character: My dad checks things for me when I ask. We argue because he gets frustrated and I keep
+      asking again.
+- utterance: You haven't told your friends the full story, have you?
+  topics:
+  - shame
+  style: leading
+- utterance: Could we talk about anything you find difficult to admit?
+  topics:
+  - shame
+  style: open
+- utterance: Do you hide it from people?
+  topics:
+  - shame
+  style: colloquial
+- utterance: Have you been honest with everyone about why you stopped working?
+  topics:
+  - shame
+  style: closed
+- utterance: so is there anything you haven't told people
+  topics:
+  - shame
+  style: spoken
+- utterance: How do you feel about your future?
+  topics:
+  - risk
+  style: open
+- utterance: Do you ever wish you could just disappear?
+  topics:
+  - risk
+  style: colloquial
+- utterance: Have you experienced suicidal ideation?
+  topics:
+  - risk
+  style: clinical
+- utterance: I wondered whether things have ever felt too much to bear
+  topics:
+  - risk
+  style: indirect
+- utterance: I appreciate how open you've been. Have you had any thoughts of not wanting to be here?
+  topics:
+  - risk
+  style: empathy_then_question
+- utterance: um sorry but have you thought about hurting yourself or whatever
+  topics:
+  - risk
+  style: spoken
+- utterance: Thoughts of self-harm?
+  topics:
+  - risk
+  style: brief
+- utterance: Has it ever felt so trapped that you thought about not being here?
+  topics:
+  - risk
+  style: follow_up
+  previous:
+    interviewer: Have you told your friends about this?
+    character: I told friends I'd left work for something better. I'm ashamed that they might see how
+      trapped I feel.
+- utterance: You sometimes feel you'd rather not be around, don't you?
+  topics:
+  - risk
+  style: leading
+- utterance: What has made you ask for help now?
+  topics:
+  - risk
+  style: open
+- utterance: Have you done anything to hurt yourself?
+  topics:
+  - risk
+  style: colloquial
+- utterance: Do you have any plans to end your life?
+  topics:
+  - risk
+  style: closed
+- utterance: so did something make you come in, like is it safe
+  topics:
+  - risk
+  style: spoken
+- utterance: What thoughts bother you, and what do you do about them?
+  topics:
+  - obsessions
+  - compulsions
+  style: stacked
+- utterance: How has it affected your work, and does anyone at home help with the checking?
+  topics:
+  - function
+  - family
+  style: stacked
+- utterance: How is your mood, and have you thought of ending your life?
+  topics:
+  - mood
+  - risk
+  style: stacked
+- utterance: How long has this been going on, and what happens if you don't check?
+  topics:
+  - duration
+  - resistance
+  style: stacked
+- utterance: Good afternoon, Ethan.
+  topics: []
+  style: greeting
+- utterance: Hello Ethan, thanks for coming in.
+  topics: []
+  style: greeting
+- utterance: Hi Ethan, come and take a seat.
+  topics: []
+  style: greeting
+- utterance: I'm Dr Rees and I'm one of the psychiatrists in the clinic.
+  topics: []
+  style: introduction
+- utterance: Ethan, my name's Dr Rees, and I'd like to hear about what's been happening.
+  topics: []
+  style: introduction
+- utterance: I'm a doctor in the outpatient team, nice to meet you.
+  topics: []
+  style: introduction
+- utterance: Is it all right if we talk about this for a bit?
+  topics: []
+  style: introduction
+- utterance: What would you like to start with?
+  topics: []
+  style: introduction
+- utterance: Before we start, is there anything you want to ask me?
+  topics: []
+  style: introduction
+- utterance: I'd like to move on to something different now.
+  topics: []
+  style: transition
+- utterance: Shall we talk about how things are at home?
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Ethan.
+  topics: []
+  style: closing
+- utterance: It sounds as though this has taken over a lot of your life.
+  topics: []
+  style: empathy
+- utterance: That must be very tiring to live with.
+  topics: []
+  style: empathy
+- utterance: I can see how hard it is to talk about.
+  topics: []
+  style: empathy
+- utterance: You've clearly been trying hard to cope.
+  topics: []
+  style: empathy
+- utterance: So the checking has become a big part of each day, and it has affected your work.
+  topics: []
+  style: summary
+- utterance: Let me go over what you've told me so far.
+  topics: []
+  style: summary
+- utterance: To sum up, you know it is too much, but it is hard to stop.
+  topics: []
+  style: summary
+- utterance: I'm here to understand what you're going through, not to criticise.
+  topics: []
+  style: explanation
+- utterance: Lots of people have repeated checking, and there are treatments that help.
+  topics: []
+  style: explanation
+- utterance: What you say today stays within the team looking after you.
+  topics: []
+  style: explanation
+- utterance: Does that make sense so far?
+  topics: []
+  style: check_understanding
+- utterance: Have I understood you properly?
+  topics: []
+  style: check_understanding
+- utterance: Is it clear why I'm asking about this?
+  topics: []
+  style: check_understanding
+- utterance: Do you use alcohol or drugs?
+  topics: []
+  style: off_case
+- utterance: Is there any history of mental illness in your family?
+  topics: []
+  style: off_case
+- utterance: Do you have rituals involving counting or washing?
+  topics: []
+  style: off_case
+- utterance: Do you have any physical health problems?
+  topics: []
+  style: off_case
+- utterance: Do you check your emails a lot?
+  topics: []
+  style: near_miss
+- utterance: How many locks does your front door have?
+  topics: []
+  style: near_miss
+- utterance: Do you check your bank balance often?
+  topics: []
+  style: near_miss
+- utterance: What time do you usually leave the house?
+  topics: []
+  style: near_miss
+- utterance: Which appliances are in your kitchen?
+  topics: []
+  style: near_miss
+- utterance: What was school like for you?
+  topics: []
+  style: near_miss

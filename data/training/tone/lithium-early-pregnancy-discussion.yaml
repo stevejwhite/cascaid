@@ -1,0 +1,159 @@
+# Training lines for the tone classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: lithium-early-pregnancy-discussion
+case_version: 0.1.0
+status: draft
+items:
+- utterance: How long have you been on lithium?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Have you ever had thoughts of ending your life?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: what happened the last time you were really unwell
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Is anyone going to be helping you after the birth?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Have you ever stopped your tablets on your own?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Sorry to ask, but could you tell me about your time in hospital?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: If you don't mind, how many weeks are you now?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Hello Aisha, thanks for coming in today.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: Hi Aisha, I'm one of the doctors in the clinic, and I'd like to talk about your medicine.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: I'll ask about your health first, and then we can talk through the options together.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: explanation
+- utterance: Right. And when was that?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Okay, thanks Aisha.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: That sounds hard.
+  empathy: 1
+  empathy_words: That sounds hard.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I'm sorry to hear that.
+  empathy: 1
+  empathy_words: I'm sorry to hear that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That must be worrying. What are your main concerns?
+  empathy: 1
+  empathy_words: That must be worrying.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I can imagine that's stressful. How have you been sleeping?
+  empathy: 1
+  empathy_words: I can imagine that's stressful.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: It sounds as though you are frightened you may have harmed the baby, and it is natural to feel ashamed of a worry like that.
+  empathy: 2
+  empathy_words: It sounds as though you are frightened you may have harmed the baby, and it is natural to feel ashamed of a worry like that.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: Are you worried the lithium might have harmed the baby?
+    character: I'm scared I've already harmed the baby by taking it before I knew I was pregnant. I'm ashamed to say that out loud.
+- utterance: You want to stay well enough to look after your child while also keeping the baby safe, and that is a very hard balance to hold.
+  empathy: 2
+  empathy_words: You want to stay well enough to look after your child while also keeping the baby safe, and that is a very hard balance to hold.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: What matters most to you in making these decisions?
+    character: Yes, I want to continue the pregnancy. Staying well enough to care for my child matters as much to me as avoiding harm from treatment.
+- utterance: Becoming unwell so quickly after stopping must have been frightening, and I can see why you are cautious about changing anything.
+  empathy: 2
+  empathy_words: Becoming unwell so quickly after stopping must have been frightening, and I can see why you are cautious about changing anything.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: What happened when you stopped lithium before?
+    character: Yes, I stopped lithium on my own before that last admission. Within six weeks I was becoming unwell.
+- utterance: I can understand that you feel torn between protecting yourself from a relapse and protecting the baby from any harm. What would you like to know more about?
+  empathy: 2
+  empathy_words: I can understand that you feel torn between protecting yourself from a relapse and protecting the baby from any harm.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+- utterance: You should have asked about this before you got pregnant.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You should have asked about this before you got pregnant.
+  style: confront_statement
+- utterance: Why did you carry on taking it when you didn't know if it was safe?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Why did you carry on taking it when you didn't know if it was safe?
+  style: confront_why
+- utterance: I wouldn't worry, honestly, most babies are perfectly fine.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: I wouldn't worry, honestly, most babies are perfectly fine.
+  style: dismissive
+- utterance: Well, you really can't stop it now, so there isn't much to decide.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Well, you really can't stop it now, so there isn't much to decide.
+  style: dismissive

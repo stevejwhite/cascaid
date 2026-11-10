@@ -1,0 +1,156 @@
+# Training lines for the tone classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: explosive-outbursts-mental-state
+case_version: 0.1.0
+status: draft
+items:
+- utterance: How long does each episode usually last?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Have you ever hit anyone when you were angry?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: what do you think happens in your head just before you act
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Does anyone close to you feel frightened when it happens?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Have you had any thoughts of harming yourself?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Sorry to ask, but could you tell me about the worst occasion?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: If you don't mind me asking, do you drink much alcohol?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Hello Joel, thanks for coming in today.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: Hi Joel, I'm a doctor here, and I'd like to ask you a few questions.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: So the outbursts come on quickly and you feel ashamed afterwards.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: summary
+- utterance: Right. And when did that start?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Okay, thanks Joel.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: That sounds hard. How often does it happen?
+  empathy: 1
+  empathy_words: That sounds hard.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: I'm sorry to hear that.
+  empathy: 1
+  empathy_words: I'm sorry to hear that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That must be difficult. When did you last lose your temper?
+  empathy: 1
+  empathy_words: That must be difficult.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: That sounds upsetting.
+  empathy: 1
+  empathy_words: That sounds upsetting.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: It sounds as though you feel ashamed of what you do and frightened of how it might affect your relationship.
+  empathy: 2
+  empathy_words: It sounds as though you feel ashamed of what you do and frightened of how it might affect your relationship.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: How do you feel once it has passed?
+    character: I feel briefly relieved, then ashamed and sorry. I've paid to replace things and my partner is considering leaving.
+- utterance: You've clearly been carrying a lot of worry about this, and it matters to you that you don't hurt anyone.
+  empathy: 2
+  empathy_words: You've clearly been carrying a lot of worry about this, and it matters to you that you don't hurt anyone.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: What would you want from coming here?
+    character: I know these reactions are out of proportion. I want help before someone gets injured, and I don't want an explanation used as an excuse.
+- utterance: It's hard to admit that one occasion was worse than you usually say, and I appreciate you telling me.
+  empathy: 2
+  empathy_words: It's hard to admit that one occasion was worse than you usually say, and I appreciate you telling me.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: I can see you feel embarrassed about losing control in front of other people, and that is understandable. What would you like to change?
+  empathy: 2
+  empathy_words: I can see you feel embarrassed about losing control in front of other people, and that is understandable.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+- utterance: You need to learn to control your temper.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You need to learn to control your temper.
+  style: confront_statement
+- utterance: Why on earth would you break things in your own home?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Why on earth would you break things in your own home?
+  style: confront_why
+- utterance: Everyone gets angry sometimes, so it's probably not that serious.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Everyone gets angry sometimes, so it's probably not that serious.
+  style: dismissive
+- utterance: Well, you're hardly the first person to lose their temper, so let's move on.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: Well, you're hardly the first person to lose their temper, so let's move on.
+  style: dismissive

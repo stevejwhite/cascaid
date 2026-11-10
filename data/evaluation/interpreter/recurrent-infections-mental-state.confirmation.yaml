@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: recurrent-infections-mental-state
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Paula, could you describe the pattern of infections and admissions you've experienced?
+  expected:
+  - account
+  rapport: false
+- utterance: What do you think might explain why the infections keep returning?
+  expected:
+  - explanation
+  rapport: false
+- utterance: What treatment are you receiving for the current infection on the ward?
+  expected:
+  - treatment
+  rapport: false
+- utterance: How is your mood when you're out of hospital compared with during an admission?
+  expected:
+  - mood
+  rapport: false
+- utterance: What worries keep going round when you think about another infection?
+  expected:
+  - anxiety
+  rapport: false
+- utterance: What has been happening outside hospital that adds pressure at the moment?
+  expected:
+  - stress
+  rapport: false
+- utterance: What physical explanation do you think might account for the recurring infections?
+  expected:
+  - explanation
+  rapport: false
+- utterance: How do you feel about the team's suggestion that you might be causing them yourself?
+  expected:
+  - reaction
+  rapport: false
+- utterance: what are you afraid that might change about the care you get?
+  expected:
+  - abandonment
+  rapport: false
+  previous:
+    interviewer: How do you feel about the team's suspicion?
+    character: Hearing that suspicion makes me feel accused.
+- utterance: Repeated admissions without a clear explanation sound difficult to live with.
+  expected: []
+  rapport: true

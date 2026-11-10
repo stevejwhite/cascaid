@@ -1,0 +1,227 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: functional-seizures-mental-state
+case_version: 0.1.0
+status: draft
+items:
+  # ---- dissociation / mood ----
+  - utterance: "Do things ever feel unreal or far away just before an attack?"
+    topics: [dissociation]
+    style: boundary
+    pair: [dissociation, mood]
+  - utterance: "Do you ever feel detached from what's around you?"
+    topics: [dissociation]
+    style: boundary
+    pair: [dissociation, mood]
+  - utterance: "Do your surroundings ever go strange or dreamlike on you?"
+    topics: [dissociation]
+    style: boundary_colloquial
+    pair: [dissociation, mood]
+  - utterance: "um does the world ever seem a bit distant to you beforehand"
+    topics: [dissociation]
+    style: boundary_spoken
+    pair: [dissociation, mood]
+  - utterance: "And in the lead-up to an attack, do things ever feel unreal or far away?"
+    topics: [dissociation]
+    style: boundary_follow_up
+    pair: [dissociation, mood]
+    previous:
+      interviewer: "How's your mood been between attacks?"
+      character: "I feel low after an attack but still enjoy music and talking to friends."
+  - utterance: "What would you say your spirits have been like lately?"
+    topics: [mood]
+    style: boundary
+    pair: [dissociation, mood]
+  - utterance: "Is there anything you still enjoy doing?"
+    topics: [mood]
+    style: boundary
+    pair: [dissociation, mood]
+  - utterance: "Do you feel down in the dumps most days?"
+    topics: [mood]
+    style: boundary_colloquial
+    pair: [dissociation, mood]
+  - utterance: "so um have you been feeling low or depressed at all"
+    topics: [mood]
+    style: boundary_spoken
+    pair: [dissociation, mood]
+  - utterance: "I see. And how has your mood been otherwise?"
+    topics: [mood]
+    style: boundary_follow_up
+    pair: [dissociation, mood]
+    previous:
+      interviewer: "Do you feel detached beforehand?"
+      character: "Sometimes before an attack the room feels far away, as if I'm behind glass."
+  - utterance: "Are you on any other pills from your GP?"
+    topics: []
+    style: near_miss
+    pair: [dissociation, mood]
+  - utterance: "Do you drink alcohol or use any drugs?"
+    topics: []
+    style: near_miss
+    pair: [dissociation, mood]
+  # ---- anxiety / risk ----
+  - utterance: "Are you worried about having another attack when you're out?"
+    topics: [anxiety]
+    style: boundary
+    pair: [anxiety, risk]
+  - utterance: "Do you avoid going places on your own these days?"
+    topics: [anxiety]
+    style: boundary
+    pair: [anxiety, risk]
+  - utterance: "Does your heart start pounding when you think about leaving the house?"
+    topics: [anxiety]
+    style: boundary_colloquial
+    pair: [anxiety, risk]
+  - utterance: "um do you get nervous about it happening again"
+    topics: [anxiety]
+    style: boundary_spoken
+    pair: [anxiety, risk]
+  - utterance: "OK. What worries do you have about another one happening?"
+    topics: [anxiety]
+    style: boundary_follow_up
+    pair: [anxiety, risk]
+    previous:
+      interviewer: "Have you hurt yourself in any of them?"
+      character: "No, I don't want to die or hurt myself. I bruised my shoulder in a fall during an attack."
+  - utterance: "Have you ever been hurt during one of these attacks?"
+    topics: [risk]
+    style: boundary
+    pair: [anxiety, risk]
+  - utterance: "Has anything crossed your mind about ending your life or doing yourself harm?"
+    topics: [risk]
+    style: boundary
+    pair: [anxiety, risk]
+  - utterance: "Have you taken any tumbles when it's happened?"
+    topics: [risk]
+    style: boundary_colloquial
+    pair: [anxiety, risk]
+  - utterance: "so um have you been injured at all by the attacks"
+    topics: [risk]
+    style: boundary_spoken
+    pair: [anxiety, risk]
+  - utterance: "Right. And have you ever been injured during an attack?"
+    topics: [risk]
+    style: boundary_follow_up
+    pair: [anxiety, risk]
+    previous:
+      interviewer: "Are you worried about going out?"
+      character: "I'm constantly worried another attack will happen in public."
+  - utterance: "Are you still behind the wheel these days?"
+    topics: []
+    style: near_miss
+    pair: [anxiety, risk]
+  - utterance: "Are you taking anything for the attacks?"
+    topics: []
+    style: near_miss
+    pair: [anxiety, risk]
+  # ---- dissociation / perceptions ----
+  - utterance: "Do your surroundings ever seem strange to you before an attack?"
+    topics: [dissociation]
+    style: boundary
+    pair: [dissociation, perceptions]
+  - utterance: "Do you ever feel as if you're watching yourself from a distance?"
+    topics: [dissociation]
+    style: boundary
+    pair: [dissociation, perceptions]
+  - utterance: "Do things around you ever seem far off or dreamlike?"
+    topics: [dissociation]
+    style: boundary_colloquial
+    pair: [dissociation, perceptions]
+  - utterance: "um does anything feel kind of unreal to you before it starts"
+    topics: [dissociation]
+    style: boundary_spoken
+    pair: [dissociation, perceptions]
+  - utterance: "OK. Do things ever feel odd or unreal around you, before an attack?"
+    topics: [dissociation]
+    style: boundary_follow_up
+    pair: [dissociation, perceptions]
+    previous:
+      interviewer: "Do you hear anything that others don't?"
+      character: "No, I don't hear voices or believe someone is controlling me."
+  - utterance: "Do you hear anyone speaking when there's nobody in the room?"
+    topics: [perceptions]
+    style: boundary
+    pair: [dissociation, perceptions]
+  - utterance: "Do you ever feel that someone else is controlling what you do?"
+    topics: [perceptions]
+    style: boundary
+    pair: [dissociation, perceptions]
+  - utterance: "Between attacks, are you clear about where you are and what's going on?"
+    topics: [perceptions]
+    style: boundary_colloquial
+    pair: [dissociation, perceptions]
+  - utterance: "so er have you got any beliefs other people might find odd"
+    topics: [perceptions]
+    style: boundary_spoken
+    pair: [dissociation, perceptions]
+  - utterance: "Right. Do you hear voices or see things that others don't?"
+    topics: [perceptions]
+    style: boundary_follow_up
+    pair: [dissociation, perceptions]
+    previous:
+      interviewer: "Does the room ever feel unreal?"
+      character: "Sometimes before an attack the room feels far away, as if I'm behind glass."
+  - utterance: "Do you smell anything strange before an attack?"
+    topics: []
+    style: near_miss
+    pair: [dissociation, perceptions]
+  - utterance: "Do you get a headache after an attack?"
+    topics: []
+    style: near_miss
+    pair: [dissociation, perceptions]
+  # ---- mood / risk ----
+  - utterance: "Do you feel low or down at the moment?"
+    topics: [mood]
+    style: boundary
+    pair: [mood, risk]
+  - utterance: "How has your mood been in between the attacks?"
+    topics: [mood]
+    style: boundary
+    pair: [mood, risk]
+  - utterance: "Are there still things that give you a bit of pleasure?"
+    topics: [mood]
+    style: boundary_colloquial
+    pair: [mood, risk]
+  - utterance: "um would you say you've been depressed lately"
+    topics: [mood]
+    style: boundary_spoken
+    pair: [mood, risk]
+  - utterance: "OK. And how has your mood generally been, do you feel low?"
+    topics: [mood]
+    style: boundary_follow_up
+    pair: [mood, risk]
+    previous:
+      interviewer: "Have you hurt yourself?"
+      character: "No, I don't want to die or hurt myself."
+  - utterance: "Do you ever feel that life isn't worth living?"
+    topics: [risk]
+    style: boundary
+    pair: [mood, risk]
+  - utterance: "Has the idea of self-harm come to you at all?"
+    topics: [risk]
+    style: boundary
+    pair: [mood, risk]
+  - utterance: "Have you ever come to any harm from falling in an attack?"
+    topics: [risk]
+    style: boundary_colloquial
+    pair: [mood, risk]
+  - utterance: "so um have you had any thoughts of not wanting to be here"
+    topics: [risk]
+    style: boundary_spoken
+    pair: [mood, risk]
+  - utterance: "Right. Have you had thoughts of not wanting to be here, or of harming yourself?"
+    topics: [risk]
+    style: boundary_follow_up
+    pair: [mood, risk]
+    previous:
+      interviewer: "How's your mood?"
+      character: "I don't feel low all day every day."
+  - utterance: "Has anyone in your family had depression?"
+    topics: []
+    style: near_miss
+    pair: [mood, risk]
+  - utterance: "Do you smoke?"
+    topics: []
+    style: near_miss
+    pair: [mood, risk]

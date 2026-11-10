@@ -1,0 +1,70 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: child-wetting-soiling-family-formulation
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hello Mark, I'm one of the doctors here, thanks for coming."
+    expected: []
+    rapport: false
+  - utterance: "Can you tell me about the wetting, was he dry before this?"
+    expected: [wetting]
+    rapport: false
+  - utterance: "How often is he having accidents with his bowels?"
+    expected: [soiling]
+    rapport: false
+  - utterance: "Does he ever seem to hold on, or find it painful to go?"
+    expected: [soiling]
+    rapport: false
+  - utterance: "Has he seen a doctor about this, any tests done?"
+    expected: [medical]
+    rapport: false
+  - utterance: "Has anything changed at home over the last year or so?"
+    expected: [change]
+    rapport: false
+  - utterance: "How have you been responding when he has an accident?"
+    expected: [response]
+    rapport: false
+  - utterance: "Does school know what's been happening?"
+    expected: [school]
+    rapport: false
+  - utterance: "what are toilet times like at your place"
+    expected: [routine]
+    rapport: false
+  - utterance: "Has he said anything to you about anyone upsetting or hurting him?"
+    expected: [safety]
+    rapport: false
+  - utterance: "What do you think has caused all this?"
+    expected: [guilt]
+    rapport: false
+  - utterance: "Have the accidents become part of any disagreements between you and his mum?"
+    expected: [conflict]
+    rapport: false
+  - utterance: "It sounds like it's been a really hard few months for the whole family."
+    expected: []
+    rapport: true
+  - utterance: "I can hear how much you want to get this right for him."
+    expected: []
+    rapport: true
+  - utterance: "And did the wetting start before or after that?"
+    previous:
+      interviewer: "When did you and his mum separate?"
+      character: "Five months ago."
+    expected: [wetting]
+    rapport: false
+  - utterance: "And how did you handle it before that?"
+    previous:
+      interviewer: "Did the GP say anything about how to respond?"
+      character: "She explained that scolding might make things harder."
+    expected: [response]
+    rapport: false
+  - utterance: "Does he have any brothers or sisters?"
+    expected: []
+    rapport: false
+  - utterance: "How's his appetite been?"
+    expected: []
+    rapport: false
+  - utterance: "Okay, so physically he's been checked and nothing's been found, and the accidents started around the separation."
+    expected: []
+    rapport: false

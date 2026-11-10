@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: adult-autism-developmental-collateral
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: okay ruth, what can you remember about when walking and talking got going
+  expected:
+  - milestones
+  rapport: false
+- utterance: If you picture him playing as a small child, what would he be doing?
+  expected:
+  - play
+  rapport: false
+- utterance: How did conversations with other children tend to go for him?
+  expected:
+  - social
+  rapport: false
+- utterance: How did he get on with jokes or remarks that weren't meant literally?
+  expected:
+  - language
+  rapport: false
+- utterance: What happened if a plan changed without much warning when he was growing up?
+  expected:
+  - routine
+  rapport: false
+- utterance: Were everyday sounds or the feel of clothes ever hard for him to tolerate?
+  expected:
+  - sensory
+  rapport: false
+- utterance: Was taking turns in a conversation with other children easy for him?
+  expected:
+  - social
+  rapport: false
+- utterance: Did he understand when somebody's words meant something different from their literal meaning?
+  expected:
+  - language
+  rapport: false
+- utterance: how do you feel about the way you responded at the time?
+  expected:
+  - guilt
+  rapport: false
+  previous:
+    interviewer: How did he cope when arrangements changed?
+    character: Unexpected changes could leave him very upset.
+- utterance: Trying to piece together so many years for this assessment can be quite a lot to take on.
+  expected: []
+  rapport: true

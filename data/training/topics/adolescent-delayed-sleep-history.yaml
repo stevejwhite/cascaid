@@ -1,0 +1,767 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: adolescent-delayed-sleep-history
+case_version: 0.1.0
+status: draft
+items:
+- utterance: What does a typical night look like for you, from getting into bed onwards?
+  topics:
+  - pattern
+  style: open
+- utterance: Can you talk me through a normal college night and the morning after?
+  topics:
+  - pattern
+  style: open
+- utterance: Do you go to bed at roughly the same time each night?
+  topics:
+  - pattern
+  style: closed
+- utterance: Is it hard to get up on college mornings?
+  topics:
+  - pattern
+  style: closed
+- utterance: What time do you actually end up nodding off?
+  topics:
+  - pattern
+  style: colloquial
+- utterance: How long do you lie there before you get to sleep?
+  topics:
+  - pattern
+  style: colloquial
+- utterance: What's it like when you have to get up for college?
+  topics:
+  - pattern
+  style: colloquial
+- utterance: Could you describe your usual sleep onset time on weeknights?
+  topics:
+  - pattern
+  style: clinical
+- utterance: I wondered what time you tend to get to sleep on a college night
+  topics:
+  - pattern
+  style: indirect
+- utterance: That sounds exhausting. What time do you usually drift off on a weeknight?
+  topics:
+  - pattern
+  style: empathy_then_question
+- utterance: so on a college morning, uh, how do you feel when you get up
+  topics:
+  - pattern
+  style: spoken
+- utterance: And weeknight bedtimes?
+  topics:
+  - pattern
+  style: brief
+- utterance: And on a college morning, how are you when you get up?
+  topics:
+  - pattern
+  style: follow_up
+  previous:
+    interviewer: Do you sleep better when you've got nothing on?
+    character: At weekends I sleep from about three until midday and usually feel refreshed.
+- utterance: I'd guess you lie awake for hours most nights, don't you?
+  topics:
+  - pattern
+  style: leading
+- utterance: How does your sleep change when you don't have college?
+  topics:
+  - free-days
+  style: open
+- utterance: What happens with your sleep at the weekend?
+  topics:
+  - free-days
+  style: open
+- utterance: Do you sleep for longer when you can lie in?
+  topics:
+  - free-days
+  style: closed
+- utterance: Do you feel more rested if nobody wakes you?
+  topics:
+  - free-days
+  style: closed
+- utterance: What time do you surface on a Saturday?
+  topics:
+  - free-days
+  style: colloquial
+- utterance: When you've got no alarm, how do you feel when you wake?
+  topics:
+  - free-days
+  style: colloquial
+- utterance: Do you catch up on sleep on days off?
+  topics:
+  - free-days
+  style: colloquial
+- utterance: Is your sleep duration different on non-college days?
+  topics:
+  - free-days
+  style: clinical
+- utterance: I was curious how your sleep is when you can choose your own hours
+  topics:
+  - free-days
+  style: indirect
+- utterance: It must be a relief to rest. How are you after a lie-in on a day off?
+  topics:
+  - free-days
+  style: empathy_then_question
+- utterance: and, um, if you're left to sleep what time do you get up then
+  topics:
+  - free-days
+  style: spoken
+- utterance: so at the weekend do you, like, wake up feeling okay
+  topics:
+  - free-days
+  style: spoken
+- utterance: Sundays, then?
+  topics:
+  - free-days
+  style: brief
+- utterance: Is it the same pattern when you've nothing to get up for?
+  topics:
+  - free-days
+  style: follow_up
+  previous:
+    interviewer: How do your college mornings go?
+    character: I aim to settle by eleven but usually get into bed around midnight and don't fall asleep
+      until about three. On college days Mum wakes me at seven and I feel awful.
+- utterance: I suppose you make up for it with huge lie-ins, don't you?
+  topics:
+  - free-days
+  style: leading
+- utterance: How did the sleep trouble first start?
+  topics:
+  - course
+  style: open
+- utterance: Tell me about when you first noticed you couldn't drop off.
+  topics:
+  - course
+  style: open
+- utterance: Has it been like this for months?
+  topics:
+  - course
+  style: closed
+- utterance: Did something change when it began?
+  topics:
+  - course
+  style: closed
+- utterance: How long have you been struggling to nod off?
+  topics:
+  - course
+  style: colloquial
+- utterance: When did your nights start going wrong?
+  topics:
+  - course
+  style: colloquial
+- utterance: Was it always a problem or did it come on suddenly?
+  topics:
+  - course
+  style: colloquial
+- utterance: What was the onset and duration of the sleep difficulty?
+  topics:
+  - course
+  style: clinical
+- utterance: I wondered when you first noticed the sleep getting later
+  topics:
+  - course
+  style: indirect
+- utterance: I'm sorry it's been so hard. When did all this begin?
+  topics:
+  - course
+  style: empathy_then_question
+- utterance: um so when did this start, was it like recently or a while back
+  topics:
+  - course
+  style: spoken
+- utterance: so how long's it been going on, was there a, a time it all changed
+  topics:
+  - course
+  style: spoken
+- utterance: Since when, exactly?
+  topics:
+  - course
+  style: brief
+- utterance: And when did that begin?
+  topics:
+  - course
+  style: follow_up
+  previous:
+    interviewer: I aim to settle by eleven but usually get into bed around midnight and don't fall asleep
+      until about three. On college days Mum wakes me at seven and I feel awful.
+    character: I aim to settle by eleven but usually get into bed around midnight and don't fall asleep
+      until about three. On college days Mum wakes me at seven and I feel awful.
+- utterance: It probably got worse once term started, am I right?
+  topics:
+  - course
+  style: leading
+- utterance: What do you do in the hour or two before you try to sleep?
+  topics:
+  - screens
+  style: open
+- utterance: How do you use your phone or games around bedtime?
+  topics:
+  - screens
+  style: open
+- utterance: Do you use your phone in bed?
+  topics:
+  - screens
+  style: closed
+- utterance: Do you play video games in the evenings?
+  topics:
+  - screens
+  style: closed
+- utterance: What are you doing on your phone when you can't drop off?
+  topics:
+  - screens
+  style: colloquial
+- utterance: Are you glued to a screen late at night?
+  topics:
+  - screens
+  style: colloquial
+- utterance: Do you chat to mates online when you should be asleep?
+  topics:
+  - screens
+  style: colloquial
+- utterance: How much screen exposure do you have before bed?
+  topics:
+  - screens
+  style: clinical
+- utterance: I wondered what you're usually doing on devices late in the evening
+  topics:
+  - screens
+  style: indirect
+- utterance: It's hard to switch off, isn't it. What do you do on your devices at night?
+  topics:
+  - screens
+  style: empathy_then_question
+- utterance: um what do you do in the evening, like gaming or your phone or whatever
+  topics:
+  - screens
+  style: spoken
+- utterance: so when you're lying there do you, uh, look at anything
+  topics:
+  - screens
+  style: spoken
+- utterance: Phones and games at night?
+  topics:
+  - screens
+  style: brief
+- utterance: What do you do while you're lying awake?
+  topics:
+  - screens
+  style: follow_up
+  previous:
+    interviewer: I aim to settle by eleven but usually get into bed around midnight and don't fall asleep
+      until about three. On college days Mum wakes me at seven and I feel awful.
+    character: I aim to settle by eleven but usually get into bed around midnight and don't fall asleep
+      until about three. On college days Mum wakes me at seven and I feel awful.
+- utterance: You're probably scrolling for ages in bed, right?
+  topics:
+  - screens
+  style: leading
+- utterance: What do you drink during the day, apart from water?
+  topics:
+  - caffeine
+  style: open
+- utterance: Tell me about any caffeine or other substances you use.
+  topics:
+  - caffeine
+  style: open
+- utterance: Do you have energy drinks or coffee?
+  topics:
+  - caffeine
+  style: closed
+- utterance: Do you smoke or vape?
+  topics:
+  - caffeine
+  style: closed
+- utterance: Are you necking energy drinks to get through the day?
+  topics:
+  - caffeine
+  style: colloquial
+- utterance: Do you drink or take anything that might keep you awake?
+  topics:
+  - caffeine
+  style: colloquial
+- utterance: Do you ever have a drink with friends or try drugs?
+  topics:
+  - caffeine
+  style: colloquial
+- utterance: What is your caffeine, alcohol and nicotine intake?
+  topics:
+  - caffeine
+  style: clinical
+- utterance: I wondered whether you have any stimulants like coffee or cola in the afternoon
+  topics:
+  - caffeine
+  style: indirect
+- utterance: I appreciate you being open about this. Do you use alcohol or any drugs?
+  topics:
+  - caffeine
+  style: empathy_then_question
+- utterance: um do you have like coffee or red bull or anything, and what time of day
+  topics:
+  - caffeine
+  style: spoken
+- utterance: and, uh, any drink or drugs or smoking, you know
+  topics:
+  - caffeine
+  style: spoken
+- utterance: Caffeine or alcohol?
+  topics:
+  - caffeine
+  style: brief
+- utterance: Is there anything you take to stay awake or wind down?
+  topics:
+  - caffeine
+  style: follow_up
+  previous:
+    interviewer: I game until midnight, then message friends on my phone in bed. I keep checking it when
+      I can't settle.
+    character: I game until midnight, then message friends on my phone in bed. I keep checking it when
+      I can't settle.
+- utterance: You probably rely on caffeine to function, don't you?
+  topics:
+  - caffeine
+  style: leading
+- utterance: How has this affected your college days?
+  topics:
+  - function
+  style: open
+- utterance: What is it like for you during the day after a short night?
+  topics:
+  - function
+  style: open
+- utterance: Have you missed any lessons?
+  topics:
+  - function
+  style: closed
+- utterance: Do you find it hard to concentrate in class?
+  topics:
+  - function
+  style: closed
+- utterance: Are you managing to get into college on time?
+  topics:
+  - function
+  style: colloquial
+- utterance: Do you end up crashing out in the afternoon?
+  topics:
+  - function
+  style: colloquial
+- utterance: How's your focus when you're knackered?
+  topics:
+  - function
+  style: colloquial
+- utterance: Is there any impact on your attendance and daytime functioning?
+  topics:
+  - function
+  style: clinical
+- utterance: I wondered how the tiredness shows up once you're at college
+  topics:
+  - function
+  style: indirect
+- utterance: That must be frustrating. Have you been missing college because of it?
+  topics:
+  - function
+  style: empathy_then_question
+- utterance: um so do you manage to get to lessons, like how many do you miss
+  topics:
+  - function
+  style: spoken
+- utterance: and do you, uh, nap or anything in the day
+  topics:
+  - function
+  style: spoken
+- utterance: And college attendance?
+  topics:
+  - function
+  style: brief
+- utterance: Does being awake so late affect your lessons?
+  topics:
+  - function
+  style: follow_up
+  previous:
+    interviewer: I game until midnight, then message friends on my phone in bed. I keep checking it when
+      I can't settle.
+    character: I game until midnight, then message friends on my phone in bed. I keep checking it when
+      I can't settle.
+- utterance: I imagine you're missing quite a lot of college, aren't you?
+  topics:
+  - function
+  style: leading
+- utterance: How have you been feeling in yourself lately?
+  topics:
+  - mood
+  style: open
+- utterance: What's your mood been like over these months?
+  topics:
+  - mood
+  style: open
+- utterance: Do you still like doing the things you normally like doing?
+  topics:
+  - mood
+  style: closed
+- utterance: Have you been feeling low or very down?
+  topics:
+  - mood
+  style: closed
+- utterance: Do you feel down in the dumps at all?
+  topics:
+  - mood
+  style: colloquial
+- utterance: Have there been times you feel really wired or super energetic?
+  topics:
+  - mood
+  style: colloquial
+- utterance: Are you worrying a lot about how college is going?
+  topics:
+  - mood
+  style: colloquial
+- utterance: Have you experienced any depressed or elevated mood?
+  topics:
+  - mood
+  style: clinical
+- utterance: I wondered whether your spirits have been affected by all this
+  topics:
+  - mood
+  style: indirect
+- utterance: It's a lot to deal with. Are you getting pleasure from what you used to like?
+  topics:
+  - mood
+  style: empathy_then_question
+- utterance: um have you been feeling sad or, like, not interested in stuff
+  topics:
+  - mood
+  style: spoken
+- utterance: so how's your mood, are you worried about it or, you know, fine
+  topics:
+  - mood
+  style: spoken
+- utterance: And your mood generally?
+  topics:
+  - mood
+  style: brief
+- utterance: Do you still enjoy things, though?
+  topics:
+  - mood
+  style: follow_up
+  previous:
+    interviewer: I've missed first lessons three days a week. I struggle to concentrate and nap for an
+      hour after college.
+    character: I've missed first lessons three days a week. I struggle to concentrate and nap for an hour
+      after college.
+- utterance: You've probably been feeling pretty low, haven't you?
+  topics:
+  - mood
+  style: leading
+- utterance: What happens once you've fallen asleep?
+  topics:
+  - other-sleep
+  style: open
+- utterance: Can you tell me about anything unusual that happens during your sleep?
+  topics:
+  - other-sleep
+  style: open
+- utterance: Do you snore?
+  topics:
+  - other-sleep
+  style: closed
+- utterance: Do you wake up during the night?
+  topics:
+  - other-sleep
+  style: closed
+- utterance: Does anyone say you stop breathing or snort in your sleep?
+  topics:
+  - other-sleep
+  style: colloquial
+- utterance: Do your legs feel fidgety when you lie down?
+  topics:
+  - other-sleep
+  style: colloquial
+- utterance: Once you're off, do you sleep through?
+  topics:
+  - other-sleep
+  style: colloquial
+- utterance: Is there any history of sleep apnoea symptoms or restless legs?
+  topics:
+  - other-sleep
+  style: clinical
+- utterance: I wondered whether anything wakes you or disturbs you at night
+  topics:
+  - other-sleep
+  style: indirect
+- utterance: I can see how fed up you are. Do you stay asleep once you get off?
+  topics:
+  - other-sleep
+  style: empathy_then_question
+- utterance: um do you, like, snore or wake up in the night or anything
+  topics:
+  - other-sleep
+  style: spoken
+- utterance: and your legs, are they, uh, restless when you're trying to sleep
+  topics:
+  - other-sleep
+  style: spoken
+- utterance: Snoring or waking at night?
+  topics:
+  - other-sleep
+  style: brief
+- utterance: Is it only getting to sleep, or does the night get broken too?
+  topics:
+  - other-sleep
+  style: follow_up
+  previous:
+    interviewer: I aim to settle by eleven but usually get into bed around midnight and don't fall asleep
+      until about three. On college days Mum wakes me at seven and I feel awful.
+    character: I aim to settle by eleven but usually get into bed around midnight and don't fall asleep
+      until about three. On college days Mum wakes me at seven and I feel awful.
+- utterance: I suppose you wake several times a night as well, don't you?
+  topics:
+  - other-sleep
+  style: leading
+- utterance: How do people at home react to your sleep problem?
+  topics:
+  - family
+  style: open
+- utterance: What is it like at home on a college morning?
+  topics:
+  - family
+  style: open
+- utterance: Do you clash with anyone at home about this?
+  topics:
+  - family
+  style: closed
+- utterance: Does your family understand what's going on?
+  topics:
+  - family
+  style: closed
+- utterance: Does anyone at home give you grief about it?
+  topics:
+  - family
+  style: colloquial
+- utterance: How do your parents see it all?
+  topics:
+  - family
+  style: colloquial
+- utterance: Do people think you could just try harder?
+  topics:
+  - family
+  style: colloquial
+- utterance: Are there any family tensions around the sleep difficulties?
+  topics:
+  - family
+  style: clinical
+- utterance: I wondered how the people you live with respond to all this
+  topics:
+  - family
+  style: indirect
+- utterance: That can't be easy. How does your family talk about it?
+  topics:
+  - family
+  style: empathy_then_question
+- utterance: um so at home do people, like, get annoyed about it or
+  topics:
+  - family
+  style: spoken
+- utterance: how do they, uh, how does your family take it
+  topics:
+  - family
+  style: spoken
+- utterance: And at home?
+  topics:
+  - family
+  style: brief
+- utterance: How do things go at home when that happens?
+  topics:
+  - family
+  style: follow_up
+  previous:
+    interviewer: I aim to settle by eleven but usually get into bed around midnight and don't fall asleep
+      until about three. On college days Mum wakes me at seven and I feel awful.
+    character: I aim to settle by eleven but usually get into bed around midnight and don't fall asleep
+      until about three. On college days Mum wakes me at seven and I feel awful.
+- utterance: I imagine they think you're just being lazy, don't they?
+  topics:
+  - family
+  style: leading
+- utterance: Can you tell me about any times you've felt unsafe or hopeless?
+  topics:
+  - risk
+  style: open
+- utterance: Who do you imagine I might share today's conversation with, and how do you feel about that?
+  topics:
+  - risk
+  style: open
+- utterance: Have you ever wished you weren't alive?
+  topics:
+  - risk
+  style: closed
+- utterance: Have things ever got so bad that you've wanted to end it all?
+  topics:
+  - risk
+  style: colloquial
+- utterance: Are you worried I'll share what you say with others?
+  topics:
+  - risk
+  style: colloquial
+- utterance: Do you ever hurt yourself when things get on top of you?
+  topics:
+  - risk
+  style: colloquial
+- utterance: Have you had any suicidal ideation or self-harm?
+  topics:
+  - risk
+  style: clinical
+- utterance: I wondered whether you've had any thoughts of not wanting to be here
+  topics:
+  - risk
+  style: indirect
+- utterance: Thank you for talking to me. Have you had any thoughts of hurting yourself?
+  topics:
+  - risk
+  style: empathy_then_question
+- utterance: um have you ever like thought about, uh, hurting yourself or dying
+  topics:
+  - risk
+  style: spoken
+- utterance: so are you, I mean, are you worried about who I'll tell
+  topics:
+  - risk
+  style: spoken
+- utterance: Any thoughts of self-harm?
+  topics:
+  - risk
+  style: brief
+- utterance: Is there anything you're worried about me sharing?
+  topics:
+  - risk
+  style: follow_up
+  previous:
+    interviewer: I've missed first lessons three days a week. I struggle to concentrate and nap for an
+      hour after college.
+    character: I've missed first lessons three days a week. I struggle to concentrate and nap for an hour
+      after college.
+- utterance: You'd tell me if you'd had dark thoughts, wouldn't you?
+  topics:
+  - risk
+  style: leading
+- utterance: Do you get to sleep late at night, and has it been happening since a particular time?
+  topics:
+  - pattern
+  - course
+  style: stacked
+- utterance: Do you game or use your phone in bed, and do you have any caffeine in the day?
+  topics:
+  - screens
+  - caffeine
+  style: stacked
+- utterance: How do you sleep when you've no college, and how are you at lessons on other days?
+  topics:
+  - free-days
+  - function
+  style: stacked
+- utterance: Is your mood okay, and have you ever thought of harming yourself?
+  topics:
+  - mood
+  - risk
+  style: stacked
+- utterance: Hello Evie, thanks for coming in today.
+  topics: []
+  style: greeting
+- utterance: My name's Dr Hughes, I'm one of the doctors in the clinic, Evie.
+  topics: []
+  style: introduction
+- utterance: I'm a doctor here and I'd like to hear about your sleep, Evie.
+  topics: []
+  style: introduction
+- utterance: Is it all right if we have a chat for a few minutes, Evie?
+  topics: []
+  style: conversational
+- utterance: Would you like to start with anything in particular?
+  topics: []
+  style: conversational
+- utterance: Before we start, do you have any questions for me?
+  topics: []
+  style: conversational
+- utterance: How would you like me to address you, Evie, or is that fine?
+  topics: []
+  style: conversational
+- utterance: Is it okay if I take a few notes while we talk?
+  topics: []
+  style: conversational
+- utterance: Are you comfortable, or shall I move my chair?
+  topics: []
+  style: conversational
+- utterance: I'd like to move on to something different now.
+  topics: []
+  style: transition
+- utterance: Can we shift to talking about the rest of your day-to-day life?
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Evie.
+  topics: []
+  style: closing
+- utterance: Thank you for talking with me today, Evie.
+  topics: []
+  style: closing
+- utterance: It sounds like you've been feeling worn out.
+  topics: []
+  style: empathy
+- utterance: That must be frustrating when you're trying your best.
+  topics: []
+  style: empathy
+- utterance: I can see how fed up you must be with all of this.
+  topics: []
+  style: empathy
+- utterance: Nobody would choose to feel this tired.
+  topics: []
+  style: empathy
+- utterance: So you're struggling to fall asleep and it's making college mornings difficult.
+  topics: []
+  style: summary
+- utterance: 'Let me check I have this right: sleep comes late and you''ve been missing lessons.'
+  topics: []
+  style: summary
+- utterance: Some young people's body clocks run later than their schedules need.
+  topics: []
+  style: explanation
+- utterance: What I'll do is ask about your sleep, mood and routines, then we'll plan next steps.
+  topics: []
+  style: explanation
+- utterance: What you tell me stays between us unless I'm worried about your safety.
+  topics: []
+  style: explanation
+- utterance: Does that make sense so far?
+  topics: []
+  style: check_understanding
+- utterance: Is there anything I've said that isn't clear?
+  topics: []
+  style: check_understanding
+- utterance: Do you ever sleepwalk or talk in your sleep?
+  topics: []
+  style: off_case
+- utterance: Have you had any head injuries or fainting?
+  topics: []
+  style: off_case
+- utterance: Are you taking any regular medication or supplements?
+  topics: []
+  style: off_case
+- utterance: Have you had any problems with your periods?
+  topics: []
+  style: off_case
+- utterance: Do you have any trouble with eating or your weight?
+  topics: []
+  style: off_case
+- utterance: Do you have a bedtime routine your parents set for you?
+  topics: []
+  style: near_miss
+- utterance: What time do you go to bed in the holidays, as a rule?
+  topics: []
+  style: near_miss
+- utterance: How many hours of homework do you do each evening?
+  topics: []
+  style: near_miss
+- utterance: Do you have trouble with your phone at college?
+  topics: []
+  style: near_miss
+- utterance: Are you afraid of the dark or of sleeping alone?
+  topics: []
+  style: near_miss

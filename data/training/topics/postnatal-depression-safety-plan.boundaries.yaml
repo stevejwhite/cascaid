@@ -1,0 +1,403 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: postnatal-depression-safety-plan
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Have you had any thoughts of ending your life?
+  topics:
+  - thoughts
+  style: boundary
+  pair:
+  - thoughts
+  - warning
+- utterance: Do you feel you could act on those thoughts tonight?
+  topics:
+  - thoughts
+  style: boundary_colloquial
+  pair:
+  - thoughts
+  - warning
+- utterance: um have you been thinking about suicide at all
+  topics:
+  - thoughts
+  style: boundary_spoken
+  pair:
+  - thoughts
+  - warning
+- utterance: And when you're feeling like that, do thoughts of ending it all come into your head?
+  topics:
+  - thoughts
+  style: boundary_follow_up
+  pair:
+  - thoughts
+  - warning
+  previous:
+    interviewer: When do things feel at their worst?
+    character: Evenings are hardest when I'm alone and exhausted. I start thinking I'm failing and stop
+      answering messages.
+- utterance: Is there a time of day when everything gets harder?
+  topics:
+  - warning
+  style: boundary
+  pair:
+  - thoughts
+  - warning
+- utterance: Do you notice yourself pulling away from people when you start to slide?
+  topics:
+  - warning
+  style: boundary_colloquial
+  pair:
+  - thoughts
+  - warning
+- utterance: um what usually sets it off when you start going downhill
+  topics:
+  - warning
+  style: boundary_spoken
+  pair:
+  - thoughts
+  - warning
+- utterance: Does that tend to come at any particular time of day?
+  topics:
+  - warning
+  style: boundary_follow_up
+  pair:
+  - thoughts
+  - warning
+  previous:
+    interviewer: Do you ever think your family would be better off without you?
+    character: I think my family would be better without me. Last night I thought about taking an overdose,
+      but I made no preparations and don't intend to act right now; I'm frightened the urge could return.
+- utterance: Have you ever tried to end your life in the past?
+  topics: []
+  style: near_miss
+  pair:
+  - thoughts
+  - warning
+- utterance: Do you drink alcohol when things get bad?
+  topics: []
+  style: near_miss
+  pair:
+  - thoughts
+  - warning
+- utterance: Did the low mood start after the birth?
+  topics:
+  - course
+  style: boundary
+  pair:
+  - course
+  - warning
+- utterance: Have you been crying a lot, and finding nothing much fun any more?
+  topics:
+  - course
+  style: boundary_colloquial
+  pair:
+  - course
+  - warning
+- utterance: um when did you first start feeling low
+  topics:
+  - course
+  style: boundary_spoken
+  pair:
+  - course
+  - warning
+- utterance: And has it been that way since the baby was born?
+  topics:
+  - course
+  style: boundary_follow_up
+  pair:
+  - course
+  - warning
+  previous:
+    interviewer: What are the evenings like for you?
+    character: Evenings are hardest when I'm alone and exhausted. I start thinking I'm failing and stop
+      answering messages.
+- utterance: What are the early signs that you're starting to slip?
+  topics:
+  - warning
+  style: boundary
+  pair:
+  - course
+  - warning
+- utterance: Is there a point in the day when you feel most at risk?
+  topics:
+  - warning
+  style: boundary
+  pair:
+  - course
+  - warning
+- utterance: Do you do anything differently when you start going downhill?
+  topics:
+  - warning
+  style: boundary_colloquial
+  pair:
+  - course
+  - warning
+- utterance: um when you're on your own, does it get worse
+  topics:
+  - warning
+  style: boundary_spoken
+  pair:
+  - course
+  - warning
+- utterance: Within that, is there a time when it's the worst?
+  topics:
+  - warning
+  style: boundary_follow_up
+  pair:
+  - course
+  - warning
+  previous:
+    interviewer: How long have you been feeling low?
+    character: I've felt low most days for six weeks. I cry easily and don't enjoy things the way I used
+      to.
+- utterance: Have you had depression at any time before the pregnancy?
+  topics: []
+  style: near_miss
+  pair:
+  - course
+  - warning
+- utterance: Did anything in particular happen to trigger it?
+  topics: []
+  style: near_miss
+  pair:
+  - course
+  - warning
+- utterance: Do you ever hear things that other people can't?
+  topics:
+  - experiences
+  style: boundary
+  pair:
+  - experiences
+  - sleep
+- utterance: Have you felt oddly wired or full of energy despite so little rest?
+  topics:
+  - experiences
+  style: boundary_colloquial
+  pair:
+  - experiences
+  - sleep
+- utterance: um any voices or anything like that
+  topics:
+  - experiences
+  style: boundary_spoken
+  pair:
+  - experiences
+  - sleep
+- utterance: And do you ever feel strangely energetic despite having so little sleep?
+  topics:
+  - experiences
+  style: boundary_follow_up
+  pair:
+  - experiences
+  - sleep
+  previous:
+    interviewer: How many hours do you manage at night?
+    character: I get about four broken hours. Even when my sister takes a feed, I lie awake worrying.
+- utterance: How many hours of sleep are you getting a night?
+  topics:
+  - sleep
+  style: boundary
+  pair:
+  - experiences
+  - sleep
+- utterance: When someone else does a night feed, can you drop off?
+  topics:
+  - sleep
+  style: boundary
+  pair:
+  - experiences
+  - sleep
+- utterance: Do you find it hard to switch off in bed?
+  topics:
+  - sleep
+  style: boundary_colloquial
+  pair:
+  - experiences
+  - sleep
+- utterance: um how are you sleeping at the moment
+  topics:
+  - sleep
+  style: boundary_spoken
+  pair:
+  - experiences
+  - sleep
+- utterance: And how are you sleeping with all of that going on?
+  topics:
+  - sleep
+  style: boundary_follow_up
+  pair:
+  - experiences
+  - sleep
+  previous:
+    interviewer: Do you hear any voices?
+    character: No, I don't hear voices or have unusual beliefs about the baby. I feel exhausted, not unusually
+      energetic, and know where I am.
+- utterance: Do you use any sleeping tablets or herbal remedies?
+  topics: []
+  style: near_miss
+  pair:
+  - experiences
+  - sleep
+- utterance: Do you get nightmares or flashbacks about the birth?
+  topics: []
+  style: near_miss
+  pair:
+  - experiences
+  - sleep
+- utterance: Do you hear any voices telling you to do things?
+  topics:
+  - experiences
+  style: boundary
+  pair:
+  - experiences
+  - fear
+- utterance: Have you felt that people are watching you or talking about you?
+  topics:
+  - experiences
+  style: boundary
+  pair:
+  - experiences
+  - fear
+- utterance: Have you been feeling confused, or unsure where you are?
+  topics:
+  - experiences
+  style: boundary_colloquial
+  pair:
+  - experiences
+  - fear
+- utterance: um do you see or hear anything that other people don't
+  topics:
+  - experiences
+  style: boundary_spoken
+  pair:
+  - experiences
+  - fear
+- utterance: Is anything outside of you telling you to hurt yourself, like a voice?
+  topics:
+  - experiences
+  style: boundary_follow_up
+  pair:
+  - experiences
+  - fear
+  previous:
+    interviewer: What's making it hard to tell people how you feel?
+    character: I'm afraid admitting these thoughts will make people think I don't love my baby. That's
+      why I've kept quiet.
+- utterance: Do you worry what others would think if you were completely honest?
+  topics:
+  - fear
+  style: boundary
+  pair:
+  - experiences
+  - fear
+- utterance: Are you concerned about being seen as a bad mother?
+  topics:
+  - fear
+  style: boundary_colloquial
+  pair:
+  - experiences
+  - fear
+- utterance: um are you worried about what people will think if you say it out loud
+  topics:
+  - fear
+  style: boundary_spoken
+  pair:
+  - experiences
+  - fear
+- utterance: Has social services ever been involved with your family?
+  topics: []
+  style: near_miss
+  pair:
+  - experiences
+  - fear
+- utterance: Have you been prescribed an antidepressant yet?
+  topics: []
+  style: near_miss
+  pair:
+  - experiences
+  - fear
+- utterance: Have you ever felt like harming her?
+  topics:
+  - baby
+  style: boundary
+  pair:
+  - baby
+  - thoughts
+- utterance: Who is looking after the baby right now?
+  topics:
+  - baby
+  style: boundary
+  pair:
+  - baby
+  - thoughts
+- utterance: When it all gets too much with the baby, what do you do?
+  topics:
+  - baby
+  style: boundary_colloquial
+  pair:
+  - baby
+  - thoughts
+- utterance: um is the baby safe at the moment
+  topics:
+  - baby
+  style: boundary_spoken
+  pair:
+  - baby
+  - thoughts
+- utterance: And what about the baby, have you had any thoughts of hurting her?
+  topics:
+  - baby
+  style: boundary_follow_up
+  pair:
+  - baby
+  - thoughts
+  previous:
+    interviewer: Do you ever think about ending your life?
+    character: I think my family would be better without me. Last night I thought about taking an overdose,
+      but I made no preparations and don't intend to act right now; I'm frightened the urge could return.
+- utterance: Have you ever considered taking your own life?
+  topics:
+  - thoughts
+  style: boundary
+  pair:
+  - baby
+  - thoughts
+- utterance: Do you have any thoughts of hurting yourself, and might you act on them?
+  topics:
+  - thoughts
+  style: boundary_colloquial
+  pair:
+  - baby
+  - thoughts
+- utterance: um so are you having thoughts of suicide
+  topics:
+  - thoughts
+  style: boundary_spoken
+  pair:
+  - baby
+  - thoughts
+- utterance: And what about you, do you ever think about ending your own life?
+  topics:
+  - thoughts
+  style: boundary_follow_up
+  pair:
+  - baby
+  - thoughts
+  previous:
+    interviewer: Are you able to look after her at the moment?
+    character: No, I haven't wanted to hurt my baby. When overwhelmed I put her in her cot and call my
+      sister; she is with my sister now.
+- utterance: Has the baby been feeding well and gaining weight?
+  topics: []
+  style: near_miss
+  pair:
+  - baby
+  - thoughts
+- utterance: Has the health visitor been helpful so far?
+  topics: []
+  style: near_miss
+  pair:
+  - baby
+  - thoughts

@@ -1,0 +1,811 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: postnatal-depression-safety-plan
+case_version: 0.1.0
+status: draft
+items:
+- utterance: How have you been feeling since the baby was born?
+  topics:
+  - course
+  style: open
+- utterance: Have you felt low most days?
+  topics:
+  - course
+  style: closed
+- utterance: When did your depressive symptoms begin and how persistent are they?
+  topics:
+  - course
+  style: clinical
+- utterance: I wondered how your mood has been these last few weeks.
+  topics:
+  - course
+  style: indirect
+- utterance: I'm sorry it's been so hard. Are you crying a lot?
+  topics:
+  - course
+  style: empathy_then_question
+- utterance: um so how long have you felt like this
+  topics:
+  - course
+  style: spoken
+- utterance: Enjoying anything?
+  topics:
+  - course
+  style: brief
+- utterance: Has it been getting worse?
+  topics:
+  - course
+  style: follow_up
+  previous:
+    interviewer: Who is looking after the baby today?
+    character: No, I haven't wanted to hurt my baby. When overwhelmed I put her in her cot and call my
+      sister; she is with my sister now.
+- utterance: You've been tearful and flat since she was born, haven't you?
+  topics:
+  - course
+  style: leading
+- utterance: Can you describe what a typical day is like for you?
+  topics:
+  - course
+  style: open
+- utterance: Do you still enjoy the things you used to?
+  topics:
+  - course
+  style: closed
+- utterance: Are you crying more than usual?
+  topics:
+  - course
+  style: colloquial
+- utterance: and has it been like this for ages or
+  topics:
+  - course
+  style: spoken
+- utterance: Feeling low every day?
+  topics:
+  - course
+  style: brief
+- utterance: Have you had any thoughts of not wanting to be here?
+  topics:
+  - thoughts
+  style: open
+- utterance: Have you thought about taking an overdose?
+  topics:
+  - thoughts
+  style: closed
+- utterance: Do you ever think everyone would be better off without you?
+  topics:
+  - thoughts
+  style: colloquial
+- utterance: Are you experiencing suicidal ideation, and have you formed any plan?
+  topics:
+  - thoughts
+  style: clinical
+- utterance: I wanted to ask about any dark thoughts you may have had.
+  topics:
+  - thoughts
+  style: indirect
+- utterance: It takes courage to talk about this. Have you had thoughts of ending your life?
+  topics:
+  - thoughts
+  style: empathy_then_question
+- utterance: um so have you had any thoughts of suicide
+  topics:
+  - thoughts
+  style: spoken
+- utterance: Thoughts of suicide?
+  topics:
+  - thoughts
+  style: brief
+- utterance: Has it ever gone as far as thoughts of ending your life?
+  topics:
+  - thoughts
+  style: follow_up
+  previous:
+    interviewer: How have you been feeling since the birth?
+    character: I've felt low most days for six weeks. I cry easily and don't enjoy things the way I used
+      to.
+- utterance: You've been thinking about harming yourself, haven't you?
+  topics:
+  - thoughts
+  style: leading
+- utterance: How strong are those thoughts at the moment?
+  topics:
+  - thoughts
+  style: open
+- utterance: Do you intend to act on them?
+  topics:
+  - thoughts
+  style: closed
+- utterance: Have you made any plans to end it all?
+  topics:
+  - thoughts
+  style: colloquial
+- utterance: and um is the urge there right now
+  topics:
+  - thoughts
+  style: spoken
+- utterance: Any intent today?
+  topics:
+  - thoughts
+  style: brief
+- utterance: What medicines do you keep at home?
+  topics:
+  - means
+  style: open
+- utterance: Are tablets stored somewhere safe?
+  topics:
+  - means
+  style: closed
+- utterance: Where do you keep your pills?
+  topics:
+  - means
+  style: colloquial
+- utterance: What is your access to medication that could be taken in overdose?
+  topics:
+  - means
+  style: clinical
+- utterance: I wondered how easy it would be to get hold of tablets.
+  topics:
+  - means
+  style: indirect
+- utterance: This is something we'd want to make safer together. Is there anything dangerous within reach?
+  topics:
+  - means
+  style: empathy_then_question
+- utterance: um is there like a cupboard with pills in it
+  topics:
+  - means
+  style: spoken
+- utterance: Tablets locked away?
+  topics:
+  - means
+  style: brief
+- utterance: Has anyone helped you store them securely?
+  topics:
+  - means
+  style: follow_up
+  previous:
+    interviewer: Have you thought about ending your life?
+    character: I think my family would be better without me. Last night I thought about taking an overdose,
+      but I made no preparations and don't intend to act right now; I'm frightened the urge could return.
+- utterance: There are probably a lot of tablets lying around, aren't there?
+  topics:
+  - means
+  style: leading
+- utterance: Could we talk through what's in your cupboards?
+  topics:
+  - means
+  style: open
+- utterance: Are the medicines kept out of reach?
+  topics:
+  - means
+  style: closed
+- utterance: Is it easy for you to grab painkillers?
+  topics:
+  - means
+  style: colloquial
+- utterance: and the medicine is it locked up or not
+  topics:
+  - means
+  style: spoken
+- utterance: Medicines accessible?
+  topics:
+  - means
+  style: brief
+- utterance: Who is looking after your baby right now?
+  topics:
+  - baby
+  style: open
+- utterance: What do you do when the crying gets too much?
+  topics:
+  - baby
+  style: colloquial
+- utterance: Are there any thoughts of harming the infant?
+  topics:
+  - baby
+  style: clinical
+- utterance: I wanted to ask how you cope when you feel overwhelmed with her.
+  topics:
+  - baby
+  style: indirect
+- utterance: Looking after a newborn is exhausting. Where is she at the moment?
+  topics:
+  - baby
+  style: empathy_then_question
+- utterance: um is she safe with someone or
+  topics:
+  - baby
+  style: spoken
+- utterance: Where is the baby?
+  topics:
+  - baby
+  style: brief
+- utterance: And do you ever feel like hurting her?
+  topics:
+  - baby
+  style: follow_up
+  previous:
+    interviewer: Who can stay with you tonight?
+    character: My sister can stay tonight if I ask. My partner works nights and doesn't know how bad the
+      thoughts have become.
+- utterance: You'd never want to do anything to hurt her, would you?
+  topics:
+  - baby
+  style: leading
+- utterance: What happens when you feel you can't cope with her?
+  topics:
+  - baby
+  style: open
+- utterance: Is your baby being cared for by someone you trust?
+  topics:
+  - baby
+  style: closed
+- utterance: Do you ever lose it with her?
+  topics:
+  - baby
+  style: colloquial
+- utterance: and who has got her today
+  topics:
+  - baby
+  style: spoken
+- utterance: Baby safe at the moment?
+  topics:
+  - baby
+  style: brief
+- utterance: Who is around to help you at home?
+  topics:
+  - support
+  style: open
+- utterance: Could someone stay with you tonight?
+  topics:
+  - support
+  style: closed
+- utterance: Who knows how bad things have got?
+  topics:
+  - support
+  style: colloquial
+- utterance: What social support network do you have?
+  topics:
+  - support
+  style: clinical
+- utterance: I'd like to hear about the people you can lean on.
+  topics:
+  - support
+  style: indirect
+- utterance: You shouldn't have to manage this alone. Have you told your partner?
+  topics:
+  - support
+  style: empathy_then_question
+- utterance: um who have you told about all this
+  topics:
+  - support
+  style: spoken
+- utterance: Anyone to stay over?
+  topics:
+  - support
+  style: brief
+- utterance: Your family are around to help you, aren't they?
+  topics:
+  - support
+  style: leading
+- utterance: Tell me about your relationship with the family.
+  topics:
+  - support
+  style: open
+- utterance: Is there anyone who lives with you or helps out?
+  topics:
+  - support
+  style: closed
+- utterance: Is there anyone you'd trust to look after things?
+  topics:
+  - support
+  style: colloquial
+- utterance: and um could your mum or a friend come over
+  topics:
+  - support
+  style: spoken
+- utterance: Family involved?
+  topics:
+  - support
+  style: brief
+- utterance: Are there times of day when things feel worse?
+  topics:
+  - warning
+  style: open
+- utterance: Do you feel worse when you're on your own?
+  topics:
+  - warning
+  style: closed
+- utterance: What are the red flags that things are going downhill?
+  topics:
+  - warning
+  style: colloquial
+- utterance: What are your early warning signs before a crisis?
+  topics:
+  - warning
+  style: clinical
+- utterance: I wondered what you notice just before the thoughts get stronger.
+  topics:
+  - warning
+  style: indirect
+- utterance: That sounds very lonely. What happens when you're tired in the evening?
+  topics:
+  - warning
+  style: empathy_then_question
+- utterance: um do you notice anything before it gets bad
+  topics:
+  - warning
+  style: spoken
+- utterance: Worst time of day?
+  topics:
+  - warning
+  style: brief
+- utterance: What do you do when you get like that?
+  topics:
+  - warning
+  style: follow_up
+  previous:
+    interviewer: Who can stay with you tonight?
+    character: My sister can stay tonight if I ask. My partner works nights and doesn't know how bad the
+      thoughts have become.
+- utterance: It's worse when nobody's there, isn't it?
+  topics:
+  - warning
+  style: leading
+- utterance: What does it look like when you start to slip?
+  topics:
+  - warning
+  style: open
+- utterance: Do you stop replying to people?
+  topics:
+  - warning
+  style: closed
+- utterance: When are you most at risk of feeling awful?
+  topics:
+  - warning
+  style: colloquial
+- utterance: and what changes when you're really exhausted
+  topics:
+  - warning
+  style: spoken
+- utterance: Triggers?
+  topics:
+  - warning
+  style: brief
+- utterance: Is there anything that helps when the thoughts come?
+  topics:
+  - coping
+  style: closed
+- utterance: What keeps you going?
+  topics:
+  - coping
+  style: colloquial
+- utterance: What are your protective factors and coping strategies?
+  topics:
+  - coping
+  style: clinical
+- utterance: I'd like to hear what made you decide to come for help today.
+  topics:
+  - coping
+  style: indirect
+- utterance: You're showing a lot of strength. What stops you from acting?
+  topics:
+  - coping
+  style: empathy_then_question
+- utterance: um what makes you want to stay
+  topics:
+  - coping
+  style: spoken
+- utterance: Reasons to live?
+  topics:
+  - coping
+  style: brief
+- utterance: Is that what made you ask for help?
+  topics:
+  - coping
+  style: follow_up
+  previous:
+    interviewer: Do you notice anything before the thoughts get worse?
+    character: Evenings are hardest when I'm alone and exhausted. I start thinking I'm failing and stop
+      answering messages.
+- utterance: Your child is a reason to keep going, isn't she?
+  topics:
+  - coping
+  style: leading
+- utterance: What made you reach out today?
+  topics:
+  - coping
+  style: open
+- utterance: Do you have a way of calming yourself?
+  topics:
+  - coping
+  style: closed
+- utterance: Who do you ring when you're struggling?
+  topics:
+  - coping
+  style: colloquial
+- utterance: and um what gets you through it
+  topics:
+  - coping
+  style: spoken
+- utterance: Why seek help now?
+  topics:
+  - coping
+  style: brief
+- utterance: What help have you had from health services?
+  topics:
+  - services
+  style: open
+- utterance: Has anyone from the perinatal team been to see you?
+  topics:
+  - services
+  style: closed
+- utterance: Do you know who to call at night if it gets bad?
+  topics:
+  - services
+  style: colloquial
+- utterance: Is there an existing crisis plan or out-of-hours contact?
+  topics:
+  - services
+  style: clinical
+- utterance: I wondered what follow-up has been arranged for you.
+  topics:
+  - services
+  style: indirect
+- utterance: I want you to feel properly supported. Have you been given a number to call?
+  topics:
+  - services
+  style: empathy_then_question
+- utterance: um have you got like a plan written down
+  topics:
+  - services
+  style: spoken
+- utterance: Crisis number?
+  topics:
+  - services
+  style: brief
+- utterance: Have you been seen by any specialist team yet?
+  topics:
+  - services
+  style: follow_up
+  previous:
+    interviewer: What helped you decide to come?
+    character: Calling my sister helps me slow down. I want to be here for my daughter and have come because
+      I don't trust myself to manage alone.
+- utterance: Someone has already arranged specialist help for you, haven't they?
+  topics:
+  - services
+  style: leading
+- utterance: What support have you been offered since the birth?
+  topics:
+  - services
+  style: open
+- utterance: Have you got a written safety plan?
+  topics:
+  - services
+  style: closed
+- utterance: Who would you phone in the middle of the night?
+  topics:
+  - services
+  style: colloquial
+- utterance: and the mental health team have they been in touch
+  topics:
+  - services
+  style: spoken
+- utterance: Referred anywhere?
+  topics:
+  - services
+  style: brief
+- utterance: Do you get any sleep at night?
+  topics:
+  - sleep
+  style: closed
+- utterance: Are you getting any proper rest?
+  topics:
+  - sleep
+  style: colloquial
+- utterance: How many hours of sleep do you get, and is it continuous?
+  topics:
+  - sleep
+  style: clinical
+- utterance: I wanted to ask about your nights.
+  topics:
+  - sleep
+  style: indirect
+- utterance: It must be so tiring. Do you sleep when someone else helps with feeds?
+  topics:
+  - sleep
+  style: empathy_then_question
+- utterance: um so how many hours do you get
+  topics:
+  - sleep
+  style: spoken
+- utterance: Sleeping at all?
+  topics:
+  - sleep
+  style: brief
+- utterance: Even when someone else takes over?
+  topics:
+  - sleep
+  style: follow_up
+  previous:
+    interviewer: How have you been feeling?
+    character: I've felt low most days for six weeks. I cry easily and don't enjoy things the way I used
+      to.
+- utterance: You're hardly sleeping, I imagine?
+  topics:
+  - sleep
+  style: leading
+- utterance: What goes through your mind when you're lying awake?
+  topics:
+  - sleep
+  style: open
+- utterance: Do you lie awake worrying?
+  topics:
+  - sleep
+  style: closed
+- utterance: Do you manage to switch off at night?
+  topics:
+  - sleep
+  style: colloquial
+- utterance: and the nights are they broken
+  topics:
+  - sleep
+  style: spoken
+- utterance: Hours per night?
+  topics:
+  - sleep
+  style: brief
+- utterance: What makes it hard to tell people how you feel?
+  topics:
+  - fear
+  style: open
+- utterance: Are you afraid of being judged?
+  topics:
+  - fear
+  style: closed
+- utterance: Do you worry what people will think of you as a mum?
+  topics:
+  - fear
+  style: colloquial
+- utterance: Do you have concerns about disclosing these thoughts to professionals?
+  topics:
+  - fear
+  style: clinical
+- utterance: I wondered what's kept you from telling anyone.
+  topics:
+  - fear
+  style: indirect
+- utterance: Lots of new mums feel like that. Are you worried people might think badly of you?
+  topics:
+  - fear
+  style: empathy_then_question
+- utterance: um is it hard to tell people about it
+  topics:
+  - fear
+  style: spoken
+- utterance: Fear of being judged?
+  topics:
+  - fear
+  style: brief
+- utterance: Is that why you haven't told anyone?
+  topics:
+  - fear
+  style: follow_up
+  previous:
+    interviewer: Who knows how bad things are?
+    character: My sister can stay tonight if I ask. My partner works nights and doesn't know how bad the
+      thoughts have become.
+- utterance: You've been keeping it to yourself because of shame, haven't you?
+  topics:
+  - fear
+  style: leading
+- utterance: Can we talk about why it's been hard to open up?
+  topics:
+  - fear
+  style: open
+- utterance: Do you worry people will question whether you love your baby?
+  topics:
+  - fear
+  style: closed
+- utterance: Are you scared of what we'll say?
+  topics:
+  - fear
+  style: colloquial
+- utterance: and um do you feel like you can't say it out loud
+  topics:
+  - fear
+  style: spoken
+- utterance: Worried about being judged as a mother?
+  topics:
+  - fear
+  style: brief
+- utterance: Have you noticed anything unusual in how you see or hear things?
+  topics:
+  - experiences
+  style: open
+- utterance: Do you hear voices?
+  topics:
+  - experiences
+  style: closed
+- utterance: Do you have any odd ideas about your baby?
+  topics:
+  - experiences
+  style: colloquial
+- utterance: Is there any evidence of psychotic symptoms or mania?
+  topics:
+  - experiences
+  style: clinical
+- utterance: I wondered if your thinking has felt different or confused.
+  topics:
+  - experiences
+  style: indirect
+- utterance: You've been through so much. Have you felt unusually energetic?
+  topics:
+  - experiences
+  style: empathy_then_question
+- utterance: um do you hear or see anything strange
+  topics:
+  - experiences
+  style: spoken
+- utterance: Any strange beliefs?
+  topics:
+  - experiences
+  style: brief
+- utterance: Do you feel confused at all?
+  topics:
+  - experiences
+  style: follow_up
+  previous:
+    interviewer: How are you sleeping?
+    character: I get about four broken hours. Even when my sister takes a feed, I lie awake worrying.
+- utterance: You aren't hearing anything that isn't there, are you?
+  topics:
+  - experiences
+  style: leading
+- utterance: Tell me about any unusual thoughts about yourself or the baby.
+  topics:
+  - experiences
+  style: open
+- utterance: Do you know where you are and what day it is?
+  topics:
+  - experiences
+  style: closed
+- utterance: Are you hyper or going without sleep and not noticing?
+  topics:
+  - experiences
+  style: colloquial
+- utterance: and any like weird beliefs about her
+  topics:
+  - experiences
+  style: spoken
+- utterance: Feeling confused?
+  topics:
+  - experiences
+  style: brief
+- utterance: Have you thought about overdosing, and where do you keep your medicines?
+  topics:
+  - thoughts
+  - means
+  style: stacked
+- utterance: Who is looking after the baby, and who can stay with you tonight?
+  topics:
+  - baby
+  - support
+  style: stacked
+- utterance: When do things feel worst, and what helps you get through?
+  topics:
+  - warning
+  - coping
+  style: stacked
+- utterance: Do you know who to ring out of hours, and is it hard to tell people?
+  topics:
+  - services
+  - fear
+  style: stacked
+- utterance: Hello Zoe, I'm glad to meet you.
+  topics: []
+  style: greeting
+- utterance: Hi Zoe, my name's Rachel and I'm one of the psychiatrists in the community team.
+  topics: []
+  style: introduction
+- utterance: Good afternoon Zoe, thank you for letting me visit.
+  topics: []
+  style: greeting
+- utterance: Zoe, I'm a doctor who works with new mothers and I'd like to hear how you are.
+  topics: []
+  style: introduction
+- utterance: Is it all right if we talk for a while, Zoe?
+  topics: []
+  style: introduction
+- utterance: what would you like to start with Zoe
+  topics: []
+  style: greeting
+- utterance: Before we start, have you got any questions for me?
+  topics: []
+  style: introduction
+- utterance: I'd like to move on to something different now.
+  topics: []
+  style: transition
+- utterance: Shall we talk about what could keep you safe?
+  topics: []
+  style: transition
+- utterance: ok so let's go on to the next bit
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Zoe.
+  topics: []
+  style: closing
+- utterance: We've only got a couple of minutes left.
+  topics: []
+  style: closing
+- utterance: It sounds as though you've been carrying a lot on your own.
+  topics: []
+  style: empathy
+- utterance: That must be really frightening.
+  topics: []
+  style: empathy
+- utterance: Thank you for being so honest with me.
+  topics: []
+  style: empathy
+- utterance: I can see how tired and low you are.
+  topics: []
+  style: empathy
+- utterance: It's not your fault that you feel this way.
+  topics: []
+  style: empathy
+- utterance: That sounds exhausting.
+  topics: []
+  style: empathy
+- utterance: So you've felt low since the birth and you want help to stay safe.
+  topics: []
+  style: summary
+- utterance: 'Let me check I have this right: there are some things we can do to make things safer at
+    home.'
+  topics: []
+  style: summary
+- utterance: To sum up, we have a few steps to agree together.
+  topics: []
+  style: summary
+- utterance: I'm asking so I can help you build a plan that works for you.
+  topics: []
+  style: explanation
+- utterance: I'll need to share some of this with the team looking after you.
+  topics: []
+  style: explanation
+- utterance: Low mood after birth is common and it can be treated.
+  topics: []
+  style: explanation
+- utterance: Does that make sense so far?
+  topics: []
+  style: check_understanding
+- utterance: Have you had depression before?
+  topics: []
+  style: off_case
+- utterance: Are you breastfeeding?
+  topics: []
+  style: off_case
+- utterance: Do you drink alcohol at the moment?
+  topics: []
+  style: off_case
+- utterance: How are things with your relationship?
+  topics: []
+  style: off_case
+- utterance: Do you see a health visitor regularly?
+  topics: []
+  style: near_miss
+- utterance: Does your mother help out with the baby?
+  topics: []
+  style: near_miss
+- utterance: Have you been taking any antidepressants?
+  topics: []
+  style: near_miss
+- utterance: Do you have any other children?
+  topics: []
+  style: near_miss
+- utterance: Who in your family has had mental health problems?
+  topics: []
+  style: near_miss
+- utterance: Do you ever feel like running away from it all?
+  topics: []
+  style: near_miss

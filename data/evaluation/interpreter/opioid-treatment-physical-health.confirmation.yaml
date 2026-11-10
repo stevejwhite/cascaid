@@ -1,0 +1,50 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: opioid-treatment-physical-health
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Jodie, what substitution medicine and daily dose are you receiving through the service?
+  expected:
+  - treatment
+  rapport: false
+- utterance: When did you last inject, and are any injection sites troublesome now?
+  expected:
+  - injecting
+  rapport: false
+- utterance: Where are things up to with blood-borne virus testing and hepatitis vaccination?
+  expected:
+  - bbv
+  rapport: false
+- utterance: Have you ever accidentally overdosed, and do you have naloxone available now?
+  expected:
+  - overdose
+  rapport: false
+- utterance: Have you recently had breathlessness, chest pain or a fever?
+  expected:
+  - chest
+  rapport: false
+- utterance: Is either leg newly swollen, painful or affected by an open sore?
+  expected:
+  - legs
+  rapport: false
+- utterance: Has there been an accidental overdose, and is anything available to reverse one if it happened?
+  expected:
+  - overdose
+  rapport: false
+- utterance: Have you ever intended an overdose to end your life?
+  expected:
+  - risk
+  rapport: false
+- utterance: what has made it difficult to get that looked at?
+  expected:
+  - barriers
+  rapport: false
+  previous:
+    interviewer: Have you had any dental symptoms?
+    character: A back tooth hurts when I chew and has done for three weeks. I haven't found a dentist
+      yet.
+- utterance: You'd like this appointment to help get your physical health needs addressed.
+  expected: []
+  rapport: false

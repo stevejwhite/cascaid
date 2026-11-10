@@ -1,0 +1,800 @@
+# Training phrasings for the topic classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: alcohol-memory-cognitive-assessment
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Can you tell me where you are at the moment, Gordon?
+  topics:
+  - orientation
+  style: open
+- utterance: What can you tell me about how you came to be here?
+  topics:
+  - orientation
+  style: open
+- utterance: Do you know why you were admitted?
+  topics:
+  - orientation
+  style: closed
+- utterance: Where do you reckon you are right now?
+  topics:
+  - orientation
+  style: colloquial
+- utterance: What brought you in to hospital, do you remember?
+  topics:
+  - orientation
+  style: colloquial
+- utterance: Do you know what sort of place this is?
+  topics:
+  - orientation
+  style: colloquial
+- utterance: Could you tell me your current location and reason for admission?
+  topics:
+  - orientation
+  style: clinical
+- utterance: I wondered if you knew where you were and what you're here for
+  topics:
+  - orientation
+  style: indirect
+- utterance: It must be confusing. Can you tell me where we are?
+  topics:
+  - orientation
+  style: empathy_then_question
+- utterance: um so where are we, do you know, and why are you here
+  topics:
+  - orientation
+  style: spoken
+- utterance: so this place, uh, what hospital is it
+  topics:
+  - orientation
+  style: spoken
+- utterance: Where are we, Gordon?
+  topics:
+  - orientation
+  style: brief
+- utterance: And do you know how you got here?
+  topics:
+  - orientation
+  style: follow_up
+  previous:
+    interviewer: Yesterday I went to work at the garage, then came back here. I'm sure that's what happened.
+    character: Yesterday I went to work at the garage, then came back here. I'm sure that's what happened.
+- utterance: You know exactly which hospital this is, don't you?
+  topics:
+  - orientation
+  style: leading
+- utterance: Can you tell me about today's date?
+  topics:
+  - time
+  style: open
+- utterance: What do you know about the time of year it is?
+  topics:
+  - time
+  style: open
+- utterance: Is it morning or afternoon?
+  topics:
+  - time
+  style: closed
+- utterance: Do you know what month it is?
+  topics:
+  - time
+  style: closed
+- utterance: What's the date today, do you think?
+  topics:
+  - time
+  style: colloquial
+- utterance: What season are we in, would you say?
+  topics:
+  - time
+  style: colloquial
+- utterance: Please state the day, date, month and year.
+  topics:
+  - time
+  style: clinical
+- utterance: I wondered if you had a sense of what day of the week it is
+  topics:
+  - time
+  style: indirect
+- utterance: Don't worry if it's hard. Do you know what day it is?
+  topics:
+  - time
+  style: empathy_then_question
+- utterance: um what day is it, or the month, or, you know, the year
+  topics:
+  - time
+  style: spoken
+- utterance: so do you, uh, do you know what time of year we're in
+  topics:
+  - time
+  style: spoken
+- utterance: Today's date, Gordon?
+  topics:
+  - time
+  style: brief
+- utterance: Do you know what the date is today?
+  topics:
+  - time
+  style: follow_up
+  previous:
+    interviewer: I think this is a hospital, but I'm not sure which one. I can't remember why I came in.
+    character: I think this is a hospital, but I'm not sure which one. I can't remember why I came in.
+- utterance: You're sure it's the middle of winter, aren't you?
+  topics:
+  - time
+  style: leading
+- utterance: 'I''m going to say three words, Gordon: harbour, ribbon, candle. Can you say them back to
+    me?'
+  topics:
+  - registration
+  style: open
+- utterance: 'Listen carefully, and then tell me the words I say: harbour, ribbon, candle.'
+  topics:
+  - registration
+  style: open
+- utterance: Can you repeat harbour, ribbon, candle after me?
+  topics:
+  - registration
+  style: closed
+- utterance: 'Would you say those three words back: harbour, ribbon, candle?'
+  topics:
+  - registration
+  style: closed
+- utterance: 'Say these back to me for a second: harbour, ribbon, candle.'
+  topics:
+  - registration
+  style: colloquial
+- utterance: Can you have a go at repeating harbour, ribbon and candle?
+  topics:
+  - registration
+  style: colloquial
+- utterance: Try saying harbour, ribbon, candle straight after me, would you?
+  topics:
+  - registration
+  style: colloquial
+- utterance: 'Please repeat the following three items: harbour, ribbon, candle.'
+  topics:
+  - registration
+  style: clinical
+- utterance: Take your time, there's no pressure. Can you repeat harbour, ribbon, candle?
+  topics:
+  - registration
+  style: empathy_then_question
+- utterance: um right so I'll say three words and you say them back, harbour, ribbon, candle
+  topics:
+  - registration
+  style: spoken
+- utterance: so can you, uh, repeat these, harbour ribbon candle
+  topics:
+  - registration
+  style: spoken
+- utterance: Repeat harbour, ribbon, candle.
+  topics:
+  - registration
+  style: brief
+- utterance: Now say them back to me, the three I just gave you.
+  topics:
+  - registration
+  style: follow_up
+  previous:
+    interviewer: I can follow you when you keep it short. If several things are said together, I lose
+      track.
+    character: I can follow you when you keep it short. If several things are said together, I lose track.
+- utterance: 'You''ll easily say those three words back, won''t you: harbour, ribbon, candle?'
+  topics:
+  - registration
+  style: leading
+- utterance: Which three words did I ask you to remember a little while ago?
+  topics:
+  - recall
+  style: open
+- utterance: What can you remember of the words I gave you earlier?
+  topics:
+  - recall
+  style: open
+- utterance: Can you remember the words we practised earlier?
+  topics:
+  - recall
+  style: closed
+- utterance: Do you still have those three words in your head?
+  topics:
+  - recall
+  style: closed
+- utterance: Can you bring back the three words from before?
+  topics:
+  - recall
+  style: colloquial
+- utterance: Do you remember what I asked you to remember?
+  topics:
+  - recall
+  style: colloquial
+- utterance: Please recall the three items I asked you to learn.
+  topics:
+  - recall
+  style: clinical
+- utterance: I wondered whether you could tell me those words again now, the ones from earlier
+  topics:
+  - recall
+  style: indirect
+- utterance: It's fine if they've gone. Can you remember the three words from earlier?
+  topics:
+  - recall
+  style: empathy_then_question
+- utterance: um what were the words, the three from before, can you remember them
+  topics:
+  - recall
+  style: spoken
+- utterance: so those words I said earlier, uh, can you say them again now
+  topics:
+  - recall
+  style: spoken
+- utterance: The three words from earlier?
+  topics:
+  - recall
+  style: brief
+- utterance: Can you remember the words I asked you to hold in mind?
+  topics:
+  - recall
+  style: follow_up
+  previous:
+    interviewer: Harbour, ribbon, candle.
+    character: Harbour, ribbon, candle.
+- utterance: You won't have forgotten those words from earlier, will you?
+  topics:
+  - recall
+  style: leading
+- utterance: How do you find following a conversation?
+  topics:
+  - attention
+  style: open
+- utterance: What happens when I ask you to do more than one thing?
+  topics:
+  - attention
+  style: open
+- utterance: Can you follow what I'm saying?
+  topics:
+  - attention
+  style: closed
+- utterance: Do you lose track if I say several things in a row?
+  topics:
+  - attention
+  style: closed
+- utterance: Is it easy to keep up with me?
+  topics:
+  - attention
+  style: colloquial
+- utterance: Do you find yourself drifting off while we talk?
+  topics:
+  - attention
+  style: colloquial
+- utterance: Can you stick with simple instructions?
+  topics:
+  - attention
+  style: colloquial
+- utterance: How is your concentration and sustained attention in conversation?
+  topics:
+  - attention
+  style: clinical
+- utterance: I wondered how well you manage to keep pace with what I'm saying
+  topics:
+  - attention
+  style: indirect
+- utterance: I'll go slowly. Do you find it hard to follow longer instructions?
+  topics:
+  - attention
+  style: empathy_then_question
+- utterance: um can you, like, keep up with me, or does it get muddled
+  topics:
+  - attention
+  style: spoken
+- utterance: so if I give you two or three things at once, uh, what happens
+  topics:
+  - attention
+  style: spoken
+- utterance: Following me okay?
+  topics:
+  - attention
+  style: brief
+- utterance: Do you manage to follow when it's spoken in short pieces?
+  topics:
+  - attention
+  style: follow_up
+  previous:
+    interviewer: Harbour, ribbon, candle.
+    character: Harbour, ribbon, candle.
+- utterance: You can easily follow a long list of instructions, can't you?
+  topics:
+  - attention
+  style: leading
+- utterance: What have you been up to over the past day or so?
+  topics:
+  - account
+  style: open
+- utterance: Did you go out anywhere yesterday?
+  topics:
+  - account
+  style: closed
+- utterance: Were you at work yesterday?
+  topics:
+  - account
+  style: closed
+- utterance: What did you get up to yesterday, then?
+  topics:
+  - account
+  style: colloquial
+- utterance: Where were you yesterday, do you remember?
+  topics:
+  - account
+  style: colloquial
+- utterance: Can you walk me through yesterday?
+  topics:
+  - account
+  style: colloquial
+- utterance: Please give an account of your activities in the last twenty-four hours.
+  topics:
+  - account
+  style: clinical
+- utterance: I wondered what you remember about yesterday
+  topics:
+  - account
+  style: indirect
+- utterance: I appreciate you answering all these. What did you do yesterday?
+  topics:
+  - account
+  style: empathy_then_question
+- utterance: um so yesterday, what did you do, where did you go
+  topics:
+  - account
+  style: spoken
+- utterance: so tell me about, uh, about the last day or two
+  topics:
+  - account
+  style: spoken
+- utterance: And yesterday, Gordon?
+  topics:
+  - account
+  style: brief
+- utterance: And what did you do after that?
+  topics:
+  - account
+  style: follow_up
+  previous:
+    interviewer: I think it's spring. I can't tell you the day, month or year.
+    character: I think it's spring. I can't tell you the day, month or year.
+- utterance: You've been on the ward the whole time, haven't you?
+  topics:
+  - account
+  style: leading
+- utterance: How would you go about making a meal for yourself?
+  topics:
+  - planning
+  style: open
+- utterance: What would you do if you wanted to cook some lunch?
+  topics:
+  - planning
+  style: open
+- utterance: Could you make a simple lunch?
+  topics:
+  - planning
+  style: closed
+- utterance: Would you know what to get out first?
+  topics:
+  - planning
+  style: closed
+- utterance: What would you need if you were rustling up something to eat?
+  topics:
+  - planning
+  style: colloquial
+- utterance: How would you set about cooking something?
+  topics:
+  - planning
+  style: colloquial
+- utterance: Talk me through making a bite to eat.
+  topics:
+  - planning
+  style: colloquial
+- utterance: Can you describe the steps to prepare a simple meal?
+  topics:
+  - planning
+  style: clinical
+- utterance: I wondered how you'd go about getting a meal ready
+  topics:
+  - planning
+  style: indirect
+- utterance: Take your time with this one. How would you prepare something to eat?
+  topics:
+  - planning
+  style: empathy_then_question
+- utterance: um if you were making lunch what would you do first, then next
+  topics:
+  - planning
+  style: spoken
+- utterance: so how would you, uh, how do you cook something at home
+  topics:
+  - planning
+  style: spoken
+- utterance: Making a meal, step by step?
+  topics:
+  - planning
+  style: brief
+- utterance: And what would you do after the first step?
+  topics:
+  - planning
+  style: follow_up
+  previous:
+    interviewer: Yesterday I went to work at the garage, then came back here. I'm sure that's what happened.
+    character: Yesterday I went to work at the garage, then came back here. I'm sure that's what happened.
+- utterance: You'd manage cooking a full meal without any trouble, wouldn't you?
+  topics:
+  - planning
+  style: leading
+- utterance: Can you tell me about your drinking?
+  topics:
+  - alcohol
+  style: open
+- utterance: What was a normal day's drinking before you came in?
+  topics:
+  - alcohol
+  style: open
+- utterance: Do you remember when you last had a drink?
+  topics:
+  - alcohol
+  style: closed
+- utterance: Did you drink spirits, beer or wine?
+  topics:
+  - alcohol
+  style: closed
+- utterance: How much were you putting away each day?
+  topics:
+  - alcohol
+  style: colloquial
+- utterance: When was your last drink, do you think?
+  topics:
+  - alcohol
+  style: colloquial
+- utterance: How long have you been drinking like that?
+  topics:
+  - alcohol
+  style: colloquial
+- utterance: What is your daily alcohol consumption and time of last intake?
+  topics:
+  - alcohol
+  style: clinical
+- utterance: I wondered how much alcohol you had been getting through
+  topics:
+  - alcohol
+  style: indirect
+- utterance: I'm not here to judge you. How much do you usually drink?
+  topics:
+  - alcohol
+  style: empathy_then_question
+- utterance: um so how much would you drink, like in a day, and for how long
+  topics:
+  - alcohol
+  style: spoken
+- utterance: and when did you, uh, have your last drink
+  topics:
+  - alcohol
+  style: spoken
+- utterance: How much drinking daily?
+  topics:
+  - alcohol
+  style: brief
+- utterance: How long has that been going on for?
+  topics:
+  - alcohol
+  style: follow_up
+  previous:
+    interviewer: I think this is a hospital, but I'm not sure which one. I can't remember why I came in.
+    character: I think this is a hospital, but I'm not sure which one. I can't remember why I came in.
+- utterance: You only drink socially, don't you?
+  topics:
+  - alcohol
+  style: leading
+- utterance: How have your thoughts been about your own safety?
+  topics:
+  - safety
+  style: open
+- utterance: What thoughts do you have about harming yourself or others?
+  topics:
+  - safety
+  style: open
+- utterance: Have you thought about ending your life?
+  topics:
+  - safety
+  style: closed
+- utterance: Do you want to hurt anyone?
+  topics:
+  - safety
+  style: closed
+- utterance: Have you felt like doing yourself in?
+  topics:
+  - safety
+  style: colloquial
+- utterance: Any thoughts of hurting anyone else?
+  topics:
+  - safety
+  style: colloquial
+- utterance: Have you had dark thoughts?
+  topics:
+  - safety
+  style: colloquial
+- utterance: Is there any suicidal ideation, self-harm or intent to harm others?
+  topics:
+  - safety
+  style: clinical
+- utterance: I wondered whether you've felt unsafe or had any thoughts of harm
+  topics:
+  - safety
+  style: indirect
+- utterance: Thanks for staying with me. Have you thought of harming yourself?
+  topics:
+  - safety
+  style: empathy_then_question
+- utterance: um have you, like, thought of hurting yourself or anyone, you know
+  topics:
+  - safety
+  style: spoken
+- utterance: so do you ever feel, uh, like you'd harm anyone
+  topics:
+  - safety
+  style: spoken
+- utterance: Any thoughts of self-harm?
+  topics:
+  - safety
+  style: brief
+- utterance: You're not thinking of harming yourself, are you?
+  topics:
+  - safety
+  style: leading
+- utterance: How does it feel when people point out you have forgotten something?
+  topics:
+  - insight
+  style: open
+- utterance: What do you notice about your own memory?
+  topics:
+  - insight
+  style: open
+- utterance: Do you notice when you're saying something twice?
+  topics:
+  - insight
+  style: closed
+- utterance: Do you feel awkward when someone points out you've repeated a question?
+  topics:
+  - insight
+  style: closed
+- utterance: Do you get fed up when people say you've said that before?
+  topics:
+  - insight
+  style: colloquial
+- utterance: Do you ever notice yourself going over the same thing twice?
+  topics:
+  - insight
+  style: colloquial
+- utterance: Do you feel awkward when you forget things?
+  topics:
+  - insight
+  style: colloquial
+- utterance: What is your level of insight into memory difficulties?
+  topics:
+  - insight
+  style: clinical
+- utterance: I wondered how you feel about the occasions you ask something twice
+  topics:
+  - insight
+  style: indirect
+- utterance: It can be upsetting when others notice that. How does it feel for you?
+  topics:
+  - insight
+  style: empathy_then_question
+- utterance: um do you, like, notice when you're going over the same thing again
+  topics:
+  - insight
+  style: spoken
+- utterance: so how does it feel, uh, when people say you've forgotten
+  topics:
+  - insight
+  style: spoken
+- utterance: Aware of forgetting things?
+  topics:
+  - insight
+  style: brief
+- utterance: Do you notice when that happens?
+  topics:
+  - insight
+  style: follow_up
+  previous:
+    interviewer: I can't bring them back now. I'm not sure what you asked me to remember.
+    character: I can't bring them back now. I'm not sure what you asked me to remember.
+- utterance: You've never had a problem with your memory, have you?
+  topics:
+  - insight
+  style: leading
+- utterance: What worries do you have about what happens next?
+  topics:
+  - fear
+  style: open
+- utterance: How do you feel about the idea of needing support?
+  topics:
+  - fear
+  style: open
+- utterance: Are you worried about going home?
+  topics:
+  - fear
+  style: closed
+- utterance: Are you afraid of losing your independence?
+  topics:
+  - fear
+  style: closed
+- utterance: Are you frightened about what's going to happen to you?
+  topics:
+  - fear
+  style: colloquial
+- utterance: Do you worry about whether you'll cope on your own?
+  topics:
+  - fear
+  style: colloquial
+- utterance: Is it hard to admit you might need a hand?
+  topics:
+  - fear
+  style: colloquial
+- utterance: What concerns do you have about discharge and future care needs?
+  topics:
+  - fear
+  style: clinical
+- utterance: I wondered what your hopes and worries are about returning home
+  topics:
+  - fear
+  style: indirect
+- utterance: It's natural to feel unsettled. What are your worries about the future?
+  topics:
+  - fear
+  style: empathy_then_question
+- utterance: um are you worried about, like, going home and managing
+  topics:
+  - fear
+  style: spoken
+- utterance: so how do you feel about, uh, maybe needing some help
+  topics:
+  - fear
+  style: spoken
+- utterance: Worries about home?
+  topics:
+  - fear
+  style: brief
+- utterance: Is there anything about the future that frightens you?
+  topics:
+  - fear
+  style: follow_up
+  previous:
+    interviewer: I can't bring them back now. I'm not sure what you asked me to remember.
+    character: I can't bring them back now. I'm not sure what you asked me to remember.
+- utterance: You're perfectly happy to accept help, aren't you?
+  topics:
+  - fear
+  style: leading
+- utterance: Do you know where you are, and what the date is today?
+  topics:
+  - orientation
+  - time
+  style: stacked
+- utterance: What was your drinking like, and what do you remember about yesterday?
+  topics:
+  - alcohol
+  - account
+  style: stacked
+- utterance: Can you say harbour, ribbon, candle back to me, and how do you find keeping up with what
+    I'm saying?
+  topics:
+  - registration
+  - attention
+  style: stacked
+- utterance: Have you thought of harming yourself, and are you worried about going home?
+  topics:
+  - safety
+  - fear
+  style: stacked
+- utterance: Hello Gordon, how are you this morning?
+  topics: []
+  style: greeting
+- utterance: Good afternoon, Gordon, I hope you're doing all right.
+  topics: []
+  style: greeting
+- utterance: My name's Dr Singh, I'm one of the doctors on the ward.
+  topics: []
+  style: introduction
+- utterance: I'm a psychiatrist, Gordon, and I've come to see how you're getting on.
+  topics: []
+  style: introduction
+- utterance: Is it all right if we have a chat for a few minutes, Gordon?
+  topics: []
+  style: conversational
+- utterance: What would you like to begin with?
+  topics: []
+  style: conversational
+- utterance: Before we start, have you any questions for me?
+  topics: []
+  style: conversational
+- utterance: Is it okay if I call you Gordon?
+  topics: []
+  style: conversational
+- utterance: Shall I sit here, or would you prefer me further away?
+  topics: []
+  style: conversational
+- utterance: Do you need a drink of water before we carry on?
+  topics: []
+  style: conversational
+- utterance: I'd like to move on to something different now.
+  topics: []
+  style: transition
+- utterance: Let's turn to some different questions.
+  topics: []
+  style: transition
+- utterance: We're nearly out of time, Gordon.
+  topics: []
+  style: closing
+- utterance: Thanks for working with me today, Gordon.
+  topics: []
+  style: closing
+- utterance: It sounds like these questions are tiring for you.
+  topics: []
+  style: empathy
+- utterance: That must be unsettling not to be sure.
+  topics: []
+  style: empathy
+- utterance: I can see how awkward this must feel.
+  topics: []
+  style: empathy
+- utterance: Nobody likes being asked lots of questions in hospital.
+  topics: []
+  style: empathy
+- utterance: So you're unsure about some things, but you follow me when I keep it short.
+  topics: []
+  style: summary
+- utterance: 'Let me check I have this right: some questions are harder than others for you.'
+  topics: []
+  style: summary
+- utterance: I'm asking these questions to understand how your memory and thinking are working.
+  topics: []
+  style: explanation
+- utterance: Many things can affect memory when someone is unwell in hospital.
+  topics: []
+  style: explanation
+- utterance: This isn't a pass or fail test, I just want to see how you're doing.
+  topics: []
+  style: explanation
+- utterance: Does that make sense so far?
+  topics: []
+  style: check_understanding
+- utterance: Would you like me to go over that again?
+  topics: []
+  style: check_understanding
+- utterance: Have you had any falls or injuries to your head recently?
+  topics: []
+  style: off_case
+- utterance: Do you have trouble with walking or balance?
+  topics: []
+  style: off_case
+- utterance: Are you getting enough to eat and drink on the ward?
+  topics: []
+  style: off_case
+- utterance: Have you been seeing or hearing anything that's not there?
+  topics: []
+  style: off_case
+- utterance: What medicines do you take at home?
+  topics: []
+  style: off_case
+- utterance: Do you want me to spell a word backwards for you?
+  topics: []
+  style: near_miss
+- utterance: Who looks after your garden at home?
+  topics: []
+  style: near_miss
+- utterance: Where's the nearest harbour to where you live?
+  topics: []
+  style: near_miss
+- utterance: Do you have a family member I could ring?
+  topics: []
+  style: near_miss
+- utterance: How many days have the nurses been checking on you?
+  topics: []
+  style: near_miss

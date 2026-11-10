@@ -1,0 +1,54 @@
+# Training lines for the tone classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: dbt-referral-discussion
+case_version: 0.1.0
+status: draft
+items:
+  - {utterance: "Have you ever needed stitches after cutting?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "When did you last feel like you wanted to die?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "What happens in your head when a relationship goes wrong?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "How many sessions of counselling did you have?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "um what time of day are things usually worst", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "Sorry to ask so many questions, but is it all right if I ask about the self-harm?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: polite_question}
+  - {utterance: "If you don't mind me asking, how did the counselling end?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: polite_question}
+  - {utterance: "Hello Leah, I'm the trainee doctor seeing you today.", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: introduction}
+  - {utterance: "Hi there, come on in and make yourself comfortable.", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: greeting}
+  - {utterance: "In DBT you'd usually have one-to-one sessions alongside a skills group.", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: explanation}
+  - {utterance: "okay that's useful to know", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: acknowledgement}
+  - {utterance: "Right. And how long ago was that?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: acknowledgement}
+  - {utterance: "That must have been hard.", empathy: 1, empathy_words: "That must have been hard.", confrontational: false, challenge_words: "", style: brief_empathy}
+  - {utterance: "I'm sorry it's been like this.", empathy: 1, empathy_words: "I'm sorry it's been like this.", confrontational: false, challenge_words: "", style: brief_empathy}
+  - {utterance: "That sounds awful. Who was with you afterwards?", empathy: 1, empathy_words: "That sounds awful.", confrontational: false, challenge_words: "", style: brief_empathy_question}
+  - {utterance: "I can imagine that's frustrating. What happened next?", empathy: 1, empathy_words: "I can imagine that's frustrating.", confrontational: false, challenge_words: "", style: brief_empathy_question}
+  - utterance: "Having to start your whole story again with someone new sounds exhausting, so it makes sense you'd be cautious now."
+    empathy: 2
+    empathy_words: "Having to start your whole story again with someone new sounds exhausting, so it makes sense you'd be cautious now."
+    confrontational: false
+    challenge_words: ""
+    style: specific_empathy
+    previous:
+      interviewer: "Have you had counselling before?"
+      character: "I had six counselling appointments last year and stopped after the therapist changed; I felt I had to begin the whole story again."
+  - utterance: "If you thought DBT meant someone telling you how to behave, no wonder you want to know exactly what you're agreeing to."
+    empathy: 2
+    empathy_words: "If you thought DBT meant someone telling you how to behave, no wonder you want to know exactly what you're agreeing to."
+    confrontational: false
+    challenge_words: ""
+    style: specific_empathy
+    previous:
+      interviewer: "What do you already know about DBT?"
+      character: "I only know the name DBT; I thought it might be a class where someone tells me how to behave."
+  - {utterance: "You want to understand what you're signing up for before committing, and that's a really sensible thing to want.", empathy: 2, empathy_words: "You want to understand what you're signing up for before committing, and that's a really sensible thing to want.", confrontational: false, challenge_words: "", style: specific_empathy}
+  - utterance: "It sounds like you feel ashamed about cancelling on your sister, and that relationship matters a lot to you. What would it mean to keep those plans?"
+    empathy: 2
+    empathy_words: "It sounds like you feel ashamed about cancelling on your sister, and that relationship matters a lot to you."
+    confrontational: false
+    challenge_words: ""
+    style: specific_empathy_question
+    previous:
+      interviewer: "What are you hoping will change with therapy?"
+      character: "I'd like a disagreement not to take over my whole evening; I feel ashamed that I keep cancelling plans with my younger sister afterwards."
+  - {utterance: "You need to commit fully to DBT, or it's honestly not worth starting.", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "You need to commit fully to DBT, or it's honestly not worth starting.", style: confront_statement}
+  - {utterance: "You've stopped therapy before when it got hard, haven't you?", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "You've stopped therapy before when it got hard, haven't you?", style: confront_tag}
+  - {utterance: "The group is fine, everyone feels like that at first, you'll get over it.", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "you'll get over it", style: dismissive}
+  - {utterance: "well lots of people self-harm, it's not really the main thing today", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "it's not really the main thing today", style: dismissive}

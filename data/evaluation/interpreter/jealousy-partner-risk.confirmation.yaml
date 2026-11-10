@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: jealousy-partner-risk
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: Darren, how certain are you that your partner is unfaithful, and could there be another explanation?
+  expected:
+  - belief
+  rapport: false
+- utterance: What have you actually noticed that makes you think she is seeing somebody else?
+  expected:
+  - evidence
+  rapport: false
+- utterance: What have you said or sent to your partner that she might have found threatening?
+  expected:
+  - threat
+  rapport: false
+- utterance: Before this assessment, have you ever physically hurt her?
+  expected:
+  - past-violence
+  rapport: false
+- utterance: What do you intend to do about seeing your partner when you leave here?
+  expected:
+  - intent
+  rapport: false
+- utterance: If you became angry, is there something you could reach for that might seriously injure her?
+  expected:
+  - weapons
+  rapport: false
+- utterance: How certain are you of the conclusion that she is unfaithful?
+  expected:
+  - belief
+  rapport: false
+- utterance: Which things you observed led you to that conclusion about her?
+  expected:
+  - evidence
+  rapport: false
+- utterance: what does the prospect of her leaving bring up underneath the anger?
+  expected:
+  - loss
+  rapport: false
+  previous:
+    interviewer: What did you say to her yesterday?
+    character: I said she'd regret it if she left.
+- utterance: Have you ever had a head injury that needed hospital treatment?
+  expected: []
+  rapport: false

@@ -1,0 +1,13 @@
+# Cloudflare Tunnel for the production-online profile. See docs/PRODUCTION-RUNBOOK.md.
+# Copy outside the checkout (e.g. ~/.cloudflared/cascaid.yml) and replace the placeholders.
+# Configure the Cloudflare Access application for the hostname BEFORE routing DNS to it.
+tunnel: 00000000-0000-0000-0000-000000000000
+credentials-file: /Users/cascaid/.cloudflared/00000000-0000-0000-0000-000000000000.json
+# Status/metrics listener stays on loopback.
+metrics: 127.0.0.1:20241
+ingress:
+  # The production web server only: never the API (8105), model or speech ports.
+  - hostname: cascaid.example.org
+    service: http://127.0.0.1:3105
+  # Anything else is refused at the tunnel.
+  - service: http_status:404

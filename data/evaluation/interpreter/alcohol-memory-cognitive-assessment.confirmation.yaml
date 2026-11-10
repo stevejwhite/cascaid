@@ -1,0 +1,49 @@
+# Confirmation set (held out; used once per candidate). Written 2026-10-18 by GPT-6
+# (Codex; exact build version not exposed) from fact contents only, blind to question
+# labels, training lines and other evaluation sets. Not clinically validated.
+case_id: alcohol-memory-cognitive-assessment
+case_version: 0.1.0
+split: confirmation
+items:
+- utterance: right gordon, can you tell me where you believe you are at the moment
+  expected:
+  - orientation
+  rapport: false
+- utterance: What can you tell me about the date today, even if it's only part of it?
+  expected:
+  - time
+  rapport: false
+- utterance: I'll say harbour, ribbon, candle; your turn to say all three immediately after me.
+  expected:
+  - registration
+  rapport: false
+- utterance: How easy is it to keep up if someone gives you several bits of information at once?
+  expected:
+  - attention
+  rapport: false
+- utterance: Take me through what you remember doing yesterday, from your point of view.
+  expected:
+  - account
+  rapport: false
+- utterance: Before this admission, what did a usual day's drinking look like?
+  expected:
+  - alcohol
+  rapport: false
+- utterance: Without worrying about where we are, can you place the day, month or year?
+  expected:
+  - time
+  rapport: false
+- utterance: Setting the date aside, what do you know about the place you're in?
+  expected:
+  - orientation
+  rapport: false
+- utterance: and can you give me those again now?
+  expected:
+  - recall
+  rapport: false
+  previous:
+    interviewer: The words to keep for later are harbour, ribbon, candle.
+    character: Harbour, ribbon, candle.
+- utterance: Being asked lots of questions when you don't know why would feel frustrating.
+  expected: []
+  rapport: true

@@ -1,0 +1,57 @@
+# Author-labelled interpreter cases. Held-out test split: written before interpreter
+# tuning (2026-10-07) and not used to tune prompts or labels.
+case_id: alcohol-history
+case_version: 0.4.0
+split: test
+items:
+  - utterance: Hi Chris, thanks for coming in today. I'm one of the doctors.
+    expected: []
+    rapport: false
+  - utterance: How much do you drink on a typical day?
+    expected: [quantity]
+    rapport: false
+  - utterance: What do you usually drink?
+    expected: [quantity]
+    rapport: false
+  - utterance: When do you have your first drink of the day?
+    expected: [morning-drinking]
+    rapport: false
+  - utterance: What happens if you go without a drink?
+    expected: [withdrawal]
+    rapport: false
+  - utterance: Have you ever had a fit or seizure?
+    expected: [withdrawal]
+    rapport: false
+  - utterance: Do you find you need more alcohol now to get the same effect?
+    expected: [tolerance]
+    rapport: false
+  - utterance: How long have you been drinking this heavily?
+    expected: [duration]
+    rapport: false
+  - utterance: Have you ever tried to cut down?
+    expected: [loss-of-control]
+    rapport: false
+  - utterance: Has drinking caused any problems at work or with the law?
+    expected: [consequences]
+    rapport: false
+  - utterance: How has your mood been?
+    expected: [mood]
+    rapport: false
+  - utterance: Have you ever had thoughts of harming yourself?
+    expected: [risk]
+    rapport: false
+  - utterance: Do you use any other drugs, or smoke?
+    expected: [other-substances]
+    rapport: false
+  - utterance: How's your appetite and physical health?
+    expected: [physical-health]
+    rapport: false
+  - utterance: I appreciate you being so open with me; that can't be easy.
+    expected: []
+    rapport: true
+  - utterance: What would make you want to change your drinking?
+    expected: [motivation]
+    rapport: false
+  - utterance: Which football team do you support?
+    expected: []
+    rapport: false

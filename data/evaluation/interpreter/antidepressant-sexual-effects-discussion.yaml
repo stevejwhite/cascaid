@@ -1,0 +1,67 @@
+# Author-labelled interpreter cases for a catalogue station. Held-out test split:
+# written 2026-10-15 by an isolated evaluation author (Claude subagent) who saw fact
+# contents but not the question labels; committed before any training lines existed.
+case_id: antidepressant-sexual-effects-discussion
+case_version: 0.1.0
+split: test
+items:
+  - utterance: "Hi Daniel, nice to see you again. Come and have a seat."
+    expected: []
+    rapport: false
+  - utterance: "Which antidepressant are you on at the moment, and what dose?"
+    expected: [prescription]
+    rapport: false
+  - utterance: "In what ways do you feel the tablets have helped you?"
+    expected: [benefit]
+    rapport: false
+  - utterance: "You mentioned you don't want to keep taking it. What side effects have you been getting?"
+    expected: [sexual]
+    rapport: false
+  - utterance: "How has all this affected things with your partner?"
+    expected: [relationship]
+    rapport: false
+  - utterance: "Is this the first time you've been depressed, or has it happened before?"
+    expected: [history]
+    rapport: false
+  - utterance: "Have you ever forgotten doses, and if so did you notice anything when you did?"
+    expected: [withdrawal]
+    rapport: false
+  - utterance: "What would you ideally like to come out of today's appointment?"
+    expected: [preferences]
+    rapport: false
+  - utterance: "Have you had any thoughts of harming yourself or ending your life?"
+    expected: [risk]
+    rapport: false
+  - utterance: "any other medical problems, or other tablets you take"
+    expected: [physical]
+    rapport: false
+  - utterance: "When could you come back to see me, and is there anyone who could keep an eye on how you're doing?"
+    expected: [review]
+    rapport: false
+  - utterance: "Lots of people find this hard to bring up, and I'm really glad you felt able to mention it."
+    expected: []
+    rapport: true
+  - utterance: "It must be frustrating to finally feel better and then have something like this get in the way."
+    expected: []
+    rapport: true
+  - previous:
+      interviewer: "When did the problems in the bedroom start?"
+      character: "Since the dose went up, my desire has dropped."
+    utterance: "And how is your partner taking it?"
+    expected: [relationship]
+    rapport: false
+  - previous:
+      interviewer: "Have you been depressed before this time?"
+      character: "Yes, this was my second episode. The first was four years ago."
+    utterance: "And have you ever had times where you felt the opposite, really high or wired?"
+    expected: [history]
+    rapport: false
+  - utterance: "Have you been getting any headaches or stomach upset on it?"
+    expected: []
+    rapport: false
+  - utterance: "Do you have any family history of heart problems?"
+    expected: []
+    rapport: false
+  - utterance: "Right, so your mood's much better but the side effects are a real problem, and you want us to decide together."
+    expected: []
+    rapport: false

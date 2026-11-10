@@ -1,0 +1,227 @@
+# Boundary training lines (Prompt H) for the topic interpreter: neighbouring facts from
+# data/training/boundaries/pairs.yaml. Drafted by Claude (Sonnet, subagent) on 2026-10-20;
+# NOT YET REVIEWED. Not evaluation data.
+case_id: checking-rituals-ocd-history
+case_version: 0.1.0
+status: draft
+items:
+  # insight vs resistance
+  - utterance: Do you think the amount of checking you do is reasonable?
+    topics: [insight]
+    style: boundary
+    pair: [insight, resistance]
+  - utterance: how likely do you actually think it is that something bad would happen
+    topics: [insight]
+    style: boundary_spoken
+    pair: [insight, resistance]
+  - utterance: Part of you must know it's too much. Do you feel responsible if you don't do it?
+    topics: [insight]
+    style: boundary_colloquial
+    pair: [insight, resistance]
+  - utterance: When you step back and think about it, does it make sense to you?
+    topics: [insight]
+    style: boundary
+    pair: [insight, resistance]
+  - utterance: And does it seem to you like a real danger, or more of an overactive worry?
+    topics: [insight]
+    style: boundary_follow_up
+    pair: [insight, resistance]
+    previous:
+      interviewer: You said you know it sounds excessive. Can you say more?
+      character: I know the amount I do doesn't make sense. I still feel responsible if I don't do it and something goes wrong.
+  - utterance: What happens to your anxiety if you try to walk away without checking?
+    topics: [resistance]
+    style: boundary
+    pair: [insight, resistance]
+  - utterance: so if you hold off from doing it how does that feel
+    topics: [resistance]
+    style: boundary_spoken
+    pair: [insight, resistance]
+  - utterance: Does it calm you down at all once you've done it?
+    topics: [resistance]
+    style: boundary_colloquial
+    pair: [insight, resistance]
+  - utterance: Have you ever tried to stop yourself, and how did it go?
+    topics: [resistance]
+    style: boundary
+    pair: [insight, resistance]
+  - utterance: And how long does the relief last after you've checked?
+    topics: [resistance]
+    style: boundary_follow_up
+    pair: [insight, resistance]
+    previous:
+      interviewer: Do you ever try to leave things unchecked?
+      character: If I try to leave without repeating it, anxiety rises sharply. Checking eases it briefly, then the doubt returns.
+  - utterance: Do you think you might need treatment for this?
+    topics: []
+    style: near_miss
+    pair: [insight, resistance]
+  - utterance: Do you have rules about the number of times you must check?
+    topics: []
+    style: near_miss
+    pair: [insight, resistance]
+  # family vs resistance
+  - utterance: Is anyone else at home pulled into the checking with you?
+    topics: [family]
+    style: boundary
+    pair: [family, resistance]
+  - utterance: do you ask your parents to check things for you
+    topics: [family]
+    style: boundary_spoken
+    pair: [family, resistance]
+  - utterance: Do you and your family end up arguing over it?
+    topics: [family]
+    style: boundary_colloquial
+    pair: [family, resistance]
+  - utterance: Do you get others to reassure you that things are locked or off?
+    topics: [family]
+    style: boundary
+    pair: [family, resistance]
+  - utterance: And how does he react when you ask him again?
+    topics: [family]
+    style: boundary_follow_up
+    pair: [family, resistance]
+    previous:
+      interviewer: Who lives with you, and are they involved in this?
+      character: My dad checks things for me when I ask. We argue because he gets frustrated and I keep asking again.
+  - utterance: What goes through you when you try to hold back from the routine?
+    topics: [resistance]
+    style: boundary
+    pair: [family, resistance]
+  - utterance: um if someone stopped you from checking what would that be like for you
+    topics: [resistance]
+    style: boundary_spoken
+    pair: [family, resistance]
+  - utterance: Is it hard to put up with the urge when you don't give in to it?
+    topics: [resistance]
+    style: boundary_colloquial
+    pair: [family, resistance]
+  - utterance: Does the anxiety come down after you've done the checking?
+    topics: [resistance]
+    style: boundary
+    pair: [family, resistance]
+  - utterance: And what happens when you stand and wait it out?
+    topics: [resistance]
+    style: boundary_follow_up
+    pair: [family, resistance]
+    previous:
+      interviewer: Does anyone try to stop you checking?
+      character: My dad checks things for me when I ask. We argue because he gets frustrated and I keep asking again.
+  - utterance: Is there a history of anxiety or similar problems in your family?
+    topics: []
+    style: near_miss
+    pair: [family, resistance]
+  - utterance: Do you live alone or with other people?
+    topics: []
+    style: near_miss
+    pair: [family, resistance]
+  # function vs shame
+  - utterance: How has this affected your job?
+    topics: [function]
+    style: boundary
+    pair: [function, shame]
+  - utterance: do you still manage to get out and about or see people
+    topics: [function]
+    style: boundary_spoken
+    pair: [function, shame]
+  - utterance: Has the checking made you give up things you used to do?
+    topics: [function]
+    style: boundary_colloquial
+    pair: [function, shame]
+  - utterance: When did you last do any work, and why did you leave it?
+    topics: [function]
+    style: boundary
+    pair: [function, shame]
+  - utterance: Was it lateness that caused you to stop?
+    topics: [function]
+    style: boundary_follow_up
+    pair: [function, shame]
+    previous:
+      interviewer: What happened with work?
+      character: I stopped my warehouse job two months ago because I was repeatedly late. I rarely arrange anything outside now.
+  - utterance: What's the hardest part of this for you to say out loud?
+    topics: [shame]
+    style: boundary
+    pair: [function, shame]
+  - utterance: have you told your friends about what's going on
+    topics: [shame]
+    style: boundary_spoken
+    pair: [function, shame]
+  - utterance: Are you embarrassed about it, so you've kept it quiet from people?
+    topics: [shame]
+    style: boundary_colloquial
+    pair: [function, shame]
+  - utterance: Do you worry about what other people would think if they saw how bad it is?
+    topics: [shame]
+    style: boundary
+    pair: [function, shame]
+  - utterance: And what have you said to them about why you left?
+    topics: [shame]
+    style: boundary_follow_up
+    pair: [function, shame]
+    previous:
+      interviewer: Do your friends know what you've been going through?
+      character: I stopped my warehouse job two months ago because I was repeatedly late. I rarely arrange anything outside now.
+  - utterance: How are you managing for money without work?
+    topics: []
+    style: near_miss
+    pair: [function, shame]
+  - utterance: Do you feel lonely or cut off from people?
+    topics: []
+    style: near_miss
+    pair: [function, shame]
+  # insight vs obsessions
+  - utterance: What goes through your mind that makes you feel you have to go back?
+    topics: [obsessions]
+    style: boundary
+    pair: [insight, obsessions]
+  - utterance: do you get thoughts you don't want about someone getting hurt
+    topics: [obsessions]
+    style: boundary_spoken
+    pair: [insight, obsessions]
+  - utterance: Do you get worries popping into your head that you didn't ask for?
+    topics: [obsessions]
+    style: boundary_colloquial
+    pair: [insight, obsessions]
+  - utterance: Do these thoughts seem to come from you, or from somewhere outside?
+    topics: [obsessions]
+    style: boundary
+    pair: [insight, obsessions]
+  - utterance: And what is it that you're afraid will happen?
+    topics: [obsessions]
+    style: boundary_follow_up
+    pair: [insight, obsessions]
+    previous:
+      interviewer: Is there a thought that comes before you start checking?
+      character: I get repeated unwanted thoughts that I have left something unsafe and someone will be hurt. They feel like my own thoughts, not messages from outside.
+  - utterance: Do you accept that the checking is more than anyone else would do?
+    topics: [insight]
+    style: boundary
+    pair: [insight, obsessions]
+  - utterance: so do you actually believe the house will burn down if you don't check
+    topics: [insight]
+    style: boundary_spoken
+    pair: [insight, obsessions]
+  - utterance: Do you think you're being overcautious, or is the danger genuine?
+    topics: [insight]
+    style: boundary_colloquial
+    pair: [insight, obsessions]
+  - utterance: Would you blame yourself if something went wrong because you hadn't checked?
+    topics: [insight]
+    style: boundary
+    pair: [insight, obsessions]
+  - utterance: And do you see it as a problem yourself?
+    topics: [insight]
+    style: boundary_follow_up
+    pair: [insight, obsessions]
+    previous:
+      interviewer: Does the fear seem silly to you at all?
+      character: I know the amount I do doesn't make sense. I still feel responsible if I don't do it and something goes wrong.
+  - utterance: Do you ever have thoughts of harming someone on purpose?
+    topics: []
+    style: near_miss
+    pair: [insight, obsessions]
+  - utterance: Do you hear voices telling you to check things?
+    topics: []
+    style: near_miss
+    pair: [insight, obsessions]

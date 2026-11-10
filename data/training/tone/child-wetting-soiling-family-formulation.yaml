@@ -1,0 +1,54 @@
+# Training lines for the tone classifier. Drafted by Claude (Opus 5.5, subagent) on
+# 2026-10-15 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: child-wetting-soiling-family-formulation
+case_version: 0.1.0
+status: draft
+items:
+  - {utterance: "Has he ever said anyone at either home has hurt him?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "When he soils at school, what happens next?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "Does he get upset before he goes to his other home?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "What did you use to do when he wet the bed?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "um has he been dry at all over the last few weeks", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: plain_question}
+  - {utterance: "Sorry if this is awkward, but could you tell me how often he soils?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: polite_question}
+  - {utterance: "Would you mind me asking a little about how you and his mother are getting along?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: polite_question}
+  - {utterance: "Good afternoon, Mark, I'm one of the trainees in the clinic.", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: introduction}
+  - {utterance: "Hello, thanks for waiting, shall we sit down?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: greeting}
+  - {utterance: "So far you've told me about the accidents and the change at home; is that fair?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: summary}
+  - {utterance: "Okay. And when did that start?", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: acknowledgement}
+  - {utterance: "right thanks for that", empathy: 0, empathy_words: "", confrontational: false, challenge_words: "", style: acknowledgement}
+  - {utterance: "That sounds really hard.", empathy: 1, empathy_words: "That sounds really hard.", confrontational: false, challenge_words: "", style: brief_empathy}
+  - {utterance: "I'm sorry you're going through this.", empathy: 1, empathy_words: "I'm sorry you're going through this.", confrontational: false, challenge_words: "", style: brief_empathy}
+  - {utterance: "That must be difficult. How is he sleeping?", empathy: 1, empathy_words: "That must be difficult.", confrontational: false, challenge_words: "", style: brief_empathy_question}
+  - {utterance: "I can see this is worrying. What does he say about it?", empathy: 1, empathy_words: "I can see this is worrying.", confrontational: false, challenge_words: "", style: brief_empathy_question}
+  - utterance: "It took courage to change how you respond once you realised scolding might make things harder for him."
+    empathy: 2
+    empathy_words: "It took courage to change how you respond once you realised scolding might make things harder for him."
+    confrontational: false
+    challenge_words: ""
+    style: specific_empathy
+    previous:
+      interviewer: "How do you respond when he has an accident?"
+      character: "I initially scolded him and removed screen time. I've stopped doing that since the GP explained it might make things harder."
+  - utterance: "You're carrying a lot of guilt about the separation, and it's clear how much you want to put this right for him."
+    empathy: 2
+    empathy_words: "You're carrying a lot of guilt about the separation, and it's clear how much you want to put this right for him."
+    confrontational: false
+    challenge_words: ""
+    style: specific_empathy
+    previous:
+      interviewer: "How are you feeling about your part in all this?"
+      character: "I think our separation has caused all of this and feel guilty. I know that may be too simple an explanation."
+  - {utterance: "You've come here wanting to understand how to help your son, and that care for him really comes through.", empathy: 2, empathy_words: "You've come here wanting to understand how to help your son, and that care for him really comes through.", confrontational: false, challenge_words: "", style: specific_empathy}
+  - utterance: "It sounds like you feel ashamed that the arguments have put him in the middle, and it's honest of you to say so. What would help the two of you work together?"
+    empathy: 2
+    empathy_words: "It sounds like you feel ashamed that the arguments have put him in the middle, and it's honest of you to say so."
+    confrontational: false
+    challenge_words: ""
+    style: specific_empathy_question
+    previous:
+      interviewer: "What happens when you and his mother discuss the accidents?"
+      character: "I've been using the accidents to argue that he's better off at my house. I'm ashamed because that puts him in the middle."
+  - {utterance: "You really shouldn't have taken his screen time away; that just makes children more anxious.", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "You really shouldn't have taken his screen time away", style: confront_statement}
+  - {utterance: "Why on earth would you use his accidents in an argument with his mother?", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "Why on earth would you use his accidents in an argument with his mother?", style: confront_why}
+  - {utterance: "Lots of kids wet the bed, it's nothing to worry about.", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "it's nothing to worry about", style: dismissive}
+  - {utterance: "um look he'll grow out of it, let's just get on with the plan", empathy: 0, empathy_words: "", confrontational: true, challenge_words: "he'll grow out of it, let's just get on with the plan", style: dismissive}

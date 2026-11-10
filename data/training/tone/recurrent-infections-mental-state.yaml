@@ -1,0 +1,157 @@
+# Training lines for the tone classifier. Drafted by Claude (Sonnet, subagent) on
+# 2026-10-16 for a catalogue station; NOT YET REVIEWED. Not evaluation data.
+case_id: recurrent-infections-mental-state
+case_version: 0.1.0
+status: draft
+items:
+- utterance: Have you ever hurt yourself on purpose?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Have you had any thoughts of ending your life?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: um have you ever touched or interfered with the wounds yourself
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: Have you ever had counselling or seen a mental health professional before?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: plain_question
+- utterance: I'm sorry to ask, but would you mind telling me what has been happening with your health?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: If you're comfortable, could you tell me a bit about your day-to-day life?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: polite_question
+- utterance: Hello Paula.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: greeting
+- utterance: Hi Paula, I'm one of the liaison psychiatrists, and the medical team asked me to come and
+    meet you.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: introduction
+- utterance: 'Can I just check I''ve understood: you would like to find out why you keep coming back in?'
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: check_understanding
+- utterance: Okay, thank you.
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: Right. And is that every time?
+  empathy: 0
+  empathy_words: ''
+  confrontational: false
+  challenge_words: ''
+  style: acknowledgement
+- utterance: I'm sorry you're going through this.
+  empathy: 1
+  empathy_words: I'm sorry you're going through this.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That sounds really hard.
+  empathy: 1
+  empathy_words: That sounds really hard.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy
+- utterance: That must be frustrating. How long has this been going on?
+  empathy: 1
+  empathy_words: That must be frustrating.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I'm sorry to hear that. Who has been looking after you on the ward?
+  empathy: 1
+  empathy_words: I'm sorry to hear that.
+  confrontational: false
+  challenge_words: ''
+  style: brief_empathy_question
+- utterance: I can see why that felt like an accusation, and you are right that a suspicion is not proof.
+  empathy: 2
+  empathy_words: I can see why that felt like an accusation, and you are right that a suspicion is not
+    proof.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: The team have wondered if there might be a link to your own behaviour. How does that
+      sit with you?
+    character: Hearing that suspicion makes me feel accused. I can discuss what the team has noticed,
+      but I don't want an assumption treated as proof.
+- utterance: It must be very frightening to worry that the people looking after you might stop caring.
+  empathy: 2
+  empathy_words: It must be very frightening to worry that the people looking after you might stop caring.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+  previous:
+    interviewer: Is there anything you haven't felt able to say?
+    character: I'm frightened they'll stop caring for me if they think it's my fault. I haven't said how
+      much that worries me.
+- utterance: Being in and out of hospital with no clear answer must be exhausting and worrying for you.
+  empathy: 2
+  empathy_words: Being in and out of hospital with no clear answer must be exhausting and worrying for
+    you.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy
+- utterance: Not having an explanation after so many admissions must be wearing you down. Can you tell
+    me what has been hardest?
+  empathy: 2
+  empathy_words: Not having an explanation after so many admissions must be wearing you down.
+  confrontational: false
+  challenge_words: ''
+  style: specific_empathy_question
+- utterance: People don't usually get this many infections by accident.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: People don't usually get this many infections by accident
+  style: confront_statement
+- utterance: You must have some idea how these happen, don't you?
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: You must have some idea how these happen, don't you
+  style: confront_tag
+- utterance: I'm sure it's nothing serious, try not to dwell on it.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: I'm sure it's nothing serious, try not to dwell on it
+  style: dismissive
+- utterance: We've only got a short time, so let's not go over the same ground again.
+  empathy: 0
+  empathy_words: ''
+  confrontational: true
+  challenge_words: let's not go over the same ground again
+  style: dismissive

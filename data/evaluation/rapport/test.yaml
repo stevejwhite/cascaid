@@ -1,0 +1,88 @@
+# Held-out rapport labels (see README.md). Written before the graded-rapport interpreter.
+split: test
+items:
+  # overdose-risk-assessment (Jordan)
+  - {case_id: overdose-risk-assessment, utterance: "Hi Jordan, I'm Dr Patel from the liaison team. Thanks for seeing me.", empathy: 0, confrontational: false}
+  - {case_id: overdose-risk-assessment, utterance: "Can you talk me through last night, in your own time?", empathy: 0, confrontational: false}
+  - {case_id: overdose-risk-assessment, utterance: "That sounds really tough.", empathy: 1, confrontational: false}
+  - {case_id: overdose-risk-assessment, utterance: "I'm sorry you've been going through all this.", empathy: 1, confrontational: false}
+  - case_id: overdose-risk-assessment
+    utterance: "Your partner leaving and then losing your job, one after the other, sounds like it took away everything that was holding you up."
+    empathy: 2
+    confrontational: false
+    previous: {interviewer: "What's been going on lately?", character: "My partner left me three weeks ago, and I lost my job last month."}
+  - {case_id: overdose-risk-assessment, utterance: "It sounds like you've been feeling very alone with this. Can you tell me more about that?", empathy: 2, confrontational: false}
+  - {case_id: overdose-risk-assessment, utterance: "You do realise how dangerous paracetamol is, don't you?", empathy: 0, confrontational: true}
+  - {case_id: overdose-risk-assessment, utterance: "Why didn't you just talk to someone instead?", empathy: 0, confrontational: true}
+  - {case_id: overdose-risk-assessment, utterance: "Sorry to ask, but did you leave a note?", empathy: 0, confrontational: false}
+  - {case_id: overdose-risk-assessment, utterance: "Okay. And how have you been sleeping?", empathy: 0, confrontational: false}
+  - {case_id: overdose-risk-assessment, utterance: "That must have been frightening. Who found you?", empathy: 1, confrontational: false}
+  - {case_id: overdose-risk-assessment, utterance: "I need you to be honest with me now. Are you going to do this again?", empathy: 0, confrontational: true}
+  # alcohol-history (Chris)
+  - {case_id: alcohol-history, utterance: "Good morning, Chris. I'm one of the doctors in the team.", empathy: 0, confrontational: false}
+  - {case_id: alcohol-history, utterance: "Roughly how much would you drink on a normal day?", empathy: 0, confrontational: false}
+  - {case_id: alcohol-history, utterance: "A litre a day is a lot of vodka, Chris. You must see that's a problem.", empathy: 0, confrontational: true}
+  - {case_id: alcohol-history, utterance: "Come on, you can't seriously think that's not that bad.", empathy: 0, confrontational: true}
+  - {case_id: alcohol-history, utterance: "I appreciate you being so open with me.", empathy: 1, confrontational: false}
+  - {case_id: alcohol-history, utterance: "That can't have been easy.", empathy: 1, confrontational: false}
+  - case_id: alcohol-history
+    utterance: "It sounds like not being able to see your grandson has really hit home for you."
+    empathy: 2
+    confrontational: false
+    previous: {interviewer: "What's made you think about stopping?", character: "My daughter has stopped letting me see my grandson when I've been drinking."}
+  - {case_id: alcohol-history, utterance: "You've tried to cut down many times on your own and it keeps slipping; that sounds really frustrating for you.", empathy: 2, confrontational: false}
+  - {case_id: alcohol-history, utterance: "What happens if you go without a drink for a day?", empathy: 0, confrontational: false}
+  - {case_id: alcohol-history, utterance: "So you're drinking first thing to steady yourself. Is that right?", empathy: 0, confrontational: false}
+  - {case_id: alcohol-history, utterance: "Drink-driving could have killed someone.", empathy: 0, confrontational: true}
+  - {case_id: alcohol-history, utterance: "Thanks. Do you smoke at all?", empathy: 0, confrontational: false}
+  # memory-collateral-history (Helen)
+  - {case_id: memory-collateral-history, utterance: "Hello, thank you for coming in to talk about your dad.", empathy: 0, confrontational: false}
+  - {case_id: memory-collateral-history, utterance: "When did you first notice changes in his memory?", empathy: 0, confrontational: false}
+  - {case_id: memory-collateral-history, utterance: "That sounds like a lot to manage.", empathy: 1, confrontational: false}
+  - case_id: memory-collateral-history
+    utterance: "You've been doing all of this for him on your own, alongside work. No wonder you're exhausted."
+    empathy: 2
+    confrontational: false
+    previous: {interviewer: "And how are you coping?", character: "I'm exhausted. I'm doing everything for him and I'm still working."}
+  - {case_id: memory-collateral-history, utterance: "It's clear how much you care about your dad, and how worried you've been about his safety.", empathy: 2, confrontational: false}
+  - {case_id: memory-collateral-history, utterance: "Why haven't you brought him to see anyone before now?", empathy: 0, confrontational: true}
+  - {case_id: memory-collateral-history, utterance: "Does he still drive?", empathy: 0, confrontational: false}
+  - {case_id: memory-collateral-history, utterance: "I'm sorry, that must be upsetting to watch.", empathy: 1, confrontational: false}
+  - {case_id: memory-collateral-history, utterance: "Just to summarise, the forgetting started gradually and has got worse over time.", empathy: 0, confrontational: false}
+  - {case_id: memory-collateral-history, utterance: "He's been aggressive with you, hasn't he? You can tell me.", empathy: 0, confrontational: true}
+  - {case_id: memory-collateral-history, utterance: "Is there anything else you're worried about?", empathy: 0, confrontational: false}
+  - {case_id: memory-collateral-history, utterance: "I can understand why you'd feel guilty thinking about a care home when you've promised him so much.", empathy: 2, confrontational: false}
+  # clozapine-explanation-relative
+  - {case_id: clozapine-explanation-relative, utterance: "Hello, I'm the doctor looking after your son on the ward.", empathy: 0, confrontational: false}
+  - {case_id: clozapine-explanation-relative, utterance: "What do you already know about clozapine?", empathy: 0, confrontational: false}
+  - {case_id: clozapine-explanation-relative, utterance: "Clozapine needs regular blood tests because it can lower the white blood cell count.", empathy: 0, confrontational: false}
+  - {case_id: clozapine-explanation-relative, utterance: "That's a really understandable worry.", empathy: 1, confrontational: false}
+  - case_id: clozapine-explanation-relative
+    utterance: "After watching him go through two medicines that didn't help, it makes sense that you're wary of trying another one."
+    empathy: 2
+    confrontational: false
+    previous: {interviewer: "What worries you most?", character: "He's already tried two medicines and neither of them worked. I don't want him to suffer for nothing."}
+  - {case_id: clozapine-explanation-relative, utterance: "Honestly, the side effects you've read about online are mostly exaggerated.", empathy: 0, confrontational: true}
+  - {case_id: clozapine-explanation-relative, utterance: "Does that make sense so far?", empathy: 0, confrontational: false}
+  - {case_id: clozapine-explanation-relative, utterance: "Thank you for asking that, it's an important question.", empathy: 1, confrontational: false}
+  - {case_id: clozapine-explanation-relative, utterance: "You've clearly been fighting for him for a long time, and it sounds exhausting.", empathy: 2, confrontational: false}
+  - {case_id: clozapine-explanation-relative, utterance: "It's his decision, not yours.", empathy: 0, confrontational: true}
+  - {case_id: clozapine-explanation-relative, utterance: "Is there anything you'd like me to go over again?", empathy: 0, confrontational: false}
+  - {case_id: clozapine-explanation-relative, utterance: "I'm sorry this has been such a long road.", empathy: 1, confrontational: false}
+  # elevated-mood-history (Alex)
+  - {case_id: elevated-mood-history, utterance: "Hi Alex, thanks for coming in today.", empathy: 0, confrontational: false}
+  - {case_id: elevated-mood-history, utterance: "How have you been sleeping recently?", empathy: 0, confrontational: false}
+  - {case_id: elevated-mood-history, utterance: "That sounds exciting.", empathy: 1, confrontational: false}
+  - {case_id: elevated-mood-history, utterance: "This business plan doesn't sound realistic at all.", empathy: 0, confrontational: true}
+  - {case_id: elevated-mood-history, utterance: "You're clearly unwell, Alex.", empathy: 0, confrontational: true}
+  - case_id: elevated-mood-history
+    utterance: "It sounds like it's frustrating when the people around you don't share your excitement about the bikes."
+    empathy: 2
+    confrontational: false
+    previous: {interviewer: "What do your family make of the plans?", character: "They just don't get it. They keep telling me to slow down."}
+  - {case_id: elevated-mood-history, utterance: "I can see this matters a lot to you.", empathy: 1, confrontational: false}
+  - {case_id: elevated-mood-history, utterance: "Have you spent much money recently?", empathy: 0, confrontational: false}
+  - {case_id: elevated-mood-history, utterance: "So you've had very little sleep but lots of energy. Have I got that right?", empathy: 0, confrontational: false}
+  - {case_id: elevated-mood-history, utterance: "You've had a lot of people telling you to slow down, and it sounds like you feel nobody is really listening to you.", empathy: 2, confrontational: false}
+  - {case_id: elevated-mood-history, utterance: "Stop talking for a moment and answer my question.", empathy: 0, confrontational: true}
+  - {case_id: elevated-mood-history, utterance: "Do you use any drugs or alcohol?", empathy: 0, confrontational: false}
