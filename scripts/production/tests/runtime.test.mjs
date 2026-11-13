@@ -9,7 +9,7 @@ import { spawn } from "node:child_process";
 import { once } from "node:events";
 import { loadConfig, sourceRoot } from "../config.mjs";
 import { freePorts, service, stopChildren, alive, waitFor, control, runRelease } from "../processes.mjs";
-import { configDigest, hashFile, verifyRelease } from "../release.mjs";
+import { configDigest, hashFile, inputs, verifyRelease } from "../release.mjs";
 import { verifyAssets, directories } from "../preflight.mjs";
 import { request } from "../smoke.mjs";
 
@@ -204,4 +204,11 @@ test("on-demand jobs start when loaded, never at login, and the tunnel targets o
   assert.ok(tunnel.includes("--no-autoupdate") && tunnel.includes(tunnelConfig));
   assert.match(tunnel, /<key>SuccessfulExit<\/key><false\/>/);
   assert.throws(() => tunnelSettings({ CLOUDFLARED: path.join(directory, "missing"), CASCAID_TUNNEL_CONFIG: path.join(directory, "none.yml") }), /not found/);
+});
+
+test("release inputs include every data file the API reads", () => {
+  // The blueprint matrix reads data/catalogue/stations.yaml; without it /api/blueprint is 503.
+  for (const needed of ["data/cases", "data/catalogue", "data/training/topics", "data/training/tone"]) {
+    assert.ok(inputs.includes(needed), `${needed} missing from release inputs`);
+  }
 });

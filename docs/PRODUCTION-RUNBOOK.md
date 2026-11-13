@@ -60,7 +60,7 @@ export CASCAID_PRODUCTION_CONFIG="$HOME/CascAid/production.env"
 npm run production:prepare
 ```
 
-Preparation copies application code, configuration, prompts, authored cases and
+Preparation copies application code, configuration, prompts, authored cases, the station catalogue and
 topic/tone classifier data, including current uncommitted application edits. It
 does not copy the repository history, sessions, recordings, evaluation sets or
 development `.env`. Installed avatar assets under `apps/web/public` are included;

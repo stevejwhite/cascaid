@@ -10,7 +10,7 @@ import { command } from "./processes.mjs";
 export const inputs = ["package.json", "package-lock.json", "config", "prompts", "scripts",
   "apps/web", "services/api/pyproject.toml", "services/api/uv.lock", "services/api/src",
   "tools/finetune/pyproject.toml", "tools/finetune/uv.lock", "data/cases",
-  "data/training/topics", "data/training/tone"];
+  "data/catalogue", "data/training/topics", "data/training/tone"];
 const excluded = new Set(["node_modules", ".next", ".venv", "__pycache__", "test-results",
   "playwright-report", "coverage", ".DS_Store"]);
 export const copyable = (name) => !excluded.has(name) && !name.startsWith(".env") &&

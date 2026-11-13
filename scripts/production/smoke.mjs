@@ -18,6 +18,8 @@ export async function smoke(c, base = `http://127.0.0.1:${c.apiPort}`, token = c
   const call = (route, body) => request(base, route, body, c.abortSignal, token);
   // Original synthetic cases only. Never print model output or retain warm-up sessions.
   const cases = await call("/api/cases");
+  // The blueprint matrix needs the station catalogue; fail warm-up if it cannot load.
+  await call("/api/blueprint");
   const station = cases.find((item) => item.id === "depression-history") || cases[0];
   if (!station) throw new Error("No cases available for production warm-up");
   let id;
